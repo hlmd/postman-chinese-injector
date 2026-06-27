@@ -1,0 +1,17 @@
+{
+  "delete_scorecard": {
+    "icon_button": {
+      "tooltip": "删除记分卡",
+      "aria_label": "删除记分卡",
+      "no_permission_tooltip": "删除操作需要 API 目录管理员角色"
+    },
+    "confirm_modal": {
+      "title": "删除记分卡",
+      "body": "您确定要删除此记分卡吗？此操作无法撤消。",
+      "confirm_button_label": "删除"
+    },
+    "toast": {
+      "success_message": "记分卡删除成功。"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "overview": {
+    "heading": "BYOK 加密",
+    "description": "管理您组织的环境变量、全局变量以及请求历史记录的加密。",
+    "cta": "联系 Postman 支持团队",
+    "last_updated": "最后更新"
+  },
+  "status": {
+    "heading": "加密状态",
+    "completed": "已加密",
+    "progress": "正在加密…",
+    "failed": "失败",
+    "pending": "待处理"
+  },
+  "key": {
+    "heading": "密钥",
+    "arn": "已配置密钥",
+    "status": "状态",
+    "active": "已启用",
+    "inactive": "未启用"
+  },
+  "elements": {
+    "environments": "环境",
+    "globals": "全局变量",
+    "history": "历史记录",
+    "collectionRuns": "集合运行",
+    "monitorRuns": "监视器运行"
+  },
+  "disabled": {
+    "heading": "使用 BYOK 加密保护您的数据",
+    "description": "自带密钥 (BYOK)，为您组织的全局变量、环境和请求历史记录提供安全保护。"
+  },
+  "error": {
+    "heading": "出错了",
+    "description": "我们无法加载您的 BYOK 设置。请稍后重试。"
+  }
+}

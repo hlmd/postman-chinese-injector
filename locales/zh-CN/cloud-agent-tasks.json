@@ -1,0 +1,127 @@
+{
+  "page": {
+    "empty_state_title": "与 Postman Cloud Agent 开始对话",
+    "empty_state_message": "从侧边栏选择或开始一段对话。",
+    "empty_state_learn_more": "了解更多"
+  },
+  "onboarding": {
+    "close_aria_label": "关闭引导",
+    "intro": {
+      "title": "认识 Postman Cloud Agent",
+      "description": "无需守着笔记本电脑即可运行长时间任务。可从 Slack 或 Postman 启动。",
+      "learn_more": "了解更多",
+      "cta": "开始使用"
+    },
+    "connect": {
+      "eyebrow": "设置",
+      "title": "连接以获得最佳效果",
+      "description": "Postman Cloud Agent 与 Slack 和 GitHub 配合使用效果最佳。一次连接，整个团队受益。",
+      "next_cta": "下一步",
+      "slack": {
+        "name": "Slack",
+        "description": "随时随地触发智能体并获取更新",
+        "connect_button": "连接",
+        "connected_label": "已连接"
+      },
+      "github": {
+        "name": "GitHub",
+        "description": "检出仓库、提交代码、创建 PR",
+        "connect_button": "连接",
+        "connected_label": "已连接"
+      }
+    },
+    "all_set": {
+      "title": "一切就绪",
+      "description": "在下方描述一个任务。Postman Cloud Agent 将自动运行——无需守着它。",
+      "cta": "完成"
+    }
+  },
+  "connect": {
+    "github": {
+      "description": "连接您的 GitHub 账户，以便云代理可以读取您的仓库。",
+      "connect_button": "连接到 GitHub",
+      "reconnect_description": "您的 GitHub 连接需要刷新。请重新连接，以便云代理可以访问您的仓库。",
+      "reconnect_button": "重新连接到 GitHub",
+      "connected_label": "已连接到 GitHub",
+      "error_toast_title": "无法连接到 GitHub",
+      "initiate_error_toast_description": "启动 GitHub 连接失败。请重试。",
+      "connect_error_toast_description": "出错了。请重试。"
+    },
+    "slack": {
+      "description": "连接 Slack，以便云代理可以触发任务并在您的频道中发布更新。",
+      "connect_button": "连接到 Slack",
+      "connected_label": "已连接到 Slack",
+      "error_toast_title": "无法连接到 Slack",
+      "initiate_error_toast_description": "启动 Slack 连接失败。请重试。",
+      "connect_error_toast_description": "出错了。请重试。"
+    }
+  },
+  "sidebar": {
+    "heading": "任务",
+    "beta_label": "Beta",
+    "search_placeholder": "搜索任务…",
+    "loading_message": "正在加载任务…",
+    "load_more_button_label": "加载更多",
+    "delete_button_tooltip": "删除任务",
+    "delete_button_disabled_tooltip": "无法删除进行中的任务",
+    "delete_button_aria_label": "删除任务 {name}",
+    "delete_error_toast_title": "无法删除任务",
+    "delete_error_toast_description": "出错了。请重试。",
+    "new_conversation_button_tooltip": "新建任务",
+    "new_conversation_button_aria_label": "开始新任务",
+    "settings_button_tooltip": "云代理设置",
+    "settings_button_aria_label": "打开云代理设置",
+    "date_group": {
+      "today": "今天",
+      "yesterday": "昨天"
+    }
+  },
+  "artifacts": {
+    "heading": "产物",
+    "aside_aria_label": "任务产物",
+    "pr_button_label": "查看拉取请求",
+    "pr_button_aria_label": "查看拉取请求（在浏览器中打开）",
+    "workspace_button_label": "打开工作区",
+    "workspace_button_aria_label": "在新标签页中打开工作区"
+  },
+  "composer": {
+    "placeholder": "为云代理描述一个任务…",
+    "send_button_label": "发送",
+    "send_button_aria_label": "发送消息",
+    "cancel_button_label": "取消",
+    "cancel_button_tooltip": "取消正在运行的任务",
+    "cancel_button_aria_label": "取消正在运行的任务",
+    "model_dropdown_aria_label": "选择模型",
+    "model_dropdown_tooltip": "切换 AI 模型",
+    "model_dropdown_auto_label": "自动",
+    "workspace_dropdown_aria_label": "选择工作区",
+    "workspace_dropdown_tooltip": "选择此任务运行所在的工作区",
+    "workspace_dropdown_placeholder": "选择工作区",
+    "workspace_dropdown_loading_label": "正在加载工作区…",
+    "workspace_dropdown_empty_label": "没有可用的工作区",
+    "workspace_dropdown_no_results_label": "没有与您的搜索匹配的工作区",
+    "workspace_dropdown_search_placeholder": "搜索工作区…",
+    "workspace_dropdown_search_aria_label": "搜索工作区",
+    "repo_dropdown_aria_label": "选择仓库",
+    "repo_dropdown_placeholder": "选择仓库",
+    "repo_dropdown_not_connected_placeholder": "连接 GitHub 以选择仓库",
+    "repo_dropdown_empty_label": "未找到仓库",
+    "repo_dropdown_no_repo_option": "无仓库",
+    "create_error_toast_title": "无法开始对话",
+    "create_error_toast_description": "出错了。请重试。",
+    "followup_error_toast_title": "无法发送后续消息",
+    "followup_error_toast_description": "出错了。请重试。",
+    "cancel_error_toast_title": "无法取消任务",
+    "cancel_error_toast_description": "出错了。请重试。"
+  },
+  "task": {
+    "failed_heading": "任务失败",
+    "failed_no_details": "此任务失败，但未提供其他详细信息。"
+  },
+  "mobile": {
+    "open_tasks_tooltip": "显示任务",
+    "open_tasks_aria_label": "显示任务",
+    "drawer_aria_label": "任务",
+    "top_bar_fallback_title": "智能体任务"
+  }
+}

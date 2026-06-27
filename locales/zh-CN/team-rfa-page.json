@@ -1,0 +1,50 @@
+{
+  "switch_accounts_cta": "切换账户",
+  "creating_request_heading": "只有团队成员才能访问此资源",
+  "creating_request_subheading": "请求成为团队成员以获取访问权限。",
+  "squad_request_heading": "此资源属于“{squadName}”",
+  "closed_squad_request_subheading": "请求以协作者身份加入此团队以获取访问权限。",
+  "open_squad_request_subheading": "以协作者身份加入团队以请求访问此资源。",
+  "submit_cta": "请求加入团队",
+  "closed_squad_submit_cta": "请求加入团队",
+  "open_squad_submit_cta": "加入团队",
+  "current_sign_in_account_text": "您当前登录的账户为",
+  "email_verify_heading": "验证您的电子邮件以提交请求",
+  "email_verify_subheading": "我们已将验证邮件发送至 ",
+  "resend_verification_email_cta": "重新发送邮件",
+  "email_verified_cta": "我已验证我的电子邮件",
+  "pending_request_heading": "您加入此团队的请求正在审核中",
+  "pending_request_subheading": "团队管理员回复后，我们会通知您。",
+  "squad_pending_request_heading": "马上就好！",
+  "squad_pending_request_subheading": "我们已请求所有者授予您访问该资源的权限。他们回复后，我们会通知您。",
+  "approved_personal_rfa_heading": "马上就好！",
+  "approved_personal_rfa_subheading": "请使用我们发送至 <Strong>{email}</Strong> 的邮件加入团队并查看此资源。",
+  "continue_postman_cta": "继续前往 Postman",
+  "join_team_page_heading": "请查收您的电子邮件以访问此资源",
+  "join_team_page_subheading": "您尝试访问的资源仅对 <0>{teamName}</0> 的成员可见。要获取访问权限，请接受我们发送到您电子邮件地址的邀请。",
+  "email_sent_confirmation": "邮件已发送至 {currentUserEmail}。",
+  "resend_invite_email_cta": "重新发送邮件",
+  "resend_invite_confirmation": "邮件已重新发送！",
+  "toast_content": {
+    "email_not_verified": {
+      "title": "您的电子邮件尚未验证",
+      "description": "请查收您的收件箱以完成验证。"
+    },
+    "default_error": {
+      "title": "无法发送请求",
+      "description": "只是线路故障而已。请重试。"
+    },
+    "verification_email_sent": {
+      "title": "邮件已发送",
+      "description": "请在收件箱中查收最新的验证邮件。 "
+    },
+    "invite_resent": {
+      "title": "邮件已发送",
+      "description": "请在收件箱中查收最新的邀请。"
+    },
+    "invite_error": {
+      "title": "无法发送邮件",
+      "description": "只是线路故障而已。请重试。"
+    }
+  }
+}

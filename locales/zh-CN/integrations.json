@@ -1,0 +1,73 @@
+{
+  "token_manager": {
+    "loading_state": "正在加载已连接的账户…",
+    "error_state": {
+      "title": "出错了",
+      "desc": "无法获取已连接的账户，请稍后重试。"
+    },
+    "empty_state": {
+      "title": "尚未连接任何账户",
+      "desc": "将您的账户连接到 API 后，它们将显示在此处。"
+    },
+    "settings_modal": {
+      "page_heading": "已连接的账户",
+      "third_party_accounts_heading": "管理第三方账户"
+    },
+    "default_error": "出错了，请重试。",
+    "delete_auth_instance_error": "无法删除该账户，请重试。",
+    "auth_instance_not_valid_error": "您查找的服务不支持已连接的账户。"
+  },
+  "token_table": {
+    "service": {
+      "github": "GitHub",
+      "githubapp": "Postman GitHub App",
+      "bitbucket": "Bitbucket",
+      "gitlab": "GitLab",
+      "azure": "Azure",
+      "apm_new_relic": {
+        "label": "New Relic",
+        "error_msg": "请提供有效的 API 密钥。"
+      }
+    },
+    "table_header": {
+      "service": "服务",
+      "authorized_as": "授权身份"
+    },
+    "row_actions": {
+      "disabled_action_tooltip": "只有团队管理员才能执行此操作",
+      "delete_authentication_tooltip": "删除身份验证",
+      "edit_authentication_tooltip": "编辑身份验证"
+    },
+    "error_message": {
+      "invalid_token": "请提供有效的 Token。",
+      "server_unreachable": "我们无法连接到您的服务器以验证 Token。",
+      "updating_auth": "更新身份验证时出错。"
+    },
+    "edit_mode": {
+      "save_button_label": "保存",
+      "cancel_button_label": "取消"
+    },
+    "delete_confirmation": {
+      "heading": "删除身份验证？",
+      "desc": "所有使用此账户的 API 都需要重新进行身份验证才能继续贡献。",
+      "delete_button_label": "删除身份验证",
+      "cancel_button_label": "取消"
+    }
+  },
+  "context_bar": {
+    "integration_context_bar_list": {
+      "title": "集成",
+      "offline_state": "您似乎已离线",
+      "error_state": "无法获取集成",
+      "content": {
+        "browse_integrations": "浏览集成"
+      }
+    },
+    "view_config": {
+      "collection_backup": {
+        "header": "备份您的集合",
+        "footer": "查看所有选项"
+      }
+    }
+  }
+}

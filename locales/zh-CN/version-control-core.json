@@ -1,0 +1,105 @@
+{
+  "fork_container": {
+    "button_disabled_tool_tip": "请联网以创建复刻或查看现有复刻。",
+    "fork_button": {
+      "fork_count_api_error_message": "出错了。",
+      "fork_button_tooltip": "复刻",
+      "counter_button_default_label": "复刻",
+      "fork_count_button_offline_tooltip": "请联网以查看现有复刻。"
+    },
+    "fork_creation_modal": {
+      "heading": "复刻 {modelDisplayName}",
+      "error": {
+        "title": "无法获取源 {modelDisplayName}",
+        "description": "我们无法获取有关源 {modelDisplayName} 的信息。请重试。"
+      },
+      "is_offline": {
+        "title": "您已离线",
+        "description": "无法连接到服务器。请检查您的网络设置。"
+      },
+      "source_module_label": "原始 {modelDisplayName}",
+      "fork_creation_form": {
+        "fork_label_with_username": "{userName} 的复刻",
+        "fork_label_without_username": "我的复刻",
+        "update_user_profile_modal": {
+          "description": "若要从公共工作区中的 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 创建复刻，您必须将个人资料设为公开。系统将对您的个人资料进行以下更改。",
+          "error_toast_message": "若要从公共工作区复刻 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}}，您需要设置好您的公开个人资料。"
+        },
+        "description": "复刻会创建该 {modelType, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 的副本，使您能够在不影响原始内容的情况下进行更改。了解有关 <3>复刻</3> 的更多信息。",
+        "helper_text": "指定一个标签，以将此复刻与原始 {modelType, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 区分开来。",
+        "fork_label": "复刻标签",
+        "workspace_label": "工作区",
+        "team_label": "团队",
+        "team_helper_text": "复刻将在所选团队的工作区中创建。",
+        "workspace_helper_text": "复刻将在所选工作区中创建。",
+        "workspace_selector_restrict_fork_message": "无法在此处复刻",
+        "auto_sync_changes_label": "自动拉取更改",
+        "auto_sync_changes_checkbox_label": "从源 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 自动拉取更改",
+        "notifications_label": "通知",
+        "notifications_checkbox_label": "关注源 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 以获取更新通知",
+        "notifications_checkbox_label_forked": "关注已复刻的 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 以获取更新通知",
+        "notifications_checkbox_info_text": "您将收到有关原始 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 所做更改的通知。",
+        "fork_confirm_button_label": "复刻 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}}",
+        "fork_confirm_button_disabled_tooltip": "重新联网后即可执行此操作",
+        "fork_cancel_button_label": "取消",
+        "fork_environments_text": "要复刻的环境",
+        "fork_environments_helper_text": "所选环境将被复刻并固定到此集合。",
+        "fork_environments_input_placeholder_text": "选择环境",
+        "continue_button_label": "继续"
+      }
+    }
+  },
+  "workspace_selector": {
+    "error": {
+      "title": "无法加载更多工作区",
+      "subtitle": "只是线路出了点问题。请尝试重新加载。",
+      "reload_button_label": "重新加载"
+    },
+    "workspace_list_container": {
+      "get_workspace_list_error": {
+        "title": "无法加载工作区",
+        "subtitle": "只是线路出了点问题。请尝试重新加载。",
+        "reload_button_label": "重新加载"
+      },
+      "no_workspaces_found": {
+        "title": "未找到工作区",
+        "description": "请检查拼写或尝试其他搜索词。"
+      },
+      "workspace_list_action_label": "正在复刻",
+      "search_workspace_input_placeholder": "搜索工作区",
+      "public_workspace_forking": "复刻到此公共工作区将使您的 {model} 公开。",
+      "reusable_reference_warning": "复刻到此工作区会使链接的请求停止跟随更新。"
+    }
+  },
+  "fork_recommendation": {
+    "export_modal": {
+      "snippet": "需要复制此 {model} 吗？请改为将此 {model} 复刻到您的工作区。",
+      "fork_cta": "创建复刻",
+      "learn_more": "了解更多"
+    },
+    "popover": {
+      "fork_cta": "复刻 {model}",
+      "cancel": "取消",
+      "no_permission": "您没有导出权限",
+      "no_permission_partner_description": "具有查看者角色的合作伙伴无法导出集合。您可以改为复刻此集合。"
+    },
+    "view_plans": {
+      "title": "复刻到您自己的团队",
+      "description": "将此团队升级到付费 Postman 计划，以便复刻并创建此集合的副本。",
+      "cta": "查看计划",
+      "add_paid_team": "创建一个采用付费 Postman 计划的团队，以便复刻并创建此集合的副本。"
+    }
+  },
+  "session_info": {
+    "not_signed_in": {
+      "description": "登录团队，以便复刻并创建此集合的副本。",
+      "title": "登录以复刻",
+      "cta": "登录"
+    },
+    "signed_out": "已退出登录",
+    "free_team": "免费版",
+    "no_teams": "没有其他团队",
+    "current_team": "当前团队",
+    "other_teams": "您的其他团队"
+  }
+}

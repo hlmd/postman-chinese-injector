@@ -1,0 +1,99 @@
+{
+  "go_back": "返回",
+  "heading": "不活跃的工作区",
+  "description": "想整理一下吗？归档闲置超过 6 个月的工作区，随时可以恢复。",
+  "filters": {
+    "search_workspaces_placeholder": "搜索工作区…",
+    "filter_by_visibility_dropdown": {
+      "placeholder": "访问类型",
+      "label": "按可见性筛选",
+      "options": {
+        "all": {
+          "value": "所有工作区"
+        },
+        "personal": {
+          "value": "个人",
+          "description": "仅限创建者",
+          "workspace_type": "内部",
+          "workspace_access": "仅限您和受邀人员"
+        },
+        "team": {
+          "value": "团队",
+          "description_team_user": "{teamName} 团队中的所有人",
+          "description_non_team_user": "您团队中的所有人",
+          "workspace_type": "内部",
+          "workspace_access": "您团队中的所有人"
+        },
+        "private": {
+          "value": "私有",
+          "description": "仅限受邀的团队成员",
+          "workspace_type": "内部",
+          "workspace_access": "仅限您和受邀人员"
+        },
+        "partner": {
+          "value": "合作伙伴",
+          "description": "仅限受邀的成员和合作伙伴",
+          "workspace_type": "合作伙伴",
+          "workspace_access": "仅限受邀的合作伙伴"
+        },
+        "public": {
+          "value": "公开",
+          "description": "互联网上的任何人",
+          "workspace_type": "公开",
+          "workspace_access": "互联网上的任何人"
+        }
+      }
+    }
+  },
+  "archive_all_workspaces_button_text": "全部归档",
+  "table": {
+    "column_headers": {
+      "workspace_name": "名称",
+      "created_by": "创建者",
+      "type": "类型",
+      "access": "访问权限",
+      "last_activity": "最近活动",
+      "actions": "操作"
+    },
+    "bulk_selection": {
+      "text": "已选择 {count} 个工作区",
+      "primary_button_text": "删除",
+      "primary_button_tooltip": "删除工作区",
+      "secondary_button_text": "归档",
+      "secondary_button_tooltip": "归档工作区"
+    },
+    "actions_column": {
+      "primary_button_text": "归档",
+      "primary_button_tooltip": "归档工作区",
+      "primary_button_aria_label": "归档 {workspaceName}",
+      "secondary_button_tooltip": "删除工作区",
+      "secondary_button_aria_label": "删除 {workspaceName}"
+    }
+  },
+  "blank_state": {
+    "heading": "未找到不活跃的工作区",
+    "description": "归档不活跃的工作区以减少杂乱，随时可以恢复。"
+  },
+  "toasts": {
+    "bulk_archive": {
+      "failure_description": "只是连接出了点小问题，请重试。",
+      "failure_title": "无法归档 {count} 个工作区",
+      "success_description": "已归档 {count} 个工作区"
+    },
+    "bulk_delete": {
+      "failure_description": "只是连接出了点小问题，请重试。",
+      "failure_title": "无法删除 {count} 个工作区",
+      "success_description": "已删除 {count} 个工作区"
+    },
+    "archive": {
+      "failure_description": "只是连接出了点小问题，请重试。",
+      "failure_title": "无法归档工作区",
+      "success_description": "工作区已归档"
+    },
+    "delete": {
+      "failure_description": "只是连接出了点小问题，请重试。",
+      "failure_title": "无法删除工作区",
+      "success_description": "工作区已删除"
+    }
+  }
+}

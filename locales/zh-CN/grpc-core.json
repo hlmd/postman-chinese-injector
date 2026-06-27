@@ -1,0 +1,620 @@
+{
+  "divider_or_text": "或",
+  "invoke_button": {
+    "tooltip": "Ctrl + Enter",
+    "text": "调用"
+  },
+  "compose_tab": {
+    "placeholder": "撰写消息",
+    "footer": {
+      "beautify": "美化",
+      "example_message": {
+        "text": "使用示例消息",
+        "tooltip": "选择一个方法以生成示例消息"
+      },
+      "end_streaming": "结束流式传输",
+      "send_button": {
+        "tooltip": "调用该方法以发送消息",
+        "text": "发送"
+      }
+    }
+  },
+  "error_details": {
+    "title": "错误详情"
+  },
+  "example_message_button": {
+    "text": "使用示例消息",
+    "examples_popover": {
+      "error": {
+        "text": "无法从示例加载消息。",
+        "button": "重试"
+      },
+      "empty": {
+        "text": "<0>创建一个示例</0> <1>以使用其消息。</1>",
+        "tooltip": "您没有执行此操作的权限"
+      },
+      "search_bar": {
+        "placeholder": "在示例中搜索消息"
+      },
+      "no_examples": {
+        "text_1": "未找到消息。",
+        "text_2": "示例中未添加任何消息。"
+      }
+    }
+  },
+  "grpc_editor": {
+    "tabs": {
+      "message": "消息",
+      "authorization": "授权",
+      "metadata": "元数据",
+      "service_definition": "服务定义",
+      "scripts": "脚本",
+      "settings": "设置",
+      "heading": "请求"
+    },
+    "file_drop_overlay": {
+      "text": "将文件拖放到此处以将其用作服务定义"
+    },
+    "events": {
+      "sent_request": "请求已发送",
+      "received_response": "已收到响应",
+      "unrecognised_status_code": "无法识别的状态码",
+      "response_pruned": "响应未存储。"
+    }
+  },
+  "url_input": {
+    "placeholder": "输入 URL",
+    "invalid_url": {
+      "tooltip": "URL 不能为空",
+      "heading": "无效的 URL",
+      "subtitle": "{resolvedInvalidURL} 不是有效的 URL。请确保您使用的是正确的 URL。"
+    }
+  },
+  "refresh_button": {
+    "tooltip": "刷新"
+  },
+  "key_value_table": {
+    "default_empty_message": "这里没有数据",
+    "key": "键",
+    "value": "值"
+  },
+  "unary_results": {
+    "response_pane_tab": {
+      "truncated_response": {
+        "title": "响应大小过大，无法显示",
+        "message": "由于响应过大，我们无法将其保存到历史记录中。请重新调用该请求以获取响应。"
+      }
+    },
+    "heading": "响应",
+    "running_scripts": "正在运行脚本",
+    "save_as_example": "保存响应",
+    "tabs": {
+      "trailers": {
+        "label": "尾部元数据",
+        "empty_message": "没有可显示的尾部元数据"
+      },
+      "metadata": {
+        "label": "元数据",
+        "empty_message": "没有可显示的元数据"
+      },
+      "test_results": "测试结果"
+    }
+  },
+  "response_loader": {
+    "invoking": "正在调用方法…"
+  },
+  "method_item": {
+    "icon_titles": {
+      "bidirectional_streaming": "双向流式传输",
+      "client_streaming": "客户端流式传输",
+      "server_streaming": "服务器流式传输",
+      "unary": "一元"
+    }
+  },
+  "location_editor": {
+    "tls_indicator": {
+      "heading": {
+        "secure": "禁用 TLS",
+        "insecure": "启用 TLS"
+      },
+      "heading_explicit_set_via_url": {
+        "secure": "TLS 已启用",
+        "insecure": "TLS 已禁用"
+      },
+      "subtitle_explicit_set_via_url": {
+        "secure": "在 URL 中使用 https://。",
+        "insecure": "在 URL 中使用 http://。"
+      },
+      "subtitle_1": {
+        "secure": "当前正在使用安全连接。",
+        "insecure": "当前正在使用非安全连接"
+      },
+      "subtitle_2": {
+        "secure": "禁用 TLS 以通过非安全连接调用该方法。",
+        "insecure": "启用 TLS 以通过安全连接调用该方法。"
+      },
+      "button": "配置额外的 CA 和客户端证书"
+    },
+    "tls_toggle": {
+      "switch_to_secure": "切换到安全连接",
+      "switch_to_insecure": "切换到非安全连接"
+    }
+  },
+  "cancel_button": "取消",
+  "try_again_button": "重试",
+  "mock_suggestion": {
+    "mocks_error_cta": {
+      "unsupported_api": "<0>选择一个 Protobuf API</0> <1>以使用其模拟 URL</1>",
+      "unsupported_spec": "<0>选择一个 Protobuf 规范</0> <1>以使用其模拟 URL</1>",
+      "api_with_no_release": "<0>发布该 Protobuf API</0> <1>以使用其模拟 URL</1>",
+      "unsupported_api_version": "<0>切换到该 API 的已发布版本</0> <1>以使用其模拟 URL</1>"
+    },
+    "mock_url_error": "<0>加载模拟 URL 失败。</0> <1>重试</1>",
+    "mock_button": "使用模拟 URL",
+    "mock_button_with_api": "为 <1>{apiName}</1> 使用模拟 URL",
+    "mock_button_with_spec": "为 <1>{specName}</1> 使用模拟 URL"
+  },
+  "errors": {
+    "unable_to_invoke": "无法调用 gRPC",
+    "send_msg_failure": "发送消息失败",
+    "multiple_files_import": {
+      "title": "无法一次导入多个文件",
+      "description": "不支持一次导入多个 .proto 文件。对于通过 'import' 指令链接的文件，请仅导入根文件。"
+    },
+    "invalid_file_type": {
+      "title": "无效的文件类型",
+      "description": "仅支持 .proto 文件。请使用 .proto 文件重试。"
+    },
+    "no_permission": "您没有执行此操作的权限",
+    "could_not_invoke_method": "无法调用方法"
+  },
+  "status_code": {
+    "label": "状态码 ",
+    "label_with_colon": "状态码： "
+  },
+  "results": {
+    "save_example": {
+      "tooltip": "请先将此请求保存到集合中"
+    },
+    "empty": {
+      "message": "调用一个方法以获取响应"
+    },
+    "streaming_results": {
+      "badge": {
+        "streaming": "流式传输"
+      },
+      "response": {
+        "messages": "消息",
+        "responses": "响应"
+      }
+    },
+    "inspector": {
+      "no_metadata_received": "未收到元数据。",
+      "no_trailers_received": "未收到尾部元数据。",
+      "no_metadata_sent": "未发送元数据。",
+      "received": "已接收"
+    }
+  },
+  "settings": {
+    "strict_ssl": {
+      "title": "启用服务器证书验证",
+      "description": "通过安全连接调用方法时验证服务器证书。"
+    },
+    "server_name_override": {
+      "title": "覆盖用于证书验证的服务器名称",
+      "description": "配置用于验证服务器证书中通用名称的值。"
+    },
+    "include_default_fields": {
+      "title": "在响应中包含具有默认值的字段",
+      "description": "查看具有默认值的响应字段。将其关闭将从响应中省略此类字段。"
+    },
+    "max_response_msg_size": {
+      "title": "最大响应消息大小",
+      "description": "允许的最大消息大小（MB）。要接收任意大小的消息，请设置为 0。"
+    },
+    "connectionTimeout": {
+      "title": "连接超时",
+      "description": "配置调用并接收响应的截止时间（毫秒）。要无限期保持连接打开，请设置为 0。"
+    }
+  },
+  "example_documentation": {
+    "error": {
+      "text": "无法从示例加载文档。",
+      "button_text": "重试"
+    },
+    "empty": "<0>添加示例</0> <1>以说明此请求的工作方式。</1>",
+    "examples": {
+      "empty": {
+        "text": "此示例为空。"
+      },
+      "empty_request": "空请求",
+      "empty_response": "空响应"
+    },
+    "edit_example": "编辑示例"
+  },
+  "header_tooltips": {
+    "seed": "在请求元数据中使用此键值对以接收相同的模拟响应。"
+  },
+  "agent_error_banner": {
+    "desktop_agent_not_connected": "<0>切换到 Postman 桌面代理</0> 以加载方法。",
+    "desktop_agent_not_ready": "请确保 <2>桌面代理</2> 已安装并正在运行。",
+    "unknown_error": "发生未知错误"
+  },
+  "timeline": {
+    "cleared_events": {
+      "message": "{count, plural, one {# 条消息} other {# 条消息}}已隐藏",
+      "button": "恢复"
+    },
+    "toolbar": {
+      "type_filter_options": {
+        "sent_messages": "已发送的消息",
+        "received_messages": "已接收的消息",
+        "all_messages": "所有消息"
+      },
+      "add_message": "添加消息",
+      "sent_message": "已发送的消息",
+      "received_message": "已接收的消息",
+      "message_stream": "消息流",
+      "search": {
+        "placeholder": "搜索"
+      },
+      "clear_messages": "清除消息"
+    },
+    "notification": {
+      "new_messages": "新消息"
+    },
+    "rich_inspector": {
+      "wrap_lines": "自动换行",
+      "beautify": "美化",
+      "generate_example_msg": "生成示例消息",
+      "show_message": "显示消息",
+      "show_hexdump": "显示十六进制转储",
+      "search": "搜索"
+    },
+    "editable_event": {
+      "incoming_tooltip": "将消息类型切换为已发送",
+      "outgoing_tooltip": "将消息类型切换为已接收"
+    },
+    "event": {
+      "copy_message": "复制消息",
+      "copied": "已复制到剪贴板"
+    },
+    "editable_timeline": {
+      "empty_state": {
+        "title": "创建消息流",
+        "description": "使用消息定义客户端与服务器之间的通信。",
+        "primary_action": "生成示例流"
+      },
+      "connected": "已连接",
+      "disconnected": "已断开连接"
+    }
+  },
+  "method_combobox": {
+    "footer": {
+      "fetching": {
+        "text": "正在加载服务器反射。"
+      },
+      "loading": "加载中",
+      "reflection": "服务器反射。 ",
+      "cache": "使用缓存",
+      "dropdown": {
+        "placeholder": "选择一个方法",
+        "empty": "未找到方法"
+      },
+      "button": "更改服务定义",
+      "using": "正在使用"
+    },
+    "method_option": {
+      "error_tooltip": "无法从服务定义加载此方法。"
+    }
+  },
+  "error_banner": {
+    "reflection_error": {
+      "title": "无法加载服务器反射。",
+      "description": "发生未知错误",
+      "button": "重试"
+    },
+    "view_details": "查看错误详情",
+    "details": "详情： ",
+    "api_deprecated": {
+      "message": "服务定义正在使用不再受支持的 API Builder 对象。请将该 API 对象迁移到 Spec Hub 以继续使用。",
+      "migrate_action": "迁移到 Spec Hub"
+    },
+    "api_error": {
+      "not_found": "所选 API 在 Postman 中已不存在。请使用其他方式加载服务和方法。",
+      "release_not_found": "所选 API 版本在 Postman 中已不存在。",
+      "unresolved_import": {
+        "primary_action": "重试",
+        "message": "部分 import 指令无法解析。"
+      },
+      "internal_error": {
+        "message": "出错了。可能是我们这边出现了故障。",
+        "primary_action": "重试"
+      },
+      "access_not_found": "您没有访问该 API 的权限。",
+      "fetch_failed_link": {
+        "message": "无法加载链接的 API。",
+        "primary_action": "重试"
+      },
+      "access_denied_link": "您没有访问链接的 API 的权限。",
+      "invalid_schema_link": "该链接没有 Protobuf API。",
+      "default": {
+        "edit_api": "编辑 API",
+        "message": "所选 Protobuf API 可能存在一些问题。",
+        "syntax_error_unknown": "未知 API 中存在语法错误。请修改该 Protobuf API 或选择其他 API。",
+        "syntax_error": "{apiName} 中存在语法错误。请修改该 Protobuf API 或选择其他 API。"
+      }
+    },
+    "file_error": {
+      "file_not_found": {
+        "message": "找不到 .proto 文件。请从您的文件系统中选择该文件以在请求中使用。",
+        "primary_action": "选择 .proto 文件"
+      },
+      "file_not_found_in_dir": "<0>找不到 .proto 文件。它可能是从其他文件系统上传的。如果是这种情况，请确保您已将该文件添加到 Postman 工作目录中。</0> <1><0>如何使用工作目录？</0></1>",
+      "unresolved_import": {
+        "message": "我们无法找到 .proto 文件导入的某些文件。请使用以下选项为这些未解析的文件指定导入路径。",
+        "primary_action": "添加导入路径"
+      },
+      "syntax_error": ".proto 文件中存在语法错误。请修改该文件或选择其他文件。",
+      "default": {
+        "message": "所选 .proto 文件可能存在一些问题。"
+      }
+    },
+    "specification_error": {
+      "not_found": "所选规范在 Postman 中已不存在。请使用其他方式加载服务和方法。",
+      "unresolved_import": {
+        "primary_action": "重试",
+        "message": "部分 import 指令无法解析。"
+      },
+      "internal_error": {
+        "message": "出错了。可能是我们这边出现了故障。",
+        "primary_action": "重试"
+      },
+      "access_not_found": "您没有访问该规范的权限。",
+      "default": {
+        "edit_specification": "编辑规范",
+        "message": "所选 Protobuf 规范可能存在一些问题。",
+        "syntax_error_unknown": "未知规范中存在语法错误。请修改该 Protobuf 规范或选择其他规范。",
+        "syntax_error": "{specificationName} 中存在语法错误。请修改该 Protobuf 规范或选择其他规范。"
+      }
+    }
+  },
+  "cache_message_banner": {
+    "method_not_exist": "所选方法在服务定义中不存在。"
+  },
+  "api_dropdown": {
+    "error": "无法加载 API。",
+    "no_protobuf_schema": "未找到 Protobuf 架构",
+    "no_schema_in_dir": "在此工作区中未找到 Protobuf 架构",
+    "create_new": "创建新 API： ",
+    "new_api_name": "输入名称以创建新 API"
+  },
+  "custom_dropdown": {
+    "placeholder": "选择选项",
+    "empty": "未找到选项",
+    "footer_label": "输入名称以创建新的 {label}",
+    "footer_new": "创建新的 {label}： <1>{searchTerm}</1>",
+    "failed": {
+      "button_text": "重试",
+      "text": "加载选项失败。 "
+    }
+  },
+  "remove": "移除",
+  "proto_api_selector": {
+    "placeholder": "选择一个 Protobuf 架构或粘贴其链接",
+    "error": "创建 API 失败。"
+  },
+  "loading": "加载中",
+  "proto_api_selected": {
+    "current_definition": "当前定义",
+    "buttons": {
+      "use_different_schema": "使用其他架构",
+      "import": "导入 .proto 文件"
+    },
+    "access_restricted": "（访问受限）",
+    "version_selector": {
+      "placeholder": "选择一个版本",
+      "active_branch": "活动分支",
+      "custom_option": {
+        "tooltip": "当前定义包含对该 API 所做的所有尚未发布的更改。"
+      }
+    }
+  },
+  "proto_file": {
+    "errors": {
+      "api_not_created": "创建 API 时出错。",
+      "schema_not_updated": "更新 API 时出错。"
+    },
+    "file_selected": {
+      "heading": {
+        "loading": "正在加载 {filename}",
+        "using": "正在使用 {filename}"
+      },
+      "buttons": {
+        "import_as_api": "导入为 API",
+        "use_different_schema": "使用其他架构",
+        "import_proto_file": "导入 .proto 文件"
+      },
+      "working_dir_banner": "<0>将此文件移动到您的工作目录以便与他人协作。</0> <2><0>如何使用工作目录？</0></2>"
+    },
+    "select_file": {
+      "error": {
+        "title": "无法导入 .proto 文件",
+        "subtitle": "导入 Protobuf 定义时出错。"
+      },
+      "title": "导入 .proto 文件",
+      "subtitle": {
+        "desktop": "拖放或从本地系统选择一个 .proto 文件。您也可以从托管它的 URL 加载它。",
+        "web": "从本地系统导入 .proto 文件，或从托管它的 URL 加载它。"
+      },
+      "choose_file": "选择文件",
+      "protobuf_url": {
+        "placeholder": "输入 URL",
+        "label": "Protobuf URL",
+        "error": "无效的 URL"
+      },
+      "import_paths": {
+        "heading": "导入路径",
+        "subtext": "指定导入路径，以便在解析 'import' 指令时查找 .proto 文件。",
+        "unresolved_import": {
+          "title": "未解析的 \"import\" 指令"
+        },
+        "add": "添加导入路径"
+      }
+    },
+    "input": {
+      "disabled_tooltip": "加载 Protobuf 文件需要桌面代理"
+    }
+  },
+  "import_api": {
+    "heading": "导入为 API",
+    "sub_text": "将 <1>{filename}</1> 导入为 API，以便在 Postman 中重用和管理它。",
+    "api_dropdown": {
+      "disabled_tooltip": "无法导入到 Git 链接的 API 中",
+      "placeholder": "选择一个 API"
+    },
+    "use_without_import": "不导入直接使用"
+  },
+  "proto_selector": {
+    "proto_base": {
+      "import_button": "导入 .proto 文件",
+      "title": "在本地系统中有 .proto 文件或托管在某个 URL 上？"
+    },
+    "schema_label": {
+      "api_version_text": "继续使用 <1></1>",
+      "api": "继续使用 API",
+      "reflection": "继续使用服务器反射",
+      "file": "继续使用 <1></1>"
+    },
+    "keep_using": "继续使用 {name}",
+    "go_back": "返回"
+  },
+  "proto_reflection": {
+    "server_reflection": {
+      "loading_reflection": "正在加载服务器反射。",
+      "using_reflection": "正在使用服务器反射。",
+      "use_server_reflection": {
+        "text": "使用服务器反射",
+        "tooltip": "输入服务器 URL 以使用服务器反射加载方法。"
+      }
+    }
+  },
+  "next_button": "下一步",
+  "schema_options": {
+    "this_workspace": "此工作区"
+  },
+  "proto_combobox": {
+    "input_placeholder": {
+      "is_open": "搜索 Protobuf 架构或粘贴其链接",
+      "not_open": "选择一个方法"
+    },
+    "heading": "使用 Protobuf 架构加载服务和方法。",
+    "toggle": {
+      "expand": "展开 proto 方法选择器",
+      "collapse": "折叠 proto 方法选择器"
+    }
+  },
+  "snippets": {
+    "response": {
+      "test_status_code": "测试状态码是否为 0",
+      "response_time": "测试响应时间是否低于 200ms",
+      "specific_metadata": "测试特定元数据是否存在",
+      "response_trailers": "测试特定尾部元数据是否存在",
+      "response_message_exists": "测试消息是否存在",
+      "response_message_partial": "测试具有特定属性的消息是否存在",
+      "property_exists": "测试所有消息是否都存在某个属性",
+      "msg_against_schema": "根据 JSON 架构测试消息"
+    },
+    "message": {
+      "message_content": "测试消息是否与确切内容相等",
+      "message_partial": "测试消息是否具有特定属性",
+      "msg_schema": "根据 JSON 架构测试消息"
+    }
+  },
+  "scripts": {
+    "before_invoke": {
+      "label": "调用前",
+      "description": "“调用前”脚本使用 JavaScript 编写，并在调用方法之前运行。",
+      "tooltip_text": "在每个 gRPC 请求发送前运行。通常用于动态配置请求。"
+    },
+    "on_message": {
+      "label": "收到消息时",
+      "description": "“收到消息时”脚本使用 JavaScript 编写，并在每次收到消息时运行。",
+      "tooltip_text": "在 gRPC 响应流中的每条消息之后运行。通常用于编写测试。"
+    },
+    "after_response": {
+      "label": "响应后",
+      "description": "“响应后”脚本使用 JavaScript 编写，并在从服务器接收到响应且与服务器的连接终止后运行。",
+      "tooltip_text": "在每个 gRPC 响应之后运行。通常用于编写测试。"
+    },
+    "learn_more": "了解更多",
+    "error": {
+      "title": "无法评估 {scriptLabel} 脚本",
+      "helper_text": {
+        "inline": {
+          "base": "无法评估该脚本。 ",
+          "script_label_func": "无法评估 <1><0>{scriptLabel} 脚本</0></1>。 ",
+          "script_label": "无法评估 {scriptLabel} 脚本。 "
+        },
+        "other": {
+          "base": "运行脚本时出错。",
+          "script_label_func": "运行 <1><0>{scriptLabel} 脚本</0></1> 时出错。 ",
+          "script_label": "运行 {scriptLabel} 脚本时出错。"
+        },
+        "docs_link": "请确保该脚本符合 <1><0>{itemLabel} 的 Postman JavaScript 参考</0></1>。 "
+      }
+    }
+  },
+  "proto_menu": {
+    "view_more_schema": "查看更多架构",
+    "no_protobuf_schema": "没有可用的 Protobuf 架构。",
+    "import_file": {
+      "subtitle": {
+        "desktop": "拖放或从本地系统选择一个 .proto 文件。",
+        "web": "从本地系统选择一个 .proto 文件。"
+      }
+    },
+    "load_methods": "使用服务器反射加载方法。",
+    "enter_server_url": "输入服务器 URL 以使用服务器反射加载方法。"
+  },
+  "unknown_file": "未知文件",
+  "documentation": {
+    "title": "文档",
+    "required": "必填",
+    "repeated": "可重复",
+    "table": {
+      "columns": {
+        "key": "键",
+        "value": "值",
+        "values": "值",
+        "field": "字段",
+        "type": "类型",
+        "description": "描述"
+      },
+      "empty": {
+        "title": "未定义任何字段",
+        "description": "此消息类型的字段尚未在服务定义中定义。"
+      }
+    },
+    "errors": {
+      "save_desc_err": "保存请求描述时出错。"
+    }
+  },
+  "generate_collection": {
+    "button_text": "生成集合"
+  },
+  "tabbed_pane": {
+    "toggle": {
+      "expand": "展开部分",
+      "collapse": "折叠部分"
+    }
+  },
+  "context_bar": {
+    "code_snippet_exports": {
+      "title": "代码片段",
+      "tooltip": "代码",
+      "snippet_block_title": "gRPCurl",
+      "your_message_title": "消息"
+    }
+  }
+}

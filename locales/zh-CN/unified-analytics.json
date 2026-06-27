@@ -1,0 +1,1040 @@
+{
+  "overview": {
+    "header": {
+      "title": "概览",
+      "subtitle": "全面查看您组织的分析数据和指标"
+    },
+    "actions": {
+      "refresh": "刷新",
+      "last_updated": "上次更新：{timeElapsed}"
+    },
+    "user_distribution": {
+      "title": "用户分布随时间的变化",
+      "tooltip": {
+        "title": "用户分布随时间的变化",
+        "subtitle": "跟踪团队构成和许可证使用率随时间的演变",
+        "description_1": "此视图展示您团队的用户构成和许可证使用情况如何随时间变化。它有助于您了解谁有权访问您的工作区、Postman 的使用活跃度，以及可用许可证是否得到充分利用。",
+        "description_2": "跟踪这些趋势可以突显增长、闲置容量或协作模式的变化。",
+        "action_header": "为有效管理用户和许可证，请考虑：",
+        "action_1": "审查不活跃用户，以确保访问权限仍有必要",
+        "action_2": "监控访客和合作伙伴的访问情况，以维持适当的可见性级别",
+        "action_3": "随着团队发展，重新分配未使用的许可证",
+        "action_4": "观察随时间的变化，以规划未来的许可证需求",
+        "legend": {
+          "team_member": {
+            "label": "团队成员",
+            "description": "作为团队成员添加到团队中的用户"
+          },
+          "active_postman_user": {
+            "label": "活跃用户",
+            "description": "至少使用过一次 Postman 的用户"
+          },
+          "partner": {
+            "label": "合作伙伴",
+            "description": "在团队内任何合作伙伴工作区中拥有合作伙伴查看者/编辑者/管理者席位的用户"
+          },
+          "guests": {
+            "label": "访客",
+            "description": "拥有查看工作区及其元素访问角色的用户"
+          },
+          "unused_licenses": {
+            "label": "未使用的许可证",
+            "description": "空置的可用席位"
+          }
+        }
+      }
+    },
+    "user_engagement": {
+      "title": "团队成员参与度随时间的变化",
+      "tooltip": {
+        "title": "团队成员参与度随时间的变化",
+        "subtitle": "了解用户如何参与您的工作区，有助于您了解人们发现、上手和使用您 API 的成功程度。",
+        "description_1": "这些指标展示用户如何与您的工作区交互，以及他们是否能够成功进行 API 调用。",
+        "description_2": "跟踪参与度随时间的变化，可以突显引导环节的不足、易用性问题，或改进文档和设置的机会。",
+        "action_header": "为提升用户参与度，请考虑：",
+        "action_1": "为那些进行了 API 调用但未收到成功响应的用户审查引导内容",
+        "action_2": "添加清晰的示例和文档，帮助新用户更快上手",
+        "action_3": "监控随时间的变化趋势，以发现 API 使用的下降或改善",
+        "action_4": "将新用户与成功用户进行比较，以识别用户卡在何处",
+        "legend": {
+          "active_users": {
+            "label": "活跃用户",
+            "description": "至少使用过一次 Postman 的用户。"
+          },
+          "api_users": {
+            "label": "API 用户",
+            "description": "从团队工作区进行 API 调用的用户，无论响应是否成功。"
+          },
+          "new_api_users": {
+            "label": "新 API 用户",
+            "description": "在过去 6 个月内首次从团队工作区进行 API 调用的用户。"
+          },
+          "successful_api_users": {
+            "label": "成功的 API 用户",
+            "description": "进行 API 调用并从团队工作区至少收到一次成功（2xx）响应的用户。"
+          },
+          "error_only_api_users": {
+            "label": "仅出错的 API 用户",
+            "description": "进行 API 调用但从团队工作区仅收到非 2xx 响应的用户。"
+          }
+        }
+      }
+    },
+    "api_requests": {
+      "title": "按响应码划分的 API 请求",
+      "tooltip": {
+        "title": "按响应码划分的 API 请求",
+        "subtitle": "API 调用是好事，但错误不是。4XX 错误在 Postman 中尤其值得关注，因为它们可能意味着开发者在尝试上手和测试您的 API 时遇到了阻碍。降低 4XX 错误率将意味着更多开发者成功上手、更多 API 调用以及更满意的用户。",
+        "description_1": "其他错误也会在此处捕获。但这些错误通常表明您的 API 存在技术问题，而非易用性问题。",
+        "action_header": "为降低 4XX 错误率，请考虑：",
+        "action_1": "创建一个概览集合，提供设置身份验证的分步说明",
+        "action_2": "为您的 API 域名设置引导式授权",
+        "action_3": "使用环境变量，在单一位置将授权信息构建到您的所有请求中",
+        "legend": {
+          "2xx": {
+            "label": "2xx – 成功",
+            "description": "请求按预期工作。"
+          },
+          "3xx": {
+            "label": "3xx – 重定向",
+            "description": "请求被发送到另一个位置以完成。"
+          },
+          "4xx": {
+            "label": "4xx – 请求错误",
+            "description": "请求存在问题，例如信息缺失或不正确。"
+          },
+          "5xx": {
+            "label": "5xx – 服务器错误",
+            "description": "服务器无法处理该请求。"
+          }
+        }
+      }
+    },
+    "active_workspaces": {
+      "title": "活跃工作区随时间的变化",
+      "tooltip": {
+        "title": "活跃工作区随时间的变化",
+        "subtitle": "此图表展示您团队中活跃工作区总数如何随时间变化。活跃工作区包括所有仍然存在且未被删除的工作区。",
+        "description_1": "跟踪活跃工作区有助于您了解团队如何组织工作、在内部和外部进行协作，以及工作区使用情况如何随时间增长或趋于稳定。",
+        "description_2": "活跃工作区的增加通常反映新项目或协作需求，而稳定或下降的趋势则可能表明整合或清理。",
+        "action_header": "为有效管理工作区，请考虑：",
+        "action_1": "审查不活跃或未使用的工作区，以减少杂乱",
+        "action_2": "根据协作需求选择合适的工作区类型",
+        "action_3": "监控增长趋势，以规划治理和访问",
+        "action_4": "确保工作区命名清晰、目标明确",
+        "legend": {
+          "internal": {
+            "label": "内部工作区",
+            "description": "指对您和您的团队可见的内部工作区。它让您能够在 Postman 中组织工作，并与团队私密协作。"
+          },
+          "partner": {
+            "label": "合作伙伴工作区",
+            "description": "一个仅限邀请的工作区，用于在共享 API 项目上与外部合作伙伴协作。"
+          },
+          "private": {
+            "label": "私有工作区",
+            "description": "私有工作区是一种受限的工作区，其中的 API、集合和其他资产仅对工作区所有者和受邀协作者可见。"
+          },
+          "public": {
+            "label": "公共工作区",
+            "description": "从团队工作区进行 API 调用并至少收到一次 2xx 响应的用户"
+          }
+        }
+      }
+    },
+    "elements_in_workspaces": {
+      "title": "工作区中的元素随时间的变化",
+      "tooltip": {
+        "title": "工作区中的元素随时间的变化",
+        "subtitle": "截至报告日期，团队中存在的未删除元素的累计数量。",
+        "description_1": "工作区由不同的元素组成，每个元素支持您 API 工作流的一部分。查看这些元素的指标有助于您了解工作区的使用方式、团队在何处花费时间，以及哪些方面可能需要关注。",
+        "description_2": "高活跃度通常意味着某个元素正在积极支持开发或协作。低活跃度或下降的活跃度可能表明设置过时、资源未使用，或存在简化工作区的机会。",
+        "description_3": "请记住，不同元素的行为天然不同。例如，监视器按计划运行，而集合则依赖手动使用。结合上下文解读指标有助于您做出更好的决策。",
+        "action_header": "为提升工作区效能，请考虑：",
+        "action_1": "审查活跃度很低或没有活跃度的元素，并归档任何不再使用的内容",
+        "action_2": "检查高频使用的元素，确保它们有文档记录且易于复用",
+        "action_3": "使环境和模拟与当前的开发阶段保持一致",
+        "action_4": "确保监视器和 Flow 反映您最重要的工作流",
+        "legend": {
+          "collections": {
+            "label": "集合",
+            "description": "可运行和复用的已保存 API 请求分组。"
+          },
+          "environments": {
+            "label": "环境",
+            "description": "一组变量，让您能够在不同设置（如测试和生产）之间切换。"
+          },
+          "mocks": {
+            "label": "模拟",
+            "description": "返回示例响应而无需调用真实服务器的模拟 API。"
+          },
+          "monitors": {
+            "label": "监视器",
+            "description": "按计划运行请求以跟踪 API 健康状况的自动检查。"
+          },
+          "flows": {
+            "label": "Flow",
+            "description": "无需编写代码即可连接请求和逻辑的可视化工作流。"
+          }
+        }
+      }
+    }
+  },
+  "internal": {
+    "header": {
+      "title": "内部工作区",
+      "subtitle": "查看内部工作区指标和团队协作洞察"
+    },
+    "workspaces_created": {
+      "title": "创建的工作区随时间的变化",
+      "tooltip": {
+        "title": "创建的工作区随时间的变化",
+        "subtitle": "此图表展示您团队中活跃的共享和私有工作区数量如何随时间变化。已删除的工作区不包括在内。",
+        "description_1": "工作区的增加可能表明采用率上升或有新项目，而增长放缓则可能意味着整合到现有空间。分别查看私有和共享工作区，可以洞察您团队中协作的发生方式。",
+        "action_header": "为更好地了解工作区增长，请考虑：",
+        "action_1": "审查新工作区的创建是否有明确目的",
+        "action_2": "在需要协作时鼓励使用共享工作区",
+        "action_3": "清理未使用或不活跃的工作区，以减少杂乱",
+        "action_4": "观察随时间的变化趋势，以规划团队和项目增长",
+        "legend": {
+          "private": {
+            "label": "私有工作区",
+            "description": "仅对创建者可见的工作区。这些通常用于个人探索、草稿或早期试验。"
+          },
+          "shared": {
+            "label": "共享工作区",
+            "description": "多个团队成员均可访问的工作区。这些通常支持协作、共享开发和团队工作流。"
+          }
+        }
+      }
+    },
+    "collection_error_rates": {
+      "title": "错误率最高的集合",
+      "chart": {
+        "legend": {
+          "error_4xx": "4XX 错误",
+          "error_5xx": "5XX 错误"
+        }
+      },
+      "table": {
+        "headers": {
+          "error_4xx": "4XX 错误",
+          "error_5xx": "5XX 错误"
+        }
+      },
+      "tooltip": {
+        "title": "错误率最高的集合",
+        "subtitle": "此视图突显 API 请求最常失败的集合。",
+        "description_1": "高错误率可能意味着请求设置、身份验证或 API 可靠性方面存在问题，并且往往表明用户在尝试成功使用您的 API 时遇到了阻碍。",
+        "description_2": "审查这些集合有助于您识别用户可能卡住的地方，并优先进行能够减少错误、改善上手、测试及整体 API 易用性的改进。",
+        "action_header": "为降低集合中的错误率，请考虑：",
+        "action_1": "审查请求配置、参数和标头",
+        "action_2": "改进身份验证设置和示例",
+        "action_3": "在集合内添加更清晰的文档或使用指南",
+        "action_4": "跨环境测试请求，以尽早发现设置问题",
+        "legend": {
+          "4xx": {
+            "label": "4XX 错误百分比",
+            "description": "此集合中因 4XX 错误而失败的 API 调用所占的百分比。"
+          },
+          "5xx": {
+            "label": "5XX 错误百分比",
+            "description": "此集合中因 5XX 错误而失败的 API 调用所占的百分比。"
+          }
+        }
+      }
+    }
+  },
+  "partner": {
+    "header": {
+      "title": "合作伙伴工作区",
+      "subtitle": "了解外部合作伙伴如何上手并与您的 API 协作"
+    },
+    "filters": {
+      "selected_partners": "已选择 {count} 个合作伙伴",
+      "selected_partners_plural": "已选择 {count} 个合作伙伴",
+      "show_all": "显示全部",
+      "no_partners": "无合作伙伴"
+    },
+    "funnel": {
+      "title": "合作伙伴引导漏斗",
+      "subtitle": "合作伙伴整体转化",
+      "aria_label": "合作伙伴漏斗信息",
+      "legend": {
+        "all_partners": "所有合作伙伴"
+      },
+      "drilldowns": {
+        "total_partners": "已接受邀请的合作伙伴",
+        "workspace_visited": "访问了合作伙伴工作区的合作伙伴",
+        "viewed_collection": "查看了集合或其文档的合作伙伴",
+        "request_sent": "发送了 API 请求的合作伙伴",
+        "success_200_ok": "收到成功 API 响应的合作伙伴"
+      },
+      "tooltip": {
+        "title": "合作伙伴引导漏斗",
+        "subtitle": "了解您的合作伙伴如何完成各个引导步骤",
+        "description_1": "通过查看此漏斗，您可以识别引导旅程中的阻碍点，并将改进重点放在对帮助合作伙伴获得首次成功 API 响应最为关键的步骤上。",
+        "action_header": "为改善合作伙伴引导，请考虑：",
+        "action_1": "审查流失最严重的步骤，以识别缺失的指引或设置问题",
+        "action_2": "改进身份验证和请求的文档及示例",
+        "action_3": "在合作伙伴访问工作区或查看集合后，提供更清晰的后续步骤",
+        "action_4": "跟踪随时间的进展，以衡量引导改进的成效"
+      },
+      "steps": {
+        "label": {
+          "total_partners": "合作伙伴总数",
+          "workspace_visited": "已访问工作区",
+          "viewed_collection": "已查看集合",
+          "request_sent": "已发送请求",
+          "success_200_ok": "成功 200 OK"
+        }
+      }
+    },
+    "api_calls": {
+      "title": "合作伙伴 API 调用",
+      "aria_label": "合作伙伴 API 调用信息",
+      "csv_filename": "partner-api-calls.csv",
+      "empty": "无 API 调用",
+      "requests": {
+        "error": "加载请求失败",
+        "empty": "无请求"
+      },
+      "requests_summary": "{total} 个请求中的 {success} 个",
+      "results": {
+        "more_tag": "+ 更多"
+      },
+      "tooltip": {
+        "description": "合作伙伴从合作伙伴工作区发送的 API 请求"
+      }
+    },
+    "monthly_snapshot": {
+      "metrics": {
+        "needs_attention": {
+          "title": "需要关注",
+          "description": "可能需要帮助才能获得成功响应的合作伙伴"
+        },
+        "api_success_rate": {
+          "title": "API 成功率",
+          "description": "合作伙伴 API 请求的成功率"
+        },
+        "pending_invitations": {
+          "title": "待处理的邀请",
+          "description": "待处理的合作伙伴邀请"
+        }
+      },
+      "drilldowns": {
+        "needs_attention": "需要关注",
+        "api_success_rate": "API 成功率",
+        "pending_invitations": "待处理的合作伙伴邀请"
+      },
+      "pending_invitations_tooltip": {
+        "content": "自上次数据刷新以来，部分合作伙伴可能已接受邀请。请查看成员页面以获取最新信息。",
+        "aria_label": "关于待处理合作伙伴邀请的信息"
+      }
+    },
+    "needs_attention": {
+      "types": {
+        "no_success_on_tried_request": "已发送请求，无 200 OK",
+        "high_non_200_ok_rate": "API 成功率 < 50%"
+      }
+    }
+  },
+  "team_overview": {
+    "header": {
+      "title": "概览",
+      "subtitle": "团队和计划相关信息"
+    },
+    "created_subtext": {
+      "with_name": "{teamName} 加入 Postman 的时间",
+      "default": "您的团队加入 Postman 的时间"
+    },
+    "billing_cycle_subtext": "您的下一次账单日期为 {renewalDate}",
+    "cards": {
+      "team_name": "团队名称",
+      "plan_name": "计划名称",
+      "total_members": "团队成员总数",
+      "total_members_tooltip": "表示团队中的用户总数。这包括不占用计费席位的仅管理员、仅账单、合作伙伴和访客角色。",
+      "total_members_tooltip_aria": "关于团队成员总数的信息",
+      "team_created_on": "团队创建于",
+      "sso_provider": "SSO 提供商",
+      "sso_helper": "单点登录集成",
+      "current_billing_cycle": "当前账单周期",
+      "upcoming_renewal_date": "即将到来的续订日期",
+      "renewal_helper": "下一个账单日期"
+    }
+  },
+  "team_members": {
+    "header": {
+      "title": "团队成员",
+      "subtitle": "关于您团队所有成员的详细信息，包括邀请、成员活动和角色分布。"
+    },
+    "summary": {
+      "title": "团队成员",
+      "tooltip": "团队中的用户总数",
+      "tooltip_aria": "关于团队成员的信息",
+      "error": "加载团队成员失败",
+      "drawer": {
+        "title": "团队成员",
+        "subtitle": "所有团队成员的完整列表"
+      }
+    },
+    "overtime": {
+      "title": "团队成员随时间的变化",
+      "dataset_label": "团队成员"
+    },
+    "active_overtime": {
+      "title": "活跃成员随时间的变化",
+      "dataset_label": "活跃成员",
+      "tooltip": {
+        "footer": "点击查看详情"
+      },
+      "columns": {
+        "active_month": "活跃月份"
+      },
+      "drawer": {
+        "title": "活跃成员 - {month}",
+        "subtitle": "在该月内至少打开过一次 Postman 应用或 Postman Web 的成员被视为活跃。"
+      }
+    },
+    "invites": {
+      "title": "成员邀请",
+      "dataset": {
+        "sent": "已发送邀请",
+        "accepted": "已接受邀请"
+      },
+      "status": {
+        "sent": "已发送",
+        "accepted": "已接受",
+        "sent_lower": "已发送",
+        "accepted_lower": "已接受"
+      },
+      "tooltip": {
+        "footer": "点击查看详情"
+      },
+      "drawer": {
+        "title": "{status}邀请 - {month}",
+        "subtitle": "所选时段的{status}邀请列表"
+      }
+    },
+    "roles": {
+      "title": "成员角色",
+      "dataset_label": "成员",
+      "tooltip": {
+        "footer": "点击查看详情"
+      },
+      "drawer": {
+        "title": "拥有 {role} 角色的成员",
+        "subtitle": "拥有所选角色的成员列表"
+      }
+    },
+    "list": {
+      "title": "成员列表",
+      "error": "加载成员列表失败",
+      "empty": "无成员",
+      "csv_filename": "Members_list.csv"
+    }
+  },
+  "billing": {
+    "header": {
+      "title": "账单与用量",
+      "subtitle": "您团队的账单信息和资源消耗概览。"
+    },
+    "billed": {
+      "title": "已计费席位",
+      "error": "加载已计费席位失败",
+      "occupied_percent_label": "已占用席位",
+      "occupied_label": "已占用席位",
+      "unoccupied_label": "未占用席位",
+      "seats_summary": "{total} 个席位中的 {occupied} 个"
+    },
+    "unbilled": {
+      "title": "未计费席位",
+      "error": "加载未计费席位失败",
+      "description": "这些席位将包含在您下一次 Auto-Flex 续订中。"
+    },
+    "overall_seat_usage": {
+      "title": "整体席位使用情况",
+      "legend": {
+        "total": "席位总数",
+        "occupied": "已占用席位"
+      }
+    },
+    "overage": {
+      "title": "超额设置",
+      "tooltip": "每种资源的超额设置",
+      "tooltip_aria": "关于超额设置的信息",
+      "error": "加载超额设置失败",
+      "empty": "无超额设置",
+      "columns": {
+        "resource": "资源",
+        "allowed": "允许超额"
+      }
+    },
+    "additional_blocks": {
+      "title": "额外资源块",
+      "error": "加载额外资源块失败",
+      "empty": "无额外资源块",
+      "columns": {
+        "resource": "资源",
+        "quantity": "数量",
+        "additional_calls_or_domains": "额外的调用或域名"
+      }
+    },
+    "auto_flex": {
+      "summary": {
+        "title": "Auto-Flex 摘要（上一个完整周期）"
+      },
+      "tiles": {
+        "start_date": "上一个 Auto-Flex 周期：开始日期",
+        "end_date": "上一个 Auto-Flex 周期：结束日期",
+        "users_added": "上一个 Auto-Flex 周期：新增用户"
+      },
+      "table": {
+        "title": "上一个 Auto-Flex 周期：新增用户",
+        "error": "加载新增用户失败",
+        "empty": "无用户",
+        "csv_filename": "Last_Auto-Flex_cycle_Users_added.csv"
+      }
+    },
+    "meter_usage": {
+      "monitor_requests": "监视器请求",
+      "mock_requests": "模拟请求",
+      "non_deleted_integrations": "未删除的集成",
+      "postman_api": "Postman API",
+      "custom_domains": "自定义域名",
+      "cloud_agent_requests": "云代理请求",
+      "legend": {
+        "limit": "上限",
+        "usage": "用量"
+      },
+      "tooltip": {
+        "cycle": "周期：{range}"
+      }
+    }
+  },
+  "feature_usage": {
+    "hidden_label": {
+      "text": "私有",
+      "tooltip": "以您当前的访问权限无法查看此实体"
+    },
+    "header": {
+      "title": "API 生命周期",
+      "subtitle": "跟踪您的组织如何在 API 生命周期的各个阶段使用 Postman"
+    },
+    "time_ranges": {
+      "day_7": "7天",
+      "day_30": "30天",
+      "month_6": "6个月",
+      "year_1": "1年"
+    },
+    "metrics": {
+      "development": {
+        "title": "开发",
+        "unit": "个工作区",
+        "tooltip": "所选时段内处于开发状态的工作区数量。如果某个工作区有集合、规范、模拟或 Flow 的创建/更新/删除活动，或有 SDK 生成活动，则会被计入。"
+      },
+      "testing": {
+        "title": "测试",
+        "unit": "次运行",
+        "tooltip": "所选时段内的功能测试运行总数（手动、CLI、CI/CD、计划）和性能测试运行总数（手动、自动）。"
+      },
+      "production": {
+        "title": "生产",
+        "unit": "次运行",
+        "tooltip": "所选时段内的监视器运行总数和生产 Flow 执行总数。"
+      },
+      "distribution": {
+        "title": "分发",
+        "unit": "个工作区",
+        "tooltip": "所选时段内通过私有 API 网络、合作伙伴工作区和公共工作区共享的工作区数量。"
+      },
+      "api_management": {
+        "title": "API 管理",
+        "unit": "个工作区",
+        "tooltip": "所选时段内发布到 API 目录的工作区数量。"
+      }
+    },
+    "chart": {
+      "title": "开发工作区随时间的变化",
+      "testing_title": "测试量随时间的变化",
+      "production_title": "API 目录中的工作区数量",
+      "distribution_title": "已发布工作区随时间的变化",
+      "dataset_label": "工作区",
+      "toggle": {
+        "by_source": "按来源",
+        "by_type": "按类型"
+      },
+      "testing_datasets": {
+        "collection_runner": "功能测试",
+        "performance_testing": "性能测试",
+        "manual": "手动",
+        "automated": "自动"
+      },
+      "production_datasets": {
+        "api": "工作区"
+      },
+      "production_hero_title": "生产运行随时间的变化",
+      "production_hero_tooltip_title": "生产运行",
+      "production_hero_datasets": {
+        "active_monitors": "活跃监视器",
+        "production_flows": "生产 Flow"
+      },
+      "development_tooltip_title": "开发工作区",
+      "testing_tooltip_title": "测试运行",
+      "distribution_tooltip_title": "工作区分发",
+      "production_tooltip_title": "生产工作区",
+      "api_management_title": "API 目录中的工作区数量",
+      "api_management_tooltip_title": "生产工作区",
+      "api_management_datasets": {
+        "api": "工作区"
+      },
+      "distribution_datasets": {
+        "private_api_network": "私有 API 网络",
+        "partner_workspaces": "合作伙伴工作区",
+        "public_workspaces": "公共工作区"
+      },
+      "tooltip_total_label": "总计："
+    },
+    "insight_panels": {
+      "collections": {
+        "title": "活跃集合",
+        "tooltip": "在所选时段内有创建、更新或删除操作的任何集合。",
+        "over_time_title": "活跃集合随时间的变化",
+        "list_title": "最受欢迎的集合",
+        "value_column": "已更新的集合"
+      },
+      "flows": {
+        "title": "活跃 Flow",
+        "tooltip": "在所选时段内有编辑或执行活动的 Flow。",
+        "over_time_title": "活跃 Flow 随时间的变化",
+        "list_title": "最受欢迎的 Flow",
+        "value_column": "已更新的 Flow"
+      },
+      "sdks": {
+        "title": "已生成的 SDK",
+        "tooltip": "所选时段内完成的 SDK 生成运行。",
+        "over_time_title": "已生成的 SDK 随时间的变化",
+        "list_title": "最受欢迎的 SDK",
+        "value_column": "SDK 生成次数",
+        "entity_type_column": "实体类型"
+      },
+      "specs": {
+        "title": "活跃规范",
+        "tooltip": "在所选时段内有创建、更新或删除活动的 API 规范。",
+        "over_time_title": "活跃规范随时间的变化",
+        "list_title": "最受欢迎的规范",
+        "value_column": "已更新的规范"
+      },
+      "mocks": {
+        "title": "活跃模拟",
+        "tooltip": "在所选时段内有配置或请求活动的模拟服务器，包括本地和云端模拟。",
+        "over_time_title": "活跃模拟随时间的变化",
+        "list_title": "最受欢迎的模拟",
+        "value_column": "模拟请求"
+      },
+      "test_runs": {
+        "title": "测试运行",
+        "list_title": "测试最多的集合",
+        "name_column": "集合",
+        "value_column": "测试运行"
+      },
+      "functional_tests": {
+        "title": "功能测试",
+        "tooltip": "所选时段内的功能测试运行（集合运行器），按执行类型细分。",
+        "over_time_title": "功能测试随时间的变化",
+        "list_title": "测试最多的集合",
+        "value_column": "测试运行",
+        "datasets": {
+          "manual": "手动",
+          "scheduled": "计划运行",
+          "cli": "Postman CLI",
+          "ci_cd": "CI/CD"
+        }
+      },
+      "performance_tests": {
+        "title": "性能测试",
+        "tooltip": "所选时段内的性能测试运行，按执行类型细分。",
+        "over_time_title": "性能测试随时间的变化",
+        "list_title": "测试最多的集合",
+        "value_column": "测试运行",
+        "datasets": {
+          "performance": "性能测试"
+        }
+      },
+      "api_catalog": {
+        "title": "API 目录中的工作区数量",
+        "list_title": "API 目录中受欢迎的工作区",
+        "name_column": "工作区",
+        "value_column": "更新次数"
+      },
+      "active_monitors": {
+        "title": "活跃监视器",
+        "over_time_title": "监视器运行随时间的变化",
+        "list_title": "最受欢迎的监视器",
+        "value_column": "监视器运行",
+        "tooltip_unit": "次操作"
+      },
+      "production_flows": {
+        "title": "生产 Flow",
+        "over_time_title": "Flow 执行随时间的变化",
+        "list_title": "最受欢迎的 Flow",
+        "value_column": "Flow 执行",
+        "development_chart_label": "开发",
+        "production_chart_label": "生产"
+      },
+      "private_api_network": {
+        "title": "私有 API 网络",
+        "tooltip": "所选时段内通过私有 API 网络分发的工作区。",
+        "list_title": "热门工作区",
+        "value_column": "查看次数"
+      },
+      "partner_workspaces": {
+        "title": "合作伙伴工作区",
+        "tooltip": "所选时段内与合作伙伴共享的工作区。",
+        "list_title": "热门工作区",
+        "value_column": "查看次数"
+      },
+      "public_workspaces": {
+        "title": "公共工作区",
+        "tooltip": "所选时段内发布到公共 API 网络的工作区。",
+        "list_title": "热门工作区",
+        "value_column": "查看次数"
+      }
+    }
+  },
+  "common": {
+    "explore_public_api": {
+      "title": "探索 Postman API ",
+      "description": "使用 Postman API 访问此报告的数据。",
+      "button": "打开 Postman Analytics API",
+      "link_cta": "打开 Postman Analytics API",
+      "button_refresh": "打开 Postman 公共工作区",
+      "link_cta_refresh": "打开 Postman 公共 API"
+    },
+    "chart": {
+      "error": "加载图表失败",
+      "data_note": "注意：由于刷新频率，最新数据可能不完整"
+    },
+    "footer": {
+      "last_updated": "上次更新：{timestamp} • {timeElapsed}"
+    },
+    "section": {
+      "current_usage": "当前用量（{period}）",
+      "current_month": "当前月份",
+      "usage_trends_over_time": "用量趋势随时间的变化",
+      "trend_overtime": "随时间的趋势",
+      "last_days": "最近 {days} 天"
+    },
+    "no_permission": {
+      "title": "无访问权限",
+      "description": "您没有查看此数据的权限。"
+    },
+    "error_state": {
+      "title": "报告不可用",
+      "description": "我们无法加载此报告，请稍后重试。"
+    },
+    "no_access_page": {
+      "title": "您没有访问此页面的权限",
+      "description": "此部分需要额外的权限。了解有关此报告的更多信息。"
+    },
+    "relative_time": {
+      "seconds_ago": "{count} 秒前",
+      "seconds_ago_plural": "{count} 秒前",
+      "minutes_ago": "{count} 分钟前",
+      "minutes_ago_plural": "{count} 分钟前",
+      "hours_ago": "{count} 小时前",
+      "hours_ago_plural": "{count} 小时前",
+      "days_ago": "{count} 天前",
+      "days_ago_plural": "{count} 天前"
+    },
+    "footer_elapsed": {
+      "just_now": "刚刚",
+      "minutes_ago": "{count, plural, one {# 分钟前} other {# 分钟前}}",
+      "hours_ago": "{count, plural, one {# 小时前} other {# 小时前}}"
+    },
+    "labels": {
+      "private_user": "私有用户",
+      "yes": "是",
+      "no": "否"
+    },
+    "status": {
+      "ok": "OK"
+    },
+    "badges": {
+      "enterprise": "企业版"
+    },
+    "actions": {
+      "view": "查看",
+      "view_all": "查看全部",
+      "view_api_calls": "查看 API 调用",
+      "download_csv": "下载 CSV",
+      "clear_all_filters": "清除所有筛选条件",
+      "load_more": "加载更多",
+      "open_dashboard": "打开报告"
+    },
+    "breadcrumb": {
+      "partner": "合作伙伴",
+      "internal": "内部",
+      "overview": "概览",
+      "team_members": "团队成员",
+      "team_overview": "团队概览",
+      "billing": "账单"
+    },
+    "accessibility": {
+      "close_drilldown": "关闭下钻",
+      "more_information": "更多信息",
+      "monthly_snapshot": "月度快照"
+    },
+    "hidden_labels": {
+      "workspace_name": "私有",
+      "collection_name": "私有"
+    },
+    "hidden_tooltips": {
+      "workspace_name": "以您当前的访问权限无法查看此工作区名称",
+      "collection_name": "以您当前的访问权限无法查看此集合名称"
+    },
+    "view_modes": {
+      "total_number": "总数",
+      "percentage": "百分比"
+    },
+    "response_codes": {
+      "2xx": "2XX",
+      "3xx": "3XX",
+      "4xx": "4XX",
+      "5xx": "5XX"
+    },
+    "table": {
+      "items_per_page": "每页项目数",
+      "no_data": "无可用数据",
+      "no_data_description": "此时间段没有数据",
+      "headers": {
+        "name": "名称",
+        "email": "电子邮件",
+        "emails": "电子邮件",
+        "username": "用户名",
+        "role": "角色",
+        "roles": "角色",
+        "joined_on": "加入于",
+        "created_on": "创建于",
+        "created_by": "创建者",
+        "invited_by": "邀请者",
+        "invite_type": "邀请类型",
+        "invite_date": "邀请日期",
+        "accepted_on": "接受于",
+        "accepted_by": "接受者",
+        "last_active": "上次活跃",
+        "last_active_on": "上次活跃于",
+        "last_active_date": "上次活跃日期",
+        "last_visited": "上次访问",
+        "members": "成员",
+        "partner": "合作伙伴",
+        "partner_id": "合作伙伴 ID",
+        "partner_name": "合作伙伴名称",
+        "workspace_name": "工作区名称",
+        "all_workspaces": "所有工作区",
+        "collection": "集合",
+        "collection_name": "集合名称",
+        "contributors": "贡献者",
+        "request": "请求",
+        "request_id": "请求 ID",
+        "reasons": "原因",
+        "requests": "请求",
+        "api_calls": "API 调用",
+        "api_requests": "API 请求",
+        "results": "结果",
+        "success_rate": "成功率",
+        "error_code": "错误码",
+        "endpoint": "端点",
+        "method": "方法",
+        "timestamp": "时间戳",
+        "type": "类型",
+        "public_profile_enabled": "已启用公共资料"
+      }
+    },
+    "banner": {
+      "workspace_data_notice": {
+        "overview": "此仪表板显示来自所有内部、合作伙伴和公共工作区的数据。个人工作区不包括在内。数据在每月结束后刷新。",
+        "internal": "个人工作区不包括在内。数据在每月结束后刷新。",
+        "partner": "内部和个人工作区不包括在内。数据在每天结束时刷新。"
+      },
+      "byok_notice": "由于此团队启用了自带密钥（BYOK），部分 API 请求数据不可用。",
+      "byok_notice_link": "详细了解 BYOK 如何影响分析数据。"
+    },
+    "byok": {
+      "masked_label": "由 BYOK 加密",
+      "masked_tooltip": "启用 BYOK 时不会收集 API 数据。",
+      "graph_title": "无可用数据",
+      "graph_description": "由于 BYOK 安全设置，未收集此数据。",
+      "enabled_tag_label": "已启用 BYOK",
+      "learn_more": "了解更多"
+    },
+    "monthly_snapshot": {
+      "metrics": {
+        "active_users": {
+          "title": "活跃用户",
+          "description": "至少使用过一次 Postman 的用户"
+        },
+        "active_workspaces": {
+          "title": "活跃工作区",
+          "description": "有查看、编辑或发送 API 请求的工作区。"
+        },
+        "api_calls": {
+          "title": "API 调用",
+          "description": "一个月内进行的 API 调用总量。"
+        }
+      },
+      "top_5": {
+        "active_users_title": "热门用户",
+        "workspaces_title": "热门工作区",
+        "collections_title": "热门集合"
+      },
+      "drilldowns": {
+        "active_users": "活跃用户",
+        "active_workspaces": "活跃工作区",
+        "active_collections": "活跃集合"
+      }
+    },
+    "monthly_snapshot_refresh": {
+      "metrics": {
+        "internal_active_users": {
+          "title": "活跃用户",
+          "description": "在内部工作区中查看、创建、编辑、复刻或发送请求的用户"
+        },
+        "active_workspaces": {
+          "description": "有查看、创建、编辑或进行 API 请求的工作区"
+        },
+        "api_calls": {
+          "title": "API 请求",
+          "description": "用户发送的 API 请求"
+        }
+      },
+      "top_5": {
+        "active_users_title": "按发送的 API 请求排名前 5 的活跃用户",
+        "workspaces_title": "按发送的 API 请求排名前 5 的工作区",
+        "collections_title": "按发送的 API 请求排名前 5 的集合"
+      }
+    }
+  },
+  "sidebar": {
+    "go_to_homepage": "前往主页 — {pageTitle}",
+    "reports": "报告",
+    "ai_report_and_usage": "AI 报告与用量",
+    "workspaces": "工作区",
+    "team_and_org": "团队与组织",
+    "feature_usage": "API 生命周期",
+    "overview": "概览",
+    "internal_metrics": "内部工作区",
+    "partnership_metrics": "合作伙伴工作区",
+    "public_network_metrics": "公共工作区",
+    "team_overview": "概览",
+    "team_members": "团队成员",
+    "billing": "账单",
+    "ai_usage": "智能体模式",
+    "usage_reports": "用量报告"
+  },
+  "ai_usage": {
+    "header": {
+      "title": "智能体模式",
+      "subtitle": "跟踪智能体模式的使用情况、用户参与度和额度消耗"
+    },
+    "time_filter": {
+      "aria_label": "智能体模式指标的日期范围",
+      "segments": {
+        "7d": "7天",
+        "30d": "30天",
+        "6mo": "6个月",
+        "1y": "1年"
+      },
+      "options": {
+        "7d": "最近 7 天",
+        "30d": "最近 30 天",
+        "6mo": "最近 6 个月",
+        "1y": "最近 12 个月"
+      }
+    },
+    "tabs": {
+      "agent_mode_users": "智能体模式用户",
+      "agent_mode_users_tooltip": "所选时段内使用智能体模式的唯一用户总数。",
+      "agent_mode_sessions": "智能体模式会话",
+      "agent_mode_sessions_tooltip": "所选时段内开始的智能体模式会话总数。当用户打开智能体模式并发送首条提示时，会话即开始。",
+      "messages_sent": "已发送消息",
+      "messages_sent_tooltip": "所选时段内在智能体模式中发送的消息总数。",
+      "ai_credits_used": "已使用的 AI 额度",
+      "ai_credits_used_tooltip": "当前账单周期内使用的 AI 额度总数。此数据不受日期范围筛选条件的影响。"
+    },
+    "charts": {
+      "active_members_over_time": "活跃用户随时间的变化",
+      "chat_volume_over_time": "聊天量随时间的变化",
+      "message_volume_over_time": "消息量随时间的变化",
+      "credits_by_agent_model": "按智能体模型划分的额度",
+      "view_details": "查看详情",
+      "returning_users": "回访用户",
+      "new_users": "新用户",
+      "credits_tile_unlimited": "无限制"
+    },
+    "drilldowns": {
+      "messages_by_agent_model": "按智能体模型划分的消息",
+      "active_members_over_time_title": "活跃用户随时间的变化",
+      "credits_by_agent_model_title": "按智能体模型划分的额度",
+      "team_view": "团队视图",
+      "agent_model": "智能体模型",
+      "message": "已发送消息",
+      "credits": "已使用的 AI 额度",
+      "rank_column": "#",
+      "user_segment": "用户细分",
+      "active_members": "活跃用户",
+      "agent_mode_sessions_column": "智能体模式会话",
+      "messages_sent_column": "已发送消息",
+      "credits_used_column": "已使用额度"
+    },
+    "member_leaderboard": {
+      "title": "使用排行榜",
+      "empty": "未找到此时段的用户使用情况。",
+      "error": "加载用户排行榜数据失败。",
+      "you": "您",
+      "filters": {
+        "show_all_members": "显示所有用户",
+        "selected_members": "已选择 {count} 个用户",
+        "selected_members_plural": "已选择 {count} 个用户",
+        "no_members": "未找到用户",
+        "aria_label": "筛选排行榜上的用户"
+      },
+      "columns": {
+        "rank": "#",
+        "member": "用户"
+      }
+    },
+    "top_agent_models": {
+      "title": "使用最多的智能体模型",
+      "empty": "未找到此时段的智能体模型使用情况。",
+      "error": "加载热门智能体模型数据失败。"
+    },
+    "peak_activity_heatmap": {
+      "title": "活动高峰",
+      "error": "加载活动高峰数据失败。",
+      "empty": "此时段没有活动分布。",
+      "peak_unknown": "—",
+      "most_active_day": "最活跃的一天",
+      "most_active_week": "最活跃的一周",
+      "most_active_month": "最活跃的月份",
+      "most_active_quarter": "最活跃的季度",
+      "tooltip_credits": "已消耗 {count} 额度",
+      "tooltip_hour_credits": "{hour}：已消耗 {count} 额度",
+      "bucket_empty": "无",
+      "bucket_high": "高",
+      "bucket_medium": "中",
+      "bucket_low": "低",
+      "aria_cell": "{title}。{credits}。{bucket}用量。"
+    },
+    "refresh_action": "刷新",
+    "error": "加载 AI 报告数据失败。"
+  },
+  "layout": {
+    "toggle": {
+      "hide_left": "隐藏左侧边栏",
+      "show_left": "显示左侧边栏",
+      "hide_right": "隐藏右侧边栏",
+      "show_right": "显示右侧边栏"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "settings_page": {
+    "heading": "共享保险库",
+    "description": "使用共享保险库与您的团队安全地共享敏感数据。开启后，共享保险库默认在除公共工作区外的每个工作区中可用。您可以在下方按工作区进行覆盖，以执行最小权限原则。Postman 的密钥保护引擎会自动加以利用。",
+    "update_error": "更新共享保险库设置失败。请稍后重试。",
+    "toast_enabled": "已为您的团队开启共享保险库",
+    "toast_disabled": "已为您的团队关闭共享保险库",
+    "button_switch_on": "开启",
+    "button_switch_off": "关闭",
+    "global_switch_off_tooltip": "部分工作区已启用“移至共享保险库”策略。请更改策略以关闭共享保险库。"
+  },
+  "workspace_selector": {
+    "column_enabled": "共享保险库",
+    "bulk_enable": "开启",
+    "bulk_disable": "关闭",
+    "toast_update_success": "已成功更新共享保险库设置",
+    "toast_update_error": "更新工作区设置失败。请重试。",
+    "empty_title": "未找到工作区",
+    "empty_description": "请尝试调整筛选条件或搜索以查找工作区。",
+    "error_title": "无法加载工作区",
+    "error_description": "我们无法为您的工作区加载共享保险库设置。请重试。",
+    "error_retry": "重试",
+    "public_workspace_disabled_tooltip": "出于安全原因，公共工作区不支持共享保险库。",
+    "workspace_switch_off_tooltip": "此工作区已启用“移至共享保险库”策略。请更改策略以关闭共享保险库。"
+  }
+}

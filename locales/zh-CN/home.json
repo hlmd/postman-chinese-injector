@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "title": "Postman API 平台",
+    "description": "Postman 让 API 开发变得轻松。我们的平台提供各种工具，简化 API 构建过程的每一步，并优化协作，让您能够更快地创建更优质的 API。"
+  },
+  "sidebar": {
+    "heading": "团队成员",
+    "invite_button_label": "邀请",
+    "view_all_members": "查看{count, plural, =1 {# 名成员} other {全部 # 名成员}}",
+    "members_count_button": "{count, number} {count, plural, one {名成员} other {名成员}}",
+    "open_team_members_menu": "打开团队成员菜单",
+    "show_more_members": "显示更多成员",
+    "upgrade_to_invite_people": "升级以邀请他人加入团队",
+    "primary_navigation_aria_label": "主页导航",
+    "discoverable_teams": {
+      "collaborate": "实时协作，为所有 API 工作流建立统一的事实来源。",
+      "create_team": "创建团队",
+      "view_all_teams": "查看所有团队 →",
+      "join_a_team_in_your_org": "加入来自 {orgName} 的团队",
+      "join_teams": "加入您组织中的团队",
+      "best_with_teams": "Postman 与团队协作时效果最佳",
+      "toast": {
+        "request_sent": "加入请求已提交",
+        "something_went_wrong": "出错了",
+        "success_desc": "您的请求获批后我们会通知您。",
+        "failure_desc": "发送请求时发生意外错误。请重试。"
+      }
+    },
+    "tabs": {
+      "home": "主页",
+      "workspaces": "工作区",
+      "teams": "团队",
+      "private_api_network": "私有 API 网络",
+      "unified_api_network": "统一 API 网络",
+      "public_api_network": "公共 API 网络",
+      "api_governance": "API 治理",
+      "integrations": "集成",
+      "reports": "报告",
+      "api_catalog": "API 目录",
+      "api_catalog_disabled_tooltip": "API 目录适用于企业版计划的用户。",
+      "team_workspaces_nav_disabled_tooltip": "您没有访问团队工作区的权限。",
+      "application_inventory": "应用清单",
+      "application_inventory_disabled_tooltip": "应用清单适用于 Solo 计划及以上的用户。",
+      "agents": "智能体任务",
+      "agents_beta_label": "Beta"
+    },
+    "external_links": {
+      "what_is_postman": "什么是 Postman",
+      "learning_center": "学习中心",
+      "support_center": "支持中心",
+      "postman_enterprise": "Postman 企业版",
+      "how_to_publish": "如何发布",
+      "download_desktop_app": "下载桌面应用"
+    },
+    "announcement_carousel": {
+      "heading": {
+        "label": "产品{announcementLength, plural, =1 {公告(#)} other {公告(#)}}"
+      },
+      "toggle_button_aria_label": {
+        "open_carousel": "打开公告轮播",
+        "close_carousel": "关闭公告轮播"
+      }
+    }
+  },
+  "overview": {
+    "recent_workspaces": {
+      "aria_label": "最近的工作区列表",
+      "heading": {
+        "label": "最近访问的工作区",
+        "recently_visited": "最近访问的工作区",
+        "your_workspaces": "您的工作区"
+      },
+      "reload_button_label": "重新加载",
+      "zero_workspace_heading": "您最近访问的工作区将显示在此处。",
+      "blank_state_title": "无法加载工作区",
+      "blank_state_description": "只是线路出了点小问题。请尝试重新加载。",
+      "more_contributors": "查看{contributorsCount, plural, =1 {另外 # 名贡献者} other {另外 # 名贡献者}}",
+      "default_contributor_name": "私密用户"
+    },
+    "free_plan_banner": {
+      "heading": "与您的团队无限协作",
+      "description": "您现在可以与团队无限共享请求。将所有已归档的集合恢复到您的工作区。",
+      "link_text": "详细了解如何恢复已归档的集合",
+      "button_text": "恢复已归档的集合"
+    },
+    "auto_flex_banner": {
+      "description": "邀请团队成员时无需购买席位。立即开始协作，稍后付费。",
+      "title": "使用 Auto-Flex 实现快速灵活的协作",
+      "button_text": "获取 Auto-Flex",
+      "link_text": "了解更多"
+    },
+    "tidy_workspace_nudge": "<0>整理一下？</0> <1><0>开始归档</0></1> <2>不活跃的工作区。</2>",
+    "request_widget_modal": {
+      "heading": "请求小组件",
+      "description": "我们正在打造更加个性化的主页体验，您的意见至关重要。请告诉我们您希望在主页上看到什么小组件，以及原因？",
+      "checkbox_label": "我愿意接受简短的后续电话沟通，以分享更多详情",
+      "cancel_button": "取消",
+      "submit_button": "提交",
+      "success_description": "谢谢！您的小组件请求已提交。",
+      "feedback_required": "请输入您的留言",
+      "feedback_placeholder": "请输入您的留言…"
+    }
+  },
+  "explore": {
+    "heading": {
+      "label": "探索热门 API",
+      "action": {
+        "explore_all": "探索全部"
+      }
+    },
+    "entity_card": {
+      "header": {
+        "copy_link_tooltip": "复制链接"
+      },
+      "metrics": {
+        "fork": "复刻",
+        "watch": "关注",
+        "unwatch": "取消关注"
+      },
+      "fork": {
+        "tooltip": "{count, plural, =1 {# 个复刻} other {# 个复刻}}",
+        "string_count_tooltip": "{count} 个复刻",
+        "no_workspace_error": "未找到工作区",
+        "default_error": "复刻此集合时出错，请重试",
+        "default_toast_desc": "由于某些错误，无法复刻集合。"
+      },
+      "watch": {
+        "watching_label": "关注中",
+        "watch_label": "关注"
+      },
+      "by": "作者",
+      "updated": "已更新",
+      "updated_on": "更新于"
+    }
+  },
+  "run_in_postman": {
+    "heading": {
+      "label": "创建 Run in Postman 按钮",
+      "description": "在您的网站或社交渠道添加“Run in Postman”按钮，可以让用户更轻松地接入您的 API。首先选择您希望该按钮指向的集合和环境。"
+    },
+    "card": {
+      "remove": "移除",
+      "forks": "{count, plural, =1 {# 个复刻} other {# 个复刻}}",
+      "watchers": "{count, plural, =1 {# 名关注者} other {# 名关注者}}",
+      "by": "作者",
+      "team": "团队",
+      "user": "用户"
+    },
+    "select_dropdown": {
+      "label": "选择集合",
+      "placeholder": "搜索集合"
+    }
+  }
+}

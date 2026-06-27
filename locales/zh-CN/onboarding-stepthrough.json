@@ -1,0 +1,43 @@
+{
+  "steps": {
+    "intro": {
+      "header": "欢迎！让我们开始吧 🚀",
+      "description": "初次使用？没问题！我们精心准备了一份快速的分步指南，帮助您从基础知识入门。",
+      "minimized_content": "从这里开始 🚀",
+      "time_estimate": "3 个步骤 · 3-5 分钟",
+      "cta_text": "开始使用"
+    },
+    "send_request": {
+      "header": "先从发送一个请求开始",
+      "description": "通过创建并发送请求来测试您的 API 的行为。",
+      "minimized_content": "从这里开始 🚀"
+    },
+    "save_collection": {
+      "header": "保存您的请求，以便再次轻松访问",
+      "description": "将请求保存到集合中，让它们井然有序、触手可及。\n\n提示：使用 ⌘S 可快速保存。",
+      "minimized_content": "您做得很棒 💪"
+    },
+    "use_postbot": {
+      "header": "借助 Postbot 增强您的请求",
+      "description": "让 Postbot 帮您验证响应、调试问题、添加文档等。",
+      "minimized_content": "即将完成 🙌"
+    },
+    "finished": {
+      "header": "您搞定了 🎉",
+      "description": "恭喜您创建了第一个集合！现在去探索更多改进 API 工作流的方法吧。",
+      "minimized_content": "✅ 接下来做什么？",
+      "add_variables": "添加变量",
+      "document": "为您的 API 编写文档",
+      "automate": "自动化 API 测试",
+      "templates": "探索模板"
+    },
+    "dont_show_button_text": "不再显示",
+    "skip_button_text": "跳过此步骤",
+    "show_button_text": "教我怎么做"
+  },
+  "guide_title": "您的入门指南",
+  "save_popover": {
+    "description": "在此处保存请求，或使用键盘上的 {shortcut}。",
+    "cta_text": "知道了"
+  }
+}

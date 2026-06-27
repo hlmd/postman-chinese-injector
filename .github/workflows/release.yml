@@ -1,0 +1,70 @@
+name: build-binaries
+
+# 打 tag（v*）时构建全平台单文件二进制并作为 Release 资产上传；
+# 也可在 Actions 页手动触发（workflow_dispatch）只产出构建产物。
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # 允许 action-gh-release 创建 Release / 上传资产
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install deps
+        run: bun install
+
+      - name: Build embeddable data (zh-CN)
+        run: node scripts/build-data.js
+
+      - name: Cross-compile all targets
+        run: |
+          set -e
+          mkdir -p dist
+          build() { bun build ./postman-chinese-injector.js --compile --minify --target="bun-$1" --outfile "dist/$2"; }
+          build windows-x64  postman-chinese-injector-win-x64.exe
+          build linux-x64     postman-chinese-injector-linux-x64
+          build linux-arm64   postman-chinese-injector-linux-arm64
+          build darwin-x64    postman-chinese-injector-macos-x64
+          build darwin-arm64  postman-chinese-injector-macos-arm64
+          ls -la dist
+
+      - name: Build browser extension (zip)
+        run: node scripts/build-extension.js
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: postman-chinese-injector-binaries
+          path: dist/*
+
+      - name: Publish release assets
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          # 仅上传二进制与扩展 zip，不上传 dist/extension 解包目录
+          files: dist/postman-chinese-injector-*
+          body: |
+            把中文翻译注入 Postman 的非官方第三方工具。
+
+            - **桌面端**：下载对应平台的单文件，完全退出 Postman 后运行即可注入；`--restore` 还原。
+            - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
+              「加载已解压的扩展程序」加载。
+
+            详见 README。
+
+            ---
+            ⚠️ **法律声明**：本项目为社区维护的非官方工具，**与 Postman, Inc. 无任何关联**，
+            未获其授权、赞助或背书；"Postman" 是 Postman, Inc. 的商标。本仓库与发行包**不含、
+            也不分发** Postman 的任何源代码 / 二进制 / 原始语言包——仅有本项目自己的脚本与社区编写的
+            中文译文。本工具在你**自己的机器**上修改你**自己安装**的 Postman，是否使用由你自行决定
+            并承担风险，请遵守 Postman 的服务条款与 EULA。代码以 MIT 许可发布（不覆盖派生自 Postman
+            文案的译文数据）。本说明不构成法律意见。

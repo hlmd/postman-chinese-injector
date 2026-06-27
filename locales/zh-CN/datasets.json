@@ -1,0 +1,104 @@
+{
+  "source_type": {
+    "local": "本地文件",
+    "remote": "从远程 URL 下载",
+    "mysql": "MySQL",
+    "postgres": "PostgreSQL",
+    "cloud": "Postman Cloud 文件"
+  },
+  "source_address_bar": {
+    "placeholder": {
+      "default": "输入 URL 或连接字符串",
+      "local_file": "未选择文件",
+      "remote_url": "https://example.com/data.csv"
+    },
+    "select_source": "选择来源",
+    "source_type_label": "来源类型",
+    "remote_file": "远程文件"
+  },
+  "source_pane": {
+    "committed_actions": {
+      "try_again": "重试",
+      "remove": "移除",
+      "update": "更新"
+    },
+    "form_actions": {
+      "save": "保存"
+    },
+    "empty_state": {
+      "title": "配置您的数据源和视图",
+      "description": "连接您的数据库或添加数据文件，以创建工作数据的视图。"
+    },
+    "configuration_label": "配置"
+  },
+  "source_config": {
+    "connection_status": {
+      "connected": "已连接",
+      "failed": "连接失败"
+    },
+    "test_connection": "测试",
+    "field": {
+      "host": "主机",
+      "port": "端口",
+      "database": "数据库",
+      "username": "用户名",
+      "password": "密码",
+      "table": "表",
+      "schema": "架构"
+    },
+    "copy_to_workspace": {
+      "label": "将文件复制到工作区",
+      "description": "将文件复制到工作区目录，以便在与他人分享时数据集仍可用。对于非常大的文件请禁用此项。"
+    }
+  },
+  "secret_field": {
+    "link_to_vault": "链接到保险库密钥",
+    "unlink_vault": "取消链接保险库密钥",
+    "link_aria_label": "将 {label} 链接到保险库密钥",
+    "unlink_aria_label": "取消 {label} 与保险库密钥的链接",
+    "search_placeholder": "搜索密钥……",
+    "no_matching": "没有匹配的密钥",
+    "no_available": "没有可用的保险库密钥"
+  },
+  "workbench_header": {
+    "button": {
+      "save": "保存",
+      "add_new_source": "添加新数据源"
+    }
+  },
+  "sidebar_empty_state": {
+    "sources_description": "未配置数据源。",
+    "views_description": "未添加视图。"
+  },
+  "data_source_edit": {
+    "loading": "正在加载数据源……",
+    "tab": {
+      "data": "数据",
+      "settings": "设置"
+    },
+    "refresh": "刷新",
+    "refreshed_at": "刷新于 {timestamp}"
+  },
+  "data_view": {
+    "run": "运行",
+    "query_label": "查询",
+    "empty_table": "运行查询以查看数据"
+  },
+  "dataset_create": {
+    "new_dataset": "新建数据集",
+    "save_view": "保存视图"
+  },
+  "description": {
+    "editor_placeholder": "添加描述……"
+  },
+  "common": {
+    "cancel": "取消",
+    "breadcrumb": {
+      "dataset_fallback": "数据集",
+      "source_fallback": "数据源",
+      "view_fallback": "视图",
+      "views_label": "视图",
+      "sources_label": "数据源"
+    }
+  }
+}

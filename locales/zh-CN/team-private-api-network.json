@@ -1,0 +1,57 @@
+{
+  "purchase_plan_empty_state": {
+    "enterprise": {
+      "title": "升级以开始使用专有 API 网络",
+      "description": "借助专有 API 网络，团队可以始终访问可用元素，将它们组织到文件夹中，并使其易于发现和使用。",
+      "primary_button": "升级到企业版",
+      "secondary_button": "了解更多"
+    },
+    "solution": {
+      "title": "嘿，这是什么？这是专有 API 网络！",
+      "description": "借助专有 API 网络，团队可以始终访问可用元素，将它们组织到文件夹中，并使其易于发现和使用。购买 Postman 的内部 API 管理解决方案后即可访问专有网络。",
+      "primary_button": "购买解决方案",
+      "secondary_button": "了解更多"
+    },
+    "ask_admin": {
+      "title": "嘿，这是什么？这是专有 API 网络！",
+      "description": "借助专有 API 网络，团队可以访问元素并将其组织到文件夹中，使其易于发现。请管理员购买 Postman 的内部 API 管理解决方案，以访问专有 API 网络。"
+    }
+  },
+  "header": "专有 API 网络",
+  "view_network": "查看网络",
+  "no_access": {
+    "title": "您没有访问权限",
+    "description": "您没有查看此专有 API 网络设置的权限"
+  },
+  "not_enough_permission": {
+    "title": "您没有查看这些设置的权限",
+    "description": "只有具备网络管理员或超级管理员角色的成员才能查看和编辑这些设置。"
+  },
+  "settings": {
+    "restricted_access": {
+      "enabled": {
+        "title": "审批流程已启用",
+        "subtext": "API 网络管理员和文件夹管理员可以审核并批准要添加到网络的元素。"
+      },
+      "disabled": {
+        "title": "审批流程已禁用",
+        "subtext": "API 网络管理员和文件夹管理员可以审核并批准要添加到网络的元素。"
+      }
+    },
+    "tooltip": "审批流程不再是可选项。指派文件夹管理员以分派工作。"
+  },
+  "errors": {
+    "private_network_permissions": "获取专有网络权限时出错",
+    "private_network_access_restriction": "获取专有网络访问限制状态时出错"
+  },
+  "approval_process_warning_modal": {
+    "heading": "启用审批流程？",
+    "para1": "启用后将无法更改。",
+    "para2": "作为一项质量保障措施，现在建议使用专有 API 网络的团队启用审批流程。",
+    "para3": "审批流程确保只有特定团队成员才能批准或向您的专有 API 网络添加元素。",
+    "primary_button": "启用审批",
+    "secondary_button": "取消",
+    "success_msg": "审批流程已启用。",
+    "error_msg": "更新专有网络访问限制时出错"
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "landing_tab": {
+    "heading": "新建代理会话",
+    "body": {
+      "heading": "捕获 HTTPS 流量",
+      "description": "使用 Postman 的代理来检查来自您的 Android、iOS、Linux、macOS 和 Windows 设备的 HTTPS 通信，更快地构建客户端应用程序！",
+      "system_traffic": {
+        "heading": "系统流量",
+        "description": "捕获并检查您设备上的应用流量。",
+        "info": "首次启动代理会话时，我们将请求安装证书。",
+        "proxy_button": "启动代理会话",
+        "proxy_button_tooltip": "已有一个会话处于活动状态。请先关闭活动会话，才能启动新会话。"
+      },
+      "browser_traffic": {
+        "heading": "浏览器流量",
+        "description": "要捕获并检查浏览器上的流量，请下载 Postman 的拦截器扩展程序。",
+        "extensions": {
+          "chrome": {
+            "alt": "为 Google Chrome 下载 Postman Interceptor",
+            "label": "Chrome 商店"
+          },
+          "safari": {
+            "alt": "为 Safari 下载 Postman Interceptor",
+            "label": "App Store"
+          },
+          "mozilla": {
+            "alt": "为 Mozilla Firefox 下载 Postman Interceptor",
+            "label": "Mozilla 附加组件"
+          },
+          "edge": {
+            "alt": "为 Microsoft Edge 下载 Postman Interceptor",
+            "label": "Edge 附加组件"
+          }
+        }
+      }
+    }
+  },
+  "new_session_tab": {
+    "name": "Postman 调试会话",
+    "no_cookies_captures": "尚未捕获任何 Cookie。",
+    "start_time": "会话开始时间：",
+    "session_size": "会话大小：",
+    "view_past_sessions": "查看过往会话",
+    "save_requests": "保存请求",
+    "duration": "持续时间：",
+    "source": "来源：",
+    "configuration": "配置",
+    "tabs": {
+      "overview": {
+        "label": "概览",
+        "classify_by": "请求分类依据",
+        "empty_state": "此会话没有可用的分析数据",
+        "search_placeholder": "搜索已捕获的请求",
+        "table": {
+          "methods": "方法",
+          "no_of_requests": "请求数量",
+          "global_filter_placeholder": "搜索已捕获的请求",
+          "pre_selection": {
+            "initial": "已选择此页面上的所有请求。",
+            "all_selected_session": "已选择此会话中的全部 {totalRequestsCount} 个请求。",
+            "all_selected_page": "已选择此会话中的全部 {changeInSize} 个请求。"
+          },
+          "post_selection": {
+            "initial": "选择此会话中的全部 {totalRequestsCount} 个请求",
+            "clear": "清除选择",
+            "select_all": "选择此会话中的全部 {totalRequestsCount} 个请求"
+          },
+          "columns": {
+            "methods": "方法",
+            "url": "URL",
+            "domain": "域名",
+            "type": "类型",
+            "status": "状态",
+            "responseSize": "响应大小",
+            "responseTime": "响应时间"
+          }
+        },
+        "actions": {
+          "add_collection": "添加到集合",
+          "add_collection_tooltip": "未选择要添加的请求。",
+          "delete": "删除",
+          "delete_tooltip": "未选择要删除的请求。"
+        },
+        "chart": {
+          "methods": "方法",
+          "no_of_requests": "请求数量"
+        },
+        "dropdown_options": {
+          "method": "方法",
+          "domain": "域名",
+          "content_type": "内容类型",
+          "status_code": "状态码"
+        }
+      },
+      "requests": {
+        "label": "请求",
+        "empty_state": "此会话中未捕获任何请求",
+        "no_request_captured": "尚未捕获任何请求。",
+        "tabs": {
+          "requests": "请求",
+          "cookies": "Cookie"
+        },
+        "body": {
+          "search_placeholder": "搜索已捕获的请求",
+          "delete": "删除",
+          "delete_tooltip": "未选择要删除的请求。",
+          "columns": {
+            "methods": "方法",
+            "url": "URL",
+            "domain": "域名",
+            "type": "类型",
+            "status": "状态",
+            "response_size": "响应大小",
+            "response_time": "响应时间",
+            "time_stamp": "时间戳"
+          }
+        }
+      },
+      "cookies": {
+        "label": "Cookie",
+        "empty_state": "此会话中未捕获任何 Cookie",
+        "view_cookies_for_captured_requests": "查看已捕获请求的 Cookie",
+        "view_cookies_for_captured_requests_description": "启用捕获 Cookie 以查看已捕获请求的 Cookie。捕获后，您可以将 Cookie 添加到 Postman Cookie Jar，从而在 Postman 工作流中使用它们。",
+        "capture_success": "将为所有新捕获的请求存储 Cookie。",
+        "secondary_action": "了解更多",
+        "body": {
+          "search_placeholder": "搜索已捕获的 Cookie",
+          "add": "添加到 Cookie Jar",
+          "delete": "删除",
+          "empty_state": "未找到结果",
+          "columns": {
+            "name": "名称",
+            "value": "值",
+            "path": "路径",
+            "expires": "过期时间",
+            "http_only": "HttpOnly",
+            "secure": "Secure",
+            "timestamp": "时间戳"
+          },
+          "page_items_label": "每页项目数",
+          "request": "请求：<1>{requestMethod}</1> <2><0>{url}</0></2>",
+          "delete_modal": {
+            "heading": "删除 Cookie？",
+            "content": "此操作将从会话中删除这些 Cookie。删除后，您将无法再将它们添加到 Cookie Jar。",
+            "delete_button": "删除 Cookie",
+            "cancel_button": "取消"
+          },
+          "toasters": {
+            "add_title": "Cookie 已添加到 Cookie Jar",
+            "add_title_plural": "Cookie 已添加到 Cookie Jar",
+            "add_description": "{count, plural, one {# 个 Cookie 已} other {# 个 Cookie 已}}添加到 Postman Cookie Jar。 ",
+            "remove_description": "{count, plural, one {# 个 Cookie 已} other {# 个 Cookie 已}}从会话中删除。 "
+          },
+          "view_more": "查看更多",
+          "no_of_cookies": "{count, plural, one {# 个 Cookie} other {# 个 Cookie}}"
+        }
+      }
+    }
+  },
+  "capture_proxy_response_settings": {
+    "label": "保存请求的响应",
+    "tooltip": "Postman 当前遵循的标准化响应大小限制为 5MB。当前不支持保存媒体类型的响应。"
+  },
+  "capture_cookies": "捕获 Cookie",
+  "session_name_editor": {
+    "rename_success": "会话重命名成功",
+    "title": "代理会话"
+  },
+  "footer": {
+    "options": {
+      "api_key": "API Key",
+      "access_token": "Access Token",
+      "webhook_url": "Webhook URL",
+      "toasters": {
+        "title": "会话已暂停",
+        "is_interceptor_session": "已通过拦截器拦截的请求将继续显示在会话中。",
+        "is_not_interceptor_session": "已通过代理隧道传输的请求将继续显示在会话中。"
+      },
+      "actions": {
+        "resume": "恢复",
+        "resume_tooltip": "恢复会话",
+        "pause": "暂停",
+        "pause_tooltip": "暂停会话",
+        "stop": "停止",
+        "stop_tooltip": "停止捕获"
+      }
+    }
+  },
+  "table": {
+    "columns": {
+      "status": "状态",
+      "methods": "方法",
+      "url": "URL",
+      "domain": "域名",
+      "type": "类型",
+      "response_size": "响应大小",
+      "response_time": "响应时间",
+      "timestamp": "时间戳"
+    }
+  },
+  "session_table": {
+    "search_placeholder": "搜索已捕获的请求",
+    "delete": "删除",
+    "delete_tooltip": "未选择要删除的请求。",
+    "global_filter_placeholder": "搜索已捕获的请求",
+    "toaster": "删除 {count, plural, one {# 个请求} other {# 个请求}}失败"
+  },
+  "add_session_request_to_table": {
+    "create_row_placeholder": "为您的集合命名",
+    "no_of_requests": "{count, plural, one {# 个请求} other {# 个请求}}",
+    "modal": {
+      "header": "保存 {count, plural, one {# 个请求} other {# 个请求}}",
+      "body": {
+        "title": "选择要保存到的集合",
+        "search_placeholder": "搜索集合",
+        "save_text": "将 {count, plural, one {# 个请求} other {# 个请求}}保存到 {targetName}",
+        "organize_text": "请求组织方式",
+        "domainName": "域名",
+        "endPoints": "端点"
+      },
+      "footer": {
+        "new_collection": "新建集合",
+        "cancel": "取消",
+        "back": "返回",
+        "save": "保存"
+      }
+    },
+    "toasters": {
+      "error_title": "错误",
+      "error_description": "无法将请求添加到集合。请重试。",
+      "view_now": "立即查看",
+      "success_title": "{count, plural, one {# 个请求} other {# 个请求}}已添加到集合",
+      "success_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}}已添加到 {collectionName} 集合",
+      "info_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}}正在添加到 {collectionName} 集合。所有请求添加完成后将通知您"
+    }
+  },
+  "table_row_expanded": {
+    "heading": "请求头",
+    "request_body": "请求体",
+    "response_headers": "响应头",
+    "response_body": "响应体",
+    "url": "URL：{url}",
+    "method": "方法：{method}",
+    "status_code": "状态码：{statusCode}",
+    "tabs": {
+      "response": {
+        "label": "响应",
+        "no_body": "此响应没有响应体",
+        "heading": "响应头",
+        "not_available": "响应头不可用",
+        "size": "{size} B"
+      },
+      "body": "响应体",
+      "headers": {
+        "label": "头部",
+        "heading": "常规",
+        "view": {
+          "url": "URL",
+          "method": "方法",
+          "status": "状态",
+          "request_headers_size": "请求头大小",
+          "request_body_size": "请求体大小",
+          "response_headers_size": "响应头大小",
+          "response_body_size": "响应体大小",
+          "timestamp": "时间戳"
+        }
+      },
+      "request": {
+        "label": "请求",
+        "heading": "请求参数",
+        "not_available": "请求头不可用",
+        "no_body": "此请求没有请求体"
+      }
+    }
+  },
+  "history": {
+    "delete_tooltip": "删除历史记录",
+    "rename_session": "重命名会话",
+    "delete_session": "删除会话",
+    "delete_session_disabled": "会话进行中",
+    "success_toaster": "会话重命名成功"
+  },
+  "domain_endpoint_settings": {
+    "heading": "请求组织方式",
+    "domain": "域名",
+    "endpoint": "端点"
+  },
+  "memory_units": {
+    "bytes": "{size} B",
+    "kilobytes": "{size} KB",
+    "megabytes": "{size} MB",
+    "gigabytes": "{size} GB"
+  },
+  "filters": {
+    "url": {
+      "include_label": "URL 必须包含",
+      "exclude_label": "URL 不能包含",
+      "label_info": "支持正则表达式",
+      "valid_regex": "请输入有效的正则表达式。",
+      "placeholder": "按 “Enter” 键应用筛选"
+    },
+    "status_codes": {
+      "200": "200",
+      "201": "201",
+      "204": "204",
+      "404": "404",
+      "304": "304",
+      "400": "400",
+      "401": "401",
+      "403": "403",
+      "409": "409",
+      "500": "500",
+      "100": "100",
+      "101": "101",
+      "102": "102",
+      "103": "103",
+      "202": "202",
+      "203": "203",
+      "205": "205",
+      "206": "206",
+      "208": "208",
+      "226": "226",
+      "300": "300",
+      "301": "301",
+      "302": "302",
+      "303": "303",
+      "305": "305",
+      "306": "306",
+      "307": "307",
+      "308": "308",
+      "402": "402",
+      "405": "405",
+      "406": "406",
+      "407": "407",
+      "408": "408",
+      "410": "410",
+      "411": "411",
+      "412": "412",
+      "413": "413",
+      "414": "414",
+      "415": "415",
+      "416": "416",
+      "417": "417",
+      "418": "418",
+      "421": "421",
+      "422": "422",
+      "423": "423",
+      "424": "424",
+      "425": "425",
+      "426": "426",
+      "428": "428",
+      "429": "429",
+      "431": "431",
+      "451": "451",
+      "501": "501",
+      "502": "502",
+      "503": "503",
+      "504": "504",
+      "505": "505",
+      "506": "506",
+      "507": "507",
+      "508": "508",
+      "510": "510",
+      "511": "511"
+    },
+    "methods": {
+      "get": "GET",
+      "post": "POST",
+      "put": "PUT",
+      "patch": "PATCH",
+      "delete": "DELETE",
+      "copy": "COPY",
+      "head": "HEAD",
+      "options": "OPTIONS",
+      "link": "LINK",
+      "unlink": "UNLINK",
+      "purge": "PURGE",
+      "lock": "LOCK",
+      "unlock": "UNLOCK",
+      "propfind": "PROPFIND",
+      "view": "VIEW"
+    },
+    "resource_types": {
+      "script": "JS",
+      "stylesheet": "CSS",
+      "image": "Img",
+      "html": "HTML",
+      "json": "JSON",
+      "xml": "XML",
+      "text": "Text",
+      "other": "其他"
+    }
+  }
+}

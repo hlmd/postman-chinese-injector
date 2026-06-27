@@ -1,0 +1,292 @@
+{
+  "address_bar": {
+    "url_input": {
+      "placeholder": {
+        "enter_url": "输入 URL",
+        "tls_message": "使用 mqtts:// 通过 TLS 连接"
+      },
+      "error": "URL 为必填项"
+    },
+    "client_id_input": {
+      "client_id": "Client ID",
+      "id": "ID:"
+    },
+    "version_switcher": {
+      "tooltip": "连接时无法更改版本"
+    },
+    "connect_button": {
+      "tooltip": {
+        "no_permission": "您没有权限在此工作区执行此操作。"
+      }
+    }
+  },
+  "agent": {
+    "errors": {
+      "agent_not_connected": "切换到 Postman Desktop Agent 以连接 MQTT broker。",
+      "agent_not_supported": "您使用的 Postman Desktop Agent 版本较旧，不支持 MQTT 请求。请更新 Desktop Agent 后重试。",
+      "agent_not_ready": "请确保 Desktop Agent 已安装并正在运行。"
+    }
+  },
+  "compose_area": {
+    "headers": {
+      "editor": "编辑器",
+      "saved_messages": "已保存的消息"
+    },
+    "toolbar": {
+      "properties_button": {
+        "tooltip": "为每条发送的消息传递元数据。",
+        "text": "属性"
+      },
+      "retain": "保留",
+      "beautify": "美化",
+      "add_topic": "添加主题",
+      "send": "发送",
+      "qos": "QoS:",
+      "add_topic_error": "主题为必填项",
+      "messages": {
+        "settings": {
+          "response_topic": {
+            "label": "响应主题",
+            "placeholder": "添加主题"
+          },
+          "correlation_data": {
+            "label": "关联数据",
+            "placeholder": "添加数据"
+          },
+          "expiry_interval": {
+            "label": "消息过期间隔",
+            "placeholder": "添加间隔",
+            "unit": "毫秒"
+          },
+          "content_type": {
+            "label": "内容类型",
+            "placeholder": "添加类型"
+          },
+          "payload_format_indicator": {
+            "label": "负载格式指示符",
+            "placeholder": "添加指示符"
+          },
+          "topic_alias": {
+            "label": "主题别名",
+            "placeholder": "添加整数值"
+          },
+          "heading": "设置"
+        }
+      }
+    },
+    "properties": {
+      "columns": {
+        "properties": {
+          "label": "属性",
+          "placeholder": "添加属性"
+        },
+        "value": {
+          "label": "值",
+          "placeholder": "添加值"
+        }
+      }
+    },
+    "saved_messages": {
+      "empty": "添加消息以便在活动连接期间重复使用"
+    }
+  },
+  "editor": {
+    "tabs": {
+      "message": "消息",
+      "topics": "主题",
+      "authorization": "授权",
+      "properties": "属性",
+      "last_will": "遗嘱消息",
+      "settings": "设置"
+    },
+    "request_heading": "请求"
+  },
+  "request_properties": {
+    "columns": {
+      "properties": {
+        "label": "属性",
+        "placeholder": "添加属性"
+      },
+      "value": {
+        "label": "值",
+        "placeholder": "添加值"
+      },
+      "description": {
+        "label": "描述",
+        "placeholder": "添加描述"
+      }
+    }
+  },
+  "topics": {
+    "columns": {
+      "topics": {
+        "label": "主题",
+        "placeholder": "添加主题"
+      },
+      "subscribe": {
+        "label": "订阅"
+      },
+      "description": {
+        "label": "描述",
+        "placeholder": "添加描述"
+      },
+      "qos": {
+        "label": "QoS"
+      }
+    },
+    "validation_error": "主题名称不能为空",
+    "settings": {
+      "subscription_id": {
+        "label": "订阅标识符",
+        "placeholder": "添加标识符"
+      },
+      "filter_local_msg": {
+        "label": "过滤本地消息"
+      },
+      "retain_as_published": {
+        "label": "按发布保留"
+      },
+      "retain_handling": {
+        "label": "保留处理",
+        "placeholder": "选择保留处理方式"
+      }
+    }
+  },
+  "last_will": {
+    "will_delay": "遗嘱延迟"
+  },
+  "constants": {
+    "rename": "重命名",
+    "duplicate": "创建副本",
+    "delete": "删除",
+    "cancel": "取消",
+    "disconnect": "断开连接",
+    "connect": "连接"
+  },
+  "message_types": {
+    "text": "Text",
+    "json": "JSON",
+    "base64": "Base64",
+    "hex": "Hexadecimal"
+  },
+  "tooltips": {
+    "qos": {
+      "at_most_once": {
+        "label": "最多一次",
+        "tooltip": "此服务级别不保证负载的送达。客户端发送后即不再跟踪。"
+      },
+      "at_least_once": {
+        "label": "至少一次",
+        "tooltip": "通过多次发送来保证负载至少送达一次，直到客户端收到送达确认（PUBACK）。"
+      },
+      "exactly_once": {
+        "label": "恰好一次",
+        "tooltip": "通过四步握手保证负载恰好送达一次。"
+      }
+    },
+    "message_properties": "为每条发送的消息传递元数据。",
+    "retain_message_long": "保留消息可让已发布的消息存储在 broker 上，并在新订阅者连接到主题时投递给他们。这对于向在消息最初发布时尚未订阅的客户端提供当前状态信息或配置更新非常有用。",
+    "retain_mesage_short": "保留消息可让已发布的消息存储在 broker 上，并在新订阅者连接到主题时投递给他们。",
+    "retain_handling": {
+      "receive_on_connect": {
+        "label": "连接时接收"
+      },
+      "receive_if_unique": {
+        "label": "仅在唯一订阅时接收",
+        "tooltip": "仅当主题尚未被订阅时，broker 才会发送保留消息。"
+      },
+      "dont_receive": {
+        "label": "不接收"
+      }
+    }
+  },
+  "settings": {
+    "enable_server_certificate_verification": "启用服务器证书验证",
+    "verify_server_certificate_description": "通过安全连接连接到 broker 时验证服务器证书。",
+    "verify_server_certificate_summary": "通过安全连接连接到 broker 时验证服务器证书。",
+    "clean_session": "清理会话",
+    "clean_start": "清理启动",
+    "clean_session_description": "配置 broker 是否应以全新连接启动，而不保留任何先前的会话数据。",
+    "clean_session_summary": "Broker 以全新连接启动，不保留任何先前的会话数据。",
+    "session_expiry_interval": "会话过期间隔",
+    "session_expiry_interval_description": "以秒为单位配置会话过期间隔。这会影响 broker 为您的客户端存储会话数据的时长。如果已启用清理启动，则忽略此值。",
+    "session_expiry_interval_summary": "以秒为单位的会话过期间隔。这会影响 broker 为您的客户端存储会话数据的时长。如果已启用清理启动，则忽略此值。",
+    "keep_alive": "保活",
+    "keep_alive_description": "以秒为单位配置保活间隔。",
+    "keep_alive_summary": "以秒为单位的保活间隔。",
+    "auto_reconnect": "自动重连",
+    "auto_reconnect_description": "配置客户端在意外断开连接时是否应自动重连。",
+    "auto_reconnect_summary": "客户端在意外断开连接时自动重连。",
+    "connection_timeout": "连接超时",
+    "connection_timeout_description": "以秒为单位配置连接超时。",
+    "connection_timeout_summary": "以秒为单位的连接超时。",
+    "receive_maximum": "最大接收数",
+    "receive_maximum_description": "配置可并发处理的 QoS 1 和 2 消息的最大数量。",
+    "receive_maximum_summary": "可并发处理的 QoS 1 和 2 消息的最大数量。",
+    "maximum_packet_size": "最大数据包大小",
+    "maximum_packet_size_description": "以字节为单位配置客户端将接受的最大数据包大小。",
+    "maximum_packet_size_summary": "客户端将接受的最大数据包大小（以字节为单位）。"
+  },
+  "response_area": {
+    "heading": "响应",
+    "response_tabs": {
+      "messages": "消息"
+    },
+    "response_label": {
+      "not_subscribed": "未订阅任何主题",
+      "subscribed_to_topics": "已订阅 {listenerCount, plural, one {# 个主题} other {# 个主题}}",
+      "connection_status": {
+        "connected": "已连接",
+        "disconnected": "已断开连接",
+        "connecting": "连接中"
+      },
+      "connection_details": "连接详情"
+    },
+    "response_tab": {
+      "tabs_text": {
+        "messages": "消息",
+        "visualization": "可视化"
+      },
+      "show_hidden_visualization": "显示隐藏的可视化（{hiddenCount}）",
+      "empty_state_message": "连接以发送和接收消息"
+    },
+    "visualization_tab": {
+      "empty_state": {
+        "heading": "尚未收到消息",
+        "description": "可视化是根据订阅主题所收到的消息创建的"
+      }
+    },
+    "mqtt_timeline_event_categories": {
+      "sent_messages": "已发送的消息",
+      "received_messages": "已接收的消息",
+      "other": "其他"
+    },
+    "mqtt_timeline_summaries": {
+      "couldnt_connect": "无法连接到 broker",
+      "connected": "已连接到 broker",
+      "disconnect_error": "从 broker 断开连接时发生错误",
+      "disconnected": "已从 broker 断开连接",
+      "reconnecting": "正在重新连接到 broker",
+      "error_occurred": "发生错误",
+      "subscribed_to": "已订阅",
+      "unsubscribed_from": "已取消订阅",
+      "connection_aborted": "连接已中止",
+      "response_pruned": "响应未存储。",
+      "empty_payload": "（空）"
+    },
+    "packet_information": "数据包信息",
+    "connack_details": "CONNACK 详情",
+    "disconnect_details": "DISCONNECT 详情",
+    "visualization": {
+      "add_field": "添加字段"
+    },
+    "visualization_actions": {
+      "line_chart": "折线图",
+      "bar_chart": "柱状图",
+      "table": "表格",
+      "change_chart_type": "更改可视化类型",
+      "hide": "隐藏"
+    },
+    "missing_key_message": "<Text><StyledText>切换到表格视图</StyledText>以访问另外 {missingFieldCount} 个字段{missingFieldCount, plural, one {} other {}}。</Text>"
+  }
+}

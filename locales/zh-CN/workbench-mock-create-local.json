@@ -1,0 +1,101 @@
+{
+  "tab_title": "新建模拟",
+  "form": {
+    "heading": "创建代码模拟",
+    "name_label": "名称",
+    "name_default": "新建模拟",
+    "name_placeholder": "您想要模拟的服务或功能…",
+    "name_required_tooltip": "为模拟命名以继续。",
+    "url_label": "URL",
+    "local_port_label": "端口",
+    "local_url_helper": "",
+    "check_availability_cta": "检查",
+    "check_port_cta": "检查",
+    "port_available": "端口可用。",
+    "port_unavailable": "端口已被占用。请选择其他端口。",
+    "port_check_failed": "无法检查端口可用性。请重试。",
+    "slug_unavailable": "Slug 已被占用。请选择其他 Slug。",
+    "slug_check_failed": "无法检查 Slug 可用性。请重试。",
+    "submit_cta": "创建模拟",
+    "cancel_cta": "取消",
+    "create_in_progress": "正在创建…"
+  },
+  "cloud_config": {
+    "badge": "云",
+    "summary": "（可选）",
+    "summary_tooltip": "您可以通过推送到云在 Postman 服务器上运行您的模拟。",
+    "collapsed_action": "配置",
+    "description": "您可以通过推送到云在 Postman 服务器上运行您的模拟。",
+    "url_label": "URL",
+    "privacy_label": "隐私"
+  },
+  "source_selector": {
+    "section_label": "选择一个来源",
+    "blank": {
+      "label": "从模板开始"
+    },
+    "spec": {
+      "label": "使用规范",
+      "picker_placeholder": "选择",
+      "picker_empty": "此工作区中尚无规范。"
+    },
+    "collection": {
+      "label": "使用集合",
+      "picker_placeholder": "选择",
+      "picker_empty": "此工作区中尚无集合。"
+    }
+  },
+  "sync": {
+    "keep_in_sync_collection_label": "使此模拟根据集合保持自动生成",
+    "keep_in_sync_spec_label": "使此模拟根据 API 规范保持自动生成",
+    "keep_in_sync_collection_label_local": "在推送到云后，使此模拟根据集合保持自动生成",
+    "keep_in_sync_spec_label_local": "在推送到云后，使此模拟根据 API 规范保持自动生成",
+    "keep_in_sync_collection_helper": "当集合更改时，此模拟会自动重新生成。",
+    "keep_in_sync_spec_helper": "当 API 规范更改时，此模拟会自动重新生成。",
+    "keep_in_sync_collection_helper_local": "此模拟推送到云后，当集合更改时会自动重新生成。",
+    "keep_in_sync_spec_helper_local": "此模拟推送到云后，当 API 规范更改时会自动重新生成。"
+  },
+  "import_area": {
+    "idle_inline": "拖放 Postman 集合或规范，或<browse>浏览</browse>",
+    "file_replace": "替换",
+    "file_remove": "移除"
+  },
+  "ai_section": {
+    "title": "使用 Postman AI 创建",
+    "local": {
+      "card_mock_external": {
+        "title": "模拟代码库中存在的外部 API",
+        "description": "我们将扫描您的仓库以查找出站调用，并搭建一个像这些服务一样响应的本地模拟。"
+      },
+      "card_mock_own": {
+        "title": "模拟您自己的 API",
+        "description": "为您的服务公开的端点创建一个数字孪生。"
+      }
+    },
+    "cloud": {
+      "card_mock_external": {
+        "title": "模拟我的服务所依赖的外部 API",
+        "description": "描述该 API，Postman AI 将为您创建模拟。"
+      },
+      "card_generate_new": {
+        "title": "端到端结账服务",
+        "description": "通过端点、架构和真实的示例数据，从头到尾勾勒出一个全新的服务。"
+      }
+    }
+  },
+  "privacy": {
+    "section_label": "隐私",
+    "make_public_label": "将模拟服务器设为公开",
+    "private_helper": "模拟服务器默认是私有的。要调用私有模拟服务器，您需要在请求中添加 <code>{xApiKey}</code> 请求头。了解如何生成 <apikeylink>Postman API 密钥</apikeylink>。"
+  },
+  "errors": {
+    "unsupported_input": "无法将此文件识别为集合或规范。",
+    "name_required": "模拟名称为必填项。",
+    "local_port_invalid": "请输入 1 到 65535 之间的端口。",
+    "slug_invalid": "请使用小写字母、数字或连字符。必须以字母或数字开头。",
+    "source_picker_required_spec": "选择一个 OpenAPI 规范或拖放一个文件以继续。",
+    "source_picker_required_collection": "选择一个集合或拖放一个文件以继续。",
+    "cloud_spec_fetch_failed": "无法从此工作区加载该规范。请稍后重试。",
+    "cloud_collection_fetch_failed": "无法从此工作区加载该集合。请稍后重试。"
+  }
+}

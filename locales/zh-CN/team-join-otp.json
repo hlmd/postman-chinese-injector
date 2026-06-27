@@ -1,0 +1,31 @@
+{
+  "team_join_otp": {
+    "page": {
+      "setup_loading": "加载中…",
+      "continue_to_postman": "继续前往 Postman"
+    },
+    "otp": {
+      "heading": "确认您的加入请求",
+      "description": "我们已向 <bold>{email}</bold> 发送了一个验证码以确认您的请求",
+      "submit_button": "确认并加入"
+    },
+    "loading": {
+      "heading": "正在加入团队",
+      "subheading": "请稍候，我们正在为您完成设置。"
+    },
+    "rfa": {
+      "heading": "您加入此团队的请求正在审核中",
+      "subheading": "团队管理员答复后，我们会通知您。",
+      "signed_in_message": "您当前以 {email} 登录。<switch>切换账户</switch>"
+    },
+    "request_access": {
+      "heading": "您无权访问此资源",
+      "subheading": "请请求所有者与您共享。",
+      "button": "请求访问权限"
+    },
+    "error": {
+      "heading": "出错了",
+      "subheading": "我们暂时无法完成您的请求。请稍后重试。"
+    }
+  }
+}

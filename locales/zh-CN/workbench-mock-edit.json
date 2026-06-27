@@ -1,0 +1,36 @@
+{
+  "mock_edit_tab": {
+    "something_went_wrong": "出错了",
+    "unexpected_error": "加载模拟服务器时发生意外错误。请重试。",
+    "try_again": "重试",
+    "not_signed_in_error": "您需要一个账户才能继续探索 Postman。",
+    "mock_server": "模拟服务器"
+  },
+  "mock_edit_container": {
+    "default_disabled_tooltip_text": "此模拟服务器没有需要保存的新更改",
+    "invalid_name_header_delay_text": "请输入模拟名称、有效的固定网络延迟和标头键以更新模拟服务器。",
+    "invalid_name_header_text": "请输入模拟名称和标头键以更新模拟服务器。",
+    "invalid_name_delay_text": "请输入名称和有效的固定网络延迟以更新模拟服务器。",
+    "invalid_delay_header_text": "请输入有效的固定网络延迟和标头键以更新模拟服务器。",
+    "invalid_name": "请输入此模拟服务器的名称。",
+    "invalid_delay": "请输入有效的固定网络延迟。",
+    "invalid_header": "请输入用于响应匹配的标头键。",
+    "update_mock_text": "更新模拟服务器",
+    "cancel": "取消",
+    "changes_saved": "更改已保存",
+    "update_success_msg": "您已更新 {name} 模拟服务器。",
+    "unable_to_edit": "无法编辑模拟"
+  },
+  "mock_edit_form": {
+    "make_payment": "进行付款",
+    "user_billing_action": "由于发票未付款，您的团队无法访问某些 Postman 服务。请支付当前发票以继续。",
+    "default_action": "由于发票未付款，您的团队无法访问某些 Postman 服务。请联系您团队的账单管理员，了解有关团队付款的更多信息。",
+    "try_again": "重试",
+    "cannot_access_server": "无法访问 Postman 服务器",
+    "subtitle": "您的团队已禁用与 Postman 服务的同步。请联系支持团队以恢复使用这些功能。",
+    "internet_error": "请检查您的网络连接并重试。",
+    "collection_fetch_error": "获取集合信息时发生错误。",
+    "unexpected_error": "发生意外错误。请重试。",
+    "environment_store_error": "获取工作区环境时发生错误"
+  }
+}

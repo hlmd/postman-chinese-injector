@@ -1,0 +1,55 @@
+{
+  "type_popover": {
+    "learn_more": "了解更多",
+    "share_feedback": "分享反馈"
+  },
+  "base_form": {
+    "select_type": "选择类型",
+    "required": "必填",
+    "deprecated": "已弃用"
+  },
+  "string_form": {
+    "format": "格式",
+    "format_placeholder": "选择",
+    "pattern": "模式",
+    "pattern_placeholder": "[a-zA-Z0-9._%+-]",
+    "pattern_info": "设置格式后无法使用",
+    "min_length": "最小长度",
+    "min_length_placeholder": "<=x",
+    "max_length": "最大长度",
+    "max_length_placeholder": ">=x",
+    "min_length_error": "最小长度必须大于 0",
+    "max_length_error": "最大长度必须大于 0",
+    "min_max_length_error": "最小长度必须小于最大长度"
+  },
+  "number_form": {
+    "min_value": "最小值",
+    "min_value_placeholder": "<=x",
+    "max_value": "最大值",
+    "max_value_placeholder": ">=x",
+    "min_max_value_error": "最小值必须小于最大值"
+  },
+  "integer_form": {
+    "min_value": "最小值",
+    "min_value_placeholder": "<=x",
+    "max_value": "最大值",
+    "max_value_placeholder": ">=x",
+    "min_max_value_error": "最小值必须小于最大值"
+  },
+  "json_base_form": {
+    "required": "必填",
+    "deprecated": "已弃用",
+    "default_value": "默认值",
+    "select": "选择"
+  },
+  "default_value_field": {
+    "label": "默认值",
+    "placeholder": "默认"
+  },
+  "enum_values_field": {
+    "label": "可选枚举值",
+    "placeholder": "输入",
+    "helper_text": "粘贴以逗号分隔的多个值",
+    "duplicate_error": "此值已存在"
+  }
+}

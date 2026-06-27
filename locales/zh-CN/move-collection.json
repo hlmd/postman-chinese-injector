@@ -1,0 +1,10 @@
+{
+  "cancel_button": "取消",
+  "select_all": "全选",
+  "select_collection_to_move_text": "选择您要移动的集合",
+  "title": "移动集合",
+  "move_collection_button": "移动集合",
+  "select_collection_to_move": "选择要移动的集合",
+  "move_to_new_team": "移动到新团队工作区",
+  "confirm_button": "确认"
+}

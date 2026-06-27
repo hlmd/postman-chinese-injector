@@ -1,0 +1,10 @@
+{
+  "no_changed_files": "没有更改的文件",
+  "no_changed_files_description": "您的 git 目录是干净的",
+  "commit_message_placeholder": "提交信息",
+  "tree_aria_label": "未暂存的文件",
+  "commit_button": "提交",
+  "commit_button_tooltip": "提交所有未暂存的文件并重新加载列表",
+  "commit_button_tooltip_loading": "正在提交…",
+  "git_status_aria_label": "Git 状态：{status}"
+}

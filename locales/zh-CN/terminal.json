@@ -1,0 +1,52 @@
+{
+  "init_failed": "终端初始化失败。请重新加载应用程序。",
+  "create_failed": "创建终端失败。",
+  "create_failed_retry": "重试",
+  "install_cli_nudge_tip": "安装 Postman CLI？[Tab]",
+  "agent_required_title": "桌面代理不可用",
+  "agent_required_description": "终端通过 Postman 桌面代理在您的计算机上运行。请确保已安装并运行桌面代理，然后连接以在 Postman Web 中使用终端。",
+  "agent_required_cta": "使用 Postman 桌面代理",
+  "agent_required_download": "下载桌面代理",
+  "agent_disconnected_title": "桌面代理已断开连接",
+  "agent_disconnected_description": "由于 Postman 桌面代理已断开连接，终端已暂停。请确保桌面代理正在运行，然后重新连接。",
+  "agent_disconnected_cta": "重新连接桌面代理",
+  "reconnected_session_message": "桌面代理已重新连接。上一个会话已结束，因此将在此处开始一个新的终端会话。",
+  "reconnect_failed_message": "桌面代理已重新连接，但无法恢复此终端会话。",
+  "search": {
+    "placeholder": "查找",
+    "aria_label": "在终端中查找",
+    "match_case": "区分大小写",
+    "match_whole_word": "全字匹配",
+    "use_regex": "使用正则表达式",
+    "previous_match": "上一个匹配项",
+    "next_match": "下一个匹配项",
+    "close": "关闭搜索",
+    "match_count": "第 {current} 个，共 {total} 个",
+    "no_results": "无结果"
+  },
+  "context_menu": {
+    "copy": "复制",
+    "paste": "粘贴",
+    "select_all": "全选",
+    "find": "查找",
+    "clear": "清除终端",
+    "new_terminal": "新建终端",
+    "rename_terminal": "重命名终端"
+  },
+  "actions": {
+    "clear": "清除",
+    "clear_terminal": "清除终端"
+  },
+  "paste_guard": {
+    "title": "终端粘贴",
+    "message": "您确定要将 {lineCount} 行粘贴到终端中吗？",
+    "paste": "粘贴",
+    "cancel": "取消"
+  },
+  "tabs": {
+    "close_terminal": "关闭终端",
+    "close_terminal_aria": "关闭终端 {name}",
+    "terminal_aria": "终端：{name}",
+    "rename_input_aria": "重命名终端 {name}"
+  }
+}

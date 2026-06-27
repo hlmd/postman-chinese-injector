@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "工作区"
+  },
+  "heading": {
+    "team": "{teamName} 的工作区",
+    "personal": "您的工作区"
+  },
+  "description": {
+    "team": "您团队的工作区目录。",
+    "personal": "您的工作区目录。"
+  },
+  "navigation_breadcrumbs": {
+    "first_breadcrumb_item_label": "主页",
+    "second_breadcrumb_item_label": "工作区"
+  },
+  "create_workspace_button_text": "创建工作区",
+  "filters": {
+    "search_workspaces_placeholder": "搜索工作区",
+    "filter_by_visibility_dropdown": {
+      "placeholder": "可见性",
+      "label": "按可见性筛选",
+      "options": {
+        "all": "全部",
+        "personal": "个人",
+        "team": "团队",
+        "private": "私有",
+        "partner": "合作伙伴",
+        "public": "公开"
+      }
+    },
+    "filter_by_owner_dropdown": {
+      "placeholder": "创建者",
+      "empty_state_message": "未找到用户",
+      "selected_user_label": "{userCount, plural, one {# 位用户} other {# 位用户}}"
+    },
+    "sort_workspaces_dropdown": {
+      "label": "排序方式",
+      "sort_by_name": "A 到 Z",
+      "sort_by_creation_date": "最近创建",
+      "sort_by_modification_date": "最近更新"
+    }
+  },
+  "external_tag": "外部",
+  "restricted_action": {
+    "tooltip_with_create": "将这些更改合并到工作区，或新建一个工作区以执行此操作。",
+    "tooltip_visibility": "将这些更改合并到工作区，或新建一个工作区以更改可见性。",
+    "tooltip_comment_creator": "将这些更改合并到工作区，或新建一个工作区以发表评论。"
+  },
+  "pending_changes_banner": {
+    "source_prefix": "更改来自",
+    "source_icon_tooltip_cloud": "云代理任务",
+    "source_icon_tooltip_git": "Git 分支",
+    "fallback_source_name": "无标题",
+    "actions": {
+      "merge": "合并",
+      "merge_dropdown_label": "更多合并选项",
+      "make_new_workspace": "新建工作区",
+      "discard": "放弃",
+      "exit": "返回",
+      "copy_link": "复制链接",
+      "copy_link_copied": "链接已复制"
+    },
+    "discard_confirm": {
+      "title": "放弃待处理的更改？",
+      "message": "这将永久移除待处理的更改。此操作无法撤消。",
+      "confirm": "放弃",
+      "cancel": "取消"
+    },
+    "toast": {
+      "merge_success": "更改已合并",
+      "merge_error_title": "无法合并更改",
+      "merge_error_description": "出错了。请重试。",
+      "publish_success": "已创建新工作区",
+      "publish_error_title": "无法创建工作区",
+      "publish_error_description": "出错了。请重试。",
+      "discard_success": "更改已放弃",
+      "discard_error_title": "无法放弃更改",
+      "discard_error_description": "出错了。请重试。",
+      "copy_link_error_title": "无法复制链接",
+      "copy_link_error_description": "出错了。请重试。"
+    },
+    "error": {
+      "fetch_failed": "加载信息失败",
+      "retry": "重试"
+    }
+  },
+  "tabs": {
+    "all": "全部",
+    "project_workspaces": "项目工作区",
+    "shared_partner": "外部",
+    "archived": "已归档",
+    "inactive": "不活跃",
+    "pending_requests": "待处理请求"
+  }
+}

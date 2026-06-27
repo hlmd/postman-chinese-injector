@@ -1,0 +1,39 @@
+{
+  "workspace_config": {
+    "missing_dir": "缺少 .postman 目录。",
+    "missing_file": ".postman 目录中缺少 resources.yaml 文件。",
+    "invalid_structure": "无效的 resources.yaml：文件必须包含一个 YAML 对象。",
+    "missing_workspace_id": "无效的 resources.yaml：缺少或无效的 workspace.id 字段。",
+    "empty_workspace_id": "无效的 resources.yaml：workspace.id 不能为空。",
+    "invalid_yaml_format": "resources.yaml 中的 YAML 格式无效：{errorMessage}",
+    "read_error": "读取 resources.yaml 失败：{errorMessage}",
+    "invalid_local_resources": "无效的 resources.yaml：localResources 必须是一个将实体类型映射到路径数组的对象。",
+    "invalid_cloud_resources": "无效的 resources.yaml：cloudResources 必须是一个将实体类型映射到路径-ID 映射的对象。",
+    "unknown_entity_type_local": "无效的 resources.yaml：localResources.{key} 不是可识别的实体类型。",
+    "invalid_local_value": "无效的 resources.yaml：localResources.{key} 必须是一个字符串数组。",
+    "unknown_entity_type_cloud": "无效的 resources.yaml：cloudResources.{key} 不是可识别的实体类型。",
+    "invalid_cloud_value": "无效的 resources.yaml：cloudResources.{key} 必须是一个将路径映射到云 ID 的对象。"
+  },
+  "workflows_config": {
+    "read_error": "读取 workflows.yaml 失败：{errorMessage}",
+    "invalid_yaml_format": "workflows.yaml 中的 YAML 格式无效：{errorMessage}",
+    "invalid_structure": "无效的 workflows.yaml：文件必须包含一个 YAML 对象。",
+    "unknown_workflow_key": "无效的 workflows.yaml：“{key}”不是可识别的工作流。",
+    "invalid_workflow_array": "无效的 workflows.yaml：“{workflow}”必须是一个关系条目数组。",
+    "syntax_error_not_object": "无效的 workflows.yaml：{workflow}[{index}] 处的条目不是一个对象。",
+    "syntax_error_missing_spec": "无效的 workflows.yaml：{workflow}[{index}] 处的条目缺少非空的 'spec' 字段。",
+    "syntax_error_missing_collection": "无效的 workflows.yaml：{workflow}[{index}] 处的条目缺少非空的 'collection' 字段。",
+    "syntax_error_invalid_options": "无效的 workflows.yaml：{workflow}[{index}] 处的条目具有无效的 'options'（必须是字符串/布尔值的映射）。",
+    "duplicate_entry": "“{workflow}”中存在重复条目：spec“{spec}”和 collection“{collection}”出现了多次。",
+    "missing_spec_path": "“{workflow}”引用的 spec 文件不存在：{path}",
+    "missing_collection_path": "“{workflow}”引用的 collection 文件不存在：{path}",
+    "missing_counterpart": "spec“{spec}”和 collection“{collection}”存在于“{fromWorkflow}”中，但在“{toWorkflow}”中缺失。",
+    "options_mismatch": "spec“{spec}”和 collection“{collection}”的选项在两个工作流之间不一致。"
+  },
+  "fix_toasts": {
+    "workspace_config_success": "已更新 resources.yaml 中的工作区 ID",
+    "workspace_config_error": "更新 resources.yaml 中的工作区 ID 失败",
+    "workflows_config_success": "已清理 workflows.yaml",
+    "workflows_config_error": "清理 workflows.yaml 失败"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "browser_empty_state": {
+    "title": "无可用 Cookie",
+    "message": "通过浏览器发送请求时，Postman 无法访问 Cookie。如需捕获和管理 Cookie，请尝试使用 Postman Desktop Agent。"
+  },
+  "generic_empty_state": {
+    "message": "您正在使用的 Postman Desktop Agent 版本过旧，无法用于添加或编辑 Cookie。\n\n请点击工具栏中的 Postman Agent 图标更新 Desktop Agent，或切换使用 Postman Cloud Agent。",
+    "secondary_action": "切换到 Cloud Agent"
+  },
+  "heading": {
+    "browser": "管理 Cookie",
+    "generic": "Cookie"
+  },
+  "tabs": {
+    "manage": {
+      "label": "管理 Cookie",
+      "domain_del_success_toast": "已成功清除所有 Cookie。",
+      "domain_del_error_toast": "删除域 {deletedDomain} 的 Cookie 失败。",
+      "domain_allowlist_button": "域名白名单",
+      "domain_clear_all_button": "清除所有 Cookie"
+    },
+    "sync": {
+      "label": "同步 Cookie",
+      "capture_section": {
+        "help_text_with_proxy": "了解更多关于 <1><0>Cookie</0></1> 的信息以及如何使用 <3><0>Interceptor 和代理</0></3> 捕获它们。",
+        "help_text_only_interceptor": "了解更多关于 <1><0>Cookie</0></1> 的信息以及如何使用 <3><0>Interceptor</0></3> 捕获它们。",
+        "tabs": {
+          "intercepter": {
+            "label": "Interceptor",
+            "input": {
+              "label": "域名",
+              "info_text": "添加域名后，将自动为其子域同步 Cookie",
+              "placeholder": "输入域名 (domain.com) 或 (sub.domain.com)"
+            },
+            "add_button": "添加域名",
+            "connection_status": {
+              "connected": "已连接",
+              "disconnected": "已断开"
+            },
+            "capture_button": {
+              "intercepter_active": "停止同步",
+              "intercepter_inactive": "开始同步",
+              "disabled_tooltip": "连接 Interceptor 以开始同步 Cookie。"
+            },
+            "missing_interceptor": {
+              "header": "未连接到 Interceptor",
+              "body": "请确保您的浏览器已打开，并且已安装 <1><0>Interceptor 扩展程序。</0></1>",
+              "body_web": "请确保您已安装 <1><0>Interceptor 扩展程序。</0></1>"
+            }
+          },
+          "proxy": {
+            "label": "代理",
+            "toggle_label": "启用 Postman 作为代理",
+            "desc": "通过 Postman 内置代理，从任何设备或浏览器同步 Cookie。",
+            "startup_banner": {
+              "title": "通过代理捕获 HTTPS 请求",
+              "cert_install": "<0>只需安装一个证书，即可开始通过 Postman 的代理服务器路由 HTTPS 请求。</0> <1><0>了解如何安装证书</0></1>"
+            },
+            "port_input": {
+              "label": "端口",
+              "placeholder": "端口"
+            },
+            "domain_input": {
+              "label": "域名",
+              "info_text": "添加域名后，将自动为其子域同步 Cookie",
+              "placeholder": "输入域名 (domain.com) 或 (sub.domain.com)"
+            },
+            "add_button": "添加域名",
+            "capture_button": {
+              "stop_auto_sync": "停止同步",
+              "start_auto_sync": "开始同步",
+              "disabled_tooltip": "启用代理以开始同步 Cookie。"
+            },
+            "domain_sync_error_message": "需要添加域名才能开始同步 Cookie。"
+          }
+        }
+      }
+    }
+  },
+  "domain_allowlist": {
+    "back_button": "返回 Cookie",
+    "whitelist_container": {
+      "heading": "域名白名单",
+      "desc": "添加域名以允许在脚本中访问该域的 Cookie。了解更多关于 <1><0>在脚本中访问 Cookie</0></1> 的信息",
+      "input_placeholder": "向白名单添加域名",
+      "add_button": "添加"
+    }
+  },
+  "add_domain_placeholder": "输入域名",
+  "add_domain_button": "添加域名",
+  "domains_list": {
+    "empty": "无可用 Cookie",
+    "cookie_editor_action": {
+      "cancel": "取消",
+      "save": "保存"
+    },
+    "add_cookie_button": "添加 Cookie"
+  }
+}

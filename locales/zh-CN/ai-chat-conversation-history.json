@@ -1,0 +1,12 @@
+{
+  "source_label": {
+    "cloud": "云代理",
+    "local": "本地"
+  },
+  "cloud_task": {
+    "untitled_fallback": "无标题任务"
+  },
+  "delete": {
+    "error_toast": "删除对话失败。"
+  }
+}

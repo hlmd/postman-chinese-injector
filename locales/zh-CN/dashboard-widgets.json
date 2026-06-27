@@ -1,0 +1,225 @@
+{
+  "widgets": {
+    "error": {
+      "title": "您的小组件未能加载",
+      "description": "看起来出了点问题。",
+      "help-link": "了解更多"
+    }
+  },
+  "agent-mode": {
+    "personalized-title": "{userName}，您今天想如何使用 Postman？",
+    "title": "您今天想如何使用 Postman？",
+    "textarea-placeholder": "告诉我们您想构建什么……",
+    "submit-button-text": "开始",
+    "submit-button-disabled-tooltip": "您需要拥有工作区的编辑权限才能使用智能体。请创建工作区或申请编辑权限。",
+    "suggestions-title": "入门建议：",
+    "suggestions-loading-message": "正在获取个性化建议……"
+  },
+  "pending-items": {
+    "title": "需要您关注",
+    "team-join-requests": {
+      "title_singular": "待处理的加入团队请求",
+      "title_plural": "待处理的加入团队请求"
+    },
+    "pending-request-for-access": {
+      "title_singular": "待处理的访问请求",
+      "title_plural": "待处理的访问请求",
+      "requested-access": "{userName} 请求访问 {model}",
+      "requested-access-to": "<userLink>{userName}</userLink> 请求访问 <entityLink>{entityName}</entityLink>。",
+      "requested-access-to_withLabel": "<userLink>{userName}</userLink> 请求访问 <entityLink>{entityName}</entityLink> {entityLabel}。",
+      "requested-access-partner-to": "<userLink>{userName}</userLink> 请求以合作伙伴身份访问 <entityLink>{entityName}</entityLink>。",
+      "requested-access-partner-to_withLabel": "<userLink>{userName}</userLink> 请求以合作伙伴身份访问 <entityLink>{entityName}</entityLink> {entityLabel}。",
+      "approve-button": "批准",
+      "deny-button": "拒绝",
+      "approve-success": "请求已批准",
+      "deny-success": "请求已拒绝",
+      "approve-error-title": "批准失败",
+      "approve-error": "批准请求时出错",
+      "deny-error-title": "拒绝失败",
+      "deny-error": "拒绝请求时出错",
+      "already-actioned": "此请求已被处理"
+    },
+    "pending-request-for-edit": {
+      "title_singular": "待处理的编辑请求",
+      "title_plural": "待处理的编辑请求",
+      "requested-edit": "{userName} 请求 {model} 的编辑权限",
+      "requested-edit-to": "<userLink>{userName}</userLink> 请求 <entityLink>{entityName}</entityLink> 的编辑权限。",
+      "requested-edit-to_withLabel": "<userLink>{userName}</userLink> 请求 <entityLink>{entityName}</entityLink> {entityLabel} 的编辑权限。",
+      "requested-role-access-to": "<userLink>{userName}</userLink> 请求 <entityLink>{entityName}</entityLink> 的 {role} 权限。",
+      "requested-role-access-to_withLabel": "<userLink>{userName}</userLink> 请求 <entityLink>{entityName}</entityLink> {entityLabel} 的 {role} 权限。",
+      "approve-button": "批准",
+      "deny-button": "拒绝",
+      "approve-success": "编辑请求已批准",
+      "deny-success": "编辑请求已拒绝",
+      "approve-error-title": "批准失败",
+      "approve-error": "批准编辑请求时出错",
+      "deny-error-title": "拒绝失败",
+      "deny-error": "拒绝编辑请求时出错",
+      "already-actioned": "此编辑请求已被处理",
+      "respond-button": "响应请求"
+    },
+    "pending-request-for-action": {
+      "title_singular": "待处理的操作请求",
+      "title_plural": "待处理的操作请求",
+      "requested-make-public": "<userLink>{userName}</userLink> 正在请求将 <entityLink>{entityName}</entityLink> 设为公开工作区。",
+      "requested-make-public_withLabel": "<userLink>{userName}</userLink> 正在请求将 <entityLink>{entityName}</entityLink> {entityLabel} 设为公开工作区。",
+      "requested-make-team": "<userLink>{userName}</userLink> 正在请求将 <entityLink>{entityName}</entityLink> 设为团队工作区。",
+      "requested-make-team_withLabel": "<userLink>{userName}</userLink> 正在请求将 <entityLink>{entityName}</entityLink> {entityLabel} 设为团队工作区。",
+      "requested-make-partner": "<userLink>{userName}</userLink> 正在请求将 <entityLink>{entityName}</entityLink> 设为合作伙伴工作区。",
+      "requested-make-partner_withLabel": "<userLink>{userName}</userLink> 正在请求将 <entityLink>{entityName}</entityLink> {entityLabel} 设为合作伙伴工作区。",
+      "requested-publish-docs": "<userLink>{userName}</userLink> 正在请求为 <entityLink>{entityName}</entityLink> 发布文档。",
+      "requested-publish-docs_withLabel": "<userLink>{userName}</userLink> 正在请求为 <entityLink>{entityName}</entityLink> {entityLabel} 发布文档。",
+      "requested-action-default": "<userLink>{userName}</userLink> 正在请求对 <entityLink>{entityName}</entityLink> 执行操作。",
+      "requested-action-default_withLabel": "<userLink>{userName}</userLink> 正在请求对 <entityLink>{entityName}</entityLink> {entityLabel} 执行操作。",
+      "approve-button": "批准",
+      "deny-button": "拒绝",
+      "approve-success": "操作请求已批准",
+      "deny-success": "操作请求已拒绝",
+      "already-actioned": "此操作请求已被处理",
+      "respond-button": "响应请求"
+    },
+    "pr-assigned-to-me": {
+      "title_singular": "等待您审查的拉取请求",
+      "title_plural": "等待您审查的拉取请求",
+      "opened-by": "发起人"
+    },
+    "pr-opened-by-me": {
+      "title_singular": "您发起的拉取请求",
+      "title_plural": "您发起的拉取请求"
+    },
+    "loading": "加载中…",
+    "show-more": "显示更多",
+    "failed-to-load-more-items": "加载更多项目失败。请稍后重试。",
+    "empty": {
+      "title": "全部处理完毕！",
+      "description": "对资源的访问、编辑和操作请求、您发起的拉取请求以及需要您审查的拉取请求，以及其他需要您关注的操作都将显示在此处。"
+    }
+  },
+  "continue-work": {
+    "title": "从上次中断处继续",
+    "recents": {
+      "title": "最近",
+      "loading": "加载中…",
+      "error": {
+        "title": "无法加载最近项目",
+        "description": "获取您的最近工作时出错。",
+        "retry": "重试"
+      },
+      "empty": {
+        "title": "无最近项目",
+        "description": "开始使用集合、请求和工作区，即可在此处查看它们。"
+      },
+      "show-more": "显示更多",
+      "loading-more": "正在加载更多……"
+    },
+    "favourites": {
+      "title": "收藏",
+      "loading": "加载中…",
+      "error": {
+        "title": "无法加载收藏项目",
+        "description": "获取您的收藏项目时出错。",
+        "retry": "重试"
+      },
+      "empty": {
+        "title": "无收藏项目",
+        "description": "将集合或工作区标记为收藏，即可在此处查看它们。"
+      },
+      "show-more": "显示更多",
+      "loading-more": "正在加载更多……"
+    },
+    "external": "外部"
+  },
+  "announcements": {
+    "edit-announcement": "编辑公告",
+    "create-announcement": "公告",
+    "description": "在主页上与您的团队成员分享组织范围的提醒",
+    "disabled-tooltip": "您没有管理公告的权限。请联系您的管理员。",
+    "modal": {
+      "create-title": "创建公告",
+      "edit-title": "编辑公告",
+      "description": "在主页上与您的团队成员分享组织范围的更新、重大变更、强制迁移或提醒。",
+      "type-label": "类型",
+      "title-label": "标题",
+      "message-label": "消息",
+      "remove-after-label": "移除时间",
+      "save-disabled-tooltip": "请填写所有字段。",
+      "create-success": "公告创建成功",
+      "update-success": "公告更新成功",
+      "delete-success": "公告删除成功",
+      "create-error": "创建公告失败",
+      "update-error": "更新公告失败",
+      "delete-error": "删除公告失败",
+      "preview-title": "公告预览",
+      "edit-button": "编辑",
+      "delete-button": "删除",
+      "preview-button": "预览",
+      "publish-button": "发布",
+      "update-button": "更新",
+      "expiry-options": {
+        "7-days": "7 天",
+        "14-days": "14 天",
+        "30-days": "30 天"
+      },
+      "delete-confirmation": {
+        "title": "删除公告？",
+        "message": "删除后，此公告将不再对您的团队成员可见。"
+      },
+      "type-options": {
+        "informational": "信息类",
+        "critical": "重要类"
+      },
+      "type-tooltip": {
+        "informational": "用于宣布功能发布、培训机会，并提醒您的团队成员遵循 API 最佳实践。团队成员可以立即忽略信息类公告。",
+        "critical": "用于宣布重大变更、安全警报和强制迁移。在结束日期之前，团队成员无法忽略重要类公告。"
+      },
+      "preview-topic": "公告标题显示在此处",
+      "preview-description": "公告消息将显示在此处"
+    },
+    "dismiss-announcement": "忽略公告",
+    "copy-link": "复制链接",
+    "link-copied": "链接已复制",
+    "copy-link-error": "复制链接失败。请重试。",
+    "posted-by": "发布者：{name}",
+    "updated-by": "更新者：{name}",
+    "originally-posted-by": "最初发布者：{name}",
+    "edited-time-ago": "编辑于 {time}",
+    "unable-to-load-error-title": "无法加载公告",
+    "unable-to-load-error-description": "请重新加载页面后重试。",
+    "show-more": "显示更多"
+  },
+  "readme": {
+    "edit-readme": "编辑 ReadMe",
+    "create-readme": "ReadMe",
+    "description": "通过注释、链接和关键资源引导您的团队入门",
+    "disabled-tooltip": "您没有管理 ReadMe 的权限。请联系您的管理员。",
+    "modal": {
+      "create-title": "组织 ReadMe",
+      "edit-title": "组织 ReadMe",
+      "description": "帮助您的团队成员以正确的方式入门。为重要的工作区或资源添加注释、链接和指引。此 README 会显示在每位团队成员的主页上。只有组织管理员才能编辑此内容。",
+      "create-success": "ReadMe 创建成功",
+      "update-success": "ReadMe 更新成功",
+      "delete-success-title": "ReadMe 已取消发布",
+      "delete-success-description": "您可以随时通过“添加小组件”>“ReadMe”选项重新发布。",
+      "create-error": "创建 ReadMe 失败",
+      "update-error": "更新 ReadMe 失败",
+      "delete-error": "删除 ReadMe 失败",
+      "unpublish-button": "取消发布",
+      "cancel-button": "取消",
+      "publish-button": "发布",
+      "update-button": "更新",
+      "unpublish-title": "取消发布 ReadMe？",
+      "unpublish-description": "取消发布后，此 ReadMe 将不再对您的团队成员可见。您可以随时通过“添加小组件”>“ReadMe”选项重新发布。"
+    },
+    "updated-by": "更新者：{name}",
+    "updated-by-you": "由您更新",
+    "unable-to-load-error-title": "无法加载 ReadMe",
+    "unable-to-load-error-description": "请重新加载页面后重试。",
+    "show-more": "显示更多 ↓"
+  },
+  "add-widget-button": {
+    "text": "添加小组件",
+    "request-widget": {
+      "title": "请求小组件"
+    }
+  }
+}

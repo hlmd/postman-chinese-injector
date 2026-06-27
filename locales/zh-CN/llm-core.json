@@ -1,0 +1,54 @@
+{
+  "onboarding_modal": {
+    "title": "使用 AI 请求测试 LLM",
+    "description": "使用来自 <0>OpenAI、Google、Anthropic</0> 等的 LLM 试用您的提示词。",
+    "step_1": "点击侧边栏中的“新建”创建新的 AI 请求。",
+    "step_2": "选择要使用的 LLM 模型。",
+    "step_3": "授权并将您的凭据存储在保险库中。",
+    "step_4": "传入用户提示词，并可选择性地传入系统提示词，然后点击“发送”。",
+    "cta": "开始使用"
+  },
+  "agent": {
+    "errors": {
+      "agent_not_connected": "切换到 Postman Desktop Agent 以发出 LLM 请求。",
+      "agent_not_supported": "您使用的 Postman Desktop Agent 版本较旧，不支持 LLM 请求。请更新 Desktop Agent 后重试。",
+      "agent_not_ready": "请确保 Desktop Agent 已安装并正在运行。"
+    },
+    "openai": {
+      "response": {
+        "network_meta": {
+          "http_status_codes": {
+            "401": {
+              "detail": "身份验证无效。<button>请传入正确的认证凭据</button>",
+              "label": "身份验证无效"
+            },
+            "403": {
+              "detail": "不支持的国家、地区或领土",
+              "label": "领土禁止访问"
+            },
+            "429": {
+              "detail": "您已超出当前配额，请检查您的计划和账单详情",
+              "label": "配额不足"
+            },
+            "500": {
+              "detail": "服务器在处理您的请求时出错",
+              "label": "服务器错误"
+            },
+            "503": {
+              "detail": "引擎当前过载，请稍后重试",
+              "label": "引擎过载"
+            }
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "model_not_selected": "选择一个模型以发送 AI 请求。"
+  },
+  "send_button": {
+    "tooltips": {
+      "no_send_permission": "您没有在此工作区中发送请求的权限。"
+    }
+  }
+}

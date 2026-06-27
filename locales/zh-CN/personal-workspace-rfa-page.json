@@ -1,0 +1,21 @@
+{
+  "switch_accounts_cta": "切换账户",
+  "creating_request_heading": "您无权访问此资源",
+  "creating_request_subheading": "请所有者与您共享。",
+  "pending_request_heading": "您的访问请求正在审核中",
+  "pending_request_subheading": "所有者回复后，我们会通知您。",
+  "add_note_text": "添加备注",
+  "text_area_info_text": "简要说明您为何需要访问……",
+  "submit_cta": "请求访问",
+  "current_sign_in_account_text": "您当前登录的账户为",
+  "continue_postman_cta": "继续前往 Postman",
+  "toast_content": {
+    "default_error": {
+      "title": "无法发送请求",
+      "description": "只是线路出了点小问题。请重试。"
+    },
+    "non_team_member_error": {
+      "description": "不属于该团队的用户无法请求访问"
+    }
+  }
+}

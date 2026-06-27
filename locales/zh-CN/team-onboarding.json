@@ -1,0 +1,104 @@
+{
+  "team_profile": {
+    "title": "设置您的团队",
+    "subtitle": "为您的团队命名并选择一个 URL。",
+    "url_title": "URL",
+    "url_subtitle": "您将使用此 URL 访问 Postman。",
+    "image_modal_title": "上传团队徽标",
+    "image_modal_body": "上传自定义徽标，让您的团队更有归属感。最大尺寸：2 MB",
+    "name": "团队名称",
+    "change_logo": "更换徽标",
+    "invalid_domain_modal": {
+      "heading": "您没有有效的工作域名",
+      "description": "我们无法为 gmail.com 等域名启用此设置。请将您的电子邮件地址更改为有效的工作域名后重试。",
+      "got_it_button": "知道了"
+    },
+    "email_verification_modal": {
+      "toast": {
+        "message": "请查看您的收件箱。",
+        "title": "我们已发送验证邮件"
+      },
+      "title": "验证您的账户",
+      "description": "要启用团队发现功能，请验证您的账户后重试。",
+      "cancel_button": "取消",
+      "send_verification_email_button": "发送验证邮件"
+    }
+  },
+  "error": {
+    "type": "网络调用失败",
+    "move_collection": {
+      "title": "出错了",
+      "description": "移动您的集合时发生错误"
+    },
+    "team_discovery": {
+      "title": "请提供团队详细信息"
+    },
+    "send_verification_email": {
+      "message": "发送验证邮件时发生错误。请稍后重试。",
+      "title": "出错了"
+    },
+    "team_profile_update_error": {
+      "title": "出错了",
+      "description": "更新您的团队资料时发生错误"
+    },
+    "file_read_error": "我们无法读取该文件。请上传图片文件，如 jpg 或 png。",
+    "image_size_error": "图片过大。请使用小于 2 MB 的图片。",
+    "image_uploading_error": "上传图片时出现问题。请重试。"
+  },
+  "workspace": {
+    "name": "{workspaceName} 工作区",
+    "team_discovery": {
+      "message_enabled": "您已为您的团队启用团队发现功能",
+      "message_disabled": "您已为您的团队禁用团队发现功能",
+      "title_on": "团队发现已开启",
+      "title_off": "团队发现已关闭",
+      "title": "团队发现",
+      "title_UO_140": "允许 {domain} 用户发现此团队",
+      "description": "团队发现功能可让您组织中的成员看到您的团队并请求加入。",
+      "description_UO_140": "他们可以请求加入此团队。",
+      "turn_on": "开启团队发现",
+      "turn_on_label": "开启",
+      "turn_off_label": "关闭",
+      "error_title": "应用您的团队发现设置时出错",
+      "continue": "继续",
+      "save_UO_140": "保存",
+      "save_subtitle_UO_140": "您稍后可以在团队设置中更改这些详细信息。",
+      "invite_members": {
+        "generate_invite_link_error": "我们无法生成链接。请重试。",
+        "invite_error": "其中一个或多个电子邮件地址似乎有误。请仔细检查格式。",
+        "plan_alert_message": "升级到高级计划，畅享无限协作。",
+        "copy_invite_button": "复制链接",
+        "maybe_later_button": "以后再说",
+        "continue_button": "继续",
+        "subtitle": "邀请他人与您协作，充分发挥 Postman 的价值。",
+        "title": "邀请他人加入您的团队",
+        "via_email": "通过电子邮件",
+        "share_link_text": "或者，分享邀请链接",
+        "generate_link": "生成链接",
+        "copied_text": "已复制",
+        "enter_email_address": "输入电子邮件地址",
+        "failed_to_generate_link": "生成邀请链接失败。请重试。"
+      },
+      "share_link_with_your_colleagues": "获取一个链接，您可以将其分享给同事以加入团队"
+    },
+    "collection": {
+      "title": "{items, plural, one {集合} other {集合}}",
+      "moved": {
+        "description": "您的集合将在稍后移动。"
+      },
+      "successfully_moved": {
+        "description": "{collections} {text} {verb}已成功移动到此工作区。"
+      },
+      "verb": "{items, plural, one {} other {}}"
+    }
+  },
+  "input": {
+    "drag_and_drop": "拖放图片",
+    "select_a_file": "选择文件"
+  },
+  "image_upload_modal": {
+    "upload_button": "上传",
+    "back_button": "返回",
+    "cancel_button": "取消"
+  }
+}

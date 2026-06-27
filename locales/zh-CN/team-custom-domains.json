@@ -1,0 +1,90 @@
+{
+  "permission_error": "无法获取自定义域名的所有权限。",
+  "heading": "自定义域名",
+  "subheading": "在自定义域名上托管您现有的和新的 API 文档。{isPaidOrTrial, select, true {您的团队最多可以添加 {customDomainsLimit} 个自定义域名。} other {}} <CustomLink><Text>了解更多</Text></CustomLink>",
+  "insufficient_permissions": {
+    "message": "权限不足",
+    "description": "只有团队管理员可以添加自定义域名"
+  },
+  "limit_reached": {
+    "message": "已达上限",
+    "description": "升级计划以添加更多自定义域名"
+  },
+  "add_custom_domain": "添加自定义域名",
+  "upgrade_your_plan": {
+    "title": "升级您的计划",
+    "description": "您当前使用的是免费计划。切换到付费计划，即可在自定义域名上托管您的文档。<CustomLink><br></br><Text>查看计划</Text></CustomLink>"
+  },
+  "add_your_team_first_domain": {
+    "title": "添加您团队的第一个域名"
+  },
+  "you_don_t_have_access": {
+    "title": "您没有访问权限",
+    "description": "只有团队管理员可以添加自定义域名。"
+  },
+  "wrapper": {
+    "unable_to_load_custom_domain": {
+      "title": "无法加载自定义域名",
+      "description": "请稍后重试。"
+    },
+    "error": {
+      "title": "出错了",
+      "description": "无法获取自定义域名。"
+    }
+  },
+  "custom_domain_table": {
+    "headers": {
+      "domains": "域名",
+      "status": "状态"
+    },
+    "view_details": "查看详情",
+    "verified": "已验证",
+    "unverified": "未验证"
+  },
+  "custom_domain_details": {
+    "fetch_custom_domain_error": {
+      "title": "出错了",
+      "description": "无法获取自定义域名详情。"
+    },
+    "verify_custom_domain_success": {
+      "title": "自定义域名已验证",
+      "description": "您的自定义域名现已通过验证。您现在可以使用此域名访问已发布集合的文档。"
+    },
+    "verify_custom_domain_error": {
+      "title": "出错了",
+      "description": "无法验证域名。{reason}"
+    },
+    "all_custom_domains": "所有自定义域名",
+    "breadcrumb_aria_label": "自定义域名详情面包屑导航",
+    "error": {
+      "title": "无法加载自定义域名详情",
+      "description": "请稍后重试。"
+    }
+  },
+  "custom_domain_detail_form": {
+    "custom_domain_detail_heading": "自定义域名详情",
+    "verify_custom_domain_heading": "验证自定义域名",
+    "domain_url": {
+      "label": "域名 URL",
+      "helper_text": "输入您要添加的域名的 URL。"
+    },
+    "verification_records_heading": "验证记录",
+    "text_record": {
+      "label": "{domain} 上的 TXT 记录",
+      "helper_text": "将以下令牌添加为与 {domain} 关联的 TXT 记录"
+    },
+    "copy_to_clipboard": "复制到剪贴板",
+    "copied_to_clipboard": "已复制到剪贴板",
+    "cname": {
+      "label": "指向 {phsUrl} 的 CNAME",
+      "helper_text": "为 {fqdn} 添加一条指向 {phsUrl} 的 CNAME 记录"
+    }
+  },
+  "custom_domain_actions": {
+    "heading": "添加记录",
+    "checkbox_label": "TXT 和 CNAME 记录已添加。",
+    "verify_domain": "验证域名",
+    "verify_later": "稍后验证",
+    "back": "返回"
+  }
+}

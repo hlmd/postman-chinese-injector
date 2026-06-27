@@ -1,0 +1,168 @@
+{
+  "user_card": {
+    "user_info_actions": {
+      "add_account": "添加账户",
+      "view_profile": "查看个人资料"
+    }
+  },
+  "team_card": {
+    "create_team": "添加团队",
+    "individual": "个人",
+    "partner": "合作伙伴",
+    "guest": "访客"
+  },
+  "context_menu": {
+    "undo": "撤销",
+    "redo": "重做",
+    "cut": "剪切",
+    "copy": "复制",
+    "paste": "粘贴",
+    "select_all": "全选",
+    "find_selection": "查找：{selectedText}",
+    "encode_uri_component": "EncodeURIComponent",
+    "decode_uri_component": "DecodeURIComponent",
+    "comment": "注释",
+    "save_to_package_library": "保存到包库",
+    "existing_package": "现有包",
+    "new_package": "新建包",
+    "set_as_variable": "设为变量",
+    "postbot_in_context_menu": "使用 Postbot",
+    "agent_in_context_menu": "使用智能体",
+    "add_to_agent": "询问 AI"
+  },
+  "error": {
+    "tooltips": {
+      "disabled": {
+        "no_permission": "您没有执行此操作的权限。",
+        "no_permissions": "您没有执行此操作的权限。",
+        "is_offline": "您可以在恢复在线后执行此操作。",
+        "is_scratchpad": "您需要在工作区中才能执行此操作。",
+        "is_published_api": "您无法对已发布版本的 API 进行更改。",
+        "signed_out": "您需要登录到团队才能执行此操作。",
+        "get_online_to_perform_action": "请上线后执行此操作",
+        "need_sign_in": "您需要登录到团队才能执行此操作。",
+        "sharing_unavailable_in_filesystem_mode": "文件系统模式下当前无法使用共享功能"
+      }
+    }
+  },
+  "unable_to_perform_action": {
+    "heading": "无法执行操作",
+    "description": "我们正在尝试与服务器建立连接。您可以在连接成功后执行此操作。"
+  },
+  "required_permissions_error_toast": "您没有执行此操作所需的权限。",
+  "creation_error": {
+    "retry_button": "立即重试",
+    "title": "出错了"
+  },
+  "data_editor": {
+    "header_actions": {
+      "toggle_column_header": "显示列"
+    }
+  },
+  "variable_tooltip": {
+    "unresolved": {
+      "heading": "未解析的变量",
+      "desc": "<0><0>请确保该变量已在</0><1><0><0>活动环境</0></0></1><2>、</2><3><0><0>集合</0></0></3><4>或</4><5><0><0>全局变量</0></0></5><6>中定义并启用。</6></0>",
+      "no_active_environment": "<0><0>要在此处使用环境变量，您可以</0><1><0><0>选择一个环境</0></0></1><2>作为活动环境。</2></0>",
+      "not_extensible_collection": {
+        "button_label": "添加新变量",
+        "tooltip": "在 {wrapSentenceSymbol} 之间添加变量名以执行此操作"
+      }
+    },
+    "resolved": {
+      "meta_item": {
+        "value": "VALUE",
+        "scope": "SCOPE",
+        "current": "CURRENT",
+        "initial": "INITIAL"
+      },
+      "copy_button_tooltip": {
+        "copied": "已复制！",
+        "copy": "复制"
+      }
+    }
+  },
+  "user_sign_out": {
+    "heading": "退出 Postman 登录",
+    "description": "退出登录会从本地存储中移除您已同步的历史记录、集合和环境。您可以随时重新登录以再次访问它们",
+    "confirmation_message": "您确定要退出登录吗？",
+    "checking_for_unsaved_changes": "正在检查未保存的更改……",
+    "unsaved_changes_warning": "您有未保存的更改",
+    "steps_to_save_changes": "如果现在退出登录，您将丢失未保存的更改。要保存您的更改，请按以下步骤操作：",
+    "export_data_from_settings_step": "从“设置”>“数据”导出您的数据以创建备份",
+    "have_a_working_directory_step": "确保您的网络连接正常",
+    "quit_app_step": "退出应用（请务必保持登录状态）",
+    "reopen_app_step": "重新打开应用",
+    "sign_out_without_saving": "不保存更改直接退出登录",
+    "sign_out_error": {
+      "title": "出错了",
+      "description": "目前无法退出登录。请稍后重试。"
+    },
+    "actions": {
+      "cancel": "取消",
+      "sign_out_and_remove_local_data": "退出登录并移除本地数据",
+      "sign_out": "退出登录"
+    }
+  },
+  "sidebar": {
+    "collections": {
+      "title": "集合"
+    },
+    "apis": {
+      "title": "API"
+    },
+    "environments": {
+      "title": "环境"
+    },
+    "mock_servers": {
+      "title": "模拟服务器"
+    },
+    "monitors": {
+      "title": "监视器"
+    },
+    "flows": {
+      "title": "Flows"
+    },
+    "insights": {
+      "title": "洞察"
+    },
+    "history": {
+      "title": "历史记录"
+    },
+    "specs": {
+      "title": "规范"
+    },
+    "files": {
+      "title": "文件"
+    }
+  },
+  "file_upload": {
+    "select_file": "选择文件",
+    "select_files": "选择文件",
+    "selected_files": "已选择 {count} 个文件"
+  },
+  "deep_link": {
+    "redirect_view": {
+      "action": "我们正在桌面应用中打开链接……",
+      "explanation": "耗时过长？如果桌面应用未自动打开，请确保应用版本为 v11.40.0 或更高。",
+      "open_in_browser": "在浏览器中打开",
+      "always_open_in_browser": "<0>更喜欢在浏览器中使用 Postman？<1><0><0>始终在浏览器中打开</0></0></1></0>",
+      "download_postman_instruction": "或下载 Postman 应用：",
+      "download_button_label": "下载适用于 {platformName} 的版本"
+    },
+    "onboarding_modal": {
+      "header": "改为在桌面应用中打开？",
+      "description": "您可以随时在设置中更改此项。",
+      "checkbox_label": "始终在桌面应用中打开",
+      "open_button": "在桌面应用中打开"
+    },
+    "top_banner": {
+      "title": "改为在桌面应用中打开此工作区？",
+      "button_text": "在桌面应用中打开"
+    }
+  },
+  "http_method_dropdown": {
+    "open_dropdown": "打开下拉菜单",
+    "close_dropdown": "关闭下拉菜单"
+  }
+}

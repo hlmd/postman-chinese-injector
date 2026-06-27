@@ -1,0 +1,34 @@
+{
+  "name": "postman-chinese-injector",
+  "version": "1.0.0",
+  "description": "把中文翻译注入 Postman 桌面端 / 网页版的非官方第三方汉化工具（跨平台 CLI + 浏览器扩展）。与 Postman, Inc. 无关。",
+  "bin": {
+    "postman-chinese-injector": "postman-chinese-injector.js"
+  },
+  "main": "postman-chinese-injector.js",
+  "type": "commonjs",
+  "scripts": {
+    "patch": "node postman-chinese-injector.js",
+    "restore": "node postman-chinese-injector.js --restore",
+    "build:data": "node scripts/build-data.js",
+    "build:ext": "node scripts/build-extension.js",
+    "build:win": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-windows-x64 --outfile dist/postman-chinese-injector-win-x64.exe",
+    "build:linux": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-linux-x64 --outfile dist/postman-chinese-injector-linux-x64",
+    "build:linux-arm64": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-linux-arm64 --outfile dist/postman-chinese-injector-linux-arm64",
+    "build:mac": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-darwin-x64 --outfile dist/postman-chinese-injector-macos-x64",
+    "build:mac-arm64": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-darwin-arm64 --outfile dist/postman-chinese-injector-macos-arm64",
+    "build": "npm run build:data && npm run build:win && npm run build:linux && npm run build:linux-arm64 && npm run build:mac && npm run build:mac-arm64"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@electron/asar": "^4.0.0"
+  },
+  "files": [
+    "postman-chinese-injector.js",
+    "pm-chinese.js",
+    "locales/"
+  ],
+  "license": "MIT"
+}

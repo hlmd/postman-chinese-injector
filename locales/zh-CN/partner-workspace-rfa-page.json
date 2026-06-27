@@ -1,0 +1,46 @@
+{
+  "switch_accounts_cta": "切换账户",
+  "creating_request_heading": "请求访问此合作伙伴工作区",
+  "creating_request_subheading": "您尚无权访问此工作区。请从下方选择一个选项以请求访问权限。",
+  "team_select": {
+    "label": "选择一个团队",
+    "placeholder": "选择一个用于访问此工作区的团队",
+    "members_count": "{count, plural, one {# 名成员} other {# 名成员}}"
+  },
+  "options": {
+    "partner": {
+      "title": "作为合作伙伴加入",
+      "text": "我是与此组织协作的外部合作伙伴。"
+    },
+    "team_mate": {
+      "title": "作为队友加入",
+      "text": "我是拥有此工作区的组织的一员"
+    }
+  },
+  "partnership_not_allowed": {
+    "banner_title": "不允许合作伙伴访问",
+    "banner_description": "您的团队管理员已为您的团队禁止合作关系。"
+  },
+  "add_note_text": "添加备注",
+  "text_area_info_text": "向工作区管理员添加备注",
+  "submit_cta": "请求加入",
+  "approved_partner_heading": "马上就好！",
+  "approved_partner_subheading_1": "您的请求已获批准。若要获得访问权限，请接受发送到您邮箱的合作邀请。",
+  "approved_partner_subheading_2": "如果您找不到邀请，可以提交新的访问请求。",
+  "approved_partner_raise_new_request_cta": "再次请求访问",
+  "current_sign_in_account_text": "您当前登录的账户为",
+  "toast_content": {
+    "default_error": {
+      "title": "无法发送请求",
+      "description": "只是线路出了点故障。请重试。"
+    },
+    "switch_account_error": {
+      "title": "请求已发送",
+      "description": "请从账户菜单切换团队以继续。"
+    },
+    "switching_account": {
+      "title": "请求已发送",
+      "description": "正在切换到您所选的团队……"
+    }
+  }
+}

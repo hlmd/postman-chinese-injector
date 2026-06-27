@@ -1,0 +1,372 @@
+{
+  "addToNetworkModal": {
+    "previousResponse": "上一条响应：",
+    "messageLabel": "消息",
+    "messagePlaceholder": "添加消息（可选）",
+    "messageRequiredError": "请为您的请求提供一条消息。",
+    "messageLengthError": "消息必须少于 {maxLength} 个字符。",
+    "requesterInfoBanner": "您的请求将发送给网络管理员和团队经理审批。",
+    "cancel": "取消",
+    "fallbackEntityName": "工作区",
+    "successAddToast": "已成功将 {entityName} 添加到网络。",
+    "successRequestToast": "添加 {entityName} 的请求已发送以供审核。",
+    "errorAddToast": "添加到网络失败，请重试。",
+    "errorRequestToast": "请求添加到网络失败，请重试。",
+    "charactersCount": "{current}/{max} 个字符"
+  },
+  "requests": {
+    "approveModal": {
+      "header": "批准将工作区添加到 Private API Network 的请求",
+      "footer": "批准请求",
+      "infoMessage": "此工作区将被添加到您的 Private API Network，并对您的团队成员可见。"
+    },
+    "denyModal": {
+      "header": "拒绝添加工作区的请求",
+      "footer": "拒绝请求",
+      "reasonLabel": "拒绝原因",
+      "reasonOptional": "（可选）",
+      "reasonPlaceholder": "添加拒绝此请求的原因"
+    },
+    "cancelModal": {
+      "header": "取消添加工作区的请求",
+      "confirmation": "您确定要取消此请求吗？此操作无法撤销。",
+      "footer": "取消请求"
+    },
+    "common": {
+      "requestedBy": "由 {requesterName} 请求",
+      "requestedByPrefix": "请求者",
+      "cancel": "取消",
+      "workspace": "工作区",
+      "team": "团队",
+      "requesterComment": "请求者备注",
+      "updatedOn": "更新于",
+      "lastUpdated": "上次更新",
+      "viewWorkspace": "查看工作区",
+      "defaultUser": "用户",
+      "defaultRequester": "请求者"
+    },
+    "item": {
+      "approve": "批准",
+      "deny": "拒绝",
+      "cancelRequest": "取消请求",
+      "you": "（您）"
+    },
+    "listing": {
+      "noRequestsHeader": "没有待处理的请求",
+      "noRequestsMessage": "目前没有待审核的请求。",
+      "errorLoading": "加载请求出错",
+      "tryAgain": "请稍后重试。",
+      "header": "待处理请求（{count}）",
+      "loadMore": "加载更多"
+    },
+    "navigation": {
+      "pendingRequests": "待处理请求"
+    },
+    "toasts": {
+      "approveSuccessTitle": "请求已批准",
+      "approveSuccessDesc": "将通知 {requesterName} 该工作区已添加到网络",
+      "denySuccessTitle": "请求已拒绝",
+      "denySuccessDesc": "将把您的回复通知 {requesterName}",
+      "cancelSuccessTitle": "请求已取消",
+      "cancelSuccessDesc": "您的请求已成功取消",
+      "errorTitle": "{action}请求失败"
+    }
+  },
+  "sidebar": {
+    "searchPlaceholder": "搜索 Private API Network",
+    "heading": "Private API Network",
+    "tooltipAdd": "添加到网络",
+    "tooltipRequests": "待处理请求"
+  },
+  "tagFilter": {
+    "moreTags": "+ 更多标签",
+    "moreTagsCount": "+ 更多标签（{count}）",
+    "searchPlaceholder": "搜索标签",
+    "noTagsFound": "未找到标签",
+    "clearSelected": "清除所选",
+    "loadingResults": "正在加载结果…",
+    "idleDescription": "请检查拼写或尝试其他关键词"
+  },
+  "addToNetworkCta": {
+    "pathLabel": "路径："
+  },
+  "fork": {
+    "needWorkspaceTitle": "您至少需要一个工作区才能复刻",
+    "failedTitle": "复刻失败",
+    "createWorkspaceFirst": "请先创建工作区",
+    "tryAgain": "请重试"
+  },
+  "migrationTable": {
+    "workspacesCount": "工作区（{count}）",
+    "status": "状态",
+    "changeType": "更改类型",
+    "existingTags": "现有标签",
+    "newlyAddedTags": "新添加的标签",
+    "badgeInProgress": "进行中",
+    "badgeStatus": {
+      "Completed": "已完成",
+      "Error": "错误",
+      "notStarted": "未开始"
+    },
+    "changeTypeLabel": {
+      "PUBLISH_WORKSPACE_AND_UPDATE_TAGS": "添加工作区并添加标签",
+      "PUBLISH_WORKSPACE": "添加工作区",
+      "UPDATE_TAGS": "添加标签",
+      "UNAFFECTED": "未受影响"
+    }
+  },
+  "misc": {
+    "workspaceRemoved": "已移除 1 个工作区",
+    "workspaceRemoveError": "移除工作区时出错",
+    "idCopied": "ID 已复制到剪贴板",
+    "copyId": "复制 ID",
+    "removeWorkspace": "从网络中移除工作区"
+  },
+  "bulkAdd": {
+    "header": "将工作区添加到 Private API Network",
+    "description": "将工作区添加到网络，让您的团队轻松发现它们。",
+    "addStage": {
+      "workspaces": "工作区",
+      "show": "显示：",
+      "addedWorkspaces": "已添加的工作区",
+      "addingCount": "{count, plural, =1 {正在添加 # 个工作区} other {正在添加 # 个工作区}}",
+      "review": "审核",
+      "cancel": "取消",
+      "searchPlaceholder": "搜索工作区",
+      "filterTags": "按标签筛选",
+      "noTags": "未找到标签"
+    },
+    "reviewStage": {
+      "title": "审核",
+      "addedTitle": "将被添加的工作区",
+      "addedDescription": "以下所有工作区都将被添加到网络。",
+      "requestedTitle": "将申请添加的工作区",
+      "requestedDescription": "将发送添加以下工作区的请求。",
+      "add": "添加",
+      "requestToAdd": "申请添加",
+      "back": "返回",
+      "remove": "移除"
+    },
+    "table": {
+      "columns": {
+        "workspaces": "工作区",
+        "tags": "标签",
+        "lastUpdated": "上次更新",
+        "workspace": "工作区"
+      },
+      "loadMore": "加载更多",
+      "emptyTitle": "未找到工作区",
+      "emptyDescription": "请尝试调整您的搜索或筛选条件以查找工作区。"
+    },
+    "toasts": {
+      "successBothTitle": "已添加并发送请求",
+      "successBothDesc": "您有访问权限的工作区已被添加。对于其他工作区，已向网络和团队经理发送请求。",
+      "successAddedTitle": "工作区已添加",
+      "successAddedDesc": "{count, plural, =1 {已成功将 # 个工作区添加到网络。} other {已成功将 # 个工作区添加到网络。}}",
+      "successRequestedTitle": "请求已发送",
+      "successRequestedDesc": "已向网络和团队经理发送请求以供审核。",
+      "errorTitle": "添加工作区失败"
+    }
+  },
+  "removeWorkspaceModal": {
+    "heading": "从网络中移除工作区？",
+    "content_before": "移除后，您的团队将无法再发现",
+    "content_after": "Private API Network 上的工作区。该工作区不会从您的账户中删除。",
+    "footer": {
+      "cancel": "取消",
+      "remove": "移除"
+    }
+  },
+  "workspaces": {
+    "addedTo": "已添加到",
+    "privateApiNetwork": "Private API Network",
+    "noEntitiesFound": "此工作区中未找到任何实体",
+    "collections": "集合",
+    "specs": "规范",
+    "flows": "Flow",
+    "sdks": "SDK",
+    "environments": "环境",
+    "variableCount": "{count, plural, one {# 个变量} other {# 个变量}}",
+    "requestCount": "{count, plural, one {# 个请求} other {# 个请求}}",
+    "fork": {
+      "action": "复刻",
+      "actionOffline": "请联网以创建复刻。",
+      "countOffline": "请联网以查看现有复刻。",
+      "countLabel": "{count, plural, one {# 个复刻} other {# 个复刻}}",
+      "noForks": "没有复刻",
+      "latestFork": "最近的复刻",
+      "createdOn": "创建于 {date} 前",
+      "signInTitle": "登录以创建复刻",
+      "signInSubtitle": "您需要登录才能复刻集合。立即创建一个账户吧，完全免费！"
+    },
+    "generated": "生成于 {time}",
+    "openWorkspace": "打开工作区",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "showAllElements": "显示全部 {count} 个元素",
+    "updated": "更新于 {time}",
+    "contributors": "贡献者",
+    "workspacesInTeam": "{teamName} 中的工作区",
+    "noWorkspacesFound": "未找到工作区",
+    "workspacesWillAppear": "发布到此团队的工作区将显示在此处",
+    "workspacesWillAppearInNetwork": "发布到您的 Private API Network 的工作区将显示在此处",
+    "byCreator": "作者：{name}",
+    "byPrefix": "作者：",
+    "collectionsCount": "{count} 个集合"
+  },
+  "teamOverview": {
+    "title": "{teamName} 的 Private API Network",
+    "description": "在您的组织中发现可复用的 API。",
+    "workspacesTitle": "Private API Network 中的工作区"
+  },
+  "sort": {
+    "label": "排序方式",
+    "recentlyAdded": "最近添加",
+    "aToZ": "A-Z"
+  },
+  "pagination": {
+    "loading": "加载中…",
+    "noItemsFound": "未找到任何项目",
+    "itemsPerPage": "每页项目数",
+    "rangeOfTotal": "第 {start}-{end} 项，共 {total} 项",
+    "newer": "更新",
+    "older": "更早"
+  },
+  "errors": {
+    "loadFailedTitle": "无法加载数据",
+    "loadFailedDescription": "只是连接出了点小问题。请尝试重新加载。",
+    "workspaceUpdatesLoadFailed": "无法加载工作区更新。请尝试重新加载。",
+    "reload": "重新加载"
+  },
+  "workspaceUpdates": {
+    "title": "最新工作区更新",
+    "description": "查看您在组织中关注的工作区的最新更新",
+    "teamTitle": "最新工作区更新",
+    "teamDescription": "查看您关注的团队 {teamName} 中工作区的最新更新",
+    "empty": "尚无工作区更新",
+    "endOfList": "您已查看全部内容！",
+    "readMore": "阅读更多",
+    "showLess": "收起",
+    "verifiedTooltip": "已验证",
+    "comments": {
+      "comment_count": "{count, plural, =0 {没有评论} =1 {# 条评论} other {# 条评论}}"
+    },
+    "feed": {
+      "view_count": "{count, plural, =0 {没有浏览} =1 {{formattedCount} 次浏览} other {{formattedCount} 次浏览}}"
+    },
+    "reactions": {
+      "profilePublicRequired": "请将您的资料设为公开以添加回应。",
+      "signInHeading": "登录以添加回应",
+      "genericError": "出错了，请重试。",
+      "addReactionAria": "添加回应"
+    }
+  },
+  "agent_mode": {
+    "loading": "正在加载智能体模式…",
+    "headerLabel": "AI",
+    "headerTooltip": "AI"
+  },
+  "statusBar": {
+    "leftSidebar": "左侧边栏",
+    "rightSidebar": "右侧边栏",
+    "hideLeftSidebar": "隐藏左侧边栏",
+    "showLeftSidebar": "显示左侧边栏",
+    "hideRightSidebar": "隐藏右侧边栏",
+    "showRightSidebar": "显示右侧边栏",
+    "entityCountOrgs": "{squadCount, plural, one {# 个团队} other {# 个团队}}，{workspaceCount, plural, one {# 个工作区} other {# 个工作区}}",
+    "entityCountNonOrgs": "{workspaceCount, plural, one {# 个工作区} other {# 个工作区}}"
+  },
+  "sidebar_nav": {
+    "team_logo_home_aria": "前往主页 — {title}",
+    "search_placeholder": "搜索 Private API Network"
+  },
+  "emptyNetworkHome": {
+    "welcomeTitle": "欢迎使用 Private API Network",
+    "description": "这是您组织中所有工作区的中央目录。您的团队可以发现可用的工作区，并使用标签来轻松组织和查找它们。",
+    "addWorkspaces": "添加工作区",
+    "requestToAddWorkspaces": "申请添加工作区",
+    "actionsDisabledTooltip": "团队管理员可将您添加到 Internal API Management 解决方案，以便在 Private API Network 中添加元素。",
+    "contributeTitle": "为 Private API Network 做贡献",
+    "requestWorkspacesCard": {
+      "title": "从您构建的地方申请工作区",
+      "description": "直接从您创建和管理工作区的位置添加它们。"
+    },
+    "approvalsCard": {
+      "title": "从指定的经理处获得快速审批",
+      "description": "添加评论，让团队经理和网络经理有针对性地协助审核和管理工作区。"
+    }
+  },
+  "migrationUpgrade": {
+    "heading": "Private API Network",
+    "subheading": "让您组织中的每个人都能轻松发现您的 API、集合和工作区。",
+    "title": "升级以访问 Private API Network",
+    "description": "Private API Network 在企业版计划中提供。升级您的计划，为您的组织解锁集中式 API 发现功能。",
+    "primaryButton": "升级到企业版",
+    "secondaryButton": "了解更多",
+    "backToHome": "主页"
+  },
+  "migrationInfo": {
+    "title": "迁移到新版 Private API Network",
+    "description": "随着您组织的扩展，新版 Private API Network 让内部 API 的分发和发现更加轻松。",
+    "feature1Title": "发布工作区，而非单个元素",
+    "feature1Description": "添加一个工作区，其所有集合、规范和 Flow 都将变得可被发现。",
+    "feature2Title": "随组织扩展的组织方式",
+    "feature2Description": "团队定义所有权。标签取代文件夹，实现灵活的筛选和发现。",
+    "migrationTitle": "迁移期间会发生什么",
+    "migrationItem1Prefix": "现有文件夹和子文件夹将被转换为",
+    "migrationItem2Prefix": "先前发布的元素将被映射回其",
+    "migrationItem3": "您将审核并确认将被添加到新版 Private API Network 的工作区。",
+    "migrationNote": "您可以分多次完成迁移。您的工作区内容不会被更改。",
+    "migrationSkipNote": "如果您跳过迁移，则只有先前已添加到网络的工作区可用。",
+    "workspaceTags": "工作区标签",
+    "workspaces": "工作区",
+    "migrateButton": "迁移",
+    "skipMigrationButton": "跳过",
+    "learnMoreButton": "了解更多",
+    "bannerAlt": "迁移插图",
+    "waitingForNetworkManager": "请您的网络经理迁移到新版 Private Network 体验",
+    "inProgressBannerTitle": "Private Network 迁移正在进行中",
+    "inProgressBannerBody": "迁移已由 <0>{ownerName}</0> 发起。请等待其完成或联系以获取最新进展。"
+  },
+  "migrationPage": {
+    "step1Label": "应用迁移更改",
+    "step2Label": "完成迁移",
+    "step1Title": "应用迁移更改",
+    "step1Description": "审核受此次迁移影响的工作区。根据您的设置，工作区可能会被添加到网络、更新标签，或两者兼有。您可以分批迁移并在完成迁移前重试失败项。",
+    "step1Note": "已位于先前网络根目录的工作区将不会显示。",
+    "bannerTitle": "Moonbase Alpha-4",
+    "bannerDescription": "您当前从位于 Luna 的 Moonbase Alpha-4 登录。",
+    "selectedItemsTitle": "{count, plural, =1 {已选择 # 个工作区进行更改} other {已选择 # 个工作区进行更改}}",
+    "migrateButton": "应用",
+    "cancelButton": "取消",
+    "migrationInProgressTitle": "{count, plural, =1 {# 个工作区} other {# 个工作区}}的迁移正在进行中",
+    "migrationInProgressDescription": "正在对 {count, plural, =1 {# 个工作区} other {# 个工作区}}应用迁移更改",
+    "noMigrationEntitiesTitle": "没有需要应用的更改",
+    "noMigrationEntitiesDescription": "此步骤中没有工作区需要更改。您可以继续完成迁移。",
+    "closeButton": "退出并稍后继续",
+    "nextButton": "下一步",
+    "step2Heading": "完成迁移",
+    "step2Description": "完成升级到新版 Private API Network。完成后，您的组织将使用新的基于工作区的模型。",
+    "step2ReadyText": "您已准备好完成迁移。",
+    "step2AfterFinishing": "完成后：",
+    "step2Item1": "新版 Private API Network 将变为激活状态",
+    "step2Item2Prefix": "迁移",
+    "step2Item2Bold": "无法重新开始",
+    "step2ExitNote": "在完成此步骤之前，您可以退出并稍后返回。",
+    "finishMigrationButton": "完成迁移",
+    "takeToPrivateNetworkButton": "完成",
+    "exitModalTitle": "离开迁移？",
+    "exitModalDescription": "已迁移的工作区在您返回时将不会显示。您可以随时为其余工作区继续迁移。",
+    "exitModalCancelButton": "取消",
+    "exitModalExitButton": "退出迁移",
+    "skipModalTitle": "跳过迁移？",
+    "skipModalDescription": "如果您跳过迁移，则只有先前已添加到网络的工作区可用。",
+    "skipModalCancelButton": "取消",
+    "skipModalConfirmButton": "跳过",
+    "backButton": "返回",
+    "nextButtonDisabledTooltip": "至少对一个工作区应用更改才能继续。",
+    "checkboxTooltipUnaffected": "此工作区不受迁移影响",
+    "checkboxTooltipCompleted": "此工作区的迁移已完成",
+    "checkboxTooltipInProgress": "迁移正在进行中"
+  }
+}

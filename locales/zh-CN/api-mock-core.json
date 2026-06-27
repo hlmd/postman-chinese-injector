@@ -1,0 +1,38 @@
+{
+  "info_pane_mock_listing": {
+    "header": {
+      "text": "模拟服务器",
+      "new_button": "新建",
+      "tooltip": "创建模拟服务器"
+    },
+    "list": {
+      "connection_error_state": {
+        "text": "无法加载模拟服务器"
+      },
+      "error_fetching_state": {
+        "text": "加载模拟服务器时发生意外错误，请重试。",
+        "button": "重试"
+      },
+      "no_mock_state": {
+        "collection_text": "此集合尚未创建任何模拟服务器。",
+        "environment_text": "没有模拟服务器使用此环境。"
+      },
+      "default_state": {
+        "show_more": "再显示 {mocksLength} 个",
+        "show_less": "收起"
+      }
+    }
+  },
+  "constants": {
+    "error": {
+      "permission_error": "您没有执行此操作的权限。",
+      "offline_error": "您恢复在线后即可执行此操作。"
+    }
+  },
+  "delete_confirmation": {
+    "delete": "删除",
+    "deleting": "正在删除",
+    "toast_delete_confirmation": "模拟服务器已删除",
+    "toast_delete_error": "无法删除该模拟"
+  }
+}

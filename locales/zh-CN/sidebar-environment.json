@@ -1,0 +1,88 @@
+{
+  "create_new_environment": "创建新环境",
+  "environment_name": "环境名称",
+  "no_environment_empty_state": {
+    "heading": "您还没有任何环境。",
+    "description": "环境是一组变量，可让您切换请求的上下文。",
+    "create_environment_button": "创建环境",
+    "no_items": "此面板中没有任何项目",
+    "create": "创建"
+  },
+  "set_inactive": "设为非活动",
+  "set_active": "设为活动",
+  "not_a_fork": "此环境不是复刻。",
+  "globals": "全局变量",
+  "create_first_environment": "创建您的第一个环境",
+  "could_not_load_panel": "无法加载面板内容。",
+  "retry": "重试",
+  "could_not_perform_action": "无法成功对 {entity} 执行 {action} 操作",
+  "set_active_environment_error": "设置活动环境时出错",
+  "environment_not_a_fork_error": "环境不是复刻",
+  "delete_environment_confirmation": {
+    "heading": {
+      "default": "删除此复刻的环境？",
+      "with_name": "删除 \"{environmentDisplayName}\"？"
+    },
+    "description": "删除此环境可能会导致使用它的任何监视器、计划运行或模拟服务器无法正常运行。您确定要继续吗？",
+    "description_with_pinning": "这将影响依赖此环境的监视器、计划运行或模拟服务器。此外，此环境将从所有当前固定它的集合中移除。",
+    "environment_deleted_successfully": "环境 {name} 已成功删除。",
+    "deleting": "正在删除",
+    "delete": "删除"
+  },
+  "actions": {
+    "copy_link": {
+      "label": "复制链接"
+    },
+    "open_in_new_tab": {
+      "label": "在新标签页中打开"
+    },
+    "share": {
+      "label": "共享"
+    },
+    "move": {
+      "label": "移动"
+    },
+    "rename": {
+      "label": "重命名"
+    },
+    "duplicate": {
+      "label": "创建副本"
+    },
+    "create_a_fork": {
+      "label": "复刻"
+    },
+    "create_pull_request": {
+      "label": "创建拉取请求"
+    },
+    "merge_changes": {
+      "label": "合并更改"
+    },
+    "pull_changes": {
+      "label": "拉取更改"
+    },
+    "export": {
+      "label": "导出"
+    },
+    "manage_roles": {
+      "label": "管理角色"
+    },
+    "delete": {
+      "label": "删除"
+    }
+  },
+  "dependency_actions": {
+    "update": {
+      "label": "更新"
+    },
+    "delete": {
+      "label": "删除"
+    }
+  },
+  "forbidden_access": {
+    "title": "管理员已撤销对环境的访问权限",
+    "message": "这可能是由于安全策略所致。请联系您的管理员以获取更多详细信息或协助。"
+  },
+  "disabled_tool_tip_is_offline": "恢复联网后即可执行此操作。",
+  "disabled_tool_tip_no_permission": "您没有权限执行此操作。",
+  "duplicate_environment_error": "在创建环境副本之前保存更改失败。请重试。"
+}

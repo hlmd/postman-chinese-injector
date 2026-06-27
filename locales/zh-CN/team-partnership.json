@@ -1,0 +1,93 @@
+{
+  "heading": "合作伙伴关系",
+  "heading_tag": "NEW",
+  "create_partner_workspace_banner": {
+    "title": "正在拓展您的合作伙伴关系？",
+    "description": "将您的外部合作伙伴汇集到共享工作区中，共同协作 API 项目。随时回到这里管理您的所有合作伙伴关系。",
+    "button": "创建合作伙伴工作区"
+  },
+  "cta": {
+    "create_partner_workspace": "创建合作伙伴工作区"
+  },
+  "tabs": {
+    "external_partners": {
+      "title": "作为发布者",
+      "description": "管理谁可以访问您已发布的合作伙伴工作区。访问 <Link><Text>邀请和请求</Text></Link> 以查看待处理的合作伙伴关系邀请。",
+      "remove_partner": {
+        "header": "将 {userName} 移除为合作伙伴？",
+        "description": "移除合作伙伴后，他们将无法访问您团队的合作伙伴工作区。",
+        "cancel": "取消",
+        "remove_partner": "移除合作伙伴",
+        "tooltip": "移除合作伙伴",
+        "toasts": {
+          "success": "该合作伙伴已被移除，不再具有合作伙伴工作区的访问权限。",
+          "error": "移除合作伙伴时出错。请重试。"
+        }
+      },
+      "filter": {
+        "by_email_or_name": "按姓名或电子邮件搜索"
+      },
+      "individual_partners_tag": "个人合作伙伴",
+      "editor_role_description": "拥有编辑权限的合作伙伴将在下一个计费周期收费。",
+      "sso_description": "此组织要求用户通过 SSO 登录。",
+      "blank_state": {
+        "partner_workspace_feature_disabled": {
+          "title": "没有外部合作伙伴？没问题！",
+          "description": "将您的外部合作伙伴汇集到共享工作区中，共同协作 API 项目。升级您的计划以创建您的第一个合作伙伴工作区。",
+          "button_description": "升级计划"
+        },
+        "partner_workspace_feature_enabled": {
+          "title": "没有外部合作伙伴？没问题！",
+          "description": "将您的外部合作伙伴汇集到共享工作区中，共同协作 API 项目。随时回到这里管理您的所有合作伙伴关系。",
+          "button_description": "创建合作伙伴工作区"
+        }
+      },
+      "no_search_result": {
+        "title": "未找到合作伙伴",
+        "description": "未找到符合所选筛选条件的合作伙伴。"
+      }
+    },
+    "team_members": {
+      "title": "作为合作伙伴",
+      "permission_settings": {
+        "title": "权限设置",
+        "description": "允许团队成员接受合作伙伴邀请并与其他组织协作。",
+        "dropdown_options": {
+          "always_allow_label": "始终允许",
+          "dont_allow_label": "不允许"
+        },
+        "toasts": {
+          "success": "成功！您的权限已更新。",
+          "error": "糟糕！更新您的权限时出错。请重试。"
+        },
+        "info_for_partnership_disabled_team": "升级您的计划以更新这些设置"
+      },
+      "partnership_table_title": "邀请您团队成员成为合作伙伴的组织",
+      "partnership_table_description": "查看哪些团队成员已被其他组织邀请为合作伙伴。",
+      "by_organization_header": "组织",
+      "team_members_header": "团队成员",
+      "modal": {
+        "header": "与 {teamName} 建立合作伙伴关系的团队成员",
+        "description": "自 {partnershipDate} 起成为合作伙伴"
+      },
+      "blank_state": {
+        "title": "这里暂时还没有内容……",
+        "description": "当您的团队成员被其他组织邀请为合作伙伴时，您会在这里看到他们！"
+      },
+      "people_tag": "人",
+      "person_tag": "人"
+    },
+    "orgs_members": {
+      "permission_settings": {
+        "description": "允许组织成员接受合作伙伴邀请并与其他组织和团队协作。"
+      },
+      "partnership_table_description": "查看哪些组织成员已被其他组织和团队邀请为合作伙伴。"
+    }
+  },
+  "no_view_permission_page": {
+    "title": "您没有访问权限",
+    "description": "只有团队管理员和开发者才能查看合作伙伴关系。"
+  },
+  "partner_count_tooltip_text": "所有合作伙伴都显示在“合作伙伴关系”页面中。",
+  "role_filter_description": "合作伙伴关系"
+}

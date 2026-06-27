@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "title": "搜索"
+  },
+  "title": "搜索结果",
+  "sidebar_sections": {
+    "tags": {
+      "title": "标签"
+    },
+    "title": "筛选方式",
+    "workspace_type": {
+      "title": "可见性"
+    },
+    "private_network": {
+      "title": "仅限私有 API 网络",
+      "label": "私有 API 网络"
+    },
+    "type": {
+      "title": "类型",
+      "all": "全部"
+    }
+  },
+  "error_sections": {
+    "no_results": {
+      "title": "未找到结果",
+      "text": "请尝试检查拼写、调整筛选条件，或换用其他搜索词。",
+      "sub_text": "注意：如果您要在架构文件中查找匹配项，请切换到 <1><0>在 API 中搜索</0></1>"
+    },
+    "server_error": {
+      "heading": "无法搜索",
+      "text": "我们目前在搜索时遇到了问题。"
+    },
+    "user_offline": {
+      "heading": "您处于离线状态，无法搜索",
+      "text": "您需要保持在线才能进行搜索"
+    },
+    "query_too_long": {
+      "heading": "搜索查询过长",
+      "text": "请尝试使用更短的查询进行搜索"
+    },
+    "empty_state": {
+      "heading": "发现元素",
+      "text": "添加搜索查询或按标签筛选以查看结果。"
+    }
+  },
+  "scope": {
+    "default_title": "个人空间",
+    "team_title": "团队 {teamName}"
+  },
+  "sort_label": "排序方式",
+  "spell_corrections": {
+    "no_results_text": "未找到与“{query}”相关的结果",
+    "sub_texts": {
+      "did_you_mean": "您是否要搜索 <1><0>{suggestion}</0></1>？",
+      "base_subtext": "改为显示与“{correctedQueryText}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 条结果",
+      "subtext_with_type": "改为显示与“{correctedQueryText}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 个{type}",
+      "subtext_for_team_scope": "改为显示您的 {teamName} 中与“{correctedQueryText}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 条结果",
+      "subtext_for_public_scope": "改为显示 {scope} 中与“{correctedQueryText}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 条结果",
+      "subtext_for_team_scope_with_type": "改为显示您的 {teamName} 中与“{correctedQueryText}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 个{type}",
+      "subtext_for_public_scope_with_type": "改为显示 {scope} 中与“{correctedQueryText}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 个{type}"
+    }
+  },
+  "sort_options": {
+    "relevance": "最相关",
+    "views": "查看最多",
+    "updated_at": "最近更新"
+  },
+  "sub_text": {
+    "results_found": "{result}：找到 {count, select, lessThanTen {< 10} other {{count}}} 条结果",
+    "results_found_with_type": "{result}：{count, select, lessThanTen {< 10} other {{count}}} 个{type}",
+    "results_found_with_tag": "{result}：找到与“{tag}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 条结果",
+    "results_found_with_tag_and_type": "{result}：找到与“{tag}”相关的 {count, select, lessThanTen {< 10} other {{count}}} 个{type}"
+  },
+  "filter_button_text": "筛选",
+  "sidebar": {
+    "need_help": {
+      "title": "需要产品功能方面的帮助？",
+      "subtitle": "在 Postman 学习中心搜索"
+    }
+  },
+  "tag_sub_heading": {
+    "clear_all_button": "全部清除"
+  },
+  "results": {
+    "item": {
+      "entity_type": {
+        "folder": "文件夹",
+        "api": "API",
+        "workspace": "工作区",
+        "team": "团队",
+        "flow": "Flow",
+        "collection": "集合",
+        "request": "请求",
+        "environment": "环境"
+      },
+      "featured_label": "精选",
+      "trending_label": "热门",
+      "showcased_in_label": "展示于：",
+      "meta_info": {
+        "last_updated": "最近更新：",
+        "collections": "集合：",
+        "apis": "API：",
+        "views": "查看次数：",
+        "workspaces": "工作区：",
+        "forks": "复刻：",
+        "watchers": "关注者：",
+        "grpc_request": "gRPC 请求",
+        "graphql_request": "GraphQL 请求",
+        "mqtt_request": "MQTT 请求",
+        "llm_request": "AI 请求",
+        "ws_raw_request": "WebSocket 请求",
+        "ws_socket_io_request": "Socket.IO 请求",
+        "mcp_request": "MCP 请求",
+        "http_request": "HTTP 请求",
+        "publisher_name": "作者：<1><0>{publisherName}</0></1>",
+        "verified_tooltip": "已验证",
+        "workspace_name": "位于 <1><0><0>{workspaceName}</0></0></1>"
+      },
+      "visibility_icon_tooltip": {
+        "public": "公开{content}",
+        "private": "私有{content}",
+        "team": "团队{content}",
+        "personal": "个人{content}",
+        "partner": "合作伙伴{content}",
+        "entity_type": {
+          "folder": "文件夹",
+          "api": "API",
+          "workspace": "工作区",
+          "team": "团队",
+          "flow": "flow",
+          "collection": "集合",
+          "request": "请求",
+          "environment": "环境"
+        }
+      }
+    }
+  }
+}

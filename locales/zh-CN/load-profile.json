@@ -1,0 +1,100 @@
+{
+  "constant": {
+    "name": "固定",
+    "shorthand": "固定",
+    "description": "{virtualUserCount} 个虚拟{virtualUserCount, plural, =1{用户} other{用户}}运行 {totalDurationMins, plural, =1 {# 分钟} other{# 分钟}}，各自依次执行所有请求。"
+  },
+  "ramp": {
+    "name": "逐步加压",
+    "shorthand": "逐步加压（{humanizedRampDuration}）",
+    "description": "{initialDurationMs, plural, =0 {稳定地} other {{initialLoad, plural, =1 {# 个虚拟用户} other {# 个虚拟用户}}运行 {humanizedInitialDuration}，}}在 {humanizedRampDuration} 内逐步加压至 {maxLoad}，然后将 {maxLoad} 保持 {humanizedMaxLoadDuration}，各自依次执行所有请求。",
+    "initial": {
+      "load": {
+        "name": "初始负载",
+        "description": "在开始逐步加压到最大 VU 数量之前要模拟的 VU 数量。"
+      }
+    },
+    "lead_start": {
+      "time": {
+        "name": "初始负载时间戳"
+      }
+    },
+    "lead_end": {
+      "time": {
+        "name": "逐步加压时间戳",
+        "description": "负载从初始负载线性增加到最大负载所经历的时间。"
+      }
+    }
+  },
+  "peak": {
+    "name": "峰值",
+    "shorthand": "峰值",
+    "description": "{initialDurationMs, plural, =0 {稳定地} other {{initialLoad, plural, =1 {# 个虚拟用户} other {# 个虚拟用户}}运行 {humanizedInitialDuration}，}}在 {humanizedRampUpDuration} 内逐步加压至 {maxLoad}，将 {maxLoad} 保持 {humanizedPlateauDuration}，在 {humanizedRampDownDuration} 内降低至 {initialLoad}，将 {initialLoad} 保持 {humanizedTrailingLoadDuration}，各自依次执行所有请求。",
+    "initial": {
+      "load": {
+        "name": "基础负载",
+        "description": "在开始逐步加压到最大 VU 数量之前以及缩减回落之后要维持的 VU 数量。"
+      }
+    },
+    "lead_start": {
+      "time": {
+        "name": "初始基础负载结束时间戳"
+      }
+    },
+    "lead_end": {
+      "time": {
+        "name": "逐步加压时间戳",
+        "description": "负载从基础负载线性增加到最大负载所经历的时间。"
+      }
+    },
+    "down_start": {
+      "time": {
+        "name": "加压结束时间戳",
+        "description": "维持最大负载所经历的时间。"
+      }
+    },
+    "down_end": {
+      "time": {
+        "name": "逐步减压时间戳",
+        "description": "负载从最大负载线性减少到基础负载所经历的时间。"
+      }
+    }
+  },
+  "spike": {
+    "name": "尖峰",
+    "shorthand": "尖峰",
+    "description": "{initialDurationMs, plural, =0 {尖峰} other {{baseLoad, plural, =1 {# 个虚拟用户} other {# 个虚拟用户}}运行 {humanizedInitialDuration}，尖峰}}在 {humanizedSpikeUpDuration} 内升至 {maxLoad}，在 {humanizedSpikeDownDuration} 内降至 {baseLoad}，将 {baseLoad} 保持 {humanizedFinalDuration}，各自依次执行所有请求。",
+    "initial": {
+      "time": {
+        "name": "基础负载时间戳"
+      },
+      "load": {
+        "name": "基础负载",
+        "description": "在开始逐步加压到最大 VU 数量之前以及缩减回落之后要维持的 VU 数量。"
+      }
+    },
+    "start": {
+      "time": {
+        "name": "尖峰开始时间戳"
+      }
+    },
+    "end": {
+      "time": {
+        "name": "尖峰结束时间戳",
+        "description": "尖峰结束时间戳"
+      }
+    },
+    "peak": {
+      "time": {
+        "name": "尖峰峰值时间戳",
+        "description": "尖峰达到最大负载峰值的时间。"
+      }
+    }
+  },
+  "humanize_duration": {
+    "expanded": "{minutes, plural, =0 {} =1 {# 分钟 } other{# 分钟 }}{seconds, plural, =0 {} =1 {# 秒} other{# 秒}}",
+    "only_minutes": "{minutes, plural, =1 {# 分钟} other{# 分钟}}",
+    "only_seconds": "{seconds, plural, =1 {# 秒} other{# 秒}}",
+    "minutes_and_seconds": "{minutes}:{seconds} 分钟"
+  }
+}

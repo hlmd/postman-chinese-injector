@@ -1,0 +1,440 @@
+{
+  "status_bar": {
+    "desktop_only_tooltip": "本地文件访问仅在桌面应用中可用"
+  },
+  "branch_switcher": {
+    "connect_git": "连接 Git",
+    "open_folder": "打开文件夹",
+    "switch_to_local": "切换到本地",
+    "local_view": "本地视图",
+    "switch_to": "切换到",
+    "postman_cloud": "Postman Cloud",
+    "push_to_postman_cloud": "推送到 Postman Cloud",
+    "pull_from_postman_cloud": "从 Postman Cloud 拉取",
+    "type_branch_name": "输入分支名称…"
+  },
+  "git_error_modal": {
+    "git_not_installed": {
+      "heading": "未安装 Git",
+      "content": "<0>您的系统未安装 Git，或在您的 shell 中不可用。</0><1>请在您的 shell 中安装 git，以便将项目连接到工作区。您可以从 <1>git-scm.com</1><2> 下载 git。</2></1>",
+      "confirm_button_text": "确定"
+    },
+    "not_a_git_repo": {
+      "heading": "不是 git 仓库",
+      "content": "<0>您选择的目录不是 git 目录</0><1>请在此目录中运行 `git init` 以初始化一个新的 git 仓库。</1>",
+      "confirm_button_text": "确定"
+    },
+    "permission_error": {
+      "heading": "权限被拒绝",
+      "content": "<0>执行 git 命令的权限被拒绝。</0><1>请检查您的 shell 访问权限，并确保您拥有在终端中运行 git 命令的必要权限。</1>",
+      "confirm_button_text": "确定"
+    }
+  },
+  "workspace_sync": {
+    "push_to_cloud": "推送到云端",
+    "push": "推送",
+    "done": "完成",
+    "push_successful": "推送成功",
+    "push_completed_with_errors": "推送完成，但存在错误",
+    "push_failed": "推送失败",
+    "load_failed": "无法加载工作区数据",
+    "retry": "重试",
+    "validating_workspace": "正在验证工作区…",
+    "fixing_validation_issues": "正在修复验证问题…",
+    "generating_push_plan": "正在生成推送计划…",
+    "loading_workspace_data": "正在加载工作区数据…",
+    "pushing_resources": "正在将资源推送到云端…",
+    "no_workspace_connected": "未连接工作区",
+    "no_changes_to_push": "没有可{mode}的更改",
+    "all_entities_in_sync": "所有实体均为最新",
+    "select_all": "全选",
+    "deselect_all": "取消全选",
+    "no_changes_selected": "未选择任何更改",
+    "dataset_tooltip": "数据集",
+    "dataset_source_tooltip": "源文件",
+    "run_using_postman_cli": "使用 Postman CLI 运行",
+    "ci_modal_heading": "CI/CD 集成",
+    "ci_modal_description": "将其集成到您的 CI 中，以自动推送到云端",
+    "ci_no_cli": "还没有 Postman CLI？",
+    "ci_download": "在此下载",
+    "copied": "已复制！",
+    "copy_to_clipboard": "复制到剪贴板",
+    "panel_title": "工作区",
+    "panel_title_with_count": "工作区（{count}）",
+    "status_new": "新建",
+    "status_created": "已创建",
+    "status_modified": "更新",
+    "learn_more": "了解更多",
+    "status_new_tooltip": "此实体存在于本地，但尚未存在于云端工作区",
+    "status_update_tooltip": "此实体可能存在与云端版本不同的本地更改",
+    "unsafe_name_tooltip": "文件夹名称包含不受支持的字符。请修复后再推送到云端。",
+    "validation_validating": "正在验证工作区实体…",
+    "validation_fixing": "正在自动修复验证问题…",
+    "validation_error_fallback": "工作区实体验证失败",
+    "validation_issues_count": "{count} 个实体存在验证错误",
+    "validation_issues_found": "发现 {count} 个验证问题",
+    "push_failed_generic_row": "推送失败。",
+    "source_uploading": "正在上传源文件…",
+    "source_upload_failed_generic": "源文件上传失败。",
+    "source_downloading": "正在下载源文件…",
+    "source_download_failed_generic": "源文件下载失败。",
+    "unshare_changes": "取消共享更改"
+  },
+  "local_mock_publish": {
+    "publish_button": "推送",
+    "publish_button_aria_label": "将模拟服务器推送到云端",
+    "republish_button": "推送",
+    "republish_button_aria_label": "将更新推送到云端",
+    "modal_title": "将模拟服务器推送到云端",
+    "modal_description": "将此本地模拟服务器推送到实时 URL，以便您的 API 使用者可以访问它。",
+    "republish_modal_title": "将更新推送到云端",
+    "republish_modal_description": "使用最新更改更新模拟服务器。",
+    "modal_url_label": "URL",
+    "slug_input_aria_label": "模拟服务器 slug",
+    "preview_unavailable": "无法计算实时 URL。",
+    "cancel_button": "取消",
+    "confirm_publish_button": "推送",
+    "confirm_republish_button": "推送",
+    "simulation_push_coming_soon_toast": "推送模拟：即将推出。",
+    "simulation_push_button_label": "推送",
+    "simulation_push_button_aria_label": "推送模拟",
+    "simulation_push_success_toast": "模拟已推送到云端",
+    "simulation_push_update_success_toast": "模拟已更新",
+    "simulation_push_failed_toast": "无法推送模拟",
+    "simulation_published_label": "已发布",
+    "simulation_push_missing_name_toast": "推送前请为您的模拟命名",
+    "simulation_push_no_workspace_toast": "活动工作区不可用",
+    "simulation_start_button_label": "启动",
+    "simulation_stop_button_label": "停止",
+    "simulation_start_success_toast": "模拟已启动",
+    "simulation_stop_success_toast": "模拟已停止",
+    "simulation_start_failed_toast": "无法启动模拟",
+    "simulation_stop_failed_toast": "无法停止模拟",
+    "simulation_create_modal_title": "创建模拟",
+    "simulation_create_modal_name_label": "名称",
+    "simulation_create_modal_name_aria_label": "模拟名称",
+    "simulation_create_modal_name_placeholder": "模拟名称",
+    "simulation_create_modal_name_taken_error": "已存在使用此名称的模拟",
+    "simulation_create_modal_slug_label": "URL",
+    "simulation_create_modal_slug_aria_label": "模拟 slug",
+    "simulation_create_modal_confirm_button": "创建",
+    "simulation_edit_config_menu_label": "编辑配置",
+    "simulation_edit_config_modal_title": "编辑配置",
+    "simulation_edit_config_modal_description": "更新 slug 和模拟路由",
+    "simulation_edit_config_slug_warning": "更改 slug 会重写公共 URL。调用旧 URL 的现有使用者将开始收到 404 响应——仅在您已协调好此次变更时才更改。",
+    "simulation_edit_config_save_button": "确认",
+    "simulation_remove_mock_modal_title": "从模拟中移除模拟服务器？",
+    "simulation_remove_mock_modal_description": "移除“{mockName}”将从此模拟中删除其所有场景。",
+    "simulation_remove_mock_confirm_button": "移除",
+    "simulation_pause_mock_tooltip": "在模拟中暂停此模拟服务器",
+    "simulation_resume_mock_tooltip": "在模拟中恢复此模拟服务器",
+    "simulation_delete_menu_label": "删除模拟",
+    "simulation_delete_modal_title": "删除模拟？",
+    "simulation_delete_modal_description": "“{simulationName}”将被永久删除。仍在访问其已发布 URL 的任何使用者都将开始收到 404 响应。",
+    "simulation_delete_confirm_button": "删除",
+    "simulation_delete_success_toast": "模拟已删除",
+    "simulation_delete_failed_toast": "无法删除模拟",
+    "simulation_push_modal_title": "将模拟推送到云端",
+    "simulation_push_modal_description": "将此模拟推送到实时 URL，以便 API 使用者可以访问其任何模拟服务器。",
+    "simulation_push_modal_slug_aria_label": "模拟 slug",
+    "simulation_push_modal_routing_label": "访问模拟服务器的方式",
+    "simulation_push_modal_routing_description": "使用模拟服务器的 slug 路由您的请求",
+    "simulation_push_modal_routing_select_aria_label": "模拟服务器路由模式",
+    "simulation_push_modal_routing_header_option": "Header",
+    "simulation_push_modal_routing_path_option": "URL 路径",
+    "simulation_push_modal_routing_example_label": "示例",
+    "simulation_push_confirm_button": "推送",
+    "cloud_edit_config_not_supported_toast": "云端模拟服务器尚不支持编辑配置。",
+    "publish_success_toast": "模拟服务器推送成功",
+    "republish_success_toast": "模拟服务器已更新",
+    "submitted_for_approval_toast": "模拟服务器已提交审核。审核人员必须批准后才能上线。",
+    "publish_failed_toast": "无法更新模拟服务器",
+    "cloud_save_started_toast": "正在保存您的更改…",
+    "cloud_save_in_progress_toast": "请稍候，我们正在保存您的更改",
+    "cloud_save_no_changes_toast": "没有可保存的更改",
+    "cloud_save_failed_toast": "无法更新模拟服务器",
+    "invalid_syntax_save_blocked_toast": "无法保存：请修复模拟服务器脚本中的语法错误。{error}",
+    "preview_url_unavailable_toast": "预览 URL 不可用",
+    "cloud_only_tooltip": "在本地工作区模式下打开此模拟服务器以进行推送",
+    "publish_in_progress_tooltip": "正在将模拟服务器推送到云端",
+    "mock_not_ready_tooltip": "模拟服务器仍在加载中",
+    "workspace_unavailable_tooltip": "活动工作区不可用",
+    "url_unavailable_tooltip": "无法生成实时 URL",
+    "publish_feature_disabled_tooltip": "您的账户未启用云端推送",
+    "publish_blocked_by_validation_tooltip": "推送到云端前请修复不受支持的处理程序代码",
+    "cloud_publishability_popover": {
+      "trigger_tooltip_ready": "已准备好推送到云端",
+      "trigger_tooltip_blocked": "此模拟服务器无法推送到云端",
+      "trigger_aria_label": "云端可发布性",
+      "ready_title": "已准备好推送到云端",
+      "ready_body": "与云端模拟服务器运行时兼容。"
+    },
+    "cloud_validation_banner": {
+      "local": {
+        "title": "此模拟服务器无法推送到云端",
+        "body_pm_state": "云端模拟服务器不支持 pm.state。请更新您的处理程序，然后重新推送。",
+        "body_disallowed_packages": "请使用 pm.require() 而非 require() 加载第三方库（{packages}）。请更新您的处理程序，然后重新推送。",
+        "body_blocked_builtins": "这些 Node 内置模块在模拟服务器处理程序中被禁用，必须移除：{packages}。请更新您的处理程序，然后重新推送。",
+        "body_invalid_pm_require": "pm.require() 需要一个字符串字面量的包名（例如 pm.require('lodash')）。请更新您的处理程序，然后重新推送。",
+        "body_combined": "云端模拟服务器不支持 pm.state，并且这些模块无法在云端加载：{packages}。请对第三方库使用 pm.require()，移除被禁用的内置模块（如 fs），并保持处理程序无状态，然后重新推送。"
+      },
+      "cloud": {
+        "title": "此模拟服务器无法在云端运行",
+        "body_pm_state": "云端模拟服务器不支持 pm.state。请更新您的处理程序，然后重新保存。",
+        "body_disallowed_packages": "请使用 pm.require() 而非 require() 加载第三方库（{packages}）。请更新您的处理程序，然后重新保存。",
+        "body_blocked_builtins": "这些 Node 内置模块在模拟服务器处理程序中被禁用，必须移除：{packages}。请更新您的处理程序，然后重新保存。",
+        "body_invalid_pm_require": "pm.require() 需要一个字符串字面量的包名（例如 pm.require('lodash')）。请更新您的处理程序，然后重新保存。",
+        "body_combined": "云端模拟服务器不支持 pm.state，并且这些模块无法在云端加载：{packages}。请对第三方库使用 pm.require()，移除被禁用的内置模块（如 fs），并保持处理程序无状态，然后重新保存。",
+        "redeploy_note": "在处理程序修复之前，保存和重新部署将被阻止。"
+      }
+    },
+    "banner": {
+      "published_label": "已在云端上线",
+      "view_live": "查看上线版本",
+      "republish_action": "推送",
+      "copy_url": "复制 URL"
+    },
+    "mock_url_chip": {
+      "publishing_label": "正在保存您的更改",
+      "published_label": "模拟服务器已上线",
+      "copy_url_tooltip": "复制 URL",
+      "copy_url_aria_label": "复制模拟服务器 URL",
+      "copied_tooltip": "已复制",
+      "copy_failed_toast": "复制 URL 失败",
+      "open_in_request_tooltip": "在新请求中打开",
+      "open_in_request_aria_label": "在新请求标签页中打开模拟服务器 URL",
+      "open_request_failed_toast": "无法打开请求标签页"
+    },
+    "slug_editor": {
+      "helper_text": "请使用小写字母、数字和连字符。按 ⏎ 进行检查。",
+      "not_published_label": "尚未发布",
+      "dependency_caption": "此模拟服务器作为依赖项添加。请从其源工作区进行管理。",
+      "slug_taken": "该 slug 已被占用。请选择其他 slug。",
+      "availability_check_failed": "无法检查可用性。请重试。",
+      "slug_available": "该 slug 可用。",
+      "slug_changed_warning": "推送将更改此模拟服务器的公共 URL。",
+      "update_slug_failed": "无法更新 slug",
+      "mock_slug_label": "模拟服务器 slug",
+      "copy_url_tooltip": "复制 URL",
+      "copy_url_copied_tooltip": "已复制",
+      "copy_url_aria_label": "复制模拟服务器 URL",
+      "copy_url_failed_toast": "复制 URL 失败",
+      "open_in_request_tooltip": "在新请求中打开",
+      "open_in_request_aria_label": "在新请求中打开模拟服务器 URL",
+      "open_request_failed_toast": "无法打开请求标签页",
+      "cancel_tooltip": "取消",
+      "cancel_aria_label": "取消编辑 slug",
+      "check_tooltip": "检查可用性",
+      "check_aria_label": "检查 slug 可用性",
+      "edit_tooltip": "编辑 slug",
+      "edit_aria_label": "编辑模拟服务器 slug"
+    },
+    "cloud_mock_info_header": {
+      "url_label": "实时模拟服务器 URL",
+      "copy_url_tooltip": "复制 URL",
+      "copy_url_aria_label": "复制模拟服务器 URL",
+      "copied_tooltip": "已复制",
+      "copy_failed_toast": "复制 URL 失败",
+      "open_request_failed_toast": "无法打开请求标签页",
+      "created_by": "创建者",
+      "created": "已创建",
+      "updated": "已更新",
+      "you": "您"
+    },
+    "cloud_only_mode": {
+      "load_failed_toast": "无法加载云端模拟服务器",
+      "load_script_failed_toast": "无法加载云端模拟服务器脚本源",
+      "edit_disabled_toast": "没有本地工作区无法编辑云端模拟服务器"
+    },
+    "source_update": {
+      "refresh_failed_toast": "无法从源刷新此模拟服务器。请重试。",
+      "refreshed_toast": "模拟服务器已从其源更新。",
+      "sync_enabled_tooltip": "与其源保持同步",
+      "syncing_tooltip": "正在与其源同步…",
+      "out_of_sync_tooltip": "源有待同步的更改"
+    },
+    "source_conflict": {
+      "title": "关闭自动生成？",
+      "body": "您的编辑与源更新存在冲突。保存以保留它们并关闭自动生成，或重置以放弃它们。",
+      "save_body": "保存您的编辑将关闭此模拟服务器的自动生成。",
+      "keep_button": "关闭自动生成并保存",
+      "discard_button": "重置",
+      "discarded_toast": "已重置为源的最新版本。"
+    },
+    "auto_gen": {
+      "edit_banner_body": "保存您的更改将关闭此模拟服务器的自动生成。",
+      "edit_banner_dismiss": "忽略",
+      "read_only_save_blocked_toast": "您没有权限编辑此自动生成的模拟服务器。"
+    },
+    "source_link": {
+      "picker_placeholder": "选择一个集合或 API 规范",
+      "picker_empty": "未找到集合或 API 规范",
+      "no_source_hint": "关联一个集合或 API 规范，以从中自动生成此模拟服务器。",
+      "auto_gen_label": "保持此模拟服务器从源自动生成",
+      "auto_gen_helper": "当源发生更改时，此模拟服务器会自动重新生成。"
+    }
+  },
+  "json_upgrade": {
+    "title": "升级文件",
+    "description": "Postman 在本地模式下不再支持集合和环境使用 JSON。请将这些文件升级为 v3 YAML 格式以继续使用它们。",
+    "upgrade_button": "升级到 v3",
+    "upgrade_failed_toast": "升级无法完成。请重试。如果问题持续存在，请查看控制台以了解详情。",
+    "upgrade_failed_conversion_toast": "{count} 个文件无法升级。请确保它是有效的 Postman JSON 导出文件，然后重试。",
+    "upgrade_failed_conversion_toast_plural": "{count} 个文件无法升级。请确保它们是有效的 Postman JSON 导出文件，然后重试。",
+    "upgrade_failed_deletion_toast": "升级后无法删除 {count} 个源 JSON 文件。您可以手动移除它。",
+    "upgrade_failed_deletion_toast_plural": "升级后无法删除 {count} 个源 JSON 文件。您可以手动移除它们。",
+    "upgrade_failed_config_toast": "升级期间无法更新工作区配置。请重试升级。",
+    "dismiss_button": "忽略"
+  },
+  "dependencies": {
+    "toast": {
+      "update_success_title": "依赖项已更新",
+      "update_success_message": "{name} 现已为最新。",
+      "update_error_title": "无法更新依赖项",
+      "update_error_message": "无法更新 {name}。请查看控制台以了解详情。",
+      "delete_success_title": "依赖项已移除",
+      "delete_success_message": "{name} 已从此工作区移除。",
+      "delete_error_title": "无法移除依赖项",
+      "delete_error_message": "无法移除 {name}。请查看控制台以了解详情。"
+    }
+  },
+  "setup_guide": {
+    "heading": "工作区已连接到您的 git 仓库",
+    "description": "在 Git 分支中本地处理集合、规范、环境和 Flow——然后在您想要协作或自动化时从 Postman Cloud 拉取或发布到 Postman Cloud。",
+    "section_title": "设置指南",
+    "steps": {
+      "local_files": {
+        "text": "打开本地代码库",
+        "button": "选择目录"
+      },
+      "connect_workspace": {
+        "text": "连接文件夹和工作区",
+        "button": "连接"
+      },
+      "invite_collaborators": {
+        "text": "邀请 Git 协作者加入工作区",
+        "description": "邀请为您的 Git 仓库做出过贡献的人员在此工作区中协作。",
+        "tooltip": "我们使用您本地的 Git 提交历史来查找贡献者。",
+        "button": "邀请团队"
+      },
+      "postman_cli": {
+        "text": {
+          "install": "安装 Postman CLI",
+          "update": "更新 Postman CLI（当前：v{version}）",
+          "installed": "Postman CLI 已安装"
+        },
+        "button": {
+          "install": "安装",
+          "update": "更新",
+          "installed": "已安装"
+        },
+        "recheck_tooltip": "重新检查安装"
+      },
+      "dependencies": {
+        "text": "定义应用程序的依赖项",
+        "button": "管理依赖项"
+      },
+      "postman_init": {
+        "text": "为项目初始化 Postman 配置",
+        "button": "运行初始化"
+      },
+      "agent_inventory": {
+        "text": "请 AI 设置捕获插件并更新测试"
+      },
+      "agent_traffic": {
+        "text": "请 AI 根据您的网络流量创建集合"
+      },
+      "ask_ai": {
+        "text": "请 AI 根据此项目中的 API 端点创建集合",
+        "button": "询问 AI"
+      },
+      "pull_from_cloud": {
+        "text": "将云端集合下载到本地",
+        "button": "从云端拉取",
+        "disabled_tooltip": "没有可拉取的云端集合"
+      },
+      "publish_to_cloud": {
+        "text": "将本地版本发布到 Postman Cloud",
+        "button": "发布到云端",
+        "disabled_tooltip": "没有可发布的本地集合。请先创建集合或从云端拉取。"
+      }
+    },
+    "agent_mode_errors": {
+      "no_folder_title": "未选择文件夹",
+      "no_folder_description": "使用智能体模式前请先选择一个文件夹",
+      "open_failed_title": "无法打开智能体模式",
+      "generic_error_description": "发生了意外错误"
+    }
+  },
+  "pull_from_cloud": {
+    "search_placeholder": "搜索资源…",
+    "no_results_title": "没有与您的搜索匹配的资源",
+    "no_results_description": "请尝试其他搜索词"
+  },
+  "local_view_popover": {
+    "default": {
+      "heading": "在本地和云端之间切换",
+      "content": "在本地 Git 视图和云端视图之间切换、更改分支，或推送和拉取更新。"
+    },
+    "history_migration": {
+      "heading": "您之前的请求已保存",
+      "content": "您的轻量级应用活动存储在历史记录中。切换到云端视图即可访问它。"
+    },
+    "dismiss_button": {
+      "text": "好的，知道了"
+    }
+  },
+  "share_draft": {
+    "button_label": "复制链接",
+    "button_label_copied": "已复制",
+    "tooltip_ready": "通过链接共享您的本地更改",
+    "tooltip_no_directory": "打开一个文件夹以共享本地更改",
+    "tooltip_no_git": "在此文件夹中初始化 git 以共享本地更改",
+    "tooltip_no_branch": "分支信息不可用",
+    "tooltip_no_origin": "配置 git 远程仓库（origin）以共享本地更改",
+    "tooltip_push_in_flight": "推送正在进行中",
+    "toast_success_title": "链接已复制到剪贴板",
+    "toast_success_description": "将此链接分享给团队成员，让他们查看您的本地更改",
+    "toast_error_generic_title": "无法共享本地更改",
+    "toast_error_generic_description": "出错了。请重试。",
+    "toast_error_create_failed_title": "无法共享您的更改",
+    "toast_error_create_failed_description": "我们无法共享您此分支的本地更改。请检查您的连接并重试。",
+    "toast_error_push_failed_title": "无法上传您的更改",
+    "toast_error_push_failed_description": "推送您的更改时出错。请稍后重试。",
+    "toast_error_preview_title": "无法检查现有的共享",
+    "toast_error_preview_description": "请检查您的连接并重试。",
+    "toast_error_clipboard_title": "无法将链接复制到剪贴板",
+    "toast_error_clipboard_description": "请从共享对话框中手动复制链接。",
+    "toast_conflict_title": "此分支的本地更改已被共享",
+    "toast_conflict_description_with_creator": "由 {creator} 共享。每个分支仅允许一个共享。",
+    "toast_conflict_description_unknown": "每个分支仅允许一个共享。",
+    "button_copy_link": "复制",
+    "tooltip_copy_link": "将共享链接复制到剪贴板",
+    "create_title": "共享本地更改",
+    "create_description": "通过链接共享您此分支的本地更改。任何拥有该链接的人都可以在 Postman 中查看它们——无需仓库访问权限。",
+    "sync_title": "同步“{branch}”的更改",
+    "sync_description": "您已共享此分支的更改。点击同步以推送您最新的本地更改——下方的共享链接保持不变。",
+    "sync_tooltip": "使用最新更改更新共享链接",
+    "conflict_title": "此分支的本地更改已被共享",
+    "conflict_description_with_creator": "{creator} 已共享此分支的更改。每个分支仅允许一个共享。",
+    "conflict_description_unknown": "此分支的本地更改已被共享。每个分支仅允许一个共享。",
+    "dont_show_again": "不再显示",
+    "cancel_cta": "取消",
+    "share_cta": "共享并复制链接",
+    "sync_cta": "同步",
+    "dismiss_cta": "忽略",
+    "open_draft_cta": "查看共享的更改",
+    "toast_open_draft_failed_title": "无法打开共享的更改",
+    "toast_open_draft_failed_description": "请尝试从您的工作区列表中打开它。",
+    "toast_branch_shifted_title": "分支已更改为“{branch}”",
+    "toast_branch_shifted_description": "重新打开“复制链接”以共享新分支的更改。",
+    "unshare_confirm_title": "取消共享“{branch}”的更改？",
+    "unshare_confirm_message": "此操作将停止共享您此分支的本地更改。任何拥有该链接的人都将失去访问权限。",
+    "unshare_confirm_cancel": "取消",
+    "unshare_confirm_confirm": "取消共享",
+    "toast_unshare_success_title": "更改已取消共享",
+    "toast_unshare_success_description": "您此分支的本地更改不再被共享。",
+    "toast_unshare_error_title": "无法取消共享更改",
+    "toast_unshare_error_description": "出错了。请重试。"
+  }
+}

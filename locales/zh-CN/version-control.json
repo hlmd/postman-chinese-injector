@@ -1,0 +1,116 @@
+{
+  "collection_fork_label": "<0>此集合复刻自 </0><1>{baseCollectionName}</1>",
+  "fork": {
+    "workbench": {
+      "sign_in_modal": {
+        "title": "登录以创建复刻",
+        "subtitle": "您需要登录才能复刻集合。快来创建一个账户吧，免费的！"
+      },
+      "signed_out_state": {
+        "title": "您已退出登录",
+        "description": "请登录以继续复刻",
+        "sign_in_button": "登录"
+      },
+      "offline_state": {
+        "title": "您已离线",
+        "body": "无法连接到服务器。请检查您的网络设置。",
+        "retry_button": "重试"
+      },
+      "error_state": {
+        "title": "无法获取源{modelDisplayName, select, collection {集合} environment {环境} flow {flow} other {}}",
+        "description": "我们无法获取该源{modelDisplayName, select, collection {集合} environment {环境} flow {flow} other {}}的信息。请重试。"
+      },
+      "no_permission_state": {
+        "description": "您没有权限复刻到此团队的工作区。",
+        "no_workspaces_description": "您没有可供复刻的工作区。请创建一个工作区以开始使用。",
+        "no_workspaces_no_permission_description": "您没有可供复刻的工作区。请联系您的团队管理员获取工作区访问权限。",
+        "create_workspace_button": "创建工作区",
+        "close_button": "关闭"
+      },
+      "fork_tab_header": {
+        "title": "复刻{modelDisplayName, select, collection {集合} environment {环境} flow {flow} other {}}",
+        "source_label": "源{modelDisplayName, select, collection {集合} environment {环境} flow {flow} other {}}",
+        "by": "<0>作者</0><1>{teamName}</1>"
+      }
+    },
+    "fork_table_body": {
+      "learn_more_about_forks": "详细了解复刻",
+      "learn_more_about_forks_default": "<span>详细了解</span> <Flex><Text><Link>复刻</Link></Text><IconActionOpenWebStroke /></Flex>",
+      "retry_button": "重试",
+      "fork_singular": "复刻",
+      "fork_plural": "复刻",
+      "offline_state": {
+        "title": "您已离线",
+        "message": "请检查您的网络连接并重试。"
+      },
+      "forbidden_title": "禁止访问",
+      "error_title": "错误",
+      "forbidden_message": "您没有权限查看此内容。",
+      "error_message": "发生错误。请稍后重试。",
+      "total_forks_title": "{modelName} 的 {totalForks} 个{forkText}",
+      "no_forks_title": "暂无复刻",
+      "hidden_forks_message": "它们不可见，因为它们位于您无权访问的工作区中。",
+      "all_forks_message": "从此 {modelName} 创建的所有复刻都将显示在此处。",
+      "fork_label": "复刻标签",
+      "created_by": "创建者",
+      "created_on": "创建于",
+      "of_text": "属于",
+      "hidden_forks_text": "其中部分未显示在此列表中，因为它们位于您无权访问的工作区中。",
+      "forks_label": "复刻（{modelName}）",
+      "fork_list_description": "{modelName} 的 {count, plural, one {# 个复刻} other {# 个复刻}}。",
+      "fork_list_description_line2": " 其中 {hiddenForks} 个未显示在此列表中，因为它们位于您无权访问的工作区中。",
+      "created_on_date": "{dateObj, date, medium}",
+      "pagination": {
+        "no_more_pages": "没有更多页面可加载"
+      }
+    },
+    "forks_tooltip": "复刻",
+    "create_fork_tab": "创建复刻",
+    "created_success": "复刻已创建",
+    "error": {
+      "title": "复刻正在进行中",
+      "info": "{model} 正在后台复刻。请稍后查看 {model} 列表以查看复刻。",
+      "generic_message": "创建复刻时出错。请重试。"
+    }
+  },
+  "pull_changes": {
+    "tab_title": "拉取更改"
+  },
+  "fork_recommendation_popup": {
+    "title": "创建复刻以保存更改",
+    "message": "您没有权限对此集合进行更改。请将该集合复刻到您的工作区以保存更改。",
+    "button_label": "创建复刻并保存",
+    "error_message": "您没有执行此操作所需的权限。",
+    "upgrade_partner_error_message": "您没有执行此操作的权限。请升级到编辑者角色。",
+    "sign_in_title": "登录以创建复刻",
+    "sign_in_subtitle": "您需要登录才能复刻集合。快来创建一个账户吧，免费的！"
+  },
+  "navigate": {
+    "creating_fork_message": "正在将集合复刻到 {teamName} 团队",
+    "switch_teams_message": "正在将您传送到 {teamName} 团队",
+    "do_not_close_tab_message": "请稍等几秒钟。请不要关闭或刷新此标签页。"
+  },
+  "public_collection_fork_banner": {
+    "description": "要对此集合进行更改，请将其复刻到您的工作区。",
+    "button_label": "复刻集合"
+  },
+  "fork_label": {
+    "fork_info": {
+      "last_updated": "最后更新：{relativeTime}",
+      "source_collection_error": "您无权访问源集合，或者它已被删除。",
+      "copy_collection_id_tooltip": "复制{entityType, select, collection {集合} specification {规范} environment {环境} flow {flow} other {实体}} ID",
+      "copy_collection_url_tooltip": "复制{entityType, select, collection {集合} specification {规范} environment {环境} flow {flow} other {实体}} URL",
+      "pulling_changes_message": "正在后台拉取更改…",
+      "changes_available_message": "有可拉取的更改。",
+      "pull_changes_link": "拉取更改",
+      "merge_conflicts_message": "发现合并冲突。请解决冲突以拉取更改。",
+      "view_diff_link": "查看差异",
+      "auto_sync_config": {
+        "auto_sync_changes_label": "自动拉取更改： ",
+        "auto_sync_status_on": "开启",
+        "auto_sync_status_off": "关闭",
+        "edit_auto_sync_config": "编辑"
+      }
+    }
+  }
+}

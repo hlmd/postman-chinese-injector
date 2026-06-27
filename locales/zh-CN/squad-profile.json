@@ -1,0 +1,45 @@
+{
+  "error": {
+    "title": "出错了",
+    "description": "我们无法加载团队资料。请重试。",
+    "retry": "重试"
+  },
+  "breadcrumbs": {
+    "teams": "团队",
+    "aria_label": "团队资料面包屑导航"
+  },
+  "no_access": {
+    "title": "您没有访问权限",
+    "description": "只有团队成员才能查看此页面。",
+    "request_raised": "您已申请加入此团队。一经批准，您将自动加入。"
+  },
+  "avatar_stack": {
+    "more": "另有 +{count} 个"
+  },
+  "default_team_name": "该团队",
+  "members_popover": {
+    "title_one": "{count} 位成员",
+    "title_other": "{count} 位成员",
+    "trigger_label": "显示成员",
+    "private_user": "私密用户"
+  },
+  "tabs": {
+    "workspaces": {
+      "title": "工作区",
+      "create_button": "创建工作区",
+      "search_limit": "正在显示前 500 条结果。请优化您的搜索以查找更多。",
+      "empty_state": {
+        "text": "暂无工作区",
+        "subtext": "创建工作区或将现有工作区移至此团队即可开始。"
+      }
+    },
+    "members": {
+      "title": "成员",
+      "add_button": "添加成员",
+      "empty_state": {
+        "text": "暂无成员",
+        "subtext": "加入或邀请队友加入此团队即可开始。"
+      }
+    }
+  }
+}

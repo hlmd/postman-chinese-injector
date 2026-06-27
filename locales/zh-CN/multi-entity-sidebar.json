@@ -1,0 +1,21 @@
+{
+  "error_state": {
+    "panel_load_error_message": "无法加载此部分。"
+  },
+  "panel_empty_state": {
+    "title": "此部分为空",
+    "create_button": "添加"
+  },
+  "sidebar_mode_toggle": {
+    "switch_to_classic_tooltip": "切换到经典侧边栏",
+    "switch_to_multi_entity_tooltip": "切换到多实体侧边栏",
+    "toggle_aria_label": "切换侧边栏模式"
+  },
+  "unresolved_entity": {
+    "popover_title": "更新您的应用以查看此内容",
+    "popover_description": "此 {entityType} 需要更新版本的 Postman。",
+    "popover_update_button": "更新应用",
+    "popover_title_web": "无法显示此内容",
+    "popover_description_web": "我们正在努力添加对此 {entityType} 的支持。请稍后再来查看。"
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "context_menu": {
+    "show_labels": "显示标签",
+    "hide_labels": "隐藏标签",
+    "expand_sidebar": "展开侧边栏",
+    "collapse_sidebar": "折叠侧边栏",
+    "configure_sidebar": "配置侧边栏"
+  },
+  "header_tabs": {
+    "configure_sidebar_tooltip": "配置工作区侧边栏"
+  },
+  "disabled_tooltip_published_api": "您无法对已发布版本的 API 进行更改。",
+  "disabled_tooltip_offline_action": "您可以在重新联网后执行此操作。",
+  "disabled_tooltip_not_in_workspace": "您需要在工作区中才能执行此操作",
+  "disabled_tooltip_collection_loading": "正在加载集合…",
+  "add_request_cta": "添加请求",
+  "no_permission_error": "您没有执行此操作的权限。",
+  "no_permissions_error": "您没有执行此操作的权限。",
+  "collection_not_a_fork": "此集合不是复刻。",
+  "perform_action_when_online": "您可以在重新联网后执行此操作。",
+  "perform_action_when_signed_in": "您可以在登录后执行此操作。",
+  "no_changes_to_pull": "没有可拉取的更改",
+  "fork_from_latest_version_of_api": "您只能从 API 的最新版本进行复刻。",
+  "disabled_tooltip_signed_out": "您需要登录才能执行此操作。",
+  "create_new_button": "新建按钮",
+  "view_more_actions": "查看更多操作",
+  "imported_on": {
+    "label": "由 {importedBy} 于 {date} 导入",
+    "description": " 由 <3>{importedBy}</3> 于 <1>{date}</1> 导入",
+    "view_original": "查看原始内容"
+  },
+  "rfa_popover": {
+    "pending_request": {
+      "title": "您需要访问权限才能创建资源",
+      "info_text": "工作区管理员正在审核您的编辑访问权限请求。他们回复后，您将收到通知。",
+      "cancel_cta": "知道了"
+    },
+    "creating_request": {
+      "placeholder_text": "一条简短的备注，有助于审核者批准您的请求",
+      "title": "请求创建资源的访问权限",
+      "info_text": "工作区管理员将审核您的请求。批准后，您将成为此工作区的编辑者。",
+      "partner_info_text": "工作区管理员将审核此请求。批准后，您可以在此工作区中创建、编辑、复刻和导出资源。",
+      "cancel_cta": "稍后再说"
+    },
+    "label": {
+      "text": "添加备注",
+      "field_type": "可选"
+    },
+    "validation_message": "备注最多只能有 140 个字符。",
+    "submit_cta": "请求访问权限",
+    "toast_content": {
+      "REQUEST_ALREADY_APPROVED": {
+        "title": "请求已确认",
+        "description": "看来已经有人批准了此请求。"
+      },
+      "REQUEST_ALREADY_REJECTED": {
+        "title": "请求已确认",
+        "description": "看来已经有人拒绝了此请求。"
+      },
+      "REQUEST_EXPIRED": {
+        "title": "",
+        "description": "此请求已过期。"
+      },
+      "MODEL_DELETED": {
+        "title": "无法响应请求",
+        "description": "由于该元素已被删除，此请求无法完成。"
+      },
+      "REQUEST_EXISTS": {
+        "title": "您已有一个请求正在审核中",
+        "description": "工作区管理员回复后，您将收到通知。"
+      },
+      "request_responded": {
+        "description": "您已响应该请求。"
+      },
+      "request_not_found": {
+        "description": "请求不存在。"
+      },
+      "default": {
+        "title": "无法响应请求",
+        "description": "只是线路故障而已。请重试。"
+      }
+    }
+  },
+  "sidebar_item_input_placeholder": {
+    "collection": "集合名称",
+    "folder": "文件夹名称",
+    "request": "请求名称",
+    "example": "示例名称"
+  },
+  "sidebar_item": {
+    "favorite": {
+      "add_tooltip": "添加到收藏",
+      "remove_tooltip": "从收藏中移除"
+    },
+    "toggle": {
+      "expand": "展开",
+      "collapse": "折叠"
+    }
+  },
+  "sidebar_blank_state": {
+    "start_a_request": "发起请求",
+    "add_entity": "添加实体",
+    "organize": "整理",
+    "create_section": "创建分区"
+  },
+  "create_new_x": {
+    "button_label": "新建",
+    "pin_card": "固定",
+    "unpin_card": "取消固定",
+    "elements": {
+      "http": {
+        "card_label": "HTTP",
+        "info_text": "超文本传输协议（HTTP）是一种应用层协议，常用于构建 REST API。使用 HTTP 请求测试您的 HTTP API。",
+        "no_permission_text": "您没有权限在此工作区中创建 HTTP 请求。",
+        "offline_text": "您需要联网才能创建 HTTP 请求。"
+      },
+      "graphql": {
+        "card_label": "GraphQL",
+        "info_text": "GraphQL 是一种 API 查询语言，旨在为客户端提供其所请求的确切信息。使用 GraphQL 请求测试您的 GraphQL API。",
+        "no_permission_text": "您没有权限在此工作区中创建 GraphQL 请求。",
+        "offline_text": "您需要联网才能创建 GraphQL 请求。"
+      },
+      "grpc": {
+        "card_label": "gRPC",
+        "info_text": "gRPC 是一种高性能的 RPC 框架，常用于构建微服务。使用 gRPC 请求测试您的 gRPC API。",
+        "no_permission_text": "您没有权限在此工作区中创建 gRPC 请求。",
+        "offline_text": "您需要联网才能创建 gRPC 请求。"
+      },
+      "websocket": {
+        "card_label": "WebSocket",
+        "info_text": "WebSocket 通过持久的通信通道实现客户端与服务器之间的实时通信。使用 WebSocket 请求测试基于 WebSocket 的 API。",
+        "no_permission_text": "您没有权限在此工作区中创建 WebSocket 请求。",
+        "offline_text": "您需要联网才能创建 WebSocket 请求。"
+      },
+      "ai": {
+        "card_label": "AI",
+        "info_text": "使用自定义指令测试和定制大型语言模型（LLM）的行为。",
+        "disabled_text": "使用自定义指令测试和定制大型语言模型（LLM）的行为。",
+        "no_permission_text": "您没有权限在此工作区中创建 AI 请求。",
+        "offline_text": "您需要联网才能创建 AI 请求。"
+      },
+      "mcp": {
+        "card_label": "MCP",
+        "info_text": "模型上下文协议（MCP）是一种开放标准，使开发者能够在其数据源与 AI 驱动的工具之间构建安全的双向连接。",
+        "disabled_text": "模型上下文协议（MCP）是一种开放标准，使开发者能够在其数据源与 AI 驱动的工具之间构建安全的双向连接。",
+        "no_permission_text": "您没有权限在此工作区中创建 MCP 请求。",
+        "offline_text": "您需要联网才能创建 MCP 请求。"
+      },
+      "socketio": {
+        "card_label": "Socket.IO",
+        "info_text": "Socket.IO 是构建在 WebSocket 之上的框架，用于实现事件驱动的客户端-服务器通信。使用 Socket.IO 请求测试基于 Socket.IO 的 API。",
+        "no_permission_text": "您没有权限在此工作区中创建 Socket.IO 请求。",
+        "offline_text": "您需要联网才能创建 Socket.IO 请求。"
+      },
+      "mqtt": {
+        "card_label": "MQTT",
+        "info_text": "MQTT 是一种轻量级消息传输协议，广泛用于物联网（IoT）。使用 MQTT 请求测试基于 MQTT 的 API。",
+        "no_permission_text": "您没有权限在此工作区中创建 MQTT 请求。",
+        "offline_text": "您需要联网才能创建 MQTT 请求。"
+      },
+      "collection": {
+        "card_label": "集合",
+        "info_text": "创建集合以整理、记录并与他人共享您的 API 请求。",
+        "disabled_text": "集合可帮助您整理、记录并与他人共享您的 API 请求。",
+        "offline_text": "离线时无法创建集合。",
+        "no_permission_text": "您没有权限在此工作区中创建集合。"
+      },
+      "environment": {
+        "card_label": "环境",
+        "info_text": "使用环境在多个 API 请求中定义和使用变量集。",
+        "disabled_text": "环境可帮助您在多个 API 请求中定义和使用变量集。",
+        "offline_text": "离线时无法创建环境。",
+        "no_permission_text": "您没有权限在此工作区中创建环境。"
+      },
+      "monitor": {
+        "card_label": "监视器",
+        "info_text": "使用监视器定期调度运行您的 Postman 集合。",
+        "disabled_text": "监视器可帮助您按计划运行 Postman 集合。",
+        "offline_text": "离线时无法创建监视器。",
+        "no_permission_text": "您没有权限在此工作区中创建监视器。"
+      },
+      "flows": {
+        "card_label": "Flow",
+        "info_text": "Flow 让您可以可视化、测试并自动化 API 工作流",
+        "disabled_text": "Postman Flows 是一款用于构建 API 驱动应用程序的可视化工具。您可以使用 flow 串联请求、处理数据，并在工作区中创建真实的工作流。",
+        "offline_text": "离线时无法创建 flow。",
+        "no_permission_text": "您没有权限在此工作区中创建 flow。"
+      },
+      "workspace": {
+        "card_label": "工作区",
+        "info_text": "使用工作区保持井然有序并与团队成员协作。",
+        "disabled_text": "工作区可帮助您保持井然有序并与团队成员协作。",
+        "offline_text": "离线时无法创建工作区。",
+        "no_permission_text": "您没有权限创建工作区。"
+      },
+      "insights": {
+        "card_label": "Insights",
+        "info_text": "获取近乎实时的 API 性能洞察。",
+        "offline_text": "离线时无法创建 insights 项目。",
+        "no_permission_text": "您没有权限创建 insights 项目。"
+      },
+      "ask_ai": {
+        "card_label": "询问 AI"
+      },
+      "ai_tools": {
+        "card_label": "AI 工具",
+        "info_text": "打开 AI 工具工作台。"
+      },
+      "spec": {
+        "card_label": "规范",
+        "offline_text": "您需要联网才能创建规范。",
+        "no_permission_text": "您没有权限在此工作区中创建规范。"
+      },
+      "mock": {
+        "card_label": "模拟",
+        "create_with_template_label": "使用模板创建",
+        "create_with_ai_mock_dependencies_label": "模拟外部 API",
+        "create_with_ai_mock_service_label": "模拟您自己的服务"
+      },
+      "mock_server": {
+        "card_label": "模拟服务器"
+      },
+      "classic_mock_server": {
+        "card_label": "经典模拟服务器"
+      },
+      "code_based_mock": {
+        "card_label": "代码模拟"
+      },
+      "documentation": {
+        "card_label": "文档"
+      },
+      "workspace_doc": {
+        "card_label": "文档",
+        "info_text": "创建文档以撰写指南、笔记或 API 文档。",
+        "create_error": "创建文档失败。请重试。",
+        "no_permission_text": "您没有权限在此工作区中创建文档。"
+      },
+      "sdk_gen": {
+        "card_label": "SDK",
+        "offline_text": "离线时无法生成 SDK。",
+        "no_permission_text": "您没有权限在此工作区中生成 SDK。",
+        "no_edit_permission_collection": "您需要对此集合的编辑权限才能生成 SDK。",
+        "no_edit_permission_spec": "您需要对此 API 定义的编辑权限才能生成 SDK。"
+      },
+      "webhook": {
+        "card_label": "Webhook",
+        "info_text": "创建 webhook 以接收和检查请求。",
+        "no_permission_text": "您没有权限在此工作区中创建 webhook。",
+        "offline_text": "您需要联网才能创建 webhook。"
+      },
+      "dataset": {
+        "card_label": "数据集",
+        "info_text": "从数据库或文件定义可重用的数据集，为您的 API 测试和工作流提供支持。"
+      }
+    },
+    "tags": {
+      "new": "新",
+      "beta": "测试版"
+    },
+    "menu": {
+      "search_placeholder": "搜索…",
+      "no_results": "无结果",
+      "no_permission_error": "您没有执行此操作所需的权限。",
+      "collection_create_error": "创建集合时出错。",
+      "button_aria_label": "新建"
+    }
+  },
+  "list_actions": {
+    "dropdown_button_tool_tip": "查看更多操作"
+  },
+  "list_item": {
+    "dropdown_button_tool_tip": "查看更多操作"
+  },
+  "delete_confirm": {
+    "heading": {
+      "delete": "删除{entity}？",
+      "force_close": "确认强制关闭"
+    },
+    "message": {
+      "tab": "{count, plural, one {# 个标签页} other {# 个标签页}}有未保存的更改。如果您强制关闭{count, plural, one {该标签页} other {这些标签页}}，更改将会丢失。您确定要强制关闭吗？"
+    },
+    "button": {
+      "cancel": "取消",
+      "delete": "删除",
+      "force_close": "强制关闭"
+    },
+    "dependency": {
+      "monitor": {
+        "singular": "监视器",
+        "plural": "监视器"
+      },
+      "fork": {
+        "singular": "复刻",
+        "plural": "复刻"
+      },
+      "mock_server": {
+        "singular": "模拟服务器",
+        "plural": "模拟服务器"
+      },
+      "branch": {
+        "singular": "分支",
+        "plural": "分支"
+      },
+      "docs_site": {
+        "singular": "文档站点",
+        "plural": "文档站点"
+      }
+    }
+  },
+  "share_popover": {
+    "invite_button_label": "邀请",
+    "manage_access": "管理访问权限",
+    "environment_selector": {
+      "label": "共享对象："
+    },
+    "personal_workspace": {
+      "banner": {
+        "text": "由于您还没有团队，我们将为您创建一个。",
+        "button_label": "了解更多"
+      }
+    },
+    "general_access": {
+      "heading": "管理访问权限",
+      "workspace_access": {
+        "private": {
+          "description": "仅您和受邀人员",
+          "access": "可访问"
+        },
+        "partner": {
+          "description": "仅受邀的团队成员和合作伙伴",
+          "access": "可访问"
+        },
+        "public": {
+          "description": "互联网上的任何人",
+          "access": "查看者"
+        }
+      }
+    },
+    "manage_roles": {
+      "team_title": "{teamName} 中的所有人",
+      "org_title": "{teamName} 中的所有人",
+      "self_tag": "您",
+      "partner_tag": "合作伙伴",
+      "guest_tag": "访客",
+      "you_label": "（您）",
+      "remove_label": "移除",
+      "roles_dropdown": {
+        "footer": "更新此角色也会更改其在{entityType}上的角色。"
+      },
+      "inherited_roles": {
+        "heading": "继承自以下角色："
+      },
+      "view_all_button": {
+        "suffix": {
+          "singular": "及另外 1 个",
+          "plural": "及另外 {count} 个"
+        }
+      },
+      "conflicting_roles": {
+        "info_text": {
+          "api_linked": {
+            "self": "您对此资源拥有编辑访问权限，该权限继承自关联的 API。",
+            "others": "他们对此资源拥有编辑访问权限，该权限继承自关联的 API。"
+          },
+          "workspace_or_group": {
+            "self": "您对此资源拥有编辑访问权限，该权限继承自该工作区或群组。",
+            "others": "他们对此资源拥有编辑访问权限，该权限继承自该工作区或群组。"
+          }
+        },
+        "squad": {
+          "rejected": "团队管理者正在审核更新此角色的请求。",
+          "pendingEditorApproval": "团队管理者正在审核升级此角色的请求。",
+          "doesNotExist": "此{entityType}已失去对该团队的访问权限。"
+        }
+      },
+      "update_roles": {
+        "error_toast": {
+          "title": "无法更新角色",
+          "description": "只是线路故障而已。请重试。"
+        }
+      },
+      "remove_user_from_workspace_msg": "除非再次受邀，否则他们将无法访问此{visibility}工作区及其中的元素。"
+    }
+  },
+  "share_entity": {
+    "heading": "共享{entity}",
+    "close_aria_label": "关闭",
+    "entities": {
+      "collection": {
+        "singular": "集合",
+        "plural": "集合"
+      },
+      "folder": {
+        "singular": "文件夹",
+        "plural": "文件夹"
+      },
+      "request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "example": {
+        "singular": "示例",
+        "plural": "示例"
+      },
+      "environment": {
+        "singular": "环境",
+        "plural": "环境"
+      },
+      "globals": {
+        "singular": "全局变量",
+        "plural": "全局变量"
+      },
+      "api": {
+        "singular": "API",
+        "plural": "API"
+      },
+      "extensible_collection": {
+        "singular": "集合",
+        "plural": "集合"
+      },
+      "api_definition_file": {
+        "singular": "定义文件",
+        "plural": "定义文件"
+      },
+      "graphql_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "graphql_example": {
+        "singular": "示例",
+        "plural": "示例"
+      },
+      "grpc_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "grpc_example": {
+        "singular": "示例",
+        "plural": "示例"
+      },
+      "ws_raw_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "ws_socketio_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "ws_raw_example": {
+        "singular": "示例",
+        "plural": "示例"
+      },
+      "ws_socketio_example": {
+        "singular": "示例",
+        "plural": "示例"
+      },
+      "ws_raw_message": {
+        "singular": "消息",
+        "plural": "消息"
+      },
+      "ws_socketio_message": {
+        "singular": "消息",
+        "plural": "消息"
+      },
+      "mqtt_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "mqtt_example": {
+        "singular": "示例",
+        "plural": "示例"
+      },
+      "mqtt_message": {
+        "singular": "消息",
+        "plural": "消息"
+      },
+      "run": {
+        "singular": "集合运行",
+        "plural": "集合运行"
+      },
+      "performance_test": {
+        "singular": "性能测试",
+        "plural": "性能测试"
+      },
+      "monitor": {
+        "singular": "监视器",
+        "plural": "监视器"
+      }
+    },
+    "share_button": "共享",
+    "copy_link": "复制链接",
+    "dirty_share": "您未保存的更改将不会被共享。",
+    "something_went_wrong": "出错了",
+    "with_people": "与他人共享",
+    "via_run_in_postman": "通过 Run in Postman",
+    "via_api": "通过 API",
+    "run_in_postman_label": "Run in Postman",
+    "more_actions_aria_label": "更多操作",
+    "share_via_api_label": "通过 API 共享",
+    "offline_error": "如果您想共享，请确保已联网",
+    "no_permission_error": "您没有执行此操作的权限。",
+    "share_element_with_people": {
+      "team_creation_error": "创建团队时出错",
+      "visibility_changed": {
+        "team_title": "可见性已更改为团队",
+        "private_title": "可见性已更改为私有",
+        "team_description": "所有团队成员现在均可访问。",
+        "invite_description": "所有受邀成员现在均可访问。"
+      },
+      "entity_moved_to_workspace": "{entity}已移至新的{workspaceType}工作区。",
+      "could_not_share_entity": {
+        "title": "无法共享{entity}",
+        "description": "只是线路故障而已。请重试。"
+      },
+      "entity_shared_successfully": "{entity}已共享",
+      "copy_link_and_share": "或复制链接进行共享",
+      "collaborate_choice_radio_group": {
+        "label": "选择您想要的协作方式",
+        "no_item_label": "选择创建团队后您想要的协作方式",
+        "options": {
+          "team": {
+            "create_workspace_and_move": {
+              "label": "将此{entity}移至新的团队工作区",
+              "helpertext": "仅会共享此{entity}。"
+            },
+            "convert_to_workspace": {
+              "label": "将其转换为团队工作区",
+              "helpertext": "此工作区中的所有内容都将被共享。"
+            }
+          },
+          "private": {
+            "create_workspace_and_move": {
+              "label": "将此{entity}移至新的私有工作区",
+              "helpertext": "仅会共享此{entity}。"
+            },
+            "convert_to_workspace": {
+              "label": "将其转换为私有工作区",
+              "helpertext": "此工作区中的所有内容都将被共享。"
+            }
+          }
+        }
+      }
+    },
+    "info_text": {
+      "will_create_team": "邀请后，我们将帮助您创建团队并向团队中的所有人开放该工作区。",
+      "will_give_access_to_everyone_in_team": "邀请他人会向团队中的所有人开放该工作区。<1><0>升级</0></1>以与选定的团队成员协作。"
+    },
+    "email_invalid_message": "{noOfEmails, plural, one {# 个电子邮件地址无效。请输入有效的电子邮件地址以发送邀请。} other {# 个电子邮件地址无效。请输入有效的电子邮件地址以发送邀请。}}",
+    "partner_workspace_access_error": "您只能与有权访问此合作伙伴工作区的人员共享此集合。",
+    "new_members_invite_info": "新成员接受您的邀请后将加入您的团队。",
+    "send_suggestion_to_admin": "您的建议将发送给团队管理员以供批准。",
+    "postman_collaboration_within_team_message": "Postman 中的协作通过团队工作区在团队内进行。由于您还没有团队，我们将为您创建一个。<0>了解更多</0>",
+    "private_workspace_permission_error": "在与无权访问此私有工作区的人员共享此{entity}时，他们将作为工作区查看者受邀加入。",
+    "share_with_people_who_have_access": "您只能与有权访问此私有工作区的人员共享此{entity}。",
+    "share_partner_workspace_with_people_who_have_access": "您只能与有权访问此合作伙伴工作区的人员共享此{entity}。",
+    "share_role_selection": {
+      "input_label": "输入姓名、群组名称或电子邮件",
+      "enter_name_email_or_group": "输入姓名、电子邮件或群组名称",
+      "enter_email": "输入电子邮件",
+      "error_uploading_file": "上传文件时出错。请重试",
+      "file_upload_format_error": "只能上传 CSV 和 TXT 文件",
+      "file_size_exceeded_error": "文件大小超过 {maxFileSize}MB，仅支持小于 {maxFileSize}MB 的文件。",
+      "select_csv_or_txt_file": "选择 TXT 或 CSV 文件以添加人员",
+      "add_from_file": "从文件添加",
+      "environment_input_label": "选择一个环境",
+      "environment_selection_disabled": "向工作区添加环境以启用此选项。",
+      "include_environment": "包含环境",
+      "share_via_link": "通过链接共享",
+      "toggle_sharable_link_error": {
+        "title": "无法启用此设置",
+        "description": "只是线路故障而已。请重试。"
+      },
+      "updating": "正在更新…",
+      "copy_link": "复制链接",
+      "link_copied": "链接已复制",
+      "updating_link": "正在更新链接…",
+      "share_link_permission_tooltip": "只有{entity}编辑者才能管理此设置",
+      "allow_guests_to_join_team": "允许<1><0>访客</0></1>加入您的团队并通过链接查看此集合",
+      "permission_not_available": "您没有执行此操作的权限",
+      "new_tag": "新"
+    },
+    "loading_modal_error": {
+      "heading": "无法加载",
+      "description": "只是线路故障而已。请尝试重新加载。",
+      "reload": "重新加载"
+    },
+    "run_in_postman": {
+      "default_label": "了解更多。",
+      "public_workspace_label": "Run in Postman",
+      "embed_learn_more_button": "在您的网站或文档中嵌入<1><0>{buttonText}</0></1>按钮，让人们更轻松地发现您的集合并与之交互。",
+      "everyone_can_view_and_fork_public_collection": "Postman 上的每个人都可以查看和复刻此公开集合。",
+      "generating_code_snippet": "正在生成代码片段…",
+      "render_static_button_message": "此按钮将指向集合的静态快照。它不会随集合的更改而更新。",
+      "fetching_link": "正在获取链接",
+      "generate_code": "生成代码",
+      "updated": "已更新",
+      "update_button": {
+        "label": "更新按钮",
+        "tooltip": "更新集合链接"
+      },
+      "delete_button": {
+        "label": "删除",
+        "tooltip": "删除集合链接"
+      },
+      "best_used_in_websites": "最适合用于网站。具有更多自定义选项。",
+      "best_used_in_markdown": "最适合用于 README 或博客等 markdown 文档。",
+      "move_collection_to_public_workspace_info": "将您的集合移至公开工作区，让每个人都能访问和复刻您的集合。",
+      "only_workspace_members_can_view_collection": "只有工作区成员才能查看该集合。其他团队成员需要请求访问权限才能查看。",
+      "move_to_a_workspace_to_share_collection": "您的集合位于个人工作区中。要共享您的集合，您需要将其移至其他人可访问的工作区。",
+      "move_collection": "移动集合",
+      "embed_code": "嵌入代码",
+      "html_friendly": "HTML 友好",
+      "markdown_friendly": "Markdown 友好",
+      "copied": "已复制",
+      "copy_code": "复制代码",
+      "embed_version": {
+        "label": "嵌入 {buttonType} 版本",
+        "tag": "新"
+      },
+      "fork_to_stay_up_to_date": "此按钮允许使用者复刻该集合，以便通过拉取和合并更改来保持最新状态。",
+      "additional_settings": "其他设置 <1>（可选）</1>",
+      "add_an_environment": "添加环境",
+      "simplify_getting_started_with_your_collection": "为了简化集合的入门流程，请在按钮中发布环境的变量和值。",
+      "move_to_public_workspace": "移至公开工作区"
+    },
+    "share_via_api": {
+      "fetching_permissions_error": "获取权限时出错",
+      "get_collection_json_using_api_key": {
+        "heading": "使用 Postman API 密钥获取集合 JSON",
+        "access_to_collection_info": "有权访问该集合的成员可以使用此请求 URL 在 <1><0>Postman API</0></1> 中获取其 JSON。为获得成功响应，请确保您<3><0>生成 Postman API 密钥</0></3>并对请求进行授权。",
+        "copy_request_url": "复制请求 URL",
+        "copied": "已复制！"
+      },
+      "get_collection_json_using_access_key": {
+        "heading": "使用集合访问密钥获取集合 JSON",
+        "could_not_create_access_key": "无法为 {collectionName} 集合创建访问密钥。",
+        "could_not_get_access_key": "无法获取 {collectionName} 集合的访问密钥。`",
+        "grant_early_access": "通过 Postman API 授予对此集合的只读访问权限。通过此端点提供的集合 JSON 始终反映集合的当前状态。<1><0>管理密钥</0></1>",
+        "generate_key_banner": {
+          "heading": "生成密钥？",
+          "description": "这将创建一个可公开访问的链接。在共享此链接之前，请务必确保您的集合不包含任何敏感信息。"
+        },
+        "generating": "正在生成…",
+        "generate_new_key": "生成新密钥",
+        "copy_postman_url": "复制 Postman API URL"
+      },
+      "link_to_collection_in_public_workspace": {
+        "heading": "指向公开工作区中集合的链接"
+      },
+      "anyone_can_share_and_fork_collection": "任何拥有此链接的人都可以查看和复刻您的集合。",
+      "copy_link": "复制链接",
+      "make_collection_available_in_public_workspace": "在公开工作区中提供您的集合，让每个人都能查看，并通过复刻为您的集合做出贡献。",
+      "move_collection": "移动集合",
+      "who_can_view_this_collection": {
+        "label": "谁可以查看此集合？",
+        "options": {
+          "team": {
+            "label": "团队",
+            "helpertext": "{teamName} 团队中的任何人都可以查看。"
+          },
+          "public": {
+            "label": "公开",
+            "helpertext": "每个人都可以查看。"
+          }
+        }
+      },
+      "move_to_public_workspace": {
+        "description": "要让任何人都能查看此集合，您需要将其移至公开工作区。",
+        "move_button": "移至公开工作区"
+      },
+      "cancel": "取消",
+      "next": "下一步",
+      "additional_settings_label": "其他设置 <1>（可选）</1>",
+      "add_an_environment": {
+        "label": "添加环境",
+        "tooltip": "为了简化集合的入门流程，请在按钮中发布环境的变量和值。"
+      },
+      "allow_guests_to_view_collections": "允许<1><0>访客</0></1>通过 Run in Postman 查看集合",
+      "allow_guests_to_view_collections_new": "允许<1><0>访客</0></1>通过链接查看集合",
+      "can_manage_entity_roles": "只有{entityType}编辑者才能管理此设置。",
+      "can_access_collection_outside_team": "团队外的人员可以访问此集合，从而加快协作速度。"
+    },
+    "no_environment": "无环境",
+    "success_popover": {
+      "no_docs": {
+        "title": "请求已共享",
+        "description": "文档可让您的团队轻松理解请求。",
+        "button_text": "使用 AI 创建文档"
+      }
+    }
+  },
+  "delete_entity": {
+    "collection_deleted": "集合已删除",
+    "heading": {
+      "forked_collection": "删除此复刻的集合？",
+      "delete_collection": "删除“{collectionName}”？"
+    },
+    "description_single": "删除此项将移除所有监视器、计划运行和集成，并停用任何关联的模拟服务器。所有文档站点都将被删除。",
+    "description_single_reusable": "删除此项将移除监视器、计划运行和集成。模拟服务器将被停用，且链接的请求将不再跟随原始请求的更新。所有文档站点都将被删除。",
+    "description_multiple": "这将停用与这些集合关联的监视器、计划运行、集成和模拟服务器。",
+    "description_multiple_docs_sites": "所有文档站点都将被删除。",
+    "description_single_git_link": "删除此项将移除所有监视器、计划运行和集成，断开与远程仓库的连接，并停用任何关联的模拟服务器。所有文档站点都将被删除。",
+    "description_single_git_link_reusable": "删除此项将移除所有监视器、计划运行和集成，并断开与远程仓库的连接。模拟服务器将被停用，且链接的请求将不再跟随原始请求的更新。所有文档站点都将被删除。",
+    "failed_load": "加载详情失败",
+    "delete_permanently": "永久删除",
+    "delete": "删除",
+    "deleting": "正在删除…",
+    "retry": "重试",
+    "confirmation_message": "要确认，请在下面的框中输入“{confirmation_word}”",
+    "placeholder_text": "输入 delete",
+    "confirmation_word": "delete",
+    "delete_extinsible_collection": "您确定要删除此集合吗？",
+    "could_not_restore_message": "无法从回收站恢复此集合。",
+    "delete_confirmation_text": "您确定要删除 <1>{name}</1> 吗？",
+    "delete_pinned_doc_confirmation": "此文档已固定到工作区概览。您确定要删除它吗？",
+    "this_cant_be_undone": "此操作无法撤消。",
+    "delete_entity_question": "删除{entity}？",
+    "delete_elements_question": "删除元素？",
+    "delete_multi_selected_elements_question": "删除“{entity}”？",
+    "cancel_button": "取消",
+    "delete_button": "删除",
+    "delete_confirm": "删除集合",
+    "delete_folder": {
+      "heading": "删除“{folderName}”？",
+      "folder_deleted_successfully": "文件夹 {name} 已成功删除。",
+      "reusable_reference_warning": "删除此文件夹将移除其所有内容。如果原始内容被删除，链接的请求将不再跟随更新。"
+    },
+    "delete_request": {
+      "heading": "删除“{requestName}”？",
+      "request_deleted_successfully": "{name} 已成功删除。",
+      "reusable_reference_warning": "删除此请求将使链接的请求停止跟随更新。"
+    },
+    "could_not_calculate_collection_size": {
+      "single_collection_selected": "无法计算集合大小。如果其大小超过 30 MB，将无法恢复。",
+      "multiple_collection_selected": "无法计算集合大小。任何大于 30 MB 的集合都无法从回收站恢复。"
+    },
+    "calculating_collection_size": {
+      "single_collection_selected": "正在检查此集合是否可恢复…",
+      "multiple_collection_selected": "正在检查所选集合是否可恢复…"
+    },
+    "cannot_restore_collections": {
+      "single_collection_selected": "请在删除前导出此项，因为它无法从回收站恢复。",
+      "multiple_collection_selected": "某些集合可能无法从回收站恢复。如有需要，请将其导出。",
+      "multiple_non_restorable_non_exportable_collections": "已删除的集合无法从回收站恢复。"
+    },
+    "can_restore_collections": {
+      "single_collection_selected": "此集合可以从回收站恢复。",
+      "multiple_collection_selected": "已删除的集合可以从回收站恢复。"
+    }
+  },
+  "dependency": {
+    "label": "依赖项"
+  },
+  "import": {
+    "button_label": "导入",
+    "tooltip": "将文件拖放到任意位置即可导入",
+    "sidebar_header_tooltip": "导入资源"
+  },
+  "partner_workspace_banner": {
+    "default": "合作伙伴可以访问此工作区",
+    "multi_partner_workspace": "已与来自多个组织的合作伙伴共享"
+  },
+  "tidy_workspace_banner": {
+    "archive": {
+      "heading": "整理一下？",
+      "description": "<0><0>归档</0></0><1>此工作区，它已闲置超过 6 个月。</1>",
+      "toast": {
+        "success_description": "工作区已归档",
+        "failure_description": "只是线路故障而已。请重试。",
+        "failure_title": "无法归档工作区"
+      }
+    },
+    "restore": {
+      "heading": "此工作区已归档",
+      "description": "<0>它已从视图中移除。监视器已关闭。</0> <1><0>恢复</0></1>",
+      "toast": {
+        "success_description": "工作区已恢复",
+        "failure_description": "只是线路故障而已。请重试。",
+        "failure_title": "无法恢复工作区"
+      }
+    }
+  },
+  "share_response": {
+    "copy_response_link_aria_label": "复制响应链接"
+  }
+}

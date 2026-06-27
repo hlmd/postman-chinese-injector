@@ -1,0 +1,703 @@
+{
+  "context_bar_list": {
+    "label": "监视器",
+    "new_button": "新建"
+  },
+  "share": {
+    "tooltip": "分享监视器",
+    "popover": {
+      "private": {
+        "heading": "与团队分享",
+        "content": "此监视器位于您的个人工作区中。",
+        "content2": "除非您邀请他人，否则无人可以访问它。",
+        "button": "邀请人员"
+      },
+      "shared": {
+        "private_team_content": "只有工作区成员可以访问此链接。",
+        "team_content": "只有团队成员可以访问此链接。",
+        "heading": "分享链接",
+        "button": {
+          "copy": "复制链接",
+          "invite": "邀请人员"
+        }
+      },
+      "partner": {
+        "heading": "分享链接",
+        "content": "只有有权访问此工作区的人员可以访问此链接。",
+        "button": {
+          "copy": "复制链接",
+          "invite": "邀请人员"
+        }
+      }
+    },
+    "error": {
+      "toast": "目前无法邀请，请稍后重试。"
+    }
+  },
+  "header": {
+    "run_button": "运行",
+    "refresh": "刷新",
+    "runs": "次运行",
+    "menu_label": {
+      "pausing": "正在暂停",
+      "pause": "暂停",
+      "resuming": "正在恢复",
+      "resume": "恢复",
+      "edit": "编辑",
+      "delete": "删除"
+    },
+    "view_more_actions": "查看更多操作"
+  },
+  "constants": {
+    "tooltip_text": {
+      "is_online": "重新加载活动日志",
+      "is_offline": "您恢复在线后即可执行此操作",
+      "request_access": "申请访问权限"
+    },
+    "offline_text": {
+      "text": "您处于离线状态，无法加载数据。",
+      "sub_text": "在您恢复在线之前，您的数据可能不是最新的。",
+      "menu_msg": "您处于离线状态，无法执行已禁用的操作"
+    },
+    "permission_text": {
+      "default_disabled_msg": "您没有权限执行已禁用的操作",
+      "console_disabled_msg": "您没有权限查看此信息。",
+      "activity_info_msg": "此用户的资料为私有。",
+      "request_access_msg": "要执行此操作，请申请对此监视器的额外访问权限。",
+      "collection_moved_msg": "由于关联的集合已移动到其他工作区，无法执行已禁用的操作",
+      "publish_editor_required_msg": "您需要编辑者权限才能发布或取消发布监视器报告",
+      "publish_restricted_workspace_msg": "您无法从此工作区发布监视器报告。要发布，请在内部团队工作区中创建监视器。",
+      "unpublish_requires_manage_publish": "只有团队管理员才能取消发布此报告。"
+    },
+    "forbidden_error": {
+      "encryption_failed": {
+        "title": "因安全策略，访问被拒绝",
+        "body": "在访问权限恢复之前，您无法运行监视器。请联系您的团队管理员寻求帮助。"
+      },
+      "decryption_failed": {
+        "title": "因安全策略，访问被拒绝",
+        "body": "在访问权限恢复之前，您无法访问监视器详情。请联系您的团队管理员寻求帮助。"
+      }
+    },
+    "user_visible_action": {
+      "update": "编辑了此监视器",
+      "update_roles": "编辑了此监视器的角色",
+      "pause": "暂停了此监视器",
+      "resume": "恢复了此监视器",
+      "delete": "删除了此监视器",
+      "create": "创建了此监视器"
+    },
+    "user_visible_system_action": {
+      "create_team_change": "已创建替代监视器（团队成员变更）",
+      "create": "监视器已创建",
+      "delete_team_change": "监视器已删除（团队成员变更）",
+      "delete": "监视器已删除",
+      "pause_inactivity": "监视器已暂停（用户不活跃）",
+      "pause_unhealthy": "监视器已暂停（频繁运行失败）",
+      "pause_collection_environment_deleted": "监视器已暂停（集合或环境被取消分享或删除）",
+      "pause_collection_moved": "监视器已暂停（关联的集合已从工作区移除）",
+      "pause_environment_moved": "监视器已暂停（关联的环境已从工作区移除）",
+      "pause_no_workspace": "监视器已暂停（不存在于任何工作区中）",
+      "pause_support": "监视器已被 Postman 支持人员暂停",
+      "pause": "监视器已暂停",
+      "resume_system_action": "监视器已作为系统操作的一部分恢复。",
+      "resume": "监视器已恢复",
+      "update": "监视器已编辑"
+    },
+    "user_visible_state_sentence": {
+      "waiting": "正在准备运行。",
+      "starting": "正在准备运行。",
+      "running": "运行正在进行中。这可能需要几分钟。",
+      "refresh": "请刷新以查看最新结果。",
+      "finishing": "运行正在进行中。这可能需要几分钟。",
+      "finished_failure": "{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}运行完成——请检查失败的测试。",
+      "finished_error": "{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}运行失败。",
+      "finished_abort": "{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}运行超时。",
+      "finished_abort_invalid_resource": "关联的集合或环境不可访问或已被删除。",
+      "finished_abort_deleted_collection": "关联的集合已被删除。",
+      "finished_abort_deleted_environment": "关联的环境已被删除。",
+      "finished_success": "{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}运行完成。",
+      "retrying": "正在重试运行。这可能需要几分钟。",
+      "discontinued_error": "{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}运行失败。正在重试。",
+      "discontinued_failure": "检测到失败的测试。正在重试。",
+      "discontinued_abort": "{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}运行超时。正在重试。"
+    },
+    "loading_state": {
+      "generic": "（加载中…）"
+    },
+    "activity_logs": {
+      "you": "您"
+    },
+    "activity_logs_list_end": "到底了！您已查看此监视器的所有活动。",
+    "activity_logs_search_placeholder": "搜索用户",
+    "activity_logs_no_users": "未找到用户",
+    "activity_logs_load_more": "加载更多",
+    "monitor_details": {
+      "id_label": "ID",
+      "copy_id_tooltip": "复制监视器 ID",
+      "copied_tooltip": "已复制",
+      "creator_label": "创建者",
+      "created_at_label": "创建时间",
+      "collection_label": "集合",
+      "environment_label": "环境",
+      "no_collection": "无集合"
+    },
+    "activity_logs_empty_state": {
+      "text": "此监视器似乎还没有任何活动",
+      "sub_text": "活动动态会及时向您更新此监视器周围发生的情况",
+      "with_filters_text": "未找到活动",
+      "with_filters_sub_text": "请调整您的筛选条件后重试。"
+    },
+    "user_profile": {
+      "private_user": "此用户的资料为私有。",
+      "error": "目前无法加载用户详情",
+      "you": "您",
+      "user": "用户"
+    },
+    "activity_logs_filter": "筛选活动日志",
+    "monitor_graph": {
+      "init": "点击上方图表中的某次运行以查看其详情"
+    },
+    "monitor_action": {
+      "no_run": "此监视器尚未运行",
+      "deleted": "监视器已删除。",
+      "create": "创建监视器",
+      "show_less": "收起"
+    },
+    "monitor_runs": {
+      "run_placeholder": "运行后，结果将显示在此处。您可以等待它按计划运行，或手动触发一次运行。",
+      "will_run": "此监视器将按其常规计划运行。",
+      "will_not_run": "此监视器将不再进行其计划的运行。",
+      "run_button": "运行"
+    },
+    "monitor_test_results": {
+      "no_tests": "未找到测试",
+      "no_pass_run": "本次运行中没有任何测试通过。请为您的请求<1>添加测试</1>，并在它们失败时<3>进行调试</3>。",
+      "no_failure_ack": "干得好！本次运行中没有任何测试失败。如果您尚未添加，请为您的请求<1>添加测试</1>。",
+      "no_skipped_ack": "本次运行中没有跳过任何测试。如果您尚未添加，请为您的请求<1>添加测试</1>。",
+      "no_skipped": "没有跳过任何测试",
+      "no_pass": "没有测试通过",
+      "no_fail": "没有测试失败 :D",
+      "no_errors": "没有错误",
+      "no_test_runs": "本次运行没有测试",
+      "check_console": "通过选择集合 > 三点图标（…）> 添加请求 来添加请求",
+      "no_results": "在关联的集合中未找到请求",
+      "abort": "本次运行已中止",
+      "all_tests": "全部",
+      "passed_tests": "已通过",
+      "failed_tests": "已失败",
+      "skipped_tests": "已跳过",
+      "request_errors": "错误"
+    },
+    "job_information": {
+      "runner": "运行器",
+      "region": "区域",
+      "test_results": "测试结果",
+      "console_log": "控制台日志",
+      "job_summary_error_in_run": "因错误无法运行",
+      "job_summary_across_regions": "<0>{failedTests}</0><1> 个失败的{failedTests, plural, one {测试} other {测试}}，</1><2>{errors}</2><3> 个{errors, plural, one {错误} other {错误}}，跨 {regionCount, plural, one {# 个区域} other {# 个区域}}，</3><4>{requestCount}</4><5> 个{requestCount, plural, one {请求} other {请求}}总计</5>",
+      "job_summary_across_runners": "<0>{failedTests}</0><1> 个失败的{failedTests, plural, one {测试} other {测试}}，</1><2>{errors}</2><3> 个{errors, plural, one {错误} other {错误}}，跨 {regionCount, plural, one {# 个运行器} other {# 个运行器}}，</3><4>{requestCount}</4><5> 个{requestCount, plural, one {请求} other {请求}}总计</5>",
+      "job_summary": "<0>{failedTests}</0><1> 个失败的{failedTests, plural, one {测试} other {测试}}，</1><2>{errors}</2><3> 个{errors, plural, one {错误} other {错误}}，</3><4>{requestCount}</4><5> 个{requestCount, plural, one {请求} other {请求}}总计</5>",
+      "line_number": "行号",
+      "time_stamp": "时间戳",
+      "console_output": "控制台输出",
+      "file_helper_text": "基于来自 <0> {name} </0> 的数据运行"
+    },
+    "performance_graph": {
+      "failed_percent": "失败百分比：<1>{failedPercent}%</1>",
+      "response_time": "响应时间：<1>{latency} 秒</1>",
+      "response_time_invalid": "响应时间：<1>--</1>",
+      "previous_run": "转到上一次运行",
+      "next_run": "转到下一次运行",
+      "job_history": "{name} 的作业历史",
+      "run_summary": "运行摘要",
+      "individual_requests": "单个请求",
+      "view": "视图：",
+      "filter_by": "筛选条件：",
+      "clear_filters": "清除筛选条件",
+      "clear_filters_description": "清除筛选条件以查看您的监视器运行",
+      "all_requests": "请求",
+      "all_regions": "区域",
+      "all_runners": "运行器"
+    },
+    "monitor_action_error": {
+      "create": "无法创建监视器",
+      "load": "无法加载监视器",
+      "fetch": "无法获取监视器",
+      "update": "无法更新监视器",
+      "creation_error": "创建监视器时出错",
+      "pipeline_error": "创建监视器的流水线出错",
+      "ceiling_error": "已达到监视器创建上限。",
+      "check_internet": "请检查您的网络连接后重试。",
+      "something_went_wrong": "创建此监视器时出错。您可以稍后重试。",
+      "load_retry": "无法加载该监视器。请稍后重试。",
+      "invalid_aggregate": "监视器性能视图中的聚合函数无效",
+      "request_aggregate": "getChartData: 无效的 requestAggregate 值。",
+      "activity_load_failure": "无法加载活动动态",
+      "retry": "请稍后重试"
+    },
+    "try_again": "重试",
+    "filters": {
+      "no_results": "请更改您的筛选条件后重试。"
+    },
+    "empty_state": {
+      "create_error": "无法创建监视器",
+      "edit_error": "无法编辑监视器",
+      "no_environment": "没有监视器使用此环境",
+      "no_collection": "尚未为此集合创建监视器",
+      "no_results": "未找到结果",
+      "no_monitors_setup": "您尚未设置任何监视器",
+      "monitor_collection_run": "监视器可让您定期运行集合，以检查其性能和响应。",
+      "no_run_results": "暂无结果",
+      "no_tests_run": "未运行任何测试",
+      "deleted_items_in_selection": "在自定义运行顺序中发现已删除的请求或文件夹，导致在运行任何请求之前出错。",
+      "selection_has_deleted_items_cta": "查看运行顺序",
+      "beyond_retention_period": {
+        "title": "本次运行没有可用的日志",
+        "description": "这是一次较早的运行。测试结果和运行日志已不可用。您可以联系 <1><0><0>Postman 支持</0></0></1> 来申请这些信息"
+      }
+    },
+    "create_new": "创建新监视器",
+    "schedule_selector": {
+      "at": "于"
+    },
+    "loading_error": {
+      "collections_and_environments": "获取集合和环境时出错"
+    },
+    "sign_in_message": {
+      "title": "创建账户",
+      "sub_title": "您需要一个账户才能继续探索 Postman。",
+      "default": "您需要登录到某个团队才能执行此操作",
+      "generic": "您需要一个账户才能继续探索 Postman。"
+    },
+    "version_tags_error": {
+      "error": "获取标签时出错"
+    },
+    "plan_fetch_error": {
+      "error": "获取用户计划时出错"
+    },
+    "region_fetch_error": {
+      "error": "获取区域时出错"
+    },
+    "collection_fetch_error": {
+      "error": "获取集合时出错"
+    },
+    "monitor_action_success": {
+      "create": "监视器已创建",
+      "updated": "监视器已更新",
+      "resumed": "监视器已恢复",
+      "paused": "监视器已暂停"
+    },
+    "email_validation_error": {
+      "invalid": "无效的电子邮件地址",
+      "duplicate": "此电子邮件已存在"
+    },
+    "no_environment": "无环境",
+    "uptime_app_message": "正常运行时间监视器目前仅在 Postman 网页应用上可用。",
+    "uptime_documentation": "详细了解正常运行时间监视器",
+    "uptime_browser_transition": "打开网页应用",
+    "feedback_type": {
+      "feature_missing": "缺少某项关键功能",
+      "not_expected": "监视器功能不是我所期望的",
+      "poor_experience": "使用监视器时体验糟糕或过于复杂",
+      "just_exploring": "我只是随便看看",
+      "something_else": "是其他原因"
+    }
+  },
+  "body": {
+    "show_more": "再显示 {monitorLength} 个"
+  },
+  "form": {
+    "header": "创建监视器",
+    "name": "监视器名称",
+    "collection": "集合",
+    "no_collections": "没有可用的集合",
+    "collection_select": "选择一个集合",
+    "collection_monitor_select": "请选择要监视的集合。",
+    "collection_version_tag": "集合标签",
+    "version_tag_select": "为此监视器选择一个集合标签。",
+    "version_tag_current_version": "为此监视器选择一个集合标签。如果集合未链接到 API，则只能基于当前标签创建监视器。",
+    "environment": "环境",
+    "no_environment": "无",
+    "learn_more": "了解更多",
+    "environment_placeholder": "此环境中的变量值将用于您所有的监视调用。 ",
+    "run": "运行",
+    "regions": "区域",
+    "runners": "运行器",
+    "runners_auto_select": "自动选择",
+    "runners_select_placeholder": "选择运行器",
+    "runners_section_cloud": "云",
+    "runners_section_private": "私有",
+    "runners_empty": "没有可用的运行器",
+    "run_monitor": "运行方式",
+    "run_monitor_info": "选择如何触发此监视器。使用计划进行自动定期运行，或使用 Postman CLI 进行按需执行。",
+    "monitor_run_info": "<0>您也可以在创建监视器后点击“运行”按钮来触发一次监视器运行。请查看您的</0><1><0>用量限制</0></1>",
+    "frequent_runs_info": "更频繁的运行可让您更细致地查看性能，但也会消耗更多监视调用，而这可能受您的 Postman 账户限制",
+    "region_auto_select": "自动选择区域",
+    "region_manual_select": "手动选择区域",
+    "allow_list_ip": "如果选择，请确保此 IP 地址已添加到允许列表。来自此区域的所有监视调用都将来自此地址。",
+    "upgrade_static_ip": "升级您的计划以选择具有静态 IP 的区域。",
+    "region_select": "您可以选择一个或多个区域来监视您的请求。 ",
+    "execution_source_select": "您可以选择一个或多个部署环境来监视您的请求。 ",
+    "upgrade": "您当前使用的是免费版。升级即可手动选择特定的监视区域。",
+    "upgrade_generic": "您当前使用的是免费版。升级您的计划以使用此功能。",
+    "region_selection_feature": "监视器区域选择",
+    "publish_report_feature": "监视器发布报告",
+    "email": "接收运行失败和错误的电子邮件通知",
+    "email_add": "添加另一个收件人电子邮件",
+    "notification": "您最多可以添加 5 个通知收件人",
+    "notification_limit_error": "请输入 1 到 {limit} 之间的值",
+    "notification_limit": "<0>在连续</0><1><0></0></1><2>次失败后停止通知</2>",
+    "retry": "<0>重试</0><1></1><2>{attempts, plural, one {次} other {次}}</2>",
+    "retry_fail": "运行失败时重试",
+    "retry_warn": "（这可能会影响您的账单。）",
+    "retry_monitor_run": "仅当上一次运行成功时，才会重试失败的监视器运行。",
+    "value_greater_zero": "请输入大于 0 的值",
+    "request_timeout_value_range": {
+      "free": "请输入 1ms 到 600000 ms 之间的值",
+      "paid": "请输入 1ms 到 900000 ms 之间的值"
+    },
+    "request_delay_value_range": {
+      "free": "请输入 1ms 到 600000 ms 之间的值",
+      "paid": "请输入 1ms 到 900000 ms 之间的值"
+    },
+    "request_timeout_info": {
+      "free": "一次监视器运行不能超过 10 分钟，即 600000 ms。",
+      "paid": "一次监视器运行不能超过 15 分钟，即 900000 ms。"
+    },
+    "set_req_timeout": "设置请求超时",
+    "set_delay": "设置请求前的延迟",
+    "redirects": "跟随重定向",
+    "ssl_validation": "启用 SSL 验证",
+    "no_results": "未找到结果",
+    "request_timeout": "请求超时值应大于 0 ms。",
+    "request_delay": "请求延迟值应大于 0 ms。",
+    "edit_monitor": "编辑监视器",
+    "no_empty_name": "请输入监视器名称",
+    "select_version_tag": "为此集合选择一个标签",
+    "at_this_time": "在此时间",
+    "labels": {
+      "button": {
+        "create": "创建监视器",
+        "edit": "更新监视器",
+        "cancel": "取消"
+      }
+    },
+    "warnings": {
+      "no_environment_found": "未找到环境"
+    },
+    "data_file": {
+      "select_label": "数据文件",
+      "helper_text": "仅接受 JSON 和 CSV 文件。最大 1 MB。 ",
+      "info_text": "数据文件可用于测试您的 API 行为的多种变体。",
+      "action_label": "选择文件",
+      "update_label": "更新文件",
+      "incorrect_size": "文件大小不能超过 1 MB",
+      "incorrect_format": "无效的文件格式。仅接受 JSON 和 CSV 文件。"
+    },
+    "warning_message": {
+      "unuploaded_files": "{files, plural, one {此集合中有一个请求} other {此集合中有 # 个请求}}缺少关联的文件"
+    },
+    "file_uplaod_status": {
+      "single_request": "缺少文件的请求",
+      "single_request_info": "此请求正在使用本地文件。请上传它们以防止监视器运行期间出错。",
+      "multiple_requests": "缺少文件的请求",
+      "multiple_requests_info": "这些请求正在使用本地文件。请上传它们以防止监视器运行期间出错。"
+    }
+  },
+  "delete_confirmation": {
+    "monitor": "删除监视器",
+    "schedule": "删除计划",
+    "deleting_button": "正在删除",
+    "delete_button": "删除",
+    "feedback_options_label": "帮助我们了解如何改进监视器"
+  },
+  "tab_loading_error": {
+    "title": "找不到{entityType, select, monitor {监视器} other {{entityType}}}",
+    "body": "它可能已被移动或删除。",
+    "uptime_unavailable_title": "正常运行时间监视器已不再可用",
+    "uptime_unavailable_body": "此监视器类型已停用。请改用常规监视器。"
+  },
+  "status_tooltip": {
+    "health": "此{entityType, select, monitor {监视器} schedule {计划} other {{entityType}}}<3>{status, select, paused {已暂停} healthy {运行正常} unhealthy {运行异常} other {{status}}}</3>。",
+    "up_down": "服务<1>{status, select, up {已启用} down {已停用} other {{status}}}</1>。",
+    "unknown": "服务状态<1>{status, select, unknown {未知} other {{status}}}</1>。"
+  },
+  "actions": {
+    "open_in_new_tab": "在新标签页中打开",
+    "pause": "暂停",
+    "resume": "恢复",
+    "rename": "重命名",
+    "edit": "编辑",
+    "manage_roles": "管理角色",
+    "request_access": "申请访问权限",
+    "add_to_jira": "添加到 Jira Cloud",
+    "publish_monitor_report": "发布",
+    "monitor_report": "监视器报告",
+    "published": "已发布",
+    "published_monitor": "已发布的监视器",
+    "published_monitor_pending_tooltip": "已发布——一项变更请求正在审核中",
+    "copy_link": "复制链接",
+    "unpublish": "取消发布",
+    "unpublish_success": "监视器报告已取消发布",
+    "unpublish_error": "取消发布监视器报告失败",
+    "pending_approval": "发布审批待处理",
+    "withdraw_request": "撤回请求",
+    "update_request": "更新请求",
+    "review_request": "审核请求",
+    "approve": "批准",
+    "deny": "拒绝",
+    "edit_request": "编辑请求",
+    "request_submitted": "请求已提交",
+    "request_submitted_description": "团队管理员将审核该请求。",
+    "request_withdrawn": "发布请求已撤回",
+    "request_updated": "请求已更新",
+    "request_updated_description": "团队管理员将审核更新后的请求。",
+    "request_approved": "发布请求已批准",
+    "request_denied": "发布请求已拒绝",
+    "delete": "删除",
+    "view_only_access": "您拥有只读访问权限"
+  },
+  "publish_modal": {
+    "title": "发布监视器报告",
+    "description": "此报告显示监视器运行状态、请求详情和响应时间趋势。它将作为公开页面进行分享。",
+    "report_name_label": "报告名称",
+    "report_name_helper": "显示在报告顶部、浏览器标签页以及分享链接中。",
+    "report_name_placeholder": "例如 订单 API 健康报告",
+    "description_label": "描述",
+    "description_helper": "添加一段简短的摘要，以便在分享链接和预览中提供上下文。",
+    "description_placeholder": "例如 生产环境端点的每日监视器结果",
+    "show_requests_label": "显示请求端点",
+    "show_requests_helper": "在公开报告中包含请求 URL。",
+    "cancel": "取消",
+    "publish": "发布",
+    "publishing": "正在发布…",
+    "success_title": "您的报告已上线！",
+    "success_description": "拥有链接的人员可以查看运行状态、请求详情和响应时间趋势。",
+    "copy_link": "复制链接",
+    "view_report": "查看报告",
+    "link_copied": "链接已复制到剪贴板",
+    "publish_success": "监视器报告发布成功",
+    "publish_error": "发布监视器报告失败",
+    "request_update_title": "请求更新已发布的报告",
+    "edit_title": "编辑已发布的报告",
+    "publish_updates": "发布更新",
+    "updating": "正在更新…",
+    "update_success": "已发布的报告更新成功",
+    "last_published": "上次发布：",
+    "governance_note": "注意：您的团队发布监视器报告需要管理员批准。",
+    "approval_message_label": "审批留言",
+    "approval_message_placeholder": "请说明为何应发布此报告。",
+    "request_to_publish": "请求发布",
+    "requesting": "正在请求…",
+    "request_sent_title": "审批请求已发送",
+    "request_sent_description": "团队管理员将审核您的请求。报告发布后，您将收到通知。",
+    "got_it": "知道了",
+    "review_title": "审核发布请求",
+    "pending_title": "发布请求审核中",
+    "deny_reason_label": "拒绝原因",
+    "deny_reason_placeholder": "请提供拒绝此请求的原因。",
+    "approving": "正在批准…",
+    "denying": "正在拒绝…",
+    "withdrawing": "正在撤回…",
+    "requested_by": "请求者",
+    "request_note_label": "请求者的留言",
+    "duplicate_publish_request_title": "已有一个发布请求正在审核中",
+    "duplicate_publish_request_description": "在提交另一个请求之前，请更新或撤回您现有的请求。"
+  },
+  "time_type": {
+    "minute_timer": {
+      "label": "分钟计时器",
+      "every_1_min": "每 1 分钟",
+      "every_5_mins": "每 5 分钟",
+      "every_10_mins": "每 10 分钟",
+      "every_15_mins": "每 15 分钟",
+      "every_20_mins": "每 20 分钟",
+      "every_30_mins": "每 30 分钟"
+    },
+    "hour_timer": {
+      "label": "小时计时器",
+      "every_hr": "每小时",
+      "every_2_hrs": "每 2 小时",
+      "every_3_hrs": "每 3 小时",
+      "every_4_hrs": "每 4 小时",
+      "every_6_hrs": "每 6 小时",
+      "every_12_hrs": "每 12 小时"
+    },
+    "week_timer": {
+      "label": "周计时器",
+      "every_day": "每天",
+      "every_weekday": "每个工作日（周一至周五）",
+      "every_monday": "每周一",
+      "every_tuesday": "每周二",
+      "every_wednesday": "每周三",
+      "every_thursday": "每周四",
+      "every_friday": "每周五",
+      "every_saturday": "每周六",
+      "every_sunday": "每周日"
+    },
+    "month_timer": {
+      "label": "月计时器",
+      "short_month_warning_29": "在二月，这将在 28 日运行（闰年则为 29 日）。",
+      "short_month_warning_30": "在二月，这将在 28 日运行（闰年则为 29 日）。",
+      "short_month_warning_31": "在不足 31 天的月份，这将在该月的最后一天运行。",
+      "every_1st": "每月 1 日",
+      "every_2nd": "每月 2 日",
+      "every_3rd": "每月 3 日",
+      "every_4th": "每月 4 日",
+      "every_5th": "每月 5 日",
+      "every_6th": "每月 6 日",
+      "every_7th": "每月 7 日",
+      "every_8th": "每月 8 日",
+      "every_9th": "每月 9 日",
+      "every_10th": "每月 10 日",
+      "every_11th": "每月 11 日",
+      "every_12th": "每月 12 日",
+      "every_13th": "每月 13 日",
+      "every_14th": "每月 14 日",
+      "every_15th": "每月 15 日",
+      "every_16th": "每月 16 日",
+      "every_17th": "每月 17 日",
+      "every_18th": "每月 18 日",
+      "every_19th": "每月 19 日",
+      "every_20th": "每月 20 日",
+      "every_21st": "每月 21 日",
+      "every_22nd": "每月 22 日",
+      "every_23rd": "每月 23 日",
+      "every_24th": "每月 24 日",
+      "every_25th": "每月 25 日",
+      "every_26th": "每月 26 日",
+      "every_27th": "每月 27 日",
+      "every_28th": "每月 28 日",
+      "every_29th": "每月 29 日",
+      "every_30th": "每月 30 日",
+      "every_31st": "每月 31 日"
+    },
+    "time_list": {
+      "12am": "12:00 AM",
+      "1am": "1:00 AM",
+      "2am": "2:00 AM",
+      "3am": "3:00 AM",
+      "4am": "4:00 AM",
+      "5am": "5:00 AM",
+      "6am": "6:00 AM",
+      "7am": "7:00 AM",
+      "8am": "8:00 AM",
+      "9am": "9:00 AM",
+      "10am": "10:00 AM",
+      "11am": "11:00 AM",
+      "12pm": "12:00 PM",
+      "1pm": "1:00 PM",
+      "2pm": "2:00 PM",
+      "3pm": "3:00 PM",
+      "4pm": "4:00 PM",
+      "5pm": "5:00 PM",
+      "6pm": "6:00 PM",
+      "7pm": "7:00 PM",
+      "8pm": "8:00 PM",
+      "9pm": "9:00 PM",
+      "10pm": "10:00 PM",
+      "11pm": "11:00 PM"
+    }
+  },
+  "uptime-monitor": {
+    "banner": {
+      "text": "及时了解您的服务何时中断",
+      "sub_text": "跨区域监视某个 URL 的正常运行时间，并设置及时的警报，无需创建集合。",
+      "badge_text": "Beta",
+      "button_text": "创建正常运行时间监视器",
+      "link_text": "详细了解正常运行时间监视器"
+    }
+  },
+  "collapsible_state_line": {
+    "hide": "隐藏运行日志",
+    "show": "显示运行日志"
+  },
+  "job_filter": {
+    "monitor": {
+      "trigger": {
+        "name": "类型",
+        "values": {
+          "api": "手动",
+          "schedule": "计划运行",
+          "webhook": "Webhook",
+          "postman-cli": "Postman CLI"
+        }
+      },
+      "result": {
+        "name": "结果",
+        "values": {
+          "success": "成功",
+          "failure": "失败",
+          "error": "错误",
+          "abort": "中止"
+        }
+      }
+    },
+    "scheduled_collection": {
+      "trigger": {
+        "name": "类型",
+        "values": {
+          "api": "手动",
+          "schedule": "计划运行"
+        }
+      },
+      "result": {
+        "name": "结果",
+        "values": {
+          "success": "成功",
+          "failure": "失败",
+          "error": "错误",
+          "abort": "中止"
+        }
+      }
+    },
+    "all": "全部"
+  },
+  "run_results": {
+    "no_response": "无响应",
+    "iteration": "第 {iteration} 次迭代",
+    "no_tests_in_iteration": "在第 {start}{length, plural, one {} other {至 {end}}} 次迭代中没有 {filterText} 测试",
+    "streaming_assertions_coming_soon": {
+      "badge": "断言即将推出",
+      "tooltip": "此协议即将支持断言",
+      "banner": "此协议尚不支持断言——相关支持即将推出。"
+    },
+    "request_details_error": {
+      "title": "无法渲染此请求",
+      "message": "请求详情窗格无法渲染此行。请尝试选择另一行，或点击 X 关闭。",
+      "dismiss": "关闭"
+    }
+  },
+  "context_bar": {
+    "activity": {
+      "title": "活动动态"
+    },
+    "info": {
+      "title": "监视器详情"
+    }
+  },
+  "cli": {
+    "run_in_ci_cd": "在 CI/CD 中运行",
+    "install": "安装 Postman CLI",
+    "copy": {
+      "tooltip": "复制 CLI 命令"
+    },
+    "toast": {
+      "copied": {
+        "title": "已复制到剪贴板",
+        "command": "CLI 命令复制成功"
+      }
+    },
+    "note": {
+      "creation": "监视器 ID 将在创建监视器后生成"
+    },
+    "trigger_monitor_run_using_cli": "使用 Postman CLI 触发监视器运行",
+    "run_using_cli": "使用 Postman CLI 运行",
+    "run_monitor_using_cli": "使用 Postman CLI 触发监视器运行",
+    "install_postman_cli_step_1": "1. 安装 Postman CLI",
+    "trigger_monitor_run_step_2": "2. 触发监视器运行",
+    "automate_using_cli": "使用 Postman CLI 自动化运行。",
+    "command_instruction": "在您的终端中复制并运行此命令"
+  }
+}

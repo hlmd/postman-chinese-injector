@@ -1,0 +1,30 @@
+{
+  "template_actions": {
+    "all": "所有模板",
+    "search": "搜索",
+    "recommended": "推荐"
+  },
+  "suggest_templates_button": "建议模板",
+  "view_all_templates": "查看全部",
+  "search_results_heading": "{results, plural, =1 {# 条结果，关于 } other {# 条结果，关于 }} {filter}",
+  "suggestion_modal": {
+    "heading": "您希望看到哪些模板？",
+    "text": "您的意见将帮助我们为您创建更相关的模板。",
+    "placeholder": "例如负载测试和问题跟踪 API",
+    "validation_message": "您已超出字符限制。请尝试删除一些文本。",
+    "back_button": "返回",
+    "submit_button": "提交",
+    "toast": {
+      "success": {
+        "desc": "感谢您的建议。"
+      },
+      "rate_limited": {
+        "title": "我们很喜欢您的热情，但是……",
+        "desc": "我们仍在处理您之前的建议。您可以在几分钟后重试。"
+      },
+      "error": {
+        "desc": "出错了。请稍后重试。"
+      }
+    }
+  }
+}

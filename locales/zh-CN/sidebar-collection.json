@@ -1,0 +1,530 @@
+{
+  "offline_error_state": {
+    "heading": "无法加载数据",
+    "description": "我们正在尝试与服务器建立连接。在恢复连接之前，您的数据可能不是最新的。",
+    "reload": "重新加载"
+  },
+  "error_fetching_data": {
+    "heading": "无法获取您的数据",
+    "description": "只是连接出了点小问题。您的数据已安全同步到 Postman 的服务器。",
+    "refresh": "刷新"
+  },
+  "no_collections_present": {
+    "create_collection_for_requests_heading": "为您的请求创建集合",
+    "default_heading": "您还没有任何集合",
+    "description": "集合可让您将相关请求分组，并为其中所有请求轻松设置通用的授权、测试、脚本和变量。",
+    "create_collection": "创建集合"
+  },
+  "sign_in_to_perform_action": "您需要登录到团队才能执行此操作",
+  "meta_icons_info": {
+    "read_only": "只读"
+  },
+  "dropdown_toggle_button": "下拉菜单切换按钮",
+  "entity_is_empty": "此{entity, select, collection {集合} folder {文件夹} other {}}为空。",
+  "add_request_to_start_working": "<0>添加请求</0>以开始工作。",
+  "no_results_found": {
+    "heading": "未找到与“{searchQuery}”匹配的结果",
+    "description": "请使用其他关键字重试，并别忘了检查是否有拼写错误。您可以按名称、URL 和复刻标签进行搜索。"
+  },
+  "could_not_load_requests": "无法加载请求。<1>重试</1>",
+  "sign_in_to_create_collection": "登录以创建集合",
+  "add_collection_permission_error": "您没有执行此操作的权限。",
+  "sidebar_actions_menu": {
+    "disable_trash_tooltip": {
+      "members_only": "只有此工作区的成员才能恢复已删除的集合",
+      "default": "恢复您已删除的集合",
+      "offline": "恢复联网后即可执行此操作"
+    },
+    "create_collection_tooltip": "创建新集合",
+    "disabled_tooltip_no_permission": "您没有执行此操作的权限。",
+    "disabled_git_on_prem_on_web": "请使用 Postman 应用更新此集合",
+    "disabled_git_on_prem_on_web_label_popover": "此集合已连接到 GitHub Enterprise 仓库。要进行更改，请使用 Postman 桌面应用。",
+    "disabled_tooltip_is_offline": "恢复联网后即可执行此操作。",
+    "disabled_tooltip_nothing_to_paste": "没有可粘贴的实体",
+    "open_trash": "打开回收站",
+    "create_new_button": "新建按钮",
+    "blank_collection": "空白集合",
+    "collection_template": "集合模板",
+    "ai_generated_collection": "AI 生成的集合",
+    "disabled_tooltip_no_permission_run": "您没有运行此集合的权限",
+    "disabled_tooltip_no_permission_add": "您没有添加项目的权限",
+    "disabled_tooltip_no_permission_remove": "您没有移除此集合的权限"
+  },
+  "live_collection_onboarding": {
+    "connection_success": {
+      "heading": "集合已上线！",
+      "postman_will_keep_collections_synced": "Postman 将始终保持您的集合同步。",
+      "test_it_out": "通过<1><0>发送请求</0></1>来试用一下。"
+    },
+    "strategy_selection": {
+      "unable_to_save_preference": "无法保存您的偏好设置。请从<1><0>实时设置</0></1>重试。",
+      "heading": "您有一个或多个请求",
+      "description": "选择如何获取即将到来的请求的更新",
+      "automatically_update": "自动更新",
+      "review_before_updating": "更新前先审核",
+      "save": "保存"
+    },
+    "onboarding_complete": {
+      "collection_will_update_automatically": "全部就绪！您的集合将自动更新。",
+      "notify_on_updates": "全部就绪！当有新更新可用时，我们会通知您。",
+      "change_later_from_live_settings": "您稍后可以从<1><0>实时设置</0></1>更改此项。"
+    }
+  },
+  "collection_sidebar_actions": {
+    "open_in_new_tab": {
+      "label": "在新标签页中打开"
+    },
+    "copy_link": {
+      "label": "复制链接"
+    },
+    "share": {
+      "label": "共享"
+    },
+    "move": {
+      "label": "移动",
+      "disabled_tooltip": "您没有执行此操作的权限。"
+    },
+    "run_collection": {
+      "label": "运行",
+      "infoTooltip": "发送此集合中的所有请求",
+      "disabled_tooltip": "您没有运行此集合的权限。"
+    },
+    "generate_tests": {
+      "label": "生成测试"
+    },
+    "edit": {
+      "label": "编辑"
+    },
+    "view_details": {
+      "label": "查看详情"
+    },
+    "add_request": {
+      "label": "添加请求",
+      "tooltip": "添加请求"
+    },
+    "add_folder": {
+      "label": "添加文件夹"
+    },
+    "monitor_collection": {
+      "label": "创建监视器"
+    },
+    "mock_collection": {
+      "label": "模拟"
+    },
+    "create_a_fork": {
+      "label": "复刻",
+      "disabled_tooltip": "您没有复刻此集合的权限"
+    },
+    "request_a_fork": {
+      "label": "请求复刻"
+    },
+    "create_pull_request": {
+      "label": "创建拉取请求",
+      "disabled_tooltip": "您没有创建拉取请求的权限"
+    },
+    "merge_changes": {
+      "label": "合并更改"
+    },
+    "connect_to_github": {
+      "label": "连接到 GitHub",
+      "infoTooltip": "将此集合连接到 GitHub 仓库以同步您的更改。"
+    },
+    "pull_changes_git": {
+      "label": "拉取更改"
+    },
+    "push_changes_git": {
+      "label": "推送更改"
+    },
+    "create_pull_request_git": {
+      "label": "创建拉取请求"
+    },
+    "repository_settings": {
+      "label": "仓库设置"
+    },
+    "run_folder": {
+      "label": "运行",
+      "infoTooltip": "发送此文件夹中的所有请求"
+    },
+    "open_in_tab": {
+      "label": "在标签页中打开"
+    },
+    "add_example": {
+      "label": "添加示例"
+    },
+    "pull_changes": {
+      "label": "拉取更改",
+      "info_tooltip": "拉取更改以从原始集合获取最新更新。"
+    },
+    "view_changelog": {
+      "label": "查看更新日志"
+    },
+    "view_documentation": {
+      "label": "查看文档"
+    },
+    "rename": {
+      "label": "重命名"
+    },
+    "duplicate": {
+      "label": "创建副本",
+      "disabled_tooltip": "您没有执行此操作的权限。"
+    },
+    "export": {
+      "label": "导出",
+      "disabled_tooltip": "您没有导出此集合的权限。"
+    },
+    "manage_roles": {
+      "label": "管理角色"
+    },
+    "copy": {
+      "label": "复制"
+    },
+    "cut": {
+      "label": "剪切"
+    },
+    "paste": {
+      "label": "粘贴"
+    },
+    "delete": {
+      "label": "删除"
+    },
+    "comment": {
+      "label": "评论"
+    },
+    "more": {
+      "label": "更多",
+      "mock": "创建模拟服务器",
+      "create_monitor": "创建监视器",
+      "generate_tests": "生成测试",
+      "generate_specification": "生成规范",
+      "generate_flows": "创建 flow",
+      "connect_repository": "连接仓库",
+      "export": "导出集合",
+      "generate_sdk": "生成 SDK"
+    },
+    "generate_specification": {
+      "label": "生成规范"
+    },
+    "turn_on_types": {
+      "label": "开启类型"
+    },
+    "turn_off_types": {
+      "label": "关闭类型"
+    },
+    "add_to_agent_mode": {
+      "label": "询问 AI"
+    },
+    "apps": {
+      "label": "应用"
+    },
+    "run": {
+      "label": "运行"
+    },
+    "ask_ai": {
+      "label": "询问 AI"
+    },
+    "fork": {
+      "label": "复刻"
+    },
+    "sort": {
+      "label": "排序",
+      "folders_first_default": "文件夹优先，默认",
+      "folders_first_a_to_z": "文件夹优先，A 到 Z",
+      "footer_text": "这只会更新您在侧边栏中的视图。"
+    },
+    "bulk_cut": {
+      "label": "剪切"
+    },
+    "bulk_copy": {
+      "label": "复制"
+    },
+    "bulk_paste": {
+      "label": "粘贴"
+    },
+    "bulk_duplicate": {
+      "label": "创建副本"
+    },
+    "bulk_delete": {
+      "label": "删除"
+    },
+    "paste_linked_copy": {
+      "label": "粘贴链接副本"
+    },
+    "add_to_favorites": {
+      "tooltip": "添加到收藏夹"
+    },
+    "remove_from_favorites": {
+      "tooltip": "从收藏夹移除"
+    },
+    "more_actions": {
+      "tooltip": "查看更多操作"
+    }
+  },
+  "partner_viewer_nudges": {
+    "fork": {
+      "no_team_user_nudge": {
+        "heading": "复刻到您自己的团队",
+        "description": "在付费 Postman 计划上创建团队，以复刻并创建此集合的副本。",
+        "button": "升级您的计划"
+      },
+      "free_team_user_nudge": {
+        "heading": "复刻到您自己的团队",
+        "description": "将您的团队升级到付费计划，以复刻并创建此集合的副本",
+        "button": "升级您的计划"
+      }
+    },
+    "export": {
+      "no_team_user_nudge": {
+        "heading": "您没有导出权限",
+        "description": "在付费 Postman 计划上创建团队，以复刻并创建此集合的副本",
+        "button": "升级您的计划"
+      },
+      "free_team_user_nudge": {
+        "heading": "您没有导出权限",
+        "description": "将您的团队升级到付费计划，以复刻并创建此集合的副本",
+        "button": "升级您的计划"
+      }
+    }
+  },
+  "bulk_delete_confirmation": "确定要删除{typeCountString}吗？",
+  "bulk_delete_confirmation_reusable": "您即将删除{typeCountString}。如果原始项被删除，链接的请求将不再跟随更新。",
+  "permission_error": "您没有执行此操作的权限",
+  "collection_is_not_a_fork": "集合不是复刻。",
+  "this_collection_is_not_a_fork": "此集合不是复刻。",
+  "could_not_perform_action": "无法成功{action}{entityType}",
+  "bulk_delete_failed": "批量删除失败",
+  "move_entity_error": "移动{name}时出错。",
+  "copied_to_collections_success": "已复制到侧边栏中的集合。",
+  "copied_to_collections_error": "无法复制到侧边栏中的集合。",
+  "link_copied": "链接已复制",
+  "move_folder_to_subfolder_error": "无法将文件夹移动到其自身的子文件夹中",
+  "bulk_duplicate_error": "无法为所选元素创建副本。请重试。",
+  "paste_error": "粘贴所复制的实体时出错。请重试。",
+  "reuse_error": "重用所选实体时出错。请重试。",
+  "bulk_move_entity_error": "移动所选实体时出错。请重试。",
+  "examples_can_be_moved_under_request_error": "示例只能移动到请求下。",
+  "could_not_move_items": "无法移动项目",
+  "signed_out_message": "登录后即可执行此操作。",
+  "no_changes_to_pull": "没有可拉取的更改",
+  "fork_from_latest_api_version": "您只能从 API 的最新版本进行复刻。",
+  "pull_changes_offline_toast": {
+    "heading": "您已离线",
+    "description": "恢复联网后您将能够拉取更改。"
+  },
+  "offline_action_tooltip": "您已离线。请连接到互联网以使用此功能。",
+  "more_actions_tooltip": "查看更多操作",
+  "cannot_move_response_different_protocol": "您无法将响应移动到使用不同协议的请求",
+  "cannot_duplicate_response_different_protocol": "您无法为使用不同协议的请求创建响应副本",
+  "move_success": "已成功移动项目",
+  "entity_move_error": "移动所选实体时出错。请重试。",
+  "invalid_move_operation": "涉及无效的移动操作",
+  "invalid_duplicate_operation": "涉及无效的创建副本操作",
+  "bulk_delete_error": "删除所选项目时出错。请重试。",
+  "bulk_delete_success": "已成功删除项目",
+  "common": {
+    "loading": "加载中…",
+    "error": "发生错误",
+    "retry": "重试",
+    "clear": "清除"
+  },
+  "empty_state": {
+    "title": "此面板中没有项目",
+    "no_permission": "您没有在此工作区中创建集合的权限。",
+    "create": "创建",
+    "pull_from_cloud": "从 Postman Cloud 拉取",
+    "ask_ai": "请 AI 从本地代码库创建",
+    "collection_empty": "集合为空",
+    "folder_empty": "文件夹为空",
+    "collection_empty_description": "添加请求或文件夹以构建您的 API 工作流。",
+    "folder_empty_description": "添加请求、文件夹，或将项目拖到此处以将它们分组。"
+  },
+  "sort_indicator": {
+    "sorted": "已排序：{name}。"
+  },
+  "toast": {
+    "items_moved": "已移动 {count} 个项目",
+    "could_not_move_items": "无法移动项目",
+    "item_name_empty": "项目名称不能为空",
+    "collection_duplicated": "已创建集合副本",
+    "collections_duplicated": "已创建集合副本",
+    "folder_duplicated": "已创建文件夹副本",
+    "request_duplicated": "已创建请求副本",
+    "example_duplicated": "已创建示例副本",
+    "link_copied": "链接已复制到剪贴板",
+    "could_not_paste_items": "无法粘贴项目",
+    "could_not_link_requests": "无法链接请求",
+    "disabled_paste_linked_copy": "只有复制的请求才能粘贴为链接副本",
+    "dependency_update_success_title": "依赖项已更新",
+    "dependency_update_success_message": "{name} 现已是最新。",
+    "dependency_update_error_title": "无法更新依赖项",
+    "dependency_update_error_message": "{name} 无法更新。请查看控制台了解详情。",
+    "dependency_delete_success_title": "依赖项已移除",
+    "dependency_delete_success_message": "{name} 已从此工作区移除。",
+    "dependency_delete_error_title": "无法移除依赖项",
+    "dependency_delete_error_message": "{name} 无法移除。请查看控制台了解详情。"
+  },
+  "request_types": {
+    "http": "HTTP",
+    "graphql": "GraphQL",
+    "ai": "AI",
+    "mcp": "MCP",
+    "grpc": "gRPC",
+    "websocket": "WebSocket",
+    "socketio": "Socket.IO",
+    "mqtt": "MQTT"
+  },
+  "dependency_actions": {
+    "update": {
+      "label": "更新"
+    },
+    "delete": {
+      "label": "删除"
+    }
+  },
+  "ec_collection_sidebar_actions": {
+    "add_request": {
+      "label": "添加请求",
+      "tooltip": "添加请求"
+    },
+    "add_folder": {
+      "label": "添加文件夹"
+    },
+    "run": {
+      "label": "运行"
+    },
+    "share": {
+      "label": "共享"
+    },
+    "copy_link": {
+      "label": "复制链接"
+    },
+    "move": {
+      "label": "移动"
+    },
+    "manage_roles": {
+      "label": "管理角色"
+    },
+    "fork": {
+      "label": "创建复刻"
+    },
+    "rename": {
+      "label": "重命名"
+    },
+    "paste": {
+      "label": "粘贴"
+    },
+    "duplicate": {
+      "label": "创建副本"
+    },
+    "sort": {
+      "label": "排序",
+      "footer_text": "这只会更新您在侧边栏中的视图。"
+    },
+    "delete": {
+      "label": "删除"
+    },
+    "open_in_new_tab": {
+      "label": "在新浏览器标签页中打开"
+    },
+    "add_to_favorites": {
+      "tooltip": "添加到收藏夹"
+    },
+    "remove_from_favorites": {
+      "tooltip": "从收藏夹移除"
+    },
+    "more_actions": {
+      "tooltip": "查看更多操作"
+    }
+  },
+  "ec_folder_sidebar_actions": {
+    "add_request": {
+      "label": "添加请求",
+      "tooltip": "添加请求"
+    },
+    "add_folder": {
+      "label": "添加文件夹"
+    },
+    "run": {
+      "label": "运行"
+    },
+    "share": {
+      "label": "共享"
+    },
+    "copy_link": {
+      "label": "复制链接"
+    },
+    "rename": {
+      "label": "重命名"
+    },
+    "paste": {
+      "label": "粘贴"
+    },
+    "duplicate": {
+      "label": "创建副本"
+    },
+    "sort": {
+      "label": "排序",
+      "footer_text": "这只会更新您在侧边栏中的视图。"
+    },
+    "delete": {
+      "label": "删除"
+    },
+    "open_in_new_tab": {
+      "label": "在新浏览器标签页中打开"
+    },
+    "more_actions": {
+      "tooltip": "查看更多操作"
+    }
+  },
+  "ec_request_sidebar_actions": {
+    "add_example": {
+      "label": "添加示例"
+    },
+    "share": {
+      "label": "共享"
+    },
+    "copy_link": {
+      "label": "复制链接"
+    },
+    "rename": {
+      "label": "重命名"
+    },
+    "paste": {
+      "label": "粘贴"
+    },
+    "duplicate": {
+      "label": "创建副本"
+    },
+    "delete": {
+      "label": "删除"
+    },
+    "open_in_new_tab": {
+      "label": "在新浏览器标签页中打开"
+    },
+    "more_actions": {
+      "tooltip": "查看更多操作"
+    }
+  },
+  "ec_example_sidebar_actions": {
+    "share": {
+      "label": "共享"
+    },
+    "copy_link": {
+      "label": "复制链接"
+    },
+    "rename": {
+      "label": "重命名"
+    },
+    "duplicate": {
+      "label": "创建副本"
+    },
+    "delete": {
+      "label": "删除"
+    },
+    "open_in_new_tab": {
+      "label": "在新浏览器标签页中打开"
+    },
+    "more_actions": {
+      "tooltip": "查看更多操作"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "copy_link_button_popover": {
+    "heading": "共享此链接前请先邀请成员",
+    "dismiss_button_text": "忽略"
+  },
+  "update_user_profile_modal": {
+    "description_text": "您需要公开的个人资料才能在公共工作区中执行操作。在向所有人公开您的个人资料前，请更新并检查以下详细信息。",
+    "confirm_cta_text": "公开个人资料",
+    "name_error_message": "请填写此字段。",
+    "update_user_profile_api_error_message": "由于某些错误，无法启用公开个人资料。",
+    "update_user_success": {
+      "message": "您现在可以在公共工作区中执行操作。",
+      "title": "已启用公开个人资料"
+    },
+    "heading": "公开您的个人资料",
+    "name_label": "名称",
+    "username_label": "用户名",
+    "username_helper_text": "您的用户名可用于登录，并有助于识别您的身份。",
+    "cancel_button_text": "取消",
+    "public_url_description": "您的公开 URL 将是：<1> {url}</1>"
+  },
+  "language_setting_modal": {
+    "heading": "{modalHeading} 的设置"
+  },
+  "collection_description_editor": {
+    "does_not_have_description": "此{entityType}没有描述。",
+    "mimir_editor_placeholder": "添加{entityType}描述",
+    "markdown_editor": {
+      "mode": {
+        "edit": "编辑",
+        "preview": "预览"
+      },
+      "switch_to_postman_editor_button_tooltip": "切换到 Postman 编辑器"
+    },
+    "error": {
+      "title": "无法加载文档",
+      "message": "只是线路出了点小问题。请尝试重新加载。"
+    },
+    "placeholder": "添加{type}描述…"
+  },
+  "open_request_button": {
+    "try_request_button_label": "试用请求",
+    "open_request_button_label": "打开请求"
+  },
+  "documentation_entity_title": "文档",
+  "unsaved_changes_modal": {
+    "title": "未保存的更改",
+    "description": "在开启评论模式前请先保存请求，以免丢失您的工作。",
+    "cancel_button": "取消",
+    "save_button": "保存"
+  }
+}

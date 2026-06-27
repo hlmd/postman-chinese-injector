@@ -1,0 +1,228 @@
+{
+  "webhook_workbench": {
+    "loading": "正在加载 Webhook…",
+    "header": {
+      "title": "Webhook",
+      "rename_input_label": "Webhook 名称",
+      "rename_button_label": "重命名 Webhook",
+      "invoke_url_input_label": "Webhook 调用 URL",
+      "share_button": "分享",
+      "copy_share_link": "复制分享链接",
+      "copied_share_link": "已复制分享链接",
+      "copy_webhook_url": "Webhook URL",
+      "copy_invoke_link": "复制调用链接",
+      "copied_invoke_link": "已复制调用链接",
+      "copy_error_toast": "无法复制 Webhook 链接",
+      "copy_invoke_url_success_toast": "链接已复制",
+      "start_button": "启动",
+      "pause_button": "暂停",
+      "save_button": "保存",
+      "saving_button": "正在保存…"
+    },
+    "empty_state": {
+      "title": "尚未收到任何请求",
+      "description": "向下方端点发送请求。收到后将显示在此处。",
+      "events_title": "未收到任何事件",
+      "events_description": "此 Webhook URL 收到的事件将显示在此处。",
+      "configure_routing": "配置 Webhook",
+      "receive_sample_event": "接收模拟事件",
+      "receive_sample_event_success_toast": "已发送模拟事件",
+      "receive_sample_event_error_toast": "无法发送模拟事件",
+      "select_request_title": "选择要检查的请求",
+      "endpoint_label": "侦听端点",
+      "copy_url": "复制 URL",
+      "copied": "已复制",
+      "copy_error_toast": "无法复制端点 URL",
+      "illustration_aria_label": "Webhook 事件预览",
+      "forwarding_section_title": "通过 CLI 转发"
+    },
+    "tabs": {
+      "events": "事件",
+      "routing": "路由",
+      "settings": "设置"
+    },
+    "cli_commands": {
+      "title": "使用 Postman CLI 将事件转发到您的本地服务器",
+      "alternate_title": "通过 CLI 转发",
+      "copy": "复制",
+      "copied": "已复制"
+    },
+    "requests_sidebar": {
+      "summary": "正在显示 {total} 个中的 {shown} 个",
+      "new_requests": "新请求",
+      "loading_more": "正在加载请求…",
+      "all_event_types": "所有事件类型",
+      "clear_all_events": "全部删除",
+      "empty_event": "（空）",
+      "delete_all_confirmation": {
+        "title": "删除所有请求？",
+        "description": "确定吗？此操作无法撤销。",
+        "cancel": "取消",
+        "delete": "全部删除"
+      }
+    },
+    "load_error": {
+      "title": "无法加载 Webhook",
+      "description": "加载此 Webhook 时出错。",
+      "retry": "重试"
+    },
+    "settings": {
+      "title": "Webhook 设置",
+      "description": "此 Webhook 的设置即将推出。",
+      "environment": {
+        "heading": "环境",
+        "selector_label": "关联的环境",
+        "confirmation": {
+          "title": "更改环境？",
+          "description": "如果您现有的 Webhook 身份验证或响应行为依赖环境变量，此操作可能导致其停止工作。",
+          "cancel": "取消",
+          "confirm": "确认"
+        }
+      },
+      "endpoint_auth": {
+        "heading": "端点身份验证",
+        "description": "要求传入的请求包含匹配的凭据后才会被接受。",
+        "type_label": "身份验证类型",
+        "header_key_label": "Header 键",
+        "header_key_placeholder": "Authorization",
+        "api_key_label": "API 密钥",
+        "username_label": "用户名",
+        "password_label": "密码",
+        "load_error_message": "端点身份验证设置不可用。",
+        "load_error_disabled_tooltip": "端点身份验证设置加载失败，无法编辑。"
+      }
+    },
+    "routing_settings": {
+      "add_response_target": "添加路由规则",
+      "delete_response_target": "删除",
+      "enabled": "已启用",
+      "disabled": "已禁用",
+      "not_available": "不适用",
+      "event_endpoint_label": "事件接收于",
+      "response_target_label": "响应目标",
+      "save_success_toast": "路由规则已保存",
+      "tunnel_forwarding_failure_toast": "无法建立本地转发。如果另一个 Postman 应用或 CLI 实例已打开，它可能已在处理转发。",
+      "web_tunnel_forwarding_failure_toast": "此 Webhook 已启用本地转发，但仅桌面应用支持该功能",
+      "empty_state": {
+        "title": "未配置任何路由规则。",
+        "description": "添加路由规则即可开始。"
+      },
+      "forward": {
+        "title": "转发",
+        "description": "将事件转发到本地主机或公开 URL。",
+        "endpoint_label": "转发端点",
+        "endpoint_placeholder": "https://example.com/webhook",
+        "forward_locally_label": "本地转发"
+      },
+      "respond": {
+        "title": "响应",
+        "description": "为此 Webhook 收到的事件发送响应。",
+        "status_code_label": "状态码",
+        "status_code_placeholder": "200",
+        "headers_label": "Headers",
+        "no_headers": "未配置任何 Header。",
+        "body_label": "Body"
+      },
+      "create": {
+        "title": "创建路由规则",
+        "description": "配置此 Webhook 如何响应在某路径上收到的请求。",
+        "type_label": "类型",
+        "method_label": "方法",
+        "path_label": "路径",
+        "path_placeholder": "/incoming",
+        "create_button": "创建路由规则"
+      },
+      "validation": {
+        "mutation_in_progress": "已有一项路由规则更新正在进行中。",
+        "no_changes": "没有可保存的规则更改。",
+        "duplicate_rule": "此方法和路径已存在路由规则。",
+        "forward_url_required": "请输入转发 URL 以创建路由规则。",
+        "forward_url_required_short": "转发 URL 为必填项。",
+        "unsupported_forwarding_path": "暂不支持路径参数和通配符。即将支持。",
+        "self_forwarding_endpoint": "Webhook 公开端点 URL 不能用作转发目标。",
+        "local_forward_endpoint_on_web": "Web 端不支持本地转发。请使用桌面应用、Postman CLI 或公开端点。",
+        "invalid_status_code": "请输入 100 到 599 之间的状态码。",
+        "invalid_status_code_short": "状态码必须介于 100 到 599 之间。",
+        "static_body_too_long": "响应 Body 不能超过 {maxLength} 个字符。",
+        "static_header_too_long": "Header 键/值不能超过 {maxLength} 个字符。",
+        "header_key_required": "设置 Header 值时必须填写 Header 键。"
+      }
+    },
+    "workbench": {
+      "title": "Webhook 仪表板",
+      "description": "此 Webhook 的请求历史记录可用。"
+    },
+    "sidebar": {
+      "delete_confirmation": {
+        "title": "删除 {webhookName}？",
+        "description": "确定要删除此 Webhook 吗？此操作无法撤销。",
+        "cancel": "取消",
+        "delete": "删除",
+        "deleting": "正在删除…"
+      },
+      "status_indicator": {
+        "active_label": "活动的 Webhook",
+        "inactive_label": "未活动的 Webhook"
+      }
+    },
+    "request_inspector": {
+      "title": "请求检查器",
+      "description": "Webhook {listenerId} 的详细请求检查功能将在下一次迭代中添加。",
+      "loading_title": "正在加载请求",
+      "loading_description": "稍等片刻即可",
+      "load_error_title": "无法加载请求详情",
+      "load_error_description": "请稍后重试",
+      "unavailable_title": "请求详情不可用",
+      "unavailable_description": "请再次选择该请求以加载其详情。",
+      "removed_request_title": "未找到请求",
+      "removed_request_description": "此请求可能已被自动移除。",
+      "copy_path_aria_label": "复制请求 URL",
+      "copy_path_success_toast": "已复制请求 URL",
+      "replay_button": "重放",
+      "replaying_button": "正在重放…",
+      "save_request_button": "保存请求",
+      "save_request_button_tooltip": "将请求保存到集合",
+      "collapse_inspector_button": "折叠检查器",
+      "collapse_request_panel_button": "折叠请求",
+      "expand_request_panel_button": "展开请求",
+      "collapse_response_panel_button": "折叠响应",
+      "expand_response_panel_button": "展开响应",
+      "response_sent_back": "响应",
+      "waiting_title": "等待中 ",
+      "waiting_description": "响应可用后将显示在此处。",
+      "body_type": "Body 类型：{bodyType}",
+      "collapsed_labels": {
+        "timeline": "时间线",
+        "events": "事件",
+        "response": "响应"
+      },
+      "no_request_body_title": "无请求 Body",
+      "no_request_body_description": "此请求不包含 Body。",
+      "no_response_body_title": "无响应或响应过大",
+      "no_response_body_description": "此响应不包含 Body，或 Body 过大。",
+      "no_headers_title": "无 Header",
+      "no_headers_description": "未捕获到任何 Header。",
+      "tabs": {
+        "body": "Body",
+        "headers": "Headers",
+        "test_results": "测试结果"
+      }
+    },
+    "not_found": {
+      "title": "未找到 Webhook",
+      "description": "此 Webhook 不可用，或可能已被删除。",
+      "go_to_workspace": "前往工作区概览",
+      "go_to_workspaces": "查看所有工作区"
+    },
+    "permissions": {
+      "pause_disabled_tooltip": "您没有暂停此 Webhook 的权限。",
+      "start_disabled_tooltip": "您没有启动此 Webhook 的权限。",
+      "rename_disabled_tooltip": "您没有重命名此 Webhook 的权限。",
+      "edit_routing_disabled_tooltip": "您没有编辑路由设置的权限。",
+      "edit_settings_disabled_tooltip": "您没有编辑 Webhook 设置的权限。",
+      "receive_sample_event_disabled_tooltip": "您没有发送示例事件的权限。",
+      "replay_disabled_tooltip": "您没有重放请求的权限。",
+      "clear_events_disabled_tooltip": "您没有删除事件的权限。"
+    }
+  }
+}

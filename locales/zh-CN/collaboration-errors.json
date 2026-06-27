@@ -1,0 +1,126 @@
+{
+  "approved_access_request": {
+    "title": "请求已确认",
+    "message": "看起来已有人批准了此请求。"
+  },
+  "rejected_access_request": {
+    "title": "请求已确认",
+    "message": "看起来已有人拒绝了此请求。"
+  },
+  "expired_access_request": {
+    "title": "请求已过期",
+    "message": "访问请求将在 30 天后过期。您仍可通过与他们共享元素来授予访问权限。"
+  },
+  "model_does_not_exist": {
+    "title": "无法响应请求",
+    "message": "由于该元素已被删除，此请求无法完成。"
+  },
+  "model_not_found_in_workspace": {
+    "title": "无法发送请求",
+    "message": "由于该元素已被删除或移动，此请求无法完成。"
+  },
+  "partner_editor_slots_full": {
+    "title": "无法批准请求",
+    "message": "没有可用的付费席位。我们已通知合作伙伴管理员添加更多席位。"
+  },
+  "creator_not_part_of_team": {
+    "title": "找不到请求者",
+    "message": "他们可能已离开您的团队或删除了其 Postman 账户。"
+  },
+  "approver_not_part_of_team": {
+    "title": "无法批准请求",
+    "message": "哎呀！看起来您无法批准此请求。"
+  },
+  "invalid_approver_for_request": {
+    "title": "无法批准请求",
+    "message": "哎呀！看起来您无法批准此请求。"
+  },
+  "not_part_of_any_team": {
+    "title": "无法批准请求",
+    "message": "哎呀！看起来您无法批准此请求。"
+  },
+  "team_member_slots_full": {
+    "title": "无法批准请求",
+    "message": ""
+  },
+  "update_roles_permission_denied": {
+    "title": "您需要访问权限",
+    "message": "您需要成为编辑者才能管理此元素的角色。"
+  },
+  "auto_approval_disabled": {
+    "title": "您没有批准权限",
+    "message": "请联系团队管理员将此访客转换为开发者。"
+  },
+  "failed_access_request": {
+    "title": "请求失败",
+    "message": "您尝试批准的请求已失败。"
+  },
+  "user_already_has_requested_role": {
+    "title": "您已拥有此访问权限",
+    "message": "如果您想要其他级别的访问权限，请创建新请求",
+    "approve": {
+      "title": "请求已完成",
+      "message": "该用户已拥有所请求的角色。"
+    }
+  },
+  "user_already_has_access": {
+    "title": "您已拥有访问权限",
+    "message": "您已拥有对此资源的访问权限。",
+    "approve": {
+      "title": "请求已完成",
+      "message": "该用户已拥有对此资源的访问权限。"
+    }
+  },
+  "instance_not_found_error": {
+    "title": "无法创建请求",
+    "message": "由于该实体已被删除，此请求无法完成。"
+  },
+  "user_already_invited_as_team_member": {
+    "title": "无法批准请求",
+    "message": "该用户已被邀请为团队成员。请移除该团队成员邀请后重试。"
+  },
+  "user_already_part_of_team": {
+    "title": "无法批准请求",
+    "message": "您无法将此用户邀请为合作伙伴，因为他们已是您团队的一员。"
+  },
+  "user_already_invited_as_partner": {
+    "title": "无法批准请求",
+    "message": "该用户已被邀请为合作伙伴。请移除该合作伙伴邀请后重试。"
+  },
+  "user_already_partner": {
+    "title": "无法批准请求",
+    "message": "您无法将此用户邀请为团队成员，因为他们已是合作伙伴。"
+  },
+  "improper_email_ids": {
+    "title": "无法批准请求",
+    "message": "发送邀请时提供的电子邮件地址不正确。"
+  },
+  "max_pending_invites_exceeded": {
+    "title": "无法批准请求",
+    "message": "您的待处理邀请不能超过 100 个"
+  },
+  "default_approve": {
+    "title": "无法批准请求",
+    "message": "只是线路出了点小故障。请重试。"
+  },
+  "default_deny": {
+    "title": "无法拒绝请求",
+    "message": "只是线路出了点小故障。请重试。"
+  },
+  "default_create": {
+    "title": "无法创建请求",
+    "message": "出错了"
+  },
+  "invalidated_request": {
+    "title": "无法响应请求",
+    "message": "此请求已不再有效。"
+  },
+  "request_already_exists": {
+    "title": "请求已存在",
+    "message": "您已提交过此请求。"
+  },
+  "unprocessable_entity": {
+    "title": "无法发送请求",
+    "message": "不属于团队的用户无法请求访问权限"
+  }
+}
