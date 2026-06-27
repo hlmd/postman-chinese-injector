@@ -206,6 +206,11 @@ locales/zh-CN/
 
 **想卸载汉化**：桌面端 `node postman-chinese-injector.js --restore`；网页版在 `chrome://extensions` 移除扩展。
 
+# 交流 / 反馈
+
+- 问题与建议欢迎提 [Issue](../../issues)。
+- QQ 群：**494969115**
+
 # 法律声明 / Disclaimer
 
 - **非官方、无关联**：本项目是社区维护的第三方汉化工具，**与 Postman, Inc. 没有任何关联**，
