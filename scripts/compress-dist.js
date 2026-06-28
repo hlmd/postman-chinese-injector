@@ -20,12 +20,16 @@
  *     xz 与 zip 都在内部完成，无需额外安装任何工具（不受 PATH 上其它 tar 影响）。
  *   - Linux/macOS: 用 GNU tar 走 xz（需有 xz）、用 `zip` 命令打 zip——与 CI 一致。
  *
+ * 性能：xz -9 是 CPU 密集的单线程压缩（~420MB 全量解析），逐个压很慢；这里把各文件「并行」压缩，
+ *   多核可缩短到约「单文件耗时 × ceil(文件数/核数)」。压缩率/格式不变，解压侧无感知。
+ *
  * 用法: node scripts/compress-dist.js
  */
 'use strict';
 
-const { spawnSync } = require('child_process');
+const { spawn } = require('child_process');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 
 const DIST = path.join(__dirname, '..', 'dist');
@@ -48,59 +52,72 @@ function sizeMB(p) {
   return (fs.statSync(p).size / 1024 / 1024).toFixed(1) + 'MB';
 }
 
+// 异步跑一个外部命令；reject 时带上命令信息
 function run(cmd, args, env) {
-  const r = spawnSync(cmd, args, {
-    cwd: DIST,
-    stdio: ['ignore', 'pipe', 'inherit'],
-    env: env ? { ...process.env, ...env } : process.env,
+  return new Promise((resolve, reject) => {
+    const child = spawn(cmd, args, {
+      cwd: DIST,
+      stdio: ['ignore', 'ignore', 'inherit'],
+      env: env ? { ...process.env, ...env } : process.env,
+    });
+    child.on('error', (e) => reject(new Error(`无法运行 ${cmd}：${e.message}`)));
+    child.on('close', (code) =>
+      code === 0 ? resolve() : reject(new Error(`${cmd} ${args.join(' ')} 退出码 ${code}`)));
   });
-  if (r.error) throw new Error(`无法运行 ${cmd}：${r.error.message}`);
-  if (r.status !== 0) throw new Error(`${cmd} ${args.join(' ')} 退出码 ${r.status}`);
 }
 
-function makeZip(file, out) {
-  if (IS_WIN) {
-    // bsdtar：-a 按扩展名(.zip)自动选 zip 容器
-    run(TAR, ['-a', '-c', '-f', out, file]);
-  } else {
-    run('zip', ['-9', '-q', out, file]);
-  }
-}
-
-function makeXz(file, out) {
-  if (IS_WIN) {
-    // bsdtar 用 --options 设最高压缩级
-    run(TAR, ['--options', 'xz:compression-level=9', '-cJf', out, file]);
-  } else {
-    // GNU tar 不认 --options，改用 XZ_OPT 透传给 xz
-    run(TAR, ['-cJf', out, file], { XZ_OPT: '-9' });
-  }
-}
-
-function compressOne(file) {
-  const src = path.join(DIST, file);
-  if (!fs.existsSync(src)) {
-    console.log(`[跳过] 不存在: ${file}`);
-    return;
-  }
-  const before = sizeMB(src);
-
-  let out;
+// 返回该文件的压缩命令（不立即执行）
+function planFor(file) {
   if (file === WIN_EXE) {
-    out = file.replace(/\.exe$/, '') + '.zip';
-    makeZip(file, out);
-  } else {
-    out = file + '.tar.xz';
-    makeXz(file, out);
+    const out = file.replace(/\.exe$/, '') + '.zip';
+    // bsdtar：-a 按扩展名(.zip)自动选 zip 容器；非 win 回退到 zip 命令
+    const job = IS_WIN
+      ? run(TAR, ['-a', '-c', '-f', out, file])
+      : run('zip', ['-9', '-q', out, file]);
+    return { out, job };
+  }
+  const out = file + '.tar.xz';
+  // bsdtar 用 --options 设最高压缩级；GNU tar 不认 --options，改用 XZ_OPT 透传给 xz
+  const job = IS_WIN
+    ? run(TAR, ['--options', 'xz:compression-level=9', '-cJf', out, file])
+    : run(TAR, ['-cJf', out, file], { XZ_OPT: '-9' });
+  return { out, job };
+}
+
+async function main() {
+  if (!fs.existsSync(DIST)) {
+    console.error(`找不到 dist/，请先构建（npm run build）`);
+    process.exit(1);
   }
 
-  console.log(`[完成] ${file} (${before}) -> ${out} (${sizeMB(path.join(DIST, out))})`);
+  const present = [WIN_EXE, ...UNIX_BINS].filter((f) => {
+    const ok = fs.existsSync(path.join(DIST, f));
+    if (!ok) console.log(`[跳过] 不存在: ${f}`);
+    return ok;
+  });
+  if (present.length === 0) {
+    console.error('dist/ 里没有可压缩的二进制，请先 npm run build');
+    process.exit(1);
+  }
+
+  // 各文件相互独立，全部并行启动（每个 xz 占一个核，多核同时压）
+  console.log(`并行压缩 ${present.length} 个文件（约 ${os.cpus().length} 核可用）…`);
+  const results = await Promise.allSettled(
+    present.map((file) => {
+      const before = sizeMB(path.join(DIST, file));
+      const { out, job } = planFor(file);
+      return job.then(() => {
+        console.log(`[完成] ${file} (${before}) -> ${out} (${sizeMB(path.join(DIST, out))})`);
+      });
+    })
+  );
+
+  const failed = results.filter((r) => r.status === 'rejected');
+  if (failed.length) {
+    failed.forEach((r) => console.error(`[失败] ${r.reason.message}`));
+    process.exit(1);
+  }
+  console.log('\n压缩包已生成在 dist/（原二进制保留，可继续本地测试）。');
 }
 
-if (!fs.existsSync(DIST)) {
-  console.error(`找不到 dist/，请先构建（npm run build）`);
-  process.exit(1);
-}
-
-[WIN_EXE, ...UNIX_BINS].forEach(compressOne);
-console.log('\n压缩包已生成在 dist/（原二进制保留，可继续本地测试）。');
+main();
