@@ -12,6 +12,7 @@
     "restore": "node postman-chinese-injector.js --restore",
     "build:data": "node scripts/build-data.js",
     "build:ext": "node scripts/build-extension.js",
+    "build:compress": "node scripts/compress-dist.js",
     "build:runtimes": "node scripts/fetch-runtimes.js",
     "build:win": "node scripts/build-bin.js bun-windows-x64 dist/postman-chinese-injector-win-x64.exe",
     "build:linux": "node scripts/build-bin.js bun-linux-x64 dist/postman-chinese-injector-linux-x64",
