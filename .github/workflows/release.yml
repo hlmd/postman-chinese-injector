@@ -37,6 +37,29 @@ jobs:
           build darwin-arm64  postman-chinese-injector-macos-arm64
           ls -la dist
 
+      - name: Compress binaries (Windows -> .zip, Linux/macOS -> .tar.xz)
+        run: |
+          set -e
+          cd dist
+          # Windows: zip（ダブルクリックで展開可）
+          zip -9 postman-chinese-injector-win-x64.zip postman-chinese-injector-win-x64.exe
+          # Linux/macOS: tar.xz（実行ビットを保持、最小サイズ）
+          for f in \
+            postman-chinese-injector-linux-x64 \
+            postman-chinese-injector-linux-arm64 \
+            postman-chinese-injector-macos-x64 \
+            postman-chinese-injector-macos-arm64; do
+            chmod +x "$f"
+            XZ_OPT=-9 tar -cJf "$f.tar.xz" "$f"
+          done
+          # 生バイナリは削除し、配布物（圧縮済み + 拡張 zip）だけ残す
+          rm -f postman-chinese-injector-win-x64.exe \
+                postman-chinese-injector-linux-x64 \
+                postman-chinese-injector-linux-arm64 \
+                postman-chinese-injector-macos-x64 \
+                postman-chinese-injector-macos-arm64
+          ls -la
+
       - name: Build browser extension (zip)
         run: node scripts/build-extension.js
 
@@ -55,7 +78,9 @@ jobs:
           body: |
             把中文翻译注入 Postman 的非官方第三方工具。
 
-            - **桌面端**：下载对应平台的单文件，完全退出 Postman 后运行即可注入；`--restore` 还原。
+            - **桌面端**：下载对应平台的压缩包（Windows 为 `.zip`，Linux/macOS 为 `.tar.xz`），
+              解压得到单文件后，完全退出 Postman 再运行即可注入；`--restore` 还原。
+              （macOS/Linux 解压后如丢失执行权限：`chmod +x <文件名>`）
             - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
               「加载已解压的扩展程序」加载。
 
