@@ -51,19 +51,22 @@ postman-chinese-injector/
 
 ## 方式一：下载二进制（推荐，目标机无需 Node）
 
-从 Release 下载对应平台的单文件，重命名随意：
+从 Release 下载对应平台的压缩包，解压得到单文件（重命名随意）：
 
-| 平台 | 文件 |
-|------|------|
-| Windows x64 | `postman-chinese-injector-win-x64.exe` |
-| Linux x64 / arm64 | `postman-chinese-injector-linux-x64` / `-arm64` |
-| macOS x64 / arm64（Apple Silicon） | `postman-chinese-injector-macos-x64` / `-arm64` |
+| 平台 | 下载文件 | 解压后 |
+|------|----------|--------|
+| Windows x64 | `postman-chinese-injector-win-x64.zip` | `postman-chinese-injector-win-x64.exe` |
+| Linux x64 / arm64 | `postman-chinese-injector-linux-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-linux-x64` / `-arm64` |
+| macOS x64 / arm64（Apple Silicon） | `postman-chinese-injector-macos-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-macos-x64` / `-arm64` |
+
+> 压缩仅为减小下载体积（约为原来的 1/4），解压后仍按原大小运行。
+> Windows 双击 `.zip` 即可解压；Linux/macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
 
 ```bash
 # 1. 完全退出 Postman
 # 2. 注入（自动探测当前平台的 Postman 安装）
 ./postman-chinese-injector-win-x64.exe          # Windows
-./postman-chinese-injector-linux-x64            # Linux/macOS 先 chmod +x
+./postman-chinese-injector-linux-x64            # Linux/macOS 先 chmod +x（tar.xz 解压一般已保留执行位）
 
 # 3. 重启 Postman，界面出现中文即成功
 ```
