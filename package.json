@@ -12,11 +12,12 @@
     "restore": "node postman-chinese-injector.js --restore",
     "build:data": "node scripts/build-data.js",
     "build:ext": "node scripts/build-extension.js",
-    "build:win": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-windows-x64 --outfile dist/postman-chinese-injector-win-x64.exe",
-    "build:linux": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-linux-x64 --outfile dist/postman-chinese-injector-linux-x64",
-    "build:linux-arm64": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-linux-arm64 --outfile dist/postman-chinese-injector-linux-arm64",
-    "build:mac": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-darwin-x64 --outfile dist/postman-chinese-injector-macos-x64",
-    "build:mac-arm64": "bun build ./postman-chinese-injector.js --compile --minify --target=bun-darwin-arm64 --outfile dist/postman-chinese-injector-macos-arm64",
+    "build:runtimes": "node scripts/fetch-runtimes.js",
+    "build:win": "node scripts/build-bin.js bun-windows-x64 dist/postman-chinese-injector-win-x64.exe",
+    "build:linux": "node scripts/build-bin.js bun-linux-x64 dist/postman-chinese-injector-linux-x64",
+    "build:linux-arm64": "node scripts/build-bin.js bun-linux-arm64 dist/postman-chinese-injector-linux-arm64",
+    "build:mac": "node scripts/build-bin.js bun-darwin-x64 dist/postman-chinese-injector-macos-x64",
+    "build:mac-arm64": "node scripts/build-bin.js bun-darwin-arm64 dist/postman-chinese-injector-macos-arm64",
     "build": "npm run build:data && npm run build:win && npm run build:linux && npm run build:linux-arm64 && npm run build:mac && npm run build:mac-arm64"
   },
   "engines": {
