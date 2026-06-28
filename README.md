@@ -1,5 +1,9 @@
 # Postman 中文注入 · Postman Chinese Injector
 
+[![Release](https://img.shields.io/github/v/release/hlmd/postman-chinese-injector?sort=semver)](../../releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
+
 把简体中文界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置（138 个模块），
 开箱即用：
 
@@ -9,6 +13,15 @@
 > ⚠️ **非官方项目**：与 Postman, Inc. 无任何关联，未获授权或背书；"Postman" 是其商标。
 > 本仓库不含也不分发 Postman 的任何源码 / 二进制 / 原始语言包。仅供个人本地使用，自负风险。
 > 详见文末 [法律声明](#法律声明--disclaimer)。
+
+**目录**：[工作原理](#工作原理) · [桌面端](#桌面端) · [网页版（浏览器扩展）](#网页版浏览器扩展) · [翻译数据](#翻译数据) · [常见问题](#常见问题) · [交流反馈](#交流--反馈) · [法律声明](#法律声明--disclaimer)
+
+## 快速开始
+
+- **桌面端**：到 [Release](../../releases) 下载对应平台压缩包 → 解压 → **完全退出 Postman** → 运行可执行文件 → 重启 Postman，界面变中文。卸载汉化用 `--restore`。
+- **网页版**：到 [Release](../../releases) 下载 `postman-chinese-injector-extension.zip` → 解压 → Chrome/Edge 打开 `chrome://extensions` → 开「开发者模式」→「加载已解压的扩展程序」→ 选该目录 → 刷新页面。
+
+下面是完整说明。
 
 ## 工作原理
 
@@ -36,9 +49,13 @@ postman-chinese-injector/
 │   └── zh-CN/                    # 翻译源：每个模块一个 json（138 个），可单独编辑
 │       ├── api-client-core.json
 │       └── ...
-├── scripts/build-data.js         # 把 locales/<lang>/ 合并成可嵌入二进制的 pm-chinese-data.json
-├── scripts/build-extension.js    # 打包 Chrome/Edge (MV3) 浏览器扩展，给 Postman 网页版用
-├── .github/workflows/            # CI：打 tag 自动交叉编译全平台二进制并发 Release
+├── scripts/
+│   ├── build-data.js             # 把 locales/<lang>/ 合并成可嵌入二进制的 pm-chinese-data.json
+│   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 浏览器扩展，给 Postman 网页版用
+│   ├── build-bin.js              # 用 bun --compile 编译单文件二进制（复用本地缓存的运行时）
+│   ├── fetch-runtimes.js         # 预拉取各平台 bun 运行时到本地缓存，规避交叉编译时的在线下载
+│   └── compress-dist.js          # 把 dist/ 的二进制并行压成发行包（zip / tar.xz）
+├── .github/workflows/            # CI：打 tag 自动交叉编译、并行压缩并发 Release
 └── package.json                  # bin 命令 postman-chinese-injector、构建脚本、依赖 @electron/asar
 ```
 
@@ -143,11 +160,18 @@ npm install            # 或 bun install，准备 @electron/asar
 npm run build          # 生成嵌入数据 + 交叉编译全部 5 个平台到 dist/
 # 或单平台：
 npm run build:win      # build:linux / build:linux-arm64 / build:mac / build:mac-arm64
+
+npm run build:compress # 可选：把 dist/ 的二进制并行压成发行包（Windows→zip，其余→tar.xz，体积约降到 1/4）
 ```
 
-> 交叉编译会让 Bun 下载各目标的运行时（每个目标首次较慢、需联网）。
-> 也可直接打 `git tag v1.0.0 && git push --tags`，由 `.github/workflows/release.yml`
-> 在 CI 上一次性产出全平台二进制并发 Release。
+> 二进制内嵌整个 Bun 运行时，单文件 57~110MB 无法再缩小；`build:compress` 只在分发环节压缩，
+> 解压后仍按原大小运行（原二进制会保留，便于本地直接测试）。
+>
+> 交叉编译会让 Bun 下载各目标的运行时（每个目标首次较慢、需联网）；首次能稳定下载时可先跑
+> `npm run build:runtimes` 把各平台运行时缓存到本地，之后编译不再触网。
+>
+> 也可直接打 tag（如 `git tag v1.2.3 && git push origin v1.2.3`），由 `.github/workflows/release.yml`
+> 在 CI 上一次性交叉编译、并行压缩并发 Release。
 
 ---
 
