@@ -37,28 +37,23 @@ jobs:
           build darwin-arm64  postman-chinese-injector-macos-arm64
           ls -la dist
 
-      - name: Compress binaries (Windows -> .zip, Linux/macOS -> .tar.xz)
+      - name: Compress binaries (复用 scripts/compress-dist.js，并行 zip / tar.xz)
         run: |
           set -e
-          cd dist
-          # Windows: zip（ダブルクリックで展開可）
-          zip -9 postman-chinese-injector-win-x64.zip postman-chinese-injector-win-x64.exe
-          # Linux/macOS: tar.xz（実行ビットを保持、最小サイズ）
-          for f in \
-            postman-chinese-injector-linux-x64 \
-            postman-chinese-injector-linux-arm64 \
-            postman-chinese-injector-macos-x64 \
-            postman-chinese-injector-macos-arm64; do
-            chmod +x "$f"
-            XZ_OPT=-9 tar -cJf "$f.tar.xz" "$f"
-          done
-          # 生バイナリは削除し、配布物（圧縮済み + 拡張 zip）だけ残す
-          rm -f postman-chinese-injector-win-x64.exe \
-                postman-chinese-injector-linux-x64 \
-                postman-chinese-injector-linux-arm64 \
-                postman-chinese-injector-macos-x64 \
-                postman-chinese-injector-macos-arm64
-          ls -la
+          # tar.xz 里保留可执行位（bun 产物一般已是 0755，这里兜底）
+          chmod +x dist/postman-chinese-injector-linux-x64 \
+                   dist/postman-chinese-injector-linux-arm64 \
+                   dist/postman-chinese-injector-macos-x64 \
+                   dist/postman-chinese-injector-macos-arm64
+          # 与本地同一脚本：各文件并行压缩（Windows→zip，其余→tar.xz）
+          node scripts/compress-dist.js
+          # 脚本默认保留原始二进制（便于本地测试）；CI 只发布压缩包，删掉生二进制
+          rm -f dist/postman-chinese-injector-win-x64.exe \
+                dist/postman-chinese-injector-linux-x64 \
+                dist/postman-chinese-injector-linux-arm64 \
+                dist/postman-chinese-injector-macos-x64 \
+                dist/postman-chinese-injector-macos-arm64
+          ls -la dist
 
       - name: Build browser extension (zip)
         run: node scripts/build-extension.js
