@@ -8,16 +8,24 @@
 /*
  * postman-chinese-injector.js —— 把汉化钩子注入 Postman 桌面端（跨平台 CLI）
  *
- * Electron 的资源解析顺序是「app.asar 存在则优先用 asar，忽略 app/ 文件夹」。本脚本：
+ * Electron 的资源解析顺序是「app.asar 存在则优先用 asar，否则退而加载未打包的 resources/app/」。
+ * 本脚本两种安装形态都支持，自动判别：
  *
  *   1. 按平台自动定位 Postman 的 resources 目录（Windows / macOS / Linux）；
  *   2. 把 locales/zh-CN/*.json 合并成扁平 bundle（每个文件一个模块）；
- *   3. 首次运行时把原始 app.asar 备份为 app.asar.bak（之后始终从备份重新打补丁，
- *      保证幂等、且 Postman 更新后能干净重打）；
- *   4. 用 @electron/asar 解包备份 -> 临时目录（装了依赖走程序化 API，否则回退 npx）；
- *   5. 往 preload_desktop.js 注入一行 require('./pm-chinese.js')，放入 pm-chinese.js +
- *      生成的 pm-chinese-data.json；
- *   6. 打包临时目录 -> app.asar（覆盖）。
+ *
+ *   【app.asar 型】
+ *   3a. 首次运行时把原始 app.asar 备份为 app.asar.bak（之后始终从备份重新打补丁，
+ *       保证幂等、且 Postman 更新后能干净重打）；
+ *   4a. 用 @electron/asar 解包备份 -> 临时目录（装了依赖走程序化 API，否则回退 npx）；
+ *   5a. 往 preload_desktop.js 注入一行 require('./pm-chinese.js')，放入 pm-chinese.js +
+ *       生成的 pm-chinese-data.json；
+ *   6a. 打包临时目录 -> app.asar（覆盖）。
+ *
+ *   【未打包 app/ 型】（没有 app.asar，只有 resources/app/ 目录）
+ *   3b. 首次运行时把 preload_desktop.js 备份为 preload_desktop.js.bak（始终从备份打补丁）；
+ *   4b. 直接往 app/preload_desktop.js 注入 require('./pm-chinese.js')，并把 pm-chinese.js +
+ *       pm-chinese-data.json 写到同目录——无需解包/打包。
  *
  * 主窗口 webPreferences 为 contextIsolation=false + nodeIntegration=true，preload 与页面
  * 共享 main world 且先于页面脚本执行，故钩子能直接改 window.fetch 拦截语言包响应。
@@ -25,7 +33,7 @@
  * 用法:
  *     node postman-chinese-injector.js                       # 注入简体中文（自动探测 Postman）
  *     node postman-chinese-injector.js --restore             # 还原
- *     node postman-chinese-injector.js --resources <dir>     # 直接指定含 app.asar 的目录
+ *     node postman-chinese-injector.js --resources <dir>     # 直接指定含 app.asar 或 app/ 的目录
  *     node postman-chinese-injector.js --postman-dir <dir>   # 指定 Postman 安装根目录
  *     node postman-chinese-injector.js --app-version 12.16.1 # Windows 多版本时指定 app-<version>
  *
@@ -230,17 +238,34 @@ function candidateResourceDirs(opts) {
   return out;
 }
 
-function resolveResourcesDir(opts) {
+// 把一个 resources 目录归类成注入目标：
+//   - 'asar' 型：目录里有 app.asar（或其备份）——走解包/打包流程；
+//   - 'dir'  型：没有 app.asar，但有未打包的 app/ 目录（Electron 退而加载 resources/app/）——直接改文件。
+// app.asar 与 app/ 同时存在时 Electron 优先用 asar，故先判 asar。
+function classifyResourceDir(dir) {
+  const asar = path.join(dir, 'app.asar');
+  const bak = asar + BAK_SUFFIX;
+  if (isFile(asar) || isFile(bak)) {
+    return { resourcesDir: dir, kind: 'asar', asar, bak };
+  }
+  const appDir = path.join(dir, 'app');
+  const preload = path.join(appDir, 'preload_desktop.js');
+  if (isFile(preload) || isFile(preload + BAK_SUFFIX)) {
+    return { resourcesDir: dir, kind: 'dir', appDir };
+  }
+  return null;
+}
+
+function resolveTarget(opts) {
   const cands = candidateResourceDirs(opts);
   for (const dir of cands) {
-    if (isFile(path.join(dir, 'app.asar')) || isFile(path.join(dir, 'app.asar' + BAK_SUFFIX))) {
-      return dir;
-    }
+    const t = classifyResourceDir(dir);
+    if (t) return t;
   }
   const looked = cands.length ? cands.map((c) => '  - ' + c).join('\n') : '  （无候选，未找到安装）';
   throw new Error(
-    `找不到 Postman 的 app.asar。已尝试:\n${looked}\n` +
-    `请用 --resources <含 app.asar 的目录> 或 --postman-dir <安装根目录> 指定。`
+    `找不到 Postman 的 app.asar 或未打包的 app/ 目录。已尝试:\n${looked}\n` +
+    `请用 --resources <含 app.asar 或 app/ 的目录> 或 --postman-dir <安装根目录> 指定。`
   );
 }
 
@@ -251,9 +276,12 @@ function stripBlock(text) {
   return text.replace(re, '');
 }
 
-async function patch(resourcesDir, lang) {
-  const asar = path.join(resourcesDir, 'app.asar');
-  const bak = asar + BAK_SUFFIX;
+async function patch(target, lang) {
+  return target.kind === 'asar' ? patchAsar(target, lang) : patchDir(target, lang);
+}
+
+async function patchAsar(target, lang) {
+  const { resourcesDir, asar, bak } = target;
   if (!isFile(asar) && !isFile(bak)) throw new Error(`找不到 app.asar: ${resourcesDir}`);
 
   // 提前解析钩子源码（二进制内嵌 / 源码同目录），缺失则在改动任何文件前就失败
@@ -296,9 +324,51 @@ async function patch(resourcesDir, lang) {
   console.log('       界面出现中文即生效。');
 }
 
-function restore(resourcesDir) {
-  const asar = path.join(resourcesDir, 'app.asar');
-  const bak = asar + BAK_SUFFIX;
+// 未打包（resources/app/）型：没有 asar 可解包/打包，直接改目录里的文件。
+// 只改 preload_desktop.js（备份为 .bak，始终从备份打补丁以幂等），并放入钩子与数据。
+async function patchDir(target, lang) {
+  const { appDir } = target;
+  const preload = path.join(appDir, 'preload_desktop.js');
+  const bak = preload + BAK_SUFFIX;
+  if (!isFile(preload) && !isFile(bak)) throw new Error(`找不到 preload_desktop.js: ${appDir}`);
+
+  // 提前解析钩子源码，缺失则在改动任何文件前就失败
+  const hook = hookSource();
+
+  // 0) 构建注入数据
+  const { bundle, count, embedded } = buildBundle(lang);
+  console.log(`[构建] ${embedded ? '内嵌数据' : 'locales/' + lang + '/'} -> ${DATA_NAME}（${count} 模块）`);
+
+  // 1) 确保有 pristine 备份（剥掉可能已存在的注入块，保证备份干净），且始终从备份打补丁
+  if (!isFile(bak)) {
+    if (!isFile(preload)) throw new Error(`找不到 preload_desktop.js: ${appDir}`);
+    fs.writeFileSync(bak, stripBlock(fs.readFileSync(preload, 'utf8')), 'utf8');
+    console.log(`[备份] preload_desktop.js -> ${path.basename(bak)}`);
+  } else {
+    console.log(`[备份] 已存在，使用 ${path.basename(bak)} 作为打补丁源`);
+  }
+
+  // 2) 从备份注入到 preload
+  let content = stripBlock(fs.readFileSync(bak, 'utf8'));
+  content = content.replace(/\n+$/, '') + '\n' + INJECT_BLOCK;
+  fs.writeFileSync(preload, content, 'utf8');
+  console.log("[注入] preload_desktop.js <- require('./pm-chinese.js')");
+
+  // 3) 放入钩子与数据（与 preload 同目录）
+  fs.writeFileSync(path.join(appDir, 'pm-chinese.js'), hook.src, 'utf8');
+  fs.writeFileSync(path.join(appDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
+  console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
+
+  console.log('\n[成功] 已注入未打包的 app/ 目录。完全退出并重启 Postman；');
+  console.log('       界面出现中文即生效。');
+}
+
+function restore(target) {
+  return target.kind === 'asar' ? restoreAsar(target) : restoreDir(target);
+}
+
+function restoreAsar(target) {
+  const { asar, bak } = target;
   if (!isFile(bak)) {
     console.log('[还原] 找不到备份，无需还原');
     return;
@@ -308,10 +378,73 @@ function restore(resourcesDir) {
   console.log('       （备份保留；如需彻底清理可手动删除）');
 }
 
-// 检查目标 asar 是否已被注入，打印结论（只读，不改动）
-function status(resourcesDir) {
-  const asar = path.join(resourcesDir, 'app.asar');
-  const bak = asar + BAK_SUFFIX;
+function restoreDir(target) {
+  const { appDir } = target;
+  const preload = path.join(appDir, 'preload_desktop.js');
+  const bak = preload + BAK_SUFFIX;
+  let did = false;
+  if (isFile(bak)) {
+    fs.copyFileSync(bak, preload);
+    console.log(`[还原] 已用 ${path.basename(bak)} 覆盖回 preload_desktop.js`);
+    did = true;
+  } else if (isFile(preload)) {
+    // 没备份则就地剥掉注入块
+    const cleaned = stripBlock(fs.readFileSync(preload, 'utf8'));
+    if (cleaned !== fs.readFileSync(preload, 'utf8')) {
+      fs.writeFileSync(preload, cleaned, 'utf8');
+      console.log('[还原] 无备份，已就地移除 preload_desktop.js 中的注入块');
+      did = true;
+    }
+  }
+  // 删除注入的钩子与数据文件
+  for (const f of ['pm-chinese.js', DATA_NAME]) {
+    const p = path.join(appDir, f);
+    if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
+  }
+  if (!did) console.log('[还原] 未发现注入痕迹，无需还原');
+  else console.log('       （备份保留；如需彻底清理可手动删除）');
+}
+
+// 检查目标是否已被注入，打印结论（只读，不改动）
+function status(target) {
+  const { resourcesDir } = target;
+  console.log(`  类型: ${target.kind === 'asar' ? 'app.asar（已打包）' : '未打包 app/ 目录'}`);
+  return target.kind === 'asar' ? statusAsar(target) : statusDir(target);
+}
+
+function statusDir(target) {
+  const { appDir } = target;
+  const preload = path.join(appDir, 'preload_desktop.js');
+  const bak = preload + BAK_SUFFIX;
+  const hookPath = path.join(appDir, 'pm-chinese.js');
+  const dataPath = path.join(appDir, DATA_NAME);
+
+  console.log(`  备份 ${path.basename(bak)}: ${isFile(bak) ? '有（注入过至少一次）' : '无'}`);
+
+  const hasHook = isFile(hookPath);
+  const hasData = isFile(dataPath);
+  let count = null, injected = false;
+  if (hasData) {
+    try { count = Object.keys(JSON.parse(fs.readFileSync(dataPath, 'utf8'))).length; } catch (e) { /* ignore */ }
+  }
+  try {
+    injected = /require\((['"])\.\/pm-chinese\.js\1\)/.test(fs.readFileSync(preload, 'utf8'));
+  } catch (e) { /* preload 缺失则视为未注入 */ }
+
+  console.log(`  pm-chinese.js 在 app/ 内: ${hasHook ? '是' : '否'}`);
+  console.log(`  pm-chinese-data.json 在 app/ 内: ${hasData ? '是' : '否'}${count != null ? `（${count} 模块）` : ''}`);
+  console.log(`  preload 注入行 require('./pm-chinese.js'): ${injected ? '有' : '无'}`);
+
+  const ok = hasHook && hasData && injected;
+  console.log(
+    ok
+      ? '\n[结论] 已注入 ✓　重启 Postman，界面应变中文；Console 会打印 [pm-chinese] 已注入'
+      : '\n[结论] 未注入 ✗　运行（不带参数）即可注入：postman-chinese-injector'
+  );
+}
+
+function statusAsar(target) {
+  const { asar, bak } = target;
   if (!isFile(asar)) {
     console.log('  app.asar: 不存在');
     console.log('\n[结论] 未注入 ✗');
@@ -355,8 +488,8 @@ function printHelp() {
 
 选项:
   --status                  检查目标是否已注入（只读，不改动），打印结论
-  --restore                 还原注入（用备份覆盖回 app.asar）
-  --resources <dir>         直接指定含 app.asar 的目录（跳过自动探测）
+  --restore                 还原注入（用备份覆盖回 app.asar / preload）
+  --resources <dir>         直接指定含 app.asar 或未打包 app/ 的目录（跳过自动探测）
   --postman-dir <dir>       指定 Postman 安装根目录
   --app-version <v>         Windows 多版本共存时指定 app-<version>（默认最新）
   -v, --version             显示本工具版本
@@ -388,16 +521,20 @@ function parseArgs(argv) {
 
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
-  const resourcesDir = resolveResourcesDir(opts);
-  console.log(`[目标] ${resourcesDir}`);
-  if (opts.status) status(resourcesDir);
-  else if (opts.restore) restore(resourcesDir);
-  else await patch(resourcesDir, DEFAULT_LANG);
+  const target = resolveTarget(opts);
+  console.log(`[目标] ${target.resourcesDir}（${target.kind === 'asar' ? 'app.asar' : '未打包 app/ 目录'}）`);
+  if (opts.status) status(target);
+  else if (opts.restore) restore(target);
+  else await patch(target, DEFAULT_LANG);
 }
 
 if (require.main === module) {
   main().catch((e) => {
     console.error(`[错误] ${e.message}`);
+    if (e && e.code === 'EACCES' && process.platform !== 'win32') {
+      console.error('       权限不足——该目录（如 /opt/Postman）通常属 root，需要写权限。');
+      console.error('       请在同一条命令前加 sudo 重试，并确保已完全退出 Postman。');
+    }
     process.exit(1);
   });
 }
