@@ -6,10 +6,12 @@
  *   代码以 MIT 许可（仅覆盖本项目自身代码，不含派生自 Postman 文案的译文数据）。
  */
 /*
- * build-data.js —— 把 locales/<lang>/*.json 合并成单个 pm-chinese-data.json
+ * build-data.js —— 生成「编译单文件二进制」前需要的可嵌入快照（bun --compile 会把它们静态打进二进制）：
+ *   ① pm-chinese-data.json —— 把 locales/<lang>/*.json 合并成单个数据快照；
+ *   ② pm-chinese-src.json  —— 钩子源码 pm-chinese.js 的文本快照（二进制运行时身边没有源文件，
+ *      靠它取出钩子源码写进 asar；否则会因 __dirname 指向编译机路径而报「缺少 pm-chinese.js」）。
  *
- * 仅用于「编译单文件二进制」前生成可嵌入的数据快照（bun --compile 会把它静态打进二进制）。
- * 平时用 `node postman-chinese-injector.js` 注入时不需要它——那条路直接从 locales/ 读。
+ * 平时用 `node postman-chinese-injector.js` 注入时不需要它们——那条路直接从 locales/ 与本地 pm-chinese.js 读。
  *
  * 用法: node scripts/build-data.js [lang]   （默认 zh-CN）
  */
@@ -53,3 +55,13 @@ if (!count) {
 
 fs.writeFileSync(out, JSON.stringify(bundle), 'utf8');
 console.log(`[完成] ${lang}: ${count} 模块 -> ${path.relative(ROOT, out)} (${(fs.statSync(out).size / 1024).toFixed(0)} KB)`);
+
+// 钩子源码快照：供编译后的二进制取出 pm-chinese.js 写进 asar（运行时身边无源文件）。
+const hookSrc = path.join(ROOT, 'pm-chinese.js');
+const hookOut = path.join(ROOT, 'pm-chinese-src.json');
+if (!fs.existsSync(hookSrc)) {
+  console.error(`[错误] 找不到钩子源码: ${hookSrc}`);
+  process.exit(1);
+}
+fs.writeFileSync(hookOut, JSON.stringify({ src: fs.readFileSync(hookSrc, 'utf8') }), 'utf8');
+console.log(`[完成] 钩子源码 -> ${path.relative(ROOT, hookOut)} (${(fs.statSync(hookOut).size / 1024).toFixed(0)} KB)`);

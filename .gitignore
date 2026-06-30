@@ -1,5 +1,6 @@
 node_modules/
 .idea
 dist/
-# 编译期生成的可嵌入数据快照（由 scripts/build-data.js 生成）
+# 编译期生成的可嵌入快照（由 scripts/build-data.js 生成）
 pm-chinese-data.json
+pm-chinese-src.json

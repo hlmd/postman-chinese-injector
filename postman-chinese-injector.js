@@ -112,6 +112,26 @@ function loadEmbedded() {
   try { return require('./pm-chinese-data.json'); } catch (e) { return null; }
 }
 
+// 注入用的钩子源码：编译成单文件二进制时 __dirname 指向编译机路径（如 /home/runner/...），
+// 身边没有 pm-chinese.js，改用编译期嵌入的 pm-chinese-src.json。
+function loadEmbeddedHook() {
+  try { return require('./pm-chinese-src.json').src || null; } catch (e) { return null; }
+}
+
+// 取钩子源码（按优先级）：① exe 旁的 pm-chinese.js（允许覆盖内嵌，无需重编译）；
+// ② 源码同目录（node 开发模式）；都没有则用编译期内嵌的快照。
+function hookSource() {
+  const cands = [];
+  try { cands.push(path.join(path.dirname(process.execPath), 'pm-chinese.js')); } catch (e) { /* ignore */ }
+  cands.push(HOOK_SRC);
+  for (const p of cands) {
+    if (isFile(p)) return { src: fs.readFileSync(p, 'utf8'), from: p };
+  }
+  const emb = loadEmbeddedHook();
+  if (emb) return { src: emb, from: '内嵌快照' };
+  throw new Error(`缺少钩子源码 pm-chinese.js（已尝试: ${cands.join('、')}，且无内嵌快照）`);
+}
+
 // 候选 locales 根目录（按优先级）：① 紧挨真正的可执行文件（允许在 exe 旁放 locales/ 覆盖
 // 内嵌译文，无需重新编译）；② 源码同目录（node 开发模式）。都没有则用内嵌数据。
 function localeRoots() {
@@ -236,7 +256,8 @@ async function patch(resourcesDir, lang) {
   const bak = asar + BAK_SUFFIX;
   if (!isFile(asar) && !isFile(bak)) throw new Error(`找不到 app.asar: ${resourcesDir}`);
 
-  if (!isFile(HOOK_SRC)) throw new Error(`缺少 ${HOOK_SRC}`);
+  // 提前解析钩子源码（二进制内嵌 / 源码同目录），缺失则在改动任何文件前就失败
+  const hook = hookSource();
 
   // 0) 从 locales/<lang>/ 构建注入数据（二进制无 locales 时用内嵌数据）
   const { bundle, count, embedded } = buildBundle(lang);
@@ -263,7 +284,7 @@ async function patch(resourcesDir, lang) {
   content = content.replace(/\n+$/, '') + '\n' + INJECT_BLOCK;
   fs.writeFileSync(preload, content, 'utf8');
   console.log("[注入] preload_desktop.js <- require('./pm-chinese.js')");
-  fs.copyFileSync(HOOK_SRC, path.join(staging, 'pm-chinese.js'));
+  fs.writeFileSync(path.join(staging, 'pm-chinese.js'), hook.src, 'utf8');
   fs.writeFileSync(path.join(staging, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
 
