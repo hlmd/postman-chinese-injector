@@ -13,6 +13,9 @@
  *
  * 平时用 `node postman-chinese-injector.js` 注入时不需要它们——那条路直接从 locales/ 与本地 pm-chinese.js 读。
  *
+ * 编译脚本 build-bin.js 会在 `bun build` 前调用本模块的 buildData()，确保两份快照都已生成，
+ * 避免单独跑 `npm run build:mac` 等漏掉数据步骤、结果编译出「无内嵌快照」的坏二进制。
+ *
  * 用法: node scripts/build-data.js [lang]   （默认 zh-CN）
  */
 'use strict';
@@ -21,47 +24,56 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const lang = process.argv[2] || 'zh-CN';
-const dir = path.join(ROOT, 'locales', lang);
-const out = path.join(ROOT, 'pm-chinese-data.json');
 
-if (!fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) {
-  console.error(`[错误] 找不到语言目录: ${dir}`);
-  process.exit(1);
+// 生成两份可嵌入快照（pm-chinese-data.json + pm-chinese-src.json）。出错抛异常，由调用方处理。
+function buildData(lang = 'zh-CN') {
+  const dir = path.join(ROOT, 'locales', lang);
+  const out = path.join(ROOT, 'pm-chinese-data.json');
+
+  if (!fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) {
+    throw new Error(`找不到语言目录: ${dir}`);
+  }
+
+  const bundle = {};
+  let count = 0;
+  for (const name of fs.readdirSync(dir).sort()) {
+    if (!name.endsWith('.json')) continue;
+    const mod = name.slice(0, -'.json'.length);
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
+    } catch (e) {
+      console.error(`[跳过] ${name} 解析失败: ${e.message}`);
+      continue;
+    }
+    if (data && typeof data === 'object' && Object.keys(data).length) {
+      bundle[mod] = data;
+      count++;
+    }
+  }
+
+  if (!count) throw new Error(`${dir} 下没有可用的翻译文件`);
+
+  fs.writeFileSync(out, JSON.stringify(bundle), 'utf8');
+  console.log(`[完成] ${lang}: ${count} 模块 -> ${path.relative(ROOT, out)} (${(fs.statSync(out).size / 1024).toFixed(0)} KB)`);
+
+  // 钩子源码快照：供编译后的二进制取出 pm-chinese.js 写进 asar（运行时身边无源文件）。
+  const hookSrc = path.join(ROOT, 'pm-chinese.js');
+  const hookOut = path.join(ROOT, 'pm-chinese-src.json');
+  if (!fs.existsSync(hookSrc)) throw new Error(`找不到钩子源码: ${hookSrc}`);
+  fs.writeFileSync(hookOut, JSON.stringify({ src: fs.readFileSync(hookSrc, 'utf8') }), 'utf8');
+  console.log(`[完成] 钩子源码 -> ${path.relative(ROOT, hookOut)} (${(fs.statSync(hookOut).size / 1024).toFixed(0)} KB)`);
+
+  return { lang, count };
 }
 
-const bundle = {};
-let count = 0;
-for (const name of fs.readdirSync(dir).sort()) {
-  if (!name.endsWith('.json')) continue;
-  const mod = name.slice(0, -'.json'.length);
-  let data;
+module.exports = { buildData };
+
+if (require.main === module) {
   try {
-    data = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
+    buildData(process.argv[2] || 'zh-CN');
   } catch (e) {
-    console.error(`[跳过] ${name} 解析失败: ${e.message}`);
-    continue;
-  }
-  if (data && typeof data === 'object' && Object.keys(data).length) {
-    bundle[mod] = data;
-    count++;
+    console.error(`[错误] ${e.message}`);
+    process.exit(1);
   }
 }
-
-if (!count) {
-  console.error(`[错误] ${dir} 下没有可用的翻译文件`);
-  process.exit(1);
-}
-
-fs.writeFileSync(out, JSON.stringify(bundle), 'utf8');
-console.log(`[完成] ${lang}: ${count} 模块 -> ${path.relative(ROOT, out)} (${(fs.statSync(out).size / 1024).toFixed(0)} KB)`);
-
-// 钩子源码快照：供编译后的二进制取出 pm-chinese.js 写进 asar（运行时身边无源文件）。
-const hookSrc = path.join(ROOT, 'pm-chinese.js');
-const hookOut = path.join(ROOT, 'pm-chinese-src.json');
-if (!fs.existsSync(hookSrc)) {
-  console.error(`[错误] 找不到钩子源码: ${hookSrc}`);
-  process.exit(1);
-}
-fs.writeFileSync(hookOut, JSON.stringify({ src: fs.readFileSync(hookSrc, 'utf8') }), 'utf8');
-console.log(`[完成] 钩子源码 -> ${path.relative(ROOT, hookOut)} (${(fs.statSync(hookOut).size / 1024).toFixed(0)} KB)`);

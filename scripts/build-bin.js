@@ -27,6 +27,7 @@ const { spawnSync } = require('child_process');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
+const { buildData } = require('./build-data');
 
 const ROOT = path.join(__dirname, '..');
 const ENTRY = path.join(ROOT, 'postman-chinese-injector.js');
@@ -35,6 +36,16 @@ const target = process.argv[2];
 const outfile = process.argv[3];
 if (!target || !outfile) {
   console.error('用法: node scripts/build-bin.js <target> <outfile>');
+  process.exit(1);
+}
+
+// 编译前务必先生成可嵌入快照（pm-chinese-data.json + pm-chinese-src.json），否则 bun 会把
+// try/catch 里的 require 当可选依赖、静默编译出「无内嵌快照」的坏二进制（单独跑 build:mac 等时尤甚）。
+try {
+  console.log('[build-bin] 生成可嵌入快照…');
+  buildData('zh-CN');
+} catch (e) {
+  console.error(`[build-bin] 生成快照失败: ${e.message}`);
   process.exit(1);
 }
 
