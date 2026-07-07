@@ -4,8 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
 
-把简体中文界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置（138 个模块），
-开箱即用：
+把简体中文界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置、开箱即用：
 
 - **桌面端**：Windows / macOS / Linux 的**单文件可执行程序**（目标机无需装 Node），也可用 Node 源码运行。
 - **网页版**：Chrome / Edge 的 **Manifest V3 浏览器扩展**（`go.postman.co` 等）。
@@ -51,7 +50,7 @@ postman-chinese-injector/
 ├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 --restore
 ├── pm-chinese.js                 # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
 ├── locales/
-│   └── zh-CN/                    # 翻译源：每个模块一个 json（138 个），可单独编辑
+│   └── zh-CN/                    # 翻译源：每个模块一个 json，可单独编辑
 │       ├── api-client-core.json
 │       └── ...
 ├── scripts/
@@ -176,7 +175,7 @@ node postman-chinese-injector.js --status      # 或 ./postman-chinese-injector-
 ```
   备份 app.asar.bak: 有（注入过至少一次）
   pm-chinese.js 在 asar 内: 是
-  pm-chinese-data.json 在 asar 内: 是（138 模块）
+  pm-chinese-data.json 在 asar 内: 是
   preload 注入行 require('./pm-chinese.js'): 有
 
 [结论] 已注入 ✓　重启 Postman，界面应变中文；Console 会打印 [pm-chinese] 已注入
@@ -188,7 +187,7 @@ node postman-chinese-injector.js --status      # 或 ./postman-chinese-injector-
 （快捷键 `Ctrl+Alt+I`）→ Console，应有：
 
 ```
-[pm-chinese] 已注入，语言: zh-CN | 拦截: en-US,ja | 模块数: 138
+[pm-chinese] 已注入，语言: zh-CN | 拦截: en-US,ja | 模块数: <N>
 ```
 
 ## 自行编译二进制
@@ -235,7 +234,7 @@ dist/extension/
 
 **安装**：Chrome / Edge 打开 `chrome://extensions` → 开启「开发者模式」→「加载已解压的扩展程序」
 → 选择 `dist/extension/` 目录 → 刷新 Postman 网页版，界面变中文即成功。
-打开 DevTools Console 应看到 `[pm-chinese] 已注入…模块数: 138`。
+打开 DevTools Console 应看到 `[pm-chinese] 已注入…模块数: <N>`。
 
 > 改译文后重跑 `npm run build:ext` 并在 `chrome://extensions` 点该扩展的「刷新」即可。
 > 仅支持 Chromium 系（Chrome / Edge）；Firefox 的 MV3 对 `world:MAIN` 支持不同，暂未适配。
@@ -251,7 +250,7 @@ dist/extension/
 locales/zh-CN/
 ├── api-client-core.json     # { "request_access": { "title": "您似乎无权访问" }, ... }
 ├── app-header.json
-└── ...（138 个模块）
+└── ...（每个模块一个）
 ```
 
 注入 / 打包时把这些文件合并成一个扁平 bundle（`{ "<module>": {…} }`），运行时由 `pm-chinese.js`
