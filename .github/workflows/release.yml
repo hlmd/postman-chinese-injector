@@ -37,6 +37,14 @@ jobs:
           build darwin-arm64  postman-chinese-injector-macos-arm64
           ls -la dist
 
+      # 老 Windows（Win8.1 / Server 2012 R2+）专用：bun 产物静态链接 ConPTY，在 Win10 1809 以下
+      # 无法加载（Issue #4）。改用 pkg（Node 运行时，动态探测 ConPTY）跨平台打 node16-win-x64。
+      - name: Build legacy Windows binary (pkg / Node runtime)
+        run: |
+          set -e
+          node scripts/build-bin-legacy.js
+          ls -la dist
+
       - name: Compress binaries (复用 scripts/compress-dist.js，并行 zip / tar.xz)
         run: |
           set -e
@@ -49,6 +57,7 @@ jobs:
           node scripts/compress-dist.js
           # 脚本默认保留原始二进制（便于本地测试）；CI 只发布压缩包，删掉生二进制
           rm -f dist/postman-chinese-injector-win-x64.exe \
+                dist/postman-chinese-injector-win-x64-legacy.exe \
                 dist/postman-chinese-injector-linux-x64 \
                 dist/postman-chinese-injector-linux-arm64 \
                 dist/postman-chinese-injector-macos-x64 \
@@ -76,6 +85,8 @@ jobs:
             - **桌面端**：下载对应平台的压缩包（Windows 为 `.zip`，Linux/macOS 为 `.tar.xz`），
               解压得到单文件后，完全退出 Postman 再运行即可注入；`--restore` 还原。
               （macOS/Linux 解压后如丢失执行权限：`chmod +x <文件名>`）
+            - **老 Windows**（Win8.1 / Server 2012 R2+，默认版报 `ClosePseudoConsole` 错时）：
+              下载 `postman-chinese-injector-win-x64-legacy.zip`（Node 运行时打包）。
             - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
               「加载已解压的扩展程序」加载。
 

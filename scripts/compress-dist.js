@@ -40,7 +40,10 @@ const TAR = IS_WIN
   : 'tar';
 
 // Windows 目标压成 zip；其余压成 tar.xz
-const WIN_EXE = 'postman-chinese-injector-win-x64.exe';
+const WIN_EXES = [
+  'postman-chinese-injector-win-x64.exe',
+  'postman-chinese-injector-win-x64-legacy.exe', // 老系统版（pkg/Node 打包，见 build-bin-legacy.js）
+];
 const UNIX_BINS = [
   'postman-chinese-injector-linux-x64',
   'postman-chinese-injector-linux-arm64',
@@ -68,7 +71,7 @@ function run(cmd, args, env) {
 
 // 返回该文件的压缩命令（不立即执行）
 function planFor(file) {
-  if (file === WIN_EXE) {
+  if (WIN_EXES.includes(file)) {
     const out = file.replace(/\.exe$/, '') + '.zip';
     // bsdtar：-a 按扩展名(.zip)自动选 zip 容器；非 win 回退到 zip 命令
     const job = IS_WIN
@@ -90,7 +93,7 @@ async function main() {
     process.exit(1);
   }
 
-  const present = [WIN_EXE, ...UNIX_BINS].filter((f) => {
+  const present = [...WIN_EXES, ...UNIX_BINS].filter((f) => {
     const ok = fs.existsSync(path.join(DIST, f));
     if (!ok) console.log(`[跳过] 不存在: ${f}`);
     return ok;
