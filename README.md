@@ -83,6 +83,11 @@ postman-chinese-injector/
 > 压缩仅为减小下载体积（约为原来的 1/4），解压后仍按原大小运行。
 > Windows 双击 `.zip` 即可解压；Linux/macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
 
+> **运行环境要求**：二进制由 Bun 编译，**Windows 需 10 1809+ / Server 2019+**，macOS 需 11+，
+> Linux 需较新的 glibc。在更老的系统（如 Windows Server 2012 / Win7）上运行会报
+> `无法定位程序输入点 ClosePseudoConsole …`（缺 ConPTY API）——这是 Bun 运行时的系统底线，无法绕过。
+> 此类环境请改用下方[「方式二：Node 源码运行」](#方式二node-源码运行开发--改译文)，并按需把依赖降到 `@electron/asar@3`（兼容老 Node）。
+
 ```bash
 # 1. 完全退出 Postman
 # 2. 注入（自动探测当前平台的 Postman 安装）
