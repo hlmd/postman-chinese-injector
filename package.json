@@ -15,6 +15,7 @@
     "build:compress": "node scripts/compress-dist.js",
     "build:runtimes": "node scripts/fetch-runtimes.js",
     "build:win": "node scripts/build-bin.js bun-windows-x64 dist/postman-chinese-injector-win-x64.exe",
+    "build:win-legacy": "node scripts/build-bin-legacy.js",
     "build:linux": "node scripts/build-bin.js bun-linux-x64 dist/postman-chinese-injector-linux-x64",
     "build:linux-arm64": "node scripts/build-bin.js bun-linux-arm64 dist/postman-chinese-injector-linux-arm64",
     "build:mac": "node scripts/build-bin.js bun-darwin-x64 dist/postman-chinese-injector-macos-x64",

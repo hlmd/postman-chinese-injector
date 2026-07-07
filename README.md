@@ -83,10 +83,12 @@ postman-chinese-injector/
 > 压缩仅为减小下载体积（约为原来的 1/4），解压后仍按原大小运行。
 > Windows 双击 `.zip` 即可解压；Linux/macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
 
-> **运行环境要求**：二进制由 Bun 编译，**Windows 需 10 1809+ / Server 2019+**，macOS 需 11+，
-> Linux 需较新的 glibc。在更老的系统（如 Windows Server 2012 / Win7）上运行会报
-> `无法定位程序输入点 ClosePseudoConsole …`（缺 ConPTY API）——这是 Bun 运行时的系统底线，无法绕过。
-> 此类环境请改用下方[「方式二：Node 源码运行」](#方式二node-源码运行开发--改译文)，并按需把依赖降到 `@electron/asar@3`（兼容老 Node）。
+> **运行环境要求**：默认二进制由 Bun 编译，**Windows 需 10 1809+ / Server 2019+**，macOS 需 11+，
+> Linux 需较新的 glibc。在更老的 Windows（如 Server 2012 / Win7）上运行会报
+> `无法定位程序输入点 ClosePseudoConsole …`（缺 ConPTY API）——这是 Bun 运行时的系统底线。
+> 老 Windows 请改用**老系统版二进制**（`*-win-x64-legacy.exe`，改用 Node 运行时打包，
+> 见下方[「老系统（Windows 8.1 / Server 2012 R2+）」](#老系统windows-81--server-2012-r2)），
+> 或走[「方式二：Node 源码运行」](#方式二node-源码运行开发--改译文)。
 
 ```bash
 # 1. 完全退出 Postman
@@ -216,6 +218,23 @@ npm run build:compress # 可选：把 dist/ 的二进制并行压成发行包（
 >
 > 也可直接打 tag（如 `git tag v1.2.3 && git push origin v1.2.3`），由 `.github/workflows/release.yml`
 > 在 CI 上一次性交叉编译、并行压缩并发 Release。
+
+### 老系统（Windows 8.1 / Server 2012 R2+）
+
+Bun 产物要 Win10 1809+；更老的 Windows 需改用 **Node 运行时**打包（`pkg`），产物**不静态链接
+ConPTY**，可在老系统运行：
+
+```bash
+npm run build:win-legacy        # → dist/postman-chinese-injector-win-x64-legacy.exe（默认 node16 基座）
+# 目标更旧（Server 2012 非 R2 / Win7）可尝试更老基座（Node 官方也不保，尽力而为）：
+node scripts/build-bin-legacy.js node12-win-x64
+```
+
+> - **系统下限**：node16 基座覆盖 **Windows 8.1 / Server 2012 R2 及以上**；node12 基座尽力覆盖
+>   Server 2012（非 R2）/ Win7（未经官方支持，可能仍失败——那说明系统已低于 Node 底线，只能升级系统）。
+> - 首次会联网下载对应 Node 基座（~30MB）；产物约 35MB，功能与默认二进制一致。
+> - 底层用已归档但仍可用的 `pkg@5.8.1`，并在独立暂存目录里配 `@electron/asar@3`（v4 要 Node≥22），
+>   不影响仓库根的 asar@4。
 
 ---
 
