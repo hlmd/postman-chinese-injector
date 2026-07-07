@@ -1,0 +1,32 @@
+{
+  "modal": {
+    "heading": "分享 {workspaceName}",
+    "description": "在您的网站或文档中嵌入 <1><0>Run in Postman</0></1> 按钮，方便他人发现并使用您的 Collection。",
+    "live_version": {
+      "heading": "嵌入实时版本",
+      "tag": "新",
+      "description": "此按钮允许使用者 Fork 该 Collection，从而通过拉取和合并更改来保持更新。"
+    },
+    "additional_settings": "其他设置（可选）",
+    "destination_label": "当合作伙伴点击 Run in Postman 时",
+    "destination_info": "选择合作伙伴打开 Run in Postman 链接后可访问的内容。",
+    "add_partner_option": {
+      "label": "将合作伙伴添加到此 Workspace",
+      "description": "邀请合作伙伴加入 {workspaceName}。"
+    },
+    "create_sandbox_option": {
+      "label": "为每个合作伙伴创建自定义沙盒 Workspace",
+      "description": "基于此主 Workspace 中的资源，为其配置专属 Workspace。"
+    },
+    "generate_embed_code": "生成嵌入代码",
+    "embed_code": "嵌入代码",
+    "html_friendly": "适用于 HTML",
+    "markdown_friendly": "适用于 Markdown",
+    "html_description": "最适合用于网站，提供更多自定义选项。",
+    "markdown_description": "最适合用于 README 或博客等 Markdown 文档。",
+    "copy_code": "复制代码",
+    "copied": "已复制",
+    "error_title": "无法创建链接",
+    "error_description": "创建 Run in Postman 链接时出错，请重试。"
+  }
+}

@@ -1,38 +1,121 @@
 {
   "info_pane_mock_listing": {
     "header": {
-      "text": "模拟服务器",
-      "new_button": "新建",
-      "tooltip": "创建模拟服务器"
+      "text": "Mock 服务器",
+      "new_button": "新的",
+      "tooltip": "创建 mock 服务器"
     },
     "list": {
       "connection_error_state": {
-        "text": "无法加载模拟服务器"
+        "text": "无法加载 mock 服务器"
       },
       "error_fetching_state": {
-        "text": "加载模拟服务器时发生意外错误，请重试。",
-        "button": "重试"
+        "text": "加载 mock 服务器时出现意外错误。请再试一次。",
+        "button": "再试一次"
       },
       "no_mock_state": {
-        "collection_text": "此集合尚未创建任何模拟服务器。",
-        "environment_text": "没有模拟服务器使用此环境。"
+        "collection_text": "没有为此 集合 创建 mock 服务器。",
+        "environment_text": "没有 mock 服务器使用此 环境。"
       },
       "default_state": {
-        "show_more": "再显示 {mocksLength} 个",
-        "show_less": "收起"
+        "show_more": "显示 {mocksLength} 更多",
+        "show_less": "显示较少"
       }
     }
   },
   "constants": {
     "error": {
-      "permission_error": "您没有执行此操作的权限。",
-      "offline_error": "您恢复在线后即可执行此操作。"
+      "permission_error": "您没有权限执行此操作。",
+      "offline_error": "您重新上线后即可执行此操作。"
     }
   },
   "delete_confirmation": {
     "delete": "删除",
     "deleting": "正在删除",
-    "toast_delete_confirmation": "模拟服务器已删除",
-    "toast_delete_error": "无法删除该模拟"
+    "toast_delete_confirmation": "Mock 服务器已删除",
+    "toast_delete_error": "无法删除 mock"
+  },
+  "local_mock_logs_panel": {
+    "state_tab_loading": "正在加载状态……",
+    "state_tab_count": "状态（{count}）",
+    "logs_tab_count": "日志（{count}）",
+    "logs_loading": "正在加载日志……",
+    "logs_load_failed": "日志加载失败",
+    "logs_waiting_title": "等待请求……",
+    "logs_waiting_subtitle": "向 Mock Server 发送请求后，即可在此处查看",
+    "logs_no_match": "没有匹配的日志",
+    "logs_no_match_subtitle": "请尝试调整上方的筛选条件",
+    "logs_retry": "重试",
+    "logs_start_to_run": "点击“启动”以运行 Mock Server"
+  },
+  "mock_filter_bar": {
+    "filter_label": "筛选",
+    "session_placeholder": "会话",
+    "caller_placeholder": "调用方",
+    "filter_by_header": "请求头",
+    "session_footer": "选择一个会话以限定日志和状态的范围。会话由 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头标识。可在 Mock 的设置中更改此项。",
+    "session_disabled_value": "默认会话",
+    "session_disabled_hint": "此 Mock 已关闭会话功能，因此所有流量共享同一状态。请在 Mock 的设置中启用会话，以按调用方限定日志和状态范围。"
+  },
+  "caller_identity": {
+    "title_private": "私密 Mock",
+    "title_public": "公开 Mock",
+    "body_private": "只有拥有 Workspace 访问权限的已登录用户，或持有有效 <code>x-api-key</code> 的用户才能调用。可在 Mock 的配置中更改此项。",
+    "body_public": "任何人都可以调用，且不会识别调用方身份。可在 Mock 的配置中更改此项。",
+    "badge_aria_private": "私密 Mock：调用方需经过验证。打开调用方身份详情。",
+    "badge_aria_public": "公开 Mock：调用方无需验证。打开调用方身份详情。"
+  },
+  "local_mock_state_panel": {
+    "key_list": {
+      "search_placeholder": "筛选键……",
+      "no_keys": "没有状态键",
+      "no_matching_keys": "没有匹配的键"
+    },
+    "value_view": {
+      "tree": "树状视图",
+      "raw": "原始视图"
+    },
+    "toolbar": {
+      "session_label": "会话",
+      "session_info_tooltip": "每个会话都是 pm.state 的独立副本。任何有权访问 Mock 的人都可以查看任意会话。",
+      "large_values_truncated": "较大的值已被截断",
+      "clear_session_state": "删除会话",
+      "clear_all": "全部清除",
+      "clear_all_tooltip": "删除所有 pm.state 键"
+    },
+    "messages": {
+      "loading_state": "正在加载状态……",
+      "failed_to_read": "状态读取失败",
+      "refresh_failed": "刷新失败——显示上次读取的内容。",
+      "no_state_yet": "暂无状态",
+      "state_appears_here": "您的处理程序通过 pm.state 写入的内容都会显示在此处。",
+      "start_mock_to_write": "启动 Mock 并写入 pm.state。",
+      "shared_empty": "共享状态为空",
+      "shared_empty_subtitle": "没有会话的调用方产生的状态会显示在此处。",
+      "your_session_empty": "您的会话为空",
+      "session_empty": "此会话为空",
+      "session_empty_subtitle": "向此会话发送请求以添加状态。",
+      "isolated_no_session": "发送请求以启动您的会话",
+      "isolated_no_session_subtitle": "此 Mock 为隔离模式，因此您的第一个请求将获得独立会话（显示为“您的”）。"
+    },
+    "toasts": {
+      "key_reset": "已重置“{key}”",
+      "reset_failed": "状态键重置失败",
+      "session_cleared": "会话状态已清除",
+      "state_cleared": "状态已清除",
+      "clear_failed": "状态清除失败"
+    },
+    "modals": {
+      "reset_key_title": "重置状态键",
+      "reset_key_body_prefix": "这将永久删除 pm.state 中的 ",
+      "reset_key_body_suffix": "，此操作无法撤销。",
+      "cancel": "取消",
+      "reset": "重置",
+      "clear_session_title": "清除会话状态",
+      "clear_all_title": "全部清除",
+      "clear_session_body_prefix": "这将永久删除 ",
+      "clear_session_body_suffix": " 中的所有键，且无法撤销。",
+      "clear_all_body": "这将永久删除所有 pm.state 键，且无法撤销。"
+    }
   }
 }

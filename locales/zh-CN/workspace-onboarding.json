@@ -1,23 +1,23 @@
 {
   "body": {
     "public_api": {
-      "text": "想改用公共 API 吗？在 <1>API Network</1> 上探索最新和热门内容。"
+      "text": "想使用公共 API？前往 <1>API Network</1> 发现最新和热门内容。"
     },
     "import_an_existing_file": "导入现有文件",
-    "start_with_collection_template": "从集合模板开始",
+    "start_with_collection_template": "从 Collection 模板开始",
     "new": "新"
   },
   "personal": {
-    "title": "欢迎使用您的个人工作区 👋",
-    "description": "这是您的专属空间——只有您能看到您在此处创建的 API、集合和其他项目。",
+    "title": "欢迎来到您的个人 Workspace 👋",
+    "description": "这是您的专属空间——只有您能看到在此创建的 API、Collection 及其他项目。",
     "use_a_template": "使用模板",
     "import": "导入"
   },
   "team": {
-    "title": "欢迎使用您的团队工作区 👋",
-    "description": "使用此空间与您的团队一起构建、测试和部署 API。"
+    "title": "欢迎来到您团队的 Workspace 👋",
+    "description": "在此空间与团队一起构建、测试和部署 API。"
   },
-  "step_name": "欢迎使用工作区",
+  "step_name": "欢迎使用 Workspace",
   "how_would_you_start": "您想如何开始？",
   "start_from_scratch": "或从头开始",
   "use_an_ai": "使用 AI 创建 API",
@@ -26,10 +26,10 @@
   },
   "collection_template": {
     "title": "推荐模板",
-    "description": "个性化推荐，帮助您充分利用 Postman。",
+    "description": "为您提供个性化推荐，助您充分利用 Postman。",
     "blank_state": {
-      "title": "没有可用的模板",
-      "description": "找不到可使用的集合模板",
+      "title": "暂无可用模板",
+      "description": "未找到可用的 Collection 模板",
       "close_button": {
         "text": "关闭"
       }
@@ -40,7 +40,7 @@
     "basics_tooltip": {
       "header": "做得好！",
       "subheader": "您已掌握基础知识。",
-      "body": "Postman 还可以让您自动化 API 测试、监控 API 性能、模拟 API 等等。",
+      "body": "Postman 还支持自动化 API 测试、监控 API 性能、模拟 API 等更多功能。",
       "dismiss_quickstart": "关闭快速入门"
     }
   }

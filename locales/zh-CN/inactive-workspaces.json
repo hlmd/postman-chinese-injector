@@ -1,40 +1,40 @@
 {
   "go_back": "返回",
-  "heading": "不活跃的工作区",
-  "description": "想整理一下吗？归档闲置超过 6 个月的工作区，随时可以恢复。",
+  "heading": "非活动工作区",
+  "description": "收拾好了吗？归档 6 个月以上未使用的工作空间。随时恢复。",
   "filters": {
-    "search_workspaces_placeholder": "搜索工作区…",
+    "search_workspaces_placeholder": "搜索工作区...",
     "filter_by_visibility_dropdown": {
       "placeholder": "访问类型",
-      "label": "按可见性筛选",
+      "label": "按可见性过滤",
       "options": {
         "all": {
           "value": "所有工作区"
         },
         "personal": {
           "value": "个人",
-          "description": "仅限创建者",
+          "description": "只有创建者",
           "workspace_type": "内部",
-          "workspace_access": "仅限您和受邀人员"
+          "workspace_access": "只有你和被邀请的人"
         },
         "team": {
           "value": "团队",
-          "description_team_user": "{teamName} 团队中的所有人",
-          "description_non_team_user": "您团队中的所有人",
+          "description_team_user": "{teamName} 团队 中的每个人",
+          "description_non_team_user": "来自 团队 的每个人",
           "workspace_type": "内部",
-          "workspace_access": "您团队中的所有人"
+          "workspace_access": "您 团队 中的每个人"
         },
         "private": {
           "value": "私有",
-          "description": "仅限受邀的团队成员",
+          "description": "仅受邀 团队 成员",
           "workspace_type": "内部",
-          "workspace_access": "仅限您和受邀人员"
+          "workspace_access": "只有你和被邀请的人"
         },
         "partner": {
           "value": "合作伙伴",
-          "description": "仅限受邀的成员和合作伙伴",
+          "description": "仅受邀会员及合作伙伴",
           "workspace_type": "合作伙伴",
-          "workspace_access": "仅限受邀的合作伙伴"
+          "workspace_access": "仅限受邀合作伙伴"
         },
         "public": {
           "value": "公开",
@@ -51,12 +51,12 @@
       "workspace_name": "名称",
       "created_by": "创建者",
       "type": "类型",
-      "access": "访问权限",
-      "last_activity": "最近活动",
+      "access": "使用权",
+      "last_activity": "上次活动",
       "actions": "操作"
     },
     "bulk_selection": {
-      "text": "已选择 {count} 个工作区",
+      "text": "已选择 {count} 工作区",
       "primary_button_text": "删除",
       "primary_button_tooltip": "删除工作区",
       "secondary_button_text": "归档",
@@ -71,29 +71,29 @@
     }
   },
   "blank_state": {
-    "heading": "未找到不活跃的工作区",
-    "description": "归档不活跃的工作区以减少杂乱，随时可以恢复。"
+    "heading": "未找到非活动工作区",
+    "description": "归档不活动的工作空间以减少混乱。随时恢复它们。"
   },
   "toasts": {
     "bulk_archive": {
-      "failure_description": "只是连接出了点小问题，请重试。",
-      "failure_title": "无法归档 {count} 个工作区",
-      "success_description": "已归档 {count} 个工作区"
+      "failure_description": "只是一根电线有问题。请再试一次。",
+      "failure_title": "无法归档 {count} 工作区",
+      "success_description": "{count} 工作区已归档"
     },
     "bulk_delete": {
-      "failure_description": "只是连接出了点小问题，请重试。",
-      "failure_title": "无法删除 {count} 个工作区",
-      "success_description": "已删除 {count} 个工作区"
+      "failure_description": "只是一根电线有问题。请再试一次。",
+      "failure_title": "无法删除 {count} 工作区",
+      "success_description": "{count} 工作区已删除"
     },
     "archive": {
-      "failure_description": "只是连接出了点小问题，请重试。",
-      "failure_title": "无法归档工作区",
-      "success_description": "工作区已归档"
+      "failure_description": "只是一根电线有问题。请再试一次。",
+      "failure_title": "无法归档 工作区",
+      "success_description": "工作区 已归档"
     },
     "delete": {
-      "failure_description": "只是连接出了点小问题，请重试。",
-      "failure_title": "无法删除工作区",
-      "success_description": "工作区已删除"
+      "failure_description": "只是一根电线有问题。请再试一次。",
+      "failure_title": "无法删除 工作区",
+      "success_description": "工作区 已删除"
     }
   }
 }

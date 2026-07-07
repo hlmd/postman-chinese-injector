@@ -1,105 +1,105 @@
 {
   "fork_container": {
-    "button_disabled_tool_tip": "请联网以创建复刻或查看现有复刻。",
+    "button_disabled_tool_tip": "在线创建 fork 或查看现有分叉。",
     "fork_button": {
-      "fork_count_api_error_message": "出错了。",
+      "fork_count_api_error_message": "出了点问题。",
       "fork_button_tooltip": "复刻",
       "counter_button_default_label": "复刻",
-      "fork_count_button_offline_tooltip": "请联网以查看现有复刻。"
+      "fork_count_button_offline_tooltip": "上网查看现有的分叉。"
     },
     "fork_creation_modal": {
       "heading": "复刻 {modelDisplayName}",
       "error": {
         "title": "无法获取源 {modelDisplayName}",
-        "description": "我们无法获取有关源 {modelDisplayName} 的信息。请重试。"
+        "description": "我们无法获取有关源 {modelDisplayName} 的信息。请再试一次。"
       },
       "is_offline": {
-        "title": "您已离线",
+        "title": "您离线",
         "description": "无法连接到服务器。请检查您的网络设置。"
       },
-      "source_module_label": "原始 {modelDisplayName}",
+      "source_module_label": "原始{modelDisplayName}",
       "fork_creation_form": {
-        "fork_label_with_username": "{userName} 的复刻",
-        "fork_label_without_username": "我的复刻",
+        "fork_label_with_username": "{userName} 的 fork",
+        "fork_label_without_username": "我的 Fork",
         "update_user_profile_modal": {
-          "description": "若要从公共工作区中的 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 创建复刻，您必须将个人资料设为公开。系统将对您的个人资料进行以下更改。",
-          "error_toast_message": "若要从公共工作区复刻 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}}，您需要设置好您的公开个人资料。"
+          "description": "要在公开 Workspace 中从 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 创建 fork，您必须将个人资料设为公开。您的个人资料将进行以下更改。",
+          "error_toast_message": "要从公开 Workspace fork 一个 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}，您需要先设置公开个人资料。"
         },
-        "description": "复刻会创建该 {modelType, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 的副本，使您能够在不影响原始内容的情况下进行更改。了解有关 <3>复刻</3> 的更多信息。",
-        "helper_text": "指定一个标签，以将此复刻与原始 {modelType, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 区分开来。",
-        "fork_label": "复刻标签",
-        "workspace_label": "工作区",
+        "description": "Fork 会创建 {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 的副本，让您可以在不影响原始文件的情况下进行更改。了解有关 <3>forks</3> 的更多信息。",
+        "helper_text": "指定一个标签，以区分此 fork 与原始 {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}。",
+        "fork_label": "Fork 标签",
+        "workspace_label": "Workspace",
         "team_label": "团队",
-        "team_helper_text": "复刻将在所选团队的工作区中创建。",
-        "workspace_helper_text": "复刻将在所选工作区中创建。",
-        "workspace_selector_restrict_fork_message": "无法在此处复刻",
+        "team_helper_text": "fork 将在所选团队的 Workspace 中创建。",
+        "workspace_helper_text": "fork 将在选定的 Workspace 中创建。",
+        "workspace_selector_restrict_fork_message": "这里不能 fork",
         "auto_sync_changes_label": "自动拉取更改",
-        "auto_sync_changes_checkbox_label": "从源 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 自动拉取更改",
+        "auto_sync_changes_checkbox_label": "自动从源 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 拉取更改",
         "notifications_label": "通知",
-        "notifications_checkbox_label": "关注源 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 以获取更新通知",
-        "notifications_checkbox_label_forked": "关注已复刻的 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 以获取更新通知",
-        "notifications_checkbox_info_text": "您将收到有关原始 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}} 所做更改的通知。",
-        "fork_confirm_button_label": "复刻 {modelDisplayName, select, collection {集合} environment {环境} flow {Flow} specification {规范} other {}}",
-        "fork_confirm_button_disabled_tooltip": "重新联网后即可执行此操作",
+        "notifications_checkbox_label": "关注源 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 以获取更新通知",
+        "notifications_checkbox_label_forked": "关注已 fork 的 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 以获取更新通知",
+        "notifications_checkbox_info_text": "您将会收到有关原始 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 所做更改的通知。",
+        "fork_confirm_button_label": "Fork {modelDisplayName, select, collection {Collection} environment {Environment} flow {Flow} specification {Specification} other {}}",
+        "fork_confirm_button_disabled_tooltip": "重新上线后即可执行此操作",
         "fork_cancel_button_label": "取消",
-        "fork_environments_text": "要复刻的环境",
-        "fork_environments_helper_text": "所选环境将被复刻并固定到此集合。",
-        "fork_environments_input_placeholder_text": "选择环境",
+        "fork_environments_text": "要 fork 的 Environment",
+        "fork_environments_helper_text": "选定的 Environment 将为此 Collection 分叉并固定。",
+        "fork_environments_input_placeholder_text": "选择 Environment",
         "continue_button_label": "继续"
       }
     }
   },
   "workspace_selector": {
     "error": {
-      "title": "无法加载更多工作区",
-      "subtitle": "只是线路出了点问题。请尝试重新加载。",
+      "title": "无法加载更多 Workspace",
+      "subtitle": "只是一根电线有问题。尝试重新加载。",
       "reload_button_label": "重新加载"
     },
     "workspace_list_container": {
       "get_workspace_list_error": {
-        "title": "无法加载工作区",
-        "subtitle": "只是线路出了点问题。请尝试重新加载。",
+        "title": "无法加载 Workspace",
+        "subtitle": "只是一根电线有问题。尝试重新加载。",
         "reload_button_label": "重新加载"
       },
       "no_workspaces_found": {
-        "title": "未找到工作区",
-        "description": "请检查拼写或尝试其他搜索词。"
+        "title": "未找到 Workspace",
+        "description": "检查拼写，尝试不同的搜索词。"
       },
-      "workspace_list_action_label": "正在复刻",
-      "search_workspace_input_placeholder": "搜索工作区",
-      "public_workspace_forking": "复刻到此公共工作区将使您的 {model} 公开。",
-      "reusable_reference_warning": "复刻到此工作区会使链接的请求停止跟随更新。"
+      "workspace_list_action_label": "分叉",
+      "search_workspace_input_placeholder": "搜索 Workspace",
+      "public_workspace_forking": "分叉到这个公开 Workspace 将使您的 {model} 公开。",
+      "reusable_reference_warning": "分叉到此 Workspace 会停止后续更新的链接请求。"
     }
   },
   "fork_recommendation": {
     "export_modal": {
-      "snippet": "需要复制此 {model} 吗？请改为将此 {model} 复刻到您的工作区。",
-      "fork_cta": "创建复刻",
+      "snippet": "需要复制此 {model} 吗？不如直接将此 {model} fork 到您的 Workspace。",
+      "fork_cta": "创建一个 Fork",
       "learn_more": "了解更多"
     },
     "popover": {
       "fork_cta": "复刻 {model}",
       "cancel": "取消",
-      "no_permission": "您没有导出权限",
-      "no_permission_partner_description": "具有查看者角色的合作伙伴无法导出集合。您可以改为复刻此集合。"
+      "no_permission": "您没有 权限 要导出",
+      "no_permission_partner_description": "查看者角色的合作伙伴无法导出 Collection。您可以改为 fork 此 Collection。"
     },
     "view_plans": {
-      "title": "复刻到您自己的团队",
-      "description": "将此团队升级到付费 Postman 计划，以便复刻并创建此集合的副本。",
+      "title": "Fork 到您自己的 团队",
+      "description": "将此团队升级为付费 Postman 计划，以便 fork 并创建此 Collection 的副本。",
       "cta": "查看计划",
-      "add_paid_team": "创建一个采用付费 Postman 计划的团队，以便复刻并创建此集合的副本。"
+      "add_paid_team": "在付费 Postman 计划上创建团队，以 fork 并创建此 Collection 的副本。"
     }
   },
   "session_info": {
     "not_signed_in": {
-      "description": "登录团队，以便复刻并创建此集合的副本。",
-      "title": "登录以复刻",
+      "description": "登录团队，即可 fork 并创建此 Collection 的副本。",
+      "title": "登录 fork",
       "cta": "登录"
     },
-    "signed_out": "已退出登录",
-    "free_team": "免费版",
+    "signed_out": "已退出",
+    "free_team": "免费",
     "no_teams": "没有其他团队",
     "current_team": "当前团队",
-    "other_teams": "您的其他团队"
+    "other_teams": "你的其他团队"
   }
 }

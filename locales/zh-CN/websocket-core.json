@@ -12,10 +12,10 @@
     "response": {
       "websocket_status": {
         "connected": "已连接",
-        "disconnected": "已断开",
+        "disconnected": "已断开连接",
         "reconnecting": "正在重新连接",
         "connecting": "正在连接",
-        "disconnecting": "正在断开"
+        "disconnecting": "正在断开连接"
       },
       "disabled_tooltip": {
         "is_offline": "恢复联网后即可执行此操作。",
@@ -23,18 +23,18 @@
       },
       "notification": {
         "new_messages": "新消息",
-        "jump_to_latest": "跳至最新"
+        "jump_to_latest": "跳转到最新"
       },
       "empty_state": {
-        "message": "建立连接以收发消息。"
+        "message": "建立连接以发送和接收消息。"
       },
       "truncated_state": {
-        "title": "响应过大，无法显示",
-        "message": "由于响应过大，无法将其保存到历史记录中。"
+        "title": "响应内容过大，无法显示",
+        "message": "由于响应内容过大，无法保存到历史记录中。"
       },
       "generic_empty_state": {
         "title": "未找到消息",
-        "message": "请使用其他关键字或筛选条件重试。"
+        "message": "请尝试使用其他关键字或筛选条件重试。"
       },
       "filter_placeholder": "搜索",
       "search_filter_label": "搜索",
@@ -45,14 +45,14 @@
       "deselect": "取消选择",
       "time_difference": "时间差：{timeDifference}",
       "hidden_message": {
-        "label": "{index} 条消息已隐藏",
+        "label": "已隐藏 {index} 条消息",
         "restore_button_label": "恢复"
       },
       "preview": "预览",
       "reload_text": "预览",
       "message_preview": {
         "connected": "已连接到 {url}",
-        "disconnected": "已断开与 {url} 的连接",
+        "disconnected": "已从 {url} 断开连接",
         "reconnecting": "正在重新连接到 {url}",
         "abort": "连接已中止",
         "error": "无法连接到 {url}",
@@ -68,8 +68,8 @@
         "copied_to_clipboard": "已复制到剪贴板",
         "message_saved": "消息已保存",
         "can_not_copy_this_message": "无法复制此消息",
-        "copy_message": "复制 {size, plural, =1 {消息} other {第一个参数}}",
-        "save_request": "保存此请求以执行此操作。",
+        "copy_message": "复制{size, plural, =1 {消息} other {首个参数}}",
+        "save_request": "保存此请求以执行该操作。",
         "save_message": "保存消息",
         "remaining_args": "+{remaining_args, plural, =1 {# 个参数} other {# 个参数}}"
       },
@@ -84,15 +84,15 @@
     "connection_close_codes": {
       "io_server_disconnect": {
         "name": "IO 服务器断开连接",
-        "description": "服务器已强制断开此 socket 的连接。"
+        "description": "服务器已强制断开该 socket 连接。"
       },
       "io_client_disconnect": {
         "name": "IO 客户端断开连接",
-        "description": "此 socket 已被手动断开连接。"
+        "description": "该 socket 已被手动断开连接。"
       },
       "ping_timeout": {
         "name": "Ping 超时",
-        "description": "服务器未在 pingTimeout 范围内响应。"
+        "description": "服务器未在 pingTimeout 时间范围内响应。"
       },
       "transport_close": {
         "name": "传输关闭",
@@ -100,7 +100,7 @@
       },
       "transport_error": {
         "name": "传输错误",
-        "description": "连接遇到错误。"
+        "description": "连接发生错误。"
       },
       "unknown": {
         "name": "错误",
@@ -115,28 +115,28 @@
       },
       "version": {
         "title": "客户端版本",
-        "description": "选择用于与服务器连接的客户端版本。",
-        "summary": "将用于与服务器连接的客户端版本。"
+        "description": "选择用于连接服务器的客户端版本。",
+        "summary": "用于连接服务器的客户端版本。"
       },
       "path": {
         "title": "握手路径",
-        "description": "设置在握手请求期间应使用的服务器路径。",
-        "summary": "将在握手请求期间使用的服务器路径。"
+        "description": "设置握手请求期间使用的服务器路径。",
+        "summary": "握手请求期间使用的服务器路径。"
       },
       "handshake_timeout": {
-        "title": "握手请求超时",
-        "description": "设置握手请求在超时前的等待时长（以毫秒为单位）。若不希望超时，请设置为 0。",
-        "summary": "握手请求在超时前的等待时长（以毫秒为单位）。"
+        "title": "握手请求超时时间",
+        "description": "设置握手请求超时前的等待时间（毫秒）。设置为 0 表示永不超时。",
+        "summary": "握手请求超时前的等待时间（毫秒）。"
       },
       "retry_count": {
-        "title": "重新连接尝试次数",
-        "description": "连接意外关闭时的最大重新连接尝试次数。",
-        "summary": "连接意外关闭时的最大重新连接尝试次数。"
+        "title": "重新连接次数",
+        "description": "连接意外关闭时的最大重新连接次数。",
+        "summary": "连接意外关闭时的最大重新连接次数。"
       },
       "retry_delay": {
         "title": "重新连接间隔",
-        "description": "每次重新连接尝试之间的间隔（以毫秒为单位）。",
-        "summary": "每次重新连接尝试之间的间隔（以毫秒为单位）。"
+        "description": "每次重新连接尝试之间的间隔时间（毫秒）。",
+        "summary": "每次重新连接尝试之间的间隔时间（毫秒）。"
       }
     },
     "request": {
@@ -144,10 +144,10 @@
         "send_tooltip_non_darwin": "Ctrl + Enter",
         "add_argument": "参数",
         "beautify_tooltip": "美化",
-        "acknowledge": "Ack",
-        "publish_event_placeholder": "事件名称，默认为 \"message\"",
+        "acknowledge": "确认",
+        "publish_event_placeholder": "事件名称，默认为“message”",
         "send": "发送",
-        "message_placeholder": "撰写消息",
+        "message_placeholder": "编写消息",
         "arg_name": "参数 {index}",
         "user_friendly_language_name": {
           "text": "文本",
@@ -181,36 +181,36 @@
       "summary": "通过安全连接进行连接时验证服务器证书。"
     },
     "handshake_timeout": {
-      "title": "握手请求超时",
-      "description": "设置握手请求在超时前的等待时长（以毫秒为单位）。若不希望超时，请设置为 0。",
-      "summary": "握手请求在超时前的等待时长（以毫秒为单位）。"
+      "title": "握手请求超时时间",
+      "description": "设置握手请求超时前的等待时间（毫秒）。设置为 0 表示永不超时。",
+      "summary": "握手请求超时前的等待时间（毫秒）。"
     },
     "retry_count": {
-      "title": "重新连接尝试次数",
-      "description": "连接意外关闭时的最大重新连接尝试次数。",
-      "summary": "连接意外关闭时的最大重新连接尝试次数。"
+      "title": "重新连接次数",
+      "description": "连接意外关闭时的最大重新连接次数。",
+      "summary": "连接意外关闭时的最大重新连接次数。"
     },
     "retry_delay": {
       "title": "重新连接间隔",
-      "description": "每次重新连接尝试之间的间隔（以毫秒为单位）。",
-      "summary": "每次重新连接尝试之间的间隔（以毫秒为单位）。"
+      "description": "每次重新连接尝试之间的间隔时间（毫秒）。",
+      "summary": "每次重新连接尝试之间的间隔时间（毫秒）。"
     },
     "max_payload": {
       "title": "最大消息大小",
-      "description": "允许的最大消息大小（以 MB 为单位）。若要接收任意大小的消息，请设置为 0。",
-      "summary": "允许的最大消息大小（以 MB 为单位）。"
+      "description": "允许的最大消息大小（MB）。设置为 0 表示接收任意大小的消息。",
+      "summary": "允许的最大消息大小（MB）。"
     }
   },
   "websocket_message_pane_label": {
-    "not_listening": "未在监听事件",
+    "not_listening": "未监听任何事件",
     "listening": "正在监听 {count, plural, =0 {# 个事件} other {# 个事件}}",
     "connection_details": "连接详情",
     "connected": "已连接",
     "protocol": "协议",
     "extensions": "扩展",
-    "idle": "已断开",
+    "idle": "已断开连接",
     "connecting": "正在连接",
-    "disconnecting": "正在断开",
+    "disconnecting": "正在断开连接",
     "reconnecting": "正在重新连接"
   },
   "websocket_editor": {
@@ -224,23 +224,23 @@
     "disconnect": "断开连接",
     "cancel": "取消",
     "connect_button": {
-      "no_permission": "您没有权限在此工作区中执行此操作。"
+      "no_permission": "您没有权限在此 Workspace 中执行此操作。"
     }
   },
   "websocket_editor_header": {
     "is_offline": "恢复联网后即可执行此操作。",
     "no_permission": "您没有权限执行此操作。",
-    "no_new_changes": "没有可保存的新更改。",
+    "no_new_changes": "没有新的更改需要保存。",
     "save_request": "保存请求",
-    "save_request_to_a_collection": "将请求保存到集合",
+    "save_request_to_a_collection": "将请求保存到 Collection",
     "save": "保存",
     "save_as": "另存为..",
     "saving": "正在保存...",
     "share_button": {
-      "label": "共享",
+      "label": "分享",
       "tooltips": {
-        "no_edit_permission": "只有保存在集合中的请求才能共享。您需要编辑权限才能保存请求。",
-        "share_request": "共享请求"
+        "no_edit_permission": "只能分享已保存到 Collection 中的请求。您需要拥有编辑权限才能保存请求。",
+        "share_request": "分享请求"
       }
     }
   },
@@ -254,7 +254,7 @@
   "connection_tabs": {
     "toggle": {
       "expand": "展开连接配置",
-      "collapse": "折叠连接配置"
+      "collapse": "收起连接配置"
     }
   },
   "message_language_selector": {
@@ -263,11 +263,11 @@
   "message_pane": {
     "toggle": {
       "expand": "展开消息面板",
-      "collapse": "折叠消息面板"
+      "collapse": "收起消息面板"
     }
   },
   "raw_websocket_compose": {
-    "compose_message": "撰写消息",
+    "compose_message": "编写消息",
     "beautify": "美化",
     "send": "发送",
     "send_tooltip": "Ctrl + Enter",
@@ -282,12 +282,12 @@
     }
   },
   "disabled_tooltip": {
-    "noPermission": "您没有权限在此工作区中连接 WebSocket 服务器。",
-    "notMember": "只有工作区成员才能连接 WebSocket 服务器。加入此工作区以完成此操作。",
+    "noPermission": "您没有权限在此 Workspace 中连接 WebSocket 服务器。",
+    "notMember": "只有 Workspace 成员才能连接 WebSocket 服务器。请加入此 Workspace 以完成该操作。",
     "emptyURL": "URL 不能为空",
-    "nonWsAgent": "切换到 Postman Desktop Agent 以连接 WebSocket 服务器。",
+    "nonWsAgent": "请切换到 Postman Desktop Agent 以连接 WebSocket 服务器。",
     "agentNotConnected": "请确保 Desktop Agent 已安装并正在运行。",
-    "oldAgent": "您使用的 Postman Desktop Agent 版本较旧，不支持 {type} WebSocket 请求。请更新 Desktop Agent 后重试。"
+    "oldAgent": "您使用的 Postman Desktop Agent 版本过旧，不支持 {type} WebSocket 请求。请更新 Desktop Agent 后重试。"
   },
   "websocket_compose_area": {
     "editor": "编辑器",
@@ -296,16 +296,16 @@
   },
   "websocket_message_stream": {
     "new_messages": "新消息",
-    "jump_to_latest": "跳至最新",
-    "establish_connection": "连接以收发消息",
-    "too_large_to_display": "响应过大，无法显示",
-    "could_not_save": "由于响应过大，无法将其保存到历史记录中。",
+    "jump_to_latest": "跳转到最新",
+    "establish_connection": "连接以发送和接收消息",
+    "too_large_to_display": "响应内容过大，无法显示",
+    "could_not_save": "由于响应内容过大，无法保存到历史记录中。",
     "no_msg_found": "未找到消息",
-    "try_again": "请使用其他关键字或筛选条件重试。"
+    "try_again": "请尝试使用其他关键字或筛选条件重试。"
   },
   "websocket_hidden_message_item": {
     "restore": "恢复",
-    "message_hidden": "{message_hidden} 条消息已隐藏"
+    "message_hidden": "已隐藏 {message_hidden} 条消息"
   },
   "websocket_message_stream_area": {
     "deselect": "取消选择",
@@ -327,7 +327,7 @@
     "save_message": "保存消息",
     "disabled_tooltip": "恢复联网后即可执行此操作。",
     "disabled_tooltip_no_permission": "您没有权限执行此操作。",
-    "save_request": "保存此请求以执行此操作。",
+    "save_request": "保存此请求以执行该操作。",
     "size": "大小：{size}",
     "time": "时间：{time}",
     "mime_type": "MIME 类型：{mime_type}"
@@ -343,11 +343,11 @@
     "loading_messages": "正在加载消息",
     "empty_state": "无法加载您的消息。",
     "retry": "重试",
-    "faulty_wire": "只是连接出了点小问题。请重试。",
-    "unforeseen_circumstances": "由于不可预见的情况，我们无法加载您的消息。请稍后重试。",
-    "add_messages": "添加消息以便在活动连接期间重复使用",
+    "faulty_wire": "似乎出了点小故障，请重试。",
+    "unforeseen_circumstances": "由于意外情况，我们无法加载您的消息，请稍后重试。",
+    "add_messages": "添加消息，以便在活动连接中重复使用",
     "rename": "重命名",
-    "duplicate": "创建副本",
+    "duplicate": "复制",
     "delete": "删除",
     "message_title": "消息标题",
     "tooltip_is_offline": "恢复联网后即可执行此操作。",
@@ -367,8 +367,8 @@
   "websocket_workbench_view": {
     "user_friendly_entity_name": "WebSocket 请求",
     "permission_error_title": "您没有查看权限",
-    "permission_error_message": "只有团队成员才能查看此工作区历史记录中的 WebSocket 请求。",
+    "permission_error_message": "只有团队成员才能查看此 Workspace 历史记录中的 WebSocket 请求。",
     "unsupported_protocol_title": "不支持的 WebSocket 请求类型",
-    "unsupported_protocol_message": "请更新您的应用以查看此 WebSocket 请求历史记录。"
+    "unsupported_protocol_message": "请更新应用以查看此 WebSocket 请求历史记录。"
   }
 }

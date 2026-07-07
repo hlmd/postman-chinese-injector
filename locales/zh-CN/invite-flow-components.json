@@ -1,17 +1,17 @@
 {
   "invite_user": {
     "default_title": "姓名、电子邮件或群组名称",
-    "select_file_to_add_people": "选择 TXT 或 CSV 文件以添加人员",
+    "select_file_to_add_people": "选择 TXT 或 CSV 文件来添加人员",
     "add_from_file": "从文件添加",
     "invite_status": {
-      "pending": "邀请待处理",
-      "approval_pending": "待审批"
+      "pending": "邀请 待定",
+      "approval_pending": "待批准"
     },
     "error_messages": {
-      "already_a_team_member": "{email} 已经是您的团队成员",
-      "wrong_file_type": "只能上传 CSV 和 TXT 文件",
-      "file_too_large": "文件大小超过 {max_file_size}MB，仅支持小于 {max_file_size}MB 的文件。",
-      "file_read_error": "上传文件时出错。请重试"
+      "already_a_team_member": "{email} 已经是你的 团队 成员",
+      "wrong_file_type": "只能上传CSV和TXT文件",
+      "file_too_large": "文件大小大于 {max_file_size}MB，仅支持小于 {max_file_size}MB 的文件。",
+      "file_read_error": "上传您的文件时出错。请重试"
     }
   }
 }

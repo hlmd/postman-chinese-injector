@@ -1,95 +1,95 @@
 {
   "file": {
-    "heading": "拖放到任意位置以导入",
-    "select_from": "或选择 <1></1><2>文件</2> 或 <4></4><5>文件夹</5>"
+    "heading": "拖放到任意位置即可导入",
+    "select_from": "或者选择 <1></1><2>文件</2> 或 <4></4><5>文件夹</5>"
   },
   "github": {
     "organization_label": "组织",
-    "repository_label": "仓库",
+    "repository_label": "存储库",
     "branch_label": "分支",
-    "repository_placeholder": "搜索仓库",
+    "repository_placeholder": "搜索存储库",
     "branch_placeholder": "搜索分支",
     "unable_to_load_organization": "无法加载组织",
-    "unable_to_load_repository": "无法加载仓库",
+    "unable_to_load_repository": "无法加载存储库",
     "unable_to_load_branch": "无法加载分支列表",
     "tooltip_repository": "请选择一个组织",
-    "tooltip_branch": "请选择一个仓库",
-    "warning_message": "找不到任何可导入的文件。请仔细检查您的仓库和分支。"
+    "tooltip_branch": "请选择一个存储库",
+    "warning_message": "找不到任何要导入的文件。仔细检查您的存储库和分支。"
   },
   "githubapp": {
     "organization_label": "组织",
-    "repository_label": "仓库",
+    "repository_label": "存储库",
     "branch_label": "分支",
-    "repository_placeholder": "搜索仓库",
+    "repository_placeholder": "搜索存储库",
     "branch_placeholder": "搜索分支",
     "unable_to_load_organization": "无法加载组织",
-    "unable_to_load_repository": "无法加载仓库",
+    "unable_to_load_repository": "无法加载存储库",
     "unable_to_load_branch": "无法加载分支列表",
     "tooltip_repository": "请选择一个组织",
-    "tooltip_branch": "请选择一个仓库",
-    "warning_message": "找不到任何可导入的文件。请仔细检查您的仓库和分支。"
+    "tooltip_branch": "请选择一个存储库",
+    "warning_message": "找不到任何要导入的文件。仔细检查您的存储库和分支。"
   },
   "bitbucket": {
-    "workspace_label": "工作区",
-    "repository_label": "仓库",
+    "workspace_label": "Workspace",
+    "repository_label": "存储库",
     "branch_label": "分支",
-    "repository_placeholder": "搜索仓库",
+    "repository_placeholder": "搜索存储库",
     "branch_placeholder": "搜索分支",
-    "unable_to_load_workspace": "无法加载工作区",
-    "unable_to_load_repository": "无法加载仓库",
+    "unable_to_load_workspace": "无法加载 Workspace",
+    "unable_to_load_repository": "无法加载存储库",
     "unable_to_load_branch": "无法加载分支列表",
-    "tooltip_repository": "请选择一个工作区",
-    "tooltip_branch": "请选择一个仓库",
-    "warning_message": "找不到任何可导入的文件。请仔细检查您的仓库和分支。"
+    "tooltip_repository": "请选择 Workspace",
+    "tooltip_branch": "请选择一个存储库",
+    "warning_message": "找不到任何要导入的文件。仔细检查您的存储库和分支。"
   },
   "gitlab": {
-    "group_label": "群组",
+    "group_label": "团体",
     "project_label": "项目",
     "branch_label": "分支",
     "project_placeholder": "搜索项目",
     "branch_placeholder": "搜索分支",
-    "unable_to_load_group": "无法加载群组。",
+    "unable_to_load_group": "无法加载组。",
     "unable_to_load_project": "无法加载项目",
     "unable_to_load_branch": "无法加载分支",
-    "tooltip_project": "请选择一个群组",
-    "tooltip_branch": "请选择一个仓库",
+    "tooltip_project": "请选择一个组",
+    "tooltip_branch": "请选择一个存储库",
     "tooltip_branch_load_error": "无法加载分支列表",
-    "warning_message": "找不到任何可导入的文件。请仔细检查您的仓库和分支。"
+    "warning_message": "找不到任何要导入的文件。仔细检查您的存储库和分支。"
   },
   "azure": {
     "organization_label": "组织",
-    "repository_label": "仓库",
+    "repository_label": "存储库",
     "branch_label": "分支",
-    "repository_placeholder": "搜索仓库",
+    "repository_placeholder": "搜索存储库",
     "branch_placeholder": "搜索分支",
     "unable_to_load_organization": "无法加载组织",
-    "unable_to_load_repository": "无法加载仓库",
+    "unable_to_load_repository": "无法加载存储库",
     "unable_to_load_branch": "无法加载分支列表",
     "tooltip_repository": "请选择一个组织",
-    "tooltip_branch": "请选择一个仓库"
+    "tooltip_branch": "请选择一个存储库"
   },
   "new_relic": {
     "step_header": {
-      "credentials_label": "凭据",
+      "credentials_label": "证书",
       "service_selection_label": "服务选择"
     },
     "api_key_input": {
-      "heading": "输入您的 New Relic API Key",
-      "text": "API Key",
-      "info_text": "请输入您的 New Relic API Key",
-      "placeholder": "正在获取上次使用的密钥…",
-      "invalid_error_message": "输入的 API key 无效",
-      "button_label": "下一步"
+      "heading": "输入您的 New Relic API 密钥",
+      "text": "API 密钥",
+      "info_text": "请输入您的 New Relic API 密钥",
+      "placeholder": "正在获取上次使用的密钥...",
+      "invalid_error_message": "输入的 API 密钥无效",
+      "button_label": "下一个"
     },
     "service_selection": {
-      "heading": "选择要作为集合导入的服务或应用",
-      "invalid_error_message": "输入的 API key 无效",
+      "heading": "选择要作为 Collection 导入的服务或应用程序",
+      "invalid_error_message": "输入的 API 密钥无效",
       "fetching_service_error_message": "获取服务时遇到错误",
       "import_button_label": "导入",
-      "back_button_label": "返回"
+      "back_button_label": "后退"
     },
     "generate_collection": {
-      "toast_error_title": "无法生成集合"
+      "toast_error_title": "无法生成 Collection"
     }
   },
   "generate_collection_options": {
@@ -98,35 +98,35 @@
       "hide": "隐藏导入设置"
     },
     "import_options_content": {
-      "files": "根据 {formatName} 文件生成的集合的设置",
-      "data": "根据数据生成的集合的设置"
+      "files": "从 {formatName} 文件生成的 Collection 的设置",
+      "data": "从数据生成的 Collection 的设置"
     }
   },
   "api_repo_integration": {
     "connecting_to_service": {
-      "heading": "正在连接到 {service}…",
-      "text": "这可能需要长达 60 秒。",
+      "heading": "正在连接到 {service}...",
+      "text": "这可能需要长达 60 秒的时间。",
       "button_label": "取消"
     },
-    "input_dropdown_placeholder": "输入以筛选",
-    "search_no_result_found": "未找到结果。请检查拼写或尝试其他搜索词。",
+    "input_dropdown_placeholder": "键入要过滤的内容",
+    "search_no_result_found": "没有找到结果。检查您的拼写或尝试不同的搜索词。",
     "reauth_menu": {
-      "want_to_connect": "想连接到其他 {entity} 吗？",
-      "reauth_with_service": "通过 {service} 重新进行身份验证",
-      "manage_accounts": "在 <1>设置</1> 中管理所有已连接的账户。"
+      "want_to_connect": "想要连接到不同的 {entity}？",
+      "reauth_with_service": "使用 {service} 重新验证",
+      "manage_accounts": "管理 <1>设置</1> 中的所有已连接帐户。"
     }
   },
   "container": {
-    "text_area_placeholder": "粘贴 cURL、gRPCurl、原始文本或 URL…",
+    "text_area_placeholder": "粘贴 cURL、gRPCurl、原始文本或 URL...",
     "view_import_settings": "查看导入设置",
     "import_button_label": "导入",
     "import_button_tooltip": "选择要导入的文件",
     "migrate_button_label": "开始迁移",
     "migrate_button_tooltip": {
       "no_files": "选择文件以开始迁移。",
-      "invalid_files": "所选文件不是有效的 {sourceName} 文件。请使用有效的文件重试。"
+      "invalid_files": "所选文件不是有效的 {sourceName} 文件。使用有效文件重试。"
     },
-    "back_button_label": "返回",
+    "back_button_label": "后退",
     "continue_button_label": "继续",
     "cancel_button_label": "取消",
     "continue_background_button_label": "在后台继续",
@@ -135,101 +135,101 @@
       "import_settings": "导入设置",
       "import_from": "从 {service} 导入",
       "import_from_newrelic": "从 New Relic 导入",
-      "import_in_progress": "导入进行中",
-      "importing": "正在导入…",
-      "choose_how_to_import": "选择导入 API 的方式",
-      "choose_how_to_import_specification": "选择导入规范的方式",
-      "repository_label": "仓库",
+      "import_in_progress": "导入正在进行中",
+      "importing": "导入中...",
+      "choose_how_to_import": "选择如何导入您的 API",
+      "choose_how_to_import_specification": "选择如何导入您的规格",
+      "repository_label": "存储库",
       "multi_file_import_one_definition": "从列表中导入一个定义",
       "multi_file_import_elements": "导入元素 ({element_num})",
       "upload_files_to_postman": "迁移到 Postman"
     },
     "tooltip": {
-      "desc": "提示：您也可以在请求栏中粘贴 cURL 以导入",
-      "dismiss_button_label": "关闭"
+      "desc": "提示：您还可以将 cURL 粘贴到请求栏中进行导入",
+      "dismiss_button_label": "解雇"
     },
     "more_import_options": {
       "label": "其他来源",
       "grouped_option": {
-        "code_repositories": "代码仓库",
+        "code_repositories": "代码存储库",
         "api_gateways": "API 网关",
         "apms": "APM"
       }
     },
     "migrate_to_postman_options": {
       "label": "迁移到 Postman",
-      "header": "来自",
+      "header": "从",
       "grouped_option": {
         "soapui": "SoapUI",
         "other": "其他"
       }
     },
-    "shortcut_text": "<0>{shortcutKey}</0> 以导入",
-    "helper_link_text": "了解有关 <1>导入数据</1> 的更多信息",
-    "migrate_to_postman_helper_link_text_learn": "了解 ",
+    "shortcut_text": "<0>{shortcutKey}</0> 导入",
+    "helper_link_text": "了解有关<1>导入数据</1>的更多信息",
+    "migrate_to_postman_helper_link_text_learn": "了解",
     "migrate_to_postman_helper_link_text_migrating": "将数据迁移到 Postman",
     "migrate_to_postman_helper_link_text_from": "了解有关将数据迁移到 Postman 的更多信息",
     "loading_screen": {
-      "single_file_message": "正在读取 1 个文件…",
-      "multiple_file_message": "正在读取 {inputFiles} 个文件…",
-      "raw_message": "正在处理…",
+      "single_file_message": "我们正在读取 1 个文件...",
+      "multiple_file_message": "我们正在读取 {inputFiles} 文件...",
+      "raw_message": "正在处理...",
       "description": {
-        "reading_files": "我们正在读取这些文件。",
-        "close_modal": "您可以关闭此对话框并去处理其他任务。"
+        "reading_files": "我们目前正在阅读这些文件。",
+        "close_modal": "您可以关闭此模式并返回其他任务。"
       }
     },
     "handle_processed_files": {
       "raw": {
-        "validation_error": "格式不正确，请输入正确的格式以导入"
+        "validation_error": "格式错误，请输入正确的格式导入"
       },
       "other": {
         "error_title": "格式不正确",
-        "error_desc": "我们无法识别/不支持此格式。",
+        "error_desc": "我们不识别/支持这种格式。",
         "learn_more_text": "了解我们支持的格式。"
       }
     },
     "generate_collection_option": {
-      "collection_name": "{format} 集合",
+      "collection_name": "{format} Collection",
       "only_collection": {
-        "label": "Postman 集合"
+        "label": "Postman Collection"
       },
       "collection_with_api": {
-        "label_with_format": "{format} 及 Postman 集合",
-        "label": "API 及 Postman 集合",
-        "helper_text": "处理定义文件以及一个专属集合"
+        "label_with_format": "{format} 与 Postman Collection",
+        "label": "API 与 Postman Collection",
+        "helper_text": "使用定义文件以及专属的 Collection"
       },
       "specification": {
-        "label_with_format": "{format} 规范",
-        "label_with_format_and_collection": "{format} 规范及 Postman 集合",
-        "label": "API 规范",
-        "helper_text": "处理规范文件"
+        "label_with_format": "{format} 规格",
+        "label_with_format_and_collection": "{format} 规范，带有 Postman Collection",
+        "label": "API 规格",
+        "helper_text": "使用规范文件"
       }
     }
   },
   "file_container": {
     "search_placeholder": "搜索文件",
-    "header_name": "名称",
+    "header_name": "姓名",
     "header_import_as": "导入为",
-    "header_import_as_tooltip": "API 导入默认会创建集合。您可以通过选择来导入定义文件。",
+    "header_import_as_tooltip": "默认情况下为 API 导入创建 Collection。您可以通过选择定义文件来导入它。",
     "file_count": "{count, plural, one {# 个文件} other {# 个文件}}",
     "format": {
       "api": "API",
-      "specification": "规范",
-      "collection": "集合",
-      "collection_run": "集合运行",
+      "specification": "规格",
+      "collection": "Collection",
+      "collection_run": "Collection 运行",
       "data_dump": "数据转储",
-      "environment": "环境",
+      "environment": "Environment",
       "globals": "全局变量",
       "request": "请求",
-      "with_api": "，API",
-      "with_specification": "，规范"
+      "with_api": ",API",
+      "with_specification": "，规格"
     },
-    "type_separator": "、",
-    "type_separator_final": " 和 ",
+    "type_separator": ",",
+    "type_separator_final": "和",
     "import_api_label": "导入 {types} 文件",
     "api_builder_banner": {
-      "team": "您的团队在当前计划下最多可以创建 {limit, plural, one {# 个 API} other {# 个 API}}。根据使用情况，可以导入前 {apiNumber, plural, one {个所选 API} other {# 个所选 API}}。了解有关我们 <6>计划</6> 的更多信息",
-      "individual": "您在当前计划下最多可以创建 {limit, plural, one {# 个 API} other {# 个 API}}。根据使用情况，可以导入前 {apiNumber, plural, one {个所选 API} other {# 个所选 API}}。了解有关我们 <6>计划</6> 的更多信息"
+      "team": "您的团队最多可以在当前计划中创建 {limit, plural, one {# 个 API} other {# 个 API}}。根据使用情况，将导入前 {apiNumber, plural, one {已选的 API} other {# 个已选的 API}}。了解有关我们的<6>计划</6>的更多信息",
+      "individual": "您可以在当前计划上最多创建 {limit, plural, one {# 个 API} other {# 个 API}}。根据使用情况，将导入前 {apiNumber, plural, one {已选的 API} other {# 个已选的 API}}。了解有关我们的<6>计划</6>的更多信息"
     }
   },
   "base": {
@@ -238,15 +238,15 @@
     "cancel_button_label": "取消"
   },
   "migrate_to_postman": {
-    "upload_from_default_dir": "检测并从默认目录导入数据",
+    "upload_from_default_dir": "从默认目录检测并导入数据",
     "upload_from_default_dir_info": "即将推出",
-    "upload_from_default_dir_info_success": "这将选择 {sourceName} 在您计算机上存储其数据的默认目录。",
-    "upload_from_default_dir_info_fail": "我们在您的计算机上找不到 {sourceName} 的默认目录。",
+    "upload_from_default_dir_info_success": "这将选择 {sourceName} 在您的计算机上存储其数据的默认目录。",
+    "upload_from_default_dir_info_fail": "我们无法在您的计算机上找到 {sourceName} 的默认目录。",
     "upload_data": "选择要迁移的数据",
-    "upload_from_default_dir_disabled": "此选项仅适用于桌面应用。",
+    "upload_from_default_dir_disabled": "此选项仅适用于桌面应用程序。",
     "upload_from_default_dir_disabled_soapui": "此选项不适用于 SoapUI 客户端",
-    "upload_from_default_dir_files_found": "在以下位置找到文件： ",
-    "upload_from_default_dir_files_not_found": "在默认目录中未找到数据",
-    "upload_from_chosen_data": "选择 <1></1><2>文件</2> 或 <4></4><5>文件夹</5>"
+    "upload_from_default_dir_files_found": "文件发现于：",
+    "upload_from_default_dir_files_not_found": "默认目录中未找到数据",
+    "upload_from_chosen_data": "选择 <1></1><2>files</2> 或 <4></4><5>文件夹</5>"
   }
 }

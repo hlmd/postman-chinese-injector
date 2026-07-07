@@ -5,58 +5,58 @@
   },
   "user_group_dynamic_content": {
     "user_group_not_allowed": {
-      "title": "升级您的计划以使用组",
-      "description": "<Para>只有使用我们<Strong>企业版</Strong>计划的团队才能使用组来高效管理整个团队的访问权限并轻松引导新成员。详细了解<Link><LinkText>组</LinkText></Link></Para>",
-      "primary_button": "联系销售",
+      "title": "升级您的计划以使用群组",
+      "description": "<Para>只有参与我们<Strong>企业</Strong>计划的团队才能使用组来有效管理整个团队的访问权限，并轻松加入新成员。了解有关<Link><LinkText>组</LinkText></Link>的更多信息。</Para>",
+      "primary_button": "联系销售人员",
       "secondary_button": "查看计划"
     },
-    "heading": "组",
-    "create_group_button": "创建组",
-    "no_group_creation_permission": "您没有创建组的权限。"
+    "heading": "群组",
+    "create_group_button": "创建群组",
+    "no_group_creation_permission": "您没有 权限 来创建组。"
   },
   "manage_groups": {
     "no_group": {
-      "title": "尚未创建任何组",
-      "description": "<Para>组可让您的团队高效管理团队成员的访问权限并轻松引导新成员。详细了解<Link><LinkText>组</LinkText></Link></Para>",
-      "primary_button": "创建组"
+      "title": "尚未创建群组",
+      "description": "<Para>群组可让您的团队有效管理团队成员的访问权限，并轻松加入新成员。了解有关<Link><LinkText>组</LinkText></Link>的更多信息。</Para>",
+      "primary_button": "创建群组"
     },
-    "no_group_found": " 未找到组",
+    "no_group_found": "未找到群组",
     "no_group_found_matching_query": "未找到与“{query}”匹配的组"
   },
   "edit_user_group": {
-    "back_link_label": "组",
-    "breadcrumb_aria_label": "编辑组面包屑导航"
+    "back_link_label": "群组",
+    "breadcrumb_aria_label": "编辑用户组面包屑导航"
   },
   "desktop_view_group_actions": {
     "tooltip": {
-      "can_not_update_user_group": "您没有向组添加成员的权限",
-      "default": "添加组成员"
+      "can_not_update_user_group": "您没有 权限 来将成员添加到组中",
+      "default": "添加群组成员"
     },
-    "view_group_details": "查看组详情"
+    "view_group_details": "查看群组详情"
   },
   "user_group": {
-    "member_text": "{count, plural, =0 {无成员} =1 {# 名成员} other {# 名成员}}",
-    "no_summary": "未添加描述",
-    "remaining_part": "{count, plural, =1 {# 个其他} other {# 个其他}}",
-    "no_role_assigned": "未分配角色",
+    "member_text": "{count, plural, =0 {没有成员} =1 {# 个成员} other {# 个成员}}",
+    "no_summary": "没有添加描述",
+    "remaining_part": "{count, plural, =1 {另外 # 人} other {另外 # 人}}",
+    "no_role_assigned": "未分配 角色",
     "single_role": "{role} 角色",
     "multiple_roles": "{roles} 角色"
   },
   "add_user_in_group_modal": {
-    "success_msg": "已添加组成员",
+    "success_msg": "已添加群组成员",
     "error": {
-      "title": "无法向此组添加成员",
-      "description": "出错了。请重试。"
+      "title": "无法将成员添加到该组",
+      "description": "出了点问题。请再试一次。"
     },
-    "heading": "向 {groupName} 添加成员",
-    "subheading": "您添加的成员将被分配此组的所有角色。",
-    "search_label": "按名称或电子邮件地址搜索",
+    "heading": "将成员添加到 {groupName}",
+    "subheading": "您添加的成员将被分配该组中的所有角色。",
+    "search_label": "按姓名或电子邮件地址搜索",
     "cancel_button": "取消",
     "add_members_button": "添加成员"
   },
   "add_users": {
-    "added_to_group": "已添加到组",
-    "search_input_placeholder": "例如 cooper、emma@yourcompany.com"
+    "added_to_group": "已添加至群组",
+    "search_input_placeholder": "例如库珀，emma@yourcompany.com"
   },
   "group_actions": {
     "role": {
@@ -64,19 +64,19 @@
       "selected_text": "{count, plural, =1 {# 个角色} other {# 个角色}}"
     },
     "member": {
-      "empty_state_message": "未找到用户",
+      "empty_state_message": "没有找到用户",
       "placeholder": "成员",
-      "selected_text": "{count, plural, =1 {# 名成员} other {# 名成员}}"
+      "selected_text": "{count, plural, =1 {# 个成员} other {# 个成员}}"
     },
-    "search_text_placeholder": "按组名称搜索"
+    "search_text_placeholder": "按群组名称搜索"
   },
   "manage_roles": {
     "label": "角色",
-    "helper_text": "选择您想要分配给此组成员的角色。",
+    "helper_text": "选择要分配给该组成员的角色。",
     "tool_tips": {
-      "non_admin": "只有管理员和超级管理员才能编辑组的角色。",
-      "manager": "拥有经理的组只能被分配开发者角色。",
-      "non_super_admin": "您没有分配此用户角色的权限。"
+      "non_admin": "只有管理员和超级管理员可以编辑组中的角色。",
+      "manager": "具有经理的组只能分配开发人员 角色。",
+      "non_super_admin": "您无权分配此用户 角色。"
     }
   }
 }

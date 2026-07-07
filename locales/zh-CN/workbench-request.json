@@ -1,6 +1,6 @@
 {
-  "request_type_footer": "输入新方法",
-  "use_label": "<0>使用 '</0><1>{customMethodName}</1><0>'</0>",
+  "request_type_footer": "输入新的方法",
+  "use_label": "<0>使用''</0><1>{customMethodName}</1><0>''</0>",
   "invalid_characters_message": "请求方法包含无效字符",
   "no_name_request": "未命名请求",
   "new_request": "新建请求",
@@ -18,22 +18,22 @@
       "label": "仅保存覆盖项"
     },
     "tooltips": {
-      "no_unsaved_changes": "没有可保存的新更改。",
-      "save_to_collection": "将请求保存到集合",
+      "no_unsaved_changes": "没有需要保存的新更改。",
+      "save_to_collection": "将请求保存到 Collection",
       "save_request": "保存请求",
       "save_request_git": "将更改保存到 Postman 和 Github",
-      "no_edit_perimission": "您没有在此工作区中保存更改的权限。",
-      "upgrade_enterprise_for_overrides": "升级到企业版计划以在已链接的请求上保存覆盖项。"
+      "no_edit_perimission": "您没有权限在此 Workspace 中保存更改。",
+      "upgrade_enterprise_for_overrides": "升级到 Enterprise 版才能保存关联请求的覆盖项。"
     },
     "footer": {
-      "label": "已链接的请求仅支持对请求名称和参数的覆盖。"
+      "label": "关联请求仅支持覆盖请求名称和参数。"
     }
   },
   "share_button": {
     "label": "分享",
     "tooltips": {
-      "unsaved_request": "您需要先保存请求才能分享它",
-      "no_edit_permission": "只有保存在集合中的请求才能被分享。您需要编辑访问权限才能保存请求。",
+      "unsaved_request": "您需要先保存请求才能分享",
+      "no_edit_permission": "只有保存在 Collection 中的请求才能分享。您需要编辑权限才能保存请求。",
       "share_request": "分享请求"
     }
   },
@@ -41,8 +41,8 @@
     "tooltips": {
       "comment_mode": {
         "label": "切换到评论模式",
-        "disabled": "您需要在线才能查看评论。",
-        "unsaved_request": "评论模式不适用于未保存的请求。"
+        "disabled": "您需要联网才能查看评论。",
+        "unsaved_request": "未保存的请求不支持评论模式。"
       },
       "edit_mode": "切换到构建模式"
     },
@@ -53,39 +53,47 @@
     "is_sending": "取消",
     "is_sses_stream": "关闭",
     "send_and_download": "发送并下载",
+    "send_and_download_response": "下载响应",
     "options_label": "发送选项",
+    "ai_actions": {
+      "get_successful_response": "获取成功的响应",
+      "visualize_response": "可视化响应",
+      "write_tests": "编写测试",
+      "debug_request": "调试请求",
+      "explore_api": "探索 API 功能"
+    },
     "tooltips": {
-      "no_send_permission": "您没有在此工作区中发送请求的权限。",
+      "no_send_permission": "您没有权限在此 Workspace 中发送请求。",
       "lna_permission_unavailable": {
-        "title": "本地网络访问不可用",
-        "body": "Postman 需要在您的浏览器中启用本地网络访问，才能与桌面代理连接。",
+        "title": "无法访问本地网络",
+        "body": "Postman 需要在浏览器中启用本地网络访问权限才能连接 Desktop Agent。",
         "instructions": {
-          "1": "打开站点的权限设置。",
-          "2": "找到 <1>本地网络访问</1> 并启用它。",
+          "1": "打开网站的权限设置。",
+          "2": "找到<1>本地网络访问</1>并启用它。",
           "3": "重新加载此页面。"
         }
       },
       "agent_unavailable": {
         "desktop": {
-          "title": "桌面代理不可用",
-          "body": "请确保已安装桌面代理，并检查您的工具栏以查看它是否正在运行。"
+          "title": "Desktop Agent 不可用",
+          "body": "请确保已安装 Desktop Agent，并检查工具栏确认其正在运行。"
         },
         "cloud": {
-          "title": "云代理不可用",
-          "body": "无法连接到云代理。请稍后重试或选择其他代理。"
+          "title": "Cloud Agent 不可用",
+          "body": "无法连接到 Cloud Agent。请稍后重试或选择其他 Agent。"
         },
         "interceptor": {
-          "title": "拦截器代理不可用",
-          "body": "请确保已安装并启用 Postman 拦截器扩展。"
+          "title": "Interceptor Agent 不可用",
+          "body": "请确保已安装并启用 Postman Interceptor 扩展程序。"
         }
       },
       "fork_recommendation": {
-        "primary_msg": "目前无法在公开工作区中发送请求——不过我们正在为未来的版本开发此功能！",
-        "secondary_msg": "将此集合复刻到您自己的工作区以发送请求。",
+        "primary_msg": "目前无法在公开 Workspace 中发送请求，我们正在为未来版本开发此功能！",
+        "secondary_msg": "将此 Collection 复刻到您自己的 Workspace 即可发送请求。",
         "primary_action": "创建复刻"
       },
       "live_session": {
-        "host_tab_closed": "无法发送请求，因为主机标签页已关闭。请求会话主机重新打开请求标签页"
+        "host_tab_closed": "无法发送请求，因为主机标签页已关闭。请让会话主持人重新打开请求标签页"
       }
     }
   },
@@ -105,15 +113,15 @@
         "label": "参数"
       },
       "auth": {
-        "label": "授权",
-        "short_label": "授权"
+        "label": "身份验证",
+        "short_label": "验证"
       },
       "overview": "概览",
       "headers": "请求头",
       "body": {
-        "label": "正文",
+        "label": "请求体",
         "editor": {
-          "none_placeholder": "此请求没有正文",
+          "none_placeholder": "此请求没有请求体",
           "beautify_code": "美化",
           "type_selector": {
             "none": "none",
@@ -124,12 +132,12 @@
             "graphql": "GraphQL"
           },
           "empty_state": {
-            "title": "无法发送请求正文",
-            "message": "使用浏览器代理时无法随 {requestMethod} 请求发送正文。请切换到桌面代理以进一步自定义您的请求。"
+            "title": "Can not send request body",
+            "message": "Can not send body with {requestMethod} request while using the browser agent. Switch to the desktop agent to customize your requests further."
           },
-          "language_selector_warning_tooltip": "所选语言与从 Content-Type 请求头推断出的语言不同。",
+          "language_selector_warning_tooltip": "所选语言与根据 Content-Type 请求头推断出的语言不同。",
           "form_data": {
-            "temp_param_message": "此临时正文参数由 Postman 生成，不会随您的请求一起保存。",
+            "temp_param_message": "此临时请求体参数由 Postman 生成，不会随请求一起保存。",
             "kveditor": {
               "key_placeholder": "键",
               "value_placeholder": "值",
@@ -137,45 +145,45 @@
             }
           },
           "url_encoded": {
-            "duplicate_param_warning": "这是一个重复的正文参数，将被 Postman 生成的 {bodyParamKey} 覆盖。",
+            "duplicate_param_warning": "这是一个重复的请求体参数，将被 Postman 生成的 {bodyParamKey} 覆盖。",
             "kveditor": {
               "key_placeholder": "键",
               "value_placeholder": "值"
             }
           },
-          "file_not_in_directory_warning": "此文件不在您的工作目录中。与您共享此请求的队友将无法使用此文件。为了让协作更轻松，您可以在“设置”中设置您的工作目录。",
+          "file_not_in_directory_warning": "此文件不在您的工作目录中。与您共享此请求的团队成员将无法使用该文件。为了便于协作，您可以在设置中配置工作目录。",
           "graphql": {
             "method_change_toast": {
               "title": "请求方法已更改",
-              "message": "对于所选的正文类型 GraphQL，请求方法已更改为 POST"
+              "message": "由于所选请求体类型为 GraphQL，请求方法已更改为 POST"
             },
             "variables": {
               "header": "GRAPHQL 变量",
-              "tooltip": "以 JSON 格式定义变量，以在查询中使用"
+              "tooltip": "以 JSON 格式定义要在查询中使用的变量"
             },
             "query_editor_heading": "查询",
             "schema_selector": {
               "auto_fetch": "自动获取",
-              "no_schema": "无 schema",
+              "no_schema": "无 Schema",
               "signed_out_dropdown": {
                 "button_label": "自动获取",
                 "menu": {
-                  "title": "登录以使用 Spec Hub schema",
-                  "sub_title": "您的 GraphQL 请求可以使用您的 Spec Hub schema 来获取自动补全建议。",
-                  "button_label": "登录以使用 schema"
+                  "title": "登录以使用 Spec Hub Schema",
+                  "sub_title": "您的 GraphQL 请求可以使用 Spec Hub Schema 提供自动补全建议。",
+                  "button_label": "登录以使用 Schema"
                 }
               },
-              "no_socket_connection_alert": "您需要在线才能使用 Spec Hub schema 来获取自动补全建议。",
+              "no_socket_connection_alert": "您需要联网才能使用 Spec Hub Schema 提供自动补全建议。",
               "introspection_warning": {
-                "fetch_failure": "无法自动获取。请确保授权、URL 和所选环境均有效。请查看控制台以了解更多详情。",
-                "incorrect_schema": "Schema 不正确。与该 schema 相关的自动补全选项将无法使用。"
+                "fetch_failure": "自动获取失败。请确保身份验证、URL 和所选 Environment 有效。查看控制台了解详情。",
+                "incorrect_schema": "Schema 不正确。与该 Schema 相关的自动补全选项将无法使用。"
               },
               "tag_name": {
                 "refreshing": "正在获取…",
                 "fetched": "Schema 已获取"
               },
               "refresh_tooltip": "刷新",
-              "api_schema_warning": "服务定义正在使用不再受支持的 API Builder 对象。请将该 API 对象迁移到 Spec Hub 以继续使用它。"
+              "api_schema_warning": "服务定义正在使用已不再支持的 API Builder 对象。请将该 API 对象迁移到 Spec Hub 以继续使用。"
             }
           }
         }
@@ -183,33 +191,33 @@
       "scripts": {
         "label": "脚本",
         "tooltip-text": {
-          "pre-request": "在请求发送之前运行。可用它通过动态配置请求来创建 API 工作流。",
-          "post-response": "在收到响应之后运行。可用它编写测试并设置响应可视化工具。"
+          "pre-request": "在请求发送前运行。可用于动态配置请求，从而创建 API 工作流。",
+          "post-response": "在收到响应后运行。可用于编写测试并设置响应可视化工具。"
         },
         "migration-popover": {
           "title": "在此处编写和查看测试",
-          "body": "使用响应后脚本来编写测试、可视化响应等。",
+          "body": "使用响应后脚本编写测试、可视化响应，以及执行更多操作。",
           "button": "知道了"
         }
       },
       "test-tab-deprecation": {
         "heading": "测试现已成为响应后脚本的一部分",
-        "message": "您可以使用脚本编写测试、请求前脚本、可视化响应，并为您的 API 工作流带来大量自动化。",
+        "message": "您可以使用脚本编写测试、请求前脚本、可视化响应，为 API 工作流带来大量自动化操作。",
         "button": "打开响应后脚本"
       },
       "prscript": {
         "label": "请求前脚本",
         "short_label": "请求前",
         "editor": {
-          "snippets_text": "<0>请求前脚本以 JavaScript 编写，并在请求发送之前运行。详细了解</0><1>请求前脚本</1>"
+          "snippets_text": "<0>请求前脚本使用 JavaScript 编写，会在请求发送前运行。了解更多关于</0><1>请求前脚本</1>"
         },
         "placeholder": "使用 JavaScript 动态配置此请求。",
-        "tooltip_text": "在每个 HTTP 请求发送之前运行。通常用于动态配置请求。"
+        "tooltip_text": "在每个 HTTP 请求发送前运行。通常用于动态配置请求。"
       },
       "tests": {
         "label": "测试",
         "editor": {
-          "snippets_text": "<0>测试脚本以 JavaScript 编写，并在收到响应之后运行。详细了解</0> <1>测试脚本</1> "
+          "snippets_text": "<0>测试脚本是用 JavaScript 编写的，并在收到响应后运行。了解有关</0> <1>测试脚本</1>的更多信息"
         },
         "placeholder": "使用 JavaScript 编写测试、可视化响应等。",
         "tooltip_text": "在每个 HTTP 响应之后运行。通常用于编写测试和可视化响应。"
@@ -220,7 +228,7 @@
         "list": {
           "empty_state": {
             "title": "请求设置不可用",
-            "message": "Postman 使用浏览器的默认设置来发送请求。请切换到桌面代理以进一步自定义您的请求。"
+            "message": "Postman 使用浏览器的默认设置发送请求。切换到桌面代理以进一步定制您的请求。"
           },
           "protocolVersion": {
             "title": "HTTP 版本",
@@ -228,47 +236,47 @@
           },
           "strictSSL": {
             "title": "启用 SSL 证书验证",
-            "desc": "发送请求时验证 SSL 证书。验证失败将导致请求被中止。"
+            "desc": "发送请求时验证 SSL 证书。验证失败将导致请求中止。"
           },
           "followRedirects": {
-            "title": "自动跟随重定向",
-            "desc": "将 HTTP 3xx 响应作为重定向来跟随。"
+            "title": "自动遵循重定向",
+            "desc": "按照 HTTP 3xx 响应作为重定向。"
           },
           "followOriginalHttpMethod": {
-            "title": "跟随原始 HTTP 方法",
-            "desc": "使用原始 HTTP 方法进行重定向，而不是默认的使用 GET 重定向的行为。"
+            "title": "遵循原始 HTTP 方法",
+            "desc": "使用原始 HTTP 方法重定向，而非默认使用 GET 方法重定向的行为。"
           },
           "followAuthorizationHeader": {
-            "title": "跟随 Authorization 请求头",
-            "desc": "当重定向到不同主机名时保留 authorization 请求头。"
+            "title": "遵循授权标头",
+            "desc": "当不同主机名发生重定向时，保留授权标头。"
           },
           "removeRefererHeaderOnRedirect": {
-            "title": "重定向时移除 referer 请求头",
-            "desc": "当发生重定向时移除 referer 请求头。"
+            "title": "重定向时删除引用标头",
+            "desc": "当重定向发生时删除引用标头。"
           },
           "insecureHTTPParser": {
-            "title": "启用严格 HTTP 解析器",
-            "desc": "限制带有无效 HTTP 请求头的响应。"
+            "title": "启用严格的 HTTP 解析器",
+            "desc": "限制具有无效 HTTP 标头的响应。"
           },
           "disableUrlEncoding": {
             "title": "自动编码 URL",
             "desc": "对 URL 的路径、查询参数和身份验证字段进行编码。"
           },
           "disableCookies": {
-            "title": "禁用 cookie jar",
-            "desc": "阻止此请求中使用的 cookie 存储在 cookie jar 中。cookie jar 中现有的 cookie 不会作为此请求的请求头添加。"
+            "title": "禁用 Cookie jar",
+            "desc": "防止此请求中使用的 Cookie 存储在 Cookie jar 中。Cookie jar 中的现有 Cookie 将不会添加为该请求的标头。"
           },
           "tlsPreferServerCiphers": {
             "title": "握手期间使用服务器密码套件",
-            "desc": "在握手期间使用服务器的密码套件顺序，而不是客户端的。"
+            "desc": "在握手期间使用服务器的密码套件顺序而不是客户端的密码套件顺序。"
           },
           "maxRedirects": {
             "title": "最大重定向次数",
-            "desc": "设置可跟随的最大重定向次数上限。"
+            "desc": "设置要遵循的最大重定向数的上限。"
           },
           "tlsDisabledProtocols": {
-            "title": "握手期间禁用的 TLS/SSL 协议",
-            "desc": "指定在握手期间要禁用的 SSL 和 TLS 协议版本。所有其他协议都将启用。",
+            "title": "握手期间禁用 TLS/SSL 协议",
+            "desc": "指定握手期间要禁用的 SSL 和 TLS 协议版本。所有其他协议都将启用。",
             "tls_menu_label": {
               "v1": "TLS v1",
               "v1_1": "TLS v1.1",
@@ -278,12 +286,12 @@
           },
           "tlsCipherSelection": {
             "title": "密码套件选择",
-            "desc": "SSL 服务器配置文件用于建立安全连接的密码套件顺序。"
+            "desc": "SSL 服务器配置文件用于建立安全连接的密码套件的顺序。"
           },
           "action": {
             "default": {
               "label": "默认：",
-              "tooltip": "此设置正在使用全局设置中设定的值。更改此设置将针对此请求覆盖它。"
+              "tooltip": "此设置使用全局设置中设置的值。更改此设置将覆盖此请求的设置。"
             },
             "restore_default": {
               "button_label": "恢复默认值",
@@ -294,7 +302,7 @@
               "inactive_label": "关"
             }
           },
-          "interceptorDisableTooltip": "某些设置在拦截器代理下不可用。请切换到桌面代理以进一步自定义您的请求。",
+          "interceptorDisableTooltip": "某些设置不适用于拦截器代理。切换到桌面代理以进一步定制您的请求。",
           "cloudAgentDisableTooltip": "使用 Postman 桌面代理通过 HTTP/2 发送请求。",
           "multiple_input_placeholder": "输入密码套件"
         }
@@ -308,74 +316,74 @@
   "script_ai": {
     "global_postbot_button": "使用 Postbot 编写脚本",
     "heading": "使用 Postbot 编写脚本",
-    "badge": "BETA",
-    "desc": "借助 AI 轻松编写脚本",
+    "badge": "测试版",
+    "desc": "使用 AI 轻松编写脚本",
     "opt_in_modal": {
-      "terms": "使用此功能即表示您同意 <1><0>在 Postman 中使用 AI 的条款</0></1>",
+      "terms": "使用此功能，即表示您同意在 Postman 中使用 AI 的 <1><0>条款</0></1>",
       "primary_action": "继续",
-      "desc": "<0>Postbot 是您处理所有 API 相关事务的 AI 助手。它帮助您为 API 编写测试，甚至构建您的 flow。只需寻找</0> <1><0>那个</0> <1></1> <2>图标。</2></1>",
+      "desc": "<0>Postbot 是您处理所有 API 相关事务的 AI 助手，可以帮助您为 API 编写测试，甚至构建 Flow。只需查看</0> <1><0> </0> <1></1> <2>图标。</2></1>",
       "tooltip_close": "关闭"
     },
-    "split_loading_message": "正在处理…",
-    "split_loading_message_timeout": "再过几秒我就完成了…",
-    "input_text_content": "为此请求添加测试",
+    "split_loading_message": "正在努力...",
+    "split_loading_message_timeout": "再等几秒钟，我就完成了......",
+    "input_text_content": "向此请求添加测试",
     "share_feedback_button": "分享反馈",
-    "script_generation_error": "生成测试时出错了。",
+    "script_generation_error": "生成测试时出现问题。",
     "script_generation_error_not_send": "无法发送请求。",
     "textarea_placeholder": "提示 Postbot 编写脚本",
-    "invalid_response_type_warning": "Postbot 目前只能为 JSON 和 XML 响应生成脚本。我们正在努力扩展其能力……",
-    "missing_response_warning": "测试生成需要来自服务器的响应。请发送请求以获取响应后重试。",
-    "bad_response_warning": "这是一个失败的响应！仍要为此请求编写测试吗？",
+    "invalid_response_type_warning": "Postbot 目前只能生成 JSON 和 XML 响应的脚本。我们正在努力扩展其功能..",
+    "missing_response_warning": "测试生成需要来自服务器的响应。发送请求以获取响应并重试。",
+    "bad_response_warning": "这是一个糟糕的响应！无论如何都要为此请求编写测试吗？",
     "bad_response_button": "继续编写测试",
-    "generation_warning_missing_response": "<0> <1></1> <2>测试生成需要一个响应才能进行。</2></0> <1><0>点击</0> <1></1> <2>以发送请求并生成测试。</2></1>"
+    "generation_warning_missing_response": "<0> <1></1> <2>测试生成需要响应才能使用。</2></0> <1><0>点击</0> <1></1> <2>发送请求并生成测试。</2></1>"
   },
   "info_context_bar": {
-    "title": "请求详情"
+    "title": "请求详细信息"
   },
   "example": {
     "details": {
-      "title": "示例详情"
+      "title": "示例详细信息"
     }
   },
   "onboarding_popover": {
     "request_switching": {
       "header": "切换请求类型",
-      "text": "使用 Postman 的 API 客户端，跨多种 API 技术进行工作。"
+      "text": "使用 Postman 的 API 客户端跨多种 API 技术工作。"
     },
     "last_creation": {
       "header": "继续使用上次创建的请求类型",
-      "text": "创建新标签页时会自动选择上次创建的请求类型，让您更轻松地处理多种 API 技术。"
+      "text": "创建新选项卡会自动选择最后创建的请求类型，以便您更轻松地使用多种 API 技术。"
     }
   },
   "version_control": {
     "fork_recommendation_popup": {
-      "title": "创建复刻以保存更改",
-      "message": "您没有更改此集合的权限。请将该集合复刻到您的工作区以保存更改。",
-      "button_label": "创建复刻并保存"
+      "title": "创建 fork 来保存更改",
+      "message": "您没有权限更改此 Collection。请将该 Collection Fork 到您的 Workspace 以保存更改。",
+      "button_label": "创建 Fork 并保存"
     }
   },
   "related_histories": {
-    "response_pane_title": "历史记录",
+    "response_pane_title": "历史",
     "error_meta": {
-      "title": "管理员已撤销对历史记录的访问权限",
-      "message": "这可能是由于安全策略所致。请联系您的管理员以获取更多详情或帮助。"
+      "title": "管理员撤销了对历史记录的访问",
+      "message": "这可能是由于安全策略所致。请联系您的管理员以获取更多详细信息或帮助。"
     },
     "empty_state": {
-      "title": "没有请求历史记录",
+      "title": "无请求历史记录",
       "message": "发送请求并浏览其历史记录。"
     }
   },
   "save_popover": {
-    "title": "保存您的请求以避免丢失工作成果",
-    "subtitle": "通过将请求保存到集合，可以轻松访问和重用它们。提示：使用 ⌘S 快速保存。",
-    "short_subtitle": "提示：使用 ⌘S 快速保存。",
+    "title": "保存您的请求以避免丢失工作",
+    "subtitle": "通过将请求保存到 Collection 来轻松访问和重用请求。提示：使用 ⌘S 可以快速保存。",
+    "short_subtitle": "提示：使用 ⌘S 可以快速保存。",
     "button_primary": "保存请求",
     "button_secondary": "我稍后再做"
   },
   "schema_editor": {
     "error_boundary": {
-      "title": "Schema 编辑器加载失败",
-      "description": "加载 schema 编辑器时发生意外错误。"
+      "title": "架构编辑器加载失败",
+      "description": "加载架构编辑器时发生意外错误。"
     }
   }
 }

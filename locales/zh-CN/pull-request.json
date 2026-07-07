@@ -1,87 +1,87 @@
 {
   "title": "创建拉取请求",
   "update_pull_request_error": {
-    "description": "您将能够在重新联网后编辑拉取请求。",
-    "title": "您处于离线状态"
+    "description": "上线后，您就可以编辑 拉取请求。",
+    "title": "您离线"
   },
   "unable_to_save_changes": "无法保存更改",
-  "unable_to_create_pull_request": "无法创建拉取请求",
-  "overview": "概览",
+  "unable_to_create_pull_request": "无法创建 拉取请求",
+  "overview": "概述",
   "changes": "更改",
   "offline_error": {
-    "title": "您处于离线状态",
+    "title": "您离线",
     "description": "无法连接到服务器。请检查您的网络设置。",
     "retry_button": "重试"
   },
   "loading_error": {
-    "access_error": "您没有权限执行此操作",
-    "internal_error": "出错了",
-    "connection_error": "获取创建拉取请求所需的信息时出错"
+    "access_error": "您无权执行此操作",
+    "internal_error": "出了点问题",
+    "connection_error": "获取创建 拉取请求 所需的信息时出错"
   },
-  "is_destination_git_link": "无法向属于 Git 连接的 API 的集合创建拉取请求。",
+  "is_destination_git_link": "无法为属于 Git 关联 API 的集合创建拉取请求。",
   "existing_pull_request": {
-    "title": "此复刻已有一个打开的拉取请求",
-    "description": "在同一时间，一个复刻只能有 1 个打开的拉取请求。",
+    "title": "此复刻已经有一个开放的拉取请求",
+    "description": "在任意时间，每个复刻只能有 1 个开放的拉取请求。",
     "view_open_pull_request_button": "查看打开的拉取请求"
   },
   "create_pull_request": "创建拉取请求",
   "edit_pull_request": "编辑拉取请求",
   "source_destination": {
     "tooltip": {
-      "source_deleted_from_workspace": "源 {modelDisplayName} 已被删除或从其所属的工作区中移除。",
-      "destination_deleted_from_workspace": "目标 {modelDisplayName} 已被删除或从其所属的工作区中移除。",
-      "unavailable": "此 {modelDisplayName} 不可用。"
+      "source_deleted_from_workspace": "源 {modelDisplayName} 已从其所属的 工作区 中删除或移除。",
+      "destination_deleted_from_workspace": "目标 {modelDisplayName} 已从其所属的 工作区 中删除或移除。",
+      "unavailable": "该 {modelDisplayName} 不可用。"
     },
-    "source_label": "源：",
-    "destination_label": "目标：",
+    "source_label": "来源：",
+    "destination_label": "目的地：",
     "to_label": "到"
   },
   "pull_changes_banner": {
-    "has_conflict_message": "自上次更新复刻以来，目标已被修改，导致冲突。请先拉取更改并解决冲突，然后再合并更改。",
-    "no_conflict_message": "目标最近已更新。我们建议您拉取更改。",
+    "has_conflict_message": "自上次更新复刻以来，目标已被修改，从而导致冲突。在合并更改之前拉取更改并解决冲突。",
+    "no_conflict_message": "目的地最近已更新。我们建议拉取这些更改。",
     "resolve_conflict_button": "解决冲突",
     "pull_changes_button": "拉取更改",
-    "no_pull_permission_tooltip": "您没有权限拉取更改。"
+    "no_pull_permission_tooltip": "您没有 权限 来提取更改。"
   },
   "pull_request_form": {
-    "can_not_merge_tooltip": "若要合并您的请求，此用户需要申请目标 {entityName} 的编辑者访问权限。",
-    "group_can_not_merge_tooltip": "若要合并您的请求，此群组需要拥有目标 {entityName} 的编辑者访问权限。",
+    "can_not_merge_tooltip": "要合并您的请求，该用户必须为目标 {entityName} 申请编辑者访问权限。",
+    "group_can_not_merge_tooltip": "为了 合并 您的 请求，该组需要对目的地 {entityName} 具有 编辑者 访问权限。",
     "can_not_merge": "无法合并",
-    "reviewer_can_not_access_source": "审阅者无法访问源 {entityType}",
-    "source_not_in_public_workspace": "源 {entityType} 不在公开工作区中。请将其移至公开工作区，以便审阅者可以访问它来审阅您的拉取请求。",
-    "source_not_in_team_workspace": "源 {entityType} 不在团队工作区中。请将其移至团队工作区，以便审阅者可以访问它来审阅您的拉取请求。",
+    "reviewer_can_not_access_source": "审阅者无法访问来源 {entityType}",
+    "source_not_in_public_workspace": "源 {entityType} 不在 公开 工作区 中。将其移至 公开 工作区，以便审阅者可以访问它来审阅您的 拉取请求。",
+    "source_not_in_team_workspace": "源 {entityType} 不在 团队 工作区 中。将其移至 团队 工作区，以便审阅者可以访问它来审阅您的 拉取请求。",
     "title": "标题",
     "title_placeholder": "请输入标题",
     "title_error": "错误",
     "description": "描述",
-    "description_helper_text": "简要概述主要更改——您的审阅者会因此感谢您。",
+    "description_helper_text": "简要总结主要变化——您的审阅者会为此感谢您。",
     "description_placeholder": "描述支持 Markdown",
-    "reviewers": "审阅者",
-    "select_up_to_50_reviewers": "最多可选择 50 个。",
-    "editor_note": "注意：若要合并此拉取请求，目标 {entityType} 的编辑者必须批准它。请务必选择一位编辑者作为审阅者。",
-    "find_a_reviewer": "查找审阅者",
-    "no_reviewers_yet": "尚无审阅者",
-    "can_add_up_to_50_reviewers": "您最多可以添加 50 位审阅者。",
-    "offline_tooltip": "您可以在重新联网后执行此操作",
+    "reviewers": "审稿人",
+    "select_up_to_50_reviewers": "最多选择 50 个。",
+    "editor_note": "注意：要合并此拉取请求，目的地 {entityType} 的编辑者必须批准。请务必选择一位编辑者作为审稿人。",
+    "find_a_reviewer": "寻找审稿人",
+    "no_reviewers_yet": "还没有审稿人",
+    "can_add_up_to_50_reviewers": "您最多可以添加 50 名审阅者。",
+    "offline_tooltip": "重新上线后即可执行此操作",
     "create_pull_request_button": "创建拉取请求",
     "save_changes_button": "保存更改",
     "cancel_button": "取消",
-    "move_button": "移动 {entityType}"
+    "move_button": "移动{entityType}"
   },
   "changes_tab": {
     "heading": "更改",
     "description": "描述",
-    "unable_to_fetch_diff": "无法获取拉取请求差异上的评论",
+    "unable_to_fetch_diff": "无法获取拉取请求差异的评论",
     "does_not_exists_error": {
-      "body": "我们无法获取目标 {entityType}。您可能没有访问权限，或者它可能已被删除。",
+      "body": "我们无法获取目的地 {entityType}。您可能无权访问它，或者它可能已被删除。",
       "title": "无法显示更改"
     },
     "loading_diff_error": {
-      "body": "我们无法获取源 {entityType}。您可能没有访问权限，或者它可能已被删除。",
+      "body": "我们无法获取源 {entityType}。您可能无权访问它，或者它可能已被删除。",
       "title": "无法显示更改"
     },
     "empty_state": {
-      "body": "您对源所做的更改将显示在此处。您之后可以合并它们。",
+      "body": "您对源代码所做的更改将显示在此处。之后您可以 合并 它们。",
       "title": "没有可显示的更改"
     }
   },
@@ -92,119 +92,119 @@
   },
   "attribute": {
     "pull_changes": "拉取更改",
-    "pull_changes_and_resolve_conflict": "<0></0>并解决冲突，然后再合并更改。",
-    "conflict_partially_resolved": "冲突已部分解决。",
+    "pull_changes_and_resolve_conflict": "<0></0> 并在合并更改之前解决冲突。",
+    "conflict_partially_resolved": "冲突部分解决。",
     "reset": "重置",
-    "conflict_resolved_text": "冲突已解决。"
+    "conflict_resolved_text": "冲突解决了。"
   },
   "panel_content": {
-    "content_label": "{entityType} 合并内容",
-    "conflict_resolved_text": "冲突已解决。",
+    "content_label": "{entityType} 合并 内容",
+    "conflict_resolved_text": "冲突解决了。",
     "reset": "重置",
     "reset_resolution": "重置冲突解决方案",
     "conflict_resolved_reset": "冲突已解决 <1></1>",
     "pull_changes": "拉取更改",
     "pull_changes_full": "拉取更改以启用冲突解决",
-    "pull_changes_and_resolve_conflict": "<0></0>并解决冲突，然后再合并更改。"
+    "pull_changes_and_resolve_conflict": "<0></0> 并在合并更改之前解决冲突。"
   },
   "conflict_choice_descriptor": {
-    "keep_source": "保留源",
-    "keep_destination": "保留目标",
-    "keep_individual": "通过点击下方的 <1></1> 和 <3></3> 块，单独选择您想要保留的值。您也可以点击上方的选项来解决此属性的所有冲突。",
-    "source_icon_label": "源",
-    "destination_icon_label": "目标"
+    "keep_source": "保留来源",
+    "keep_destination": "保留目的地",
+    "keep_individual": "单击下面的 <1></1> 和 <3></3> 块，选择要单独保留的值。您还可以单击上面的选项来解决该属性的所有冲突。",
+    "source_icon_label": "来源",
+    "destination_icon_label": "目的地"
   },
   "panel_header": {
-    "conflicted_badge_text": "有冲突",
-    "toggle_panel": "切换 {entityName} 详情",
+    "conflicted_badge_text": "冲突",
+    "toggle_panel": "切换 {entityName} 详细信息",
     "open_entity": "打开 {entityType} {entityName}"
   },
   "text_diff": {
     "added_label": "已添加",
-    "removed_label": "已移除"
+    "removed_label": "已删除"
   },
   "diff_renderer": {
-    "keep_destination_changes": "将其余更改保留到目标",
-    "keep_all_destination_changes": "将所有更改保留到目标",
-    "keep_source_changes": "将其余更改保留到源",
-    "keep_all_source_changes": "将所有更改保留到源",
-    "loading_diff": "我们正在获取已修改的实体，这可能需要一分钟。"
+    "keep_destination_changes": "将其余更改保留到目的地",
+    "keep_all_destination_changes": "将所有更改保留到目的地",
+    "keep_source_changes": "将其余更改保留在源代码中",
+    "keep_all_source_changes": "保留对源的所有更改",
+    "loading_diff": "我们正在获取修改后的实体，这可能需要一分钟时间。"
   },
   "resolve_all_entity": {
     "label": "解决所有冲突：",
     "reset_all_conflicts": "重置所有冲突",
-    "conflict_resolved_with_reset_button": "冲突已解决，可以拉取更改了。<1></1>"
+    "conflict_resolved_with_reset_button": "冲突已解决，可以拉取更改了。 <1></1>"
   },
   "diff_item_title": {
-    "tooltip": "此 {itemType} 已被移至 {model} {name}"
+    "tooltip": "此 {itemType} 已移至 {model} {name}"
   },
   "diff_item_property": {
     "conflict_label": "冲突"
   },
   "diff_summary_entity": {
-    "conflicted_label": "有冲突"
+    "conflicted_label": "冲突"
   },
   "table_diff_cell": {
-    "enabled": "已启用",
-    "disabled": "已禁用"
+    "enabled": "启用",
+    "disabled": "禁用"
   },
   "selection_diff": {
-    "enabled": "已启用",
-    "disabled": "已禁用"
+    "enabled": "启用",
+    "disabled": "禁用"
   },
   "json_diff": {
-    "enabled": "已启用",
-    "disabled": "已禁用"
+    "enabled": "启用",
+    "disabled": "禁用"
   },
   "entity_conflict": {
     "origin": {
-      "source": "源",
-      "destination": "目标"
+      "source": "来源",
+      "destination": "目的地"
     },
-    "modified": "{entityType} 将按照 {origin} 中的内容进行修改。",
-    "removed": "{entityType} 将按照 {origin} 中的内容进行删除。",
-    "moved": "{entityType} 将被移至",
+    "modified": "{entityType} 将像 {origin} 中那样进行修改。",
+    "removed": "{entityType} 将像 {origin} 一样被删除。",
+    "moved": "{entityType} 将被移动到",
     "destination": {
-      "modified": "{entityType} 已在目标中修改。",
-      "deleted": "{entityType} 已在目标中删除。",
-      "moved": "{entityType} 已移至 "
+      "modified": "{entityType} 在目标中修改。",
+      "deleted": "{entityType} 在目标中删除。",
+      "moved": "{entityType} 移至"
     },
     "source": {
-      "modified": "{entityType} 已在源中修改。",
-      "deleted": "{entityType} 已在源中删除。",
-      "moved": "{entityType} 已移至 "
+      "modified": "{entityType} 在源代码中进行了修改。",
+      "deleted": "{entityType} 在源中删除。",
+      "moved": "{entityType} 移至"
     }
   },
   "summarize_changes": {
     "changes": {
-      "modified": "{count, plural, one{# 个实体} other {# 个实体}}已修改 ",
-      "added": "{count, plural, one{# 个实体} other {# 个实体}}已添加",
-      "removed": "{count, plural, one{# 个实体} other {# 个实体}}已移除",
-      "moved": "{count, plural, one{# 个实体} other {# 个实体}}已移动",
-      "conflicted": "{count, plural, one{# 个实体} other {# 个实体}}有冲突"
+      "modified": "{count, plural, one{# 个实体} other {# 个实体}} 已修改",
+      "added": "添加了 {count, plural, one{# 个实体} other {# 个实体}}",
+      "removed": "{count, plural, one{# 个实体} other {# 个实体}} 已删除",
+      "moved": "{count, plural, one{# 个实体} other {# 个实体}} 已移动",
+      "conflicted": "{count, plural, one{# 个实体} other {# 个实体}} 冲突"
     }
   },
   "diff_summary": {
     "toggle_tree": "切换摘要树"
   },
   "pull_request_header": {
-    "source_info_unavailable_tooltip": "源 {entityType} 在拉取请求被拒绝之前已被删除或从工作区中移除"
+    "source_info_unavailable_tooltip": "在 拉取请求 被拒绝之前，源 {entityType} 已被删除或从 工作区 中删除"
   },
   "merge_button": {
     "text": "合并"
   },
   "merge_tooltip": {
-    "message": "出错了。请刷新。"
+    "message": "出了点问题。请刷新。"
   },
   "pull_request_actions": {
     "sign_in_required_to_manage_message": "请登录以管理拉取请求。",
     "more_pull_request_actions": {
       "edit_option_disabled": {
-        "is_merging_message": "我们正在合并此拉取请求。",
+        "is_merging_message": "我们目前正在合并 拉取请求。",
         "sign_in_required_message": "登录以编辑拉取请求。"
       },
       "decline_option_disabled": {
-        "is_merging_message": "我们正在合并此拉取请求。",
+        "is_merging_message": "我们目前正在合并 拉取请求。",
         "sign_in_required_message": "登录以拒绝拉取请求。"
       },
       "dropdown_options": {
@@ -213,52 +213,52 @@
         "decline": "拒绝"
       }
     },
-    "offline_tooltip_text": "您可以在重新联网后执行此操作",
-    "view_merge_conditions": "查看合并条件",
-    "approve_button_disabled_message": "我们正在合并此拉取请求。",
+    "offline_tooltip_text": "重新上线后即可执行此操作",
+    "view_merge_conditions": "查看 合并 条件",
+    "approve_button_disabled_message": "我们目前正在合并这个 拉取请求。",
     "merge_tooltip_messages": {
-      "merge_in_progress": "我们正在合并此拉取请求。",
-      "collection_all_condition_not_satisfied": "在尝试合并之前，请确保此拉取请求满足所有合并条件。",
-      "no_changes_made": "未做任何更改。没有可合并的内容。",
-      "collection_merge_condition_not_met_title": "未满足合并条件"
+      "merge_in_progress": "我们目前正在合并这个 拉取请求。",
+      "collection_all_condition_not_satisfied": "在尝试 合并 之前，请确保此 拉取请求 满足所有 合并 条件。",
+      "no_changes_made": "没有做任何改变。没什么可 合并 的。",
+      "collection_merge_condition_not_met_title": "合并 条件不满足"
     },
     "decline_pull_request": {
       "success": {
-        "title": "拉取请求已拒绝",
-        "description": "已拒绝的拉取请求无法重新打开"
+        "title": "拉取请求 拒绝",
+        "description": "拒绝的拉取请求无法重新打开"
       },
       "error": {
-        "title": "无法拒绝拉取请求"
+        "title": "无法拒绝 拉取请求"
       }
     },
     "approve_pull_request": {
       "success": {
         "title": "成功！",
-        "description": "您已批准此拉取请求"
+        "description": "您批准了此 拉取请求"
       },
       "error": {
-        "title": "无法批准拉取请求"
+        "title": "无法批准 拉取请求"
       }
     },
     "unapprove_pull_request": {
       "success": {
-        "title": "已取消批准",
-        "description": "您已取消批准此拉取请求"
+        "title": "未批准",
+        "description": "您未批准此 拉取请求"
       },
       "error": {
-        "title": "无法取消批准拉取请求"
+        "title": "无法取消批准 拉取请求"
       }
     },
     "decline_confirmation_modal": {
       "title": "拒绝拉取请求？",
-      "primary_action": "拒绝拉取请求",
+      "primary_action": "拒绝 拉取请求",
       "cancel_button": "取消",
-      "add_a_note_label": "添加备注",
-      "message": "此操作无法撤消。若要请求编辑或留下反馈，请改为添加评论。",
-      "modal_text": "帮助其他人理解拒绝该拉取请求的原因"
+      "add_a_note_label": "添加注释",
+      "message": "此操作无法撤消。要 请求 编辑或留下反馈，请添加评论。",
+      "modal_text": "帮助其他人了解 拉取请求 被拒绝的原因"
     },
     "approval_toggle": {
-      "menu_content_message": "批准此拉取请求的人员将显示在此处。",
+      "menu_content_message": "批准此 拉取请求 的人将出现在此处。",
       "approve_button": "批准",
       "unapprove_button": "取消批准",
       "approvers_count": "{ count, plural, one{# 位批准者} other{# 位批准者} }"
@@ -266,30 +266,30 @@
   },
   "pull_request_overview": {
     "heading": "描述",
-    "no_description_message": "未提供描述。"
+    "no_description_message": "没有提供描述。"
   },
   "empty_state": {
-    "title": "您处于离线状态",
+    "title": "您离线",
     "body": "无法连接到服务器。请检查您的网络设置。",
     "retry_button": "重试"
   },
   "error_state": {
-    "title": "无法获取拉取请求"
+    "title": "无法获取 拉取请求"
   },
   "merge_status_banner": {
     "success": {
-      "pull_request": "拉取请求已合并。",
+      "pull_request": "拉取请求 已被合并。",
       "other": "更改已合并。"
     },
     "in_progress": {
-      "pull_request": "我们正在合并拉取请求，这可能需要一分钟。完成后我们会通知您。",
-      "other": "我们正在合并更改，这可能需要一分钟。完成后我们会通知您。"
+      "pull_request": "我们正在合并 拉取请求，这可能需要一分钟时间。完成后我们会通知您。",
+      "other": "我们正在合并更改，这可能需要一分钟时间。完成后我们会通知您。"
     },
     "failed": {
-      "pull_request_with_refresh_tab": "合并拉取请求时发生意外错误。请刷新标签页并重试。",
-      "pull_request_without_refresh_tab": "合并拉取请求时发生意外错误。请重试。",
-      "other_with_refresh_tab": "合并更改时发生意外错误。请刷新标签页并重试。",
-      "other_without_refresh_tab": "合并更改时发生意外错误。请重试。"
+      "pull_request_with_refresh_tab": "合并 拉取请求 时发生意外错误。请刷新选项卡并重试。",
+      "pull_request_without_refresh_tab": "合并 拉取请求 时发生意外错误。请再试一次。",
+      "other_with_refresh_tab": "合并更改时发生意外错误。请刷新选项卡并重试。",
+      "other_without_refresh_tab": "合并更改时发生意外错误。请再试一次。"
     }
   },
   "diff_navigation": {
@@ -302,39 +302,39 @@
     }
   },
   "pull_request_end_state_banner": {
-    "declined": "<0> </0> 已于 {updatedAt, date, long} 拒绝此拉取请求，并附上以下备注：",
-    "merged": "<0> </0> 已于 {updatedAt, date, long} 合并此拉取请求"
+    "declined": "<0> </0> 在 {updatedAt, date, long} 上拒绝了此 拉取请求，并附有以下说明：",
+    "merged": "<0> </0> 于 {updatedAt, date, long} 合并了此拉取请求"
   },
   "merge_collection_modal": {
     "header": "确认合并",
     "merge_label": "选择您想要如何继续",
-    "merge_label_summary": "您正在将 {changes} 项更改合并到 {entityName}",
+    "merge_label_summary": "您正在将 {changes} 更改合并到 {entityName}",
     "cancel_button": "取消",
     "merge_button": "合并",
     "merge_strategies": {
       "merge_changes": {
-        "display_name": "合并更改",
-        "description": "目标将随更改一起更新"
+        "display_name": "合并 变化",
+        "description": "目的地将随着更改而更新"
       },
       "merge_changes_and_update_source": {
-        "display_name": "合并更改并更新源",
-        "description": "源和目标都将被更新"
+        "display_name": "合并 更改并更新源",
+        "description": "源和目的地都将更新"
       },
       "merge_changes_and_delete_source": {
-        "display_name": "合并更改并删除源",
+        "display_name": "合并 更改并删除源",
         "description": "目标将被更新，源将被删除"
       }
     },
     "tooltip_text": {
       "collection": {
         "default": "无法合并更改。",
-        "update_source_with_destination": "您需要拥有源集合的编辑者角色。",
-        "delete_source": "您需要拥有源集合的编辑者角色。"
+        "update_source_with_destination": "您需要源 集合 上的 编辑者 角色。",
+        "delete_source": "您需要源 集合 上的 编辑者 角色。"
       },
       "environment": {
         "default": "无法合并更改。",
-        "update_source_with_destination": "您需要拥有源环境的编辑者角色。",
-        "delete_source": "您需要拥有源环境的编辑者角色。"
+        "update_source_with_destination": "您需要源 环境 上的 编辑者 角色。",
+        "delete_source": "您需要源 环境 上的 编辑者 角色。"
       }
     }
   }

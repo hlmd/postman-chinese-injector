@@ -2,12 +2,12 @@
   "comments": {
     "blank_state": {
       "title": "您没有评论权限",
-      "description": "您对此工作区仅拥有查看者权限。"
+      "description": "您对此 工作区 仅有 查看者 权限。"
     },
     "comment_notification_recipient": {
-      "summary_one": "将通知 {name}。",
-      "summary_other": "查看将收到通知的所有人，包括 {names} 和 {lastName}。",
-      "private_user": "私密用户",
+      "summary_one": "{name} 将收到通知。",
+      "summary_other": "查看将收到通知的所有人员，包括 {names} 和 {lastName}。",
+      "private_user": "私有 用户",
       "recipients_list": {
         "title": "我们将通知："
       }
@@ -24,53 +24,53 @@
     "context_bar_view": {
       "title": "评论",
       "local_mode_blank_state": {
-        "title": "评论不可用",
-        "description": "本地{entityType}不支持评论。请切换到云视图。"
+        "title": "无法发表评论",
+        "description": "本地 {entityType} 无法发表评论。切换到云视图。"
       },
       "comment_thread_filter": {
-        "button_label": "筛选评论",
-        "menu_label": "评论筛选选项",
-        "open_comments": "未解决的评论",
+        "button_label": "过滤评论",
+        "menu_label": "评论过滤选项",
+        "open_comments": "打开评论",
         "resolved_comments": "已解决的评论",
         "show_resolved_comments": "显示已解决的评论",
-        "reset_filters": "重置筛选",
+        "reset_filters": "重置过滤器",
         "nested_comments": "嵌套评论",
         "hide_nested_comments": "隐藏嵌套元素上的评论",
-        "no_resolved_comments": "没有可显示的已解决评论",
-        "loading_label": "正在加载筛选条件…"
+        "no_resolved_comments": "没有已解决的评论可显示",
+        "loading_label": "正在加载过滤器..."
       },
       "commit_and_push_changes_banner": {
-        "text": "在此分支中提交并推送更改以添加新评论"
+        "text": "提交并推送此 分支 中的更改以添加新评论"
       },
       "empty_state": {
         "heading": {
-          "no_comments": "成为第一个评论的人",
-          "no_comments_on_filter": "这些筛选条件没有结果",
-          "no_open_comments": "没有未解决的评论",
-          "no_inline_comments": "试试留下一条行内评论"
+          "no_comments": "成为第一个发表评论的人",
+          "no_comments_on_filter": "这些过滤器没有结果",
+          "no_open_comments": "没有公开评论",
+          "no_inline_comments": "尝试留下内嵌评论"
         },
         "description": {
-          "no_comments": "与您的团队成员分享您对此{model}的想法、笔记和反馈。",
-          "no_comments_on_filter": "所选筛选条件没有可显示的评论。请调整或重置您的筛选设置。",
-          "no_open_comments": "所有评论均已解决。请调整筛选条件以显示已解决的评论。",
-          "no_inline_comments": "在评论模式下高亮文件的特定部分，即可对其留下评论。"
+          "no_comments": "与您的队友分享您对此 {model} 的想法、笔记和反馈。",
+          "no_comments_on_filter": "所选过滤器没有可显示的注释。调整或重置您的过滤器设置。",
+          "no_open_comments": "所有评论均已解决。调整您的过滤器以显示已解决的评论。",
+          "no_inline_comments": "通过在评论模式下突出显示文件的特定部分来留下评论。"
         },
         "cta_text": {
           "no_comments": "添加评论",
-          "no_comments_on_filter": "重置筛选",
+          "no_comments_on_filter": "重置过滤器",
           "no_open_comments": "显示已解决的评论"
         }
       },
       "comment_input": {
         "user_avatar": "用户头像",
         "placeholder": {
-          "default": "使用 @提及 来通知他人",
+          "default": "使用@mention来通知人们",
           "new_comment": {
-            "focused": "提出问题或提供反馈。使用 @提及 来通知他人。",
+            "focused": "提出问题或提供反馈。使用@mention 来通知人们。",
             "default": "添加新评论"
           },
           "reply_comment": {
-            "focused": "使用 @提及 来通知他人",
+            "focused": "使用@mention来通知人们",
             "default": "添加回复"
           }
         },
@@ -83,32 +83,32 @@
       },
       "comment_thread": {
         "expand_button": {
-          "show_more": "再显示 {count} 条",
-          "show_less": "收起"
+          "show_more": "显示 {count} 更多",
+          "show_less": "显示较少"
         },
         "comment": {
           "heading": {
-            "private_user": "私密用户",
+            "private_user": "私有 用户",
             "actions": {
               "view_actions": {
                 "tooltip": "查看操作"
               },
               "copy_link": "复制链接",
-              "copy_link_copied": "已复制！",
+              "copy_link_copied": "复制了！",
               "edit": "编辑",
-              "edit_no_permission": "您没有编辑此评论的权限",
+              "edit_no_permission": "您没有 权限 来编辑此评论",
               "delete": "删除",
-              "delete_no_permission": "您没有删除此评论的权限",
+              "delete_no_permission": "您没有 权限 来删除此评论",
               "resolve": {
                 "tooltip": {
-                  "no_permission": "您没有解决此评论的权限",
+                  "no_permission": "您没有 权限 来解决此评论",
                   "resolve": "解决评论"
                 }
               },
               "unresolve": {
                 "tooltip": {
-                  "unresolve": "重新打开",
-                  "no_permission": "您没有重新打开此评论的权限"
+                  "unresolve": "重新开放",
+                  "no_permission": "您没有 权限 来重新打开此评论"
                 }
               }
             }
@@ -122,40 +122,40 @@
             "heading": "删除评论？",
             "button": "删除",
             "content": {
-              "comment": "您的评论及其回复将被删除。此操作无法撤销。",
-              "reply": "您的评论将被删除。此操作无法撤销。"
+              "comment": "您的评论及其回复将被删除。您无法撤消此操作。",
+              "reply": "您的评论将被删除。您无法撤消此操作。"
             }
           },
           "toast_error": {
             "edit": {
-              "description": "更新评论时出错。",
+              "description": "更新评论时发生错误。",
               "title": "无法更新评论"
             },
             "delete": {
-              "description": "删除评论时出错。",
+              "description": "删除评论时发生错误。",
               "title": "无法删除评论"
             }
           }
         }
       },
       "unsaved-changes-banner": {
-        "text": "您未保存的更改将随此评论一起保存。"
+        "text": "您未保存的更改将与此评论一起保存。"
       },
       "error_toast": {
-        "add_comment": "您需要联网才能评论",
-        "update_comment": "您需要联网才能更新评论。",
-        "delete_comment": "您需要联网才能删除评论。",
+        "add_comment": "您需要在线才能发表评论",
+        "update_comment": "您需要在线才能更新评论。",
+        "delete_comment": "您需要在线才能删除评论。",
         "handle_resolve": {
-          "offline": "您需要联网才能解决",
+          "offline": "您需要在线才能解决",
           "failed": {
-            "description": "解决该话题时出错。",
+            "description": "解析线程时发生错误。",
             "title": "无法解决评论"
           }
         },
         "handle_unresolve": {
-          "offline": "您需要联网才能重新打开",
+          "offline": "您需要在线才能重新打开",
           "failed": {
-            "description": "重新打开该话题时出错。",
+            "description": "重新打开线程时发生错误。",
             "title": "无法重新打开评论"
           }
         }
@@ -165,38 +165,38 @@
       "cancel": "取消"
     },
     "mention": {
-      "self": "您"
+      "self": "你"
     }
   },
   "share": {
     "invite": {
       "label": "邀请",
-      "group_members_count_one": "1 名成员",
-      "group_members_count_other": "{count} 名成员",
-      "invite_collaborator_warning": "团队外部的人员将以协作者身份受邀。",
-      "dropdown_info": "此角色将设置在集合上。",
-      "placeholder": "输入姓名、群组名称或电子邮件…"
+      "group_members_count_one": "1 成员",
+      "group_members_count_other": "{count} 成员",
+      "invite_collaborator_warning": "您的 团队 之外的人将被邀请作为合作者。",
+      "dropdown_info": "该 角色 将设置在 集合 上。",
+      "placeholder": "输入姓名、群组名称或电子邮件..."
     },
     "invite_partner_banner": {
-      "title": "邀请合作伙伴加入您的团队",
-      "description": "您正在邀请来自其他公司的人员。请使用<1><0>合作伙伴工作区</0></1>并将其作为合作伙伴邀请以共享集合。"
+      "title": "邀请合作伙伴加入您的 团队",
+      "description": "您正在邀请另一家公司的人员。使用 <1><0>合作伙伴 工作区 </0></1> 和 邀请 作为合作伙伴来共享集合。"
     },
     "invite_partner_to_new_workspace_modal": {
-      "title": "设置合作伙伴工作区并邀请合作伙伴以共享集合。",
-      "partner_workspace_name_info_text": "工作区名称",
+      "title": "设置 合作伙伴 工作区 并邀请合作伙伴共享 集合。",
+      "partner_workspace_name_info_text": "工作区 姓名",
       "partner_email_info_text": "电子邮件",
-      "fork_info_text": "将在此合作伙伴工作区中创建 <1>{name}</1> 集合的复刻。"
+      "fork_info_text": "将在此 合作伙伴 工作区 中创建 <1>{name}</1> 集合 的分叉。"
     },
     "org_personal_ws": {
       "join_team": {
-        "title": "加入 {orgName} 中的团队以进行协作",
-        "description": "您只能邀请团队中的人员并与其协作",
+        "title": "加入 {orgName} 中的 团队 进行协作",
+        "description": "您只能 邀请 并与团队中的人员协作",
         "primary_action": "查看团队",
         "secondary_action": "取消"
       },
       "confirm_move_entity": {
-        "title": "将{entityType}移至团队以进行协作",
-        "description": "您只能邀请团队中的人员并与其协作",
+        "title": "将 {entityType} 移动到 团队 进行协作",
+        "description": "您只能 邀请 并与团队中的人员协作",
         "primary_action": "移动",
         "secondary_action": "取消"
       },
@@ -207,74 +207,73 @@
   },
   "workspace_updates": {
     "create_update_modal": {
-      "heading": "发布动态",
-      "description": "您即将在工作区上发布一条新动态。这将通过电子邮件和应用内通知接收者。",
-      "recipients_heading": "接收者",
-      "workspace_watchers_label": "工作区关注者：",
+      "heading": "发布更新",
+      "description": "您即将在 工作区 上发布新的更新。这将通过电子邮件和应用内通知收件人。",
+      "recipients_heading": "收件人",
+      "workspace_watchers_label": "工作区 观察者：",
       "slack_channels_label": "Slack 频道：",
-      "reach_more_heading": "请注意！触达更多接收者",
-      "linked_resources_tip": "如果您的动态与某个特定集合相关，请添加关联资源以通知更多关注者。",
-      "slack_tip": "连接 Slack，以便在您于 Postman 上发布动态时提醒您的社区/团队。",
+      "reach_more_heading": "注意！吸引更多收件人",
+      "linked_resources_tip": "如果您的更新是关于特定 集合 的，请添加链接资源以通知更多观看者。",
+      "slack_tip": "连接 Slack，当您在 Postman 上发布更新时提醒您的社区/团队。",
       "continue_editing": "继续编辑",
-      "post_update": "发布动态"
+      "post_update": "发布更新"
     },
     "pin_toggle": {
       "error": {
-        "unpin_title": "取消固定动态失败",
-        "pin_title": "固定动态失败",
-        "default_description": "请重试。",
-        "max_pinned_description": "此工作区固定的动态已达到最大数量"
+        "unpin_title": "无法取消固定更新",
+        "pin_title": "无法固定更新",
+        "default_description": "请再试一次。",
+        "max_pinned_description": "此 工作区 已达到固定更新的最大数量"
       }
     },
     "permissions": {
-      "no_permission_to_pin": "您没有固定此动态的权限。",
-      "no_permission_to_edit": "您没有编辑此动态的权限。",
-      "no_permission_to_delete": "您没有删除此动态的权限。",
-      "no_permission_to_comment": "您没有添加评论的权限。",
-      "no_permission_to_react": "您没有添加表态的权限。",
-      "no_permission_to_unreact": "您没有移除此表态的权限。"
+      "no_permission_to_pin": "您没有 权限 来固定此更新。",
+      "no_permission_to_edit": "您没有 权限 来编辑此更新。",
+      "no_permission_to_delete": "您没有 权限 来删除此更新。",
+      "no_permission_to_comment": "您没有 权限 来添加评论。",
+      "no_permission_to_react": "您没有 权限 来添加反应。",
+      "no_permission_to_unreact": "您没有 权限 来移除此反应。"
     }
   },
   "reactions": {
-    "add_reaction": "添加表态",
-    "no_permission": "您没有添加表态的权限。",
+    "add_reaction": "添加反应",
+    "no_permission": "您没有 权限 来添加反应。",
     "users_list": {
-      "you": "您",
-      "others": " 等人",
-      "reacted_with": "  做出了表态 :{emoji}:"
+      "you": "你",
+      "others": "和其他人",
+      "reacted_with": "以 :{emoji}: 作出反应"
     },
     "aria_labels": {
       "emoji": "表情符号"
     }
   },
   "partner_collection_rfa_modal": {
-    "default_collection_name": "集合",
+    "default_collection_name": "Collection",
     "header": {
-      "title_with_name": "请求 {collectionName} 的复刻副本",
-      "title_generic": "请求此集合的复刻副本"
+      "title_with_name": "请求 {collectionName} 的分叉副本",
+      "title_generic": "请求 这个 集合 的分叉副本"
     },
-    "permission_text": "您需要<1>编辑者</1>权限才能复刻该集合。",
-    "collection_stats": {},
+    "permission_text": "您需要 <1>编辑者</1> 权限才能分叉该 集合。",
     "note_section": {
-      "placeholder": "简要说明您为何想要访问权限"
+      "placeholder": "关于您为何想要访问的简短说明"
     },
     "admin_popover": {
-      "workspace_admin_role": "工作区管理员",
-      "no_admins_found": "未找到管理员"
+      "workspace_admin_role": "Workspace 管理员",
+      "no_admins_found": "没有找到管理员"
     },
-    "approval_text": "获批后，该集合将被复刻，您将获得编辑访问权限。",
+    "approval_text": "一旦获得批准，集合 将被分叉，您将获得编辑权限。",
     "buttons": {
       "cancel": "取消",
-      "request_access": "申请访问权限"
+      "request_access": "请求 访问"
     },
     "toast_messages": {
       "success": {
-        "title": "已发送复刻请求",
-        "description": "工作区管理员批准您的请求后，您将收到通知。"
+        "title": "已发送分叉请求",
+        "description": "一旦您的 请求 获得 工作区 管理员 批准，您就会收到通知。"
       },
       "error": {
-        "default_title": "无法创建请求",
-        "default_description": "出错了"
+        "default_title": "无法创建 请求",
+        "default_description": "出了点问题"
       }
     }
   }

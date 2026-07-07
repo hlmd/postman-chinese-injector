@@ -1,15 +1,15 @@
 {
-  "child_error": "集合工作台子项错误",
+  "child_error": "Collection 工作台子项错误",
   "editor": {
     "content_pane": {
       "permission_infobar": {
-        "collection": "集合",
-        "authorization": "授权",
-        "pre_request_script": "预请求脚本",
+        "collection": "collection",
+        "authorization": "身份验证",
+        "pre_request_script": "请求前脚本",
         "tests": "测试",
         "initial_values": "初始值",
         "settings": "设置",
-        "content": "若要更改{text}，请申请此集合的额外访问权限。",
+        "content": "如需更改{text}，请为此 collection 申请更多访问权限。",
         "request_access": "申请访问权限",
         "endpoints": "端点",
         "errors": "错误",
@@ -17,41 +17,41 @@
       },
       "sidebar_live_collections": {
         "heading": "启用 Live Insights",
-        "description": "Live Insights 让您能够实时监控 API 性能并快速排查问题。<Link><Text>了解更多</Text></Link>",
+        "description": "Live Insights 可让您实时监控 API 性能，并快速排查问题。<Link><Text>了解更多</Text></Link>",
         "enable_now_button": "立即启用",
         "alpha": "alpha",
         "system_compatibility": {
           "heading": "检查系统兼容性",
           "requirements": {
-            "api": "Live Insights 仅适用于 REST API。",
-            "env": "您可以在 <b>Kubernetes</b> 以及 <b>Amazon Elastic Container Service (ECS) on EC2 和 ECS Fargate</b> 部署上安装并运行 Live Collections Agent (LCA)。"
+            "api": "Live Insights 仅支持 REST API。",
+            "env": "您可以在 <b>Kubernetes</b> 以及 <b>Amazon Elastic Container Service（ECS）的 EC2 和 ECS Fargate</b> 部署环境中安装并运行 Live Collections Agent（LCA）。"
           }
         }
       },
       "tabs": {
         "overview": {
-          "save_error": "更新集合摘要时出错。",
+          "save_error": "更新 collection 摘要时出错。",
           "description": {
             "placeholder": {
-              "collection": "用完整的集合描述让您的队友更轻松。",
-              "no_description": "此{entityName}没有描述。",
-              "default": "添加{entityName}描述"
+              "collection": "填写完整的 collection 描述，让团队协作更轻松。",
+              "no_description": "此 {entityName} 暂无描述。",
+              "default": "添加 {entityName} 描述"
             },
-            "no_description_label": "此{entityType}没有描述。",
+            "no_description_label": "此 {entityType} 暂无描述。",
             "tooltip": "编辑描述"
           },
           "template_banner": {
             "error": {
-              "toast_message": "无法用此模板更新集合。"
+              "toast_message": "无法使用此模板更新 collection。"
             },
-            "heading": "使用集合模板加快您的工作",
+            "heading": "使用 collection 模板加快工作效率",
             "tooltip": {
-              "offline": "您恢复在线后即可导入此模板。"
+              "offline": "恢复联网后即可导入此模板。"
             },
             "more_template": "更多模板",
             "confirmation": {
-              "heading": "应用此模板？",
-              "message": "应用 <1>{templateName}</1> 将替换此集合的内容。是否继续？",
+              "heading": "应用这个模板？",
+              "message": "应用 <1>{templateName}</1> 将替换此 Collection 的内容。您想继续吗？",
               "cancel": "取消",
               "confirm": "应用模板"
             }
@@ -63,40 +63,40 @@
             "heading": "标签"
           },
           "summary": {
-            "placeholder": "用摘要简要说明此集合。"
+            "placeholder": "用一段简短摘要说明此 collection。"
           }
         },
         "variables": {
-          "meta": "<0>这些变量专属于此集合及其请求。了解更多关于</0> <1>集合变量</1>"
+          "meta": "<0>这些变量仅适用于此 collection 及其请求。了解更多</0> <1>collection 变量相关内容</1>"
         },
         "auth": {
-          "description": "此授权方法将用于此集合中的每个请求。您可以通过在请求中指定授权方法来覆盖它。"
+          "description": "此身份验证方式将应用于此 collection 中的所有请求，您也可以在请求中单独指定身份验证方式来覆盖此设置。"
         },
         "scripts": {
           "label": "脚本",
           "tooltip-text": {
-            "pre-request": "在每个请求发送之前运行。可用于通过动态配置请求来创建 API 工作流。",
-            "post-response": "在收到每个请求的响应之后运行。可用于编写测试。"
+            "pre-request": "在每个请求发送前运行，可用于动态配置请求，从而创建 API 工作流。",
+            "post-response": "在每个请求收到响应后运行，可用于编写测试。"
           },
-          "migration-popover-text": "使用响应后脚本来编写测试、可视化响应等。"
+          "migration-popover-text": "使用响应后脚本编写测试、可视化响应，还可以做更多事情。"
         },
         "test-tab-deprecation": {
-          "heading": "测试现已成为响应后脚本的一部分",
-          "message": "您可以使用脚本来编写测试、预请求脚本、可视化响应，并为您的 API 工作流引入大量自动化能力。",
+          "heading": "测试功能现已并入响应后脚本",
+          "message": "您可以使用脚本编写测试、请求前脚本、可视化响应，并为 API 工作流带来大量自动化功能。",
           "button": "打开响应后脚本"
         },
         "pre_req": {
-          "description": "此脚本将在此集合中的每个请求之前执行。了解更多关于 <1>Postman 的执行顺序</1>。",
+          "description": "此脚本将在此 collection 中的每个请求执行前运行。了解更多关于 <1>Postman 的执行顺序</1>。",
           "placeholder": "使用 JavaScript 动态配置请求。"
         },
         "tests": {
-          "description": "这些测试将在此集合中的每个请求之后执行。了解更多关于 <1>Postman 的执行顺序</1>。",
-          "placeholder": "使用 JavaScript 编写测试、可视化响应等。"
+          "description": "这些测试将在此 collection 中的每个请求执行后运行。了解更多关于 <1>Postman 的执行顺序</1>。",
+          "placeholder": "使用 JavaScript 编写测试、可视化响应，以及更多操作。"
         },
         "runs": {
           "tab_list": {
             "functional": "功能",
-            "scheduled": "已计划",
+            "scheduled": "定时",
             "performance": "性能"
           },
           "functional": {
@@ -119,8 +119,8 @@
               "aborted": "已中止",
               "placeholder": "运行状态"
             },
-            "transient_description": "<0>通过 Collection Runner 在</0> <1><0></0><1>{branchName}</1></1> <2>分支上为此集合触发的运行{newman}{postmanCLI}。</2>",
-            "description": "通过 Collection Runner 为此集合触发的运行{newman}{postmanCLI}。",
+            "transient_description": "<0>为此 collection 在</0> <1><0></0><1>{branchName}</1></1> <2>分支下通过 Collection Runner{newman}{postmanCLI} 触发的运行。</2>",
+            "description": "通过 Collection Runner{newman}{postmanCLI} 为此 collection 触发的运行。",
             "bulk_action": {
               "label": "已选择 {itemCount, plural, =1 {# 项} other {# 项}}",
               "button": {
@@ -129,37 +129,37 @@
               }
             },
             "run_by_filters": {
-              "placeholder": "运行者"
+              "placeholder": "运行人"
             },
             "runs_table": {
               "loading_state": {
-                "description": "正在加载运行"
+                "description": "正在加载运行记录"
               },
               "error_state": {
-                "title": "无法加载运行",
-                "description": "只是线路出了点小问题。请尝试重新加载。",
+                "title": "无法加载运行记录",
+                "description": "似乎出了点小故障，请尝试重新加载。",
                 "reload": "重新加载"
               },
               "forbidden_state": {
-                "title": "因安全策略而拒绝访问",
-                "description": "在访问权限恢复之前，您无法查看此集合的运行。请联系您的团队管理员寻求帮助。"
+                "title": "由于安全策略，访问被拒绝",
+                "description": "在访问权限恢复之前，您将无法查看此 collection 的运行记录。请联系团队管理员寻求帮助。"
               },
               "empty_state": {
-                "title": "所应用的筛选条件没有运行",
-                "description": "您可以尝试不同的筛选条件或清除所有筛选条件"
+                "title": "没有符合筛选条件的运行记录",
+                "description": "您可以尝试其他筛选条件，或清除所有筛选条件"
               },
               "cli_empty_state": {
-                "title": "此集合没有 Postman CLI 运行",
-                "description": "Postman CLI 是 Postman 的命令行工具。您可以将其与持续集成服务器和构建系统集成。",
-                "run": "在 CLI 上运行"
+                "title": "此 collection 暂无 Postman CLI 运行记录",
+                "description": "Postman CLI 是 Postman 的命令行工具，您可以将其与持续集成服务器和构建系统集成。",
+                "run": "在 CLI 中运行"
               },
               "blank_state": {
-                "title": "您的集合尚未运行",
-                "run": "运行集合"
+                "title": "您的 collection 尚未运行过",
+                "run": "运行 Collection"
               },
               "sub_component": {
                 "pipeline_details": {
-                  "pipeline_description": "使用 {source} 在 {pipelineSource} 构建 {id} 中运行",
+                  "pipeline_description": "在 {pipelineSource} 的 build {id} 中通过 {source} 运行",
                   "source": {
                     "runner": "Collection Runner",
                     "newman": "Newman",
@@ -170,22 +170,22 @@
                   "newman_description": "使用 Newman 在 CLI 中运行"
                 },
                 "environment": {
-                  "none": "未使用环境",
+                  "none": "未使用 Environment",
                   "deleted": {
-                    "tooltip": "所使用的环境已被删除或从此工作区移出",
-                    "description": "未找到环境。环境 ID：{envID}",
+                    "tooltip": "所使用的 Environment 已被删除或移出此 Workspace",
+                    "description": "未找到 Environment。Environment ID：{envID}",
                     "button": {
                       "text": "复制 ID",
                       "tooltip": {
                         "copied": "已复制",
-                        "copy": "复制环境 ID"
+                        "copy": "复制 Environment ID"
                       }
                     }
                   }
                 },
                 "iteration": {
-                  "error_description": "已完成 {iterationCount, plural, =1 {# 次迭代} other {# 次迭代}}（部分请求无法运行）",
-                  "abort_description": "运行在第 {iterationCount} 次迭代时中止",
+                  "error_description": "已完成 {iterationCount, plural, =1 {# 次迭代} other {# 次迭代}}（部分请求未能运行）",
+                  "abort_description": "运行已在第 {iterationCount} 次迭代时中止",
                   "description": "已完成 {iterationCount} 次"
                 }
               },
@@ -194,39 +194,39 @@
                   "header": "开始时间",
                   "tooltip": {
                     "aborted": "运行已中止",
-                    "error": "运行部分请求时出错"
+                    "error": "部分请求运行出错"
                   }
                 },
                 "source": {
-                  "tooltip": "运行的执行来源",
+                  "tooltip": "运行的发起来源",
                   "header": "来源",
-                  "pipeline_meta_cell": "构建 {id}"
+                  "pipeline_meta_cell": "Build {id}"
                 },
                 "duration": {
-                  "tooltip": "完成运行所用的时间",
+                  "tooltip": "完成本次运行所用的时间",
                   "header": "耗时"
                 },
                 "all_tests": {
-                  "tooltip": "各次迭代中通过、跳过和失败的测试总和",
+                  "tooltip": "所有迭代中通过、跳过和失败的测试总数",
                   "header": "全部测试"
                 },
                 "passed": {
-                  "tooltip": "各次迭代中通过的测试",
+                  "tooltip": "所有迭代中通过的测试",
                   "header": "通过"
                 },
                 "failed": {
-                  "tooltip": "各次迭代中失败的测试",
+                  "tooltip": "所有迭代中失败的测试",
                   "header": "失败",
                   "cell": {
                     "tooltip": {
-                      "less_than_one": "失败的测试少于 1%",
+                      "less_than_one": "测试失败率低于 1%",
                       "more_than_one": "{percentage}% 的测试失败"
                     }
                   }
                 },
                 "skipped": {
-                  "tooltip": "各次迭代中跳过的测试",
-                  "header": "跳过"
+                  "tooltip": "所有迭代中跳过的测试",
+                  "header": "已跳过"
                 },
                 "avg_res_time": {
                   "tooltip": "平均响应时间",
@@ -241,59 +241,59 @@
                     "popover": {
                       "private": {
                         "heading": "与团队分享",
-                        "content": "此集合运行位于您的个人工作区中。",
-                        "content2": "除非您邀请他人，否则无人可以访问。",
-                        "button": "邀请人员"
+                        "content": "此 collection 运行位于您的个人 Workspace 中。",
+                        "content2": "除非您邀请，否则任何人都无法访问。",
+                        "button": "邀请成员"
                       },
                       "shared": {
-                        "private_team_content": "只有工作区成员可以访问此链接。",
+                        "private_team_content": "只有 Workspace 成员可以访问此链接。",
                         "team_content": "只有团队成员可以访问此链接。",
                         "heading": "分享链接",
                         "button": {
                           "copy": "复制链接",
-                          "invite": "邀请人员"
+                          "invite": "邀请成员"
                         }
                       },
                       "partner": {
                         "heading": "分享链接",
-                        "content": "只有有权访问此工作区的人员才能访问此链接。",
+                        "content": "只有拥有此 Workspace 访问权限的人才能访问此链接。",
                         "button": {
                           "copy": "复制链接",
-                          "invite": "邀请人员"
+                          "invite": "邀请成员"
                         }
                       }
                     },
                     "error": {
-                      "toast": "目前无法邀请。请稍后重试。"
+                      "toast": "暂时无法邀请，请稍后重试。"
                     }
                   }
                 }
               },
               "cell": {
-                "no_data": "数据不可用。请联系 help@postman.com"
+                "no_data": "暂无数据，请联系 help@postman.com"
               }
             }
           },
           "scheduled": {
             "error_state": {
-              "title": "无法加载已计划的运行",
-              "description": "请尝试刷新页面或稍后再查看。"
+              "title": "无法加载定时运行",
+              "description": "请尝试刷新页面，或稍后重试。"
             },
             "scheduled_collection_list": {
               "columnNames": {
-                "nextRun": "即将进行的运行",
+                "nextRun": "下次运行",
                 "partialMetadata": "计划",
-                "environment": "环境",
+                "environment": "Environment",
                 "knownIssues": "已知问题",
-                "actions": " "
+                "actions": ""
               },
               "placeholders": {
-                "environment": "无环境",
+                "environment": "无 Environment",
                 "nextRun": {
                   "text": "已暂停",
-                  "tooltip": "由于计划已暂停，没有即将进行的运行。"
+                  "tooltip": "由于该计划已暂停，暂无下次运行。"
                 },
-                "runs": "运行"
+                "runs": "运行次数"
               },
               "actions": {
                 "pause": "暂停",
@@ -307,34 +307,34 @@
                 "resuming": "正在恢复"
               },
               "pausedHeading": "已暂停",
-              "heading": "在 Postman Cloud 上计划的定期运行。",
+              "heading": "在 Postman Cloud 上定时运行。",
               "customSchedule": {
                 "customOrder": {
                   "text": "自定义运行顺序。",
-                  "tooltip": "您可以在编辑计划时查看和编辑顺序。",
-                  "tooltip2": "集合中{count}，这可能会影响您的自定义运行顺序。",
+                  "tooltip": "您可以在编辑计划时查看并调整顺序。",
+                  "tooltip2": "此 collection 中有 {count}，可能会影响您的自定义运行顺序。",
                   "diff": {
-                    "all": "有 {numberOfDeletedRequests} 个已删除请求、{numberOfNewRequests} 个新请求、{numberOfDeletedFolders} 个已删除文件夹",
-                    "deleted_and_new_request": "有 {numberOfDeletedRequests} 个已删除请求和 {numberOfNewRequests} 个新请求",
-                    "one_deleted_request": "有 {numberOfDeletedRequests} 个已删除请求",
-                    "multiple_deleted_request": "有 {numberOfDeletedRequests} 个已删除请求",
-                    "one_new_request": "有 {numberOfNewRequests} 个新请求",
-                    "multiple_new_request": "有 {numberOfNewRequests} 个新请求",
-                    "one_deleted_folder": "有 {numberOfDeletedFolders} 个已删除文件夹",
-                    "multiple_deleted_folder": "有 {numberOfDeletedFolders} 个已删除文件夹"
+                    "all": "{numberOfDeletedRequests} 个已删除、{numberOfNewRequests} 个新增请求、{numberOfDeletedFolders} 个已删除文件夹",
+                    "deleted_and_new_request": "{numberOfDeletedRequests} 个已删除请求和 {numberOfNewRequests} 个新增请求",
+                    "one_deleted_request": "{numberOfDeletedRequests} 个已删除请求",
+                    "multiple_deleted_request": "{numberOfDeletedRequests} 个已删除请求",
+                    "one_new_request": "{numberOfNewRequests} 个新增请求",
+                    "multiple_new_request": "{numberOfNewRequests} 个新增请求",
+                    "one_deleted_folder": "{numberOfDeletedFolders} 个已删除文件夹",
+                    "multiple_deleted_folder": "{numberOfDeletedFolders} 个已删除文件夹"
                   }
                 },
-                "reviewChanges": "审查更改"
+                "reviewChanges": "查看变更"
               },
               "emptyStates": {
                 "errorLoading": {
-                  "heading": "无法加载已计划的运行",
-                  "subText": "请尝试刷新页面或稍后再查看。"
+                  "heading": "无法加载定时运行",
+                  "subText": "请尝试刷新页面，或稍后重试。"
                 },
                 "noSchedules": {
-                  "heading": "此集合没有已计划的运行",
-                  "subText": "您可以为此集合计划运行，使其在 Postman Cloud 上按特定时间或频率定期运行。",
-                  "button": "计划运行"
+                  "heading": "此 collection 暂无定时运行",
+                  "subText": "您可以为此 collection 设置定时运行，让其按指定时间或频率在 Postman Cloud 上定期运行。",
+                  "button": "设置定时运行"
                 }
               },
               "tooltips": {
@@ -345,7 +345,7 @@
           "performance": {
             "error_state": {
               "title": "无法加载性能运行",
-              "description": "请尝试刷新页面或稍后再查看。",
+              "description": "请尝试刷新页面，或稍后重试。",
               "button": "重新加载"
             }
           }
@@ -356,25 +356,25 @@
           "share": {
             "text": "分享",
             "aria_label": "分享按钮",
-            "tooltip": "分享集合",
+            "tooltip": "分享 collection",
             "popover": {
               "title": "轻松分享",
-              "description": "与您共事的人分享，或将其发布到网上供全世界使用。",
+              "description": "与协作伙伴分享，或发布到网络供所有人查看。",
               "got_it_button": "知道了"
             }
           },
           "fork": {
-            "offline_tooltip": "请联网以创建复刻或查看现有复刻。",
-            "no_permission_tooltip": "您没有执行此操作的权限。",
-            "filesystem_mode_tooltip": "使用本地文件系统工作区时无法使用复刻。"
+            "offline_tooltip": "请联网后创建 Fork 或查看现有 Fork。",
+            "no_permission_tooltip": "您没有权限执行此操作。",
+            "filesystem_mode_tooltip": "使用本地文件系统 Workspace 时，无法使用 Fork 功能。"
           },
           "run": {
             "text": "运行",
             "tooltip": {
-              "primary_message": "集合目前无法在公共工作区中运行——不过我们正在为未来版本开发此功能！",
-              "secondary_message": "将此集合复刻到您自己的工作区以运行它。",
-              "primary_action": "创建复刻",
-              "run_collection": "运行集合"
+              "primary_message": "目前无法在公共 Workspace 中运行 collection，不过我们正在为未来版本开发此功能！",
+              "secondary_message": "将此 collection Fork 到您自己的 Workspace 中即可运行。",
+              "primary_action": "创建 Fork",
+              "run_collection": "运行 collection"
             }
           },
           "save": {
@@ -383,35 +383,35 @@
               "saving": "正在保存"
             },
             "tooltip": {
-              "title": "创建复刻以保存更改",
-              "primary_message": "您没有更改此集合的权限。请将集合复刻到您的工作区以保存更改。",
-              "primary_action": "创建复刻并保存",
+              "title": "创建 Fork 以保存更改",
+              "primary_message": "您没有权限修改此 collection。请将该 collection Fork 到您的 Workspace 中以保存更改。",
+              "primary_action": "创建 Fork 并保存",
               "no_changes": "没有需要保存的新更改。",
-              "save_collection": "保存集合",
-              "save_collection_git": "将更改保存到 Postman 和 Github",
+              "save_collection": "保存 collection",
+              "save_collection_git": "将更改保存到 Postman 和 GitHub",
               "disabled": {
-                "title": "创建复刻以进行并保存更改",
-                "primary_message": "将此集合复刻到您的工作区即可进行更改并保存。",
-                "primary_action": "创建复刻并保存"
+                "title": "创建 Fork 以进行修改并保存更改",
+                "primary_message": "将此 collection Fork 到您的 Workspace 后，即可进行修改并保存。",
+                "primary_action": "创建 Fork 并保存"
               },
-              "readonly_user_message": "您没有执行此操作的权限。"
+              "readonly_user_message": "您没有权限执行此操作。"
             }
           },
           "move": "移动",
           "generate_api_specification": {
             "text": "生成规范",
             "disabled_message": {
-              "already_generated": "已为此集合生成规范",
-              "no_permission": "您没有为此集合生成规范的权限"
+              "already_generated": "此 collection 已生成规范",
+              "no_permission": "您没有权限为此 collection 生成规范"
             },
             "generate_modal": {
-              "heading_prefix": "从以下内容生成规范：",
-              "description": "此集合缺少类型，而生成准确完整的规范需要这些类型。",
+              "heading_prefix": "根据以下内容生成规范：",
+              "description": "此 collection 缺少生成准确完整规范所需的类型信息。",
               "try_adding_types": "尝试添加类型",
               "cancel_button": "取消",
               "generate_button": "生成规范",
-              "name_this_spec": "命名此规范",
-              "generated_spec_type": "生成的规范将为 OpenAPI 3.0 类型",
+              "name_this_spec": "为此规范命名",
+              "generated_spec_type": "生成的规范类型将为 OpenAPI 3.0",
               "spec_type": "类型",
               "spec_type_description": "选择规范类型",
               "file_format": "格式",
@@ -420,9 +420,9 @@
             "syncing": {
               "title": "规范",
               "status": {
-                "in_sync": "规范为最新",
-                "out_of_sync": "规范不是最新",
-                "syncing": "正在更新规范……"
+                "in_sync": "规范已是最新",
+                "out_of_sync": "规范不是最新版本",
+                "syncing": "正在更新规范…"
               },
               "actions": {
                 "update": "更新"
@@ -430,18 +430,18 @@
             }
           },
           "types": {
-            "turn_on": "启用类型",
+            "turn_on": "开启类型",
             "turn_off": "关闭类型",
             "disabled": {
-              "in_progress": "正在切换类型定义，请稍候……"
+              "in_progress": "正在切换类型定义，请稍候…"
             }
           },
-          "create_fork": "创建复刻",
-          "create_pull_request": "创建拉取请求",
+          "create_fork": "创建 Fork",
+          "create_pull_request": "创建 Pull Request",
           "merge_changes": "合并更改",
           "pull_changes": {
             "text": "拉取更改",
-            "info_tooltip": "拉取更改以从原始集合获取最新更新。"
+            "info_tooltip": "拉取更改以获取原始 collection 的最新更新。"
           },
           "view_changelog": "查看更新日志",
           "export": "导出",
@@ -451,7 +451,7 @@
           "view_documentation": "查看文档"
         },
         "breadcrumb": {
-          "placeholder": "集合名称",
+          "placeholder": "Collection 名称",
           "metaIcon": {
             "lock": {
               "tooltip": "只读"
@@ -465,16 +465,16 @@
           "short_label": "概览"
         },
         "onboarding": {
-          "label": "设置",
-          "short_label": "设置"
+          "label": "入门",
+          "short_label": "入门"
         },
         "authorization": {
-          "label": "授权",
-          "short_label": "授权"
+          "label": "身份验证",
+          "short_label": "验证"
         },
         "pre_request_script": {
-          "label": "预请求脚本",
-          "short_label": "预请求"
+          "label": "请求前脚本",
+          "short_label": "请求前"
         },
         "tests": {
           "label": "测试"
@@ -498,54 +498,54 @@
     },
     "context_bar": {
       "info": {
-        "title": "集合详情"
+        "title": "Collection 详情"
       },
       "live_collection": {
         "title": "Live Collection",
         "blank_state": {
-          "title": "保持您的集合为最新",
+          "title": "让您的 collection 保持最新",
           "description": {
-            "agent_enabled": "Postman 可以观察您的应用程序，并用它发现的端点更新您的集合。",
-            "agent_disabled": "Postman SDK 会观察您的应用程序并更新 Live 集合。"
+            "agent_enabled": "Postman 可以监测您的应用程序，并将检测到的端点自动更新到您的 collection 中。",
+            "agent_disabled": "Postman SDK 会监测您的应用程序，并更新 Live collection。"
           },
           "primary_action": "启用 Live",
           "secondary_action": "了解更多"
         },
-        "description": "通过始终保持最新的集合简化协作。<1><0>了解更多</0></1>",
+        "description": "使用始终保持最新的 collection，简化协作流程。<1><0>了解更多</0></1>",
         "last_updated": {
           "title": "上次更新",
-          "available": "有可用更新。<1><0>审查更改</0></1>以更新集合。",
-          "not_available": " 暂无更新。请尝试<1><0>发送请求</0></1>。"
+          "available": "有可用更新。<1><0>查看变更</0></1>以更新此 collection。",
+          "not_available": "No updates yet. Try <1><0>sending a request</0></1>."
         },
         "status": {
           "title": "状态",
-          "description": "随时开启或关闭数据收集。",
-          "on": "开",
-          "off": "关",
+          "description": "随时开启或关闭数据采集。",
+          "on": "开启",
+          "off": "关闭",
           "toast_message": "无法更新状态，请重试"
         },
         "settings": {
           "title": "设置",
-          "description": "选择如何保持更新",
+          "description": "选择保持更新的方式",
           "strategy": {
             "automatic": "自动更新",
-            "manual": "更新前审查"
+            "manual": "更新前先查看"
           },
           "review_warning": {
-            "description": "部分更新尚未审查。如果您不希望它们自动更新，请<1><0>手动审查</0></1>。"
+            "description": "部分更新尚未查看。如果您不希望自动更新，请<1><0>手动查看</0></1>。"
           },
           "save_button": "保存更改",
           "toast": {
-            "update_failed": "Live 设置更新失败，请",
-            "try_again": "重试"
+            "update_failed": "实时设置更新失败，请",
+            "try_again": "再试一次"
           }
         },
         "view_diagnostics": "查看诊断"
       }
     }
   },
-  "new_collection": "新建集合",
-  "tab_conflict_message": "自您上次打开此标签页以来，此集合已被修改。",
+  "new_collection": "新建 Collection",
+  "tab_conflict_message": "自您上次打开选项卡以来，此 Collection 已被修改。",
   "ui_controls": {
     "add": "添加",
     "expand": "展开",

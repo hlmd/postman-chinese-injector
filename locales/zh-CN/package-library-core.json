@@ -6,7 +6,7 @@
       "learn_more": "了解有关包的更多信息。"
     },
     "icon": {
-      "team": "所有团队成员都可以访问库中的包。"
+      "team": "所有 团队 成员都可以访问库中的包。"
     }
   },
   "content": {
@@ -20,32 +20,32 @@
         "cancel": "取消",
         "create": "创建"
       },
-      "add_desciption_prompt": "点击此处添加描述"
+      "add_desciption_prompt": "单击此处添加描述"
     },
     "usage_view": {
       "error_state": {
-        "title": "无法加载包使用详情",
-        "description": "请尝试刷新页面或稍后再试。"
+        "title": "无法加载包使用详细信息",
+        "description": "尝试刷新页面或稍后再回来查看。"
       },
       "view_access": {
-        "title": "您需要其他角色",
-        "description": "您需要管理员角色才能查看包使用情况。请联系您的团队管理员更改您的角色，或切换到其他账户。"
+        "title": "您需要一个不同的 角色",
+        "description": "您需要 管理员 角色 来查看包的使用情况。请联系您的 团队 管理员以更改您的 角色 或切换到其他帐户。"
       },
       "title": "包",
-      "description": "包是用于存储可复用通用脚本的容器。此视图用于监视团队中创建的包。 "
+      "description": "包是用于存储公共脚本以供重用的容器。此视图监视在 团队 中创建的包。"
     },
     "usage_view_table": {
       "input_search": {
         "placeholder_text": "搜索包"
       },
       "single_select_users": {
-        "placeholder_text": "上传者",
-        "empty_state_message": "目前还没有用户添加包。"
+        "placeholder_text": "上传者：",
+        "empty_state_message": "目前没有用户添加包。"
       },
       "column_headers": {
         "package": "包",
-        "created_by": "创建者",
-        "created_on": "创建时间",
+        "created_by": "创建者：",
+        "created_on": "创建于",
         "last_used": "上次使用"
       },
       "button": {
@@ -54,8 +54,8 @@
       }
     },
     "usage_view_empty_state": {
-      "title": "暂无包",
-      "description": "您可以在此查看所有包及其上次检索情况（如果有）。"
+      "title": "还没有包",
+      "description": "您可以在此处查看所有包及其上次检索（如果有）。"
     }
   },
   "constants": {
@@ -67,12 +67,12 @@
   },
   "form": {
     "search_package": {
-      "placeholder_text": "查找包…"
+      "placeholder_text": "查找包..."
     },
     "create_package": {
       "input": {
         "name": {
-          "placeholder_text": "package-name",
+          "placeholder_text": "包名",
           "note": "包创建后名称无法更改"
         },
         "description": {
@@ -83,23 +83,23 @@
   },
   "modal": {
     "package_select": {
-      "header_text": "将脚本添加到现有包",
+      "header_text": "将 脚本 添加到现有包中",
       "button": {
         "select": "选择",
         "cancel": "取消"
       }
     },
     "new_unsaved_package": {
-      "header_text": "放弃此包？",
-      "content_text": "您正在创建一个包。如果继续，您的进度将丢失。",
+      "header_text": "丢弃这个包吗？",
+      "content_text": "您正在创建一个包。如果继续，您的进度将会丢失。",
       "button": {
         "discard": "放弃并继续",
         "back_to_package": "返回包"
       }
     },
     "unsaved_package": {
-      "header_text": "保存对“{packageName}”的更改？",
-      "content_text": "当前包“{packageName}”中有一些未保存的更改，如果继续将会丢失。请保存这些更改以免丢失您的工作。",
+      "header_text": "保存对“{packageName}”的更改吗？",
+      "content_text": "当前包“{packageName}”中有一些未保存的更改，如果继续，这些更改将会丢失。保存这些更改以避免丢失您的工作。",
       "button": {
         "save": "保存更改",
         "discard": "放弃更改",
@@ -109,8 +109,8 @@
     "delete_confirmation_modal": {
       "header_text": "删除“{packageName}”？",
       "content_text": {
-        "confirmation_prompt": "确定要永久删除此包吗？",
-        "type_to_confirm_prompt": "若要确认，请在下方输入“{packageName}”。"
+        "confirmation_prompt": "您确定要永久删除此包吗？",
+        "type_to_confirm_prompt": "要确认，请在下面输入“{packageName}”。"
       },
       "button": {
         "delete": "删除包",

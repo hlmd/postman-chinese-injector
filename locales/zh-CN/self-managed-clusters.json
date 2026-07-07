@@ -2,28 +2,28 @@
   "heading": "运行器",
   "add_cluster_button": "添加运行器",
   "retry_button": "重试",
-  "description": "运行器在您的网络内执行监视器，使您能够测试私有或受防火墙限制的 API。",
+  "description": "运行器在您的网络内执行 Monitor，以便您可以测试私有或受防火墙限制的 API。",
   "learn_more": "了解更多",
   "give_feedback": "提供反馈",
-  "search_placeholder": "按运行器名称筛选",
+  "search_placeholder": "按运行器名称过滤",
   "invalid_page": "无效页面。私有 API 运行器功能未启用。",
   "upgrade_to_enterprise": {
     "title": "升级您的计划以管理运行器",
-    "description": "<Para>运行器设置面向使用我们<Strong>企业版</Strong>计划的团队开放。请联系销售以升级到企业版计划。了解更多关于<Link><LinkText>运行器</LinkText></Link>的信息</Para>",
-    "primary_button": "联系销售",
+    "description": "<Para>运行器设置适用于我们<Strong>企业</Strong>计划中的团队。联系销售人员升级到企业计划。了解更多关于<Link><LinkText>运行器</LinkText></Link>的信息</Para>",
+    "primary_button": "联系销售人员",
     "upgrade_button": "升级计划",
     "feature_name": "私有 API 运行器",
-    "modal_heading": "升级到企业版计划以使用私有 API 的运行器"
+    "modal_heading": "升级到企业计划以访问私有 API 的运行器"
   },
   "enterprise_access": {
     "title": "为您的团队启用运行器设置",
-    "description": "<Para>运行器设置面向使用我们<Strong>企业版</Strong>计划的团队开放。请联系 Postman 支持团队为您的团队获取访问权限。了解更多关于<Link><LinkText>运行器</LinkText></Link>的信息</Para>",
-    "primary_button": "联系支持团队"
+    "description": "<Para>运行器设置适用于我们<Strong>企业</Strong>计划的团队。请联系 Postman 支持人员以获取对团队的访问权限。了解更多关于<Link><LinkText>运行器</LinkText></Link>的信息</Para>",
+    "primary_button": "联系支持人员"
   },
   "filter": {
     "all": "全部",
-    "active": "活动",
-    "inactive": "非活动",
+    "active": "活跃",
+    "inactive": "不活跃",
     "created_by_placeholder": "创建者：全部"
   },
   "table": {
@@ -31,10 +31,10 @@
     "status": "状态",
     "cluster_id": "运行器 ID",
     "allWorkspaces": "所有工作区",
-    "noWorkspace": "无工作区",
+    "noWorkspace": "没有 Workspace",
     "unavailableWorkspace": "不可用",
-    "unavailableWorkspaceTooltip": "此工作区可能为私有或已删除。您无权访问其详情。",
-    "created_by": "创建者",
+    "unavailableWorkspaceTooltip": "该 Workspace 可能是私有或已被删除。您无权访问其详细信息。",
+    "created_by": "创建者：",
     "created_on": "创建于",
     "modified_on": "修改于"
   },
@@ -46,9 +46,9 @@
   },
   "empty_state": {
     "message": "您还没有任何运行器。",
-    "suggestion": "创建您的第一个运行器以开始使用。",
-    "filtered_message": "没有运行器与您的筛选条件匹配",
-    "filtered_suggestion": "请尝试调整您的搜索或筛选条件以查看更多结果。"
+    "suggestion": "首先创建您的第一个运行器。",
+    "filtered_message": "没有运行器符合您的筛选条件",
+    "filtered_suggestion": "尝试调整您的搜索或过滤条件以查看更多结果。"
   },
   "refresh_key": {
     "success": {
@@ -62,31 +62,31 @@
   },
   "fetch_clusters": {
     "error": {
-      "title": "获取运行器失败",
+      "title": "无法获取运行器",
       "default_description": "获取运行器时发生错误。"
     }
   },
   "common": {
     "cancel": "取消",
     "done": "完成",
-    "next": "下一步",
+    "next": "下一个",
     "save": "保存"
   },
   "delete_cluster": {
     "modal": {
       "heading": "永久删除运行器？",
-      "confirmation": "<text>您确定要删除运行器 <bold>\"{clusterName}\"</bold> 吗？</text>",
-      "warning": "删除此运行器将停止所有使用它的监视器。",
+      "confirmation": "<text>您确定要删除运行器<bold>\"{clusterName}\"</bold>吗？</text>",
+      "warning": "删除此运行器将停止使用它的所有 Monitor。",
       "cancel_button": "取消",
       "delete_button": "删除"
     },
     "success": {
       "title": "运行器删除成功",
-      "description": "运行器 \"{clusterName}\" 已被删除。"
+      "description": "运行器\"{clusterName}\"已被删除。"
     },
     "error": {
       "title": "删除运行器失败",
-      "default_description": "删除运行器时发生错误。",
+      "default_description": "删除运行器时出错。",
       "default_message": "删除运行器失败"
     }
   },
@@ -95,16 +95,16 @@
       "add_title": "添加运行器",
       "created_title": "运行器已创建",
       "install_title": "安装运行器",
-      "update_title": "已更新的运行器密钥",
+      "update_title": "已更新运行器密钥",
       "next_button": "下一步：安装运行器 →",
       "edit_title": "编辑运行器"
     },
     "form": {
-      "name_label": "名称",
+      "name_label": "姓名",
       "name_placeholder": "输入运行器名称",
-      "name_helper_text": "例如：Internal API Runner Beta 1",
+      "name_helper_text": "例如，内部 API 运行器 Beta 1",
       "description_label": "描述",
-      "description_placeholder": "例如：为 beta 版 API 执行监视器运行",
+      "description_placeholder": "例如，为 beta API 执行 Monitor 运行",
       "custom_runner_created_by": "由您的团队创建"
     },
     "button": {
@@ -116,7 +116,7 @@
     },
     "success": {
       "title": "运行器创建成功",
-      "description": "新运行器已创建。请复制 API 密钥。"
+      "description": "新的运行器已创建。请复制 API 密钥。"
     },
     "update": {
       "success": {
@@ -124,7 +124,7 @@
         "description": "运行器已成功更新"
       },
       "error": {
-        "title": "更新运行器失败",
+        "title": "无法更新运行器",
         "description": "更新运行器时发生错误。"
       }
     },
@@ -136,45 +136,45 @@
     "copy": {
       "success": {
         "title": "已复制到剪贴板",
-        "description": "API 密钥已复制到剪贴板"
+        "description": "API 键已复制到剪贴板"
       }
     }
   },
   "runner": {
-    "runner_info_text": "您可以选择所需区域的 Postman 运行器，或选择您自己网络内的运行器来运行监视器。",
-    "runner_setup_help": "若要设置新运行器，请联系您的团队管理员。 ",
+    "runner_info_text": "您可以选择所需区域中的 Postman 运行器，或选择您自己网络内的运行器来运行 Monitor。",
+    "runner_setup_help": "要设置新的运行器，请联系您的团队管理员。",
     "auto_select": "自动选择",
     "manually_select": "手动选择",
     "add_runner": "添加运行器",
     "setup": {
       "reset_key": "重置运行器密钥",
-      "reset_key_tooltip": "重置运行器密钥将使当前运行器密钥失效并生成一个新密钥。您可能需要重新配置已安装的运行器。",
+      "reset_key_tooltip": "重置运行器密钥将使当前运行器密钥失效并生成新的密钥。您可能需要重新配置已安装的运行器。",
       "copy": {
         "runner_id": "复制运行器 ID",
         "runner_key": "复制运行器密钥",
         "cli_command": "复制到剪贴板"
       },
       "steps": {
-        "title": "按照以下步骤安装您的运行器",
+        "title": "请按照以下步骤安装您的运行器",
         "install_cli": {
           "title": "1. 安装 Postman CLI"
         },
         "setup": {
-          "title": "2. 在您的终端中运行此命令",
-          "security_warning_with_key": "请安全地复制并存储此密钥，因为在关闭此窗口后将无法再访问它。如有需要，该密钥可在之后重置。",
-          "security_warning_without_key": "丢失了密钥？您可以重置它，但这将禁用任何现有运行器，直到它们使用新密钥进行更新为止。"
+          "title": "2. 在终端中运行此命令",
+          "security_warning_with_key": "安全地复制并存储此密钥，因为关闭此窗口后将无法访问它。如果需要，可以稍后重置密钥。",
+          "security_warning_without_key": "丢了钥匙？您可以重置它，但这将禁用任何现有的跑步者，直到使用新密钥更新它们为止。"
         }
       }
     },
     "tooltip": {
-      "create_runner": "添加运行器以配置和监视您的 API"
+      "create_runner": "添加一个运行器来配置和监控您的 API"
     }
   },
   "refresh_text": "刷新",
-  "runners_fetch_error": "无法获取运行器。请检查您的网络连接。如果问题持续存在，请联系 Postman 支持团队。",
-  "runners_fetch_error_title": "获取运行器失败。",
+  "runners_fetch_error": "无法获取运行器。请检查您的网络连接。如果问题仍然存在，请联系 Postman 支持。",
+  "runners_fetch_error_title": "无法获取运行器。",
   "runner_details": {
     "back_link_label": "所有运行器",
-    "breadcrumb_aria_label": "运行器详情面包屑导航"
+    "breadcrumb_aria_label": "运行器详细信息面包屑"
   }
 }

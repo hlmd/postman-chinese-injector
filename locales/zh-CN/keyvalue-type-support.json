@@ -5,13 +5,13 @@
   },
   "base_form": {
     "select_type": "选择类型",
-    "required": "必填",
+    "required": "必需的",
     "deprecated": "已弃用"
   },
   "string_form": {
     "format": "格式",
     "format_placeholder": "选择",
-    "pattern": "模式",
+    "pattern": "图案",
     "pattern_placeholder": "[a-zA-Z0-9._%+-]",
     "pattern_info": "设置格式后无法使用",
     "min_length": "最小长度",
@@ -37,7 +37,7 @@
     "min_max_value_error": "最小值必须小于最大值"
   },
   "json_base_form": {
-    "required": "必填",
+    "required": "必需的",
     "deprecated": "已弃用",
     "default_value": "默认值",
     "select": "选择"
@@ -47,9 +47,9 @@
     "placeholder": "默认"
   },
   "enum_values_field": {
-    "label": "可选枚举值",
-    "placeholder": "输入",
-    "helper_text": "粘贴以逗号分隔的多个值",
-    "duplicate_error": "此值已存在"
+    "label": "可能的枚举值",
+    "placeholder": "进入",
+    "helper_text": "粘贴多个，以逗号分隔",
+    "duplicate_error": "该值已经存在"
   }
 }

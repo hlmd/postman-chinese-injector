@@ -1,14 +1,14 @@
 {
   "name_errors": {
-    "empty": "请告诉我们您的姓名",
-    "max_length": "姓名必须少于 38 个字符"
+    "empty": "请告诉我们您的名字",
+    "max_length": "名称必须少于 38 个字符"
   },
   "name_warnings": {
-    "approaching_max_length": "还可输入 {count} 个字符"
+    "approaching_max_length": "剩余 {count} 个字符"
   },
   "settings_set_error": {
-    "description": "设置姓名和角色失败。请重试。",
-    "title": "出错了"
+    "description": "无法设置名称和角色。请再试一次。",
+    "title": "出了点问题"
   },
   "continue_button": {
     "text": "继续"
@@ -17,126 +17,126 @@
     "text": "开始使用"
   },
   "git_repo_connected": {
-    "title": "您有可连接的 Git 仓库吗？",
-    "description": "在 Git 中管理集合和代码，并通过<bold>本地视图</bold>支持离线使用。",
-    "yes": "有",
-    "no": "没有"
+    "title": "连接本地项目文件夹？",
+    "description": "通过 <bold>Local View</bold> 将 Collection、规范和 Environment 关联到您计算机上的文件夹，并支持离线使用。Git 为可选项，您可以稍后再添加。",
+    "yes": "是的",
+    "no": "否"
   },
   "select_git_repo_folder": {
-    "title": "连接您的 Git 仓库",
+    "title": "连接本地文件夹",
     "checking": {
-      "message": "正在检查工作区连接…"
+      "message": "正在检查 Workspace 连接..."
     },
     "connected": {
-      "title": "Git 仓库已成功连接",
-      "choose_new_folder": "选择新文件夹"
+      "title": "本地文件夹已连接",
+      "choose_new_folder": "选择其他文件夹"
     },
     "empty": {
-      "title": "连接您的 Git 仓库",
-      "description": "点击以浏览并选择文件夹",
+      "title": "连接本地文件夹",
+      "description": "选择计算机上的一个文件夹，无需 Git。",
       "button": "选择文件夹"
     },
     "existing": {
-      "title": "Git 仓库已连接。",
-      "description": "一个 Git 仓库一次只能连接到一个工作区。",
-      "selected_folder": "已选文件夹：",
+      "title": "文件夹已关联到某个 Workspace",
+      "description": "此文件夹已连接到另一个 Workspace。请选择其他文件夹，或不关联此文件夹继续注册。",
+      "selected_folder": "已选择的文件夹：",
       "choose_different_folder": "选择其他文件夹",
       "continue_sign_up": "继续注册"
     },
     "git_not_installed": {
       "title": "未安装 Git",
-      "description": "Git 未安装或在您的 shell 中不可用。请安装 Git 以将此项目连接到工作区。",
+      "description": "Git 未安装或在您的 shell 中不可用。请安装 Git，以便将此项目连接到 Workspace。",
       "button": "选择文件夹"
     },
     "no_remote_origin": {
       "title": "需要远程源",
-      "description": "此 Git 仓库未配置远程源 URL。请在连接到工作区之前添加一个远程源。",
+      "description": "此 git 存储库没有配置远程源 URL。请在连接到 Workspace 之前添加远程源。",
       "button": "选择文件夹"
     },
     "non_git_folder": {
-      "title": "未找到 Git 仓库",
-      "description": "所选文件夹不包含 Git 仓库。请选择一个已初始化 Git 仓库并配置了远程源的文件夹以继续。",
+      "title": "找不到 Git 存储库",
+      "description": "所选文件夹不包含 Git 仓库。您仍可以将其用作本地文件夹，或选择其他文件夹。",
       "button": "选择文件夹"
     }
   },
   "welcome_intro": {
-    "duration": "1 分钟",
-    "steps": "{count} 个步骤",
+    "duration": "1分钟",
+    "steps": "{count} 步骤",
     "title": "欢迎使用 Postman 🚀",
-    "title_team_joiner": "欢迎来到您团队的工作区！",
-    "description": "让我们来完成设置，以便您可以立即开始工作。",
-    "description_team_joiner": "分享一些关于您自己的信息，让 Postman AI 帮助您浏览工作区。"
+    "title_team_joiner": "欢迎使用您团队的 Workspace！",
+    "description": "让我们做好准备，以便您可以立即开始工作。",
+    "description_team_joiner": "分享一些关于您自己的详细信息，让 Postman AI 帮助您导航 Workspace。"
   },
   "name_and_role": {
-    "title": "让我们个性化您的工作区。",
-    "inline_prefix": "我想以",
-    "inline_middle": "的身份",
+    "title": "让我们个性化您的 Workspace。",
+    "inline_prefix": "我想",
+    "inline_middle": "作为",
     "input": {
       "name": {
-        "label": "您叫什么名字？",
-        "placeholder": "例如：John Doe"
+        "label": "你叫什么名字？",
+        "placeholder": "例如：约翰·多伊"
       },
       "role": {
-        "label": "您的角色是什么？",
+        "label": "你的角色是什么？",
         "placeholder": "选择角色"
       },
       "role_use_case": {
-        "label": "什么最能描述您想在 Postman 中做的事情以及您的角色？",
+        "label": "什么最能描述您希望在 Postman 中做的事情以及您的角色？",
         "placeholder": "选择选项"
       },
       "team_size": {
-        "title": "您的团队规模有多大？"
+        "title": "你的团队有多大？"
       }
     },
     "roles": {
-      "backend_developer": "后端开发者",
-      "frontend_developer": "前端开发者",
-      "fullstack_developer": "全栈开发者",
+      "backend_developer": "后端开发人员",
+      "frontend_developer": "前端开发人员",
+      "fullstack_developer": "全栈开发人员",
       "mobile_developer": "移动开发者",
       "data_engineer": "数据工程师",
-      "devops_engineer": "DevOps / 平台工程师",
-      "qa_test_engineer": "QA / 测试工程师",
+      "devops_engineer": "DevOps/平台工程师",
+      "qa_test_engineer": "质量保证/测试工程师",
       "engineering_lead_manager": "工程主管/经理",
       "engineering_executive": "工程高管",
-      "api_program_product_manager": "API 项目 / 产品经理",
-      "student_educator": "学生 / 教育者",
+      "api_program_product_manager": "API 程序/产品经理",
+      "student_educator": "学生/教育者",
       "other": "其他"
     },
     "role_use_cases": {
       "build_apis": "构建 API",
-      "testing_apis": "测试 API",
-      "integrate_apis": "集成 API",
-      "lead_a_team_that_works_with_apis": "带领一个使用 API 的团队",
-      "manage_api_strategy_for_my_org": "为我的组织管理 API 战略",
+      "testing_apis": "测试API",
+      "integrate_apis": "集成API",
+      "lead_a_team_that_works_with_apis": "领导一个使用 API 的团队",
+      "manage_api_strategy_for_my_org": "管理我的组织的 API 策略",
       "evaluate_postman_for_my_company": "为我的公司评估 Postman"
     },
     "team_sizes": {
       "1_member": "1 名成员",
       "2_10_members": "2-10 名成员",
       "11_50_members": "11-50 名成员",
-      "50_plus_members": "50 名以上成员"
+      "50_plus_members": "50+ 名成员"
     },
     "get_started_button": "开始使用"
   },
   "welcome_to_postman": {
-    "title": "欢迎使用 Postman！请简单介绍一下您自己。",
+    "title": "欢迎使用 Postman！告诉我们一些关于你自己的事。",
     "input": {
       "name": {
-        "placeholder": "例如：John Doe",
-        "label": "您的姓名",
-        "experimental_label": "您叫什么名字？"
+        "placeholder": "例如：约翰·多伊",
+        "label": "你的名字",
+        "experimental_label": "你叫什么名字？"
       },
       "select_your_role": {
         "placeholder": "选择您的角色",
-        "label": "您的角色是什么？",
-        "empty_status_message": "哦！我们还不了解您的角色。请选择“其他”进行说明。"
+        "label": "你的角色是什么？",
+        "empty_status_message": "哦！您的角色对我们来说是新的。请选择“其他”进行提及。"
       },
       "enter_your_role": {
         "placeholder": "输入您的角色"
       },
       "best_describe_you": {
         "placeholder": "选择最能描述您的选项",
-        "label": "您对 API 的使用经验如何？"
+        "label": "您对 API 的体验如何？"
       },
       "used_postman_before": {
         "placeholder": "选择一个选项",
@@ -144,24 +144,24 @@
       }
     },
     "roles": {
-      "backend_developer": "后端开发者",
+      "backend_developer": "后端开发人员",
       "data_engineer": "数据工程师",
-      "frontend_developer": "前端开发者",
+      "frontend_developer": "前端开发人员",
       "product_manager": "产品经理",
-      "fullstack_developer": "全栈开发者",
-      "student_educator": "学生 / 教育者",
-      "qa_engineer_tester": "质量工程师 / 测试人员",
+      "fullstack_developer": "全栈开发人员",
+      "student_educator": "学生/教育者",
+      "qa_engineer_tester": "质量工程师/测试员",
       "executive_vp": "高管（C 级/副总裁）",
       "devops_engineer": "DevOps 工程师",
       "analyst": "分析师",
-      "technical_writer": "技术文档撰写者",
-      "executive": "高管 / 经理",
+      "technical_writer": "技术撰稿人",
+      "executive": "高管/经理",
       "mobile_developer": "移动开发者",
       "security_engineer": "安全工程师",
       "solution_engineer": "解决方案工程师",
       "support_engineer": "支持工程师",
       "technical_architect": "技术架构师",
-      "ux_ui": "UX/UI 设计师",
+      "ux_ui": "用户体验/用户界面设计师",
       "not_listed": "未列出",
       "other": "其他"
     },
@@ -170,79 +170,79 @@
   },
   "questions": {
     "plan_to_use": {
-      "title": "什么最能描述您计划如何使用 Postman？",
+      "title": "以下哪一项最能描述您计划如何使用 Postman？",
       "placeholder": "选择一个选项",
       "options": {
         "debug": "调试 API",
-        "document": "为 API 编写文档",
+        "document": "记录 API",
         "automate": "自动化 API 测试",
-        "build": "构建新的 API",
+        "build": "构建一个新的 API",
         "send_request": "发送 API 请求",
-        "collaborate": "与他人协作",
+        "collaborate": "与他人合作",
         "other": "其他",
-        "not_sure": "尚不确定"
+        "not_sure": "还不确定"
       }
     },
     "plan_to_work": {
-      "title": "您计划在 Postman 中使用什么？",
+      "title": "您打算在 Postman 中从事什么工作？",
       "placeholder": "选择一个选项",
       "options": {
         "api": "我正在开发的 API",
-        "company": "我公司的 API",
-        "third_party": "第三方 API",
+        "company": "我公司的API",
+        "third_party": "第三方API",
         "other": "其他",
-        "not_sure": "尚不确定"
+        "not_sure": "尚未确定"
       }
     }
   },
   "verify_email": {
-    "title": "验证您的电子邮件以确保账户安全",
-    "description": "我们已将验证邮件发送至",
-    "resend_text": "未收到邮件？",
+    "title": "验证您的电子邮件以确保您的帐户安全",
+    "description": "我们已发送验证电子邮件至",
+    "resend_text": "还没有收到电子邮件吗？",
     "resend": "重新发送",
     "verifyCTA": "我已验证我的电子邮件",
     "toast_content": {
       "email_not_verified": {
-        "title": "您的电子邮件尚未验证",
+        "title": "您的电子邮件未经过验证",
         "description": "请检查您的收件箱以完成验证。"
       },
       "default_error": {
         "title": "无法发送请求",
-        "description": "只是线路故障。请重试。"
+        "description": "只是一根电线有问题。再试一次。"
       },
       "verification_email_sent": {
-        "title": "邮件已发送",
-        "description": "请检查您的收件箱以查收最新的验证邮件。 "
+        "title": "电子邮件已发送",
+        "description": "请检查您的收件箱以获取最新的验证电子邮件。"
       }
     }
   },
   "join_team": {
     "constants": {
       "has_guidelines_rtj": {
-        "modalHeader": "提交您加入团队的请求",
-        "modalBody": "请回答团队管理员提出的这个问题，以帮助他们审核您的加入请求",
-        "placeholder": "在此输入您的回答",
+        "modalHeader": "提交您的请求以加入团队",
+        "modalBody": "回答团队管理员提出的问题，以便他们审核您的加入请求。",
+        "placeholder": "在此输入您的答案",
         "cancelCTA": "取消",
         "submitCTA": "发送请求"
       },
       "no_guidelines_rtj": {
-        "modalHeader": "为您的请求添加留言",
-        "modalBody": "您的请求正在等待批准。请附上一条个人留言，以帮助团队管理员审核您的请求。",
-        "placeholder": "您好，我想加入这个团队，因为……",
+        "modalHeader": "为您的申请添加消息",
+        "modalBody": "您的请求正在等待批准。附上一条留言，帮助团队管理员审核您的请求。",
+        "placeholder": "你好，我想加入这个团队，因为……",
         "cancelCTA": "跳过",
-        "submitCTA": "发送留言"
+        "submitCTA": "发送消息"
       }
     },
     "title": "加入您组织中的团队",
-    "description": "加入您的团队，获取其 API 的访问权限，相互协作并邀请新人加入。",
-    "title_new": "加入团队，来自",
-    "title_experimental": "加入您的第一个团队，来自",
-    "description_new": "获取 API 资源的访问权限，立即开始与您的团队成员协作。",
+    "description": "加入您的团队，访问他们的 API，相互协作并邀请新成员加入。",
+    "title_new": "加入团队来自",
+    "title_experimental": "加入您的第一个团队从",
+    "description_new": "访问 API 资源并立即开始与您的队友协作。",
     "request_access_button": {
-      "text": "申请访问权限"
+      "text": "请求访问"
     },
     "collaborate_with_people_button": {
-      "text": "在新团队中与他人协作"
+      "text": "与新团队中的人员合作"
     },
     "skip_button": {
       "text": "跳过"
@@ -256,57 +256,57 @@
     "members_count": "{count, plural, one {成员} other {成员}}",
     "request_to_join_modal": {
       "email_verified_guideline": {
-        "text": "在我们发送您的请求之前，请回答团队管理员提出的这个问题"
+        "text": "在发送您的请求之前，请先回答团队管理员提出的问题"
       },
       "email_verified_note": {
         "text": "添加备注以帮助团队管理员审核您的请求（可选）"
       },
-      "once_team_admin_approves_request": "团队管理员批准您的请求后，您将被自动添加到团队中。",
+      "once_team_admin_approves_request": "一旦团队管理员批准您的请求，您将自动加入该团队。",
       "quick_things_todo": {
-        "text": "在我们发送您的请求之前，还有两件小事需要完成",
+        "text": "在发送您的请求之前，只需完成以下两步",
         "step_1_verify_your_account": {
-          "text": "1. 验证您的账户。您的收件箱中应该有一封等待查收的验证邮件。"
+          "text": "1. 验证您的帐户。您的收件箱中应该有一封验证电子邮件正在等待您。"
         },
-        "step_2_answer_question_from_admin": "2. 回答团队管理员提出的这个问题。",
-        "step_2_add_a_note": "2. 添加备注以帮助团队管理员审核您的请求（可选）"
+        "step_2_answer_question_from_admin": "2. 回答以下来自团队管理员的问题。",
+        "step_2_add_a_note": "2. 添加备注以帮助团队的管理员审核您的请求（可选）"
       },
       "body": {
-        "text": "请回答团队管理员提出的这个问题，以帮助他们审核您的加入请求。"
+        "text": "回答团队管理员提出的问题，帮助他们审核您的加入请求。"
       },
-      "heading_text": "提交您加入团队的请求",
-      "placeholder": "在此输入您的回答",
+      "heading_text": "提交您的请求以加入团队",
+      "placeholder": "在此输入您的答案",
       "cancel_button": {
         "text": "取消"
       },
       "send_request_button": {
         "text": "提交"
       },
-      "heading": "申请加入 {teamName}"
+      "heading": "请求加入 {teamName}"
     },
     "toast_content": {
-      "title": "您的加入团队请求正在审核中",
-      "description": "您的请求获批后，我们将通知您。"
+      "title": "您加入团队的请求正在审核中",
+      "description": "当您的 请求 获得批准时，我们会通知您。"
     },
     "unverified_user_toast": {
       "title": "验证您的电子邮件",
-      "description": "验证邮件已发送给您。验证后，加入请求将发送给管理员。您的请求获批后，我们将通知您。"
+      "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"
     },
     "add_response": "添加回复",
-    "add_a_note": "添加备注",
+    "add_a_note": "添加注释",
     "validation_message": {
-      "permitted_character_limit": "您已超出允许的字符数限制 {charLimit} 个字符",
+      "permitted_character_limit": "您超出允许的字符数限制 {charLimit} 个字符",
       "reached_character_limit": "您已达到字符数限制"
     },
     "send_request_button": {
-      "text": "申请加入"
+      "text": "请求加入"
     },
     "growth": {
       "handle_request_sending_error": {
-        "title": "出错了",
+        "title": "出了点问题",
         "description": "无法将您的请求发送给管理员"
       },
-      "title": "为您推荐的团队",
-      "description": "与您的团队成员建立联系，在整个组织范围内的项目上进行协作。",
+      "title": "为您推荐团队",
+      "description": "与您的队友联系并在整个组织内协作开展项目。",
       "skip_button": {
         "text": "暂时跳过"
       },
@@ -322,11 +322,11 @@
     "team_metadata": {
       "search": "搜索团队名称",
       "no_teams_found": "未找到团队",
-      "adjust_your_search": "请尝试其他搜索词、调整筛选条件，或检查是否有拼写错误。"
+      "adjust_your_search": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     }
   },
   "handle_request_sending_error": {
-    "title": "出错了",
+    "title": "出了点问题",
     "description": "无法将您的请求发送给管理员"
   },
   "invite_teammates": {
@@ -340,7 +340,7 @@
         "label": "电子邮件"
       },
       "heading": {
-        "invite_people": "邀请方式"
+        "invite_people": "通过以下方式邀请他人"
       },
       "invite_link": {
         "helper_text": "复制邀请链接"
@@ -348,31 +348,31 @@
     },
     "errors": {
       "create_team": {
-        "title": "出错了",
+        "title": "出了点问题",
         "description": "无法生成您的邀请链接"
       },
       "invite_error": {
-        "title": "请仔细检查这些电子邮件以确保其有效"
+        "title": "仔细检查电子邮件以确保其有效"
       }
     },
-    "title": "获取唯一链接以与他人分享。他们可以通过点击此链接加入您的团队。",
-    "generating_unique_link": "正在为您生成唯一的邀请链接…",
-    "collaborate_within_team": "您想在团队中与谁协作？",
-    "bring_people_to_collaborate": "邀请您想在 Postman 上协作的人员。",
+    "title": "获取一个可与他人分享的专属链接。他们可以通过点击此链接加入您的团队。",
+    "generating_unique_link": "正在为您生成专属邀请链接...",
+    "collaborate_within_team": "您想在团队中与谁合作？",
+    "bring_people_to_collaborate": "带上您想在 Postman 上合作的人。",
     "invite_link_button": {
-      "text": "获取邀请链接\t"
+      "text": "获取邀请链接"
     },
     "skip_remind_me_later": {
       "text": "稍后提醒我"
     },
     "skip_create_team_button": {
-      "text": "不创建团队继续"
+      "text": "不创建团队，继续"
     }
   },
   "enable_verification_banner": {
-    "verify_your_account": "请验证您的账户以发送加入新团队的请求。验证邮件已发送至 {userEmail}",
+    "verify_your_account": "请验证您的帐户，以便发送加入新团队的请求。验证邮件已发送至 {userEmail}",
     "account_verification": {
-      "text": "请完成您的账户验证。我们已将验证链接发送至 {userEmail}"
+      "text": "请完成您的帐户验证。我们已将验证链接发送至 {userEmail}"
     },
     "resend_verification_email": {
       "text": "重新发送验证邮件"
@@ -381,13 +381,13 @@
       "description": "验证邮件已发送"
     },
     "resend_verification_email_failed": {
-      "title": "出错了",
-      "description": "发送验证邮件时出错。请重试。"
+      "title": "出了点问题",
+      "description": "发送验证电子邮件时发生错误。请再试一次。"
     }
   },
   "create_team_loading_page": {
-    "account_setup": "正在设置您的账户…",
-    "creating_team": "正在创建您的团队…",
+    "account_setup": "正在设置您的帐户...",
+    "creating_team": "创建您的团队...",
     "no_refresh": "请不要关闭或刷新此页面。"
   },
   "team_name_errors": {
@@ -395,72 +395,72 @@
     "max_length": "团队名称必须少于 45 个字符"
   },
   "team_name_warnings": {
-    "approaching_max_length": "还可输入 {count} 个字符"
+    "approaching_max_length": "剩余 {count} 个字符"
   },
   "prompt_errors": {
     "empty": "请告诉我们您正在做什么",
     "max_length": "您的消息必须少于 500 个字符"
   },
   "prompt_warnings": {
-    "approaching_max_length": "还可输入 {count} 个字符"
+    "approaching_max_length": "剩余 {count} 个字符"
   },
   "prompt": {
-    "title": "最后一步，借助 Postman AI 更进一步。",
-    "description": "Postman AI 已经了解您连接的仓库和工作区。告诉它您想要构建、探索或生成什么。",
+    "title": "最后一步，使用 Postman AI 更进一步。",
+    "description": "Postman AI 已经理解您连接的存储库和 Workspace。告诉它你想要构建、探索或生成什么。",
     "input": {
-      "placeholder": "从此仓库生成请求、测试或集合……"
+      "placeholder": "从此存储库生成请求、测试或集合..."
     },
     "examples": {
-      "label": "或尝试一个示例：",
+      "label": "或者尝试一个例子：",
       "repo_connected": {
         "test-apis": {
-          "label": "测试 API",
-          "prompt": "帮我测试此仓库中的 API 并建议关键测试用例。"
+          "label": "测试API",
+          "prompt": "帮助我测试此存储库中的 API 并建议关键测试用例。"
         },
         "send-requests": {
           "label": "发送请求",
-          "prompt": "为此仓库中的 API 生成示例请求。"
+          "prompt": "生成此存储库中的 API 的示例请求。"
         },
         "api-docs": {
           "label": "API 文档",
-          "prompt": "根据此代码库创建 API 文档。"
+          "prompt": "从此代码库创建 API 文档。"
         },
         "learn-postman": {
-          "label": "学习 Postman",
-          "prompt": "向我展示如何在此仓库中使用 Postman。"
+          "label": "学习Postman",
+          "prompt": "演示如何将 Postman 与此存储库一起使用。"
         },
         "create-api": {
-          "label": "创建 API",
-          "prompt": "帮我扩展或向此项目添加新的 API。"
+          "label": "创建API",
+          "prompt": "帮助我向该项目扩展或添加新的 API 。"
         },
         "monitor-apis": {
           "label": "监控 API",
-          "prompt": "为这些 API 设置监控和健康检查。"
+          "prompt": "为这些 API 设置监控和运行状况检查。"
         },
         "integrate-apis": {
-          "label": "集成 API",
-          "prompt": "帮我将这些 API 与另一个服务集成。"
+          "label": "集成API",
+          "prompt": "帮助我将这些 API 与其他服务集成。"
         }
       },
       "generic": {
         "test-apis": {
-          "label": "测试 API",
-          "prompt": "帮我测试我正在使用的 API。"
+          "label": "测试API",
+          "prompt": "帮助我测试我正在使用的 API。"
         },
         "send-requests": {
           "label": "发送请求",
-          "prompt": "帮我在 Postman 中发送 API 请求。"
+          "prompt": "帮助我在 Postman 中发送 API 请求。"
         },
         "api-docs": {
           "label": "API 文档",
-          "prompt": "帮我创建 API 文档。"
+          "prompt": "帮助我创建 API 文档。"
         },
         "learn-postman": {
-          "label": "学习 Postman",
+          "label": "学习Postman",
           "prompt": "教我使用 Postman 的基础知识。"
         },
         "create-api": {
-          "label": "创建 API",
+          "label": "创建API",
           "prompt": "帮我设计一个新的 API。"
         },
         "monitor-apis": {
@@ -468,67 +468,67 @@
           "prompt": "我该如何监控 API 的健康状况和性能？"
         },
         "integrate-apis": {
-          "label": "集成 API",
-          "prompt": "我该如何将 API 集成到我的应用中？"
+          "label": "集成API",
+          "prompt": "如何将 API 集成到我的应用程序中？"
         }
       }
     },
     "submit_button": {
-      "text": "借助 AI 开始使用"
+      "text": "开始使用人工智能"
     }
   },
   "redirect_to_workspace_loading_page": {
-    "title": "正在设置您的工作区"
+    "title": "设置您的 Workspace"
   },
   "toasts": {
     "success": {
       "send_invites": {
-        "title": "邀请已发送",
-        "description": "新成员接受您的邀请后即会加入。"
+        "title": "已发送邀请",
+        "description": "新成员接受您的 邀请 后就会加入。"
       },
       "save_profile": {
         "title": "个人资料已保存",
         "description": "您的个人资料已成功更新。"
       },
       "create_team": {
-        "title": "团队已创建",
-        "description": "您的请求获批后，我们将通知您。"
+        "title": "团队创建成功",
+        "description": "当您的 请求 获得批准时，我们会通知您。"
       },
       "verified_team_full": {
-        "title": "您的加入团队请求正在审核中",
-        "description": "此团队已满。您可以稍后申请加入。"
+        "title": "您加入团队的请求正在审核中",
+        "description": "该团队已满，您可以稍后申请加入。"
       },
       "unverified_team_full": {
         "title": "验证您的电子邮件",
-        "description": "验证邮件已发送给您。验证后，加入请求将发送给管理员。您的请求获批后，我们将通知您。"
+        "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"
       }
     },
     "info": {
       "verified_join_team_request": {
-        "title": "您的加入团队请求正在审核中",
-        "description": "您的请求获批后，我们将通知您。"
+        "title": "您加入团队的请求正在审核中",
+        "description": "当您的 请求 获得批准时，我们会通知您。"
       },
       "unverified_join_team_request": {
         "title": "验证您的电子邮件",
-        "description": "验证邮件已发送给您。验证后，加入请求将发送给管理员。您的请求获批后，我们将通知您。"
+        "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"
       }
     },
     "error": {
       "send_invites": {
         "title": "无法发送邀请",
-        "description": "我们此时无法发送邀请。您可以稍后从团队设置中邀请团队成员。"
+        "description": "我们目前无法发送邀请。您可以稍后在团队设置中邀请队友。"
       },
       "save_profile": {
         "title": "无法保存个人资料",
-        "description": "我们无法保存您的个人资料信息。别担心，您可以稍后在账户设置中更新。"
+        "description": "我们无法保存您的个人资料信息。不用担心，您可以稍后在帐户设置中进行更新。"
       },
       "setup_team": {
-        "title": "团队设置未完成",
-        "description": "我们无法完成某些团队设置，但您可以继续。请稍后在团队仪表板中更新这些设置。"
+        "title": "团队设置不完整",
+        "description": "我们无法完成部分团队设置，但您可以继续操作，稍后可在团队仪表板中更新这些设置。"
       },
       "create_team": {
-        "title": "无法创建团队",
-        "description": "创建您的团队时遇到问题。目前您可以继续使用您的个人工作区。"
+        "title": "团队创建失败",
+        "description": "我们在创建您的团队时遇到了问题。现在，您可以继续使用个人 Workspace。"
       },
       "save_name_and_role": {
         "title": "无法保存个人资料",
@@ -539,28 +539,28 @@
         "description": "我们无法检查您对此团队的访问权限。请重试或联系您的团队管理员。"
       },
       "request_team_access": {
-        "title": "无法发送请求",
+        "title": "请求发送失败",
         "description": "我们无法发送您加入此团队的请求。请重试或直接联系团队管理员。"
       },
       "auto_join_team": {
-        "title": "出错了",
+        "title": "出了点问题",
         "description": "无法将您的请求发送给管理员"
       },
       "join_team_request": {
-        "title": "出错了",
+        "title": "出了点问题",
         "description": "无法将您的请求发送给管理员"
       },
       "resend_verification": {
-        "title": "无法发送邮件",
-        "description": "我们无法发送验证邮件。请重试或联系支持团队。"
+        "title": "电子邮件无法发送",
+        "description": "我们无法发送验证电子邮件。请重试或联系支持人员。"
       },
       "connect_folder_to_workspace": {
-        "title": "出错了",
-        "description": "我们无法将您的文件夹连接到您的工作区。请重试。"
+        "title": "出了点问题",
+        "description": "我们无法将您的文件夹连接到您的 Workspace。请再试一次。"
       },
       "checking_repo_connection_status": {
         "title": "Git 检查失败",
-        "description": "我们无法检测此文件夹是否为 Git 仓库。请选择另一个文件夹或重试。"
+        "description": "我们无法检测该文件夹是否为 Git 存储库。请选择其他文件夹或重试。"
       }
     }
   }

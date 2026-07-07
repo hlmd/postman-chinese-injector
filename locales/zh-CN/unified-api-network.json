@@ -1,12 +1,12 @@
 {
   "breadcrumb": {
-    "aria_label": "面包屑导航",
-    "api_network": "API Network"
+    "aria_label": "面包屑",
+    "api_network": "API 网络"
   },
   "add_to_namespace_modal": {
-    "heading": "将工作区添加到命名空间",
-    "loading": "正在加载命名空间…",
-    "load_error": "暂时无法加载命名空间。",
+    "heading": "将 Workspace 添加到命名空间",
+    "loading": "正在加载命名空间...",
+    "load_error": "现在无法加载命名空间。",
     "empty": "没有可用的命名空间。",
     "select_placeholder": "搜索并选择命名空间",
     "cancel": "取消",
@@ -14,16 +14,16 @@
   },
   "access_requests": {
     "breadcrumb": {
-      "api_network": "API Network",
+      "api_network": "API 网络",
       "access_management": "访问管理",
       "requests": "请求"
     },
     "page_title": "请求",
-    "empty_state": "暂无访问请求。",
+    "empty_state": "没有访问请求。",
     "table": {
       "header": {
-        "name": "名称",
-        "workspace": "工作区",
+        "name": "姓名",
+        "workspace": "Workspace",
         "date": "日期",
         "reason": "原因",
         "status": "状态",
@@ -46,49 +46,62 @@
       "pending": "请求中"
     },
     "modal": {
-      "title": "请求访问",
-      "close_aria_label": "关闭弹窗",
+      "title": "请求 访问",
+      "close_aria_label": "关闭模式",
       "reason_label": "原因",
-      "reason_placeholder": "您为什么需要访问权限？",
-      "send": "发送请求",
-      "sending": "发送中…",
+      "reason_placeholder": "为什么需要访问权限？",
+      "send": "发送 请求",
+      "sending": "正在发送...",
       "toast": {
-        "success_title": "请求已发送",
-        "success_body": "您对 {workspaceName} 的访问请求已发送。",
-        "error_body": "访问请求出错。"
+        "success_title": "请求 已发送",
+        "success_body": "您用于访问 {workspaceName} 的 请求 已发送。",
+        "error_body": "访问 请求 时出错。"
       }
     }
   },
   "workspace_card": {
     "actions": {
-      "access_requested": "已请求访问",
-      "access_requested_workspace": "已请求访问 {workspaceName}",
-      "request_access": "请求访问",
-      "request_access_workspace": "请求访问 {workspaceName}",
+      "access_requested": "请求访问",
+      "access_requested_workspace": "请求访问 {workspaceName}",
+      "request_access": "请求 访问",
+      "request_access_workspace": "请求 访问 {workspaceName}",
       "options": "{workspaceName} 的选项",
       "remove": "从命名空间中移除",
       "view": "打开",
-      "view_workspace": "打开 {workspaceName}"
+      "view_workspace": "打开{workspaceName}"
     },
-    "no_description": "暂无描述。",
-    "publisher_verified": "已验证的发布者",
-    "restricted_access": "受限访问",
+    "no_description": "没有可用的描述。",
+    "publisher_verified": "已验证发布者",
+    "restricted_access": "访问受限",
     "workspace_type": {
-      "private": "私有工作区",
-      "public": "公共工作区"
+      "private": "私有 Workspace",
+      "public": "公共 Workspace"
     }
   },
   "remove_workspace": {
-    "title": "移除工作区",
+    "title": "移除 Workspace",
     "close_aria_label": "关闭弹窗",
-    "body": "{workspaceName} 将从 {namespaceName} 命名空间中移除。工作区本身不会被删除，您之后可以重新添加。",
+    "body": "{workspaceName} 将从 {namespaceName} 命名空间中移除。该 Workspace 本身不会被删除，您可以稍后重新添加。",
     "cancel": "取消",
     "confirm": "移除",
-    "removing": "移除中…",
+    "removing": "正在移除…",
     "toast": {
-      "success_title": "工作区已移除",
+      "success_title": "Workspace 已移除",
       "success_body": "{workspaceName} 已从 {namespaceName} 中移除。",
-      "error_body": "从命名空间中移除工作区时出错。"
+      "error_body": "从命名空间中移除 Workspace 时出错。"
+    }
+  },
+  "delete_namespace": {
+    "title": "删除命名空间",
+    "close_aria_label": "关闭弹窗",
+    "body": "{namespaceName} 将被永久删除，此操作无法撤销。",
+    "cancel": "取消",
+    "confirm": "删除",
+    "deleting": "正在删除…",
+    "toast": {
+      "success_title": "命名空间已删除",
+      "success_body": "{namespaceName} 已被删除。",
+      "error_body": "删除命名空间时出错。"
     }
   },
   "namespaces": {
@@ -98,37 +111,41 @@
     },
     "page_title": "命名空间",
     "create_button": "创建命名空间",
-    "empty_state": "未找到命名空间。",
+    "empty_state": "未找到名称空间。",
     "card": {
-      "workspaces_label": "工作区",
+      "workspaces_label": "Workspace",
       "access_level": {
         "open": "团队",
-        "access_by_request": "按请求访问",
+        "access_by_request": "通过 请求 访问",
         "invite_only": "仅限邀请"
       },
-      "empty_workspaces": "无工作区",
+      "empty_workspaces": "没有 Workspace",
       "view_button": "查看",
-      "view_namespace": "查看 {namespaceName}",
-      "view_workspace": "查看 {workspaceName}",
+      "view_namespace": "查看{namespaceName}",
+      "view_workspace": "查看{workspaceName}",
+      "actions": {
+        "options": "{namespaceName} 的选项",
+        "delete": "删除命名空间"
+      },
       "members_popover": {
-        "trigger_label": "查看 {namespaceName} 的成员",
-        "title_one": "{count} 名成员",
-        "title_other": "{count} 名成员",
-        "overflow_one": "另外 {count} 名成员",
-        "overflow_other": "另外 {count} 名成员"
+        "trigger_label": "查看 {namespaceName} 成员",
+        "title_one": "{count} 位成员",
+        "title_other": "{count} 成员",
+        "overflow_one": "{count} 更多 成员",
+        "overflow_other": "{count} 更多成员"
       }
     }
   },
   "new_namespace": {
     "breadcrumb": {
-      "new_namespace": "新建命名空间"
+      "new_namespace": "新命名空间"
     },
-    "page_title": "新建命名空间",
+    "page_title": "新命名空间",
     "form": {
       "title_label": "标题",
       "validation": {
         "no_valid_characters": "标题必须至少包含一个字母或数字。",
-        "duplicate": "已存在使用此名称的命名空间。"
+        "duplicate": "具有此名称的命名空间已存在。"
       }
     },
     "actions": {
@@ -141,20 +158,20 @@
       "error_body": "创建命名空间时出错。"
     },
     "access": {
-      "heading": "谁可以访问此命名空间？",
-      "helper": "选择您组织中的用户如何访问该命名空间及其中的工作区。此设置之后无法更改。",
+      "heading": "谁可以访问这个命名空间？",
+      "helper": "选择组织中的用户如何访问其中的命名空间和 Workspace。此后无法更改。",
       "options": {
         "open": {
-          "title": "我组织中的任何人",
-          "description": "您组织中的任何成员都将能够看到此命名空间及其内容"
+          "title": "我的组织中的任何人",
+          "description": "您组织中的任何 成员 将能够看到此命名空间及其内容"
         },
         "request": {
-          "title": "按请求访问",
-          "description": "您组织中的用户将看到命名空间名称，但需要发送请求才能访问其内容"
+          "title": "通过 请求 访问",
+          "description": "您组织中的用户将看到命名空间名称，但需要发送 请求 才能访问其内容"
         },
         "invite_only": {
           "title": "仅限邀请",
-          "description": "您组织中的用户将看不到此命名空间。命名空间管理员可通过邀请提供访问权限"
+          "description": "您组织中的用户将看不到此命名空间。命名空间管理器可以通过 邀请 提供访问权限"
         }
       }
     }

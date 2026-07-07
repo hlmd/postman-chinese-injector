@@ -1,31 +1,34 @@
 {
-  "create_new_environment": "创建新环境",
+  "create_new_environment": "创建新的 环境",
   "environment_name": "环境名称",
+  "entity_type_icon": {
+    "label": "Environment"
+  },
   "no_environment_empty_state": {
-    "heading": "您还没有任何环境。",
-    "description": "环境是一组变量，可让您切换请求的上下文。",
+    "heading": "你没有任何环境。",
+    "description": "环境 是一组变量，允许您切换请求的上下文。",
     "create_environment_button": "创建环境",
-    "no_items": "此面板中没有任何项目",
+    "no_items": "该面板中没有项目",
     "create": "创建"
   },
-  "set_inactive": "设为非活动",
-  "set_active": "设为活动",
-  "not_a_fork": "此环境不是复刻。",
+  "set_inactive": "设置为非活动状态",
+  "set_active": "设置为活动状态",
+  "not_a_fork": "这个 环境 不是 fork。",
   "globals": "全局变量",
-  "create_first_environment": "创建您的第一个环境",
+  "create_first_environment": "创建您的第一个 环境",
   "could_not_load_panel": "无法加载面板内容。",
   "retry": "重试",
-  "could_not_perform_action": "无法成功对 {entity} 执行 {action} 操作",
-  "set_active_environment_error": "设置活动环境时出错",
-  "environment_not_a_fork_error": "环境不是复刻",
+  "could_not_perform_action": "无法成功 {action} {entity}",
+  "set_active_environment_error": "设置活动 环境 时出错",
+  "environment_not_a_fork_error": "环境 不是 fork",
   "delete_environment_confirmation": {
     "heading": {
-      "default": "删除此复刻的环境？",
-      "with_name": "删除 \"{environmentDisplayName}\"？"
+      "default": "删除这个分叉的环境？",
+      "with_name": "删除“{environmentDisplayName}”？"
     },
-    "description": "删除此环境可能会导致使用它的任何监视器、计划运行或模拟服务器无法正常运行。您确定要继续吗？",
-    "description_with_pinning": "这将影响依赖此环境的监视器、计划运行或模拟服务器。此外，此环境将从所有当前固定它的集合中移除。",
-    "environment_deleted_successfully": "环境 {name} 已成功删除。",
+    "description": "删除此 环境 可能会导致使用它的任何监视器、计划运行或 mock 服务器停止正常运行。您确定要继续吗？",
+    "description_with_pinning": "这将影响依赖此 环境 的监视器、计划运行或 mock 服务器。此外，此 环境 将从当前固定的所有集合中删除。",
+    "environment_deleted_successfully": "{name} 环境 已成功删除。",
     "deleting": "正在删除",
     "delete": "删除"
   },
@@ -34,10 +37,10 @@
       "label": "复制链接"
     },
     "open_in_new_tab": {
-      "label": "在新标签页中打开"
+      "label": "在新选项卡中打开"
     },
     "share": {
-      "label": "共享"
+      "label": "分享"
     },
     "move": {
       "label": "移动"
@@ -46,7 +49,7 @@
       "label": "重命名"
     },
     "duplicate": {
-      "label": "创建副本"
+      "label": "复制"
     },
     "create_a_fork": {
       "label": "复刻"
@@ -55,10 +58,10 @@
       "label": "创建拉取请求"
     },
     "merge_changes": {
-      "label": "合并更改"
+      "label": "合并变更"
     },
     "pull_changes": {
-      "label": "拉取更改"
+      "label": "拉动变更"
     },
     "export": {
       "label": "导出"
@@ -79,10 +82,10 @@
     }
   },
   "forbidden_access": {
-    "title": "管理员已撤销对环境的访问权限",
-    "message": "这可能是由于安全策略所致。请联系您的管理员以获取更多详细信息或协助。"
+    "title": "对环境的访问被 管理员 撤销",
+    "message": "这可能是由于安全策略所致。请联系您的 管理员 以获取更多详细信息或帮助。"
   },
-  "disabled_tool_tip_is_offline": "恢复联网后即可执行此操作。",
-  "disabled_tool_tip_no_permission": "您没有权限执行此操作。",
-  "duplicate_environment_error": "在创建环境副本之前保存更改失败。请重试。"
+  "disabled_tool_tip_is_offline": "当您重新上线时，您可以执行此操作。",
+  "disabled_tool_tip_no_permission": "您没有 权限 来执行此操作。",
+  "duplicate_environment_error": "在复制 环境 之前无法保存更改。请再试一次。"
 }

@@ -1,201 +1,201 @@
 {
-  "no_new_changes_to_save": "没有新的更改需要保存。",
+  "no_new_changes_to_save": "没有要保存的新更改。",
   "sign_in_to_take_action": "登录以执行此操作",
-  "close_tab_aria_label": "关闭标签页",
+  "close_tab_aria_label": "关闭选项卡",
   "context_menu": {
     "new_request": "新建请求",
-    "duplicate_tab": "创建标签页副本",
-    "close_tab": "关闭标签页",
-    "force_close_current": "强制关闭标签页",
-    "close_others": "关闭其他标签页",
-    "close_all": "关闭所有标签页",
-    "force_close_all": "强制关闭所有标签页",
-    "recently_closed": "最近关闭的标签页",
+    "duplicate_tab": "复制选项卡",
+    "close_tab": "关闭选项卡",
+    "force_close_current": "强制关闭选项卡",
+    "close_others": "关闭其他选项卡",
+    "close_all": "关闭所有选项卡",
+    "force_close_all": "强制关闭所有选项卡",
+    "recently_closed": "最近关闭的选项卡",
     "recently_closed_none": "无",
-    "duplicate_selected": "创建所选标签页副本",
-    "close_selected": "关闭所选标签页",
-    "force_close_selected": "强制关闭所选标签页",
-    "close_all_except_selected": "关闭除所选外的所有标签页",
-    "reveal_in_sidebar": "在侧边栏中显示"
+    "duplicate_selected": "复制选定的选项卡",
+    "close_selected": "关闭选定的选项卡",
+    "force_close_selected": "强制关闭选定的选项卡",
+    "close_all_except_selected": "关闭除选定选项卡之外的所有选项卡",
+    "reveal_in_sidebar": "在 侧边栏 中显示"
   },
   "delete_confirm": {
     "force_close": "强制关闭"
   },
   "empty_shell": {
     "ask_ai": "询问 AI",
-    "open_overview": "打开工作区概览",
+    "open_overview": "打开 工作区 概述",
     "create_new": "新建",
     "import": "导入",
-    "find_in_workspace": "在工作区中查找",
-    "create_request": "创建新请求：",
+    "find_in_workspace": "在 工作区 中查找",
+    "create_request": "创建一个新的 请求：",
     "http_request": "HTTP 请求"
   },
   "loading_shell": {
-    "loading": "加载中…"
+    "loading": "加载中..."
   },
   "tooltip": {
-    "disabled_actions": "打开新标签页以执行此操作",
-    "create_new_request": "新建请求",
+    "disabled_actions": "打开一个新选项卡来执行此操作",
+    "create_new_request": "创建新的 请求",
     "expand": "展开",
     "collapse": "折叠"
   },
   "environment_quick_look": {
-    "button_tooltip": "环境快速查看",
-    "environment": "环境",
+    "button_tooltip": "环境 快速浏览",
+    "environment": "Environment",
     "edit": "编辑",
     "variable": "变量",
     "initial_value": "初始值",
     "current_value": "当前值",
-    "no_active_environment": "没有活动环境",
+    "no_active_environment": "无活动 环境",
     "globals": "全局变量",
     "no_globals_available": "没有可用的全局变量",
     "no_environment_variables": {
-      "heading": "没有环境变量",
-      "description": "环境是一组变量，可让您切换请求的上下文。"
+      "heading": "没有 环境 变量",
+      "description": "环境 是一组变量，允许您切换请求的上下文。"
     },
     "no_global_variables": {
       "heading": "没有全局变量",
-      "description": "全局变量是在工作区中始终可用的一组变量。"
+      "description": "全局变量是一组始终在 工作区 中可用的变量。"
     },
     "variables_use_banner": {
-      "heading": "使用变量来复用值并保护敏感数据",
-      "learn_about_variable_type": "将敏感数据存储为 secret 变量类型，使其值在屏幕上保持隐藏。详细了解<1><0>变量类型</0></1>",
-      "learn_about_variable_type_lc": "将敏感数据存储为 secret 变量类型，使其值在屏幕上保持隐藏。详细了解<1>变量类型</1>。",
-      "learn_about_variable_values": "使用变量的当前值，避免与团队共享敏感值。详细了解<1><0>变量值</0></1>",
-      "learn_about_variable_values_lc": "使用变量的当前值，避免与团队共享敏感值。详细了解<1>变量值</1>。"
+      "heading": "使用变量重用值并保护敏感数据",
+      "learn_about_variable_type": "将敏感数据存储在变量类型 密钥 中，以使其值在屏幕上隐藏。了解有关<1><0>变量类型</0></1>的更多信息",
+      "learn_about_variable_type_lc": "将敏感数据存储在变量类型 密钥 中，以使其值在屏幕上隐藏。了解有关<1>变量类型</1>的更多信息。",
+      "learn_about_variable_values": "使用变量的当前值以防止与您的 团队 共享敏感值。了解有关 <1><0>变量值</0></1> 的更多信息",
+      "learn_about_variable_values_lc": "使用变量的当前值以防止与您的 团队 共享敏感值。了解有关<1>变量值</1>的更多信息。"
     },
     "add": "添加",
     "read_only": "只读",
-    "something_went_wrong": "出错了。请检查 DevTools。",
-    "variable_not_present_in_active_session": "此变量在当前活动会话中不存在。但这不会影响它在环境中的存在。",
+    "something_went_wrong": "出了点问题。请检查开发工具。",
+    "variable_not_present_in_active_session": "该变量在活动 会话 中不存在。但是，它在 环境 中的存在不会受到影响。",
     "deleted": "[已删除]"
   },
   "entity_tab_loading_error": {
     "offline": {
-      "title": "您处于离线状态，无法加载数据",
-      "body": "在您重新联网之前，您的数据可能不是最新的。"
+      "title": "离线时无法加载数据",
+      "body": "在您重新上线之前，您的数据可能不是最新的。"
     },
     "error": {
-      "title": "未找到{entityName}",
-      "body": "我们找不到您要查找的{entityName}。"
+      "title": "{entityName} 未找到",
+      "body": "我们找不到您要找的 {entityName}。"
     },
     "deleted": {
       "title": "找不到{entityName}",
       "body": "它可能已被移动或删除。"
     },
     "forbidden": {
-      "title": "管理员已撤销对{entityName}的访问权限",
-      "body": "您的管理员已撤销对{entityName}的访问权限，可能是由于安全策略所致。请联系您的管理员以获取更多详情或帮助。"
+      "title": "对 {entityName} 的访问被 管理员 撤销",
+      "body": "对 {entityName} 的访问权限已被您的 管理员 撤销，可能是由于安全策略的原因。请联系您的 管理员 以获取更多详细信息或帮助。"
     },
     "retry_button": "重试"
   },
   "auto_save_conflict_banner": {
-    "button": "解决冲突…",
-    "text": "此请求已在别处被修改并存在冲突。请解决冲突以恢复自动保存。"
+    "button": "解决冲突...",
+    "text": "此请求已在别处被修改，存在冲突。解决冲突以恢复自动保存。"
   },
   "environment_selector": {
-    "type_to_filter": "输入以筛选",
+    "type_to_filter": "键入要过滤的内容",
     "no_environment": "无环境",
     "select_environment": "选择环境",
-    "others": "其他",
-    "no_permission_error": "您没有执行此操作的权限。",
+    "others": "其他的",
+    "no_permission_error": "您没有 权限 来执行此操作。",
     "read_only": "只读",
     "group_label": {
-      "pinned": "已固定到此集合",
+      "pinned": "固定到此 集合",
       "other": "其他环境"
     },
     "menu_options": {
-      "set_as_default": "设为默认",
+      "set_as_default": "设置为默认值",
       "unpin": "取消固定"
     },
     "pin_icon_tooltip": {
-      "unpin": "从集合取消固定",
-      "pin": "固定到集合"
+      "unpin": "从 集合 取消固定",
+      "pin": "固定到 集合"
     },
     "empty_state": {
-      "no_pins": "固定某个环境，以便在使用此集合时自动切换到它",
+      "no_pins": "固定 环境 以在使用此 集合 时自动切换到它",
       "no_environments": "未找到环境",
-      "no_environments_can_create": "未找到环境。<0>创建一个</0>。",
-      "no_environments_in_workspace_header": "没有环境",
-      "no_environments_in_workspace_body": "使用环境可轻松切换变量值，并在不同配置下测试您的 API。\n详细了解<0>环境</0>。",
+      "no_environments_can_create": "未找到环境。 <0>创建一个</0>。",
+      "no_environments_in_workspace_header": "无环境",
+      "no_environments_in_workspace_body": "使用环境轻松切换变量值并在不同的设置中测试您的 API。 \n了解有关<0>环境</0>的更多信息。",
       "create_environment": "创建环境",
-      "forbidden_environments_title": "管理员已撤销对环境的访问权限",
-      "forbidden_environments_message": "这可能是由于安全策略所致。请联系您的管理员以获取更多详情或帮助。"
+      "forbidden_environments_title": "对环境的访问被 管理员 撤销",
+      "forbidden_environments_message": "这可能是由于安全策略所致。请联系您的 管理员 以获取更多详细信息或帮助。"
     },
-    "default_environment_tooltip": "使用集合时会自动选择默认环境。",
+    "default_environment_tooltip": "使用 集合 时会自动选择默认 环境。",
     "dropdown": {
       "search_placeholder": "搜索",
       "add_button_tooltip": "创建环境",
-      "aria_label": "环境选择器。按 Enter 或空格键打开下拉菜单。"
+      "aria_label": "环境 选择器。按 Enter 或 Space 打开下拉菜单。"
     },
     "error_state": {
-      "message": "无法加载已固定的环境",
-      "try_again": "重试"
+      "message": "无法加载固定环境",
+      "try_again": "再试一次"
     },
     "loading_state": {
-      "message": "正在加载已固定的环境"
+      "message": "加载固定环境"
     },
     "onboarding": {
       "viewer": {
-        "header": "已为此集合固定合适的环境",
-        "body": "最适合该集合的环境已被固定并保持在列表顶部。请选择一个已固定的环境并重试。",
+        "header": "已为此 集合 固定合适的环境",
+        "body": "最适合 集合 的环境被固定并保留在列表顶部。选择固定的 环境 并重试。",
         "button": {
           "primary": "切换环境",
           "secondary": "关闭"
         }
       },
       "editor": {
-        "header": "📌 将此环境固定到集合",
-        "body": "通过固定环境，为集合推荐要使用的环境。一个环境可以固定到多个集合。",
+        "header": "📌 将此 环境 固定到 集合",
+        "body": "通过固定来建议与 集合 一起使用的环境。环境可以固定到多个 集合。",
         "button": {
           "primary": "让我试试",
-          "secondary": "稍后再说"
+          "secondary": "也许稍后"
         }
       }
     }
   },
   "network_trouble": {
     "title": "无法加载数据",
-    "description": "我们正在尝试与服务器建立连接。在您连接之前，您的数据可能不是最新的。",
+    "description": "我们正在尝试与我们的服务器建立连接。在您连接之前，您的数据可能不是最新的。",
     "reload": "重新加载"
   },
   "offline_constants": {
-    "title": "无法加载此标签页",
-    "description": "您需要联网才能访问此工作区中的所有资源。",
-    "banner_text": "在您离线期间，某些环境不可用。"
+    "title": "无法加载此选项卡",
+    "description": "您需要在线才能访问此 工作区 中的所有资源。",
+    "banner_text": "当您离线时，某些环境不可用。"
   },
   "variables_empty": {
     "base_text": {
-      "globals": "未添加全局变量",
-      "other_entity": "此{userFriendlyEntityName}中没有变量"
+      "globals": "没有添加全局变量",
+      "other_entity": "此 {userFriendlyEntityName} 中没有变量"
     },
-    "request_access_text": "请求对此{userFriendlyEntityName}的额外访问权限以添加变量"
+    "request_access_text": "Request额外访问这个{userFriendlyEntityName}来添加变量"
   },
   "secret_resolution": {
     "error": {
-      "disabled": "共享保险库当前已禁用。请联系您的团队管理员以请求访问权限。",
-      "not_found": "未找到 secret 引用",
-      "vault_inaccessible": "保险库无法访问"
+      "disabled": "共享 保险库 当前已禁用。请联系您的 团队 管理员以获取 请求 访问权限。",
+      "not_found": "未找到 密钥 参考",
+      "vault_inaccessible": "保险库 无法访问"
     },
     "warning": {
-      "domain_mismatch": "域名不匹配",
-      "disabled": "secret 已禁用",
-      "limit_reached": "已达到 secret 上限"
+      "domain_mismatch": "域不匹配",
+      "disabled": "密钥 已禁用",
+      "limit_reached": "密钥 达到限制"
     },
     "mutation": {
-      "not_supported": "不支持该操作",
-      "not_found": "未找到 secret",
+      "not_supported": "不支持操作",
+      "not_found": "密钥 未找到",
       "failed": "操作失败"
     }
   },
   "overview": {
-    "title": "概览"
+    "title": "概述"
   },
   "globals": {
     "title": "全局变量"
   },
   "monitor": {
-    "title": "监视器"
+    "title": "Monitor"
   },
   "import": {
     "title": "从 {serviceName} 导入 API",
@@ -212,16 +212,16 @@
       "title": "评论"
     },
     "vault": {
-      "title": "Postman 保险库"
+      "title": "Postman Vault"
     },
     "code": {
       "title": "代码"
     },
     "source_control": {
-      "title": "源代码管理"
+      "title": "源代码控制"
     },
     "activity_feed": {
-      "title": "活动动态"
+      "title": "活动提要"
     },
     "live_collection": {
       "title": "实时集合"
@@ -230,126 +230,126 @@
       "title": "代码生成"
     },
     "jira_issues": {
-      "title": "Jira 问题"
+      "title": "吉拉问题"
     },
     "info": {
       "title": "信息"
     },
     "network": {
       "title": "网络",
-      "failed": "失败",
+      "failed": "失败的",
       "column": {
         "method": "方法",
         "name": "名称",
         "status": "状态",
         "time": "时间"
       },
-      "search_placeholder": "按 URL 或方法筛选",
+      "search_placeholder": "按 URL 或方法过滤",
       "clear": "清除",
       "clear_tooltip": "清除网络日志",
       "create_collection": "创建集合",
-      "create_collection_count": "创建集合（{count}）",
-      "create_collection_tooltip": "从选定的请求创建新集合",
+      "create_collection_count": "创建 集合 ({count})",
+      "create_collection_tooltip": "从选定的请求创建一个新的 集合",
       "default_collection_name": "{host} 请求",
-      "default_collection_name_fallback": "已捕获的请求",
-      "collection_created": "已创建集合“{name}”",
-      "collection_failed": "无法创建集合。请重试。",
-      "no_matches": "没有请求与您的筛选条件匹配。",
+      "default_collection_name_fallback": "捕获的请求",
+      "collection_created": "已创建 Collection“{name}”",
+      "collection_failed": "无法创建 集合。请再试一次。",
+      "no_matches": "没有请求符合您的过滤器。",
       "row_tooltip": "在 Postman 中打开",
-      "truncated": "正在显示前 {count} 个请求。重新加载页面以重新开始。",
+      "truncated": "显示第一个 {count} 请求。重新加载页面以重新开始。",
       "empty_state": {
         "title": "尚未捕获任何请求",
-        "description": "此页面发出的 XHR 和 fetch 请求会显示在这里。与页面交互或重新加载以捕获流量。"
+        "description": "此页面发出的 XHR 和获取请求显示在此处。与页面交互或重新加载以捕获流量。"
       }
     },
     "details": {
-      "title": "详情"
+      "title": "细节"
     },
     "example_details": {
-      "title": "示例详情"
+      "title": "示例详细信息"
     },
     "request_details": {
-      "title": "请求详情"
+      "title": "请求 详细信息"
     },
     "file_info": {
       "title": "文件信息"
     },
     "mock_server_details": {
-      "title": "模拟服务器详情"
+      "title": "Mock 服务器详细信息"
     },
     "monitor_details": {
-      "title": "监视器详情"
+      "title": "监控 详细信息"
     },
     "merge_conditions": {
-      "title": "合并条件"
+      "title": "合并 条件"
     },
     "devtool": {
-      "title": "开发者工具"
+      "title": "开发工具"
     },
     "configuration": {
       "title": "配置"
     },
     "fork": {
-      "title": "复刻",
+      "title": "分叉",
       "offline_state": {
-        "title": "请检查您的连接",
-        "message": "请联网以查看您的复刻列表。",
+        "title": "检查您的连接",
+        "message": "上网查看您的分叉列表。",
         "retry": "重试"
       },
       "error_state": {
         "forbidden": {
-          "title": "无法查看复刻",
-          "message": "您没有查看此 {modelName} 复刻的权限"
+          "title": "无法查看分叉",
+          "message": "您没有 权限 来查看此 {modelName} 的分叉"
         },
         "server_error": {
-          "title": "无法加载复刻列表",
-          "description": "请尝试重新获取复刻"
+          "title": "无法加载分叉列表",
+          "description": "尝试重新获取分叉"
         }
       },
       "empty_state": {
         "no_fork": {
-          "title": "没有复刻",
-          "description": "从此 {modelName} 创建的所有复刻都将显示在这里。详细了解<1><0><0>复刻</0></0></1>"
+          "title": "没有分叉",
+          "description": "从该 {modelName} 创建的所有分叉都将出现在此处。了解有关 <1><0><0>forks</0></0></1> 的更多信息"
         },
         "hidden_fork": {
-          "title": "{name} 的 {count, plural, =1 {# 个复刻} other { # 个复刻}}。",
-          "description": "它们不可见，因为它们位于您无权访问的工作区中。详细了解<1><0><0>复刻</0></0></1>"
+          "title": "{name} 的 {count, plural, =1 {# 个分叉} other {# 个分叉}}。",
+          "description": "它们不可见，因为它们位于您无权访问的工作区中。了解有关 <1><0><0>forks</0></0></1> 的更多信息"
         }
       },
       "ready_state": {
         "description": {
-          "total_forks": "{name} 的 {count, plural, =1 {# 个复刻} other { # 个复刻}}。",
-          "hidden_forks": "其中有 {count} 个不在此列表中，因为它们位于您无权访问的工作区中。"
+          "total_forks": "{name} 的 {count, plural, =1 {# 个分叉} other {# 个分叉}}。",
+          "hidden_forks": "其中 {count} 不在此列表中，因为它们位于您无权访问的工作区中。"
         },
         "body": {
           "helper_text": "最近创建：",
           "created_on": "创建于：{dateObj, date, medium}"
         },
         "footer": {
-          "view_all": "查看所有复刻",
+          "view_all": "查看所有分叉",
           "view_details": "查看详情"
         }
       }
     },
     "offline_context_bar_view": {
       "heading": "无法加载",
-      "description": "您需要联网才能访问此工作区中的所有功能。"
+      "description": "您需要在线才能访问此 工作区 中的所有功能。"
     },
     "pull_request": {
       "title": "拉取请求",
       "header": {
         "title": "拉取请求",
-        "view_merge_settings": "查看合并条件",
-        "no_view_permissions_merge_settings": "您没有查看合并条件的权限",
+        "view_merge_settings": "查看 合并 条件",
+        "no_view_permissions_merge_settings": "您没有 权限 来查看 合并 条件",
         "filter_button": {
-          "tooltip": "筛选拉取请求",
-          "tooltip_body": "显示"
+          "tooltip": "过滤拉取请求",
+          "tooltip_body": "展示"
         },
         "filters": {
-          "open_requests": "开放的请求",
+          "open_requests": "开放请求",
           "approved_requests": "已批准的请求",
-          "merged_requests": "已合并的请求",
-          "declined_requests": "已拒绝的请求"
+          "merged_requests": "合并请求",
+          "declined_requests": "拒绝请求"
         }
       },
       "description": "跟踪此 {modelDisplayName} 的所有拉取请求。",
@@ -361,66 +361,66 @@
         "title": "目前没有拉取请求",
         "message": "查看并跟踪此 {modelDisplayName} 上的所有拉取请求。",
         "title_v2": "没有拉取请求",
-        "message_v2": "为此 {forkStatus} {entityName} 创建拉取请求后，您将可以在此处管理它。详细了解<6><0><0>拉取请求</0></0></6>",
+        "message_v2": "一旦为此 {forkStatus} {entityName} 创建了 拉取请求，您就可以从这里对其进行管理。了解有关 <6><0><0>pull requests</0></0></6> 的更多信息",
         "button": "创建拉取请求",
-        "button_disabled_tooltip": "您没有创建拉取请求的权限"
+        "button_disabled_tooltip": "您没有 权限 来创建 拉取请求"
       },
       "filtered_empty_state": {
         "title": "未找到拉取请求",
-        "message": "更改筛选条件后重试。"
+        "message": "更改过滤器并重试。"
       },
       "pr_list": {
         "last_updated": "最后更新："
       },
       "offline_state": {
-        "title": "请检查您的连接",
-        "message": "请联网以查看您的拉取请求列表"
+        "title": "检查您的连接",
+        "message": "在线查看您的 拉取请求 列表"
       },
       "description_v2": "管理与此 {forkStatus} {modelDisplayName} 相关的所有拉取请求。",
       "out_going_pr": {
         "heading": "已发送以供审核",
         "empty_state": {
-          "message": "目前，没有从此复刻的 {modelDisplayName} 创建的开放拉取请求。 ",
+          "message": "目前，没有从这个分叉的 {modelDisplayName} 创建开放的 拉取请求。",
           "view_closed_pr": "查看已关闭的拉取请求"
         }
       },
       "incoming_pr": {
-        "heading": "已收到待审核",
+        "heading": "已收到审核",
         "empty_state": {
           "title": {
-            "filtered": "这些筛选条件没有结果",
-            "unfiltered": "没有待审核的拉取请求"
+            "filtered": "这些过滤器没有结果",
+            "unfiltered": "没有需要审查的拉取请求"
           },
           "message": {
-            "filtered": "没有符合所选筛选条件的拉取请求可显示。请调整或重置您的筛选设置。",
-            "reset_filters": "重置筛选条件",
-            "unfiltered": "如果有拉取请求请求审核此 {forkStatus} {modelDisplayName}，您将可以在此处管理它。"
+            "filtered": "对于所选过滤器，没有可显示的拉取请求。调整或重置您的过滤器设置。",
+            "reset_filters": "重置过滤器",
+            "unfiltered": "如果请求 拉取请求 对此 {forkStatus} {modelDisplayName} 进行审核，您将能够从此处进行管理。"
           }
         }
       },
       "pr_list_v2": {
         "parent_entity_info": {
-          "destination": "目标："
+          "destination": "目的地："
         },
         "pr_list_item": {
           "reviewer": {
             "no_reviewer": {
-              "tooltip": "尚未为此拉取请求分配审核者。",
-              "label": "没有审核者"
+              "tooltip": "尚未为该 拉取请求 分配审阅者。",
+              "label": "没有审稿人"
             },
-            "label": "{count, plural, =1 {# 位审核者} other {# 位审核者}}",
+            "label": "{count, plural, =1 {# 位审阅者} other {# 位审阅者}}",
             "anonymous": {
-              "tooltip": "账户设为私密的审核者将保持匿名。",
-              "label": "{count, plural, =1 {# 位匿名审核者} other {# 位匿名审核者}}"
+              "tooltip": "帐户设置为 私有 的审阅者保持匿名。",
+              "label": "{count, plural, =1 {# 位匿名审阅者} other {# 位匿名审阅者}}"
             },
-            "you": "您"
+            "you": "你"
           },
           "group_reviewer": {
             "no_reviewer": {
-              "tooltip": "尚未为此拉取请求分配群组审核者。",
-              "label": "没有群组审核者"
+              "tooltip": "尚未为该 拉取请求 分配任何小组审阅者。",
+              "label": "没有小组审稿人"
             },
-            "label": "{count, plural, =1 {# 个群组审核者} other {# 个群组审核者}}"
+            "label": "{count, plural, =1 {# 个小组审阅者} other {# 个小组审阅者}}"
           },
           "last_updated": "最后更新"
         }
@@ -435,13 +435,13 @@
         "header": {
           "options": {
             "wrap_button": {
-              "tooltip": "自动换行"
+              "tooltip": "换行代码"
             },
             "tooltip": "选项",
             "copy": {
               "tooltip": {
                 "copied": "已复制",
-                "copy": "复制代码片段"
+                "copy": "复制片段"
               }
             },
             "delete": {
@@ -455,110 +455,110 @@
       }
     },
     "changelog": {
-      "title": "更改日志",
-      "close": "关闭更改日志",
+      "title": "变更日志",
+      "close": "关闭更新日志",
       "blank_state": {
-        "title": "无法加载更改日志",
-        "description": "无法找到该集合。",
-        "try_again": "重试"
+        "title": "无法加载 更新日志",
+        "description": "无法找到 集合。",
+        "try_again": "再试一次"
       },
       "error_state": {
-        "title": "无法加载 {modelName} 更改日志",
-        "description": "加载更改日志时出错。",
-        "try_again": "重试"
+        "title": "无法加载 {modelName} 更新日志",
+        "description": "加载 更新日志 时出现问题。",
+        "try_again": "再试一次"
       },
       "offline_state": {
-        "title": "请检查您的连接",
-        "description": "请联网以查看更改日志"
+        "title": "检查您的连接",
+        "description": "上网查看更新日志"
       },
       "empty_state": {
-        "title": "未找到日志",
+        "title": "没有找到日志",
         "description": "对 {modelName} 进行一些更改以查看更改日志"
       },
-      "reload_changes": "重新加载更改日志",
+      "reload_changes": "重新加载 更新日志",
       "load_more": "加载更多",
-      "user_info_button": "查看用户信息（{userCount, number} {userCount, plural, one {位用户} other {位用户}}）",
+      "user_info_button": "查看用户信息（{userCount, number} {userCount, plural, one {用户} other {用户}}）",
       "date_group": {
-        "expand_aria_label": "展开 {date} 的更改日志",
-        "collapse_aria_label": "折叠 {date} 的更改日志",
+        "expand_aria_label": "展开 更新日志 为 {dateObj, date, long}",
+        "collapse_aria_label": "折叠 更新日志 为 {dateObj, date, long}",
         "group_children": {
           "tooltip": {
-            "offline": "您必须联网才能加载更多更改",
-            "load_more": "加载更多更改"
+            "offline": "需要联网才能加载更多变更",
+            "load_more": "加载更多变更"
           }
         },
         "entry": {
           "header": {
             "time": "{dateObj, time, short}",
             "tooltip": {
-              "auto_update": "由实时集合自动更新",
-              "reviewed_update": "实时集合更新已由用户审核"
+              "auto_update": "由 Live Collection 自动更新",
+              "reviewed_update": "用户已审核的 Live Collection 更新"
             },
             "menu_list": {
-              "restore": "恢复到此更改",
+              "restore": "恢复到此变更",
               "edit_tag": "编辑标签",
               "delete_tag": "删除标签",
               "add_tag": "添加标签",
               "edit_note": "编辑备注",
               "delete_note": "删除备注",
               "add_note": "添加备注",
-              "hide_diff": "对此更改隐藏差异",
+              "hide_diff": "隐藏此变更的差异",
               "show_diff": "向所有用户显示差异"
             }
           },
           "tag": {
             "placeholder": "添加标签",
             "label": "标签",
-            "helper_text": "标签会为此更改创建一个命名引用"
+            "helper_text": "标签会为此变更创建一个命名引用"
           },
           "note": {
-            "placeholder": "添加备注以说明此更改",
+            "placeholder": "添加备注以说明此变更",
             "label": "备注"
           },
           "diff": {
             "close_diff": "关闭差异",
             "view_diff": "查看差异",
-            "info_tooltip": "只有此 {model} 的编辑者才能查看差异。其他用户看不到。",
+            "info_tooltip": "只有此 {model} 的编辑者才能查看差异，其他用户不可见。",
             "no_permission": {
               "diff_hidden": "差异已隐藏",
-              "tooltip": "只有具有编辑权限的用户才能查看此差异"
+              "tooltip": "只有拥有编辑权限的用户才能查看此差异"
             },
             "view_more": "查看更多",
-            "offline_tooltip": "您必须联网才能查看详细差异"
+            "offline_tooltip": "需要联网才能查看详细差异"
           },
           "model": {
             "button": {
               "cancel": "取消",
               "submit": "提交"
             },
-            "offline_tooltip": "您必须联网才能执行此操作",
+            "offline_tooltip": "需要联网才能执行此操作",
             "delete_tag": {
-              "content": "这将永久删除添加到该更改的标签",
+              "content": "这将永久删除添加到该变更的标签",
               "header": "删除标签？",
               "confirm_button": "删除",
               "confirm_button_loading": "正在删除…"
             },
             "delete_note": {
-              "content": "这将永久删除添加到该更改的备注",
+              "content": "这将永久删除添加到该变更的备注",
               "header": "删除备注？",
               "confirm_button": "删除",
               "confirm_button_loading": "正在删除…"
             },
             "restore_changes": {
-              "header": "恢复更改",
+              "header": "恢复变更",
               "confirm_button": "恢复",
               "confirm_button_loading": "正在恢复…",
-              "content": "此 {model} 将恢复到 {dateTime} 的更改。您确定要恢复吗？"
+              "content": "此 {model} 将恢复到 {dateTime} 的变更。确定要恢复吗？"
             },
             "hide_diff": {
-              "header": "对此更改隐藏差异？",
-              "content": "所有有权访问此工作区的用户都能看到该更改，但差异将被隐藏。只有此 {model} 的编辑者才能查看差异。",
+              "header": "隐藏此变更的差异？",
+              "content": "所有可访问此 Workspace 的用户都能看到该变更，但差异将被隐藏。只有此 {model} 的编辑者才能查看差异。",
               "confirm_button": "隐藏差异",
               "confirm_button_loading": "正在隐藏…"
             },
             "show_diff": {
               "header": "向所有用户显示差异？",
-              "content": "所有有权访问此工作区的用户都将能够查看此更改的差异。",
+              "content": "所有可访问此 Workspace 的用户都将能够查看此变更的差异。",
               "confirm_button": "显示差异",
               "confirm_button_loading": "正在取消隐藏…"
             }
@@ -566,31 +566,31 @@
           "toast": {
             "restore_success": {
               "title": "已成功恢复 {model}",
-              "description": "您的 {model} 已成功恢复到 {dateTime} 的更改。"
+              "description": "您的 {model} 已成功恢复到 {dateTime} 的变更。"
             },
             "restore_failed": {
               "title": "恢复 {model} 失败",
-              "description": "出错了。请稍后重试。"
+              "description": "出了点问题，请稍后重试。"
             },
             "hide_diff_success": {
-              "title": "已对查看者隐藏此更改的差异"
+              "title": "此变更的差异已对查看者隐藏"
             },
             "hide_diff_failed": {
-              "title": "为更改日志隐藏差异失败",
-              "description": "出错了。请稍后重试。"
+              "title": "隐藏变更日志差异失败",
+              "description": "出了点问题，请稍后重试。"
             },
             "unhide_diff_success": {
-              "title": "所有有权访问此工作区的用户现在都能看到此差异"
+              "title": "所有可访问此 Workspace 的用户现在都能查看此差异"
             },
             "unhide_diff_failed": {
-              "title": "为更改日志取消隐藏差异失败",
-              "description": "出错了。请稍后重试。"
+              "title": "取消隐藏变更日志差异失败",
+              "description": "出了点问题，请稍后重试。"
             }
           }
         }
       },
-      "nested_entries_label": "嵌套的更改日志条目",
-      "load_more_region_label": "加载更多更改日志条目"
+      "nested_entries_label": "嵌套的变更日志条目",
+      "load_more_region_label": "加载更多变更日志条目"
     }
   },
   "snippets": {
@@ -600,8 +600,8 @@
       "tests": "测试"
     },
     "get_env_var": {
-      "name": "获取环境变量",
-      "description": "获取一个环境变量"
+      "name": "获取 Environment 变量",
+      "description": "获取一个 Environment 变量"
     },
     "get_global_var": {
       "name": "获取全局变量",
@@ -609,46 +609,46 @@
     },
     "get_var": {
       "name": "获取变量",
-      "description": "获取一个变量（环境或全局）"
+      "description": "获取一个变量（Environment 或全局）"
     },
     "get_collection_var": {
-      "name": "获取集合变量",
-      "description": "获取一个集合变量"
+      "name": "获取 Collection 变量",
+      "description": "获取一个 Collection 变量"
     },
     "set_env_var": {
-      "name": "设置环境变量",
-      "description": "设置一个环境变量"
+      "name": "设置 Environment 变量",
+      "description": "设置一个 Environment 变量"
     },
     "set_global_var": {
       "name": "设置全局变量",
       "description": "设置一个全局变量"
     },
     "set_collection_var": {
-      "name": "设置集合变量",
-      "description": "设置一个集合变量"
+      "name": "设置 Collection 变量",
+      "description": "设置一个 Collection 变量"
     },
     "clear_env_var": {
-      "name": "清除环境变量",
-      "description": "如果已设置，则清除一个环境变量"
+      "name": "清除 Environment 变量",
+      "description": "如果已设置，则清除该 Environment 变量"
     },
     "clear_global_var": {
       "name": "清除全局变量",
-      "description": "如果已设置，则清除一个全局变量"
+      "description": "如果已设置，则清除该全局变量"
     },
     "clear_collection_var": {
-      "name": "清除集合变量",
-      "description": "如果已设置，则清除一个集合变量"
+      "name": "清除 Collection 变量",
+      "description": "如果已设置，则清除该 Collection 变量"
     },
     "send_request": {
       "name": "发送 HTTP 请求",
       "description": "发送一个请求"
     },
     "run_collection_request": {
-      "name": "从集合发送 HTTP 请求",
-      "description": "发送一个请求并执行其预请求脚本和后置响应脚本"
+      "name": "从 Collection 发送 HTTP 请求",
+      "description": "发送请求并执行其请求前脚本和响应后脚本"
     },
     "test_response_status_code": {
-      "name": "状态码：码值为 200",
+      "name": "状态码：状态码为 200",
       "description": "编写一个基本的状态码检查"
     },
     "test_response_body_sub_string": {
@@ -660,11 +660,11 @@
       "description": "编写一个基本的 JSON 值检查"
     },
     "test_response_body_string": {
-      "name": "响应体：等于某个字符串",
+      "name": "响应体：等于指定字符串",
       "description": "编写一个响应体字符串检查"
     },
     "test_response_headers": {
-      "name": "响应头：Content-Type 头检查",
+      "name": "响应头：Content-Type 请求头检查",
       "description": "编写一个基本的响应头检查"
     },
     "test_response_time": {
@@ -677,21 +677,21 @@
     },
     "test_response_status_name": {
       "name": "状态码：状态码名称包含字符串",
-      "description": "编写一个基本的响应码字符串检查"
+      "description": "编写一个基本的响应状态码字符串检查"
     },
     "convert_response_xml_json": {
       "name": "响应体：将 XML 响应体转换为 JSON 对象",
       "description": "将响应体从 JSON 转换为 XML"
     },
     "tv4_validate_json": {
-      "name": "使用 Tiny Validator 处理 JSON 数据",
-      "description": "使用 Tiny Validator 根据 schema 验证响应"
+      "name": "使用 Tiny Validator 校验 JSON 数据",
+      "description": "使用 Tiny Validator 根据 Schema 校验响应"
     },
     "send_http_request": {
       "name": "发送 HTTP 请求"
     },
     "run_multi_protocol_collection_request": {
-      "name": "从集合发送请求"
+      "name": "从 Collection 发送请求"
     },
     "set_var": {
       "name": "设置变量"
@@ -706,13 +706,13 @@
       "name": "测试响应时间是否低于 200ms"
     },
     "test_specific_response_headers": {
-      "name": "测试特定的响应头是否存在"
+      "name": "测试特定请求头是否存在"
     },
     "test_response_data": {
-      "name": "测试响应是否具有特定属性"
+      "name": "测试响应是否包含特定属性"
     },
     "test_response_data_against_schema": {
-      "name": "根据 JSON schema 测试响应"
+      "name": "根据 JSON Schema 测试响应"
     }
   },
   "action_menu": {
@@ -722,13 +722,13 @@
       "input_placeholder": "查找变量",
       "button_label": "设为新变量",
       "overridden_info": {
-        "text_label": "此变量有一个或多个重复项将其覆盖。",
-        "text_link": "详细了解作用域层级"
+        "text_label": "该变量存在一个或多个重复项，将其覆盖。",
+        "text_link": "了解有关作用域层级的更多信息"
       },
       "policy_secured_info": {
-        "description_local": "管理员策略已在您的本地保险库中保护此值。",
-        "description_shared": "管理员策略已在您的共享保险库中保护此值。",
-        "request_exception_button": "请求例外"
+        "description_local": "管理员 策略已在您本地的 保险库 中确保此值。",
+        "description_shared": "管理员 策略已在您的共享 保险库 中确保此值的安全。",
+        "request_exception_button": "请求 异常"
       },
       "info_row": {
         "initial": "初始值",
@@ -746,53 +746,53 @@
         "button": {
           "default": "设置变量",
           "saving": "正在设置变量",
-          "dismiss": "不，谢谢"
+          "dismiss": "不用了"
         }
       },
       "scope_dropdown": {
         "button_label": "选择作用域",
         "menu_item": {
           "global": "全局",
-          "vault": "保险库",
-          "environment": "环境",
-          "collection": "集合"
+          "vault": "Vault",
+          "environment": "Environment",
+          "collection": "Collection"
         }
       },
       "var_name_error_tooltip": "变量名称已被使用"
     },
     "comment": {
       "button_label": "评论",
-      "unsaved_changes_tooltip": "保存此请求以添加评论。",
-      "discard_changes_tooltip": "您有未保存的 {entityType} 更改。放弃这些更改以添加评论。",
-      "comment_disabled_tooltip": "您需要成为编辑者才能保存并评论此请求。"
+      "unsaved_changes_tooltip": "保存此请求后才能添加评论。",
+      "discard_changes_tooltip": "您有未保存的 {entityType} 更改。放弃这些更改后即可添加评论。",
+      "comment_disabled_tooltip": "您需要具有编辑者权限才能保存并评论此请求。"
     },
-    "error_toast": "出错了。请检查 DevTools。"
+    "error_toast": "出了点问题，请查看 DevTools。"
   },
   "agent": {
-    "browser": "浏览器代理",
-    "desktop": "桌面代理",
-    "cloud": "云代理",
-    "interceptor": "拦截器代理",
-    "updating": "正在更新代理"
+    "browser": "Browser Agent",
+    "desktop": "Desktop Agent",
+    "cloud": "Cloud Agent",
+    "interceptor": "Interceptor Agent",
+    "updating": "正在更新 Agent"
   },
   "unsaved-changes-modal": {
     "details": {
       "modal_header": "保存更改？",
       "do_not_close": "不要关闭",
-      "fork_collection": "复刻集合以保存更改",
-      "fork_collection_content": "此请求有未保存的更改，如果您关闭此标签页，这些更改将丢失。将其复刻到您的工作区以保存您的更改。",
+      "fork_collection": "Fork Collection 以保存更改",
+      "fork_collection_content": "此请求有未保存的更改，关闭该标签页将丢失这些更改。将其 Fork 到您的 Workspace 以保存更改。",
       "close_discard": "关闭并放弃更改",
       "close_tab": "关闭含有未保存更改的标签页？",
-      "auto_save_error": "{name} 标签页中的更改尚未保存，因为我们无法连接到服务器。",
-      "default_error": "{name} 中的更改尚未保存，将在您重新联网后保存。",
+      "auto_save_error": "由于无法连接到服务器，{name} 标签页中的更改尚未保存。",
+      "default_error": "{name} 中的更改尚未保存，将在您重新联网后自动保存。",
       "always_discard": "关闭标签页时始终放弃未保存的更改",
-      "confirmation_help_text": "关闭标签页时，系统将不再提示您保存更改。您可以随时在设置中更改此选项。",
-      "offline_tooltip": "您可以在重新联网后执行此操作。",
+      "confirmation_help_text": "关闭标签页时将不再提示您保存更改。您可以随时在设置中更改此选项。",
+      "offline_tooltip": "重新联网后即可执行此操作。",
       "no_permission_tooltip": "您没有执行此操作的权限。",
-      "something_went_wrong": "保存您的偏好设置时出错",
+      "something_went_wrong": "保存偏好设置时出了点问题",
       "modal_content_for_close": "<0>{collectionName}</0> 有未保存的更改。{subText}",
       "conflict_message": "此 {modelType} 已在另一个标签页中被修改。保存将覆盖那些更改。",
-      "save_changes": "保存这些更改以避免丢失您的工作。",
+      "save_changes": "保存这些更改以避免丢失您的工作内容。",
       "modal_content_for_save": "<0>{collectionName}</0> {subText}",
       "modified_from_another_tab": "已在另一个标签页中被修改。保存将覆盖该 {modelType}。"
     },
@@ -803,8 +803,8 @@
       "save": "保存",
       "discard_changes": "放弃更改",
       "overwrite": "保存并覆盖",
-      "saves_as_new": "另存为新的 {modelType}",
-      "fork_collection": "复刻集合"
+      "saves_as_new": "另存为新 {modelType}",
+      "fork_collection": "Fork Collection"
     }
   },
   "tab_title_status": {
@@ -813,7 +813,7 @@
   },
   "tab_search": {
     "recently_closed": "最近关闭",
-    "fallback_label": "无标题",
+    "fallback_label": "未命名",
     "placeholder_text": "搜索标签页",
     "empty_state_text": "没有可显示的标签页",
     "empty_state_no_open_tabs": "没有打开的标签页",
@@ -824,6 +824,6 @@
       "create": "创建",
       "cancel": "取消"
     },
-    "entity_is_empty": "此{entity, select, collection {集合} folder {文件夹} api {API} other {}}为空"
+    "entity_is_empty": "此{entity, select, collection {Collection} folder {文件夹} api {API} other {}}为空"
   }
 }

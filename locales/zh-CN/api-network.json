@@ -1,75 +1,75 @@
 {
   "fork": {
-    "fork_label_with_username": "{username} 的复刻",
-    "fork_label": "我的复刻",
-    "page_title": "复刻集合 | Postman",
+    "fork_label_with_username": "{username} 的 fork",
+    "fork_label": "我的 fork",
+    "page_title": "Fork Collection | Postman",
     "fork_collection_error": {
-      "title": "您已离线",
-      "description": "联网后即可复刻该集合。"
+      "title": "您离线",
+      "description": "上线后，您将能够 fork 该 Collection。"
     },
     "update_profile_modal": {
-      "description": "要从公共工作区中的集合创建复刻，您必须将个人资料设为公开。系统将对您的个人资料进行以下更改。",
-      "error": "要从公共工作区复刻集合，您需要设置好公开的个人资料。"
+      "description": "要从公开 Workspace 中的 Collection 创建 fork，您必须将您的个人资料设为公开。您的个人资料将发生以下更改。",
+      "error": "要从公开 Workspace fork Collection，您需要设置公开个人资料。"
     },
-    "create_fork_error": "尝试复刻集合时出错！",
+    "create_fork_error": "尝试 fork 该 Collection 时发生了一些错误！",
     "request_access": {
-      "sent_to_team_admin": "您的加入请求已发送给团队管理员。",
-      "sent_to_workspace_admin": "您的访问请求已发送给工作区管理员。",
-      "access_not_enabled": "此资源未启用访问请求。",
+      "sent_to_team_admin": "您的加入请求已发送到团队管理员。",
+      "sent_to_workspace_admin": "您的访问权限请求已发送至 Workspace 管理员。",
+      "access_not_enabled": "请求 未启用对此资源的访问。",
       "failed_to_send": "发送请求失败。"
     },
     "error_state": {
       "can_not_reach": {
-        "title": "无法连接到 API Network",
-        "description": "可能存在连接问题。请确保您已联网并重试。"
+        "title": "无法访问 API 网络",
+        "description": "可能存在连接问题。确保您在线并重试。"
       },
       "not_found": {
-        "title": "集合不存在",
-        "description": "此集合似乎已被删除或不再公开"
+        "title": "Collection 不存在",
+        "description": "此 Collection 似乎已被删除或不再是公开状态。"
       },
       "unauthorized": {
-        "title": "您没有访问权限",
-        "description": "请申请访问权限，或切换到有权限的账户。您当前登录的账户为 {email}",
+        "title": "您无权访问",
+        "description": "请求访问权限，或切换到有权限的帐户。您以 {email} 身份登录",
         "primary_actions": {
-          "request_access": "申请访问权限",
-          "requested": "已申请"
+          "request_access": "请求 访问",
+          "requested": "已请求"
         },
         "secondary_actions": {
           "switch_account": "切换账户"
         }
       },
       "workspace": {
-        "title": "无法获取用户工作区",
-        "description": "我们无法获取用户工作区的信息。请重试。"
+        "title": "无法获取用户 Workspace",
+        "description": "我们无法获取有关用户 Workspace 的信息。请再试一次。"
       },
       "not_allowed_to_fork": {
-        "description": "您没有权限复刻到此团队的工作区中。",
-        "no_workspaces_description": "您没有可复刻到的工作区。请创建一个工作区以开始。",
-        "no_workspaces_no_permission_description": "您没有可复刻到的工作区。请联系您的团队管理员获取工作区访问权限。",
-        "create_workspace_button": "创建工作区",
+        "description": "您没有权限 fork 到此团队的 Workspace。",
+        "no_workspaces_description": "您没有任何可以 fork 进入的 Workspace。创建一个 Workspace 以开始。",
+        "no_workspaces_no_permission_description": "您没有任何可以 fork 进入的 Workspace。请联系您的团队管理员以获取 Workspace 访问权限。",
+        "create_workspace_button": "创建 Workspace",
         "button_text": "返回探索"
       }
     },
     "heading": "复刻 {modelDisplayName}",
-    "source_module_label": "源 {modelDisplayName}",
+    "source_module_label": "来源 {modelDisplayName}",
     "fork_creation_form": {
-      "description": "复刻会创建 {modelType} 的副本，使您能够在不影响原件的情况下进行更改。详细了解<3>复刻</3>。",
-      "link_label": "复刻",
-      "helper_text": "用于将复刻与原始集合区分开来。",
-      "fork_label": "复刻标签",
-      "workspace_label": "工作区",
-      "workspace_helper_text": "复刻将在所选工作区中创建。",
-      "workspace_selector_restrict_fork_message": "无法在此处复刻",
+      "description": "分叉会创建 {modelType} 的副本，并使您能够在不影响原始文件的情况下执行更改。了解有关 <3>forks</3> 的更多信息。",
+      "link_label": "分叉",
+      "helper_text": "从原始 Collection 中识别此 fork。",
+      "fork_label": "Fork 标签",
+      "workspace_label": "Workspace",
+      "workspace_helper_text": "fork 将在选定的 Workspace 中创建。",
+      "workspace_selector_restrict_fork_message": "这里不能 fork",
       "auto_sync_changes_label": "自动拉取更改",
       "auto_sync_changes_checkbox_label": "从源 {modelDisplayName} 自动拉取更改",
       "notifications_label": "通知",
-      "notifications_checkbox_label": "关注源集合以获取更新通知",
-      "notifications_checkbox_label_forked": "关注复刻的集合以获取更新通知",
-      "notifications_checkbox_info_text": "您将收到关于原始集合更改的通知。",
+      "notifications_checkbox_label": "关注来源 Collection 以获取更新通知",
+      "notifications_checkbox_label_forked": "关注分叉 Collection 以获取更新通知",
+      "notifications_checkbox_info_text": "您将收到有关对原始 Collection 所做更改的通知。",
       "fork_confirm_button_label": "复刻 {modelDisplayName}",
-      "fork_confirm_button_disabled_tooltip": "您重新联网后即可执行此操作",
-      "select_workspace": "选择工作区",
-      "enter_fork_label": "输入复刻标签"
+      "fork_confirm_button_disabled_tooltip": "重新上线后即可执行此操作",
+      "select_workspace": "选择 Workspace",
+      "enter_fork_label": "输入 fork 标签"
     }
   }
 }

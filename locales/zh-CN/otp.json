@@ -1,8 +1,8 @@
 {
   "page": {
-    "heading": "验证您的账户",
-    "loading": "正在发送验证码…",
-    "register_error": "我们暂时无法发送验证码。请重试。"
+    "heading": "验证您的帐户",
+    "loading": "正在发送您的验证码...",
+    "register_error": "我们现在无法发送验证码。请再试一次。"
   },
   "registration_failure": {
     "continue_cta": "继续前往 Postman"
@@ -15,16 +15,16 @@
   "form": {
     "code_label": "验证码",
     "code_placeholder": "123456",
-    "description": "我们已向 <bold>{email}</bold> 发送了验证码",
+    "description": "我们已将验证码发送至<bold>{email}</bold>",
     "submit_button": "验证账户",
-    "resend_prompt": "没有收到邮件？",
-    "resend_button": "重新发送验证码",
-    "resend_button_with_cooldown": "{seconds} 秒后可重新发送验证码",
-    "resend_limit_reached": "您已达到本次验证请求的重新发送次数上限。",
-    "restart_button": "发送新验证码",
-    "session_expired": "您的验证会话已过期。请发送新验证码以继续。",
+    "resend_prompt": "没有收到电子邮件？",
+    "resend_button": "重新发送代码",
+    "resend_button_with_cooldown": "{seconds} 秒后重新发送代码",
+    "resend_limit_reached": "您已达到此验证请求的重新发送限制。",
+    "restart_button": "发送新代码",
+    "session_expired": "您的验证 会话 已过期。发送新代码以继续。",
     "successful_banner": "成功！",
-    "error_code_length": "验证码必须为六位数字。",
-    "error_generic": "出错了。请重试。"
+    "error_code_length": "验证码必须包含六位数字。",
+    "error_generic": "出了点问题。请再试一次。"
   }
 }

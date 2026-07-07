@@ -1,0 +1,51 @@
+{
+  "workbench_tab": {
+    "title": "合并 Workspace"
+  },
+  "sidebar": {
+    "changes_section_label": "更改",
+    "files_section_label": "文件",
+    "no_entity_changes": "未检测到实体更改。",
+    "entity_aria_label": "{entityType}：{name}",
+    "status_added": "已添加",
+    "status_deleted": "已删除",
+    "status_modified": "已修改",
+    "status_unreadable": "无法读取",
+    "entity_type_collection": "Collection",
+    "entity_type_environment": "Environment",
+    "entity_type_spec": "规范",
+    "empty_title": "没有需要查看的更改",
+    "empty_description": "从云端打开草稿 Workspace，即可在此查看其更改。",
+    "loading_description": "正在加载更改",
+    "error_title": "更改加载失败"
+  },
+  "diff_body": {
+    "header_title": "合并更改",
+    "empty_title": "没有可合并的更改",
+    "empty_description": "草稿与父 Workspace 已同步。",
+    "group_heading_collections": "Collections",
+    "group_heading_environments": "Environments",
+    "group_heading_specs": "规范"
+  },
+  "file_diff": {
+    "status_added": "已添加",
+    "status_modified": "已修改",
+    "status_deleted": "已删除",
+    "status_unchanged": "未更改",
+    "status_unreadable": "无法读取",
+    "no_changes": "无更改",
+    "unreadable_message": "此文件无法读取，因此无法显示其更改。",
+    "lazy_load_hint": "文件滚动到可见区域时将加载差异。"
+  },
+  "line_diff": {
+    "compute_error_title": "计算差异时出错",
+    "no_changes": "无更改"
+  },
+  "display": {
+    "materialize_error_title": "草稿 Workspace 加载失败",
+    "materialize_error_title_with_id": "草稿 Workspace {workspaceId} 加载失败",
+    "unavailable_title": "Workspace 合并不可用",
+    "unavailable_load_description": "我们无法加载此草稿 Workspace 的更改，请重新打开草稿 Workspace 后重试。",
+    "diff_error_title": "合并差异计算失败"
+  }
+}

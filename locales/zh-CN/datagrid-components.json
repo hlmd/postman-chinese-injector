@@ -4,12 +4,12 @@
     "clear_selection": "清除选择"
   },
   "filter_bar": {
-    "search_placeholder": "搜索…",
+    "search_placeholder": "搜索...",
     "clear_all": "全部清除"
   },
   "filters_menu": {
     "button_label": "筛选",
-    "clear_filters": "清除筛选"
+    "clear_filters": "清除过滤器"
   },
   "view_toggle": {
     "label": "视图切换",
@@ -20,7 +20,7 @@
     "more_actions": "更多操作"
   },
   "select_cell": {
-    "select_all": "全选",
+    "select_all": "选择全部",
     "select_row": "选择行"
   }
 }

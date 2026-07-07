@@ -1,17 +1,20 @@
 {
-  "status_active": "活动",
-  "status_idle": "空闲",
+  "entity_type_icon": {
+    "label": "模拟"
+  },
+  "status_active": "活跃的",
+  "status_idle": "闲置的",
   "row_aria_label": "{name}（{status}）",
-  "copy_simulation_url_tooltip": "复制模拟 URL",
-  "more_actions_tooltip": "查看更多操作",
-  "menu_start": "启动",
+  "copy_simulation_url_tooltip": "复制模拟URL",
+  "more_actions_tooltip": "查看更多动作",
+  "menu_start": "开始",
   "menu_stop": "停止",
   "menu_copy_link": "复制链接",
   "menu_rename": "重命名",
   "menu_delete": "删除",
   "rename_input_aria_label": "重命名模拟",
   "delete_modal_heading": "删除模拟？",
-  "delete_modal_body": "您确定要删除此模拟吗？此操作无法撤消。",
+  "delete_modal_body": "您确定要删除该模拟吗？此操作无法撤消。",
   "delete_modal_cancel": "取消",
   "delete_modal_confirm": "删除"
 }

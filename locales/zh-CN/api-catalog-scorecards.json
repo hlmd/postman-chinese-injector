@@ -3,7 +3,7 @@
     "icon_button": {
       "tooltip": "删除记分卡",
       "aria_label": "删除记分卡",
-      "no_permission_tooltip": "删除操作需要 API 目录管理员角色"
+      "no_permission_tooltip": "删除访问权限需要 API 目录管理器 角色"
     },
     "confirm_modal": {
       "title": "删除记分卡",

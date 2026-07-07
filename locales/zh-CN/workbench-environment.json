@@ -1,43 +1,43 @@
 {
   "globals": {
-    "workbench_description": "工作区的全局变量是一组在该工作区作用域内始终可用的变量。该工作区中的任何人都可以查看和编辑它们。",
-    "learn_more_link": "了解有关全局变量的更多信息",
+    "workbench_description": "Workspace 的全局变量是一组在该 Workspace 范围内始终可用的变量，Workspace 中的任何人都可以查看和编辑它们。",
+    "learn_more_link": "了解更多关于全局变量的信息",
     "save_globals": "保存全局变量",
     "export_globals": "导出全局变量",
     "save": "保存",
     "export": "导出",
-    "sync_disabled_tooltip": "当前值无法保留，因为管理员已禁用同步。",
-    "initial_value_disabled_tooltip": "当前值无法重置，因为初始值已被禁用。"
+    "sync_disabled_tooltip": "由于管理员已禁用同步，当前值无法保留。",
+    "initial_value_disabled_tooltip": "由于初始值已被禁用，当前值无法重置。"
   },
-  "new_environment_placeholder": "新建环境",
+  "new_environment_placeholder": "新建 Environment",
   "content_pane": {
     "header": {
-      "placeholder": "环境名称",
+      "placeholder": "Environment 名称",
       "actions": {
         "fork": {
-          "disabled_tooltip": "请联网以创建复刻或查看现有复刻。",
+          "disabled_tooltip": "联网后即可创建复刻或查看现有复刻。",
           "label": "创建复刻"
         },
         "save": {
           "save_label": "保存",
-          "saving_label": "保存中…",
+          "saving_label": "正在保存…",
           "tooltip": {
-            "no_changes": "没有可保存的新更改。",
-            "save_environment": "保存环境"
+            "no_changes": "没有需要保存的新更改。",
+            "save_environment": "保存 Environment"
           },
-          "toast_error": "保存环境时出错。"
+          "toast_error": "保存 Environment 时出错。"
         },
         "share": {
-          "label": "共享",
+          "label": "分享",
           "tooltip": {
-            "share_environment": "共享环境"
+            "share_environment": "分享 Environment"
           }
         },
         "set_active": {
-          "disabled_text": "此环境已处于激活状态。"
+          "disabled_text": "此 Environment 已处于激活状态。"
         },
         "set_as_active": {
-          "label": "设为激活环境"
+          "label": "设为活动 Environment"
         },
         "move": {
           "label": "移动"
@@ -46,14 +46,14 @@
           "label": "导出"
         },
         "duplicate": {
-          "label": "创建副本"
+          "label": "复制"
         },
         "pull_request": {
-          "label": "创建拉取请求"
+          "label": "创建 Pull Request"
         },
         "merge": {
           "label": "合并更改",
-          "disabled_text": "此环境不是复刻。"
+          "disabled_text": "此 Environment 不是复刻。"
         },
         "pull_changes": {
           "label": "拉取更改",
@@ -66,34 +66,34 @@
           "label": "删除"
         },
         "remove_from_workspace": {
-          "disabled_text": "请联网以执行此操作。"
+          "disabled_text": "联网后才能执行此操作。"
         },
         "download": {
-          "disabled_text": "登录以执行此操作"
+          "disabled_text": "登录后才能执行此操作"
         },
         "disabled_text": {
-          "get_online": "请联网以执行此操作。",
-          "not_a_fork": "此环境不是复刻。"
+          "get_online": "联网后才能执行此操作。",
+          "not_a_fork": "此 Environment 不是复刻。"
         },
         "toast_error": {
-          "no_permission": "您没有执行此操作的权限"
+          "no_permission": "您没有权限执行此操作"
         }
       }
     },
     "request_permission_info_bar": {
-      "message": "请求访问权限以更新这些变量的共享值。您可以编辑本地值。"
+      "message": "申请权限以更新这些变量的共享值。您可以编辑本地值。"
     },
     "editor": {
-      "disable_persist_action_tooltip": "当前值无法保留，因为管理员已禁用同步。",
-      "disable_reset_action_tooltip": "当前值无法重置，因为初始值已被禁用。",
+      "disable_persist_action_tooltip": "由于管理员已禁用同步，当前值无法保留。",
+      "disable_reset_action_tooltip": "由于初始值已被禁用，当前值无法重置。",
       "variable_sync_disable_info_bar": {
         "title": {
           "disable_all": "已禁用同步所有变量的初始值",
           "disable_secret": "已禁用同步私密变量的值"
         },
         "description": {
-          "all_disabled": "为保护数据，您的团队管理员已禁用同步所有变量的初始值。使用这些初始值的模拟服务器、监视器和 Newman 将受到影响。",
-          "secret_disabled": "为保护私密数据，您的团队管理员已禁用同步私密变量的初始值。使用这些初始值的模拟服务器、监视器和 Newman 将受到影响。"
+          "all_disabled": "为保护数据，您的团队管理员已禁用同步所有变量的初始值。使用这些初始值的 Mock Server、Monitor 和 Newman 将受到影响。",
+          "secret_disabled": "为保护私密数据，您的团队管理员已禁用同步私密变量的初始值。使用这些初始值的 Mock Server、Monitor 和 Newman 将受到影响。"
         }
       },
       "table": {
@@ -104,22 +104,22 @@
         },
         "key_placeholder": "添加新变量",
         "validator": {
-          "message": "此变量在当前激活会话中不存在。不过，它在 {entityType} 中的存在不会受到影响。"
+          "message": "此变量在当前活动会话中不存在。但这不会影响它在 {entityType} 中的存在。"
         }
       }
     }
   },
   "context_bar": {
-    "title": "环境详情",
+    "title": "Environment 详情",
     "variable_sync_disable_impact_info_bar": {
       "description": {
-        "all_disabled": "由于团队管理员已禁用变量同步，模拟服务器、监视器和 Newman 将无法使用任何变量的值。",
-        "secret_disabled": "由于已禁用私密变量的同步，模拟服务器、监视器和 Newman 将无法使用私密变量的值。"
+        "all_disabled": "由于团队管理员已禁用变量同步，Mock、Monitor 和 Newman 将无法使用任何变量的值。",
+        "secret_disabled": "由于团队管理员已禁用私密变量同步，Mock、Monitor 和 Newman 将无法使用私密变量的值。"
       }
     }
   },
   "tab_conflict_message": {
-    "environment": "自您上次打开此标签页以来，此环境已被修改。",
-    "globals": "自您上次打开此标签页以来，全局变量已被修改。"
+    "environment": "自您上次打开该标签页以来，此 Environment 已被修改。",
+    "globals": "自您上次打开该标签页以来，全局变量已被修改。"
   }
 }

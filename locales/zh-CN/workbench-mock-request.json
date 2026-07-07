@@ -1,13 +1,13 @@
 {
   "header_tabs": {
     "completed_steps": {
-      "select_collection": "<0></0> <1> 选择要模拟的集合</1>",
-      "set_mock_server": "<0></0> <1> 设置模拟服务器</1>",
+      "select_collection": "<0></0> <1> 选择要模拟的 Collection</1>",
+      "set_mock_server": "<0></0> <1> 设置 Mock Server</1>",
       "next_steps": "<0></0> <1> 后续步骤</1>"
     },
     "active_steps": {
-      "select_collection": "1. <0>选择要模拟的集合</0>",
-      "set_mock_server": "2. <0>设置模拟服务器</0>",
+      "select_collection": "1. <0>选择要模拟的 Collection</0>",
+      "set_mock_server": "2. <0>设置 Mock Server</0>",
       "next_steps": "3. <0>后续步骤</0>"
     }
   },
@@ -25,73 +25,73 @@
   },
   "create_new_mock_modal": {
     "step_1": {
-      "collection_empty_message": "此工作区没有任何集合。",
+      "collection_empty_message": "此 Workspace 中没有任何 Collection。",
       "tabs": {
-        "create_new_collection": "创建新集合",
-        "select_existing_collection": "选择现有集合"
+        "create_new_collection": "创建新 Collection",
+        "select_existing_collection": "选择现有 Collection"
       },
       "mock_modal": {
-        "header": "模拟服务器让您无需搭建后端即可模拟您的 API 端点。",
-        "no_collection_found": "未找到集合",
-        "try_viewing_other_collection": "请尝试查看此工作区中的其他集合。",
-        "caption": "<0>输入您 API 端点的请求路径，然后输入预期的响应代码和响应体，以创建一个</0> <1><0>示例</0></1><2>。若要为请求添加正文或描述，请点击 (•••) 图标。</2>",
-        "footer": "<0>了解模拟服务器和示例如何</0> <1><0>加速您的 API 开发</0></1> <2>。</2>"
+        "header": "Mock Server 可让您无需搭建后端即可模拟 API 端点。",
+        "no_collection_found": "未找到 Collection",
+        "try_viewing_other_collection": "请尝试查看此 Workspace 中的其他 Collection。",
+        "caption": "<0>输入 API 端点的请求路径，然后输入预期的响应代码和响应体以创建</0> <1><0>示例</0></1><2>。若要为请求添加请求体或描述，请点击（•••）图标。</2>",
+        "footer": "<0>了解 Mock Server 和示例如何 </0> <1><0>加速您的 API 开发</0></1> <2>。</2>"
       }
     }
   },
   "setup_mock_server": {
-    "heading": "为模拟服务器命名",
-    "empty_server_error": "请输入模拟服务器名称。",
+    "heading": "为 Mock Server 命名",
+    "empty_server_error": "请输入 Mock Server 名称。",
     "tag": "标签",
-    "environment_label": "选择一个环境（可选）",
-    "help_content": "为此模拟服务器选择一个集合标签。如果该集合未链接到 API，则只能在当前标签上创建模拟服务器。",
-    "no_environment_placeholder": "无环境",
-    "no_environment_found": "未找到环境",
-    "environment_info": "环境是变量的集合。模拟服务器将在请求和响应中使用所选环境的变量值。",
-    "make_private": "将此模拟服务器设为私有",
-    "note": "注意：若要调用私有模拟服务器，您需要在请求中添加 <0>x-api-key</0> 请求头。了解如何生成 <1><0>Postman API 密钥</0></1>",
-    "save_url_as_environment": "将模拟服务器 URL 保存为环境变量",
-    "environment_note": "注意：这将创建一个包含该 URL 的新环境。",
-    "toast_success_msg": "模拟 URL 已复制",
+    "environment_label": "选择 Environment（可选）",
+    "help_content": "为此 Mock Server 选择一个 Collection 标签。如果该 Collection 未关联 API，则 Mock Server 只能在当前标签上创建。",
+    "no_environment_placeholder": "无 Environment",
+    "no_environment_found": "未找到 Environment",
+    "environment_info": "Environment 是变量的集合。Mock Server 将在请求和响应中使用所选 Environment 中的变量值。",
+    "make_private": "将此 Mock Server 设为私有",
+    "note": "注意：要调用私有 Mock Server，您需要在请求中添加 <0>x-api-key</0> 请求头。查看如何生成 <1><0>Postman API key</0></1>",
+    "save_url_as_environment": "将 Mock Server URL 保存为 Environment 变量",
+    "environment_note": "注意：这将创建一个包含该 URL 的新 Environment。",
+    "toast_success_msg": "已复制 Mock URL",
     "environment_dropdown_options": {
-      "no_environment": "无环境",
+      "no_environment": "无 Environment",
       "default_label": "Postman API"
     }
   },
   "next_actions": {
-    "create_environment_heading": "模拟服务器、集合和环境已创建",
-    "create_environment_sub_heading": "为方便起见，它们都被命名为 <0>{selectedOptionsName}</0> 。",
-    "default_heading": "模拟服务器和集合已创建",
-    "default_sub_heading": "为方便起见，它们都被命名为 <0>{selectedOptionsName}</0> 。",
-    "mock_server_created_heading": "模拟服务器已创建",
-    "try_it_out": " 试试看：",
-    "call_mock_server": "若要调用模拟服务器：",
-    "learn_about_examples": "<0><0>为每个请求添加示例响应，模拟服务器将返回这些响应。</0><1><0>了解什么是示例以及如何使用它们</0></1></0>",
-    "private_option_content": "<0>在您的请求中添加 <1>x-api-key</1> 请求头。<3><0>生成 Postman API 密钥</0></3></0>",
-    "send_request_to_mock_url": "<0>然后只需向以下 URL 发送请求，并在其后附上请求路径： </0> <1>{mockUrl}</1>",
-    "select_request_path": "<0>或者选择 <1>{selectedOptionsName}</1> 环境并输入 <3>{urlPlaceholderWithBrackets}</3>，后接请求路径。</0>",
-    "copy_mock_url": "复制模拟 URL",
-    "usage_limit_note": "<0>注意：对模拟服务器的调用会计入您计划的每月调用限额。请务必查看您的</0> <1><0>使用限额</0></1> <2>。</2>"
+    "create_environment_heading": "已创建 Mock Server、Collection 和 Environment",
+    "create_environment_sub_heading": "为方便管理，它们均命名为 <0>{selectedOptionsName}</0>。",
+    "default_heading": "已创建 Mock Server 和 Collection",
+    "default_sub_heading": "为方便管理，它们均命名为 <0>{selectedOptionsName}</0>。",
+    "mock_server_created_heading": "已创建 Mock Server",
+    "try_it_out": "Try it out:",
+    "call_mock_server": "要调用该 Mock Server：",
+    "learn_about_examples": "<0><0>为 Mock Server 将返回的每个请求添加示例响应。</0><1><0>了解什么是示例以及如何使用它们</0></1></0>",
+    "private_option_content": "<0>在请求中添加 <1>x-api-key</1> 请求头。<3><0>生成 Postman API key</0></3></0>",
+    "send_request_to_mock_url": "<0>然后向以下 URL 发送请求，并在其后加上请求路径：</0> <1>{mockUrl}</1>",
+    "select_request_path": "<0>或者选择 <1>{selectedOptionsName}</1> Environment，并输入 <3>{urlPlaceholderWithBrackets}</3>，后面加上请求路径。</0>",
+    "copy_mock_url": "复制 Mock URL",
+    "usage_limit_note": "<0>注意：调用 Mock Server 将计入您套餐的每月调用限额。请务必查看您的 </0> <1><0>用量限制</0></1> <2>。</2>"
   },
   "footer_actions": {
     "next_btn": "下一步",
-    "back_btn": "返回",
+    "back_btn": "上一步",
     "close_btn": "关闭",
-    "create_mock_server": "创建模拟服务器"
+    "create_mock_server": "创建 Mock Server"
   },
   "errors": {
     "is_user_delinquent": {
-      "action": "付款",
+      "action": "去支付",
       "message": "无法访问 Postman 服务器"
     },
     "subtitle": {
-      "billing_subtitle": "由于发票未付款，您的团队无法访问某些 Postman 服务。请支付当前发票以继续。",
-      "default_subtitle": "由于发票未付款，您的团队无法访问某些 Postman 服务。请联系您团队的账单管理员，了解有关团队付款的更多信息。",
+      "billing_subtitle": "由于账单未付款，您的团队无法访问部分 Postman 服务。请支付当前账单以继续使用。",
+      "default_subtitle": "由于账单未付款，您的团队无法访问部分 Postman 服务。请联系您团队的账单管理员以了解付款详情。",
       "is_sync_disabled_subtitle": "您的团队已禁用与 Postman 服务的同步。请联系支持团队以恢复使用这些功能。",
-      "collection_status_subtitle": "创建此模拟时出错。您可以稍后重试。",
+      "collection_status_subtitle": "创建此 Mock 时出错，请稍后重试。",
       "is_offline_subtitle": "请检查您的网络连接，然后重试。",
-      "error_fetching_error": "获取集合信息时发生错误。",
-      "config_status_error": "发生了意外错误。请重试。"
+      "error_fetching_error": "获取 Collection 信息时出错。",
+      "config_status_error": "发生意外错误，请重试。"
     },
     "try_again": "重试"
   }

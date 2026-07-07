@@ -1,35 +1,35 @@
 {
-  "permission_error": "无法获取自定义域名的所有权限。",
-  "heading": "自定义域名",
-  "subheading": "在自定义域名上托管您现有的和新的 API 文档。{isPaidOrTrial, select, true {您的团队最多可以添加 {customDomainsLimit} 个自定义域名。} other {}} <CustomLink><Text>了解更多</Text></CustomLink>",
+  "permission_error": "无法获取自定义域的所有权限。",
+  "heading": "自定义域",
+  "subheading": "在自定义域上托管现有的和新的 API 文档。 {isPaidOrTrial, select, true {您的团队最多可以添加 {customDomainsLimit} 个自定义域。} other {}} <CustomLink><Text>了解更多</Text></CustomLink>",
   "insufficient_permissions": {
     "message": "权限不足",
-    "description": "只有团队管理员可以添加自定义域名"
+    "description": "只有 团队 管理员可以添加自定义域"
   },
   "limit_reached": {
-    "message": "已达上限",
-    "description": "升级计划以添加更多自定义域名"
+    "message": "达到限制",
+    "description": "升级计划以添加更多自定义域"
   },
-  "add_custom_domain": "添加自定义域名",
+  "add_custom_domain": "添加自定义域",
   "upgrade_your_plan": {
     "title": "升级您的计划",
-    "description": "您当前使用的是免费计划。切换到付费计划，即可在自定义域名上托管您的文档。<CustomLink><br></br><Text>查看计划</Text></CustomLink>"
+    "description": "您目前使用的是免费计划。切换到付费计划以在自定义域上托管您的文档。 <CustomLink><br></br><Text>查看计划</Text></CustomLink>"
   },
   "add_your_team_first_domain": {
-    "title": "添加您团队的第一个域名"
+    "title": "添加您的 团队 的第一个域"
   },
   "you_don_t_have_access": {
-    "title": "您没有访问权限",
-    "description": "只有团队管理员可以添加自定义域名。"
+    "title": "您无权访问",
+    "description": "只有 团队 管理员可以添加自定义域。"
   },
   "wrapper": {
     "unable_to_load_custom_domain": {
-      "title": "无法加载自定义域名",
-      "description": "请稍后重试。"
+      "title": "无法加载自定义域",
+      "description": "请稍后再试。"
     },
     "error": {
-      "title": "出错了",
-      "description": "无法获取自定义域名。"
+      "title": "出了点问题",
+      "description": "无法获取自定义域。"
     }
   },
   "custom_domain_table": {
@@ -39,52 +39,52 @@
     },
     "view_details": "查看详情",
     "verified": "已验证",
-    "unverified": "未验证"
+    "unverified": "未经验证"
   },
   "custom_domain_details": {
     "fetch_custom_domain_error": {
-      "title": "出错了",
-      "description": "无法获取自定义域名详情。"
+      "title": "出了点问题",
+      "description": "无法获取自定义域详细信息。"
     },
     "verify_custom_domain_success": {
-      "title": "自定义域名已验证",
-      "description": "您的自定义域名现已通过验证。您现在可以使用此域名访问已发布集合的文档。"
+      "title": "自定义域已验证",
+      "description": "您的自定义域现已验证。您现在可以使用此域访问已发布集合的文档。"
     },
     "verify_custom_domain_error": {
-      "title": "出错了",
-      "description": "无法验证域名。{reason}"
+      "title": "出了点问题",
+      "description": "无法验证域。 {reason}"
     },
-    "all_custom_domains": "所有自定义域名",
-    "breadcrumb_aria_label": "自定义域名详情面包屑导航",
+    "all_custom_domains": "所有自定义域",
+    "breadcrumb_aria_label": "自定义域详细信息面包屑",
     "error": {
-      "title": "无法加载自定义域名详情",
-      "description": "请稍后重试。"
+      "title": "无法加载自定义域详细信息",
+      "description": "请稍后再试。"
     }
   },
   "custom_domain_detail_form": {
-    "custom_domain_detail_heading": "自定义域名详情",
-    "verify_custom_domain_heading": "验证自定义域名",
+    "custom_domain_detail_heading": "自定义域详细信息",
+    "verify_custom_domain_heading": "验证自定义域",
     "domain_url": {
-      "label": "域名 URL",
-      "helper_text": "输入您要添加的域名的 URL。"
+      "label": "域 URL",
+      "helper_text": "输入您要添加的域的 URL。"
     },
     "verification_records_heading": "验证记录",
     "text_record": {
-      "label": "{domain} 上的 TXT 记录",
-      "helper_text": "将以下令牌添加为与 {domain} 关联的 TXT 记录"
+      "label": "TXT 记录在 {domain} 上",
+      "helper_text": "添加以下 令牌 作为与 {domain} 关联的 TXT 记录"
     },
     "copy_to_clipboard": "复制到剪贴板",
     "copied_to_clipboard": "已复制到剪贴板",
     "cname": {
-      "label": "指向 {phsUrl} 的 CNAME",
-      "helper_text": "为 {fqdn} 添加一条指向 {phsUrl} 的 CNAME 记录"
+      "label": "CNAME 至 {phsUrl}",
+      "helper_text": "将 {fqdn} 的 CNAME 记录添加到 {phsUrl}"
     }
   },
   "custom_domain_actions": {
-    "heading": "添加记录",
-    "checkbox_label": "TXT 和 CNAME 记录已添加。",
+    "heading": "记录添加",
+    "checkbox_label": "已添加 TXT 和 CNAME 记录。",
     "verify_domain": "验证域名",
     "verify_later": "稍后验证",
-    "back": "返回"
+    "back": "后退"
   }
 }

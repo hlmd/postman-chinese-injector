@@ -2,89 +2,89 @@
   "table": {
     "columns": {
       "name": "名称",
-      "workspaces": "工作区",
-      "members": "用户和群组",
-      "membership": "成员资格",
+      "workspaces": "工作空间",
+      "members": "用户和组",
+      "membership": "会员资格",
       "your_role": "您的角色"
     },
     "membership": {
       "member": "成员",
-      "collaborator": "协作者",
+      "collaborator": "合作者",
       "guest": "访客",
       "partner": "合作伙伴"
     },
     "aria": {
-      "restricted_access": "受限访问",
-      "restricted_access_tooltip": "加入此团队或与其协作需要团队管理者批准",
-      "restricted_role": "您只能访问被邀请加入的特定资源。",
-      "select_all": "全选",
+      "restricted_access": "访问受限",
+      "restricted_access_tooltip": "加入或与此 团队 合作需要 团队 经理批准",
+      "restricted_role": "您只能访问您受邀访问的特定资源。",
+      "select_all": "选择全部",
       "select_row": "选择行"
     },
     "roles": {
-      "manager": "管理者",
+      "manager": "经理",
       "developer": "开发者",
       "viewer": "查看者",
       "partner": "合作伙伴"
     },
     "tooltip": {
-      "member_details": "用户（{userCount}）和群组（{groupCount}）",
-      "members_error": "无法加载成员详情",
-      "no_view_permission": "您没有查看此团队详情的权限"
+      "member_details": "用户 ({userCount}) 和组 ({groupCount})",
+      "members_error": "无法加载 成员 详细信息",
+      "no_view_permission": "您没有 权限 查看该 团队 的详细信息"
     }
   },
   "actions": {
     "cancel": "取消",
     "join": "加入",
-    "join_as_member": "以团队成员身份加入",
-    "request_to_join": "申请加入",
-    "request_to_join_team": "申请加入团队",
+    "join_as_member": "作为 团队 成员 加入",
+    "request_to_join": "请求 加入",
+    "request_to_join_team": "请求 加入 团队",
     "leave": {
       "label": "离开",
-      "disabled_tooltip": "您无法离开此团队，因为您是通过群组加入的。",
-      "success": "已离开团队",
-      "error": "离开团队失败。请重试。",
+      "disabled_tooltip": "您不能离开此 团队，因为您是通过群组添加的。",
+      "success": "离开 团队",
+      "error": "未能离开 团队。请再试一次。",
       "confirm": {
         "title": "离开团队",
-        "description": "确定要离开此团队吗？"
+        "description": "您确定要离开这个 团队 吗？"
       }
     },
     "delete": "删除",
     "manage": "管理",
     "manage_team": "管理团队",
     "add_members": "添加成员",
-    "invite_members": "邀请团队成员",
+    "invite_members": "邀请 队友",
     "rename": "重命名",
     "create_workspace": "创建工作区",
     "remove": {
-      "label": "移除",
-      "success": "{count, plural, one {已移除 1 名成员} other {已移除 {count} 名成员}}",
-      "error": "移除失败。请重试。",
-      "partial": "已移除 {succeeded} 名，{failed} 名失败",
+      "label": "删除",
+      "success": "{count, plural, one {已删除 1 名成员} other {已删除 {count} 名成员}}",
+      "error": "删除失败。请再试一次。",
+      "partial": "{succeeded} 已删除，{failed} 失败",
       "confirm": {
-        "title": "移除成员",
-        "description": "将 {name} 从此团队中移除？"
+        "title": "删除 成员",
+        "description": "从此 团队 中删除 {name} 吗？"
       },
       "confirm_bulk": {
-        "title": "移除成员",
-        "description": "将 {count, plural, one {1 名成员} other {{count} 名成员}} 从此团队中移除？"
+        "title": "删除成员",
+        "description": "从这个 团队 中删除 {count, plural, one {1 名成员} other {{count} 名成员}}？"
       }
     },
     "convert": {
-      "label": "转换为成员"
+      "label": "转换为 成员"
     }
   },
   "filters": {
     "role": "角色",
-    "membership": "成员资格",
+    "membership": "会员资格",
     "search_placeholder": "搜索团队",
     "role_options": {
-      "manager": "管理者",
+      "manager": "经理",
       "developer": "开发者",
       "viewer": "查看者"
     },
     "membership_options": {
       "member": "成员",
-      "collaborator": "协作者",
+      "collaborator": "合作者",
       "guest": "访客",
       "partner": "合作伙伴"
     },
@@ -93,67 +93,67 @@
       "yes": "我的团队",
       "no": "其他团队"
     },
-    "members_search_placeholder": "搜索成员",
-    "access": "访问权限",
+    "members_search_placeholder": "搜索会员",
+    "access": "使用权",
     "access_options": {
-      "open": "对所有人开放",
-      "open_for_collaborator": "对协作者开放",
+      "open": "向所有人开放",
+      "open_for_collaborator": "向合作者开放",
       "closed": "需要批准"
     }
   },
   "empty_state": {
-    "title": "暂无团队",
-    "description": "您的组织中尚无团队。"
+    "title": "没有团队",
+    "description": "您的组织中还没有团队。"
   },
   "filtered_empty_state": {
-    "title": "未找到团队",
-    "description": "请尝试调整您的搜索或筛选条件。"
+    "title": "没有找到团队",
+    "description": "尝试调整您的搜索或过滤器。"
   },
   "users_table": {
     "columns": {
       "name": "名称",
       "role": "角色",
-      "membership": "成员资格"
+      "membership": "会员资格"
     },
     "empty": {
       "no_members": {
-        "title": "暂无成员",
-        "description": "此团队中尚无成员。"
+        "title": "没有会员",
+        "description": "此 团队 中还没有成员。"
       },
       "no_results": {
-        "title": "未找到成员",
-        "description": "请尝试调整您的搜索或筛选条件。"
+        "title": "没有找到会员",
+        "description": "尝试调整您的搜索或过滤器。"
       }
     },
     "error": {
-      "title": "无法加载成员",
-      "retry": "重试"
+      "title": "无法加载会员",
+      "retry": "再试一次"
     },
     "aria": {
-      "loading": "正在加载成员"
+      "loading": "正在加载会员"
     },
     "pending_upgrade": "待升级",
-    "self": "{name}（您）",
-    "group_members_count": "群组（{count, plural, one {1 名成员} other {{count} 名成员}}）",
+    "self": "{name}（你）",
+    "group_members_count": "团体（{count, plural, one {1 名成员} other {{count} 名成员}}）",
     "squad_members_count": "团队（{count, plural, one {1 名成员} other {{count} 名成员}}）",
     "organization_members_count": "组织（{count, plural, one {1 名成员} other {{count} 名成员}}）",
     "inline": {
       "role": {
-        "success": "角色已更新",
-        "request_sent": "请求已发送待批准",
-        "error": "更新角色失败。请重试。"
+        "success": "角色 已更新",
+        "request_sent": "请求 已发送以供批准",
+        "error": "无法更新 角色。请再试一次。"
       }
     }
   },
   "toasts": {
-    "delete_result_success": "已成功删除 {deleted} 个团队",
-    "delete_result_error": "已删除 {deleted} 个团队，{failed} 个删除失败",
-    "join_one_success": "已成功加入团队",
-    "join_one_requested": "加入请求已发送",
-    "join_one_already_requested": "您已有一个待处理的加入此团队的请求",
+    "delete_result_success": "成功删除 {deleted} 个团队",
+    "delete_result_error": "已删除 {deleted} 个团队，未能删除 {failed} 个",
+    "join_one_success": "成功加入团队",
+    "join_one_requested": "已发送加入申请",
+    "join_one_already_requested": "您已有一个待处理的加入此 团队 的申请",
     "join_one_error": "加入团队失败"
   },
   "errors": {
-    "generic": "出错了。请重试。"
+    "generic": "出错了，请重试。"
   }
 }

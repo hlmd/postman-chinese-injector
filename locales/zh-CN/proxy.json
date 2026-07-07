@@ -3,32 +3,32 @@
     "heading": "新建代理会话",
     "body": {
       "heading": "捕获 HTTPS 流量",
-      "description": "使用 Postman 的代理来检查来自您的 Android、iOS、Linux、macOS 和 Windows 设备的 HTTPS 通信，更快地构建客户端应用程序！",
+      "description": "使用 Postman 的代理检查来自 Android、iOS、Linux、macOS 和 Windows 设备的 HTTPS 通信，并更快地构建客户端应用程序！",
       "system_traffic": {
         "heading": "系统流量",
-        "description": "捕获并检查您设备上的应用流量。",
-        "info": "首次启动代理会话时，我们将请求安装证书。",
+        "description": "捕获并检查设备上的应用程序流量。",
+        "info": "当您第一次启动代理会话时，我们将请求安装证书。",
         "proxy_button": "启动代理会话",
-        "proxy_button_tooltip": "已有一个会话处于活动状态。请先关闭活动会话，才能启动新会话。"
+        "proxy_button_tooltip": "会话已处于活动状态。请关闭活动的会话以启动新的会话。"
       },
       "browser_traffic": {
         "heading": "浏览器流量",
-        "description": "要捕获并检查浏览器上的流量，请下载 Postman 的拦截器扩展程序。",
+        "description": "要捕获和检查浏览器上的流量，请下载 Postman 的拦截器扩展。",
         "extensions": {
           "chrome": {
-            "alt": "为 Google Chrome 下载 Postman Interceptor",
+            "alt": "下载适用于 Google Chrome 的 Postman 拦截器",
             "label": "Chrome 商店"
           },
           "safari": {
-            "alt": "为 Safari 下载 Postman Interceptor",
-            "label": "App Store"
+            "alt": "下载适用于 Safari 的 Postman 拦截器",
+            "label": "应用商店"
           },
           "mozilla": {
-            "alt": "为 Mozilla Firefox 下载 Postman Interceptor",
+            "alt": "下载 Mozilla Firefox 的 Postman 拦截器",
             "label": "Mozilla 附加组件"
           },
           "edge": {
-            "alt": "为 Microsoft Edge 下载 Postman Interceptor",
+            "alt": "下载 Microsoft Edge 的 Postman 拦截器",
             "label": "Edge 附加组件"
           }
         }
@@ -37,33 +37,33 @@
   },
   "new_session_tab": {
     "name": "Postman 调试会话",
-    "no_cookies_captures": "尚未捕获任何 Cookie。",
+    "no_cookies_captures": "尚未捕获 Cookie。",
     "start_time": "会话开始时间：",
     "session_size": "会话大小：",
-    "view_past_sessions": "查看过往会话",
+    "view_past_sessions": "查看过去的会话",
     "save_requests": "保存请求",
     "duration": "持续时间：",
     "source": "来源：",
     "configuration": "配置",
     "tabs": {
       "overview": {
-        "label": "概览",
-        "classify_by": "请求分类依据",
-        "empty_state": "此会话没有可用的分析数据",
-        "search_placeholder": "搜索已捕获的请求",
+        "label": "概述",
+        "classify_by": "对请求进行分类",
+        "empty_state": "没有可用于此会话的分析数据",
+        "search_placeholder": "搜索捕获的请求",
         "table": {
           "methods": "方法",
           "no_of_requests": "请求数量",
-          "global_filter_placeholder": "搜索已捕获的请求",
+          "global_filter_placeholder": "搜索捕获的请求",
           "pre_selection": {
-            "initial": "已选择此页面上的所有请求。",
-            "all_selected_session": "已选择此会话中的全部 {totalRequestsCount} 个请求。",
-            "all_selected_page": "已选择此会话中的全部 {changeInSize} 个请求。"
+            "initial": "该页面上的所有请求均被选中。",
+            "all_selected_session": "此会话中的所有 {totalRequestsCount} 个请求均已选中。",
+            "all_selected_page": "此会话中的所有 {changeInSize} 个请求均已选中。"
           },
           "post_selection": {
-            "initial": "选择此会话中的全部 {totalRequestsCount} 个请求",
+            "initial": "选择会话中的所有 {totalRequestsCount} 个请求",
             "clear": "清除选择",
-            "select_all": "选择此会话中的全部 {totalRequestsCount} 个请求"
+            "select_all": "选择会话中的所有 {totalRequestsCount} 个请求"
           },
           "columns": {
             "methods": "方法",
@@ -77,9 +77,9 @@
         },
         "actions": {
           "add_collection": "添加到集合",
-          "add_collection_tooltip": "未选择要添加的请求。",
+          "add_collection_tooltip": "没有选择添加请求。",
           "delete": "删除",
-          "delete_tooltip": "未选择要删除的请求。"
+          "delete_tooltip": "没有选择要删除的请求。"
         },
         "chart": {
           "methods": "方法",
@@ -94,16 +94,16 @@
       },
       "requests": {
         "label": "请求",
-        "empty_state": "此会话中未捕获任何请求",
+        "empty_state": "会话中未捕获任何请求",
         "no_request_captured": "尚未捕获任何请求。",
         "tabs": {
           "requests": "请求",
           "cookies": "Cookie"
         },
         "body": {
-          "search_placeholder": "搜索已捕获的请求",
+          "search_placeholder": "搜索捕获的请求",
           "delete": "删除",
-          "delete_tooltip": "未选择要删除的请求。",
+          "delete_tooltip": "没有选择要删除的请求。",
           "columns": {
             "methods": "方法",
             "url": "URL",
@@ -118,13 +118,13 @@
       },
       "cookies": {
         "label": "Cookie",
-        "empty_state": "此会话中未捕获任何 Cookie",
-        "view_cookies_for_captured_requests": "查看已捕获请求的 Cookie",
-        "view_cookies_for_captured_requests_description": "启用捕获 Cookie 以查看已捕获请求的 Cookie。捕获后，您可以将 Cookie 添加到 Postman Cookie Jar，从而在 Postman 工作流中使用它们。",
+        "empty_state": "会话中没有捕获 Cookie",
+        "view_cookies_for_captured_requests": "查看捕获的请求的 Cookie",
+        "view_cookies_for_captured_requests_description": "启用捕获 Cookie 以查看捕获的请求的 Cookie。捕获后，您可以通过将 Cookie 添加到 Postman Cookie Jar 来在 Postman 工作流程中使用 Cookie。",
         "capture_success": "将为所有新捕获的请求存储 Cookie。",
         "secondary_action": "了解更多",
         "body": {
-          "search_placeholder": "搜索已捕获的 Cookie",
+          "search_placeholder": "搜索捕获的 Cookie",
           "add": "添加到 Cookie Jar",
           "delete": "删除",
           "empty_state": "未找到结果",
@@ -132,24 +132,24 @@
             "name": "名称",
             "value": "值",
             "path": "路径",
-            "expires": "过期时间",
-            "http_only": "HttpOnly",
-            "secure": "Secure",
+            "expires": "过期",
+            "http_only": "仅 HTTP",
+            "secure": "安全",
             "timestamp": "时间戳"
           },
           "page_items_label": "每页项目数",
-          "request": "请求：<1>{requestMethod}</1> <2><0>{url}</0></2>",
+          "request": "请求： <1>{requestMethod}</1> <2><0>{url}</0></2>",
           "delete_modal": {
             "heading": "删除 Cookie？",
-            "content": "此操作将从会话中删除这些 Cookie。删除后，您将无法再将它们添加到 Cookie Jar。",
+            "content": "这将从会话中删除 Cookie。一旦删除，您将无法再将它们添加到 Cookie jar 中。",
             "delete_button": "删除 Cookie",
             "cancel_button": "取消"
           },
           "toasters": {
-            "add_title": "Cookie 已添加到 Cookie Jar",
-            "add_title_plural": "Cookie 已添加到 Cookie Jar",
-            "add_description": "{count, plural, one {# 个 Cookie 已} other {# 个 Cookie 已}}添加到 Postman Cookie Jar。 ",
-            "remove_description": "{count, plural, one {# 个 Cookie 已} other {# 个 Cookie 已}}从会话中删除。 "
+            "add_title": "Cookie 添加到 Cookie jar",
+            "add_title_plural": "Cookie 添加到 Cookie jar 中",
+            "add_description": "{count, plural, one {# 个 Cookie 已} other {# 个 Cookie 已}}添加到 Postman Cookie Jar 中。",
+            "remove_description": "{count, plural, one {# 个 Cookie} other {# 个 Cookie}}已从会话中删除。"
           },
           "view_more": "查看更多",
           "no_of_cookies": "{count, plural, one {# 个 Cookie} other {# 个 Cookie}}"
@@ -159,17 +159,17 @@
   },
   "capture_proxy_response_settings": {
     "label": "保存请求的响应",
-    "tooltip": "Postman 当前遵循的标准化响应大小限制为 5MB。当前不支持保存媒体类型的响应。"
+    "tooltip": "Postman 中遵循的标准化响应大小目前限制为 5MB。目前不支持保存媒体类型响应。"
   },
   "capture_cookies": "捕获 Cookie",
   "session_name_editor": {
-    "rename_success": "会话重命名成功",
+    "rename_success": "会话 重命名成功",
     "title": "代理会话"
   },
   "footer": {
     "options": {
-      "api_key": "API Key",
-      "access_token": "Access Token",
+      "api_key": "API 密钥",
+      "access_token": "访问令牌",
       "webhook_url": "Webhook URL",
       "toasters": {
         "title": "会话已暂停",
@@ -182,7 +182,7 @@
         "pause": "暂停",
         "pause_tooltip": "暂停会话",
         "stop": "停止",
-        "stop_tooltip": "停止捕获"
+        "stop_tooltip": "停止捕捉"
       }
     }
   },
@@ -199,39 +199,39 @@
     }
   },
   "session_table": {
-    "search_placeholder": "搜索已捕获的请求",
+    "search_placeholder": "搜索捕获的请求",
     "delete": "删除",
-    "delete_tooltip": "未选择要删除的请求。",
-    "global_filter_placeholder": "搜索已捕获的请求",
-    "toaster": "删除 {count, plural, one {# 个请求} other {# 个请求}}失败"
+    "delete_tooltip": "没有选择要删除的请求。",
+    "global_filter_placeholder": "搜索捕获的请求",
+    "toaster": "无法删除 {count, plural, one {# 个请求} other {# 个请求}}"
   },
   "add_session_request_to_table": {
-    "create_row_placeholder": "为您的集合命名",
+    "create_row_placeholder": "命名您的 集合",
     "no_of_requests": "{count, plural, one {# 个请求} other {# 个请求}}",
     "modal": {
       "header": "保存 {count, plural, one {# 个请求} other {# 个请求}}",
       "body": {
-        "title": "选择要保存到的集合",
-        "search_placeholder": "搜索集合",
-        "save_text": "将 {count, plural, one {# 个请求} other {# 个请求}}保存到 {targetName}",
-        "organize_text": "请求组织方式",
+        "title": "选择要保存到的 集合",
+        "search_placeholder": "搜索 集合",
+        "save_text": "将 {count, plural, one {# 个请求} other {# 个请求}} 保存到 {targetName}",
+        "organize_text": "按以下方式组织请求",
         "domainName": "域名",
         "endPoints": "端点"
       },
       "footer": {
         "new_collection": "新建集合",
         "cancel": "取消",
-        "back": "返回",
+        "back": "后退",
         "save": "保存"
       }
     },
     "toasters": {
       "error_title": "错误",
-      "error_description": "无法将请求添加到集合。请重试。",
+      "error_description": "无法将请求添加到 集合。请再试一次。",
       "view_now": "立即查看",
       "success_title": "{count, plural, one {# 个请求} other {# 个请求}}已添加到集合",
-      "success_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}}已添加到 {collectionName} 集合",
-      "info_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}}正在添加到 {collectionName} 集合。所有请求添加完成后将通知您"
+      "success_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}} 已添加到 {collectionName} 集合",
+      "info_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}} 正在添加到集合 {collectionName} 中。添加所有请求后，您将收到通知"
     }
   },
   "table_row_expanded": {
@@ -241,18 +241,18 @@
     "response_body": "响应体",
     "url": "URL：{url}",
     "method": "方法：{method}",
-    "status_code": "状态码：{statusCode}",
+    "status_code": "状态代码：{statusCode}",
     "tabs": {
       "response": {
         "label": "响应",
-        "no_body": "此响应没有响应体",
+        "no_body": "此响应没有响应体。",
         "heading": "响应头",
         "not_available": "响应头不可用",
         "size": "{size} B"
       },
-      "body": "响应体",
+      "body": "请求体",
       "headers": {
-        "label": "头部",
+        "label": "请求头",
         "heading": "常规",
         "view": {
           "url": "URL",
@@ -269,7 +269,7 @@
         "label": "请求",
         "heading": "请求参数",
         "not_available": "请求头不可用",
-        "no_body": "此请求没有请求体"
+        "no_body": "此请求没有请求体。"
       }
     }
   },
@@ -277,11 +277,11 @@
     "delete_tooltip": "删除历史记录",
     "rename_session": "重命名会话",
     "delete_session": "删除会话",
-    "delete_session_disabled": "会话进行中",
+    "delete_session_disabled": "会话正在进行中",
     "success_toaster": "会话重命名成功"
   },
   "domain_endpoint_settings": {
-    "heading": "请求组织方式",
+    "heading": "按以下方式组织请求",
     "domain": "域名",
     "endpoint": "端点"
   },
@@ -294,10 +294,10 @@
   "filters": {
     "url": {
       "include_label": "URL 必须包含",
-      "exclude_label": "URL 不能包含",
+      "exclude_label": "网址不能包含",
       "label_info": "支持正则表达式",
       "valid_regex": "请输入有效的正则表达式。",
-      "placeholder": "按 “Enter” 键应用筛选"
+      "placeholder": "按“Enter”键应用过滤器"
     },
     "status_codes": {
       "200": "200",
@@ -383,11 +383,11 @@
     "resource_types": {
       "script": "JS",
       "stylesheet": "CSS",
-      "image": "Img",
+      "image": "图像",
       "html": "HTML",
       "json": "JSON",
       "xml": "XML",
-      "text": "Text",
+      "text": "文本",
       "other": "其他"
     }
   }

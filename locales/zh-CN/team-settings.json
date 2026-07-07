@@ -1,51 +1,51 @@
 {
   "sandbox_terms_modal": {
-    "heading": "激活 Sandbox 环境",
-    "intro": "通过激活，您确认并同意以下使用要求适用于您的组织对 Sandbox 环境的使用，作为您与 Postman 所签协议中所引用文档的一部分：",
-    "bullet_1": "Sandbox 仅供测试和评估之用",
-    "bullet_2": "客户只能在 Sandbox 中使用测试数据或虚拟数据；不得提交生产数据和个人数据",
-    "bullet_3": "Postman 可能随时删除 Sandbox 数据",
-    "bullet_4": "Sandbox 按“原样”提供，不附带任何服务级别承诺、赔偿或保证",
-    "bullet_5": "可能适用使用和功能限制",
+    "heading": "激活沙盒 环境",
+    "intro": "激活即表示您承认并同意以下使用要求适用于您的组织对沙盒 环境 的使用，作为您与 Postman 的协议中引用的文档的一部分：",
+    "bullet_1": "提供沙箱仅用于测试和评估目的",
+    "bullet_2": "客户只能在沙盒中使用测试数据或虚拟数据；不得提交生产数据和个人数据",
+    "bullet_3": "Postman 可以随时删除沙盒数据",
+    "bullet_4": "沙箱按“原样”提供，没有服务水平承诺、赔偿或保证",
+    "bullet_5": "使用和功能限制可能适用",
     "accept_button": "接受并激活",
     "decline_button": "取消",
-    "accept_error": "激活 Sandbox 环境失败。请重试。"
+    "accept_error": "无法激活沙盒 环境。请再试一次。"
   },
   "common": {
-    "readonly_tooltip_message": "此设置由您的组织管理，无法为您的团队更改。",
-    "no_permission_tooltip": "您没有执行此操作的权限。",
-    "upgrade_to_invite_people": "升级以邀请他人加入团队",
-    "upgrade_to_add_people": "升级以添加成员到团队"
+    "readonly_tooltip_message": "此设置由您的组织管理，无法为您的 团队 进行更改。",
+    "no_permission_tooltip": "您没有权限执行此操作。",
+    "upgrade_to_invite_people": "升级以邀请人员加入 团队",
+    "upgrade_to_add_people": "升级以将人员添加到 团队"
   },
   "team_resources": {
     "blank_state": {
-      "title": "需要对团队资源进行更多控制吗？",
-      "description": "通过 Postman <1>企业版</1> 计划，解锁针对工作区、集合等的高级设置。",
+      "title": "需要对 团队 资源进行更多控制？",
+      "description": "使用 Postman <1>Enterprise</1> 计划解锁工作区、集合等的高级设置。",
       "upgrade_to_enterprise": "升级到企业版",
       "learn_more": "了解更多"
     },
     "blank_state_with_external_package": {
-      "title": "需要对团队资源进行更多控制吗？",
-      "description": "通过 Postman <1>企业版</1> 计划，解锁针对工作区、集合等的高级设置。"
+      "title": "需要对 团队 资源进行更多控制？",
+      "description": "使用 Postman <1>Enterprise</1> 计划解锁工作区、集合等的高级设置。"
     },
     "workspace_management": {
       "errors": {
-        "unable_to_save": "目前无法保存更改。请重试。",
+        "unable_to_save": "目前无法保存更改。请再试一次。",
         "flag_and_entities": {
-          "title": "出错了",
+          "title": "出了点问题",
           "description": "获取设置时发生错误"
         },
         "custom_message_too_long": {
-          "message": "您的消息过长。上限为 {limit} 个字符。"
+          "message": "您的留言太长了。限制为 {limit} 个字符。"
         }
       },
       "changes_saved": "更改已保存",
       "breadcrumbs": {
-        "team_resources": "团队资源",
+        "team_resources": "团队 资源",
         "workspaces": "工作区"
       },
-      "title": "工作区管理",
-      "description": "为团队成员提供精细化控制，使以下操作更轻松 ",
+      "title": "工作区 管理",
+      "description": "为 团队 成员提供精细控制，使其更容易",
       "learn_more": {
         "prefix": "管理工作区",
         "link": "了解更多"
@@ -56,98 +56,98 @@
         "options": {
           "all_members": {
             "label": "所有 {lower} 成员",
-            "helper_text": "合作伙伴和访客除外。"
+            "helper_text": "合作伙伴和嘉宾除外。"
           },
           "specifics": {
-            "label": "特定人员或群组",
-            "helper_text": "其他 {lower} 成员需要经过他们的批准。"
+            "label": "特定的人或群体",
+            "helper_text": "其他 {lower} 成员需要获得他们的批准。"
           },
           "company_systems": {
-            "label": "由公司系统处理工作区创建",
-            "helper_text": "只有选定的人员和群组才能直接在 Postman 中创建工作区。"
+            "label": "公司系统处理 工作区 创建",
+            "helper_text": "只有选定的人员和组可以直接在 Postman 中创建工作区。"
           }
         }
       },
       "search_for_members": {
-        "placeholder": "搜索…",
-        "empty_message": "未找到用户"
+        "placeholder": "搜索...",
+        "empty_message": "没有找到用户"
       },
       "specific_members": {
-        "label": "选择人员和群组"
+        "label": "选择人员和组"
       },
       "allowed_members": {
-        "label": "选择人员和群组"
+        "label": "选择人员和组"
       },
       "custom_message": {
         "label": "自定义消息",
-        "helper_text": "当组织成员尝试在 Postman 中创建工作区时向其显示。",
-        "placeholder": "说明为何禁用工作区创建，以及用户可以在何处申请工作区…"
+        "helper_text": "当组织成员尝试在 Postman 中创建 工作区 时向其显示。",
+        "placeholder": "解释为何禁止创建 工作区，以及用户可以在哪里请求创建 工作区..."
       },
       "save": "保存更改",
       "cancel": "取消",
-      "forbidden_message": "只有团队管理员才能管理团队中的资源。"
+      "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。"
     },
     "collection_management": {
       "title": "集合",
       "description": "管理组织内集合的共享。",
       "breadcrumbs": {
-        "team_resources": "团队资源",
+        "team_resources": "团队 资源",
         "collections": "集合"
       },
-      "allow_editors": "允许编辑者与访客共享集合",
-      "editors_can_share": "编辑者可以与访客共享集合",
-      "enable_share_collection": "启用后，编辑者可以与 {lower} 外部的人员共享集合。",
+      "allow_editors": "允许编辑者与访客分享集合",
+      "editors_can_share": "编辑者可以与访客分享集合",
+      "enable_share_collection": "启用后，编辑者可以与 {lower} 之外的人员共享集合。",
       "sharing_with_guests": {
         "enabled": {
-          "title": "已启用与访客共享",
-          "description": "团队成员可以与团队外部的人员共享集合。"
+          "title": "启用与访客共享",
+          "description": "团队 成员可以与 团队 以外的人共享集合。"
         },
         "disabled": {
-          "title": "已禁用与访客共享",
-          "description": "团队成员无法与团队外部的人员共享集合。"
+          "title": "禁用与访客共享",
+          "description": "团队 成员无法与 团队 以外的人共享集合。"
         }
       },
       "error": {
         "update_settings": {
           "title": "无法更新设置",
-          "description": "只是线路出了点问题。请重试。"
+          "description": "只是一根电线有问题。请再试一次。"
         },
         "fetching_settings": {
-          "title": "出错了",
+          "title": "出了点问题",
           "description": "获取设置时发生错误"
         },
         "permission_denied": {
-          "title": "权限被拒绝",
-          "description": "只有团队管理员才能修改导出设置"
+          "title": "权限 被拒绝",
+          "description": "只有 团队 管理员可以修改导出设置"
         },
         "update_export_settings": {
-          "title": "更新导出设置失败",
-          "description": "更新导出设置时发生错误。请重试。"
+          "title": "无法更新导出设置",
+          "description": "更新导出设置时出错。请再试一次。"
         }
       },
-      "forbidden_message": "只有团队管理员才能管理团队中的资源。",
+      "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。",
       "block_exports": "阻止集合导出",
       "block_exports_description": "启用后，编辑者和查看者将无法导出集合。",
       "exports_blocked": {
-        "title": "已阻止集合导出",
+        "title": "集合导出被阻止",
         "description": "编辑者和查看者无法导出集合"
       },
       "exports_allowed": {
-        "title": "已允许集合导出",
+        "title": "允许集合导出",
         "description": "编辑者和查看者可以导出集合"
       }
     },
     "external_package_management": {
       "title": "外部包",
-      "description": "允许团队成员在其脚本中使用来自 npm 和 JSR 等外部注册表的包。",
-      "read_only_description": "在您的脚本中使用来自 npm 和 JSR 等外部注册表的包。",
+      "description": "允许 团队 成员在其脚本中使用来自外部注册表的包，例如 npm 和 JSR。",
+      "read_only_description": "在脚本中使用来自外部注册表的包，例如 npm 和 JSR。",
       "breadcrumbs": {
-        "team_resources": "团队资源",
+        "team_resources": "团队 资源",
         "collections": "外部包"
       },
       "allow_packages": "{upper} 成员可以使用外部包",
-      "allow_packages_description": "选择 {lower} 成员可以使用无、全部还是选定的外部包。",
-      "read_only_package_description": "可在脚本中使用的包。",
+      "allow_packages_description": "选择 {lower} 成员是否可以不使用、全部或选定的外部包。",
+      "read_only_package_description": "可以在脚本中使用的包。",
       "package_options": {
         "allow_all": "允许所有包",
         "allow_selected": "允许选定的包",
@@ -155,217 +155,217 @@
       },
       "add_packages": {
         "title": "允许的包",
-        "description": "添加可供您的 {lower} 使用的包列表。",
+        "description": "添加您的 {lower} 可以使用的软件包列表。",
         "learn_more": {
-          "prefix": "了解",
+          "prefix": "学习",
           "link": "如何允许外部包"
         },
         "placeholder": "例如 npm:lodash@*, jsr:@opensrc/*@*",
         "add_button": "添加包",
         "validation": {
-          "empty": "请输入包名称",
-          "too_long": "包模式不得超过 {maxLength} 个字符",
+          "empty": "输入包名",
+          "too_long": "封装模式不得超过 {maxLength} 个字符",
           "invalid_registry": "包名称必须以注册表开头（例如 npm: 或 jsr:）",
-          "invalid_format": "请输入有效的包名称和版本（例如 npm:lodash@1.1.0 或 npm:lodash@*）"
+          "invalid_format": "输入有效的包名称和 版本（例如 npm:lodash@1.1.0 或 npm:lodash@*）"
         }
       },
       "banner": {
         "scope_restricted": {
           "title": "使用更多包",
-          "description": "请联系您的管理员，以向此列表添加更多包。"
+          "description": "请联系您的 管理员 以将更多软件包添加到此列表中。"
         },
         "scope_none": {
           "title": "不允许使用外部包",
-          "description": "请联系您的管理员，为您的团队启用外部包。"
+          "description": "请联系您的 管理员 为您的 团队 启用外部包。"
         },
         "upgrade_enterprise": {
           "title": "升级以管理允许的包",
-          "description": "升级到企业版计划，以允许使用来自外部注册表的特定包。<1>了解 Postman 企业版计划。</1>",
-          "primary_button": "升级到企业版"
+          "description": "通过升级到企业计划来允许来自外部注册表的特定包。 <1>了解Postman企业计划.</1>",
+          "primary_button": "升级至企业"
         }
       },
       "error": {
-        "title": "出错了",
+        "title": "出了点问题",
         "description": "无法加载外部包配置。",
-        "button": "重试",
-        "updating_settings_toast": "更新外部包设置失败。请重试。",
-        "fetching_settings_toast": "加载外部包设置失败。请重试。"
+        "button": "再试一次",
+        "updating_settings_toast": "无法更新外部包的设置。请再试一次。",
+        "fetching_settings_toast": "无法加载外部包的设置。请再试一次。"
       },
       "feature_not_available": {
         "title": "功能不可用",
-        "description": "外部包设置不适用于您的团队。"
+        "description": "外部包设置不适用于您的 团队。"
       },
       "private_packages": {
         "title": "私有 npm 包",
-        "description": "配置对私有 npm 包的访问权限。",
+        "description": "配置对 私有 npm 包的访问。",
         "learn_more": {
-          "prefix": "了解",
-          "link": "如何添加私有包"
+          "prefix": "学习",
+          "link": "如何添加 私有 包"
         },
         "token_input": {
           "label": "Token",
-          "placeholder": "输入您的 token",
-          "delete_button_tooltip": "删除 token"
+          "placeholder": "输入您的 令牌",
+          "delete_button_tooltip": "删除令牌"
         },
         "scope_input": {
-          "label": "作用域",
+          "label": "范围",
           "placeholder": "例如 @postman, @acme",
           "validation": {
-            "empty": "作用域不能为空"
+            "empty": "范围不能为空"
           },
-          "read_only_label": "私有包作用域"
+          "read_only_label": "私有 包范围"
         },
         "save": "保存"
       }
     },
     "vault_management": {
-      "title": "保险库",
-      "description": "管理您团队的保险库设置，控制访问权限，并确保跨工作区的敏感信息安全。",
+      "title": "Vault",
+      "description": "管理 团队 的 保险库 设置、控制访问并确保工作区中敏感信息的安全。",
       "breadcrumbs": {
-        "team_resources": "团队资源",
-        "vault": "保险库"
+        "team_resources": "团队 资源",
+        "vault": "Vault"
       },
-      "allow_export": "{upper} 成员可以导出其保险库数据",
-      "allow_export_description": "启用后，{lower} 成员可以从保险库中导出其数据。",
+      "allow_export": "{upper} 成员可以导出其 Vault 数据",
+      "allow_export_description": "启用后，{lower} 成员可以从 保险库 导出其数据。",
       "allow_encrypted_export": "允许加密导出",
-      "allow_encrypted_export_description": "{upper} 成员可以加密导出其保险库数据。",
+      "allow_encrypted_export_description": "{upper} 成员可以加密导出其 保险库 数据。",
       "allow_unencrypted_export": "允许未加密导出",
-      "allow_unencrypted_export_description": "{upper} 成员可以以明文形式导出其保险库数据。",
+      "allow_unencrypted_export_description": "{upper} 成员可以以明文形式导出其 保险库 数据。",
       "save": "保存",
       "vault_export": {
         "enabled": {
-          "title": "保险库导出已开启",
-          "description": "您的团队可以导出其保险库数据。"
+          "title": "保险库 导出已开启",
+          "description": "您的 团队 可以导出其 保险库 数据。"
         },
         "disabled": {
-          "title": "保险库导出已关闭",
-          "description": "您的团队无法导出其保险库数据。"
+          "title": "保险库 导出已关闭",
+          "description": "您的 团队 无法导出其 保险库 数据。"
         }
       },
       "error": {
         "update_settings": {
           "title": "无法更新设置",
-          "description": "只是线路出了点问题。请重试。"
+          "description": "只是一根电线有问题。请再试一次。"
         },
         "fetching_settings": {
-          "title": "出错了",
+          "title": "出了点问题",
           "description": "获取设置时发生错误"
         }
       },
-      "forbidden_message": "只有团队管理员才能管理团队中的资源。"
+      "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。"
     },
     "mock_management": {
-      "title": "模拟服务器",
-      "description": "管理组织内的模拟服务器",
+      "title": "Mock 服务器",
+      "description": "管理组织内的 mock 服务器",
       "breadcrumbs": {
-        "team_resources": "团队资源",
-        "mock_servers": "模拟服务器"
+        "team_resources": "团队 资源",
+        "mock_servers": "Mock 服务器"
       },
-      "disable_public_mock": "{upper} 成员可以创建公共模拟服务器",
-      "disable_public_mock_description": "启用后，{lower} 成员可以创建公共和私有模拟服务器。",
+      "disable_public_mock": "{upper} 成员可以创建 公开 mock 服务器",
+      "disable_public_mock_description": "启用后，{lower} 成员可以创建 公开 和 私有 mock 服务器。",
       "public_mock_creation": {
         "enabled": {
-          "title": "已启用创建公共模拟服务器"
+          "title": "启用创建 公开 mock 服务器"
         },
         "disabled": {
-          "title": "已禁用创建公共模拟服务器"
+          "title": "禁用创建 公开 mock 服务器"
         }
       },
       "error": {
         "update_settings": {
           "title": "无法更新设置",
-          "description": "只是线路出了点问题。请重试。"
+          "description": "只是一根电线有问题。请再试一次。"
         },
         "fetching_settings": {
-          "title": "出错了",
+          "title": "出了点问题",
           "description": "获取设置时发生错误"
         }
       },
-      "forbidden_message": "只有团队管理员才能管理团队中的资源。"
+      "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。"
     },
     "code_mock_management": {
       "title": "代码模拟",
       "description": "管理组织内的代码模拟",
-      "require_approval": "发布公共代码模拟需要审批",
-      "require_approval_description": "启用后，{lower} 成员创建的公共代码模拟必须经过管理员审核和批准才能发布。",
-      "require_approval_disabled_tooltip": "启用公共模拟服务器，以便对发布代码模拟要求审批。",
-      "create_public_code_mocks": "创建公共代码模拟",
-      "create_public_code_mocks_description": "启用后，{lower} 成员可以创建可公开访问的代码模拟。禁用后，只能创建私有代码模拟。",
+      "require_approval": "需要批准才能发布公开代码模拟",
+      "require_approval_description": "启用后，由 {lower} 成员创建的代码模拟必须经过 管理员 审核和批准才能发布。",
+      "require_approval_disabled_tooltip": "启用公开 Mock Server 功能，以便发布代码 Mock 时需要审批。",
+      "create_public_code_mocks": "创建 公开 代码模拟",
+      "create_public_code_mocks_description": "启用后，{lower} 成员可以创建可公开访问的代码模拟。禁用时，只能创建 私有 代码模拟。",
       "error": {
         "update_settings": {
           "title": "无法更新设置",
-          "description": "只是线路出了点问题。请重试。"
+          "description": "只是一根电线有问题。请再试一次。"
         },
         "fetching_settings": {
-          "title": "出错了",
+          "title": "出了点问题",
           "description": "获取设置时发生错误"
         }
       }
     },
     "live_session_management": {
-      "title": "实时会话",
+      "title": "现场会议",
       "description": "管理组织内的实时会话。",
       "breadcrumbs": {
-        "team_resources": "团队资源",
-        "collections": "实时会话"
+        "team_resources": "团队 资源",
+        "collections": "现场会议"
       },
-      "allow_users": "允许用户发起实时会话",
-      "start_live_sessions": "{upper} 成员可以发起实时会话",
-      "enable_live_session": "这将允许 {lower} 中的用户发起实时会话。",
+      "allow_users": "允许用户启动实时会话",
+      "start_live_sessions": "{upper} 会员可以开始直播会议",
+      "enable_live_session": "这将使 {lower} 中的用户能够启动实时会话。",
       "when_enabled": "启用后，{lower} 成员可以使用实时会话进行实时协作。",
       "error": {
         "update_settings": {
           "title": "无法更新设置",
-          "description": "只是线路出了点问题。请重试。"
+          "description": "只是一根电线有问题。请再试一次。"
         }
       },
-      "forbidden_message": "只有团队管理员才能管理团队中的资源。"
+      "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。"
     },
     "sandbox_team_management": {
-      "heading": "Sandbox 团队成员",
-      "description": "将您团队中的成员添加到 sandbox 团队。",
-      "search_placeholder": "搜索要添加的团队成员…",
-      "search_empty": "未找到团队成员",
+      "heading": "沙箱 团队 成员",
+      "description": "将 团队 中的成员添加到沙箱 团队 中。",
+      "search_placeholder": "搜索 团队 成员以添加...",
+      "search_empty": "未找到 团队 成员",
       "add_button": "添加",
-      "members_count": "{count, plural, one {# 位成员} other {# 位成员}}",
-      "empty_state": "sandbox 团队中尚无成员。请从上方添加您团队中的成员。",
+      "members_count": "{count, plural, one {# 名成员} other {# 名成员}}",
+      "empty_state": "沙箱 团队 中还没有成员。从上面的 团队 添加成员。",
       "toast": {
-        "add_success": "已将 {count, plural, one {# 位成员} other {# 位成员}} 添加到 sandbox 团队。",
-        "add_error": "添加 {count, plural, one {# 位成员} other {# 位成员}} 失败。",
-        "no_slots": "sandbox 团队没有可用名额。请先腾出名额，再添加新成员。"
+        "add_success": "已将 {count, plural, one {# 名成员} other {# 名成员}} 添加到沙箱 团队。",
+        "add_error": "无法添加 {count, plural, one {# 名成员} other {# 名成员}}。",
+        "no_slots": "沙箱 团队 中没有可用插槽。请在添加新成员之前释放一个空位。"
       }
     },
     "wrapper": {
       "title": "{upper} 资源",
-      "description": "让管理 {lower} 中的资源更轻松。",
+      "description": "让您更轻松地管理 {lower} 中的资源。",
       "management_options": {
         "workspace": {
           "title": "创建 {lower} 范围的工作区",
-          "description": "定义是否可以无需批准即创建 {lower} 范围的工作区。"
+          "description": "定义是否可以在未经批准的情况下创建 {lower} 范围的工作区。"
         },
         "collection": {
-          "title": "与访客共享",
-          "description": "定义是否可以与 {lower} 外部的人员共享集合。"
+          "title": "与访客分享",
+          "description": "定义是否可以与 {lower} 之外的人员共享集合。"
         },
         "mock": {
-          "title": "管理模拟服务器",
-          "description": "定义模拟服务器的发布和可见性规则。"
+          "title": "管理 mock 服务器",
+          "description": "定义 mock 服务器的发布和可见性规则。"
         },
         "external_packages": {
           "title": "使用外部包",
-          "description": "定义是否可以在脚本中使用外部包，以及可以使用哪些包。"
+          "description": "定义外部包是否可以在脚本中使用以及哪些外部包可以在脚本中使用。"
         },
         "live_sessions": {
-          "title": "发起实时会话",
-          "description": "定义是否可以发起实时会话。"
+          "title": "开始实时会话",
+          "description": "定义是否可以启动实时会话。"
         },
         "vault": {
           "title": "导出保险库数据",
           "description": "定义是否可以导出保险库数据。"
         },
         "sandbox_team": {
-          "title": "管理 sandbox 团队",
-          "description": "将成员添加到 sandbox 团队。"
+          "title": "管理沙箱 团队",
+          "description": "将成员添加到沙箱 团队。"
         }
       },
       "collapse_all": "全部折叠",
@@ -373,72 +373,72 @@
     }
   },
   "team_access": {
-    "title": "团队访问",
-    "description": "管理您组织中的人员如何加入此团队。",
-    "description_with_domain": "管理来自 @{domain} 的人员如何加入此团队。",
+    "title": "团队 访问",
+    "description": "管理您组织中的人员如何加入此 团队。",
+    "description_with_domain": "管理来自 @{domain} 的人员如何加入此 团队。",
     "verify_email_banner": {
-      "title": "验证您的电子邮件地址以管理团队访问设置",
-      "description": "我们已向 {userEmail} 发送了一封验证电子邮件。",
-      "resend_cta": "重新发送验证电子邮件",
+      "title": "验证您的电子邮件地址以管理 团队 访问设置",
+      "description": "我们向 {userEmail} 发送了一封验证电子邮件。",
+      "resend_cta": "重新发送验证邮件",
       "verified_cta": "我已验证我的电子邮件"
     },
     "join_via_link": {
-      "title": "允许人员通过资源链接自动加入",
-      "description": "来自 @{domain} 的人员在访问共享资源的链接时可以自动加入此团队。"
+      "title": "允许人们从资源链接自动加入",
+      "description": "来自 @{domain} 的人在访问共享资源的链接时可以自动加入此 团队。"
     },
     "team_discovery": {
-      "title": "使此团队可被发现",
-      "description": "来自 @{domain} 的人员可以查看此团队并请求加入。",
+      "title": "使这个 团队 可以被发现",
+      "description": "@{domain} 的人可以看到这个 团队 和 请求 来加入。",
       "auto_join": {
-        "title": "允许人员自动加入此团队",
-        "description": "来自 @{domain} 的人员可以通过团队发现自动加入此团队。"
+        "title": "允许人们自动加入此 团队",
+        "description": "来自 @{domain} 的人可以通过团队发现自动加入这个 团队。"
       },
       "join_guidelines": {
-        "title": "提出一个筛选问题",
+        "title": "提出筛选问题",
         "label": "筛选问题",
-        "placeholder": "例如：您为何想加入此团队？",
+        "placeholder": "例如你为什么想加入这个 团队？",
         "validation_message": "请将您的问题限制在 500 个字符以内",
         "save_cta": "保存问题",
         "cancel_cta": "取消",
         "success_toast": {
           "title": "更改已保存",
-          "description": "待处理的团队成员在请求加入您的团队时必须回答此问题。"
+          "description": "待定 团队 会员在请求加入您的 团队 时必须回答此问题。"
         },
         "error_toast": {
           "title": "无法保存问题",
-          "description": "保存您的问题时出错。请重试。"
+          "description": "保存您的问题时出现问题。请再试一次。"
         }
       },
-      "settings": "团队发现设置"
+      "settings": "团队 发现设置"
     },
     "nudge": {
       "initial_toast": {
-        "title": "邀请已发送。让来自 @{domain} 的其他同事自动加入",
-        "description": "这样，您的同事就可以发现并自动加入您的团队。",
+        "title": "邀请已发送。让@{domain} 的其他同事自动加入",
+        "description": "这样您的同事就可以发现并自动加入您的 团队。",
         "enable_auto_join": "启用自动加入",
         "view_settings": "查看设置"
       },
       "enable_success_toast": {
-        "title": "您的团队访问设置已更新",
-        "description": "您的团队成员现在将拥有更顺畅的引导体验",
+        "title": "您的 团队 访问设置已更新",
+        "description": "您的 团队 会员现在将拥有更顺畅的入职体验",
         "view_settings": "查看设置"
       },
       "enable_error_toast": {
-        "title": "更新团队访问设置失败",
-        "description": "请重试或联系支持团队。"
+        "title": "无法更新 团队 访问设置",
+        "description": "请重试或联系支持人员。"
       }
     }
   },
   "readonly_members": {
     "editor_tag": "管理员",
     "readonly_tag": "只读",
-    "editor_tooltip": "可以编辑所有共享工作区，并管理成员、角色、账单和团队设置。",
-    "readonly_tooltip": "可以查看共享工作区，但无法进行更改或管理团队设置。个人工作区不受影响。"
+    "editor_tooltip": "可以编辑所有共享工作区并管理成员、角色、计费和 团队 设置。",
+    "readonly_tooltip": "可以查看共享工作区，但无法进行更改或管理 团队 设置。 个人 工作区不受影响。"
   },
   "orgs_access": {
     "title": "组织访问",
     "orgs_discovery": {
-      "title": "使此组织可被发现"
+      "title": "使该组织易于被发现"
     }
   }
 }

@@ -2,10 +2,10 @@
   "errors": {
     "generic": ":(",
     "label": "错误",
-    "desktop_agent_not_ready": "桌面代理尚未就绪",
+    "desktop_agent_not_ready": "桌面代理尚未准备好",
     "desktop_agent_not_supported": "不支持桌面代理",
     "desktop_agent_not_connected": "桌面代理未连接",
-    "connection_failed": "无法运行该请求： ",
+    "connection_failed": "无法运行 请求：",
     "unable_to_connect": "无法连接"
   },
   "address_bar": {
@@ -26,19 +26,19 @@
   "constants": {
     "run": "运行",
     "cancel": "取消",
-    "disconnect": "断开连接",
+    "disconnect": "断开",
     "connect": "连接",
     "clear_errors": "清除错误"
   },
   "cartographer": {
     "empty_state": {
-      "description": "输入 URL 或命令，以从该服务加载支持的工具、提示和资源。",
+      "description": "输入 URL 或命令以从服务加载支持的工具、提示和资源。",
       "cta": "加载功能"
     }
   },
   "connect_button": {
     "tooltip": {
-      "no_permission": "您没有权限在此工作区中执行此操作。"
+      "no_permission": "您没有权限在此 Workspace 中执行此操作。"
     }
   },
   "oauth_debugger": {
@@ -47,10 +47,10 @@
     },
     "auth_banner": {
       "status": {
-        "fetching_config": "正在获取 OAuth 2.0 配置…",
+        "fetching_config": "正在获取 OAuth 2.0 配置...",
         "authorize_with_received_config": "使用 OAuth 2.0 授权此连接。",
-        "authorizing": "正在授权…",
-        "authorized": "已通过 OAuth 2.0 授权。"
+        "authorizing": "授权...",
+        "authorized": "已获得 OAuth 2.0 授权。"
       },
       "actions": {
         "authorize": "授权",
@@ -60,24 +60,24 @@
       }
     },
     "sections": {
-      "headers": "标头",
-      "body": "正文",
-      "details": "详细信息",
-      "no_content": "无内容"
+      "headers": "请求头",
+      "body": "请求体",
+      "details": "细节",
+      "no_content": "没有内容"
     },
     "sensitive_value": {
-      "reveal": "显示",
+      "reveal": "揭示",
       "hide": "隐藏",
       "copy": "复制值"
     },
     "test": {
-      "empty_state": "点击“继续”以逐步运行各个步骤",
-      "step_list_aria_label": "认证测试步骤",
+      "empty_state": "单击“继续”一次执行一个步骤",
+      "step_list_aria_label": "认证 测试步骤",
       "actions": {
         "reset": "重置",
         "cancel": "取消",
         "continue": "继续",
-        "flow_complete": "流程完成"
+        "flow_complete": "流程 完成"
       },
       "exchange": {
         "request": "请求：",
@@ -86,120 +86,120 @@
       "logs": {
         "get_url": "GET {url}",
         "request_without_token": {
-          "title": "发送不带令牌的请求",
-          "message": "在不带 OAuth 访问令牌的情况下 POST initialize。",
+          "title": "发送 请求 而不发送 令牌",
+          "message": "POST 初始化，无需 OAuth 访问 令牌。",
           "response_title": "收到响应"
         },
         "request_resource_metadata": {
-          "title": "请求资源元数据",
+          "title": "请求 资源元数据",
           "response_title": "收到资源元数据"
         },
         "parsed_resource_metadata": {
-          "title": "已解析资源元数据",
-          "message": "已解析受保护资源元数据。"
+          "title": "解析资源元数据",
+          "message": "解析的受保护资源元数据。"
         },
         "request_authorization_server_metadata": {
-          "title": "请求授权服务器元数据",
+          "title": "请求 授权 服务器元数据",
           "response_title": "收到服务器元数据"
         },
         "parsed_authorization_server_metadata": {
-          "title": "已解析服务器元数据",
-          "message": "已解析授权服务器元数据。"
+          "title": "解析的服务器元数据",
+          "message": "解析的 授权 服务器元数据。"
         },
         "client_registration_resolved": {
-          "title": "客户端注册已解析",
-          "client_id_metadata_document_message": "正在使用已配置的客户端 ID 元数据文档 URL。",
-          "pre_registered_message": "正在使用已配置的预注册客户端 ID。"
+          "title": "客户注册已解决",
+          "client_id_metadata_document_message": "使用配置的客户端 ID 元数据文档 URL。",
+          "pre_registered_message": "使用配置的预注册客户端 ID。"
         },
         "request_client_registration": {
-          "title": "请求客户端注册",
-          "message": "正在注册动态 OAuth 客户端。",
-          "success_message": "已注册动态 OAuth 客户端。"
+          "title": "请求 客户注册",
+          "message": "注册动态 OAuth 客户端。",
+          "success_message": "注册了动态 OAuth 客户端。"
         },
         "generate_pkce_parameters": {
           "title": "生成 PKCE 参数",
-          "message": "支持 PKCE S256。授权请求将包含 code_verifier 和 code_challenge 参数。"
+          "message": "支持 PKCE S256。 授权 请求 将包含 code_verifier 和 code_challenge 参数。"
         },
         "authorize_request": {
           "title": "授权请求",
           "message": "正在打开授权 URL 并等待回调。",
-          "success_message": "授权回调已完成。"
+          "success_message": "授权 回调完成。"
         },
         "get_access_token": {
           "title": "获取访问令牌",
-          "message": "授权码已在令牌端点进行交换。OAuth 管理器不会公开原始的令牌交换标头，因此敏感字段已被汇总。"
+          "message": "授权 代码在 令牌 端点 处交换。 OAuth 管理器不会公开原始 令牌 交换标头，因此会汇总敏感字段。"
         },
         "persist_access_token": {
-          "title": "持久化访问令牌",
-          "message": "正在将返回的令牌持久化到此 MCP 请求认证会话。",
-          "success_message": "此 MCP 请求认证会话现已引用该 OAuth 令牌。"
+          "title": "保留访问 令牌",
+          "message": "将返回的 令牌 保留到此 MCP 请求 auth 会话。",
+          "success_message": "MCP 请求 auth 会话 现在引用 OAuth 令牌。"
         },
         "authenticated_request": {
-          "title": "已认证请求",
-          "message": "正在使用此流程中的 OAuth 访问令牌重新连接 MCP 服务器。",
-          "success_message": "服务器已成功使用 OAuth 令牌连接。"
+          "title": "已验证 请求",
+          "message": "使用 OAuth 重新连接 MCP 服务器，从此 流程 访问 令牌。",
+          "success_message": "服务器与 OAuth 令牌 连接成功。"
         },
         "step_failed": {
           "title": "步骤失败"
         },
         "step_cancelled": {
           "title": "步骤已取消",
-          "message": "当前认证测试步骤已取消。"
+          "message": "当前的身份验证测试步骤已取消。"
         }
       },
       "errors": {
-        "expected_401": "预期未认证的 MCP 请求返回 401，但收到 {status}",
-        "resource_metadata_http_failed": "受保护资源元数据请求失败，HTTP {status}",
-        "resource_metadata_unavailable": "无法获取受保护资源元数据",
-        "resource_metadata_not_json": "受保护资源元数据响应不是 JSON 对象",
-        "authorization_server_missing": "受保护资源元数据未公布授权服务器",
-        "authorization_server_metadata_http_failed": "授权服务器元数据请求失败，HTTP {status}",
-        "authorization_server_metadata_unavailable": "无法获取授权服务器元数据",
-        "authorization_server_metadata_not_json": "授权服务器元数据响应不是 JSON 对象",
-        "metadata_required": "在解析客户端凭据之前，请先完成 OAuth 元数据发现",
-        "dynamic_client_registration_http_failed": "动态客户端注册失败，HTTP {status}",
-        "dynamic_client_registration_not_json": "动态客户端注册响应不是 JSON 对象",
+        "expected_401": "预计未经身份验证的 MCP 请求 返回 401，收到 {status}",
+        "resource_metadata_http_failed": "受保护的资源元数据 请求 失败，并出现 HTTP {status}",
+        "resource_metadata_unavailable": "无法获取受保护的资源元数据",
+        "resource_metadata_not_json": "受保护的资源元数据 响应 不是 JSON 对象",
+        "authorization_server_missing": "受保护的资源元数据未通告 授权 服务器",
+        "authorization_server_metadata_http_failed": "授权 服务器元数据 请求 失败，并出现 HTTP {status}",
+        "authorization_server_metadata_unavailable": "无法获取 授权 服务器元数据",
+        "authorization_server_metadata_not_json": "授权 服务器元数据 响应 不是 JSON 对象",
+        "metadata_required": "在解析客户端凭据之前完成 OAuth 元数据发现",
+        "dynamic_client_registration_http_failed": "动态客户端注册失败，出现 HTTP {status}",
+        "dynamic_client_registration_not_json": "动态客户端注册 响应 不是 JSON 对象",
         "dynamic_client_registration_unsupported": "授权服务器不支持动态注册；请手动配置客户端 ID",
         "client_id_missing": "OAuth 客户端凭据缺少 client_id",
-        "pkce_metadata_required": "进行 PKCE 验证之前需要授权服务器元数据",
-        "pkce_s256_required": "授权服务器元数据必须公布 S256 PKCE 支持",
-        "client_credentials_required": "授权之前请先解析 OAuth 客户端凭据",
-        "authorization_token_missing": "OAuth 授权未返回令牌",
-        "authorization_required": "获取访问令牌之前请先完成授权",
-        "oauth_token_required": "连接 MCP 服务器之前请先保存 OAuth 令牌",
-        "step_cancelled": "认证测试步骤已取消"
+        "pkce_metadata_required": "PKCE 验证之前需要 授权 服务器元数据",
+        "pkce_s256_required": "授权 服务器元数据必须通告 S256 PKCE 支持",
+        "client_credentials_required": "在 授权 之前解析 OAuth 客户端凭据",
+        "authorization_token_missing": "OAuth 授权 未返回 令牌",
+        "authorization_required": "在获取访问令牌之前完成授权",
+        "oauth_token_required": "连接 MCP 服务器之前保存 OAuth 令牌",
+        "step_cancelled": "认证 测试步骤已取消"
       },
       "steps": {
         "request_without_token": {
-          "label": "发送不带令牌的请求",
-          "description": "发送未认证的 MCP initialize 请求以观察 OAuth 质询。"
+          "label": "发送 请求 而不发送 令牌",
+          "description": "发送未经身份验证的 MCP 初始化 请求 以观察 OAuth 质询。"
         },
         "request_resource_metadata": {
-          "label": "请求资源元数据",
-          "description": "请求 RFC 9728 OAuth 受保护资源元数据。"
+          "label": "请求 资源元数据",
+          "description": "请求 RFC 9728 OAuth 受保护的资源元数据。"
         },
         "request_authorization_server_metadata": {
-          "label": "请求授权服务器元数据",
-          "description": "请求 OAuth 授权服务器元数据。"
+          "label": "请求 授权 服务器元数据",
+          "description": "请求 OAuth 授权 服务器元数据。"
         },
         "request_client_registration": {
-          "label": "请求客户端注册",
-          "description": "解析已配置的凭据或请求动态客户端注册。"
+          "label": "请求 客户注册",
+          "description": "解析配置的凭据或 请求 动态客户端注册。"
         },
         "generate_pkce_parameters": {
           "label": "生成 PKCE 参数",
-          "description": "在打开授权请求之前确认 PKCE S256 支持。"
+          "description": "在打开 授权 请求 之前确认 PKCE S256 支持。"
         },
         "authorize_request": {
           "label": "授权请求",
-          "description": "打开浏览器授权 URL 并等待回调。"
+          "description": "打开浏览器中的授权 URL 并等待回调。"
         },
         "get_access_token": {
           "label": "获取访问令牌",
-          "description": "交换授权码并持久化令牌。"
+          "description": "交换 授权 代码并保留 令牌。"
         },
         "authenticated_request": {
-          "label": "已认证请求",
+          "label": "已验证 请求",
           "description": "使用 OAuth 访问令牌重新连接 MCP 请求。"
         }
       }
@@ -210,10 +210,10 @@
       },
       "sections": {
         "endpoints": "端点",
-        "capabilities": "功能"
+        "capabilities": "能力"
       },
       "endpoints": {
-        "issuer": "颁发者",
+        "issuer": "发行人",
         "authorization_endpoint": "授权端点",
         "token_endpoint": "令牌端点",
         "registration_endpoint": "注册端点",
@@ -227,8 +227,8 @@
       "metadata": {
         "grant_types_supported": "支持的授权类型",
         "response_types_supported": "支持的响应类型",
-        "code_challenge_methods": "代码质询方法",
-        "token_endpoint_auth_methods": "令牌端点认证方法"
+        "code_challenge_methods": "代码挑战方法",
+        "token_endpoint_auth_methods": "令牌 端点 认证 方法"
       },
       "status": {
         "supported": "支持",

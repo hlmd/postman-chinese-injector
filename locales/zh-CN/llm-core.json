@@ -1,33 +1,33 @@
 {
   "onboarding_modal": {
     "title": "使用 AI 请求测试 LLM",
-    "description": "使用来自 <0>OpenAI、Google、Anthropic</0> 等的 LLM 试用您的提示词。",
-    "step_1": "点击侧边栏中的“新建”创建新的 AI 请求。",
+    "description": "使用 <0>OpenAI、Google、Anthropic</0> 等机构的 LLM 尝试您的提示。",
+    "step_1": "通过单击侧边栏中的“新建”来创建新的 AI 请求。",
     "step_2": "选择要使用的 LLM 模型。",
-    "step_3": "授权并将您的凭据存储在保险库中。",
-    "step_4": "传入用户提示词，并可选择性地传入系统提示词，然后点击“发送”。",
+    "step_3": "授权您的凭据并将其存储在保险库中。",
+    "step_4": "传递用户提示和可选的系统提示，然后点击“发送”。",
     "cta": "开始使用"
   },
   "agent": {
     "errors": {
-      "agent_not_connected": "切换到 Postman Desktop Agent 以发出 LLM 请求。",
-      "agent_not_supported": "您使用的 Postman Desktop Agent 版本较旧，不支持 LLM 请求。请更新 Desktop Agent 后重试。",
-      "agent_not_ready": "请确保 Desktop Agent 已安装并正在运行。"
+      "agent_not_connected": "切换到 Postman 桌面代理以发起 LLM 请求。",
+      "agent_not_supported": "您使用的是 Postman 桌面代理的旧版本，不支持 LLM 请求。请更新桌面代理并重试。",
+      "agent_not_ready": "确保桌面代理已安装并正在运行。"
     },
     "openai": {
       "response": {
         "network_meta": {
           "http_status_codes": {
             "401": {
-              "detail": "身份验证无效。<button>请传入正确的认证凭据</button>",
+              "detail": "身份验证无效。 <button>传递正确的身份验证凭据</button>",
               "label": "身份验证无效"
             },
             "403": {
-              "detail": "不支持的国家、地区或领土",
-              "label": "领土禁止访问"
+              "detail": "不支持的国家、地区或领地",
+              "label": "地区受限"
             },
             "429": {
-              "detail": "您已超出当前配额，请检查您的计划和账单详情",
+              "detail": "您超出了当前配额，请检查您的计划和账单详细信息",
               "label": "配额不足"
             },
             "500": {
@@ -35,7 +35,7 @@
               "label": "服务器错误"
             },
             "503": {
-              "detail": "引擎当前过载，请稍后重试",
+              "detail": "引擎当前超载，请稍后重试",
               "label": "引擎过载"
             }
           }
@@ -44,11 +44,63 @@
     }
   },
   "errors": {
-    "model_not_selected": "选择一个模型以发送 AI 请求。"
+    "model_not_selected": "选择发送 AI 请求的模型。"
   },
   "send_button": {
     "tooltips": {
-      "no_send_permission": "您没有在此工作区中发送请求的权限。"
+      "no_send_permission": "您没有权限在此 Workspace 中发送请求。"
+    }
+  },
+  "tools": {
+    "local_tools": {
+      "section_title": "工具集",
+      "tool_count": "{count, plural, =1 {# 个工具} other {# 个工具}}",
+      "empty_title": "未找到本地工具",
+      "empty_description": "在 AI 工具工作台中创建本地工具，将其添加到此请求。",
+      "ungrouped_group_label": "未分组工具",
+      "no_matching_tools": "没有工具匹配当前的搜索和筛选条件。",
+      "controls": {
+        "search_tooltip": "搜索",
+        "search_placeholder": "搜索工具",
+        "filter_tooltip": "筛选",
+        "filter_enabled_tooltip": "筛选（已启用）",
+        "filter_disabled_tooltip": "筛选（已禁用）",
+        "select_all": "全选",
+        "deselect_all": "取消全选",
+        "filter_all": "显示全部",
+        "filter_enabled": "已启用",
+        "filter_disabled": "已禁用"
+      }
+    },
+    "overrides": {
+      "button": "覆盖",
+      "edit_button": "编辑覆盖",
+      "badge": "已覆盖",
+      "count": "{count, plural, =1 {# 个工具已覆盖} other {# 个工具已覆盖}}",
+      "panel_title": "覆盖 MCP 工具",
+      "local_tool_label": "使用本地工具覆盖",
+      "parts_label": "要覆盖的部分",
+      "parts": {
+        "description": "描述",
+        "input_schema": "参数",
+        "output_schema": "输出模式",
+        "implementation": "实现"
+      },
+      "part_descriptions": {
+        "description": "替换面向模型的描述",
+        "input_schema": "替换输入模式",
+        "output_schema": "替换声明的结果结构",
+        "implementation": "运行本地工具，而非 MCP 调用"
+      },
+      "diff_original": "MCP 原始内容",
+      "diff_override": "本地覆盖",
+      "diff_empty": "未提供",
+      "apply_button": "应用",
+      "clear_button": "清除",
+      "remove_button": "移除覆盖",
+      "cancel_button": "取消",
+      "no_matching_tools": "没有本地工具与此 MCP 工具名称匹配。",
+      "status_prefix": "正在覆盖"
     }
   }
 }

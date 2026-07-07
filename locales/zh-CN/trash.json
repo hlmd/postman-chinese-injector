@@ -5,116 +5,116 @@
   "header": {
     "heading": "回收站",
     "back_to_workspace": "返回",
-    "description": "您有权访问的工作区中已删除的 {model} 将显示在此处。如果您拥有编辑权限，可以恢复或永久删除项目。"
+    "description": "您有权限访问的 Workspace 中已删除的 {model} 将显示在此处。如果您拥有编辑权限，可以恢复或永久删除这些项目。"
   },
   "table": {
     "header": {
       "name": "名称",
       "deleted": "已删除",
-      "workspace": "工作区",
+      "workspace": "Workspace",
       "deleted_by": "删除者",
       "deleted_on": "删除时间",
-      "removal": "移除日期"
+      "removal": "删除日期"
     },
     "body": {
       "tooltips": {
-        "is_offline": "您恢复在线后即可执行此操作",
+        "is_offline": "恢复网络连接后即可执行此操作",
         "is_online_restore": "恢复",
         "is_online_delete": "永久删除"
       }
     },
     "empty": {
-      "heading": "您的回收站为空",
-      "description": "您删除的集合将显示在此处。"
+      "heading": "回收站是空的",
+      "description": "您删除的 Collection 将显示在此处。"
     },
     "blankState": {
       "title": "未找到 {model}",
-      "description": "请尝试其他搜索词、调整筛选条件或检查是否有拼写错误。"
+      "description": "请尝试其他搜索词、调整筛选条件或检查拼写错误。"
     }
   },
   "actions": {
     "delete": {
       "toasts": {
-        "success_body": "集合 {name} 已成功删除。",
-        "success_title": "集合已永久删除",
-        "error_body": "无法删除集合。",
+        "success_body": "Collection {name} 已成功删除。",
+        "success_title": "Collection 已永久删除",
+        "error_body": "无法删除 Collection。",
         "permission_error": "您没有权限删除此 {model}"
       }
     },
     "restore": {
       "toasts": {
-        "error_body": "只是连接出了点小问题，请重试。",
-        "error_title": "无法恢复集合",
-        "success_body": "{collection} 现已位于 {workspace} 中。",
-        "success_title": "集合恢复成功",
-        "success_link": "查看集合",
+        "error_body": "网络似乎出现了问题，请重试。",
+        "error_title": "无法恢复 Collection",
+        "success_body": "{collection} 现已在 {workspace} 中。",
+        "success_title": "Collection 恢复成功",
+        "success_link": "查看 Collection",
         "permission_error": "您没有权限恢复此 {model}"
       }
     },
     "commons": {
-      "is_offline_body": "您恢复在线后即可管理回收站。",
-      "is_offline_title": "您当前处于离线状态"
+      "is_offline_body": "恢复网络连接后即可管理回收站。",
+      "is_offline_title": "您已离线"
     }
   },
   "offline": {
-    "title": "您当前处于离线状态",
-    "body": "无法连接到服务器。请检查您的网络设置。",
+    "title": "您已离线",
+    "body": "无法连接到服务器，请检查您的网络设置。",
     "action": "重试",
-    "offline_banner_text": "您似乎已离线。在恢复在线之前，您无法执行任何操作。"
+    "offline_banner_text": "您似乎已离线。恢复网络连接后才能执行操作。"
   },
   "error": {
     "title_primary": "无法加载回收站",
-    "title_secondary": "返回工作区",
-    "message": "只是连接出了点小问题，请刷新或稍后重试。",
+    "title_secondary": "返回 Workspace",
+    "message": "网络似乎出现了问题，请刷新或稍后重试。",
     "action": "刷新"
   },
   "delete_permanent": {
-    "title": "永久删除集合",
+    "title": "永久删除 Collection",
     "action": "删除",
-    "message": "此操作无法撤消。"
+    "message": "此操作无法撤销。"
   },
   "collection_recovery_modal": {
     "title": "无法在此处恢复",
     "already_exists": {
-      "description": "此工作区中已存在该 {entityTypeText}。"
+      "description": "{entityTypeText} 已存在于此 Workspace 中。"
     },
     "permission": {
-      "description": "您没有权限将 {entityTypeText} 移动到此工作区。"
+      "description": "您没有权限将 {entityTypeText} 移动到此 Workspace。"
     },
     "workspace_error": {
-      "title": "无法加载更多工作区",
-      "sub_title": "只是连接出了点小问题，请尝试重新加载。",
+      "title": "无法加载更多 Workspace",
+      "sub_title": "网络似乎出现了问题，请重新加载。",
       "action": "重新加载"
     },
     "header": {
       "title": "恢复 {collectionName}"
     },
     "body": {
-      "info_text": "为集合选择一个工作区",
+      "info_text": "为该 Collection 选择一个 Workspace",
       "initial_error": {
-        "title": "无法加载工作区",
-        "description": "只是连接出了点小问题，请尝试重新加载。",
+        "title": "无法加载 Workspace",
+        "description": "网络似乎出现了问题，请重新加载。",
         "action": "重新加载"
       },
       "workspace_list": {
-        "error_title": "无法加载工作区",
-        "error_subtitle": "只是连接出了点小问题，请尝试重新加载。",
+        "error_title": "无法加载 Workspace",
+        "error_subtitle": "网络似乎出现了问题，请重新加载。",
         "action": "重新加载",
-        "search_placeholder": "搜索工作区",
-        "no_workspace_title": "未找到工作区",
-        "no_workspace_description": "请检查拼写，或尝试其他搜索词。"
+        "search_placeholder": "搜索 Workspace",
+        "no_workspace_title": "未找到 Workspace",
+        "no_workspace_description": "请检查拼写或尝试其他搜索词。"
       }
     },
     "footer": {
       "cancel_action": "取消",
-      "restore_action": "恢复集合",
-      "restore_action_tooltip": "您恢复在线后即可执行此操作"
+      "restore_action": "恢复 Collection",
+      "restore_action_tooltip": "恢复网络连接后即可执行此操作"
     }
   },
   "banner": {
-    "auto_removal": "{model} 将自动从回收站中移除。",
-    "auto_removal_fix_days": "根据您的计划，{model} 将在固定天数后自动从回收站中移除。",
-    "auto_removal_retention_days": "{model} 将在 {count, plural, one {# 天} other {# 天}} 后自动从回收站中移除。"
+    "auto_removal": "系统将自动从回收站中删除 {model}。",
+    "auto_removal_fix_days": "系统将根据您的套餐，在固定天数后自动从回收站中删除 {model}。",
+    "auto_removal_retention_days": "系统将在 {count, plural, one {# 天} other {# 天}}后自动从回收站中删除 {model}。"
   },
   "filters": {
     "search": {
@@ -122,8 +122,8 @@
       "placeholder": "搜索 {model}"
     },
     "workspaces": {
-      "placeholder": "工作区",
-      "empty_state_message": "未找到工作区"
+      "placeholder": "Workspace",
+      "empty_state_message": "未找到 Workspace"
     },
     "deleted_by": {
       "empty_state_message": "未找到用户",
@@ -134,10 +134,10 @@
     "label": {
       "created_by": "创建者",
       "created_on": "创建时间",
-      "workspace": "工作区",
+      "workspace": "Workspace",
       "forks": "复刻",
-      "monitors": "监视器",
-      "mocks": "模拟",
+      "monitors": "Monitor",
+      "mocks": "Mock",
       "watchers": "关注者",
       "forklabel": "复刻标签"
     },

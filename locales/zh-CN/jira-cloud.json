@@ -1,7 +1,7 @@
 {
   "issues_length": {
-    "singular": "{ count } 个问题",
-    "plural": "{ count } 个问题"
+    "singular": "{ count } 问题",
+    "plural": "{ count } 问题"
   },
   "collection": {
     "issues": "问题",
@@ -20,14 +20,14 @@
           "label": "站点",
           "placeholder": "选择站点",
           "footer": {
-            "text": "没有看到列出您的站点？",
+            "text": "没有看到您的网站列出？",
             "button_text": "切换账户"
           }
         },
         "project": {
           "label": "项目",
-          "placeholder": "输入以搜索项目",
-          "empty_state_message": "未找到项目"
+          "placeholder": "输入搜索项目",
+          "empty_state_message": "没有找到项目"
         },
         "issue_type": {
           "label": "工作类型",
@@ -36,35 +36,35 @@
         },
         "summary": {
           "label": "摘要",
-          "placeholder": "响应返回 404"
+          "placeholder": "响应 返回 404"
         },
         "description": {
           "label": "描述",
           "placeholder": "添加与您发现的问题相关的任何其他详细信息。"
         },
         "assignee": {
-          "label": "受理人",
-          "placeholder": "选择受理人",
-          "empty_state_message": "未找到受理人"
+          "label": "经办人",
+          "placeholder": "选择经办人",
+          "empty_state_message": "未找到经办人"
         },
         "issue": {
           "label": "问题",
           "placeholder": "输入以搜索问题",
-          "empty_state_message": "未找到问题"
+          "empty_state_message": "没有发现问题"
         },
         "comment": {
-          "label": "其他评论",
+          "label": "附加评论",
           "placeholder": "添加与该问题相关的任何其他详细信息。"
         },
         "response": {
           "label": "在问题中包含响应",
-          "info_text": "将当前响应数据和元数据添加到问题描述中"
+          "info_text": "将当前 响应 数据和元添加到问题描述中"
         }
       },
       "errors": {
-        "required": "此项为必填字段",
-        "invalid_date": "您的输入日期格式不正确，请使用 { format }",
-        "invalid_estimate": "您的输入估算格式不正确，请使用 [#w #d #h #m]"
+        "required": "这是必填字段",
+        "invalid_date": "您输入的日期格式不正确，请使用 { format }",
+        "invalid_estimate": "您输入的估算格式不正确，请使用 [#w #d #h #m]"
       },
       "action": {
         "cancel": "取消",
@@ -82,26 +82,26 @@
         },
         "description": {
           "text": {
-            "create": "已为此 { entityName } 创建 { key }。 ",
-            "connect": "{ key } 现已连接到此 { entityName }。 "
+            "create": "{ key } 已为此 { entityName } 创建。",
+            "connect": "{ key } 现在已连接到此 { entityName }。"
           },
           "button_text": "查看"
         }
       },
       "error": {
         "auth": {
-          "title": "出错了",
-          "description": "连接 Jira 时出现问题。请重试。"
+          "title": "出了点问题",
+          "description": "连接 Jira 时出现问题。请再试一次。"
         },
         "required_fields": {
-          "title": "请在 Jira 中填写必填字段。将请求链接添加到问题，以便在 Postman 中查看它。"
+          "title": "填写 Jira 中的必填字段。添加 请求 链接到问题以在 Postman 中查看。"
         },
         "permission_denied": {
           "create": {
-            "title": "您需要权限才能在此 Jira 项目中创建问题。请选择其他项目。"
+            "title": "您需要 权限 才能在此 Jira 项目中创建问题。选择另一个项目。"
           },
           "connect": {
-            "title": "您需要权限才能在此 Jira 项目中编辑问题。请选择其他项目。"
+            "title": "您需要 权限 来编辑此 Jira 项目中的问题。选择另一个项目。"
           }
         },
         "not_allowed_value_fields": {
@@ -111,16 +111,16 @@
     },
     "warning": {
       "fields": {
-        "title": "部分必填字段不受支持",
-        "description": "若要从 Postman 创建此问题，请选择其他工作类型，或在您的 Jira 设置中将上述字段设为可选。"
+        "title": "不支持某些必填字段",
+        "description": "要从 Postman 创建此问题，请选择其他工作类型或在 Jira 设置中将上述字段设为可选。"
       },
       "scopes": {
-        "title": "我们需要您重新登录 Jira。",
-        "text": "这样我们才能加载创建您的问题所需的所有字段。",
+        "title": "我们需要您再次登录 Jira。",
+        "text": "这使我们可以加载创建您的问题所需的所有字段。",
         "sign_in_button": "登录"
       },
       "expired_token": {
-        "title": "请重新登录。您的令牌已过期。",
+        "title": "请重新登录。您的 令牌 已过期。",
         "sign_in_button": "登录"
       }
     }
@@ -128,7 +128,7 @@
   "context_bar": {
     "blank_state": {
       "auth": {
-        "title": "登录 Jira Cloud 以查看问题",
+        "title": "登录 Jira Cloud 查看问题",
         "sign_in_button": "登录"
       },
       "issues": {
@@ -139,38 +139,38 @@
     "request": {
       "add_button": "新建",
       "assignee": {
-        "assigned": "已分配给 { assignee }",
+        "assigned": "分配给 { assignee }",
         "unassigned": "未分配"
       }
     },
     "collection": {
       "heading": {
-        "singular": "此集合中有 { count } 个问题",
-        "plural": "此集合中有 { count } 个问题"
+        "singular": "{ count } 问题在此 集合 中",
+        "plural": "{ count } 问题在此 集合 中"
       }
     }
   },
   "popover": {
     "nudges": {
-      "heading": "在 Jira 中跟踪并修复失败",
+      "heading": "跟踪并修复 Jira 中的故障",
       "actions": {
         "log_issue": "记录问题",
         "dismiss": "忽略"
       },
       "collection_run": {
-        "description": "创建 Jira 问题，与您的团队共享运行结果、分配任务并更快地解决失败。"
+        "description": "创建 Jira 问题以与您的 团队 共享运行结果、分配任务并更快地解决故障。"
       },
       "monitor": {
-        "description": "创建 Jira 问题，与您的团队共享监视器结果、分配任务并更快地解决失败。"
+        "description": "创建 Jira 问题以与您的 团队 共享 监控 结果、分配任务并更快地解决故障。"
       }
     },
     "meta_actions": {
       "heading": "遇到意外错误？",
-      "description": "通过将此请求和响应附加到 Jira Cloud 上的新问题，帮助团队快速复现该问题。"
+      "description": "通过将此 请求 和 响应 附加到 Jira Cloud 上的新问题，帮助团队快速重现问题。"
     },
     "context_bar": {
       "heading": "这可能是一个已知问题",
-      "description": "您的团队已将一个或多个 Jira 问题关联到此请求。请查看活动问题以寻找可能的解决方法，或者如果您遇到的是不同的情况，请报告一个新问题。"
+      "description": "您的 团队 已将一个或多个 Jira 问题与此 请求 相关联。查看当前问题以获取可能的解决方法，或者在遇到不同情况时报告新问题。"
     },
     "cta_button": "知道了"
   }

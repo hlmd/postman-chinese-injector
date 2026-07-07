@@ -1,30 +1,30 @@
 {
   "connected_accounts": {
-    "orgs_description": "通过第三方应用配置您在 Postman 中的组织。已配置的应用可供 Postman 组织成员用于设置集成。",
-    "team_description": "通过第三方应用配置您在 Postman 中的团队。已配置的应用可供 Postman 团队成员用于设置集成。",
-    "learn_more": "了解更多关于 ",
-    "installed_apps_link_text": "已安装的应用"
+    "orgs_description": "使用第三方应用程序在 Postman 中配置您的组织。 Postman 组织成员可以使用配置的应用程序来设置集成。",
+    "team_description": "使用第三方应用程序配置 Postman 中的团队。Postman 团队成员可以使用配置的应用程序来设置集成。",
+    "learn_more": "了解更多关于",
+    "installed_apps_link_text": "已安装的应用程序"
   },
   "manage_invite_links": {
     "heading": "邀请链接",
-    "orgs_description": "为邀请人员加入您的组织而生成的链接。",
-    "team_description": "为邀请人员加入您的团队而生成的链接。",
-    "admin_links_heading": "由管理员生成的链接",
-    "non_admin_links_heading": "由非管理员生成的链接",
+    "orgs_description": "用于邀请人员加入您组织的链接。",
+    "team_description": "用于邀请人员加入您团队的链接。",
+    "admin_links_heading": "管理员生成的链接",
+    "non_admin_links_heading": "非管理员生成的链接",
     "expired_links_heading": "已过期的链接"
   },
   "scim_provisioning": {
-    "team_description": "启用后，您可以使用您的身份提供商轻松引导和管理 Postman 团队成员。了解更多关于 ",
-    "orgs_description": "启用后，您可以使用您的身份提供商轻松引导和管理 Postman 组织成员。了解更多关于 "
+    "team_description": "When enabled, you can effortlessly onboard and manage Postman team members using your identity provider. Learn more about",
+    "orgs_description": "When enabled, you can effortlessly onboard and manage Postman organization members using your identity provider. Learn more about"
   },
   "domain_capture": {
-    "team_subheading_part1": "域有助于确定哪些账户可以成为您团队的成员并由您的管理员管理。验证后，您可以为团队启用账户管理 ",
-    "orgs_subheading_part1": "域有助于确定哪些账户可以成为您组织的成员并由您的管理员管理。验证后，您可以为组织启用账户管理 ",
-    "subheading_part2": "。了解更多关于 ",
-    "subheading_link_text": "未认领账户的管理"
+    "team_subheading_part1": "Domains help determine which accounts can be members of your team and be managed by your Admins. Once verified, you can enable account management for team",
+    "orgs_subheading_part1": "Domains help determine which accounts can be members of your organization and be managed by your Admins. Once verified, you can enable account management for organization",
+    "subheading_part2": ". Learn more about",
+    "subheading_link_text": "管理未认领的账户"
   },
   "manage_domain": {
-    "back_link_label": "所有域",
-    "breadcrumb_aria_label": "域管理面包屑导航"
+    "back_link_label": "所有域名",
+    "breadcrumb_aria_label": "域管理面包屑"
   }
 }

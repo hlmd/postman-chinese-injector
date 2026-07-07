@@ -1,7 +1,7 @@
 {
   "toolbar": {
     "font_size_options": {
-      "normal": "正文",
+      "normal": "普通文本",
       "heading1": "标题 1",
       "heading2": "标题 2",
       "heading3": "标题 3",
@@ -20,18 +20,18 @@
       "preview": "预览"
     },
     "tooltips": {
-      "bold": "加粗",
+      "bold": "粗体",
       "italic": "斜体",
       "strikethrough": "删除线",
       "unordered_list": "无序列表",
       "ordered_list": "有序列表",
       "table": "表格",
-      "image": "图片",
+      "image": "图像",
       "video": "视频",
       "add_link": "添加链接",
       "link": "链接",
-      "blockquote": "引用块",
-      "codespan": "行内代码",
+      "blockquote": "块引用",
+      "codespan": "代码跨度",
       "codeblock": "代码块",
       "wrap_lines": "自动换行",
       "copied": "已复制",
@@ -43,14 +43,14 @@
         "embed_url": "嵌入 URL"
       },
       "browse": "浏览",
-      "uploading": "上传中…",
+      "uploading": "正在上传...",
       "supported_types": "支持 PNG、JPG、SVG 和 GIF。",
       "max_size": "最大 5MB。",
       "image_url_input_placeholder": "图片 URL",
       "edit_button": "保存",
       "embed_button": "嵌入",
-      "delete_button_tooltip": "删除图片",
-      "error_message": "上传失败，请重试。",
+      "delete_button_tooltip": "删除图像",
+      "error_message": "无法上传。再试一次。",
       "usage_bar": {
         "info": "已使用 {usageText} MB，共 {limitText} MB。",
         "warning": "您的 {limitText} MB 存储空间已满。"
@@ -68,7 +68,7 @@
       "edit_button": "保存",
       "add_button": "添加",
       "edit_link": "编辑链接",
-      "remove_link": "移除链接",
+      "remove_link": "删除链接",
       "copy_link": "复制链接",
       "delete_link": "删除链接"
     },
@@ -80,7 +80,7 @@
       "video_url_placeholder": "视频 URL",
       "edit_button": "保存",
       "embed_button": "嵌入",
-      "unsupported_media_platform": "不支持的媒体平台。不过，您可以选择 <Link><Text>将 URL 添加为链接。</Text></Link>"
+      "unsupported_media_platform": "不受支持的媒体平台。但是，您可以选择<Link><Text>添加 URL 作为链接。</Text></Link>"
     },
     "table_options": {
       "add_row": "添加行",
@@ -89,42 +89,42 @@
       "delete_table": "删除表格",
       "delete_row": "删除行"
     },
-    "add_a_caption": "添加标题…"
+    "add_a_caption": "添加标题..."
   },
   "mentions": {
     "view_profile": "查看资料",
     "user_inactive_popover": "已停用",
     "user_inactive_pill": "{fullName}（已停用）",
-    "private_user_tooltip": "此用户资料为私密。",
-    "private_user_label": "私密用户"
+    "private_user_tooltip": "该用户的个人资料为私有。",
+    "private_user_label": "私有用户"
   },
   "link-unfurling": {
-    "unfurl_limit_reached": "为保持最佳性能，仅对前 {requestUnfurlLimit} 个 URL 显示预览。"
+    "unfurl_limit_reached": "仅显示前 {requestUnfurlLimit} 个 URL 的预览，以保持最佳性能。"
   },
   "slate-node-validator": {
-    "slatedata_empty_content": "内容似乎为空。请添加一些内容后重试。",
-    "text_invalid_content": "文本内容存在问题。请检查文本后重试。",
-    "text_bold_invalid_content": "存在不支持的文本样式：加粗。请移除或更正它。",
-    "text_italic_invalid_content": "存在不支持的文本样式：斜体。请移除或更正它。",
-    "text_underline_invalid_content": "存在不支持的文本样式：下划线。请移除或更正它。",
-    "text_strikethrough_invalid_content": "存在不支持的文本样式：删除线。请移除或更正它。",
-    "text_code_invalid_content": "存在不支持的文本样式：代码。请移除或更正它。",
-    "ul_empty_content": "无序列表似乎为空。请添加一些内容后重试。",
-    "ol_empty_content": "有序列表似乎为空。请添加一些内容后重试。",
-    "li_empty_content": "列表项似乎为空。请添加一些内容后重试。",
-    "code_block_empty_content": "代码块似乎为空。请添加一些内容后重试。",
-    "table_empty_content": "表格似乎为空。请添加一些内容后重试。",
-    "tr_empty_content": "表格行似乎为空。请添加一些内容后重试。",
-    "ul_invalid_structure": "列表结构存在问题。请检查并更正列表项。",
-    "ol_invalid_structure": "列表结构存在问题。请检查并更正列表项。",
-    "li_invalid_content": "列表项存在问题。请确保其包含有效内容。",
-    "table_invalid_structure": "表格结构存在问题。请检查行和列。",
-    "tr_invalid_structure": "表格单元格似乎存在问题。请确保单元格正确。",
-    "img_invalid_content": "图片属性存在问题。请确保图片 URL 和尺寸正确",
-    "a_invalid_content": "链接 URL 存在问题。请确保其正确。",
+    "slatedata_empty_content": "内容好像是空的。请添加一些内容并重试。",
+    "text_invalid_content": "文字内容有问题。请检查文本并重试。",
+    "text_bold_invalid_content": "有一种不受支持的文本样式：粗体。请删除或更正它。",
+    "text_italic_invalid_content": "有一种不受支持的文本样式：斜体。请删除或更正它。",
+    "text_underline_invalid_content": "有一种不受支持的文本样式：下划线。请删除或更正它。",
+    "text_strikethrough_invalid_content": "有一种不受支持的文本样式：删除线。请删除或更正它。",
+    "text_code_invalid_content": "有一种不受支持的文本样式：代码。请删除或更正它。",
+    "ul_empty_content": "无序列表似乎是空的。请添加一些内容并重试。",
+    "ol_empty_content": "有序列表似乎是空的。请添加一些内容并重试。",
+    "li_empty_content": "列表项似乎是空的。请添加一些内容并重试。",
+    "code_block_empty_content": "代码块似乎是空的。请添加一些内容并重试。",
+    "table_empty_content": "表格似乎是空的。请添加一些内容并重试。",
+    "tr_empty_content": "表行似乎是空的。请添加一些内容并重试。",
+    "ul_invalid_structure": "列表结构有问题。请检查并更正列表项。",
+    "ol_invalid_structure": "列表结构有问题。请检查并更正列表项。",
+    "li_invalid_content": "列表项有问题。请确保其包含有效内容。",
+    "table_invalid_structure": "表结构有问题。请检查行和列。",
+    "tr_invalid_structure": "表格单元格似乎有问题。请确保单元格正确。",
+    "img_invalid_content": "图像属性有问题。请确保图片 URL 和尺寸正确",
+    "a_invalid_content": "链接 URL 有问题。请确保其正确。",
     "code_block_invalid_structure": "代码块结构存在问题。请确保代码格式正确。",
-    "unsupported_node": "内容结构存在问题。请检查内容后重试。",
-    "check_content": "立即检查"
+    "unsupported_node": "内容结构有问题。请检查内容并重试。",
+    "check_content": "立即查看"
   },
-  "default_placeholder": "支持即时 Markdown 样式。试试 **加粗**、*斜体* 或 `行内代码`"
+  "default_placeholder": "支持即时 Markdown 样式。尝试 **粗体**、*斜体* 或 `内联代码`"
 }

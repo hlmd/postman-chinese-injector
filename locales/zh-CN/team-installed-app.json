@@ -1,101 +1,101 @@
 {
-  "error_description": "按 slack 获取已配置集成时出错",
-  "get_auth_token_error": "授权流程期间出错！请重试。",
-  "create_connected_account_error": "我们无法创建关联账户",
-  "create_connected_account_default_error": "无法创建关联账户",
-  "heading": "已安装的应用",
-  "subheading": "为您的团队设置已安装的应用",
+  "error_description": "获取每个 slack 的已配置集成时出错",
+  "get_auth_token_error": "授权流程中出现问题！请再试一次。",
+  "create_connected_account_error": "我们无法创建关联帐户",
+  "create_connected_account_default_error": "无法创建关联帐户",
+  "heading": "已安装的应用程序",
+  "subheading": "为您的 团队 设置已安装的应用程序",
   "slack": {
-    "disabled_tooltip": "此应用只能添加一个实例。",
+    "disabled_tooltip": "只能添加此应用程序的一个实例。",
     "slack_label": "Slack",
-    "description": "在 Slack 上实时获取您 Postman 团队的动态更新。"
+    "description": "实时更新 Slack 上 Postman 团队 中发生的情况。"
   },
   "git_app": {
-    "disabled_tooltip": "只有团队管理员才能添加应用。",
-    "description": "在 Postman 和 {userFriendlyServiceName} 之间同步您的 API。"
+    "disabled_tooltip": "只有 团队 管理员可以添加应用程序。",
+    "description": "在 Postman 和 {userFriendlyServiceName} 之间同步 API。"
   },
   "blank_slate": {
-    "add_more_apps": "为您的团队添加更多应用",
-    "description": "使用第三方应用在 Postman 中配置您的团队。已配置的应用可供 Postman 团队成员用来设置集成。详细了解<CustomLink><Text>已安装的应用</Text></CustomLink>"
+    "add_more_apps": "为您的 团队 添加更多应用程序",
+    "description": "使用第三方应用程序配置 Postman 中的 团队。 Postman 团队 成员可以使用配置的应用程序来设置集成。了解有关<CustomLink><Text>已安装的应用</Text></CustomLink>的更多信息"
   },
   "installed_app_list": {
     "headers": {
-      "name": "名称",
+      "name": "姓名",
       "type": "类型",
-      "connected_to": "已连接到",
-      "set_up_by": "设置人"
+      "connected_to": "连接到",
+      "set_up_by": "设置者"
     },
     "slack_label": "Slack",
     "edit_button": "编辑",
     "delete_button": "删除",
-    "banner_text": "这将影响至少 {integrationCount} 个您有权访问的集成。可能还有其他您无法访问的集成。"
+    "banner_text": "这将至少影响您有权访问的 {integrationCount} 集成。可能还有您无法访问的其他集成。"
   },
   "installed_app_details": {
     "headers": {
       "type": "类型",
-      "connected_to": "已连接到",
-      "set_up_by": "设置人"
+      "connected_to": "连接到",
+      "set_up_by": "设置者"
     },
-    "no_integrations_message": "没有集成正在使用此应用",
-    "other_message": "可能还有其他您无权访问的集成。"
+    "no_integrations_message": "没有使用此应用程序的集成",
+    "other_message": "可能还有您无权访问的其他集成。"
   },
   "connected_account_details": {
     "fetch_account_details_error": {
-      "title": "出错了",
-      "description": "无法获取已安装的应用详细信息。"
+      "title": "出了点问题",
+      "description": "无法获取已安装的应用程序详细信息。"
     },
     "blank_slate_error": {
-      "title": "无法加载已安装的应用详细信息",
-      "description": "请稍后重试。"
+      "title": "无法加载已安装的应用程序详细信息",
+      "description": "请稍后再试。"
     }
   },
-  "back_to_installed_apps": "已安装的应用",
+  "back_to_installed_apps": "已安装的应用程序",
   "connected_account_detail_view": {
-    "no_integrations_message": "没有集成正在使用此应用",
-    "unknown_user": "某位管理员",
-    "heading": "由 {createdByUser} 于 {service} 连接到 {slackTeamName} 工作区",
-    "banner_text": "此账户由 {creatorCount, plural, one {# 名团队成员} other {# 名团队成员}}设置了 {instanceCount, plural, one {# 个集成} other {# 个集成}}。"
+    "no_integrations_message": "没有集成正在使用此应用程序",
+    "unknown_user": "一位管理员",
+    "heading": "通过 {createdByUser} 连接到 {service} 上的 {slackTeamName} 工作区",
+    "banner_text": "{instanceCount, plural, one {# 个集成} other {# 个集成}}由 {creatorCount, plural, one {# 位团队成员} other {# 位团队成员}} 使用此帐户设置。"
   },
   "delete_installed_app_modal": {
-    "heading": "删除已安装的应用？",
-    "description": "从 Postman 中删除此应用将立即停止其执行的所有操作。无法再使用此域设置新的集成。",
+    "heading": "删除已安装的应用程序？",
+    "description": "从 Postman 删除此应用程序将立即停止其执行的任何操作。无法与此域设置新的集成。",
     "cancel_button": "取消",
     "delete_button": "删除"
   },
   "integration_table": {
     "headers": {
       "integration": "集成",
-      "created_by": "创建者"
+      "created_by": "创建者："
     }
   },
   "connected_account_delete": {
-    "success": "{service} 的授权账户已被删除。",
-    "error": "删除关联账户时出错。请稍后重试。",
-    "fetch_integration_instance_error": "出错了。请稍后重试。",
+    "success": "{service} 的授权帐户已被删除。",
+    "error": "删除关联帐户时出错。一段时间后重试。",
+    "fetch_integration_instance_error": "出了点问题。请稍后重试。",
     "cancel_button": "取消",
     "delete_button": "删除",
-    "heading": "删除关联账户？",
-    "description": "从 Postman 中删除此应用将立即停止其执行的所有操作。无法再使用此域设置新的集成。",
-    "banner_text": "由 {creatorCount, plural, one {# 名团队成员} other {# 名团队成员}}设置的 {instanceCount, plural, one {# 个集成} other {# 个集成}}将停止工作。"
+    "heading": "删除关联帐户？",
+    "description": "从 Postman 删除此应用程序将立即停止其执行的任何操作。无法与此域设置新的集成。",
+    "banner_text": "{creatorCount, plural, one {# 位团队成员} other {# 位团队成员}} 设置的 {instanceCount, plural, one {# 个集成} other {# 个集成}} 将停止工作。"
   },
   "integration_instance_table": {
     "headers": {
-      "name": "名称",
-      "last_run": "上次运行",
-      "created_by": "创建者"
+      "name": "姓名",
+      "last_run": "最后一次运行",
+      "created_by": "创建者："
     },
     "nil_string": "--",
-    "altered_name": "{entityInputType, select, postman_collection {一个集合} postman_api {一个 api} other {一个监视器}}上的 {name}",
+    "altered_name": "{name} 上的 {entityInputType, select, postman_collection {一个集合} postman_api {一个 API} other {一个监控}}",
     "fallback_entity_name": {
-      "monitor": "一个监视器",
+      "monitor": "一个监控",
       "collection": "一个集合",
-      "api": "一个 api"
+      "api": "一个 API"
     }
   },
   "orgs": {
     "blank_slate": {
       "add_more_apps": "为您的组织添加更多应用",
-      "description": "使用第三方应用在 Postman 中配置您的组织。已配置的应用可供 Postman 组织成员用来设置集成。详细了解<CustomLink><Text>已安装的应用</Text></CustomLink>"
+      "description": "使用第三方应用程序在 Postman 中配置您的组织。 Postman 组织成员可以使用配置的应用程序来设置集成。了解有关<CustomLink><Text>已安装的应用</Text></CustomLink>的更多信息"
     }
   }
 }

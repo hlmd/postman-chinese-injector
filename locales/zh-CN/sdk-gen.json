@@ -1,12 +1,15 @@
 {
+  "entity_type_icon": {
+    "label": "SDK"
+  },
   "row": {
     "context_menu_trigger": {
-      "tooltip": "查看更多操作"
+      "tooltip": "查看更多动作"
     }
   },
   "context_menu": {
     "open_sdk_panel": {
-      "label": "打开 SDK 面板"
+      "label": "打开SDK面板"
     },
     "regenerate_sdks": {
       "label": "重新生成 SDK"
@@ -17,6 +20,6 @@
   },
   "delete": {
     "success": "已删除“{entityName}”的 SDK。",
-    "error": "删除 SDK 失败。请重试。"
+    "error": "删除SDK失败。请再试一次。"
   }
 }

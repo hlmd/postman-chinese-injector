@@ -1,99 +1,99 @@
 {
   "orgs_disabled": {
     "title": "功能未启用",
-    "description": "您的组织未启用此功能。请联系支持团队获取更多信息。"
+    "description": "您的组织未启用此功能。请联系支持人员以获取更多信息。"
   },
   "list": {
     "title": "团队",
     "create_squad": "创建团队",
-    "error": "出错了。",
+    "error": "出了点问题。",
     "error_description": "我们无法加载团队。请稍后重试。",
     "error_action": "重试",
     "no_squads": {
       "title": "创建您的第一个团队",
-      "description": "团队有助于组织人员和工作区，以便进行专注的协作。"
+      "description": "团队帮助组织人员和工作空间以进行集中协作。"
     },
     "no_permission": {
       "title": "您没有权限查看此页面。"
     },
     "create_squad_not_allowed": "您没有权限创建团队",
     "tabs": {
-      "your_squads": "您的团队",
+      "your_squads": "你的团队",
       "other_squads": "其他团队"
     },
     "your_squads": {
       "empty": {
         "title": "您还不是任何团队的成员",
-        "description": "加入团队或创建一个团队，开始协作。"
+        "description": "加入团队或创建一个以开始协作。"
       }
     },
     "other_squads": {
       "empty": {
         "title": "未找到团队",
-        "description": "目前没有可加入的团队。"
+        "description": "目前没有可以加入的团队。"
       }
     },
     "filter": {
       "by_name": "搜索团队",
       "by_access": {
         "title": "访问权限",
-        "open": "无需审批",
-        "restricted": "成员需要审批",
-        "closed": "所有人都需要审批",
-        "selected_option_label": "{count} 种访问类型"
+        "open": "无需批准",
+        "restricted": "成员需要批准",
+        "closed": "每个人都需要批准",
+        "selected_option_label": "{count} 访问类型"
       },
       "by_role": {
         "title": "角色",
         "member": "成员",
-        "collaborator": "协作者",
-        "manager": "管理员",
-        "none": "无角色",
-        "selected_option_label": "{count} 个角色"
+        "collaborator": "合作者",
+        "manager": "经理",
+        "none": "没有角色",
+        "selected_option_label": "{count} 角色"
       },
       "no_results": {
         "title": "未找到团队",
-        "description": "您可以尝试使用其他名称或调整筛选条件。"
+        "description": "您可能想尝试使用不同的名称或调整过滤器。"
       }
     },
     "table": {
       "heading": {
         "squad_name": "名称",
-        "users_and_groups": "用户和群组"
+        "users_and_groups": "用户和组"
       },
       "tooltip": {
-        "member_details": "用户（{userCount}）和群组（{groupCount}）",
-        "error": "加载详情失败"
+        "member_details": "用户 ({userCount}) 和组 ({groupCount})",
+        "error": "无法加载详细信息"
       },
       "joined_as": {
-        "manager": "管理员  ·  @{handle}",
-        "member": "成员  ·  @{handle}",
-        "guest": "协作者 ·  @{handle}"
+        "manager": "经理 · @{handle}",
+        "member": "成员 · @{handle}",
+        "guest": "合作者 · @{handle}"
       },
       "access": {
-        "open_for_collaborators": "以成员身份加入此团队需要团队管理员审批。",
-        "close": "加入此团队或与此团队协作需要团队管理员审批。",
-        "closed": "所有人都需要审批",
-        "open": "无需审批",
-        "restricted": "成员需要审批"
+        "open_for_collaborators": "需要团队经理批准才能以成员身份加入此团队。",
+        "close": "需要团队经理批准才能加入或与此团队合作。",
+        "closed": "每个人都需要批准",
+        "open": "无需批准",
+        "restricted": "成员需要批准"
       }
     },
     "menu": {
       "add_members": "添加成员",
       "manage": "管理团队",
       "join": "加入",
-      "request_to_join": "申请加入",
+      "request_to_join": "请求加入",
       "leave": "离开",
       "rename": "重命名",
       "toast": {
         "join": {
-          "error_title": "出错了。",
+          "error_title": "出了点问题。",
           "error_description": "请稍后重试。",
           "success_title": "您已加入团队！",
-          "success_description": "您现在是 {squad_name} 的成员。开始协作吧！",
-          "request_sent_title": "申请已发送",
-          "request_sent_description": "团队管理员批准您的申请后，我们会通知您。",
-          "rfa_exists_title": "申请待处理",
-          "rfa_exists_description": "团队管理员批准您的申请后，我们会通知您。"
+          "success_description": "您现在是 {squad_name} 的成员。开始合作！",
+          "request_sent_title": "请求已发送",
+          "request_sent_description": "一旦团队经理批准您的请求，我们就会通知您。",
+          "rfa_exists_title": "请求待处理",
+          "rfa_exists_description": "一旦团队经理批准您的请求，我们就会通知您。"
         }
       }
     }
@@ -103,7 +103,7 @@
       "title": "重命名团队",
       "action": "保存",
       "toast": {
-        "error": "出错了。"
+        "error": "出了点问题。"
       }
     },
     "delete_squad": {
@@ -112,133 +112,137 @@
       "action": "删除团队",
       "cancel": "取消",
       "toast": {
-        "error": "删除团队时出错。请重试。",
+        "error": "删除团队时出错。请再试一次。",
         "no_permission": "您没有权限删除此团队。",
-        "has_workspaces": "无法删除该团队，因为有工作区与之关联。"
+        "has_workspaces": "团队无法删除，因为有与其关联的工作空间。"
       }
     },
     "create_squad": {
-      "title": "创建新团队",
+      "title": "创建一个新的团队",
       "name": "名称",
       "create": "创建团队",
-      "name_placeholder": "例如：API builders",
+      "name_placeholder": "例如 API 建设者",
       "handle_info": "团队句柄将自动生成。",
-      "handle_generated": "在对话中使用 @{handle} 标记您的团队",
-      "name_validation_error": "仅允许使用字母、数字和空格",
-      "duplicate_name_error": "此团队已存在。请尝试其他名称。",
+      "handle_generated": "使用 @{handle} 在对话中标记您的团队",
+      "name_validation_error": "只允许字母、数字和空格",
+      "duplicate_name_error": "这个团队已经存在。尝试使用不同的名称。",
       "toast": {
         "success": "团队已创建",
         "error": "创建团队失败"
       }
     },
     "add_members": {
-      "title": "向“{squadName}”添加成员",
-      "search_placeholder": "在您的组织中搜索人员或群组…",
-      "already_added": "已是成员",
-      "group_members": "{membersCount, plural, one {1 名成员} other {# 名成员}}",
+      "title": "将成员添加到“{squadName}”",
+      "search_placeholder": "搜索组织中的人员或群组...",
+      "already_added": "已经是成员",
+      "already_a_guest": "已是访客",
+      "group_members": "{membersCount, plural, one {1 成员} other {# 成员}}",
       "add": "添加",
-      "request_to_add": "申请添加",
-      "success": "已添加 {count} 名成员",
-      "success_plural": "已添加 {count} 名成员",
-      "request_to_add_success": "申请已发送",
-      "request_to_add_success_description": "团队管理员批准您的申请后，我们会通知您。",
-      "error": "出错了",
-      "search_empty": "只有来自“{teamName}”组织的人员才能被添加为团队成员。",
-      "request_to_add_banner": "向此团队添加成员需要团队管理员审批。",
-      "all_members_access_banner": "此团队已配置为组织的所有用户都是此团队的成员。",
-      "group_access_banner": "由于 {groupCount, plural, one {群组} other {群组}}：{groupNames}，{userName} 已拥有 {role} 访问权限",
+      "request_to_add": "请求添加",
+      "success": "{count} 成员已添加",
+      "success_plural": "{count} 成员已添加",
+      "request_to_add_success": "请求已发送",
+      "request_to_add_success_description": "一旦团队经理批准您的请求，我们就会通知您。",
+      "error": "出了点问题",
+      "search_empty": "只有来自“{teamName}”组织的人员才能添加为团队的成员。",
+      "request_to_add_banner": "向此团队添加成员需要团队经理批准。",
+      "all_members_access_banner": "此团队已配置为：所有组织用户均为该团队的成员。",
+      "group_access_banner": "{userName} 已通过{groupCount, plural, one {群组} other {群组}}拥有 {role} 权限：{groupNames}",
       "radio_group": {
         "title": "角色",
         "developer": "开发者",
         "developer_description": "可以编辑团队中的所有资源。",
-        "manager": "管理员",
+        "manager": "经理",
         "manager_description": "可以编辑团队中的所有资源并管理成员。"
       },
       "role_label": {
         "developer": "开发者",
-        "manager": "管理员"
+        "manager": "管理者"
       }
     },
     "convert_to_member": {
       "title": "将协作者转换为成员？",
-      "description_user": "<text>作为成员，<bold>{name}（{email}）</bold> 将拥有对所有团队资源的编辑权限。他们将能够：</text>",
-      "description_group": "<text>作为成员，<bold>{name}</bold> 群组中的每个人都将拥有对所有团队资源的编辑权限。他们将能够：</text>",
-      "description_team": "<text>作为成员，<bold>{name}</bold> 组织中的每个人都将拥有对所有团队资源的编辑权限。他们将能够：</text>",
+      "description_user": "<text>作为成员，<bold>{name} ({email})</bold> 将拥有对所有团队资源的编辑权限。他们将能够：</text>",
+      "description_group": "<text>作为成员，<bold>{name}</bold> 组中的每个人都拥有对所有团队资源的编辑权限。他们将能够：</text>",
+      "description_team": "<text>作为成员，<bold>{name}</bold> 组织中的每个人都拥有对所有团队资源的编辑权限。他们将能够：</text>",
       "bullet_points": {
         "one": "创建工作区并与团队成员协作",
         "two": "发现所有 API",
-        "three": "复刻、评论和关注集合"
+        "three": "复刻、评论并关注集合"
       },
-      "error_title": "无法更改成员身份",
-      "error_description": "请重试，如果问题仍然存在，请联系支持团队。",
+      "error_title": "无法更改会员资格",
+      "error_description": "如果问题仍然存在，请重试或联系支持人员。",
       "confirm": "转换为成员",
       "cancel": "取消"
     },
     "remove_member": {
-      "title": "将“{memberName}”从此团队移除",
+      "title": "从此团队中删除“{memberName}”",
       "title_self": "离开“{squadName}”团队？",
       "description": "他们将立即失去对所有团队资源的访问权限。",
       "description_self": "您将立即失去对所有团队资源的访问权限。",
       "remove": "移除",
       "leave": "离开团队",
       "cancel": "取消",
-      "error": "出错了",
-      "all_members_access_banner": "此团队已配置为组织的所有用户都是此团队的成员。",
-      "group_access_banner": "由于 {groupCount, plural, one {群组} other {群组}}：{groupNames}，此用户仍拥有 {role} 访问权限"
+      "error": "出了点问题",
+      "all_members_access_banner": "此团队已配置为：所有组织用户均为该团队的成员。",
+      "group_access_banner": "该用户因{groupCount, plural, one {群组} other {群组}}仍拥有 {role} 权限：{groupNames}"
     }
   },
   "manage": {
     "back_to_squads": "所有团队",
-    "breadcrumb_aria_label": "团队详情面包屑导航",
+    "breadcrumb_aria_label": "团队详细信息面包屑",
     "add_members": "添加成员",
     "created_by": "创建者：",
     "join": "加入团队",
-    "request_access": "申请加入团队",
-    "add_member_not_allowed": "只有团队成员才能添加新成员。",
+    "request_access": "请求加入团队",
+    "add_member_not_allowed": "只有团队成员可以添加新成员。",
     "filter": {
-      "search": "按名称或电子邮件搜索",
+      "search": "按姓名或电子邮件搜索",
       "membership": {
-        "placeholder": "成员身份",
+        "placeholder": "会员资格",
         "member": "成员",
-        "guest": "协作者",
+        "guest": "合作者",
         "external_guest": "访客",
         "external_partner": "合作伙伴",
-        "selected_option_label": "{count} 种成员身份"
+        "selected_option_label": "{count} 会员资格"
       },
       "membership_type": {
         "placeholder": "角色",
         "developer": "开发者",
-        "manager": "管理员",
+        "manager": "经理",
         "viewer": "查看者",
-        "selected_option_label": "{count} 个角色"
+        "selected_option_label": "{count} 角色"
       }
     },
     "tabs": {
-      "members": "用户（{userCount}）和群组（{groupCount}）",
-      "members_and_guests": "成员（{memberCount}）和访客（{guestCount}）",
-      "guests": "访客",
-      "workspaces": "工作区",
+      "members": "用户 ({userCount}) 和组 ({groupCount})",
+      "members_and_guests": "成员 ({memberCount}) 和嘉宾 ({guestCount})",
+      "guests": "嘉宾",
+      "workspaces": "工作空间",
       "settings": "设置",
-      "pending_requests": "待处理申请"
+      "pending_requests": "待处理的请求"
+    },
+    "workspaces_tab": {
+      "search_limit": "仅显示前 500 条结果，请缩小搜索范围以查找更多内容。"
     },
     "blank_state": {
-      "title": "未找到团队",
-      "description": "我们找不到您要查找的团队。",
+      "title": "未找到该团队",
+      "description": "我们找不到您要找的团队。",
       "action": "返回团队"
     },
     "unauthorized_state": {
-      "title": "您没有访问权限",
-      "description": "只有团队成员才能查看此页面。",
-      "request_raised": "您已申请加入此团队。获批后您将自动加入。"
+      "title": "您无权访问",
+      "description": "只有团队成员可以查看此页面。",
+      "request_raised": "您已请求加入此团队。一旦获得批准，您将自动加入。"
     },
     "toast": {
       "join": {
-        "error_title": "出错了。",
+        "error_title": "出了点问题。",
         "error_description": "请稍后重试。",
-        "request_sent_title": "申请已发送",
-        "request_sent_description": "团队管理员批准您的申请后，我们会通知您。",
-        "rfa_exists_title": "申请待处理",
-        "rfa_exists_description": "团队管理员批准您的申请后，我们会通知您。"
+        "request_sent_title": "请求已发送",
+        "request_sent_description": "一旦团队经理批准您的请求，我们就会通知您。",
+        "rfa_exists_title": "请求待处理",
+        "rfa_exists_description": "一旦团队经理批准您的请求，我们就会通知您。"
       }
     },
     "menu": {
@@ -246,66 +250,66 @@
       "rename_disabled_tooltip": "您没有权限重命名此团队。",
       "delete": "删除",
       "delete_disabled_tooltip": "您没有权限删除此团队。",
-      "delete_has_workspaces_tooltip": "在删除此团队之前，您需要先从中移除所有工作区。"
+      "delete_has_workspaces_tooltip": "您需要先删除此团队中的所有工作区，然后再删除它。"
     },
     "members": {
       "table": {
         "heading": {
-          "name": "名称",
-          "membership": "成员身份",
+          "name": "姓名",
+          "membership": "会员资格",
           "role": "角色"
         },
         "empty_state": {
-          "title": "这里看起来有点冷清",
-          "description": "开始向您的团队添加成员"
+          "title": "这里看起来有点孤单",
+          "description": "开始将成员添加到您的团队"
         },
         "no_result": {
-          "title": "未找到结果",
-          "description": "未找到符合所选筛选条件的结果。"
+          "title": "没有找到结果",
+          "description": "未找到所选过滤器的结果。"
         },
         "member": "成员",
-        "guest": "协作者",
-        "self": "{name}（您）",
-        "remove_tooltip": "从此团队移除",
+        "guest": "合作者",
+        "self": "{name}（你）",
+        "remove_tooltip": "从此团队中删除",
         "leave_tooltip": "离开此团队",
         "membership": {
           "convert": "转换为成员",
           "member": "成员",
-          "guest": "协作者",
+          "guest": "合作者",
           "external_guest": "访客",
           "external_partner": "合作伙伴"
         },
         "roles": {
-          "label": "选择一个角色",
+          "label": "选择角色",
           "success": "角色更新成功",
-          "request_sent": "更新角色的申请已发送",
-          "error": "出错了",
+          "request_sent": "已发送角色更新请求",
+          "error": "出了点问题",
           "developer": "开发者",
-          "manager": "管理员",
+          "manager": "经理",
           "viewer": "查看者",
           "partner": "合作伙伴"
         }
       },
-      "org_members": "组织（{membersCount, plural, one {1 名成员} other {# 名成员}}）",
-      "group_members": "群组（{membersCount, plural, one {1 名成员} other {# 名成员}}）",
-      "squad_members": "团队（{membersCount, plural, one {1 名成员} other {# 名成员}}）",
-      "pending_upgrade": "查看更新角色的申请"
+      "org_members": "组织（{membersCount, plural, one {1 成员} other {# 成员}}）",
+      "group_members": "组（{membersCount, plural, one {1 成员} other {# 成员}}）",
+      "squad_members": "团队（{membersCount, plural, one {1 成员} other {# 成员}}）",
+      "pending_upgrade": "查看角色更新请求"
     },
     "guests": {
       "table": {
         "empty_state": {
-          "title": "这里看起来有点冷清",
-          "description": "开始向您的团队添加访客"
+          "title": "这里看起来有点孤单",
+          "description": "开始将嘉宾添加到您的团队"
         }
       }
     },
     "pending_requests": {
       "header": {
-        "add_member": "添加成员的申请",
-        "add_collaborator": "添加协作者的申请",
-        "update_role": "将 {membership} 角色从 {from} 更新为 {to}",
-        "join_squad": "加入团队的申请",
-        "suggested_by": "由 {name} 推荐"
+        "add_member": "请求添加成员",
+        "add_collaborator": "请求添加协作者",
+        "update_role": "将 {membership} 角色从 {from} 更新到 {to}",
+        "join_squad": "请求加入团队",
+        "suggested_by": "由 {name} 建议"
       },
       "action": {
         "approve": "批准",
@@ -316,67 +320,67 @@
         "denied": "已拒绝"
       },
       "membership": {
-        "title": "成员身份",
+        "title": "会员资格",
         "member": "成员",
-        "guest": "协作者"
+        "guest": "合作者"
       },
       "role": {
         "title": "角色",
         "developer": "开发者",
         "viewer": "查看者",
-        "manager": "管理员"
+        "manager": "经理"
       },
       "role_lower": {
         "developer": "开发者",
         "viewer": "查看者",
-        "manager": "管理员"
+        "manager": "经理"
       },
       "error": {
         "approve": {
-          "description": "批准申请失败。请稍后重试。"
+          "description": "未能批准请求。请稍后重试。"
         },
         "deny": {
-          "description": "拒绝申请失败。请稍后重试。"
+          "description": "未能拒绝请求。请稍后重试。"
         }
       },
       "empty_state": {
-        "title": "没有待处理的申请",
-        "description": "当有人申请加入、添加成员或更新此团队中的角色时，我们会通知您。"
+        "title": "没有待处理的请求",
+        "description": "一旦有人请求加入、添加成员或更新此团队中的角色，我们就会通知您。"
       },
       "unauthorized_state": {
-        "title": "您没有访问权限",
-        "description": "只有团队管理员才能查看待处理的申请。"
+        "title": "您无权访问",
+        "description": "只有团队经理可以查看待处理的请求。"
       },
       "error_state": {
-        "title": "出错了",
-        "description": "我们无法加载待处理的申请。请稍后重试。"
+        "title": "出了点问题",
+        "description": "我们无法加载待处理的请求。请稍后重试。"
       }
     },
     "error_state": {
-      "title": "出错了",
-      "description": "我们无法加载该团队。请稍后重试。",
+      "title": "出了点问题",
+      "description": "我们无法加载团队。请稍后重试。",
       "action": "返回团队"
     },
     "settings": {
       "title": "设置添加人员的限制",
-      "all_members_access": "组织的所有成员自动成为此团队的成员",
-      "all_members_access_description": "任何以开发者身份加入此组织的人都将成为此团队的成员。",
-      "add_member_rfa": "新团队成员必须经过批准",
-      "add_member_rfa_description": "启用后，管理员必须先批准团队成员，然后才能将其添加进来。",
-      "add_guest_rfa": "新协作者必须经过批准",
-      "add_guest_rfa_description": "启用后，管理员必须先批准协作者，然后才能将其添加进来。",
+      "all_members_access": "组织的所有成员将自动成为此团队的成员",
+      "all_members_access_description": "以开发者身份加入此组织的任何人都将成为此团队的成员。",
+      "add_member_rfa": "新团队成员必须获得批准",
+      "add_member_rfa_description": "启用后，经理必须在添加团队成员之前批准他们。",
+      "add_guest_rfa": "新合作者必须获得批准",
+      "add_guest_rfa_description": "启用后，经理必须在添加协作者之前批准他们。",
       "no_permission_tooltip": "您没有权限执行此操作。",
-      "all_members_access_blocked_org_is_guest": "组织已经是此团队的访客。请先移除，然后再添加为成员。",
+      "all_members_access_blocked_org_is_guest": "该组织已是此团队的访客，请先将其移除，然后再添加为成员。",
       "unauthorized_state": {
-        "title": "您没有访问权限",
-        "description": "只有团队管理员才能查看和编辑团队设置。"
+        "title": "您无权访问",
+        "description": "只有团队经理可以查看和编辑团队设置。"
       },
       "error_state": {
-        "title": "出错了",
+        "title": "出了点问题",
         "description": "我们无法加载团队设置。请稍后重试。"
       },
       "toast": {
-        "error": "出错了。"
+        "error": "出了点问题。"
       }
     }
   }

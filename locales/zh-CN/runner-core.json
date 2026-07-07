@@ -1,7 +1,7 @@
 {
   "cli_installer": {
     "heading": "安装 Postman CLI",
-    "unix_description_start": "使用下面的命令以",
+    "unix_description_start": "使用下面的命令",
     "unix_description_link": "安装 Postman CLI",
     "unix_description_end": "在 macOS、Linux (x64) 或适用于 Linux 的 Windows 子系统 (WSL) 上",
     "copy_tooltip": "复制到剪贴板",
@@ -11,34 +11,34 @@
   },
   "data_file_upgrade": {
     "heading": "升级以使用数据文件",
-    "description": "数据文件让您能够使用测试数据驱动监视器、功能性和性能集合运行。升级您的计划即可开始使用。"
+    "description": "数据文件可让您使用测试数据驱动 Monitor 运行以及功能性和性能 Collection 运行。升级您的计划以开始使用。"
   },
   "errors": {
     "forbidden": {
       "start": {
-        "title": "因安全策略而拒绝访问",
-        "description": "在访问恢复之前，您无法运行该集合。请联系您的团队管理员寻求帮助。"
+        "title": "由于安全策略而拒绝访问",
+        "description": "在恢复访问之前，您无法运行此 Collection。请联系您的团队管理员寻求帮助。"
       },
       "save": {
-        "title": "因安全策略而拒绝访问",
-        "description": "在访问恢复之前，您的集合运行无法同步到云端。请联系您的团队管理员寻求帮助。"
+        "title": "由于安全策略而拒绝访问",
+        "description": "在恢复访问之前，您的 Collection 运行无法同步到云端。请联系您的团队管理员寻求帮助。"
       }
     }
   },
   "run_completion": {
     "titles": {
-      "success": "集合运行成功",
-      "with_issues": "集合运行完成，但存在问题",
-      "did_not_finish": "集合运行未完成"
+      "success": "Collection 运行成功",
+      "with_issues": "Collection 运行时遇到问题",
+      "did_not_finish": "Collection 运行未完成"
     },
     "subtitles": {
-      "stopped_at": "已在 {percentage}% 处停止",
-      "stopped_after_error": "在 {percentage}% 处遇到意外错误",
-      "completed_with_errors": "{count, plural, =0 {运行完成，但有错误} one {运行完成，有 {count, number} 个错误} other {运行完成，有 {count, number} 个错误}}"
+      "stopped_at": "停在 {percentage}%",
+      "stopped_after_error": "在 {percentage}% 遇到意外错误",
+      "completed_with_errors": "{count, plural, =0 {运行完成，但存在错误} one {运行完成，有 {count, number} 个错误} other {运行完成，有 {count, number} 个错误}}"
     },
-    "untitled_collection": "未命名集合",
+    "untitled_collection": "无标题 Collection",
     "chips": {
-      "tests_failed": "{total, plural, one {{total, number} 项测试中有 {failed, number} 项失败} other {{total, number} 项测试中有 {failed, number} 项失败}}",
+      "tests_failed": "{total, plural, one {{total, number} 个测试中有 {failed, number} 个失败} other {{total, number} 个测试中有 {failed, number} 个失败}}",
       "errors": "{count, plural, one {{count, number} 个错误} other {{count, number} 个错误}}"
     }
   }

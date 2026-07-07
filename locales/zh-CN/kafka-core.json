@@ -1,0 +1,80 @@
+{
+  "mode": {
+    "aria_label": "请求模式",
+    "produce": "生产",
+    "consume": "消费"
+  },
+  "action": {
+    "send": "发送",
+    "stream": "流式传输",
+    "disabled_pick_topic": "请先选择一个主题。"
+  },
+  "tabs": {
+    "message": "消息",
+    "key_partition": "键与分区",
+    "headers": "请求头",
+    "stream": "流"
+  },
+  "offset": {
+    "label": "偏移量",
+    "latest": "最新",
+    "earliest": "最早"
+  },
+  "status": {
+    "idle": "空闲"
+  },
+  "schema": {
+    "label": "模式",
+    "aria_label": "切换模式显示"
+  },
+  "fields": {
+    "key": "键",
+    "key_placeholder": "消息键",
+    "key_helper": "具有相同键的记录将进入同一个分区。",
+    "partition": "分区",
+    "partition_placeholder": "自动",
+    "partition_helper": "留空以使用生产者的默认分区器。"
+  },
+  "topic": {
+    "aria_label": "主题",
+    "placeholder": "选择一个主题",
+    "none_placeholder": "（未找到主题）",
+    "empty_state": "未找到主题",
+    "no_topics_found": "未找到此集群的主题。"
+  },
+  "cluster": {
+    "aria_label": "集群",
+    "settings_aria_label": "集群设置",
+    "sasl": {
+      "none": "无"
+    },
+    "fields": {
+      "name": "名称",
+      "name_placeholder": "我的集群",
+      "brokers": "引导服务器",
+      "brokers_helper": "每行一个 host:port。",
+      "tls": "使用 TLS",
+      "sasl": "SASL 机制",
+      "username": "用户名",
+      "password": "密码"
+    },
+    "modal": {
+      "new_heading": "新建集群",
+      "edit_heading": "编辑集群",
+      "save": "保存",
+      "cancel": "取消"
+    }
+  },
+  "produce": {
+    "empty_state": {
+      "pick_topic": "选择一个主题以启用生产表单。"
+    }
+  },
+  "consume": {
+    "stream": {
+      "no_messages": "暂无消息",
+      "start_hint": "点击“开始”以启动流式传输",
+      "select_message": "选择一条消息以查看详情"
+    }
+  }
+}

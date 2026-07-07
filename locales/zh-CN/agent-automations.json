@@ -1,0 +1,214 @@
+{
+  "common": {
+    "actions": {
+      "create_automation": "创建自动化",
+      "cancel": "取消",
+      "delete": "删除",
+      "refresh": "刷新",
+      "actions_menu_tooltip": "操作"
+    },
+    "empty": {
+      "search_hint": "请尝试其他搜索词，调整筛选条件，或检查是否有拼写错误。"
+    },
+    "pagination": {
+      "previous_page": "上一页",
+      "next_page": "下一页"
+    }
+  },
+  "tabs": {
+    "team": "团队",
+    "mine": "我的"
+  },
+  "page": {
+    "breadcrumb_section": "Agent 自动化",
+    "title": "自动化",
+    "subtitle": "设置自动化，使其按计划运行或在事件发生时触发。",
+    "loading_aria_label": "正在加载自动化",
+    "loading_label": "正在加载自动化…",
+    "error_title": "无法加载自动化",
+    "error_description": "获取自动化时出错，请稍后重试。",
+    "refetch_aria_label": "正在刷新自动化"
+  },
+  "table": {
+    "search_placeholder": "搜索自动化",
+    "headers": {
+      "name": "名称",
+      "status": "状态",
+      "trigger": "触发器",
+      "creator": "创建者",
+      "actions": ""
+    },
+    "status": {
+      "active": "启用",
+      "inactive": "已停用"
+    },
+    "empty": {
+      "title": "创建您的第一个自动化",
+      "description": "按计划或在事件发生时运行 Agent，并将结果发送到团队常用的工作场所。",
+      "search_title": "未找到自动化"
+    },
+    "row_actions": {
+      "view_run_history": "查看运行历史记录",
+      "edit": "编辑"
+    },
+    "trigger": {
+      "github_pr": "GitHub Pull Request",
+      "github_push": "GitHub Push",
+      "schedule": "计划"
+    }
+  },
+  "run_status": {
+    "claimed": "已认领",
+    "dispatched": "已分发",
+    "completed": "已完成",
+    "failed": "失败"
+  },
+  "templates": {
+    "section_title": "从模板开始",
+    "use_template": "添加",
+    "coming_soon": "即将推出",
+    "items": {
+      "github_pr": {
+        "trigger_label": "GitHub Pull Request",
+        "title": "PR 上的 API 设计审查",
+        "description": "在每个 PR 中审查 API/schema 变更，并将结果作为评论发布。"
+      },
+      "weekly_schedule": {
+        "trigger_label": "每周计划",
+        "title": "已弃用 API 审计",
+        "description": "每周扫描已弃用的 API，并将结果报告发布到 Slack。"
+      },
+      "breaking_change_detection": {
+        "trigger_label": "GitHub Pull Request",
+        "title": "破坏性变更检测",
+        "description": "在每个 PR 中检测破坏性 API 变更，在其影响生产环境之前标记风险。"
+      },
+      "event_driven_automation": {
+        "trigger_label": "Postman Events",
+        "title": "事件驱动的自动化",
+        "description": "响应 Postman Events（如 Collection 更新），并自动将分析结果发送给团队。"
+      }
+    }
+  },
+  "create": {
+    "active_label": "启用",
+    "loading_aria_label": "正在加载自动化",
+    "loading_label": "正在加载自动化…",
+    "error_title": "无法加载自动化",
+    "error_description": "获取自动化时出错，请返回后重试。",
+    "name_aria_label": "自动化名称",
+    "creating_pending": "正在创建…",
+    "toast_success": "自动化已创建",
+    "toast_error": "创建自动化失败，请重试。",
+    "fields": {
+      "name_label": "名称",
+      "name_placeholder": "例如：审查 PR 中的 API 设计",
+      "trigger_label": "触发器",
+      "github_owner": "所有者",
+      "github_owner_placeholder": "选择所有者",
+      "github_repo": "仓库",
+      "github_repo_placeholder": "选择仓库",
+      "github_branch": "分支",
+      "github_branch_placeholder": "选择分支",
+      "github_any_branch": "任意分支",
+      "github_connect": "连接 GitHub",
+      "github_connecting": "正在连接…",
+      "github_reconnect": "重新连接 GitHub",
+      "github_checking": "正在检查 GitHub 连接…",
+      "github_connect_error": "无法连接到 GitHub，请重试。",
+      "github_account": "账户",
+      "github_account_placeholder": "选择账户",
+      "instructions_label": "Agent 指令",
+      "instructions_placeholder": "描述 Agent 应执行的操作……",
+      "notify_slack_label": "通知 Slack 或 Microsoft Teams 频道或聊天",
+      "remove_channel": "移除频道",
+      "github_reconnect_required": "您的 GitHub 连接已过期，请重新连接以继续使用此自动化。",
+      "slack_connect": "连接 Slack",
+      "slack_connecting": "正在连接到 Slack…",
+      "slack_connecting_hint": "请在刚打开的浏览器标签页中完成授权，此过程最长可能需要 60 秒。",
+      "slack_reconnect": "重新连接 Slack",
+      "slack_reconnect_required": "您的 Slack 连接已过期，请重新连接以继续接收通知。",
+      "slack_connect_error": "无法连接到 Slack，请重试。",
+      "slack_workspace_label": "Workspace",
+      "slack_workspace_placeholder": "Workspace",
+      "slack_channel_label": "频道",
+      "slack_channel_placeholder": "输入以搜索频道",
+      "slack_wrong_workspace_toast_title": "Slack Workspace 错误",
+      "slack_wrong_workspace_toast_description": "您选择的频道属于其他 Workspace。请移除现有频道，或重新连接到匹配的 Workspace。",
+      "delivery_targets_label": "投递目标",
+      "add_delivery_target": "添加投递目标",
+      "delivery_target_github_pr_comment": "在 Pull Request 中评论",
+      "delivery_target_slack": "发送到 Slack",
+      "delivery_target_remove": "移除投递目标",
+      "delivery_target_to": "至",
+      "trigger_placeholder": "选择触发器……",
+      "trigger_group_scheduled": "计划任务",
+      "trigger_option_hourly": "每小时",
+      "trigger_option_daily": "每天",
+      "trigger_option_weekly": "每周",
+      "trigger_option_pr_opened": "Pull Request 已创建",
+      "trigger_option_pr_pushed": "Pull Request 已推送",
+      "trigger_option_pr_merged": "Pull Request 已合并",
+      "trigger_option_push_to_branch": "有新推送到分支",
+      "schedule_time_label": "时间",
+      "schedule_day_label": "日期",
+      "schedule_timezone_label": "时区",
+      "day_monday": "星期一",
+      "day_tuesday": "星期二",
+      "day_wednesday": "星期三",
+      "day_thursday": "星期四",
+      "day_friday": "星期五",
+      "day_saturday": "星期六",
+      "day_sunday": "星期日"
+    }
+  },
+  "edit": {
+    "title": "编辑自动化",
+    "tab_run_history": "运行历史记录",
+    "tab_settings": "设置",
+    "saving_pending": "正在保存…",
+    "toast_success": "自动化已保存",
+    "toast_error": "保存自动化失败，请重试。",
+    "actions": {
+      "save": "保存更改"
+    }
+  },
+  "readonly": {
+    "banner": "您可以查看此自动化，但无法编辑。",
+    "delete_tooltip": "删除自动化"
+  },
+  "delete_modal": {
+    "title": "删除自动化？",
+    "body": "确定要删除 <strong>{name}</strong> 吗？",
+    "toast_success": "自动化已删除",
+    "toast_error": "删除自动化失败，请重试。"
+  },
+  "validation": {
+    "form_invalid": "请填写所有必填字段。",
+    "name_required": "名称为必填项",
+    "trigger_required": "触发器为必填项",
+    "instructions_required": "指令为必填项",
+    "delivery_target_required": "至少需要一个投递目标",
+    "github_owner_required": "所有者为必填项",
+    "github_repo_required": "仓库为必填项",
+    "github_branch_required": "分支为必填项"
+  },
+  "run_history": {
+    "search_placeholder": "搜索运行记录……",
+    "filter_result": "结果",
+    "action_edit_automation": "编辑自动化",
+    "action_view_task": "查看 Agent 任务",
+    "header_trigger": "触发器",
+    "header_status": "状态",
+    "header_started": "开始时间",
+    "header_duration": "持续时间",
+    "loading_aria_label": "正在加载运行历史记录",
+    "loading_label": "正在加载运行历史记录…",
+    "error_title": "无法加载运行历史记录",
+    "error_description": "获取运行历史记录时出错，请稍后重试。",
+    "refetch_aria_label": "正在刷新运行历史记录",
+    "empty_search_title": "未找到运行记录",
+    "empty_title": "暂无运行记录。",
+    "refresh_aria_label": "刷新运行历史记录"
+  }
+}

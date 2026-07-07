@@ -1,6 +1,6 @@
 {
   "find": {
-    "title": "查找",
+    "title": "寻找",
     "input": {
       "regex": {
         "value": "正则表达式"
@@ -9,66 +9,66 @@
         "value": "忽略大小写"
       },
       "find": {
-        "value": "查找",
-        "placeholder": "输入要查找的文本…"
+        "value": "寻找",
+        "placeholder": "输入文字查找..."
       }
     }
   },
   "where": {
-    "title": "范围",
-    "everything_radio": "全部",
+    "title": "在哪里",
+    "everything_radio": "一切",
     "entities_to_find_radio": "选择要查找的实体",
     "collections": {
-      "title": "集合",
-      "count": "集合（{items, plural, one {#} other {#}}）"
+      "title": "Collections",
+      "count": "Collections ({items, plural, one {#} other {#}})"
     },
     "environments": {
-      "title": "环境",
-      "count": "环境（{items, plural, one {#} other {#}}）"
+      "title": "Environments",
+      "count": "Environments ({items, plural, one {#} other {#}})"
     },
     "globals": {
       "title": "全局变量"
     },
     "open_tabs": {
-      "title": "打开的标签页"
+      "title": "打开选项卡"
     }
   },
   "replace_with": {
     "title": "替换为",
-    "placeholder": "输入要替换成的文本…",
+    "placeholder": "输入要替换的文本...",
     "input": {
       "select_all": {
-        "value": "全选"
+        "value": "选择全部"
       },
-      "replace_selected": "在所选的 {items, plural, one {#} other {#}} 项中替换"
+      "replace_selected": "替换所选的 {items, plural, one {#} other {#}}"
     }
   },
   "result": {
     "not_found": {
-      "description": "请尝试其他搜索，或修改要查找的实体。",
-      "title": "未找到与“{item}”匹配的内容"
+      "description": "尝试其他搜索，或修改要查找的实体。",
+      "title": "没有找到“{item}”"
     },
-    "pre_result_message": "在左侧输入搜索查询，以在集合、环境和全局变量中进行搜索。找到内容后，您将在此处看到搜索结果。",
-    "disabled_message": "查找和替换在本地模式下不可用。请切换到云模式以使用此功能。",
+    "pre_result_message": "在左侧输入搜索查询以跨集合、环境和全局进行搜索。当您找到某些内容时，您会在此处看到搜索结果。",
+    "disabled_message": "查找和替换在本地模式下不可用。切换到云模式即可使用此功能。",
     "tabs": {
       "open_tabs": {
-        "title": "打开的标签页（{items}）"
+        "title": "打开选项卡 ({items})"
       },
       "collections_tab": {
-        "title": "集合（{items}）",
+        "title": "Collections ({items})",
         "content": {
           "open_in_builder": "在构建器中打开"
         },
-        "result_count": "（{items, plural, one {# 个结果} other {# 个结果}}）"
+        "result_count": "({items, plural, one {# 个结果} other {# 个结果}})"
       },
       "environments_tab": {
-        "title": "环境（{items}）",
+        "title": "Environments ({items})",
         "content": {
           "open": "打开"
         }
       },
       "globals_tab": {
-        "title": "全局变量（{items}）",
+        "title": "全局变量 ({items})",
         "content": {
           "open": "打开"
         }
@@ -76,75 +76,75 @@
     }
   },
   "replace": {
-    "replace_content_save_changes_collection": "替换集合中的内容将保存该集合中所有未保存的更改。",
-    "replace_content_save_changes_environment": "替换环境中的内容将保存该环境中所有未保存的更改。",
-    "replace_content_save_changes_globals": "替换全局变量中的内容将保存该全局变量中所有未保存的更改。"
+    "replace_content_save_changes_collection": "替换 Collection 中的内容将保存该 Collection 中所有未保存的更改。",
+    "replace_content_save_changes_environment": "替换 Environment 中的内容将保存该 Environment 中所有未保存的更改。",
+    "replace_content_save_changes_globals": "替换全局中的内容将保存该全局中任何未保存的更改。"
   },
   "find_and_replace_target": {
     "search": {
       "placeholder": "搜索 {item}"
     },
-    "all_items": "全部 {item}（{count, plural, one {#} other {#}}）",
-    "selected_items": "已选择 {items , plural, one {#} other {#}} 项",
-    "select_all": "全选",
-    "unselect_all": "取消全选",
+    "all_items": "所有 {item}（{count, plural, one {#} other {#}}）",
+    "selected_items": "已选择 {items , plural, one {#} other {#}}",
+    "select_all": "选择全部",
+    "unselect_all": "取消选择全部",
     "filters": {
       "include": "包含字段",
-      "selector_value_all": "筛选（所有字段）",
-      "selector_value_count": "筛选（{count} {count, plural, one {个字段} other {个字段}}）",
+      "selector_value_all": "过滤器（所有字段）",
+      "selector_value_count": "过滤器（{count} {count, plural, one {FIELD} other {FIELDS}}）",
       "collections": {
-        "value": "集合",
+        "value": "Collections",
         "fields": {
-          "name": "名称",
+          "name": "姓名",
           "description": "描述",
-          "events_prerequest": "预请求脚本",
+          "events_prerequest": "请求前脚本",
           "events_test": "测试",
-          "auth": "授权",
+          "auth": "身份验证",
           "variables": "变量"
         }
       },
       "folders": {
         "value": "文件夹",
         "fields": {
-          "name": "名称",
+          "name": "姓名",
           "description": "描述",
-          "events_prerequest": "预请求脚本",
+          "events_prerequest": "请求前脚本",
           "events_test": "测试",
-          "auth": "授权"
+          "auth": "身份验证"
         }
       },
       "requests": {
         "value": "请求",
         "fields": {
-          "name": "名称",
+          "name": "姓名",
           "description": "描述",
           "url": "URL",
           "queryParams": "查询参数",
           "pathVariableData": "路径变量",
-          "headerData": "标头",
-          "events_prerequest": "预请求脚本",
+          "headerData": "请求头",
+          "events_prerequest": "请求前脚本",
           "events_test": "测试",
-          "auth": "授权",
-          "data": "请求正文"
+          "auth": "身份验证",
+          "data": "请求体"
         }
       },
       "responses": {
         "value": "示例",
         "fields": {
-          "name": "名称",
+          "name": "姓名",
           "requestObject_url": "URL",
           "requestObject_queryParams": "查询参数",
           "requestObject_pathVariableData": "路径变量",
-          "requestObject_headerData": "请求标头",
-          "requestObject_data": "请求正文",
-          "text": "响应正文",
-          "headers": "标头"
+          "requestObject_headerData": "请求头",
+          "requestObject_data": "请求体",
+          "text": "响应体",
+          "headers": "响应头"
         }
       },
       "environments": {
-        "value": "环境",
+        "value": "Environments",
         "fields": {
-          "name": "名称",
+          "name": "姓名",
           "values": "变量"
         }
       },

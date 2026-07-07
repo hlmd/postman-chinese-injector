@@ -1,0 +1,192 @@
+{
+  "cta": {
+    "upgrade": "升级",
+    "purchase_add_on": "购买附加组件",
+    "contact_sales": "联系销售",
+    "learn_more": "了解更多"
+  },
+  "billing_overview": {
+    "title": "账单",
+    "description_intro": "管理您的套餐、付款方式和资源使用情况。",
+    "description_lead": "您将解锁：",
+    "description_item_billing_activity": "查看您的套餐、历史发票和账单活动",
+    "description_item_team_size": "调整团队规模、购买附加组件并升级套餐",
+    "description_item_resource_usage": "跟踪资源使用情况和每月剩余额度"
+  },
+  "application_inventory": {
+    "title": "应用程序清单",
+    "description_intro": "跟踪您的应用程序、其 API 依赖项和测试覆盖率。",
+    "description_lead": "您将解锁：",
+    "description_item_api_dependencies": "查看您的应用程序依赖哪些外部 API",
+    "description_item_playwright_tests": "使用现有的 Playwright 测试验证 API 行为",
+    "description_item_contract_drift": "自动捕获契约漂移和隐性后端错误"
+  },
+  "api_catalog": {
+    "title": "API 目录",
+    "description_intro": "在统一的仪表盘中查看您组织的所有 API 和服务。",
+    "description_lead": "您将解锁：",
+    "description_item_api_health": "监控各环境中的 API 健康状况、治理和一致性",
+    "description_item_unmanaged_apis": "从网关、Git 仓库和运行时流量中发现未纳管的 API",
+    "description_item_cicd_pipeline": "跟踪 CI/CD 流水线运行、规范检查和端点覆盖率"
+  },
+  "private_api_network": {
+    "title": "私有 API 网络",
+    "description_intro": "发现并复用您组织的内部 API。",
+    "description_lead": "您将解锁：",
+    "description_item_browse_apis": "浏览您组织中最重要的内部 API",
+    "description_item_add_workspaces": "添加 Workspace、Collection 和 API 以供团队查找",
+    "description_item_find_apis": "帮助开发者更快找到合适的 API"
+  },
+  "reports": {
+    "title": "报告",
+    "description_intro": "全面了解 API 使用情况、团队活动和套餐使用率。",
+    "description_lead": "您将解锁：",
+    "description_item_active_users": "监控活跃用户、Workspace 和 API 趋势",
+    "description_item_agent_mode": "跟踪 Agent Mode 的使用情况和性能指标",
+    "description_item_billing_insights": "获取账单和资源利用情况洞察"
+  },
+  "postman_keys": {
+    "title": "Postman 密钥",
+    "description_intro": "监管您组织中生成的所有 Postman API 密钥。",
+    "description_lead": "您将解锁：",
+    "description_item_manage_keys": "在统一仪表盘中查看、筛选和管理团队 API 密钥",
+    "description_item_expiration_policies": "设置过期策略并控制谁可以生成密钥",
+    "description_item_auto_revoke": "自动吊销 Secret Scanner 检测到的已泄露密钥"
+  },
+  "audit_logs": {
+    "title": "审计日志",
+    "description_intro": "跟踪您团队的活动，确保安全与合规。",
+    "description_lead": "您将解锁：",
+    "description_item_monitor_activity": "监控登录、密钥创建和成员变更",
+    "description_item_filter_export": "按日期、事件或用户筛选并导出日志",
+    "description_item_integrate_with_siem": "将 Postman 的审计日志与 SIEM 工具集成"
+  },
+  "user_groups": {
+    "title": "用户组",
+    "description_intro": "将成员分组管理，以规模化管理角色和访问权限。",
+    "description_lead": "您将解锁：",
+    "description_item_organize_users_into_groups": "将用户分组，以规模化管理访问权限",
+    "description_item_assign_roles_to_groups": "为整个用户组分配权限，而非逐个用户设置",
+    "description_item_manage_groups": "简化入职、离职及日常管理流程"
+  },
+  "team_resources": {
+    "title": "团队资源",
+    "description_intro": "控制 Workspace 创建、Collection 共享和外部包的访问权限。",
+    "description_lead": "您将解锁：",
+    "description_item_workspace_creation": "配置团队范围的规则以控制 Workspace 创建",
+    "description_item_collection_sharing": "管理 Collection 和 Mock 等资源的共享方式",
+    "description_item_external_packages": "管控外部包的使用和 Vault 数据导出"
+  },
+  "organization_resources": {
+    "title": "组织资源",
+    "description_intro": "控制 Workspace 创建、Collection 共享和外部包的访问权限。",
+    "description_lead": "您将解锁：",
+    "description_item_workspace_creation": "配置组织范围的规则以控制 Workspace 创建",
+    "description_item_collection_sharing": "管理 Collection 和 Mock 等资源的共享方式",
+    "description_item_external_packages": "管控外部包的使用和 Vault 数据导出"
+  },
+  "sso_authentication_method": {
+    "title": "身份验证方式",
+    "description_intro": "为您的组织配置基于 SAML 的单点登录。",
+    "description_lead": "您将解锁：",
+    "description_item_configure_saml": "与您的身份提供商配置基于 SAML 的单点登录",
+    "description_item_single_sign_in": "让成员一次登录，无需管理多个密码",
+    "description_item_auth_policies": "为您的团队执行统一的身份验证策略"
+  },
+  "sso_authentication_method_addon": {
+    "title": "身份验证方式",
+    "description_intro": "为您的组织配置基于 SAML 的单点登录。",
+    "description_lead": "您将解锁：",
+    "description_item_configure_saml": "与您的身份提供商配置基于 SAML 的单点登录",
+    "description_item_single_sign_in": "让成员一次登录，无需管理多个密码",
+    "description_item_manage_authentication_methods": "管理您组织的身份验证方式"
+  },
+  "domain_verification_and_capture": {
+    "title": "域名验证与归集",
+    "description_intro": "将您域名下的所有账户整合到一个受管理的团队中。",
+    "description_lead": "您将解锁：",
+    "description_item_auto_direct_signups": "自动将新注册用户引导至您的官方团队",
+    "description_item_centralized_management": "将现有账户纳入集中管理",
+    "description_item_prevent_ungoverned_usage": "防止您域名下出现不受管控的 Postman 使用行为"
+  },
+  "service_accounts": {
+    "title": "服务账户",
+    "description_intro": "为自动化和 CI/CD 流水线创建专属身份。",
+    "description_lead": "您将解锁：",
+    "description_item_scoped_access": "设置具有受限访问控制的非人工账户",
+    "description_item_separate_workflows": "将自动化工作流与个人凭据分离",
+    "description_item_audit_attribution": "在审计日志中清晰追溯自动化操作"
+  },
+  "postman_ai_access": {
+    "title": "Postman AI 控制",
+    "description_intro": "管理您团队使用 Postman AI 功能的方式。",
+    "description_lead": "您将解锁：",
+    "description_item_control_postman_ai_usage": "控制您团队中 Postman AI 的使用",
+    "description_item_configure_access_per_user_or_group": "按用户或用户组配置访问权限",
+    "description_item_set_safer_ai_guardrails": "设置防护措施，确保 AI 使用更加安全"
+  },
+  "postman_ai_guardrails": {
+    "title": "Postman AI 防护措施",
+    "description_intro": "为您团队中 AI 功能的行为方式设置策略。",
+    "description_lead": "您将解锁：",
+    "description_item_enable_pii_redaction": "启用个人身份信息（PII）脱敏",
+    "description_item_control_external_mcp_server_access": "控制 Postman AI 可以访问哪些外部 MCP 服务器"
+  },
+  "runners": {
+    "title": "Runner",
+    "upgrade_modal_heading": "升级到 Enterprise 套餐即可使用私有 API 的 Runner",
+    "description_intro": "大规模运行 Collection，并为您的团队管理 Runner 基础设施。",
+    "description_lead": "您将解锁：",
+    "description_item_run_collections": "手动、按计划或通过 Postman CLI 运行 Collection",
+    "description_item_private_apis": "在您自己的网络中针对私有 API 执行运行任务",
+    "description_item_runner_health": "在统一仪表盘中监控 Runner 健康状况并管理访问权限"
+  },
+  "custom_domains": {
+    "title": "自定义域名",
+    "description_intro": "在您自己的品牌域名上托管 API 文档。",
+    "description_lead": "您将解锁：",
+    "description_item_branded_subdomain": "在您的子域名下发布文档（例如 docs.yourco.com）",
+    "description_item_automatic_ssl": "通过 Let's Encrypt 自动获取 SSL 证书",
+    "description_item_consistent_branding": "为 API 使用者保持一致的品牌形象"
+  },
+  "byok_encryption": {
+    "title": "BYOK 加密",
+    "description_intro": "使用您自己的客户托管密钥加密团队数据。",
+    "description_lead": "您将解锁：",
+    "description_item_encrypt_data": "加密 Environment、全局变量、历史记录和运行数据",
+    "description_item_compliance": "满足数据安全与合规要求",
+    "description_item_key_control": "完全掌控您的加密密钥"
+  },
+  "secret_scanner": {
+    "title": "Secret Scanner",
+    "description_intro": "扫描已泄露的密钥，自动修复泄露并跟踪处理进度。",
+    "description_lead": "您将解锁：",
+    "description_item_detect_api_keys": "实时检测泄露的 API 密钥、令牌和凭据",
+    "description_item_move_secrets": "通过本地保护自动将密钥移至 Postman Vault",
+    "description_item_monitor_exposure": "监控您组织中密钥泄露趋势和处理情况"
+  },
+  "secret_scanner_cloud_detection": {
+    "title": "Secret Scanner 云端检测",
+    "description_intro": "检测并处理您各个 Workspace 中泄露的密钥。",
+    "description_lead": "您将解锁：",
+    "description_item_resolve_secrets": "批量审查并处理检测到的密钥",
+    "description_item_filter_findings": "按 Workspace、可见性类型和密钥类型筛选检测结果",
+    "description_item_mark_secrets": "将密钥标记为已吊销、误报或不予修复"
+  },
+  "secret_scanner_reports": {
+    "title": "Secret Scanner 报告",
+    "description_intro": "监控密钥检测趋势和修复指标。",
+    "description_lead": "您将解锁：",
+    "description_item_track_detected": "随时间跟踪检测到、已处理和已存入 Vault 的密钥",
+    "description_item_view_unresolved_secrets": "按 Workspace 可见性和类型查看未处理的密钥",
+    "description_item_monitor_local": "监控本地保护的 Vault 转移和覆盖操作"
+  },
+  "secret_scanner_patterns": {
+    "title": "Secret Scanner 模式",
+    "description_intro": "管理要扫描的密钥类型，并添加自定义模式。",
+    "description_lead": "您将解锁：",
+    "description_item_view_patterns": "查看数百种内置的常见凭据检测模式",
+    "description_item_add_custom_regex": "为您的专属令牌添加自定义正则表达式模式",
+    "description_item_dry_run_patterns": "在启用前，先在特定 Workspace 中试运行模式"
+  }
+}

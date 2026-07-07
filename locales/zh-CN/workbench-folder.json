@@ -1,7 +1,7 @@
 {
   "load_error": {
     "title": "编辑器加载失败",
-    "message": "我们的团队已收到通知。如果问题仍然存在，请联系 <1><0><0>Postman 支持</0></0></1>。"
+    "message": "我们的 团队 已收到通知。如果问题仍然存在，请联系 <1><0><0>Postman 支持</0></0></1>。"
   },
   "editor": {
     "content_pane": {
@@ -18,30 +18,30 @@
           "run": {
             "text": "运行",
             "tooltip": {
-              "primary_message": "目前无法在公共工作区中运行文件夹——不过我们正在为未来版本开发此功能！",
-              "secondary_message": "将此集合复刻到您自己的工作区即可运行。",
-              "primary_action": "创建复刻",
-              "readonly_user_message": "您没有执行此操作的权限。"
+              "primary_message": "文件夹现在无法在公开的 Workspace 中运行 - 尽管我们正在为未来的版本努力解决这个问题！",
+              "secondary_message": "Fork 这个 Collection 到你自己的 Workspace 来运行它。",
+              "primary_action": "创建一个 fork",
+              "readonly_user_message": "您无权执行此操作。"
             }
           },
           "save": {
             "text": {
               "save": "保存",
-              "saving": "保存中…"
+              "saving": "保存..."
             },
             "tooltip": {
-              "title": "创建复刻以保存更改",
-              "primary_message": "您没有权限更改此集合。请将集合复刻到您的工作区以保存更改。",
-              "primary_action": "创建复刻并保存",
-              "no_changes": "没有可保存的新更改。",
+              "title": "创建 fork 来保存更改",
+              "primary_message": "您没有权限更改此 Collection。请将该 Collection Fork 到您的 Workspace 以保存更改。",
+              "primary_action": "创建 fork 并保存",
+              "no_changes": "没有要保存的新更改。",
               "save_folder": "保存文件夹",
               "save_folder_git": "将更改保存到 Postman 和 Github",
-              "readonly_user_message": "您没有执行此操作的权限。"
+              "readonly_user_message": "您无权执行此操作。"
             }
           },
           "share": {
-            "text": "共享",
-            "tooltip": "共享文件夹"
+            "text": "分享",
+            "tooltip": "分享 文件夹"
           },
           "delete": "删除"
         }
@@ -49,26 +49,26 @@
       "permission_infobar": {
         "folder": "文件夹",
         "description": "描述",
-        "auth": "授权",
-        "overview": "概览",
+        "auth": "身份验证",
+        "overview": "概述",
         "tests": "测试",
-        "pre_request": "预请求脚本",
+        "pre_request": "请求前脚本",
         "configurations": "设置",
-        "text": "若要更改此文件夹的{text}，请向其父集合请求额外的访问权限。",
+        "text": "如需更改此文件夹的 {text}，请为其父 Collection 申请额外访问权限。",
         "scripts": "脚本"
       },
       "tab_list": {
         "overview": {
-          "label": "概览",
-          "short_label": "概览"
+          "label": "概述",
+          "short_label": "概述"
         },
         "authorization": {
-          "label": "授权",
-          "short_label": "授权"
+          "label": "身份验证",
+          "short_label": "认证"
         },
         "pre_request_script": {
-          "label": "预请求脚本",
-          "short_label": "预请求"
+          "label": "请求前脚本",
+          "short_label": "请求前"
         },
         "tests": {
           "label": "测试"
@@ -79,39 +79,39 @@
       },
       "tabs": {
         "auth": {
-          "description": "此授权方法将用于此文件夹中的每个请求。您可以在请求中指定授权方法以覆盖它。"
+          "description": "此 授权 方法将用于此 文件夹 中的每个 请求。您可以通过在 请求 中指定一个来覆盖这一点。"
         },
         "scripts": {
           "label": "脚本",
           "tooltip-text": {
-            "pre-request": "在每个请求发送之前运行。可用它通过动态配置请求来创建 API 工作流。",
-            "post-response": "在每个请求收到响应之后运行。可用它来编写测试。"
+            "pre-request": "在发送每个 请求 之前运行。使用它通过动态配置请求来创建 API 工作流程。",
+            "post-response": "在收到每个 请求 的 响应 后运行。用它来编写测试。"
           },
-          "migration-popover-text": "使用响应后脚本编写测试、可视化响应以及执行更多操作。"
+          "migration-popover-text": "使用 响应 后脚本编写测试、可视化 响应 以及执行更多操作。"
         },
         "test-tab-deprecation": {
-          "heading": "测试现已成为响应后脚本的一部分",
-          "message": "您可以使用脚本来编写测试、预请求脚本、可视化响应，并为您的 API 工作流带来大量自动化。",
-          "button": "打开响应后脚本"
+          "heading": "测试现在是 post-响应 脚本的一部分",
+          "message": "您可以使用脚本来编写测试、请求前脚本、可视化响应并为您的 API 工作流程带来大量自动化。",
+          "button": "打开 post-响应 脚本"
         },
         "pre_req": {
-          "description": "此脚本将在此文件夹中每个请求之前执行。详细了解 <1><0>Postman 的执行顺序</0></1>。",
+          "description": "这个 脚本 将在这个 文件夹 中的每个 请求 之前执行。了解更多关于<1><0>Postman的执行顺序</0></1>。",
           "placeholder": "使用 JavaScript 动态配置请求。"
         },
         "tests": {
-          "description": "这些测试将在此文件夹中每个请求之后执行。详细了解 <1><0>Postman 的执行顺序</0></1>。",
-          "placeholder": "使用 JavaScript 编写测试、可视化响应以及执行更多操作。"
+          "description": "这些测试将在此 文件夹 中的每个 请求 之后执行。了解更多关于<1><0>Postman的执行顺序</0></1>。",
+          "placeholder": "使用 JavaScript 编写测试、可视化响应等。"
         },
         "settings": {
           "empty_state": {
-            "title": "文件夹设置不可用",
-            "message": "Postman 使用浏览器的默认设置发送请求。切换到桌面代理以进一步自定义您的文件夹。"
+            "title": "文件夹 设置不可用",
+            "message": "Postman 使用浏览器的默认设置发送请求。切换到桌面代理以进一步自定义您的 文件夹。"
           }
         }
       }
     },
     "context_bar": {
-      "info_title": "文件夹详情"
+      "info_title": "文件夹 详细信息"
     }
   },
   "new_folder": "新建文件夹"

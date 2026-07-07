@@ -4,15 +4,15 @@
       "heading": "设置您的性能测试"
     },
     "run_choice": {
-      "heading": "选择运行性能测试的方式",
-      "in_app": "在应用内",
-      "in_app_helper": "在应用内运行此性能测试。",
+      "heading": "选择如何运行性能测试",
+      "in_app": "在应用程序中",
+      "in_app_helper": "在应用程序中运行此性能测试。",
       "via_cli": "通过 CLI",
-      "via_cli_helper": "配置 CLI 命令，使其在您的构建流水线上运行。"
+      "via_cli_helper": "配置 CLI 命令以在构建管道上运行。"
     },
     "errors": {
       "start_run": {
-        "title": "已超出运行次数上限"
+        "title": "超出运行限制"
       },
       "pass_criteria": {
         "min": "最小值 {min}",
@@ -20,7 +20,7 @@
         "empty_field": "字段不能为空"
       },
       "max_users": "您最多可以模拟 {maxUserCount} 个虚拟用户。",
-      "max_duration": "测试时长不能超过 {maxDuration} 分钟。",
+      "max_duration": "测试持续时间不能超过 {maxDuration} 分钟。",
       "users": {
         "empty": "最少 1",
         "min": "最少 1",
@@ -33,39 +33,39 @@
         "min": "最少 1",
         "max": "最多 60",
         "invalid_number": "应为整数",
-        "max_duration_reached": "测试时长不能超过 {count} {count, plural, one {分钟} other {分钟}}。"
+        "max_duration_reached": "测试持续时间不能超过 {count} 个{count, plural, one {分钟} other {分钟}}。"
       },
       "ramp_up_duration": {
         "invalid_number": "应为整数",
         "min": "最少 ",
-        "max": "爬坡时间不能超过测试时长"
+        "max": "加速时间不能超过测试持续时间"
       },
       "collection": {
-        "empty": "从侧边栏拖入一个集合或文件夹以开始"
+        "empty": "从侧边栏拖动 Collection 或文件夹即可开始"
       },
       "request_selection": {
-        "no_requests": "您必须选择一个请求才能开始运行"
+        "no_requests": "您必须选择请求才能开始运行"
       },
       "default": {
-        "error": "请解决错误后再开始运行"
+        "error": "解决错误以开始运行"
       },
       "graph": {
-        "error": "请解决错误后再查看预览"
+        "error": "解决错误以查看预览"
       },
       "file_data": {
         "file_missing": {
-          "suffix": "在本地存储中未找到该文件。请添加文件或在不使用文件的情况下继续。",
-          "msg": "由于在本地存储中未找到上次运行所用的文件，集合运行将在没有数据文件的情况下进行"
+          "suffix": "在本地存储中找不到文件。添加文件或不添加文件继续。",
+          "msg": "由于本地存储中找不到上次运行使用的文件，因此将在没有数据文件的情况下进行 Collection 运行"
         },
-        "help_content": "<0>{bannerContent} 详细了解</0><1><0>数据文件的格式。</0></1>",
+        "help_content": "<0>{bannerContent} 了解有关 </0><1><0> 格式化数据文件的更多信息。</0></1>",
         "error_msgs_map": {
           "json_invalid_array": {
-            "title": "所选 JSON 文件不是对象数组",
-            "description": "JSON 文件必须是包含键值对的对象数组。这些对象将在性能测试运行期间提供给虚拟用户"
+            "title": "选定的 JSON 文件不是对象数组",
+            "description": "JSON 文件需要是包含键值对的对象数组。这些对象将在性能测试运行期间提供给虚拟用户"
           },
           "undetermined_file_type": {
-            "title": "无法确定所选数据文件的类型",
-            "description": "数据文件必须为 CSV 或 JSON 格式"
+            "title": "无法确定所选数据文件类型",
+            "description": "数据文件必须采用 CSV 或 JSON 格式"
           },
           "csv_parsing_error": {
             "title": "解析 CSV 文件类型时出错"
@@ -76,37 +76,37 @@
         }
       },
       "system": {
-        "not_ready": "为性能测试设置系统时出错了。"
+        "not_ready": "设置系统进行性能测试时出现问题。"
       },
-      "limit_exceeded": "已超出运行次数上限",
-      "workload_running": "另一个性能测试正在进行中。请等待当前测试完成后再开始新的测试。"
+      "limit_exceeded": "超出运行限制",
+      "workload_running": "另一个性能测试已经在进行中。请等待当前测试完成，然后再开始新的测试。"
     },
     "tooltips": {
-      "booting": "正在为性能测试设置您的系统。这可能需要几秒钟。"
+      "booting": "您的系统正在设置以进行性能测试。这可能需要几秒钟。"
     },
     "banner": {
       "heading": "测试您的 API 在负载下的表现",
-      "desc": "<0>从您的本地计算机模拟真实流量并观察 API 的性能。详细了解</0> <1><0>性能测试</0></1>",
-      "heading_v2": "以更大规模运行性能测试",
-      "desc_v2": "<0>模拟真实场景以验证稳定性并尽早发现问题。</0> <1><0> 了解更多</0></1>"
+      "desc": "<0>模拟来自本地计算机的真实流量并观察 API 的性能。了解有关</0> <1><0>性能测试</0></1>的更多信息",
+      "heading_v2": "在更大范围内运行性能测试",
+      "desc_v2": "<0>模拟真实场景以验证稳定性并及早发现问题。</0> <1><0> 了解更多</0></1>"
     },
     "users": {
       "label": "虚拟用户",
-      "helper_text": "每个用户在测试时长内并行且反复地运行该集合。"
+      "helper_text": "每个用户在测试期间并行且重复地运行 Collection。"
     },
     "duration": {
-      "label": "测试时长",
+      "label": "测试时间",
       "suffix": "分钟"
     },
     "load_profile": {
-      "label": "负载模式",
-      "helper_text": "决定虚拟用户数量在测试期间如何变化。",
-      "ramp_up_text": "逐步增加到最大虚拟用户数所需的时间。",
-      "suffix": "模式"
+      "label": "负载曲线",
+      "helper_text": "确定测试期间虚拟用户数量如何变化。",
+      "ramp_up_text": "逐渐增加到最大虚拟用户所需的时间。",
+      "suffix": "曲线"
     },
     "ramp_up_duration": {
-      "label": "爬坡时长",
-      "helper_text": "逐步增加到最大虚拟用户数所需的时间。",
+      "label": "加速时长",
+      "helper_text": "逐渐增加到最大虚拟用户所需的时间。",
       "suffix": "分钟"
     },
     "data_file": {
@@ -114,13 +114,13 @@
       "label_field_type": "可选",
       "type_label": "数据文件类型",
       "action_label": "选择文件",
-      "info_text": "数据文件使您能够为每个虚拟用户分配独特的数据集，从而模拟真实场景。",
+      "info_text": "数据文件使您能够为每个虚拟用户分配唯一的数据集，模拟现实世界的场景。",
       "preview_text": "打开预览",
       "preview": {
         "vu_column_header": "VU",
         "heading": "数据文件",
-        "loading": "正在解析数据文件 …",
-        "column_loading": "正在解析 …",
+        "loading": "正在解析数据文件...",
+        "column_loading": "正在解析...",
         "postfix": {
           "rows": "行",
           "row": "行"
@@ -132,12 +132,12 @@
             "label": "VU 数据映射",
             "options": {
               "ordered": {
-                "label": "顺序",
-                "helper_text": "每个 VU 使用特定某一行的数据。"
+                "label": "有序",
+                "helper_text": "每个 VU 使用特定行的数据。"
               },
               "random": {
-                "label": "随机",
-                "helper_text": "每个 VU 在每次运行集合时使用随机某一行的数据。"
+                "label": "随机化",
+                "helper_text": "每次运行 Collection 时，每个 VU 都使用随机行中的数据。"
               }
             }
           }
@@ -157,53 +157,53 @@
           "prefix": "文件使用",
           "mapping": "VU 映射",
           "ordered": {
-            "value": "顺序",
-            "suffix": "其中每个 VU 接收特定某一行的数据。"
+            "value": "有序",
+            "suffix": "其中每个 VU 接收来自特定行的数据。"
           },
           "random": {
-            "value": "随机",
-            "suffix": "其中每个 VU 在每次运行集合时接收随机某一行的数据。"
+            "value": "随机化",
+            "suffix": "其中每个 VU 每次运行 Collection 时都会从随机行接收数据。"
           }
         }
       }
     },
     "buttons": {
       "run": "运行",
-      "starting_run": "正在开始运行…"
+      "starting_run": "开始运行..."
     },
     "no_create_access": {
       "public_ws": {
-        "title": "复刻集合以运行它",
-        "description": "您没有在此公开工作区中运行集合的权限。请将该集合复刻到您自己的工作区以运行。",
-        "primary_action_text": "复刻集合"
+        "title": "Fork Collection 以运行它",
+        "description": "您没有权限在此公开 Workspace 中运行 Collection。请将该 Collection Fork 到您自己的 Workspace 后再运行。",
+        "primary_action_text": "复刻 Collection"
       },
       "rfa": {
-        "title": "无权限运行性能测试",
-        "description": "您可以请求编辑访问权限，或将此集合复刻到您自己的工作区。",
-        "primary_action_text": "请求访问权限",
-        "secondary_action_text": "复刻集合"
+        "title": "没有权限运行性能测试",
+        "description": "您可以请求获取编辑权限，或将此 Collection Fork 到您自己的 Workspace。",
+        "primary_action_text": "请求访问",
+        "secondary_action_text": "复刻 Collection"
       },
       "api_collection": {
-        "title": "敬请期待！",
-        "description": "性能测试目前不适用于 API 内部的集合。我们正在努力尽快推出此功能！"
+        "title": "即将推出！",
+        "description": "性能测试目前不适用于 API 内的 Collection。我们正在努力尽快推出此功能！"
       }
     },
     "pass_criteria": {
-      "expand_label": "在以下情况下视为通过测试……",
-      "expand_label_info": "设置条件，以根据性能指标判断测试是通过还是失败。",
+      "expand_label": "通过测试，如果...",
+      "expand_label_info": "设置条件来根据性能指标确定测试是否通过。",
       "invalid_criteria": "无效的通过/失败标准"
     },
     "new_perf_flow": {
-      "duck_db_initializing": "正在初始化性能测试系统。请稍候……",
-      "duck_db_initialization_error": "初始化性能测试系统失败。请重试。",
+      "duck_db_initializing": "初始化性能测试系统。请稍等...",
+      "duck_db_initialization_error": "无法初始化性能测试系统。请再试一次。",
       "duckdb_init_toast": {
         "title": "初始化错误",
-        "timeout": "性能运行器扩展下载超时。请检查您的网络连接和防火墙设置。",
-        "certificate": "证书问题阻止了性能运行器扩展的下载。如果您的组织使用代理，请将其证书添加到您系统的受信任根证书中。",
-        "network": "网络问题阻止了性能运行器扩展的下载。您的 IT 团队可能需要将 performance-test-artifacts.getpostman.com 域名加入允许列表。",
-        "policy": "应用控制策略阻止了性能运行器。您的 IT 团队可能需要允许执行应用目录中的 Postman 文件。[查看可能的解决方案](https://learning.postman.com/v11/docs/collections/performance-testing/troubleshoot-performance-tests#possible-solutions)。 ",
-        "http": "性能运行器扩展下载被阻止或被拒绝。代理或防火墙可能正在拦截该请求。",
-        "unknown": "性能运行器扩展安装失败。请检查 Postman 日志（搜索 PerformanceTestV2）以识别并解决问题，或将日志分享给 Postman 支持团队以寻求帮助。"
+        "timeout": "性能运行程序扩展下载超时。检查您的网络连接和防火墙设置。",
+        "certificate": "证书问题阻止了性能运行程序扩展下载。如果您的组织使用代理，请将其证书添加到系统的受信任根证书中。",
+        "network": "网络问题阻止了性能运行程序扩展下载。您的 IT 团队可能需要将 performance-test-artifacts.getpostman.com 域列入白名单。",
+        "policy": "应用程序控制策略阻止了性能运行程序。您的 IT 团队可能需要允许执行应用程序目录中的 Postman 文件。[查看可能的解决方案](https://learning.postman.com/v11/docs/collections/performance-testing/troubleshoot-performance-tests#possible-solutions)。",
+        "http": "性能运行程序扩展下载被阻止或拒绝。代理、防火墙可能正在拦截请求。",
+        "unknown": "性能运行程序扩展安装失败。检查 Postman 日志（搜索 PerformanceTestV2）以识别并解决问题，或与 Postman 支持人员共享日志以获取帮助。"
       }
     },
     "warnings": {
@@ -211,8 +211,8 @@
     },
     "delete_confirmation": {
       "title": "删除性能运行",
-      "description_with_name": "确定要删除 <bold>{itemName}</bold> 运行吗？此操作无法撤销。",
-      "description_without_name": "确定要删除此性能测试运行吗？此操作无法撤销。",
+      "description_with_name": "您确定要删除 <bold>{itemName}</bold> 运行吗？此操作无法撤消。",
+      "description_without_name": "您确定要删除此性能测试运行吗？此操作无法撤消。",
       "delete": "删除",
       "cancel": "取消"
     }
@@ -220,12 +220,13 @@
   "cloud_run": {
     "status": {
       "initializing": "正在初始化",
-      "queued": "已排队",
+      "queued": "排队中",
       "running": "运行中",
       "in_progress": "进行中",
       "finished": "已完成",
       "error": "错误",
-      "stopped": "已停止"
+      "stopped": "已停止",
+      "aborted": "已中止"
     },
     "actions": {
       "stop_run": "停止运行",
@@ -234,68 +235,69 @@
       "cancel": "取消",
       "cancel_test": "取消测试",
       "continue_run": "继续运行",
-      "run_again": "重新运行",
+      "run_again": "再次运行",
       "retry": "重试"
     },
     "stop_modal": {
       "stop_heading": "停止云测试？",
       "cancel_heading": "取消云测试？",
-      "stop_description": "确定要停止此测试吗？当前迭代将在测试终止前完成。",
-      "cancel_description": "确定要取消此测试吗？它将从队列中移除。"
+      "stop_description": "您确定要停止此测试吗？当前迭代将在测试终止之前完成。",
+      "cancel_description": "您确定要取消此测试吗？它将从队列中删除。"
     },
     "messages": {
-      "waiting_for_infra": "正在等待云基础设施…",
-      "terminated_no_data_title": "运行结束但无任何指标",
-      "terminated_no_data_description": "此次运行在生成任何性能数据之前就已终止。它可能在设置期间失败，或在测试开始前被停止。",
-      "test_running": "测试运行中…",
-      "metrics_pending": "性能指标将在测试完成后提供。",
-      "run_in_progress_title": "运行进行中",
-      "run_in_progress_description": "运行完成后，结果将显示在此处。请查看“执行”标签页以跟踪实时进度。",
-      "phase_submitting_description": "您的云运行正在启动。",
-      "phase_provisioning_description": "正在为您的测试设置云基础设施。",
-      "phase_queued_description": "正在分配云资源并扩展虚拟用户。",
-      "phase_running_description": "虚拟用户正在运行。首批结果即将到达。",
-      "finishing_up": "正在收尾…",
-      "step_validating": "正在开始",
-      "step_preparing": "正在设置",
-      "step_scaling": "正在扩展",
-      "step_running": "运行中",
+      "waiting_for_infra": "等待云基础设施...",
+      "terminated_no_data_title": "运行结束，没有指标",
+      "terminated_no_data_description": "此运行在生成任何性能数据之前终止。它可能在设置过程中失败或在测试开始之前停止。",
+      "test_running": "测试运行中...",
+      "metrics_pending": "测试完成后，性能指标将可用。",
+      "run_in_progress_title": "运行中",
+      "run_in_progress_description": "运行完成后，结果将显示在此处。检查“执行”选项卡以跟踪实时进度。",
+      "phase_submitting_description": "您的云端运行正在启动。",
+      "phase_provisioning_description": "为您的测试设置云基础设施。",
+      "phase_queued_description": "分配云资源并扩展虚拟用户。",
+      "phase_running_description": "虚拟用户正在运行。第一个结果很快就会到来。",
+      "finishing_up": "正在整理中……",
+      "step_validating": "开始",
+      "step_preparing": "设置",
+      "step_scaling": "缩放",
+      "step_running": "运行",
       "cloud_run_label": "云运行",
       "last_updated_prefix": "最后更新：",
-      "relative_just_now": "刚刚",
+      "relative_just_now": "现在",
       "relative_seconds": "{seconds} 秒前",
-      "relative_minutes": "{minutes} 分钟前"
+      "relative_minutes": "{minutes}分钟前"
     },
     "run_choice": {
       "cloud": "云",
-      "cloud_helper": "在 Postman Cloud 上运行",
-      "beta": "Beta"
+      "cloud_helper": "在 Postman 云上运行",
+      "beta": "测试版"
     },
     "preview_notice": {
-      "heading": "在 Postman Cloud 上进行性能测试",
-      "description": "在 Postman Cloud 上运行性能测试是一项预览功能。它在预览期间于合理限制内可用。Postman 可能随时施加限制以防止滥用。定价将在正式发布前公布。",
+      "heading": "Postman Cloud 上的性能测试",
+      "description": "在 Postman Cloud 上运行性能测试是一项预览功能，在预览期间可在合理限制内使用。Postman 可能随时施加限制以防止滥用。定价将在正式发布前公布。",
       "got_it": "知道了"
     },
     "upgrade": {
-      "heading": "升级以在云端运行性能测试",
-      "description": "云运行在 Postman 的云基础设施上执行您的性能测试，因此您可以扩展虚拟用户和时长，而无需使用自己的计算机。这是一项预览功能，在合理限制内可用。Postman 可能随时施加限制以防止滥用。定价将在正式发布前公布。"
+      "heading": "升级以在云上运行性能测试",
+      "description": "云运行在 Postman 的云基础设施上执行性能测试，因此您可以扩展虚拟用户和持续时间，而无需使用自己的计算机。这是预览功能，在合理限制内可用。Postman 可以随时施加限制以防止滥用。定价将在正式上市之前公布。"
     },
     "validation": {
       "min_vus": "云测试至少需要 {count} 个虚拟{count, plural, one {用户} other {用户}}。",
-      "max_vus": "云测试最多支持 {count} 个虚拟{count, plural, one {用户} other {用户}}。",
-      "min_duration": "云测试要求最短时长为 {count} {count, plural, one {分钟} other {分钟}}。",
-      "max_duration": "云测试支持的最长时长为 {count} {count, plural, one {分钟} other {分钟}}。",
-      "data_file_too_large_title": "数据文件超出了云测试 {limitMb} MB 的限制。",
-      "data_file_too_large_msg": "请选择更小的文件或减小文件大小。"
+      "max_vus": "您的账户最多允许 {count} 个虚拟{count, plural, one {用户} other {用户}}。",
+      "min_duration": "云测试需要的最短持续时间为 {count} {count, plural, one {分钟} other {分钟}}。",
+      "max_duration": "您的账户最多允许 {count} {count, plural, one {分钟} other {分钟}}。",
+      "contact_support_cta": "<Link><Text>联系支持团队</Text></Link>以获取更高的限制。",
+      "data_file_too_large_title": "数据文件超出了云测试的 {limitMb} MB 限制。",
+      "data_file_too_large_msg": "请选择较小的文件或减小文件大小。"
     },
     "column": {
       "source": "来源",
-      "region": "区域"
+      "region": "地区"
     },
     "source": {
       "cloud": "云",
       "cli": "CLI",
-      "app": "应用"
+      "app": "应用程序"
     },
     "button": {
       "run_on_cloud": "在云端运行"
@@ -303,78 +305,78 @@
     "group_by": {
       "label": "分组依据",
       "none": "无",
-      "region": "区域"
+      "region": "地区"
     },
     "topology": {
       "title": "执行",
       "stages": {
-        "starting": "正在开始",
-        "starting_empty": "正在等待云运行被接受。",
-        "setting_up": "正在设置",
-        "setting_up_empty": "正在等待预配云基础设施。",
-        "scaling": "正在扩展",
-        "scaling_empty": "正在等待分配并扩展虚拟用户。",
-        "running": "运行中",
-        "running_empty": "正在等待测试开始执行。",
-        "finishing": "正在收尾",
-        "finishing_empty": "正在收尾运行并使结果可用。",
-        "finishing_failed": "无法从所有实例聚合结果。部分结果可能在“摘要”标签页中可用。",
+        "starting": "开始",
+        "starting_empty": "等待云运行被接受。",
+        "setting_up": "设置",
+        "setting_up_empty": "等待配置云基础设施。",
+        "scaling": "缩放",
+        "scaling_empty": "等待分配和扩展虚拟用户。",
+        "running": "跑步",
+        "running_empty": "等待测试开始执行。",
+        "finishing": "总结",
+        "finishing_empty": "结束运行并提供结果。",
+        "finishing_failed": "无法汇总所有实例的结果。 “摘要”选项卡中可能提供部分结果。",
         "status": {
           "pending": "待处理",
-          "active": "活动中",
+          "active": "进行中",
           "completed": "已完成",
           "completed_inferred": "已完成",
-          "failed": "失败",
+          "failed": "已失败",
           "stopped": "已停止"
         },
-        "unavailable_detail": "此次运行的详细活动不可用。阶段进度根据可用的最佳执行历史记录显示。",
-        "inferred_detail": "此阶段在详细跟踪可用之前已完成。后续阶段确认了它已运行。",
-        "synthetic_marker_user_stopped": "用户已停止运行"
+        "unavailable_detail": "此运行无法提供详细的活动。阶段进度从最佳可用执行历史记录中显示。",
+        "inferred_detail": "此阶段在详细追踪可用之前完成。进一步的阶段确认它已运行。",
+        "synthetic_marker_user_stopped": "用户停止运行"
       },
       "banners": {
-        "pre_instrumentation": "此次运行早于执行跟踪，因此详细活动不可用。",
+        "pre_instrumentation": "此运行早于执行跟踪，因此详细的活动不可用。",
         "incomplete": "部分活动日志 — 您的结果不受影响。",
-        "user_aborted_untraced": "此次运行已被手动停止。停止信号之后的活动未被记录。"
+        "user_aborted_untraced": "此运行已手动停止。未记录停止信号后的活动。"
       },
       "stage_strip": {
         "title": "运行阶段",
         "in_progress": "进行中",
         "completed": "已完成",
         "completed_inferred": "已完成",
-        "inferred_tooltip": "阶段已完成 — 此次运行未捕获详细活动"
+        "inferred_tooltip": "阶段已完成 - 未捕获本次运行的详细活动"
       },
       "activity_log": {
         "title": "活动日志",
         "filter_all_stages": "所有阶段",
         "filter_all_status": "所有状态",
-        "filter_status_ok": "正常",
+        "filter_status_ok": "好的",
         "filter_status_error": "错误",
-        "filter_stage_label": "按阶段筛选",
-        "filter_status_label": "按状态筛选",
-        "search_placeholder": "搜索事件…",
+        "filter_stage_label": "按阶段过滤",
+        "filter_status_label": "按状态过滤",
+        "search_placeholder": "搜索事件...",
         "search_label": "搜索活动日志",
-        "empty_queued_title": "正在等待运行开始",
-        "empty_queued_description": "运行开始后，事件将显示在此处。",
-        "empty_collecting_title": "正在收集活动数据",
-        "empty_collecting_description": "已完成阶段的事件即将显示。",
-        "empty_running_title": "运行已开始",
-        "empty_running_description": "活动将在几秒内流式传入。",
+        "empty_queued_title": "等待运行开始",
+        "empty_queued_description": "运行开始后，事件将出现在此处。",
+        "empty_collecting_title": "收集活动数据",
+        "empty_collecting_description": "已完成阶段的活动将很快出现。",
+        "empty_running_title": "运行开始",
+        "empty_running_description": "活动将在几秒钟内涌入。",
         "empty_filter_title": "没有匹配的事件",
-        "empty_filter_description": "请尝试调整您的阶段或状态筛选条件，或清除搜索内容。",
-        "empty_default_title": "未记录任何活动",
+        "empty_filter_description": "尝试调整阶段或状态过滤器，或清除搜索。",
+        "empty_default_title": "没有记录任何活动",
         "empty_default_description": "此次运行未捕获任何执行活动。"
       }
     },
     "tabs": {
-      "tests_loading": "运行进行中 — 测试结果即将显示在此处。",
-      "errors_loading": "运行进行中 — 错误数据即将显示在此处。"
+      "tests_loading": "正在运行 - 测试结果很快就会出现在此处。",
+      "errors_loading": "正在运行 - 错误数据很快就会出现在此处。"
     },
     "stop": {
       "errors": {
-        "forbidden": "只有测试提交者才能停止此测试。",
-        "conflict": "该测试已完成。",
+        "forbidden": "只有测试提交者可以停止此测试。",
+        "conflict": "测试已经完成。",
         "not_found": "未找到测试运行。",
-        "generic": "停止云测试失败。请重试。"
+        "generic": "停止云测试失败。请再试一次。"
       }
     }
   }

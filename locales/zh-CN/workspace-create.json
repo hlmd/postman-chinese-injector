@@ -1,252 +1,256 @@
 {
   "select_template_step": {
-    "title": "创建您的工作区",
-    "subheading": "使用模板充分发挥工作区的作用。",
-    "step_info_text": "第 1 步，共 2 步",
-    "template_info_text": "浏览我们的模板",
+    "title": "创建您的 工作区",
+    "subheading": "使用模板充分利用您的 工作区。",
+    "step_info_text": "第 1 步（共 2 步）",
+    "template_info_text": "探索我们的模板",
     "templates_load_error": {
       "error_message": "无法加载模板。",
       "refresh_btn_text": "刷新"
     },
-    "submit_cta": "下一步",
+    "submit_cta": "下一个",
     "cancel_cta": "取消"
   },
   "create_workspace_form": {
     "a11y": {
-      "org_wide_team_workspace_icon_aria_label": "团队工作区"
+      "org_wide_team_workspace_icon_aria_label": "团队 Workspace"
     },
     "name": "名称",
     "name_label": "工作区名称",
-    "name_placeholder": "团队名称、项目或服务……",
-    "summary": "摘要",
+    "name_placeholder": "团队 名称、项目或服务...",
+    "summary": "概括",
     "validation_message": "摘要不能超过 140 个字符。",
-    "step_info_text": "第 2 步，共 2 步",
+    "step_info_text": "第 2 步（共 2 步）",
     "disabled_info_text": {
-      "private_workspace": "升级到 {teamPlanName} 或 {enterprisePlanName}，即可与成员私密协作。",
+      "private_workspace": "升级到 {teamPlanName} 或 {enterprisePlanName} 以与成员私下协作。",
       "public_workspace": "此选项目前在您所在的地区不可用。",
-      "public_workspace_no_team_profile": "无法将此工作区设为公开，因为您的团队没有公开资料，请联系您的团队管理员或社区经理寻求帮助。",
-      "public_workspace_no_permission": "您没有创建公开工作区的权限。",
+      "public_workspace_no_team_profile": "此 工作区 无法设为 公开，因为您的 团队 没有 公开 个人资料，请联系您的 团队 管理员 或社区经理寻求帮助。",
+      "public_workspace_no_permission": "您没有 权限 来创建 公开 工作区。",
       "partner_workspace": {
         "upgrade_plan": "升级您的计划以创建合作伙伴工作区。",
-        "no_permission_text": "您没有执行此操作的权限",
+        "no_permission_text": "您没有 权限 来执行此操作",
         "not_available": "此选项目前在您所在的地区不可用。",
-        "upgrade_plan_updated": "升级您的计划以便与外部合作伙伴协作。"
+        "upgrade_plan_updated": "升级您的计划以与外部合作伙伴合作。"
       },
       "team_workspace": {
-        "no_permission_text": "您没有创建团队工作区的权限。"
+        "no_permission_text": "您没有 权限 来创建 团队 工作区。"
       },
-      "git_repository_restriction": "{workspaceType} 工作区不支持链接 Git 仓库。"
+      "git_repository_restriction": "{workspaceType} 工作区不支持链接 Git 存储库。"
     },
     "organizations": {
       "disabled_info_text": {
-        "team_workspaces_organization_level": "您需要加入团队才能创建此类型的工作区。"
+        "team_workspaces_organization_level": "您需要加入一个 团队 来创建这种类型的 工作区。"
       },
-      "personal_workspace_outside_any_squad_text": "在团队之外创建工作区",
-      "personal_workspace_outside_any_squad_tooltip": "创建一个不属于任何团队的工作区。您可以将其用于自己的工作，但需要先将其移至团队，然后才能共享或协作。",
+      "personal_workspace_outside_any_squad_text": "在团队之外创建 工作区",
+      "personal_workspace_outside_any_squad_tooltip": "创建一个不属于任何 团队 的 工作区。您可以将其用于自己的工作，但需要将其移动到 团队 才能共享或协作。",
       "squad_dropdown_label": "团队",
-      "squad_select_label": "为此团队创建工作区",
-      "squad_dropdown_placeholder": "选择一个团队",
-      "squad_dropdown_info_text": "选择您要在其中创建工作区的团队"
+      "squad_select_label": "为此 团队 创建 工作区",
+      "squad_dropdown_placeholder": "选择 团队",
+      "squad_dropdown_info_text": "选择要在其中创建 工作区 的 团队"
     },
-    "visibility_radio_title": "谁可以访问您的工作区？",
+    "visibility_radio_title": "谁可以访问您的 工作区？",
     "create_workspace_type_title": "选择工作区类型",
-    "update_workspace_type_title": "工作区类型",
+    "update_workspace_type_title": "工作区 类型",
     "workspace_access_title": "管理访问权限",
     "info_banner": {
-      "new_team_info_text": "由于您还没有团队，我们将在创建此工作区的同时为您创建一个团队。",
-      "public_workspace_info_text": "此工作区中的所有数据都将被公开。",
-      "partner_workspace_info_text": "创建工作区后，您将成为<1><0>合作伙伴经理</0></1>。",
-      "team_profile_public_text": "此工作区中的所有数据以及您的<1>团队资料</1>都将被公开。",
-      "user_profile_public_text": "此工作区中的所有数据以及您的<1>用户资料</1>都将被公开。",
-      "join_squad_info_text": "只有您可以访问此工作区。<1><0>加入团队</0></1> 即可开始与队友协作。",
-      "personal_workspace_outside_any_squad_info_text": "在您将此工作区移至团队之前，它无法与任何人共享。"
+      "new_team_info_text": "由于您没有 团队，我们将为您创建一个 工作区。",
+      "public_workspace_info_text": "该 工作区 中的所有数据都将变为 公开。",
+      "partner_workspace_info_text": "创建 工作区 后，您将成为 <1><0> 合作伙伴经理</0></1>。",
+      "team_profile_public_text": "此 工作区 和您的 <1> 团队的个人资料 </1> 中的所有数据都将成为 公开。",
+      "user_profile_public_text": "此 工作区 和您的 <1> 用户个人资料 </1> 中的所有数据都将变为 公开。",
+      "join_squad_info_text": "只有您可以访问此 工作区。 <1><0>加入团队</0></1>开始与队友合作。",
+      "personal_workspace_outside_any_squad_info_text": "在您将 工作区 移至 团队 之前，该 工作区 无法与任何人共享。"
     },
     "public_workspace_popover_content": {
-      "text": "所有使用 Postman 的开发者都可以访问公开 API。",
-      "link_label": "了解更多关于发布到 Postman 的信息。",
-      "heading": "在 Postman 上将此 API 设为公开"
+      "text": "所有使用 Postman 的开发人员都可以访问 公开 API。",
+      "link_label": "了解有关发布到 Postman 的更多信息。",
+      "heading": "在 Postman 上公开此 API"
     },
     "tag_content": {
       "upgrade_plan": "升级计划",
       "activate_trial": "免费试用",
-      "unlocked": "已解锁"
+      "unlocked": "解锁"
     },
-    "partner_forbidden_text": "作为合作伙伴，您没有查看此页面的权限。",
-    "forbidden_page_text": "您没有查看此页面的权限。",
-    "workspace_creation_disabled": "您没有创建工作区的权限",
-    "workspace_creation_restricted_title": "工作区创建受到限制。",
-    "workspace_creation_restricted_subtitle": "以下是您管理员的说明：",
+    "partner_forbidden_text": "作为合作伙伴，您没有 权限 来查看此页面。",
+    "forbidden_page_text": "您没有 权限 来查看此页面。",
+    "workspace_creation_disabled": "您没有 权限 来创建工作区",
+    "workspace_creation_restricted_title": "工作区 创建受到限制。",
+    "workspace_creation_restricted_subtitle": "以下是您的管理员的注释：",
     "go_back_cta": "返回",
-    "git_folder_required_tooltip": "选择一个包含您 Git 仓库的文件夹以继续。",
-    "workspace_name_required_tooltip": "输入工作区名称以继续。",
+    "git_folder_required_tooltip": "选择包含您的 Git 存储库的 文件夹 以继续。",
+    "workspace_name_required_tooltip": "输入 工作区 名称以继续。",
     "view_partner_workspaces_text": "查看合作伙伴工作区",
     "view_workspaces": "查看工作区",
-    "go_to_home_cta": "前往主页",
-    "create_import_cta": "创建并导入",
+    "go_to_home_cta": "转到主页",
+    "create_import_cta": "创建和导入",
     "create_cta": "创建",
     "create_workspace_cta": "创建工作区",
-    "text_area_info_text": "添加备注（可选）",
+    "text_area_info_text": "添加注释（可选）",
     "switch_workspace_cta": "切换工作区",
     "confirm_cta": "确认",
-    "make_team_public_description": "在将您的团队资料设为公开之前，请更新您的团队域名，并确保其符合公开可见性的条件。您的团队域名有助于在 Postman 上识别您的团队。",
+    "make_team_public_description": "在将您的 团队 的个人资料设为 公开 之前，请更新您的 团队 域并确保其符合 公开 可见性。您的 团队 域名有助于识别您在 Postman 上的 团队。",
     "learn_why_text": "了解原因",
     "toasts": {
       "trial_error": {
-        "status": "error",
-        "description": "激活试用时出错"
+        "status": "错误",
+        "description": "激活试用版时出现问题"
       },
       "creation_failed": {
         "title": "创建失败",
-        "description": "请在创建工作区之前选择一个模板。"
+        "description": "请在创建 工作区 之前选择一个模板。"
       },
       "project_already_connected": {
         "title": "项目已连接",
-        "description": "已有项目连接到此工作区。每个工作区只能连接一个项目。"
+        "description": "一个项目已连接到此 工作区。每个 工作区 只能连接一个项目。"
       },
       "connection_failed": {
         "title": "连接失败",
-        "description": "无法将工作区连接到目录。您可以稍后手动连接。"
+        "description": "无法将 工作区 连接到目录。您可以稍后手动连接。"
       },
       "not_git_repository": {
-        "title": "不是 Git 仓库",
-        "description": "此目录未启用 Git。请选择一个已初始化为 Git 仓库的目录。"
+        "title": "不是 Git 存储库",
+        "description": "此目录未启用 Git。请选择一个已初始化为 Git 存储库的目录。"
       },
       "directory_access_error": {
         "title": "目录访问错误",
-        "description": "无法访问所选目录。请重试。"
+        "description": "无法访问所选目录。请再试一次。"
       },
       "directory_already_linked": {
         "title": "目录已链接",
-        "description": "此目录已链接到另一个工作区。"
+        "description": "该目录已链接到不同的 工作区。"
       },
       "workspace_switch_failed": {
-        "title": "工作区切换失败",
-        "description": "无法切换到该工作区。请尝试手动切换。"
+        "title": "工作区 切换失败",
+        "description": "无法切换到 工作区。请手动尝试。"
       },
       "workspace_deleted": {
-        "title": "工作区已删除",
+        "title": "工作区 已删除",
         "description": "本地数据中存在的工作区已被删除"
       },
       "status_error": {
-        "status": "error",
-        "description": "创建工作区时出错"
+        "status": "错误",
+        "description": "创建 工作区 时出现问题"
       },
       "action_request_error": {
-        "title": "无法发送请求",
-        "description": "请尝试在设置中更改工作区类型"
+        "title": "无法发送 请求",
+        "description": "尝试从设置中更改 工作区 类型"
       },
       "upgrade_partner_manager_error": {
-        "status": "error",
-        "title": "无法更新此用户的角色",
-        "description": "更新角色时发生错误"
+        "status": "错误",
+        "title": "无法更新该用户的角色",
+        "description": "更新角色时出错"
       },
       "create_workspace_orgs_visibility_error": {
-        "status": "error",
-        "title": "无法授予您的组织访问权限",
-        "description": "您可以从工作区设置页面手动更改访问权限。"
+        "status": "错误",
+        "title": "无法授予对您组织的访问权限",
+        "description": "您可以从 工作区 设置页面手动更改访问权限。"
       },
       "request_sent": {
-        "title": "请求已发送"
+        "title": "请求 已发送"
       },
       "remote_origin_required": {
-        "title": "需要远程源",
-        "description": "此 Git 仓库未配置远程源 URL。请在连接到工作区之前添加远程源。"
+        "title": "需要远程来源",
+        "description": "此 Git 存储库没有配置远程源 URL。请在连接到 工作区 之前添加远程源。"
+      },
+      "local_folder_initialized": {
+        "title": "本地文件夹已连接",
+        "description": "已创建本地 Postman 文件。设置 Git 远程仓库以启用拉取和发布等云同步操作。"
       },
       "git_not_installed": {
         "title": "未安装 Git",
-        "description": "您的系统上未安装 Git。请安装 Git 以使用此功能。"
+        "description": "您的系统上未安装 Git。请安装 Git 才能使用此功能。"
       },
       "git_permission_error": {
-        "title": "Git 权限错误",
+        "title": "Git 权限 错误",
         "description": "无法访问 Git。请检查您的权限。"
       },
       "remote_origin_check_failed": {
-        "title": "远程源检查失败",
-        "description": "无法检查 Git 远程源。请确保该仓库已配置远程源。"
+        "title": "远程原点检查失败",
+        "description": "无法检查 Git 远程源。请确保存储库配置了远程源。"
       }
     },
     "create_public_workspace_request": {
-      "notes_validation_message": "备注最多只能有 500 个字符。",
-      "notes_placeholder_text": "添加备注……",
-      "request_created_toast": "我们将通知您社区经理的回复。",
-      "notes_label": "审批请求",
-      "notes_helper_text": "社区经理将审核您的请求。",
-      "notes_footer_text": "在此期间，将创建一个 {interim_workspace_type} 工作区。"
+      "notes_validation_message": "备注最多只能包含 500 个字符。",
+      "notes_placeholder_text": "添加注释...",
+      "request_created_toast": "您将收到有关社区经理的 响应 的通知。",
+      "notes_label": "请求 批准",
+      "notes_helper_text": "社区管理员将审核您的请求。",
+      "notes_footer_text": "同时，系统将创建一个 {interim_workspace_type} Workspace。"
     },
     "create_partner_workspace_request": {
-      "notes_validation_message": "备注最多只能有 500 个字符。",
+      "notes_validation_message": "备注最多只能包含 500 个字符。",
       "notes_placeholder_text": "添加备注……",
-      "request_created_toast": "我们将通知您合作伙伴经理的回复。",
-      "notes_label": "审批请求",
-      "notes_helper_text": "合作伙伴经理将审核您的请求。",
-      "notes_footer_text": "在此期间，将创建一个私有工作区。"
+      "request_created_toast": "合作伙伴管理员回复后，您将收到通知。",
+      "notes_label": "申请审批",
+      "notes_helper_text": "合作伙伴管理员将审核您的请求。",
+      "notes_footer_text": "同时，系统将创建一个私密 Workspace。"
     },
     "create_team_workspace_request": {
-      "notes_validation_message": "备注最多只能有 500 个字符。",
+      "notes_validation_message": "备注最多只能包含 500 个字符。",
       "notes_placeholder_text": "添加备注……",
-      "notes_label": "审批请求",
-      "notes_helper_text": "审核者将审核您的请求。",
-      "notes_footer_text": "在此期间，将创建一个私有工作区。"
+      "notes_label": "申请审批",
+      "notes_helper_text": "审核人员将审核您的请求。",
+      "notes_footer_text": "同时，系统将创建一个私密 Workspace。"
     },
     "simplified_visibility_enabled": {
       "create_public_workspace_request": {
-        "notes_validation_message": "备注最多只能有 {maxTextSize} 个字符。",
+        "notes_validation_message": "备注最多只能包含 {maxTextSize} 个字符。",
         "notes_placeholder_text": {
-          "create": "简要说明您创建此工作区的原因……",
-          "update": "简要说明您更改工作区类型的原因。"
+          "create": "简要说明创建此 Workspace 的原因……",
+          "update": "简要说明更改 Workspace 类型的原因。"
         },
-        "request_created_toast": "我们将通知您社区经理的回复。",
+        "request_created_toast": "社区管理员回复后，您将收到通知。",
         "notes_label": "需要审批",
-        "notes_helper_text": "您的工作区将被创建，并在社区经理批准您的请求后变为公开。",
+        "notes_helper_text": "您的 Workspace 将被创建，社区管理员批准您的请求后即会公开。",
         "notes_footer_text": {
-          "team": "在此期间，只有您的团队可以访问。",
-          "private": "在此期间，只有受邀人员可以访问。"
+          "team": "同时，仅您的团队可以访问。",
+          "private": "同时，仅受邀人员可以访问。"
         }
       },
       "create_partner_workspace_request": {
-        "notes_validation_message": "备注最多只能有 {maxTextSize} 个字符。",
+        "notes_validation_message": "备注最多只能包含 {maxTextSize} 个字符。",
         "notes_placeholder_text": {
-          "create": "简要说明您创建此工作区的原因……",
+          "create": "简要说明创建此 Workspace 的原因……",
           "update": "添加备注……"
         },
-        "request_created_toast": "我们将通知您合作伙伴经理的回复。",
+        "request_created_toast": "合作伙伴管理员回复后，您将收到通知。",
         "notes_label": "需要审批",
-        "notes_helper_text": "您的工作区将被创建。合作伙伴经理批准您的请求后，您即可与合作伙伴共享。",
-        "notes_footer_text": "在此期间，只有受邀人员可以访问。"
+        "notes_helper_text": "您的 Workspace 将被创建。合作伙伴管理员批准您的请求后，您即可与合作伙伴共享。",
+        "notes_footer_text": "同时，仅受邀人员可以访问。"
       },
       "create_team_workspace_request": {
-        "notes_validation_message": "备注最多只能有 {maxTextSize} 个字符。",
+        "notes_validation_message": "备注最多只能包含 {maxTextSize} 个字符。",
         "notes_placeholder_text": {
-          "create": "简要说明您创建此工作区的原因……",
-          "update": "简要说明您更改工作区类型的原因。"
+          "create": "简要说明创建此 Workspace 的原因……",
+          "update": "简要说明更改 Workspace 类型的原因。"
         },
         "notes_label": "需要审批",
-        "notes_helper_text": "您的工作区将被创建。审核者批准您的请求后，它将对您的组织可见。",
+        "notes_helper_text": "您的 Workspace 将被创建，审核人员批准您的请求后即对您的组织可见。",
         "notes_footer_text": {
-          "private": "在此期间，只有受邀人员可以访问。",
-          "team": "在此期间，只有您的团队可以访问。"
+          "private": "同时，仅受邀人员可以访问。",
+          "team": "同时，仅您的团队可以访问。"
         }
       }
     },
     "back_cta": "返回",
     "cancel_cta": "取消",
     "template_section": {
-      "title": "选择您要如何设置此工作区",
+      "title": "选择设置此 Workspace 的方式",
       "blank_workspace": {
-        "label": "空白工作区",
+        "label": "空白 Workspace",
         "helper_text": "我想从头开始。"
       },
       "git_repository": {
-        "label": "从 Git 仓库",
-        "helper_text": "我想连接我现有的 Git 项目。",
-        "disabled_tooltip": "{workspaceType} 工作区不支持链接 Git 仓库。"
+        "label": "从本地文件夹",
+        "helper_text": "我想连接现有的项目文件夹。",
+        "disabled_tooltip": "{workspaceType} Workspace 不支持关联 Git 仓库。"
       },
       "choose_folder_cta": "选择文件夹"
     },
     "ai_section": {
       "title": "使用 Postman AI 创建",
-      "description": "让 AI 为您的 API 设置集合、规范和环境。",
-      "placeholder": "描述您想构建的内容（例如“支付 API”）。"
+      "description": "让 AI 为您的 API 设置 Collection、规范和 Environment。",
+      "placeholder": "描述您想要构建的内容（例如，“支付 API”）。"
     },
     "access_selector": {
       "who_can_access_label": "谁可以访问",
@@ -256,84 +260,84 @@
     "workspace_type_helper_text": {
       "internal": "与您的团队共享 API。",
       "partner": "与您的合作伙伴共享 API。",
-      "public": "所有人都可以访问您的 API。"
+      "public": "任何人都可以访问您的 API。"
     },
     "notes_to_manager": {
       "approval_required_label": "需要审批",
-      "notes_placeholder": "简要说明您创建此工作区的原因……",
-      "notes_helper_text": "您的工作区将被创建，并在社区经理批准您的请求后变为公开。",
-      "notes_validation_message": "备注最多只能有 500 个字符。"
+      "notes_placeholder": "简要说明创建此 Workspace 的原因……",
+      "notes_helper_text": "您的 Workspace 将被创建，社区管理员批准您的请求后即会公开。",
+      "notes_validation_message": "备注最多只能包含 500 个字符。"
     }
   },
   "blank_state": {
     "title": "无法加载此页面",
-    "description": "只是线路出了点故障。请尝试重新加载。",
+    "description": "只是线路故障，请尝试重新加载。",
     "reload_text": "重新加载"
   },
   "templates_list": {
-    "blank_workspace": "空白工作区",
-    "git_repository": "从 Git 仓库",
+    "blank_workspace": "空白 Workspace",
+    "git_repository": "从本地文件夹",
     "explore_templates": "浏览我们的模板",
-    "group_label": "工作区模板"
+    "group_label": "Workspace 模板"
   },
   "template_preview": {
-    "name": "空白工作区",
-    "summary": "自定义此空间，以组织您的 API 资源并与团队共享。",
+    "name": "空白 Workspace",
+    "summary": "自定义此空间，以整理并与团队共享您的 API 资源。",
     "api_capability": {
-      "name": "展示您 API 的能力",
-      "description": "使用 Postman 集合轻松记录您的 API。您可以创建自己的集合，也可以从 70 多个量身定制的集合模板中进行选择。"
+      "name": "展示您 API 的功能",
+      "description": "使用 Postman Collection 轻松记录您的 API 文档。您可以自行创建，也可以从 70 多个 Collection 模板中选择符合需求的模板。"
     },
     "build_faster": {
-      "name": "共同构建，更快工作",
-      "description": "帮助您的团队维护共享的统一信息源，共同构建 API 并解决问题。"
+      "name": "协同构建，提升效率",
+      "description": "帮助您的团队维护统一的信息源，共同构建 API 并解决问题。"
     }
   },
   "git_repository_preview": {
     "name": "连接您的本地代码库",
-    "summary": "Postman 将您的集合、规范和环境链接到您的 Git 分支，实现本地优先的工作流。",
+    "summary": "Postman 会将您的 Collection、规范和 Environment 与 Git 分支相关联，实现本地优先的工作流程。",
     "git_integration": {
       "name": "与您的代码保持同步",
-      "description": "集合、规范和环境随您的 Git 分支一同更新。"
+      "description": "Collection、规范和 Environment 会随您的 Git 分支一起更新。"
     },
     "file_sync": {
-      "name": "离线工作，就绪后推送",
-      "description": "您的本地工作区独立于云端运行。"
+      "name": "离线工作，准备就绪后推送",
+      "description": "您的本地 Workspace 独立于云端运行。"
     }
   },
   "partner_workspace_trial": {
     "modal_content": {
-      "heading": "免费试用合作伙伴工作区 30 天",
-      "subheading": "在此期间，您还可以试用所有 {enterprisePlanName} 计划功能。",
+      "heading": "免费试用 Partner Workspace 30 天",
+      "subheading": "在此期间，您还可以试用所有 {enterprisePlanName} 套餐功能。",
       "info": [
         {
-          "heading": "告别导出，改为邀请合作伙伴。",
-          "description": "与合作伙伴共享集合，而不是导出。"
+          "heading": "Ditch the export. Invite partners instead.",
+          "description": "Share collections with partners instead of exporting."
         },
         {
-          "heading": "从零散聊天到集中沟通。",
-          "description": "使用内联评论分享反馈。"
+          "heading": "Scattered chats to centralized communication.",
+          "description": "Share feedback using in-line comments."
         },
         {
-          "heading": "引导、测试、迭代，速度提升 4 倍。",
-          "description": "合作伙伴可在 API 更新后立即进行测试。"
+          "heading": "Onboard, test, iterate. 4x faster.",
+          "description": "Partners can test APIs as soon as they're updated."
         }
       ],
-      "start_trial": "免费试用合作伙伴工作区",
+      "start_trial": "免费试用 Partner Workspace",
       "remind_later_cta": "稍后提醒我",
       "footer_first_part": "无需信用卡",
-      "footer_second_part": "。30 天后，您将恢复到当前计划。"
+      "footer_second_part": "。30 天后，您将恢复到当前套餐。"
     },
     "loading_page": {
       "title": "正在设置您的试用……",
-      "description": "正在创建合作伙伴工作区……"
+      "description": "正在创建 Partner Workspace……"
     },
     "workspace_visibility_radio_tooltip": "免费与外部合作伙伴和客户协作。"
   },
   "partner_domain_validation_error": {
     "title": "无法发送邀请",
-    "message_with_domains": "看起来 {domainList} 的用户属于您的组织。他们只能作为团队成员被邀请。 ",
-    "message_with_domains_partner": "看起来 {domainList} 的用户属于发布者的组织。他们只能作为团队成员被邀请。 ",
-    "message_fallback": "指定的域名不允许合作伙伴邀请。 ",
+    "message_with_domains": "Looks like {domainList} users are part of your organization. They can only be invited as Team members.",
+    "message_with_domains_partner": "Looks like {domainList} users are part of publisher's organization. They can only be invited as Team members.",
+    "message_fallback": "Partner invites are not allowed for the specified domains.",
     "learn_more": "了解更多"
   }
 }

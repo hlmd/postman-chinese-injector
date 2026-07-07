@@ -1,13 +1,13 @@
 {
   "team_discovery": {
     "blank_state": {
-      "heading": "创建您的团队",
-      "subheading": "在 Postman 上与您的团队成员协作。共同构建 API 更快速、更有趣。"
+      "heading": "创建您的 团队",
+      "subheading": "在 Postman 上与您的 团队 成员协作。一起构建 API 更快、更有趣。"
     },
     "title": "团队",
-    "heading": "您可以从组织加入的团队",
+    "heading": "您可以从您的组织加入的团队",
     "heading_with_org": "您可以从 @{orgName} 加入的团队",
-    "subheading": "加入团队以获得 API 资源的访问权限，并立即开始与您的团队成员协作。",
-    "no_teams": "您还不是任何团队的成员。"
+    "subheading": "加入 团队 即可访问 API 资源并立即开始与您的队友协作。",
+    "no_teams": "您还不是任何团队的一员。"
   }
 }

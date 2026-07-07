@@ -5,6 +5,6 @@
   },
   "error_state": {
     "heading": "无法加载信息",
-    "description": "<Text>我们在访问学习中心内容时遇到问题。请在几分钟后重试，或直接通过<Link>我们的网站</Link>访问。</Text>"
+    "description": "<Text>我们在访问学习中心内容时遇到问题。请几分钟后重试或直接通过<Link>我们的网站访问。</Link></Text>"
   }
 }

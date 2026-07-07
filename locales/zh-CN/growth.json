@@ -1,9 +1,9 @@
 {
   "sharedAgentModeWidget": {
-    "error-message": "哎呀，我没太明白您的意思。以下是我可以帮您处理的一些事项：\n🔍 探索现有的 API\n✅ 运行并自动化测试\n🛠️ 构建并调试您自己的 API",
+    "error-message": "哎呀，我不太明白。以下是我可以帮助您的几件事：\n🔍 探索现有的 API\n✅ 运行和自动化测试\n🛠️ 构建和调试您自己的 API",
     "chat-input": {
-      "placeholder": "输入您的消息…",
-      "submit-button-text": "开始吧"
+      "placeholder": "输入您的消息...",
+      "submit-button-text": "我们走吧"
     },
     "suggestions": {
       "title": "入门建议："

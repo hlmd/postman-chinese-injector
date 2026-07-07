@@ -1,105 +1,105 @@
 {
   "create_team_error": {
-    "message": "创建您的团队时出错",
-    "title": "出错了"
+    "message": "我们创建您的 团队 时出错",
+    "title": "出了点问题"
   },
-  "form_heading": "在我们为您创建团队之前",
-  "heading": "您想将工作区移动到团队吗？",
+  "form_heading": "在我们为您创建 团队 之前",
+  "heading": "您想将工作空间移至 团队 吗？",
   "radio_buttons": {
-    "no_label": "否，将我的工作区与团队分开",
-    "yes_label": "是，将我的工作区移动到团队",
-    "no_helper_text": "您将拥有这些工作区的完整所有权和访问权限。",
-    "yes_helper_text": "您可以在这些工作区中与队友协作。移动后，团队将拥有所有权，管理员将能够管理这些工作区。"
+    "no_label": "不，请将我的工作区与 团队 分开",
+    "yes_label": "是的，将我的工作区移动到 团队",
+    "no_helper_text": "您将拥有工作空间的完全所有权和访问权限。",
+    "yes_helper_text": "您可以在这些工作区中与您的队友协作。移动后，团队 将拥有所有权，管理员将能够管理工作区。"
   },
   "create_team_button": "创建团队",
   "cancel_button": "取消",
   "create_team_modal": {
     "heading": {
-      "creating": "太好了！正在创建您的团队……",
-      "created": "棒极了！您已创建一个团队"
+      "creating": "呜呼！您的 团队 正在创建...",
+      "created": "太棒了！您已经创建了一个 团队"
     },
-    "creating_message": "请不要关闭或刷新此标签页。",
-    "keep_data_separate_message": "您现有的个人工作区将与此团队分开。您仍可以作为个人在它们上面工作。",
-    "merge_data_message": "您现有的个人工作区将被移动到此团队。准备好协作后，您可以邀请团队成员。",
+    "creating_message": "请不要关闭或刷新此选项卡。",
+    "keep_data_separate_message": "您现有的 个人 工作区将与此 团队 分开。您仍然可以以个人身份处理它们。",
+    "merge_data_message": "您现有的个人工作区将被移动到此团队。一旦您准备好协作，就可以邀请团队成员。",
     "set_up_team_button": "设置团队"
   },
   "create_team_onboarding_modal": {
-    "heading": "太好了！正在创建您的团队……",
-    "creating_message": "请不要关闭或刷新此标签页。"
+    "heading": "呜呼！您的 团队 正在创建...",
+    "creating_message": "请不要关闭或刷新此选项卡。"
   },
   "quick_create_team_modal": {
-    "heading": "设置您的团队",
-    "name_input_field_label": "您的团队叫什么名字？",
-    "workspace_name": "{teamName} 工作区",
+    "heading": "设置您的 团队",
+    "name_input_field_label": "您的 团队 叫什么名字？",
+    "workspace_name": "{teamName} Workspace",
     "edit_team_name_button": "编辑",
     "domain_input_field_label": "团队 URL",
     "what_will_your_team_work_on": {
-      "label": "您的团队将从事什么工作？",
-      "placeholder": "选择一个选项，帮助我们为您量身定制体验",
+      "label": "你的 团队 会做什么？",
+      "placeholder": "选择一个选项来帮助我们定制您的体验",
       "options": {
-        "testing_existing_api": "共同分享和测试现有 API",
-        "design_and_build_new_api": "共同设计和构建新 API",
-        "documenting_and_publishing_apis": "构建 API 文档的中心空间",
-        "i_am_not_sure": "我不确定",
+        "testing_existing_api": "一起共享和测试现有 API",
+        "design_and_build_new_api": "一起设计和构建新的 API",
+        "documenting_and_publishing_apis": "为 API 文档建立一个中心空间",
+        "i_am_not_sure": "我不知道",
         "other": "其他"
       }
     },
-    "upload_team_logo_modal_title": "上传团队徽标",
+    "upload_team_logo_modal_title": "上传 团队 徽标",
     "upload_team_logo_modal": {
       "upload_button": "上传",
-      "back_button": "返回",
+      "back_button": "后退",
       "cancel_button": "取消",
-      "image_upload_error": "上传您的图片时出现问题。请重试。",
+      "image_upload_error": "上传您的图片时出现问题。请再试一次。",
       "file_input": {
-        "drag_and_drop_image": "拖放图片",
-        "or": "或",
-        "select_a_file": "选择文件",
-        "image_size_error": "图片过大。请使用小于 2 MB 的图片。",
-        "file_read_error": "我们无法读取该文件。请上传图片文件，如 jpg 或 png。"
+        "drag_and_drop_image": "拖放图像",
+        "or": "或者",
+        "select_a_file": "选择一个文件",
+        "image_size_error": "图片太大。请使用 2 MB 以下的图像。",
+        "file_read_error": "我们读不懂。请上传图像文件，例如 jpg 或 png。"
       }
     },
-    "upload_team_logo_modal_body": "上传自定义徽标，让您的团队倍感亲切。最大尺寸：2 MB",
-    "other_goal_placeholder": "输入您的团队目标",
+    "upload_team_logo_modal_body": "上传自定义徽标，让您的 团队 有宾至如归的感觉。最大大小：2 MB",
+    "other_goal_placeholder": "输入您的 团队 目标",
     "validate_user_choice_error": "您必须选择一个选项。",
-    "provide_team_detail_error": "请提供团队详情",
+    "provide_team_detail_error": "请提供 团队 详细信息",
     "update_team_error": {
-      "enabled_message": "您已为团队启用团队发现",
-      "disabled_message": "您已为团队禁用团队发现",
-      "on_message": "团队发现已开启",
-      "off_message": "团队发现已关闭",
-      "message": "您已{enableStatus}团队的团队发现",
-      "enabled": "启用",
-      "disabled": "禁用",
+      "enabled_message": "您为 团队 启用了 团队 发现",
+      "disabled_message": "您为 团队 禁用了 团队 发现",
+      "on_message": "团队 发现已开启",
+      "off_message": "团队 发现已关闭",
+      "message": "您 {enableStatus} 团队 为您的 团队 发现",
+      "enabled": "已启用",
+      "disabled": "已禁用",
       "on": "开启",
       "off": "关闭",
-      "title": "团队发现已{enableStatus}"
+      "title": "团队 发现是 {enableStatus}"
     },
     "team_discovery": {
-      "title": "团队发现",
-      "description": "允许您组织中的人员看到您的团队并申请加入。",
-      "turn_on_team_discovery": "开启团队发现",
+      "title": "团队 发现",
+      "description": "允许您组织中的人员看到您的 团队 和 请求 才能加入。",
+      "turn_on_team_discovery": "打开 团队 发现",
       "turn_on_label": "开启",
       "turn_off_label": "关闭"
     },
     "confirm_button": "确认"
   },
   "invalid_domain_name_modal": {
-    "heading": "您没有有效的工作域名",
-    "body": "我们无法为 gmail.com 等域名启用此设置。请将您的电子邮件地址更改为有效的工作域名后重试。",
+    "heading": "您没有有效的工作域",
+    "body": "我们无法为 gmail.com 等域启用此设置。请将您的电子邮件 ID 更改为有效的工作域，然后重试。",
     "got_it_button": "知道了"
   },
   "email_verification_modal": {
     "send_verification_success": {
-      "message": "请查看您的收件箱。",
+      "message": "请检查您的收件箱。",
       "title": "我们已发送验证电子邮件"
     },
     "send_verification_error": {
-      "message": "发送验证电子邮件时出错。请稍后重试。",
-      "title": "出错了"
+      "message": "发送验证电子邮件时发生错误。一段时间后重试。",
+      "title": "出了点问题"
     },
-    "heading": "验证您的账户",
-    "body": "若要启用团队发现，请验证您的账户后重试。",
+    "heading": "验证您的帐户",
+    "body": "要启用 团队 发现，请验证您的帐户并重试。",
     "cancel_button": "取消",
-    "send_verification_button": "发送验证电子邮件"
+    "send_verification_button": "发送验证邮件"
   }
 }

@@ -1,31 +1,31 @@
 {
   "team_meta": {
-    "heading": "创建您的新团队",
-    "subheading": "您即将让 API 协作变得轻松许多！🎉",
-    "team_name": "您的团队叫什么名字？",
-    "team_name_placeholder": "例如：平台 API 团队",
+    "heading": "创建新的 团队",
+    "subheading": "您将使 API 协作变得更加容易！ 🎉",
+    "team_name": "您的 团队 叫什么名字？",
+    "team_name_placeholder": "例如平台 API 团队",
     "questions": {
       "team_goal": {
-        "label": "您的团队主要从事哪方面的工作？",
+        "label": "您的 团队 主要从事什么工作？",
         "options": {
-          "existing": "共同共享和测试现有 API",
-          "design": "共同设计和构建新的 API",
-          "document": "构建一个集中的 API 文档空间",
+          "existing": "一起共享和测试现有 API",
+          "design": "一起设计和构建新的 API",
+          "document": "为 API 文档建立一个中心空间",
           "other": "其他"
         }
       }
     }
   },
   "invite_users": {
-    "heading": "邀请他人加入您的团队",
+    "heading": "邀请 人加入您的 团队",
     "add_email_heading": "添加电子邮件地址",
-    "add_email_subheading": "在您创建团队后，邀请将立即发送。",
+    "add_email_subheading": "一旦您创建 团队，我们就会发送邀请。",
     "title": "添加电子邮件地址",
-    "subtitle": "在您创建团队后，邀请将立即发送。"
+    "subtitle": "一旦您创建 团队，我们就会发送邀请。"
   },
-  "step_1": "第 1 步，共 2 步",
-  "step_2": "第 2 步，共 2 步",
-  "back": "返回",
+  "step_1": "第 1 步（共 2 步）",
+  "step_2": "第 2 步（共 2 步）",
+  "back": "后退",
   "cancel": "取消",
   "continue": "继续",
   "create_team": "创建团队"
