@@ -18,14 +18,14 @@
  *   3a. 首次运行时把原始 app.asar 备份为 app.asar.bak（之后始终从备份重新打补丁，
  *       保证幂等、且 Postman 更新后能干净重打）；
  *   4a. 用 @electron/asar 解包备份 -> 临时目录（装了依赖走程序化 API，否则回退 npx）；
- *   5a. 往 preload_desktop.js 注入一行 require('./pm-chinese.js')，放入 pm-chinese.js +
- *       生成的 pm-chinese-data.json；
+ *   5a. 往渲染进程 preload 注入一行 require('./pm-chinese.js')，钩子 + 数据放在 preload 同目录；
+ *       preload 路径随版本而异：新版为根目录 preload_desktop.js，老版(10.24)为 preload/desktop/index.js；
  *   6a. 打包临时目录 -> app.asar（覆盖）。
  *
  *   【未打包 app/ 型】（没有 app.asar，只有 resources/app/ 目录）
- *   3b. 首次运行时把 preload_desktop.js 备份为 preload_desktop.js.bak（始终从备份打补丁）；
- *   4b. 直接往 app/preload_desktop.js 注入 require('./pm-chinese.js')，并把 pm-chinese.js +
- *       pm-chinese-data.json 写到同目录——无需解包/打包。
+ *   3b. 首次运行时把渲染进程 preload 备份为 <preload>.bak（始终从备份打补丁）；
+ *   4b. 直接往该 preload 注入 require('./pm-chinese.js')，并把 pm-chinese.js +
+ *       pm-chinese-data.json 写到 preload 同目录——无需解包/打包。
  *
  * 主窗口 webPreferences 为 contextIsolation=false + nodeIntegration=true，preload 与页面
  * 共享 main world 且先于页面脚本执行，故钩子能直接改 window.fetch 拦截语言包响应。
@@ -67,6 +67,42 @@ function isDir(p) {
 }
 function isFile(p) {
   try { return fs.statSync(p).isFile(); } catch (e) { return false; }
+}
+// 渲染进程 preload 在不同 Postman 版本里的相对路径（按优先级排序）：
+//   新版        -> preload_desktop.js（根目录）
+//   老版(10.24) -> preload/desktop/index.js（见 windowManager.js 的 webPreferences.preload）
+// 注意：根目录还有个主进程用的 preload.js，不能误选，故只匹配这份明确清单。
+const PRELOAD_CANDIDATES = ['preload_desktop.js', path.join('preload', 'desktop', 'index.js')];
+// 在 root（解包后的 staging 或未打包 app/）里定位渲染进程 preload，找不到返回 null。
+function findPreloadIn(root) {
+  for (const rel of PRELOAD_CANDIDATES) {
+    const p = path.join(root, rel);
+    if (isFile(p)) return p;
+  }
+  return null;
+}
+// 未打包 app/ 型定位 preload：优先现存文件；preload 被删但 .bak 还在时，从 .bak 反推。
+function resolveDirPreload(appDir) {
+  const found = findPreloadIn(appDir);
+  if (found) return found;
+  for (const rel of PRELOAD_CANDIDATES) {
+    const p = path.join(appDir, rel);
+    if (isFile(p + BAK_SUFFIX)) return p;
+  }
+  return null;
+}
+// 在 asar 文件清单里定位渲染进程 preload，返回可直接喂给 extractFile 的内部路径，找不到返回 null。
+// 注意 @electron/asar 在 Windows 上：listPackage 返回带前导分隔符的原生路径（如 \preload\desktop\index.js），
+// 而 extractFile 只认「去掉前导分隔符、保留原生分隔符」的形式（如 preload\desktop\index.js）。
+function findPreloadInAsar(files) {
+  const key = (s) => s.replace(/\\/g, '/').replace(/^\/+/, ''); // 归一化用于比较
+  for (const rel of PRELOAD_CANDIDATES) {
+    const want = key(rel);
+    for (const f of files) {
+      if (key(f) === want) return f.replace(/^[\\/]+/, ''); // 保留原生分隔符，仅去前导
+    }
+  }
+  return null;
 }
 function expandHome(p) {
   if (!p) return p;
@@ -305,15 +341,20 @@ async function patchAsar(target, lang) {
   console.log(`[解包] ${path.basename(bak)} -> 临时目录`);
   asarExtract(bak, staging);
 
-  // 3) 注入 preload + 放入钩子与数据
-  const preload = path.join(staging, 'preload_desktop.js');
-  if (!isFile(preload)) throw new Error('解包后找不到 preload_desktop.js');
+  // 3) 注入 preload + 放入钩子与数据（钩子/数据须与 preload 同目录，
+  //    因为注入行 require('./pm-chinese.js') 与钩子内 __dirname 都相对 preload 所在目录解析）
+  const preload = findPreloadIn(staging);
+  if (!preload) {
+    throw new Error(`解包后找不到渲染进程 preload（找过：${PRELOAD_CANDIDATES.join('、')}）`);
+  }
+  const preloadDir = path.dirname(preload);
+  const preloadRel = path.relative(staging, preload).replace(/\\/g, '/');
   let content = stripBlock(fs.readFileSync(preload, 'utf8'));
   content = content.replace(/\n+$/, '') + '\n' + INJECT_BLOCK;
   fs.writeFileSync(preload, content, 'utf8');
-  console.log("[注入] preload_desktop.js <- require('./pm-chinese.js')");
-  fs.writeFileSync(path.join(staging, 'pm-chinese.js'), hook.src, 'utf8');
-  fs.writeFileSync(path.join(staging, DATA_NAME), JSON.stringify(bundle), 'utf8');
+  console.log(`[注入] ${preloadRel} <- require('./pm-chinese.js')`);
+  fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
+  fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
 
   // 4) 打包回 app.asar
@@ -328,9 +369,11 @@ async function patchAsar(target, lang) {
 // 只改 preload_desktop.js（备份为 .bak，始终从备份打补丁以幂等），并放入钩子与数据。
 async function patchDir(target, lang) {
   const { appDir } = target;
-  const preload = path.join(appDir, 'preload_desktop.js');
+  const preload = resolveDirPreload(appDir);
+  if (!preload) throw new Error(`找不到渲染进程 preload（找过：${PRELOAD_CANDIDATES.join('、')}）: ${appDir}`);
   const bak = preload + BAK_SUFFIX;
-  if (!isFile(preload) && !isFile(bak)) throw new Error(`找不到 preload_desktop.js: ${appDir}`);
+  const preloadDir = path.dirname(preload);
+  const preloadRel = path.relative(appDir, preload).replace(/\\/g, '/');
 
   // 提前解析钩子源码，缺失则在改动任何文件前就失败
   const hook = hookSource();
@@ -341,9 +384,9 @@ async function patchDir(target, lang) {
 
   // 1) 确保有 pristine 备份（剥掉可能已存在的注入块，保证备份干净），且始终从备份打补丁
   if (!isFile(bak)) {
-    if (!isFile(preload)) throw new Error(`找不到 preload_desktop.js: ${appDir}`);
+    if (!isFile(preload)) throw new Error(`找不到 ${preloadRel}: ${appDir}`);
     fs.writeFileSync(bak, stripBlock(fs.readFileSync(preload, 'utf8')), 'utf8');
-    console.log(`[备份] preload_desktop.js -> ${path.basename(bak)}`);
+    console.log(`[备份] ${preloadRel} -> ${path.basename(bak)}`);
   } else {
     console.log(`[备份] 已存在，使用 ${path.basename(bak)} 作为打补丁源`);
   }
@@ -352,11 +395,11 @@ async function patchDir(target, lang) {
   let content = stripBlock(fs.readFileSync(bak, 'utf8'));
   content = content.replace(/\n+$/, '') + '\n' + INJECT_BLOCK;
   fs.writeFileSync(preload, content, 'utf8');
-  console.log("[注入] preload_desktop.js <- require('./pm-chinese.js')");
+  console.log(`[注入] ${preloadRel} <- require('./pm-chinese.js')`);
 
-  // 3) 放入钩子与数据（与 preload 同目录）
-  fs.writeFileSync(path.join(appDir, 'pm-chinese.js'), hook.src, 'utf8');
-  fs.writeFileSync(path.join(appDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
+  // 3) 放入钩子与数据（与 preload 同目录，因 require('./pm-chinese.js') 与 __dirname 都相对 preload 解析）
+  fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
+  fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
 
   console.log('\n[成功] 已注入未打包的 app/ 目录。完全退出并重启 Postman；');
@@ -380,25 +423,27 @@ function restoreAsar(target) {
 
 function restoreDir(target) {
   const { appDir } = target;
-  const preload = path.join(appDir, 'preload_desktop.js');
+  const preload = resolveDirPreload(appDir) || path.join(appDir, PRELOAD_CANDIDATES[0]);
+  const preloadDir = path.dirname(preload);
+  const preloadRel = path.relative(appDir, preload).replace(/\\/g, '/');
   const bak = preload + BAK_SUFFIX;
   let did = false;
   if (isFile(bak)) {
     fs.copyFileSync(bak, preload);
-    console.log(`[还原] 已用 ${path.basename(bak)} 覆盖回 preload_desktop.js`);
+    console.log(`[还原] 已用 ${path.basename(bak)} 覆盖回 ${preloadRel}`);
     did = true;
   } else if (isFile(preload)) {
     // 没备份则就地剥掉注入块
     const cleaned = stripBlock(fs.readFileSync(preload, 'utf8'));
     if (cleaned !== fs.readFileSync(preload, 'utf8')) {
       fs.writeFileSync(preload, cleaned, 'utf8');
-      console.log('[还原] 无备份，已就地移除 preload_desktop.js 中的注入块');
+      console.log(`[还原] 无备份，已就地移除 ${preloadRel} 中的注入块`);
       did = true;
     }
   }
-  // 删除注入的钩子与数据文件
+  // 删除注入的钩子与数据文件（与 preload 同目录）
   for (const f of ['pm-chinese.js', DATA_NAME]) {
-    const p = path.join(appDir, f);
+    const p = path.join(preloadDir, f);
     if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
   }
   if (!did) console.log('[还原] 未发现注入痕迹，无需还原');
@@ -414,10 +459,11 @@ function status(target) {
 
 function statusDir(target) {
   const { appDir } = target;
-  const preload = path.join(appDir, 'preload_desktop.js');
+  const preload = resolveDirPreload(appDir) || path.join(appDir, PRELOAD_CANDIDATES[0]);
+  const preloadDir = path.dirname(preload);
   const bak = preload + BAK_SUFFIX;
-  const hookPath = path.join(appDir, 'pm-chinese.js');
-  const dataPath = path.join(appDir, DATA_NAME);
+  const hookPath = path.join(preloadDir, 'pm-chinese.js');
+  const dataPath = path.join(preloadDir, DATA_NAME);
 
   console.log(`  备份 ${path.basename(bak)}: ${isFile(bak) ? '有（注入过至少一次）' : '无'}`);
 
@@ -452,16 +498,19 @@ function statusAsar(target) {
   }
   console.log(`  备份 ${path.basename(bak)}: ${isFile(bak) ? '有（注入过至少一次）' : '无'}`);
 
-  let hasHook = false, hasData = false, injected = false, count = null;
+  let hasHook = false, hasData = false, injected = false, count = null, preloadRel = null;
   try {
     const files = asarList(asar);
     hasHook = files.some((f) => /(^|[\\/])pm-chinese\.js$/.test(f));
     hasData = files.some((f) => /(^|[\\/])pm-chinese-data\.json$/.test(f));
+    preloadRel = findPreloadInAsar(files);
   } catch (e) {
     console.log('  无法读取 asar 内容:', e.message);
   }
   try {
-    injected = /require\((['"])\.\/pm-chinese\.js\1\)/.test(asarReadFile(asar, 'preload_desktop.js'));
+    if (preloadRel) {
+      injected = /require\((['"])\.\/pm-chinese\.js\1\)/.test(asarReadFile(asar, preloadRel));
+    }
   } catch (e) { /* preload 缺失则视为未注入 */ }
   if (hasData) {
     try { count = Object.keys(JSON.parse(asarReadFile(asar, 'pm-chinese-data.json'))).length; } catch (e) { /* ignore */ }
@@ -527,6 +576,9 @@ async function main() {
   else if (opts.restore) restore(target);
   else await patch(target, DEFAULT_LANG);
 }
+
+// 导出供测试用（作为 CLI 运行时不受影响）
+module.exports = { findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES };
 
 if (require.main === module) {
   main().catch((e) => {
