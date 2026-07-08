@@ -109,6 +109,8 @@
         var mu = muts[i];
         if (mu.type === 'characterData') {
           translateTextNode(dict, mu.target);
+        } else if (mu.type === 'attributes') {
+          translateAttributes(dict, mu.target);
         } else {
           for (var j = 0; j < mu.addedNodes.length; j++) {
             var node = mu.addedNodes[j];
@@ -118,7 +120,13 @@
         }
       }
     });
-    obs.observe(doc, { subtree: true, childList: true, characterData: true });
+    obs.observe(doc, {
+      subtree: true,
+      childList: true,
+      characterData: true,
+      attributes: true,
+      attributeFilter: ['placeholder', 'title', 'aria-label']
+    });
     try { console.log('[pm-scratchpad] 已启用 DOM 翻译，词条:', Object.keys(dict).length); } catch (e) {}
   }
 
