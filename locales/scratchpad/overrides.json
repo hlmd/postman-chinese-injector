@@ -1,4 +1,6 @@
 {
   "You are using the Lightweight API Client, sign in or create an account to work with collections, environments and": "您正在使用轻量级 API 客户端，登录或创建账户即可使用集合、环境，并",
-  "unlock all free features in Postman.": "解锁 Postman 的所有免费功能。"
+  "unlock all free features in Postman.": "解锁 Postman 的所有免费功能。",
+  "Time to send your first request": "开始发送你的第一个请求",
+  "All the requests you send will be stored in History. Sign in or create an account to organize them in collections.": "你发送的所有请求都会保存在历史记录中。登录或创建账户即可将它们整理到集合中。"
 }
