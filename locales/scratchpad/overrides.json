@@ -3,5 +3,8 @@
   "unlock all free features in Postman.": "解锁 Postman 的所有免费功能。",
   "Time to send your first request": "开始发送你的第一个请求",
   "All the requests you send will be stored in History. Sign in or create an account to organize them in collections.": "你发送的所有请求都会保存在历史记录中。登录或创建账户即可将它们整理到集合中。",
-  "Enter URL or paste text": "输入 URL 或粘贴文本"
+  "Enter URL or paste text": "输入 URL 或粘贴文本",
+  "Sign up to organize your work": "注册以整理你的工作",
+  "You are currently using the lightweight API Client. Sign in or create an account to organize your requests into collections and workspaces.": "你当前使用的是轻量级 API 客户端。登录或创建账户即可将请求整理到集合和工作区中。",
+  "Not connected to a Postman account": "未连接到 Postman 账户"
 }
