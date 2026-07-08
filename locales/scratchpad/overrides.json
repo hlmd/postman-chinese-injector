@@ -6,5 +6,6 @@
   "Enter URL or paste text": "输入 URL 或粘贴文本",
   "Sign up to organize your work": "注册以整理你的工作",
   "You are currently using the lightweight API Client. Sign in or create an account to organize your requests into collections and workspaces.": "你当前使用的是轻量级 API 客户端。登录或创建账户即可将请求整理到集合和工作区中。",
-  "Not connected to a Postman account": "未连接到 Postman 账户"
+  "Not connected to a Postman account": "未连接到 Postman 账户",
+  "This request does not use any authorization.": "此请求不使用任何授权。"
 }
