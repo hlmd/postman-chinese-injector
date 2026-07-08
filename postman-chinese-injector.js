@@ -52,6 +52,9 @@ const HOOK_SRC = path.join(BASE_DIR, 'pm-chinese.js');
 const LOCALES_DIR = path.join(BASE_DIR, 'locales');
 const DEFAULT_LANG = 'zh-CN';
 const DATA_NAME = 'pm-chinese-data.json'; // 注入时在 asar 内生成的 bundle 文件名
+const SCRATCH_HOOK_NAME = 'pm-scratchpad-cn.js';
+const SCRATCH_HOOK_SRC = path.join(BASE_DIR, SCRATCH_HOOK_NAME);
+const SCRATCH_DATA_NAME = 'pm-scratchpad-data.json';
 
 const BAK_SUFFIX = '.bak';
 const MARK_START = '// === PM-I18N START ===';
@@ -59,6 +62,7 @@ const MARK_END = '// === PM-I18N END ===';
 const INJECT_BLOCK =
   `\n${MARK_START}\n` +
   "try { require('./pm-chinese.js'); } catch (e) { console.error('[pm-chinese] load failed', e); }\n" +
+  "try { require('./pm-scratchpad-cn.js'); } catch (e) { console.error('[pm-scratchpad] load failed', e); }\n" +
   `${MARK_END}\n`;
 
 // ---------- 小工具 ----------
@@ -174,6 +178,38 @@ function hookSource() {
   const emb = loadEmbeddedHook();
   if (emb) return { src: emb, from: '内嵌快照' };
   throw new Error(`缺少钩子源码 pm-chinese.js（已尝试: ${cands.join('、')}，且无内嵌快照）`);
+}
+
+// Scratch Pad 钩子源码（编译后取内嵌快照，逻辑同 hookSource）
+function loadEmbeddedScratchpadHook() {
+  try { return require('./pm-scratchpad-src.json').src || null; } catch (e) { return null; }
+}
+function scratchpadHookSource() {
+  const cands = [];
+  try { cands.push(path.join(path.dirname(process.execPath), SCRATCH_HOOK_NAME)); } catch (e) { /* ignore */ }
+  cands.push(SCRATCH_HOOK_SRC);
+  for (const p of cands) {
+    if (isFile(p)) return { src: fs.readFileSync(p, 'utf8'), from: p };
+  }
+  const emb = loadEmbeddedScratchpadHook();
+  if (emb) return { src: emb, from: '内嵌快照' };
+  throw new Error(`缺少 Scratch Pad 钩子源码 ${SCRATCH_HOOK_NAME}（且无内嵌快照）`);
+}
+
+// Scratch Pad 词典：① locales/scratchpad/zh-CN.json（exe 旁或源码旁）；② 内嵌快照
+function loadEmbeddedScratchpadDict() {
+  try { return require('./pm-scratchpad-data.json'); } catch (e) { return null; }
+}
+function loadScratchpadDict() {
+  for (const root of localeRoots()) {
+    const p = path.join(root, 'scratchpad', 'zh-CN.json');
+    if (isFile(p)) {
+      try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
+    }
+  }
+  const emb = loadEmbeddedScratchpadDict();
+  if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
+  throw new Error('缺少 Scratch Pad 词典（locales/scratchpad/zh-CN.json 或内嵌快照）');
 }
 
 // 候选 locales 根目录（按优先级）：① 紧挨真正的可执行文件（允许在 exe 旁放 locales/ 覆盖
@@ -356,6 +392,11 @@ async function patchAsar(target, lang) {
   fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
+  const spHook = scratchpadHookSource();
+  const spDict = loadScratchpadDict();
+  fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
+  fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
+  console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
 
   // 4) 打包回 app.asar
   console.log('[打包] 临时目录 -> app.asar');
@@ -401,6 +442,11 @@ async function patchDir(target, lang) {
   fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
+  const spHook = scratchpadHookSource();
+  const spDict = loadScratchpadDict();
+  fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
+  fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
+  console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
 
   console.log('\n[成功] 已注入未打包的 app/ 目录。完全退出并重启 Postman；');
   console.log('       界面出现中文即生效。');
@@ -442,7 +488,7 @@ function restoreDir(target) {
     }
   }
   // 删除注入的钩子与数据文件（与 preload 同目录）
-  for (const f of ['pm-chinese.js', DATA_NAME]) {
+  for (const f of ['pm-chinese.js', DATA_NAME, SCRATCH_HOOK_NAME, SCRATCH_DATA_NAME]) {
     const p = path.join(preloadDir, f);
     if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
   }
@@ -499,10 +545,12 @@ function statusAsar(target) {
   console.log(`  备份 ${path.basename(bak)}: ${isFile(bak) ? '有（注入过至少一次）' : '无'}`);
 
   let hasHook = false, hasData = false, injected = false, count = null, preloadRel = null;
+  let hasScratch = false;
   try {
     const files = asarList(asar);
     hasHook = files.some((f) => /(^|[\\/])pm-chinese\.js$/.test(f));
     hasData = files.some((f) => /(^|[\\/])pm-chinese-data\.json$/.test(f));
+    hasScratch = files.some((f) => /(^|[\\/])pm-scratchpad-cn\.js$/.test(f));
     preloadRel = findPreloadInAsar(files);
   } catch (e) {
     console.log('  无法读取 asar 内容:', e.message);
@@ -518,6 +566,7 @@ function statusAsar(target) {
 
   console.log(`  pm-chinese.js 在 asar 内: ${hasHook ? '是' : '否'}`);
   console.log(`  pm-chinese-data.json 在 asar 内: ${hasData ? '是' : '否'}${count != null ? `（${count} 模块）` : ''}`);
+  console.log(`  Scratch Pad 钩子在 asar 内: ${hasScratch ? '是' : '否'}`);
   console.log(`  preload 注入行 require('./pm-chinese.js'): ${injected ? '有' : '无'}`);
 
   const ok = hasHook && hasData && injected;
@@ -578,7 +627,7 @@ async function main() {
 }
 
 // 导出供测试用（作为 CLI 运行时不受影响）
-module.exports = { findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES };
+module.exports = { findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict };
 
 if (require.main === module) {
   main().catch((e) => {
