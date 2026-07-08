@@ -358,6 +358,8 @@ async function patchAsar(target, lang) {
 
   // 提前解析钩子源码（二进制内嵌 / 源码同目录），缺失则在改动任何文件前就失败
   const hook = hookSource();
+  const spHook = scratchpadHookSource();
+  const spDict = loadScratchpadDict();
 
   // 0) 从 locales/<lang>/ 构建注入数据（二进制无 locales 时用内嵌数据）
   const { bundle, count, embedded } = buildBundle(lang);
@@ -392,8 +394,6 @@ async function patchAsar(target, lang) {
   fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
-  const spHook = scratchpadHookSource();
-  const spDict = loadScratchpadDict();
   fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
   console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
@@ -418,6 +418,8 @@ async function patchDir(target, lang) {
 
   // 提前解析钩子源码，缺失则在改动任何文件前就失败
   const hook = hookSource();
+  const spHook = scratchpadHookSource();
+  const spDict = loadScratchpadDict();
 
   // 0) 构建注入数据
   const { bundle, count, embedded } = buildBundle(lang);
@@ -442,8 +444,6 @@ async function patchDir(target, lang) {
   fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
-  const spHook = scratchpadHookSource();
-  const spDict = loadScratchpadDict();
   fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
   console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
