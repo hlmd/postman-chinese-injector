@@ -515,6 +515,7 @@ function statusDir(target) {
 
   const hasHook = isFile(hookPath);
   const hasData = isFile(dataPath);
+  const hasScratch = isFile(path.join(preloadDir, SCRATCH_HOOK_NAME));
   let count = null, injected = false;
   if (hasData) {
     try { count = Object.keys(JSON.parse(fs.readFileSync(dataPath, 'utf8'))).length; } catch (e) { /* ignore */ }
@@ -525,6 +526,7 @@ function statusDir(target) {
 
   console.log(`  pm-chinese.js 在 app/ 内: ${hasHook ? '是' : '否'}`);
   console.log(`  pm-chinese-data.json 在 app/ 内: ${hasData ? '是' : '否'}${count != null ? `（${count} 模块）` : ''}`);
+  console.log(`  Scratch Pad 钩子在 app/ 内: ${hasScratch ? '是' : '否'}`);
   console.log(`  preload 注入行 require('./pm-chinese.js'): ${injected ? '有' : '无'}`);
 
   const ok = hasHook && hasData && injected;

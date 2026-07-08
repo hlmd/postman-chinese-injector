@@ -39,7 +39,10 @@
   function isSkippableEl(el) {
     if (!el || el.nodeType !== 1) return false;
     if (SKIP_TAGS[el.tagName]) return true;
-    if (el.getAttribute && el.getAttribute('contenteditable') === 'true') return true;
+    if (el.getAttribute) {
+      var ce = el.getAttribute('contenteditable');
+      if (ce != null && ce !== 'false') return true;
+    }
     var cls = (el.getAttribute && el.getAttribute('class')) || '';
     return SKIP_CLASS_RE.test(cls);
   }

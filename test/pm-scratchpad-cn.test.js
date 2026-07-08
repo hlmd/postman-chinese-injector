@@ -39,6 +39,8 @@ test('isSkippableEl 命中可编辑/代码区', () => {
   assert.strictEqual(isSkippableEl(fakeEl('INPUT')), true);
   assert.strictEqual(isSkippableEl(fakeEl('TEXTAREA')), true);
   assert.strictEqual(isSkippableEl(fakeEl('DIV', { contenteditable: 'true' })), true);
+  assert.strictEqual(isSkippableEl(fakeEl('DIV', { contenteditable: '' })), true);
+  assert.strictEqual(isSkippableEl(fakeEl('DIV', { contenteditable: 'false' })), false);
   assert.strictEqual(isSkippableEl(fakeEl('DIV', { class: 'x CodeMirror y' })), true);
   assert.strictEqual(isSkippableEl(fakeEl('DIV', { class: 'monaco-editor' })), true);
   assert.strictEqual(isSkippableEl(fakeEl('DIV', { class: 'btn' })), false);
