@@ -11,6 +11,9 @@
  *   词条格式为 PHP 数组 '"English"' => '"中文"'（或单引号）；跳过占位符 ______、含 ${} 或
  *   反引号的模板、以及形如 title:"X" 的带代码上下文条目。仅为 dev 工具，用于再生成词典。
  *
+ *   手工补充/修正：写进 locales/scratchpad/overrides.json（扁平 {英文:中文}），本脚本会把它
+ *   合并进产物且**优先于提取项**——这样运行中发现的新词直接加到 overrides，重跑提取不会丢。
+ *
  * 用法: node scripts/build-scratchpad-dict.js [--src <Postman-cn 的 scratchpad lang 目录>]
  */
 'use strict';
@@ -22,6 +25,7 @@ const ROOT = path.join(__dirname, '..');
 const DEFAULT_SRC = process.env.POSTMAN_CN_LANG ||
   'D:/Sinicization/Postman/Postman-cn/php/lang/js/scratchpad';
 const OUT = path.join(ROOT, 'locales', 'scratchpad', 'zh-CN.json');
+const OVERRIDES = path.join(ROOT, 'locales', 'scratchpad', 'overrides.json');
 
 // 一行形如：  'X' => 'Y',   或   "X" => "Y"
 const PAIR_RE = /^\s*('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")\s*=>\s*('(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*")\s*,?\s*$/;
@@ -78,11 +82,18 @@ function build(srcDir) {
   if (!fs.existsSync(src)) throw new Error(`找不到词典源目录: ${src}`);
   const map = new Map();
   for (const f of walkPhp(src, [])) extractInto(fs.readFileSync(f, 'utf8'), map);
+  const extracted = map.size;
+  // 手工覆盖：overrides.json 优先（覆盖同名提取项或补充新项），重跑提取不丢
+  let overrides = 0;
+  if (fs.existsSync(OVERRIDES)) {
+    const ov = JSON.parse(fs.readFileSync(OVERRIDES, 'utf8'));
+    for (const k of Object.keys(ov)) { map.set(k, ov[k]); overrides++; }
+  }
   const obj = {};
   for (const [k, v] of [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]))) obj[k] = v;
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(obj), 'utf8');
-  return { count: map.size, out: OUT };
+  return { count: map.size, extracted, overrides, out: OUT };
 }
 
 module.exports = { extractInto, unwrapPhp, unwrapJs, build };
@@ -90,8 +101,8 @@ module.exports = { extractInto, unwrapPhp, unwrapJs, build };
 if (require.main === module) {
   try {
     const i = process.argv.indexOf('--src');
-    const { count, out } = build(i >= 0 ? process.argv[i + 1] : undefined);
-    console.log(`[完成] 提取 ${count} 条 -> ${path.relative(ROOT, out)}`);
+    const { count, extracted, overrides, out } = build(i >= 0 ? process.argv[i + 1] : undefined);
+    console.log(`[完成] 提取 ${extracted} + 覆盖 ${overrides} = ${count} 条 -> ${path.relative(ROOT, out)}`);
   } catch (e) {
     console.error(`[错误] ${e.message}`);
     process.exit(1);
