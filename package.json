@@ -8,7 +8,7 @@
   "main": "postman-chinese-injector.js",
   "type": "commonjs",
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test",
     "patch": "node postman-chinese-injector.js",
     "restore": "node postman-chinese-injector.js --restore",
     "build:data": "node scripts/build-data.js",
