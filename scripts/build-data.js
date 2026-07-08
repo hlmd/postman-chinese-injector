@@ -64,6 +64,23 @@ function buildData(lang = 'zh-CN') {
   fs.writeFileSync(hookOut, JSON.stringify({ src: fs.readFileSync(hookSrc, 'utf8') }), 'utf8');
   console.log(`[完成] 钩子源码 -> ${path.relative(ROOT, hookOut)} (${(fs.statSync(hookOut).size / 1024).toFixed(0)} KB)`);
 
+  // Scratch Pad DOM 翻译：词典快照 + 钩子源码快照（供 bun --compile 内嵌）
+  const spDict = path.join(ROOT, 'locales', 'scratchpad', 'zh-CN.json');
+  if (fs.existsSync(spDict)) {
+    const dict = JSON.parse(fs.readFileSync(spDict, 'utf8'));
+    const spDataOut = path.join(ROOT, 'pm-scratchpad-data.json');
+    fs.writeFileSync(spDataOut, JSON.stringify(dict), 'utf8');
+    console.log(`[完成] Scratch Pad 词典 -> ${path.relative(ROOT, spDataOut)} (${Object.keys(dict).length} 条)`);
+
+    const spHookSrc = path.join(ROOT, 'pm-scratchpad-cn.js');
+    if (!fs.existsSync(spHookSrc)) throw new Error(`找不到钩子源码: ${spHookSrc}`);
+    const spHookOut = path.join(ROOT, 'pm-scratchpad-src.json');
+    fs.writeFileSync(spHookOut, JSON.stringify({ src: fs.readFileSync(spHookSrc, 'utf8') }), 'utf8');
+    console.log(`[完成] Scratch Pad 钩子源码 -> ${path.relative(ROOT, spHookOut)} (${(fs.statSync(spHookOut).size / 1024).toFixed(0)} KB)`);
+  } else {
+    console.warn(`[警告] 未找到 ${path.relative(ROOT, spDict)}，跳过 Scratch Pad 快照（请先跑 build-scratchpad-dict.js）`);
+  }
+
   return { lang, count };
 }
 

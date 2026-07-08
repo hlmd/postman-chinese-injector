@@ -4,6 +4,8 @@ dist/
 # 编译期生成的可嵌入快照（由 scripts/build-data.js 生成）
 pm-chinese-data.json
 pm-chinese-src.json
+pm-scratchpad-data.json
+pm-scratchpad-src.json
 
 # SDD 进度账本等本地临时文件
 .superpowers/
