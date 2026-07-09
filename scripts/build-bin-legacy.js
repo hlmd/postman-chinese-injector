@@ -64,7 +64,12 @@ function main() {
   const stage = fs.mkdtempSync(path.join(os.tmpdir(), 'pmci-legacy-'));
   console.log(`[legacy] 暂存目录: ${stage}`);
   try {
-    for (const f of ['postman-chinese-injector.js', 'pm-chinese.js', 'pm-chinese-data.json', 'pm-chinese-src.json']) {
+    for (const f of [
+      'postman-chinese-injector.js', 'pm-chinese.js', 'pm-chinese-data.json', 'pm-chinese-src.json',
+      // Scratch Pad 快照：buildData 已在 ROOT 生成，必须一并带进 staging，否则 pkg 打出的
+      // 二进制缺内嵌快照，运行时报「缺少 Scratch Pad 钩子源码 pm-scratchpad-cn.js（且无内嵌快照）」。
+      'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
+    ]) {
       fs.copyFileSync(path.join(ROOT, f), path.join(stage, f));
     }
     const rootPkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
@@ -74,7 +79,10 @@ function main() {
       bin: 'postman-chinese-injector.js',
       main: 'postman-chinese-injector.js',
       // require() 到的 JSON 快照 pkg 会自动纳入；这里再列进 assets 双保险
-      pkg: { targets: [target], assets: ['pm-chinese-data.json', 'pm-chinese-src.json'] },
+      pkg: { targets: [target], assets: [
+        'pm-chinese-data.json', 'pm-chinese-src.json',
+        'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
+      ] },
     }, null, 2));
 
     // 3) 装 asar@3（供 pkg 打进快照）
