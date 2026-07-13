@@ -2,7 +2,7 @@
 const { test } = require('node:test');
 const assert = require('node:assert');
 const hook = require('../pm-scratchpad-cn.js');
-const { translateString, isSkippableEl, inSkippableSubtree, isActive, translateAttributes } = hook;
+const { translateString, isSkippableEl, inSkippableSubtree, isActive, translateAttributes, loadDict } = hook;
 
 const DICT = { 'Send': '发送', 'New Request': '新建请求', 'Delete': '删除' };
 
@@ -56,11 +56,41 @@ test('inSkippableSubtree 向上遍历祖先', () => {
   assert.strictEqual(inSkippableSubtree(t2), false);
 });
 
-test('isActive 只在 file:// + scratchpad 路径为真', () => {
+test('isActive 覆盖 Postman 完整版上下文（网页版 + 桌面 file:// 窗口）', () => {
+  // 桌面端：所有 Postman Electron 窗口均为 file://（Scratch Pad 与登入态主窗口都算）
   assert.strictEqual(isActive({ protocol: 'file:', pathname: '/C:/x/html/scratchpad.html' }), true);
-  assert.strictEqual(isActive({ protocol: 'https:', pathname: '/scratchpad' }), false);
-  assert.strictEqual(isActive({ protocol: 'file:', pathname: '/C:/x/html/console.html' }), false);
+  assert.strictEqual(isActive({ protocol: 'file:', pathname: '/C:/x/html/index.html' }), true);
+  // 网页版：host 属于 Postman 域名
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'go.postman.co' }), true);
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'web.postman.co' }), true);
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'app.getpostman.com' }), true);
+  // 无关域名不激活；且锚定防止 evil-postman.com / notpostman.com 误命中
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'example.com' }), false);
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'notpostman.com' }), false);
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'evil-postman.com.attacker.net' }), false);
   assert.strictEqual(isActive(null), false);
+});
+
+test('isActive 在扩展上下文（已注入全局词典）兜底为真', () => {
+  const g = globalThis;
+  assert.strictEqual('__PM_SCRATCHPAD__' in g, false);
+  try {
+    g.__PM_SCRATCHPAD__ = { Send: '发送' };
+    assert.strictEqual(isActive({ protocol: 'https:', hostname: 'example.com' }), true);
+  } finally {
+    delete g.__PM_SCRATCHPAD__;
+  }
+});
+
+test('loadDict 优先返回全局 __PM_SCRATCHPAD__', () => {
+  const g = globalThis;
+  const dict = { Send: '发送', Delete: '删除' };
+  try {
+    g.__PM_SCRATCHPAD__ = dict;
+    assert.strictEqual(loadDict(), dict);
+  } finally {
+    delete g.__PM_SCRATCHPAD__;
+  }
 });
 
 test('translateAttributes 翻译 placeholder/title/aria-label', () => {

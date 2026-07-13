@@ -77,6 +77,32 @@ fs.writeFileSync(path.join(outDir, 'pm-i18n-data.js'), dataJs, 'utf8');
 // 4) 复制共用钩子
 fs.copyFileSync(hookSrc, path.join(outDir, 'pm-chinese.js'));
 
+// 4b) Scratch Pad DOM 词典 + 钩子（补语言包未覆盖的 UI 文案，让网页版也走整串 DOM 翻译）。
+//     浏览器无 fs，故把词典预置成全局 window.__PM_SCRATCHPAD__（先于钩子执行）。词典缺失则告警跳过。
+let scratchJs = [];
+const spDictPath = path.join(ROOT, 'locales', 'scratchpad', lang + '.json');
+const spHookPath = path.join(ROOT, 'pm-scratchpad-cn.js');
+if (fs.existsSync(spDictPath) && fs.existsSync(spHookPath)) {
+  let spDict = null;
+  try {
+    spDict = JSON.parse(fs.readFileSync(spDictPath, 'utf8'));
+  } catch (e) {
+    console.warn(`[跳过] Scratch Pad 词典解析失败: ${e.message}`);
+  }
+  if (spDict && typeof spDict === 'object' && Object.keys(spDict).length) {
+    fs.writeFileSync(
+      path.join(outDir, 'pm-scratchpad-data.js'),
+      'window.__PM_SCRATCHPAD__ = ' + JSON.stringify(spDict) + ';\n',
+      'utf8'
+    );
+    fs.copyFileSync(spHookPath, path.join(outDir, 'pm-scratchpad-cn.js'));
+    scratchJs = ['pm-scratchpad-data.js', 'pm-scratchpad-cn.js'];
+    console.log(`[完成] 已附带 Scratch Pad DOM 词典（${Object.keys(spDict).length} 条）`);
+  }
+} else {
+  console.warn('[提示] 未找到 Scratch Pad 词典/钩子，扩展将不含 DOM 翻译（可先跑 build-scratchpad-dict.js）');
+}
+
 // 5) 生成 manifest.json（版本号取自 package.json）
 const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
 const manifest = {
@@ -87,7 +113,7 @@ const manifest = {
   content_scripts: [
     {
       matches: ['https://*.postman.co/*', 'https://*.getpostman.com/*', 'https://*.postman.com/*'],
-      js: ['pm-i18n-data.js', 'pm-chinese.js'],
+      js: ['pm-i18n-data.js', 'pm-chinese.js'].concat(scratchJs),
       run_at: 'document_start',
       world: 'MAIN',
       all_frames: true

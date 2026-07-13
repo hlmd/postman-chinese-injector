@@ -22,6 +22,8 @@
   var ATTRS = ['placeholder', 'title', 'aria-label'];
   var SKIP_TAGS = { INPUT: 1, TEXTAREA: 1, SCRIPT: 1, STYLE: 1 };
   var SKIP_CLASS_RE = /(^|\s)(CodeMirror|monaco-editor)(\s|$)/;
+  // 完整版 Postman 网页版域名（锚定 (^|\.) 防止 evil-postman.com 误命中）
+  var HOST_RE = /(^|\.)(postman\.co|postman\.com|getpostman\.com)$/i;
 
   // 纯函数：整串精确翻译，保留前后空白；无匹配返回 null
   function translateString(dict, value) {
@@ -57,9 +59,19 @@
     return false;
   }
 
-  // 纯函数：当前窗口是否应激活（登出态本地 Scratch Pad）
+  // 纯函数：当前窗口是否应激活（Postman 上下文即激活）。
+  //   ① 网页版：host 属于 Postman 域名；
+  //   ② 桌面端：所有 Postman Electron 窗口均为 file://（登出态 Scratch Pad 与登入态主窗口都算，
+  //      preload 只注入到 Postman 窗口，故 file: 即 Postman 上下文）；
+  //   ③ 扩展上下文兜底：全局词典已注入。
   function isActive(loc) {
-    return !!loc && loc.protocol === 'file:' && /scratchpad/i.test(loc.pathname || '');
+    if (!loc) return false;
+    if (HOST_RE.test(loc.hostname || '')) return true;
+    if (loc.protocol === 'file:') return true;
+    try {
+      if (typeof globalThis !== 'undefined' && globalThis.__PM_SCRATCHPAD__) return true;
+    } catch (e) { /* ignore */ }
+    return false;
   }
 
   function translateTextNode(dict, node) {
@@ -92,7 +104,15 @@
     }
   }
 
+  // 双源取词典，顺序对齐 pm-chinese.js：
+  //   ① 浏览器扩展在 MAIN world 预置的全局 window.__PM_SCRATCHPAD__（浏览器无 fs）；
+  //   ② 桌面端：与本文件同目录的 pm-scratchpad-data.json（fs 读）。
   function loadDict() {
+    try {
+      if (typeof globalThis !== 'undefined' && globalThis.__PM_SCRATCHPAD__) {
+        return globalThis.__PM_SCRATCHPAD__;
+      }
+    } catch (e) { /* ignore，落到 fs */ }
     try {
       if (typeof require === 'function') {
         var fs = require('fs');
@@ -150,7 +170,8 @@
       isSkippableEl: isSkippableEl,
       inSkippableSubtree: inSkippableSubtree,
       isActive: isActive,
-      translateAttributes: translateAttributes
+      translateAttributes: translateAttributes,
+      loadDict: loadDict
     };
   }
 })();
