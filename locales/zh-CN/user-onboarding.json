@@ -6,13 +6,6 @@
   "name_warnings": {
     "approaching_max_length": "剩余 {count} 个字符"
   },
-  "settings_set_error": {
-    "description": "无法设置名称和角色。请再试一次。",
-    "title": "出了点问题"
-  },
-  "continue_button": {
-    "text": "继续"
-  },
   "get_started_button": {
     "text": "开始使用"
   },
@@ -118,83 +111,6 @@
     },
     "get_started_button": "开始使用"
   },
-  "welcome_to_postman": {
-    "title": "欢迎使用 Postman！告诉我们一些关于你自己的事。",
-    "input": {
-      "name": {
-        "placeholder": "例如：约翰·多伊",
-        "label": "你的名字",
-        "experimental_label": "你叫什么名字？"
-      },
-      "select_your_role": {
-        "placeholder": "选择您的角色",
-        "label": "你的角色是什么？",
-        "empty_status_message": "哦！您的角色对我们来说是新的。请选择“其他”进行提及。"
-      },
-      "enter_your_role": {
-        "placeholder": "输入您的角色"
-      },
-      "best_describe_you": {
-        "placeholder": "选择最能描述您的选项",
-        "label": "您对 API 的体验如何？"
-      },
-      "used_postman_before": {
-        "placeholder": "选择一个选项",
-        "label": "您以前使用过 Postman 吗？"
-      }
-    },
-    "roles": {
-      "backend_developer": "后端开发人员",
-      "data_engineer": "数据工程师",
-      "frontend_developer": "前端开发人员",
-      "product_manager": "产品经理",
-      "fullstack_developer": "全栈开发人员",
-      "student_educator": "学生/教育者",
-      "qa_engineer_tester": "质量工程师/测试员",
-      "executive_vp": "高管（C 级/副总裁）",
-      "devops_engineer": "DevOps 工程师",
-      "analyst": "分析师",
-      "technical_writer": "技术撰稿人",
-      "executive": "高管/经理",
-      "mobile_developer": "移动开发者",
-      "security_engineer": "安全工程师",
-      "solution_engineer": "解决方案工程师",
-      "support_engineer": "支持工程师",
-      "technical_architect": "技术架构师",
-      "ux_ui": "用户体验/用户界面设计师",
-      "not_listed": "未列出",
-      "other": "其他"
-    },
-    "your_role": "什么最能描述您的角色？",
-    "next_button": "下一步"
-  },
-  "questions": {
-    "plan_to_use": {
-      "title": "以下哪一项最能描述您计划如何使用 Postman？",
-      "placeholder": "选择一个选项",
-      "options": {
-        "debug": "调试 API",
-        "document": "记录 API",
-        "automate": "自动化 API 测试",
-        "build": "构建一个新的 API",
-        "send_request": "发送 API 请求",
-        "collaborate": "与他人合作",
-        "other": "其他",
-        "not_sure": "还不确定"
-      }
-    },
-    "plan_to_work": {
-      "title": "您打算在 Postman 中从事什么工作？",
-      "placeholder": "选择一个选项",
-      "options": {
-        "api": "我正在开发的 API",
-        "company": "我公司的API",
-        "third_party": "第三方API",
-        "other": "其他",
-        "not_sure": "尚未确定"
-      }
-    }
-  },
   "verify_email": {
     "title": "验证您的电子邮件以确保您的帐户安全",
     "description": "我们已发送验证电子邮件至",
@@ -217,192 +133,17 @@
     }
   },
   "join_team": {
-    "constants": {
-      "has_guidelines_rtj": {
-        "modalHeader": "提交您的请求以加入团队",
-        "modalBody": "回答团队管理员提出的问题，以便他们审核您的加入请求。",
-        "placeholder": "在此输入您的答案",
-        "cancelCTA": "取消",
-        "submitCTA": "发送请求"
-      },
-      "no_guidelines_rtj": {
-        "modalHeader": "为您的申请添加消息",
-        "modalBody": "您的请求正在等待批准。附上一条留言，帮助团队管理员审核您的请求。",
-        "placeholder": "你好，我想加入这个团队，因为……",
-        "cancelCTA": "跳过",
-        "submitCTA": "发送消息"
-      }
-    },
-    "title": "加入您组织中的团队",
-    "description": "加入您的团队，访问他们的 API，相互协作并邀请新成员加入。",
-    "title_new": "加入团队来自",
     "title_experimental": "加入您的第一个团队从",
     "description_new": "访问 API 资源并立即开始与您的队友协作。",
-    "request_access_button": {
-      "text": "请求访问"
-    },
-    "collaborate_with_people_button": {
-      "text": "与新团队中的人员合作"
-    },
-    "skip_button": {
-      "text": "跳过"
-    },
-    "search_and_filter": {
-      "all_members": "所有成员",
-      "empty_state_message": "未找到成员",
-      "multiple_members": "成员",
-      "one_member": "成员"
-    },
     "members_count": "{count, plural, one {成员} other {成员}}",
-    "request_to_join_modal": {
-      "email_verified_guideline": {
-        "text": "在发送您的请求之前，请先回答团队管理员提出的问题"
-      },
-      "email_verified_note": {
-        "text": "添加备注以帮助团队管理员审核您的请求（可选）"
-      },
-      "once_team_admin_approves_request": "一旦团队管理员批准您的请求，您将自动加入该团队。",
-      "quick_things_todo": {
-        "text": "在发送您的请求之前，只需完成以下两步",
-        "step_1_verify_your_account": {
-          "text": "1. 验证您的帐户。您的收件箱中应该有一封验证电子邮件正在等待您。"
-        },
-        "step_2_answer_question_from_admin": "2. 回答以下来自团队管理员的问题。",
-        "step_2_add_a_note": "2. 添加备注以帮助团队的管理员审核您的请求（可选）"
-      },
-      "body": {
-        "text": "回答团队管理员提出的问题，帮助他们审核您的加入请求。"
-      },
-      "heading_text": "提交您的请求以加入团队",
-      "placeholder": "在此输入您的答案",
-      "cancel_button": {
-        "text": "取消"
-      },
-      "send_request_button": {
-        "text": "提交"
-      },
-      "heading": "请求加入 {teamName}"
-    },
-    "toast_content": {
-      "title": "您加入团队的请求正在审核中",
-      "description": "当您的 请求 获得批准时，我们会通知您。"
-    },
-    "unverified_user_toast": {
-      "title": "验证您的电子邮件",
-      "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"
-    },
-    "add_response": "添加回复",
-    "add_a_note": "添加注释",
-    "validation_message": {
-      "permitted_character_limit": "您超出允许的字符数限制 {charLimit} 个字符",
-      "reached_character_limit": "您已达到字符数限制"
-    },
-    "send_request_button": {
-      "text": "请求加入"
-    },
     "growth": {
-      "handle_request_sending_error": {
-        "title": "出了点问题",
-        "description": "无法将您的请求发送给管理员"
-      },
-      "title": "为您推荐团队",
-      "description": "与您的队友联系并在整个组织内协作开展项目。",
-      "skip_button": {
-        "text": "暂时跳过"
-      },
       "join_button": {
-        "join_text": "加入",
-        "request_text": "申请"
+        "join_text": "加入"
       },
       "show_more_button": {
-        "text": "显示更多",
         "text_experimental": "查看更多团队"
       }
-    },
-    "team_metadata": {
-      "search": "搜索团队名称",
-      "no_teams_found": "未找到团队",
-      "adjust_your_search": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     }
-  },
-  "handle_request_sending_error": {
-    "title": "出了点问题",
-    "description": "无法将您的请求发送给管理员"
-  },
-  "invite_teammates": {
-    "finish": "完成",
-    "send_invite_and_finish": "发送邀请并完成",
-    "input": {
-      "invite_via_link": {
-        "label": "邀请链接"
-      },
-      "invite_via_email": {
-        "label": "电子邮件"
-      },
-      "heading": {
-        "invite_people": "通过以下方式邀请他人"
-      },
-      "invite_link": {
-        "helper_text": "复制邀请链接"
-      }
-    },
-    "errors": {
-      "create_team": {
-        "title": "出了点问题",
-        "description": "无法生成您的邀请链接"
-      },
-      "invite_error": {
-        "title": "仔细检查电子邮件以确保其有效"
-      }
-    },
-    "title": "获取一个可与他人分享的专属链接。他们可以通过点击此链接加入您的团队。",
-    "generating_unique_link": "正在为您生成专属邀请链接...",
-    "collaborate_within_team": "您想在团队中与谁合作？",
-    "bring_people_to_collaborate": "带上您想在 Postman 上合作的人。",
-    "invite_link_button": {
-      "text": "获取邀请链接"
-    },
-    "skip_remind_me_later": {
-      "text": "稍后提醒我"
-    },
-    "skip_create_team_button": {
-      "text": "不创建团队，继续"
-    }
-  },
-  "enable_verification_banner": {
-    "verify_your_account": "请验证您的帐户，以便发送加入新团队的请求。验证邮件已发送至 {userEmail}",
-    "account_verification": {
-      "text": "请完成您的帐户验证。我们已将验证链接发送至 {userEmail}"
-    },
-    "resend_verification_email": {
-      "text": "重新发送验证邮件"
-    },
-    "verification_successful": {
-      "description": "验证邮件已发送"
-    },
-    "resend_verification_email_failed": {
-      "title": "出了点问题",
-      "description": "发送验证电子邮件时发生错误。请再试一次。"
-    }
-  },
-  "create_team_loading_page": {
-    "account_setup": "正在设置您的帐户...",
-    "creating_team": "创建您的团队...",
-    "no_refresh": "请不要关闭或刷新此页面。"
-  },
-  "team_name_errors": {
-    "empty": "团队名称为必填项",
-    "max_length": "团队名称必须少于 45 个字符"
-  },
-  "team_name_warnings": {
-    "approaching_max_length": "剩余 {count} 个字符"
-  },
-  "prompt_errors": {
-    "empty": "请告诉我们您正在做什么",
-    "max_length": "您的消息必须少于 500 个字符"
-  },
-  "prompt_warnings": {
-    "approaching_max_length": "剩余 {count} 个字符"
   },
   "prompt": {
     "title": "最后一步，使用 Postman AI 更进一步。",
@@ -504,10 +245,6 @@
       }
     },
     "info": {
-      "verified_join_team_request": {
-        "title": "您加入团队的请求正在审核中",
-        "description": "当您的 请求 获得批准时，我们会通知您。"
-      },
       "unverified_join_team_request": {
         "title": "验证您的电子邮件",
         "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"

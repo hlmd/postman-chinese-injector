@@ -57,10 +57,23 @@
       "fork_label_with_username": "{userName} 的 fork",
       "fork_label_without_username": "我的 Fork",
       "modal_fork_button": "复刻",
-      "modal_add_dependency_button_with_count": "{count, plural, =0 {添加依赖项} other {添加依赖项 (#)}}"
+      "modal_add_dependency_button_with_count": "{count, plural, =0 {添加依赖项} other {添加依赖项 (#)}}",
+      "error_banner": {
+        "dependency": {
+          "all_failed_title": "无法添加依赖项。",
+          "partial_failed_title": "无法添加以下依赖项。"
+        },
+        "fork": {
+          "all_failed_title": "无法创建 Fork。",
+          "partial_failed_title": "无法创建以下 Fork。"
+        },
+        "try_again": "重试",
+        "more_count": "+{count} 项"
+      }
     },
     "manage": {
       "title_label": "在此 Workspace 中",
+      "delete_button_aria_label": "删除",
       "dependency": {
         "update": {
           "button_label": "更新",
@@ -92,14 +105,6 @@
             "completed_label": "已拉取"
           }
         }
-      }
-    },
-    "toast": {
-      "dependencies": {
-        "add_success_aggregate_title": "{count, plural, one {已添加依赖项} other {已添加依赖项}}",
-        "add_success_aggregate_message": "{count, plural, one {现在有 # 个依赖项可在此 Workspace 中使用。} other {现在有 # 个依赖项可在此 Workspace 中使用。}}",
-        "add_error_aggregate_title": "{count, plural, one {无法添加依赖项} other {无法添加依赖项}}",
-        "add_error_aggregate_message": "{count, plural, one {# 个依赖项无法添加，请查看控制台了解详情。} other {# 个依赖项无法添加，请查看控制台了解详情。}}"
       }
     }
   },

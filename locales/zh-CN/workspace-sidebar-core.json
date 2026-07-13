@@ -148,6 +148,7 @@
       },
       "toolsets": {
         "card_label": "工具集",
+        "ai_card_label": "AI Toolset",
         "info_text": "创建工具集以组织相关的 AI 工具"
       },
       "socketio": {
@@ -229,11 +230,11 @@
       "documentation": {
         "card_label": "文档"
       },
-      "workspace_doc": {
-        "card_label": "文档",
-        "info_text": "创建一个文档来编写指南、注释或 API 文档。",
-        "create_error": "创建文档失败。请再试一次。",
-        "no_permission_text": "您没有权限在此 Workspace 中创建文档。"
+      "document": {
+        "card_label": "Document",
+        "info_text": "创建文档以编写指南、笔记或 API 文档。",
+        "create_error": "文档创建失败，请重试。",
+        "no_permission_text": "你没有权限在此 workspace 中创建文档。"
       },
       "sdk_gen": {
         "card_label": "SDK",
@@ -712,7 +713,7 @@
     "delete_extinsible_collection": "确定要删除此 Collection 吗？",
     "could_not_restore_message": "此 Collection 无法从回收站中恢复。",
     "delete_confirmation_text": "确定要删除 <1>{name}</1> 吗？",
-    "delete_pinned_doc_confirmation": "本文档固定到 Workspace 概述。您确定要删除它吗？",
+    "delete_pinned_doc_confirmation": "此文档已固定到 workspace 概览中。确定要删除吗？",
     "this_cant_be_undone": "此操作无法撤销。",
     "delete_entity_question": "删除 {entity}？",
     "delete_elements_question": "删除元素？",

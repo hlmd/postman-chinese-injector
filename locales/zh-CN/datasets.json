@@ -84,6 +84,8 @@
   },
   "data_view": {
     "run": "运行",
+    "update": "更新",
+    "reset": "重置",
     "query_label": "查询",
     "empty_table": "运行查询以查看数据"
   },
@@ -101,15 +103,19 @@
       "source_deleted": "数据源删除成功",
       "view_deleted": "视图删除成功"
     },
+    "load_error": {
+      "title": "无法加载此数据集",
+      "retry": "重试"
+    },
     "sources": {
       "title": "数据源",
       "subtitle": "此数据集背后的原始数据。",
       "add_source": "添加数据源",
       "add_another": "添加其他数据源",
-      "drop_zone": "拖放或点击以上传 .csv 或 .json 文件",
+      "drop_zone_local": "拖放或点击以上传 .csv 或 .json",
+      "drop_zone_cloud": "拖放或点击以上传 .csv",
       "drop_overlay": "拖放文件以将其添加为数据源",
       "url_placeholder": "https://example.com/data.csv",
-      "open": "打开数据源",
       "kind": {
         "local": "本地文件",
         "cloud": "Postman 云文件",
@@ -122,9 +128,34 @@
       "title": "数据视图",
       "subtitle": "对数据源执行的命名查询。视图定义了特定的数据切片。",
       "create_view": "创建视图",
-      "create_disabled": "要添加视图，请先为此数据集添加数据源",
-      "open": "打开视图"
+      "create_disabled": "要添加视图，请先为此数据集添加数据源"
     }
+  },
+  "delete_source": {
+    "title": "删除数据源",
+    "confirm_prompt": "确定要删除数据源 <strong>{name}</strong> 吗？此操作无法撤销。",
+    "dependent_views_warning": "任何查询此数据源的视图都将停止工作。",
+    "not_found": "未找到数据源“{name}”",
+    "cancel": "取消",
+    "delete": "删除",
+    "deleting": "正在删除..."
+  },
+  "database_source_modal": {
+    "title": {
+      "mysql": "连接 MySQL",
+      "postgres": "连接 Postgres"
+    },
+    "submit": "添加数据源",
+    "cancel": "取消"
+  },
+  "create_view_modal": {
+    "title": "创建视图",
+    "name_label": "视图名称",
+    "name_placeholder": "例如 active_users",
+    "sources_label": "数据源",
+    "sources_placeholder": "选择数据源",
+    "submit": "创建视图",
+    "cancel": "取消"
   },
   "description": {
     "editor_placeholder": "添加描述..."

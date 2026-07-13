@@ -49,6 +49,7 @@
     },
     "row_actions": {
       "view_run_history": "查看运行历史记录",
+      "run_now": "立即运行",
       "edit": "编辑"
     },
     "trigger": {
@@ -169,6 +170,9 @@
     "saving_pending": "正在保存…",
     "toast_success": "自动化已保存",
     "toast_error": "保存自动化失败，请重试。",
+    "toggle_activated": "自动化已启用",
+    "toggle_deactivated": "自动化已停用",
+    "toggle_error": "更新自动化状态失败，请重试。",
     "actions": {
       "save": "保存更改"
     }
@@ -198,6 +202,15 @@
     "filter_result": "结果",
     "action_edit_automation": "编辑自动化",
     "action_view_task": "查看 Agent 任务",
+    "action_copy_id": "复制运行 ID",
+    "copy_id_toast_success": "运行 ID 已复制到剪贴板",
+    "copy_id_toast_error": "无法复制运行 ID",
+    "action_copy_task_id": "复制任务 ID",
+    "copy_task_id_toast_success": "任务 ID 已复制到剪贴板",
+    "copy_task_id_toast_error": "无法复制任务 ID",
+    "action_retry": "重试",
+    "retry_toast_success": "运行已加入重试队列",
+    "retry_toast_error": "重试运行失败，请重试。",
     "header_trigger": "触发器",
     "header_status": "状态",
     "header_started": "开始时间",
@@ -209,6 +222,11 @@
     "refetch_aria_label": "正在刷新运行历史记录",
     "empty_search_title": "未找到运行记录",
     "empty_title": "暂无运行记录。",
-    "refresh_aria_label": "刷新运行历史记录"
+    "refresh_aria_label": "刷新运行历史记录",
+    "run_now_aria_label": "立即运行自动化"
+  },
+  "run_now": {
+    "toast_success": "运行已成功加入队列",
+    "toast_error": "触发运行失败，请重试。"
   }
 }

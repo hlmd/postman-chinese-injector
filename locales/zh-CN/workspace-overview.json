@@ -204,19 +204,19 @@
         }
       }
     },
-    "pinned_doc": {
-      "pin_button": "将文档固定到概述",
-      "add_readme_button": "添加自述文件",
+    "pinned_document": {
+      "pin_button": "将文档固定到概览",
+      "add_readme_button": "添加 README",
       "select_placeholder": "选择要固定的文档",
-      "empty_msg": "此 Workspace 中还没有文档。",
+      "empty_msg": "此 workspace 中暂无文档。",
       "toast": {
         "pin_error": {
           "title": "无法固定文档",
-          "description": "只是一根电线有问题。再试一次。"
+          "description": "只是线路出了点小问题，请重试。"
         },
         "create_error": {
-          "title": "无法添加自述文件",
-          "description": "只是一根电线有问题。再试一次。"
+          "title": "无法添加 README",
+          "description": "只是线路出了点小问题，请重试。"
         }
       }
     },
@@ -858,15 +858,15 @@
         "public": "is requesting to make this a public workspace."
       }
     },
-    "pinned_doc": {
-      "heading": "工作区 概述",
-      "description": "选择要固定在概述上的文档。",
-      "select_placeholder": "选择一个文档",
-      "empty_state": "此 Workspace 中还没有文档。",
+    "pinned_document": {
+      "heading": "Workspace 概览",
+      "description": "选择要固定到概览的文档。",
+      "select_placeholder": "选择文档",
+      "empty_state": "此 workspace 中暂无文档。",
       "toast": {
         "error": {
-          "title": "无法更新固定文档",
-          "description": "更新固定文档时出现问题。再试一次。"
+          "title": "无法更新固定的文档",
+          "description": "更新固定文档时出错，请重试。"
         }
       }
     },

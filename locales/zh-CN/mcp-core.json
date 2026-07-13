@@ -157,6 +157,7 @@
         "authorization_server_metadata_unavailable": "无法获取 授权 服务器元数据",
         "authorization_server_metadata_not_json": "授权 服务器元数据 响应 不是 JSON 对象",
         "metadata_required": "在解析客户端凭据之前完成 OAuth 元数据发现",
+        "dynamic_client_registration_invalid": "请先填写动态客户端注册表单，然后再注册客户端",
         "dynamic_client_registration_http_failed": "动态客户端注册失败，出现 HTTP {status}",
         "dynamic_client_registration_not_json": "动态客户端注册 响应 不是 JSON 对象",
         "dynamic_client_registration_unsupported": "授权服务器不支持动态注册；请手动配置客户端 ID",
@@ -168,6 +169,31 @@
         "authorization_required": "在获取访问令牌之前完成授权",
         "oauth_token_required": "连接 MCP 服务器之前保存 OAuth 令牌",
         "step_cancelled": "认证 测试步骤已取消"
+      },
+      "registration_form": {
+        "title": "客户端注册请求",
+        "comma_or_line_separated": "以逗号或换行分隔的值",
+        "advanced_options": "高级选项",
+        "client_name": {
+          "label": "客户端名称",
+          "required": "请输入客户端名称"
+        },
+        "grant_types": {
+          "label": "授权类型",
+          "required": "请至少输入一种授权类型"
+        },
+        "response_types": {
+          "label": "响应类型",
+          "required": "请至少输入一种响应类型"
+        },
+        "token_endpoint_auth_method": {
+          "label": "Token 端点身份验证方法"
+        },
+        "scope": {
+          "label": "Scope",
+          "helper": "客户端可请求的 scope 列表，以空格分隔",
+          "options_label": "支持的 scope"
+        }
       },
       "steps": {
         "request_without_token": {

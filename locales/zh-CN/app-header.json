@@ -90,6 +90,10 @@
     "no_results_found": {
       "heading": "未找到工作区",
       "description": "检查您的拼写或尝试不同的搜索词。"
+    },
+    "switcher_no_workspaces": {
+      "heading": "暂无 Workspace",
+      "description": "你还没有访问过任何 Workspace。浏览以查找，或创建你自己的 Workspace。"
     }
   },
   "favorite_workspace_toggle": {

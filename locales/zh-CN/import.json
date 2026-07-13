@@ -117,7 +117,7 @@
     }
   },
   "container": {
-    "text_area_placeholder": "粘贴 cURL、gRPCurl、原始文本或 URL...",
+    "text_area_placeholder": "粘贴 cURL、gRPCurl、原始文本或 URL",
     "view_import_settings": "查看导入设置",
     "import_button_label": "导入",
     "import_button_tooltip": "选择要导入的文件",

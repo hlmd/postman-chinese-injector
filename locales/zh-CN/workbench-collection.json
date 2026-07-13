@@ -200,7 +200,7 @@
                 "source": {
                   "tooltip": "运行的发起来源",
                   "header": "来源",
-                  "pipeline_meta_cell": "Build {id}"
+                  "pipeline_meta_cell": "构建 {id}"
                 },
                 "duration": {
                   "tooltip": "完成本次运行所用的时间",

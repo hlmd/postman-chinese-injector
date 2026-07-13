@@ -252,7 +252,7 @@
     }
   },
   "workspace_list_item": {
-    "aria_label": "{workspaceName} workspace",
+    "aria_label": "{workspaceName} Workspace",
     "aria_label_disabled": "{workspaceName} Workspace（禁用：{disabledReason}）"
   },
   "pending_requests_empty": {
@@ -1215,35 +1215,35 @@
       "toast_message": "尝试复制链接时发生一些错误！"
     },
     "entity_name_map": {
-      "workspace": "workspace",
-      "collection": "collection",
-      "folder": "folder",
-      "request": "request",
+      "workspace": "Workspace",
+      "collection": "Collection",
+      "folder": "文件夹",
+      "request": "请求",
       "api": "API",
-      "apiVersion": "version",
-      "environment": "environment",
+      "apiVersion": "版本",
+      "environment": "Environment",
       "mock": "Mock Server",
-      "monitor": "monitor",
+      "monitor": "Monitor",
       "documentation": "文档",
       "apiDefinition": "API 定义",
       "example": "示例",
       "history": "历史 请求",
       "globals": "全局变量",
-      "pullRequest": "pull request",
+      "pullRequest": "Pull Request",
       "run": "运行总结",
-      "flow": "flow",
+      "flow": "Flow",
       "file": "文件",
       "schedule": "日程",
       "performanceRun": "报告",
       "insights": "见解"
     },
     "private_network_entity_name_map": {
-      "privateNetworkWorkspace": "workspace",
+      "privateNetworkWorkspace": "Workspace",
       "privateNetworkAPI": "API",
       "privateNetworkAPIDefinition": "定义",
       "privateNetworkAPIFile": "文件",
-      "privateNetworkCollection": "collection",
-      "privateNetworkFolder": "folder"
+      "privateNetworkCollection": "Collection",
+      "privateNetworkFolder": "文件夹"
     }
   },
   "fork_label": {
@@ -1384,9 +1384,9 @@
           "updates": "留意更新"
         }
       },
-      "display_name": "pull request"
+      "display_name": "Pull Request"
     },
-    "collection": "collection",
+    "collection": "Collection",
     "extensibleCollection": "可扩展 Collection",
     "api": "API",
     "workspace": "Workspace"

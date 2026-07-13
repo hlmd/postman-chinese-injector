@@ -119,8 +119,7 @@
       },
       "action_buttons": {
         "save": "保存",
-        "cancel": "取消",
-        "switch_to_postman_editor": "切换到 Postman 编辑器"
+        "cancel": "取消"
       }
     },
     "editor_options": {

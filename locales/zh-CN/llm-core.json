@@ -83,13 +83,11 @@
       "parts": {
         "description": "描述",
         "input_schema": "参数",
-        "output_schema": "输出模式",
         "implementation": "实现"
       },
       "part_descriptions": {
         "description": "替换面向模型的描述",
         "input_schema": "替换输入模式",
-        "output_schema": "替换声明的结果结构",
         "implementation": "运行本地工具，而非 MCP 调用"
       },
       "diff_original": "MCP 原始内容",
