@@ -147,103 +147,103 @@
   },
   "workspace_list_empty_states": {
     "no_workspaces_found": {
-      "heading": "未找到 Workspace",
+      "heading": "未找到工作区",
       "description": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     },
     "no_personal_workspaces": {
-      "heading": "没有 个人 Workspace",
-      "description": "个人 Workspace 可让您独立处理 API。其他人无法访问它。",
+      "heading": "没有 个人工作区",
+      "description": "个人工作区可让您独立处理 API。其他人无法访问它。",
       "learn_more_button": "了解更多"
     },
     "no_private_workspaces": {
-      "heading": "没有 私有 Workspace",
-      "description": "私有 Workspace 仅对受邀的 团队 成员可见。",
+      "heading": "没有 私有工作区",
+      "description": "私有工作区仅对受邀的 团队 成员可见。",
       "learn_more_button": "了解更多"
     },
     "private_workspace_plan_missing": {
-      "heading": "升级以创建 私有 Workspace",
-      "description": "私有 Workspace 仅对受邀的 团队 成员可见。适用于 {enterprisePlanName} 计划。",
+      "heading": "升级以创建 私有工作区",
+      "description": "私有工作区仅对受邀的 团队 成员可见。适用于 {enterprisePlanName} 计划。",
       "upgrade_button": "升级计划",
       "learn_more_button": "了解更多"
     },
     "private_workspaces_search_empty": {
-      "title": "找不到 私有 Workspace",
+      "title": "找不到 私有工作区",
       "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     },
     "partner_workspaces_plan_missing": {
-      "title": "升级以创建合作伙伴 Workspace",
-      "subtitle": "合作伙伴 Workspace 仅对受邀的 团队 成员和合作伙伴可见。适用于 {enterprisePlanName} 计划。",
+      "title": "升级以创建合作伙伴工作区",
+      "subtitle": "合作伙伴工作区仅对受邀的 团队 成员和合作伙伴可见。适用于 {enterprisePlanName} 计划。",
       "learn_more": {
         "text": "了解更多"
       },
       "action_text": "升级计划"
     },
     "partner_workspaces_empty": {
-      "title": "没有合作伙伴 Workspace",
-      "subtitle": "合作伙伴 Workspace 仅对受邀的 团队 成员和合作伙伴可见。",
+      "title": "没有合作伙伴工作区",
+      "subtitle": "合作伙伴工作区仅对受邀的 团队 成员和合作伙伴可见。",
       "learn_more_text": "了解更多"
     },
     "partner_workspaces_search_empty": {
-      "title": "未找到合作伙伴 Workspace",
+      "title": "未找到合作伙伴工作区",
       "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     },
     "public_workspaces_empty": {
-      "title": "没有 公开 Workspace",
-      "subtitle": "公开 API 网络上的每个人都可以看到 公开 Workspace 来探索并开始协作。",
+      "title": "没有 公开工作区",
+      "subtitle": "公开 API 网络上的每个人都可以看到 公开工作区来探索并开始协作。",
       "learn_more_text": "了解更多"
     },
     "public_workspaces_search_empty": {
-      "title": "找不到 公开 Workspace",
+      "title": "找不到 公开工作区",
       "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     },
     "personal_workspaces_search_empty": {
-      "title": "找不到 个人 Workspace",
+      "title": "找不到 个人工作区",
       "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。",
       "learn_more_text": "了解更多"
     },
     "personal_workspaces_empty_for_you": {
-      "title": "您没有任何 个人 Workspace",
-      "subtitle": "个人 Workspace 可让您独立处理 API。",
+      "title": "您没有任何 个人工作区",
+      "subtitle": "个人工作区可让您独立处理 API。",
       "learn_more_text": "了解更多"
     },
     "personal_workspaces_empty_for_others": {
-      "title": "没有 个人 Workspace",
-      "subtitle": "所选用户没有任何 个人 Workspace。调整您的过滤器设置。"
+      "title": "没有 个人工作区",
+      "subtitle": "所选用户没有任何 个人工作区。调整您的过滤器设置。"
     },
     "personal_workspaces_empty_no_access": {
       "title": "您无权访问",
-      "subtitle": "您只能访问您自己的 个人 Workspace。"
+      "subtitle": "您只能访问您自己的 个人工作区。"
     },
     "team_workspaces_empty": {
-      "title": "没有 团队 Workspace",
-      "subtitle": "团队 Workspace 可让您与 团队 实时协作处理 API。",
+      "title": "没有 团队工作区",
+      "subtitle": "团队工作区可让您与 团队 实时协作处理 API。",
       "learn_more_text": "了解更多"
     },
     "team_workspaces_search_empty": {
-      "title": "找不到 团队 Workspace",
+      "title": "找不到 团队工作区",
       "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
     },
     "all_workspaces_empty": {
-      "title": "没有 Workspace",
-      "subtitle": "Workspace 可让您组织 API 并进行协作。了解有关 Workspace 的更多信息",
-      "action_text": "创建 Workspace",
+      "title": "没有工作区",
+      "subtitle": "Workspace 可让您组织 API 并进行协作。了解有关工作区的更多信息",
+      "action_text": "创建工作区",
       "learn_more_text": "了解更多"
     },
     "initial_fetch_error": {
-      "title": "无法加载 Workspace",
+      "title": "无法加载工作区",
       "subtitle": "只是一根电线有问题。尝试重新加载。",
       "action_text": "重新加载",
       "learn_more_text": "了解更多"
     },
     "next_fetch_error": {
-      "title": "无法加载更多 Workspace",
+      "title": "无法加载更多工作区",
       "subtitle": "只是一根电线有问题。尝试重新加载。",
       "action_text": "重新加载",
       "learn_more_text": "了解更多"
     },
     "personal_workspaces_empty_no_access_with_reset_filters": {
       "title": "您无权访问",
-      "subtitle": "您只能查看您创建的 个人 Workspace。",
+      "subtitle": "您只能查看您创建的 个人工作区。",
       "action_text": "重置过滤器"
     },
     "shared_partner_workspace_empty": {
@@ -252,25 +252,25 @@
     }
   },
   "workspace_list_item": {
-    "aria_label": "{workspaceName} Workspace",
-    "aria_label_disabled": "{workspaceName} Workspace（禁用：{disabledReason}）"
+    "aria_label": "{workspaceName}工作区",
+    "aria_label_disabled": "{workspaceName}工作区（禁用：{disabledReason}）"
   },
   "pending_requests_empty": {
     "title": "没有待审核的请求",
-    "subtitle": "当队友想要与更广泛的受众分享他们的 Workspace 时，可以在此处查看他们的请求。"
+    "subtitle": "当队友想要与更广泛的受众分享他们的工作区时，可以在此处查看他们的请求。"
   },
   "try_again_message": "只是一根电线有问题。请再试一次。",
   "no_team_found_message": {
     "title": "API 尚未共享",
-    "description": "将此 API 共享给 团队 Workspace 以管理角色"
+    "description": "将此 API 共享给 团队工作区以管理角色"
   },
   "request_access_message": {
     "title": "您似乎无权访问",
     "button_label": "请求 访问"
   },
   "create_new_workspace": {
-    "unable_to_create": "无法创建 Workspace",
-    "workspace_already_exists": "<0>Workspace <1>{workspaceName}</1> 已经存在。</0>"
+    "unable_to_create": "无法创建工作区",
+    "workspace_already_exists": "<0>工作区 <1>{workspaceName}</1> 已经存在。</0>"
   },
   "move_entity": {
     "heading": "移动{entity}",
@@ -293,18 +293,18 @@
     },
     "editor_access_required": "获得 编辑者 访问权限以移动此 {entity}",
     "info_text": {
-      "collection": "此 Collection 的 Monitor 将暂停并停留在当前 Workspace 中。预定的运行将作为 Collection 的一部分移动并继续运行。",
-      "collection_reusable": "此 Collection 的 Monitor 将暂停并停留在当前 Workspace 中。预定的运行将作为 Collection 的一部分移动并继续运行。链接请求将不再遵循原始请求的更新。",
-      "collection_with_pinning": "关联的 Monitor 将暂停并停留在当前的 Workspace 中。预定的运行将随 Collection 移动并照常运行。任何固定的 Environment 都不会移动。",
-      "collection_with_pinning_reusable": "关联的 Monitor 将暂停并停留在当前的 Workspace 中。预定的运行将随 Collection 移动并照常运行。任何固定的 Environment 都不会移动。链接请求将不再遵循原始请求的更新。",
-      "api": "此 API 的 Collection 和 Environment 将随此 API 移动到目的地 Workspace。",
-      "environment": "Monitor、计划的 Collection 运行、Mock Server 和使用此 Environment 的集成可能不再工作。",
-      "environment_with_pinning": "Monitor、计划的 Collection 运行、Mock Server 以及使用此 Environment 的集成可能不再工作。此外，此 Environment 将从当前固定的所有 Collection 中删除。",
-      "extensible_collection": "选择要将 Collection 移动到的位置的 Workspace。"
+      "collection": "此集合的监视器将暂停并停留在当前工作区中。预定的运行将作为集合的一部分移动并继续运行。",
+      "collection_reusable": "此集合的监视器将暂停并停留在当前工作区中。预定的运行将作为集合的一部分移动并继续运行。链接请求将不再遵循原始请求的更新。",
+      "collection_with_pinning": "关联的监视器将暂停并停留在当前的工作区中。预定的运行将随集合移动并照常运行。任何固定的环境都不会移动。",
+      "collection_with_pinning_reusable": "关联的监视器将暂停并停留在当前的工作区中。预定的运行将随集合移动并照常运行。任何固定的环境都不会移动。链接请求将不再遵循原始请求的更新。",
+      "api": "此 API 的集合和环境将随此 API 移动到目的地工作区。",
+      "environment": "监视器、计划的集合运行、Mock Server 和使用此环境的集成可能不再工作。",
+      "environment_with_pinning": "监视器、计划的集合运行、Mock Server 以及使用此环境的集成可能不再工作。此外，此环境将从当前固定的所有集合中删除。",
+      "extensible_collection": "选择要将集合移动到的位置的工作区。"
     },
-    "search_workspaces": "搜索 Workspace",
-    "workspace_list_label": "选择 Workspace",
-    "loading_workspaces": "加载 Workspace",
+    "search_workspaces": "搜索工作区",
+    "workspace_list_label": "选择工作区",
+    "loading_workspaces": "加载工作区",
     "workspace_visibility_filter": {
       "options": {
         "all": "全部",
@@ -316,76 +316,76 @@
       },
       "filter_by_visibility": "按可见性过滤"
     },
-    "cannot_move_to_workspace": "您没有 权限 将 {entity} 移动到此 Workspace。"
+    "cannot_move_to_workspace": "您没有 权限 将 {entity} 移动到此工作区。"
   },
   "workspace_list": {
-    "loading_more_workspaces": "正在加载更多 Workspace..."
+    "loading_more_workspaces": "正在加载更多工作区..."
   },
   "export_collection": {
-    "heading": "导出 Collection",
+    "heading": "导出集合",
     "export_button": "出口",
     "cancel_button": "取消",
     "error_loading": "加载错误",
-    "learn_more_about_collection_formats": "<0>{name}</0> 将导出为 JSON 文件。了解有关<2><0>Collection 格式</0></2>的更多信息",
+    "learn_more_about_collection_formats": "<0>{name}</0> 将导出为 JSON 文件。了解有关<2><0>集合格式</0></2>的更多信息",
     "export_as": {
       "label": "导出为：",
-      "collection_v2": "Collection v2",
-      "collection_v21": "Collection v2.1"
+      "collection_v2": "集合 v2",
+      "collection_v21": "集合 v2.1"
     },
     "share_collection_recommendation": {
       "learn_more": "了解更多",
-      "share_collection": "分享 Collection",
-      "save_time_by_sharing": "将您的 Collection 发送给 <1>队友</1>？<3 /> 通过<5>分享</5>来节省时间。"
+      "share_collection": "分享集合",
+      "save_time_by_sharing": "将您的集合发送给 <1>队友</1>？<3 /> 通过<5>分享</5>来节省时间。"
     }
   },
   "manage_roles": {
     "heading": "管理 {name} 上的角色",
     "offline_message": "如果您想管理角色，请确保您在线",
     "role_permission_denied": {
-      "collection": "获取 编辑者 访问权限以管理此 Collection 上的角色。",
-      "environment": "获取 编辑者 访问权限以管理此 Environment 上的角色。",
-      "monitor": "获取 编辑者 访问权限以管理此 Monitor 上的角色。",
+      "collection": "获取 编辑者 访问权限以管理此集合上的角色。",
+      "environment": "获取 编辑者 访问权限以管理此环境上的角色。",
+      "monitor": "获取 编辑者 访问权限以管理此监视器上的角色。",
       "api": "获取 编辑者 访问权限以管理此 API 上的角色。",
       "mock": "您无权在此 Mock Server 上编辑和管理角色。",
       "flow": "您无权编辑和管理此 Flow 上的角色。"
     },
     "fetch_roles_fail": {
-      "collection": "为此 Collection 获取角色时出现问题",
-      "environment": "为此 Environment 获取角色时出现问题",
-      "monitor": "为此 Monitor 获取角色时出现问题",
+      "collection": "为此集合获取角色时出现问题",
+      "environment": "为此环境获取角色时出现问题",
+      "monitor": "为此监视器获取角色时出现问题",
       "api": "为此 API 获取角色时出现问题",
       "mock": "为该 Mock Server 获取角色时出现问题",
       "flow": "为此 Flow 获取角色时出现问题"
     },
     "update_roles_failed": {
-      "collection": "更新此 Collection 的角色时出现问题",
-      "environment": "更新此 Environment 的角色时出现问题",
-      "monitor": "更新此 Monitor 的角色时出现问题",
+      "collection": "更新此集合的角色时出现问题",
+      "environment": "更新此环境的角色时出现问题",
+      "monitor": "更新此监视器的角色时出现问题",
       "api": "更新此 API 的角色时出现问题",
       "mock": "更新此 Mock Server 的角色时出现问题",
       "flow": "更新此 Flow 的角色时出现问题",
       "title": "无法更新 角色"
     },
     "not_shared": {
-      "collection": "要让其他人访问它，请将 Collection 移动到 团队、私有 或 公开 Workspace。",
-      "environment": "要让其他人访问它，请将 Environment 移动到 团队、私有 或 公开 Workspace。",
-      "monitor": "此 Monitor 位于您的 个人 Workspace 中，只有您可以访问。",
-      "api": "要让其他人访问它，请将 API 移动到 团队、私有 或 公开 Workspace。",
-      "mock": "此 Mock Server 位于您的 个人 Workspace 中，只有您可以访问。",
-      "flow": "此 Flow 位于您的 个人 Workspace 中，只有您可以访问。"
+      "collection": "要让其他人访问它，请将集合移动到 团队、私有 或 公开工作区。",
+      "environment": "要让其他人访问它，请将环境移动到 团队、私有 或 公开工作区。",
+      "monitor": "此监视器位于您的 个人工作区中，只有您可以访问。",
+      "api": "要让其他人访问它，请将 API 移动到 团队、私有 或 公开工作区。",
+      "mock": "此 Mock Server 位于您的 个人工作区中，只有您可以访问。",
+      "flow": "此 Flow 位于您的 个人工作区中，只有您可以访问。"
     },
     "not_shared_title": {
-      "collection": "只有您有权访问此 Collection",
-      "environment": "只有您有权访问此 Environment",
-      "monitor": "只有您有权访问此 Monitor",
+      "collection": "只有您有权访问此集合",
+      "environment": "只有您有权访问此环境",
+      "monitor": "只有您有权访问此监视器",
       "api": "只有您有权访问此 API",
       "mock": "只有您有权访问此 Mock Server",
       "flow": "只有您有权访问此 Flow"
     },
     "share_label": {
-      "collection": "Collection",
-      "environment": "Environment",
-      "monitor": "Monitor",
+      "collection": "集合",
+      "environment": "环境",
+      "monitor": "监视器",
       "api": "API",
       "flow": "Flow"
     },
@@ -402,8 +402,8 @@
     "guest_role_upgrade_description": "团队 管理员正在审查从 访客 到开发人员的 角色 变更。",
     "team_admins_will_review_request": "对于 访客 角色 更改，团队 管理员将审核您的 请求。",
     "move_entity": "移动{entity}",
-    "view_roles_caption": "人们将从关联的 API 和 Workspace 继承此 {entity} 上的角色。 <4><0>查看角色</0></4>",
-    "view_workspace_roles_caption": "人们将从 Workspace 继承此 {entity} 上的角色。 <4><0>查看 Workspace 角色</0></4>",
+    "view_roles_caption": "人们将从关联的 API 和工作区继承此 {entity} 上的角色。 <4><0>查看角色</0></4>",
+    "view_workspace_roles_caption": "人们将从工作区继承此 {entity} 上的角色。 <4><0>查看工作区角色</0></4>",
     "disable_role_tooltip": "您只能在此 {entity} 上为用户分配 {enabledRolesString} 角色。您的计划不包括访问管理。",
     "cancel_button": "取消",
     "update_roles_button": "更新角色",
@@ -416,25 +416,25 @@
     "manage_roles_title": "管理角色",
     "name_email_or_group": "姓名、电子邮件或群组名称",
     "no_results_found": "没有找到结果",
-    "only_developers_can_edit_collections": "只有 <1><0>Developers</0></1> 可以编辑 Collection。转换后，他们将可以访问所有 团队 Workspace。 团队 管理员将审查此更改。",
+    "only_developers_can_edit_collections": "只有 <1><0>Developers</0></1> 可以编辑集合。转换后，他们将可以访问所有 团队工作区。 团队 管理员将审查此更改。",
     "currently_exists_in": "目前存在于",
     "view_plans_info": "团队 上的每个人都可以查看并更改此资源。要管理对资源的访问，请升级到 {teamPlanName} 或 {enterprisePlanName} 计划。 <0>查看计划.</0>",
     "guests_will_be_converted_to_developer": "访客 将在您的 团队 中转换为开发人员",
     "pull_request_settings": {
       "failed_to_load": "无法加载 拉取请求 设置。请再试一次。",
-      "select_who_can_merge": "选择谁可以在此 Collection 上合并拉取请求",
-      "only_collection_editors": "仅 Collection 编辑者",
+      "select_who_can_merge": "选择谁可以在此集合上合并拉取请求",
+      "only_collection_editors": "仅集合编辑者",
       "select_teammates": "选择队友",
-      "select_users_hint": "默认情况下，所有目标 Collection 编辑者都能够合并。",
+      "select_users_hint": "默认情况下，所有目标集合编辑者都能够合并。",
       "set_merge_checks": "设置 合并 条件",
-      "pull_request_merge_options": "当满足以下条件时，可以合并此 Collection 上的拉取请求：",
+      "pull_request_merge_options": "当满足以下条件时，可以合并此集合上的拉取请求：",
       "upgrade_plan_message": "此功能不包含在您当前的计划中。考虑升级到付费计划来访问它。"
     },
     "roles_list": {
       "info_text": {
         "api": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自关联的 API。",
-        "workspace": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自 Workspace。",
-        "workspace_or_group": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自 Workspace 或用户组。"
+        "workspace": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自工作区。",
+        "workspace_or_group": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自工作区或用户组。"
       },
       "role_item_subtitle_member": "{members, plural, one {# 成员} other {# 成员}}",
       "role_item_subtitle_team": "{members, plural, one {# 团队 成员} other {# 团队 成员}}",
@@ -443,7 +443,7 @@
       "view_group": "查看组",
       "remove": "消除",
       "permission_required": "您没有 权限 来执行此操作",
-      "guest_can_view_shared_collections": "访客只能查看与他们共享的 Collection。",
+      "guest_can_view_shared_collections": "访客只能查看与他们共享的集合。",
       "guest": "访客"
     }
   },
@@ -451,7 +451,7 @@
     "target_description_default": "<0>授权 {authTargetType, select, data {data} header {header} other {}} 会在发送 请求 时自动生成。了解有关 </0><1><0><0>授权</0></0></1> 的更多信息",
     "target_description_default_learning_center": "<0>授权 {authTargetType, select, data {data} header {header} other {}} 会在发送 请求 时自动生成。了解有关 </0><1><0>授权</0><1>.</1></1> 的更多信息",
     "target_description_learning_center": "<0>授权 {authTargetType, select, data {data} header {header} other {}} 会在发送 请求 时自动生成。了解有关 </0><1><0>{authType}</0><1> 授权</1></1> 的更多信息",
-    "target_description_reusable": "<0>此请求已关联。它使用</0><1>授权</1><2>设置和变量，来自当前 Collection 或 Environment，并在发送请求时自动生成请求头。</2>",
+    "target_description_reusable": "<0>此请求已关联。它使用</0><1>授权</1><2>设置和变量，来自当前集合或环境，并在发送请求时自动生成请求头。</2>",
     "add_authorization_to_label_full": "将 授权 数据添加到",
     "add_authorization_to_label_short": "将验证数据添加到",
     "learn_more": "了解更多关于",
@@ -465,7 +465,7 @@
     "inherited_auth": {
       "inherited_desc": "<0>此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {}} 正在使用来自 {entity, select, collection {Collection} folder {文件夹} other {}} </0><1><0>{entityName}</0></1><2>中的 {authType}。</2>",
       "inherited_desc_long_entity_name": "<0>此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {}} 正在使用来自 {entity, select, collection {Collection} folder {文件夹} other {}} </0><1><0>{entityName}</0></1> 中的 {authType}",
-      "not_inherited_desc": "此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {}} 目前未继承任何 授权 辅助函数。将其保存在 Collection 中以使用父级的 授权 助手。",
+      "not_inherited_desc": "此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {}} 目前未继承任何 授权 辅助函数。将其保存在集合中以使用父级的 授权 助手。",
       "edit_button": "编辑 {entityType, select, collection {Collection} folder {文件夹} other {{entityType}}} 中的授权"
     },
     "no_auth": {
@@ -880,19 +880,19 @@
     "auth_types": {
       "inherit": "从父级继承身份验证",
       "no_auth": "无身份验证",
-      "basic_auth": "基本认证",
+      "basic_auth": "Basic Auth",
       "bearer_auth": "Bearer Token",
       "jwt_auth": "JWT Bearer",
-      "digest_auth": "摘要认证",
+      "digest_auth": "Digest Auth",
       "oauth1": "OAuth 1.0",
       "oauth2": "OAuth 2.0",
-      "hawk": "Hawk 认证",
-      "aws": "AWS 签名",
-      "ntlm_auth": "NTLM认证",
-      "apikey": "API 密钥",
+      "hawk": "Hawk Authentication",
+      "aws": "AWS Signature",
+      "ntlm_auth": "NTLM Authentication",
+      "apikey": "API Key",
       "akamai_edgegrid": "Akamai EdgeGrid",
       "asap": "ASAP（Atlassian）",
-      "azure": "Azure 签名"
+      "azure": "Azure Key Vault"
     },
     "add_auth_params_to": {
       "url": "请求 URL",
@@ -1022,7 +1022,7 @@
           "deleting": "正在删除",
           "delete": "删除"
         },
-        "confirmation": "您确定要从此 Workspace 中删除此标头预设吗？",
+        "confirmation": "您确定要从此工作区中删除此标头预设吗？",
         "error": "无法删除此标题预设"
       }
     },
@@ -1044,7 +1044,7 @@
     "domains": "例如https://api.getpostman.com，https://*.postman.com",
     "domains_tooltip": "秘密仅在提到的域中有效。使用 '*.example.com 允许所有子域。",
     "value": "值",
-    "value_tooltip": "当您在 Collection、Environment 或全局变量中共享变量时，初始值将与 团队 共享。",
+    "value_tooltip": "当您在集合、环境 或全局变量中共享变量时，初始值将与 团队 共享。",
     "value_tooltip_with_lc": "点击了解更多",
     "initial_value": "初始值",
     "value_hidden": "值已隐藏",
@@ -1111,7 +1111,7 @@
     "default": "默认",
     "secret": "私密",
     "feedback_modal": {
-      "modal_heading": "对 Collection 中的类型提供反馈",
+      "modal_heading": "对集合中的类型提供反馈",
       "fill_feedback": "请填写反馈信息。",
       "followup_consent": "我希望 Postman 联系我进行后续跟进",
       "followup_label": "请求跟进",
@@ -1150,14 +1150,14 @@
   },
   "ec_collection_run": {
     "tooltip": {
-      "no_permission": "您没有权限运行此 Collection。",
-      "is_offline": "当您重新上线后，即可运行此 Collection。"
+      "no_permission": "您没有权限运行此集合。",
+      "is_offline": "当您重新上线后，即可运行此集合。"
     }
   },
   "rfa_guest_button": {
     "tooltip": {
-      "comment": "Collection 编辑正在审核您的请求，以获得额外访问权限。",
-      "edit_request": "Collection 编辑正在审核您的编辑请求。",
+      "comment": "集合编辑正在审核您的请求，以获得额外访问权限。",
+      "edit_request": "集合编辑正在审核您的编辑请求。",
       "text": "请求 正在审核中",
       "readonly_user_message": "您无权执行此操作。"
     },
@@ -1179,7 +1179,7 @@
       "acknowledge_action": "知道了",
       "text": {
         "request_pending": "您的 请求 正在由 {model} 编辑审核。一旦他们回复，您就会收到通知。",
-        "request_role": "您需要请求更改角色，才能对此 Collection 执行更多操作。"
+        "request_role": "您需要请求更改角色，才能对此集合执行更多操作。"
       }
     },
     "error": {
@@ -1188,7 +1188,7 @@
   },
   "entity_tab_header": {
     "breadcrumb": {
-      "update_icon_tooltip": "更新 Collection",
+      "update_icon_tooltip": "更新集合",
       "error_message": "无法重命名 {entity}。再试一次。"
     }
   },
@@ -1203,10 +1203,10 @@
     "error_message": "发生一些错误",
     "tooltip": {
       "success": "链接已复制！",
-      "success_environment": "已使用活动 Environment 复制链接！",
+      "success_environment": "已使用活动环境复制链接！",
       "copy_link": "将链接复制到 {entityName}",
-      "invite_to_WS_warning": "除非您邀请他们，否则没有人可以使用此链接访问您的个人 Workspace。",
-      "invite_warning": "没有人可以使用此链接访问您个人 Workspace 中的 {entityName}，除非您邀请他们。"
+      "invite_to_WS_warning": "除非您邀请他们，否则没有人可以使用此链接访问您的个人工作区。",
+      "invite_warning": "没有人可以使用此链接访问您个人工作区中的 {entityName}，除非您邀请他们。"
     },
     "popover": {
       "primary_button_text": "邀请成员"
@@ -1215,15 +1215,15 @@
       "toast_message": "尝试复制链接时发生一些错误！"
     },
     "entity_name_map": {
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "collection": "Collection",
       "folder": "文件夹",
       "request": "请求",
       "api": "API",
       "apiVersion": "版本",
-      "environment": "Environment",
+      "environment": "环境",
       "mock": "Mock Server",
-      "monitor": "Monitor",
+      "monitor": "监视器",
       "documentation": "文档",
       "apiDefinition": "API 定义",
       "example": "示例",
@@ -1238,7 +1238,7 @@
       "insights": "见解"
     },
     "private_network_entity_name_map": {
-      "privateNetworkWorkspace": "Workspace",
+      "privateNetworkWorkspace": "工作区",
       "privateNetworkAPI": "API",
       "privateNetworkAPIDefinition": "定义",
       "privateNetworkAPIFile": "文件",
@@ -1308,7 +1308,7 @@
     },
     "description": {
       "req_pending": "获得批准后，您可以添加评论并与团队成员协作。",
-      "default": "请求对此 Collection 的额外访问权限，以便添加和回复评论。"
+      "default": "请求对此集合的额外访问权限，以便添加和回复评论。"
     },
     "button": "请求 访问",
     "toast_error": "无法创建 请求 来发表评论"
@@ -1339,13 +1339,13 @@
       "save": "保存",
       "save_as": "另存为...",
       "save_tooltip": "保存{itemTitle}",
-      "save_as_tooltip": "将 {itemTitle} 保存到 Collection",
+      "save_as_tooltip": "将 {itemTitle} 保存到集合",
       "saving": "正在保存..."
     },
     "share_button": {
       "label": "分享",
       "tooltips": {
-        "no_edit_permission": "仅可以共享保存在 Collection 中的请求。您需要编辑权限才能保存请求。",
+        "no_edit_permission": "仅可以共享保存在集合中的请求。您需要编辑权限才能保存请求。",
         "share_request": "分享 请求"
       }
     }
@@ -1387,9 +1387,9 @@
       "display_name": "Pull Request"
     },
     "collection": "Collection",
-    "extensibleCollection": "可扩展 Collection",
+    "extensibleCollection": "可扩展集合",
     "api": "API",
-    "workspace": "Workspace"
+    "workspace": "工作区"
   },
   "multi_select_entity": {
     "all": "全部{type}"
