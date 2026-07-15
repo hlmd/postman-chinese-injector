@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 先看 README 常见问题
+    url: https://github.com/hlmd/postman-chinese-injector/blob/main/README.md#常见问题
+    about: macOS 报错、界面仍是英文、自动更新后变回英文等，多数已有解法
+  - name: 💬 QQ 交流群
+    url: https://github.com/hlmd/postman-chinese-injector/blob/main/README.md#交流--反馈
+    about: 群号 494969115（也可直接提 Issue）

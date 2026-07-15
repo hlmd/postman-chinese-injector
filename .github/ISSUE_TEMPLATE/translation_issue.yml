@@ -1,0 +1,47 @@
+name: "🀄 翻译问题（漏译 / 误译）"
+description: 某处没翻译、翻译不准或不通顺
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        报翻译问题时，**截图 + 界面位置**最能帮我们定位到具体模块词条。
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: 所在界面
+      options:
+        - 登入态主界面（远程网页）
+        - 登出态 Scratch Pad（本地界面）
+        - 网页版（go.postman.co 等）
+    validations:
+      required: true
+
+  - type: input
+    id: english
+    attributes:
+      label: 英文原文
+      description: 未翻译或译错处的英文原文（尽量整串照抄）
+    validations:
+      required: true
+
+  - type: input
+    id: current
+    attributes:
+      label: 当前显示
+      description: 现在界面上显示的中文（漏译则填「仍是英文」）
+
+  - type: input
+    id: suggestion
+    attributes:
+      label: 建议译文
+      description: 你觉得更合适的中文
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图 / 位置说明
+      description: 把截图直接拖进来，并说明在哪个菜单 / 面板 / 弹窗
+    validations:
+      required: true

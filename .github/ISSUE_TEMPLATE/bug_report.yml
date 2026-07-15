@@ -1,0 +1,94 @@
+name: "🐞 汉化问题 / Bug"
+description: 汉化没生效、注入报错、崩溃等问题
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量填全下列信息，越全越好定位。
+        提问前可先看 README 的[常见问题](../../blob/main/README.md#常见问题)。
+
+  - type: dropdown
+    id: usage
+    attributes:
+      label: 使用方式
+      options:
+        - 桌面端 · 下载的二进制
+        - 桌面端 · Node 源码运行
+        - 网页版 · 浏览器扩展
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统
+      options:
+        - Windows
+        - macOS (Intel)
+        - macOS (Apple Silicon / M 芯片)
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: 系统版本
+      description: 如 Windows 11 23H2、macOS 14.5、Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: input
+    id: postman-version
+    attributes:
+      label: Postman 版本
+      description: Postman 内 Settings → About，或 Windows 的 app-<version> 目录名
+      placeholder: 例如 12.16.1
+    validations:
+      required: true
+
+  - type: input
+    id: tool-version
+    attributes:
+      label: 本工具版本
+      description: 运行 `... --version`，或所下载 Release 的版本号
+      placeholder: 例如 v1.5.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: status
+    attributes:
+      label: "`--status` 输出（桌面端）"
+      description: 桌面端跑 `... --status`，把整段结论贴上；网页版可留空
+      render: text
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console 日志
+      description: |
+        Postman `View → Developer → Show DevTools`（或扩展页 F12）→ Console，
+        贴出含 `[pm-chinese]` / `[pm-scratchpad]` 的行。
+      render: text
+
+  - type: textarea
+    id: error
+    attributes:
+      label: 完整报错
+      description: 终端的完整错误文本（含 `EPERM` / `ClosePseudoConsole` 等关键字），别只截一半
+      render: text
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤与现象
+      description: 做了什么、期望什么、实际什么；界面异常可附截图
+      placeholder: |
+        1. …
+        2. …
+        期望：…
+        实际：…
+    validations:
+      required: true

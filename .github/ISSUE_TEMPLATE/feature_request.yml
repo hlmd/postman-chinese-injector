@@ -1,0 +1,17 @@
+name: "💡 功能建议"
+description: 新功能、改进或想法
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 想解决什么 / 想要什么
+      description: 尽量说清背景与场景
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 具体设想
+      description: 期望的行为、可能的实现方式或参考
