@@ -3,14 +3,14 @@
 [![Release](https://img.shields.io/github/v/release/hlmd/postman-chinese-injector?sort=semver)](../../releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
-[![Postman](https://img.shields.io/badge/Postman-10.24%20~%2012.x-orange)](#支持的-postman-版本)
+[![Postman](https://img.shields.io/badge/Postman-10.x%20~%2012.x-orange)](#支持的-postman-版本)
 
 把简体中文界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置、开箱即用。
 
 - **桌面端** — Windows / macOS / Linux 的**单文件可执行程序**（目标机无需装 Node），也可用 Node 源码运行。
 - **网页版** — Chrome / Edge 的 **Manifest V3 浏览器扩展**（`go.postman.co` 等）。
 
-> **支持版本**：桌面端 Postman **10.24 ～ 12.x**（以最新正式版为主要测试目标），网页版随官方界面滚动更新。详见 [支持的 Postman 版本](#支持的-postman-版本)。
+> **支持版本**：桌面端 Postman **10.x ～ 12.x**（以最新正式版为主要测试目标），网页版随官方界面滚动更新。详见 [支持的 Postman 版本](#支持的-postman-版本)。
 
 > [!WARNING]
 > **非官方项目**：与 Postman, Inc. 无任何关联，未获授权或背书；"Postman" 是其商标。
@@ -54,10 +54,10 @@
 
 | 项 | 说明 |
 |------|------|
-| **已适配范围** | Postman 桌面端 **10.24 ～ 12.x**（当前最新），以最新正式版为主要测试目标 |
+| **已适配范围** | Postman 桌面端 **10.x ～ 12.x**（当前最新），以最新正式版为主要测试目标 |
 | **网页版** | `go.postman.co` 等，随官方界面滚动更新，无版本号约束 |
 | **覆盖度** | 译文键值对齐「当前 Postman 界面文案」，越接近最新版覆盖越全；过旧版本界面文案不同，可能出现部分未翻译 |
-| **不支持** | 更早、不走 `_ar-assets` 语言包机制的架构（约 10.x 之前） |
+| **不支持** | 更早、不走 `_ar-assets` 语言包机制的老架构 |
 
 > Postman 会**自动更新**，更新后生成新的版本目录（不含补丁）→ 界面变回英文，重新跑一次注入即可。想固定版本，见下方[关闭自动更新](#关闭自动更新保持汉化不被冲掉)。
 
