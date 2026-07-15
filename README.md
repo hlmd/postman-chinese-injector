@@ -95,7 +95,9 @@ https://dl.pstmn.io/download/version/11.21.0/win64
 ```
 
 平台标识：`win64` · `windows_arm64` · `osx_64` · `osx_arm64` · `linux64` · `linux_arm64`
-版本号见上面的发布说明页。
+（`win64` 亦可写 `windows_64`，`windows_arm64` 亦可写 `win_arm64`，互为别名。）版本号见上面的发布说明页。
+
+> 注：**Windows arm64** 原生包较新才提供，用**指定版本**回溯旧版时该架构可能 404（`latest` 正常）。这类情况改用 `win64`（x64，可在 arm64 上兼容运行），或选更新的版本。
 
 ---
 
