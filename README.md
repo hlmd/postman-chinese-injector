@@ -206,40 +206,8 @@ postman-chinese-injector/
 
 > 译文有更新但不想换二进制？把一个 `locales/<lang>/` 文件夹放在**可执行文件旁边**即可覆盖内嵌数据。
 
-<details>
-<summary><b>⚠️ macOS（Apple Silicon / M 芯片）首次运行必看</b></summary>
-
-<br>
-
-macOS 二进制在 Linux CI 上交叉编译，**未做 Apple 代码签名**；在 Apple Silicon 上，系统会拦截未签名的二进制，表现为运行时 `zsh: killed`、或双击弹「**已损坏，无法打开**」。这些都**不是文件损坏**，按下面三步处理即可（全部在**终端**里执行，先 `cd` 到该文件所在目录；**不要在 Finder 双击**——它是命令行程序，双击必被判「已损坏」）：
-
-```bash
-# 1) 去掉「下载隔离」属性
-xattr -dr com.apple.quarantine ./postman-chinese-injector-macos-arm64
-# 2) 打一个 ad-hoc 签名（-s 后面那个独立的 - 是 ad-hoc 身份，前后都有空格，别漏！）
-codesign -s - -f ./postman-chinese-injector-macos-arm64
-# 3) 从终端用 ./ 启动（可加 sudo 视安装位置而定）
-./postman-chinese-injector-macos-arm64
-```
-
-- 验证签名成功：`codesign -dv ./postman-chinese-injector-macos-arm64`，输出含 `Signature=adhoc` 即可。
-- `codesign` 报 **`no identity found`**：多半是复制粘贴把那个独立的 `-` 吃掉了（或变成了中文连字符）。请**逐字手敲** `-s - -f`。
-- x64（Intel）机型同理，把文件名换成 `postman-chinese-injector-macos-x64`。
-
-**注入时报 `EPERM: operation not permitted`（拷贝 / 改写 `app.asar`）**：这是 macOS 13+ 的「**App 管理**」保护在拦截修改已签名的 `Postman.app`，**`sudo` 也绕不过**。两种解法二选一：
-
-- **给终端授权**：系统设置 → 隐私与安全性 → **App 管理** → 打开你用的终端（Terminal / iTerm；没有就点 `+` 添加 `/Applications/Utilities/Terminal.app`）→ **完全退出并重开终端** → 重新注入。
-- **挪出受保护位置再改**：
-  ```bash
-  cp -R /Applications/Postman.app ~/Postman.app
-  ./postman-chinese-injector-macos-arm64 --postman-dir ~/Postman.app
-  # 验证界面变中文后，如需放回：
-  rm -rf /Applications/Postman.app && mv ~/Postman.app /Applications/
-  ```
-
-> 嫌上面麻烦，可直接用「方式二」的 Node 源码运行，绕开二进制签名问题（App 管理的 `EPERM` 仍需按上面处理）。
-
-</details>
+> [!NOTE]
+> **macOS 用户**：Apple Silicon 首次运行可能报 `zsh: killed` /「已损坏」，注入可能报 `EPERM`——均非文件损坏，处理见 **👉 [macOS 首次运行 / 注入排障](docs/macos-troubleshooting.md)**。
 
 ### 方式二：Node 源码运行（开发 / 改译文）
 
@@ -389,7 +357,7 @@ locales/zh-CN/
 ## 常见问题
 
 **macOS（M 芯片）运行报 `zsh: killed` / 「已损坏，无法打开」/ 注入时 `EPERM`**
-分别对应未签名、下载隔离、macOS 13+ 的「App 管理」保护，都不是文件损坏。处理步骤见上文 [macOS 首次运行必看](#方式一下载二进制推荐目标机无需-node)。
+分别对应未签名、下载隔离、macOS 13+ 的「App 管理」保护，都不是文件损坏。处理步骤见 [docs/macos-troubleshooting.md](docs/macos-troubleshooting.md)。
 
 **界面还是英文 / Console 没有 `[pm-chinese] 已注入`**
 ① 注入前是否完全退出 Postman；② 是否打到了正在运行的那个版本（Windows 多版本共存时用 `--app-version` 指定）。
