@@ -99,6 +99,39 @@ https://dl.pstmn.io/download/version/11.21.0/win64
 
 > 注：**Windows arm64** 原生包较新才提供，用**指定版本**回溯旧版时该架构可能 404（`latest` 正常）。这类情况改用 `win64`（x64，可在 arm64 上兼容运行），或选更新的版本。
 
+### 关闭自动更新（保持汉化不被冲掉）
+
+Postman 会**自动更新**，升级后生成新的版本目录（不含补丁）→ 界面变回英文。想固定在某个版本，装好指定版后按下面两招关掉更新（**建议两招一起做最彻底**）。
+
+**① 改 `Preferences.json`**（先完全退出 Postman）
+
+| 平台 | 路径 |
+|------|------|
+| Windows | `%APPDATA%\Postman\Preferences.json` |
+| macOS | `~/Library/Application Support/Postman/Preferences.json` |
+| Linux | `~/.config/Postman/Preferences.json` |
+
+找到（没有就新增）`update` 项，改成（下面是 `Preferences.json` 里的一个键，非完整文件）：
+
+```jsonc
+"update": { "enabled": false, "channel": "none" }
+```
+
+> 各版本行为不一，有时仍会「检查」更新，配合下面第 ② 招才断得干净。
+
+**② 拦截更新服务器**（最彻底）
+
+编辑 hosts 文件（Windows `C:\Windows\System32\drivers\etc\hosts` 需管理员；macOS / Linux `/etc/hosts` 需 `sudo`），加入：
+
+```
+127.0.0.1 dl.pstmn.io
+127.0.0.1 updates.getpostman.com
+127.0.0.1 postman-electron-updates.s3.amazonaws.com
+```
+
+> ⚠️ `dl.pstmn.io` 也是**上面手动下载 Postman 的域名**，屏蔽后想再装 / 换版本时先临时删掉这一行。
+> Windows 也可用防火墙拦 `app-*\Update.exe` 出站，效果类似。
+
 ---
 
 ## 工作原理
