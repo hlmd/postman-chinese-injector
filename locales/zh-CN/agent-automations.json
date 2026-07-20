@@ -85,7 +85,7 @@
         "description": "在每个 PR 中检测破坏性 API 变更，在其影响生产环境之前标记风险。"
       },
       "event_driven_automation": {
-        "trigger_label": "Postman Events",
+        "trigger_label": "Postman 事件",
         "title": "事件驱动的自动化",
         "description": "响应 Postman Events（如 Collection 更新），并自动将分析结果发送给团队。"
       }
@@ -130,8 +130,8 @@
       "slack_reconnect": "重新连接 Slack",
       "slack_reconnect_required": "您的 Slack 连接已过期，请重新连接以继续接收通知。",
       "slack_connect_error": "无法连接到 Slack，请重试。",
-      "slack_workspace_label": "Workspace",
-      "slack_workspace_placeholder": "Workspace",
+      "slack_workspace_label": "工作区",
+      "slack_workspace_placeholder": "工作区",
       "slack_channel_label": "频道",
       "slack_channel_placeholder": "输入以搜索频道",
       "slack_wrong_workspace_toast_title": "Slack Workspace 错误",

@@ -31,7 +31,7 @@
       }
     },
     "workspace": {
-      "name": "{workspace} Workspace",
+      "name": "{workspace} 工作区",
       "selected_collection": {
         "text": "{collection, plural, one {集合} other {集合}}"
       },

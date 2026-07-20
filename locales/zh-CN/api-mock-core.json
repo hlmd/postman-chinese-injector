@@ -51,11 +51,14 @@
   "mock_filter_bar": {
     "filter_label": "筛选",
     "session_placeholder": "会话",
+    "session_prefix": "会话",
+    "session_all_sessions": "所有会话",
     "caller_placeholder": "调用方",
-    "filter_by_header": "请求头",
+    "filter_by_header": "按请求头筛选",
     "session_footer": "选择一个会话以限定日志和状态的范围。会话由 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头标识。可在 Mock 的设置中更改此项。",
     "session_disabled_value": "默认会话",
-    "session_disabled_hint": "此 Mock 已关闭会话功能，因此所有流量共享同一状态。请在 Mock 的设置中启用会话，以按调用方限定日志和状态范围。"
+    "session_disabled_hint": "此 Mock 已关闭会话功能，因此所有流量共享同一状态。请在 Mock 的设置中启用会话，以按调用方限定日志和状态范围。",
+    "local_server_live": "本地服务器运行中"
   },
   "caller_identity": {
     "title_private": "私密 Mock",
@@ -79,7 +82,7 @@
       "session_label": "会话",
       "session_info_tooltip": "每个会话都是 pm.state 的独立副本。任何有权访问 Mock 的人都可以查看任意会话。",
       "large_values_truncated": "较大的值已被截断",
-      "clear_session_state": "删除会话",
+      "clear_session_state": "清除会话状态",
       "clear_all": "全部清除",
       "clear_all_tooltip": "删除所有 pm.state 键"
     },

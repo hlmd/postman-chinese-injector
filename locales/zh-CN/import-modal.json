@@ -12,7 +12,7 @@
       "environments": "Environment",
       "specs": "规格",
       "sdks": "SDK",
-      "flows": "Flows",
+      "flows": "流程",
       "mocks": "Mock"
     },
     "dependencies": {
@@ -30,7 +30,7 @@
         "search_aria_label": "按类型过滤"
       },
       "in": {
-        "label": "Workspace",
+        "label": "工作区",
         "inline_label_count": "Workspace（{count}）",
         "placeholder": "按 Workspace 过滤",
         "search_aria_label": "按 Workspace 过滤",
@@ -89,7 +89,7 @@
           "button_label": "安装",
           "disabled_bulk_install_tooltip": "没有可安装的依赖项。",
           "badge": {
-            "actionable_label": "立即安装",
+            "actionable_label": "未安装",
             "inprogress_label": "正在安装...",
             "completed_label": "已安装"
           }

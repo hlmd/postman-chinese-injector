@@ -25,7 +25,7 @@
       "title": "评论",
       "local_mode_blank_state": {
         "title": "无法发表评论",
-        "description": "本地 {entityType} 无法发表评论。切换到云视图。"
+        "description": "本地模式下无法使用评论。请切换到云视图。"
       },
       "comment_thread_filter": {
         "button_label": "过滤评论",
@@ -248,7 +248,7 @@
     }
   },
   "partner_collection_rfa_modal": {
-    "default_collection_name": "Collection",
+    "default_collection_name": "集合",
     "header": {
       "title_with_name": "请求 {collectionName} 的分叉副本",
       "title_generic": "请求 这个 集合 的分叉副本"

@@ -86,12 +86,12 @@
       "entity_type": {
         "folder": "文件夹",
         "api": "API",
-        "workspace": "Workspace",
+        "workspace": "工作区",
         "team": "团队",
-        "flow": "Flow",
-        "collection": "Collection",
+        "flow": "流程",
+        "collection": "集合",
         "request": "请求",
-        "environment": "Environment"
+        "environment": "环境"
       },
       "featured_label": "精选",
       "trending_label": "流行趋势",

@@ -29,8 +29,8 @@
   },
   "runner": {
     "error_tooltip": "您需要在线才能查看运行器",
-    "label": "Runner",
-    "normal_tooltip": "Runner"
+    "label": "运行器",
+    "normal_tooltip": "运行器"
   },
   "simulator": {
     "label": "模拟器"
@@ -46,7 +46,7 @@
     "button_label": "知道了"
   },
   "vault": {
-    "label": "Vault",
+    "label": "保险库",
     "adoption_popup": {
       "title": "保护您的秘密变得更容易",
       "description": "尝试 保险库 在本地存储机密，加密，并在请求、测试脚本、授权、环境等中使用它们。"

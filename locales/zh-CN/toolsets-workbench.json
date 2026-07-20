@@ -1,6 +1,6 @@
 {
   "workbench": {
-    "title": "Toolsets",
+    "title": "工具集",
     "hello_world": "你好，世界"
   },
   "top_entity_bar": {
@@ -192,7 +192,7 @@
     "remove_object_field_button": "移除 {fieldName}"
   },
   "sidebar": {
-    "title": "Toolsets",
+    "title": "工具集",
     "open_workbench_button": "打开",
     "aria_label": "打开 Toolsets 工作台",
     "create_workbench_button": "新建 Toolset",

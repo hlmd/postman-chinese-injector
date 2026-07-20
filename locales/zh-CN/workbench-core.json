@@ -41,7 +41,7 @@
   },
   "environment_quick_look": {
     "button_tooltip": "环境 快速浏览",
-    "environment": "Environment",
+    "environment": "环境",
     "edit": "编辑",
     "variable": "变量",
     "initial_value": "初始值",
@@ -195,7 +195,7 @@
     "title": "全局变量"
   },
   "monitor": {
-    "title": "Monitor"
+    "title": "监控"
   },
   "import": {
     "title": "从 {serviceName} 导入 API",
@@ -212,7 +212,7 @@
       "title": "评论"
     },
     "vault": {
-      "title": "Postman Vault"
+      "title": "Postman 保险库"
     },
     "code": {
       "title": "代码"
@@ -753,9 +753,9 @@
         "button_label": "选择作用域",
         "menu_item": {
           "global": "全局",
-          "vault": "Vault",
-          "environment": "Environment",
-          "collection": "Collection"
+          "vault": "保险库",
+          "environment": "环境",
+          "collection": "集合"
         }
       },
       "var_name_error_tooltip": "变量名称已被使用"
@@ -769,10 +769,10 @@
     "error_toast": "出了点问题，请查看 DevTools。"
   },
   "agent": {
-    "browser": "Browser Agent",
-    "desktop": "Desktop Agent",
-    "cloud": "Cloud Agent",
-    "interceptor": "Interceptor Agent",
+    "browser": "浏览器代理",
+    "desktop": "桌面代理",
+    "cloud": "云代理",
+    "interceptor": "Interceptor 代理",
     "updating": "正在更新 Agent"
   },
   "unsaved-changes-modal": {

@@ -4,16 +4,11 @@
   },
   "sidebar": {
     "changes_section_label": "更改",
-    "files_section_label": "文件",
     "no_entity_changes": "未检测到实体更改。",
-    "entity_aria_label": "{entityType}：{name}",
     "status_added": "已添加",
     "status_deleted": "已删除",
     "status_modified": "已修改",
     "status_unreadable": "无法读取",
-    "entity_type_collection": "Collection",
-    "entity_type_environment": "Environment",
-    "entity_type_spec": "规范",
     "empty_title": "没有需要查看的更改",
     "empty_description": "从云端打开草稿 Workspace，即可在此查看其更改。",
     "loading_description": "正在加载更改",
@@ -23,8 +18,8 @@
     "header_title": "合并更改",
     "empty_title": "没有可合并的更改",
     "empty_description": "草稿与父 Workspace 已同步。",
-    "group_heading_collections": "Collections",
-    "group_heading_environments": "Environments",
+    "group_heading_collections": "集合",
+    "group_heading_environments": "环境",
     "group_heading_specs": "规范"
   },
   "file_diff": {

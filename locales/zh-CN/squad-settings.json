@@ -147,6 +147,7 @@
       "search_empty": "只有来自“{teamName}”组织的人员才能添加为团队的成员。",
       "request_to_add_banner": "向此团队添加成员需要团队经理批准。",
       "all_members_access_banner": "此团队已配置为：所有组织用户均为该团队的成员。",
+      "all_members_access_banner_collaborator": "此团队已配置为使所有组织用户都成为此团队的协作者。",
       "group_access_banner": "{userName} 已通过{groupCount, plural, one {群组} other {群组}}拥有 {role} 权限：{groupNames}",
       "radio_group": {
         "title": "角色",
@@ -185,6 +186,7 @@
       "cancel": "取消",
       "error": "出了点问题",
       "all_members_access_banner": "此团队已配置为：所有组织用户均为该团队的成员。",
+      "all_members_access_banner_collaborator": "此团队已配置为使所有组织用户都成为此团队的协作者。",
       "group_access_banner": "该用户因{groupCount, plural, one {群组} other {群组}}仍拥有 {role} 权限：{groupNames}"
     }
   },

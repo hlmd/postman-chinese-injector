@@ -3,7 +3,7 @@
   "editor": {
     "content_pane": {
       "permission_infobar": {
-        "collection": "collection",
+        "collection": "集合",
         "authorization": "身份验证",
         "pre_request_script": "请求前脚本",
         "tests": "测试",
@@ -107,7 +107,7 @@
             },
             "source_filters": {
               "postman_cli": "Postman CLI",
-              "runner": "Runner",
+              "runner": "运行器",
               "newman": "Newman",
               "cloud": "云",
               "placeholder": "来源"
@@ -161,7 +161,7 @@
                 "pipeline_details": {
                   "pipeline_description": "在 {pipelineSource} 的 build {id} 中通过 {source} 运行",
                   "source": {
-                    "runner": "Collection Runner",
+                    "runner": "集合运行器",
                     "newman": "Newman",
                     "postman_cli": "Postman CLI"
                   },
@@ -283,7 +283,7 @@
               "columnNames": {
                 "nextRun": "下次运行",
                 "partialMetadata": "计划",
-                "environment": "Environment",
+                "environment": "环境",
                 "knownIssues": "已知问题",
                 "actions": ""
               },
@@ -501,7 +501,7 @@
         "title": "Collection 详情"
       },
       "live_collection": {
-        "title": "Live Collection",
+        "title": "实时集合",
         "blank_state": {
           "title": "让您的 collection 保持最新",
           "description": {

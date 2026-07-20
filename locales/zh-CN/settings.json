@@ -436,6 +436,29 @@
     "invalid_host": "无效主机",
     "invalid_port": "端口无效"
   },
+  "postman_passport": {
+    "label": "Postman Passport",
+    "heading": "安全访问代理",
+    "description": "使用预配置的客户端证书，通过组织的安全访问代理路由 API 请求。",
+    "current_configuration": "当前配置",
+    "proxy_url": "代理 URL",
+    "certificate": "证书",
+    "cert_expires_in": "证书过期时间",
+    "status": "状态",
+    "status_connected": "已连接",
+    "status_disconnected": "已断开连接",
+    "status_no_proxy": "未配置代理",
+    "status_no_proxy_detail": "尚未为您的团队配置安全访问代理。",
+    "status_not_connected": "未连接",
+    "status_not_connected_detail": "无法为安全访问代理预配证书。",
+    "use_secured_proxy": "使用安全访问代理",
+    "override_banner": "安全访问代理已启用。请求将使用 Postman Passport 代理和客户端证书。启用期间，此页面上的全局代理和证书设置不会生效。若要更改这些设置，请先在 Postman Passport 中禁用安全访问代理。",
+    "settings_disabled_tooltip": "安全访问代理启用期间此项已禁用。请在 Postman Passport 中关闭它以更改这些设置。",
+    "cloud_state_title": "不适用",
+    "cloud_state_msg": "使用云代理时不支持安全访问代理。若要使用 Postman Passport，请切换到 Postman 桌面代理。",
+    "xhr_state_title": "使用桌面代理",
+    "xhr_state_msg": "安全访问代理需要 Postman 桌面代理。请切换到桌面代理以配置 Postman Passport。"
+  },
   "update": {
     "label": "更新",
     "page_heading": "应用程序更新",
@@ -555,7 +578,7 @@
     "label": "人工智能",
     "page_para": "控制 Postman 内的人工智能功能",
     "cloud_agent": {
-      "section_heading": "Cloud Agent",
+      "section_heading": "云代理",
       "section_description": "启动新的云代理任务时应用默认值。",
       "default_model_label": "默认型号",
       "default_model_auto_option": "自动",

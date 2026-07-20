@@ -30,7 +30,7 @@
     "warning_message": "找不到任何要导入的文件。仔细检查您的存储库和分支。"
   },
   "bitbucket": {
-    "workspace_label": "Workspace",
+    "workspace_label": "工作区",
     "repository_label": "存储库",
     "branch_label": "分支",
     "repository_placeholder": "搜索存储库",
@@ -189,9 +189,9 @@
       }
     },
     "generate_collection_option": {
-      "collection_name": "{format} Collection",
+      "collection_name": "{format} 集合",
       "only_collection": {
-        "label": "Postman Collection"
+        "label": "Postman 集合"
       },
       "collection_with_api": {
         "label_with_format": "{format} 与 Postman Collection",
@@ -215,10 +215,10 @@
     "format": {
       "api": "API",
       "specification": "规格",
-      "collection": "Collection",
+      "collection": "集合",
       "collection_run": "Collection 运行",
       "data_dump": "数据转储",
-      "environment": "Environment",
+      "environment": "环境",
       "globals": "全局变量",
       "request": "请求",
       "with_api": ",API",

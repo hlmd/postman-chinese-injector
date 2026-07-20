@@ -3,12 +3,85 @@
     "aria_label": "面包屑",
     "api_network": "API 网络"
   },
+  "add_workspaces": {
+    "trigger": "添加工作区",
+    "title": "将工作区添加到 {namespaceName}",
+    "subtitle": "搜索工作区并添加到此命名空间。",
+    "search_placeholder": "搜索工作区...",
+    "empty_state": "未找到工作区",
+    "empty_state_no_query": "搜索并添加您的工作区",
+    "table": {
+      "name": "工作区",
+      "team": "团队",
+      "tags": "标签",
+      "dash": "—"
+    },
+    "review": {
+      "title_add": "审核并添加工作区",
+      "title_request": "审核并请求工作区",
+      "subtitle_add": "这些工作区将被添加到该命名空间。",
+      "subtitle_request": "系统将发起请求，以将这些工作区添加到该命名空间。",
+      "comment_label": "备注",
+      "comment_placeholder": "为命名空间管理员添加备注"
+    },
+    "actions": {
+      "review": "审核",
+      "cancel": "取消",
+      "back": "返回",
+      "add": "添加工作区",
+      "request": "请求添加",
+      "remove": "移除 {workspaceName}"
+    },
+    "toast": {
+      "added": "已将 {count} 个工作区添加到该命名空间",
+      "requested": "已发送添加 {count} 个工作区的请求",
+      "error": "出现错误，请重试。"
+    }
+  },
+  "approval_requests": {
+    "toast": {
+      "approved": "请求已批准。",
+      "denied": "请求已拒绝。",
+      "error": {
+        "permission_denied": "您没有权限审核此命名空间的请求。",
+        "not_pending": "此请求已被审核。",
+        "no_access": "无法批准此请求，因为无法授予所请求的访问权限。",
+        "outside_team": "命名空间访问权限只能授予您团队的成员。",
+        "mixed_members": "命名空间成员必须是单独的用户和群组，或者是单个团队，不能两者兼有。",
+        "generic": "出现错误，请重试。"
+      }
+    }
+  },
+  "workspace_overview": {
+    "collections": "集合",
+    "environments": "环境",
+    "specs": "规范",
+    "flows": "流程",
+    "sdks": "SDK",
+    "item_count": "{count} 个项目",
+    "updated": "更新于 {time}",
+    "show_all": "显示全部 {count} 个",
+    "empty_state": "此工作区尚无集合、环境、规范、流程或 SDK。",
+    "contributors": "贡献者",
+    "copy_link": "复制链接",
+    "copied": "已复制",
+    "open_workspace": "使用",
+    "request_credentials": "请求凭据"
+  },
+  "workspace_list_item": {
+    "by_prefix": "由 ",
+    "collections_count": "{count} 个集合",
+    "updated": "更新于 {time}"
+  },
   "add_to_namespace_modal": {
     "heading": "将 Workspace 添加到命名空间",
     "loading": "正在加载命名空间...",
     "load_error": "现在无法加载命名空间。",
     "empty": "没有可用的命名空间。",
     "select_placeholder": "搜索并选择命名空间",
+    "reason_label": "原因",
+    "reason_placeholder": "为此请求添加原因",
+    "reason_count": "{current}/{max}",
     "cancel": "取消",
     "add": "添加"
   },
@@ -23,7 +96,7 @@
     "table": {
       "header": {
         "name": "姓名",
-        "workspace": "Workspace",
+        "workspace": "工作区",
         "date": "日期",
         "reason": "原因",
         "status": "状态",
@@ -78,6 +151,20 @@
       "public": "公共 Workspace"
     }
   },
+  "workspace_card_v2": {
+    "team_label": "团队",
+    "last_activity_label": "最近活动",
+    "contributors_label": "贡献者",
+    "collections_label": "集合",
+    "watchers_label": "关注者",
+    "use": "使用",
+    "request_credentials": "请求凭据",
+    "load_more": "显示更多工作区",
+    "by_team": "由 {team}",
+    "collections_count": "{count, plural, one {# 个集合} other {# 个集合}}",
+    "last_updated_tooltip": "最后更新于 {timestamp}",
+    "open_overview_aria": "打开 {name} 的概览"
+  },
   "remove_workspace": {
     "title": "移除 Workspace",
     "close_aria_label": "关闭弹窗",
@@ -113,15 +200,17 @@
     "create_button": "创建命名空间",
     "empty_state": "未找到名称空间。",
     "card": {
-      "workspaces_label": "Workspace",
+      "workspace_count_one": "{count} 个工作区",
+      "workspace_count_other": "{count} 个工作区",
+      "created": "创建于 {date}",
+      "by_user": "由 {user}",
+      "no_description": "无描述",
       "access_level": {
         "open": "团队",
         "access_by_request": "通过 请求 访问",
         "invite_only": "仅限邀请"
       },
       "empty_workspaces": "没有 Workspace",
-      "view_button": "查看",
-      "view_namespace": "查看{namespaceName}",
       "view_workspace": "查看{workspaceName}",
       "actions": {
         "options": "{namespaceName} 的选项",
@@ -132,30 +221,147 @@
         "title_one": "{count} 位成员",
         "title_other": "{count} 成员",
         "overflow_one": "{count} 更多 成员",
-        "overflow_other": "{count} 更多成员"
+        "overflow_other": "{count} 更多成员",
+        "managers_section": "管理员",
+        "members_section": "成员"
       }
+    },
+    "members": {
+      "manage": "管理成员"
     }
+  },
+  "namespace_tabs": {
+    "overview": "概览",
+    "vault_references": "保险库引用"
+  },
+  "add_workspace": {
+    "cta": "添加工作区"
+  },
+  "namespace_detail": {
+    "empty_state": {
+      "title": "尚未添加工作区"
+    }
+  },
+  "vault_references": {
+    "add_cta": "添加保险库引用",
+    "empty_state": {
+      "title": "尚未添加保险库引用"
+    },
+    "error_state": {
+      "title": "无法加载保险库引用",
+      "retry": "重试"
+    },
+    "toast": {
+      "create_error": "无法创建保险库引用，请重试。"
+    }
+  },
+  "home": {
+    "greeting": {
+      "morning": "早上好",
+      "afternoon": "下午好",
+      "evening": "晚上好",
+      "with_name": "{greeting}，{name} 👋",
+      "without_name": "{greeting} 👋"
+    },
+    "subtitle": "浏览并使用组织中各命名空间和工作区里公开的内容。需要调用实时 API 时可请求凭据。",
+    "all_namespaces": "所有命名空间",
+    "show_all": "显示所有命名空间",
+    "list": {
+      "managed_by": "管理者",
+      "workspace_count_one": "{count} 个工作区",
+      "workspace_count_other": "{count} 个工作区",
+      "updated": "更新于 {time}",
+      "view_namespace": "查看 {namespaceName}"
+    },
+    "view_switcher": {
+      "list_label": "列表视图",
+      "card_label": "卡片视图"
+    }
+  },
+  "pagination": {
+    "loading": "加载中...",
+    "no_items_found": "未找到命名空间",
+    "items_per_page": "每页项目数",
+    "range_of_total": "{start}-{end}，共 {total}"
   },
   "new_namespace": {
     "breadcrumb": {
       "new_namespace": "新命名空间"
     },
     "page_title": "新命名空间",
+    "header": {
+      "title": "创建新命名空间",
+      "subtitle": "命名空间是您的工作区和集合的顶层容器。"
+    },
+    "emoji_picker": {
+      "aria_label": "为此命名空间选择一个表情符号"
+    },
     "form": {
       "title_label": "标题",
+      "name_label": "名称",
+      "name_placeholder": "例如 Acme Platform",
+      "summary_label": "摘要",
+      "summary_helper": "简要描述此命名空间的用途。",
+      "summary_placeholder": "此命名空间中包含哪些内容？",
       "validation": {
         "no_valid_characters": "标题必须至少包含一个字母或数字。",
         "duplicate": "具有此名称的命名空间已存在。"
       }
     },
+    "workspaces": {
+      "heading": "工作区",
+      "helper": "将现有工作区添加到此命名空间，或移除不再归属的工作区。",
+      "search_placeholder": "搜索要添加的工作区...",
+      "empty_state": "未找到工作区"
+    },
+    "people": {
+      "heading": "人员与访问权限",
+      "search_placeholder": "搜索用户和群组...",
+      "empty_state": "未找到用户或群组",
+      "type": {
+        "user_group": "群组",
+        "squad": "小队"
+      },
+      "member_count": "{count} 名成员"
+    },
+    "managers": {
+      "heading": "命名空间管理员",
+      "helper": "管理员可以编辑命名空间、管理工作区并批准访问请求。"
+    },
+    "members": {
+      "heading": "命名空间成员",
+      "helper": "成员可以查看工作区并请求访问特定资源。"
+    },
+    "preapproved": {
+      "heading": "预先批准的访问权限（用户 / 群组）",
+      "helper": "这些用户和群组将自动获得访问权限，无需请求。"
+    },
     "actions": {
-      "create": "创建",
+      "create": "创建命名空间",
       "cancel": "取消"
     },
     "toast": {
       "success_title": "命名空间已创建",
       "success_body": "{name} 已创建。",
       "error_body": "创建命名空间时出错。"
+    },
+    "request_to_create": {
+      "header": {
+        "title": "请求创建命名空间"
+      },
+      "actions": {
+        "request_to_create": "请求创建"
+      },
+      "reason": {
+        "label": "请求原因",
+        "placeholder": "为什么需要新的命名空间？",
+        "helper": "描述您需要新命名空间的原因（最多 500 个字符）。"
+      },
+      "toast": {
+        "success_title": "请求已提交",
+        "success_body": "您创建 {name} 的请求已提交。",
+        "error_body": "提交请求时出错。"
+      }
     },
     "access": {
       "heading": "谁可以访问这个命名空间？",

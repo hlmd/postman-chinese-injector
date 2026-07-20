@@ -46,7 +46,7 @@
     "image_uploading_error": "上传您的图片时出现问题。请再试一次。"
   },
   "workspace": {
-    "name": "{workspaceName} Workspace",
+    "name": "{workspaceName} 工作区",
     "team_discovery": {
       "message_enabled": "您为团队启用了团队发现",
       "message_disabled": "您为团队禁用了团队发现",
@@ -82,7 +82,7 @@
       "share_link_with_your_colleagues": "获取可与同事分享的链接以加入团队"
     },
     "collection": {
-      "title": "{items, plural, one {Collection} other {Collections}}",
+      "title": "{items, plural, one {集合} other {集合}}",
       "moved": {
         "description": "您的 Collection 稍后会被移动。"
       },

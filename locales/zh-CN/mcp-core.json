@@ -190,7 +190,7 @@
           "label": "Token 端点身份验证方法"
         },
         "scope": {
-          "label": "Scope",
+          "label": "范围",
           "helper": "客户端可请求的 scope 列表，以空格分隔",
           "options_label": "支持的 scope"
         }

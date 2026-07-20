@@ -7,7 +7,7 @@
     "state_info": "状态是你的 Mock 在多次请求之间保留的数据，可以在 Mock 脚本中通过 <code>pm.state</code> 读写。"
   },
   "form": {
-    "heading": "创建代码 mock",
+    "heading": "创建 Mock 服务",
     "name_label": "名称",
     "name_default": "新建 Mock",
     "name_placeholder": "您想要 mock... 的服务或功能",
@@ -94,7 +94,15 @@
   "mock_auth": {
     "section_label": "访问权限",
     "public_label": "将此 Mock 设为公开",
-    "summary": "默认设为私有 — 只有 Workspace 成员或提供有效 x-api-key 的用户才能调用。设为公开后，任何拥有该 URL 的人都可以调用。"
+    "summary": "默认私有 — 只有工作区成员或持有有效 <code>x-api-key</code> 的人才能调用。设为公开后，任何拥有该 URL 的人都可以调用。"
+  },
+  "deploy_modal": {
+    "title": "部署为 Mock 服务",
+    "redeploy_title": "重新部署 Mock 服务",
+    "description": "部署后会将此 mock 发布为云端 Mock 服务，可通过下方 URL 访问。",
+    "deploy_button": "部署",
+    "redeploy_button": "重新部署",
+    "cancel_button": "取消"
   },
   "errors": {
     "unsupported_input": "无法将此文件识别为 集合 或规范。",

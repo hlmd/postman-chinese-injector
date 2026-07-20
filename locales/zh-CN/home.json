@@ -31,7 +31,7 @@
       "workspaces": "工作空间",
       "teams": "团队",
       "private_api_network": "私有 API 网络",
-      "unified_api_network": "统一API网络",
+      "unified_api_network": "API Network",
       "public_api_network": "公开 API 网络",
       "api_governance": "API 治理",
       "integrations": "集成",

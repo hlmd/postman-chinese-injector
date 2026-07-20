@@ -635,7 +635,7 @@
       "test_runs": {
         "title": "试运行",
         "list_title": "最受测试的集合",
-        "name_column": "Collection",
+        "name_column": "集合",
         "value_column": "试运行"
       },
       "functional_tests": {
@@ -664,7 +664,7 @@
       "api_catalog": {
         "title": "API 目录中的工作空间数量",
         "list_title": "API 目录中的热门工作区",
-        "name_column": "Workspace",
+        "name_column": "工作区",
         "value_column": "更新"
       },
       "active_monitors": {
@@ -832,7 +832,7 @@
         "partner_name": "合作伙伴名称",
         "workspace_name": "工作区名称",
         "all_workspaces": "所有工作区",
-        "collection": "Collection",
+        "collection": "集合",
         "collection_name": "集合名称",
         "contributors": "贡献者",
         "request": "请求",

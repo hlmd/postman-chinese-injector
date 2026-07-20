@@ -8,7 +8,7 @@
     "message": "Mock Server 允许您在 Collection 中模拟端点及其相应的响应，而无需实际设置后端。",
     "create_mock_server": "创建 Mock Server",
     "create_classic_mock_server": "经典 Mock Server",
-    "create_code_mock": "代码 Mock",
+    "create_code_mock": "Mock",
     "offline_error": "您重新上线后即可执行此操作。",
     "permission_error": "您没有 权限 来执行此操作。",
     "not_signed_error": "您需要一个帐户才能继续探索 Postman。",

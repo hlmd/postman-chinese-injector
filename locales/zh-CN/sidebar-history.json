@@ -33,7 +33,7 @@
     "request": "{count, plural, =1 {# 个请求} other {# 个请求}}",
     "menu_items": {
       "save_request": "保存{请求}",
-      "monitor_request": "Monitor {request}",
+      "monitor_request": "监控 {request}",
       "document_request": "记录{请求}",
       "mock_request": "Mock {request}",
       "delete_request": "删除{请求}",

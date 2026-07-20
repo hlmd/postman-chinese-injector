@@ -19,12 +19,12 @@
     "everything_radio": "一切",
     "entities_to_find_radio": "选择要查找的实体",
     "collections": {
-      "title": "Collections",
-      "count": "Collections ({items, plural, one {#} other {#}})"
+      "title": "集合",
+      "count": "集合（{items, plural, one {#} other {#}}）"
     },
     "environments": {
-      "title": "Environments",
-      "count": "Environments ({items, plural, one {#} other {#}})"
+      "title": "环境",
+      "count": "环境（{items, plural, one {#} other {#}}）"
     },
     "globals": {
       "title": "全局变量"
@@ -55,14 +55,14 @@
         "title": "打开选项卡 ({items})"
       },
       "collections_tab": {
-        "title": "Collections ({items})",
+        "title": "集合（{items}）",
         "content": {
           "open_in_builder": "在构建器中打开"
         },
         "result_count": "({items, plural, one {# 个结果} other {# 个结果}})"
       },
       "environments_tab": {
-        "title": "Environments ({items})",
+        "title": "环境（{items}）",
         "content": {
           "open": "打开"
         }
@@ -93,7 +93,7 @@
       "selector_value_all": "过滤器（所有字段）",
       "selector_value_count": "过滤器（{count} {count, plural, one {FIELD} other {FIELDS}}）",
       "collections": {
-        "value": "Collections",
+        "value": "集合",
         "fields": {
           "name": "姓名",
           "description": "描述",
@@ -142,7 +142,7 @@
         }
       },
       "environments": {
-        "value": "Environments",
+        "value": "环境",
         "fields": {
           "name": "姓名",
           "values": "变量"

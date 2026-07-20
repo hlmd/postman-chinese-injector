@@ -2,7 +2,7 @@
   "create_new_environment": "创建新的 环境",
   "environment_name": "环境名称",
   "entity_type_icon": {
-    "label": "Environment"
+    "label": "环境"
   },
   "no_environment_empty_state": {
     "heading": "你没有任何环境。",

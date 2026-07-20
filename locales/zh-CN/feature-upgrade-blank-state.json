@@ -33,8 +33,8 @@
     "title": "私有 API 网络",
     "description_intro": "发现并复用您组织的内部 API。",
     "description_lead": "您将解锁：",
-    "description_item_browse_apis": "浏览您组织中最重要的内部 API",
-    "description_item_add_workspaces": "添加 Workspace、Collection 和 API 以供团队查找",
+    "description_item_browse_apis": "浏览组织内受信任的内部 API",
+    "description_item_add_workspaces": "添加工作区以供团队发现",
     "description_item_find_apis": "帮助开发者更快找到合适的 API"
   },
   "reports": {
@@ -158,7 +158,7 @@
     "description_item_key_control": "完全掌控您的加密密钥"
   },
   "secret_scanner": {
-    "title": "Secret Scanner",
+    "title": "密钥扫描器",
     "description_intro": "扫描已泄露的密钥，自动修复泄露并跟踪处理进度。",
     "description_lead": "您将解锁：",
     "description_item_detect_api_keys": "实时检测泄露的 API 密钥、令牌和凭据",

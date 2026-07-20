@@ -1,17 +1,4 @@
 {
-  "add_to_namespace": {
-    "cta": "添加到命名空间",
-    "toast": {
-      "success": {
-        "title": "添加到命名空间",
-        "description": "Workspace 添加到 {namespaceName}"
-      },
-      "error": {
-        "title": "无法添加到命名空间",
-        "description": "只是一根电线有问题。再试一次。"
-      }
-    }
-  },
   "header": {
     "settings_button": "Workspace 设置",
     "back_button_aria_label": "返回 Workspace 概览",
@@ -206,7 +193,7 @@
     },
     "pinned_document": {
       "pin_button": "将文档固定到概览",
-      "add_readme_button": "添加 README",
+      "add_readme_button": "添加 WORKSPACE-README",
       "select_placeholder": "选择要固定的文档",
       "empty_msg": "此 workspace 中暂无文档。",
       "toast": {
@@ -236,7 +223,7 @@
     "heading": "Workspace 信息",
     "creator_label": "创建者",
     "private_user": "私密用户",
-    "workspace_id_label": "Workspace ID",
+    "workspace_id_label": "工作区 ID",
     "workspace_id_copied": "已复制",
     "copy_workspace_id": "复制 Workspace ID",
     "update_time_label": "更新时间"
@@ -690,6 +677,29 @@
       "primary_action_text": "移动 Workspace",
       "disabled_tooltip_single_squad": "无法移动此 Workspace，因为您的组织中没有其他团队可供移动。",
       "disabled_tooltip": "无法移动此 Workspace，因为您没有权限访问组织中的其他团队。"
+    },
+    "add_to_namespace": {
+      "label": {
+        "add": "添加到命名空间",
+        "added": "已添加到命名空间"
+      },
+      "path_label": "路径",
+      "network_breadcrumb": "API Network",
+      "description": "请求将此工作区添加到 Unified API Network 中的命名空间。",
+      "cta": "添加到命名空间",
+      "pending_label": "{namespaceName} 的请求待处理",
+      "go_to_approval_requests": "前往审批请求",
+      "status_error": "无法加载命名空间状态。出了点小故障，请重试。",
+      "toast": {
+        "success": {
+          "title": "请求已提交",
+          "description": "已提交将此工作区添加到 {namespaceName} 的请求。"
+        },
+        "error": {
+          "title": "无法提交请求",
+          "description": "出了点小故障，请重试。"
+        }
+      }
     },
     "configure_sidebar": {
       "heading": "侧边栏面板",

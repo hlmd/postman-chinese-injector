@@ -148,7 +148,7 @@
       },
       "toolsets": {
         "card_label": "工具集",
-        "ai_card_label": "AI Toolset",
+        "ai_card_label": "AI 工具集",
         "info_text": "创建工具集以组织相关的 AI 工具"
       },
       "socketio": {
@@ -164,35 +164,35 @@
         "offline_text": "您需要在线才能创建 MQTT 请求。"
       },
       "collection": {
-        "card_label": "Collection",
+        "card_label": "集合",
         "info_text": "创建 Collection 来组织、记录并与其他人分享您的 API 请求。",
         "disabled_text": "Collection 可帮助您组织、记录并与其他人分享您的 API 请求。",
         "offline_text": "离线时无法创建 Collection。",
         "no_permission_text": "您没有权限在这个 Workspace 中创建 Collection。"
       },
       "environment": {
-        "card_label": "Environment",
+        "card_label": "环境",
         "info_text": "使用 Environment 跨多个 API 请求定义和使用变量集。",
         "disabled_text": "Environment 可帮助您跨多个 API 请求定义和使用变量集。",
         "offline_text": "离线时无法创建 Environment。",
         "no_permission_text": "您没有权限在这个 Workspace 中创建 Environment。"
       },
       "monitor": {
-        "card_label": "Monitor",
+        "card_label": "监控",
         "info_text": "使用 Monitor 安排您的 Postman Collection 定期运行。",
         "disabled_text": "Monitor 帮助您按计划运行 Postman Collection。",
         "offline_text": "离线时无法创建 Monitor。",
         "no_permission_text": "您没有权限在这个 Workspace 中创建 Monitor。"
       },
       "flows": {
-        "card_label": "Flow",
+        "card_label": "流程",
         "info_text": "Flow 让您可视化、测试和自动化 API 工作流程",
         "disabled_text": "Postman Flow 是用于构建 API 驱动的应用程序的可视化工具。您可以使用 Flow 来链接请求、处理数据并在 Workspace 中创建真实的工作流程。",
         "offline_text": "离线时无法创建 Flow。",
         "no_permission_text": "您没有权限在这个 Workspace 中创建 Flow。"
       },
       "workspace": {
-        "card_label": "Workspace",
+        "card_label": "工作区",
         "info_text": "使用 Workspace 保持井井有条并与队友协作。",
         "disabled_text": "Workspace 可帮助您保持井井有条并与队友协作。",
         "offline_text": "离线时无法创建 Workspace。",
@@ -213,25 +213,30 @@
         "no_permission_text": "您没有权限在此 Workspace 中创建规范。"
       },
       "mock": {
-        "card_label": "Mock",
+        "card_label": "Mock 服务器",
         "create_with_template_label": "使用模板创建",
         "create_with_ai_mock_dependencies_label": "模拟外部 API",
         "create_with_ai_mock_service_label": "模拟您自己的服务"
       },
       "mock_server": {
-        "card_label": "Mock Server"
+        "card_label": "Mock 服务器"
       },
       "classic_mock_server": {
-        "card_label": "经典 Mock Server"
+        "card_label": "经典 Mock Server",
+        "info_text": "根据集合中保存的示例创建 Mock 服务器。"
       },
       "code_based_mock": {
-        "card_label": "代码 Mock"
+        "card_label": "Mock 服务",
+        "info_text": "创建由代码驱动的 Mock 服务器。"
+      },
+      "local_mock": {
+        "info_text": "创建在本地运行、由代码驱动的 Mock 服务器。"
       },
       "documentation": {
         "card_label": "文档"
       },
       "document": {
-        "card_label": "Document",
+        "card_label": "文档",
         "info_text": "创建文档以编写指南、笔记或 API 文档。",
         "create_error": "文档创建失败，请重试。",
         "no_permission_text": "你没有权限在此 workspace 中创建文档。"

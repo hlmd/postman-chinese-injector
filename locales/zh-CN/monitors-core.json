@@ -4,7 +4,7 @@
     "new_button": "新建"
   },
   "entity_type_icon": {
-    "label": "Monitor"
+    "label": "监控"
   },
   "share": {
     "tooltip": "分享 Monitor",
@@ -141,8 +141,8 @@
       "copied_tooltip": "已复制",
       "creator_label": "创建者：",
       "created_at_label": "创建于",
-      "collection_label": "Collection",
-      "environment_label": "Environment",
+      "collection_label": "集合",
+      "environment_label": "环境",
       "no_collection": "没有 Collection"
     },
     "activity_logs_empty_state": {
@@ -313,14 +313,14 @@
   "form": {
     "header": "创建 Monitor",
     "name": "Monitor 名称",
-    "collection": "Collection",
+    "collection": "集合",
     "no_collections": "没有可用的 Collection",
     "collection_select": "选择 Collection",
     "collection_monitor_select": "请选择要 Monitor 的 Collection。",
     "collection_version_tag": "Collection 标签",
     "version_tag_select": "为此 Monitor 选择一个 Collection 标签。",
     "version_tag_current_version": "为此 Monitor 选择一个 Collection 标签。如果该 Collection 未链接到 API，则只能基于当前标签创建 Monitor。",
-    "environment": "Environment",
+    "environment": "环境",
     "no_environment": "无",
     "learn_more": "了解更多",
     "environment_placeholder": "此 Environment 中的变量值将用于您的所有 Monitor 调用。",

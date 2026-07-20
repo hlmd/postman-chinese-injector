@@ -11,7 +11,7 @@
     "header": {
       "name": "名称",
       "deleted": "已删除",
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "deleted_by": "删除者",
       "deleted_on": "删除时间",
       "removal": "删除日期"
@@ -134,7 +134,7 @@
     "label": {
       "created_by": "创建者",
       "created_on": "创建时间",
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "forks": "复刻",
       "monitors": "Monitor",
       "mocks": "Mock",

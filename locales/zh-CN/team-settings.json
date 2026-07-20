@@ -17,6 +17,31 @@
     "upgrade_to_invite_people": "升级以邀请人员加入 团队",
     "upgrade_to_add_people": "升级以将人员添加到 团队"
   },
+  "request_to_join_approval": {
+    "approve_button": "批准",
+    "deny_button": "拒绝",
+    "request_approved": "请求已批准。",
+    "request_denied": "请求已拒绝。",
+    "request_resolved": "此请求已处理。",
+    "approval_failed": "批准失败",
+    "denial_failed": "拒绝失败",
+    "something_went_wrong": "出现错误",
+    "denial_reason_title": "您为何拒绝此请求？",
+    "denial_reason": {
+      "select_a_reason": "选择原因：",
+      "reasons": {
+        "unknown_person": "我不认识此人",
+        "not_in_org": "他们不属于我们的组织",
+        "different_team": "他们属于我们组织中的其他团队",
+        "no_budget": "没有预算容纳更多成员",
+        "other": "其他"
+      },
+      "other_placeholder": "输入原因",
+      "other_input_label": "拒绝此请求的原因",
+      "deny_request": "拒绝请求",
+      "approve_instead": "改为批准"
+    }
+  },
   "team_resources": {
     "blank_state": {
       "title": "需要对 团队 资源进行更多控制？",
@@ -203,7 +228,7 @@
           "link": "如何添加 私有 包"
         },
         "token_input": {
-          "label": "Token",
+          "label": "令牌",
           "placeholder": "输入您的 令牌",
           "delete_button_tooltip": "删除令牌"
         },
@@ -219,11 +244,11 @@
       }
     },
     "vault_management": {
-      "title": "Vault",
+      "title": "保险库",
       "description": "管理 团队 的 保险库 设置、控制访问并确保工作区中敏感信息的安全。",
       "breadcrumbs": {
         "team_resources": "团队 资源",
-        "vault": "Vault"
+        "vault": "保险库"
       },
       "allow_export": "{upper} 成员可以导出其 Vault 数据",
       "allow_export_description": "启用后，{lower} 成员可以从 保险库 导出其数据。",
@@ -284,13 +309,13 @@
       "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。"
     },
     "code_mock_management": {
-      "title": "代码模拟",
-      "description": "管理组织内的代码模拟",
-      "require_approval": "需要批准才能发布公开代码模拟",
-      "require_approval_description": "启用后，由 {lower} 成员创建的代码模拟必须经过 管理员 审核和批准才能发布。",
-      "require_approval_disabled_tooltip": "启用公开 Mock Server 功能，以便发布代码 Mock 时需要审批。",
-      "create_public_code_mocks": "创建 公开 代码模拟",
-      "create_public_code_mocks_description": "启用后，{lower} 成员可以创建可公开访问的代码模拟。禁用时，只能创建 私有 代码模拟。",
+      "title": "Mock 服务",
+      "description": "管理组织内的 mock",
+      "require_approval": "发布公开 mock 需要审批",
+      "require_approval_description": "启用后，{lower} 成员创建的公开 mock 必须经管理员审核批准后才能发布。",
+      "require_approval_disabled_tooltip": "启用公开 Mock 服务以要求发布 mock 时需审批。",
+      "create_public_code_mocks": "创建公开 mock",
+      "create_public_code_mocks_description": "启用后，{lower} 成员可创建可公开访问的 mock。禁用后，只能创建私有 mock。",
       "error": {
         "update_settings": {
           "title": "无法更新设置",

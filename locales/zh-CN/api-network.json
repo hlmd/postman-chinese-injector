@@ -2,7 +2,7 @@
   "fork": {
     "fork_label_with_username": "{username} 的 fork",
     "fork_label": "我的 fork",
-    "page_title": "Fork Collection | Postman",
+    "page_title": "Fork 集合 | Postman",
     "fork_collection_error": {
       "title": "您离线",
       "description": "上线后，您将能够 fork 该 Collection。"
@@ -57,7 +57,7 @@
       "link_label": "分叉",
       "helper_text": "从原始 Collection 中识别此 fork。",
       "fork_label": "Fork 标签",
-      "workspace_label": "Workspace",
+      "workspace_label": "工作区",
       "workspace_helper_text": "fork 将在选定的 Workspace 中创建。",
       "workspace_selector_restrict_fork_message": "这里不能 fork",
       "auto_sync_changes_label": "自动拉取更改",

@@ -69,5 +69,8 @@
         "footer": "查看所有选项"
       }
     }
+  },
+  "service_details": {
+    "install_github_app_helper_text": "如果未看到您的组织，您可能需要在个人账户或组织中<Link><Text>安装 Postman 应用</Text></Link>。"
   }
 }

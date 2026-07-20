@@ -30,7 +30,7 @@
   "quick_create_team_modal": {
     "heading": "设置您的 团队",
     "name_input_field_label": "您的 团队 叫什么名字？",
-    "workspace_name": "{teamName} Workspace",
+    "workspace_name": "{teamName} 工作区",
     "edit_team_name_button": "编辑",
     "domain_input_field_label": "团队 URL",
     "what_will_your_team_work_on": {

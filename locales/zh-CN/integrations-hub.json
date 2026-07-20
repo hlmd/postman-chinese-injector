@@ -3,5 +3,28 @@
     "title": "集成",
     "heading": "集成",
     "subtitle": "发现、安装和管理集成。"
+  },
+  "listing": {
+    "searchPlaceholder": "搜索集成",
+    "connectedHeading": "团队已连接的集成",
+    "allHeading": "全部集成",
+    "loading": "正在加载集成…",
+    "empty": "未找到集成",
+    "noResults": "没有与 \"{query}\" 匹配的集成",
+    "error": "无法加载集成",
+    "error_description": "加载集成时出错。请重试。",
+    "retry_button_label": "重试"
+  },
+  "card": {
+    "connected": "已连接",
+    "byline": "作者：{author}"
+  },
+  "detail": {
+    "notFoundTitle": "未找到集成",
+    "notFoundBody": "我们找不到与此地址对应的集成。",
+    "tabs": {
+      "overview": "概览",
+      "connections": "连接"
+    }
   }
 }

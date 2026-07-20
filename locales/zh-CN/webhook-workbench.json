@@ -73,7 +73,7 @@
       "title": "Webhook 设置",
       "description": "此 Webhook 的设置即将推出。",
       "environment": {
-        "heading": "Environment",
+        "heading": "环境",
         "selector_label": "关联环境",
         "confirmation": {
           "title": "更改环境？",

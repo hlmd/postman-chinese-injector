@@ -11,7 +11,7 @@
     "integrations": "集成",
     "reports": "报告",
     "private_api_network": "私有 API 网络",
-    "unified_api_network": "统一 API 网络",
+    "unified_api_network": "API Network",
     "public_api_network": "公开 API 网络",
     "conversations": "对话",
     "agents": "代理任务",
@@ -503,7 +503,7 @@
       "public_api_network": "公开 API 网络",
       "personal_space": "个人 空间",
       "team": "团队 {teamName}",
-      "current_workspace": "Workspace {activeWorkspaceName}"
+      "current_workspace": "工作区 {activeWorkspaceName}"
     },
     "recent_views": {
       "title": "最近浏览过",
@@ -553,8 +553,8 @@
     },
     "filters": {
       "active_entity_filter_prefix": "查找于",
-      "active_entity_type_workspace": "Workspace",
-      "active_entity_type_collection": "Collection",
+      "active_entity_type_workspace": "工作区",
+      "active_entity_type_collection": "集合",
       "private_api_network_only": "私有 API 网络",
       "workspace_type": "可见性",
       "element_type": "元件类型",
@@ -568,12 +568,12 @@
         "all": "全部"
       },
       "element_types": {
-        "workspace": "Workspace",
-        "collection": "Collection",
+        "workspace": "工作区",
+        "collection": "集合",
         "api": "API",
         "request": "请求",
-        "environment": "Environment",
-        "flow": "Flow",
+        "environment": "环境",
+        "flow": "流程",
         "team": "发布者",
         "folder": "文件夹",
         "spec": "规格",
@@ -624,8 +624,8 @@
         "no_results": "找不到工作区或集合",
         "clear_selected": "清除所选内容",
         "showing_type_only": "仅显示 {type}。取消选择按 {otherType} 过滤。",
-        "type_workspace": "workspace",
-        "type_collection": "collection"
+        "type_workspace": "工作区",
+        "type_collection": "集合"
       },
       "tag_filter": {
         "name": "标签",

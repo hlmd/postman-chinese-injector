@@ -1,0 +1,19 @@
+{
+  "chat_preview": {
+    "collapse_button_label": "折叠",
+    "expand_button_label": "展开",
+    "iframe_title": "内联生成的 HTML 预览",
+    "open_in_tab_button_label": "在标签页中打开",
+    "open_in_tab_requires_workspace": "打开一个工作区以在标签页中查看",
+    "unavailable_message": "此 HTML 预览不可用。"
+  },
+  "preview": {
+    "apply_source_button_label": "应用更改",
+    "download_button_label": "下载 HTML",
+    "hide_source_button_label": "隐藏源代码",
+    "iframe_title": "生成的 HTML 预览",
+    "source_editor_aria_label": "HTML 源代码",
+    "view_source_button_label": "查看源代码",
+    "unavailable_message": "此 HTML 预览已不再可用。"
+  }
+}

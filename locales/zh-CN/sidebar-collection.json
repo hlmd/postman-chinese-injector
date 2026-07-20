@@ -1,6 +1,6 @@
 {
   "entity_type_icon": {
-    "collection": "Collection"
+    "collection": "集合"
   },
   "offline_error_state": {
     "heading": "无法加载数据",
@@ -112,7 +112,7 @@
       "label": "创建 Monitor"
     },
     "mock_collection": {
-      "label": "Mock"
+      "label": "Mock 服务"
     },
     "create_a_fork": {
       "label": "Fork",
@@ -344,6 +344,9 @@
   },
   "sort_indicator": {
     "sorted": "排序：{name}。"
+  },
+  "search": {
+    "loading": "正在搜索所有集合…"
   },
   "children_error": {
     "message": "无法加载项目。",

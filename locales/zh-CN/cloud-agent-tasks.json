@@ -77,18 +77,25 @@
     }
   },
   "artifacts": {
-    "heading": "工件",
-    "aside_aria_label": "任务工件",
-    "pr_button_label": "查看拉取请求",
-    "pr_button_aria_label": "查看拉取请求（在浏览器中打开）",
-    "workspace_button_label": "打开工作区",
-    "workspace_button_aria_label": "在新选项卡中打开工作区",
-    "diff_button_label": "查看差异",
-    "diff_button_aria_label": "在侧边栏中查看差异"
+    "menu_button_label": "产物",
+    "menu_button_aria_label": "查看任务产物",
+    "open_pr_button": "打开 PR",
+    "open_pr_button_aria_label": "打开拉取请求（在浏览器中打开）",
+    "review_workspace_button": "审查更改",
+    "review_workspace_button_aria_label": "审查草稿工作区更改",
+    "workspace_item_label": "工作区 {number}",
+    "workspace_item_review_label": "审查 {name} 的更改"
   },
   "diff_panel": {
+    "heading_label": "为 {name} 提议的更改",
     "aside_aria_label": "任务差异",
-    "close_button_aria_label": "关闭差异面板"
+    "close_button_aria_label": "关闭差异面板",
+    "open_workspace_button_label": "工作区视图",
+    "open_workspace_button_aria_label": "在工作区视图中查看提议的更改",
+    "merge_button_label": "合并",
+    "merge_toast_success": "更改已合并",
+    "merge_toast_error_title": "无法合并更改",
+    "merge_toast_error_description": "出现问题，请重试。"
   },
   "review": {
     "files_count": "{count, plural, one {已更改 # 个文件} other {已更改 # 个文件}}",
@@ -132,7 +139,15 @@
   },
   "task": {
     "failed_heading": "任务失败",
-    "failed_no_details": "此任务失败，但未提供其他详细信息。"
+    "failed_no_details": "此任务失败，但未提供其他详细信息。",
+    "load_error_no_access": "你无权查看此任务，或该任务不存在。",
+    "not_found": "未找到对话",
+    "start_new_task": "开始新任务"
+  },
+  "header": {
+    "options_button_aria_label": "对话选项",
+    "copy_conversation_id_label": "复制对话 ID",
+    "copy_conversation_id_toast": "对话 ID 已复制到剪贴板"
   },
   "mobile": {
     "open_tasks_tooltip": "显示任务",

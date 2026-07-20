@@ -576,7 +576,7 @@
   },
   "variable_kv_pairs": {
     "azure": {
-      "vault": "Vault",
+      "vault": "保险库",
       "secret": "密钥",
       "version": "版本",
       "identifier": "标识符"
@@ -602,7 +602,7 @@
   },
   "sidebar": {
     "title": "Postman Vault",
-    "nav_label": "Vault",
+    "nav_label": "保险库",
     "cloud_vault_title": "个人 保险库",
     "vault_actions": {
       "rename": "重命名",

@@ -7,7 +7,7 @@
     "messageLengthError": "消息必须少于 {maxLength} 个字符。",
     "requesterInfoBanner": "您的 请求 将发送给网络管理员和 团队 经理进行批准。",
     "cancel": "取消",
-    "fallbackEntityName": "workspace",
+    "fallbackEntityName": "工作区",
     "successAddToast": "已成功将 {entityName} 添加到网络。",
     "successRequestToast": "添加 {entityName} 的 请求 已发送以供审核。",
     "errorAddToast": "添加到网络失败。请再试一次。",
@@ -36,7 +36,7 @@
       "requestedBy": "由 {requesterName} 请求",
       "requestedByPrefix": "请求者",
       "cancel": "取消",
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "team": "团队",
       "requesterComment": "请求者评论",
       "updatedOn": "更新于",
@@ -152,7 +152,7 @@
         "workspaces": "工作空间",
         "tags": "标签",
         "lastUpdated": "最后更新",
-        "workspace": "Workspace"
+        "workspace": "工作区"
       },
       "loadMore": "加载更多",
       "emptyTitle": "未找到工作区",

@@ -145,11 +145,11 @@
     "created_by": "创建者",
     "created_on": "创建时间",
     "mock_server_url": "Mock Server URL",
-    "collection": "Collection",
+    "collection": "集合",
     "collection_deleted": "关联的 Collection 已被删除",
     "label_text": "关联的 Collection 不可访问",
     "info_text": "该 Collection 位于您无权访问的 Workspace 中。",
-    "environment": "Environment",
+    "environment": "环境",
     "no_environment": "无 Environment",
     "mock_usage": "Mock 用量",
     "copied": "已复制",
@@ -172,7 +172,7 @@
     "mock_server_type": "Mock Server 类型",
     "private": "私有",
     "public": "公开",
-    "collection": "Collection",
-    "environment": "Environment"
+    "collection": "集合",
+    "environment": "环境"
   }
 }

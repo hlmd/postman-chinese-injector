@@ -66,7 +66,7 @@
       "details_unavailable_tooltip_heading": "网络详情不可用",
       "details_unavailable_tooltip_msg": "此请求是通过 Browser Agent 发送的。如需查看详细网络信息，请通过 Postman Desktop Agent 发送请求。",
       "heading": "网络",
-      "agent": "Agent",
+      "agent": "代理",
       "http_version": "HTTP 版本",
       "local_address": "本地地址",
       "remote_address": "远程地址",
@@ -646,7 +646,7 @@
         }
       },
       "cookies": {
-        "label": "Cookies",
+        "label": "Cookie",
         "empty_cookies_viewer": {
           "title": "未收到服务器返回的 Cookie",
           "desc": "您的所有 Cookie 及其关联的域名都会显示在这里。"
