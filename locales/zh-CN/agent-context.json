@@ -1,0 +1,203 @@
+{
+  "connectors": {
+    "status": {
+      "active_jobs": "{count, plural, one {# 个索引任务运行中} other {# 个索引任务运行中}}",
+      "configured_with_sources": "{count, plural, one {已配置 # 个数据源} other {已配置 # 个数据源}}",
+      "connected": "已连接",
+      "connected_with_sources": "已连接 · {count, plural, one {已配置 # 个数据源} other {已配置 # 个数据源}}",
+      "not_connected": "未连接",
+      "not_connected_with_team_sources": "未连接 · 数据源由团队成员配置"
+    },
+    "postman": {
+      "connect_aria_label": "将 Postman 连接到 Agent Context Graph",
+      "description": "Postman Workspace、Collection 和 Environment",
+      "title": "Postman"
+    },
+    "github": {
+      "auth_method_label": "GitHub 身份验证方式",
+      "authentication_checking": "正在检查 GitHub 连接…",
+      "authorization_failed": "授权失败，请重试。",
+      "authorization_timeout": "授权超时。请检查弹窗拦截设置后重试。",
+      "authenticate_continue": "验证并继续",
+      "authenticate_description": "授权 Postman 读取你的仓库。我们仅申请对代码和元数据的读取权限。",
+      "authenticate_title": "验证 GitHub",
+      "connect_aria_label": "将 GitHub 连接到 Agent Context Graph",
+      "description": "服务、端点和依赖关系图",
+      "modal_subtitle": "将代码和依赖关系引入 Context Graph",
+      "modal_title": "连接 GitHub",
+      "oauth_description": "登录 GitHub 并授予访问权限 - 推荐",
+      "oauth_title": "使用 OAuth 授权",
+      "ingest_continue": "索引所选仓库",
+      "ingestion_failed": "索引启动失败，请重试。",
+      "no_organizations": "未找到此账号下的 GitHub 组织。",
+      "no_repositories": "未找到此组织下的仓库。",
+      "repositories_error": "仓库加载失败，请重试。",
+      "repositories_loading": "正在加载仓库…",
+      "repositories_count": "{count, plural, one {找到 # 个仓库} other {找到 # 个仓库}}",
+      "repo_listing": {
+        "description": "从 GitHub 选择要索引到 Context Graph 的仓库。",
+        "no_search_results": "没有匹配的仓库。",
+        "organization": "组织",
+        "organization_placeholder": "选择组织…",
+        "repositories": "仓库",
+        "repositories_hint": "仅显示未归档、未禁用且你拥有推送权限的仓库。",
+        "repository_meta": "仓库",
+        "search_placeholder": "搜索仓库…",
+        "select_all_shown": "全选当前显示项",
+        "shown_selected": "显示 {shownCount} 个 · 已选 {selectedCount} 个",
+        "title": "选择 GitHub 仓库"
+      },
+      "repository_label": "GitHub 仓库",
+      "repository_meta": "仓库元数据和依赖项",
+      "select_repositories_description": "从 {orgName} 选择要索引到 Context Graph 的仓库。",
+      "select_repositories_title": "选择仓库",
+      "steps": {
+        "authenticate": "身份验证",
+        "ingest": "索引",
+        "select_repositories": "选择仓库"
+      },
+      "steps_label": "GitHub 连接步骤",
+      "token_description": "粘贴具有 repo 读取权限的 token",
+      "token_title": "添加个人访问令牌",
+      "title": "GitHub"
+    },
+    "new_relic": {
+      "add_aria_label": "将 New Relic 添加到 Agent Context Graph",
+      "description": "遥测节点",
+      "title": "New Relic"
+    }
+  },
+  "connections": {
+    "description": "连接数据源以丰富图谱。重新索引会产生成本，请设置各数据源的刷新频率。",
+    "heading": "连接"
+  },
+  "data_sources": {
+    "base_source_count": "{count, plural, one {默认索引 # 个 Workspace} other {默认索引 # 个 Workspace}}",
+    "base_source_default_status": "基础数据源默认启用",
+    "base_source_description": "Postman 默认已索引。在连接外部数据源之前，你的 Workspace 会作为 Context Graph 的初始数据。",
+    "base_source_title": "基础数据源 - 图谱的基石",
+    "description": "这些数据源为 Context Graph 提供数据。Postman 默认已索引，连接更多数据源可丰富图谱，并可设置各数据源的重新索引频率。连接和断开在「Integrations -> Connections」中管理。",
+    "heading": "数据源",
+    "section_title": "已连接的数据源 - 丰富你的图谱"
+  },
+  "landing": {
+    "cta": "开始 - 索引 Postman 数据",
+    "description": "索引你的 Postman 数据，将 Workspace 映射为服务、端点和依赖关系。",
+    "ingestion_error_description": "无法启动 Postman 索引，请重试。",
+    "ingestion_error_title": "Postman 索引失败",
+    "ingestion_success_description": "Postman Workspace 索引已开始。",
+    "ingestion_success_title": "Postman 索引已启动",
+    "secondary_description": "接下来，连接 GitHub 和 New Relic 以丰富图谱。",
+    "title": "开始构建 Context Graph"
+  },
+  "sources": {
+    "jira": {
+      "connect_aria_label": "将 Jira 连接到 Agent Context Graph",
+      "description": "团队、负责人和成熟度阶段",
+      "title": "Jira"
+    },
+    "kubernetes": {
+      "connect_aria_label": "将 Kubernetes 连接到 Agent Context Graph",
+      "description": "集群、部署和命名空间",
+      "title": "Kubernetes"
+    },
+    "section_title": "开始构建你的图谱",
+    "workspace_count": "847 个 Postman Workspace",
+    "workspace_description": "目前图谱中只有 Workspace。连接你的工具，让知识图谱真正活起来。"
+  },
+  "actions": {
+    "add": "添加",
+    "cancel": "取消",
+    "connect": "连接",
+    "connect_with_prefix": "+ 连接",
+    "graph": "图谱",
+    "ingest": "索引",
+    "manage_data_sources": "管理数据源",
+    "manage_data_sources_with_count": "管理数据源（{count}）"
+  },
+  "enrichment": {
+    "section_title": "进一步丰富"
+  },
+  "graph": {
+    "active_jobs_banner": "图谱正在更新，当前有 {count} 个索引任务运行中",
+    "aria_label": "Agent Context Graph 预览",
+    "empty_hint": "图谱为空 - 索引 Postman 即可开始",
+    "error_description": "请重新连接数据源后重试。",
+    "error_title": "无法加载依赖关系图。",
+    "graph_ready_hint": "图谱已就绪 - 开始探索你的 Context Graph",
+    "legend_nodes": "节点",
+    "legend_relationships": "关系",
+    "legend_title": "图例",
+    "legend_toggle_hint": "点击类型以显示或隐藏",
+    "loading": "正在加载依赖关系图…",
+    "query_connect_more": "连接更多",
+    "query_helper": "连接 GitHub、New Relic 等数据源，加入服务、部署和实时遥测数据，让 Agent 给出更深入的回答。",
+    "query_input_aria_label": "就 Context Graph 提问",
+    "query_placeholder": "向 Agent 询问你的服务、依赖、负责人…",
+    "query_submit_aria_label": "发送图谱查询",
+    "query_submit_error_description": "图谱查询发送失败，请重试。",
+    "query_submit_error_title": "图谱查询失败",
+    "query_submit_success_description": "图谱查询已发送到 Agent Tasks。",
+    "query_submit_success_title": "图谱查询已发送",
+    "query_submit_tooltip": "发送图谱查询",
+    "query_subtitle": "此图仅用于可视化展示，如需准确结果请查询 Context Graph。",
+    "tooltip_stats": {
+      "apis": "API",
+      "database_schemas": "数据库 Schema",
+      "deployments": "部署",
+      "endpoints": "端点",
+      "external_services": "外部服务",
+      "resources": "资源",
+      "teams": "团队",
+      "telemetry_configs": "遥测配置"
+    }
+  },
+  "highlights": {
+    "heading": "要点",
+    "description": "由图谱分析得出。索引更多数据源可获得更深入的洞察。",
+    "show_on_graph": "在图谱中显示",
+    "collapse_button_label": "收起要点",
+    "expand_button_label": "展开要点",
+    "cards": {
+      "unused_endpoints": {
+        "title": "闲置端点",
+        "description": "38 个端点在过去 90 天内没有请求记录 - 可能需要清理，或存在覆盖缺口。"
+      },
+      "ownership_gaps": {
+        "title": "归属缺失",
+        "description": "12 个 API 在所有 Workspace 中都没有指定负责人或贡献者。"
+      },
+      "single_points_of_failure": {
+        "title": "单点故障",
+        "description": "4 个服务被大量其他服务依赖，且没有记录在案的替代方案。"
+      },
+      "blast_radius": {
+        "title": "影响范围",
+        "description": "索引 GitHub 以追踪服务间依赖关系，了解某个服务变更时会影响到哪些内容。"
+      }
+    }
+  },
+  "navigation": {
+    "aria_label": "Agent Context 导航"
+  },
+  "page": {
+    "heading": "Agent Context",
+    "title": "Agent Context"
+  },
+  "panel": {
+    "aria_label": "Agent Context 数据源"
+  },
+  "tabs": {
+    "aria_label": "Agent Context 视图",
+    "data_sources": "数据源",
+    "graph": "图谱"
+  },
+  "summary": {
+    "apis": "API",
+    "connected_sources": "{count, plural, one {已连接 # 个数据源} other {已连接 # 个数据源}}",
+    "endpoints": "个端点",
+    "external_deps": "个外部依赖",
+    "no_sources_connected": "未连接数据源",
+    "workspaces": "个 Workspace"
+  }
+}

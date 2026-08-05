@@ -1,15 +1,23 @@
 {
   "error_state": {
-    "panel_load_error_message": "无法加载此部分。"
+    "panel_load_error_message": "此板块加载失败。"
   },
+  "load_error_resource_label": "此板块",
+  "load_error_failure_with_status": "获取此板块内容时出错（HTTP {statusCode}）。",
+  "load_error_failure_offline": "获取此板块内容时出错。你似乎处于离线状态。",
+  "load_error_failure_generic": "获取此板块内容时出错。",
+  "load_error_retry_failure_with_status": "第 {count} 次重试：获取此板块内容时出错（HTTP {statusCode}）。",
+  "load_error_retry_failure_offline": "第 {count} 次重试：获取此板块内容时出错。你似乎处于离线状态。",
+  "load_error_retry_failure_generic": "第 {count} 次重试：获取此板块内容时出错。",
   "panel_empty_state": {
     "title": "此部分为空",
     "create_button": "添加"
   },
-  "sidebar_mode_toggle": {
-    "switch_to_classic_tooltip": "切换到经典 侧边栏",
-    "switch_to_multi_entity_tooltip": "切换到多实体 侧边栏",
-    "toggle_aria_label": "切换 侧边栏 模式"
+  "search": {
+    "loading": "正在搜索全部项目…"
+  },
+  "status_bar_context_menu": {
+    "multi_entity_sidebar_label": "多实体侧边栏"
   },
   "unresolved_entity": {
     "popover_title": "更新您的应用程序以查看此内容",

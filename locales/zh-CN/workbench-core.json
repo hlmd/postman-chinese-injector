@@ -262,6 +262,29 @@
         "description": "此页面发出的 XHR 和获取请求显示在此处。与页面交互或重新加载以捕获流量。"
       }
     },
+    "interactions": {
+      "title": "交互记录",
+      "badge": {
+        "user": "用户",
+        "current_user": "{name}（你）",
+        "agent": "Agent"
+      },
+      "search_placeholder": "按操作、定位器或来源筛选",
+      "clear": "清空",
+      "clear_tooltip": "清空交互日志",
+      "no_matches": "没有符合筛选条件的交互记录。",
+      "dropped": "仅显示最近 {count} 条交互记录，更早的记录已丢弃。",
+      "detail": {
+        "tool": "{tool} · {ms}ms"
+      },
+      "timestamp_tooltip": "{absoluteTime}",
+      "timestamp_step": "距上一步 {stepDelta}",
+      "timestamp_since_start": "距开始 {offset}",
+      "empty_state": {
+        "title": "尚未记录任何交互",
+        "description": "你或 Agent 的点击、输入和导航操作将以可回放的步骤显示在这里。"
+      }
+    },
     "details": {
       "title": "细节"
     },
@@ -276,6 +299,12 @@
     },
     "mock_server_details": {
       "title": "Mock 服务器详细信息"
+    },
+    "mock_details": {
+      "title": "Mock 详情"
+    },
+    "simulation_details": {
+      "title": "模拟详情"
     },
     "monitor_details": {
       "title": "监控 详细信息"

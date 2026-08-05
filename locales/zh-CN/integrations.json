@@ -72,5 +72,12 @@
   },
   "service_details": {
     "install_github_app_helper_text": "如果未看到您的组织，您可能需要在个人账户或组织中<Link><Text>安装 Postman 应用</Text></Link>。"
+  },
+  "wiz_disconnect_modal": {
+    "heading": "断开 Wiz 连接？",
+    "body_primary": "断开连接将永久删除团队已存储的安全态势数据及相关检测结果。",
+    "body_secondary": "此操作无法撤销。重新连接后将重新开始一次安全扫描。",
+    "cancel": "取消",
+    "confirm": "断开 Wiz 连接"
   }
 }

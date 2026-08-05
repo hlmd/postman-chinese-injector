@@ -21,7 +21,8 @@
       "response_code": "响应代码",
       "value": "值",
       "response_body": "响应体"
-    }
+    },
+    "delete_row_tooltip": "删除该行"
   },
   "create_new_mock_modal": {
     "step_1": {

@@ -1,5 +1,12 @@
 {
   "entity_type_icon": {
     "label": "Mock Server"
+  },
+  "status_indicator": {
+    "running": "状态：运行中",
+    "idle": "状态：空闲"
+  },
+  "code_mock": {
+    "running_status": "状态：运行中"
   }
 }

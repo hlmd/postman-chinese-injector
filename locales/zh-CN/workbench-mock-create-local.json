@@ -7,12 +7,12 @@
     "state_info": "状态是你的 Mock 在多次请求之间保留的数据，可以在 Mock 脚本中通过 <code>pm.state</code> 读写。"
   },
   "form": {
-    "heading": "创建 Mock 服务",
+    "heading": "新建 Mock",
     "name_label": "名称",
     "name_default": "新建 Mock",
-    "name_placeholder": "您想要 mock... 的服务或功能",
+    "name_placeholder": "你想模拟的服务或功能",
     "name_required_tooltip": "为 mock 命名以继续。",
-    "url_label": "URL",
+    "url_label": "Mock URL",
     "local_port_label": "端口",
     "local_url_helper": "",
     "check_availability_cta": "检查",
@@ -41,23 +41,23 @@
       "label": "从模板开始"
     },
     "spec": {
-      "label": "使用规范",
+      "label": "规范",
       "helper": "我们将根据所选的 API 规范生成 Mock 响应。",
-      "picker_placeholder": "选择",
+      "picker_placeholder": "选择一个规范",
       "picker_empty": "此 工作区 尚无规格。"
     },
     "collection": {
-      "label": "使用 Collection",
+      "label": "Collection",
       "helper": "我们将根据所选 Collection 中保存的示例生成 Mock 响应。",
-      "picker_placeholder": "选择",
+      "picker_placeholder": "选择一个 Collection",
       "picker_empty": "此 工作区 中还没有收藏。"
     }
   },
   "sync": {
-    "keep_in_sync_collection_label": "保持这个 mock 从 集合 自动生成",
-    "keep_in_sync_spec_label": "保持这个 mock 从 API 规范自动生成",
-    "keep_in_sync_collection_label_local": "一旦此 mock 被推送到云端，请保持它从 集合 自动生成",
-    "keep_in_sync_spec_label_local": "一旦此 mock 被推送到云端，请保持它从 API 规范自动生成",
+    "keep_in_sync_collection_label": "Collection 变更时自动更新此 Mock",
+    "keep_in_sync_spec_label": "API 规范变更时自动更新此 Mock",
+    "keep_in_sync_collection_label_local": "Collection 变更时自动更新此 Mock（推送到云端后生效）",
+    "keep_in_sync_spec_label_local": "API 规范变更时自动更新此 Mock（推送到云端后生效）",
     "keep_in_sync_collection_helper": "当 集合 更改时，这个 mock 会自动重新生成。",
     "keep_in_sync_spec_helper": "当 API 规范发生变化时，该 mock 会自动重新生成。",
     "keep_in_sync_collection_helper_local": "一旦这个 mock 被推送到云端，当 集合 发生变化时，它会自动重新生成。",
@@ -69,6 +69,7 @@
     "file_remove": "移除"
   },
   "ai_section": {
+    "divider_text": "或",
     "title": "使用 Postman AI 进行创作",
     "local": {
       "card_mock_external": {
@@ -92,20 +93,26 @@
     }
   },
   "mock_auth": {
-    "section_label": "访问权限",
     "public_label": "将此 Mock 设为公开",
     "summary": "默认私有 — 只有工作区成员或持有有效 <code>x-api-key</code> 的人才能调用。设为公开后，任何拥有该 URL 的人都可以调用。"
   },
   "deploy_modal": {
     "title": "部署为 Mock 服务",
     "redeploy_title": "重新部署 Mock 服务",
-    "description": "部署后会将此 mock 发布为云端 Mock 服务，可通过下方 URL 访问。",
+    "description": "将此 Mock 发布为云端 Mock Server，可通过下方 URL 访问。",
+    "url_label": "Mock URL",
+    "public_label": "将此 Mock Server 设为公开",
+    "access_helper": "允许任何知道该 URL 的人访问此 Mock Server。否则，仅 Workspace 成员或携带有效 <code>x-api-key</code> 的请求可以访问。",
+    "sessions_label": "启用会话",
+    "sessions_helper": "每个调用方将获得一份独立的 Mock 状态副本。请求需包含 <code>x-pm-state-key</code> 请求头来标识会话。",
+    "auto_deploy_label": "每次变更后自动部署",
+    "auto_deploy_helper": "Mock 发生变更时自动重新部署线上版本。否则需要你手动部署更新。",
     "deploy_button": "部署",
     "redeploy_button": "重新部署",
     "cancel_button": "取消"
   },
   "errors": {
-    "unsupported_input": "无法将此文件识别为 集合 或规范。",
+    "unsupported_input": "无法将此文件识别为 Collection 或规范。",
     "name_required": "Mock 名称为必填项。",
     "local_port_invalid": "输入 1 到 65535 之间的端口。",
     "slug_invalid": "使用小写字母、数字或连字符。必须以字母或数字开头。",

@@ -500,6 +500,27 @@
         "etimedout": "请求超时",
         "esockettimedout": "响应超时"
       },
+      "access_proxy": {
+        "unauthorized": "你无权在当前 API 中使用所引用的{count, plural, one {密钥} other {密钥}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "unsupported_vault_type": "该代理未针对所引用{count, plural, one {密钥} other {密钥}}使用的 Vault 类型进行配置。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "decrypt_failed": "Postman 无法解密所引用的{count, plural, one {密钥} other {密钥}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "missing_ref": "找不到所引用的{count, plural, one {密钥} other {密钥}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "resolve_error": "无法解析此请求中的密钥。",
+        "revoked": "你的访问权限已被撤销。请重新连接 Passport 后重试。",
+        "rate_limited": "通过代理的请求过于频繁，请稍后重试。",
+        "origin_error": "无法访问目标服务器。",
+        "client_cert_required": "缺少证书。请在设置中重新启用 Secured Access Proxy。",
+        "client_cert_untrusted": "代理不信任你的证书。请重新连接 Passport。",
+        "client_cert_expired": "你的证书已过期。请重新连接 Passport。",
+        "client_cert_identity_missing": "你的证书缺少身份信息。请重新连接 Passport。",
+        "identity_revoked": "你的访问权限已被撤销。",
+        "http_unsupported": "仅支持 HTTPS 请求 URL。请使用 https:// 开头的 URL，或在设置中关闭 Secured Access Proxy。",
+        "missing": "缺少证书。请在设置中启用 Secured Access Proxy 以预置证书。",
+        "expired": "证书已过期或即将过期。请重新连接 Passport。",
+        "config": "已启用，但未配置主机 / 端口。",
+        "handshake": "mTLS 握手失败。请重新连接 Passport。",
+        "open_passport_action": "打开 Passport 设置"
+      },
       "cors": "由于 CORS 策略，该请求已被阻止",
       "mixed_content": "由于请求了不安全的 HTTP 资源，该请求已被阻止",
       "parse": {

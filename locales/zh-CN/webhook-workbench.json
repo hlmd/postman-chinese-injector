@@ -42,7 +42,32 @@
     "tabs": {
       "events": "事件",
       "routing": "路由",
+      "scripts": "脚本",
       "settings": "设置"
+    },
+    "scripts": {
+      "events": {
+        "before_request": "收到事件时",
+        "after_response": "响应后"
+      },
+      "descriptions": {
+        "before_request": "「收到事件时」脚本使用 JavaScript 编写，在收到 Webhook 事件后、选定 Webhook 响应之前运行。",
+        "after_response": "「响应后」脚本使用 JavaScript 编写，在选定 Webhook 响应之后运行。"
+      },
+      "placeholders": {
+        "before_request": "编写在收到 Webhook 事件时运行的脚本。",
+        "after_response": "编写用于测试 Webhook 响应的脚本。"
+      },
+      "tooltips": {
+        "before_request": "「收到事件时」脚本在收到 Webhook 事件后、选定 Webhook 响应之前运行。",
+        "after_response": "「响应后」脚本在选定 Webhook 响应之后运行。"
+      },
+      "saving": "正在保存…",
+      "unsaved": "有未保存的更改",
+      "load_error": {
+        "title": "无法加载脚本",
+        "description": "加载 Webhook 脚本时出错。"
+      }
     },
     "cli_commands": {
       "title": "使用 Postman CLI 将事件转发到本地服务器",
@@ -164,8 +189,8 @@
         "deleting": "正在删除..."
       },
       "status_indicator": {
-        "active_label": "活动 Webhook",
-        "inactive_label": "非活动 Webhook"
+        "active_label": "状态：启用",
+        "inactive_label": "状态：停用"
       }
     },
     "request_inspector": {
@@ -205,10 +230,29 @@
       "no_response_body_description": "此响应不包含响应体，或响应体过大。",
       "no_headers_title": "无标头",
       "no_headers_description": "没有捕获任何标头。",
+      "logs": {
+        "empty_title": "暂无日志",
+        "empty_description": "Webhook 脚本的控制台日志将显示在这里。",
+        "load_error_title": "无法加载日志",
+        "load_error_description": "加载脚本日志时出错。",
+        "new_logs": "新日志",
+        "text_language": "Text"
+      },
+      "test_results": {
+        "empty_title": "编写测试实现自动化调试",
+        "empty_description": "使用脚本编写断言，验证 Webhook 请求是否按预期处理。",
+        "load_error_title": "无法加载测试结果",
+        "load_error_description": "加载脚本测试结果时出错。",
+        "script_error_title": "脚本执行失败",
+        "passed": "通过",
+        "failed": "失败",
+        "skipped": "跳过"
+      },
       "tabs": {
         "body": "请求体",
         "headers": "请求头",
-        "test_results": "测试结果"
+        "test_results": "测试结果",
+        "logs": "日志"
       }
     },
     "not_found": {

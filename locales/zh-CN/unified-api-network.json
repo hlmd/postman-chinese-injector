@@ -1,20 +1,66 @@
 {
+  "governance": {
+    "title": "治理",
+    "subtitle": "查看并撤销已授予成员的命名空间 API 访问权限。",
+    "no_namespaces": "你还没有管理任何命名空间。成为管理员后，访问授权将显示在这里。",
+    "error": "无法加载访问授权，请重试。",
+    "empty": "暂无生效的访问授权。已批准的访问申请将显示在这里。",
+    "no_results": "没有匹配的授权。",
+    "search_placeholder": "按成员、端点或命名空间搜索",
+    "endpoint_unknown": "未知端点",
+    "filter": {
+      "method": "方法"
+    },
+    "table": {
+      "user": "成员",
+      "endpoint": "端点",
+      "namespace": "命名空间",
+      "granted": "授予时间",
+      "actions": "操作"
+    },
+    "revoke": {
+      "action": "撤销",
+      "heading": "撤销访问权限",
+      "confirm": "撤销访问权限",
+      "cancel": "取消",
+      "body": "此操作将撤销 {member} 对 {namespace} 中 {endpoint} 的访问权限。权限将立即移除，但最近几分钟内签发的 Passport 会话可能会持续生效直至过期。"
+    },
+    "toast": {
+      "revoked": "访问权限已撤销。",
+      "error": "无法撤销访问权限，请重试。"
+    }
+  },
+  "sidebar": {
+    "heading": "Passport Access",
+    "go_home_aria_label": "前往首页"
+  },
   "breadcrumb": {
     "aria_label": "面包屑",
-    "api_network": "API 网络"
+    "api_network": "Passport Access"
+  },
+  "error_boundary": {
+    "title": "出错了",
+    "description": "无法加载此页面，请重试。"
+  },
+  "error_state": {
+    "title": "无法加载 Passport Access",
+    "description": "加载 Passport Access 时出错，请重试。",
+    "reload": "重新加载"
   },
   "add_workspaces": {
     "trigger": "添加工作区",
     "title": "将工作区添加到 {namespaceName}",
     "subtitle": "搜索工作区并添加到此命名空间。",
     "search_placeholder": "搜索工作区...",
+    "show_accessible_only": "仅显示我可添加的 Workspace",
     "empty_state": "未找到工作区",
     "empty_state_no_query": "搜索并添加您的工作区",
     "table": {
       "name": "工作区",
       "team": "团队",
       "tags": "标签",
-      "dash": "—"
+      "dash": "—",
+      "no_edit_access": "添加此 Workspace 需要编辑者权限"
     },
     "review": {
       "title_add": "审核并添加工作区",
@@ -42,14 +88,20 @@
     "toast": {
       "approved": "请求已批准。",
       "denied": "请求已拒绝。",
-      "error": {
-        "permission_denied": "您没有权限审核此命名空间的请求。",
-        "not_pending": "此请求已被审核。",
-        "no_access": "无法批准此请求，因为无法授予所请求的访问权限。",
-        "outside_team": "命名空间访问权限只能授予您团队的成员。",
-        "mixed_members": "命名空间成员必须是单独的用户和群组，或者是单个团队，不能两者兼有。",
-        "generic": "出现错误，请重试。"
-      }
+      "error": "出错了，请重试。"
+    },
+    "filter": {
+      "aria_label": "按审核范围筛选申请",
+      "for_your_review": "待我审核",
+      "your_requests": "我的申请"
+    },
+    "empty": {
+      "title": "暂无申请",
+      "for_your_review": "你所管理命名空间的申请将显示在这里。",
+      "your_requests": "你提交的申请将显示在这里。",
+      "error_title": "无法加载申请",
+      "error_description": "出错了，请重试。",
+      "refresh": "刷新"
     }
   },
   "workspace_overview": {
@@ -66,7 +118,8 @@
     "copy_link": "复制链接",
     "copied": "已复制",
     "open_workspace": "使用",
-    "request_credentials": "请求凭据"
+    "request_credentials": "请求凭据",
+    "options": "{workspaceName} 的更多操作"
   },
   "workspace_list_item": {
     "by_prefix": "由 ",
@@ -87,7 +140,7 @@
   },
   "access_requests": {
     "breadcrumb": {
-      "api_network": "API 网络",
+      "api_network": "Passport Access",
       "access_management": "访问管理",
       "requests": "请求"
     },
@@ -167,8 +220,8 @@
   },
   "remove_workspace": {
     "title": "移除 Workspace",
-    "close_aria_label": "关闭弹窗",
-    "body": "{workspaceName} 将从 {namespaceName} 命名空间中移除。该 Workspace 本身不会被删除，您可以稍后重新添加。",
+    "heading": "将 Workspace 从命名空间中移除？",
+    "body": "移除后，你的团队将无法在 {namespaceName} 命名空间中发现 {workspaceName}。该 Workspace 不会从你的账号中删除。",
     "cancel": "取消",
     "confirm": "移除",
     "removing": "正在移除…",
@@ -180,8 +233,8 @@
   },
   "delete_namespace": {
     "title": "删除命名空间",
-    "close_aria_label": "关闭弹窗",
-    "body": "{namespaceName} 将被永久删除，此操作无法撤销。",
+    "heading": "删除命名空间？",
+    "body": "删除后，{namespaceName} 及其中的所有内容将被永久移除。此操作无法撤销。",
     "cancel": "取消",
     "confirm": "删除",
     "deleting": "正在删除…",

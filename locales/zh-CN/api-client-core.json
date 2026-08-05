@@ -545,6 +545,16 @@
       "input_password_placeholder": "密码",
       "var_validation_msg": "使用变量来保证敏感数据的安全。"
     },
+    "auth_sasl": {
+      "input_mechanism": "机制",
+      "mechanism_plain": "PLAIN",
+      "mechanism_scram_sha_256": "SCRAM-SHA-256",
+      "mechanism_scram_sha_512": "SCRAM-SHA-512",
+      "input_username": "用户名",
+      "input_username_placeholder": "用户名",
+      "input_password": "密码",
+      "input_password_placeholder": "密码"
+    },
     "akamai-edgegrid": {
       "input_access_token": "访问令牌",
       "input_access_token_placeholder": "访问令牌",
@@ -598,7 +608,14 @@
       "input_service_tooltip": "接收 请求 的服务。",
       "input_session": "会话令牌",
       "input_session_placeholder": "会话令牌",
-      "input_session_tooltip": "仅在使用临时安全凭证时需要。"
+      "input_session_tooltip": "仅在使用临时安全凭证时需要。",
+      "input_source": "来源",
+      "source_static": "静态",
+      "source_environment": "环境",
+      "input_source_tooltip": "「静态」使用此处填写的 Access Key 和 Secret。「环境」会在发送请求时，从本机的 AWS 配置（通过 AWS CLI）加载凭据。",
+      "input_profile": "AWS Profile",
+      "input_profile_placeholder": "default",
+      "input_profile_tooltip": "用于加载凭据的 AWS 配置中的命名 Profile。留空则使用默认凭据链。"
     },
     "azure": {
       "input_api_key": "API 密钥",
@@ -713,9 +730,6 @@
       "expired_auto_refresh": "您过期的 令牌 将在发送 请求 之前自动刷新。",
       "access_to_view_and_use": "这将允许任何有权访问此 请求 的人查看和使用它。",
       "configure_new_heading": "配置新的 令牌",
-      "token_config_heading": "对 令牌 配置的一些更改",
-      "token_config_msg": "<0>令牌 配置设置现在作为 {entityType} 的一部分共享。下面的字段反映了您用于配置 OAuth2.0 令牌 的最后设置。目前还没有与任何人分享它们。您仍然可以使用这些设置来生成新的 令牌。但是，如果您希望编辑它们，它们将作为 {entityType}</0><1> 的一部分进行共享，所有可以查看此 {entityType}</1> 的人都可以看到",
-      "edit_config_button": "编辑 令牌 配置",
       "config_tab_fields": {
         "access_token": "访问令牌地址",
         "client_auth": "客户端验证",
@@ -892,7 +906,8 @@
       "apikey": "API Key",
       "akamai_edgegrid": "Akamai EdgeGrid",
       "asap": "ASAP（Atlassian）",
-      "azure": "Azure Key Vault"
+      "azure": "Azure Key Vault",
+      "sasl": "SASL"
     },
     "add_auth_params_to": {
       "url": "请求 URL",

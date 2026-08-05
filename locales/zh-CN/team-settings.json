@@ -112,6 +112,38 @@
       "cancel": "取消",
       "forbidden_message": "只有 团队 管理员可以管理 团队 中的资源。"
     },
+    "tag_management": {
+      "who_can_manage": {
+        "label": "谁可以在你的{lower}中创建、编辑或删除标签？",
+        "options": {
+          "standard": {
+            "label": "所有成员可创建，任何人不可编辑或删除",
+            "helper_text": "任何人都可以创建标签。标签创建后不可编辑或删除。"
+          },
+          "edit_restricted": {
+            "label": "所有成员可创建，指定人员可编辑或删除",
+            "helper_text": "任何人都可以创建标签。仅所选人员或群组可编辑或删除标签。"
+          },
+          "fully_restricted": {
+            "label": "指定人员或群组",
+            "helper_text": "仅所选人员或群组可创建、编辑或删除标签。其他{lower}成员仍可使用标签。"
+          }
+        }
+      },
+      "allowed_members": {
+        "label": "选择人员和群组"
+      },
+      "search_for_members": {
+        "placeholder": "搜索…",
+        "empty_message": "未找到用户"
+      },
+      "errors": {
+        "unable_to_save": "当前无法保存更改，请重试。",
+        "teams_unavailable": "暂时无法加载团队成员，因此无法编辑这些设置。请刷新后重试。"
+      },
+      "save": "保存更改",
+      "cancel": "取消"
+    },
     "collection_management": {
       "title": "集合",
       "description": "管理组织内集合的共享。",
@@ -391,6 +423,10 @@
         "sandbox_team": {
           "title": "管理沙箱 团队",
           "description": "将成员添加到沙箱 团队。"
+        },
+        "tags": {
+          "title": "管理标签",
+          "description": "设置谁可以在你的{lower}中创建、编辑或删除标签。"
         }
       },
       "collapse_all": "全部折叠",
@@ -464,6 +500,77 @@
     "title": "组织访问",
     "orgs_discovery": {
       "title": "使该组织易于被发现"
+    }
+  },
+  "tags": {
+    "page": {
+      "heading": "标签",
+      "description": "创建和管理标签，以组织整个组织范围内的各类元素。使用状态标签跟踪 Collection 的生命周期阶段，使用普通标签对相关元素进行分组和展示。",
+      "create_button_label": "创建标签"
+    },
+    "not_supported_message": "你的团队不支持标签管理。",
+    "not_enabled_message": "你的团队尚未启用标签管理。",
+    "table": {
+      "search_placeholder": "按标签名称搜索",
+      "type_filter_placeholder": "按类型筛选",
+      "load_error": "标签加载失败，请重试。",
+      "column_name": "名称",
+      "column_type": "类型",
+      "column_applied_to": "应用于",
+      "column_created_by": "创建者",
+      "column_created_on": "创建时间",
+      "column_updated_by": "更新者",
+      "column_last_updated": "最后更新",
+      "type_badge_status": "状态",
+      "type_badge_default": "普通",
+      "type_filter_status": "状态",
+      "type_filter_default": "普通",
+      "action_edit": "编辑",
+      "action_delete": "删除"
+    },
+    "create_modal": {
+      "heading": "创建标签",
+      "tag_type_label": "标签类型",
+      "standard_type_label": "普通",
+      "standard_type_helper": "在整个组织范围内组织和发现元素。",
+      "status_type_label": "状态",
+      "status_type_helper": "跟踪 Collection 的生命周期阶段。",
+      "name_label": "名称",
+      "tag_name_placeholder": "输入标签名称",
+      "status_name_placeholder": "输入状态名称",
+      "cancel_button_label": "取消",
+      "create_button_label": "创建",
+      "create_button_pending_label": "正在创建…"
+    },
+    "edit_modal": {
+      "heading_tag": "编辑标签",
+      "heading_status_tag": "编辑状态标签",
+      "name_placeholder": "输入标签名称",
+      "cancel_button_label": "取消",
+      "save_button_label": "保存",
+      "save_button_pending_label": "正在保存…"
+    },
+    "delete_modal": {
+      "heading": "删除标签",
+      "description": "<bold>{tagName}</bold> 将被永久删除{count, plural, =0 {} one {，并从 # 个元素中移除} other {，并从 # 个元素中移除}}。",
+      "confirm_input_label": "输入 \"delete\" 以确认",
+      "confirmation_text": "delete",
+      "cancel_button_label": "取消",
+      "delete_button_label": "删除",
+      "delete_button_pending_label": "正在删除…"
+    },
+    "validation": {
+      "max_length_error": "标签不能超过 64 个字符。",
+      "min_length_error": "标签至少需要 2 个字符。",
+      "invalid_characters_error": "标签必须以 Unicode 字母或数字开头和结尾。中间允许使用：Unicode 字母、数字、空格以及 _ @ . / : -",
+      "duplicate_slug_error": "你的团队中已存在同名标签。",
+      "create_emoji_required_error": "创建此状态标签前请先选择一个 Emoji。",
+      "save_emoji_required_error": "保存此状态标签前请先选择一个 Emoji。"
+    },
+    "mutations": {
+      "create_error": "标签创建失败，请重试。",
+      "update_error": "标签更新失败，请重试。",
+      "delete_error": "标签删除失败，请重试。"
     }
   }
 }

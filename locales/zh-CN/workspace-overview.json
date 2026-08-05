@@ -424,6 +424,14 @@
     "pending_requests": {
       "label": "待处理请求（{count}）"
     },
+    "asset_type": {
+      "heading": "资产类型",
+      "description": "为此 Workspace 指定资产类型以进行分类。每个 Workspace 同时只能有一种资产类型。",
+      "placeholder": "选择资产类型",
+      "readonly_hint": "你没有更改资产类型的权限。",
+      "toast_success": "资产类型已更新",
+      "toast_error": "资产类型更新失败，请重试。"
+    },
     "visibility": {
       "workspace_type_container_heading": "Workspace 类型",
       "change_workspace_type_cta": "更改",
@@ -683,6 +691,7 @@
         "add": "添加到命名空间",
         "added": "已添加到命名空间"
       },
+      "other_namespaces": "+ 另外 {count} 个{count, plural, one {命名空间} other {命名空间}}",
       "path_label": "路径",
       "network_breadcrumb": "API Network",
       "description": "请求将此工作区添加到 Unified API Network 中的命名空间。",
@@ -1062,10 +1071,13 @@
         "description": "您需要拥有合作伙伴管理者角色才能查看此请求。"
       }
     },
+    "request_processed_message": "此申请已处理。",
     "share_request_approval": {
-      "completed_message": "此请求已被处理。",
       "approve_button": "批准",
       "deny_button": "拒绝"
+    },
+    "workspace_access_request_approval": {
+      "respond_button": "回复申请"
     }
   },
   "workspace_tools": {

@@ -1,0 +1,75 @@
+{
+  "progress_step": {
+    "heading": "集成进度",
+    "workflow_line": "工作流：{workflowId}",
+    "workflow_started": "工作流已启动",
+    "status_line": "状态：{status}",
+    "started_with_elapsed": "开始于 {startedAt} · {elapsedLabel}",
+    "polling_label": "每 3 秒轮询一次",
+    "loading_job_status": "正在加载任务状态…",
+    "loading_job_progress": "正在加载任务进度…",
+    "back_to_services_button": "返回服务列表",
+    "back_to_discovery_button": "返回服务发现",
+    "retry_button": "重试",
+    "failure_time": "失败于 {timeAgo}",
+    "error_pill": "错误",
+    "progress_summary": {
+      "groups": "已完成 {completedCount} / {totalCount} 个分组（{percentage}%）",
+      "steps": "已处理 {totalStepsCompleted}/{totalStepsCount} 个步骤"
+    },
+    "status_badges": {
+      "completed": "已完成",
+      "in_progress": "进行中",
+      "pending": "等待中",
+      "failed": "已失败"
+    },
+    "job_status": {
+      "completed": "已完成",
+      "in_progress": "进行中",
+      "partially_completed": "部分完成",
+      "failed": "已失败",
+      "unknown": "未知"
+    },
+    "service_status": {
+      "heading": "服务状态",
+      "loading": "正在加载服务分组…",
+      "default_detail": "服务分组",
+      "repository_label": "GitHub 仓库",
+      "workspace_label": "目标 Workspace"
+    },
+    "errors": {
+      "heading": "错误",
+      "step_badge": "步骤",
+      "step_badge_with_count": "步骤 {stepIndex}/{totalSteps}",
+      "error_message_badge": "错误信息"
+    }
+  },
+  "jobs_step": {
+    "heading": "批量集成任务",
+    "description": "你所在组织的进行中和近期集成任务。每个组织同时只允许有一个进行中的任务。",
+    "refresh_button": "刷新",
+    "refreshing_button": "正在刷新…",
+    "retry_button": "重试",
+    "previous_page_tooltip": "上一页",
+    "next_page_tooltip": "下一页",
+    "view_progress_tooltip": "查看进度",
+    "loading": "正在加载集成任务…",
+    "blank_state": {
+      "title": "未找到集成任务",
+      "description": "为该团队启动工作流后，批量集成任务将显示在这里。"
+    },
+    "table": {
+      "workflow_header": "工作流",
+      "total_services_header": "服务总数",
+      "status_header": "状态",
+      "started_header": "开始时间",
+      "completed_header": "完成时间"
+    },
+    "statuses": {
+      "completed": "已完成",
+      "in-progress": "进行中",
+      "partially-completed": "部分完成",
+      "failed": "已失败"
+    }
+  }
+}

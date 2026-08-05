@@ -1,7 +1,8 @@
 {
   "permission_error": "无法获取自定义域的所有权限。",
+  "upgrade_action_error": "出错了。",
   "heading": "自定义域",
-  "subheading": "在自定义域上托管现有的和新的 API 文档。 {isPaidOrTrial, select, true {您的团队最多可以添加 {customDomainsLimit} 个自定义域。} other {}} <CustomLink><Text>了解更多</Text></CustomLink>",
+  "subheading": "将你现有和新增的 API 文档托管到自定义域名上。{isPaidOrTrial, select, true {{isUnlimited, select, true {你的团队可添加不限数量的自定义域名。} other {你的团队最多可添加 {customDomainsLimit} 个自定义域名。}}} other {}} <CustomLink><Text>了解更多</Text></CustomLink>",
   "insufficient_permissions": {
     "message": "权限不足",
     "description": "只有 团队 管理员可以添加自定义域"

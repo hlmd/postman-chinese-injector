@@ -85,6 +85,18 @@
         "interceptor": {
           "title": "Interceptor Agent 不可用",
           "body": "请确保已安装并启用 Postman Interceptor 扩展程序。"
+        },
+        "unsupported": {
+          "message": "<button>切换到 Desktop 或 Cloud Agent</button> 以发送请求。"
+        },
+        "version_not_supported": {
+          "title": "Desktop Agent 版本不受支持",
+          "body": "你使用的 Postman Desktop Agent 版本较旧，不支持此请求。请更新 Desktop Agent 后重试。"
+        },
+        "change_agent": "更换 Agent",
+        "agent_name": {
+          "desktop": "Desktop Agent",
+          "cloud": "Cloud Agent"
         }
       },
       "fork_recommendation": {
@@ -371,6 +383,47 @@
     "empty_state": {
       "title": "无请求历史记录",
       "message": "发送请求并浏览其历史记录。"
+    }
+  },
+  "proactive_suggestions": {
+    "aria_label": "主动请求建议",
+    "scanning_label": "扫描中",
+    "diagnosing_label": "诊断中",
+    "thinking_label": "思考中",
+    "applying_label": "正在应用…",
+    "next_steps": "下一步？",
+    "caught_up": "已全部处理完毕",
+    "ready_headlines": {
+      "ready_to_go": "一切就绪！",
+      "all_systems_go": "各项检查均已通过！",
+      "standing_by_for_launch": "准备就绪，随时可以开始！",
+      "coast_is_clear": "没有任何阻碍！",
+      "no_anomalies_detected": "未检测到异常！"
+    },
+    "next_steps_description": "需要帮助规划下一步吗？",
+    "view_next_steps": "查看下一步",
+    "trigger_label": "主动建议",
+    "settings_label": "建议设置",
+    "dismiss_label": "忽略建议",
+    "no_longer_relevant": "已不再适用",
+    "proposed_fix_label": "建议的修复方案",
+    "previous_suggestion_label": "上一条建议",
+    "next_suggestion_label": "下一条建议",
+    "pager_label": "建议导航，第 {current} 条 / 共 {total} 条",
+    "apply_cta": "应用",
+    "continue_cta": "继续",
+    "run_cta": "运行",
+    "looking_for_suggestion": "正在查找建议…",
+    "default_fix_headline": "我找到了此请求的修复方案。",
+    "default_handoff_headline": "这需要在 Agent Mode 中进一步排查。",
+    "actions": {
+      "try_with_agent_mode": "使用 Agent Mode 试试"
+    },
+    "settings": {
+      "heading": "建议",
+      "description": "控制 Agent Mode 在哪些位置展示情境化建议。",
+      "request_tab_toggle_label": "显示 AI 建议",
+      "request_tab_toggle_description": "在状态栏中显示修复和优化建议。"
     }
   },
   "save_popover": {

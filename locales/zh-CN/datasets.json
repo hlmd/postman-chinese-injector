@@ -1,4 +1,11 @@
 {
+  "variable_suggestions": {
+    "dataset_subtitle": "数据集",
+    "source_subtitle": "隶属于 {datasetName} 的数据源",
+    "view_subtitle": "隶属于 {datasetName} 的视图",
+    "loading": "正在加载数据集…",
+    "view_dataset": "查看数据集"
+  },
   "entity_type_icon": {
     "label": "数据集"
   },
@@ -37,9 +44,11 @@
   "source_config": {
     "connection_status": {
       "connected": "已连接",
-      "failed": "连接失败"
+      "failed": "连接失败",
+      "validate_failed": "无法连接到数据库。请检查连接信息后重试。"
     },
-    "test_connection": "测试",
+    "test_connection": "测试连接",
+    "edit": "编辑",
     "field": {
       "host": "主机",
       "port": "端口",
@@ -49,9 +58,38 @@
       "table": "表",
       "schema": "模式"
     },
+    "validation": {
+      "host_required": "主机不能为空"
+    },
+    "ssh": {
+      "enable": "通过 SSH 隧道连接",
+      "description": "数据库主机必须能从该 SSH 服务器访问。",
+      "host": "SSH 主机",
+      "port": "SSH 端口",
+      "username": "SSH 用户名",
+      "private_key": "SSH 私钥",
+      "host_key": "SSH 主机密钥",
+      "skip_host_key_verification": "跳过 SSH 主机密钥验证",
+      "validation": {
+        "host_required": "SSH 主机不能为空",
+        "username_required": "SSH 用户名不能为空",
+        "private_key_required": "SSH 私钥不能为空",
+        "private_key_vault_required": "保存此数据源前，请先将 SSH 私钥保存到 Vault",
+        "host_key_required": "除非跳过主机密钥验证，否则 SSH 主机密钥不能为空"
+      }
+    },
     "copy_to_workspace": {
       "label": "将文件复制到仓库",
       "description": "将文件复制到仓库中，以便与他人共享时数据集仍可正常使用。对于体积很大的文件，请禁用此选项。"
+    },
+    "location": {
+      "file_label": "文件",
+      "url_label": "URL",
+      "connection_label": "连接字符串",
+      "url_placeholder": "https://example.com/data.csv",
+      "choose_file": "选择文件",
+      "change_file": "更改",
+      "remote_file": "远程文件"
     }
   },
   "secret_field": {
@@ -61,7 +99,36 @@
     "unlink_aria_label": "取消 {label} 与 保险库 密钥 的链接",
     "search_placeholder": "搜索秘密...",
     "no_matching": "没有匹配的秘密",
-    "no_available": "没有可用的 保险库 秘密"
+    "no_available": "没有可用的 保险库 秘密",
+    "choose_file": "选择文件",
+    "file_prompt_suffix": "或在下方粘贴你的{label}。",
+    "selected_file": "已选文件：",
+    "change_file": "更改",
+    "choose_file_aria_label": "选择{label}文件",
+    "change_file_aria_label": "更改已选的{label}文件",
+    "file_contents": "文件内容",
+    "not_saved_to_vault": "敏感值，请保存到 Vault",
+    "save_to_vault": "保存到 Vault",
+    "secret_name": "密钥名称",
+    "secret_name_required": "请输入密钥名称。",
+    "contents_required": "保存前请输入密钥内容。",
+    "local_vault": "Local Vault",
+    "shared_vault": "Shared Vault",
+    "file_too_large": "请选择小于 {maxSize} 的文件。",
+    "file_read_failed": "无法读取此文件。",
+    "file_save_failed": "无法将此值保存到 Vault。"
+  },
+  "errors": {
+    "ssh": {
+      "config_invalid": "SSH 隧道配置不完整或无效。请检查堡垒机主机、端口和用户名。",
+      "private_key_invalid": "SSH 私钥无效或不受支持。请使用未加密的 OpenSSH 或 PEM 格式私钥。",
+      "host_key_invalid": "SSH 主机密钥无效。请使用单个公共主机密钥，例如 ssh-ed25519 AAAA…",
+      "host_key_mismatch": "SSH 主机密钥验证失败。请确认堡垒机当前的主机密钥。",
+      "auth_failed": "SSH 服务器拒绝了凭据。请检查 SSH 用户名和私钥。",
+      "unreachable": "无法连接到 SSH 服务器。请检查堡垒机主机、端口和网络访问。",
+      "timeout": "SSH 连接超时。请检查堡垒机和网络后重试。",
+      "forward_failed": "SSH 服务器无法访问数据库。请检查从堡垒机看到的数据库主机和端口。"
+    }
   },
   "workbench_header": {
     "button": {
@@ -75,17 +142,35 @@
   },
   "data_source_edit": {
     "loading": "正在加载源...",
-    "tab": {
-      "data": "数据",
-      "settings": "设置"
-    },
+    "last_refreshed_label": "上次刷新",
+    "load_error_heading": "数据源加载失败",
     "refresh": "刷新",
-    "refreshed_at": "刷新于 {timestamp}"
+    "refreshed_at": "刷新于 {timestamp}",
+    "row_count": "{count, plural, one {# 行} other {# 行}}",
+    "row_count_capped": "仅显示前 {count, number} 行",
+    "update": "更新"
+  },
+  "file_preview_modal": {
+    "title": "文件预览",
+    "save_error_title": "文件保存失败",
+    "row_count": "{count, plural, one {# 行} other {# 行}}",
+    "cancel": "取消",
+    "save": "保存",
+    "preview_unavailable": "该文件类型不支持预览，但仍可添加为数据源。",
+    "parse_error": {
+      "csv": "无法按 CSV 解析此文件。请确认它是有效的 CSV 文件。",
+      "json": "无法按 JSON 解析此文件。请确认它是有效的 JSON 记录数组。"
+    },
+    "save_to_cloud": {
+      "label": "将文件保存到 Postman 云端"
+    }
   },
   "data_view": {
     "run": "运行",
     "update": "更新",
     "reset": "重置",
+    "save_as_new_view": "另存为新视图",
+    "data_label": "数据",
     "query_label": "查询",
     "empty_table": "运行查询以查看数据"
   },
@@ -100,6 +185,7 @@
     "toasts": {
       "success_title": "成功",
       "source_created": "数据源创建成功",
+      "source_updated": "数据源更新成功",
       "source_deleted": "数据源删除成功",
       "view_deleted": "视图删除成功"
     },
@@ -110,13 +196,20 @@
     "sources": {
       "title": "数据源",
       "subtitle": "此数据集背后的原始数据。",
+      "subtitle_empty_hint": "请在下方选择数据源类型，添加第一个数据源。",
+      "drag_drop_hint": "你也可以将 CSV、JSON 或电子表格文件拖放到此处添加为数据源。",
+      "drag_drop_hint_empty": "你也可以将 CSV、JSON 或电子表格文件拖放到此处。",
       "add_source": "添加数据源",
       "add_another": "添加其他数据源",
-      "drop_zone_local": "拖放或点击以上传 .csv 或 .json",
-      "drop_zone_cloud": "拖放或点击以上传 .csv",
+      "drop_zone_local": "拖放或点击上传 .csv、.json 或电子表格文件（.xlsx、.xls、.ods）",
+      "drop_zone_cloud": "拖放或点击上传 .csv、.json 或电子表格文件（.xlsx、.xls、.ods）",
       "drop_overlay": "拖放文件以将其添加为数据源",
-      "url_placeholder": "https://example.com/data.csv",
+      "unsupported_file": {
+        "title": "不支持的文件类型",
+        "description": "仅 .csv 和 .json 文件可添加为数据源。"
+      },
       "kind": {
+        "file": "文件",
         "local": "本地文件",
         "cloud": "Postman 云文件",
         "mysql": "MySQL",
@@ -158,7 +251,7 @@
     "cancel": "取消"
   },
   "description": {
-    "editor_placeholder": "添加描述..."
+    "editor_placeholder": "数据集把你的数据整合成可用 SQL 查询的表。你可以上传 CSV、JSON 或 Excel 文件，也可以连接数据库。每个数据源会成为一张表，按名称引用，使用 SQLite 方言查询。配置完成后，你可以：\n• 作为迭代数据驱动 Collection 运行（每行一次迭代）\n• 在请求的请求前脚本和响应后脚本中通过 pm.datasets 访问（executeView / executeQuery）\n• 为 Mock Server 提供数据支持，返回动态响应"
   },
   "common": {
     "cancel": "取消",

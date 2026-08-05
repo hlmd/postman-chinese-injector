@@ -2,6 +2,15 @@
   "entity_type_icon": {
     "collection": "集合"
   },
+  "unknown_item": {
+    "tooltip": "你当前的 Postman 版本不支持此项目类型。请更新应用后查看。",
+    "modal": {
+      "heading": "不支持的项目类型",
+      "body": "此项目的类型不受当前 Postman 版本支持。请将 Postman 更新到最新版本后查看。",
+      "body_named": "\"{name}\" 的类型不受当前 Postman 版本支持。请将 Postman 更新到最新版本后查看。",
+      "dismiss": "知道了"
+    }
+  },
   "offline_error_state": {
     "heading": "无法加载数据",
     "description": "我们正在尝试与我们的服务器建立连接。在您连接之前，您的数据可能不是最新的。",
@@ -30,8 +39,6 @@
     "description": "请使用不同的关键字重试，并且不要忘记检查拼写错误。您可以按名称、网址和 fork 标签进行搜索。"
   },
   "could_not_load_requests": "无法加载请求。 <1>再试一次</1>",
-  "sign_in_to_create_collection": "登录以创建 集合",
-  "add_collection_permission_error": "您没有执行此操作的权限。",
   "sidebar_actions_menu": {
     "disable_trash_tooltip": {
       "members_only": "只有该 工作区 的成员才能恢复已删除的集合",
@@ -203,6 +210,10 @@
       "connect_repository": "连接存储库",
       "export": "导出 集合",
       "generate_sdk": "生成SDK"
+    },
+    "visualize_collection": {
+      "label": "生成 Flow",
+      "error": "加载 Flows 模块时出错。"
     },
     "generate_specification": {
       "label": "生成规范"
@@ -382,7 +393,8 @@
     "grpc": "gRPC",
     "websocket": "WebSocket",
     "socketio": "套接字IO",
-    "mqtt": "MQTT"
+    "mqtt": "MQTT",
+    "kafka": "Kafka"
   },
   "dependency_actions": {
     "update": {

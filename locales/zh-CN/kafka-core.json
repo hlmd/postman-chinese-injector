@@ -4,77 +4,145 @@
     "produce": "生产",
     "consume": "消费"
   },
+  "mode_switch_modal": {
+    "title": {
+      "produce": "停止发送并切换模式？",
+      "consume": "停止接收并切换模式？"
+    },
+    "description": {
+      "produce": "切换到「消费」将停止当前发送，尚未发送完成的事件将不会发出。",
+      "consume": "切换到「生产」将停止当前数据流，你将不再接收本次运行的事件。"
+    },
+    "cancel": "取消",
+    "confirm": "停止并切换"
+  },
   "action": {
     "send": "发送",
     "stream": "流式传输",
+    "stop": "停止",
+    "test_connection": "测试连接",
     "disabled_pick_topic": "请先选择一个主题。"
   },
   "tabs": {
-    "message": "消息",
-    "key_partition": "键与分区",
-    "headers": "请求头",
-    "stream": "流"
+    "event": "事件",
+    "topics": "Topic",
+    "authorization": "身份验证",
+    "schema": "Schema",
+    "settings": "设置"
   },
-  "offset": {
-    "label": "偏移量",
+  "placeholder": {
+    "coming_soon": "即将推出。"
+  },
+  "offsets": {
+    "start_from": "起始位置",
+    "earliest": "最早",
     "latest": "最新",
-    "earliest": "最早"
+    "offset": "Offset",
+    "timestamp": "时间戳",
+    "offset_placeholder": "输入 offset",
+    "timestamp_placeholder": "输入时间戳"
+  },
+  "topics_list": {
+    "add_topic_placeholder": "添加 Topic",
+    "list_all_topics": "列出所有 Topic",
+    "loading": "正在加载 Topic…",
+    "load_error": "无法加载 Topic",
+    "retry": "重试",
+    "remove_aria_label": "移除 Topic {name}"
   },
   "status": {
-    "idle": "空闲"
+    "idle": "空闲",
+    "connecting": "连接中",
+    "connected": "已连接",
+    "disconnected": "已断开",
+    "error": "错误"
   },
   "schema": {
     "label": "模式",
     "aria_label": "切换模式显示"
   },
   "fields": {
-    "key": "键",
-    "key_placeholder": "消息键",
-    "key_helper": "具有相同键的记录将进入同一个分区。",
+    "partition_placeholder": "自动"
+  },
+  "connection": {
+    "inline": "内联",
+    "inherit": "继承",
+    "settings_aria_label": "连接设置",
+    "brokers": "Bootstrap 服务器",
+    "brokers_placeholder": "输入服务器 URL",
+    "brokers_more": "另外 {count} 个",
+    "tls": "使用 TLS",
+    "inherit_hint": "继承自上级。"
+  },
+  "event": {
+    "topic": "Topic",
+    "topic_placeholder": "添加 Topic",
     "partition": "分区",
-    "partition_placeholder": "自动",
-    "partition_helper": "留空以使用生产者的默认分区器。"
-  },
-  "topic": {
-    "aria_label": "主题",
-    "placeholder": "选择一个主题",
-    "none_placeholder": "（未找到主题）",
-    "empty_state": "未找到主题",
-    "no_topics_found": "未找到此集群的主题。"
-  },
-  "cluster": {
-    "aria_label": "集群",
-    "settings_aria_label": "集群设置",
-    "sasl": {
-      "none": "无"
+    "key": "Key",
+    "key_placeholder": "消息 Key",
+    "key_serde": "Key 序列化方式",
+    "value_serde": "Value 序列化方式",
+    "serde": {
+      "text": "String",
+      "json": "JSON",
+      "base64": "Base64",
+      "hex": "Hex"
     },
-    "fields": {
-      "name": "名称",
-      "name_placeholder": "我的集群",
-      "brokers": "引导服务器",
-      "brokers_helper": "每行一个 host:port。",
-      "tls": "使用 TLS",
-      "sasl": "SASL 机制",
-      "username": "用户名",
-      "password": "密码"
-    },
-    "modal": {
-      "new_heading": "新建集群",
-      "edit_heading": "编辑集群",
-      "save": "保存",
-      "cancel": "取消"
-    }
-  },
-  "produce": {
-    "empty_state": {
-      "pick_topic": "选择一个主题以启用生产表单。"
-    }
+    "headers": "请求头",
+    "ack": "Ack",
+    "generate": "生成"
   },
   "consume": {
     "stream": {
-      "no_messages": "暂无消息",
-      "start_hint": "点击“开始”以启动流式传输",
-      "select_message": "选择一条消息以查看详情"
+      "field": {
+        "topic": "Topic",
+        "partition": "分区",
+        "offset": "Offset",
+        "key": "Key",
+        "value": "Value",
+        "headers": "请求头"
+      }
     }
+  },
+  "stream": {
+    "title": "数据流",
+    "empty": "接收或发送事件",
+    "connecting": "正在连接…",
+    "more_aria_label": "数据流选项",
+    "no_messages": "暂无事件",
+    "error": "接收事件出错",
+    "filter": {
+      "search_placeholder": "搜索",
+      "search_aria_label": "搜索数据流记录",
+      "topic_label": "Topic",
+      "topic_aria_label": "按 Topic 筛选",
+      "clear": "清空消息"
+    },
+    "inspector": {
+      "preview": "预览",
+      "close": "关闭详情",
+      "language": {
+        "json": "JSON",
+        "text": "Text",
+        "xml": "XML",
+        "base64": "Base64",
+        "hex": "Hex"
+      },
+      "tab": {
+        "value": "Value",
+        "meta": "元数据"
+      }
+    }
+  },
+  "produce": {
+    "title": "生产"
+  },
+  "schema_panel": {
+    "placeholder_title": "Schema",
+    "placeholder_description": "Schema 面板即将推出。"
+  },
+  "settings": {
+    "placeholder_title": "设置",
+    "placeholder_description": "生产者 / 消费者客户端设置即将推出。"
   }
 }

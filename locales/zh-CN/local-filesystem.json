@@ -150,6 +150,8 @@
     "simulation_edit_config_modal_description": "更新 slug 和 mock 路由",
     "simulation_edit_config_slug_warning": "更改 slug 会重写公开 URL。仍在调用旧 URL 的现有使用者将开始收到 404 错误——请仅在已协调迁移的情况下进行更改。",
     "simulation_edit_config_save_button": "确认",
+    "simulation_edit_config_running_error": "Simulation 运行期间无法修改 slug。请先停止 Simulation。",
+    "simulation_edit_config_failed_toast": "无法更新 Simulation 配置",
     "simulation_remove_mock_modal_title": "从模拟中删除 mock 吗？",
     "simulation_remove_mock_modal_description": "删除“{mockName}”将从该模拟中删除其所有场景。",
     "simulation_remove_mock_confirm_button": "移除",

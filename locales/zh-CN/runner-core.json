@@ -41,5 +41,21 @@
       "tests_failed": "{total, plural, one {{total, number} 个测试中有 {failed, number} 个失败} other {{total, number} 个测试中有 {failed, number} 个失败}}",
       "errors": "{count, plural, one {{count, number} 个错误} other {{count, number} 个错误}}"
     }
+  },
+  "data_file": {
+    "toasts": {
+      "saved_to_workspace": "数据文件已保存到 Workspace",
+      "save_to_workspace_failed": "数据文件保存到 Workspace 失败，请重试。",
+      "storage_limit_reached": "你的 Workspace 存储空间已达上限。",
+      "content_read_failed": "无法识别文件内容，请重新选择文件上传",
+      "settings_saved": "数据文件设置已保存",
+      "settings_save_failed": "设置保存失败，请重试。",
+      "dataset_created": "数据集已创建",
+      "dataset_create_failed": "数据集创建失败，请重试。"
+    }
+  },
+  "run_type": {
+    "functional_description": "验证请求正确性和测试结果",
+    "performance_description": "测量响应时间和负载表现"
   }
 }

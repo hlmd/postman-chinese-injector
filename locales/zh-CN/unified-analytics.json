@@ -841,6 +841,8 @@
         "requests": "请求",
         "api_calls": "API 调用",
         "api_requests": "API 请求",
+        "primary_tasks": "主要任务",
+        "actions": "操作",
         "results": "结果",
         "success_rate": "成功率",
         "error_code": "错误代码",

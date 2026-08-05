@@ -91,7 +91,9 @@
         "flow": "流程",
         "collection": "集合",
         "request": "请求",
-        "environment": "环境"
+        "environment": "环境",
+        "document": "文档",
+        "mock": "Code Mock"
       },
       "featured_label": "精选",
       "trending_label": "流行趋势",
@@ -130,7 +132,9 @@
           "flow": "Flow",
           "collection": "Collection",
           "request": "请求",
-          "environment": "Environment"
+          "environment": "Environment",
+          "document": "文档",
+          "mock": "Code Mock"
         }
       }
     }

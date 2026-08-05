@@ -7,6 +7,7 @@
   "listing": {
     "searchPlaceholder": "搜索集成",
     "connectedHeading": "团队已连接的集成",
+    "connectedEmpty": "你的团队尚未连接任何集成。可在下方查找并连接集成。",
     "allHeading": "全部集成",
     "loading": "正在加载集成…",
     "empty": "未找到集成",
@@ -19,12 +20,75 @@
     "connected": "已连接",
     "byline": "作者：{author}"
   },
-  "detail": {
+  "details": {
     "notFoundTitle": "未找到集成",
-    "notFoundBody": "我们找不到与此地址对应的集成。",
+    "notFoundBody": "找不到该地址对应的集成。",
     "tabs": {
       "overview": "概览",
       "connections": "连接"
+    },
+    "backToHub": "返回集成列表",
+    "integrationBy": "由 {author} 提供的集成",
+    "aboutPublisher": "关于发布者"
+  },
+  "connectionSection": {
+    "connectedBadge": "已连接",
+    "connectButton": "连接",
+    "viewDocs": "查看文档",
+    "nameSuffix": "{name}（你）",
+    "otherTeamUsers_one": "+{count} 位其他团队成员",
+    "otherTeamUsers_other": "+{count} 位其他团队成员",
+    "disconnectSuccess": "{appName} 已成功断开连接。",
+    "disconnectError": "断开 {appName} 连接失败，请重试。",
+    "table": {
+      "name": "名称",
+      "email": "邮箱",
+      "disconnect": "断开连接"
+    },
+    "slack": {
+      "title": "Agent Tasks",
+      "description": "在 {appName} 中 @Postman 即可启动 Agent Mode 任务，并在会话线程中查看状态更新。"
+    },
+    "jira": {
+      "title": "创建和查看 Jira Issue",
+      "description": "从 Collection、响应或 Monitor 创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
+    }
+  },
+  "delete_modal": {
+    "heading": "删除集成？",
+    "body": "删除此集成后，它执行的所有操作将立即停止。确定要继续吗？",
+    "confirm": "删除集成",
+    "confirm_in_progress": "正在删除…",
+    "cancel": "取消",
+    "success": "集成已成功删除。",
+    "error": "删除集成时出错，请重试。"
+  },
+  "integrationSections": {
+    "actions": {
+      "connect": "添加集成",
+      "edit_label": "编辑集成",
+      "delete_label": "删除集成",
+      "creator_only_edit": "仅集成的创建者可以编辑其配置。",
+      "creator_only_delete": "仅集成的创建者可以删除它。"
+    },
+    "columns": {
+      "name": "名称",
+      "monitor": "Monitor",
+      "status": "状态",
+      "workspace": "Workspace",
+      "created_by": "创建者",
+      "last_run": "上次运行"
+    },
+    "status": {
+      "running": "运行中",
+      "success": "成功",
+      "failed": "失败"
+    },
+    "empty_value": "—",
+    "error": {
+      "title": "无法加载此集成的连接",
+      "description": "数据加载失败。",
+      "reload": "重新加载"
     }
   }
 }

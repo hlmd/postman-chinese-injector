@@ -4,6 +4,12 @@
     "empty_state_message": "从侧边栏选择或开始对话。",
     "empty_state_learn_more": "了解更多"
   },
+  "status_indicator": {
+    "pending": "状态：等待中",
+    "running": "状态：运行中",
+    "failed": "状态：已失败",
+    "cancelled": "状态：已取消"
+  },
   "onboarding": {
     "close_aria_label": "关闭引导",
     "intro": {
@@ -92,10 +98,19 @@
     "close_button_aria_label": "关闭差异面板",
     "open_workspace_button_label": "工作区视图",
     "open_workspace_button_aria_label": "在工作区视图中查看提议的更改",
+    "actions_toolbar_aria_label": "草稿操作",
     "merge_button_label": "合并",
     "merge_toast_success": "更改已合并",
     "merge_toast_error_title": "无法合并更改",
-    "merge_toast_error_description": "出现问题，请重试。"
+    "merge_toast_error_description": "出现问题，请重试。",
+    "discard_button_label": "放弃",
+    "discard_toast_success": "更改已放弃",
+    "discard_toast_error_title": "无法放弃更改",
+    "discard_toast_error_description": "出错了，请重试。",
+    "discard_confirm_title": "放弃待处理的更改？",
+    "discard_confirm_message": "此操作将永久删除待处理的更改，且无法撤销。",
+    "discard_confirm_confirm": "放弃",
+    "discard_confirm_cancel": "取消"
   },
   "review": {
     "files_count": "{count, plural, one {已更改 # 个文件} other {已更改 # 个文件}}",

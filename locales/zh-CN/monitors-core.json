@@ -6,6 +6,13 @@
   "entity_type_icon": {
     "label": "监控"
   },
+  "status": {
+    "healthy": "正常",
+    "unhealthy": "异常",
+    "paused": "已暂停",
+    "unknown": "未知",
+    "accessible_name": "状态：{status}"
+  },
   "share": {
     "tooltip": "分享 Monitor",
     "popover": {

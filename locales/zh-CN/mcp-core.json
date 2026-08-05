@@ -6,7 +6,10 @@
     "desktop_agent_not_supported": "不支持桌面代理",
     "desktop_agent_not_connected": "桌面代理未连接",
     "connection_failed": "无法运行 请求：",
-    "unable_to_connect": "无法连接"
+    "unable_to_connect": "无法连接",
+    "stateless_protocol_not_supported": {
+      "switch_to_compatible_version": "此服务器不支持 MCP 2026-07-28。请将协议版本重置为自动或固定为 Legacy，然后重新连接。"
+    }
   },
   "address_bar": {
     "url_input": {
@@ -29,6 +32,52 @@
     "disconnect": "断开",
     "connect": "连接",
     "clear_errors": "清除错误"
+  },
+  "settings": {
+    "editing_disabled_tooltip": "客户端连接期间无法修改此设置。",
+    "restore_default_button": "恢复默认",
+    "restore_default_tooltip": "将设置恢复为默认值（{defaultValue}）",
+    "toggle": {
+      "active_label": "开",
+      "inactive_label": "关"
+    },
+    "protocol": {
+      "title": "MCP 协议版本",
+      "description": "选择发送请求时使用的 MCP 协议版本。「自动」会与服务器协商兼容的版本。",
+      "aria_label": "选择 MCP 协议版本",
+      "editing_disabled_tooltip": "连接期间协议版本为只读",
+      "options": {
+        "auto": "自动",
+        "legacy": "Legacy",
+        "current": "2026-07-28"
+      }
+    },
+    "strict_ssl": {
+      "title": "严格 SSL",
+      "description": "启用严格的 SSL 证书校验。"
+    },
+    "request_timeout": {
+      "title": "请求超时",
+      "description": "请求超时时间（毫秒）。设为 0 表示不限制超时。"
+    },
+    "session_timeout": {
+      "title": "会话超时",
+      "description": "会话超时时间（毫秒）。"
+    }
+  },
+  "elicitation": {
+    "actions": {
+      "accept": "接受",
+      "deny": "拒绝",
+      "cancel": "取消"
+    },
+    "url": {
+      "instructions": "打开该 URL 完成所需操作，然后返回 Postman 并点击「接受」。"
+    },
+    "errors": {
+      "data_missing": "elicitation 请求无效：缺少数据。",
+      "schema_or_url_missing": "elicitation 请求无效：缺少 Schema 或 URL。"
+    }
   },
   "cartographer": {
     "empty_state": {

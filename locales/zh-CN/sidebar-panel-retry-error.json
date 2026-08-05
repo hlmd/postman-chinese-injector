@@ -1,0 +1,12 @@
+{
+  "heading": "板块内容加载失败。",
+  "failure_with_status": "无法获取{resource}（HTTP {statusCode}）。",
+  "failure_offline": "无法获取{resource}。你似乎处于离线状态。",
+  "failure_generic": "无法获取{resource}。",
+  "retry_failure_with_status": "第 {count} 次重试：无法获取{resource}（HTTP {statusCode}）。",
+  "retry_failure_offline": "第 {count} 次重试：无法获取{resource}。你似乎处于离线状态。",
+  "retry_failure_generic": "第 {count} 次重试：无法获取{resource}。",
+  "retry": "重试",
+  "retry_again": "再次重试",
+  "retrying": "正在重试（第 {count} 次）…"
+}

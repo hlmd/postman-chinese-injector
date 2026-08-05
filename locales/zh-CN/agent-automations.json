@@ -104,6 +104,9 @@
     "fields": {
       "name_label": "名称",
       "name_placeholder": "例如：审查 PR 中的 API 设计",
+      "workspace_select_workspace": "选择 Workspace",
+      "workspace_no_workspace": "无 Workspace",
+      "workspace_no_results": "未找到 Workspace",
       "trigger_label": "触发器",
       "github_owner": "所有者",
       "github_owner_placeholder": "选择所有者",
@@ -143,6 +146,7 @@
       "delivery_target_remove": "移除投递目标",
       "delivery_target_to": "至",
       "trigger_placeholder": "选择触发器……",
+      "trigger_clear": "清除选择",
       "trigger_group_scheduled": "计划任务",
       "trigger_option_hourly": "每小时",
       "trigger_option_daily": "每天",

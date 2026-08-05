@@ -44,17 +44,19 @@
     "logs_waiting_title": "等待请求……",
     "logs_waiting_subtitle": "向 Mock Server 发送请求后，即可在此处查看",
     "logs_no_match": "没有匹配的日志",
-    "logs_no_match_subtitle": "请尝试调整上方的筛选条件",
+    "logs_no_match_subtitle": "试试调整筛选条件",
     "logs_retry": "重试",
-    "logs_start_to_run": "点击“启动”以运行 Mock Server"
+    "logs_start_to_run_title": "暂无日志",
+    "logs_start_to_run": "启动 Mock Server 后即可在此查看日志",
+    "local_run_desktop_only_title": "仅限桌面客户端",
+    "local_run_desktop_only_description": "浏览器中不支持本地运行。请使用 Postman 桌面客户端，或部署为 Mock Server。"
   },
   "mock_filter_bar": {
     "filter_label": "筛选",
     "session_placeholder": "会话",
-    "session_prefix": "会话",
     "session_all_sessions": "所有会话",
     "caller_placeholder": "调用方",
-    "filter_by_header": "按请求头筛选",
+    "filter_by_header": "请求头",
     "session_footer": "选择一个会话以限定日志和状态的范围。会话由 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头标识。可在 Mock 的设置中更改此项。",
     "session_disabled_value": "默认会话",
     "session_disabled_hint": "此 Mock 已关闭会话功能，因此所有流量共享同一状态。请在 Mock 的设置中启用会话，以按调用方限定日志和状态范围。",

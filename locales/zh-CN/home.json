@@ -31,7 +31,7 @@
       "workspaces": "工作空间",
       "teams": "团队",
       "private_api_network": "私有 API 网络",
-      "unified_api_network": "API Network",
+      "unified_api_network": "Passport Access",
       "public_api_network": "公开 API 网络",
       "api_governance": "API 治理",
       "integrations": "集成",
@@ -43,7 +43,8 @@
       "application_inventory_disabled_tooltip": "应用程序清单可供 Solo 计划及以上计划的用户使用。",
       "agents": "代理任务",
       "agents_beta_label": "贝塔",
-      "agent_automations": "Agent 自动化"
+      "agent_automations": "Agent 自动化",
+      "agent_context": "Agent Context"
     },
     "external_links": {
       "what_is_postman": "什么是 Postman",
