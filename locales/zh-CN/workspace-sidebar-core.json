@@ -1,4 +1,13 @@
 {
+  "canonical_url": {
+    "open_entity_error": "无法解析任何工作区。打开此 {entity} 时发生错误",
+    "no_workspace_found_error": "无法解析任何工作区。未找到此 {entity} 所属的工作区"
+  },
+  "create_specification": {
+    "no_editable_workspace_error": "您没有任何可编辑的工作区来创建新规范",
+    "create_error": "创建规范时出错，请重试",
+    "open_error": "您的规范已创建，但无法打开。您可以在工作区中找到它"
+  },
   "context_menu": {
     "show_labels": "显示标签",
     "hide_labels": "隐藏标签",
@@ -216,7 +225,9 @@
         "card_label": "Mock 服务器",
         "create_with_template_label": "使用模板创建",
         "create_with_ai_mock_dependencies_label": "模拟外部 API",
-        "create_with_ai_mock_service_label": "模拟您自己的服务"
+        "create_with_ai_mock_service_label": "模拟您自己的服务",
+        "offline_text": "离线状态下无法创建 Mock 服务器。",
+        "no_permission_text": "您没有权限在此工作区中创建 Mock 服务器。"
       },
       "mock_server": {
         "card_label": "Mock 服务器"
@@ -392,6 +403,10 @@
     "heading": "分享 {entity}",
     "close_aria_label": "关闭",
     "entities": {
+      "element": {
+        "singular": "元素",
+        "plural": "元素"
+      },
       "collection": {
         "singular": "Collection",
         "plural": "Collection"
@@ -419,6 +434,10 @@
       "api": {
         "singular": "API",
         "plural": "API"
+      },
+      "mock": {
+        "singular": "Mock 服务器",
+        "plural": "Mock 服务器"
       },
       "extensible_collection": {
         "singular": "Collection",

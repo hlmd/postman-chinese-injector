@@ -14,7 +14,8 @@
     "create_button": "添加"
   },
   "search": {
-    "loading": "正在搜索全部项目…"
+    "loading": "正在搜索全部项目…",
+    "no_results_in_section": "此部分未找到相关项目"
   },
   "status_bar_context_menu": {
     "multi_entity_sidebar_label": "多实体侧边栏"

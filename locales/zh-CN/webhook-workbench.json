@@ -47,20 +47,20 @@
     },
     "scripts": {
       "events": {
-        "before_request": "收到事件时",
-        "after_response": "响应后"
+        "before_request": "On event",
+        "after_response": "On Response"
       },
       "descriptions": {
-        "before_request": "「收到事件时」脚本使用 JavaScript 编写，在收到 Webhook 事件后、选定 Webhook 响应之前运行。",
-        "after_response": "「响应后」脚本使用 JavaScript 编写，在选定 Webhook 响应之后运行。"
+        "before_request": "“On event”脚本使用 JavaScript 编写，在收到 Webhook 事件时运行。",
+        "after_response": "“On Response”脚本使用 JavaScript 编写，在收到静态或转发的响应后运行。"
       },
       "placeholders": {
-        "before_request": "编写在收到 Webhook 事件时运行的脚本。",
-        "after_response": "编写用于测试 Webhook 响应的脚本。"
+        "before_request": "使用 JavaScript 为收到的事件编写测试。",
+        "after_response": "使用 JavaScript 为静态或转发的响应编写测试。"
       },
       "tooltips": {
-        "before_request": "「收到事件时」脚本在收到 Webhook 事件后、选定 Webhook 响应之前运行。",
-        "after_response": "「响应后」脚本在选定 Webhook 响应之后运行。"
+        "before_request": "此脚本会针对收到的每个事件运行。",
+        "after_response": "此脚本会针对静态或转发的响应运行。"
       },
       "saving": "正在保存…",
       "unsaved": "有未保存的更改",
@@ -236,7 +236,7 @@
         "load_error_title": "无法加载日志",
         "load_error_description": "加载脚本日志时出错。",
         "new_logs": "新日志",
-        "text_language": "Text"
+        "text_language": "文本"
       },
       "test_results": {
         "empty_title": "编写测试实现自动化调试",
@@ -244,6 +244,8 @@
         "load_error_title": "无法加载测试结果",
         "load_error_description": "加载脚本测试结果时出错。",
         "script_error_title": "脚本执行失败",
+        "script_error_description": "无法评估 {scriptLabel} 脚本。",
+        "script_error_description_fallback": "无法评估该脚本。",
         "passed": "通过",
         "failed": "失败",
         "skipped": "跳过"

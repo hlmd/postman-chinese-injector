@@ -164,11 +164,11 @@
     "private_profile": "该用户资料为私密状态。",
     "last_updated_at": "最后更新时间",
     "code_mock": "Mock",
-    "linked_simulation": "Simulation",
+    "linked_simulation": "模拟",
     "no_linked_simulation": "没有 Simulation 使用此 Mock",
     "new": "新建",
     "new_simulation_tooltip": "创建 Simulation",
-    "simulation_url": "Simulation URL",
+    "simulation_url": "模拟 URL",
     "copy_simulation_id": "复制 Simulation ID",
     "copy_simulation_url": "复制 Simulation URL"
   },

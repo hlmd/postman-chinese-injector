@@ -16,7 +16,7 @@
     "conversations": "对话",
     "agents": "代理任务",
     "agent_context": "Agent Context",
-    "agents_beta_label": "Beta",
+    "agents_beta_label": "测试版",
     "agent_automations": "代理自动化",
     "api_catalog_disabled_tooltip": "API 目录适用于企业计划的用户。",
     "application_inventory_disabled_tooltip": "应用库存可供 Solo 计划及以上计划的用户使用。"

@@ -441,6 +441,7 @@
       "role_item_subtitle_users": "{users, plural, one {# 组成员} other {# 组成员}}",
       "no_members_present": "该组中没有成员。",
       "view_group": "查看组",
+      "user_group_popover_heading": "{name}（{count, plural, one {# 位成员} other {# 位成员}}）",
       "remove": "消除",
       "permission_required": "您没有 权限 来执行此操作",
       "guest_can_view_shared_collections": "访客只能查看与他们共享的集合。",

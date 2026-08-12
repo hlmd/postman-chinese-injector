@@ -614,7 +614,7 @@
     "banner": {
       "text": "了解您的服务何时中断",
       "sub_text": "监控跨区域 URL 的正常运行时间，并设置及时警报，无需创建 Collection。",
-      "badge_text": "Beta",
+      "badge_text": "测试版",
       "button_text": "创建正常运行时间 Monitor",
       "link_text": "了解有关正常运行时间 Monitor 的更多信息"
     }

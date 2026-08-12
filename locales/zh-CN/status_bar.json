@@ -56,6 +56,9 @@
     },
     "shared": {
       "label": "共享 保险库"
+    },
+    "passport_secrets": {
+      "label": "Passport Secrets"
     }
   },
   "agent_selection": {

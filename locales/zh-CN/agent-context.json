@@ -121,7 +121,9 @@
   "graph": {
     "active_jobs_banner": "图谱正在更新，当前有 {count} 个索引任务运行中",
     "aria_label": "Agent Context Graph 预览",
-    "empty_hint": "图谱为空 - 索引 Postman 即可开始",
+    "breadcrumb_service_fallback": "服务",
+    "breadcrumb_context_graph": "上下文图谱",
+    "empty_hint": "图谱为空 - 接入 Postman 即可开始",
     "error_description": "请重新连接数据源后重试。",
     "error_title": "无法加载依赖关系图。",
     "graph_ready_hint": "图谱已就绪 - 开始探索你的 Context Graph",

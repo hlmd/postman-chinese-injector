@@ -6,7 +6,7 @@
     "error": "无法加载访问授权，请重试。",
     "empty": "暂无生效的访问授权。已批准的访问申请将显示在这里。",
     "no_results": "没有匹配的授权。",
-    "search_placeholder": "按成员、端点或命名空间搜索",
+    "search_placeholder": "搜索访问授权",
     "endpoint_unknown": "未知端点",
     "filter": {
       "method": "方法"
@@ -292,7 +292,8 @@
   },
   "namespace_detail": {
     "empty_state": {
-      "title": "尚未添加工作区"
+      "title": "未添加任何 API",
+      "cta": "添加 API"
     }
   },
   "vault_references": {
@@ -309,13 +310,7 @@
     }
   },
   "home": {
-    "greeting": {
-      "morning": "早上好",
-      "afternoon": "下午好",
-      "evening": "晚上好",
-      "with_name": "{greeting}，{name} 👋",
-      "without_name": "{greeting} 👋"
-    },
+    "title": "Passport Access",
     "subtitle": "浏览并使用组织中各命名空间和工作区里公开的内容。需要调用实时 API 时可请求凭据。",
     "all_namespaces": "所有命名空间",
     "show_all": "显示所有命名空间",

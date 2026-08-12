@@ -48,7 +48,7 @@
       "editing_disabled_tooltip": "连接期间协议版本为只读",
       "options": {
         "auto": "自动",
-        "legacy": "Legacy",
+        "legacy": "旧版",
         "current": "2026-07-28"
       }
     },

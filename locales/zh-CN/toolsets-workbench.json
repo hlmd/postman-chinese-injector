@@ -2,6 +2,13 @@
   "workbench": {
     "title": "工具集"
   },
+  "data": {
+    "load_failed": "无法加载工具集，请检查工作区文件后重试。",
+    "save_failed": "该工具无法保存。",
+    "conflict_message": "在您进行未保存的更改期间，此工具已在编辑器外部发生变化。",
+    "conflict_reload_button": "重新加载最新版本",
+    "conflict_keep_button": "保留我的更改"
+  },
   "workbench_views": {
     "aria_label": "Toolset 视图",
     "tools_tab": "工具",

@@ -214,6 +214,9 @@
     "vault": {
       "title": "Postman 保险库"
     },
+    "passport_secrets": {
+      "title": "Passport Secrets"
+    },
     "code": {
       "title": "代码"
     },
@@ -275,7 +278,7 @@
       "no_matches": "没有符合筛选条件的交互记录。",
       "dropped": "仅显示最近 {count} 条交互记录，更早的记录已丢弃。",
       "detail": {
-        "tool": "{tool} · {ms}ms"
+        "tool": "{tool} · {ms}毫秒"
       },
       "timestamp_tooltip": "{absoluteTime}",
       "timestamp_step": "距上一步 {stepDelta}",

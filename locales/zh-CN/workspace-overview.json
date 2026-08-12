@@ -119,6 +119,12 @@
       "error": "出了点问题。请再试一次。"
     }
   },
+  "user_group_popover": {
+    "heading": "{name}（{count, plural, =1 {# 位成员} other {# 位成员}}）",
+    "view_group": "查看分组",
+    "no_members": "该分组暂无成员。",
+    "trigger_label": "分组成员"
+  },
   "general_access_section": {
     "labels": {
       "org_section": "常规访问权限",

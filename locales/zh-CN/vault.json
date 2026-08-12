@@ -1,5 +1,39 @@
 {
   "title": "Postman Vault",
+  "passport_secrets": {
+    "title": "Passport Secrets",
+    "description": "您在网络中被授予访问权限的 API 凭据。每一项都是<0>密钥引用</0>——一个在运行时通过 Passport 代理解析的指针，因此真实值永远不会被存储或显示。您可以在请求、Environment 中使用它，或将其复制到 Postman 之外使用。",
+    "columns": {
+      "name": "名称",
+      "reference": "引用",
+      "namespace": "命名空间",
+      "environment": "环境",
+      "workspace": "工作区",
+      "scope": "范围"
+    },
+    "copy": {
+      "copy": "复制",
+      "copied": "已复制"
+    },
+    "search_placeholder": "搜索 Passport Secrets",
+    "empty": {
+      "error": {
+        "title": "无法加载密钥",
+        "description": "加载密钥时出错，请重试。",
+        "retry": "重试"
+      },
+      "no_records": {
+        "title": "暂无密钥",
+        "description": "您在 Passport 上被授予访问权限的密钥将显示在此处。",
+        "refresh": "刷新"
+      },
+      "no_matches": {
+        "title": "未找到匹配的密钥",
+        "description": "请尝试调整搜索条件或筛选器。",
+        "clear": "清除搜索和筛选器"
+      }
+    }
+  },
   "personal_vault": {
     "breadcrumb_root": "个人 Vault",
     "save_button": "保存",

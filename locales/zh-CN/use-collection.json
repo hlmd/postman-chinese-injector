@@ -1,0 +1,46 @@
+{
+  "modal_title": "使用“{name}”",
+  "workspace_label": "工作区",
+  "confirm_button": "使用 Collection",
+  "missing_workspace_tooltip": "未选择工作区",
+  "trigger": {
+    "label": "使用",
+    "tooltip": "使用此 Collection",
+    "offline_tooltip": "您需要联网才能使用此 Collection"
+  },
+  "use_as": {
+    "label": "使用方式",
+    "fork": {
+      "title": "Fork",
+      "description": "在此 Collection 的副本上进行操作。"
+    },
+    "resource": {
+      "title": "Dependency",
+      "description": "在本地文件系统中使用此 Collection。"
+    }
+  },
+  "fork": {
+    "local_mode_disabled": "本地模式下无法使用 Fork。",
+    "no_permission_disabled": "您没有权限 Fork 此 Collection。",
+    "label_field": "Fork 标签",
+    "default_label": "Fork",
+    "default_label_with_name": "{name} 的 Fork",
+    "auto_pull_label": "自动拉取源 Collection 的更改",
+    "watch_label": "关注源 Collection，以便在其更新时收到通知。",
+    "watch_info": "在源 Collection 发生更改时收到通知。",
+    "error_title": "无法使用该 Collection",
+    "error_message": "Fork 该 Collection 时出错，请重试。"
+  },
+  "resource": {
+    "not_git_connected": "工作区未连接 Git。",
+    "connect_git_button": "连接 Git",
+    "same_workspace_disabled": "此 Collection 已存在于该工作区中。",
+    "desktop_only": "Dependency 仅在 Postman 桌面应用中可用",
+    "toast": {
+      "success_title": "Collection 已添加",
+      "success_message": "“{name}” 已作为 Dependency 添加。",
+      "error_title": "无法添加 Collection",
+      "error_message": "添加该 Collection 时出错，请重试。"
+    }
+  }
+}

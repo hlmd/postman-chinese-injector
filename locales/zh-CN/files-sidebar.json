@@ -11,6 +11,7 @@
   "switch_to_local_description": "您正在查看 Postman Cloud。切换到本地模式以继续处理此文件夹中的文件。仅在拉取或发布时才需要 Git。",
   "switch_to_local_cta": "切换到本地",
   "no_connect_permission": "您没有权限连接到工作区",
+  "no_disconnect_permission": "您没有权限断开与工作区的连接",
   "folder_description": "授权 Postman 将此文件夹连接到该 Workspace，并与你的 Git 分支保持同步。",
   "setup_git_title": "为此文件夹设置 Git",
   "setup_git_description": "此文件夹尚不是 Git 仓库。初始化 Git 以启用基于分支的工作流和云同步操作。",

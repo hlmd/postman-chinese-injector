@@ -81,6 +81,8 @@
     "key": "Key",
     "key_placeholder": "消息 Key",
     "key_serde": "Key 序列化方式",
+    "value": "Value",
+    "value_too_large": "{size} 超出 {limit} 限制",
     "value_serde": "Value 序列化方式",
     "serde": {
       "text": "String",
@@ -123,7 +125,7 @@
       "close": "关闭详情",
       "language": {
         "json": "JSON",
-        "text": "Text",
+        "text": "文本",
         "xml": "XML",
         "base64": "Base64",
         "hex": "Hex"

@@ -6,9 +6,8 @@
   },
   "listing": {
     "searchPlaceholder": "搜索集成",
-    "connectedHeading": "团队已连接的集成",
-    "connectedEmpty": "你的团队尚未连接任何集成。可在下方查找并连接集成。",
-    "allHeading": "全部集成",
+    "connectedOnlyLabel": "仅显示团队已连接的集成",
+    "connectedEmpty": "您的团队暂无已连接的集成。",
     "loading": "正在加载集成…",
     "empty": "未找到集成",
     "noResults": "没有与 \"{query}\" 匹配的集成",
@@ -31,10 +30,11 @@
     "integrationBy": "由 {author} 提供的集成",
     "aboutPublisher": "关于发布者"
   },
+  "viewDocs": "查看文档",
+  "connectButton": "连接",
+  "postmanUser": "Postman 用户",
   "connectionSection": {
     "connectedBadge": "已连接",
-    "connectButton": "连接",
-    "viewDocs": "查看文档",
     "nameSuffix": "{name}（你）",
     "otherTeamUsers_one": "+{count} 位其他团队成员",
     "otherTeamUsers_other": "+{count} 位其他团队成员",
@@ -52,6 +52,118 @@
     "jira": {
       "title": "创建和查看 Jira Issue",
       "description": "从 Collection、响应或 Monitor 创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
+    },
+    "github_app": {
+      "title": "已连接的 GitHub 账户",
+      "description": "Postman 已获得访问权限的 GitHub 组织。",
+      "githubUsername": "GitHub 用户名",
+      "githubOrganization": "GitHub 组织"
+    },
+    "ecosystem": {
+      "connectedBadge": "已连接",
+      "connectButton": "连接项目",
+      "viewDocs": "查看文档",
+      "neverUsed": "从未使用",
+      "removeSuccess": "已成功从工作区移除。",
+      "removeError": "移除失败，请重试。",
+      "removeModal": {
+        "title": "要从 {workspaceName} 中移除 {appName} 吗？",
+        "body": "Postman 将停止在此工作区中运行 {appName}。您可以随时重新连接。",
+        "cancel": "取消",
+        "confirm": "移除"
+      },
+      "disconnectAll": "全部断开连接",
+      "disconnectAllSuccess": "{appName} 已从所有工作区断开连接。",
+      "disconnectAllError": "断开 {appName} 连接失败，请重试。",
+      "disconnectAllModal": {
+        "title": "要断开所有工作区中的 {appName} 连接吗？",
+        "body": "Postman 将在每个已连接的工作区中停止运行 {appName}。您可以随时重新连接。",
+        "cancel": "取消",
+        "confirm": "全部断开连接"
+      },
+      "table": {
+        "workspace": "工作区",
+        "lastUsed": "最近使用",
+        "remove": "从工作区移除"
+      }
+    },
+    "gateway": {
+      "connectedBadge": "已连接",
+      "connectButton": "连接网关",
+      "viewDocs": "查看文档",
+      "neverUsed": "从未使用",
+      "removeSuccess": "网关连接已成功移除。",
+      "removeError": "移除网关连接失败，请重试。",
+      "removeModal": {
+        "title": "要从 {appName} 中移除 {instanceName} 吗？",
+        "body": "Postman 将停止从此网关实例发现和导入服务。您可以随时重新连接。",
+        "cancel": "取消",
+        "confirm": "移除"
+      },
+      "disconnectAll": "全部断开连接",
+      "disconnectAllSuccess": "{appName} 已从所有网关实例断开连接。",
+      "disconnectAllError": "断开 {appName} 连接失败，请重试。",
+      "disconnectAllModal": {
+        "title": "要断开所有 {appName} 实例吗？",
+        "body": "Postman 将在每个已连接的 {appName} 实例中停止发现和导入服务。您可以随时重新连接。",
+        "cancel": "取消",
+        "confirm": "全部断开连接"
+      },
+      "table": {
+        "instanceName": "实例名称",
+        "postmanTeam": "Postman 团队",
+        "lastUsed": "最近使用",
+        "discoveredServices": "已发现的服务",
+        "integratedServices": "已集成的服务",
+        "remove": "移除连接"
+      }
+    }
+  },
+  "personalNotifications": {
+    "title": "个人通知",
+    "description": "接收重要事件的个人通知，例如队友在评论中提到您，或令牌、密钥被泄露时。",
+    "connectedBadge": "已连接",
+    "connectButton": "连接",
+    "nameSuffix": "{name}（您）",
+    "otherTeamUsers_one": "还有 {count} 位团队成员",
+    "otherTeamUsers_other": "还有 {count} 位团队成员",
+    "disconnectSuccess": "个人通知已成功断开连接。",
+    "disconnectError": "断开个人通知连接失败，请重试。",
+    "table": {
+      "name": "姓名",
+      "email": "邮箱",
+      "disconnect": "断开连接"
+    }
+  },
+  "slackChannel": {
+    "privateChannel": "私密频道",
+    "channelUnavailable": "频道不可用",
+    "loginForChannelInfo": "登录以查看频道信息",
+    "workspaceColumn": "Slack 工作区",
+    "channelColumn": "Slack 频道"
+  },
+  "workspaceNotifications": {
+    "title": "工作区通知",
+    "description": "当队友添加或更改请求、Collection 或 Environment，或有人发布工作区更新时，随时接收更新通知。",
+    "table": {
+      "workspace": "工作区",
+      "privateWorkspace": "私有工作区",
+      "privateWorkspaceTooltip": "您不是此工作区的成员"
+    },
+    "pagination": {
+      "itemsPerPage": "每页条数",
+      "range": "第 {start}-{end} 条，共 {total} 条"
+    }
+  },
+  "monitorNotifications": {
+    "title": "Monitor 通知",
+    "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次 Monitor 运行的结果发送到 {appName} 频道。",
+    "table": {
+      "monitor": "Monitor"
+    },
+    "pagination": {
+      "itemsPerPage": "每页条数",
+      "range": "第 {start}-{end} 条，共 {total} 条"
     }
   },
   "delete_modal": {
@@ -68,14 +180,14 @@
       "connect": "添加集成",
       "edit_label": "编辑集成",
       "delete_label": "删除集成",
-      "creator_only_edit": "仅集成的创建者可以编辑其配置。",
+      "creator_only_edit": "只有该集成的创建者才能编辑此配置。",
       "creator_only_delete": "仅集成的创建者可以删除它。"
     },
     "columns": {
       "name": "名称",
       "monitor": "Monitor",
       "status": "状态",
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "created_by": "创建者",
       "last_run": "上次运行"
     },

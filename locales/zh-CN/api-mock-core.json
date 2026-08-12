@@ -57,16 +57,16 @@
     "session_all_sessions": "所有会话",
     "caller_placeholder": "调用方",
     "filter_by_header": "请求头",
-    "session_footer": "选择一个会话以限定日志和状态的范围。会话由 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头标识。可在 Mock 的设置中更改此项。",
+    "session_footer": "使用 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头，将日志和状态限定在某个会话内。",
     "session_disabled_value": "默认会话",
-    "session_disabled_hint": "此 Mock 已关闭会话功能，因此所有流量共享同一状态。请在 Mock 的设置中启用会话，以按调用方限定日志和状态范围。",
+    "session_disabled_hint": "会话功能已关闭，所有流量共享同一状态。请在设置中启用会话功能，以按调用方划分日志和状态。",
     "local_server_live": "本地服务器运行中"
   },
   "caller_identity": {
     "title_private": "私密 Mock",
     "title_public": "公开 Mock",
-    "body_private": "只有拥有 Workspace 访问权限的已登录用户，或持有有效 <code>x-api-key</code> 的用户才能调用。可在 Mock 的配置中更改此项。",
-    "body_public": "任何人都可以调用，且不会识别调用方身份。可在 Mock 的配置中更改此项。",
+    "body_private": "请使用有效的 <code>x-api-key</code> 或通过 Postman 访问以使用此私有 Mock。",
+    "body_public": "任何人都可以访问此 Mock。",
     "badge_aria_private": "私密 Mock：调用方需经过验证。打开调用方身份详情。",
     "badge_aria_public": "公开 Mock：调用方无需验证。打开调用方身份详情。"
   },

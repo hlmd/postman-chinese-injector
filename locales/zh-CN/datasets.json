@@ -14,6 +14,7 @@
     "remote": "从远程URL下载",
     "mysql": "MySQL",
     "postgres": "PostgreSQL",
+    "sqlserver": "SQL Server",
     "cloud": "Postman 云文件"
   },
   "source_address_bar": {
@@ -101,7 +102,7 @@
     "no_matching": "没有匹配的秘密",
     "no_available": "没有可用的 保险库 秘密",
     "choose_file": "选择文件",
-    "file_prompt_suffix": "或在下方粘贴你的{label}。",
+    "file_prompt_suffix": "（您也可以在下方粘贴{label}）",
     "selected_file": "已选文件：",
     "change_file": "更改",
     "choose_file_aria_label": "选择{label}文件",
@@ -112,8 +113,8 @@
     "secret_name": "密钥名称",
     "secret_name_required": "请输入密钥名称。",
     "contents_required": "保存前请输入密钥内容。",
-    "local_vault": "Local Vault",
-    "shared_vault": "Shared Vault",
+    "local_vault": "本地保险库",
+    "shared_vault": "共享保险库",
     "file_too_large": "请选择小于 {maxSize} 的文件。",
     "file_read_failed": "无法读取此文件。",
     "file_save_failed": "无法将此值保存到 Vault。"
@@ -214,6 +215,7 @@
         "cloud": "Postman 云文件",
         "mysql": "MySQL",
         "postgres": "Postgres",
+        "sqlserver": "SQL Server",
         "remote": "公共 URL"
       }
     },
@@ -236,7 +238,8 @@
   "database_source_modal": {
     "title": {
       "mysql": "连接 MySQL",
-      "postgres": "连接 Postgres"
+      "postgres": "连接 Postgres",
+      "sqlserver": "连接 SQL Server"
     },
     "submit": "添加数据源",
     "cancel": "取消"

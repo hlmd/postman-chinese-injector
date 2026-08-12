@@ -56,6 +56,7 @@
       "reload_button_label": "重新加载"
     },
     "workspace_list_container": {
+      "not_git_connected": "未连接 Git",
       "get_workspace_list_error": {
         "title": "无法加载 Workspace",
         "subtitle": "只是一根电线有问题。尝试重新加载。",

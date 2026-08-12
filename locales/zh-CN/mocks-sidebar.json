@@ -2,6 +2,14 @@
   "entity_type_icon": {
     "label": "Mock Server"
   },
+  "dependency_actions": {
+    "update": {
+      "label": "更新"
+    },
+    "delete": {
+      "label": "删除"
+    }
+  },
   "status_indicator": {
     "running": "状态：运行中",
     "idle": "状态：空闲"
