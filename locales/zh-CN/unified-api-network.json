@@ -38,6 +38,9 @@
     "aria_label": "面包屑",
     "api_network": "Passport Access"
   },
+  "modal": {
+    "close_aria_label": "关闭弹窗"
+  },
   "error_boundary": {
     "title": "出错了",
     "description": "无法加载此页面，请重试。"
@@ -48,9 +51,9 @@
     "reload": "重新加载"
   },
   "add_workspaces": {
-    "trigger": "添加工作区",
-    "title": "将工作区添加到 {namespaceName}",
-    "subtitle": "搜索工作区并添加到此命名空间。",
+    "trigger": "添加 API",
+    "title": "向 {namespaceName} 添加 API",
+    "subtitle": "搜索并添加你希望在此命名空间中提供的 API。API 通过 Workspace 共享，因此你需要选择一个 Workspace。",
     "search_placeholder": "搜索工作区...",
     "show_accessible_only": "仅显示我可添加的 Workspace",
     "empty_state": "未找到工作区",
@@ -64,9 +67,9 @@
     },
     "review": {
       "title_add": "审核并添加工作区",
-      "title_request": "审核并请求工作区",
+      "title_request": "确认并申请 API",
       "subtitle_add": "这些工作区将被添加到该命名空间。",
-      "subtitle_request": "系统将发起请求，以将这些工作区添加到该命名空间。",
+      "subtitle_request": "将添加这些 Workspace 所共享的 API。你的申请将提交审批。",
       "comment_label": "备注",
       "comment_placeholder": "为命名空间管理员添加备注"
     },
@@ -85,6 +88,10 @@
     }
   },
   "approval_requests": {
+    "approve_modal": {
+      "title": "批准 API 并映射 Vault 引用",
+      "no_secrets": "没有需要映射的密钥，这些 API 未使用任何密钥。"
+    },
     "toast": {
       "approved": "请求已批准。",
       "denied": "请求已拒绝。",
@@ -288,22 +295,45 @@
     "vault_references": "保险库引用"
   },
   "add_workspace": {
-    "cta": "添加工作区"
+    "cta": "添加 API"
   },
   "namespace_detail": {
     "empty_state": {
-      "title": "未添加任何 API",
-      "cta": "添加 API"
+      "title": "此命名空间中还没有 API",
+      "description": "命名空间是一份已批准的 API 清单，通过 Workspace 共享。成员可以申请凭据来使用它们，管理员负责审批、限定范围和撤销访问权限。",
+      "cta": "添加 API",
+      "show_me_how": "查看操作方法"
+    },
+    "help_modal": {
+      "title": "向此命名空间添加 API",
+      "description": "添加你希望在此命名空间中提供的 API。经管理员批准后，成员即可申请凭据来使用它们。",
+      "steps_title": "如何添加 API",
+      "step_1": "选择 <strong>添加 API</strong>。",
+      "step_2": "搜索并选择你希望提供的 <strong>API</strong>。<muted>API 通过 Workspace 共享，因此你需要添加一个 Workspace。</muted>",
+      "step_3": "填写备注并<strong>发送申请</strong>给命名空间管理员。",
+      "step_4": "管理员<strong>批准</strong>申请，并将这些 API 使用的每个<strong>密钥</strong>（其 Environment 中的密码、Token）关联到一个 <strong>Vault 引用</strong>（指向真实密钥的指针）。",
+      "step_5": "这些 API 会显示在此处，成员即可<strong>申请凭据</strong>来使用它们。"
     }
   },
   "vault_references": {
     "add_cta": "添加保险库引用",
     "empty_state": {
-      "title": "尚未添加保险库引用"
+      "title": "还没有 Vault 引用",
+      "description": "Vault 引用让你无需在 Postman 中存储密钥，即可使用来自 Vault（HashiCorp、AWS Secrets Manager 等）的密钥。密钥值始终保留在 Vault 中，运行时才会解析。"
     },
     "error_state": {
       "title": "无法加载保险库引用",
       "retry": "重试"
+    },
+    "create_modal": {
+      "title": "创建 Vault 引用",
+      "provider_label": "提供商",
+      "provider_placeholder": "选择提供商",
+      "name_label": "名称",
+      "name_placeholder": "例如 Stripe API key",
+      "path_label": "路径",
+      "path_placeholder": "例如 secret/data/payments/stripe",
+      "create": "创建"
     },
     "toast": {
       "create_error": "无法创建保险库引用，请重试。"

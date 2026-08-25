@@ -619,6 +619,26 @@
         "save_button": "添加"
       }
     },
+    "memory": {
+      "tab_label": "记忆",
+      "memory_build_button": "构建",
+      "memory_refresh_button": "刷新",
+      "memory_refresh_success_title": "记忆刷新已排队",
+      "memory_refresh_success_description": "Postman 将很快开始构建知识。",
+      "memory_refresh_error_not_enabled": "你的团队未启用记忆功能。",
+      "memory_refresh_error_generic": "记忆刷新启动失败，请重试。",
+      "learning_prompt_label": "团队知识",
+      "learning_prompt_description": "可选，用于说明 Agent 应该学习你团队的哪些内容。可以提供 GitHub、New Relic 等第三方来源的信息，或团队工作的特定领域。",
+      "learning_prompt_save_button": "保存",
+      "load_error": "记忆设置加载失败。",
+      "update_error_toast_title": "记忆设置更新失败",
+      "update_error_toast_description": "请重试。",
+      "update_error_invalid_prompt": "提示词不能为空。如需移除，请清空该字段。",
+      "ai_disabled_title": "你的账号无法使用 Postman AI",
+      "ai_disabled_description": "Postman AI 当前对你处于停用状态。如需使用，请联系团队管理员申请权限。",
+      "non_admin_title": "需要管理员权限",
+      "non_admin_description": "只有团队管理员才能管理记忆设置。"
+    },
     "team_agents": {
       "tab_label": "代理商",
       "heading": "代理商",

@@ -19,6 +19,20 @@
     "connected": "已连接",
     "byline": "作者：{author}"
   },
+  "integratedServices": {
+    "sectionTitle": "API Catalog - 集成服务",
+    "sectionDescription": "将 API Catalog 集成服务连接到 GitHub 仓库。",
+    "connectButton": "连接服务",
+    "connectPermissionTooltip": "只有具备 API Catalog Manager 角色的成员才能访问服务发现页面",
+    "columns": {
+      "workspace": "Workspace",
+      "repository": "仓库"
+    },
+    "emptyState": "未找到集成服务",
+    "errorTitle": "集成服务加载失败",
+    "errorDescription": "加载集成服务时出错，请重试。",
+    "errorRetry": "重试"
+  },
   "details": {
     "notFoundTitle": "未找到集成",
     "notFoundBody": "找不到该地址对应的集成。",
@@ -42,8 +56,18 @@
     "disconnectError": "断开 {appName} 连接失败，请重试。",
     "table": {
       "name": "名称",
+      "team": "团队",
+      "connectedBy": "连接者",
       "email": "邮箱",
       "disconnect": "断开连接"
+    },
+    "wiz": {
+      "disconnectModal": {
+        "heading": "断开 Wiz 连接？",
+        "body": "断开连接将永久删除团队已存储的安全态势数据及相关发现项，且无法撤销。重新连接后将重新开始一次安全扫描。",
+        "cancel": "取消",
+        "confirm": "断开 Wiz 连接"
+      }
     },
     "slack": {
       "title": "Agent Tasks",
@@ -62,6 +86,7 @@
     "ecosystem": {
       "connectedBadge": "已连接",
       "connectButton": "连接项目",
+      "connectNoPermission": "你没有连接此应用的权限，请联系团队管理员。",
       "viewDocs": "查看文档",
       "neverUsed": "从未使用",
       "removeSuccess": "已成功从工作区移除。",
@@ -84,12 +109,14 @@
       "table": {
         "workspace": "工作区",
         "lastUsed": "最近使用",
-        "remove": "从工作区移除"
+        "remove": "从工作区移除",
+        "removeNoPermission": "你没有从此 Workspace 移除该应用的权限。"
       }
     },
     "gateway": {
       "connectedBadge": "已连接",
       "connectButton": "连接网关",
+      "connectNoPermission": "你没有连接此网关的权限，请联系团队管理员。",
       "viewDocs": "查看文档",
       "neverUsed": "从未使用",
       "removeSuccess": "网关连接已成功移除。",
@@ -142,9 +169,20 @@
     "workspaceColumn": "Slack 工作区",
     "channelColumn": "Slack 频道"
   },
+  "ms_teams": {
+    "tenantColumn": "组织",
+    "connectionColumn": "连接信息",
+    "privateChannel": "私有频道",
+    "channelUnavailable": "频道不可用",
+    "chatUnavailable": "聊天不可用",
+    "loginForConnectionInfo": "登录后查看连接信息",
+    "sharedChannel": "共享频道",
+    "archivedTooltip": "此频道已归档"
+  },
   "workspaceNotifications": {
     "title": "工作区通知",
     "description": "当队友添加或更改请求、Collection 或 Environment，或有人发布工作区更新时，随时接收更新通知。",
+    "addButton": "连接 Workspace",
     "table": {
       "workspace": "工作区",
       "privateWorkspace": "私有工作区",
@@ -153,17 +191,78 @@
     "pagination": {
       "itemsPerPage": "每页条数",
       "range": "第 {start}-{end} 条，共 {total} 条"
+    },
+    "modal": {
+      "createHeading": "连接频道",
+      "editHeading": "编辑频道集成",
+      "postmanWorkspaceLabel": "Postman Workspace",
+      "postmanWorkspacePlaceholder": "选择 Workspace",
+      "slackWorkspaceLabel": "{appName} 工作区",
+      "slackWorkspacePlaceholder": "选择工作区",
+      "channelLabel": "{appName} 频道",
+      "channelPlaceholder": "选择频道",
+      "channelConnected": "— 已连接",
+      "channelLoadError": "频道加载失败，请重试。",
+      "frequencyLabel": "发送通知的方式…",
+      "frequencyRealtime": "实时发送",
+      "frequencyPeriodic": "定期以摘要形式发送",
+      "frequencyPeriodicBadge": "新",
+      "eventsHeading": "触发条件…",
+      "eventsHeadingRealtime": "在发生以下操作时发送通知…",
+      "eventWorkspaceUpdate": "发布 Workspace 动态",
+      "eventPullRequest": "创建或合并 Workspace Pull Request",
+      "eventCreate": "添加请求、Collection 或 Environment",
+      "eventDelete": "删除请求、Collection 或 Environment",
+      "eventUpdate": "编辑请求或 Collection",
+      "digest": {
+        "dayLabel": "星期",
+        "dayPlaceholder": "选择日期",
+        "timeLabel": "时间",
+        "timezoneLabel": "时区",
+        "timezonePlaceholder": "选择时区",
+        "everyday": "每天",
+        "weekdays": "工作日",
+        "weekends": "周末"
+      },
+      "connectPrompt": "连接你的 {appName} 账号以选择频道。",
+      "connectButton": "连接 {appName}",
+      "connecting": "连接中…",
+      "connectError": "无法连接到 {appName}，请重试。",
+      "cancel": "取消",
+      "submitCreate": "连接",
+      "submitEdit": "保存更改",
+      "createSuccess": "频道连接成功。",
+      "updateSuccess": "频道连接已更新。",
+      "createError": "频道集成连接失败。",
+      "updateError": "频道集成更新失败。"
     }
   },
   "monitorNotifications": {
     "title": "Monitor 通知",
     "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次 Monitor 运行的结果发送到 {appName} 频道。",
+    "addButton": "连接 Monitor",
     "table": {
       "monitor": "Monitor"
     },
     "pagination": {
       "itemsPerPage": "每页条数",
       "range": "第 {start}-{end} 条，共 {total} 条"
+    },
+    "modal": {
+      "createHeading": "连接频道",
+      "editHeading": "编辑 Monitor 集成",
+      "monitorLabel": "Monitor",
+      "monitorPlaceholder": "选择 Monitor",
+      "frequencyLabel": "发送通知的场景…",
+      "frequencyAllRuns": "每次运行完成时",
+      "frequencyOnlyFailures": "仅失败时（以及之后首次成功运行时）",
+      "cancel": "取消",
+      "submitCreate": "连接",
+      "submitEdit": "保存更改",
+      "createSuccess": "Monitor 连接成功。",
+      "updateSuccess": "Monitor 连接已更新。",
+      "createError": "Monitor 集成连接失败。",
+      "updateError": "Monitor 集成更新失败。"
     }
   },
   "delete_modal": {

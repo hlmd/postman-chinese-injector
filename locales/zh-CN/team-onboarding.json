@@ -89,7 +89,7 @@
       "successfully_moved": {
         "description": "{collections} {text} {verb} 成功移动到此 Workspace。"
       },
-      "verb": "{items, plural, one {} other {}}"
+      "verb": "{items, plural, one {已} other {已}}"
     }
   },
   "input": {

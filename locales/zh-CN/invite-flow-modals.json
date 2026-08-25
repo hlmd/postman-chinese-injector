@@ -35,11 +35,11 @@
     "team_title_text": "您的 团队 并不适合所有人",
     "modal_content": {
       "free_team": {
-        "sub_title": "{additional_invites} {additional_invites, plural, =1 {人} other {人}} 总共邀请人数超出了 团队 的能力范围。升级您的计划，让他们加入您的 团队 并进行协作。",
+        "sub_title": "共 {additional_invites} {additional_invites, plural, =1 {人} other {人}}的邀请{additional_invites, plural, =1 {已} other {已}}超出团队席位上限。升级您的方案，即可让他们加入您的团队并参与协作。",
         "primary_action_text": "升级计划"
       },
       "paid_team": {
-        "sub_title": "{additional_invites} {additional_invites, plural, =1 {人} other {人}} 总共邀请人数超出了 团队 的能力范围。使用 Auto-Flex 与无限多人协作，无需购买槽位。",
+        "sub_title": "共 {additional_invites} {additional_invites, plural, =1 {人} other {人}}的邀请{additional_invites, plural, =1 {已} other {已}}超出团队席位上限。使用 Auto-Flex 即可与任意人数协作，无需购买插槽。",
         "primary_action_text": {
           "auto_flex": "获取自动伸缩功能",
           "paid_slots": "添加付费插槽"

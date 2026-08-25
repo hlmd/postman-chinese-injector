@@ -24,7 +24,10 @@
     "slug_check_failed": "无法检查 slug 可用性。再试一次。",
     "submit_cta": "创建 Mock",
     "cancel_cta": "取消",
-    "create_in_progress": "创建中…"
+    "create_in_progress": "创建中…",
+    "deploy_heading": "新建 Mock Server",
+    "deploy_cta": "创建并部署",
+    "deploy_in_progress": "部署中…"
   },
   "cloud_config": {
     "badge": "云",
@@ -49,9 +52,29 @@
     "collection": {
       "label": "Collection",
       "helper": "响应根据 Collection 中保存的示例生成。",
-      "picker_placeholder": "选择一个 Collection",
+      "picker_placeholder": "选择或创建 Collection",
       "picker_empty": "此 工作区 中还没有收藏。"
     }
+  },
+  "mock_server_create": {
+    "source_label": "生成来源"
+  },
+  "mock_source_picker": {
+    "tab_all": "全部",
+    "tab_mocks": "Mock",
+    "tab_collections": "Collection",
+    "tab_specs": "Spec",
+    "search_placeholder": "搜索…",
+    "empty": "这里还是空的。请创建一个 Mock，或通过 Collection、Spec 生成后部署。",
+    "empty_collection": "这里还是空的。创建一个 Collection 即可开始。",
+    "empty_spec": "这里还是空的。创建一个 Spec 即可开始。",
+    "empty_mock": "这里还是空的。创建一个 Mock 即可开始。",
+    "empty_short": "这里还是空的。",
+    "change_source": "更改",
+    "create_collection": "创建 Collection",
+    "create_spec": "创建 Spec",
+    "create_mock": "创建 Mock",
+    "empty_import": "导入"
   },
   "sync": {
     "keep_in_sync_collection_label": "Collection 变更时自动更新此 Mock",
@@ -64,7 +87,7 @@
     "keep_in_sync_spec_helper_local": "推送到云端后，当 Collection/API 规范发生变化时自动重新生成。"
   },
   "import_area": {
-    "idle_inline": "拖放 Postman 集合 或规格，或<browse>浏览</browse>",
+    "idle_inline": "拖入 Collection 或 Spec，或<browse>浏览文件</browse>",
     "file_replace": "替换",
     "file_remove": "移除"
   },
@@ -97,27 +120,30 @@
     "summary": "默认私有：仅工作区成员或提供有效的 <code>x-api-key</code> 才能调用。设为公开后，任何拥有该 URL 的人都可以访问。"
   },
   "deploy_modal": {
-    "title": "部署为 Mock 服务",
+    "title": "部署配置",
     "redeploy_title": "重新部署 Mock 服务",
-    "description": "发布为云端 Mock 服务器，可通过以下 URL 访问。",
-    "url_label": "Mock URL",
-    "public_label": "将此 Mock Server 设为公开",
-    "access_helper": "设为公开后，任何人都可以访问。否则，需使用有效的 <code>x-api-key</code> 或通过 Postman 访问。",
+    "name_label": "名称",
+    "name_placeholder": "为部署的 Mock Server 输入名称",
+    "url_label": "URL",
+    "public_label": "允许公开访问",
+    "access_helper": "私有 Mock 需要携带有效的 <code>x-api-key</code> 请求头才能访问。",
     "sessions_label": "启用会话",
     "sessions_helper": "每个调用方都会获得一份独立的 Mock 状态副本，通过 <code>x-mock-session</code> 请求头或 <code>pm_mock_session</code> Cookie 进行标识。",
-    "auto_deploy_label": "每次变更后自动部署",
-    "auto_deploy_helper": "每次更改后自动重新部署此 Mock。否则需手动部署更新。",
+    "auto_deploy_label": "Mock 变更时自动部署",
+    "auto_deploy_helper": "Mock 发生变更时重新部署 Mock Server。",
     "deploy_button": "部署",
     "redeploy_button": "重新部署",
     "cancel_button": "取消"
   },
   "errors": {
     "unsupported_input": "无法将此文件识别为 Collection 或规范。",
+    "unsupported_spec_version": "暂不支持此 API Spec 版本。",
     "name_required": "Mock 名称为必填项。",
     "local_port_invalid": "输入 1 到 65535 之间的端口。",
     "slug_invalid": "使用小写字母、数字或连字符。必须以字母或数字开头。",
     "source_picker_required_spec": "选择 OpenAPI 规范或拖放文件以继续。",
     "source_picker_required_collection": "选择 集合 或拖放文件以继续。",
+    "source_picker_required_existing": "请选择一个代码 Mock 以继续。",
     "cloud_spec_fetch_failed": "无法从此 工作区 加载该规范。稍后再试一次。",
     "cloud_collection_fetch_failed": "无法从此 工作区 加载 集合。稍后再试一次。"
   }

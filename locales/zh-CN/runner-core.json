@@ -9,6 +9,11 @@
     "learn_how_to": "了解如何",
     "install_postman_cli_on_windows": "在 Windows 上安装 Postman CLI"
   },
+  "performance_test_form": {
+    "run_choice": {
+      "in_app_web_warning": "仅在 Postman 桌面端可用。"
+    }
+  },
   "data_file_upgrade": {
     "heading": "升级以使用数据文件",
     "description": "数据文件可让您使用测试数据驱动 Monitor 运行以及功能性和性能 Collection 运行。升级您的计划以开始使用。"
@@ -22,6 +27,16 @@
       "save": {
         "title": "由于安全策略而拒绝访问",
         "description": "在恢复访问之前，您的 Collection 运行无法同步到云端。请联系您的团队管理员寻求帮助。"
+      }
+    },
+    "cloud_performance_run": {
+      "ambiguous_submit": {
+        "title": "云端测试状态未确认",
+        "description": "无法确认你的云端测试是否已启动。请先查看运行历史，再决定是否重试。"
+      },
+      "navigation_failed": {
+        "title": "云端测试已启动",
+        "description": "你的云端测试已启动，但无法打开。你可以在运行历史中打开它。"
       }
     }
   },

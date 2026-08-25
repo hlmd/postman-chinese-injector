@@ -25,19 +25,47 @@
       "strikethrough": "删除线",
       "unordered_list": "无序列表",
       "ordered_list": "有序列表",
+      "task_list": "任务列表",
+      "undo": "撤销",
+      "redo": "重做",
       "table": "表格",
       "image": "图像",
       "video": "视频",
       "add_link": "添加链接",
       "link": "链接",
       "blockquote": "块引用",
+      "horizontal_rule": "分割线",
       "codespan": "代码跨度",
       "codeblock": "代码块",
       "wrap_lines": "自动换行",
       "copied": "已复制",
-      "copy": "复制"
+      "copy": "复制",
+      "copy_failed": "代码复制失败"
+    },
+    "code_block": {
+      "dialog_label": "编辑代码块",
+      "language_label": "代码块语言",
+      "plain_text": "纯文本"
+    },
+    "popover": {
+      "dialog_label": "编辑器选项"
     },
     "image_popup": {
+      "dialog_label": "图片选项",
+      "url_label": "图片 URL",
+      "alt_text_label": "替代文本",
+      "caption_label": "图片说明",
+      "edit_image_label": "编辑图片",
+      "preview_button_label": "预览图片",
+      "preview_dialog_label": "图片预览",
+      "preview_loading_label": "正在加载图片预览",
+      "preview_error_label": "图片预览加载失败，选择该图片可重试。",
+      "decorative_label": "装饰性图片",
+      "required_label": "（必填）",
+      "url_validation_error": "请输入有效的 HTTP(S) 或相对路径图片 URL",
+      "alt_text_validation_error": "请添加替代文本，或将该图片标记为装饰性图片",
+      "insert_button": "插入图片",
+      "save_button": "保存图片",
       "tabs_label": {
         "upload": "上传",
         "embed_url": "嵌入 URL"
@@ -85,9 +113,15 @@
     "table_options": {
       "add_row": "添加行",
       "add_column": "添加列",
+      "add_row_above": "在上方插入行",
+      "add_row_below": "在下方插入行",
+      "add_column_left": "在左侧插入列",
+      "add_column_right": "在右侧插入列",
       "delete_column": "删除列",
       "delete_table": "删除表格",
-      "delete_row": "删除行"
+      "delete_row": "删除行",
+      "dialog_label": "表格选项",
+      "size_picker_label": "表格尺寸"
     },
     "add_a_caption": "添加标题..."
   },

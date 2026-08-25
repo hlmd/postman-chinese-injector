@@ -470,7 +470,7 @@
       "edit_button": "编辑 {entityType, select, collection {Collection} folder {文件夹} other {{entityType}}} 中的授权"
     },
     "no_auth": {
-      "description": "此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {{entityType}}} 不使用任何 授权。",
+      "description": "此{entityType, select, collection {Collection} folder {文件夹} request {请求} other {请求}}未使用任何身份验证。",
       "tooltip": "了解有关 授权 的更多信息"
     },
     "auth_jwt": {
@@ -1174,6 +1174,7 @@
     "tooltip": {
       "comment": "集合编辑正在审核您的请求，以获得额外访问权限。",
       "edit_request": "集合编辑正在审核您的编辑请求。",
+      "in_review": "你的申请正在审核中",
       "text": "请求 正在审核中",
       "readonly_user_message": "您无权执行此操作。"
     },

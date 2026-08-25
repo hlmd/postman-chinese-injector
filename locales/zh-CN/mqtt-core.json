@@ -287,6 +287,6 @@
       "change_chart_type": "更改可视化类型",
       "hide": "隐藏"
     },
-    "missing_key_message": "<Text><StyledText>切换到表格视图</StyledText>以访问 {missingFieldCount} 个更多字段{missingFieldCount, plural, one {} other {}}。</Text>"
+    "missing_key_message": "<Text><StyledText>切换到表格视图</StyledText>以访问另外 {missingFieldCount} {missingFieldCount, plural, one {个字段} other {个字段}}。</Text>"
   }
 }

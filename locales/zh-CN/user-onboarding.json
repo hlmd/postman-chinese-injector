@@ -6,8 +6,10 @@
   "name_warnings": {
     "approaching_max_length": "剩余 {count} 个字符"
   },
-  "get_started_button": {
-    "text": "开始使用"
+  "complete_onboarding": {
+    "button": {
+      "text": "进入我的 Workspace"
+    }
   },
   "git_repo_connected": {
     "title": "连接本地项目文件夹？",

@@ -749,8 +749,8 @@
     },
     "footer_elapsed": {
       "just_now": "现在",
-      "minutes_ago": "{count} 分钟前",
-      "hours_ago": "{count} 小时前"
+      "minutes_ago": "{count, plural, one {# 分钟前} other {# 分钟前}}",
+      "hours_ago": "{count, plural, one {# 小时前} other {# 小时前}}"
     },
     "labels": {
       "private_user": "私有 用户",

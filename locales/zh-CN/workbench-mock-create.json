@@ -20,8 +20,8 @@
   },
   "mock_create_header": {
     "create_mock_server": "创建 mock 服务器",
-    "create_classic_mock": "创造经典mock",
-    "select_collection": "选择要 mock 的 Collection",
+    "create_classic_mock": "部署 Mock Server",
+    "select_collection": "选择要 Mock 的对象",
     "configuration": "配置"
   },
   "mock_form_error_states": {
@@ -47,7 +47,7 @@
     "no_environment": "没有Environment",
     "postman_api": "Postman API",
     "edit_config": "编辑配置",
-    "name_input_label": "Mock 服务 服务器名称",
+    "name_input_label": "名称",
     "mock_server_name_error_message": "输入此 mock 服务器的名称",
     "collection_label": "集合",
     "tag_label": "标签",
@@ -73,8 +73,9 @@
     "private_checkbox_info": "要调用 私有 mock 服务器，您需要在请求中添加 <1>x-api-key</1> 标头。查看如何生成",
     "add_requests": "添加请求",
     "add_requests_info": "输入您想要mock 的请求。或者，通过单击 (...) 图标添加 请求 主体。",
-    "collection_placeholder": "选择 Collection",
+    "collection_placeholder": "选择或创建 Collection",
     "collection_empty_state_message": "没有找到 Collection",
+    "create_collection": "创建 Collection",
     "extensible_collection_http_only_warning": "此 Collection 的 mock 目前仅支持 HTTP 请求"
   },
   "mock_delay_selector": {
@@ -86,14 +87,32 @@
   "mock_form_footer": {
     "cancel": "取消",
     "next": "下一个",
-    "create_mock_server": "创建 Mock 服务 服务器"
+    "create_mock_server": "部署"
+  },
+  "existing_mock": {
+    "radio_label": "已有 Mock",
+    "name_label": "名称",
+    "name_placeholder": "New Mock Server",
+    "mock_label": "Mock",
+    "mock_placeholder": "选择 Mock",
+    "mock_loading": "正在加载 Mock…",
+    "create_mock_cta": "创建 Mock",
+    "already_deployed_tooltip": "此 Mock 已部署。",
+    "push_to_cloud_warning": "请先将此 Mock 推送到云端，才能部署 Mock Server。",
+    "url_label": "URL",
+    "public_label": "允许公开访问",
+    "public_helper": "开启后，任何知道该 URL 的人都可以访问此 Mock Server。否则仅 Workspace 成员或携带有效 x-api-key 的请求可以访问。",
+    "sessions_label": "启用会话",
+    "sessions_helper": "每个调用方都会获得一份独立的 Mock 状态副本。请求需携带 x-pm-state-key 请求头以标识会话。",
+    "autodeploy_label": "Mock 变更时自动部署",
+    "autodeploy_helper": "Mock 发生变更时自动重新部署 Mock Server。"
   },
   "assign_mock_collection": {
     "view_by": "查看方式",
     "all_collections": "所有 Collection",
     "exclusive_collections": "链接到 API 的 Collection",
     "create_new_collection": "创建一个新的 Collection",
-    "select_collection": "现有的 Collection",
+    "select_collection": "已有 Collection",
     "select_collection_info_text": "选择您想要 mock 的 Collection。",
     "select_collection_empty_state_message": "没有找到 Collection",
     "mock_info_text": "输入您想要mock 的请求。或者，通过单击 (...) 图标添加 请求 主体。",

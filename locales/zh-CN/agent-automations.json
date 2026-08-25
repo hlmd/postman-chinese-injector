@@ -165,7 +165,11 @@
       "day_thursday": "星期四",
       "day_friday": "星期五",
       "day_saturday": "星期六",
-      "day_sunday": "星期日"
+      "day_sunday": "星期日",
+      "workspace_label": "Workspace",
+      "workspace_placeholder": "选择 Workspace",
+      "collection_label": "Collection",
+      "collection_placeholder": "选择 Collection"
     }
   },
   "edit": {
@@ -201,7 +205,9 @@
     "delivery_target_required": "至少需要一个投递目标",
     "github_owner_required": "所有者为必填项",
     "github_repo_required": "仓库为必填项",
-    "github_branch_required": "分支为必填项"
+    "github_branch_required": "分支为必填项",
+    "workspace_required": "请选择 Workspace",
+    "collection_required": "请选择 Collection"
   },
   "run_history": {
     "search_placeholder": "搜索运行记录……",

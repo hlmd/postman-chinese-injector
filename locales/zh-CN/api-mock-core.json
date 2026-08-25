@@ -36,13 +36,11 @@
     "toast_delete_error": "无法删除 mock"
   },
   "local_mock_logs_panel": {
-    "state_tab_loading": "正在加载状态……",
     "state_tab_count": "状态（{count}）",
     "logs_tab_count": "日志（{count}）",
-    "logs_loading": "正在加载日志……",
     "logs_load_failed": "日志加载失败",
     "logs_waiting_title": "等待请求……",
-    "logs_waiting_subtitle": "向 Mock Server 发送请求后，即可在此处查看",
+    "logs_waiting_subtitle": "向 Mock Server 发送请求即可查看日志",
     "logs_no_match": "没有匹配的日志",
     "logs_no_match_subtitle": "试试调整筛选条件",
     "logs_retry": "重试",
@@ -59,8 +57,9 @@
     "filter_by_header": "请求头",
     "session_footer": "使用 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头，将日志和状态限定在某个会话内。",
     "session_disabled_value": "默认会话",
-    "session_disabled_hint": "会话功能已关闭，所有流量共享同一状态。请在设置中启用会话功能，以按调用方划分日志和状态。",
-    "local_server_live": "本地服务器运行中"
+    "session_disabled_hint": "此 Mock 已关闭会话，因此所有流量共用同一份状态。在 Mock 设置中启用会话，即可按调用方隔离日志和状态。",
+    "local_server_live": "本地服务器运行中",
+    "session_delete": "删除会话"
   },
   "caller_identity": {
     "title_private": "私密 Mock",
@@ -84,16 +83,17 @@
       "session_label": "会话",
       "session_info_tooltip": "每个会话都是 pm.state 的独立副本。任何有权访问 Mock 的人都可以查看任意会话。",
       "large_values_truncated": "较大的值已被截断",
-      "clear_session_state": "清除会话状态",
-      "clear_all": "全部清除",
-      "clear_all_tooltip": "删除所有 pm.state 键"
+      "clear_session_state": "清除会话数据",
+      "delete_logs_and_state": "删除日志和状态",
+      "delete_logs_and_state_tooltip": "删除所有日志和 pm.state 键",
+      "delete_session": "删除会话"
     },
     "messages": {
       "loading_state": "正在加载状态……",
       "failed_to_read": "状态读取失败",
       "refresh_failed": "刷新失败——显示上次读取的内容。",
       "no_state_yet": "暂无状态",
-      "state_appears_here": "您的处理程序通过 pm.state 写入的内容都会显示在此处。",
+      "state_appears_here": "使用 <pmState>pm.state</pmState> 可在 Mock 中持久化数据。<docsLink>了解状态。</docsLink>",
       "start_mock_to_write": "启动 Mock 并写入 pm.state。",
       "shared_empty": "共享状态为空",
       "shared_empty_subtitle": "没有会话的调用方产生的状态会显示在此处。",
@@ -107,8 +107,10 @@
       "key_reset": "已重置“{key}”",
       "reset_failed": "状态键重置失败",
       "session_cleared": "会话状态已清除",
-      "state_cleared": "状态已清除",
-      "clear_failed": "状态清除失败"
+      "logs_and_state_deleted": "日志和状态已删除",
+      "clear_failed": "状态清除失败",
+      "session_deleted": "会话已删除",
+      "session_delete_failed": "会话删除失败"
     },
     "modals": {
       "reset_key_title": "重置状态键",
@@ -116,11 +118,15 @@
       "reset_key_body_suffix": "，此操作无法撤销。",
       "cancel": "取消",
       "reset": "重置",
-      "clear_session_title": "清除会话状态",
-      "clear_all_title": "全部清除",
+      "clear_session_title": "清除会话数据",
+      "delete_logs_and_state_title": "删除日志和状态",
       "clear_session_body_prefix": "这将永久删除 ",
       "clear_session_body_suffix": " 中的所有键，且无法撤销。",
-      "clear_all_body": "这将永久删除所有 pm.state 键，且无法撤销。"
+      "delete_logs_and_state_body": "此操作将永久删除所有日志和 pm.state 键，且无法撤销。",
+      "delete_session_title": "删除会话",
+      "delete_session_confirm": "删除会话",
+      "delete_session_body_prefix": "此操作将永久删除 ",
+      "delete_session_body_suffix": "，包括其全部日志和数据，且无法撤销。"
     }
   }
 }

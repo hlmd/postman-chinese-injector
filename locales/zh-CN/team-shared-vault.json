@@ -5,13 +5,46 @@
   },
   "settings_page": {
     "heading": "共享 保险库",
-    "description": "使用共享保险库，与您的 团队 安全共享敏感数据。启用后，除公开 工作区 外，共享保险库默认在所有 工作区 中可用。您可以在下方针对每个 工作区 覆盖此设置，以强制执行最小权限原则。Postman 的密钥保护引擎会自动利用它。",
+    "description": "安全地与团队共享敏感数据。除公开 Workspace 外，Shared Vault 在每个 Workspace 中默认可用。可按 Workspace 单独覆盖设置，以贯彻最小权限原则。",
     "update_error": "无法更新共享 保险库 设置。请稍后重试。",
     "toast_enabled": "为您的 团队 启用共享 保险库",
     "toast_disabled": "已为您的 团队 关闭共享 保险库",
     "button_switch_on": "打开",
     "button_switch_off": "关",
     "global_switch_off_tooltip": "对于某些工作区，移动到共享 保险库 策略处于活动状态。请更改策略以关闭共享 保险库。"
+  },
+  "vault_settings_panel": {
+    "open_settings": "设置",
+    "close_settings": "关闭 Vault 设置",
+    "heading": "Vault 设置",
+    "intro_banner": {
+      "title": "团队级 Vault 控制",
+      "description": "为团队配置控制台脱敏。点击“保存设置”后，请刷新 Postman 再进行测试。"
+    },
+    "mask_secrets": {
+      "label": "对 Vault 密钥脱敏",
+      "description": "自动在控制台中对密钥脱敏，使其无法以明文读取。建议保持开启。"
+    },
+    "support_in_scripts": {
+      "label": "允许脚本使用 Vault 密钥",
+      "description": "允许脚本在请求执行期间访问 Vault 密钥。"
+    },
+    "share_across_workspaces": {
+      "label": "在所有 Workspace 间共享密钥",
+      "description": "让 Shared Vault 在团队有权访问的所有 Workspace 中可用，而不仅限于当前 Workspace。"
+    },
+    "save": "保存设置",
+    "cancel": "取消",
+    "save_success": "Vault 设置已保存",
+    "save_error": "Vault 设置保存失败，请重试。",
+    "load_error": "Vault 设置加载失败。在此问题解决前无法保存。",
+    "admin_required_error": "只有团队管理员才能更新 Vault 设置。",
+    "mask_confirm": {
+      "title": "关闭密钥脱敏？",
+      "description": "关闭此设置后，Vault 密钥将在控制台中以明文显示，任何能访问控制台的团队成员都可以直接读取密钥值。确定要继续吗？",
+      "confirm": "确定，关闭脱敏",
+      "cancel": "保持开启"
+    }
   },
   "workspace_selector": {
     "column_enabled": "共享 保险库",

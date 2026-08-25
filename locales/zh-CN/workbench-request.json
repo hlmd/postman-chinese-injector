@@ -26,7 +26,7 @@
       "upgrade_enterprise_for_overrides": "升级到 Enterprise 版才能保存关联请求的覆盖项。"
     },
     "footer": {
-      "label": "关联请求仅支持覆盖请求名称和参数。"
+      "label": "关联请求仅支持覆盖请求名称、参数、脚本和请求体。"
     }
   },
   "share_button": {
@@ -408,6 +408,7 @@
     "trigger_label": "主动建议",
     "settings_label": "建议设置",
     "dismiss_label": "忽略建议",
+    "think_harder": "深入思考",
     "no_longer_relevant": "已不再适用",
     "proposed_fix_label": "建议的修复方案",
     "previous_suggestion_label": "上一条建议",

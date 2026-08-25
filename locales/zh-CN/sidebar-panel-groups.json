@@ -51,5 +51,10 @@
   "reorganize_modal_undone": "此更改无法撤销。",
   "reorganize_cancel": "取消",
   "reorganize_confirm": "重新组织",
-  "reorganize_failed": "无法重新组织侧边栏。请重试。"
+  "reorganize_failed": "无法重新组织侧边栏。请重试。",
+  "sections_intro_banner": {
+    "title": "Workspace 现已支持分组",
+    "body": "将任意类型的条目归到一组，并可拖动排序。",
+    "got_it": "知道了"
+  }
 }

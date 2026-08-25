@@ -18,6 +18,7 @@
     "upgrade_to_add_people": "升级以将人员添加到 团队"
   },
   "request_to_join_approval": {
+    "completed_message": "此申请已处理。",
     "approve_button": "批准",
     "deny_button": "拒绝",
     "request_approved": "请求已批准。",
@@ -444,6 +445,7 @@
       "verified_cta": "我已验证我的电子邮件"
     },
     "join_via_link": {
+      "settings": "资源链接设置",
       "title": "允许人们从资源链接自动加入",
       "description": "来自 @{domain} 的人在访问共享资源的链接时可以自动加入此 团队。"
     },
@@ -452,7 +454,50 @@
       "description": "@{domain} 的人可以看到这个 团队 和 请求 来加入。",
       "auto_join": {
         "title": "允许人们自动加入此 团队",
-        "description": "来自 @{domain} 的人可以通过团队发现自动加入这个 团队。"
+        "description": "来自 @{domain} 的人可以通过团队发现自动加入这个 团队。",
+        "settings": "团队加入设置",
+        "domain_toggle_aria_label": "@{domain} 的自动加入",
+        "all_domains": {
+          "title": "允许所有域名自动加入",
+          "title_single_domain": "允许你的域名自动加入",
+          "description": "来自你任一已验证域名的用户，都可以通过团队发现自动加入本团队。你也可以为每个域名单独设置是否允许自动加入。",
+          "description_single_domain": "来自你已验证域名的用户，可以通过团队发现自动加入本团队。",
+          "enabled_count": "{total} 个域名中已有 {count} 个开启自动加入"
+        },
+        "confirm_modal": {
+          "enable": {
+            "heading": "为所有域名启用自动加入？",
+            "body": "此设置将应用于团队的全部 {count, plural, one {# 个域名} other {# 个域名}}。邮箱匹配的用户无需等待邀请即可加入。你可以随时关闭。"
+          },
+          "disable": {
+            "heading": "关闭所有域名的自动加入？",
+            "body": "此设置将应用于团队的全部 {count, plural, one {# 个域名} other {# 个域名}}。邮箱匹配的用户将无法自动加入，必须收到邀请。你可以随时重新开启。"
+          },
+          "cancel_cta": "取消",
+          "confirm_cta": "确认"
+        },
+        "toast": {
+          "domain_enabled": {
+            "title": "已启用自动加入",
+            "description": "来自 @{domain} 域名的用户现在无需邀请即可加入。"
+          },
+          "domain_disabled": {
+            "title": "已关闭自动加入",
+            "description": "来自 @{domain} 域名的用户现在需要收到邀请才能加入。"
+          },
+          "all_enabled": {
+            "title": "已为所有域名启用自动加入",
+            "description": "来自你已验证域名的用户现在无需邀请即可加入。"
+          },
+          "all_disabled": {
+            "title": "已关闭所有域名的自动加入",
+            "description": "来自你已验证域名的用户现在需要收到邀请才能加入。"
+          },
+          "error": {
+            "title": "操作失败",
+            "description": "这是我们这边的问题，请重试。"
+          }
+        }
       },
       "join_guidelines": {
         "title": "提出筛选问题",

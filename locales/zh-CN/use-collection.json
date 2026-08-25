@@ -15,7 +15,7 @@
       "description": "在此 Collection 的副本上进行操作。"
     },
     "resource": {
-      "title": "Dependency",
+      "title": "依赖项",
       "description": "在本地文件系统中使用此 Collection。"
     }
   },
@@ -25,8 +25,8 @@
     "label_field": "Fork 标签",
     "default_label": "Fork",
     "default_label_with_name": "{name} 的 Fork",
-    "auto_pull_label": "自动拉取源 Collection 的更改",
-    "watch_label": "关注源 Collection，以便在其更新时收到通知。",
+    "auto_pull_label": "自动从源 Collection 拉取变更",
+    "watch_source_label": "关注源 Collection",
     "watch_info": "在源 Collection 发生更改时收到通知。",
     "error_title": "无法使用该 Collection",
     "error_message": "Fork 该 Collection 时出错，请重试。"

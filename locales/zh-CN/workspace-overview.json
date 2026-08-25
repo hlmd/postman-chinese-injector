@@ -1082,6 +1082,9 @@
       "approve_button": "批准",
       "deny_button": "拒绝"
     },
+    "access_request_approval": {
+      "completed_message": "此申请已处理。"
+    },
     "workspace_access_request_approval": {
       "respond_button": "回复申请"
     }
@@ -1096,6 +1099,23 @@
       "confirm_prompt": "您想批准此邀请吗？",
       "error_email_required": "邀请用户加入 Workspace 需要提供电子邮件",
       "error_role_required": "邀请用户加入 Workspace 需要指定角色"
+    },
+    "manage_document_pin": {
+      "prompt_pin": "你即将置顶一篇文档。",
+      "prompt_pin_with_workspace": "你即将在 Workspace“{workspaceName}”中置顶一篇文档。",
+      "prompt_unpin": "你即将取消置顶一篇文档。",
+      "prompt_unpin_with_workspace": "你即将在 Workspace“{workspaceName}”中取消置顶一篇文档。",
+      "document_label": "文档：",
+      "document_id_fallback": "（ID：{documentId}）",
+      "action_label": "操作：",
+      "action_pin": "置顶到 Workspace 概览",
+      "action_unpin": "从 Workspace 概览取消置顶",
+      "description_pin": "此操作会将该文档展示在 Workspace 概览中。同一时间只能置顶一篇文档，此前置顶的文档将被替换。",
+      "description_unpin": "此操作会将该文档从 Workspace 概览中移除。",
+      "confirm_prompt": "要批准此次文档置顶变更吗？",
+      "error_document_id_required": "管理文档置顶需要提供 documentId",
+      "error_should_pin_required": "shouldPin 必须是明确的布尔值（true 为置顶，false 为取消置顶）",
+      "error_args_unparseable": "无法解析文档置顶工具的参数"
     }
   }
 }

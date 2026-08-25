@@ -172,6 +172,10 @@
         "no_permission_text": "您没有权限在这个 Workspace 中创建 MQTT 请求。",
         "offline_text": "您需要在线才能创建 MQTT 请求。"
       },
+      "data": {
+        "card_label": "数据",
+        "info_text": "通过数据请求测试和查询你的数据源。"
+      },
       "collection": {
         "card_label": "集合",
         "info_text": "创建 Collection 来组织、记录并与其他人分享您的 API 请求。",
@@ -222,7 +226,7 @@
         "no_permission_text": "您没有权限在此 Workspace 中创建规范。"
       },
       "mock": {
-        "card_label": "Mock 服务器",
+        "card_label": "Mock",
         "create_with_template_label": "使用模板创建",
         "create_with_ai_mock_dependencies_label": "模拟外部 API",
         "create_with_ai_mock_service_label": "模拟您自己的服务",
@@ -230,18 +234,27 @@
         "no_permission_text": "您没有权限在此工作区中创建 Mock 服务器。"
       },
       "mock_server": {
-        "card_label": "Mock 服务器"
+        "card_label": "Mock 服务器",
+        "info_text": "将 Mock 部署为在线服务。"
       },
       "classic_mock_server": {
-        "card_label": "经典 Mock Server",
+        "card_label": "Mock Server",
         "info_text": "根据集合中保存的示例创建 Mock 服务器。"
+      },
+      "mock_with_collection": {
+        "card_label": "从 Collection 创建",
+        "info_text": "基于 Collection 中已保存的示例创建 Mock Server。"
+      },
+      "mock_with_code": {
+        "card_label": "虚拟服务",
+        "info_text": "创建由代码驱动的虚拟服务。"
       },
       "code_based_mock": {
         "card_label": "Mock 服务",
-        "info_text": "创建由代码驱动的 Mock 服务器。"
+        "info_text": "创建 Mock"
       },
       "local_mock": {
-        "info_text": "创建在本地运行、由代码驱动的 Mock 服务器。"
+        "info_text": "编写 Mock 的行为逻辑，可在本地运行或部署为 Mock Server。"
       },
       "documentation": {
         "card_label": "文档"
@@ -398,6 +411,13 @@
       },
       "remove_user_from_workspace_msg": "他们将无法访问此 {visibility} Workspace 及其内部的元素，除非再次受到邀请。"
     }
+  },
+  "requested_access_section": {
+    "heading": "访问申请（{count}）",
+    "approve_cta": "批准",
+    "deny_cta": "拒绝",
+    "view_all": "查看全部",
+    "more_actions_aria": "{name} 的更多操作"
   },
   "share_entity": {
     "heading": "分享 {entity}",

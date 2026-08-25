@@ -28,6 +28,7 @@
       "init_command": "git init",
       "remote_setup_hint": "添加远程源（用于云同步）：",
       "remote_setup_command": "git remote add origin https://github.com/username/repo.git",
+      "remote_setup_command_with_url": "git remote add origin {remoteUrl}",
       "run_in_terminal": "在终端中运行"
     },
     "permission_error": {
@@ -52,6 +53,7 @@
     "input_placeholder": "https://github.com/username/repo.git",
     "manual_command_hint": "或手动运行：",
     "manual_command": "git remote add origin https://github.com/username/repo.git",
+    "manual_command_with_url": "git remote add origin {remoteUrl}",
     "run_in_terminal": "在终端中运行",
     "confirm_button_text": "确定"
   },
@@ -94,6 +96,10 @@
     "status_new_tooltip": "该实体存在于本地，但尚未存在于云端 Workspace 中",
     "status_update_tooltip": "该实体的本地更改可能与云端版本不同",
     "unsafe_name_tooltip": "文件夹 名称包含不支持的字符。修复它以推送到云端。",
+    "lint_blocked_entity_tooltip": "推送前请先修复校验错误。点击可查看问题详情。",
+    "push_blocked_workspace_lint": "Workspace 配置存在 lint 错误。请先在 Issues 面板中修复后再推送。",
+    "push_blocked_verify_lint": "无法校验 Workspace 的 lint 状态。",
+    "push_blocked_all_selected_lint": "所选变更全部存在 lint 错误。请先在 Issues 面板中修复后再推送。",
     "validation_validating": "正在验证 Workspace 实体...",
     "validation_fixing": "自动修复验证问题...",
     "validation_error_fallback": "无法验证 Workspace 实体",
@@ -232,11 +238,18 @@
     "scenario_form_add_title": "添加新场景",
     "scenario_form_name_label": "名称",
     "scenario_form_name_placeholder": "例如 api-degraded",
-    "scenario_form_configure_behaviour_label": "配置行为",
+    "scenario_form_configure_behaviour_label": "配置",
     "scenario_conditions_error_badge": "返回 {statusCode}",
     "scenario_conditions_delay_badge": "延迟 {value} 毫秒",
     "scenario_conditions_ratelimit_badge": "{value} 请求/分钟",
     "scenario_conditions_chaos_badge": "{value}% 错误",
+    "scenario_header_copy_tooltip": "复制请求头",
+    "scenario_header_copied_tooltip": "已复制",
+    "scenario_header_copy_aria_label": "复制 x-mock-scenario 请求头",
+    "scenario_header_copy_failed_toast": "请求头复制失败",
+    "scenario_header_open_in_request_tooltip": "在新请求中打开",
+    "scenario_header_open_in_request_aria_label": "新建一个带 x-mock-scenario 请求头的请求",
+    "scenario_header_open_request_failed_toast": "无法打开请求标签页",
     "scenario_form_add_button": "添加场景",
     "scenario_form_cancel_button": "取消",
     "scenario_behavior_toggle_aria_label": "切换 {behaviorName}",
@@ -415,15 +428,14 @@
         "text": "定义应用程序的依赖项",
         "button": "管理依赖项"
       },
-      "postman_init": {
-        "text": "初始化项目的 Postman 配置",
-        "button": "运行初始化"
-      },
       "agent_inventory": {
-        "text": "要求 AI 设置捕获插件并更新测试"
+        "text": "让 AI 帮你配置抓取插件"
       },
-      "agent_traffic": {
-        "text": "让 AI 根据您的网络流量创建 Collection"
+      "run_app_test": {
+        "text": "使用 Postman 运行应用测试",
+        "description": "将你的测试套件与应用清单集成。",
+        "learn_more": "了解更多",
+        "button": "运行"
       },
       "ask_ai": {
         "text": "要求 AI 基于此项目中的 API 端点创建 集合",

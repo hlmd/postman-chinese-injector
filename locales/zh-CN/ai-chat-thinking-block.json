@@ -1,0 +1,21 @@
+{
+  "thinking_block": {
+    "thinking": {
+      "label": "思考中",
+      "with_seconds_label": "思考中... {seconds} 秒",
+      "with_minutes_label": "思考中... {minutes} 分钟",
+      "with_minutes_seconds_label": "思考中... {minutes} 分 {seconds} 秒",
+      "with_hours_label": "思考中... {hours} 小时",
+      "with_hours_minutes_label": "思考中... {hours} 小时 {minutes} 分"
+    },
+    "thought": {
+      "label": "已思考",
+      "for_a_moment_label": "思考了一会儿",
+      "for_seconds_label": "思考了 {count, plural, one {# 秒} other {# 秒}}",
+      "for_minutes_label": "思考了 {count, plural, one {# 分钟} other {# 分钟}}",
+      "for_minutes_seconds_label": "思考了 {minutes, plural, one {# 分} other {# 分}} {seconds, plural, one {# 秒} other {# 秒}}",
+      "for_hours_label": "思考了 {count, plural, one {# 小时} other {# 小时}}",
+      "for_hours_minutes_label": "思考了 {hours, plural, one {# 小时} other {# 小时}} {minutes, plural, one {# 分} other {# 分}}"
+    }
+  }
+}

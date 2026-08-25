@@ -82,6 +82,123 @@
         "description": "不是你，是我们。我们遇到了困难",
         "retry": "再试一次"
       }
+    },
+    "secrets": {
+      "key_column": "键",
+      "value_column": "值",
+      "scope_column": "作用域",
+      "domains_column": "允许的域名",
+      "share": "共享",
+      "manage_sharing": "管理共享",
+      "view_only": "仅查看"
+    },
+    "sharing_modal": {
+      "share_title": "共享",
+      "manage_sharing_title": "管理共享",
+      "access_heading": "谁可以访问此密钥",
+      "only_this_workspace_title": "仅当前 Workspace",
+      "only_this_workspace_description": "仅 {workspaceName} 的成员可见。新建密钥默认使用此选项。",
+      "specific_workspaces_title": "指定 Workspace",
+      "specific_workspaces_description": "选择本团队中还有哪些 Workspace 可以使用此密钥。",
+      "team_wide_title": "全部 Workspace（团队范围）",
+      "team_wide_description": "本团队现有及今后新建的所有 Workspace 都可以使用此密钥。",
+      "search_workspaces_placeholder": "选择 Workspace",
+      "workspaces_label": "Workspace",
+      "workspaces_helper_text": "选择本团队中哪些 Workspace 可以使用此密钥。",
+      "workspaces_inline_label_plural": "{count} 个 Workspace",
+      "no_workspaces_found": "未找到 Workspace",
+      "loading_workspaces": "正在加载 Workspace...",
+      "access_info": "已共享 Workspace 的成员可以查看和使用此密钥的值，但由于该密钥属于当前 Workspace，只有 {workspaceName} 能更改或撤销其共享设置。",
+      "cancel": "取消",
+      "save_changes": "保存更改"
+    }
+  },
+  "external_providers": {
+    "hashicorp": {
+      "label": "HashiCorp Vault",
+      "fields": {
+        "url": {
+          "label": "服务器 URL",
+          "help": "Vault 服务器的基础 URL，非标准端口需一并填写（例如 https://vault.example.com:8200），且必须支持 HTTPS 访问。"
+        },
+        "namespace": {
+          "label": "Namespace",
+          "help": "Vault Enterprise / HCP 的 Namespace。使用开源版 Vault 时留空。"
+        }
+      },
+      "auth": {
+        "oidc": {
+          "label": "OIDC（按用户 SSO）",
+          "issuer": {
+            "label": "OIDC Issuer URL",
+            "help": "你的身份提供商的 Issuer URL。Postman 会通过 /.well-known/openid-configuration 自动发现其端点。"
+          },
+          "clientId": {
+            "label": "OIDC 客户端 ID",
+            "help": "在身份提供商处为 Postman 注册的公开客户端 ID。"
+          },
+          "mount": {
+            "label": "Vault 认证挂载路径",
+            "help": "Vault 启用 JWT/OIDC 认证方式的路径（默认：jwt）。"
+          },
+          "role": {
+            "label": "Vault 角色"
+          },
+          "scopes": {
+            "label": "附加 Scope",
+            "help": "可选的额外 OIDC Scope，以空格分隔。'openid' 始终会被请求。"
+          }
+        },
+        "approle": {
+          "label": "AppRole（机器）",
+          "mount": {
+            "label": "Vault 认证挂载路径"
+          },
+          "roleId": {
+            "label": "Role ID"
+          },
+          "secretId": {
+            "label": "Secret ID"
+          }
+        }
+      },
+      "reference": {
+        "mountPath": {
+          "label": "Secrets Engine 挂载路径"
+        },
+        "kvVersion": {
+          "label": "KV Engine 版本",
+          "v2": "KV 版本 2",
+          "v1": "KV 版本 1"
+        },
+        "path": {
+          "label": "密钥路径"
+        },
+        "selector": {
+          "label": "字段选择器",
+          "help": "指向密钥中某个字段的 JSON Pointer（例如 /password）。当密钥包含多个字段时必填。"
+        },
+        "secretVersion": {
+          "label": "密钥版本",
+          "help": "可选，指定要读取的版本（仅 KV v2 支持）。默认读取最新版本。"
+        }
+      }
+    },
+    "oidc": {
+      "launch": {
+        "redirecting": "正在跳转到你的身份提供商…",
+        "error_title": "无法启动登录",
+        "error_missing_connection": "此登录链接缺少连接标识。请关闭此窗口，回到 Postman 重新连接。",
+        "error_generic": "无法启动登录。请确认你已登录 Postman 后重试。"
+      },
+      "callback": {
+        "completing": "正在完成登录…",
+        "success_title": "连接成功",
+        "success_body": "你可以关闭此窗口并返回 Postman。",
+        "error_title": "登录失败",
+        "error_missing_params": "此回调缺少必需的参数。请关闭此窗口，回到 Postman 重新连接。",
+        "error_generic": "登录未能完成。请关闭此窗口，回到 Postman 重试。"
+      }
     }
   },
   "providers": {
@@ -438,11 +555,13 @@
       },
       "mask_secrets": {
         "heading": "掩码 保险库 秘密",
-        "text": "默认情况下自动屏蔽 控制台 中的秘密。"
+        "text": "默认情况下自动屏蔽 控制台 中的秘密。",
+        "team_controlled_text": "Shared Vault 密钥在控制台中的脱敏由团队管理员在团队设置中控制。"
       },
       "support_in_scripts": {
         "heading": "允许脚本中存在 保险库 秘密",
         "text": "允许脚本在 请求 执行期间安全地访问 保险库 机密。",
+        "team_controlled_text": "Shared Vault 密钥的脚本访问权限由团队管理员启用，无法在此处更改。",
         "modal": {
           "title": "允许 保险库 密钥 访问脚本",
           "content": "允许此操作将使脚本能够访问您的 保险库 机密，以便它们可以运行需要它们的请求。<br/>查看任何第三方脚本以确认它们可以安全使用。"

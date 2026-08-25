@@ -26,9 +26,7 @@
   "tabs": {
     "event": "事件",
     "topics": "Topic",
-    "authorization": "身份验证",
-    "schema": "Schema",
-    "settings": "设置"
+    "authorization": "身份验证"
   },
   "placeholder": {
     "coming_soon": "即将推出。"
@@ -42,13 +40,22 @@
     "offset_placeholder": "输入 offset",
     "timestamp_placeholder": "输入时间戳"
   },
+  "topics": {
+    "pane": {
+      "topics": "Topic",
+      "configuration": "配置"
+    }
+  },
   "topics_list": {
     "add_topic_placeholder": "添加 Topic",
     "list_all_topics": "列出所有 Topic",
     "loading": "正在加载 Topic…",
     "load_error": "无法加载 Topic",
     "retry": "重试",
-    "remove_aria_label": "移除 Topic {name}"
+    "remove_aria_label": "移除 Topic {name}",
+    "filter_placeholder": "筛选 Topic",
+    "filter_aria_label": "筛选 Topic",
+    "no_matches": "没有匹配“{query}”的 Topic"
   },
   "status": {
     "idle": "空闲",
@@ -92,7 +99,11 @@
     },
     "headers": "请求头",
     "ack": "Ack",
-    "generate": "生成"
+    "generate": "生成",
+    "pane": {
+      "details": "详情",
+      "value": "Value"
+    }
   },
   "consume": {
     "stream": {
@@ -113,16 +124,20 @@
     "more_aria_label": "数据流选项",
     "no_messages": "暂无事件",
     "error": "接收事件出错",
+    "new_events": "新事件",
+    "row": {
+      "empty_value": "（空）"
+    },
+    "pane": {
+      "events": "事件",
+      "details": "详情"
+    },
     "filter": {
-      "search_placeholder": "搜索",
-      "search_aria_label": "搜索数据流记录",
-      "topic_label": "Topic",
-      "topic_aria_label": "按 Topic 筛选",
+      "all_topics": "全部 Topic",
       "clear": "清空消息"
     },
     "inspector": {
       "preview": "预览",
-      "close": "关闭详情",
       "language": {
         "json": "JSON",
         "text": "文本",
@@ -138,13 +153,5 @@
   },
   "produce": {
     "title": "生产"
-  },
-  "schema_panel": {
-    "placeholder_title": "Schema",
-    "placeholder_description": "Schema 面板即将推出。"
-  },
-  "settings": {
-    "placeholder_title": "设置",
-    "placeholder_description": "生产者 / 消费者客户端设置即将推出。"
   }
 }

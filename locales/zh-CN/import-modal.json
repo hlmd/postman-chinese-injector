@@ -58,6 +58,8 @@
       "fork_label_without_username": "我的 Fork",
       "modal_fork_button": "复刻",
       "modal_add_dependency_button_with_count": "{count, plural, =0 {添加依赖项} other {添加依赖项 (#)}}",
+      "dependency_added_toast_title": "{count, plural, =1 {依赖项已添加} other {依赖项已添加}}",
+      "dependency_added_toast_description": "{count, plural, =1 {{name} 已添加到此 Workspace} other {已向此 Workspace 添加 # 个依赖项}}",
       "error_banner": {
         "dependency": {
           "all_failed_title": "无法添加依赖项。",

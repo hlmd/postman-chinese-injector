@@ -4,10 +4,10 @@
       "heading": "设置您的性能测试"
     },
     "run_choice": {
-      "heading": "选择如何运行性能测试",
-      "in_app": "在应用程序中",
+      "heading": "运行方式",
+      "in_app": "应用内",
       "in_app_helper": "在应用程序中运行此性能测试。",
-      "via_cli": "通过 CLI",
+      "via_cli": "Postman CLI",
       "via_cli_helper": "配置 CLI 命令以在构建管道上运行。"
     },
     "errors": {
@@ -218,6 +218,35 @@
     }
   },
   "cloud_run": {
+    "lifecycle_collections": {
+      "heading": "生命周期 Collection",
+      "setup": {
+        "label": "Setup Collection（可选）",
+        "short_label": "Setup（可选）",
+        "info_aria_label": "关于 Setup Collection",
+        "environment_mutation_helper_text": "在测试前运行。对 Environment 的修改会延续到测试和 Teardown 阶段。",
+        "placeholder": "选择 Setup Collection",
+        "failed_primary_cause": "Setup 生命周期 Collection 运行失败。",
+        "unknown_primary_cause": "Setup 生命周期 Collection 的运行结果未知。"
+      },
+      "teardown": {
+        "label": "Teardown Collection（可选）",
+        "short_label": "Teardown（可选）",
+        "info_aria_label": "关于 Teardown Collection",
+        "environment_mutation_helper_text": "在测试后运行，并沿用此前对 Environment 的修改。",
+        "placeholder": "选择 Teardown Collection"
+      },
+      "environment_restore_failed": "此次生命周期运行所保存的 Environment 已不可用。请先恢复该 Environment 或清除 Setup Collection，然后重新运行。",
+      "gate_off_prefill": "本次运行不支持生命周期 Collection。请在启用生命周期 Collection 的情况下，作为云端测试重新运行。",
+      "load_error": "Collection 加载失败。请重试后再选择生命周期 Collection。",
+      "unavailable_option": "{id}（不可用）",
+      "rejections": {
+        "feature_disabled": "新建性能测试不支持生命周期 Collection。",
+        "environment_required": "运行 Setup Collection 需要先选择一个 Environment。",
+        "validation_failed": "生命周期 Collection 配置无效。",
+        "cloud_only": "生命周期 Collection 仅适用于云端性能测试。"
+      }
+    },
     "status": {
       "initializing": "正在初始化",
       "queued": "排队中",
@@ -260,7 +289,9 @@
       "step_validating": "开始",
       "step_preparing": "设置",
       "step_scaling": "缩放",
+      "step_setup": "Setup",
       "step_running": "运行",
+      "step_teardown": "Teardown",
       "cloud_run_label": "云运行",
       "last_updated_prefix": "最后更新：",
       "relative_just_now": "现在",
@@ -318,6 +349,10 @@
         "scaling_empty": "等待分配和扩展虚拟用户。",
         "running": "跑步",
         "running_empty": "等待测试开始执行。",
+        "setup_collection": "Setup",
+        "setup_collection_empty": "等待 Setup Collection 运行完成。",
+        "teardown_collection": "Teardown",
+        "teardown_collection_empty": "等待 Teardown Collection 运行完成。",
         "finishing": "总结",
         "finishing_empty": "结束运行并提供结果。",
         "finishing_failed": "无法汇总所有实例的结果。 “摘要”选项卡中可能提供部分结果。",
@@ -327,7 +362,10 @@
           "completed": "已完成",
           "completed_inferred": "已完成",
           "failed": "已失败",
-          "stopped": "已停止"
+          "stopped": "已停止",
+          "unknown": "未知",
+          "skipped": "已跳过",
+          "not_run": "未运行"
         },
         "unavailable_detail": "此运行无法提供详细的活动。阶段进度从最佳可用执行历史记录中显示。",
         "inferred_detail": "此阶段在详细追踪可用之前完成。进一步的阶段确认它已运行。",
@@ -355,6 +393,7 @@
         "filter_status_label": "按状态过滤",
         "search_placeholder": "搜索事件...",
         "search_label": "搜索活动日志",
+        "duration": "耗时",
         "empty_queued_title": "等待运行开始",
         "empty_queued_description": "运行开始后，事件将出现在此处。",
         "empty_collecting_title": "收集活动数据",
@@ -364,7 +403,30 @@
         "empty_filter_title": "没有匹配的事件",
         "empty_filter_description": "尝试调整阶段或状态过滤器，或清除搜索。",
         "empty_default_title": "没有记录任何活动",
-        "empty_default_description": "此次运行未捕获任何执行活动。"
+        "empty_default_description": "此次运行未捕获任何执行活动。",
+        "lifecycle": {
+          "setup_success": "Setup 已完成",
+          "setup_failure": "Setup 失败",
+          "teardown_success": "Teardown 已完成",
+          "teardown_failure": "Teardown 失败",
+          "total_requests": "请求总数",
+          "failed_requests": "失败请求数",
+          "reason_label": "原因",
+          "assertion_truncated": "（已截断）",
+          "reason": {
+            "assertion_failed": "一个或多个断言未通过。",
+            "script_failed": "Collection 执行过程中脚本运行失败。",
+            "request_failed": "一个或多个请求失败。",
+            "timeout": "Collection 未在时限内完成。",
+            "cancelled": "Collection 已被取消。",
+            "environment_required": "运行此生命周期 Collection 需要一个 Environment。",
+            "resource_resolution_failed": "生命周期 Collection 的资源加载失败。",
+            "runtime_initialization_failed": "生命周期 Collection 的运行时未能启动。",
+            "resource_limit": "生命周期 Collection 超出了执行资源上限。",
+            "limit_exceeded": "生命周期运行结果超出了允许的大小。",
+            "system": "因系统错误，Collection 未能完成。"
+          }
+        }
       }
     },
     "tabs": {
@@ -378,6 +440,12 @@
         "not_found": "未找到测试运行。",
         "generic": "停止云测试失败。请再试一次。"
       }
+    }
+  },
+  "datasets": {
+    "upgrade": {
+      "heading": "升级后即可将 Dataset 用作迭代数据",
+      "description": "Dataset 可以在应用内、CLI 和云端运行中，为性能测试提供可复用、可共享的测试数据。升级方案即可将 Dataset 视图附加为迭代数据。"
     }
   }
 }

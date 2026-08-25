@@ -47,16 +47,16 @@
     },
     "scripts": {
       "events": {
-        "before_request": "On event",
-        "after_response": "On Response"
+        "before_request": "事件触发时",
+        "after_response": "响应返回后"
       },
       "descriptions": {
         "before_request": "“On event”脚本使用 JavaScript 编写，在收到 Webhook 事件时运行。",
-        "after_response": "“On Response”脚本使用 JavaScript 编写，在收到静态或转发的响应后运行。"
+        "after_response": "“响应返回后”脚本使用 JavaScript 编写，在收到静态响应或转发响应之后运行。"
       },
       "placeholders": {
-        "before_request": "使用 JavaScript 为收到的事件编写测试。",
-        "after_response": "使用 JavaScript 为静态或转发的响应编写测试。"
+        "before_request": "用 JavaScript 为收到的事件编写测试。",
+        "after_response": "用 JavaScript 为静态响应或转发响应编写测试。"
       },
       "tooltips": {
         "before_request": "此脚本会针对收到的每个事件运行。",

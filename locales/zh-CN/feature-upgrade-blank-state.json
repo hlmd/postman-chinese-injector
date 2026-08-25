@@ -1,6 +1,7 @@
 {
   "cta": {
     "upgrade": "升级",
+    "start_trial": "开始 {plan} 试用",
     "purchase_add_on": "购买附加组件",
     "contact_sales": "联系销售",
     "learn_more": "了解更多"

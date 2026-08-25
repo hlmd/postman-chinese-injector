@@ -21,11 +21,18 @@
     "placeholder": {
       "default": "输入 URL 或连接字符串",
       "local_file": "未选择文件",
+      "local_file_path": "本地文件路径",
       "remote_url": "https://example.com/data.csv"
     },
     "select_source": "选择来源",
     "source_type_label": "来源类型",
-    "remote_file": "远程文件"
+    "remote_file": "远程文件",
+    "change_source_type": "更改数据源类型"
+  },
+  "cartographer": {
+    "empty_state": {
+      "description": "选择一个数据源以查看其结构。"
+    }
   },
   "source_pane": {
     "committed_actions": {
@@ -149,6 +156,7 @@
     "refreshed_at": "刷新于 {timestamp}",
     "row_count": "{count, plural, one {# 行} other {# 行}}",
     "row_count_capped": "仅显示前 {count, number} 行",
+    "row_count_of_total": "显示 {total, number} 行中的 {shown, number} 行",
     "update": "更新"
   },
   "file_preview_modal": {
@@ -158,6 +166,8 @@
     "cancel": "取消",
     "save": "保存",
     "preview_unavailable": "该文件类型不支持预览，但仍可添加为数据源。",
+    "preview_unavailable_large_file": "超过 {size} 的文件无法预览。",
+    "preview_unavailable_large_file_hint": "你仍然可以将其添加为数据源，所有操作均受支持。",
     "parse_error": {
       "csv": "无法按 CSV 解析此文件。请确认它是有效的 CSV 文件。",
       "json": "无法按 JSON 解析此文件。请确认它是有效的 JSON 记录数组。"
@@ -258,10 +268,34 @@
   },
   "common": {
     "cancel": "取消",
+    "retry": "重试",
+    "debug_with_ai": "用 AI 调试",
     "breadcrumb": {
       "dataset_fallback": "数据集",
       "source_fallback": "来源",
       "view_fallback": "视图"
     }
+  },
+  "agent_unavailable": {
+    "not_installed": {
+      "title": "安装 Postman Desktop Agent 后才能运行此查询",
+      "body": "此 Dataset 使用了运行在你本机上的数据源。请安装 Postman Desktop Agent，以便从浏览器查询该数据源。",
+      "cta": "安装 Postman Desktop Agent"
+    },
+    "wrong_version": {
+      "title": "更新 Postman Desktop Agent",
+      "body": "你安装的 Postman Desktop Agent 版本过旧。请升级到 {minVersion} 或更高版本，以便从浏览器运行此查询。",
+      "cta": "更新 Postman Desktop Agent"
+    },
+    "not_ready": {
+      "title": "Postman Desktop Agent 正在启动",
+      "body": "Postman Desktop Agent 仍在初始化，请稍后重试。",
+      "cta": "重试"
+    },
+    "retry_cta": "重试"
+  },
+  "mixed_source": {
+    "title": "此查询同时混用了云端和本地数据源",
+    "body": "同时引用 Postman 托管文件（{cloudSources}）和本地数据源（{localSources}）的 SQL 无法在同一个引擎中运行。请拆分查询，让每部分只访问其中一侧。"
   }
 }
