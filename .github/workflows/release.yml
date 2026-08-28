@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write          # 允许 action-gh-release 创建 Release / 上传资产
+      id-token: write          # attest-build-provenance 需要 OIDC 令牌
+      attestations: write      # 写入构建来源证明（build provenance）
     steps:
       - uses: actions/checkout@v4
 
@@ -67,6 +69,22 @@ jobs:
       - name: Build browser extension (zip)
         run: node scripts/build-extension.js
 
+      # 供用户核对下载到的文件与 CI 产物一致（缓解杀软误报时的信任问题，见 README「杀毒软件报毒」）
+      - name: Generate SHA256SUMS.txt
+        run: |
+          set -e
+          cd dist
+          sha256sum postman-chinese-injector-* > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      # 证明这些发行包确实由本仓库的公开工作流从公开源码构建：
+      #   gh attestation verify <文件> --repo <owner>/<repo>
+      - name: Attest build provenance
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: dist/postman-chinese-injector-*
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -77,8 +95,10 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          # 仅上传二进制与扩展 zip，不上传 dist/extension 解包目录
-          files: dist/postman-chinese-injector-*
+          # 仅上传二进制与扩展 zip（+ 校验和），不上传 dist/extension 解包目录
+          files: |
+            dist/postman-chinese-injector-*
+            dist/SHA256SUMS.txt
           body: |
             把中文翻译注入 Postman 的非官方第三方工具。
 
@@ -91,6 +111,14 @@ jobs:
               「加载已解压的扩展程序」加载。
 
             详见 README。交流反馈 QQ 群：494969115。
+
+            **完整性校验**：`SHA256SUMS.txt` 为本次构建的校验和；所有发行包均由 GitHub Actions
+            从公开源码构建并附带来源证明，可用
+            `gh attestation verify <文件> --repo ${{ github.repository }}` 验证。
+
+            > 🛡️ **杀毒软件报毒？** 单文件二进制（bun / pkg 打包）被启发式误判是行业通病，非真实威胁。
+            > 原因、核实办法与「直接跑源码」的替代方案见 README 的
+            > [杀毒软件报毒（误报）说明](https://github.com/${{ github.repository }}#杀毒软件报毒误报说明)。
 
             ---
             ⚠️ **法律声明**：本项目为社区维护的非官方工具，**与 Postman, Inc. 无任何关联**，

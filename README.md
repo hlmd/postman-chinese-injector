@@ -19,7 +19,7 @@
 
 **目录**
 
-[快速开始](#快速开始) · [支持的 Postman 版本](#支持的-postman-版本) · [下载 Postman（各版本）](#下载-postman各版本) · [关闭自动更新](#关闭自动更新保持汉化不被冲掉) · [工作原理](#工作原理) · [桌面端](#桌面端) · [网页版](#网页版浏览器扩展) · [翻译数据](#翻译数据) · [常见问题](#常见问题) · [交流反馈](#交流--反馈) · [法律声明](#法律声明--disclaimer)
+[快速开始](#快速开始) · [支持的 Postman 版本](#支持的-postman-版本) · [下载 Postman（各版本）](#下载-postman各版本) · [关闭自动更新](#关闭自动更新保持汉化不被冲掉) · [工作原理](#工作原理) · [桌面端](#桌面端) · [报毒说明](#杀毒软件报毒误报说明) · [网页版](#网页版浏览器扩展) · [翻译数据](#翻译数据) · [常见问题](#常见问题) · [交流反馈](#交流--反馈) · [法律声明](#法律声明--disclaimer)
 
 ---
 
@@ -188,6 +188,9 @@ postman-chinese-injector/
 > 压缩仅为减小下载体积（约为原来的 1/4），解压后仍按原大小运行。
 > Windows 双击 `.zip` 即可解压；Linux / macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
 
+> [!NOTE]
+> **杀毒软件把 exe 报成木马？** 是单文件打包器（bun / pkg）的通病，属启发式误报。核实办法（SHA256 校验、构建来源证明、VirusTotal）与替代方案见 [杀毒软件报毒（误报）说明](#杀毒软件报毒误报说明)。
+
 **运行环境要求**
 
 - 默认二进制由 Bun 编译：**Windows 需 10 1809+ / Server 2019+**，macOS 需 11+，Linux 需较新的 glibc。
@@ -306,6 +309,55 @@ node scripts/build-bin-legacy.js node12-win-x64
 
 ---
 
+## 杀毒软件报毒（误报）说明
+
+部分杀毒软件（Windows Defender、火绒、360，以及 VirusTotal 上的少数引擎）可能把本工具的 `.exe` 标记为 `Trojan:Win32/Wacatac.B!ml`、`Program:Win32/Wacapew.C!ml` 之类的**启发式威胁**。这是**误报**，原因有三个，都出在打包方式和工具用途上：
+
+1. **单文件二进制的结构像加壳程序**——默认二进制由 `bun --compile` 生成（老系统版由 `pkg` 生成），产物 = 运行时 + 追加的脚本载荷。pkg / nexe / bun / deno / PyInstaller 这类打包器的产物被机器学习模型误判是行业级老问题，与本项目代码无关。
+2. **行为特征天然像「打补丁器」**——本工具会读写你已安装的 Postman 的 `resources/app.asar`（备份 → 解包 → 改 preload → 重新打包）。这种「修改另一个已安装应用的文件」的行为，在行为规则里跟恶意程序劫持合法软件难以区分。
+3. **未做代码签名 + 下载量少**——Windows SmartScreen 走的是文件信誉，新发布的未签名 exe 一律显示「未知发布者」。代码签名证书的费用目前超出本项目（免费开源）的承受范围。
+
+### 怎么自己核实
+
+- **核对校验和**：每个 Release 都附带 `SHA256SUMS.txt`，可确认下载到的文件与 CI 产物一致。
+
+  ```powershell
+  # Windows PowerShell
+  Get-FileHash .\postman-chinese-injector-win-x64.zip -Algorithm SHA256
+  ```
+
+  ```bash
+  # macOS / Linux
+  shasum -a 256 postman-chinese-injector-*.tar.xz
+  ```
+
+- **验证构建来源**：所有二进制**均由 GitHub Actions 从公开源码构建**（见 [`.github/workflows/release.yml`](.github/workflows/release.yml)），并附带 [构建来源证明（build provenance）](https://docs.github.com/actions/security-guides/using-artifact-attestations)：
+
+  ```bash
+  gh attestation verify postman-chinese-injector-win-x64.zip --repo hlmd/postman-chinese-injector
+  ```
+
+- **上传 [VirusTotal](https://www.virustotal.com/) 复核**：少数引擎标红、主流引擎全绿，是典型的启发式误报特征。
+
+### 不想跟杀软纠缠：直接跑源码
+
+源码是纯 JavaScript，不经过任何打包器，因此不会触发这类误报：
+
+```bash
+git clone https://github.com/hlmd/postman-chinese-injector.git
+cd postman-chinese-injector
+npm install
+node postman-chinese-injector.js
+```
+
+### 仍想用二进制
+
+把解压后的可执行文件加入杀软白名单（Defender：**设置 → 隐私和安全性 → Windows 安全中心 → 病毒和威胁防护 → 管理设置 → 排除项 → 添加文件**）。也欢迎向厂商提交误报申诉（[微软 WDSI](https://www.microsoft.com/en-us/wdsi/filesubmission)、火绒 / 360 各自的误报反馈入口），申诉通过后该版本通常 1～3 天内不再被拦截。
+
+> 本工具自身**不上传任何数据、不修改 Postman 以外的文件、不常驻后台**；全部行为都可以在 [`postman-chinese-injector.js`](postman-chinese-injector.js)（643 行，带中文注释）里逐行核对。唯一的联网动作是：Node 源码模式下若未安装 `@electron/asar`，会调用 `npx` 从 npm 拉取它——编译好的二进制已内嵌该依赖，全程离线。
+
+---
+
 ## 网页版：浏览器扩展
 
 给 **Postman 网页版**（`go.postman.co` 等）汉化，无需碰 app.asar。生成的是 Chrome / Edge 的 Manifest V3 扩展：
@@ -361,6 +413,9 @@ locales/zh-CN/
 
 **macOS（M 芯片）运行报 `zsh: killed` / 「已损坏，无法打开」/ 注入时 `EPERM`**
 分别对应未签名、下载隔离、macOS 13+ 的「App 管理」保护，都不是文件损坏。处理步骤见 [docs/macos-troubleshooting.md](docs/macos-troubleshooting.md)。
+
+**杀毒软件报毒 / SmartScreen 拦截**
+单文件二进制（bun / pkg 打包）的启发式误报，非真实威胁。原因、核实办法与替代方案见 [杀毒软件报毒（误报）说明](#杀毒软件报毒误报说明)。
 
 **界面还是英文 / Console 没有 `[pm-chinese] 已注入`**
 ① 注入前是否完全退出 Postman；② 是否打到了正在运行的那个版本（Windows 多版本共存时用 `--app-version` 指定）。
