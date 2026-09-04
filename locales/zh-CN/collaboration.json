@@ -254,6 +254,7 @@
       "title_generic": "请求 这个 集合 的分叉副本"
     },
     "permission_text": "您需要 <1>编辑者</1> 权限才能分叉该 集合。",
+    "collection_stats": {},
     "note_section": {
       "placeholder": "关于您为何想要访问的简短说明"
     },

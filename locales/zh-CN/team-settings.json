@@ -428,10 +428,85 @@
         "tags": {
           "title": "管理标签",
           "description": "设置谁可以在你的{lower}中创建、编辑或删除标签。"
+        },
+        "organizations": {
+          "title": "Organization",
+          "description": "将团队升级为 Organization，解锁高级资源管理能力。"
         }
       },
       "collapse_all": "全部折叠",
       "expand_all": "全部展开"
+    },
+    "organization_management": {
+      "callout": {
+        "description_lead": "将你的团队升级为 Organization。<1>了解 Organization</1>。",
+        "description_detail": "此次迁移可能需要一些时间（预计：{duration}），迁移期间用户可能会遇到短暂的中断，因此建议在非工作时间进行。",
+        "learn_more": "了解 Organization",
+        "contact_support": "请联系支持团队完成此次迁移。",
+        "upgrade_button": "升级",
+        "create_support_ticket": "创建支持工单"
+      },
+      "status": {
+        "in_progress": "迁移进行中...",
+        "already_running": "迁移已在进行中。",
+        "retrying": "正在重试迁移...",
+        "completed": "迁移已成功完成。请刷新页面以查看升级后的体验。",
+        "failed": "迁移失败。",
+        "partial": "迁移部分完成。",
+        "rolled_back": "迁移已回滚。",
+        "current_status_prefix": "当前状态：{status}"
+      },
+      "toast": {
+        "completed": "你的团队已升级为 Organization。",
+        "failed": "迁移失败。请重试或联系支持团队。",
+        "partial": "迁移部分完成。请联系支持团队处理。",
+        "initiate_failed": "迁移启动失败。"
+      },
+      "errors": {
+        "eligibility_generic": "无法检查迁移资格，请稍后重试。",
+        "initiate_generic": "无法启动迁移，请重试。",
+        "super_admin_required": "只有 SuperAdmin 可以执行此操作。"
+      },
+      "tooltips": {
+        "super_admin_required": "只有 SuperAdmin 可以启动迁移。",
+        "not_eligible": "此团队不符合自助迁移的条件。"
+      },
+      "support_ticket": {
+        "support_assisted": {
+          "subject": "迁移到 Organization——需要支持团队协助",
+          "intro": "我想将团队迁移为 Organization，但我的团队不符合自助迁移条件。"
+        },
+        "migration_failed": {
+          "subject": "迁移到 Organization——{status}",
+          "intro": "我的自助迁移未能成功完成，请协助排查。"
+        }
+      },
+      "summary": {
+        "labels": {
+          "role": "角色",
+          "size": "团队规模",
+          "state": "迁移状态"
+        },
+        "roles": {
+          "super_admin": "SuperAdmin",
+          "admin": "Admin",
+          "member": "成员"
+        },
+        "sizes": {
+          "small": "小型",
+          "medium": "中型",
+          "large": "大型"
+        },
+        "states": {
+          "not_started": "未开始",
+          "in_progress": "进行中",
+          "completed": "已完成",
+          "partial": "部分完成",
+          "rolled_back": "已回滚",
+          "failed": "失败"
+        },
+        "na": "—"
+      }
     }
   },
   "team_access": {

@@ -176,12 +176,14 @@
       "disabled": "共享 保险库 当前已禁用。请联系您的 团队 管理员以获取 请求 访问权限。",
       "not_found": "未找到 密钥 参考",
       "vault_inaccessible": "保险库 无法访问",
+      "vault_inaccessible_hint": "请解锁 Vault 以查看和使用此密钥。",
       "signin_required": "登录后才能解析此密钥",
       "desktop_only": "此密钥仅在 Postman 桌面端可解析"
     },
     "action": {
       "sign_in_on_device": "在此设备上登录",
-      "open_shared_vault": "打开 Shared Vault"
+      "open_shared_vault": "打开 Shared Vault",
+      "unlock_vault": "解锁 Vault"
     },
     "warning": {
       "domain_mismatch": "域不匹配",

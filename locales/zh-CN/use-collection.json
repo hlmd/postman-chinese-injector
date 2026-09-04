@@ -8,6 +8,10 @@
     "tooltip": "使用此 Collection",
     "offline_tooltip": "您需要联网才能使用此 Collection"
   },
+  "onboarding": {
+    "title": "Fork 现已并入 Use",
+    "description": "可以把 Collection 作为依赖来使用，也可以将其 Fork 到你的 Workspace 中。"
+  },
   "use_as": {
     "label": "使用方式",
     "fork": {

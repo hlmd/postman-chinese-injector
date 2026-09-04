@@ -555,13 +555,11 @@
       },
       "mask_secrets": {
         "heading": "掩码 保险库 秘密",
-        "text": "默认情况下自动屏蔽 控制台 中的秘密。",
-        "team_controlled_text": "Shared Vault 密钥在控制台中的脱敏由团队管理员在团队设置中控制。"
+        "text": "默认情况下自动屏蔽 控制台 中的秘密。"
       },
       "support_in_scripts": {
         "heading": "允许脚本中存在 保险库 秘密",
         "text": "允许脚本在 请求 执行期间安全地访问 保险库 机密。",
-        "team_controlled_text": "Shared Vault 密钥的脚本访问权限由团队管理员启用，无法在此处更改。",
         "modal": {
           "title": "允许 保险库 密钥 访问脚本",
           "content": "允许此操作将使脚本能够访问您的 保险库 机密，以便它们可以运行需要它们的请求。<br/>查看任何第三方脚本以确认它们可以安全使用。"

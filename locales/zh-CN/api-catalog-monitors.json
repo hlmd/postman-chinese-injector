@@ -1,0 +1,19 @@
+{
+  "blank_state": {
+    "heading": "最近 {days, plural, one {# 天} other {# 天}}内没有 Monitor 运行记录",
+    "description": "此视图展示最近 {days, plural, one {# 天} other {# 天}}内的 Monitor 运行记录，无论它们是由 Postman 计划任务、CI 还是手动触发的。运行频率低于该周期的 Monitor 在此时间窗口内可能没有任何运行记录。",
+    "value_prop": "Monitor 可帮助你持续跟踪 API 的健康状况、性能和可靠性。",
+    "setup_cta": "设置 Monitor"
+  },
+  "headings": {
+    "run_history": "运行历史（最近 {days, plural, one {# 天} other {# 天}}）",
+    "monitors": "Monitor · 最近 {days, plural, one {# 天} other {# 天}}"
+  },
+  "executor_type": {
+    "schedule_runner": "计划运行",
+    "api_runner": "手动",
+    "postman_cli_runner": "Postman CLI Monitor 运行",
+    "cli": "Postman CLI",
+    "other": "其他"
+  }
+}

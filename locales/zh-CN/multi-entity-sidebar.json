@@ -17,6 +17,17 @@
     "loading": "正在搜索全部项目…",
     "no_results_in_section": "此部分未找到相关项目"
   },
+  "bulk_delete": {
+    "heading": "要删除这些元素吗？",
+    "confirmation": "确定要删除 {count, plural, one {# 个项目} other {# 个项目}}吗？",
+    "confirmation_prompt": "请在下方输入框中输入“{confirmationWord}”以确认",
+    "input_placeholder": "输入 {confirmationWord}",
+    "cancel": "取消",
+    "delete": "删除",
+    "success": "{count, plural, one {已删除 # 个项目} other {已删除 # 个项目}}",
+    "partial_failure": "已删除 {totalCount} 个项目中的 {deletedCount} 个，{failedCount} 个删除失败。",
+    "error": "无法删除所选项目"
+  },
   "status_bar_context_menu": {
     "multi_entity_sidebar_label": "多实体侧边栏"
   },

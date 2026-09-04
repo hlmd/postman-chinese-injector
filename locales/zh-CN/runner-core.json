@@ -18,6 +18,10 @@
     "heading": "升级以使用数据文件",
     "description": "数据文件可让您使用测试数据驱动 Monitor 运行以及功能性和性能 Collection 运行。升级您的计划以开始使用。"
   },
+  "test_data_upgrade": {
+    "heading": "升级以使用数据集和数据文件",
+    "description": "数据集和数据文件可以为你的 Collection 运行提供测试数据，二者均需付费套餐。升级套餐即可开始使用。"
+  },
   "errors": {
     "forbidden": {
       "start": {
@@ -67,7 +71,25 @@
       "settings_save_failed": "设置保存失败，请重试。",
       "dataset_created": "数据集已创建",
       "dataset_create_failed": "数据集创建失败，请重试。"
-    }
+    },
+    "dataset_no_create_permission": "你没有在此 Workspace 中创建数据集的权限。",
+    "reading_datafile": "正在读取数据文件"
+  },
+  "iteration_strategy": {
+    "iterations_label": "迭代次数",
+    "iterations_tooltip": "本次运行中循环执行该 Collection 的次数。",
+    "iterations_aria": "迭代次数",
+    "label": "迭代策略",
+    "tooltip": "当视图中的数据行用完后，多余的迭代如何取数据。",
+    "round_robin": "循环取值",
+    "round_robin_description": "运行指定次数的迭代。数据行用完后，剩余迭代从第一行重新开始。",
+    "repeat_last": "重复最后一行",
+    "repeat_last_description": "运行指定次数的迭代。数据行用完后，剩余迭代继续使用最后一行。",
+    "stop_at_end": "用完即停",
+    "stop_at_end_description": "运行指定次数的迭代。数据行用完后即停止运行。",
+    "datafile_fewer": "{rows, plural, one {# 行数据} other {# 行数据}}中只有前 {count} 行会被运行。",
+    "datafile_equal": "{rows, plural, one {# 行数据} other {# 行数据}}各运行一次。",
+    "datafile_more": "{rows, plural, one {# 行数据} other {# 行数据}}各运行一次，之后剩余的 {extra, plural, one {# 次迭代} other {# 次迭代}}将重复使用最后一行。"
   },
   "run_type": {
     "functional_description": "验证请求正确性和测试结果",

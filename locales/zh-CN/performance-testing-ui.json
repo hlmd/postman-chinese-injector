@@ -247,6 +247,10 @@
         "cloud_only": "生命周期 Collection 仅适用于云端性能测试。"
       }
     },
+    "rejections": {
+      "vuh_blocked": "请让管理员在账单资源用量中为性能测试启用按量付费。",
+      "vuh_blocked_linked": "请让管理员在<Link><Text>账单资源用量</Text></Link>中为性能测试启用按量付费。"
+    },
     "status": {
       "initializing": "正在初始化",
       "queued": "排队中",
@@ -289,9 +293,9 @@
       "step_validating": "开始",
       "step_preparing": "设置",
       "step_scaling": "缩放",
-      "step_setup": "Setup",
+      "step_setup": "初始化",
       "step_running": "运行",
-      "step_teardown": "Teardown",
+      "step_teardown": "清理",
       "cloud_run_label": "云运行",
       "last_updated_prefix": "最后更新：",
       "relative_just_now": "现在",
@@ -308,6 +312,7 @@
       "description": "在 Postman Cloud 上运行性能测试是一项预览功能，在预览期间可在合理限制内使用。Postman 可能随时施加限制以防止滥用。定价将在正式发布前公布。",
       "got_it": "知道了"
     },
+    "estimated_usage": "预计消耗 <Strong>{vuh} VUH</Strong>。<Link><Text>了解详情</Text></Link>",
     "upgrade": {
       "heading": "升级以在云上运行性能测试",
       "description": "云运行在 Postman 的云基础设施上执行性能测试，因此您可以扩展虚拟用户和持续时间，而无需使用自己的计算机。这是预览功能，在合理限制内可用。Postman 可以随时施加限制以防止滥用。定价将在正式上市之前公布。"
@@ -349,9 +354,9 @@
         "scaling_empty": "等待分配和扩展虚拟用户。",
         "running": "跑步",
         "running_empty": "等待测试开始执行。",
-        "setup_collection": "Setup",
+        "setup_collection": "初始化",
         "setup_collection_empty": "等待 Setup Collection 运行完成。",
-        "teardown_collection": "Teardown",
+        "teardown_collection": "清理",
         "teardown_collection_empty": "等待 Teardown Collection 运行完成。",
         "finishing": "总结",
         "finishing_empty": "结束运行并提供结果。",

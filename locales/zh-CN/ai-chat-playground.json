@@ -1,0 +1,56 @@
+{
+  "composer": {
+    "model_select_label": "模型",
+    "placeholder": "输入提示词",
+    "send_button_label": "发送消息",
+    "stop_button_label": "停止生成"
+  },
+  "conversation": {
+    "assistant_label": "助手",
+    "authentication_error_message": "提供方拒绝了此 API Key。请检查密钥后重试。",
+    "cors_error_message": "提供方或组织不允许来自此浏览器的请求。",
+    "duplicate_tool_name_error_message": "所选工具的名称必须唯一。请重命名或取消选择重复的工具后重试。",
+    "error_message": "无法生成响应。",
+    "messages_label": "对话消息",
+    "provider_tool_configuration_details_message": "提供方拒绝了一个或多个所选工具：{details}",
+    "retry_button_label": "重试",
+    "thinking_status": "思考中…",
+    "tool_completed_status": "已完成",
+    "tool_failed_result": "工具调用失败。",
+    "tool_failed_status": "失败",
+    "tool_input_label": "输入",
+    "tool_input_pending": "等待输入…",
+    "tool_limit_error_message": "提供方拒绝了所选工具的数量。请取消选择部分工具后重试。",
+    "tool_result_label": "结果",
+    "tool_result_pending": "等待结果…",
+    "tool_running_status": "运行中…",
+    "tool_value_unavailable": "此值无法显示。",
+    "user_label": "你"
+  },
+  "credentials": {
+    "api_key_label": "API Key",
+    "api_key_placeholder": "输入 API Key",
+    "clear_button_label": "清除密钥",
+    "provider_label": "提供方",
+    "session_notice": "你的 API Key 仅保存在本次浏览器会话的内存中，并直接发送给提供方。"
+  },
+  "header": {
+    "clear_chat_button_label": "清空对话",
+    "conversation_tab": "对话",
+    "system_prompt_tab": "系统提示词",
+    "title": "Playground"
+  },
+  "suggestions": {
+    "chain_tools": "串联两个工具",
+    "edge_case": "测试边界情况",
+    "error": "触发一个错误",
+    "multi_turn": "模拟多轮对话",
+    "optional_parameter": "测试可选参数",
+    "test_all_tools": "测试全部工具",
+    "vague_prompt": "发送一条模糊的提示词"
+  },
+  "system_prompt": {
+    "default_value": "你是一名乐于助人的助手。请给出简洁、准确的回答，并清晰说明工具的使用过程。",
+    "label": "给助手的指令"
+  }
+}

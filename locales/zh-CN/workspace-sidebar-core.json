@@ -280,7 +280,9 @@
       },
       "dataset": {
         "card_label": "数据集",
-        "info_text": "从数据库或文件定义可重用的数据集，以支持您的 API 测试和工作流程。"
+        "info_text": "从数据库或文件定义可重用的数据集，以支持您的 API 测试和工作流程。",
+        "offline_text": "离线状态下无法创建数据集。",
+        "no_permission_text": "你没有在此 Workspace 中创建数据集的权限。"
       }
     },
     "tags": {
@@ -791,7 +793,8 @@
     "can_restore_collections": {
       "single_collection_selected": "此 Collection 可以从回收站中恢复。",
       "multiple_collection_selected": "已删除的 Collection 可以从回收站中恢复。"
-    }
+    },
+    "bulk_delete_label": "{count, plural, one {# 个 Collection} other {# 个 Collection}}"
   },
   "dependency": {
     "label": "依赖项"

@@ -9,29 +9,70 @@
   "entity_type_icon": {
     "label": "数据集"
   },
+  "sidebar_row_actions": {
+    "add_view": "添加视图",
+    "more_actions": "查看更多操作"
+  },
+  "source_type_tooltip": {
+    "file": "从你的计算机上传 CSV、JSON 或 Excel 文件，或复用已保存到此 Workspace 的文件。",
+    "local": "使用你计算机上的文件。文件保留在本机，并在本地进行查询。",
+    "cloud": "使用存储在 Postman Cloud 中的文件，与所有可访问此 Workspace 的人共享。",
+    "remote": "从公开 URL 获取数据文件。",
+    "mysql": "连接 MySQL 数据库，并将某张表作为此数据集的一部分进行查询。",
+    "postgres": "连接 PostgreSQL 数据库，并将某张表作为此数据集的一部分进行查询。",
+    "sqlserver": "连接 SQL Server 数据库，并将某张表作为此数据集的一部分进行查询。"
+  },
+  "upgrade_modal": {
+    "description": "数据集让你可以在 Postman 中存储、连接和复用结构化数据，从文件到实时数据库皆可。升级套餐即可开始使用。"
+  },
   "source_type": {
     "local": "本地文件",
     "remote": "从远程URL下载",
     "mysql": "MySQL",
     "postgres": "PostgreSQL",
     "sqlserver": "SQL Server",
-    "cloud": "Postman 云文件"
+    "jdbc": "JDBC",
+    "cloud": "Postman Cloud Store"
   },
   "source_address_bar": {
     "placeholder": {
       "default": "输入 URL 或连接字符串",
       "local_file": "未选择文件",
       "local_file_path": "本地文件路径",
+      "jdbc": "jdbc:vendor://host/database",
       "remote_url": "https://example.com/data.csv"
     },
     "select_source": "选择来源",
     "source_type_label": "来源类型",
     "remote_file": "远程文件",
-    "change_source_type": "更改数据源类型"
+    "change_source_type": "更改数据源类型",
+    "segment_placeholder": {
+      "host": "主机",
+      "port": "端口",
+      "database": "数据库"
+    },
+    "no_databases": "未找到数据库",
+    "file_dialog": {
+      "data_files": "数据文件",
+      "all_files": "所有文件"
+    },
+    "source_kind": {
+      "local": "本地文件",
+      "remote": "远程文件",
+      "mysql": "MySQL",
+      "postgres": "PostgreSQL",
+      "redis": "Redis"
+    }
   },
   "cartographer": {
     "empty_state": {
       "description": "选择一个数据源以查看其结构。"
+    },
+    "loading": {
+      "description": "正在加载 Schema…"
+    },
+    "selection_paused": {
+      "tooltip": "由于当前查询无法解析，字段选择已暂停。请在编辑器中修正查询后再选择字段。"
     }
   },
   "source_pane": {
@@ -103,6 +144,8 @@
   "secret_field": {
     "link_to_vault": "链接到 保险库 密钥",
     "unlink_vault": "取消链接 保险库 密钥",
+    "view_in_vault": "在 Vault 中查看",
+    "new_secret": "新建密钥",
     "link_aria_label": "将 {label} 链接到 保险库 密钥",
     "unlink_aria_label": "取消 {label} 与 保险库 密钥 的链接",
     "search_placeholder": "搜索秘密...",
@@ -124,7 +167,8 @@
     "shared_vault": "共享保险库",
     "file_too_large": "请选择小于 {maxSize} 的文件。",
     "file_read_failed": "无法读取此文件。",
-    "file_save_failed": "无法将此值保存到 Vault。"
+    "file_save_failed": "无法将此值保存到 Vault。",
+    "shared_vault_save_failed": "无法将此值保存到 Shared Vault。请确认此 Workspace 已启用 Shared Vault 且你拥有编辑权限，然后重试。你也可以改为保存到 Local Vault。"
   },
   "errors": {
     "ssh": {
@@ -136,7 +180,10 @@
       "unreachable": "无法连接到 SSH 服务器。请检查堡垒机主机、端口和网络访问。",
       "timeout": "SSH 连接超时。请检查堡垒机和网络后重试。",
       "forward_failed": "SSH 服务器无法访问数据库。请检查从堡垒机看到的数据库主机和端口。"
-    }
+    },
+    "secret_resolution_timeout": "Postman 未能及时访问此数据源的 Vault 密钥。请确认 Vault 已解锁后重试。",
+    "secret_resolution_failed": "Postman 无法解析此数据源使用的一个或多个 Vault 密钥。请解锁 Vault 并确认关联的密钥仍然存在。",
+    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 数据源仅在云端 Workspace 中可用。"
   },
   "workbench_header": {
     "button": {
@@ -149,15 +196,52 @@
     "views_description": "未添加任何视图。"
   },
   "data_source_edit": {
+    "extend_with_ai": "用 AI 扩展",
+    "extend_with_ai_tooltip": "生成并追加合成数据行",
+    "extend_with_ai_unavailable": "此数据源的原始数据为只读，无法扩展",
     "loading": "正在加载源...",
     "last_refreshed_label": "上次刷新",
     "load_error_heading": "数据源加载失败",
+    "tabs": {
+      "data": "数据",
+      "settings": "设置"
+    },
+    "jdbc_preview_unavailable_heading": "无法预览",
+    "jdbc_preview_unavailable_message": "目前 JDBC 数据源不支持预览。请创建视图，对数据库执行查询。",
+    "create_view": "创建视图",
+    "jdbc_settings": {
+      "source_info": "数据源信息",
+      "source_type": "数据源类型",
+      "jdbc_type": "JDBC 类型",
+      "driver_class": "驱动类",
+      "driver_jars": "驱动 JAR",
+      "java_runtime": "Java 运行时",
+      "java_executable": "Java 可执行文件",
+      "java_detecting": "检测中...",
+      "java_unavailable": "未检测到",
+      "connection": "连接",
+      "url_template": "JDBC URL 模板",
+      "variables": "配置变量",
+      "properties": "连接属性",
+      "ssh_tunnel": "SSH 隧道",
+      "ssh_host": "SSH 主机",
+      "ssh_port": "SSH 端口",
+      "ssh_username": "SSH 用户名",
+      "ssh_private_key": "SSH 私钥",
+      "not_configured": "未配置",
+      "local_note": "此 JDBC 类型目前仅在本数据集中可用。已在本机检测到 Java，其路径不会保存到数据集中。"
+    },
     "refresh": "刷新",
     "refreshed_at": "刷新于 {timestamp}",
     "row_count": "{count, plural, one {# 行} other {# 行}}",
     "row_count_capped": "仅显示前 {count, number} 行",
     "row_count_of_total": "显示 {total, number} 行中的 {shown, number} 行",
     "update": "更新"
+  },
+  "agent_schema": {
+    "row_count_unknown": "行数未知",
+    "row_count": "{count, plural, one {# 行} other {# 行}}",
+    "columns_from_preview": "列信息基于五行预览数据推断"
   },
   "file_preview_modal": {
     "title": "文件预览",
@@ -173,16 +257,24 @@
       "json": "无法按 JSON 解析此文件。请确认它是有效的 JSON 记录数组。"
     },
     "save_to_cloud": {
-      "label": "将文件保存到 Postman 云端"
+      "label": "将文件保存到 Postman Cloud Store"
+    },
+    "destination_hint": {
+      "local": "文件保留在本机。使用 Postman Cloud Store 可跨设备、跨用户以及在云端运行中访问。",
+      "cloud": "已上传到 Postman Cloud Store，可跨设备、跨用户以及在云端运行中访问。"
     }
   },
   "data_view": {
     "run": "运行",
-    "update": "更新",
+    "save": "保存",
     "reset": "重置",
     "save_as_new_view": "另存为新视图",
     "data_label": "数据",
     "query_label": "查询",
+    "jdbc_native_query_badge": "JDBC 原生查询",
+    "jdbc_native_query_info_label": "关于 JDBC 原生查询",
+    "jdbc_native_query_tooltip": "此查询会通过 JDBC 驱动原样直接发送给数据库。自动补全和 SQL 校验可能尚不可用。",
+    "deleted_source": "[已删除的数据源]",
     "empty_table": "运行查询以查看数据"
   },
   "dataset_create": {
@@ -193,6 +285,11 @@
     "name_label": "名称",
     "name_placeholder": "数据集名称",
     "description_label": "描述",
+    "empty_state_banner": {
+      "title": "什么是数据集？",
+      "description": "数据集用于组织来自文件和数据库的可复用数据，让你能用 SQL 查询它，并在 Collection 运行、脚本、Mock Server 和 Monitor 中使用。",
+      "learn_more": "了解详情"
+    },
     "toasts": {
       "success_title": "成功",
       "source_created": "数据源创建成功",
@@ -211,21 +308,26 @@
       "drag_drop_hint": "你也可以将 CSV、JSON 或电子表格文件拖放到此处添加为数据源。",
       "drag_drop_hint_empty": "你也可以将 CSV、JSON 或电子表格文件拖放到此处。",
       "add_source": "添加数据源",
+      "new_jdbc_source": "新建 JDBC 数据源",
       "add_another": "添加其他数据源",
-      "drop_zone_local": "拖放或点击上传 .csv、.json 或电子表格文件（.xlsx、.xls、.ods）",
-      "drop_zone_cloud": "拖放或点击上传 .csv、.json 或电子表格文件（.xlsx、.xls、.ods）",
       "drop_overlay": "拖放文件以将其添加为数据源",
       "unsupported_file": {
         "title": "不支持的文件类型",
         "description": "仅 .csv 和 .json 文件可添加为数据源。"
       },
+      "enterprise_upgrade": {
+        "feature": "{sourceLabel}",
+        "heading": "升级到 Enterprise 以连接 {sourceLabel}",
+        "description": "连接 {sourceLabel} 需要 Enterprise 套餐。升级后即可将其添加到数据集，并与其他数据一起用 SQL 查询。"
+      },
       "kind": {
-        "file": "文件",
+        "ai": "用 AI 添加",
         "local": "本地文件",
-        "cloud": "Postman 云文件",
+        "cloud": "Postman Cloud Store",
         "mysql": "MySQL",
         "postgres": "Postgres",
         "sqlserver": "SQL Server",
+        "jdbc": "JDBC 数据源",
         "remote": "公共 URL"
       }
     },
@@ -254,21 +356,119 @@
     "submit": "添加数据源",
     "cancel": "取消"
   },
+  "jdbc_source_modal": {
+    "title": "添加 JDBC 数据源",
+    "reuse_title": "添加数据源",
+    "steps": {
+      "driver": "驱动",
+      "url": "连接 URL",
+      "datasource": "数据源"
+    },
+    "driver_heading": "选择 JDBC 驱动",
+    "driver_description": "选择一个 JDBC 驱动 .jar 文件及其所需的依赖 .jar 文件。Postman 会读取其中可用的驱动类并检查你的 Java 运行时。",
+    "driver_jar": "驱动 JAR",
+    "driver_jar_help": "包含 JDBC 驱动的 .jar 文件及其所需的配套 .jar 文件。文件会按显示顺序加载。",
+    "jar_hint": "从你的计算机中选择 JDBC 驱动 .jar 文件",
+    "browse": "浏览",
+    "add_jar": "添加 JAR",
+    "change": "更改",
+    "type_name": "类型名称",
+    "type_name_help": "你想如何称呼这类数据库连接？可以取一个便于记忆的名称。",
+    "type_name_placeholder": "例如 PostgreSQL JDBC",
+    "type_name_required": "请输入此 JDBC 类型的名称。",
+    "driver_class": "驱动类",
+    "driver_class_help": ".jar 文件中真正与数据库通信的实现类。有些 .jar 文件包含多个这样的类，请选择合适且受支持的那一个。",
+    "driver_class_placeholder": "选择或输入驱动类",
+    "driver_class_not_detected": "未检测到驱动类。请输入其完全限定类名以继续。",
+    "driver_class_required": "请选择 JDBC 驱动类。",
+    "multiple_classes": "检测到多个 JDBC 驱动，请选择要使用的类。",
+    "driver_loading": "正在从 JAR 加载驱动…",
+    "driver_loaded": "驱动已加载，找到 {count} 个兼容的驱动类。",
+    "jar_error_title": "无法读取此 JAR",
+    "jar_error_help": "请选择 JDBC 驱动 JAR，而不是源码包或捆绑包。它必须提供 java.sql.Driver 的实现。",
+    "select_jar_error": "请选择 JDBC 驱动 JAR 以继续。",
+    "java_runtime": "Java 运行时",
+    "java_detecting": "正在检测 Java…",
+    "java_not_detected": "未检测到兼容的 Java 运行时。",
+    "java_missing_title": "未找到兼容的 Java 运行时",
+    "java_missing_help": "此驱动需要 Java {version} 或更高版本。请安装兼容的运行时，或为 Postman 指定已有的 JDK 或 JRE。",
+    "java_invalid_title": "配置的 Java 路径下没有可执行文件",
+    "java_invalid_help": "请选择 Java {version}+ 的可执行文件，或包含 bin/java 的 JDK/JRE 主目录。",
+    "java_version_incompatible": "当前为 Java {detected}，但所选驱动需要 Java {required} 或更高版本。",
+    "locate_java": "定位 Java",
+    "use_different_runtime": "使用其他运行时",
+    "hide_runtime_override": "隐藏运行时覆盖设置",
+    "java_path": "Java 可执行文件或运行时目录",
+    "java_path_help": "请选择 Java 可执行文件（…/bin/java）或包含 bin/java 的 JDK/JRE 主目录。此路径仅保留在本机，不会保存到 YAML 中。",
+    "java_verified": "已在本机验证 {runtime}。",
+    "verify": "验证",
+    "url_heading": "定义连接 URL",
+    "url_description": "每种数据库的寻址方式都不同：Schema、服务名、实例等。请填写你的数据库所使用的 URL 格式。双大括号中的内容会变成配置数据库连接时需要填写的字段。",
+    "common_patterns": "从常见 URL 模式开始",
+    "url_template": "JDBC URL 模板",
+    "url_required": "请输入 JDBC URL 模板。",
+    "url_variable_error": "第 {position} 个字符附近的变量未闭合。每个变量都需要成对的双大括号。",
+    "detected_variables": "接下来需要填写的配置变量（URL 中使用了 {count} 个）：",
+    "no_variables": "添加用双大括号包裹的占位符即可创建数据源字段。",
+    "driver_properties": "驱动属性",
+    "driver_suggestions": "根据 {jar} 给出的建议。输入双左大括号可筛选，或选择某个属性将其插入。",
+    "template_parse_failed": "无法解析模板",
+    "properties_failed": "Postman 无法从此驱动读取连接属性。",
+    "yaml_storage_hint": "JDBC 类型和 URL 模板会保存在数据集的 YAML 中。Java 运行时路径仅保留在本机。",
+    "source_name": "数据源名称",
+    "source_name_placeholder": "例如 orders_db",
+    "source_name_required": "请输入数据源名称。",
+    "connection_details": "连接",
+    "connection_properties": "连接属性",
+    "add_from_suggestions": "添加驱动属性",
+    "no_properties": "未选择额外的连接属性。",
+    "remove_property": "移除 {name}",
+    "resolved_url": "解析后的 URL",
+    "secrets_hint": "凭据请使用 Vault 引用。明文值会被写入数据集的 YAML 中。",
+    "test_connection": "测试连接",
+    "connection_testing": "测试中…",
+    "connection_connected": "已连接",
+    "connection_test_unavailable": "驱动配置有效。此原型中暂不支持完整的 JDBC 连接测试；请添加数据源并运行原生查询来验证连通性。",
+    "connection_test_success": "连接成功。",
+    "connection_test_failed": "使用此配置无法连接。",
+    "setup_failed": "JDBC 设置失败",
+    "java_missing": "未找到 Java 11 或更高版本。",
+    "no_driver_class": "在所选 JAR 中未找到 JDBC 驱动类。",
+    "back": "上一步",
+    "next": "下一步",
+    "submit": "添加数据源"
+  },
   "create_view_modal": {
     "title": "创建视图",
     "name_label": "视图名称",
     "name_placeholder": "例如 active_users",
     "sources_label": "数据源",
     "sources_placeholder": "选择数据源",
+    "native_query_label": "要执行的查询（之后可编辑）",
+    "native_query_info_label": "关于 JDBC 查询执行",
+    "native_query_tooltip": "对于 JDBC 数据源，所写的查询会原样发送给数据库服务器并执行。",
+    "jdbc_single_source": "JDBC 数据源只能单独使用，不能与其他数据源混用。",
     "submit": "创建视图",
     "cancel": "取消"
   },
   "description": {
-    "editor_placeholder": "数据集把你的数据整合成可用 SQL 查询的表。你可以上传 CSV、JSON 或 Excel 文件，也可以连接数据库。每个数据源会成为一张表，按名称引用，使用 SQLite 方言查询。配置完成后，你可以：\n• 作为迭代数据驱动 Collection 运行（每行一次迭代）\n• 在请求的请求前脚本和响应后脚本中通过 pm.datasets 访问（executeView / executeQuery）\n• 为 Mock Server 提供数据支持，返回动态响应"
+    "editor_placeholder": "添加描述..."
+  },
+  "permissions": {
+    "no_create_permission": "你没有在此 Workspace 中创建数据集的权限。",
+    "no_edit_permission": "你没有在此 Workspace 中编辑数据集的权限。",
+    "no_delete_permission": "你没有在此 Workspace 中删除数据集的权限。",
+    "no_add_source_permission": "你没有在此数据集中添加数据源的权限。",
+    "no_delete_source_permission": "你没有在此数据集中删除数据源的权限。",
+    "no_create_view_permission": "你没有在此数据集中创建视图的权限。",
+    "no_delete_view_permission": "你没有在此数据集中删除视图的权限。",
+    "no_edit_source_permission": "你没有在此数据集中编辑数据源的权限。",
+    "no_edit_view_permission": "你没有在此数据集中编辑视图的权限。"
   },
   "common": {
     "cancel": "取消",
     "retry": "重试",
+    "try_again": "重试",
     "debug_with_ai": "用 AI 调试",
     "breadcrumb": {
       "dataset_fallback": "数据集",
@@ -297,5 +497,138 @@
   "mixed_source": {
     "title": "此查询同时混用了云端和本地数据源",
     "body": "同时引用 Postman 托管文件（{cloudSources}）和本地数据源（{localSources}）的 SQL 无法在同一个引擎中运行。请拆分查询，让每部分只访问其中一侧。"
+  },
+  "request": {
+    "run": "运行",
+    "run_blocked": "运行（已阻止）",
+    "cancel": "取消",
+    "run_hint": {
+      "pick_source": "运行前请在地址栏中选择数据源。",
+      "mutation_off": "变更模式已关闭。请在 Query 选项卡中启用后再执行写入语句。",
+      "read_only_on": "此请求已开启只读模式。请在 Settings 选项卡中关闭后再执行写入语句。",
+      "local_file_workspace": "本地文件数据源仅在桌面端的本地 Workspace 中可用。请改用数据库或远程文件数据源，或切换到本地 Workspace。"
+    },
+    "choose_file": "选择文件",
+    "unsupported_source": "数据守护进程尚不支持该数据源类型。",
+    "local_file_unavailable_web": "网页版不支持本地文件。请打开 Postman 桌面应用查询本地文件，或在此使用远程文件或数据库数据源。",
+    "schema": {
+      "search_placeholder": "搜索 Schema",
+      "introspect_error": "无法内省此数据源。",
+      "retry": "重试",
+      "reload": "重新加载 Schema",
+      "icon_source": "数据源",
+      "icon_table": "表",
+      "icon_alias": "查询中使用的表别名",
+      "icon_primary_key": "主键",
+      "icon_foreign_key": "外键引用"
+    },
+    "result_table": {
+      "search_placeholder": "搜索表格",
+      "empty": "无结果",
+      "running": "正在执行查询…",
+      "sort": "排序",
+      "sort_column": "按 {column} 排序",
+      "sort_column_ascending": "按 {column} 排序，当前为升序",
+      "sort_column_descending": "按 {column} 排序，当前为降序",
+      "resize_column": "调整 {column} 列宽",
+      "detail": {
+        "copy": "复制",
+        "copied": "已复制",
+        "char_count": "{count, plural, one {# 个字符} other {# 个字符}}"
+      }
+    },
+    "tabs": {
+      "query": "Query",
+      "authorization": "Authorization",
+      "settings": "Settings"
+    },
+    "query_editor": {
+      "beautify": "格式化"
+    },
+    "settings": {
+      "read_only_title": "只读",
+      "read_only_description": "阻止写入数据或修改 Schema 的查询。",
+      "read_only_description_forced_suffix": " 远程文件数据源在传输层面即为只读，此开关已锁定为开启。",
+      "read_only_aria": "只读"
+    },
+    "pending_changes": {
+      "summary": "{count, plural, one {# 行} other {# 行}}已更改，尚未提交。",
+      "revert_hint": "关闭标签页、空闲超时或手动点击“回滚”都会撤销这些更改。",
+      "ddl_warning": "此语句会执行 DDL 操作。在部分数据库引擎上，DDL 无法回滚。",
+      "roll_back": "回滚",
+      "commit": "提交",
+      "continue": "继续",
+      "continue_countdown": "继续（{seconds}）"
+    },
+    "file_changes": {
+      "applied": "更改已应用到内存中的副本。",
+      "unchanged_hint": "磁盘上的原始文件未被修改。",
+      "discard": "放弃",
+      "export": "导出修改后的表格"
+    },
+    "error_boundary": {
+      "title": "出错了",
+      "description": "{region} 遇到意外错误。你的请求未受影响，请重试。",
+      "region_fallback": "视图",
+      "try_again": "重试"
+    },
+    "response": {
+      "heading": "响应",
+      "view_tab": "视图",
+      "empty": "运行查询以查看数据",
+      "clear": "清除响应",
+      "nothing_to_clear": "没有可清除的响应。",
+      "more_actions": "更多结果操作",
+      "row_count": "{count, plural, one {# 行} other {# 行}}",
+      "connection": {
+        "connecting": "正在连接 {kind}…",
+        "failed": "{kind} 连接失败",
+        "connected": "已连接 {kind}",
+        "connected_version": "已连接 {kind} {version}"
+      },
+      "empty_state": {
+        "redis": "发送 Redis 命令以查看响应",
+        "default": "运行查询以加载视图"
+      },
+      "error": {
+        "generic": "出错了。重启应用可能有帮助。",
+        "unknown": "发生未知错误。",
+        "agent_required": {
+          "heading": "需要 Desktop Agent",
+          "hint": "请切换到 Postman Desktop Agent 以运行数据请求。"
+        },
+        "unreachable": {
+          "heading": "无法连接到数据源",
+          "hint": "请检查主机和端口，并确认数据库正在运行且接受连接。"
+        },
+        "timeout": {
+          "heading": "连接超时",
+          "hint": "请检查主机、端口和网络。VPN 或防火墙可能拦截了此连接。"
+        },
+        "host_unresolved": {
+          "heading": "无法解析主机",
+          "hint": "请仔细检查主机名是否有拼写错误。"
+        },
+        "auth_failed": {
+          "heading": "身份验证失败",
+          "hint": "请检查 Authorization 选项卡中的用户名和密码。"
+        },
+        "syntax": {
+          "heading": "查询存在语法错误",
+          "hint": "请检查高亮的语句，很可能是关键字、逗号或引号有误。"
+        },
+        "not_found": {
+          "heading": "查询中的某些对象未找到",
+          "hint": "请对照 cartographer 中的 Schema 检查表名和列名。"
+        },
+        "blocked": {
+          "heading": "此查询已被阻止",
+          "hint": "此请求已开启只读模式。请在 Settings 选项卡中关闭后再执行写入语句。"
+        },
+        "failed": {
+          "heading": "查询失败"
+        }
+      }
+    }
   }
 }

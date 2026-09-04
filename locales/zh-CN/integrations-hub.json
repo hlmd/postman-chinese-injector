@@ -42,7 +42,9 @@
     },
     "backToHub": "返回集成列表",
     "integrationBy": "由 {author} 提供的集成",
-    "aboutPublisher": "关于发布者"
+    "aboutPublisher": "关于发布者",
+    "connectIntegration": "连接集成",
+    "signInToConnect": "登录后连接"
   },
   "viewDocs": "查看文档",
   "connectButton": "连接",
@@ -68,10 +70,6 @@
         "cancel": "取消",
         "confirm": "断开 Wiz 连接"
       }
-    },
-    "slack": {
-      "title": "Agent Tasks",
-      "description": "在 {appName} 中 @Postman 即可启动 Agent Mode 任务，并在会话线程中查看状态更新。"
     },
     "jira": {
       "title": "创建和查看 Jira Issue",
@@ -115,6 +113,12 @@
     },
     "gateway": {
       "connectedBadge": "已连接",
+      "authTitle": "{appName} - ({authLabel})",
+      "tableDescription": "云连接器让团队可以把 API 引入 API Catalog。API 规范随后会带着元数据（包括关联的 Environment 和集群）出现在 API Catalog 中，并自动生成 Collection，便于在 Postman 中继续开发 API。",
+      "authLabel": {
+        "accessKey": "Access Key 身份验证",
+        "assumeRole": "IAM Role 身份验证"
+      },
       "connectButton": "连接网关",
       "connectNoPermission": "你没有连接此网关的权限，请联系团队管理员。",
       "viewDocs": "查看文档",
@@ -141,7 +145,6 @@
         "postmanTeam": "Postman 团队",
         "lastUsed": "最近使用",
         "discoveredServices": "已发现的服务",
-        "integratedServices": "已集成的服务",
         "remove": "移除连接"
       }
     }
@@ -177,7 +180,19 @@
     "chatUnavailable": "聊天不可用",
     "loginForConnectionInfo": "登录后查看连接信息",
     "sharedChannel": "共享频道",
-    "archivedTooltip": "此频道已归档"
+    "archivedTooltip": "此频道已归档",
+    "conversationTypeLabel": "会话类型",
+    "conversationTypeChannel": "频道",
+    "conversationTypeGroupChat": "群聊",
+    "teamLabel": "团队",
+    "channelLabel": "频道",
+    "channelDescription": "必须是标准频道或共享频道，不支持私有频道。",
+    "channelPlaceholder": "输入以搜索频道",
+    "channelLoadError": "频道加载失败，请重试。",
+    "teamPlaceholder": "输入以搜索团队",
+    "groupChatLabel": "群聊",
+    "groupChatPlaceholder": "输入以搜索群聊",
+    "groupChatLoadError": "群聊加载失败，请重试。"
   },
   "workspaceNotifications": {
     "title": "工作区通知",
@@ -277,6 +292,7 @@
   "integrationSections": {
     "actions": {
       "connect": "添加集成",
+      "runlog_label": "查看运行日志",
       "edit_label": "编辑集成",
       "delete_label": "删除集成",
       "creator_only_edit": "只有该集成的创建者才能编辑此配置。",
@@ -285,6 +301,8 @@
     "columns": {
       "name": "名称",
       "monitor": "Monitor",
+      "collection": "Collection",
+      "entity": "实体",
       "status": "状态",
       "workspace": "工作区",
       "created_by": "创建者",
@@ -301,5 +319,31 @@
       "description": "数据加载失败。",
       "reload": "重新加载"
     }
+  },
+  "slackWorkspaceSelect": {
+    "addWorkspace": "添加另一个 Workspace",
+    "connected": "已连接"
+  },
+  "agentTasks": {
+    "title": "Agent Tasks",
+    "description": "在 {appName} 中 @Postman 即可启动 Agent 模式任务，并在会话线程中查看状态更新。",
+    "connectedBadge": "已连接",
+    "otherTeamUsers_one": "+{count} 位其他团队成员",
+    "otherTeamUsers_other": "+{count} 位其他团队成员",
+    "table": {
+      "name": "名称",
+      "email": "邮箱",
+      "orgIdentifier": "Slack Workspace",
+      "remove": "移除"
+    },
+    "connectModal": {
+      "heading": "连接 Agent Tasks",
+      "body": "请选择你要连接的 {appName} Workspace。",
+      "cancel": "取消",
+      "confirm": "连接",
+      "noWorkspaces": "尚未连接任何 Slack Workspace。请先添加一个。"
+    },
+    "removeError": "无法为该 Workspace 关闭 Agent Tasks，请重试。",
+    "enableError": "无法为该 Workspace 启用 Agent Tasks，请重试。"
   }
 }

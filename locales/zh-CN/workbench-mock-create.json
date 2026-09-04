@@ -92,7 +92,7 @@
   "existing_mock": {
     "radio_label": "已有 Mock",
     "name_label": "名称",
-    "name_placeholder": "New Mock Server",
+    "name_placeholder": "新建 Mock Server",
     "mock_label": "Mock",
     "mock_placeholder": "选择 Mock",
     "mock_loading": "正在加载 Mock…",

@@ -41,7 +41,11 @@
   },
   "team_member_slots_full": {
     "title": "无法批准 请求",
-    "message": ""
+    "message": "",
+    "create": {
+      "title": "请求发送失败",
+      "message": "没有可用的成员席位。请让团队管理员增加席位后重试。"
+    }
   },
   "update_roles_permission_denied": {
     "title": "您需要访问权限",
@@ -110,6 +114,10 @@
   "default_create": {
     "title": "无法创建 请求",
     "message": "出了点问题"
+  },
+  "default_revoke": {
+    "title": "移除访问权限失败",
+    "message": "只是一点小故障，请重试。"
   },
   "invalidated_request": {
     "title": "无法回复 请求",

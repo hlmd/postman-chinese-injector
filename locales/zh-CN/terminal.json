@@ -48,5 +48,9 @@
     "close_terminal_aria": "关闭终端{name}",
     "terminal_aria": "终端：{name}",
     "rename_input_aria": "重命名终端 {name}"
+  },
+  "run_in_terminal": {
+    "start_desktop_agent_tooltip": "启动 Postman Desktop Agent 以在终端中运行命令",
+    "update_desktop_agent_tooltip": "更新 Postman Desktop Agent 以在终端中运行命令"
   }
 }

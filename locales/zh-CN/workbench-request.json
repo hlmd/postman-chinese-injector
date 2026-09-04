@@ -407,9 +407,13 @@
     "ready_to_send_description": "发送此请求后，Postman AI 可以帮助您获取推荐的后续步骤",
     "trigger_label": "主动建议",
     "settings_label": "建议设置",
-    "dismiss_label": "忽略建议",
     "think_harder": "深入思考",
-    "no_longer_relevant": "已不再适用",
+    "accept_cta": "接受",
+    "decline_cta": "拒绝",
+    "open_source_code_cta": "打开源代码",
+    "describe_alternative": "描述其他方案",
+    "describe_placeholder": "描述你的需求。",
+    "describe_alternative_submit": "在 Agent 模式中开始",
     "proposed_fix_label": "建议的修复方案",
     "previous_suggestion_label": "上一条建议",
     "next_suggestion_label": "下一条建议",
@@ -442,5 +446,23 @@
       "title": "架构编辑器加载失败",
       "description": "加载架构编辑器时发生意外错误。"
     }
+  },
+  "linked_request": {
+    "linked_to": "已关联到：",
+    "overrides_tag": "覆盖项（{count}）",
+    "overrides_heading": "覆盖项（{count}）",
+    "no_overrides": "无覆盖项",
+    "reset": "重置",
+    "reset_tooltip": "重置全部覆盖项",
+    "reset_success": "覆盖项已重置",
+    "reset_error": "无法重置覆盖项，请重试。",
+    "fields": {
+      "name": "请求名称",
+      "queryParams": "参数",
+      "scripts": "脚本",
+      "body": "请求体"
+    },
+    "linked_tag": "已关联（{count}）",
+    "linked_requests_heading": "{count, plural, one {此请求有 <0># 个关联请求：</0>} other {此请求有 <0># 个关联请求：</0>}}"
   }
 }

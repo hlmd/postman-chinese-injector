@@ -1,0 +1,19 @@
+{
+  "working": {
+    "resolving": "正在准备…",
+    "creating": "正在创建你的 Workspace…",
+    "redirecting": "正在打开你的 Workspace…",
+    "do_not_close": "只需稍等片刻，请不要关闭此标签页。"
+  },
+  "error": {
+    "title": "无法创建 Workspace",
+    "generic": "出错了，请重试。",
+    "retry": "重试",
+    "go_to_workspaces": "前往你的 Workspace"
+  },
+  "signed_out": {
+    "title": "请登录后继续",
+    "description": "需要先登录 Postman，我们才能为你创建 Workspace。",
+    "sign_in": "登录"
+  }
+}

@@ -724,6 +724,10 @@
         "heading": "配置设置不可用",
         "description": "无法获取您的配置数据，请稍后重试。",
         "primary_action_text": "重试"
+      },
+      "settings_update_error": {
+        "heading": "无法更新侧边栏面板",
+        "description": "更新侧边栏配置时出错，请重试。"
       }
     },
     "configure_multi_partner_workspace": {
@@ -743,12 +747,12 @@
         "description": "启用多合作伙伴模式，可在同一 Workspace 中与多个合作伙伴组织进行私密协作。",
         "pointers": [
           {
-            "headline": "Partners cannot see each other",
-            "info": "Only your team members will be visible to partners."
+            "headline": "合作伙伴之间互不可见",
+            "info": "合作伙伴只能看到你的团队成员。"
           },
           {
-            "headline": "Partners cannot edit this workspace",
-            "info": "They can view all workspace resources and send requests"
+            "headline": "合作伙伴无法编辑此 Workspace",
+            "info": "他们可以查看 Workspace 中的所有资源并发送请求"
           }
         ],
         "note": "为防止意外数据泄露，此操作无法撤销。",

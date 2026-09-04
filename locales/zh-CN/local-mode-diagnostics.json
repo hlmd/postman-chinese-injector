@@ -30,6 +30,10 @@
     "missing_counterpart": "规范“{spec}”和 Collection“{collection}”存在于“{fromWorkflow}”中，但在“{toWorkflow}”中缺失。",
     "options_mismatch": "两个工作流程之间规范“{spec}”和 Collection“{collection}”的选项有所不同。"
   },
+  "header_actions": {
+    "fix_all_no_issues_tooltip": "没有问题",
+    "fix_all_disabled_tooltip": "没有可自动修复的问题"
+  },
   "fix_toasts": {
     "workspace_config_success": "更新了 resources.yaml 中的 Workspace ID",
     "workspace_config_error": "无法更新 resources.yaml 中的 Workspace ID",

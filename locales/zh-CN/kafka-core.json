@@ -40,6 +40,18 @@
     "offset_placeholder": "输入 offset",
     "timestamp_placeholder": "输入时间戳"
   },
+  "stop_after": {
+    "label": "停止条件",
+    "max_records": "记录数",
+    "duration": "持续时间",
+    "idle": "空闲时间",
+    "end_position": "时间戳",
+    "max_records_placeholder": "1000",
+    "duration_placeholder": "输入持续时间",
+    "idle_placeholder": "输入空闲时间",
+    "end_position_placeholder": "输入时间戳",
+    "milliseconds_suffix": "ms"
+  },
   "topics": {
     "pane": {
       "topics": "Topic",

@@ -3,14 +3,16 @@
     "label": "规范"
   },
   "bulk_delete": {
-    "heading": "删除 {specCount} 个 Spec",
-    "confirmation_line1": "确定要永久删除这 {specCount} 个 Spec 吗？",
+    "heading": "删除 {count, plural, one {# 个 Spec} other {# 个 Spec}}",
+    "confirmation_line1": "确定要永久删除{count, plural, one {这个 Spec} other {这 # 个 Spec}}吗？",
     "confirmation_line2": "此操作无法撤销。",
     "over_limit_title": "一次最多只能删除 {max} 个 Spec",
     "over_limit_description": "已选择 {specCount} 个 Spec。请减少到 {max} 个及以内后重试。",
     "partial_failure": "已删除 {totalCount} 个 Spec 中的 {deletedCount} 个，{failedCount} 个删除失败。",
     "error": "无法删除 Spec",
     "cancel": "取消",
-    "confirm": "删除"
+    "confirm": "删除",
+    "summary_label": "{count, plural, one {# 个 Spec} other {# 个 Spec}}",
+    "summary_note": "删除后无法恢复"
   }
 }

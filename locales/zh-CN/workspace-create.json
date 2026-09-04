@@ -123,9 +123,9 @@
         "title": "工作区 切换失败",
         "description": "无法切换到 工作区。请手动尝试。"
       },
-      "workspace_deleted": {
-        "title": "工作区 已删除",
-        "description": "本地数据中存在的工作区已被删除"
+      "folder_release_failed": {
+        "title": "无法断开文件夹连接",
+        "description": "请重试或选择其他文件夹。"
       },
       "status_error": {
         "status": "错误",
@@ -151,10 +151,6 @@
       "remote_origin_required": {
         "title": "需要远程来源",
         "description": "此 Git 存储库没有配置远程源 URL。请在连接到 工作区 之前添加远程源。"
-      },
-      "local_folder_initialized": {
-        "title": "本地文件夹已连接",
-        "description": "已创建本地 Postman 文件。设置 Git 远程仓库以启用拉取和发布等云同步操作。"
       },
       "git_not_installed": {
         "title": "未安装 Git",
@@ -310,16 +306,16 @@
       "subheading": "在此期间，您还可以试用所有 {enterprisePlanName} 套餐功能。",
       "info": [
         {
-          "heading": "Ditch the export. Invite partners instead.",
-          "description": "Share collections with partners instead of exporting."
+          "heading": "别再导出文件，直接邀请合作伙伴。",
+          "description": "无需导出，直接与合作伙伴共享 Collection。"
         },
         {
-          "heading": "Scattered chats to centralized communication.",
-          "description": "Share feedback using in-line comments."
+          "heading": "从分散的聊天到集中的沟通。",
+          "description": "通过行内评论分享反馈。"
         },
         {
-          "heading": "Onboard, test, iterate. 4x faster.",
-          "description": "Partners can test APIs as soon as they're updated."
+          "heading": "上手、测试、迭代，速度提升 4 倍。",
+          "description": "API 一经更新，合作伙伴即可开始测试。"
         }
       ],
       "start_trial": "免费试用 Partner Workspace",

@@ -16,5 +16,11 @@
   },
   "code_mock": {
     "running_status": "状态：运行中"
+  },
+  "simulation_context_menu": {
+    "open": "打开",
+    "copy_link": "复制链接",
+    "redeploy": "重新部署",
+    "delete": "删除"
   }
 }
