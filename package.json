@@ -1,7 +1,7 @@
 {
   "name": "postman-chinese-injector",
   "version": "1.5.5",
-  "description": "把中文翻译注入 Postman 桌面端 / 网页版的非官方第三方汉化工具（跨平台 CLI + 浏览器扩展）。与 Postman, Inc. 无关。",
+  "description": "\u628a\u4e2d\u6587\u7ffb\u8bd1\u6ce8\u5165 Postman \u684c\u9762\u7aef / \u7f51\u9875\u7248\u7684\u975e\u5b98\u65b9\u7b2c\u4e09\u65b9\u6c49\u5316\u5de5\u5177\uff08\u8de8\u5e73\u53f0 CLI + \u6d4f\u89c8\u5668\u6269\u5c55\uff09\u3002\u4e0e Postman, Inc. \u65e0\u5173\u3002",
   "bin": {
     "postman-chinese-injector": "postman-chinese-injector.js"
   },
@@ -35,5 +35,19 @@
     "pm-scratchpad-cn.js",
     "locales/"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "@electron/asar": {
+      "brace-expansion": "5.0.9"
+    },
+    "brace-expansion": {
+      "brace-expansion": "5.0.9"
+    },
+    "glob": {
+      "brace-expansion": "5.0.9"
+    },
+    "minimatch": {
+      "brace-expansion": "5.0.9"
+    }
+  }
 }
