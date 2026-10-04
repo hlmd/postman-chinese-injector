@@ -64,10 +64,21 @@ const MAIN_ENTRY = 'main.js'; // 主进程入口（package.json 的 main）
 const BAK_SUFFIX = '.bak';
 const MARK_START = '// === PM-I18N START ===';
 const MARK_END = '// === PM-I18N END ===';
+// 钩子按「preload 所在目录」解析：真正的 preload（webPreferences.preload）里 require('./x') 即相对本文件；
+// 但 Postman 7.x 的 js/preload.js 是 HTML 用 <script> 加载的，那里 require 相对的是页面目录 html/，
+// 故优先用 document.currentScript 定位本脚本所在目录。
 const INJECT_BLOCK =
   `\n${MARK_START}\n` +
-  "try { require('./pm-chinese.js'); } catch (e) { console.error('[pm-chinese] load failed', e); }\n" +
-  "try { require('./pm-scratchpad-cn.js'); } catch (e) { console.error('[pm-scratchpad] load failed', e); }\n" +
+  '(function () {\n' +
+  "  var pmDir = null;\n" +
+  "  try {\n" +
+  "    var cs = typeof document !== 'undefined' && document.currentScript;\n" +
+  "    if (cs && /^file:/.test(cs.src)) pmDir = require('path').dirname(require('url').fileURLToPath(cs.src));\n" +
+  "  } catch (e) { /* ignore，回落到相对 require */ }\n" +
+  "  function pmRequire(name) { return pmDir ? require(require('path').join(pmDir, name)) : require('./' + name); }\n" +
+  "  try { pmRequire('pm-chinese.js'); } catch (e) { console.error('[pm-chinese] load failed', e); }\n" +
+  "  try { pmRequire('pm-scratchpad-cn.js'); } catch (e) { console.error('[pm-scratchpad] load failed', e); }\n" +
+  '})();\n' +
   `${MARK_END}\n`;
 // 主进程入口的注入块：须插在 main.js 最前面，赶在 Postman 建菜单之前包装好 Menu
 const MAIN_INJECT_BLOCK =
@@ -85,8 +96,9 @@ function isFile(p) {
 // 渲染进程 preload 在不同 Postman 版本里的相对路径（按优先级排序）：
 //   新版        -> preload_desktop.js（根目录）
 //   老版(10.24) -> preload/desktop/index.js（见 windowManager.js 的 webPreferences.preload）
+//   7.x         -> js/preload.js（没有 webPreferences.preload；窗口开 nodeIntegration，各 html 页用 <script> 加载它）
 // 注意：根目录还有个主进程用的 preload.js，不能误选，故只匹配这份明确清单。
-const PRELOAD_CANDIDATES = ['preload_desktop.js', path.join('preload', 'desktop', 'index.js')];
+const PRELOAD_CANDIDATES = ['preload_desktop.js', path.join('preload', 'desktop', 'index.js'), path.join('js', 'preload.js')];
 // 在 root（解包后的 staging 或未打包 app/）里定位渲染进程 preload，找不到返回 null。
 function findPreloadIn(root) {
   for (const rel of PRELOAD_CANDIDATES) {

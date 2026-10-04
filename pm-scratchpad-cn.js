@@ -27,6 +27,52 @@
   // 完整版 Postman 网页版域名（锚定 (^|\.) 防止 evil-postman.com 误命中）
   var HOST_RE = /(^|\.)(postman\.co|postman\.com|getpostman\.com)$/i;
 
+  // 「标签 + 动态值」整行文本（设置 → 关于页的版本信息），如 "Version 10.12.11"、"OS Platform win32 10.0.26300"。
+  //   值须由版本号式 token 组成且含数字，避免把普通英文句子当成「标签 + 值」误译。
+  var PREFIX_RULES = [
+    ['Desktop Platform Version', '桌面平台版本'],
+    ['UI Version', 'UI 版本'],
+    ['Version', '版本'],
+    ['Architecture', '架构'],
+    ['OS Platform', '操作系统平台']
+  ];
+  var PREFIX_VALUE_RE = /^(?=.*\d)[\w.\-]+(?: [\w.\-]+)*$/;
+
+  // 带动态部分的整行文本（查找和替换面板的计数、授权面板的占位示例）
+  var COUNT_RULES = [
+    [/^Collections \((\d+)\)$/, '集合 ($1)'],
+    [/^Environments \((\d+)\)$/, '环境 ($1)'],
+    [/^Replace in (\d+) selected$/, '在选中的 $1 项中替换'],
+    [/^(\d+) lessons?$/, '$1 节课'],
+    [/^Current Version: (v?\d[\w.\-]*)$/, '当前版本：$1'],
+    // 输入框占位示例，如 "e.g. us-east-1"：只放行单个无空格的示例值
+    [/^e\.g\. (\S+)$/, '例如 $1'],
+    // 活动流的日期分组与时间，如 "September 29, 2026"、"3:28 PM"
+    [/^(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (\d{4})$/,
+      function (all, mon, d, y) { return y + '年' + (MONTHS.indexOf(mon) + 1) + '月' + d + '日'; }],
+    [/^(\d{1,2}:\d{2}) (AM|PM)$/, function (all, t, ap) { return (ap === 'AM' ? '上午 ' : '下午 ') + t; }]
+  ];
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  // 「词条 + 括号快捷键」的提示，如 "Single pane view (Ctrl + Alt + V)"：前半段查词典，快捷键原样保留
+  var SHORTCUT_SUFFIX_RE = /^(.+?) \(((?:[^()\s+]+ ?\+ ?)+[^()\s+]+)\)$/;
+
+  // 下拉选择框（input.input-search）里显示的固定占位值。input 一律跳过以免改到用户输入，
+  //   这里仅放行白名单里的界面文案（不能用整本词典：用户起的环境名可能恰好是词典里的英文）；
+  //   聚焦时还原英文，交给原组件筛选，失焦后再译。
+  var SEARCH_INPUT_VALUES = { 'No Environment': 1 };
+  var SEARCH_INPUT_CLASS_RE = /(^|\s)input-search(\s|$)/;
+
+  // 纯函数：下拉选择框当前值应显示的译文；不适用返回 null
+  function translateSearchInputValue(dict, el, activeEl) {
+    if (!el || el.tagName !== 'INPUT' || el === activeEl) return null;
+    if (!SEARCH_INPUT_CLASS_RE.test((el.getAttribute && el.getAttribute('class')) || '')) return null;
+    var v = el.value;
+    if (!Object.prototype.hasOwnProperty.call(SEARCH_INPUT_VALUES, v)) return null;
+    if (!Object.prototype.hasOwnProperty.call(dict, v)) return null;
+    return dict[v];
+  }
+
   // 纯函数：整串精确翻译，保留前后空白；无匹配返回 null
   function translateString(dict, value) {
     if (typeof value !== 'string' || !value) return null;
@@ -35,6 +81,19 @@
     if (!core) return null;
     if (Object.prototype.hasOwnProperty.call(dict, core)) {
       return m[1] + dict[core] + m[3];
+    }
+    for (var i = 0; i < PREFIX_RULES.length; i++) {
+      var label = PREFIX_RULES[i][0];
+      if (core.indexOf(label + ' ') !== 0) continue;
+      var rest = core.slice(label.length + 1);
+      if (PREFIX_VALUE_RE.test(rest)) return m[1] + PREFIX_RULES[i][1] + ' ' + rest + m[3];
+    }
+    for (var j = 0; j < COUNT_RULES.length; j++) {
+      if (COUNT_RULES[j][0].test(core)) return m[1] + core.replace(COUNT_RULES[j][0], COUNT_RULES[j][1]) + m[3];
+    }
+    var sc = SHORTCUT_SUFFIX_RE.exec(core);
+    if (sc && Object.prototype.hasOwnProperty.call(dict, sc[1])) {
+      return m[1] + dict[sc[1]] + ' (' + sc[2] + ')' + m[3];
     }
     return null;
   }
@@ -103,6 +162,19 @@
     }
   }
 
+  // 只改 .value 属性（不碰 value 特性），原值记在节点上供聚焦时还原
+  function applySearchInputValue(dict, el, doc) {
+    var out = translateSearchInputValue(dict, el, doc.activeElement);
+    if (out == null) return;
+    el.__pmOrigValue = el.value;
+    el.value = out;
+  }
+
+  function applyAllSearchInputs(dict, doc) {
+    var els = doc.querySelectorAll('input.input-search');
+    for (var i = 0; i < els.length; i++) applySearchInputValue(dict, els[i], doc);
+  }
+
   function walk(dict, root, doc) {
     if (root.nodeType === 1) translateAttributes(dict, root);
     var tw = doc.createTreeWalker(root, 4 /* SHOW_TEXT */, null, false);
@@ -153,14 +225,28 @@
           }
         }
       }
+      // React 受控 input 重渲染时只写 .value 属性、不触发 DOM 变更，故每批变更后都重扫一遍下拉选择框
+      applyAllSearchInputs(dict, doc);
     });
     obs.observe(doc, {
       subtree: true,
       childList: true,
       characterData: true,
       attributes: true,
-      attributeFilter: ['placeholder', 'title', 'aria-label']
+      attributeFilter: ['placeholder', 'title', 'aria-label', 'value']
     });
+    applyAllSearchInputs(dict, doc);
+    doc.addEventListener('focusin', function (e) {
+      var el = e.target;
+      if (el && el.__pmOrigValue != null) {
+        if (el.value === dict[el.__pmOrigValue]) el.value = el.__pmOrigValue;
+        el.__pmOrigValue = null;
+      }
+    }, true);
+    doc.addEventListener('focusout', function (e) {
+      var el = e.target;
+      setTimeout(function () { applySearchInputValue(dict, el, doc); }, 0);
+    }, true);
     try { console.log('[pm-scratchpad] 已启用 DOM 翻译，词条:', Object.keys(dict).length); } catch (e) {}
   }
 
@@ -182,6 +268,7 @@
       inSkippableSubtree: inSkippableSubtree,
       isActive: isActive,
       translateAttributes: translateAttributes,
+      translateSearchInputValue: translateSearchInputValue,
       loadDict: loadDict
     };
   }

@@ -65,12 +65,31 @@ function translateString(c, value) {
 
 var MENU_KEYS = ['label', 'sublabel', 'toolTip'];
 
+// 只写 role、不写 label 的菜单项（如 { role: 'undo' }），英文标签由 Electron 自己补，模板里没有可翻的串。
+//   这里列出 Electron 的默认英文标签（role 小写化后查），词典有译文时显式写进 label。
+//   含应用名的 about / hide 不在此列；quit 只在 Windows（Exit）/ Linux（Quit）不含应用名，macOS 不补。
+var ROLE_LABELS = {
+  quit: process.platform === 'win32' ? 'Exit' : process.platform === 'linux' ? 'Quit' : null,
+  undo: 'Undo', redo: 'Redo', cut: 'Cut', copy: 'Copy', paste: 'Paste',
+  pasteandmatchstyle: 'Paste and Match Style', delete: 'Delete', selectall: 'Select All',
+  reload: 'Reload', forcereload: 'Force Reload', toggledevtools: 'Toggle Developer Tools',
+  resetzoom: 'Actual Size', zoomin: 'Zoom In', zoomout: 'Zoom Out',
+  togglefullscreen: 'Toggle Full Screen', minimize: 'Minimize', close: 'Close Window',
+  zoom: 'Zoom', front: 'Bring All to Front', hideothers: 'Hide Others', unhide: 'Show All',
+  services: 'Services', window: 'Window', help: 'Help',
+  filemenu: 'File', editmenu: 'Edit', viewmenu: 'View', windowmenu: 'Window'
+};
+
 // 纯函数：递归复制并翻译菜单模板（submenu 可能是 Menu 实例，原样保留）
 function translateTemplate(c, template) {
   if (!Array.isArray(template)) return template;
   return template.map(function (item) {
     if (!item || typeof item !== 'object') return item;
     var out = Object.assign({}, item);
+    if (out.label == null && typeof out.role === 'string') {
+      var roleLabel = ROLE_LABELS[out.role.toLowerCase()];
+      if (roleLabel && Object.prototype.hasOwnProperty.call(c.exact, roleLabel)) out.label = roleLabel;
+    }
     MENU_KEYS.forEach(function (k) { if (typeof out[k] === 'string') out[k] = translateString(c, out[k]); });
     if (Array.isArray(out.submenu)) out.submenu = translateTemplate(c, out.submenu);
     return out;

@@ -54,3 +54,23 @@ test('mainHookSource / loadMainDict 可用', () => {
   assert.ok(inj.mainHookSource().src.includes('buildFromTemplate'));
   assert.ok(Object.keys(inj.loadMainDict().dict).length > 50);
 });
+
+test('translateTemplate：只写 role 的菜单项按 Electron 默认标签补上中文 label', () => {
+  const cc = hook.compile({ Undo: '撤销', 'Paste and Match Style': '粘贴并匹配样式' });
+  const out = hook.translateTemplate(cc, [
+    { role: 'undo' },
+    { role: 'pasteAndMatchStyle' },
+    { role: 'zoomIn' },
+    { role: 'undo', label: 'Custom' },
+  ]);
+  assert.strictEqual(out[0].label, '撤销');
+  assert.strictEqual(out[0].role, 'undo');
+  assert.strictEqual(out[1].label, '粘贴并匹配样式');
+  assert.strictEqual('label' in out[2], false);
+  assert.strictEqual(out[3].label, 'Custom');
+});
+
+test('translateTemplate：Windows 上 role quit 补成「Exit」的译文', { skip: process.platform !== 'win32' }, () => {
+  const cc = hook.compile({ Exit: '退出' });
+  assert.strictEqual(hook.translateTemplate(cc, [{ role: 'quit' }])[0].label, '退出');
+});

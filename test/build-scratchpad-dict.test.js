@@ -1,7 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
-const { extractInto, unwrapPhp, unwrapJs } = require('../scripts/build-scratchpad-dict.js');
+const { extractInto, addTrimmedAliases, unwrapPhp, unwrapJs } = require('../scripts/build-scratchpad-dict.js');
 
 test('unwrapPhp 去外层引号并还原转义', () => {
   assert.strictEqual(unwrapPhp(`'"Delete"'`), '"Delete"');
@@ -32,4 +32,21 @@ test('extractInto 提取纯文本，跳过占位/模板/上下文，先到先得
   assert.ok(![...map.keys()].some((k) => k.includes('${')));
   assert.ok(![...map.keys()].some((k) => k.startsWith('title:')));
   assert.strictEqual(map.size, 2);
+});
+
+test('addTrimmedAliases 为带首尾空白的词条补去空白别名，跳过全小写单词与已有项', () => {
+  const map = new Map([
+    [' Find and Replace', ' 查找和替换'],
+    [' Agent', ' 代理'],
+    [' all', '所有'],
+    [' (Active)', ' (活跃)'],
+    [' Replace ', '旧'],
+    ['Replace', '替换'],
+  ]);
+  assert.strictEqual(addTrimmedAliases(map), 3);
+  assert.strictEqual(map.get('Find and Replace'), '查找和替换');
+  assert.strictEqual(map.get('Agent'), '代理');
+  assert.strictEqual(map.get('(Active)'), '(活跃)');
+  assert.strictEqual(map.has('all'), false);
+  assert.strictEqual(map.get('Replace'), '替换');
 });

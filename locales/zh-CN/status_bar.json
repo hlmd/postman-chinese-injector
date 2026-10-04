@@ -15,8 +15,8 @@
   },
   "pane_view": {
     "label": "两窗格 响应 视图",
-    "single_pane_view": "单窗格视图",
-    "two_pane_view": "两个窗格视图"
+    "single_pane_view": "单栏视图",
+    "two_pane_view": "双栏视图"
   },
   "trash": {
     "error_tooltip": "您需要在线才能查看垃圾箱的内容。",

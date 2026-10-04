@@ -49,7 +49,7 @@
 
 汉化对桌面端的适配依赖两点，满足即可注入：
 
-- 主窗口 preload 脚本可注入 —— 新版为根目录 `preload_desktop.js`，老版（10.24）为 `preload/desktop/index.js`，脚本自动判别；
+- 主窗口 preload 脚本可注入 —— 新版为根目录 `preload_desktop.js`，老版（10.24）为 `preload/desktop/index.js`，7.x 为各页面用 `<script>` 加载的 `js/preload.js`，脚本自动判别；
 - 界面语言包走 `.../_ar-assets/locales/<lang>/<module>-<hash>.json` 远程加载 —— 运行时钩子拦截这些响应做替换。
 
 | 项 | 说明 |

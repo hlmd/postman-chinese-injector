@@ -68,6 +68,20 @@ function extractInto(text, map) {
   return map;
 }
 
+// 运行时先去掉文本首尾空白再查词典，带前后空格的提取项（如 " Find and Replace"）因此永远命中不了。
+// 给它们补一条去空白的别名；全小写单词（如 " a"、" all"）太泛，容易误伤用户起的名字，不补。
+function addTrimmedAliases(map) {
+  let added = 0;
+  for (const [k, v] of [...map.entries()]) {
+    const t = k.trim();
+    if (t === k || !t || map.has(t)) continue;
+    if (!/s/.test(t) && /^[a-z]/.test(t)) continue;
+    map.set(t, v.trim());
+    added++;
+  }
+  return added;
+}
+
 function walkPhp(dir, out) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
@@ -82,6 +96,7 @@ function build(srcDir) {
   if (!fs.existsSync(src)) throw new Error(`找不到词典源目录: ${src}`);
   const map = new Map();
   for (const f of walkPhp(src, [])) extractInto(fs.readFileSync(f, 'utf8'), map);
+  addTrimmedAliases(map);
   const extracted = map.size;
   // 手工覆盖：overrides.json 优先（覆盖同名提取项或补充新项），重跑提取不丢
   let overrides = 0;
@@ -96,7 +111,7 @@ function build(srcDir) {
   return { count: map.size, extracted, overrides, out: OUT };
 }
 
-module.exports = { extractInto, unwrapPhp, unwrapJs, build };
+module.exports = { extractInto, addTrimmedAliases, unwrapPhp, unwrapJs, build };
 
 if (require.main === module) {
   try {

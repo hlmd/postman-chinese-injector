@@ -35,6 +35,16 @@ test('translateString 无匹配/非串返回 null（不误伤）', () => {
   assert.strictEqual(translateString(DICT, null), null);
 });
 
+test('translateString 翻译关于页「标签 + 版本值」行，普通句子不误伤', () => {
+  assert.strictEqual(translateString(DICT, 'Version 10.12.11'), '版本 10.12.11');
+  assert.strictEqual(translateString(DICT, 'UI Version 10.12.11-ui-230406-1230'), 'UI 版本 10.12.11-ui-230406-1230');
+  assert.strictEqual(translateString(DICT, 'Desktop Platform Version 10.12.0'), '桌面平台版本 10.12.0');
+  assert.strictEqual(translateString(DICT, 'Architecture x64'), '架构 x64');
+  assert.strictEqual(translateString(DICT, 'OS Platform win32 10.0.26300'), '操作系统平台 win32 10.0.26300');
+  assert.strictEqual(translateString(DICT, 'Version control is great'), null);
+  assert.strictEqual(translateString(DICT, 'Version history'), null);
+});
+
 test('isSkippableEl 命中可编辑/代码区', () => {
   assert.strictEqual(isSkippableEl(fakeEl('INPUT')), true);
   assert.strictEqual(isSkippableEl(fakeEl('TEXTAREA')), true);
@@ -116,4 +126,46 @@ test('translateAttributes 翻译 placeholder/title/aria-label', () => {
   assert.strictEqual(el.getAttribute('title'), '删除');
   assert.strictEqual(el.getAttribute('aria-label'), '新建请求');
   assert.strictEqual(el.getAttribute('other'), 'Send'); // 非白名单属性不动
+});
+
+test('translateSearchInputValue 只译下拉选择框里的白名单值，聚焦时不译', () => {
+  const dict = { 'No Environment': '没有环境', 'Production': '生产' };
+  const sel = Object.assign(fakeEl('INPUT', { class: 'input input-search' }), { value: 'No Environment' });
+  assert.strictEqual(hook.translateSearchInputValue(dict, sel, null), '没有环境');
+  assert.strictEqual(hook.translateSearchInputValue(dict, sel, sel), null);
+  const env = Object.assign(fakeEl('INPUT', { class: 'input input-search' }), { value: 'Production' });
+  assert.strictEqual(hook.translateSearchInputValue(dict, env, null), null);
+  const plain = Object.assign(fakeEl('INPUT', { class: 'input' }), { value: 'No Environment' });
+  assert.strictEqual(hook.translateSearchInputValue(dict, plain, null), null);
+});
+
+test('translateString 翻译带动态计数的查找替换文案', () => {
+  assert.strictEqual(translateString(DICT, 'Collections (0)'), '集合 (0)');
+  assert.strictEqual(translateString(DICT, 'Environments (12)'), '环境 (12)');
+  assert.strictEqual(translateString(DICT, 'Replace in 3 selected'), '在选中的 3 项中替换');
+  assert.strictEqual(translateString(DICT, '1 lesson'), '1 节课');
+  assert.strictEqual(translateString(DICT, '4 lessons'), '4 节课');
+  assert.strictEqual(translateString(DICT, 'Current Version: v7.36.7'), '当前版本：v7.36.7');
+  assert.strictEqual(translateString(DICT, 'Collections (abc)'), null);
+});
+
+test('translateString 翻译单值的 e.g. 占位示例', () => {
+  assert.strictEqual(translateString(DICT, 'e.g. us-east-1'), '例如 us-east-1');
+  assert.strictEqual(translateString(DICT, 'e.g. read:org'), '例如 read:org');
+  assert.strictEqual(translateString(DICT, 'e.g. this is a sentence'), null);
+});
+
+test('translateString 翻译「词条 + 括号快捷键」提示，快捷键原样保留', () => {
+  const dict = { 'Single pane view': '单窗格视图', 'Two pane view': '双窗格视图' };
+  assert.strictEqual(translateString(dict, 'Single pane view (Ctrl + Alt + V)'), '单窗格视图 (Ctrl + Alt + V)');
+  assert.strictEqual(translateString(dict, 'Two pane view (⌘ + ⌥ + V)'), '双窗格视图 (⌘ + ⌥ + V)');
+  assert.strictEqual(translateString(dict, 'Single pane view (beta)'), null);
+  assert.strictEqual(translateString(dict, 'Unknown thing (Ctrl + K)'), null);
+});
+
+test('translateString 翻译活动流的日期与时间', () => {
+  assert.strictEqual(translateString(DICT, ' September 29, 2026 '), ' 2026年9月29日 ');
+  assert.strictEqual(translateString(DICT, '3:28 PM'), '下午 3:28');
+  assert.strictEqual(translateString(DICT, '11:05 AM'), '上午 11:05');
+  assert.strictEqual(translateString(DICT, 'Septembre 29, 2026'), null);
 });
