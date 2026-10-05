@@ -129,10 +129,12 @@ test('translateAttributes 翻译 placeholder/title/aria-label', () => {
 });
 
 test('translateSearchInputValue 只译下拉选择框里的白名单值，聚焦时不译', () => {
-  const dict = { 'No Environment': '没有环境', 'Production': '生产' };
+  const dict = { 'No Environment': '没有环境', 'History': '历史', 'Production': '生产' };
   const sel = Object.assign(fakeEl('INPUT', { class: 'input input-search' }), { value: 'No Environment' });
   assert.strictEqual(hook.translateSearchInputValue(dict, sel, null), '没有环境');
   assert.strictEqual(hook.translateSearchInputValue(dict, sel, sel), null);
+  const hist = Object.assign(fakeEl('INPUT', { class: 'input input-search' }), { value: 'History' });
+  assert.strictEqual(hook.translateSearchInputValue(dict, hist, null), '历史');
   const env = Object.assign(fakeEl('INPUT', { class: 'input input-search' }), { value: 'Production' });
   assert.strictEqual(hook.translateSearchInputValue(dict, env, null), null);
   const plain = Object.assign(fakeEl('INPUT', { class: 'input' }), { value: 'No Environment' });
@@ -145,6 +147,11 @@ test('translateString 翻译带动态计数的查找替换文案', () => {
   assert.strictEqual(translateString(DICT, 'Replace in 3 selected'), '在选中的 3 项中替换');
   assert.strictEqual(translateString(DICT, '1 lesson'), '1 节课');
   assert.strictEqual(translateString(DICT, '4 lessons'), '4 节课');
+  assert.strictEqual(translateString(DICT, '0 collections and 1 environment selected'), '已选择 0 个集合和 1 个环境');
+  assert.strictEqual(translateString(DICT, '6 hidden'), '6 个已隐藏');
+  assert.strictEqual(translateString(DICT, '0 requests'), '0 个请求');
+  assert.strictEqual(translateString(DICT, '1 view'), '1 次浏览');
+  assert.strictEqual(translateString(DICT, 'Generated code for cURL '), '为 cURL 生成的代码 ');
   assert.strictEqual(translateString(DICT, 'Current Version: v7.36.7'), '当前版本：v7.36.7');
   assert.strictEqual(translateString(DICT, 'Collections (abc)'), null);
 });

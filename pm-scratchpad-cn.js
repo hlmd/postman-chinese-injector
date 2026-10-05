@@ -44,6 +44,15 @@
     [/^Environments \((\d+)\)$/, '环境 ($1)'],
     [/^Replace in (\d+) selected$/, '在选中的 $1 项中替换'],
     [/^(\d+) lessons?$/, '$1 节课'],
+    // 添加到工作区弹窗的已选计数，如 "0 collections and 0 environments selected"
+    [/^(\d+) collections? and (\d+) environments? selected$/, '已选择 $1 个集合和 $2 个环境'],
+    // 请求头面板的自动生成头隐藏计数，如 "6 hidden"
+    [/^(\d+) hidden$/, '$1 个已隐藏'],
+    // 集合概览页的元信息计数，如 "0 requests"、"1 view"（数字与单位之间可能是不换行空格）
+    [/^(\d+)\s+requests?$/, '$1 个请求'],
+    [/^(\d+)\s+views?$/, '$1 次浏览'],
+    // 生成代码片段弹窗的语言标题，如 "Generated code for cURL"、"Generated code for C# - RestSharp"
+    [/^Generated code for (.+)$/, '为 $1 生成的代码'],
     [/^Current Version: (v?\d[\w.\-]*)$/, '当前版本：$1'],
     // 输入框占位示例，如 "e.g. us-east-1"：只放行单个无空格的示例值
     [/^e\.g\. (\S+)$/, '例如 $1'],
@@ -60,7 +69,8 @@
   // 下拉选择框（input.input-search）里显示的固定占位值。input 一律跳过以免改到用户输入，
   //   这里仅放行白名单里的界面文案（不能用整本词典：用户起的环境名可能恰好是词典里的英文）；
   //   聚焦时还原英文，交给原组件筛选，失焦后再译。
-  var SEARCH_INPUT_VALUES = { 'No Environment': 1 };
+  //   'History' 是捕获请求面板「保存请求到」下拉框的默认值。
+  var SEARCH_INPUT_VALUES = { 'No Environment': 1, 'History': 1 };
   var SEARCH_INPUT_CLASS_RE = /(^|\s)input-search(\s|$)/;
 
   // 纯函数：下拉选择框当前值应显示的译文；不适用返回 null
