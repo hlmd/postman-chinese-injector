@@ -194,11 +194,13 @@
     "create_collection": "新建集合",
     "add_requests": "添加请求",
     "import": "导入",
+    "import_requests": "导入请求",
     "try_sample": "试用示例集合",
     "open_request": "打开请求",
     "errors": {
       "create_collection": "无法创建集合，请稍后重试。",
       "add_request": "无法添加请求，请稍后重试。",
+      "import_requests": "无法导入请求，请稍后重试。",
       "sample_collection": "无法创建示例集合，请稍后重试。"
     },
     "request_added": {

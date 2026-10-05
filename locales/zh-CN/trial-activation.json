@@ -1,0 +1,14 @@
+{
+  "heading": "恭喜！您的 {tier, select, solo {Solo} team {Team} business {Enterprise} enterprise {Enterprise} other {新}} 试用现已激活。",
+  "invite": {
+    "prompt": "邀请您的队友加入。您添加的每位成员都将解锁共享工作区、实时协作和角色功能。",
+    "placeholder": "添加邮箱",
+    "send_cta": "发送邀请",
+    "send_disabled": "请至少输入一个邮箱地址以发送邀请。",
+    "invalid_email": "请输入有效的邮箱地址。",
+    "sent_hint": "邀请已发出。",
+    "sent_toast": "{count, plural, one {已发送 # 份邀请} other {已发送 # 份邀请}}",
+    "sent_toast_description": "他们将收到一封包含加入团队链接的邮件。",
+    "send_failed": "无法发送邀请，请重试。"
+  }
+}

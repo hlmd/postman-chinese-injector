@@ -70,7 +70,7 @@
     "running_duration": "已运行 {duration}",
     "ran_duration": "运行了 {duration}",
     "placeholder": "历史记录",
-    "unnamed_mock": "Mock",
+    "unnamed_mock": "模拟服务器",
     "previous_starts": "历史启动",
     "tab_count": "历史启动 {count}",
     "history": "历史记录",

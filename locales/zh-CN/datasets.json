@@ -16,7 +16,7 @@
   "source_type_tooltip": {
     "file": "从你的计算机上传 CSV、JSON 或 Excel 文件，或复用已保存到此工作区的文件。",
     "local": "使用你计算机上的文件。文件保留在本机，并在本地进行查询。",
-    "cloud": "使用存储在 Postman Cloud 中的文件，与所有可访问此工作区的人共享。",
+    "cloud": "使用保存到此工作区的文件。",
     "remote": "从公开 URL 获取数据文件。",
     "mysql": "连接 MySQL 数据库，并将某张表作为此数据集的一部分进行查询。",
     "postgres": "连接 PostgreSQL 数据库，并将某张表作为此数据集的一部分进行查询。",
@@ -281,7 +281,7 @@
     "use_view": "使用视图",
     "more_output_actions": "此输出的更多操作",
     "use_view_in_collection_run": "集合运行",
-    "use_view_in_monitor": "Monitor"
+    "use_view_in_monitor": "监控"
   },
   "save_view_output_modal": {
     "title": "将输出保存为数据源",
@@ -305,7 +305,7 @@
     "title": "在集合运行中使用",
     "description": "打开集合运行器，并将此视图设为运行的迭代数据。",
     "view_label": "数据集视图",
-    "collection_label": "Collection",
+    "collection_label": "集合",
     "collection_placeholder": "选择集合",
     "no_collections": "此工作区中没有可运行的集合。",
     "load_error": "无法加载此工作区中的集合。",
@@ -674,5 +674,32 @@
         }
       }
     }
+  },
+  "quick_create": {
+    "title": "从文件创建数据集",
+    "save_as_title": "另存为数据集",
+    "file_label": "文件",
+    "drop_or_browse": "拖放 CSV 或 JSON 文件，或<browse>浏览</browse>",
+    "replace_file": "替换文件",
+    "remove_file": "移除文件",
+    "unsupported_file": "只能添加 CSV 和 JSON 文件。",
+    "adds_to": "将该文件作为数据源和视图添加到“{datasetName}”中。",
+    "database_hint": "此处只能添加文件。如需添加数据库数据源，请从侧边栏打开数据集并在其中添加。",
+    "saving_to_workspace": "正在保存到此工作区。",
+    "saving_to_repository": "正在保存到仓库文件夹。",
+    "advanced": "高级选项",
+    "dataset_label": "数据集",
+    "default_dataset_option": "{datasetName}（默认）",
+    "new_dataset_option": "新建数据集…",
+    "new_dataset_name_label": "新数据集名称",
+    "view_name_label": "视图名称",
+    "description_label": "描述",
+    "description_placeholder": "这些数据涵盖哪些内容以及何时使用",
+    "save": "保存",
+    "cancel": "取消",
+    "created": "已将“{viewName}”添加到“{datasetName}”",
+    "failed": "数据集创建失败，请重试。",
+    "file_too_large": "此文件过大，无法保存为数据集。请选择小于 {limitMb} MB 的文件，或改为将其保存到工作区。",
+    "no_permission": "您没有在此工作区中创建数据集的权限，且此处没有可供添加的数据集。"
   }
 }

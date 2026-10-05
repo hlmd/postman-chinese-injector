@@ -1,0 +1,115 @@
+{
+  "breadcrumb": {
+    "service_discovery": "服务发现",
+    "connectors": "连接器"
+  },
+  "page": {
+    "description": "只需连接一次账户，即可持续发现服务"
+  },
+  "actions": {
+    "connect_account_button": "连接账户",
+    "discover_services_button": "发现服务",
+    "retry_button": "重试"
+  },
+  "table": {
+    "account_header": "账户",
+    "authentication_header": "身份验证",
+    "discovered_services_header": "已发现的服务",
+    "integrated_services_header": "已集成的服务",
+    "last_used_header": "上次使用",
+    "last_used_empty": "-"
+  },
+  "summary": "{accountCount, plural, one {# 个账户} other {# 个账户}} · {serviceCount, plural, one {# 个已发现的服务} other {# 个已发现的服务}}",
+  "errors": {
+    "load_accounts_title": "无法加载账户",
+    "load_accounts_description": "获取已连接账户时出现问题，请重试。",
+    "no_connection_description": "此连接器暂无可用连接。"
+  },
+  "empty_state": {
+    "title": "未连接 {connectorName} 账户",
+    "description": "连接 {connectorName} 账户，开始在整个基础设施中发现服务。"
+  },
+  "multi_account": {
+    "accounts_heading": "账户",
+    "select_all_button": "全选",
+    "deselect_all_button": "取消全选",
+    "selection_count": "{selected, plural, one {已选择 # 个，共 {total} 个} other {已选择 # 个，共 {total} 个}}",
+    "accounts_empty": "此连接没有可用的账户。",
+    "accounts_load_error": "无法加载此连接的账户。",
+    "select_account_for_regions": "选择一个账户以查看可用地区。",
+    "select_account_for_services": "选择一个账户以查看可用服务。",
+    "select_account_for_options": "选择一个账户以查看可用选项。",
+    "regions_load_error": "无法加载地区，请重试。",
+    "services_load_error": "无法加载服务，请重试。",
+    "scopes_load_error": "无法加载发现范围，请重试。",
+    "continue_tooltip_account_region_service": "请至少选择一个账户、地区和服务以继续",
+    "continue_tooltip_account_service": "请至少选择一个账户和一个服务以继续",
+    "continue_tooltip_account_scope": "请至少选择一个账户，并在每个范围中至少选择一个选项以继续",
+    "aws": {
+      "step_2_title": "账户、地区和服务",
+      "step_2_subtitle": "扫描内容"
+    },
+    "azure": {
+      "step_2_title": "账户和服务",
+      "step_2_subtitle": "扫描内容"
+    },
+    "gcp": {
+      "step_2_title": "账户和服务",
+      "step_2_subtitle": "扫描内容"
+    },
+    "ibm": {
+      "step_2_title": "账户和发现范围",
+      "step_2_subtitle": "选择资源"
+    }
+  },
+  "providers": {
+    "aws": {
+      "page_title": "已连接的 AWS 账户",
+      "breadcrumb_label": "AWS"
+    },
+    "gcp": {
+      "page_title": "已连接的 Google Cloud 账户",
+      "breadcrumb_label": "Google Cloud"
+    },
+    "azure": {
+      "page_title": "已连接的 Azure 账户",
+      "breadcrumb_label": "Azure"
+    },
+    "ibm": {
+      "page_title": "已连接的 IBM API Connect 账户",
+      "breadcrumb_label": "IBM API Connect"
+    },
+    "github": {
+      "page_title": "已连接的 GitHub 账户",
+      "breadcrumb_label": "GitHub"
+    },
+    "gitlab": {
+      "page_title": "已连接的 GitLab 账户",
+      "breadcrumb_label": "GitLab"
+    },
+    "bitbucket": {
+      "page_title": "已连接的 Bitbucket 账户",
+      "breadcrumb_label": "Bitbucket"
+    },
+    "insights": {
+      "page_title": "已连接的 Postman Insights 账户",
+      "breadcrumb_label": "Postman Insights"
+    },
+    "cluster-watcher": {
+      "page_title": "已连接的 Cluster Watcher 账户",
+      "breadcrumb_label": "Cluster Watcher"
+    },
+    "workspace": {
+      "page_title": "已连接的 Postman 工作区账户",
+      "breadcrumb_label": "Postman 工作区"
+    },
+    "public-api": {
+      "page_title": "已连接的公共 API 账户",
+      "breadcrumb_label": "公共 API"
+    },
+    "api-gateway": {
+      "page_title": "已连接的 API 网关账户",
+      "breadcrumb_label": "API 网关"
+    }
+  }
+}

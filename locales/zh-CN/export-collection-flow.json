@@ -75,5 +75,14 @@
     "export_success": "集合导出成功。",
     "export_failed": "无法导出此集合，请检查 DevTools。",
     "secure_failed": "无法保护检测到的密钥。"
+  },
+  "survey": {
+    "heading": "告诉我们此次导出的用途",
+    "subheading": "这有助于我们为您打造更好的工具。",
+    "placeholder": "告诉我们您的使用场景",
+    "chips_aria_label": "建议的原因",
+    "error": "请添加原因后继续",
+    "submit": "开始导出",
+    "cancel": "取消"
   }
 }

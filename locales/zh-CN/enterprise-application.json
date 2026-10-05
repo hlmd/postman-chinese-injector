@@ -1,0 +1,27 @@
+{
+  "ppc": {
+    "app_section": {
+      "title": "Postman 企业版应用",
+      "description": "在您的组织中下载并分发 Postman 企业版应用。"
+    },
+    "agent_section": {
+      "title": "Postman Desktop Agent",
+      "description": "在您的组织中下载并分发 Postman Desktop Agent。"
+    },
+    "manifest_section": {
+      "title": "Postman 企业版应用清单",
+      "description": "下载 Postman 应用的清单"
+    },
+    "version_latest": "{version}（最新）",
+    "platform_labels": {
+      "windows_64": "Windows",
+      "osx_64": "Mac Intel 芯片",
+      "osx_arm64": "Mac Apple 芯片",
+      "linux_64": "Linux (x64)"
+    },
+    "manifest_os_labels": {
+      "windows": "Windows",
+      "osx": "macOS"
+    }
+  }
+}

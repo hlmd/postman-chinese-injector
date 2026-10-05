@@ -575,7 +575,7 @@
         "request": "请求",
         "environment": "环境",
         "document": "文档",
-        "code_mock": "Code Mock",
+        "code_mock": "代码模拟服务器",
         "flow": "流程",
         "team": "发布者",
         "folder": "文件夹",

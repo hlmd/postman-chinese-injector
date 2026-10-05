@@ -1,0 +1,8 @@
+{
+  "duplicate_workspace_confirm": {
+    "modal_heading": "要再创建一个工作区吗？",
+    "body": "您已为此集成创建了“{workspaceName}”。确定要再创建一个工作区吗？",
+    "cancel_button_label": "取消",
+    "confirm_button_label": "仍然创建"
+  }
+}

@@ -68,7 +68,7 @@
       "open_sidebar_new_tab": "始终在新选项卡中打开侧边栏项目",
       "ask_closing_tabs": "关闭未保存的选项卡时始终询问",
       "show_icons_tab_names": "显示带有选项卡名称的图标",
-      "two-pane_view": "双栏视图",
+      "two-pane_view": "两窗格视图",
       "show_middle_workbench": "显示中间工作台",
       "swap_left_right_sidebar": "交换左右侧边栏",
       "var_autocomplete": "变量自动完成",
@@ -95,7 +95,6 @@
     "application": {
       "label": "应用",
       "autosave": "自动保存",
-      "autosave_explanation": "自动保存对您的请求和集合的更改。",
       "autosave_explanation_only_requests": "自动保存对您的请求的更改。",
       "send_anonymous_data": "将匿名使用数据发送至 Postman",
       "send_anonymous_data_managed": "已被你所在组织的 Postman 安装设置关闭。",
@@ -236,7 +235,7 @@
     "increase_ui_zoom": "放大",
     "decrease_ui_zoom": "缩小",
     "reset_ui_zoom": "重置缩放",
-    "toggle_layout": "切换双栏视图",
+    "toggle_layout": "切换两窗格视图",
     "quit": "退出模态",
     "space": "空格",
     "focus_next": "聚焦下一个项目",
@@ -401,6 +400,10 @@
     },
     "agent_mode": {
       "label": "尝试代理模式"
+    },
+    "perf_internal_runner_pool": {
+      "label": "用于性能测试的内部 Staging 运行器",
+      "description": "为云端性能测试运行添加“内部 Staging 运行器”选项。仅限 Postman 员工使用。"
     }
   },
   "proxy": {

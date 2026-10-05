@@ -5,6 +5,8 @@
   "context_menu": {
     "new_request": "新建请求",
     "duplicate_tab": "复制选项卡",
+    "split_tab": "向右拆分",
+    "split_tab_left": "向左拆分",
     "close_tab": "关闭选项卡",
     "force_close_current": "强制关闭选项卡",
     "close_others": "关闭其他选项卡",
@@ -784,7 +786,18 @@
         "description_shared_self": "此密钥已保存在你的共享保管库中。",
         "store_in_plain_text_button": "以明文存储",
         "store_in_plain_text_error": "无法恢复该值。请检查保管库是否已解锁，然后重试。",
-        "store_in_plain_text_failed": "无法以明文存储该值。请重试。"
+        "store_in_plain_text_failed": "无法以明文存储该值。请重试。",
+        "reason_prompt": "为什么这个值需要保持明文？",
+        "reason_visibility": "您的管理员可以看到此申请及其原因。",
+        "cancel_button": "取消",
+        "close_button": "关闭",
+        "reasons": {
+          "false_positive": "误报",
+          "test_data": "测试数据",
+          "public_information": "公开信息",
+          "internal_use_only": "仅限内部使用",
+          "temporary_use_only": "仅临时使用"
+        }
       },
       "info_row": {
         "initial": "初始值",

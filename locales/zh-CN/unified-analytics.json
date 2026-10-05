@@ -871,7 +871,7 @@
     },
     "private_cloud": {
       "unavailable": "在 Postman Private Cloud 中不可用",
-      "not_available_value": "NA",
+      "not_available_value": "不适用",
       "sidebar_tooltip": "此报告在 Postman Private Cloud 中不可用"
     },
     "monthly_snapshot": {

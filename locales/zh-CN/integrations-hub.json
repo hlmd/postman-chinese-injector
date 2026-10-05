@@ -31,7 +31,7 @@
     "connectButton": "连接服务",
     "connectPermissionTooltip": "只有具备 API Catalog Manager 角色的成员才能访问服务发现页面",
     "columns": {
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "repository": "仓库"
     },
     "emptyState": "未找到集成服务",
@@ -87,7 +87,10 @@
     },
     "jira": {
       "title": "创建和查看 Jira Issue",
-      "description": "从集合、响应或监控创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
+      "description": "从集合、响应或监控创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。",
+      "jiraSite": "Jira 站点",
+      "otherSites_one": "+ 其他 {count} 个",
+      "otherSites_other": "+ 其他 {count} 个"
     },
     "github_app": {
       "title": "已连接的 GitHub 账户",
@@ -103,6 +106,8 @@
       "neverUsed": "从未使用",
       "removeSuccess": "已成功从工作区移除。",
       "removeError": "移除失败，请重试。",
+      "loadError": "无法加载已连接的工作区。",
+      "reload": "重新加载",
       "removeModal": {
         "title": "要从 {workspaceName} 中移除 {appName} 吗？",
         "body": "Postman 将停止在此工作区中运行 {appName}。您可以随时重新连接。",
@@ -136,6 +141,7 @@
       },
       "connectButton": "连接网关",
       "connectNoPermission": "你没有连接此网关的权限，请联系团队管理员。",
+      "connectPlanRequired": "网关连接仅适用于 Postman 企业版套餐。",
       "viewDocs": "查看文档",
       "neverUsed": "从未使用",
       "removeSuccess": "网关连接已成功移除。",
@@ -273,7 +279,7 @@
     "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次监控运行的结果发送到 {appName} 频道。",
     "addButton": "连接监控",
     "table": {
-      "monitor": "Monitor"
+      "monitor": "监控"
     },
     "pagination": {
       "itemsPerPage": "每页条数",
@@ -282,7 +288,7 @@
     "modal": {
       "createHeading": "连接频道",
       "editHeading": "编辑监控集成",
-      "monitorLabel": "Monitor",
+      "monitorLabel": "监控",
       "monitorPlaceholder": "选择监控",
       "frequencyLabel": "发送通知的场景…",
       "frequencyAllRuns": "每次运行完成时",
@@ -316,8 +322,8 @@
     },
     "columns": {
       "name": "名称",
-      "monitor": "Monitor",
-      "collection": "Collection",
+      "monitor": "监控",
+      "collection": "集合",
       "entity": "实体",
       "status": "状态",
       "workspace": "工作区",

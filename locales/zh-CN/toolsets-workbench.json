@@ -6,6 +6,7 @@
   "data": {
     "load_failed": "无法加载工具集，请检查工作区文件后重试。",
     "save_failed": "该工具无法保存。",
+    "create_tool_failed": "无法创建该工具。",
     "conflict_message": "在您进行未保存的更改期间，此工具已在编辑器外部发生变化。",
     "conflict_reload_button": "重新加载最新版本",
     "conflict_keep_button": "保留我的更改"
@@ -22,12 +23,15 @@
     "search_label": "搜索工具",
     "search_placeholder": "搜索工具",
     "clear_search_tooltip": "清除工具搜索",
+    "add_tool_button_tooltip": "添加工具",
     "display_options_button_tooltip": "自定义工具详情显示",
     "show_description_option": "描述",
     "show_input_parameters_option": "输入参数",
     "tool_list_aria_label": "此工具集中可选的工具",
     "select_tool_aria_label": "选择 {title}",
     "deselect_tool_aria_label": "取消选择 {title}",
+    "open_tool_aria_label": "打开 {title}",
+    "toggle_tool_tooltip": "启用或停用此工具",
     "input_parameter_required": "{type}，必填",
     "input_parameter_optional": "{type}，可选",
     "empty_search": "没有符合搜索条件的工具。",
@@ -339,6 +343,7 @@
     "toolset_rename_input_label": "重命名 {title}",
     "tool_open_menu_item": "打开",
     "tool_rename_menu_item": "重命名",
+    "tool_duplicate_menu_item": "复制",
     "tool_delete_menu_item": "删除",
     "tool_more_actions_tooltip": "{title} 的更多操作",
     "tool_rename_input_label": "重命名 {title}",
@@ -349,8 +354,13 @@
     "add_tool_button_tooltip": "添加工具",
     "add_tool_menu_item": "添加工具",
     "rename_label": "重命名",
+    "duplicate_label": "复制",
     "delete_label": "删除",
     "rename_input_label": "重命名 {title}",
     "context_menu_trigger_tooltip": "更多操作"
+  },
+  "delete_confirmation": {
+    "toolset_message": "确定要删除 {name} 及其所有工具吗？此操作无法撤销。",
+    "tool_message": "确定要删除 {name} 吗？此操作无法撤销。"
   }
 }

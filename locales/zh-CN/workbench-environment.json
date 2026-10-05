@@ -1,13 +1,9 @@
 {
   "globals": {
-    "workbench_description": "工作区的全局变量是一组在该工作区范围内始终可用的变量，工作区中的任何人都可以查看和编辑它们。",
-    "learn_more_link": "了解更多关于全局变量的信息",
     "save_globals": "保存全局变量",
     "export_globals": "导出全局变量",
     "save": "保存",
-    "export": "导出",
-    "sync_disabled_tooltip": "由于管理员已禁用同步，当前值无法保留。",
-    "initial_value_disabled_tooltip": "由于初始值已被禁用，当前值无法重置。"
+    "export": "导出"
   },
   "new_environment_placeholder": "新建环境",
   "content_pane": {
@@ -82,31 +78,6 @@
     },
     "request_permission_info_bar": {
       "message": "申请权限以更新这些变量的共享值。您可以编辑本地值。"
-    },
-    "editor": {
-      "disable_persist_action_tooltip": "由于管理员已禁用同步，当前值无法保留。",
-      "disable_reset_action_tooltip": "由于初始值已被禁用，当前值无法重置。",
-      "variable_sync_disable_info_bar": {
-        "title": {
-          "disable_all": "已禁用同步所有变量的初始值",
-          "disable_secret": "已禁用同步私密变量的值"
-        },
-        "description": {
-          "all_disabled": "为保护数据，您的团队管理员已禁用同步所有变量的初始值。使用这些初始值的模拟服务器、监控和 Newman 将受到影响。",
-          "secret_disabled": "为保护私密数据，您的团队管理员已禁用同步私密变量的初始值。使用这些初始值的模拟服务器、监控和 Newman 将受到影响。"
-        }
-      },
-      "table": {
-        "columns": {
-          "variable": "变量",
-          "initial_value": "初始值",
-          "current_value": "当前值"
-        },
-        "key_placeholder": "添加新变量",
-        "validator": {
-          "message": "此变量在当前活动会话中不存在。但这不会影响它在 {entityType} 中的存在。"
-        }
-      }
     }
   },
   "context_bar": {

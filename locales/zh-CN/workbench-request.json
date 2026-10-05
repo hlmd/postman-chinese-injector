@@ -387,6 +387,7 @@
   },
   "proactive_suggestions": {
     "aria_label": "主动请求建议",
+    "default_lint_fix_headline": "我找到了这些 lint 问题的修复方法。",
     "scanning_label": "扫描中",
     "diagnosing_label": "诊断中",
     "apply_fix_error_title": "无法应用此修复",

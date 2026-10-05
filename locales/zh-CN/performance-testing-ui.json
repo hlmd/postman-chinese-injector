@@ -265,7 +265,9 @@
     },
     "rejections": {
       "vuh_blocked": "请让管理员在账单资源用量中为性能测试启用按量付费。",
-      "vuh_blocked_linked": "请让管理员在<Link><Text>账单资源用量</Text></Link>中为性能测试启用按量付费。"
+      "vuh_blocked_linked": "请让管理员在<Link><Text>账单资源用量</Text></Link>中为性能测试启用按量付费。",
+      "internal_pool_forbidden": "您的团队无权在此工作区中使用 Internal Staging Runners。请选择其他出口选项。",
+      "internal_pool_unavailable": "Internal Staging Runners 暂时不可用。请稍后重试，或选择其他出口选项。"
     },
     "status": {
       "initializing": "正在初始化",
@@ -372,6 +374,8 @@
       "static_description": "请求来自可在防火墙中加入白名单的静态 IP。<Link><Text>了解更多</Text></Link>",
       "option_shared": "动态 IP",
       "option_static": "静态 IP",
+      "option_internal_stage": "Internal Staging Runners",
+      "internal_stage_description": "请求来自 Postman 的 Internal Staging Runners。仅限 Postman 员工使用。",
       "upgrade_heading": "升级后可使用静态 IP 在云端运行性能测试",
       "upgrade_description": "将云端性能测试的流量通过可加入白名单的静态 IP 转发，即可访问防火墙后的 API。升级套餐即可开始使用。"
     },

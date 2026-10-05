@@ -13,5 +13,43 @@
     "toast": {
       "success_message": "记分卡删除成功。"
     }
+  },
+  "system_scorecard_redirect": {
+    "tooltip": "按类别和指标查看详细的得分明细"
+  },
+  "health_badge": {
+    "label": "健康度 {score}"
+  },
+  "live_preview": {
+    "info_tooltip": "选择一个服务，查看权重更改对得分的影响。可选项受第 1 步中设置的标签、环境和治理组限制。",
+    "applied_filters": {
+      "heading": "当前筛选条件",
+      "tooltip": "这些筛选条件是在之前的步骤中设置的，用于限制可预览的服务。",
+      "tags_label": "标签：",
+      "environment_label": "环境：",
+      "governance_group_label": "治理组：",
+      "governance_group_fallback": "所选组",
+      "overflow_count": "另外 {count} 个",
+      "overflow_aria_label": "另外 {count} 个：{values}"
+    },
+    "empty_state": {
+      "no_matching_services": "没有服务与第 1 步中设置的标签、环境和治理组匹配。请调整这些筛选条件以预览得分。",
+      "no_services": "没有可预览的服务。",
+      "select_service": "在上方选择一个服务以预览得分"
+    },
+    "invalid_inputs": {
+      "label": "{count, plural, one {# 个指标的输入无效} other {# 个指标的输入无效}}",
+      "tooltip": "阻止保存。这些指标的阈值缺失或无效，必须修复后才能保存。"
+    },
+    "skipped_metrics": {
+      "label": "{count, plural, one {# 个指标没有数据（计为 0 分）} other {# 个指标没有数据（计为 0 分）}}",
+      "tooltip": "不阻止保存。这些指标尚未收集到此服务的数据，计为 0 分。"
+    }
+  },
+  "create_scorecard": {
+    "step_validation": {
+      "no_categories": "请至少添加一个包含至少一个指标的类别以继续。",
+      "category_without_metrics": "请至少向“{categoryName}”添加一个指标以继续。"
+    }
   }
 }

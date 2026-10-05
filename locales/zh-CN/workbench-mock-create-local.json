@@ -50,7 +50,7 @@
       "picker_empty": "此 工作区 尚无规格。"
     },
     "collection": {
-      "label": "Collection",
+      "label": "集合",
       "helper": "响应根据集合中保存的示例生成。",
       "picker_placeholder": "选择或创建集合",
       "picker_empty": "此 工作区 中还没有收藏。"

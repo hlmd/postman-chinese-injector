@@ -94,6 +94,7 @@
       "text_placeholder": "文本（可选）",
       "url_placeholder": "URL",
       "edit_button": "保存",
+      "open": "打开",
       "add_button": "添加",
       "edit_link": "编辑链接",
       "remove_link": "删除链接",
@@ -133,7 +134,27 @@
     "private_user_label": "私有用户"
   },
   "link-unfurling": {
+    "accessible_label": "{entityType}：{label}",
+    "entity": {
+      "workspace": "工作区",
+      "collection": "集合",
+      "folder": "文件夹",
+      "request": "请求",
+      "example": "示例",
+      "environment": "环境"
+    },
+    "loading": "正在加载...",
+    "options": "链接选项",
     "unfurl_limit_reached": "仅显示前 {requestUnfurlLimit} 个 URL 的预览，以保持最佳性能。"
+  },
+  "image_upload": {
+    "toolbar_label": "上传图片",
+    "drop_zone": "拖放图片以上传",
+    "uploading": "正在上传...",
+    "failed": "上传失败",
+    "unavailable": "图片不可用",
+    "retry": "重试",
+    "remove": "移除"
   },
   "slate-node-validator": {
     "slatedata_empty_content": "内容好像是空的。请添加一些内容并重试。",

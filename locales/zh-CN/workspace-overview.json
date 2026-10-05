@@ -435,6 +435,7 @@
       "description": "为此工作区指定资产类型以进行分类。每个工作区同时只能有一种资产类型。",
       "placeholder": "选择资产类型",
       "readonly_hint": "你没有更改资产类型的权限。",
+      "not_git_connected_hint": "将此工作区连接到 Git 才能更改其资产类型。",
       "toast_success": "资产类型已更新",
       "toast_error": "资产类型更新失败，请重试。",
       "next_steps": {

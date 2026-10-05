@@ -902,7 +902,7 @@
       "oauth1": "OAuth 1.0",
       "oauth2": "OAuth 2.0",
       "hawk": "Hawk 身份验证",
-      "aws": "AWS Signature",
+      "aws": "AWS 签名",
       "ntlm_auth": "NTLM 身份验证",
       "apikey": "API Key",
       "akamai_edgegrid": "Akamai EdgeGrid",

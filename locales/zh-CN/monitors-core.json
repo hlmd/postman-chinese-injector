@@ -503,7 +503,7 @@
       "upload_datafile": "上传数据文件...",
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已选数据文件",
-      "new_dataset": "新建数据集",
+      "add_file": "添加文件",
       "new_dataset_no_permission": "你没有在此工作区中创建数据集的权限。",
       "new_dataset_disabled_local_mode": "监控只能使用存储在云端的数据集。请切换到云端模式以添加新的数据集。",
       "no_datasets": "此工作区中还没有数据集。",
@@ -531,7 +531,14 @@
     },
     "preview_panel": {
       "tabs": {
+        "collection_preview": "预览",
         "iteration_data": "数据"
+      },
+      "collection_preview_error": "无法加载此集合的结构。",
+      "request_added_toast": {
+        "description": "请先更新并保存请求，再尝试运行监控。",
+        "run": "运行监控",
+        "go_back": "返回"
       }
     },
     "warning_message": {

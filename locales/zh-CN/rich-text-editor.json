@@ -1,0 +1,129 @@
+{
+  "toolbar": {
+    "font_size_options": {
+      "normal": "正文",
+      "heading1": "标题 1",
+      "heading2": "标题 2",
+      "heading3": "标题 3",
+      "heading4": "标题 4",
+      "heading5": "标题 5",
+      "heading6": "标题 6"
+    },
+    "aria_label": "格式",
+    "floating_aria_label": "所选内容格式",
+    "more_label": "更多格式",
+    "tooltips": {
+      "bold": "粗体",
+      "italic": "斜体",
+      "strikethrough": "删除线",
+      "unordered_list": "无序列表",
+      "ordered_list": "有序列表",
+      "task_list": "任务列表",
+      "undo": "撤销",
+      "redo": "重做",
+      "table": "表格",
+      "image": "图片",
+      "link": "链接",
+      "blockquote": "引用",
+      "horizontal_rule": "分割线",
+      "codespan": "行内代码",
+      "codeblock": "代码块",
+      "wrap_lines": "自动换行",
+      "copied": "已复制",
+      "copy": "复制",
+      "copy_failed": "无法复制代码"
+    },
+    "code_block": {
+      "dialog_label": "编辑代码块",
+      "language_label": "代码块语言",
+      "plain_text": "纯文本"
+    },
+    "popover": {
+      "dialog_label": "编辑器选项"
+    },
+    "image_popup": {
+      "dialog_label": "图片选项",
+      "url_label": "图片 URL",
+      "alt_text_label": "替代文本",
+      "caption_label": "图片说明",
+      "edit_image_label": "编辑图片",
+      "preview_button_label": "预览图片",
+      "preview_dialog_label": "图片预览",
+      "preview_loading_label": "正在加载图片预览",
+      "preview_error_label": "无法加载图片预览。请选择该图片以重试。",
+      "decorative_label": "装饰性图片",
+      "required_label": "（必填）",
+      "url_validation_error": "请输入有效的 HTTP(S) 或相对图片 URL",
+      "alt_text_validation_error": "请添加替代文本，或将图片标记为装饰性图片",
+      "insert_button": "插入图片",
+      "save_button": "保存图片",
+      "image_url_input_placeholder": "图片 URL",
+      "delete_button_tooltip": "删除图片",
+      "size_legend": "尺寸",
+      "width_label": "宽度（像素）",
+      "height_label": "高度（像素）",
+      "size_hint": "修改其中一项会保持图片比例。两项都留空则使用原始尺寸。",
+      "size_hint_not_pixels": "保持字段不变以沿用当前尺寸，输入像素值以替换，或清空以使用原始尺寸。",
+      "size_validation_error": "请输入 1 到 {max} 之间的整数"
+    },
+    "link_popup": {
+      "validation_error_message": "请输入有效的 URL",
+      "text_placeholder": "文本（可选）",
+      "url_placeholder": "URL",
+      "edit_button": "保存",
+      "open": "打开",
+      "edit_link": "编辑链接",
+      "remove_link": "移除链接",
+      "copy_link": "复制链接",
+      "delete_link": "删除链接"
+    },
+    "table_options": {
+      "add_row": "添加行",
+      "add_column": "添加列",
+      "delete_column": "删除列",
+      "delete_table": "删除表格",
+      "delete_row": "删除行",
+      "dialog_label": "表格选项",
+      "size_picker_label": "表格大小",
+      "size_cell_label": "{rows} × {columns}",
+      "size_preview_label": "{rows} × {columns}"
+    },
+    "add_a_caption": "添加说明..."
+  },
+  "image_upload": {
+    "toolbar_label": "上传图片",
+    "drop_zone": "拖放图片以上传",
+    "uploading": "正在上传...",
+    "unavailable": "图片不可用",
+    "failed": "上传失败",
+    "retry": "重试",
+    "remove": "移除"
+  },
+  "link-unfurling": {
+    "accessible_label": "{entityType}: {label}",
+    "entity": {
+      "workspace": "工作区",
+      "collection": "集合",
+      "folder": "文件夹",
+      "request": "请求",
+      "example": "示例",
+      "environment": "环境"
+    },
+    "loading": "加载中...",
+    "options": "链接选项"
+  },
+  "mentions": {
+    "menu_label": "提及建议",
+    "searching": "正在搜索…",
+    "search_error": "无法加载提及建议。",
+    "no_results": "没有匹配的用户",
+    "retry": "重试",
+    "card_label": "个人资料",
+    "view_profile": "查看个人资料",
+    "name_you": "{name}（你）",
+    "user_inactive_popover": "已停用",
+    "user_inactive_pill": "{name}（已停用）",
+    "private_user_tooltip": "此用户的个人资料为私密。",
+    "private_user_label": "私密用户"
+  }
+}

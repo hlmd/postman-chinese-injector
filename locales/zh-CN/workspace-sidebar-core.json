@@ -238,7 +238,7 @@
         "info_text": "将模拟服务器部署为在线服务。"
       },
       "classic_mock_server": {
-        "card_label": "Mock Server",
+        "card_label": "模拟服务器",
         "info_text": "根据集合中保存的示例创建模拟服务器。"
       },
       "mock_with_collection": {
@@ -746,12 +746,12 @@
       "forked_collection": "删除此复刻的集合？",
       "delete_collection": "删除“{collectionName}”？"
     },
-    "description_single": "Deleting this will remove all monitors, scheduled runs, and integrations, deactivate any associated mock servers.",
-    "description_single_reusable": "Deleting this will remove monitors, scheduled runs, and integrations. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
-    "description_multiple": "这将停用与这些集合相关联的监控、计划运行、集成和模拟服务器。",
+    "description_single": "删除后将移除所有{removedEntities}，并停用所有关联的模拟服务器。所有文档站点都将被删除。",
+    "description_single_reusable": "删除后将移除{removedEntities}。模拟服务器将被停用，关联的请求将不再跟随原始内容的更新。所有文档站点都将被删除。",
+    "description_multiple": "这将停用{removedEntities}，以及与这些集合关联的模拟服务器。",
     "description_multiple_docs_sites": "所有文档站点都被删除。",
-    "description_single_git_link": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository, and deactivate any associated mock servers.",
-    "description_single_git_link_reusable": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
+    "description_single_git_link": "删除后将移除所有{removedEntities}，断开远程仓库连接，并停用所有关联的模拟服务器。所有文档站点都将被删除。",
+    "description_single_git_link_reusable": "删除后将移除所有{removedEntities}，并断开远程仓库连接。模拟服务器将被停用，关联的请求将不再跟随原始内容的更新。所有文档站点都将被删除。",
     "failed_load": "详细信息加载失败",
     "delete_permanently": "永久删除",
     "delete": "删除",

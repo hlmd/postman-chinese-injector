@@ -26,10 +26,45 @@
   "tabs": {
     "event": "事件",
     "topics": "Topic",
-    "authorization": "身份验证"
+    "authorization": "身份验证",
+    "scripts": "脚本"
   },
   "placeholder": {
     "coming_soon": "即将推出。"
+  },
+  "scripts": {
+    "events": {
+      "before_produce": {
+        "label": "生产前",
+        "description": "“生产前”脚本在事件发送到 Broker 之前运行。",
+        "placeholder": "// 在此编写生产前脚本…",
+        "tooltip_text": "在事件发送到 Broker 之前运行。"
+      },
+      "after_produce": {
+        "label": "生产后",
+        "description": "“生产后”脚本在 Broker 确认已生产的事件后运行。",
+        "placeholder": "// 在此编写生产后脚本…",
+        "tooltip_text": "在 Broker 确认已生产的事件后运行。"
+      },
+      "before_consume": {
+        "label": "消费前",
+        "description": "“消费前”脚本在订阅开始流式传输之前运行。",
+        "placeholder": "// 在此编写消费前脚本…",
+        "tooltip_text": "在订阅开始流式传输之前运行。"
+      },
+      "on_message": {
+        "label": "收到消息时",
+        "description": "“收到消息时”脚本在流式传输期间每收到一条记录运行一次。",
+        "placeholder": "// 在此编写逐条消息脚本…",
+        "tooltip_text": "在流式传输期间每收到一条记录运行一次。"
+      },
+      "after_consume": {
+        "label": "消费后",
+        "description": "“消费后”脚本在流结束后运行。",
+        "placeholder": "// 在此编写消费后脚本…",
+        "tooltip_text": "在流结束后运行。"
+      }
+    }
   },
   "offsets": {
     "start_from": "起始位置",

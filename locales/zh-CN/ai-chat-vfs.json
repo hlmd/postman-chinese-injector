@@ -1,0 +1,14 @@
+{
+  "vfs": {
+    "create_title": "创建集合或文件夹",
+    "delete_title": "删除云端实体",
+    "create_button": "创建",
+    "delete_button": "删除",
+    "recursive_warning": "此操作将删除该集合或文件夹及其所有内容。",
+    "edit_button": "应用编辑",
+    "edit_file_title": "编辑文件",
+    "create_file_title": "创建文件",
+    "invalid_file_arguments": "文件操作的参数无效。",
+    "replace_all_notice": "此替换将应用于所有匹配项。"
+  }
+}

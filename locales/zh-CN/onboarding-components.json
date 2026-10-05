@@ -19,5 +19,11 @@
     },
     "secondary_button_text": "导入而不保存",
     "primary_button_text": "导入到 集合"
+  },
+  "leave_onboarding_confirm_modal": {
+    "heading": "要离开新手引导设置吗？",
+    "body_text": "离开此页面将丢失集成设置中的进度。确定要继续吗？",
+    "cancel_button_text": "留在此页面",
+    "confirm_button_text": "离开页面"
   }
 }

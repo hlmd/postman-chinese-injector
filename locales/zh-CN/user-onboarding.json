@@ -76,7 +76,7 @@
         "placeholder": "选择角色"
       },
       "role_use_case": {
-        "label": "什么最能描述您希望在 Postman 中做的事情以及您的角色？",
+        "label": "以下哪项最符合您希望在 Postman 中做的事？",
         "placeholder": "选择选项"
       },
       "team_size": {
