@@ -98,7 +98,8 @@
     "heading": "请求的访问权限 ({count})",
     "approve_cta": "批准",
     "deny_cta": "否定",
-    "view_all": "显示全部"
+    "view_all": "显示全部",
+    "note_aria": "来自 {name} 的备注"
   },
   "user_group_popover": {
     "count_label": "{count, plural, =1 {# 位成员} other {# 位成员}}",

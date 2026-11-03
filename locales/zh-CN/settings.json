@@ -25,7 +25,7 @@
       "request_timeout": {
         "label": "请求超时时间",
         "desc": "设置请求在超时之前应等待响应的时间。要永不超时，请设置为 0。",
-        "unit": "ms"
+        "unit": "毫秒"
       },
       "max_response_size": {
         "label": "最大响应大小",
@@ -143,14 +143,14 @@
       "dark": "深色",
       "dracula": "Dracula",
       "monokai": "Monokai",
-      "ayu_light": "Ayu Light",
-      "ayu_dark": "Ayu Dark",
+      "ayu_light": "Ayu 浅色",
+      "ayu_dark": "Ayu 深色",
       "high_contrast_light": "高对比度 浅色",
       "high_contrast_dark": "高对比度 深色",
       "night_owl_light": "夜猫子浅色",
       "night_owl_dark": "夜猫子深色",
-      "solarized_light": "Solarized Light",
-      "solarized_dark": "Solarized Dark"
+      "solarized_light": "Solarized 浅色",
+      "solarized_dark": "Solarized 深色"
     },
     "reload_banner_text": "我们在应用 主题 时遇到错误。重新加载页面以重试。 <1>重新加载</1>",
     "banner_text": "我们在加载主题时遇到问题。 <1>再试一次</1>",
@@ -590,13 +590,15 @@
     "page_para": "控制 Postman 内的人工智能功能",
     "byok": {
       "heading": "配置你自己的密钥",
-      "description": "连接你自己的提供商 API 密钥。凭据安全地存储在你的 Postman 账户中，绝不会返回给客户端。AI 功能的用量将由所连接的提供商直接计费。",
+      "provider_column": "提供商",
+      "key_column": "密钥",
+      "description": "凭据安全地存储在云端，并进行静态加密。保存后绝不会再返回给客户端。AI 功能的使用费用将由所连接的提供商直接计费。",
       "upgrade_description": "此功能仅适用于 Solo 和 Team 套餐。升级你的账户即可为 OpenAI 和 Anthropic 设置 BYOK 密钥。",
       "upgrade": "升级",
       "key_placeholder": "输入 API 密钥",
       "replace_key_placeholder": "替换 API 密钥",
       "api_key_label": "{provider} API 密钥",
-      "configured": "已配置",
+      "configured": "密钥已配置",
       "connect_and_save": "连接并保存",
       "connect_and_save_key": "连接并保存 {provider} API 密钥",
       "save": "保存",

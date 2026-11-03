@@ -39,6 +39,30 @@
     "workspace_config_success": "更新了 resources.yaml 中的工作区 ID",
     "workspace_config_error": "无法更新 resources.yaml 中的工作区 ID",
     "workflows_config_success": "已清理 workflows.yaml",
-    "workflows_config_error": "无法清理 workflows.yaml"
+    "workflows_config_error": "无法清理 workflows.yaml",
+    "skipped_one_path": "无法更新路径：{reason}",
+    "skipped_many": "{count, plural, one {# 个问题无法修复。} other {# 个问题无法修复。}}详情请查看诊断面板。"
+  },
+  "unrepaired": {
+    "with_reason": "无法更新路径：{reason}",
+    "without_reason": "此问题无法修复。",
+    "reasons": {
+      "not-in-diff": "在 git 历史中未找到重命名记录。",
+      "deleted": "在 git 历史中未找到重命名记录，可能已被删除。",
+      "ambiguous": "其文件被移动到了多个位置。",
+      "interchangeable": "另一个条目的内容与其完全相同，无法确定移动的是哪一个。",
+      "destination-declared": "其新位置已列在 resources.yaml 中。",
+      "destination-unreadable": "无法读取其新位置。",
+      "outside-workspace": "它被移到了工作区之外。",
+      "hop-limit": "重命名次数过多，无法追踪。",
+      "cycle": "其重命名链指回了之前的名称。",
+      "search-timed-out": "搜索 git 历史耗时过长。",
+      "history-too-large": "git 历史过大，无法搜索。",
+      "git-failed": "无法读取 git 历史。",
+      "uncommitted-changes-unread": "无法读取未提交的更改。",
+      "never-committed": "此路径尚未提交。请先提交，然后重新运行修复。",
+      "not-a-git-repo": "工作区不在 git 仓库中，没有可搜索的历史。",
+      "unknown": "无法从 git 历史中确定它的去向。"
+    }
   }
 }

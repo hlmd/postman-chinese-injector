@@ -1,5 +1,10 @@
 {
+  "auto": {
+    "description": "Auto 会为任务选择更合适的模型。"
+  },
   "byok": {
+    "new_badge": "新",
+    "setup_keys": "设置 BYOK",
     "configure_key_to_use_model": "配置你的密钥以使用此模型。",
     "model_switch_locked": "开始新的对话，以使用你的提供商密钥切换到其他模型。",
     "no_connected_models": "已连接的提供商暂无可用模型。",

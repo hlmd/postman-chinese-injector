@@ -51,7 +51,10 @@
       "connected_label": "连接到 GitHub",
       "error_toast_title": "无法连接到 GitHub",
       "initiate_error_toast_description": "无法启动 GitHub 连接。请再试一次。",
-      "connect_error_toast_description": "出了点问题。请再试一次。"
+      "connect_error_toast_description": "出了点问题。请再试一次。",
+      "popup_blocked_toast_description": "弹出窗口被拦截。请允许此网站弹出窗口后重试。",
+      "timed_out_toast_description": "授权超时，请重试。",
+      "request_failed_toast_description": "无法连接到服务器。请检查网络连接后重试。"
     },
     "slack": {
       "description": "连接 Slack，以便云代理可以触发任务并在您的频道中发布更新。",

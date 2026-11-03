@@ -239,11 +239,25 @@
     "title": "工作区通知",
     "description": "当队友添加或更改请求、集合或环境，或有人发布工作区更新时，随时接收更新通知。",
     "addButton": "连接工作区",
+    "emptyState": {
+      "title": "未找到结果",
+      "description": "请尝试调整筛选条件。"
+    },
     "deleteError": "无法删除频道集成。",
     "table": {
       "workspace": "工作区",
+      "createdBy": "创建者",
       "privateWorkspace": "私有工作区",
       "privateWorkspaceTooltip": "您不是此工作区的成员"
+    },
+    "filters": {
+      "createdBy": {
+        "placeholder": "按用户搜索",
+        "emptyStateMessage": "没有匹配的团队成员"
+      },
+      "workspace": {
+        "placeholder": "按工作区搜索"
+      }
     },
     "pagination": {
       "itemsPerPage": "每页条数",
@@ -397,24 +411,33 @@
   },
   "agentTasks": {
     "title": "Agent 任务",
-    "description": "在 {appName} 中 @Postman 即可启动 Agent 模式任务，并在会话线程中查看状态更新。",
     "connectedBadge": "已连接",
     "otherTeamUsers_one": "+{count} 位其他团队成员",
     "otherTeamUsers_other": "+{count} 位其他团队成员",
     "table": {
       "name": "名称",
       "email": "邮箱",
-      "orgIdentifier": "Slack 工作区",
       "remove": "移除"
+    },
+    "slack": {
+      "description": "在 {appName} 中提及 @Postman 即可启动 Agent Mode 任务，并在消息串中查看状态更新。",
+      "accountColumn": "Slack 工作区",
+      "orgTerm": "工作区"
+    },
+    "githubapp": {
+      "description": "授权 {appName} 访问权限，使 Agent Mode 能够读取你的仓库、运行测试，并根据在 Slack 中通过 @Postman 给出的指令完成编码任务。",
+      "accountColumn": "GitHub 账户",
+      "orgTerm": "账户"
     },
     "connectModal": {
       "heading": "连接 Agent Tasks",
-      "body": "请选择你要连接的 {appName} 工作区。",
+      "body": "选择要连接的 {appName} {orgTerm}。",
       "cancel": "取消",
       "confirm": "连接",
-      "noWorkspaces": "尚未连接任何 Slack 工作区。请先添加一个。"
+      "noAccounts": "尚未连接任何 {appName} {orgTerm}。添加一个即可开始。"
     },
     "removeError": "无法为该工作区关闭 Agent Tasks，请重试。",
-    "enableError": "无法为该工作区启用 Agent Tasks，请重试。"
+    "connectError": "无法连接 {appName}，请重试。",
+    "enableError": "无法开启 Agent Tasks，请重试。"
   }
 }

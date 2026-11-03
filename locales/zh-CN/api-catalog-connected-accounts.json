@@ -33,6 +33,11 @@
     "expired_badge": "已过期",
     "account_number_header": "账号"
   },
+  "filters": {
+    "account_placeholder": "账户",
+    "account_aria_label": "按账户筛选",
+    "all_accounts": "所有账户"
+  },
   "summary": "{accountCount, plural, one {# 个账户} other {# 个账户}} · {serviceCount, plural, one {# 个已发现的服务} other {# 个已发现的服务}}",
   "errors": {
     "load_accounts_title": "无法加载账户",

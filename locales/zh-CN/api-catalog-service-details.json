@@ -1,4 +1,30 @@
 {
+  "overview_tab": {
+    "pillar_status_card": {
+      "development": {
+        "title": "开发",
+        "aria_label": "打开开发标签页",
+        "no_spec_subtitle": "未关联规范",
+        "no_spec_value": "不适用",
+        "no_spec_badge": "无规范"
+      },
+      "test": {
+        "title": "测试",
+        "aria_label": "打开测试标签页",
+        "assertions": "{passed} / {total, plural, one {# 个断言} other {# 个断言}}",
+        "ci_passing": "CI 通过",
+        "ci_failing": "CI 失败",
+        "ci_passing_with_assertions": "CI 通过 · {passed} / {total, plural, one {# 个断言} other {# 个断言}}",
+        "ci_failing_with_assertions": "CI 失败 · {passed} / {total, plural, one {# 个断言} other {# 个断言}}",
+        "coverage_label": "覆盖率"
+      },
+      "production": {
+        "title": "生产",
+        "aria_label": "打开生产标签页",
+        "error_rate_label": "错误率"
+      }
+    }
+  },
   "production_tab": {
     "system_health": {
       "no_data_tooltip": "过去 7 天无数据",

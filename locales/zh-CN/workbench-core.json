@@ -487,6 +487,7 @@
     },
     "code_snippet": {
       "title": "代码片段",
+      "copy_failed_toast": "复制到剪贴板失败",
       "code_block": {
         "header": {
           "options": {

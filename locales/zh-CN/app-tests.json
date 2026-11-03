@@ -8,6 +8,9 @@
     "retry_button": "重试",
     "empty_title": "暂无应用测试",
     "create_button": "创建",
+    "entity_type_label": "应用测试",
+    "more_actions": "查看更多操作",
+    "offline_reason": "离线时无法更改应用测试。",
     "delete_modal": {
       "heading": "删除 {name}？",
       "body": "该测试及其规范将被删除，运行历史会保留。",

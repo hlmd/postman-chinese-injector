@@ -597,6 +597,7 @@
           "copy_response_aria_label": "复制响应",
           "response_copied_aria_label": "响应已复制到剪贴板",
           "copy_failed_aria_label": "响应复制失败",
+          "copy_failed_toast": "复制到剪贴板失败",
           "filter_aria_label": "切换响应筛选",
           "formatting_label": "正在格式化…",
           "preview": {
@@ -679,6 +680,7 @@
       },
       "cookies": {
         "label": "Cookie",
+        "copy_failed_toast": "复制到剪贴板失败",
         "empty_cookies_viewer": {
           "title": "未收到服务器返回的 Cookie",
           "desc": "您的所有 Cookie 及其关联的域名都会显示在这里。"

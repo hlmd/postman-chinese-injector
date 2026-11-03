@@ -557,10 +557,6 @@
     },
     "recent_searches": "最近搜索过",
     "popular_entities": "风靡网络",
-    "ai_suggestions": {
-      "ai_suggestion_header": "Postbot 提出的即用型请求",
-      "generate_with_context": "生成更多上下文"
-    },
     "mobile_search_view": {
       "search_instructions": "搜索所有工作区、集合、规格、团队和用户"
     },

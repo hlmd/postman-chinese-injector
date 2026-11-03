@@ -1180,7 +1180,7 @@
       "value_label": "值"
     },
     "view_tabs": {
-      "requests": "申请",
+      "requests": "访问请求",
       "secrets": "密钥"
     }
   }

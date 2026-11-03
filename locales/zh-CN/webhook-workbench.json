@@ -98,7 +98,8 @@
       "title": "Webhook 设置",
       "description": "此 Webhook 的设置即将推出。",
       "environment": {
-        "heading": "环境",
+        "heading": "关联环境",
+        "description": "Webhook 使用云端环境。请将要用于此 Webhook 的环境推送到云端。",
         "selector_label": "关联环境",
         "confirmation": {
           "title": "更改环境？",
@@ -109,7 +110,7 @@
       },
       "endpoint_auth": {
         "heading": "端点身份验证",
-        "description": "要求传入请求在被接受之前包含匹配的凭据。",
+        "description": "要求传入的请求包含匹配的凭据才会被接受。变量建议使用关联云端环境的共享值，包括该环境为当前活动环境时。",
         "type_label": "身份验证类型",
         "header_key_label": "标头键",
         "header_key_placeholder": "Authorization",

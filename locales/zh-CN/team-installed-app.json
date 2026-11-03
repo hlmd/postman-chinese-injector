@@ -4,7 +4,6 @@
   "create_connected_account_error": "我们无法创建关联帐户",
   "create_connected_account_default_error": "无法创建关联帐户",
   "heading": "已安装的应用程序",
-  "subheading": "为您的 团队 设置已安装的应用程序",
   "slack": {
     "disabled_tooltip": "只能添加此应用程序的一个实例。",
     "slack_label": "Slack",

@@ -198,7 +198,9 @@
         "no_permission_text": "您没有权限在这个工作区中创建监控。"
       },
       "app_test": {
-        "card_label": "应用测试"
+        "card_label": "应用测试",
+        "offline_text": "离线时无法创建应用测试。",
+        "no_permission_text": "您没有在此工作区中创建应用测试的权限。"
       },
       "flows": {
         "card_label": "流程",
@@ -425,6 +427,7 @@
     "deny_cta": "拒绝",
     "view_all": "查看全部",
     "more_actions_aria": "{name} 的更多操作",
+    "note_aria": "来自 {name} 的备注",
     "you": "您"
   },
   "share_entity": {
@@ -879,6 +882,8 @@
     "heading": "待处理的邀请",
     "invite_as": "（以 {role} 身份受邀）",
     "invite_as_partner": "（以合作伙伴 {role} 身份受邀）",
+    "invite_no_role": "（已邀请）",
+    "invite_as_partner_no_role": "（已作为合作伙伴邀请）",
     "resend_cta": "重新发送邀请",
     "remove_cta": "撤销",
     "more_actions_aria": "发送给 {email} 的邀请的更多操作",

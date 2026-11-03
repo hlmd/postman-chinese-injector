@@ -31,5 +31,25 @@
       "create_error_check_before_retry": "无法创建你的规范。请刷新页面，确认是否已创建后再重试。",
       "open_error": "规范已创建，但无法打开。请在侧边栏中查找。"
     }
+  },
+  "import_modal": {
+    "document_and_share_apis": {
+      "heading": "导入你想编写文档的 API",
+      "subtitle": "将其导入为集合，然后添加文档并与团队共享。",
+      "placeholder": "粘贴 OpenAPI 规范、集合 JSON 或 cURL 命令。也支持 GraphQL 和 AsyncAPI",
+      "git_help": "使用仓库中已有的集合和规范。"
+    },
+    "testing_apis": {
+      "heading": "导入你想测试或调试的 API",
+      "subtitle": "每个请求导入后即可发送，你可以立即开始测试。",
+      "placeholder": "粘贴 cURL 命令、集合 JSON 或 OpenAPI 规范。也支持 GraphQL 和 AsyncAPI",
+      "git_help": "使用仓库中已有的集合和规范。"
+    },
+    "lead_a_team_that_works_with_apis": {
+      "heading": "导入你的团队正在开发的 API",
+      "subtitle": "然后邀请你的团队。他们将从一个可用的 API 开始，而不是一个空工作区。",
+      "placeholder": "粘贴集合 JSON、OpenAPI 规范或 cURL 命令。也支持 GraphQL 和 AsyncAPI",
+      "git_help": "使用团队已保存在 Git 中的集合和规范。"
+    }
   }
 }

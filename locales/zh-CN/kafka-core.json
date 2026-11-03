@@ -21,7 +21,8 @@
     "stream": "流式传输",
     "stop": "停止",
     "test_connection": "测试连接",
-    "disabled_pick_topic": "请先选择一个主题。"
+    "disabled_pick_topic": "请先选择一个主题。",
+    "no_send_permission": "你没有在此工作区中发送请求的权限。"
   },
   "tabs": {
     "event": "事件",

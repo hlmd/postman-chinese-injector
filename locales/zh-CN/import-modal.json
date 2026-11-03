@@ -117,5 +117,11 @@
   "delete_fork": {
     "error_title": "出错了",
     "error_description": "集合删除失败，请重试。"
+  },
+  "import_only": {
+    "unavailable": {
+      "title": "导入功能当前不可用",
+      "description": "请检查网络连接，或向工作区管理员申请添加集合的权限。"
+    }
   }
 }

@@ -386,6 +386,11 @@
     }
   },
   "proactive_suggestions": {
+    "automation_testing": {
+      "add_tests_headline": "还在手动检查此响应？",
+      "add_tests_description": "添加测试，在每次发送时自动验证响应。",
+      "add_tests_cta": "添加测试"
+    },
     "aria_label": "主动请求建议",
     "default_lint_fix_headline": "我找到了这些 lint 问题的修复方法。",
     "scanning_label": "扫描中",

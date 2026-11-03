@@ -16,7 +16,8 @@
     "copy_aria_label": "复制 {label} 命令",
     "copy_error_toast_title": "无法复制到剪贴板",
     "copy_error_toast_description": "请改为从文档中手动复制该命令。",
-    "copied_label": "已复制"
+    "copied_label": "已复制",
+    "copied_toast_description": "{label} 命令已复制到剪贴板。"
   },
   "connectors": {
     "status": {
@@ -85,8 +86,32 @@
     },
     "new_relic": {
       "add_aria_label": "将 New Relic 添加到 Agent Context Graph",
+      "connect_failed": "New Relic 连接失败，请重试。",
       "description": "遥测节点",
-      "title": "New Relic"
+      "done": "完成",
+      "existing_key_notice": "发现功能使用你团队现有的 New Relic 密钥，因此连接的是该密钥可访问的账户。",
+      "invalid_key": "无法在该区域验证此密钥。请检查密钥和区域。",
+      "keep_key": "保留当前密钥",
+      "key_replaced_notice": "你团队的 New Relic 密钥已替换为你输入的密钥，发现功能将使用该密钥。",
+      "key_saved_connect_failed": "密钥已为团队保存，但连接失败。请重试，将复用已保存的密钥。",
+      "key_saved_no_permission": "密钥已为团队保存，但你没有启动索引的权限。请联系团队管理员连接 New Relic，将复用已保存的密钥。",
+      "key_saved_unavailable": "密钥已为团队保存，但 Context Graph 当前无法启动索引。请几分钟后重试，将复用已保存的密钥。",
+      "modal_subtitle": "将生产环境遥测数据引入 Context Graph。该密钥可访问的所有 New Relic 账户都会被连接。密钥将为整个团队保存；如果团队已有密钥，你可以选择是否替换。",
+      "modal_title": "连接 New Relic",
+      "no_permission": "你没有为此团队连接 New Relic 的权限。",
+      "region_eu": "欧盟",
+      "region_label": "区域",
+      "region_us": "美国",
+      "replace_key": "替换密钥",
+      "replace_prompt": "你的团队已有 New Relic 密钥。要用你输入的密钥替换它，还是继续使用当前密钥连接？无论哪种方式，整个团队都将使用该密钥。",
+      "replace_region_mismatch": "你团队的密钥保存在另一个区域，因此无法在此用该区域的密钥替换。请保留当前密钥，或在「集成」中将其移除后重新连接。",
+      "started": "发现正在运行。你的密钥可访问的每个 New Relic 账户都将被连接并索引，完成后其数据会显示在图谱中。",
+      "submit": "连接并索引",
+      "title": "New Relic",
+      "unavailable": "Context Graph 当前无法启动索引。请几分钟后重试。",
+      "user_key_helper": "New Relic 用户密钥（以 NRAK 开头）。",
+      "user_key_label": "用户密钥",
+      "verify_failed": "当前无法通过 New Relic 验证密钥。请几分钟后重试。"
     }
   },
   "connections": {
@@ -132,7 +157,7 @@
     "cancel": "取消",
     "connect": "连接",
     "connect_with_prefix": "+ 连接",
-    "graph": "图谱",
+    "explore": "探索",
     "ingest": "索引",
     "manage_data_sources": "管理数据源",
     "manage_data_sources_with_count": "管理数据源（{count}）"
@@ -148,7 +173,6 @@
     "empty_hint": "图谱为空 - 接入 Postman 即可开始",
     "error_description": "请重新连接数据源后重试。",
     "error_title": "无法加载依赖关系图。",
-    "graph_ready_hint": "图谱已就绪 - 开始探索你的 Context Graph",
     "legend_collapse_button_label": "收起图例",
     "legend_expand_button_label": "展开图例",
     "legend_nodes": "节点",
@@ -158,6 +182,29 @@
     "loading": "正在加载依赖关系图…",
     "query_connect_more": "连接",
     "query_helper": "连接更多数据源以获得更深入的回答",
+    "runtime": {
+      "alert": "告警",
+      "alert_status": {
+        "critical": "严重",
+        "warning": "警告"
+      },
+      "error_rate_24h": "错误（24 小时）",
+      "health": "健康状况",
+      "health_status": {
+        "critical": "严重",
+        "degraded": "降级",
+        "healthy": "健康",
+        "unknown": "未知"
+      },
+      "open_in_new_relic": "点击在 New Relic 中打开",
+      "p99_7d": "p99（7 天）",
+      "trend": "趋势",
+      "trend_status": {
+        "degrading": "变差",
+        "improving": "改善",
+        "stable": "稳定"
+      }
+    },
     "tooltip_stats": {
       "apis": "API",
       "database_schemas": "数据库 Schema",

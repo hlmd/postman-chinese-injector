@@ -235,7 +235,9 @@
       "description": "{resource} 峰值达到 {pct}%，你的机器正在限制此次运行。请在云端重新运行以获得准确结果。",
       "resource_memory": "内存",
       "resource_cpu": "CPU",
-      "stop_rerun_cloud": "停止并在云端重新运行"
+      "stop_rerun_cloud": "停止并在云端重新运行",
+      "stop_run_failed": "无法停止性能运行，请重试。",
+      "open_runner_failed": "无法打开性能运行器，请重试。"
     },
     "cloud_local_files": {
       "row_warning": "{count, plural, one {# 个本地文件，云端运行无法访问。请在运行前将其上传} other {# 个本地文件，云端运行无法访问。请在运行前将其上传}}。"
@@ -295,7 +297,34 @@
       "vuh_blocked": "请让管理员在账单资源用量中为性能测试启用按量付费。",
       "vuh_blocked_linked": "请让管理员在<Link><Text>账单资源用量</Text></Link>中为性能测试启用按量付费。",
       "internal_pool_forbidden": "您的团队无权在此工作区中使用 Internal Staging Runners。请选择其他出口选项。",
-      "internal_pool_unavailable": "Internal Staging Runners 暂时不可用。请稍后重试，或选择其他出口选项。"
+      "internal_pool_unavailable": "Internal Staging Runners 暂时不可用。请稍后重试，或选择其他出口选项。",
+      "local_values_disabled": "你的团队未开启从此设备发送值的功能。请重新开始运行以仅使用共享值。"
+    },
+    "local_values": {
+      "errors": {
+        "policy_changed": "变量策略已更改，请重新开始运行。",
+        "context_changed": "工作区或团队已更改，请重新开始运行。",
+        "read_failed": "无法读取此设备上的值，请重试。",
+        "too_large": "变量值超出云端运行的 {max} 字节限制。请减小其大小后重新开始。",
+        "policy_unavailable": "无法检查此设备上的值所适用的策略，请重试。",
+        "too_many_rows": "某个变量作用域超出云端运行的 {max} 个变量限制。请减少该作用域中已启用的变量后重新开始。",
+        "name_too_long": "某个变量名超过 {max} 个字符。请缩短名称后重新开始。"
+      },
+      "disclosure": "Postman 会将你设备上当前的变量值发送到云端用于本次运行。",
+      "shared_fallback_notice": "本次运行使用共享的环境值和集合值。由于 Postman 无法检查你团队的变量策略，未发送此设备上的值（包括全局变量）。",
+      "retry_policy": "重试策略检查",
+      "status": {
+        "shared": "变量：共享值",
+        "recheck_title": "变量：开始时检查",
+        "recheck": "开始运行时将重新检查你团队的策略，最长 10 秒。如果允许，本次运行将发送此设备上的值；否则将使用共享的环境值和集合值，不包含设备全局变量。",
+        "checking": "正在检查你团队的变量策略…",
+        "unavailable": "无法检查你团队的变量策略。",
+        "blocked": "你团队的策略禁止发送设备上的值。",
+        "disabled": "发送设备上的值不可用。",
+        "unsupported": "此工作区不支持设备上的值。",
+        "fallback": "现在开始将使用共享的环境值和集合值，不包含设备全局变量。",
+        "unavailable_title": "变量：不可用"
+      }
     },
     "status": {
       "initializing": "正在初始化",
@@ -340,7 +369,8 @@
         "file_too_large": "本次运行所用的已上传到 Postman 的文件超过了 5 MB 的大小限制。",
         "files_too_large": "本次运行所用的已上传到 Postman 的文件超过了云端运行的总大小限制。请使用更小或更少的文件。",
         "file_quota_exceeded": "您的团队已达到套餐的文件下载上限，无法加载本次运行所用的文件。",
-        "file_download_failed": "无法加载本次运行所用的已上传到 Postman 的文件，请重试。"
+        "file_download_failed": "无法加载本次运行所用的已上传到 Postman 的文件，请重试。",
+        "local_values_unavailable": "随本次运行发送的值在运行开始前已过期，请重新开始运行。"
       },
       "cloud_file_download_start_failure": "无法下载“{requestName}”使用的云端文件“{fileName}”。请检查网络连接后重试。",
       "cloud_file_download_start_failure_unnamed": "无法下载“{requestName}”使用的云端文件。请确认该文件仍然存在且您有访问权限，检查网络连接后重试。",
@@ -492,6 +522,7 @@
         "empty_default_description": "此次运行未捕获任何执行活动。",
         "dataset_resolution_failed": "数据集解析失败",
         "file_resolution_failed": "云端文件解析失败",
+        "local_values_unavailable": "此设备上的值不可用",
         "lifecycle": {
           "setup_success": "Setup 已完成",
           "setup_failure": "Setup 失败",
@@ -565,6 +596,76 @@
     },
     "marker": {
       "aria": "{requestName}：{count, plural, one {# 个变量} other {# 个变量}}{target, select, cloud {在云端} cli {在 CLI 运行中} other {}}无法解析"
+    }
+  },
+  "local_mode": {
+    "recorded_notice": "云端运行器使用已推送的集合，并将结果记录到 Postman 云端。开始云端运行前，请先推送本地更改。",
+    "resolving": "正在检查此集合能否运行性能测试…",
+    "lookup_failed": "在本地工作区中找不到此集合。请切换到其他标签页再切回，或重新打开运行器后重试。",
+    "cloud_requires_push": "在 Postman 云端运行需要集合位于 Postman 云端。请先推送此集合，或在应用中运行。",
+    "cloud_requires_sign_in": "在 Postman 云端运行需要先登录。请登录，或在应用中运行测试。",
+    "cloud_requires_supported_link": "此集合的 Postman 云端链接不支持在 Postman 云端运行。请在应用中运行测试。",
+    "cloud_requires_pushed_environment": "在 Postman 云端运行需要当前环境位于 Postman 云端。请先推送该环境，或在应用中运行测试。",
+    "unmatched_requests": "部分所选请求不在此集合的 Postman 云端副本中：{names}。请推送本地更改后重试。",
+    "ambiguous_requests": "部分所选请求与同一文件夹中的其他项重名：{names}。请重命名，使每个请求都能与 Postman 云端副本中的一个请求对应。",
+    "cloud_copy_unavailable": "无法加载此集合的 Postman 云端副本。请检查网络连接以及你是否有权访问该集合，然后重试。",
+    "local_files_unreadable": "无法从本地文件读取此集合。请检查其文件是否有效后重试。",
+    "engine_unsupported": "你的账户暂不支持在应用中从本地文件运行集合。请使用受支持的 Postman CLI 版本运行本地性能测试。",
+    "feature_disabled": "你的账户暂不支持对本地集合进行性能测试。",
+    "incompatible_collection": "此集合不支持性能测试，请使用集合运行器。"
+  },
+  "local_run": {
+    "badge": "本地运行",
+    "badge_tooltip": "运行结束后结果将保存在此设备上，不会同步到 Postman 云端。",
+    "unavailable_title": "本地结果不可用",
+    "unavailable_description": "本次运行未保存在此设备上，或其本地结果已被删除。",
+    "close_tab": "关闭标签页",
+    "save_error": "无法将性能测试结果保存到此设备。"
+  },
+  "local_history": {
+    "heading": "本地性能运行",
+    "empty": "暂无本地性能运行。",
+    "load_error": "无法加载本地性能运行。",
+    "reload": "重新加载",
+    "delete_selected": "删除所选运行",
+    "run": "运行",
+    "started_at": "开始时间",
+    "status": "状态",
+    "finished": "已完成",
+    "stopped": "已停止",
+    "error": "错误",
+    "total_requests": "总请求数",
+    "response_time": "平均响应时间（ms）",
+    "error_rate": "错误率（%）",
+    "delete_title": "删除本地性能运行？",
+    "delete_error": "无法删除所选性能运行，请重试。"
+  },
+  "history": {
+    "heading": "此集合的性能测试运行。",
+    "branch_heading": "此集合在 <branch><icon/>{branch}</branch> 分支下的性能测试运行。",
+    "empty_title": "此集合暂无性能运行",
+    "empty_description": "从本地机器模拟真实流量，观察 API 的性能表现。",
+    "run_test": "运行性能测试",
+    "error_title": "无法加载性能测试运行",
+    "error_description": "请尝试重新加载页面或稍后再来查看。",
+    "reload": "重新加载",
+    "columns_label": "列",
+    "in_progress": "进行中",
+    "not_configured": "本次运行未配置通过/失败条件",
+    "not_applicable": "不适用",
+    "columns": {
+      "name": "运行",
+      "status": "状态",
+      "started_at": "开始时间",
+      "result": "结果",
+      "virtual_users": "虚拟用户",
+      "duration": "持续时间",
+      "total_requests": "总请求数",
+      "requests_per_second": "平均请求数/秒",
+      "response_time": "平均响应时间",
+      "error_rate": "错误率 %",
+      "cores": "CPU 核心数",
+      "memory": "内存"
     }
   }
 }
