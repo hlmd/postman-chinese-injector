@@ -30,7 +30,7 @@ const { spawnSync } = require('child_process');
 const ROOT = path.join(__dirname, '..');
 const lang = process.argv[2] || 'zh-CN';
 const localesDir = path.join(ROOT, 'locales', lang);
-const hookSrc = path.join(ROOT, 'pm-chinese.js');
+const hookSrc = path.join(ROOT, 'src', 'hooks', 'pm-chinese.js');
 const outDir = path.join(ROOT, 'dist', 'extension');
 const zipPath = path.join(ROOT, 'dist', 'postman-chinese-injector-extension.zip');
 
@@ -81,7 +81,7 @@ fs.copyFileSync(hookSrc, path.join(outDir, 'pm-chinese.js'));
 //     浏览器无 fs，故把词典预置成全局 window.__PM_SCRATCHPAD__（先于钩子执行）。词典缺失则告警跳过。
 let scratchJs = [];
 const spDictPath = path.join(ROOT, 'locales', 'scratchpad', lang + '.json');
-const spHookPath = path.join(ROOT, 'pm-scratchpad-cn.js');
+const spHookPath = path.join(ROOT, 'src', 'hooks', 'pm-scratchpad-cn.js');
 if (fs.existsSync(spDictPath) && fs.existsSync(spHookPath)) {
   let spDict = null;
   try {

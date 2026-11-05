@@ -25,11 +25,13 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
+const GEN = path.join(ROOT, 'generated');
 
 // 生成两份可嵌入快照（pm-chinese-data.json + pm-chinese-src.json）。出错抛异常，由调用方处理。
 function buildData(lang = 'zh-CN') {
+  fs.mkdirSync(GEN, { recursive: true });
   const dir = path.join(ROOT, 'locales', lang);
-  const out = path.join(ROOT, 'pm-chinese-data.json');
+  const out = path.join(GEN, 'pm-chinese-data.json');
 
   if (!fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) {
     throw new Error(`找不到语言目录: ${dir}`);
@@ -59,8 +61,8 @@ function buildData(lang = 'zh-CN') {
   console.log(`[完成] ${lang}: ${count} 模块 -> ${path.relative(ROOT, out)} (${(fs.statSync(out).size / 1024).toFixed(0)} KB)`);
 
   // 钩子源码快照：供编译后的二进制取出 pm-chinese.js 写进 asar（运行时身边无源文件）。
-  const hookSrc = path.join(ROOT, 'pm-chinese.js');
-  const hookOut = path.join(ROOT, 'pm-chinese-src.json');
+  const hookSrc = path.join(ROOT, 'src', 'hooks', 'pm-chinese.js');
+  const hookOut = path.join(GEN, 'pm-chinese-src.json');
   if (!fs.existsSync(hookSrc)) throw new Error(`找不到钩子源码: ${hookSrc}`);
   fs.writeFileSync(hookOut, JSON.stringify({ src: fs.readFileSync(hookSrc, 'utf8') }), 'utf8');
   console.log(`[完成] 钩子源码 -> ${path.relative(ROOT, hookOut)} (${(fs.statSync(hookOut).size / 1024).toFixed(0)} KB)`);
@@ -69,13 +71,13 @@ function buildData(lang = 'zh-CN') {
   const spDict = path.join(ROOT, 'locales', 'scratchpad', 'zh-CN.json');
   if (fs.existsSync(spDict)) {
     const dict = JSON.parse(fs.readFileSync(spDict, 'utf8'));
-    const spDataOut = path.join(ROOT, 'pm-scratchpad-data.json');
+    const spDataOut = path.join(GEN, 'pm-scratchpad-data.json');
     fs.writeFileSync(spDataOut, JSON.stringify(dict), 'utf8');
     console.log(`[完成] Scratch Pad 词典 -> ${path.relative(ROOT, spDataOut)} (${Object.keys(dict).length} 条)`);
 
-    const spHookSrc = path.join(ROOT, 'pm-scratchpad-cn.js');
+    const spHookSrc = path.join(ROOT, 'src', 'hooks', 'pm-scratchpad-cn.js');
     if (!fs.existsSync(spHookSrc)) throw new Error(`找不到钩子源码: ${spHookSrc}`);
-    const spHookOut = path.join(ROOT, 'pm-scratchpad-src.json');
+    const spHookOut = path.join(GEN, 'pm-scratchpad-src.json');
     fs.writeFileSync(spHookOut, JSON.stringify({ src: fs.readFileSync(spHookSrc, 'utf8') }), 'utf8');
     console.log(`[完成] Scratch Pad 钩子源码 -> ${path.relative(ROOT, spHookOut)} (${(fs.statSync(spHookOut).size / 1024).toFixed(0)} KB)`);
   } else {
@@ -86,19 +88,19 @@ function buildData(lang = 'zh-CN') {
   const mainDict = path.join(ROOT, 'locales', 'main', 'zh-CN.json');
   if (!fs.existsSync(mainDict)) throw new Error(`找不到主进程词典: ${mainDict}`);
   const mDict = JSON.parse(fs.readFileSync(mainDict, 'utf8'));
-  const mDataOut = path.join(ROOT, 'pm-main-data.json');
+  const mDataOut = path.join(GEN, 'pm-main-data.json');
   fs.writeFileSync(mDataOut, JSON.stringify(mDict), 'utf8');
   console.log(`[完成] 主进程词典 -> ${path.relative(ROOT, mDataOut)} (${Object.keys(mDict).length} 条)`);
-  const mHookSrc = path.join(ROOT, 'pm-main-cn.js');
+  const mHookSrc = path.join(ROOT, 'src', 'hooks', 'pm-main-cn.js');
   if (!fs.existsSync(mHookSrc)) throw new Error(`找不到钩子源码: ${mHookSrc}`);
-  const mHookOut = path.join(ROOT, 'pm-main-src.json');
+  const mHookOut = path.join(GEN, 'pm-main-src.json');
   fs.writeFileSync(mHookOut, JSON.stringify({ src: fs.readFileSync(mHookSrc, 'utf8') }), 'utf8');
   console.log(`[完成] 主进程钩子源码 -> ${path.relative(ROOT, mHookOut)} (${(fs.statSync(mHookOut).size / 1024).toFixed(0)} KB)`);
 
   // 构建元信息：译文对应的提交时间，供程序判断在线数据包 / 本机缓存是否比内嵌快照新
   const meta = { commit: gitOut(['rev-parse', 'HEAD']), committedAt: gitOut(['log', '-1', '--format=%cI']) || new Date().toISOString() };
-  fs.writeFileSync(path.join(ROOT, 'pm-build-meta.json'), JSON.stringify(meta), 'utf8');
-  console.log(`[完成] 构建元信息 -> pm-build-meta.json（${meta.committedAt}）`);
+  fs.writeFileSync(path.join(GEN, 'pm-build-meta.json'), JSON.stringify(meta), 'utf8');
+  console.log(`[完成] 构建元信息 -> generated/pm-build-meta.json（${meta.committedAt}）`);
 
   return { lang, count, meta };
 }

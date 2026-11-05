@@ -1,7 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
-const hook = require('../pm-scratchpad-cn.js');
+const hook = require('../src/hooks/pm-scratchpad-cn.js');
 const { translateString, isSkippableEl, inSkippableSubtree, isActive, translateAttributes, loadDict } = hook;
 
 const DICT = { 'Send': '发送', 'New Request': '新建请求', 'Delete': '删除' };

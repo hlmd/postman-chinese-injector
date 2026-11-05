@@ -7,10 +7,7 @@ on:
     branches: [main]
     paths:
       - 'locales/**'
-      - 'pm-chinese.js'
-      - 'pm-scratchpad-cn.js'
-      - 'pm-main-cn.js'
-      - 'updater.js'
+      - 'src/**'
       - 'scripts/build-data.js'
       - 'scripts/build-update.js'
       - '.github/workflows/update-data.yml'

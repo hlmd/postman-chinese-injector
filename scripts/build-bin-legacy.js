@@ -65,13 +65,14 @@ function main() {
   console.log(`[legacy] 暂存目录: ${stage}`);
   try {
     for (const f of [
-      'postman-chinese-injector.js', 'updater.js', 'pm-build-meta.json',
-      'pm-chinese.js', 'pm-chinese-data.json', 'pm-chinese-src.json',
-      // Scratch Pad 快照：buildData 已在 ROOT 生成，必须一并带进 staging，否则 pkg 打出的
+      'postman-chinese-injector.js', 'src/updater.js', 'src/hooks/pm-chinese.js',
+      'generated/pm-build-meta.json', 'generated/pm-chinese-data.json', 'generated/pm-chinese-src.json',
+      // Scratch Pad 快照：buildData 已在 generated/ 生成，必须一并带进 staging，否则 pkg 打出的
       // 二进制缺内嵌快照，运行时报「缺少 Scratch Pad 钩子源码 pm-scratchpad-cn.js（且无内嵌快照）」。
-      'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
-      'pm-main-data.json', 'pm-main-src.json',
+      'generated/pm-scratchpad-data.json', 'generated/pm-scratchpad-src.json',
+      'generated/pm-main-data.json', 'generated/pm-main-src.json',
     ]) {
+      fs.mkdirSync(path.dirname(path.join(stage, f)), { recursive: true });
       fs.copyFileSync(path.join(ROOT, f), path.join(stage, f));
     }
     const rootPkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
@@ -82,9 +83,9 @@ function main() {
       main: 'postman-chinese-injector.js',
       // require() 到的 JSON 快照 pkg 会自动纳入；这里再列进 assets 双保险
       pkg: { targets: [target], assets: [
-        'pm-chinese-data.json', 'pm-chinese-src.json',
-        'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
-      'pm-main-data.json', 'pm-main-src.json', 'pm-build-meta.json',
+        'generated/pm-chinese-data.json', 'generated/pm-chinese-src.json',
+        'generated/pm-scratchpad-data.json', 'generated/pm-scratchpad-src.json',
+        'generated/pm-main-data.json', 'generated/pm-main-src.json', 'generated/pm-build-meta.json',
       ] },
     }, null, 2));
 

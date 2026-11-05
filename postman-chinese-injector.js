@@ -46,18 +46,19 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { spawnSync } = require('child_process');
-const updater = require('./updater');
+const updater = require('./src/updater');
 
 const BASE_DIR = __dirname;
-const HOOK_SRC = path.join(BASE_DIR, 'pm-chinese.js');
+const HOOKS_DIR = path.join(BASE_DIR, 'src', 'hooks');
+const HOOK_SRC = path.join(HOOKS_DIR, 'pm-chinese.js');
 const LOCALES_DIR = path.join(BASE_DIR, 'locales');
 const DEFAULT_LANG = 'zh-CN';
 const DATA_NAME = 'pm-chinese-data.json'; // 注入时在 asar 内生成的 bundle 文件名
 const SCRATCH_HOOK_NAME = 'pm-scratchpad-cn.js';
-const SCRATCH_HOOK_SRC = path.join(BASE_DIR, SCRATCH_HOOK_NAME);
+const SCRATCH_HOOK_SRC = path.join(HOOKS_DIR, SCRATCH_HOOK_NAME);
 const SCRATCH_DATA_NAME = 'pm-scratchpad-data.json';
 const MAIN_HOOK_NAME = 'pm-main-cn.js';
-const MAIN_HOOK_SRC = path.join(BASE_DIR, MAIN_HOOK_NAME);
+const MAIN_HOOK_SRC = path.join(HOOKS_DIR, MAIN_HOOK_NAME);
 const MAIN_DATA_NAME = 'pm-main-data.json';
 const MAIN_ENTRY = 'main.js'; // 主进程入口（package.json 的 main）
 
@@ -181,7 +182,7 @@ function asarReadFile(archive, name) {
 let remoteData = null;
 
 function loadEmbeddedMeta() {
-  try { return require('./pm-build-meta.json'); } catch (e) { return null; }
+  try { return require('./generated/pm-build-meta.json'); } catch (e) { return null; }
 }
 
 // 身边有 locales/<lang>/（源码模式或 exe 旁手动覆盖）时以本地为准，不联网取译文
@@ -201,13 +202,13 @@ const REMOTE_FROM = () => `在线数据包（${remoteData.from}）`;
 // ---------- 从 locales/<lang>/*.json 构建注入用的扁平 bundle ----------
 // 编译成单文件二进制时身边没有 locales/，改用编译期嵌入的 pm-chinese-data.json。
 function loadEmbedded() {
-  try { return require('./pm-chinese-data.json'); } catch (e) { return null; }
+  try { return require('./generated/pm-chinese-data.json'); } catch (e) { return null; }
 }
 
 // 注入用的钩子源码：编译成单文件二进制时 __dirname 指向编译机路径（如 /home/runner/...），
 // 身边没有 pm-chinese.js，改用编译期嵌入的 pm-chinese-src.json。
 function loadEmbeddedHook() {
-  try { return require('./pm-chinese-src.json').src || null; } catch (e) { return null; }
+  try { return require('./generated/pm-chinese-src.json').src || null; } catch (e) { return null; }
 }
 
 // 取钩子源码（按优先级）：① exe 旁的 pm-chinese.js（允许覆盖内嵌，无需重编译）；
@@ -227,7 +228,7 @@ function hookSource() {
 
 // Scratch Pad 钩子源码（编译后取内嵌快照，逻辑同 hookSource）
 function loadEmbeddedScratchpadHook() {
-  try { return require('./pm-scratchpad-src.json').src || null; } catch (e) { return null; }
+  try { return require('./generated/pm-scratchpad-src.json').src || null; } catch (e) { return null; }
 }
 function scratchpadHookSource() {
   const cands = [];
@@ -244,7 +245,7 @@ function scratchpadHookSource() {
 
 // Scratch Pad 词典：① locales/scratchpad/zh-CN.json（exe 旁或源码旁）；② 内嵌快照
 function loadEmbeddedScratchpadDict() {
-  try { return require('./pm-scratchpad-data.json'); } catch (e) { return null; }
+  try { return require('./generated/pm-scratchpad-data.json'); } catch (e) { return null; }
 }
 function loadScratchpadDict() {
   for (const root of localeRoots()) {
@@ -261,7 +262,7 @@ function loadScratchpadDict() {
 
 // 主进程钩子源码 / 词典（逻辑同 Scratch Pad）
 function loadEmbeddedMainHook() {
-  try { return require('./pm-main-src.json').src || null; } catch (e) { return null; }
+  try { return require('./generated/pm-main-src.json').src || null; } catch (e) { return null; }
 }
 function mainHookSource() {
   const cands = [];
@@ -276,7 +277,7 @@ function mainHookSource() {
   throw new Error(`缺少主进程钩子源码 ${MAIN_HOOK_NAME}（且无内嵌快照）`);
 }
 function loadEmbeddedMainDict() {
-  try { return require('./pm-main-data.json'); } catch (e) { return null; }
+  try { return require('./generated/pm-main-data.json'); } catch (e) { return null; }
 }
 function loadMainDict() {
   for (const root of localeRoots()) {

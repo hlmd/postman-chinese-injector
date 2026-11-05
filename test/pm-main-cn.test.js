@@ -1,7 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
-const hook = require('../pm-main-cn.js');
+const hook = require('../src/hooks/pm-main-cn.js');
 const inj = require('../postman-chinese-injector.js');
 
 const c = hook.compile({ File: '文件', 'New Tab': '新建标签页', 'About {{appName}}': '关于 {{appName}}' });

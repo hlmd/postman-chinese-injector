@@ -32,10 +32,7 @@
   },
   "files": [
     "postman-chinese-injector.js",
-    "updater.js",
-    "pm-chinese.js",
-    "pm-scratchpad-cn.js",
-    "pm-main-cn.js",
+    "src/",
     "locales/"
   ],
   "license": "MIT"

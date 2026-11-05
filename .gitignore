@@ -2,13 +2,7 @@ node_modules/
 .idea
 dist/
 # 编译期生成的可嵌入快照（由 scripts/build-data.js 生成）
-pm-chinese-data.json
-pm-chinese-src.json
-pm-scratchpad-data.json
-pm-scratchpad-src.json
-pm-main-data.json
-pm-main-src.json
-pm-build-meta.json
+generated/
 
 # SDD 进度账本等本地临时文件
 .superpowers/

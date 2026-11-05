@@ -2,7 +2,7 @@
 const { test } = require('node:test');
 const assert = require('node:assert');
 const zlib = require('zlib');
-const u = require('../updater.js');
+const u = require('../src/updater.js');
 
 // 手工拼一个单文件 zip（deflate），验证中央目录解析
 function makeZip(name, content) {

@@ -154,10 +154,13 @@ Postman **登入态**主界面是远程网页，走上面的语言包拦截即�
 ```
 postman-chinese-injector/
 ├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 --restore
-├── updater.js                    # 在线更新：程序自更新（GitHub Release）+ 译文热更新（update-data 分支）
-├── pm-chinese.js                 # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
-├── pm-scratchpad-cn.js           # 第二个钩子：登出态 Scratch Pad 的 DOM 词典替换（仅桌面端）
-├── pm-main-cn.js                 # 第三个钩子：主进程原生菜单 / 对话框汉化（仅桌面端）
+├── src/
+│   ├── updater.js                # 在线更新：程序自更新（GitHub Release）+ 译文热更新（update-data 分支）
+│   └── hooks/
+│       ├── pm-chinese.js         # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
+│       ├── pm-scratchpad-cn.js   # 第二个钩子：登出态 Scratch Pad 的 DOM 词典替换（仅桌面端）
+│       └── pm-main-cn.js         # 第三个钩子：主进程原生菜单 / 对话框汉化（仅桌面端）
+├── generated/                    # build-data.js 生成的可嵌入快照（构建产物，已 gitignore）
 ├── locales/
 │   ├── zh-CN/                    # 语言包翻译源：每个模块一个 json，可单独编辑
 │   │   ├── api-client-core.json
@@ -179,7 +182,7 @@ postman-chinese-injector/
 └── package.json                  # bin 命令 postman-chinese-injector、构建脚本、依赖 @electron/asar
 ```
 
-> `build-data.js` 生成 6 份供 `bun --compile` 静态内嵌的快照：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）、`pm-main-data.json`（主进程菜单词典）、`pm-main-src.json`（`pm-main-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
+> `build-data.js` 在 `generated/` 下生成 6 份供 `bun --compile` 静态内嵌的快照：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）、`pm-main-data.json`（主进程菜单词典）、`pm-main-src.json`（`pm-main-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
 
 ---
 

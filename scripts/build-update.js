@@ -18,14 +18,14 @@ const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
 const { buildData } = require('./build-data');
-const { DATA_SCHEMA, DATA_FILE, parseDataBundle } = require('../updater');
+const { DATA_SCHEMA, DATA_FILE, parseDataBundle } = require('../src/updater');
 
 const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'dist', 'update');
 
 function main() {
   const { meta } = buildData('zh-CN');
-  const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8'));
+  const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, 'generated', f), 'utf8'));
   const bundle = {
     schema: DATA_SCHEMA,
     version: require('../package.json').version,
