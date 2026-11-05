@@ -7,7 +7,17 @@
     "add_another_placeholder": "添加其他队友",
     "send_cta": "{count, plural, =0 {发送邀请} one {发送 # 个邀请} other {发送 # 个邀请}}",
     "sent_success": "{count, plural, one {已向 {email} 发送邀请。} other {已向 # 位队友发送邀请。}}",
-    "send_failed": "发送失败。请检查网络连接后重试。"
+    "send_failed": "发送失败。请检查网络连接后重试。",
+    "git_suggestions": {
+      "title": "推荐邀请",
+      "description": "邀请您 Git 仓库中的协作者。",
+      "description_top": "邀请您 Git 仓库中的主要协作者。",
+      "add_all": "{count, plural, other {全部添加（#）}}",
+      "all_added": "已全部添加",
+      "show_more": "{count, plural, other {再显示 # 个}}",
+      "add": "将 {name} 添加到邀请",
+      "sent": "已邀请 {name}"
+    }
   },
   "import": {
     "unsent_guard": "{count, plural, one {您有 # 个未发送的邀请。} other {您有 # 个未发送的邀请。}}",

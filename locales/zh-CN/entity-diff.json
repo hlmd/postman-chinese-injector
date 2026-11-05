@@ -1,0 +1,18 @@
+{
+  "workbench_tab": {
+    "title": "更改"
+  },
+  "error": "无法加载此项的更改。",
+  "retry": "重试",
+  "unsupported": "无法在此显示此项的更改。",
+  "in_sync": "本地副本与云端副本一致。",
+  "order_only": "仅项目顺序发生了更改。",
+  "revert_order": "还原顺序",
+  "revert_order_failed": "无法恢复云端的顺序",
+  "save_failed": "无法保存您的更改",
+  "will_delete": "此文件将被删除。",
+  "will_restore": "此文件将从云端恢复。",
+  "breadcrumb_label": "已更改的实体",
+  "file_not_shown_binary": "此文件是二进制文件，无法显示。",
+  "file_not_shown_too_large": "此文件过大，无法显示。"
+}

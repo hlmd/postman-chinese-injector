@@ -2,6 +2,11 @@
   "status_bar": {
     "desktop_only_tooltip": "本地文件和终端访问仅在桌面应用程序上可用"
   },
+  "git_invite_footer": {
+    "summary": "{count, plural, one {您仓库中的 {list} 不在这里。} other {您仓库中的 {list} 不在这里。}}",
+    "more": "{count, plural, other {另外 # 人}}",
+    "invite": "邀请"
+  },
   "branch_switch_modal": {
     "uncommitted_title": "切换到 {ref}？",
     "uncommitted_body": "您有未提交的更改。可以将它们带到 {ref}，或将其储藏，让 {ref} 保持干净。",
@@ -101,6 +106,7 @@
   "workspace_sync": {
     "push_to_cloud": "推送至云端",
     "push": "推送",
+    "changes_pushed": "已推送 {count, plural, one {# 项更改} other {# 项更改}}",
     "done": "完成",
     "push_successful": "推送成功",
     "push_completed_with_errors": "推送已完成，但有错误",
@@ -140,6 +146,23 @@
     "status_update_tooltip": "该实体的本地更改可能与云端版本不同",
     "unsafe_name_tooltip": "文件夹 名称包含不支持的字符。修复它以推送到云端。",
     "lint_blocked_entity_tooltip": "推送前请先修复校验错误。点击可查看问题详情。",
+    "open_entity_diff": "查看 {name} 中的更改",
+    "revert_entity": "还原 {name}",
+    "revert_entity_tooltip": "还原为云端版本",
+    "revert_confirm_title": "还原 {name}？",
+    "revert_confirm_body": "您的本地更改将被云端版本替换。此操作无法撤销。",
+    "revert_confirm_body_new": "{name} 尚未同步到云端，还原将删除其本地文件。此操作无法撤销。",
+    "revert_confirm_action": "还原",
+    "revert_confirm_action_new": "删除",
+    "revert_cancel": "取消",
+    "revert_failed": "无法还原 {name}。",
+    "revert_all": "还原所有更改",
+    "revert_all_confirm_title": "还原 {count, plural, one {# 项} other {# 项}}？",
+    "revert_all_confirm_body": "本地更改将被各自的云端版本替换。此操作无法撤销。",
+    "revert_all_confirm_body_new": "{count, plural, one {# 项尚未同步到云端，将被删除。} other {# 项尚未同步到云端，将被删除。}}",
+    "revert_all_confirm_action": "全部还原",
+    "revert_all_failed": "无法还原 {count, plural, one {# 项} other {# 项}}。",
+    "revert_all_progress": "正在还原第 {done} 项，共 {count} 项…",
     "push_blocked_workspace_lint": "工作区配置存在 lint 错误。请先在 Issues 面板中修复后再推送。",
     "push_blocked_verify_lint": "无法校验工作区的 lint 状态。",
     "push_blocked_all_selected_lint": "所选变更全部存在 lint 错误。请先在 Issues 面板中修复后再推送。",

@@ -363,6 +363,81 @@
       "updateSuccess": "监控连接已更新。",
       "createError": "监控集成连接失败，请重试。",
       "updateError": "监控集成更新失败，请重试。"
+    },
+    "setupModal": {
+      "heading": "连接 {appName}",
+      "nameLabel": "集成名称",
+      "defaultName": "{monitorName} - {appName} 集成",
+      "nameRequired": "请输入集成名称",
+      "learnMore": "了解更多",
+      "submit": "连接",
+      "createError": "无法连接 {appName}，请重试。",
+      "editHeading": "编辑 {appName} 集成",
+      "saveSubmit": "保存更改",
+      "savedTitle": "更改已保存",
+      "savedDescription": "{name} 的集成设置已更新",
+      "updateError": "无法保存您对 {appName} 的更改，请重试。",
+      "loadError": "无法加载此集成。",
+      "retry": "重试",
+      "triggerNote": {
+        "pagerduty": "仅在监控运行失败时通知 PagerDuty。",
+        "victorops": "仅在监控运行失败时通知 Splunk On-Call。",
+        "splunk": "监控运行时，Postman 会将指标数据发送到 Splunk。",
+        "apm_new_relic": "监控运行时，Postman 会将指标数据发送到 New Relic。"
+      },
+      "pagerduty": {
+        "keyLabel": "集成密钥",
+        "keyPlaceholder": "例如 a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+        "keyHelper": "输入您的 PagerDuty 集成密钥，或",
+        "keyHelperLink": "新建一个",
+        "keyRequired": "请输入您的 PagerDuty 集成密钥"
+      },
+      "splunkOnCall": {
+        "apiKeyLabel": "API 密钥",
+        "apiKeyPlaceholder": "例如 1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "apiKeyHelper": "输入您的 Splunk On-Call API 密钥。",
+        "apiKeyRequired": "请输入您的 Splunk On-Call API 密钥",
+        "routingKeyLabel": "路由键（可选）",
+        "routingKeyPlaceholder": "例如 api-oncall",
+        "routingKeyHelper": "输入您的 Splunk On-Call 路由键。"
+      },
+      "splunk": {
+        "tokenLabel": "Splunk HEC 令牌",
+        "tokenPlaceholder": "例如 12345678-90ab-cdef-1234-567890abcdef",
+        "tokenHelper": "输入 Splunk 提供的 HEC 令牌。",
+        "tokenRequired": "请输入 HEC 令牌",
+        "hostLabel": "Splunk HEC URL",
+        "hostPlaceholder": "例如 https://http-inputs-acme.splunkcloud.com",
+        "hostHelper": "输入 Splunk HEC URL。",
+        "hostErrors": {
+          "empty": "请输入 Splunk HEC URL",
+          "insecure": "请使用安全（https）URL",
+          "trailingSlash": "请删除 URL 末尾的 \"/\""
+        },
+        "portLabel": "Splunk 端口",
+        "portRequired": "请输入端口"
+      },
+      "datadog": {
+        "regionLabel": "区域",
+        "regionHelper": "用于确定要使用的 Datadog 区域。",
+        "apiKeyLabel": "API 密钥",
+        "apiKeyPlaceholder": "例如 1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p",
+        "apiKeyHelper": "输入 Datadog 提供的 API 密钥，或",
+        "apiKeyHelperLink": "在此生成",
+        "apiKeyRequired": "请输入您的 Datadog API 密钥",
+        "sendEvents": "为已完成的运行发送事件",
+        "sendMetrics": "为每次运行发送指标",
+        "sendRequired": "请至少选择一项"
+      },
+      "newRelic": {
+        "apiKeyLabel": "API 密钥",
+        "apiKeyPlaceholder": "例如 NRAK-A1B2C3D4E5…",
+        "apiKeyHelper": "输入 New Relic 提供的 API 密钥，或",
+        "apiKeyHelperLink": "在此生成",
+        "apiKeyRequired": "请输入您的 New Relic API 密钥",
+        "regionLabel": "区域",
+        "regionHelper": "用于确定要使用的 New Relic 区域"
+      }
     }
   },
   "delete_modal": {

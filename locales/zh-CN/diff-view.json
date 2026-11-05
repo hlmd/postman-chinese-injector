@@ -1,0 +1,18 @@
+{
+  "expand": "展开",
+  "collapse": "折叠",
+  "files_summary": "{count, plural, one {# 个已更改的文件} other {# 个已更改的文件}}",
+  "no_files": "未发现文件更改。",
+  "show_unmodified_lines": "显示未修改的行",
+  "split_view": "分栏视图",
+  "inline_view": "内联视图",
+  "more_actions": "更多操作",
+  "hide_whitespace": "隐藏空白字符更改",
+  "show_whitespace": "显示空白字符更改",
+  "status_added": "已添加",
+  "status_removed": "已移除",
+  "fallback_original": "原始",
+  "fallback_modified": "已修改",
+  "revert": "还原",
+  "revert_tooltip": "丢弃此文件的本地更改"
+}

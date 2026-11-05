@@ -118,7 +118,11 @@
     },
     "external": {
       "edit": "编辑外部密钥",
-      "relink": "重新关联外部密钥"
+      "relink": "重新关联外部密钥",
+      "client_sign_in": {
+        "continue_button": "继续登录",
+        "blocked_tooltip": "您的浏览器拦截了登录窗口。点击以打开。"
+      }
     }
   },
   "external_providers": {
@@ -243,6 +247,10 @@
         "error_missing_params": "此回调缺少必需的参数。请关闭此窗口，回到 Postman 重新连接。",
         "error_generic": "登录未能完成。请关闭此窗口，回到 Postman 重试。"
       }
+    },
+    "client_sign_in": {
+      "continue_button": "继续登录",
+      "blocked_tooltip": "您的浏览器拦截了登录窗口。点击以打开。"
     }
   },
   "providers": {
@@ -488,6 +496,10 @@
         "title": "认证失败",
         "text": "保险库 不支持",
         "unexpected_error": "尝试进行身份验证时出现问题。请重试，或者如果问题仍然存在，请联系支持人员。"
+      },
+      "blocked": {
+        "text": "您的浏览器拦截了登录窗口。",
+        "continue_button": "继续"
       }
     },
     "desktop_agent_banner": {
@@ -646,6 +658,21 @@
       "no_user_key": {
         "heading": "首先配置您的 保险库",
         "text": "首先配置您的 保险库 以安全地存储您的敏感数据。配置完成后，您可以在此处管理 保险库 设置。"
+      },
+      "desktop_agent_required": {
+        "heading": "需要 Postman 桌面代理",
+        "text": {
+          "non_desktop_agent": "在网页版中，保管库集成需通过 Postman 桌面代理连接。请切换到桌面代理以连接它们。",
+          "desktop_agent_not_ready": "在网页版中，保管库集成需通过 Postman 桌面代理连接。请确保已安装并运行桌面代理以连接它们。",
+          "unsupported_desktop_agent_version": "您的 Postman 桌面代理不支持保管库集成。请更新代理以连接和使用它们。"
+        },
+        "button": {
+          "switch": "切换到桌面代理",
+          "set_up": "设置桌面代理"
+        },
+        "tooltip": {
+          "connect": "需要 Postman 桌面代理"
+        }
       }
     }
   },

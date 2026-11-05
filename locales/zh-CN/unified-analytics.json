@@ -437,7 +437,13 @@
   "billing": {
     "header": {
       "title": "账单与用量",
-      "subtitle": "您团队的账单信息和资源消耗概览。"
+      "subtitle": "您团队的账单信息和资源消耗概览。",
+      "breadcrumb": "账单",
+      "billing_cycle": "{cycle}计费",
+      "renews": "{date} 续订",
+      "export": {
+        "auto_flex_csv": "下载 Auto-Flex 用户（CSV）"
+      }
     },
     "billed": {
       "title": "计费席位",
@@ -702,6 +708,12 @@
     }
   },
   "common": {
+    "hero_metrics": {
+      "loading": "正在加载",
+      "error": "无法加载",
+      "unavailable": "不可用",
+      "unavailable_value": "不可用"
+    },
     "explore_public_api": {
       "title": "Explore Postman API",
       "description": "使用 Postman API 访问此报告的数据。",
@@ -723,6 +735,14 @@
       "usage_trends_over_time": "使用趋势",
       "trend_overtime": "长期趋势",
       "last_days": "最近 {days} 天"
+    },
+    "header": {
+      "breadcrumb_aria_label": "{page} 面包屑导航",
+      "all_organizations_title": "所有组织（{team}）",
+      "more": "更多",
+      "date_range": {
+        "last_months": "{count, plural, one {最近 # 个月} other {最近 # 个月}}"
+      }
     },
     "organization": {
       "showing": "筛选条件",
@@ -976,6 +996,7 @@
       }
     },
     "tabs": {
+      "aria_label": "Agent 模式指标",
       "agent_mode_users": "代理模式用户",
       "agent_mode_users_tooltip": "在选定时间段内使用代理模式的唯一用户总数。",
       "agent_mode_sessions": "代理模式会话",

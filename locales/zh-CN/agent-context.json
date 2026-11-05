@@ -205,6 +205,18 @@
         "stable": "稳定"
       }
     },
+    "tooltip_details": {
+      "health": "健康状况",
+      "region": "区域",
+      "schedule": "计划",
+      "status": "状态",
+      "values": {
+        "active": "活跃",
+        "healthy": "健康",
+        "paused": "已暂停",
+        "unhealthy": "不健康"
+      }
+    },
     "tooltip_stats": {
       "apis": "API",
       "database_schemas": "数据库 Schema",
@@ -212,6 +224,7 @@
       "endpoints": "端点",
       "external_services": "外部服务",
       "message_schemas": "消息 Schema",
+      "monitors": "监控",
       "resources": "资源",
       "teams": "团队",
       "telemetry_configs": "遥测配置",

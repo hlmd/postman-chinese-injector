@@ -298,6 +298,7 @@
       "vuh_blocked_linked": "请让管理员在<Link><Text>账单资源用量</Text></Link>中为性能测试启用按量付费。",
       "internal_pool_forbidden": "您的团队无权在此工作区中使用 Internal Staging Runners。请选择其他出口选项。",
       "internal_pool_unavailable": "Internal Staging Runners 暂时不可用。请稍后重试，或选择其他出口选项。",
+      "local_values_policy_prohibited": "您的团队或工作区策略禁止发送一个或多个设备值。请检查变量设置后再重新开始运行。",
       "local_values_disabled": "你的团队未开启从此设备发送值的功能。请重新开始运行以仅使用共享值。"
     },
     "local_values": {

@@ -34,7 +34,7 @@
       "heading": "服务状态",
       "loading": "正在加载服务分组…",
       "default_detail": "服务分组",
-      "repository_label": "GitHub 仓库",
+      "repository_label": "{provider} 仓库",
       "workspace_label": "目标工作区"
     },
     "errors": {
