@@ -1,0 +1,216 @@
+{
+  "info_pane_mock_listing": {
+    "header": {
+      "text": "模擬伺服器",
+      "new_button": "新的",
+      "tooltip": "建立模擬伺服器"
+    },
+    "list": {
+      "connection_error_state": {
+        "text": "無法載入模擬伺服器"
+      },
+      "error_fetching_state": {
+        "text": "載入模擬伺服器時出現意外錯誤。請再試一次。",
+        "button": "再試一次"
+      },
+      "no_mock_state": {
+        "collection_text": "沒有為此集合建立模擬伺服器。",
+        "environment_text": "沒有模擬伺服器使用此環境。"
+      },
+      "default_state": {
+        "show_more": "顯示 {mocksLength} 更多",
+        "show_less": "顯示較少"
+      }
+    }
+  },
+  "constants": {
+    "error": {
+      "permission_error": "您沒有權限執行此操作。",
+      "offline_error": "您重新上線後即可執行此操作。"
+    }
+  },
+  "delete_confirmation": {
+    "delete": "刪除",
+    "deleting": "正在刪除",
+    "toast_delete_confirmation": "模擬伺服器已刪除",
+    "toast_delete_error": "無法刪除模擬伺服器"
+  },
+  "local_mock_logs_panel": {
+    "state_tab_count": "狀態（{count}）",
+    "logs_tab_count": "日誌（{count}）",
+    "logs_load_failed": "日誌載入失敗",
+    "logs_waiting_title": "等待請求……",
+    "logs_waiting_subtitle": "向模擬伺服器傳送請求即可檢視日誌",
+    "logs_no_match": "沒有匹配的日誌",
+    "logs_no_match_subtitle": "試試調整篩選條件",
+    "logs_retry": "重試",
+    "logs_start_to_run_title": "暫無日誌",
+    "logs_start_to_run": "啟動模擬伺服器後即可在此檢視日誌",
+    "local_run_desktop_only_title": "僅限桌面客戶端",
+    "local_run_desktop_only_description": "瀏覽器中不支援本地執行。請使用 Postman 桌面客戶端，或部署為模擬伺服器。"
+  },
+  "mock_start_history": {
+    "last_n": "最近 {count} 次",
+    "source_app": "應用",
+    "source_cli": "CLI",
+    "source_cli_filter": "Postman CLI",
+    "source_ci": "CI",
+    "you": "您",
+    "avatar_aria": "由 {who} 啟動",
+    "avatar_unknown": "未知啟動者",
+    "trigger_label": "{when} · {source}",
+    "started_by_you": "由您啟動 · {when}",
+    "started_by_other": "由 {who} 啟動 · {when}",
+    "cli_by_you": "postman 模擬伺服器 run · 由您執行 · {when}",
+    "cli_by_other": "postman 模擬伺服器 run · 由 {who} 執行 · {when}",
+    "ci_meta": "{who} · {when}",
+    "yesterday": "昨天 {time}",
+    "other_day": "{date} {time}",
+    "calls": "{count, plural, one {# 次呼叫} other {# 次呼叫}}",
+    "running_duration": "已執行 {duration}",
+    "ran_duration": "執行了 {duration}",
+    "placeholder": "歷史記錄",
+    "unnamed_mock": "模擬伺服器",
+    "previous_starts": "歷史啟動",
+    "tab_count": "歷史啟動 {count}",
+    "history": "歷史記錄",
+    "open_aria": "開啟歷史啟動",
+    "open_history_aria": "開啟歷史記錄",
+    "select_aria": "選擇一次歷史啟動以檢視其日誌和狀態",
+    "last_n_starts": "最近 {count} 次啟動",
+    "filter_count_aria": "要顯示的啟動次數",
+    "filter_started_by": "啟動者",
+    "filter_started_by_aria": "按啟動者篩選",
+    "filter_status": "狀態",
+    "filter_status_aria": "按狀態篩選",
+    "filter_source": "來源",
+    "filter_source_aria": "按來源篩選",
+    "search_starts": "搜尋啟動記錄",
+    "col_start_time": "啟動時間",
+    "col_source": "來源",
+    "col_started_by": "啟動者",
+    "col_duration": "時長",
+    "col_calls": "呼叫次數",
+    "col_errors": "錯誤",
+    "col_status": "狀態",
+    "empty_title": "暫無啟動記錄",
+    "list_load_failed": "無法載入先前的啟動記錄",
+    "duration_h": "{count} 小時",
+    "duration_m": "{count} 分鐘",
+    "duration_s": "{count} 秒",
+    "entity_missing_mock": "此模擬伺服器已不可用",
+    "entity_missing_simulation": "此模擬已不可用",
+    "status_running": "執行中",
+    "status_stopped": "已停止",
+    "refresh": "重新整理",
+    "kept_for_days": "保留 {count} 天",
+    "history_last_days": "最近 {count} 天的歷史記錄",
+    "identity_source": "來源",
+    "identity_by": "執行者",
+    "identity_started": "開始時間",
+    "identity_ended": "結束時間",
+    "identity_duration": "時長",
+    "identity_calls": "呼叫次數",
+    "log_col_time": "時間",
+    "log_col_method": "方法",
+    "log_col_path": "路徑",
+    "log_col_status": "狀態",
+    "log_col_latency": "延遲",
+    "log_col_example": "匹配的範例",
+    "log_col_called_by": "呼叫方",
+    "logs_load_failed": "日誌載入失敗",
+    "mock_start_load_failed": "無法載入此模擬伺服器啟動記錄。",
+    "simulation_start_load_failed": "無法載入此模擬啟動記錄。",
+    "mock_start_entity": "模擬伺服器啟動",
+    "simulation_start_entity": "模擬啟動",
+    "unnamed_simulation": "模擬",
+    "start_tab_stale": "此標籤頁已過期。請關閉後從歷史記錄中重新開啟該啟動記錄。",
+    "previous_start": "先前的啟動",
+    "previous_start_with_id": "先前的啟動 · {startId}",
+    "open_mock": "開啟模擬伺服器",
+    "open_simulation": "開啟模擬",
+    "simulation_started": "模擬已啟動",
+    "simulation_stopped": "模擬已停止",
+    "back_to_logs": "返回日誌"
+  },
+  "mock_filter_bar": {
+    "filter_label": "篩選",
+    "session_placeholder": "會話",
+    "session_all_sessions": "所有會話",
+    "caller_placeholder": "呼叫方",
+    "filter_by_header": "請求頭",
+    "session_footer": "使用 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 請求頭，將日誌和狀態限定在某個會話內。",
+    "session_disabled_value": "預設會話",
+    "session_disabled_hint": "此模擬伺服器已關閉會話，因此所有流量共用同一份狀態。在模擬伺服器設定中啟用會話，即可按呼叫方隔離日誌和狀態。",
+    "local_server_live": "本地伺服器執行中",
+    "session_delete": "刪除會話"
+  },
+  "caller_identity": {
+    "title_private": "私密模擬伺服器",
+    "title_public": "公開模擬伺服器",
+    "body_private": "請使用有效的 <code>x-api-key</code> 或通過 Postman 訪問以使用此私有模擬伺服器。",
+    "body_public": "任何人都可以訪問此模擬伺服器。",
+    "badge_aria_private": "私密模擬伺服器：呼叫方需經過驗證。開啟呼叫方身份詳情。",
+    "badge_aria_public": "公開模擬伺服器：呼叫方無需驗證。開啟呼叫方身份詳情。"
+  },
+  "local_mock_state_panel": {
+    "key_list": {
+      "search_placeholder": "篩選鍵……",
+      "no_keys": "沒有狀態鍵",
+      "no_matching_keys": "沒有匹配的鍵"
+    },
+    "value_view": {
+      "tree": "樹狀檢視",
+      "raw": "原始檢視"
+    },
+    "toolbar": {
+      "session_label": "會話",
+      "session_info_tooltip": "每個會話都是 pm.state 的獨立副本。任何有權訪問模擬伺服器的人都可以檢視任意會話。",
+      "large_values_truncated": "較大的值已被截斷",
+      "clear_session_state": "清除會話資料",
+      "delete_logs_and_state": "刪除日誌和狀態",
+      "delete_logs_and_state_tooltip": "刪除所有日誌和 pm.state 鍵",
+      "delete_session": "刪除會話"
+    },
+    "messages": {
+      "loading_state": "正在載入狀態……",
+      "failed_to_read": "狀態讀取失敗",
+      "refresh_failed": "重新整理失敗——顯示上次讀取的內容。",
+      "no_state_yet": "暫無狀態",
+      "state_appears_here": "使用 <pmState>pm.state</pmState> 可在模擬伺服器中持久化資料。<docsLink>瞭解狀態。</docsLink>",
+      "start_mock_to_write": "啟動模擬伺服器並寫入 pm.state。",
+      "shared_empty": "共享狀態為空",
+      "shared_empty_subtitle": "沒有會話的呼叫方產生的狀態會顯示在此處。",
+      "your_session_empty": "您的會話為空",
+      "session_empty": "此會話為空",
+      "session_empty_subtitle": "向此會話傳送請求以新增狀態。",
+      "isolated_no_session": "傳送請求以啟動您的會話",
+      "isolated_no_session_subtitle": "此模擬伺服器為隔離模式，因此您的第一個請求將獲得獨立會話（顯示為“您的”）。"
+    },
+    "toasts": {
+      "key_reset": "已重置“{key}”",
+      "reset_failed": "狀態鍵重置失敗",
+      "session_cleared": "會話狀態已清除",
+      "logs_and_state_deleted": "日誌和狀態已刪除",
+      "clear_failed": "狀態清除失敗",
+      "session_deleted": "會話已刪除",
+      "session_delete_failed": "會話刪除失敗"
+    },
+    "modals": {
+      "reset_key_title": "重置狀態鍵",
+      "reset_key_body_prefix": "這將永久刪除 pm.state 中的 ",
+      "reset_key_body_suffix": "，此操作無法撤銷。",
+      "cancel": "取消",
+      "reset": "重置",
+      "clear_session_title": "清除會話資料",
+      "delete_logs_and_state_title": "刪除日誌和狀態",
+      "clear_session_body_prefix": "這將永久刪除 ",
+      "clear_session_body_suffix": " 中的所有鍵，且無法撤銷。",
+      "delete_logs_and_state_body": "此操作將永久刪除所有日誌和 pm.state 鍵，且無法撤銷。",
+      "delete_session_title": "刪除會話",
+      "delete_session_confirm": "刪除會話",
+      "delete_session_body_prefix": "此操作將永久刪除 ",
+      "delete_session_body_suffix": "，包括其全部日誌和資料，且無法撤銷。"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "constant": {
+    "name": "固定",
+    "shorthand": "固定",
+    "description": "{virtualUserCount} 個虛擬{virtualUserCount, plural, =1{使用者}other{使用者}}執行 {totalDurationMins, plural, =1 {# 分鐘}other{# 分鐘}}，每個都按順序執行所有請求。"
+  },
+  "ramp": {
+    "name": "斜坡上升",
+    "shorthand": "加速 ({humanizedRampDuration})",
+    "description": "{initialDurationMs, plural, =0 {持續} other {{initialLoad, plural, =1 {# 個虛擬使用者} other {# 個虛擬使用者}} 為 {humanizedInitialDuration} 執行，}} 為 {humanizedRampDuration} 上升到 {maxLoad}，然後為 {humanizedMaxLoadDuration} 維持 {maxLoad}，每個順序執行所有請求。",
+    "initial": {
+      "load": {
+        "name": "初始負載",
+        "description": "在開始增加到最大 VU 數量之前要模擬的 VU 數量。"
+      }
+    },
+    "lead_start": {
+      "time": {
+        "name": "初始載入時間戳"
+      }
+    },
+    "lead_end": {
+      "time": {
+        "name": "增加時間戳",
+        "description": "負載從初始負載線性增加到最大負載的時間。"
+      }
+    }
+  },
+  "peak": {
+    "name": "頂峰",
+    "shorthand": "頂峰",
+    "description": "{initialDurationMs, plural, =0 {持續} other {{initialLoad, plural, =1 {# 個虛擬使用者} other {# 個虛擬使用者}} 執行 {humanizedInitialDuration}，}} 在 {humanizedRampUpDuration} 上上升到 {maxLoad}，在 {humanizedPlateauDuration} 上保持 {maxLoad}，在 {humanizedRampDownDuration} 上下降到 {initialLoad}，在 {humanizedTrailingLoadDuration} 上保持 {initialLoad}，每個順序執行所有請求。",
+    "initial": {
+      "load": {
+        "name": "基本負載",
+        "description": "在開始增加到最大 VU 計數之前以及按比例縮小之後要維持的 VU 數量。"
+      }
+    },
+    "lead_start": {
+      "time": {
+        "name": "初始基本負載結束時間戳"
+      }
+    },
+    "lead_end": {
+      "time": {
+        "name": "增加時間戳",
+        "description": "負載從基本負載線性增加到最大負載的時間。"
+      }
+    },
+    "down_start": {
+      "time": {
+        "name": "斜坡結束時間戳",
+        "description": "保持最大負載的時間。"
+      }
+    },
+    "down_end": {
+      "time": {
+        "name": "斜坡下降時間戳",
+        "description": "負載從最大負載線性減少到基本負載的時間。"
+      }
+    }
+  },
+  "spike": {
+    "name": "尖峰",
+    "shorthand": "尖峰",
+    "description": "{initialDurationMs, plural, =0 {尖峰} other {{baseLoad, plural, =1 {# 個虛擬使用者} other {# 個虛擬使用者}} 執行 {humanizedInitialDuration}，在 {humanizedSpikeUpDuration} 上峰值}} 到 {maxLoad}，在 {humanizedSpikeDownDuration} 上下降到 {baseLoad}，在 {humanizedFinalDuration} 上保持 {baseLoad}，每個順序執行所有請求。",
+    "initial": {
+      "time": {
+        "name": "基本負載時間戳"
+      },
+      "load": {
+        "name": "基本負載",
+        "description": "在開始增加到最大 VU 計數之前以及按比例縮小之後要維持的 VU 數量。"
+      }
+    },
+    "start": {
+      "time": {
+        "name": "峰值開始時間戳"
+      }
+    },
+    "end": {
+      "time": {
+        "name": "峰值結束時間戳",
+        "description": "峰值結束時間戳"
+      }
+    },
+    "peak": {
+      "time": {
+        "name": "峰值時間戳",
+        "description": "峰值在最大負載下達到峰值的時間。"
+      }
+    }
+  },
+  "humanize_duration": {
+    "expanded": "{minutes, plural, =0 {} =1 {# 分鐘 } other{# 分鐘 }}{seconds, plural, =0 {} =1 {# 秒} other{# 秒}}",
+    "only_minutes": "{minutes, plural, =1 {# 分鐘} other{# 分鐘}}",
+    "only_seconds": "{seconds, plural, =1 {# 秒} other{# 秒}}",
+    "minutes_and_seconds": "{minutes}:{seconds} 分鐘"
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "common": {
+    "actions": {
+      "create_automation": "建立自動化",
+      "cancel": "取消",
+      "delete": "刪除",
+      "refresh": "重新整理",
+      "actions_menu_tooltip": "操作"
+    },
+    "empty": {
+      "search_hint": "請嘗試其他搜尋詞，調整篩選條件，或檢查是否有拼寫錯誤。"
+    },
+    "pagination": {
+      "previous_page": "上一頁",
+      "next_page": "下一頁"
+    }
+  },
+  "tabs": {
+    "team": "團隊",
+    "mine": "我的"
+  },
+  "page": {
+    "breadcrumb_section": "Agent 自動化",
+    "title": "自動化",
+    "subtitle": "設定自動化，使其按計劃執行或在事件發生時觸發。",
+    "loading_aria_label": "正在載入自動化",
+    "loading_label": "正在載入自動化…",
+    "error_title": "無法載入自動化",
+    "error_description": "獲取自動化時出錯，請稍後重試。",
+    "refetch_aria_label": "正在重新整理自動化"
+  },
+  "table": {
+    "search_placeholder": "搜尋自動化",
+    "headers": {
+      "name": "名稱",
+      "status": "狀態",
+      "trigger": "觸發器",
+      "triggers": "觸發器",
+      "creator": "建立者",
+      "actions": ""
+    },
+    "status": {
+      "active": "啟用",
+      "inactive": "已停用"
+    },
+    "empty": {
+      "title": "建立您的第一個自動化",
+      "description": "按計劃或在事件發生時執行 Agent，並將結果傳送到團隊常用的工作場所。",
+      "search_title": "未找到自動化"
+    },
+    "row_actions": {
+      "view_run_history": "檢視執行歷史記錄",
+      "run_now": "立即執行",
+      "edit": "編輯"
+    },
+    "trigger": {
+      "github_pr": "GitHub Pull Request",
+      "github_push": "GitHub Push",
+      "schedule": "計劃"
+    }
+  },
+  "run_status": {
+    "claimed": "已認領",
+    "dispatched": "已分發",
+    "completed": "已完成",
+    "failed": "失敗"
+  },
+  "templates": {
+    "section_title": "從模板開始",
+    "use_template": "新增",
+    "coming_soon": "即將推出",
+    "items": {
+      "github_pr": {
+        "trigger_label": "GitHub Pull Request",
+        "title": "PR 上的 API 設計審查",
+        "description": "在每個 PR 中審查 API/schema 變更，並將結果作為評論發布。"
+      },
+      "weekly_schedule": {
+        "trigger_label": "每週計劃",
+        "title": "已棄用 API 審計",
+        "description": "每週掃描已棄用的 API，並將結果報告發布到 Slack。"
+      },
+      "breaking_change_detection": {
+        "trigger_label": "GitHub Pull Request",
+        "title": "破壞性變更檢測",
+        "description": "在每個 PR 中檢測破壞性 API 變更，在其影響生產環境之前標記風險。"
+      },
+      "event_driven_automation": {
+        "trigger_label": "Postman 事件",
+        "title": "事件驅動的自動化",
+        "description": "回應 Postman Events（如集合更新），並自動將分析結果傳送給團隊。"
+      }
+    }
+  },
+  "create": {
+    "active_label": "啟用",
+    "loading_aria_label": "正在載入自動化",
+    "loading_label": "正在載入自動化…",
+    "error_title": "無法載入自動化",
+    "error_description": "獲取自動化時出錯，請返回後重試。",
+    "name_aria_label": "自動化名稱",
+    "creating_pending": "正在建立…",
+    "toast_success": "自動化已建立",
+    "toast_error": "建立自動化失敗，請重試。",
+    "actions": {
+      "add_trigger": "新增自動化觸發器",
+      "remove_trigger_tooltip": "移除觸發器"
+    },
+    "fields": {
+      "name_label": "名稱",
+      "name_placeholder": "例如：審查 PR 中的 API 設計",
+      "triggers_label": "自動化觸發器",
+      "trigger_index_label": "觸發器 {index}",
+      "workspace_select_workspace": "選擇工作區",
+      "workspace_no_workspace": "無工作區",
+      "workspace_no_results": "未找到工作區",
+      "trigger_label": "觸發器",
+      "github_organization": "組織",
+      "github_organization_placeholder": "選擇組織",
+      "github_repo": "儲存庫",
+      "github_repo_placeholder": "選擇儲存庫",
+      "github_branch": "分支",
+      "github_branch_placeholder": "選擇分支",
+      "github_any_branch": "任意分支",
+      "github_connect": "連線 GitHub",
+      "github_connecting": "正在連線…",
+      "github_reconnect": "重新連線 GitHub",
+      "github_checking": "正在檢查 GitHub 連線…",
+      "github_connect_error": "無法連線到 GitHub，請重試。",
+      "github_connect_error_popup_blocked": "彈出視窗被攔截。請允許此網站彈出視窗後重試。",
+      "github_connect_error_timed_out": "授權超時，請重試。",
+      "github_connect_error_request_failed": "無法連線到伺服器。請檢查網路連線後重試。",
+      "github_account": "帳戶",
+      "github_account_placeholder": "選擇帳戶",
+      "github_install_app_helper_text": "如果沒有看到您的組織，您可能需要在個人帳戶或組織中<Link><Text>安裝 Postman 應用</Text></Link>。",
+      "github_install_app_tooltip_label": "Postman GitHub App 安裝資訊",
+      "instructions_label": "Agent 指令",
+      "instructions_placeholder": "描述 Agent 應執行的操作……",
+      "notify_slack_label": "通知 Slack 或 Microsoft Teams 頻道或聊天",
+      "remove_channel": "移除頻道",
+      "github_reconnect_required": "您的 GitHub 連線已過期，請重新連線以繼續使用此自動化。",
+      "slack_connect": "連線 Slack",
+      "slack_connecting": "正在連線到 Slack…",
+      "slack_connecting_hint": "請在剛開啟的瀏覽器標籤頁中完成授權，此過程最長可能需要 60 秒。",
+      "slack_reconnect": "重新連線 Slack",
+      "slack_reconnect_required": "您的 Slack 連線已過期，請重新連線以繼續接收通知。",
+      "slack_connect_error": "無法連線到 Slack，請重試。",
+      "slack_workspace_label": "工作區",
+      "slack_workspace_placeholder": "工作區",
+      "slack_channel_label": "頻道",
+      "slack_channel_placeholder": "輸入以搜尋頻道",
+      "slack_wrong_workspace_toast_title": "Slack 工作區錯誤",
+      "slack_wrong_workspace_toast_description": "您選擇的頻道屬於其他工作區。請移除現有頻道，或重新連線到匹配的工作區。",
+      "delivery_targets_label": "投遞目標",
+      "add_delivery_target": "新增投遞目標",
+      "delivery_target_github_pr_comment": "在 Pull Request 中評論",
+      "delivery_target_slack": "傳送到 Slack",
+      "delivery_target_remove": "移除投遞目標",
+      "delivery_target_to": "至",
+      "trigger_placeholder": "選擇觸發器……",
+      "trigger_schedule_already_added_tooltip": "每個自動化只能有一個計劃觸發器",
+      "trigger_clear": "清除選擇",
+      "trigger_connector_in": "位於",
+      "trigger_connector_on": "在",
+      "trigger_connector_at": "於",
+      "trigger_label_workspace": "工作區",
+      "trigger_connector_with": "且",
+      "trigger_label_result": "結果",
+      "trigger_group_scheduled": "計劃任務",
+      "trigger_option_hourly": "每小時",
+      "trigger_option_daily": "每天",
+      "trigger_option_weekly": "每週",
+      "trigger_option_pr_opened": "Pull Request 已建立",
+      "trigger_option_pr_pushed": "Pull Request 已推送",
+      "trigger_option_pr_merged": "Pull Request 已合併",
+      "trigger_option_push_to_branch": "有新推送到分支",
+      "schedule_time_label": "時間",
+      "schedule_day_label": "日期",
+      "schedule_timezone_label": "時區",
+      "day_monday": "星期一",
+      "day_tuesday": "星期二",
+      "day_wednesday": "星期三",
+      "day_thursday": "星期四",
+      "day_friday": "星期五",
+      "day_saturday": "星期六",
+      "day_sunday": "星期日",
+      "workspace_label": "工作區",
+      "workspace_placeholder": "選擇工作區",
+      "collection_label": "集合",
+      "collection_placeholder": "選擇集合",
+      "monitor_label": "監控",
+      "monitor_placeholder": "選擇監控",
+      "monitor_partial_warning": "部分監控無法載入，列表可能不完整。",
+      "monitor_load_error": "無法載入監控，請重試。",
+      "status_label": "執行結果",
+      "status_success": "成功",
+      "status_failure": "失敗"
+    }
+  },
+  "edit": {
+    "title": "編輯自動化",
+    "tab_run_history": "執行歷史記錄",
+    "tab_settings": "設定",
+    "saving_pending": "正在儲存…",
+    "toast_success": "自動化已儲存",
+    "toast_error": "儲存自動化失敗，請重試。",
+    "toggle_activated": "自動化已啟用",
+    "toggle_deactivated": "自動化已停用",
+    "toggle_error": "更新自動化狀態失敗，請重試。",
+    "actions": {
+      "save": "儲存更改"
+    }
+  },
+  "readonly": {
+    "banner": "您可以檢視此自動化，但無法編輯。",
+    "admin_banner": "作為管理員，您只能刪除或切換此自動化。",
+    "delete_tooltip": "刪除自動化"
+  },
+  "delete_modal": {
+    "title": "刪除自動化？",
+    "body": "確定要刪除 <strong>{name}</strong> 嗎？",
+    "toast_success": "自動化已刪除",
+    "toast_error": "刪除自動化失敗，請重試。"
+  },
+  "validation": {
+    "form_invalid": "請填寫所有必填欄位。",
+    "name_required": "名稱為必填項",
+    "trigger_required": "觸發器為必填項",
+    "instructions_required": "指令為必填項",
+    "delivery_target_required": "至少需要一個投遞目標",
+    "github_organization_required": "組織為必填項",
+    "github_repo_required": "儲存庫為必填項",
+    "github_branch_required": "分支為必填項",
+    "workspace_required": "請選擇工作區",
+    "collection_required": "請選擇集合",
+    "monitor_required": "監控為必填項",
+    "trigger_duplicate": "此觸發器與上方的另一個觸發器重複",
+    "trigger_schedule_singleton": "每個自動化只能有一個計劃觸發器"
+  },
+  "run_history": {
+    "search_placeholder": "搜尋執行記錄……",
+    "filter_result": "結果",
+    "action_edit_automation": "編輯自動化",
+    "action_view_task": "檢視 Agent 任務",
+    "action_copy_id": "複製執行 ID",
+    "copy_id_toast_success": "執行 ID 已複製到剪貼簿",
+    "copy_id_toast_error": "無法複製執行 ID",
+    "action_copy_task_id": "複製任務 ID",
+    "copy_task_id_toast_success": "任務 ID 已複製到剪貼簿",
+    "copy_task_id_toast_error": "無法複製任務 ID",
+    "action_retry": "重試",
+    "retry_toast_success": "執行已加入重試佇列",
+    "retry_toast_error": "重試執行失敗，請重試。",
+    "header_trigger": "觸發器",
+    "header_status": "狀態",
+    "header_started": "開始時間",
+    "header_duration": "持續時間",
+    "loading_aria_label": "正在載入執行歷史記錄",
+    "loading_label": "正在載入執行歷史記錄…",
+    "error_title": "無法載入執行歷史記錄",
+    "error_description": "獲取執行歷史記錄時出錯，請稍後重試。",
+    "refetch_aria_label": "正在重新整理執行歷史記錄",
+    "empty_search_title": "未找到執行記錄",
+    "empty_title": "暫無執行記錄。",
+    "refresh_aria_label": "重新整理執行歷史記錄",
+    "run_now_aria_label": "立即執行自動化"
+  },
+  "run_now": {
+    "toast_success": "執行已成功加入佇列",
+    "toast_error": "觸發執行失敗，請重試。"
+  }
+}

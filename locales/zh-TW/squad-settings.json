@@ -1,0 +1,389 @@
+{
+  "orgs_disabled": {
+    "title": "功能未啟用",
+    "description": "您的組織未啟用此功能。請聯絡支援人員以獲取更多資訊。"
+  },
+  "list": {
+    "title": "團隊",
+    "create_squad": "建立團隊",
+    "error": "出了點問題。",
+    "error_description": "我們無法載入團隊。請稍後重試。",
+    "error_action": "重試",
+    "no_squads": {
+      "title": "建立您的第一個團隊",
+      "description": "團隊幫助組織人員和工作空間以進行集中協作。"
+    },
+    "no_permission": {
+      "title": "您沒有權限檢視此頁面。"
+    },
+    "create_squad_not_allowed": "您沒有權限建立團隊",
+    "tabs": {
+      "your_squads": "你的團隊",
+      "other_squads": "其他團隊"
+    },
+    "your_squads": {
+      "empty": {
+        "title": "您還不是任何團隊的成員",
+        "description": "加入團隊或建立一個以開始協作。"
+      }
+    },
+    "other_squads": {
+      "empty": {
+        "title": "未找到團隊",
+        "description": "目前沒有可以加入的團隊。"
+      }
+    },
+    "filter": {
+      "by_name": "搜尋團隊",
+      "by_access": {
+        "title": "訪問權限",
+        "open": "無需批准",
+        "restricted": "成員需要批准",
+        "closed": "每個人都需要批准",
+        "selected_option_label": "{count} 訪問型別"
+      },
+      "by_role": {
+        "title": "角色",
+        "member": "成員",
+        "collaborator": "合作者",
+        "manager": "經理",
+        "none": "沒有角色",
+        "selected_option_label": "{count} 角色"
+      },
+      "no_results": {
+        "title": "未找到團隊",
+        "description": "您可能想嘗試使用不同的名稱或調整過濾器。"
+      }
+    },
+    "table": {
+      "heading": {
+        "squad_name": "名稱",
+        "users_and_groups": "使用者和組"
+      },
+      "tooltip": {
+        "member_details": "使用者 ({userCount}) 和組 ({groupCount})",
+        "error": "無法載入詳細資訊"
+      },
+      "joined_as": {
+        "manager": "經理 · @{handle}",
+        "member": "成員 · @{handle}",
+        "guest": "合作者 · @{handle}"
+      },
+      "access": {
+        "open_for_collaborators": "需要團隊經理批准才能以成員身份加入此團隊。",
+        "close": "需要團隊經理批准才能加入或與此團隊合作。",
+        "closed": "每個人都需要批准",
+        "open": "無需批准",
+        "restricted": "成員需要批准"
+      }
+    },
+    "menu": {
+      "add_members": "新增成員",
+      "manage": "管理團隊",
+      "join": "加入",
+      "request_to_join": "請求加入",
+      "leave": "離開",
+      "rename": "重新命名",
+      "toast": {
+        "join": {
+          "error_title": "出了點問題。",
+          "error_description": "請稍後重試。",
+          "success_title": "您已加入團隊！",
+          "success_description": "您現在是 {squad_name} 的成員。開始合作！",
+          "request_sent_title": "請求已傳送",
+          "request_sent_description": "一旦團隊經理批准您的請求，我們就會通知您。",
+          "rfa_exists_title": "請求待處理",
+          "rfa_exists_description": "一旦團隊經理批准您的請求，我們就會通知您。"
+        }
+      }
+    }
+  },
+  "modals": {
+    "rename_squad": {
+      "title": "重新命名團隊",
+      "action": "儲存",
+      "toast": {
+        "error": "出了點問題。"
+      }
+    },
+    "delete_squad": {
+      "title": "刪除團隊？",
+      "description": "團隊“{name}”將被永久刪除。此操作無法撤消。",
+      "action": "刪除團隊",
+      "cancel": "取消",
+      "toast": {
+        "error": "刪除團隊時出錯。請再試一次。",
+        "no_permission": "您沒有權限刪除此團隊。",
+        "has_workspaces": "團隊無法刪除，因為有與其關聯的工作空間。"
+      }
+    },
+    "create_squad": {
+      "title": "建立一個新的團隊",
+      "name": "名稱",
+      "create": "建立團隊",
+      "name_placeholder": "例如 API 建設者",
+      "handle_info": "團隊控制代碼將自動生成。",
+      "handle_generated": "使用 @{handle} 在對話中標記您的團隊",
+      "name_validation_error": "只允許字母、數字和空格",
+      "duplicate_name_error": "這個團隊已經存在。嘗試使用不同的名稱。",
+      "toast": {
+        "success": "團隊已建立",
+        "error": "建立團隊失敗"
+      }
+    },
+    "add_members": {
+      "title": "將成員新增到“{squadName}”",
+      "search_placeholder": "搜尋組織中的人員或群組...",
+      "already_added": "已經是成員",
+      "already_a_guest": "已是訪客",
+      "group_members": "{membersCount, plural, one {1 成員} other {# 成員}}",
+      "add": "新增",
+      "request_to_add": "請求新增",
+      "success": "{count} 成員已新增",
+      "success_plural": "{count} 成員已新增",
+      "request_to_add_success": "請求已傳送",
+      "request_to_add_success_description": "一旦團隊經理批准您的請求，我們就會通知您。",
+      "error": "出了點問題",
+      "search_empty": "只有來自“{teamName}”組織的人員才能新增為團隊的成員。",
+      "request_to_add_banner": "向此團隊新增成員需要團隊經理批准。",
+      "all_members_access_banner": "此團隊已配置為：所有組織使用者均為該團隊的成員。",
+      "all_members_access_banner_collaborator": "此團隊已配置為使所有組織使用者都成為此團隊的協作者。",
+      "group_access_banner": "{userName} 已通過{groupCount, plural, one {群組} other {群組}}擁有 {role} 權限：{groupNames}",
+      "radio_group": {
+        "title": "角色",
+        "developer": "開發者",
+        "developer_description": "可以編輯團隊中的所有資源。",
+        "manager": "經理",
+        "manager_description": "可以編輯團隊中的所有資源並管理成員。"
+      },
+      "role_label": {
+        "developer": "開發者",
+        "manager": "管理者"
+      }
+    },
+    "convert_to_member": {
+      "title": "將協作者轉換為成員？",
+      "description_user": "<text>作為成員，<bold>{name} ({email})</bold> 將擁有對所有團隊資源的編輯權限。他們將能夠：</text>",
+      "description_group": "<text>作為成員，<bold>{name}</bold> 組中的每個人都擁有對所有團隊資源的編輯權限。他們將能夠：</text>",
+      "description_team": "<text>作為成員，<bold>{name}</bold> 組織中的每個人都擁有對所有團隊資源的編輯權限。他們將能夠：</text>",
+      "bullet_points": {
+        "one": "建立工作區並與團隊成員協作",
+        "two": "發現所有 API",
+        "three": "復刻、評論並關注集合"
+      },
+      "error_title": "無法更改會員資格",
+      "error_description": "如果問題仍然存在，請重試或聯絡支援人員。",
+      "confirm": "轉換為成員",
+      "cancel": "取消"
+    },
+    "remove_member": {
+      "title": "從此團隊中刪除“{memberName}”",
+      "title_self": "離開“{squadName}”團隊？",
+      "description": "他們將立即失去對所有團隊資源的訪問權限。",
+      "description_self": "您將立即失去對所有團隊資源的訪問權限。",
+      "remove": "移除",
+      "leave": "離開團隊",
+      "cancel": "取消",
+      "error": "出了點問題",
+      "all_members_access_banner": "此團隊已配置為：所有組織使用者均為該團隊的成員。",
+      "all_members_access_banner_collaborator": "此團隊已配置為使所有組織使用者都成為此團隊的協作者。",
+      "group_access_banner": "該使用者因{groupCount, plural, one {群組} other {群組}}仍擁有 {role} 權限：{groupNames}"
+    }
+  },
+  "manage": {
+    "back_to_squads": "所有團隊",
+    "breadcrumb_aria_label": "團隊詳細資訊麵包屑",
+    "add_members": "新增成員",
+    "created_by": "建立者：",
+    "join": "加入團隊",
+    "request_access": "請求加入團隊",
+    "add_member_not_allowed": "只有團隊成員可以新增新成員。",
+    "filter": {
+      "search": "按姓名或電子郵件搜尋",
+      "membership": {
+        "placeholder": "會員資格",
+        "member": "成員",
+        "guest": "合作者",
+        "external_guest": "訪客",
+        "external_partner": "合作伙伴",
+        "selected_option_label": "{count} 會員資格"
+      },
+      "membership_type": {
+        "placeholder": "角色",
+        "developer": "開發者",
+        "manager": "經理",
+        "viewer": "檢視者",
+        "selected_option_label": "{count} 角色"
+      }
+    },
+    "tabs": {
+      "members": "使用者 ({userCount}) 和組 ({groupCount})",
+      "members_and_guests": "成員 ({memberCount}) 和嘉賓 ({guestCount})",
+      "guests": "嘉賓",
+      "workspaces": "工作空間",
+      "settings": "設定",
+      "pending_requests": "待處理的請求"
+    },
+    "workspaces_tab": {
+      "search_limit": "僅顯示前 500 條結果，請縮小搜尋範圍以查詢更多內容。"
+    },
+    "blank_state": {
+      "title": "未找到該團隊",
+      "description": "我們找不到您要找的團隊。",
+      "action": "返回團隊"
+    },
+    "unauthorized_state": {
+      "title": "您無權訪問",
+      "description": "只有團隊成員可以檢視此頁面。",
+      "request_raised": "您已請求加入此團隊。一旦獲得批准，您將自動加入。"
+    },
+    "toast": {
+      "join": {
+        "error_title": "出了點問題。",
+        "error_description": "請稍後重試。",
+        "request_sent_title": "請求已傳送",
+        "request_sent_description": "一旦團隊經理批准您的請求，我們就會通知您。",
+        "rfa_exists_title": "請求待處理",
+        "rfa_exists_description": "一旦團隊經理批准您的請求，我們就會通知您。"
+      }
+    },
+    "menu": {
+      "rename": "重新命名",
+      "rename_disabled_tooltip": "您沒有權限重新命名此團隊。",
+      "delete": "刪除",
+      "delete_disabled_tooltip": "您沒有權限刪除此團隊。",
+      "delete_has_workspaces_tooltip": "您需要先刪除此團隊中的所有工作區，然後再刪除它。"
+    },
+    "members": {
+      "table": {
+        "heading": {
+          "name": "姓名",
+          "membership": "會員資格",
+          "role": "角色"
+        },
+        "empty_state": {
+          "title": "這裡看起來有點孤單",
+          "description": "開始將成員新增到您的團隊"
+        },
+        "no_result": {
+          "title": "沒有找到結果",
+          "description": "未找到所選過濾器的結果。"
+        },
+        "member": "成員",
+        "guest": "合作者",
+        "self": "{name}（你）",
+        "remove_tooltip": "從此團隊中刪除",
+        "leave_tooltip": "離開此團隊",
+        "membership": {
+          "convert": "轉換為成員",
+          "member": "成員",
+          "guest": "合作者",
+          "external_guest": "訪客",
+          "external_partner": "合作伙伴"
+        },
+        "roles": {
+          "label": "選擇角色",
+          "success": "角色更新成功",
+          "request_sent": "已傳送角色更新請求",
+          "error": "出了點問題",
+          "developer": "開發者",
+          "manager": "經理",
+          "viewer": "檢視者",
+          "partner": "合作伙伴"
+        }
+      },
+      "org_members": "組織（{membersCount, plural, one {1 成員} other {# 成員}}）",
+      "group_members": "組（{membersCount, plural, one {1 成員} other {# 成員}}）",
+      "squad_members": "團隊（{membersCount, plural, one {1 成員} other {# 成員}}）",
+      "pending_upgrade": "檢視角色更新請求"
+    },
+    "guests": {
+      "table": {
+        "empty_state": {
+          "title": "這裡看起來有點孤單",
+          "description": "開始將嘉賓新增到您的團隊"
+        }
+      }
+    },
+    "pending_requests": {
+      "header": {
+        "add_member": "請求新增成員",
+        "add_collaborator": "請求新增協作者",
+        "update_role": "將 {membership} 角色從 {from} 更新到 {to}",
+        "join_squad": "請求加入團隊",
+        "suggested_by": "由 {name} 建議"
+      },
+      "action": {
+        "approve": "批准",
+        "deny": "拒絕"
+      },
+      "status": {
+        "approved": "已批准",
+        "denied": "已拒絕"
+      },
+      "membership": {
+        "title": "會員資格",
+        "member": "成員",
+        "guest": "合作者"
+      },
+      "role": {
+        "title": "角色",
+        "developer": "開發者",
+        "viewer": "檢視者",
+        "manager": "經理"
+      },
+      "role_lower": {
+        "developer": "開發者",
+        "viewer": "檢視者",
+        "manager": "經理"
+      },
+      "error": {
+        "approve": {
+          "description": "未能批准請求。請稍後重試。"
+        },
+        "deny": {
+          "description": "未能拒絕請求。請稍後重試。"
+        }
+      },
+      "empty_state": {
+        "title": "沒有待處理的請求",
+        "description": "一旦有人請求加入、新增成員或更新此團隊中的角色，我們就會通知您。"
+      },
+      "unauthorized_state": {
+        "title": "您無權訪問",
+        "description": "只有團隊經理可以檢視待處理的請求。"
+      },
+      "error_state": {
+        "title": "出了點問題",
+        "description": "我們無法載入待處理的請求。請稍後重試。"
+      }
+    },
+    "error_state": {
+      "title": "出了點問題",
+      "description": "我們無法載入團隊。請稍後重試。",
+      "action": "返回團隊"
+    },
+    "settings": {
+      "title": "設定新增人員的限制",
+      "all_members_access": "組織的所有成員將自動成為此團隊的成員",
+      "all_members_access_description": "以開發者身份加入此組織的任何人都將成為此團隊的成員。",
+      "add_member_rfa": "新團隊成員必須獲得批准",
+      "add_member_rfa_description": "啟用後，經理必須在新增團隊成員之前批准他們。",
+      "add_guest_rfa": "新合作者必須獲得批准",
+      "add_guest_rfa_description": "啟用後，經理必須在新增協作者之前批准他們。",
+      "no_permission_tooltip": "您沒有權限執行此操作。",
+      "all_members_access_blocked_org_is_guest": "該組織已是此團隊的訪客，請先將其移除，然後再新增為成員。",
+      "unauthorized_state": {
+        "title": "您無權訪問",
+        "description": "只有團隊經理可以檢視和編輯團隊設定。"
+      },
+      "error_state": {
+        "title": "出了點問題",
+        "description": "我們無法載入團隊設定。請稍後重試。"
+      },
+      "toast": {
+        "error": "出了點問題。"
+      }
+    }
+  }
+}

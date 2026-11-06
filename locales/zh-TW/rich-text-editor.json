@@ -1,0 +1,146 @@
+{
+  "toolbar": {
+    "font_size_options": {
+      "normal": "正文",
+      "heading1": "標題 1",
+      "heading2": "標題 2",
+      "heading3": "標題 3",
+      "heading4": "標題 4",
+      "heading5": "標題 5",
+      "heading6": "標題 6"
+    },
+    "aria_label": "格式",
+    "floating_aria_label": "所選內容格式",
+    "more_label": "更多格式",
+    "tooltips": {
+      "bold": "粗體",
+      "italic": "斜體",
+      "strikethrough": "刪除線",
+      "unordered_list": "無序列表",
+      "ordered_list": "有序列表",
+      "task_list": "任務列表",
+      "undo": "撤銷",
+      "redo": "重做",
+      "table": "表格",
+      "image": "圖片",
+      "link": "連結",
+      "blockquote": "引用",
+      "horizontal_rule": "分割線",
+      "codespan": "行內程式碼",
+      "codeblock": "程式碼塊",
+      "wrap_lines": "自動換行",
+      "copied": "已複製",
+      "copy": "複製",
+      "copy_failed": "無法複製程式碼"
+    },
+    "code_block": {
+      "dialog_label": "編輯程式碼塊",
+      "frontmatter": "Frontmatter",
+      "language_label": "程式碼塊語言",
+      "plain_text": "純文字"
+    },
+    "popover": {
+      "dialog_label": "編輯器選項"
+    },
+    "image_popup": {
+      "dialog_label": "圖片選項",
+      "url_label": "圖片 URL",
+      "alt_text_label": "替代文字",
+      "caption_label": "圖片說明",
+      "edit_image_label": "編輯圖片",
+      "preview_button_label": "預覽圖片",
+      "preview_dialog_label": "圖片預覽",
+      "preview_loading_label": "正在載入圖片預覽",
+      "preview_error_label": "無法載入圖片預覽。請選擇該圖片以重試。",
+      "decorative_label": "裝飾性圖片",
+      "required_label": "（必填）",
+      "url_validation_error": "請輸入有效的 HTTP(S) 或相對圖片 URL",
+      "alt_text_validation_error": "請新增替代文字，或將圖片標記為裝飾性圖片",
+      "insert_button": "插入圖片",
+      "save_button": "儲存圖片",
+      "image_url_input_placeholder": "圖片 URL",
+      "delete_button_tooltip": "刪除圖片",
+      "size_legend": "尺寸",
+      "width_label": "寬度（畫素）",
+      "height_label": "高度（畫素）",
+      "size_hint": "修改其中一項會保持圖片比例。兩項都留空則使用原始尺寸。",
+      "size_hint_not_pixels": "保持欄位不變以沿用目前尺寸，輸入畫素值以替換，或清空以使用原始尺寸。",
+      "size_validation_error": "請輸入 1 到 {max} 之間的整數"
+    },
+    "link_popup": {
+      "validation_error_message": "請輸入有效的 URL",
+      "text_placeholder": "文字（可選）",
+      "url_placeholder": "URL",
+      "edit_button": "儲存",
+      "open": "開啟",
+      "edit_link": "編輯連結",
+      "remove_link": "移除連結",
+      "copy_link": "複製連結",
+      "delete_link": "刪除連結"
+    },
+    "table_options": {
+      "add_row": "新增行",
+      "add_column": "新增列",
+      "delete_column": "刪除列",
+      "delete_table": "刪除表格",
+      "delete_row": "刪除行",
+      "dialog_label": "表格選項",
+      "size_picker_label": "表格大小",
+      "size_cell_label": "{rows} × {columns}",
+      "size_preview_label": "{rows} × {columns}"
+    },
+    "add_a_caption": "新增說明..."
+  },
+  "image_upload": {
+    "toolbar_label": "上傳圖片",
+    "drop_zone": "拖放圖片以上傳",
+    "uploading": "正在上傳...",
+    "unavailable": "圖片不可用",
+    "failed": "上傳失敗",
+    "retry": "重試",
+    "remove": "移除",
+    "unsupported_type": "不支援該檔案。請嘗試上傳 PNG、JPG 或 GIF 檔案。",
+    "unsupported_type_list": "不支援該檔案。支援的型別：{types}。",
+    "check_failed": "上傳失敗，請重試。",
+    "storage_full": "上傳失敗。你的 {limit} MB 儲存空間已滿，如需擴容請聯絡支援團隊。",
+    "storage_full_no_limit": "上傳失敗。你的儲存空間已滿，如需擴容請聯絡支援團隊。"
+  },
+  "link-unfurling": {
+    "accessible_label": "{entityType}：{label}",
+    "entity": {
+      "workspace": "工作區",
+      "collection": "集合",
+      "folder": "資料夾",
+      "request": "請求",
+      "example": "範例",
+      "environment": "環境",
+      "learning_center": "學習中心"
+    },
+    "learning_center_page": "{page} | Postman 學習中心",
+    "loading": "載入中...",
+    "options": "連結選項"
+  },
+  "mentions": {
+    "menu_label": "提及建議",
+    "searching": "正在搜尋…",
+    "search_error": "無法載入提及建議。",
+    "no_results": "沒有匹配的使用者",
+    "retry": "重試",
+    "card_label": "個人資料",
+    "view_profile": "檢視個人資料",
+    "name_you": "{name}（你）",
+    "user_inactive_popover": "已停用",
+    "user_inactive_pill": "{name}（已停用）",
+    "private_user_tooltip": "此使用者的個人資料為私密。",
+    "private_user_label": "私密使用者"
+  },
+  "plugin_failure": {
+    "message": "{plugin} 暫時無法編輯，你的內容已保留。",
+    "retry": "重試",
+    "retry_label": "重試 {plugin}"
+  },
+  "editor_failure": {
+    "message": "編輯器已停止工作，你的內容已保留。",
+    "retry": "重試"
+  }
+}

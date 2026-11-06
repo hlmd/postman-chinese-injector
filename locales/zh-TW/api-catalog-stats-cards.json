@@ -1,0 +1,4 @@
+{
+  "avg_across_projects": "{count, plural, one {# 個專案} other {# 個專案}}的平均值",
+  "traffic_weighted_avg": "{count, plural, one {# 個專案中 {trafficCount} 個的流量加權平均值} other {# 個專案中 {trafficCount} 個的流量加權平均值}}"
+}

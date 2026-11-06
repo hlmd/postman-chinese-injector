@@ -1,0 +1,127 @@
+{
+  "modal_title": "使用資源",
+  "search": {
+    "search_placeholder": "搜尋資源",
+    "scope_labels": {
+      "privateAPINetwork": "私有網路",
+      "team": "團隊",
+      "public": "公開網路"
+    },
+    "entity_labels": {
+      "collections": "Collection",
+      "environments": "Environment",
+      "specs": "規格",
+      "sdks": "SDK",
+      "flows": "流程",
+      "mocks": "Mock"
+    },
+    "dependencies": {
+      "label": "依賴關係",
+      "search_filter_aria_label": "過濾依賴性"
+    },
+    "filters": {
+      "scope_group_aria_label": "按範圍過濾",
+      "scope_button_aria_label": "按 {scope} 過濾",
+      "type": {
+        "label": "型別",
+        "inline_label_single": "型別：{name}",
+        "inline_label_count": "型別：已選擇 {count} 個",
+        "placeholder": "按型別過濾",
+        "search_aria_label": "按型別過濾"
+      },
+      "in": {
+        "label": "工作區",
+        "inline_label_count": "Workspace（{count}）",
+        "placeholder": "按工作區過濾",
+        "search_aria_label": "按工作區過濾",
+        "search_input_placeholder": "搜尋工作空間",
+        "empty_state": "未找到工作區",
+        "loading": "正在尋找..."
+      }
+    }
+  },
+  "resources": {
+    "shared": {
+      "resizer_label": "調整部分大小"
+    },
+    "tab_labels": {
+      "resources": "資源",
+      "import": "匯入"
+    },
+    "add": {
+      "error_message": "搜尋時發生錯誤。",
+      "load_more_error_message": "無法載入更多結果。",
+      "load_more_retry": "重試",
+      "no_results": "沒有找到結果。",
+      "verified_publisher": "已驗證發布者",
+      "fork_label_with_username": "{userName} 的 fork",
+      "fork_label_without_username": "我的 Fork",
+      "modal_fork_button": "復刻",
+      "modal_add_dependency_button_with_count": "{count, plural, =0 {新增依賴項} other {新增依賴項 (#)}}",
+      "dependency_added_toast_title": "{count, plural, =1 {依賴項已新增} other {依賴項已新增}}",
+      "dependency_added_toast_description": "{count, plural, =1 {{name} 已新增到此工作區} other {已向此工作區新增 # 個依賴項}}",
+      "error_banner": {
+        "dependency": {
+          "all_failed_title": "無法新增依賴項。",
+          "partial_failed_title": "無法新增以下依賴項。"
+        },
+        "fork": {
+          "all_failed_title": "無法建立 Fork。",
+          "partial_failed_title": "無法建立以下 Fork。"
+        },
+        "try_again": "重試",
+        "more_count": "+{count} 項"
+      }
+    },
+    "manage": {
+      "title_label": "在此工作區中",
+      "delete_button_aria_label": "刪除",
+      "dependency": {
+        "update": {
+          "button_label": "更新",
+          "bulk_button_label": "全部更新",
+          "disabled_bulk_update_tooltip": "沒有可更新的依賴項。",
+          "badge": {
+            "actionable_label": "可用更新",
+            "inprogress_label": "更新中...",
+            "completed_label": "已更新"
+          }
+        },
+        "install": {
+          "button_label": "安裝",
+          "disabled_bulk_install_tooltip": "沒有可安裝的依賴項。",
+          "badge": {
+            "actionable_label": "未安裝",
+            "inprogress_label": "正在安裝...",
+            "completed_label": "已安裝"
+          }
+        }
+      },
+      "fork": {
+        "update": {
+          "button_label": "拉取更改",
+          "bulk_button_label": "拉取所有更改",
+          "badge": {
+            "actionable_label": "可用更改",
+            "inprogress_label": "正在拉取...",
+            "completed_label": "已拉取"
+          }
+        }
+      }
+    }
+  },
+  "permissions": {
+    "no_permission_tooltip": "您沒有權限管理此工作區中的資源。",
+    "local_only_tooltip": "您只能在本地模式下管理資源。"
+  },
+  "delete_fork": {
+    "error_title": "出錯了",
+    "error_description": "集合刪除失敗，請重試。"
+  },
+  "import_only": {
+    "unavailable": {
+      "title": "匯入功能目前不可用",
+      "description": "請檢查網路連線，或向工作區管理員申請新增集合的權限。"
+    }
+  }
+}

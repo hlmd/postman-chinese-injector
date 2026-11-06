@@ -1,0 +1,287 @@
+{
+  "agent_mode": {
+    "loading": "正在載入 Agent Mode…",
+    "placeholder": "詢問你的 API 架構——依賴關係、影響範圍、歸屬、呼叫關係…",
+    "hide_right_sidebar": "隱藏右側邊欄",
+    "show_right_sidebar": "顯示右側邊欄",
+    "load_error_title": "Agent Mode 載入失敗",
+    "load_error_description": "載入 Agent Mode 時出錯。你可以在不離開此頁面的情況下重試。",
+    "load_error_retry": "重試"
+  },
+  "query_tools": {
+    "links_line": "在你的工具中使用",
+    "cli_label": "CLI 查詢",
+    "mcp_label": "MCP 設定",
+    "docs_label": "文件",
+    "copy_aria_label": "複製 {label} 命令",
+    "copy_error_toast_title": "無法複製到剪貼簿",
+    "copy_error_toast_description": "請改為從文件中手動複製該命令。",
+    "copied_label": "已複製",
+    "copied_toast_description": "{label} 命令已複製到剪貼簿。"
+  },
+  "connectors": {
+    "status": {
+      "active_jobs": "{count, plural, one {# 個索引任務執行中} other {# 個索引任務執行中}}",
+      "configured_with_sources": "{count, plural, one {已配置 # 個資料源} other {已配置 # 個資料源}}",
+      "connected": "已連線",
+      "connected_with_sources": "已連線 · {count, plural, one {已配置 # 個資料源} other {已配置 # 個資料源}}",
+      "not_connected": "未連線",
+      "not_connected_with_team_sources": "未連線 · 資料來源由團隊成員配置"
+    },
+    "postman": {
+      "connect_aria_label": "將 Postman 連線到 Agent Context Graph",
+      "description": "Postman 工作區、集合和環境",
+      "title": "Postman"
+    },
+    "github": {
+      "auth_method_label": "GitHub 身份驗證方式",
+      "authentication_checking": "正在檢查 GitHub 連線…",
+      "authorization_failed": "授權失敗，請重試。",
+      "authorization_timeout": "授權超時。請檢查彈窗攔截設定後重試。",
+      "authenticate_continue": "驗證並繼續",
+      "authenticate_description": "授權 Postman 讀取你的儲存庫。我們僅申請對程式碼和後設資料的讀取權限。",
+      "authenticate_title": "驗證 GitHub",
+      "connect_aria_label": "將 GitHub 連線到 Agent Context Graph",
+      "description": "服務、端點和依賴關係圖",
+      "modal_subtitle": "將程式碼和依賴關係引入 Context Graph",
+      "modal_title": "連線 GitHub",
+      "oauth_description": "登入 GitHub 並授予訪問權限 - 推薦",
+      "oauth_title": "使用 OAuth 授權",
+      "ingest_continue": "索引所選儲存庫",
+      "ingestion_failed": "索引啟動失敗，請重試。",
+      "configure_postman_app": "在 GitHub 上配置 Postman 應用",
+      "install_postman_app": "在 GitHub 上安裝 Postman 應用",
+      "no_organizations_description": "請在您的 GitHub 帳戶上安裝 Postman 應用以繼續。",
+      "no_organizations_title": "未找到 GitHub 組織",
+      "no_repositories": "未找到此組織下的儲存庫。",
+      "repositories_error": "儲存庫載入失敗，請重試。",
+      "repositories_loading": "正在載入儲存庫…",
+      "repositories_count": "{count, plural, one {找到 # 個儲存庫} other {找到 # 個儲存庫}}",
+      "repo_listing": {
+        "description": "從 GitHub 選擇要索引到 Context Graph 的儲存庫。",
+        "no_search_results": "沒有匹配的儲存庫。",
+        "organization": "組織",
+        "organization_placeholder": "選擇組織…",
+        "repositories": "儲存庫",
+        "repositories_availability_hint": "僅顯示未歸檔的儲存庫。",
+        "repository_meta": "儲存庫",
+        "search_placeholder": "搜尋儲存庫…",
+        "select_all_shown": "全選目前顯示項",
+        "shown_selected": "顯示 {shownCount} 個 · 已選 {selectedCount} 個",
+        "title": "選擇 GitHub 儲存庫"
+      },
+      "repository_label": "GitHub 儲存庫",
+      "repository_meta": "儲存庫後設資料和依賴項",
+      "select_repositories_description": "從 {orgName} 選擇要索引到 Context Graph 的儲存庫。",
+      "select_repositories_title": "選擇儲存庫",
+      "steps": {
+        "authenticate": "身份驗證",
+        "ingest": "索引",
+        "select_repositories": "選擇儲存庫"
+      },
+      "steps_label": "GitHub 連線步驟",
+      "token_description": "貼上具有 repo 讀取權限的 token",
+      "token_title": "添加個人訪問令牌",
+      "title": "GitHub"
+    },
+    "new_relic": {
+      "add_aria_label": "將 New Relic 新增到 Agent Context Graph",
+      "connect_failed": "New Relic 連線失敗，請重試。",
+      "description": "遙測節點",
+      "done": "完成",
+      "existing_key_notice": "發現功能使用你團隊現有的 New Relic 金鑰，因此連線的是該金鑰可訪問的帳戶。",
+      "invalid_key": "無法在該區域驗證此金鑰。請檢查金鑰和區域。",
+      "keep_key": "保留目前金鑰",
+      "key_replaced_notice": "你團隊的 New Relic 金鑰已替換為你輸入的金鑰，發現功能將使用該金鑰。",
+      "key_saved_connect_failed": "金鑰已為團隊儲存，但連線失敗。請重試，將複用已儲存的金鑰。",
+      "key_saved_no_permission": "金鑰已為團隊儲存，但你沒有啟動索引的權限。請聯絡團隊管理員連線 New Relic，將複用已儲存的金鑰。",
+      "key_saved_unavailable": "金鑰已為團隊儲存，但 Context Graph 目前無法啟動索引。請幾分鐘後重試，將複用已儲存的金鑰。",
+      "modal_subtitle": "將生產環境遙測資料引入 Context Graph。該金鑰可訪問的所有 New Relic 帳戶都會被連線。金鑰將為整個團隊儲存；如果團隊已有金鑰，你可以選擇是否替換。",
+      "modal_title": "連線 New Relic",
+      "no_permission": "你沒有為此團隊連線 New Relic 的權限。",
+      "region_eu": "歐盟",
+      "region_label": "區域",
+      "region_us": "美國",
+      "replace_key": "替換金鑰",
+      "replace_prompt": "你的團隊已有 New Relic 金鑰。要用你輸入的金鑰替換它，還是繼續使用目前金鑰連線？無論哪種方式，整個團隊都將使用該金鑰。",
+      "replace_region_mismatch": "你團隊的金鑰儲存在另一個區域，因此無法在此用該區域的金鑰替換。請保留目前金鑰，或在「整合」中將其移除後重新連線。",
+      "started": "發現正在執行。你的金鑰可訪問的每個 New Relic 帳戶都將被連線並索引，完成後其資料會顯示在圖譜中。",
+      "submit": "連線並索引",
+      "title": "New Relic",
+      "unavailable": "Context Graph 目前無法啟動索引。請幾分鐘後重試。",
+      "user_key_helper": "New Relic 使用者金鑰（以 NRAK 開頭）。",
+      "user_key_label": "使用者金鑰",
+      "verify_failed": "目前無法通過 New Relic 驗證金鑰。請幾分鐘後重試。"
+    }
+  },
+  "connections": {
+    "description": "連線資料來源以豐富圖譜。重新索引會產生成本，請設定各資料來源的重新整理頻率。",
+    "heading": "連線"
+  },
+  "data_sources": {
+    "base_source_count": "{count, plural, one {預設索引 # 個工作區} other {預設索引 # 個工作區}}",
+    "base_source_default_status": "基礎資料來源預設啟用",
+    "base_source_description": "Postman 預設已索引。在連線外部資料來源之前，你的工作區會作為 Context Graph 的初始資料。",
+    "base_source_title": "基礎資料來源 - 圖譜的基石",
+    "description": "這些資料來源為 Context Graph 提供資料。Postman 預設已索引，連線更多資料來源可豐富圖譜，並可設定各資料來源的重新索引頻率。連線和斷開在「Integrations -> Connections」中管理。",
+    "heading": "資料來源",
+    "section_title": "已連線的資料來源 - 豐富你的圖譜"
+  },
+  "landing": {
+    "cta": "開始 - 索引 Postman 資料",
+    "description": "索引你的 Postman 資料，將工作區對映為服務、端點和依賴關係。",
+    "ingestion_error_description": "無法啟動 Postman 索引，請重試。",
+    "ingestion_error_title": "Postman 索引失敗",
+    "ingestion_success_description": "Postman 工作區索引已開始。",
+    "ingestion_success_title": "Postman 索引已啟動",
+    "secondary_description": "接下來，連線 GitHub 和 New Relic 以豐富圖譜。",
+    "title": "開始構建 Context Graph"
+  },
+  "sources": {
+    "jira": {
+      "connect_aria_label": "將 Jira 連線到 Agent Context Graph",
+      "description": "團隊、負責人和成熟度階段",
+      "title": "Jira"
+    },
+    "kubernetes": {
+      "connect_aria_label": "將 Kubernetes 連線到 Agent Context Graph",
+      "description": "叢集、部署和名稱空間",
+      "title": "Kubernetes"
+    },
+    "section_title": "開始構建你的圖譜",
+    "workspace_count": "847 個 Postman 工作區",
+    "workspace_description": "目前圖譜中只有工作區。連線你的工具，讓知識圖譜真正活起來。"
+  },
+  "actions": {
+    "add": "新增",
+    "cancel": "取消",
+    "connect": "連線",
+    "connect_with_prefix": "+ 連線",
+    "explore": "探索",
+    "ingest": "索引",
+    "manage_data_sources": "管理資料來源",
+    "manage_data_sources_with_count": "管理資料來源（{count}）"
+  },
+  "enrichment": {
+    "section_title": "進一步豐富"
+  },
+  "graph": {
+    "active_jobs_banner": "圖譜正在更新，目前有 {count} 個索引任務執行中",
+    "aria_label": "Agent Context Graph 預覽",
+    "breadcrumb_service_fallback": "服務",
+    "breadcrumb_context_graph": "上下文圖譜",
+    "empty_hint": "圖譜為空 - 接入 Postman 即可開始",
+    "error_description": "請重新連線資料來源後重試。",
+    "error_title": "無法載入依賴關係圖。",
+    "legend_collapse_button_label": "收起圖例",
+    "legend_expand_button_label": "展開圖例",
+    "legend_nodes": "節點",
+    "legend_relationships": "關係",
+    "legend_title": "圖例",
+    "legend_toggle_hint": "點選型別以顯示或隱藏",
+    "loading": "正在載入依賴關係圖…",
+    "query_connect_more": "連線",
+    "query_helper": "連線更多資料來源以獲得更深入的回答",
+    "runtime": {
+      "alert": "告警",
+      "alert_status": {
+        "critical": "嚴重",
+        "warning": "警告"
+      },
+      "error_rate_24h": "錯誤（24 小時）",
+      "health": "健康狀況",
+      "health_status": {
+        "critical": "嚴重",
+        "degraded": "降級",
+        "healthy": "健康",
+        "unknown": "未知"
+      },
+      "open_in_new_relic": "點選在 New Relic 中開啟",
+      "p99_7d": "p99（7 天）",
+      "trend": "趨勢",
+      "trend_status": {
+        "degrading": "變差",
+        "improving": "改善",
+        "stable": "穩定"
+      }
+    },
+    "tooltip_details": {
+      "health": "健康狀況",
+      "region": "區域",
+      "schedule": "計劃",
+      "status": "狀態",
+      "values": {
+        "active": "活躍",
+        "healthy": "健康",
+        "paused": "已暫停",
+        "unhealthy": "不健康"
+      }
+    },
+    "tooltip_stats": {
+      "apis": "API",
+      "database_schemas": "資料庫 Schema",
+      "deployments": "部署",
+      "endpoints": "端點",
+      "external_services": "外部服務",
+      "message_schemas": "訊息 Schema",
+      "monitors": "監控",
+      "resources": "資源",
+      "teams": "團隊",
+      "telemetry_configs": "遙測配置",
+      "topics": "Topic"
+    }
+  },
+  "highlights": {
+    "heading": "要點",
+    "description": "由圖譜分析得出。索引更多資料來源可獲得更深入的洞察。",
+    "show_on_graph": "在圖譜中顯示",
+    "collapse_button_label": "收起要點",
+    "expand_button_label": "展開要點",
+    "cards": {
+      "unused_endpoints": {
+        "title": "閒置端點",
+        "description": "38 個端點在過去 90 天內沒有請求記錄 - 可能需要清理，或存在覆蓋缺口。"
+      },
+      "ownership_gaps": {
+        "title": "歸屬缺失",
+        "description": "12 個 API 在所有工作區中都沒有指定負責人或貢獻者。"
+      },
+      "single_points_of_failure": {
+        "title": "單點故障",
+        "description": "4 個服務被大量其他服務依賴，且沒有記錄在案的替代方案。"
+      },
+      "blast_radius": {
+        "title": "影響範圍",
+        "description": "索引 GitHub 以追蹤服務間依賴關係，瞭解某個服務變更時會影響到哪些內容。"
+      }
+    }
+  },
+  "navigation": {
+    "aria_label": "Agent Context 導航"
+  },
+  "page": {
+    "heading": "Agent Context",
+    "title": "Agent 上下文"
+  },
+  "prompt_overlay": {
+    "aria_label": "Agent 提示",
+    "placeholder": "向 Agent 詢問你的服務、依賴、負責人…",
+    "submit_button_label": "詢問 Agent"
+  },
+  "panel": {
+    "aria_label": "Agent Context 資料來源"
+  },
+  "tabs": {
+    "aria_label": "Agent Context 檢視",
+    "data_sources": "資料來源",
+    "graph": "圖譜"
+  },
+  "summary": {
+    "apis": "API",
+    "connected_sources": "{count, plural, one {已連線 # 個資料源} other {已連線 # 個資料源}}",
+    "endpoints": "個端點",
+    "external_deps": "個外部依賴",
+    "no_sources_connected": "未連線資料來源",
+    "workspaces": "個工作區"
+  }
+}

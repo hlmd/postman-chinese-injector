@@ -1,0 +1,185 @@
+{
+  "toolbar": {
+    "font_size_options": {
+      "normal": "普通文字",
+      "heading1": "標題 1",
+      "heading2": "標題 2",
+      "heading3": "標題 3",
+      "heading4": "標題 4",
+      "heading5": "標題 5",
+      "heading6": "標題 6"
+    },
+    "switch_to_markdown_label": "切換到 Markdown 編輯器",
+    "switch_to_postman_label": "切換到 Postman 編輯器",
+    "editor_options_label": {
+      "postman": "Postman 編輯器",
+      "markdown": "Markdown 編輯器"
+    },
+    "markdown_tabs_label": {
+      "markdown": "Markdown",
+      "preview": "預覽"
+    },
+    "tooltips": {
+      "bold": "粗體",
+      "italic": "斜體",
+      "strikethrough": "刪除線",
+      "unordered_list": "無序列表",
+      "ordered_list": "有序列表",
+      "task_list": "任務列表",
+      "undo": "撤銷",
+      "redo": "重做",
+      "table": "表格",
+      "image": "影像",
+      "video": "影片",
+      "add_link": "新增連結",
+      "link": "連結",
+      "blockquote": "塊引用",
+      "horizontal_rule": "分割線",
+      "codespan": "程式碼跨度",
+      "codeblock": "程式碼塊",
+      "wrap_lines": "自動換行",
+      "copied": "已複製",
+      "copy": "複製",
+      "copy_failed": "程式碼複製失敗"
+    },
+    "code_block": {
+      "dialog_label": "編輯程式碼塊",
+      "language_label": "程式碼塊語言",
+      "plain_text": "純文字"
+    },
+    "popover": {
+      "dialog_label": "編輯器選項"
+    },
+    "image_popup": {
+      "dialog_label": "圖片選項",
+      "url_label": "圖片 URL",
+      "alt_text_label": "替代文字",
+      "caption_label": "圖片說明",
+      "edit_image_label": "編輯圖片",
+      "preview_button_label": "預覽圖片",
+      "preview_dialog_label": "圖片預覽",
+      "preview_loading_label": "正在載入圖片預覽",
+      "preview_error_label": "圖片預覽載入失敗，選擇該圖片可重試。",
+      "decorative_label": "裝飾性圖片",
+      "required_label": "（必填）",
+      "url_validation_error": "請輸入有效的 HTTP(S) 或相對路徑圖片 URL",
+      "alt_text_validation_error": "請新增替代文字，或將該圖片標記為裝飾性圖片",
+      "insert_button": "插入圖片",
+      "save_button": "儲存圖片",
+      "tabs_label": {
+        "upload": "上傳",
+        "embed_url": "嵌入 URL"
+      },
+      "browse": "瀏覽",
+      "uploading": "正在上傳...",
+      "supported_types": "支援 PNG、JPG、SVG 和 GIF。",
+      "max_size": "最大 5MB。",
+      "image_url_input_placeholder": "圖片 URL",
+      "edit_button": "儲存",
+      "embed_button": "嵌入",
+      "delete_button_tooltip": "刪除影像",
+      "error_message": "無法上傳。再試一次。",
+      "usage_bar": {
+        "info": "已使用 {usageText} MB，共 {limitText} MB。",
+        "warning": "您的 {limitText} MB 儲存空間已滿。"
+      },
+      "legacy": {
+        "image_url": "圖片 URL",
+        "edit_button": "儲存",
+        "embed_button": "嵌入"
+      }
+    },
+    "link_popup": {
+      "validation_error_message": "請輸入有效的 URL",
+      "text_placeholder": "文字（可選）",
+      "url_placeholder": "URL",
+      "edit_button": "儲存",
+      "open": "開啟",
+      "add_button": "新增",
+      "edit_link": "編輯連結",
+      "remove_link": "刪除連結",
+      "copy_link": "複製連結",
+      "delete_link": "刪除連結"
+    },
+    "media_popup": {
+      "validation_error_message": "請輸入有效的 URL",
+      "unsupported_platform_error_message": "不支援的媒體平臺",
+      "heading": "嵌入 URL",
+      "description": "僅支援 Youtube 和 Vimeo 連結。",
+      "video_url_placeholder": "影片 URL",
+      "edit_button": "儲存",
+      "embed_button": "嵌入",
+      "unsupported_media_platform": "不受支援的媒體平臺。但是，您可以選擇<Link><Text>新增 URL 作為連結。</Text></Link>"
+    },
+    "table_options": {
+      "add_row": "新增行",
+      "add_column": "新增列",
+      "add_row_above": "在上方插入行",
+      "add_row_below": "在下方插入行",
+      "add_column_left": "在左側插入列",
+      "add_column_right": "在右側插入列",
+      "delete_column": "刪除列",
+      "delete_table": "刪除表格",
+      "delete_row": "刪除行",
+      "dialog_label": "表格選項",
+      "size_picker_label": "表格尺寸"
+    },
+    "add_a_caption": "新增標題..."
+  },
+  "mentions": {
+    "view_profile": "檢視資料",
+    "user_inactive_popover": "已停用",
+    "user_inactive_pill": "{fullName}（已停用）",
+    "private_user_tooltip": "該使用者的個人資料為私有。",
+    "private_user_label": "私有使用者"
+  },
+  "link-unfurling": {
+    "accessible_label": "{entityType}：{label}",
+    "entity": {
+      "workspace": "工作區",
+      "collection": "集合",
+      "folder": "資料夾",
+      "request": "請求",
+      "example": "範例",
+      "environment": "環境"
+    },
+    "loading": "正在載入...",
+    "options": "連結選項",
+    "unfurl_limit_reached": "僅顯示前 {requestUnfurlLimit} 個 URL 的預覽，以保持最佳效能。"
+  },
+  "image_upload": {
+    "toolbar_label": "上傳圖片",
+    "drop_zone": "拖放圖片以上傳",
+    "uploading": "正在上傳...",
+    "failed": "上傳失敗",
+    "unavailable": "圖片不可用",
+    "retry": "重試",
+    "remove": "移除"
+  },
+  "slate-node-validator": {
+    "slatedata_empty_content": "內容好像是空的。請新增一些內容並重試。",
+    "text_invalid_content": "文字內容有問題。請檢查文字並重試。",
+    "text_bold_invalid_content": "有一種不受支援的文字樣式：粗體。請刪除或更正它。",
+    "text_italic_invalid_content": "有一種不受支援的文字樣式：斜體。請刪除或更正它。",
+    "text_underline_invalid_content": "有一種不受支援的文字樣式：下劃線。請刪除或更正它。",
+    "text_strikethrough_invalid_content": "有一種不受支援的文字樣式：刪除線。請刪除或更正它。",
+    "text_code_invalid_content": "有一種不受支援的文字樣式：程式碼。請刪除或更正它。",
+    "ul_empty_content": "無序列表似乎是空的。請新增一些內容並重試。",
+    "ol_empty_content": "有序列表似乎是空的。請新增一些內容並重試。",
+    "li_empty_content": "列表項似乎是空的。請新增一些內容並重試。",
+    "code_block_empty_content": "程式碼塊似乎是空的。請新增一些內容並重試。",
+    "table_empty_content": "表格似乎是空的。請新增一些內容並重試。",
+    "tr_empty_content": "錶行似乎是空的。請新增一些內容並重試。",
+    "ul_invalid_structure": "列表結構有問題。請檢查並更正列表項。",
+    "ol_invalid_structure": "列表結構有問題。請檢查並更正列表項。",
+    "li_invalid_content": "列表項有問題。請確保其包含有效內容。",
+    "table_invalid_structure": "表結構有問題。請檢查行和列。",
+    "tr_invalid_structure": "表格單元格似乎有問題。請確保單元格正確。",
+    "img_invalid_content": "影像屬性有問題。請確保圖片 URL 和尺寸正確",
+    "a_invalid_content": "連結 URL 有問題。請確保其正確。",
+    "code_block_invalid_structure": "程式碼塊結構存在問題。請確保程式碼格式正確。",
+    "unsupported_node": "內容結構有問題。請檢查內容並重試。",
+    "check_content": "立即檢視"
+  },
+  "default_placeholder": "支援即時 Markdown 樣式。嘗試 **粗體**、*斜體* 或 `內聯程式碼`"
+}

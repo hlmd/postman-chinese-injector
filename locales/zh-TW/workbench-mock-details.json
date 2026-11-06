@@ -1,0 +1,187 @@
+{
+  "mock_details": {
+    "extensible_collection_http_only_banner": "此集合的模擬伺服器目前僅支援 HTTP 請求",
+    "mock_server": "Mock Server",
+    "delay_duration_error": "請輸入介於 0 到 180000 毫秒之間的延遲值。",
+    "changes_saved": "更改已儲存",
+    "update_msg": "您已更新 {name} 模擬伺服器。",
+    "unable_to_edit": "無法編輯模擬伺服器"
+  },
+  "call_logs_list_item_body": {
+    "unable_to_load_resource": "無法載入 {resourceType} 正文。",
+    "try_again": "重試",
+    "request_body": "此 {resourceType} 沒有正文。",
+    "size_limit_msg": "呼叫日誌僅顯示小於 1 MB 的 {resourceType} 正文。如需檢視完整內容，您可以<3>下載</3>該呼叫日誌。",
+    "copy_tooltip": "複製 {resourceType} 正文",
+    "expand_collapse_aria_label": "{action} {section} 部分",
+    "expand": "展開",
+    "collapse": "收起"
+  },
+  "collapsible_call_logs_list_item_header": {
+    "request_headers": "此 {resourceType} 沒有請求頭。",
+    "try_again": "重試",
+    "unable_to_load": "Couldn’t load {resourceType} headers."
+  },
+  "empty_call_logs": {
+    "header": "暫無模擬伺服器呼叫記錄",
+    "logs_description": {
+      "copied": "已複製！",
+      "copy_url": "複製模擬伺服器 URL",
+      "header": "要呼叫模擬伺服器，請按照以下步驟操作：",
+      "step1": "<0>1. 向以下模擬伺服器 URL 傳送請求，並在其後附加請求路徑 <1></1> </0>",
+      "step2": "<0>2. 為模擬伺服器將返回的每個請求新增範例回應。 <1></1> <2>瞭解什麼是範例以及如何使用它們</2> </0>"
+    }
+  },
+  "mock_no_result_found": {
+    "nothing_here": "這裡什麼都沒有，休斯頓！",
+    "subtext": "未找到匹配的內容，請檢查拼寫或嘗試使用其他搜尋詞。"
+  },
+  "call_logs_list_item_header": {
+    "expand_collapse_aria_label": "{action} {section} 部分",
+    "expand": "展開",
+    "collapse": "收起"
+  },
+  "call_logs_list_item": {
+    "call_logs_list_item_title": {
+      "tooltip": "只有團隊成員可以檢視模擬伺服器呼叫日誌詳情。",
+      "not_signed_in_error": "您需要一個帳戶才能繼續探索 Postman。",
+      "something_went_wrong": "出錯了",
+      "delete_call_log_button_aria_label": "刪除呼叫日誌",
+      "permission_error_tooltip": "您沒有權限檢視呼叫日誌詳情。",
+      "expand": "展開",
+      "collapse": "收起",
+      "expand_collapse_aria_label": "{action} {time} 的 {method} {url} 呼叫日誌詳情"
+    },
+    "collapsible_call_logs_list_item": {
+      "request_headers": "請求頭",
+      "request_body": "請求體",
+      "response_headers": "回應頭",
+      "response_body": "回應體"
+    }
+  },
+  "call_logs_list_old": {
+    "collection_deleted_banner": "此模擬伺服器已停用，因為關聯的集合已被刪除。",
+    "environment_deleted_banner": "此模擬伺服器已停用，因為關聯的環境已被刪除。",
+    "search_placeholder": "搜尋呼叫記錄…",
+    "offline_error": "恢復聯網後即可執行此操作。",
+    "refresh_logs": "重新整理日誌",
+    "header_time": "時間",
+    "header_request": "請求",
+    "header_response": "回應",
+    "load_more": "載入更多",
+    "footer_msg": "模擬伺服器允許您通過為每個請求返回關聯的範例回應來模擬 API 端點。",
+    "mock_docs": "瞭解如何設定和使用帶範例回應的模擬伺服器"
+  },
+  "usage_limit_banner": {
+    "text": "提高限額",
+    "reached_limit": "您的模擬伺服器每月呼叫次數已達上限。",
+    "contact_team_member": "請聯絡擁有帳單角色的團隊成員以提高限額。"
+  },
+  "mock_call_logs_old": {
+    "error_fetching_call_logs": {
+      "try_again": "重試",
+      "something_went_wrong": "出錯了",
+      "unexpected_error": "載入模擬伺服器呼叫日誌時發生意外錯誤。",
+      "try_refreshing": "請嘗試重新整理頁面。"
+    }
+  },
+  "mock_offline": {
+    "header": "Unable to load data as you're offline",
+    "sub_header": "在恢復聯網之前，您的資料可能不是最新的。"
+  },
+  "mock_details_header_old": {
+    "mock_server_name": "模擬伺服器名稱",
+    "copy_url": "複製 URL",
+    "copy_url_tooltip": "複製模擬伺服器 URL",
+    "view_collection_docs": "檢視集合文件",
+    "inactive_mock_collection_deleted": "由於關聯的集合已被刪除，無法訪問此文件。",
+    "inactive_mock_collection_not_accessible": "由於關聯的集合不可訪問，此文件無法訪問。",
+    "offline_error": "恢復聯網後即可執行此操作。",
+    "edit_configuration": "編輯配置",
+    "manage_roles": "管理角色",
+    "view_more_actions": "檢視更多操作",
+    "move": "移動",
+    "mock_server_details": "模擬伺服器詳情",
+    "delete": "刪除",
+    "not_signed_in_error": "您需要一個帳戶才能繼續探索 Postman。",
+    "permission_error": "您沒有權限執行此操作。",
+    "inactive_mock": "無法對已停用的模擬伺服器執行此操作。",
+    "no_team": "您需要登入團隊才能執行此操作",
+    "mock_url_copied": "模擬伺服器 URL 已複製"
+  },
+  "mock_tab_loading_error": {
+    "refresh": "重新整理",
+    "deleted": {
+      "title": "找不到{userFriendlyEntityName}",
+      "body": "此模擬伺服器已被刪除。"
+    },
+    "moved": {
+      "title": "找不到{userFriendlyEntityName}",
+      "body": "此模擬伺服器已被移動到其他工作區。"
+    },
+    "error": {
+      "title": "無法載入您的{userFriendlyEntityName}",
+      "body": "線路出了點小問題，請重新整理或稍後重試。"
+    },
+    "not_found": {
+      "title": "找不到該{userFriendlyEntityName}",
+      "body": "該內容可能已被刪除或移動到其他工作區。"
+    },
+    "edit_mock_access_denied": {
+      "title": "無法編輯{userFriendlyEntityName}",
+      "body": "由於您是工作區檢視者，無權執行此操作"
+    },
+    "create_mock_access_denied": {
+      "title": "無法建立{userFriendlyEntityName}",
+      "body": "由於您是工作區檢視者，無權執行此操作"
+    },
+    "unable_to_edit_inactive_mock": {
+      "title": "無法編輯{userFriendlyEntityName}",
+      "body": "該模擬伺服器已停用，無法編輯。"
+    }
+  },
+  "mock_info_context_view": {
+    "id": "ID",
+    "created_by": "建立者",
+    "created_on": "建立時間",
+    "mock_server_url": "Mock Server URL",
+    "collection": "集合",
+    "collection_deleted": "關聯的集合已被刪除",
+    "label_text": "關聯的集合不可訪問",
+    "info_text": "該集合位於您無權訪問的工作區中。",
+    "environment": "環境",
+    "no_environment": "無環境",
+    "mock_usage": "模擬伺服器用量",
+    "copied": "已複製",
+    "copy_mock_id": "複製模擬伺服器 ID",
+    "copy_mock_url": "複製模擬伺服器 URL",
+    "environment_deleted": "關聯的環境已被刪除",
+    "environment_inaccessible": "關聯的環境不可訪問",
+    "environment_info_text": "該環境位於您無權訪問的工作區中。",
+    "something_went_wrong": "出錯了",
+    "please_try_again": "發生意外錯誤，請重試。",
+    "try_again": "重試",
+    "private_profile": "該使用者資料為私密狀態。",
+    "last_updated_at": "最後更新時間",
+    "code_mock": "模擬",
+    "linked_simulation": "模擬",
+    "no_linked_simulation": "沒有 Simulation 使用此模擬伺服器",
+    "new": "新增",
+    "new_simulation_tooltip": "建立 Simulation",
+    "simulation_url": "模擬 URL",
+    "copy_simulation_id": "複製 Simulation ID",
+    "copy_simulation_url": "複製 Simulation URL"
+  },
+  "mock_embedded_report": {
+    "mock_usage": "模擬伺服器用量",
+    "monitor_usage": "監控用量",
+    "hits": "次"
+  },
+  "mock_details_meta_info": {
+    "mock_server_type": "模擬伺服器型別",
+    "private": "私有",
+    "public": "公開",
+    "collection": "集合",
+    "environment": "環境"
+  }
+}

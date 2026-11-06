@@ -1,0 +1,52 @@
+{
+  "copy_link_button_popover": {
+    "heading": "邀請 人在分享此連結之前",
+    "dismiss_button_text": "關閉"
+  },
+  "update_user_profile_modal": {
+    "description_text": "您需要 公開 配置檔案才能在 公開 工作區中執行操作。在讓所有人都能看到您的個人資料之前，請更新並檢視以下詳細資訊。",
+    "confirm_cta_text": "將個人資料設為 公開",
+    "name_error_message": "請填寫此欄位。",
+    "update_user_profile_api_error_message": "由於某些錯誤，無法啟用 公開 配置檔案。",
+    "update_user_success": {
+      "message": "您現在可以在 公開 工作區中執行操作。",
+      "title": "公開 配置檔案已啟用"
+    },
+    "heading": "讓您的個人資料 公開",
+    "name_label": "姓名",
+    "username_label": "使用者名稱",
+    "username_helper_text": "您的使用者名稱可用於登入並幫助識別您的身份。",
+    "cancel_button_text": "取消",
+    "public_url_description": "您的 公開 URL 將是： <1> {url}</1>"
+  },
+  "language_setting_modal": {
+    "heading": "{modalHeading} 的設定"
+  },
+  "collection_description_editor": {
+    "does_not_have_description": "這個 {entityType} 沒有描述。",
+    "mimir_editor_placeholder": "新增 {entityType} 描述",
+    "markdown_editor": {
+      "mode": {
+        "edit": "編輯",
+        "preview": "預覽"
+      },
+      "switch_to_postman_editor_button_tooltip": "切換到 Postman 編輯器"
+    },
+    "error": {
+      "title": "無法載入文件",
+      "message": "只是一根電線有問題。嘗試重新載入。"
+    },
+    "placeholder": "新增 {type} 描述..."
+  },
+  "open_request_button": {
+    "try_request_button_label": "嘗試請求",
+    "open_request_button_label": "開啟請求"
+  },
+  "documentation_entity_title": "文件",
+  "unsaved_changes_modal": {
+    "title": "未儲存的更改",
+    "description": "在開啟評論模式之前儲存 請求 以避免丟失您的工作。",
+    "cancel_button": "取消",
+    "save_button": "儲存"
+  }
+}

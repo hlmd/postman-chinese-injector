@@ -1,0 +1,696 @@
+{
+  "sandbox_terms_modal": {
+    "heading": "啟用沙盒 環境",
+    "intro": "啟用即表示您承認並同意以下使用要求適用於您的組織對沙盒 環境 的使用，作為您與 Postman 的協議中引用的文件的一部分：",
+    "bullet_1": "提供沙箱僅用於測試和評估目的",
+    "bullet_2": "客戶只能在沙盒中使用測試資料或虛擬資料；不得提交生產資料和個人資料",
+    "bullet_3": "Postman 可以隨時刪除沙盒資料",
+    "bullet_4": "沙箱按“原樣”提供，沒有服務水平承諾、賠償或保證",
+    "bullet_5": "使用和功能限制可能適用",
+    "accept_button": "接受並啟用",
+    "decline_button": "取消",
+    "accept_error": "無法啟用沙盒 環境。請再試一次。"
+  },
+  "common": {
+    "readonly_tooltip_message": "此設定由您的組織管理，無法為您的 團隊 進行更改。",
+    "no_permission_tooltip": "您沒有權限執行此操作。",
+    "upgrade_to_invite_people": "升級以邀請人員加入 團隊",
+    "upgrade_to_add_people": "升級以將人員新增到 團隊"
+  },
+  "request_to_join_approval": {
+    "completed_message": "此申請已處理。",
+    "approve_button": "批准",
+    "deny_button": "拒絕",
+    "request_approved": "請求已批准。",
+    "request_denied": "請求已拒絕。",
+    "request_resolved": "此請求已處理。",
+    "approval_failed": "批准失敗",
+    "denial_failed": "拒絕失敗",
+    "something_went_wrong": "出現錯誤",
+    "denial_reason_title": "您為何拒絕此請求？",
+    "denial_reason": {
+      "select_a_reason": "選擇原因：",
+      "reasons": {
+        "unknown_person": "我不認識此人",
+        "not_in_org": "他們不屬於我們的組織",
+        "different_team": "他們屬於我們組織中的其他團隊",
+        "no_budget": "沒有預算容納更多成員",
+        "other": "其他"
+      },
+      "other_placeholder": "輸入原因",
+      "other_input_label": "拒絕此請求的原因",
+      "deny_request": "拒絕請求",
+      "approve_instead": "改為批准"
+    }
+  },
+  "team_resources": {
+    "blank_state": {
+      "title": "需要對 團隊 資源進行更多控制？",
+      "description": "使用 Postman <1>Enterprise</1> 計劃解鎖工作區、集合等的進階設定。",
+      "upgrade_to_enterprise": "升級到企業版",
+      "learn_more": "瞭解更多"
+    },
+    "blank_state_with_external_package": {
+      "title": "需要對 團隊 資源進行更多控制？",
+      "description": "使用 Postman <1>Enterprise</1> 計劃解鎖工作區、集合等的進階設定。"
+    },
+    "workspace_management": {
+      "errors": {
+        "unable_to_save": "目前無法儲存更改。請再試一次。",
+        "flag_and_entities": {
+          "title": "出了點問題",
+          "description": "獲取設定時發生錯誤"
+        },
+        "custom_message_too_long": {
+          "message": "您的留言太長了。限制為 {limit} 個字元。"
+        }
+      },
+      "changes_saved": "更改已儲存",
+      "breadcrumbs": {
+        "team_resources": "團隊 資源",
+        "workspaces": "工作區"
+      },
+      "title": "工作區 管理",
+      "description": "為 團隊 成員提供精細控制，使其更容易",
+      "learn_more": {
+        "prefix": "管理工作區",
+        "link": "瞭解更多"
+      },
+      "description_suffix": "",
+      "people_can_create_workspace": {
+        "label": "誰可以建立 {lower} 範圍的內部工作區？",
+        "options": {
+          "all_members": {
+            "label": "所有 {lower} 成員",
+            "helper_text": "合作伙伴和嘉賓除外。"
+          },
+          "specifics": {
+            "label": "特定的人或群體",
+            "helper_text": "其他 {lower} 成員需要獲得他們的批准。"
+          },
+          "company_systems": {
+            "label": "公司系統處理 工作區 建立",
+            "helper_text": "只有選定的人員和組可以直接在 Postman 中建立工作區。"
+          }
+        }
+      },
+      "search_for_members": {
+        "placeholder": "搜尋...",
+        "empty_message": "沒有找到使用者"
+      },
+      "specific_members": {
+        "label": "選擇人員和組"
+      },
+      "allowed_members": {
+        "label": "選擇人員和組"
+      },
+      "custom_message": {
+        "label": "自訂訊息",
+        "helper_text": "當組織成員嘗試在 Postman 中建立 工作區 時向其顯示。",
+        "placeholder": "解釋為何禁止建立 工作區，以及使用者可以在哪裡請求建立 工作區..."
+      },
+      "save": "儲存更改",
+      "cancel": "取消",
+      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+    },
+    "tag_management": {
+      "who_can_manage": {
+        "label": "誰可以在你的{lower}中建立、編輯或刪除標籤？",
+        "options": {
+          "standard": {
+            "label": "所有成員可建立，任何人不可編輯或刪除",
+            "helper_text": "任何人都可以建立標籤。標籤建立後不可編輯或刪除。"
+          },
+          "edit_restricted": {
+            "label": "所有成員可建立，指定人員可編輯或刪除",
+            "helper_text": "任何人都可以建立標籤。僅所選人員或群組可編輯或刪除標籤。"
+          },
+          "fully_restricted": {
+            "label": "指定人員或群組",
+            "helper_text": "僅所選人員或群組可建立、編輯或刪除標籤。其他{lower}成員仍可使用標籤。"
+          }
+        }
+      },
+      "allowed_members": {
+        "label": "選擇人員和群組"
+      },
+      "search_for_members": {
+        "placeholder": "搜尋…",
+        "empty_message": "未找到使用者"
+      },
+      "errors": {
+        "unable_to_save": "目前無法儲存更改，請重試。",
+        "teams_unavailable": "暫時無法載入團隊成員，因此無法編輯這些設定。請重新整理後重試。"
+      },
+      "save": "儲存更改",
+      "cancel": "取消"
+    },
+    "collection_management": {
+      "title": "集合",
+      "description": "管理組織內集合的共享。",
+      "breadcrumbs": {
+        "team_resources": "團隊 資源",
+        "collections": "集合"
+      },
+      "allow_editors": "允許編輯者與訪客分享集合",
+      "editors_can_share": "編輯者可以與訪客分享集合",
+      "enable_share_collection": "啟用後，編輯者可以與 {lower} 之外的人員共享集合。",
+      "sharing_with_guests": {
+        "enabled": {
+          "title": "啟用與訪客共享",
+          "description": "團隊 成員可以與 團隊 以外的人共享集合。"
+        },
+        "disabled": {
+          "title": "停用與訪客共享",
+          "description": "團隊 成員無法與 團隊 以外的人共享集合。"
+        }
+      },
+      "error": {
+        "update_settings": {
+          "title": "無法更新設定",
+          "description": "只是一根電線有問題。請再試一次。"
+        },
+        "fetching_settings": {
+          "title": "出了點問題",
+          "description": "獲取設定時發生錯誤"
+        },
+        "permission_denied": {
+          "title": "權限 被拒絕",
+          "description": "只有 團隊 管理員可以修改匯出設定"
+        },
+        "update_export_settings": {
+          "title": "無法更新匯出設定",
+          "description": "更新匯出設定時出錯。請再試一次。"
+        }
+      },
+      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。",
+      "block_exports": "阻止集合匯出",
+      "block_exports_description": "啟用後，編輯者和檢視者將無法匯出集合。",
+      "exports_blocked": {
+        "title": "集合匯出被阻止",
+        "description": "編輯者和檢視者無法匯出集合"
+      },
+      "exports_allowed": {
+        "title": "允許集合匯出",
+        "description": "編輯者和檢視者可以匯出集合"
+      }
+    },
+    "external_package_management": {
+      "title": "外部包",
+      "description": "允許 團隊 成員在其腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
+      "read_only_description": "在腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
+      "breadcrumbs": {
+        "team_resources": "團隊 資源",
+        "collections": "外部包"
+      },
+      "allow_packages": "{upper} 成員可以使用外部包",
+      "allow_packages_description": "選擇 {lower} 成員是否可以不使用、全部或選定的外部包。",
+      "read_only_package_description": "可以在腳本中使用的包。",
+      "package_options": {
+        "allow_all": "允許所有包",
+        "allow_selected": "允許選定的包",
+        "allow_none": "不允許"
+      },
+      "add_packages": {
+        "title": "允許的包",
+        "description": "新增您的 {lower} 可以使用的軟體包列表。",
+        "learn_more": {
+          "prefix": "學習",
+          "link": "如何允許外部包"
+        },
+        "placeholder": "例如 npm:lodash@*, jsr:@opensrc/*@*",
+        "add_button": "新增包",
+        "validation": {
+          "empty": "輸入包名",
+          "too_long": "封裝模式不得超過 {maxLength} 個字元",
+          "invalid_registry": "包名稱必須以登入檔開頭（例如 npm: 或 jsr:）",
+          "invalid_format": "輸入有效的包名稱和 版本（例如 npm:lodash@1.1.0 或 npm:lodash@*）"
+        }
+      },
+      "banner": {
+        "scope_restricted": {
+          "title": "使用更多包",
+          "description": "請聯絡您的 管理員 以將更多軟體包新增到此列表中。"
+        },
+        "scope_none": {
+          "title": "不允許使用外部包",
+          "description": "請聯絡您的 管理員 為您的 團隊 啟用外部包。"
+        },
+        "upgrade_enterprise": {
+          "title": "升級以管理允許的包",
+          "description": "通過升級到企業計劃來允許來自外部登入檔的特定包。 <1>瞭解Postman企業計劃.</1>",
+          "primary_button": "升級至企業"
+        }
+      },
+      "error": {
+        "title": "出了點問題",
+        "description": "無法載入外部包配置。",
+        "button": "再試一次",
+        "updating_settings_toast": "無法更新外部包的設定。請再試一次。",
+        "fetching_settings_toast": "無法載入外部包的設定。請再試一次。"
+      },
+      "feature_not_available": {
+        "title": "功能不可用",
+        "description": "外部包設定不適用於您的 團隊。"
+      },
+      "private_packages": {
+        "title": "私有 npm 包",
+        "description": "配置對 私有 npm 包的訪問。",
+        "learn_more": {
+          "prefix": "學習",
+          "link": "如何新增 私有 包"
+        },
+        "token_input": {
+          "label": "令牌",
+          "placeholder": "輸入您的 令牌",
+          "delete_button_tooltip": "刪除令牌"
+        },
+        "scope_input": {
+          "label": "範圍",
+          "placeholder": "例如 @postman, @acme",
+          "validation": {
+            "empty": "範圍不能為空"
+          },
+          "read_only_label": "私有 包範圍"
+        },
+        "save": "儲存"
+      }
+    },
+    "vault_management": {
+      "title": "保險庫",
+      "description": "管理 團隊 的 保險庫 設定、控制訪問並確保工作區中敏感資訊的安全。",
+      "breadcrumbs": {
+        "team_resources": "團隊 資源",
+        "vault": "保險庫"
+      },
+      "allow_export": "{upper} 成員可以匯出其 Vault 資料",
+      "allow_export_description": "啟用後，{lower} 成員可以從 保險庫 匯出其資料。",
+      "allow_encrypted_export": "允許加密匯出",
+      "allow_encrypted_export_description": "{upper} 成員可以加密匯出其 保險庫 資料。",
+      "allow_unencrypted_export": "允許未加密匯出",
+      "allow_unencrypted_export_description": "{upper} 成員可以以明文形式匯出其 保險庫 資料。",
+      "save": "儲存",
+      "vault_export": {
+        "enabled": {
+          "title": "保險庫 匯出已開啟",
+          "description": "您的 團隊 可以匯出其 保險庫 資料。"
+        },
+        "disabled": {
+          "title": "保險庫 匯出已關閉",
+          "description": "您的 團隊 無法匯出其 保險庫 資料。"
+        }
+      },
+      "error": {
+        "update_settings": {
+          "title": "無法更新設定",
+          "description": "只是一根電線有問題。請再試一次。"
+        },
+        "fetching_settings": {
+          "title": "出了點問題",
+          "description": "獲取設定時發生錯誤"
+        }
+      },
+      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+    },
+    "mock_management": {
+      "title": "模擬伺服器",
+      "description": "管理組織內的模擬伺服器",
+      "breadcrumbs": {
+        "team_resources": "團隊 資源",
+        "mock_servers": "模擬伺服器"
+      },
+      "disable_public_mock": "{upper} 成員可以建立 公開模擬伺服器",
+      "disable_public_mock_description": "啟用後，{lower} 成員可以建立 公開 和 私有模擬伺服器。",
+      "public_mock_creation": {
+        "enabled": {
+          "title": "啟用建立 公開模擬伺服器"
+        },
+        "disabled": {
+          "title": "停用建立 公開模擬伺服器"
+        }
+      },
+      "error": {
+        "update_settings": {
+          "title": "無法更新設定",
+          "description": "只是一根電線有問題。請再試一次。"
+        },
+        "fetching_settings": {
+          "title": "出了點問題",
+          "description": "獲取設定時發生錯誤"
+        }
+      },
+      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+    },
+    "code_mock_management": {
+      "title": "模擬伺服器服務",
+      "description": "管理組織內的模擬伺服器",
+      "require_approval": "發布公開模擬伺服器需要審批",
+      "require_approval_description": "啟用後，{lower} 成員建立的公開模擬伺服器必須經管理員稽核批准後才能發布。",
+      "require_approval_disabled_tooltip": "啟用公開模擬伺服器服務以要求發布模擬伺服器時需審批。",
+      "create_public_code_mocks": "建立公開模擬伺服器",
+      "create_public_code_mocks_description": "啟用後，{lower} 成員可建立可公開訪問的模擬伺服器。停用後，只能建立私有模擬伺服器。",
+      "error": {
+        "update_settings": {
+          "title": "無法更新設定",
+          "description": "只是一根電線有問題。請再試一次。"
+        },
+        "fetching_settings": {
+          "title": "出了點問題",
+          "description": "獲取設定時發生錯誤"
+        }
+      }
+    },
+    "live_session_management": {
+      "title": "現場會議",
+      "description": "管理組織內的即時會話。",
+      "breadcrumbs": {
+        "team_resources": "團隊 資源",
+        "collections": "現場會議"
+      },
+      "allow_users": "允許使用者啟動即時會話",
+      "start_live_sessions": "{upper} 會員可以開始直播會議",
+      "enable_live_session": "這將使 {lower} 中的使用者能夠啟動即時會話。",
+      "when_enabled": "啟用後，{lower} 成員可以使用即時會話進行即時協作。",
+      "error": {
+        "update_settings": {
+          "title": "無法更新設定",
+          "description": "只是一根電線有問題。請再試一次。"
+        }
+      },
+      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+    },
+    "sandbox_team_management": {
+      "heading": "沙箱 團隊 成員",
+      "description": "將 團隊 中的成員新增到沙箱 團隊 中。",
+      "search_placeholder": "搜尋 團隊 成員以新增...",
+      "search_empty": "未找到 團隊 成員",
+      "add_button": "新增",
+      "members_count": "{count, plural, one {# 名成員} other {# 名成員}}",
+      "empty_state": "沙箱 團隊 中還沒有成員。從上面的 團隊 新增成員。",
+      "toast": {
+        "add_success": "已將 {count, plural, one {# 名成員} other {# 名成員}} 新增到沙箱 團隊。",
+        "add_error": "無法新增 {count, plural, one {# 名成員} other {# 名成員}}。",
+        "no_slots": "沙箱 團隊 中沒有可用插槽。請在新增新成員之前釋放一個空位。"
+      }
+    },
+    "wrapper": {
+      "title": "{upper} 資源",
+      "description": "讓您更輕鬆地管理 {lower} 中的資源。",
+      "management_options": {
+        "workspace": {
+          "title": "建立 {lower} 範圍的工作區",
+          "description": "定義是否可以在未經批准的情況下建立 {lower} 範圍的工作區。"
+        },
+        "collection": {
+          "title": "與訪客分享",
+          "description": "定義是否可以與 {lower} 之外的人員共享集合。"
+        },
+        "mock": {
+          "title": "管理模擬伺服器",
+          "description": "定義模擬伺服器的發布和可見性規則。"
+        },
+        "external_packages": {
+          "title": "使用外部包",
+          "description": "定義外部包是否可以在腳本中使用以及哪些外部包可以在腳本中使用。"
+        },
+        "live_sessions": {
+          "title": "開始即時會話",
+          "description": "定義是否可以啟動即時會話。"
+        },
+        "vault": {
+          "title": "匯出保險庫資料",
+          "description": "定義是否可以匯出保險庫資料。"
+        },
+        "sandbox_team": {
+          "title": "管理沙箱 團隊",
+          "description": "將成員新增到沙箱 團隊。"
+        },
+        "tags": {
+          "title": "管理標籤",
+          "description": "設定誰可以在你的{lower}中建立、編輯或刪除標籤。"
+        },
+        "organizations": {
+          "title": "Organization",
+          "description": "將團隊升級為組織，解鎖進階資源管理能力。"
+        }
+      },
+      "collapse_all": "全部摺疊",
+      "expand_all": "全部展開"
+    },
+    "organization_management": {
+      "callout": {
+        "description_lead": "將你的團隊升級為組織。<1>瞭解組織</1>。",
+        "description_detail": "此次遷移可能需要一些時間（預計：{duration}），遷移期間使用者可能會遇到短暫的中斷，因此建議在非工作時間進行。",
+        "learn_more": "瞭解組織",
+        "contact_support": "請聯絡支援團隊完成此次遷移。",
+        "upgrade_button": "升級",
+        "create_support_ticket": "建立支援工單"
+      },
+      "status": {
+        "in_progress": "遷移進行中...",
+        "already_running": "遷移已在進行中。",
+        "retrying": "正在重試遷移...",
+        "completed": "遷移已成功完成。請重新整理頁面以檢視升級後的體驗。",
+        "failed": "遷移失敗。",
+        "partial": "遷移部分完成。",
+        "rolled_back": "遷移已回滾。",
+        "current_status_prefix": "目前狀態：{status}"
+      },
+      "toast": {
+        "completed": "你的團隊已升級為組織。",
+        "failed": "遷移失敗。請重試或聯絡支援團隊。",
+        "partial": "遷移部分完成。請聯絡支援團隊處理。",
+        "initiate_failed": "遷移啟動失敗。"
+      },
+      "errors": {
+        "eligibility_generic": "無法檢查遷移資格，請稍後重試。",
+        "initiate_generic": "無法啟動遷移，請重試。",
+        "super_admin_required": "只有 SuperAdmin 可以執行此操作。"
+      },
+      "tooltips": {
+        "super_admin_required": "只有 SuperAdmin 可以啟動遷移。",
+        "not_eligible": "此團隊不符合自助遷移的條件。"
+      },
+      "support_ticket": {
+        "support_assisted": {
+          "subject": "遷移到組織——需要支援團隊協助",
+          "intro": "我想將團隊遷移為組織，但我的團隊不符合自助遷移條件。"
+        },
+        "migration_failed": {
+          "subject": "遷移到組織——{status}",
+          "intro": "我的自助遷移未能成功完成，請協助排查。"
+        }
+      },
+      "summary": {
+        "labels": {
+          "role": "角色",
+          "size": "團隊規模",
+          "state": "遷移狀態"
+        },
+        "roles": {
+          "super_admin": "超級管理員",
+          "admin": "管理員",
+          "member": "成員"
+        },
+        "sizes": {
+          "small": "小型",
+          "medium": "中型",
+          "large": "大型"
+        },
+        "states": {
+          "not_started": "未開始",
+          "in_progress": "進行中",
+          "completed": "已完成",
+          "partial": "部分完成",
+          "rolled_back": "已回滾",
+          "failed": "失敗"
+        },
+        "na": "—"
+      }
+    }
+  },
+  "team_access": {
+    "title": "團隊 訪問",
+    "description": "管理您組織中的人員如何加入此 團隊。",
+    "description_with_domain": "管理來自 @{domain} 的人員如何加入此 團隊。",
+    "verify_email_banner": {
+      "title": "驗證您的電子郵件地址以管理 團隊 訪問設定",
+      "description": "我們向 {userEmail} 傳送了一封驗證電子郵件。",
+      "resend_cta": "重新發送驗證郵件",
+      "verified_cta": "我已驗證我的電子郵件"
+    },
+    "join_via_link": {
+      "settings": "資源連結設定",
+      "title": "允許人們從資源連結自動加入",
+      "description": "來自 @{domain} 的人在訪問共享資源的連結時可以自動加入此 團隊。"
+    },
+    "team_discovery": {
+      "title": "使這個 團隊 可以被發現",
+      "description": "@{domain} 的人可以看到這個 團隊 和 請求 來加入。",
+      "auto_join": {
+        "title": "允許人們自動加入此 團隊",
+        "description": "來自 @{domain} 的人可以通過團隊發現自動加入這個 團隊。",
+        "settings": "團隊加入設定",
+        "domain_toggle_aria_label": "@{domain} 的自動加入",
+        "all_domains": {
+          "title": "允許所有域名自動加入",
+          "title_single_domain": "允許你的域名自動加入",
+          "description": "來自你任一已驗證域名的使用者，都可以通過團隊發現自動加入本團隊。你也可以為每個域名單獨設定是否允許自動加入。",
+          "description_single_domain": "來自你已驗證域名的使用者，可以通過團隊發現自動加入本團隊。",
+          "enabled_count": "{total} 個域名中已有 {count} 個開啟自動加入"
+        },
+        "confirm_modal": {
+          "enable": {
+            "heading": "為所有域名啟用自動加入？",
+            "body": "此設定將應用於團隊的全部 {count, plural, one {# 個域名} other {# 個域名}}。信箱匹配的使用者無需等待邀請即可加入。你可以隨時關閉。"
+          },
+          "disable": {
+            "heading": "關閉所有域名的自動加入？",
+            "body": "此設定將應用於團隊的全部 {count, plural, one {# 個域名} other {# 個域名}}。信箱匹配的使用者將無法自動加入，必須收到邀請。你可以隨時重新開啟。"
+          },
+          "cancel_cta": "取消",
+          "confirm_cta": "確認"
+        },
+        "toast": {
+          "domain_enabled": {
+            "title": "已啟用自動加入",
+            "description": "來自 @{domain} 域名的使用者現在無需邀請即可加入。"
+          },
+          "domain_disabled": {
+            "title": "已關閉自動加入",
+            "description": "來自 @{domain} 域名的使用者現在需要收到邀請才能加入。"
+          },
+          "all_enabled": {
+            "title": "已為所有域名啟用自動加入",
+            "description": "來自你已驗證域名的使用者現在無需邀請即可加入。"
+          },
+          "all_disabled": {
+            "title": "已關閉所有域名的自動加入",
+            "description": "來自你已驗證域名的使用者現在需要收到邀請才能加入。"
+          },
+          "error": {
+            "title": "操作失敗",
+            "description": "這是我們這邊的問題，請重試。"
+          }
+        }
+      },
+      "join_guidelines": {
+        "title": "提出篩選問題",
+        "label": "篩選問題",
+        "placeholder": "例如你為什麼想加入這個 團隊？",
+        "validation_message": "請將您的問題限制在 500 個字元以內",
+        "save_cta": "儲存問題",
+        "cancel_cta": "取消",
+        "success_toast": {
+          "title": "更改已儲存",
+          "description": "待定 團隊 會員在請求加入您的 團隊 時必須回答此問題。"
+        },
+        "error_toast": {
+          "title": "無法儲存問題",
+          "description": "儲存您的問題時出現問題。請再試一次。"
+        }
+      },
+      "settings": "團隊 發現設定"
+    },
+    "nudge": {
+      "initial_toast": {
+        "title": "邀請已傳送。讓@{domain} 的其他同事自動加入",
+        "description": "這樣您的同事就可以發現並自動加入您的 團隊。",
+        "enable_auto_join": "啟用自動加入",
+        "view_settings": "檢視設定"
+      },
+      "enable_success_toast": {
+        "title": "您的 團隊 訪問設定已更新",
+        "description": "您的 團隊 會員現在將擁有更順暢的入職體驗",
+        "view_settings": "檢視設定"
+      },
+      "enable_error_toast": {
+        "title": "無法更新 團隊 訪問設定",
+        "description": "請重試或聯絡支援人員。"
+      }
+    }
+  },
+  "readonly_members": {
+    "editor_tag": "管理員",
+    "readonly_tag": "只讀",
+    "editor_tooltip": "可以編輯所有共享工作區並管理成員、角色、計費和 團隊 設定。",
+    "readonly_tooltip": "可以檢視共享工作區，但無法進行更改或管理 團隊 設定。 個人 工作區不受影響。"
+  },
+  "orgs_access": {
+    "title": "組織訪問",
+    "orgs_discovery": {
+      "title": "使該組織易於被發現"
+    }
+  },
+  "tags": {
+    "page": {
+      "heading": "標籤",
+      "description": "建立和管理標籤，以組織整個組織範圍內的各類元素。使用狀態標籤跟蹤集合的生命週期階段，使用普通標籤對相關元素進行分組和展示。",
+      "create_button_label": "建立標籤"
+    },
+    "not_supported_message": "你的團隊不支援標籤管理。",
+    "not_enabled_message": "你的團隊尚未啟用標籤管理。",
+    "table": {
+      "search_placeholder": "按標籤名稱搜尋",
+      "type_filter_placeholder": "按型別篩選",
+      "load_error": "標籤載入失敗，請重試。",
+      "column_name": "名稱",
+      "column_type": "型別",
+      "column_applied_to": "應用於",
+      "column_created_by": "建立者",
+      "column_created_on": "建立時間",
+      "column_updated_by": "更新者",
+      "column_last_updated": "最後更新",
+      "type_badge_status": "狀態",
+      "type_badge_default": "普通",
+      "type_filter_status": "狀態",
+      "type_filter_default": "普通",
+      "action_edit": "編輯",
+      "action_delete": "刪除"
+    },
+    "create_modal": {
+      "heading": "建立標籤",
+      "tag_type_label": "標籤型別",
+      "standard_type_label": "普通",
+      "standard_type_helper": "在整個組織範圍內組織和發現元素。",
+      "status_type_label": "狀態",
+      "status_type_helper": "跟蹤集合的生命週期階段。",
+      "name_label": "名稱",
+      "tag_name_placeholder": "輸入標籤名稱",
+      "status_name_placeholder": "輸入狀態名稱",
+      "cancel_button_label": "取消",
+      "create_button_label": "建立",
+      "create_button_pending_label": "正在建立…"
+    },
+    "edit_modal": {
+      "heading_tag": "編輯標籤",
+      "heading_status_tag": "編輯狀態標籤",
+      "name_placeholder": "輸入標籤名稱",
+      "cancel_button_label": "取消",
+      "save_button_label": "儲存",
+      "save_button_pending_label": "正在儲存…"
+    },
+    "delete_modal": {
+      "heading": "刪除標籤",
+      "description": "<bold>{tagName}</bold> 將被永久刪除{count, plural, =0 {} one {，並從 # 個元素中移除} other {，並從 # 個元素中移除}}。",
+      "confirm_input_label": "輸入 \"delete\" 以確認",
+      "confirmation_text": "delete",
+      "cancel_button_label": "取消",
+      "delete_button_label": "刪除",
+      "delete_button_pending_label": "正在刪除…"
+    },
+    "validation": {
+      "max_length_error": "標籤不能超過 64 個字元。",
+      "min_length_error": "標籤至少需要 2 個字元。",
+      "invalid_characters_error": "標籤必須以 Unicode 字母或數字開頭和結尾。中間允許使用：Unicode 字母、數字、空格以及 _ @ . / : -",
+      "duplicate_slug_error": "你的團隊中已存在同名標籤。",
+      "create_emoji_required_error": "建立此狀態標籤前請先選擇一個 Emoji。",
+      "save_emoji_required_error": "儲存此狀態標籤前請先選擇一個 Emoji。"
+    },
+    "mutations": {
+      "create_error": "標籤建立失敗，請重試。",
+      "update_error": "標籤更新失敗，請重試。",
+      "delete_error": "標籤刪除失敗，請重試。"
+    }
+  }
+}

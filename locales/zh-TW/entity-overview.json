@@ -1,0 +1,17 @@
+{
+  "name": {
+    "placeholder": "無標題 {entityName}"
+  },
+  "summary": {
+    "placeholder": {
+      "editable": "新增摘要以概述此 {entityName} 的目的。",
+      "readOnly": "尚未新增摘要。"
+    }
+  },
+  "description": {
+    "placeholder": {
+      "no_description": "尚未新增描述。",
+      "default": "新增 {entityName} 描述"
+    }
+  }
+}

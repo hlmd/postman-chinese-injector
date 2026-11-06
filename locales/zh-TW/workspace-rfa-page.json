@@ -1,0 +1,26 @@
+{
+  "text_area_info_text": "簡要說明，幫助工作區管理員批准您的請求……",
+  "add_note_text": "新增備註",
+  "switch_accounts_cta": "切換帳戶",
+  "go_to_workspace_cta": "前往工作區",
+  "creating_request_heading": "您似乎沒有訪問權限",
+  "creating_request_subheading": "向工作區管理員傳送請求以獲取此工作區的訪問權限。",
+  "submit_cta": "請求訪問權限",
+  "pending_request_heading": "您似乎仍然沒有訪問權限",
+  "pending_request_subheading": "您訪問此工作區的請求正在等待處理。",
+  "current_sign_in_account_text": "您目前登入的帳戶是",
+  "toast_content": {
+    "workspace_rfa_sent": {
+      "title": "請求已傳送",
+      "description": "工作區管理員回覆後，您將收到通知。"
+    },
+    "email_not_verified": {
+      "title": "請先驗證您的帳戶",
+      "description": "驗證完成後，您即可申請加入團隊。請查收收件箱中的最新驗證郵件。"
+    },
+    "default_error": {
+      "title": "請求傳送失敗",
+      "description": "只是出了點小故障，請重試。"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "title": "Workspace"
+  },
+  "heading": {
+    "team": "{teamName} 的工作區",
+    "personal": "您的工作區"
+  },
+  "description": {
+    "team": "您團隊的工作區目錄。",
+    "personal": "您的工作區目錄。"
+  },
+  "navigation_breadcrumbs": {
+    "first_breadcrumb_item_label": "主頁",
+    "second_breadcrumb_item_label": "Workspace"
+  },
+  "create_workspace_button_text": "建立工作區",
+  "filters": {
+    "search_workspaces_placeholder": "搜尋工作區",
+    "filter_by_visibility_dropdown": {
+      "placeholder": "可見性",
+      "label": "按可見性篩選",
+      "options": {
+        "all": "全部",
+        "personal": "個人",
+        "team": "團隊",
+        "private": "私密",
+        "partner": "合作伙伴",
+        "public": "公開"
+      }
+    },
+    "filter_by_owner_dropdown": {
+      "placeholder": "建立者",
+      "empty_state_message": "未找到使用者",
+      "selected_user_label": "{userCount, plural, one {# 位使用者} other {# 位使用者}}"
+    },
+    "sort_workspaces_dropdown": {
+      "label": "排序方式",
+      "sort_by_name": "A 到 Z",
+      "sort_by_creation_date": "最近建立",
+      "sort_by_modification_date": "最近更新"
+    }
+  },
+  "external_tag": "外部",
+  "restricted_action": {
+    "tooltip_with_create": "將這些更改合併到 工作區，或建立一個新的 工作區 來執行此操作。",
+    "tooltip_visibility": "將這些更改合併到 工作區，或建立新的 工作區 來更改可見性。",
+    "tooltip_comment_creator": "將這些更改合併到 工作區，或建立一個新的 工作區 來發表評論。"
+  },
+  "pending_changes_banner": {
+    "source_prefix": "更改來自",
+    "source_icon_tooltip_cloud": "雲代理 任務",
+    "source_icon_tooltip_git": "git 分支",
+    "fallback_source_name": "無題",
+    "actions": {
+      "merge": "合併",
+      "merge_dropdown_label": "更多 合併 選項",
+      "make_new_workspace": "新增 工作區",
+      "discard": "丟棄",
+      "exit": "退出",
+      "copy_link": "複製連結",
+      "copy_link_copied": "連結已複製"
+    },
+    "discard_confirm": {
+      "title": "放棄掛起的更改？",
+      "message": "這將永久刪除待處理的更改。此操作無法撤消。",
+      "confirm": "丟棄",
+      "cancel": "取消"
+    },
+    "toast": {
+      "merge_success": "更改合併",
+      "merge_error_title": "無法 合併 更改",
+      "merge_error_description": "出了點問題。請再試一次。",
+      "publish_success": "建立新的 工作區",
+      "publish_error_title": "無法建立 工作區",
+      "publish_error_description": "出了點問題。請再試一次。",
+      "discard_success": "更改已放棄",
+      "discard_error_title": "無法放棄更改",
+      "discard_error_description": "出了點問題。請再試一次。",
+      "copy_link_error_title": "無法複製連結",
+      "copy_link_error_description": "出了點問題。請再試一次。"
+    },
+    "error": {
+      "fetch_failed": "載入資訊失敗",
+      "retry": "重試"
+    }
+  },
+  "tabs": {
+    "all": "全部",
+    "project_workspaces": "專案工作區",
+    "shared_partner": "外部",
+    "archived": "已存檔",
+    "inactive": "不活躍",
+    "pending_requests": "待處理的請求"
+  }
+}

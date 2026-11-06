@@ -1,0 +1,47 @@
+{
+  "body": {
+    "public_api": {
+      "text": "想使用公共 API？前往 <1>API Network</1> 發現最新和熱門內容。"
+    },
+    "import_an_existing_file": "匯入現有檔案",
+    "start_with_collection_template": "從集合模板開始",
+    "new": "新"
+  },
+  "personal": {
+    "title": "歡迎來到您的個人工作區 👋",
+    "description": "這是您的專屬空間——只有您能看到在此建立的 API、集合及其他專案。",
+    "use_a_template": "使用模板",
+    "import": "匯入"
+  },
+  "team": {
+    "title": "歡迎來到您團隊的工作區 👋",
+    "description": "在此空間與團隊一起構建、測試和部署 API。"
+  },
+  "step_name": "歡迎使用工作區",
+  "how_would_you_start": "您想如何開始？",
+  "start_from_scratch": "或從頭開始",
+  "use_an_ai": "使用 AI 建立 API",
+  "tags": {
+    "alpha": "Alpha"
+  },
+  "collection_template": {
+    "title": "推薦模板",
+    "description": "為您提供個性化推薦，助您充分利用 Postman。",
+    "blank_state": {
+      "title": "暫無可用模板",
+      "description": "未找到可用的集合模板",
+      "close_button": {
+        "text": "關閉"
+      }
+    },
+    "search_template": {
+      "placeholder": "搜尋模板"
+    },
+    "basics_tooltip": {
+      "header": "做得好！",
+      "subheader": "您已掌握基礎知識。",
+      "body": "Postman 還支援自動化 API 測試、監控 API 效能、模擬 API 等更多功能。",
+      "dismiss_quickstart": "關閉快速入門"
+    }
+  }
+}

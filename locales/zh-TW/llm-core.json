@@ -1,0 +1,104 @@
+{
+  "onboarding_modal": {
+    "title": "使用 AI 請求測試 LLM",
+    "description": "使用 <0>OpenAI、Google、Anthropic</0> 等機構的 LLM 嘗試您的提示。",
+    "step_1": "通過單擊側邊欄中的“新增”來建立新的 AI 請求。",
+    "step_2": "選擇要使用的 LLM 模型。",
+    "step_3": "授權您的憑據並將其儲存在保險庫中。",
+    "step_4": "傳遞使用者提示和可選的系統提示，然後點選“傳送”。",
+    "cta": "開始使用"
+  },
+  "agent": {
+    "errors": {
+      "agent_not_connected": "切換到 Postman 桌面代理以發起 LLM 請求。",
+      "agent_not_supported": "您使用的是 Postman 桌面代理的舊版本，不支援 LLM 請求。請更新桌面代理並重試。",
+      "agent_not_ready": "確保桌面代理已安裝並正在執行。"
+    },
+    "openai": {
+      "response": {
+        "network_meta": {
+          "http_status_codes": {
+            "401": {
+              "detail": "身份驗證無效。 <button>傳遞正確的身份驗證憑據</button>",
+              "label": "身份驗證無效"
+            },
+            "403": {
+              "detail": "不支援的國家、地區或領地",
+              "label": "地區受限"
+            },
+            "429": {
+              "detail": "您超出了目前配額，請檢查您的計劃和帳單詳細資訊",
+              "label": "配額不足"
+            },
+            "500": {
+              "detail": "伺服器在處理您的請求時出錯",
+              "label": "伺服器錯誤"
+            },
+            "503": {
+              "detail": "引擎目前超載，請稍後重試",
+              "label": "引擎過載"
+            }
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "model_not_selected": "選擇傳送 AI 請求的模型。"
+  },
+  "send_button": {
+    "tooltips": {
+      "no_send_permission": "您沒有權限在此工作區中傳送請求。"
+    }
+  },
+  "tools": {
+    "local_tools": {
+      "section_title": "工具集",
+      "tool_count": "{count, plural, =1 {# 個工具} other {# 個工具}}",
+      "empty_title": "未找到本地工具",
+      "empty_description": "在 AI 工具工作臺中建立本地工具，將其新增到此請求。",
+      "ungrouped_group_label": "未分組工具",
+      "no_matching_tools": "沒有工具匹配目前的搜尋和篩選條件。",
+      "controls": {
+        "search_tooltip": "搜尋",
+        "search_placeholder": "搜尋工具",
+        "filter_tooltip": "篩選",
+        "filter_enabled_tooltip": "篩選（已啟用）",
+        "filter_disabled_tooltip": "篩選（已停用）",
+        "select_all": "全選",
+        "deselect_all": "取消全選",
+        "filter_all": "顯示全部",
+        "filter_enabled": "已啟用",
+        "filter_disabled": "已停用"
+      }
+    },
+    "overrides": {
+      "button": "覆蓋",
+      "edit_button": "編輯覆蓋",
+      "badge": "已覆蓋",
+      "count": "{count, plural, =1 {# 個工具已覆蓋} other {# 個工具已覆蓋}}",
+      "panel_title": "覆蓋 MCP 工具",
+      "local_tool_label": "使用本地工具覆蓋",
+      "parts_label": "要覆蓋的部分",
+      "parts": {
+        "description": "描述",
+        "input_schema": "參數",
+        "implementation": "實現"
+      },
+      "part_descriptions": {
+        "description": "替換面向模型的描述",
+        "input_schema": "替換輸入模式",
+        "implementation": "執行本地工具，而非 MCP 呼叫"
+      },
+      "diff_original": "MCP 原始內容",
+      "diff_override": "本地覆蓋",
+      "diff_empty": "未提供",
+      "apply_button": "應用",
+      "clear_button": "清除",
+      "remove_button": "移除覆蓋",
+      "cancel_button": "取消",
+      "no_matching_tools": "沒有本地工具與此 MCP 工具名稱匹配。",
+      "status_prefix": "正在覆蓋"
+    }
+  }
+}

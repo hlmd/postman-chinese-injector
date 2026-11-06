@@ -1,0 +1,91 @@
+{
+  "create_new_environment": "建立新的 環境",
+  "environment_name": "環境名稱",
+  "entity_type_icon": {
+    "label": "環境"
+  },
+  "no_environment_empty_state": {
+    "heading": "你沒有任何環境。",
+    "description": "環境 是一組變數，允許您切換請求的上下文。",
+    "create_environment_button": "建立環境",
+    "no_items": "該面板中沒有專案",
+    "create": "建立"
+  },
+  "set_inactive": "設定為非活動狀態",
+  "set_active": "設定為活動狀態",
+  "not_a_fork": "這個 環境 不是 fork。",
+  "globals": "全域變數",
+  "create_first_environment": "建立您的第一個 環境",
+  "could_not_load_panel": "無法載入面板內容。",
+  "retry": "重試",
+  "could_not_perform_action": "無法成功 {action} {entity}",
+  "set_active_environment_error": "設定活動 環境 時出錯",
+  "environment_not_a_fork_error": "環境 不是 fork",
+  "delete_environment_confirmation": {
+    "heading": {
+      "default": "刪除這個分叉的環境？",
+      "with_name": "刪除“{environmentDisplayName}”？"
+    },
+    "description": "刪除此環境可能會導致使用它的任何監視器、計劃執行或模擬伺服器停止正常執行。您確定要繼續嗎？",
+    "description_with_pinning": "這將影響依賴此環境的監視器、計劃執行或模擬伺服器。此外，此環境將從目前固定的所有集合中刪除。",
+    "environment_deleted_successfully": "{name} 環境 已成功刪除。",
+    "deleting": "正在刪除",
+    "delete": "刪除"
+  },
+  "actions": {
+    "copy_link": {
+      "label": "複製連結"
+    },
+    "open_in_new_tab": {
+      "label": "在新選項卡中開啟"
+    },
+    "share": {
+      "label": "分享"
+    },
+    "move": {
+      "label": "移動"
+    },
+    "rename": {
+      "label": "重新命名"
+    },
+    "duplicate": {
+      "label": "複製"
+    },
+    "create_a_fork": {
+      "label": "復刻"
+    },
+    "create_pull_request": {
+      "label": "建立拉取請求"
+    },
+    "merge_changes": {
+      "label": "合併變更"
+    },
+    "pull_changes": {
+      "label": "拉動變更"
+    },
+    "export": {
+      "label": "匯出"
+    },
+    "manage_roles": {
+      "label": "管理角色"
+    },
+    "delete": {
+      "label": "刪除"
+    }
+  },
+  "dependency_actions": {
+    "update": {
+      "label": "更新"
+    },
+    "delete": {
+      "label": "刪除"
+    }
+  },
+  "forbidden_access": {
+    "title": "對環境的訪問被 管理員 撤銷",
+    "message": "這可能是由於安全策略所致。請聯絡您的 管理員 以獲取更多詳細資訊或幫助。"
+  },
+  "disabled_tool_tip_is_offline": "當您重新上線時，您可以執行此操作。",
+  "disabled_tool_tip_no_permission": "您沒有 權限 來執行此操作。",
+  "duplicate_environment_error": "在複製 環境 之前無法儲存更改。請再試一次。"
+}

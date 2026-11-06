@@ -1,0 +1,14 @@
+{
+  "vfs": {
+    "create_title": "建立集合或資料夾",
+    "delete_title": "刪除雲端實體",
+    "create_button": "建立",
+    "delete_button": "刪除",
+    "recursive_warning": "此操作將刪除該集合或資料夾及其所有內容。",
+    "edit_button": "應用編輯",
+    "edit_file_title": "編輯檔案",
+    "create_file_title": "建立檔案",
+    "invalid_file_arguments": "檔案操作的參數無效。",
+    "replace_all_notice": "此替換將應用於所有匹配項。"
+  }
+}

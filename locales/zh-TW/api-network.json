@@ -1,0 +1,75 @@
+{
+  "fork": {
+    "fork_label_with_username": "{username} 的 fork",
+    "fork_label": "我的 fork",
+    "page_title": "Fork 集合 | Postman",
+    "fork_collection_error": {
+      "title": "您離線",
+      "description": "上線後，您將能夠 fork 該集合。"
+    },
+    "update_profile_modal": {
+      "description": "要從公開工作區中的集合建立 fork，您必須將您的個人資料設為公開。您的個人資料將發生以下更改。",
+      "error": "要從公開工作區 fork 集合，您需要設定公開個人資料。"
+    },
+    "create_fork_error": "嘗試 fork 該集合時發生了一些錯誤！",
+    "request_access": {
+      "sent_to_team_admin": "您的加入請求已傳送到團隊管理員。",
+      "sent_to_workspace_admin": "您的訪問權限請求已傳送至工作區管理員。",
+      "access_not_enabled": "請求 未啟用對此資源的訪問。",
+      "failed_to_send": "傳送請求失敗。"
+    },
+    "error_state": {
+      "can_not_reach": {
+        "title": "無法訪問 API 網路",
+        "description": "可能存在連線問題。確保您線上並重試。"
+      },
+      "not_found": {
+        "title": "集合不存在",
+        "description": "此集合似乎已被刪除或不再是公開狀態。"
+      },
+      "unauthorized": {
+        "title": "您無權訪問",
+        "description": "請求訪問權限，或切換到有權限的帳戶。您以 {email} 身份登入",
+        "primary_actions": {
+          "request_access": "請求 訪問",
+          "requested": "已請求"
+        },
+        "secondary_actions": {
+          "switch_account": "切換帳戶"
+        }
+      },
+      "workspace": {
+        "title": "無法獲取使用者工作區",
+        "description": "我們無法獲取有關使用者工作區的資訊。請再試一次。"
+      },
+      "not_allowed_to_fork": {
+        "description": "您沒有權限 fork 到此團隊的工作區。",
+        "no_workspaces_description": "您沒有任何可以 fork 進入的工作區。建立一個工作區以開始。",
+        "no_workspaces_no_permission_description": "您沒有任何可以 fork 進入的工作區。請聯絡您的團隊管理員以獲取工作區訪問權限。",
+        "create_workspace_button": "建立工作區",
+        "button_text": "返回探索"
+      }
+    },
+    "heading": "復刻 {modelDisplayName}",
+    "source_module_label": "來源 {modelDisplayName}",
+    "fork_creation_form": {
+      "description": "分叉會建立 {modelType} 的副本，並使您能夠在不影響原始檔案的情況下執行更改。瞭解有關 <3>forks</3> 的更多資訊。",
+      "link_label": "分叉",
+      "helper_text": "從原始集合中識別此 fork。",
+      "fork_label": "Fork 標籤",
+      "workspace_label": "工作區",
+      "workspace_helper_text": "fork 將在選定的工作區中建立。",
+      "workspace_selector_restrict_fork_message": "這裡不能 fork",
+      "auto_sync_changes_label": "自動拉取更改",
+      "auto_sync_changes_checkbox_label": "從源 {modelDisplayName} 自動拉取更改",
+      "notifications_label": "通知",
+      "notifications_checkbox_label": "關注來源集合以獲取更新通知",
+      "notifications_checkbox_label_forked": "關注分叉集合以獲取更新通知",
+      "notifications_checkbox_info_text": "您將收到有關對原始集合所做更改的通知。",
+      "fork_confirm_button_label": "復刻 {modelDisplayName}",
+      "fork_confirm_button_disabled_tooltip": "重新上線後即可執行此操作",
+      "select_workspace": "選擇工作區",
+      "enter_fork_label": "輸入 fork 標籤"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "connected_accounts": {
+    "orgs_description": "使用第三方應用程式在 Postman 中配置您的組織。 Postman 組織成員可以使用配置的應用程式來設定整合。",
+    "team_description": "使用第三方應用程式配置 Postman 中的團隊。Postman 團隊成員可以使用配置的應用程式來設定整合。",
+    "learn_more": "瞭解更多關於",
+    "installed_apps_link_text": "已安裝的應用程式"
+  },
+  "manage_invite_links": {
+    "heading": "邀請連結",
+    "orgs_description": "用於邀請人員加入您組織的連結。",
+    "team_description": "用於邀請人員加入您團隊的連結。",
+    "admin_links_heading": "管理員生成的連結",
+    "non_admin_links_heading": "非管理員生成的連結",
+    "expired_links_heading": "已過期的連結"
+  },
+  "scim_provisioning": {
+    "team_description": "When enabled, you can effortlessly onboard and manage Postman team members using your identity provider. Learn more about",
+    "orgs_description": "When enabled, you can effortlessly onboard and manage Postman organization members using your identity provider. Learn more about"
+  },
+  "domain_capture": {
+    "team_subheading_part1": "Domains help determine which accounts can be members of your team and be managed by your Admins. Once verified, you can enable account management for team",
+    "orgs_subheading_part1": "Domains help determine which accounts can be members of your organization and be managed by your Admins. Once verified, you can enable account management for organization",
+    "subheading_part2": ". Learn more about",
+    "subheading_link_text": "管理未認領的帳戶"
+  },
+  "manage_domain": {
+    "back_link_label": "所有域名",
+    "breadcrumb_aria_label": "域管理麵包屑"
+  }
+}

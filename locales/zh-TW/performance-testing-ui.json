@@ -1,0 +1,672 @@
+{
+  "performance_test_form": {
+    "header": {
+      "heading": "設定您的效能測試"
+    },
+    "run_choice": {
+      "heading": "執行方式",
+      "in_app": "應用內",
+      "in_app_helper": "在應用程式中執行此效能測試。",
+      "via_cli": "Postman CLI",
+      "via_cli_helper": "配置 CLI 命令以在構建管道上執行。"
+    },
+    "postman_cli": {
+      "install_in_terminal": "在終端中安裝",
+      "run_in_terminal": "在終端中執行",
+      "add_api_key_tooltip": "新增 API Key 後才能執行此命令",
+      "setup_collection_omitted": "此命令未包含初始化集合，因為 Postman CLI 只能執行已同步到 Postman 的集合。",
+      "teardown_collection_omitted": "此命令未包含清理集合，因為 Postman CLI 只能執行已同步到 Postman 的集合。",
+      "load_shape": {
+        "min_cli_version": "你的 Postman CLI 版本為 v{installedVersion}，此命令需要 v{version} 或更高版本。",
+        "unavailable_tooltip": "Postman CLI 無法執行此負載曲線",
+        "unsupported": {
+          "base_not_below_peak_initial_load": "Postman CLI 要求初始負載低於虛擬使用者數（{virtualUsers}）。請調低該值，或使用“固定”負載配置進行平穩執行。",
+          "base_not_below_peak_base_load": "Postman CLI 要求基本負載低於虛擬使用者數（{virtualUsers}）。請調低該值，或使用“固定”負載配置進行平穩執行。",
+          "ramp_up_no_ramp": "Postman CLI 無法執行時長為零的加速階段。請在圖表上將手柄拖開。",
+          "ramp_up_fills_duration": "Postman CLI 無法執行在測試結束時才達到峰值的加速階段。請將加速手柄往前拖，或增加測試時長。",
+          "spike_no_ramp_down": "Postman CLI 無法執行瞬間回落的尖峰。請將尖峰結束手柄往後拖。",
+          "peak_no_hold_or_ramp_down": "Postman CLI 無法執行既無保持也無減速階段的峰值。請在圖表上將手柄拖開。",
+          "starts_past_peak": "Postman CLI 無法執行從峰值開始的負載曲線。請將第一個手柄往後拖。"
+        }
+      }
+    },
+    "errors": {
+      "start_run": {
+        "title": "超出執行限制"
+      },
+      "pass_criteria": {
+        "min": "最小值 {min}",
+        "max": "最大值 {max}",
+        "empty_field": "欄位不能為空"
+      },
+      "max_users": "您最多可以模擬 {maxUserCount} 個虛擬使用者。",
+      "max_duration": "測試持續時間不能超過 {maxDuration} 分鐘。",
+      "users": {
+        "empty": "最少 1",
+        "min": "最少 1",
+        "max": "最多 200",
+        "invalid_number": "應為整數",
+        "max_users_reached": "您最多可以模擬 {count} 個虛擬{count, plural, one {使用者} other {使用者}}。"
+      },
+      "duration": {
+        "empty": "最少 1",
+        "min": "最少 1",
+        "max": "最多 60",
+        "invalid_number": "應為整數",
+        "max_duration_reached": "測試持續時間不能超過 {count} 個{count, plural, one {分鐘} other {分鐘}}。"
+      },
+      "ramp_up_duration": {
+        "invalid_number": "應為整數",
+        "min": "最少 ",
+        "max": "加速時間不能超過測試持續時間"
+      },
+      "collection": {
+        "empty": "從側邊欄拖動集合或資料夾即可開始"
+      },
+      "request_selection": {
+        "no_requests": "您必須選擇請求才能開始執行"
+      },
+      "default": {
+        "error": "解決錯誤以開始執行"
+      },
+      "graph": {
+        "error": "解決錯誤以檢視預覽"
+      },
+      "file_data": {
+        "file_missing": {
+          "suffix": "在本地儲存中找不到檔案。新增檔案或不新增檔案繼續。",
+          "msg": "由於本地儲存中找不到上次執行使用的檔案，因此將在沒有資料檔案的情況下進行集合執行"
+        },
+        "help_content": "<0>{bannerContent} 瞭解有關 </0><1><0> 格式化資料檔案的更多資訊。</0></1>",
+        "error_msgs_map": {
+          "json_invalid_array": {
+            "title": "選定的 JSON 檔案不是物件陣列",
+            "description": "JSON 檔案需要是包含鍵值對的物件陣列。這些物件將在效能測試執行期間提供給虛擬使用者"
+          },
+          "undetermined_file_type": {
+            "title": "無法確定所選資料檔案型別",
+            "description": "資料檔案必須採用 CSV 或 JSON 格式"
+          },
+          "csv_parsing_error": {
+            "title": "解析 CSV 檔案型別時出錯"
+          },
+          "json_parsing_error": {
+            "title": "解析 JSON 檔案型別時出錯"
+          }
+        }
+      },
+      "system": {
+        "not_ready": "設定系統進行效能測試時出現問題。"
+      },
+      "limit_exceeded": "超出執行限制",
+      "workload_running": "另一個性能測試已經在進行中。請等待目前測試完成，然後再開始新的測試。"
+    },
+    "tooltips": {
+      "booting": "您的系統正在設定以進行效能測試。這可能需要幾秒鐘。"
+    },
+    "banner": {
+      "heading": "測試您的 API 在負載下的表現",
+      "desc": "<0>模擬來自本地計算機的真實流量並觀察 API 的效能。瞭解有關</0> <1><0>效能測試</0></1>的更多資訊",
+      "heading_v2": "在更大範圍內執行效能測試",
+      "desc_v2": "<0>模擬真實場景以驗證穩定性並及早發現問題。</0> <1><0> 瞭解更多</0></1>"
+    },
+    "users": {
+      "label": "虛擬使用者",
+      "helper_text": "每個使用者在測試期間並行且重複地執行集合。"
+    },
+    "duration": {
+      "label": "測試時間",
+      "suffix": "分鐘"
+    },
+    "load_profile": {
+      "label": "負載曲線",
+      "helper_text": "確定測試期間虛擬使用者數量如何變化。",
+      "ramp_up_text": "逐漸增加到最大虛擬使用者所需的時間。",
+      "suffix": "曲線"
+    },
+    "ramp_up_duration": {
+      "label": "加速時長",
+      "helper_text": "逐漸增加到最大虛擬使用者所需的時間。",
+      "suffix": "分鐘"
+    },
+    "data_file": {
+      "label": "資料檔案",
+      "label_field_type": "可選",
+      "type_label": "資料檔案型別",
+      "action_label": "選擇檔案",
+      "info_text": "資料檔案使您能夠為每個虛擬使用者分配唯一的資料集，模擬現實世界的場景。",
+      "preview_text": "開啟預覽",
+      "preview": {
+        "vu_column_header": "VU",
+        "heading": "資料檔案",
+        "loading": "正在解析資料檔案...",
+        "column_loading": "正在解析...",
+        "postfix": {
+          "rows": "行",
+          "row": "行"
+        },
+        "btn_text": "配置檔案",
+        "configuration": {
+          "heading": "配置檔案",
+          "run_options": {
+            "label": "VU 資料對映",
+            "options": {
+              "ordered": {
+                "label": "有序",
+                "helper_text": "每個 VU 使用特定行的資料。"
+              },
+              "random": {
+                "label": "隨機化",
+                "helper_text": "每次執行集合時，每個 VU 都使用隨機行中的資料。"
+              }
+            }
+          }
+        },
+        "btn": {
+          "cancel": "取消",
+          "continue": "繼續"
+        },
+        "error": {
+          "validation": {
+            "err": "錯誤",
+            "msg": "解析時出錯"
+          },
+          "default": "由於無法讀取檔案內容，預覽不可用。"
+        },
+        "data_distribution": {
+          "prefix": "檔案使用",
+          "mapping": "VU 對映",
+          "ordered": {
+            "value": "有序",
+            "suffix": "其中每個 VU 接收來自特定行的資料。"
+          },
+          "random": {
+            "value": "隨機化",
+            "suffix": "其中每個 VU 每次執行集合時都會從隨機行接收資料。"
+          }
+        }
+      }
+    },
+    "buttons": {
+      "run": "開始執行",
+      "starting_run": "開始執行..."
+    },
+    "no_create_access": {
+      "public_ws": {
+        "title": "Fork 集合以執行它",
+        "description": "您沒有權限在此公開工作區中執行集合。請將該集合 Fork 到您自己的工作區後再執行。",
+        "primary_action_text": "復刻集合"
+      },
+      "rfa": {
+        "title": "沒有權限執行效能測試",
+        "description": "您可以請求獲取編輯權限，或將此集合 Fork 到您自己的工作區。",
+        "primary_action_text": "請求訪問",
+        "secondary_action_text": "復刻集合"
+      },
+      "api_collection": {
+        "title": "即將推出！",
+        "description": "效能測試目前不適用於 API 內的集合。我們正在努力盡快推出此功能！"
+      }
+    },
+    "pass_criteria": {
+      "expand_label": "通過測試，如果...",
+      "expand_label_info": "設定條件來根據效能指標確定測試是否通過。",
+      "invalid_criteria": "無效的通過/失敗標準"
+    },
+    "new_perf_flow": {
+      "duck_db_initializing": "初始化效能測試系統。請稍等...",
+      "duck_db_initialization_error": "無法初始化效能測試系統。請再試一次。",
+      "duckdb_init_toast": {
+        "title": "初始化錯誤",
+        "timeout": "效能執行程式擴充功能下載超時。檢查您的網路連線和防火牆設定。",
+        "certificate": "證書問題阻止了效能執行程式擴充功能下載。如果您的組織使用代理，請將其證書新增到系統的受信任根證書中。",
+        "network": "網路問題阻止了效能執行程式擴充功能下載。您的 IT 團隊可能需要將 performance-test-artifacts.getpostman.com 域列入白名單。",
+        "policy": "應用程式控制策略阻止了效能執行程式。您的 IT 團隊可能需要允許執行應用程式目錄中的 Postman 檔案。[檢視可能的解決方案](https://learning.postman.com/v11/docs/collections/performance-testing/troubleshoot-performance-tests#possible-solutions)。",
+        "http": "效能執行程式擴充功能下載被阻止或拒絕。代理、防火牆可能正在攔截請求。",
+        "unknown": "效能執行程式擴充功能安裝失敗。檢查 Postman 日誌（搜尋 PerformanceTestV2）以識別並解決問題，或與 Postman 支援人員共享日誌以獲取幫助。"
+      }
+    },
+    "warnings": {
+      "high_virtual_users": "高 VU 執行可能會影響您的系統性能。",
+      "high_vu_switch_description": "此配置更適合在雲端執行",
+      "switch_to_cloud": "切換到雲端"
+    },
+    "machine_limiting": {
+      "description": "{resource} 峰值達到 {pct}%，你的機器正在限制此次執行。請在雲端重新執行以獲得準確結果。",
+      "resource_memory": "記憶體",
+      "resource_cpu": "CPU",
+      "stop_rerun_cloud": "停止並在雲端重新執行",
+      "stop_run_failed": "無法停止效能執行，請重試。",
+      "open_runner_failed": "無法開啟效能執行器，請重試。"
+    },
+    "cloud_local_files": {
+      "row_warning": "{count, plural, one {# 個本地檔案，雲端執行無法訪問。請在執行前將其上傳} other {# 個本地檔案，雲端執行無法訪問。請在執行前將其上傳}}。"
+    },
+    "delete_confirmation": {
+      "title": "刪除效能執行",
+      "description_with_name": "您確定要刪除 <bold>{itemName}</bold> 執行嗎？此操作無法撤消。",
+      "description_without_name": "您確定要刪除此效能測試執行嗎？此操作無法撤消。",
+      "delete": "刪除",
+      "cancel": "取消"
+    }
+  },
+  "cloud_run": {
+    "lifecycle_collections": {
+      "heading": "生命週期集合",
+      "setup": {
+        "label": "Setup 集合（可選）",
+        "short_label": "Setup（可選）",
+        "info_aria_label": "關於 Setup 集合",
+        "environment_mutation_helper_text": "在測試前執行。對環境的修改會延續到測試和 Teardown 階段。",
+        "placeholder": "選擇 Setup 集合",
+        "trigger_add": "+ 準備",
+        "trigger_selected": "Setup：{name}",
+        "trigger_remove": "移除 Setup 集合",
+        "failed_primary_cause": "Setup 生命週期集合執行失敗。",
+        "unknown_primary_cause": "Setup 生命週期集合的執行結果未知。"
+      },
+      "teardown": {
+        "label": "Teardown 集合（可選）",
+        "short_label": "Teardown（可選）",
+        "info_aria_label": "關於 Teardown 集合",
+        "environment_mutation_helper_text": "在測試後執行，並沿用此前對環境的修改。",
+        "placeholder": "選擇 Teardown 集合",
+        "trigger_add": "+ 清理",
+        "trigger_selected": "Teardown：{name}",
+        "trigger_remove": "移除 Teardown 集合",
+        "failed_primary_cause": "清理階段的生命週期集合執行失敗。",
+        "unknown_primary_cause": "清理階段的生命週期集合執行結果未知。"
+      },
+      "create_collection": "新增集合",
+      "import_collection": "匯入集合",
+      "open_collection": "在新標籤頁中開啟集合",
+      "create_collection_no_permission": "你沒有在此工作區中建立集合的權限。",
+      "import_collection_no_permission": "你沒有向此工作區匯入集合的權限。",
+      "environment_restore_failed": "此次生命週期執行所儲存的環境已不可用。請先恢復該環境或清除 Setup 集合，然後重新執行。",
+      "gate_off_prefill": "本次執行不支援生命週期集合。請在啟用生命週期集合的情況下，作為雲端測試重新執行。",
+      "load_error": "集合載入失敗。請重試後再選擇生命週期集合。",
+      "unavailable_option": "{id}（不可用）",
+      "rejections": {
+        "feature_disabled": "新增效能測試不支援生命週期集合。",
+        "environment_required": "執行 Setup 集合需要先選擇一個環境。",
+        "validation_failed": "生命週期集合配置無效。",
+        "cloud_only": "生命週期集合僅適用於雲端效能測試。"
+      }
+    },
+    "rejections": {
+      "vuh_blocked": "請讓管理員在帳單資源用量中為效能測試啟用按量付費。",
+      "vuh_blocked_linked": "請讓管理員在<Link><Text>帳單資源用量</Text></Link>中為效能測試啟用按量付費。",
+      "internal_pool_forbidden": "您的團隊無權在此工作區中使用 Internal Staging Runners。請選擇其他出口選項。",
+      "internal_pool_unavailable": "Internal Staging Runners 暫時不可用。請稍後重試，或選擇其他出口選項。",
+      "local_values_policy_prohibited": "您的團隊或工作區策略禁止傳送一個或多個裝置值。請檢查變數設定後再重新開始執行。",
+      "local_values_disabled": "你的團隊未開啟從此裝置傳送值的功能。請重新開始執行以僅使用共享值。"
+    },
+    "local_values": {
+      "errors": {
+        "policy_changed": "變數策略已更改，請重新開始執行。",
+        "context_changed": "工作區或團隊已更改，請重新開始執行。",
+        "read_failed": "無法讀取此裝置上的值，請重試。",
+        "too_large": "變數值超出雲端執行的 {max} 位元組限制。請減小其大小後重新開始。",
+        "policy_unavailable": "無法檢查此裝置上的值所適用的策略，請重試。",
+        "too_many_rows": "某個變數作用域超出雲端執行的 {max} 個變數限制。請減少該作用域中已啟用的變數後重新開始。",
+        "name_too_long": "某個變數名超過 {max} 個字元。請縮短名稱後重新開始。"
+      },
+      "disclosure": "Postman 會將你裝置上目前的變數值傳送到雲端用於本次執行。",
+      "shared_fallback_notice": "本次執行使用共享的環境值和集合值。由於 Postman 無法檢查你團隊的變數策略，未傳送此裝置上的值（包括全域變數）。",
+      "retry_policy": "重試策略檢查",
+      "status": {
+        "shared": "變數：共享值",
+        "recheck_title": "變數：開始時檢查",
+        "recheck": "開始執行時將重新檢查你團隊的策略，最長 10 秒。如果允許，本次執行將傳送此裝置上的值；否則將使用共享的環境值和集合值，不包含裝置全域變數。",
+        "checking": "正在檢查你團隊的變數策略…",
+        "unavailable": "無法檢查你團隊的變數策略。",
+        "blocked": "你團隊的策略禁止傳送裝置上的值。",
+        "disabled": "傳送裝置上的值不可用。",
+        "unsupported": "此工作區不支援裝置上的值。",
+        "fallback": "現在開始將使用共享的環境值和集合值，不包含裝置全域變數。",
+        "unavailable_title": "變數：不可用"
+      }
+    },
+    "status": {
+      "initializing": "正在初始化",
+      "queued": "排隊中",
+      "running": "執行中",
+      "in_progress": "進行中",
+      "finished": "已完成",
+      "error": "錯誤",
+      "stopped": "已停止",
+      "aborted": "已中止"
+    },
+    "actions": {
+      "stop_run": "停止執行",
+      "stop_test": "停止測試",
+      "stopping": "正在停止…",
+      "cancel": "取消",
+      "cancel_test": "取消測試",
+      "continue_run": "繼續執行",
+      "run_again": "再次執行",
+      "retry": "重試"
+    },
+    "stop_modal": {
+      "stop_heading": "停止雲測試？",
+      "cancel_heading": "取消雲測試？",
+      "stop_description": "您確定要停止此測試嗎？目前迭代將在測試終止之前完成。",
+      "cancel_description": "您確定要取消此測試嗎？它將從佇列中刪除。"
+    },
+    "messages": {
+      "waiting_for_infra": "等待雲基礎設施...",
+      "terminated_no_data_title": "執行結束，沒有指標",
+      "terminated_no_data_description": "此執行在生成任何效能資料之前終止。它可能在設定過程中失敗或在測試開始之前停止。",
+      "resolution_failure_reason": {
+        "dataset_no_compiled_data": "所選資料集尚無已編譯的資料。請在執行前匯入資料來源。",
+        "dataset_unsupported_source": "雲端執行不支援此資料集檢視的資料來源。請先將資料來源上傳到 Postman。",
+        "dataset_service_unconfigured": "此環境中的雲端執行不支援資料集。如需啟用，請聯絡 Postman 支援團隊。",
+        "dataset_service_bad_response": "載入資料集時出錯，請重試。",
+        "dataset_view_not_found": "Postman 找不到此資料集或檢視，或者你沒有訪問權限。",
+        "dataset_service_unreachable": "資料集載入失敗，請重試。",
+        "dataset_too_large": "所選資料集檢視過大，無法用於雲端執行。請通過行範圍（起始/結束）或篩選檢視縮小範圍。",
+        "file_not_found": "Postman 找不到本次執行所用的已上傳到 Postman 的檔案，或者您沒有訪問權限。該檔案可能已被刪除或屬於其他團隊。請在請求中選擇您的團隊擁有的檔案。",
+        "file_access_denied": "您沒有本次執行所用的已上傳到 Postman 的檔案的訪問權限。雲端執行只能使用您所在團隊的檔案。",
+        "file_too_large": "本次執行所用的已上傳到 Postman 的檔案超過了 5 MB 的大小限制。",
+        "files_too_large": "本次執行所用的已上傳到 Postman 的檔案超過了雲端執行的總大小限制。請使用更小或更少的檔案。",
+        "file_quota_exceeded": "您的團隊已達到套餐的檔案下載上限，無法載入本次執行所用的檔案。",
+        "file_download_failed": "無法載入本次執行所用的已上傳到 Postman 的檔案，請重試。",
+        "local_values_unavailable": "隨本次執行傳送的值在執行開始前已過期，請重新開始執行。"
+      },
+      "cloud_file_download_start_failure": "無法下載“{requestName}”使用的雲端檔案“{fileName}”。請檢查網路連線後重試。",
+      "cloud_file_download_start_failure_unnamed": "無法下載“{requestName}”使用的雲端檔案。請確認該檔案仍然存在且您有訪問權限，檢查網路連線後重試。",
+      "dataset_resolution_start_failure": "無法為本次執行載入所選資料集。請確認資料集和檢視仍然存在且你有訪問權限，然後重試。",
+      "test_running": "測試執行中...",
+      "metrics_pending": "測試完成後，效能指標將可用。",
+      "run_in_progress_title": "執行中",
+      "run_in_progress_description": "執行完成後，結果將顯示在此處。檢查“執行”選項卡以跟蹤即時進度。",
+      "phase_submitting_description": "您的雲端執行正在啟動。",
+      "phase_provisioning_description": "為您的測試設定雲基礎設施。",
+      "phase_queued_description": "分配雲資源並擴充功能虛擬使用者。",
+      "phase_running_description": "虛擬使用者正在執行。第一個結果很快就會到來。",
+      "finishing_up": "正在整理中……",
+      "step_validating": "開始",
+      "step_preparing": "設定",
+      "step_scaling": "縮放",
+      "step_setup": "初始化",
+      "step_running": "執行",
+      "step_teardown": "清理",
+      "cloud_run_label": "雲執行",
+      "last_updated_prefix": "最後更新：",
+      "relative_just_now": "現在",
+      "relative_seconds": "{seconds} 秒前",
+      "relative_minutes": "{minutes}分鐘前"
+    },
+    "run_choice": {
+      "cloud": "雲",
+      "cloud_helper": "在 Postman 雲上執行",
+      "beta": "測試版"
+    },
+    "preview_notice": {
+      "heading": "Postman Cloud 上的效能測試",
+      "description": "在 Postman Cloud 上執行效能測試是一項預覽功能，在預覽期間可在合理限制內使用。Postman 可能隨時施加限制以防止濫用。定價將在正式發布前公佈。",
+      "got_it": "知道了"
+    },
+    "estimated_usage": "預計消耗 <Strong>{vuh} VUH</Strong>。<Link><Text>瞭解詳情</Text></Link>",
+    "kept_settings_without_duration": "已保留你的設定：{vus} 個虛擬使用者，{profile}",
+    "kept_settings": "已保留你的設定：{vus} 個虛擬使用者，{duration} 分鐘，{profile}",
+    "copied_from_run_without_duration": "複製自第 {runNumber} 次執行：{vus} 個虛擬使用者，{profile}",
+    "copied_from_run": "複製自第 {runNumber} 次執行：{vus} 個虛擬使用者，{duration} 分鐘，{profile}",
+    "upgrade": {
+      "heading": "升級以在雲上執行效能測試",
+      "description": "雲執行在 Postman 的雲基礎設施上執行效能測試，因此您可以擴充功能虛擬使用者和持續時間，而無需使用自己的計算機。這是預覽功能，在合理限制內可用。Postman 可以隨時施加限制以防止濫用。定價將在正式上市之前公佈。"
+    },
+    "validation": {
+      "min_vus": "雲測試至少需要 {count} 個虛擬{count, plural, one {使用者} other {使用者}}。",
+      "max_vus": "您的帳戶最多允許 {count} 個虛擬{count, plural, one {使用者} other {使用者}}。",
+      "min_duration": "雲測試需要的最短持續時間為 {count} {count, plural, one {分鐘} other {分鐘}}。",
+      "max_duration": "您的帳戶最多允許 {count} {count, plural, one {分鐘} other {分鐘}}。",
+      "contact_support_cta": "<Link><Text>聯絡支援團隊</Text></Link>以獲取更高的限制。",
+      "data_file_too_large_title": "資料檔案超出了雲測試的 {limitMb} MB 限制。",
+      "data_file_too_large_msg": "請選擇較小的檔案或減小檔案大小。"
+    },
+    "column": {
+      "source": "來源",
+      "region": "地區"
+    },
+    "source": {
+      "cloud": "雲",
+      "cli": "CLI",
+      "app": "應用程式"
+    },
+    "button": {
+      "run_on_cloud": "開始執行",
+      "run_on_cloud_static_ip": "開始執行（靜態 IP）"
+    },
+    "static_ip": {
+      "label": "出口路由策略",
+      "info_aria_label": "設定壓測負載機發送請求所使用的源 IP。",
+      "shared_description": "請求來自共享的 IP 地址池。",
+      "static_description": "請求來自可在防火牆中加入白名單的靜態 IP。<Link><Text>瞭解更多</Text></Link>",
+      "option_shared": "動態 IP",
+      "option_static": "靜態 IP",
+      "option_internal_stage": "內部預發布執行器",
+      "internal_stage_description": "請求來自 Postman 的 Internal Staging Runners。僅限 Postman 員工使用。",
+      "upgrade_heading": "升級後可使用靜態 IP 在雲端執行效能測試",
+      "upgrade_description": "將雲端效能測試的流量通過可加入白名單的靜態 IP 轉發，即可訪問防火牆後的 API。升級套餐即可開始使用。"
+    },
+    "group_by": {
+      "label": "分組依據",
+      "none": "無",
+      "region": "地區"
+    },
+    "topology": {
+      "title": "執行",
+      "stages": {
+        "starting": "開始",
+        "starting_empty": "等待雲執行被接受。",
+        "setting_up": "設定",
+        "setting_up_empty": "等待配置雲基礎設施。",
+        "scaling": "縮放",
+        "scaling_empty": "等待分配和擴充功能虛擬使用者。",
+        "running": "跑步",
+        "running_empty": "等待測試開始執行。",
+        "setup_collection": "初始化",
+        "setup_collection_empty": "等待 Setup 集合執行完成。",
+        "teardown_collection": "清理",
+        "teardown_collection_empty": "等待 Teardown 集合執行完成。",
+        "finishing": "總結",
+        "finishing_empty": "結束執行並提供結果。",
+        "finishing_failed": "無法彙總所有實例的結果。 “摘要”選項卡中可能提供部分結果。",
+        "status": {
+          "pending": "待處理",
+          "active": "進行中",
+          "completed": "已完成",
+          "completed_inferred": "已完成",
+          "failed": "已失敗",
+          "stopped": "已停止",
+          "unknown": "未知",
+          "skipped": "已跳過",
+          "not_run": "未執行"
+        },
+        "unavailable_detail": "此執行無法提供詳細的活動。階段進度從最佳可用執行歷史記錄中顯示。",
+        "inferred_detail": "此階段在詳細追蹤可用之前完成。進一步的階段確認它已執行。",
+        "synthetic_marker_user_stopped": "使用者停止執行"
+      },
+      "banners": {
+        "pre_instrumentation": "此執行早於執行跟蹤，因此詳細的活動不可用。",
+        "incomplete": "部分活動日誌 — 您的結果不受影響。",
+        "user_aborted_untraced": "此執行已手動停止。未記錄停止訊號後的活動。"
+      },
+      "stage_strip": {
+        "title": "執行階段",
+        "in_progress": "進行中",
+        "completed": "已完成",
+        "completed_inferred": "已完成",
+        "inferred_tooltip": "階段已完成 - 未捕獲本次執行的詳細活動"
+      },
+      "activity_log": {
+        "title": "活動日誌",
+        "filter_all_stages": "所有階段",
+        "filter_all_status": "所有狀態",
+        "filter_status_ok": "好的",
+        "filter_status_error": "錯誤",
+        "filter_stage_label": "按階段過濾",
+        "filter_status_label": "按狀態過濾",
+        "search_placeholder": "搜尋事件...",
+        "search_label": "搜尋活動日誌",
+        "duration": "耗時",
+        "empty_queued_title": "等待執行開始",
+        "empty_queued_description": "執行開始後，事件將出現在此處。",
+        "empty_collecting_title": "收集活動資料",
+        "empty_collecting_description": "已完成階段的活動將很快出現。",
+        "empty_running_title": "執行開始",
+        "empty_running_description": "活動將在幾秒鐘內湧入。",
+        "empty_filter_title": "沒有匹配的事件",
+        "empty_filter_description": "嘗試調整階段或狀態過濾器，或清除搜尋。",
+        "empty_default_title": "沒有記錄任何活動",
+        "empty_default_description": "此次執行未捕獲任何執行活動。",
+        "dataset_resolution_failed": "資料集解析失敗",
+        "file_resolution_failed": "雲端檔案解析失敗",
+        "local_values_unavailable": "此裝置上的值不可用",
+        "lifecycle": {
+          "setup_success": "Setup 已完成",
+          "setup_failure": "Setup 失敗",
+          "teardown_success": "Teardown 已完成",
+          "teardown_failure": "Teardown 失敗",
+          "total_requests": "請求總數",
+          "failed_requests": "失敗請求數",
+          "reason_label": "原因",
+          "assertion_truncated": "（已截斷）",
+          "reason": {
+            "assertion_failed": "一個或多個斷言未通過。",
+            "script_failed": "集合執行過程中腳本執行失敗。",
+            "request_failed": "一個或多個請求失敗。",
+            "timeout": "集合未在時限內完成。",
+            "cancelled": "集合已被取消。",
+            "environment_required": "執行此生命週期集合需要一個環境。",
+            "resource_resolution_failed": "生命週期集合的資源載入失敗。",
+            "runtime_initialization_failed": "生命週期集合的執行時未能啟動。",
+            "resource_limit": "生命週期集合超出了執行資源上限。",
+            "limit_exceeded": "生命週期執行結果超出了允許的大小。",
+            "system": "因系統錯誤，集合未能完成。"
+          }
+        }
+      }
+    },
+    "tabs": {
+      "tests_loading": "正在執行 - 測試結果很快就會出現在此處。",
+      "errors_loading": "正在執行 - 錯誤資料很快就會出現在此處。"
+    },
+    "stop": {
+      "errors": {
+        "forbidden": "只有測試提交者可以停止此測試。",
+        "conflict": "測試已經完成。",
+        "not_found": "未找到測試執行。",
+        "generic": "停止雲測試失敗。請再試一次。"
+      }
+    }
+  },
+  "datasets": {
+    "upgrade": {
+      "heading": "升級後即可將資料集用作迭代資料",
+      "description": "資料集可以在應用內、CLI 和雲端執行中，為效能測試提供可複用、可共享的測試資料。升級方案即可將資料集檢視附加為迭代資料。"
+    }
+  },
+  "compare_runs": {
+    "footer": {
+      "default": "預設顯示此集合最近的 20 次執行。可按執行名稱或編號搜尋，與更早的執行進行比較。",
+      "search_results": "顯示與搜尋詞匹配的最近 20 次執行。"
+    }
+  },
+  "run_sequence_variables": {
+    "tooltip": {
+      "title": "{target, select, cloud {在雲端無法解析} cli {在 CLI 執行中無法解析} other {無法解析}}",
+      "group": {
+        "script": "可能由腳本設定"
+      },
+      "cli_unchecked": "未勾選，但 CLI 命令會執行集合中的所有請求。",
+      "more": "{count, plural, one {另有 # 個變數} other {另有 # 個變數}}"
+    },
+    "location": "{location, select, url {URL} header {請求頭（{name}）} body {請求體} auth {身份驗證} other {請求}}",
+    "reason": {
+      "not_defined": "{hasEnvironment, select, true {未在 {environmentName}、集合或全域變數中定義。} other {未在集合或全域變數中定義。}}",
+      "empty_value": "已定義，但值為空。",
+      "availability": "{reason, select, local_vault_unavailable {此金鑰儲存在本地保險庫中，在雲端執行中不可用。} linked_secret_unavailable {關聯的金鑰目前在雲端執行中不可用。} other {此金鑰不適用於該請求的域名。}}",
+      "script": {
+        "request": "在 {requestName} 的{scriptType, select, test {測試} other {請求前}}腳本中設定。",
+        "folder": "在 {folderName} 資料夾的{scriptType, select, test {測試} other {請求前}}腳本中設定。",
+        "collection": "在集合的{scriptType, select, test {測試} other {請求前}}腳本中設定。",
+        "setup": "由初始化集合設定。"
+      }
+    },
+    "marker": {
+      "aria": "{requestName}：{count, plural, one {# 個變數} other {# 個變數}}{target, select, cloud {在雲端} cli {在 CLI 執行中} other {}}無法解析"
+    }
+  },
+  "local_mode": {
+    "recorded_notice": "雲端執行器使用已推送的集合，並將結果記錄到 Postman 雲端。開始雲端執行前，請先推送本地更改。",
+    "resolving": "正在檢查此集合能否執行效能測試…",
+    "lookup_failed": "在本地工作區中找不到此集合。請切換到其他標籤頁再切回，或重新開啟執行器後重試。",
+    "cloud_requires_push": "在 Postman 雲端執行需要集合位於 Postman 雲端。請先推送此集合，或在應用中執行。",
+    "cloud_requires_sign_in": "在 Postman 雲端執行需要先登入。請登入，或在應用中執行測試。",
+    "cloud_requires_supported_link": "此集合的 Postman 雲端連結不支援在 Postman 雲端執行。請在應用中執行測試。",
+    "cloud_requires_pushed_environment": "在 Postman 雲端執行需要目前環境位於 Postman 雲端。請先推送該環境，或在應用中執行測試。",
+    "unmatched_requests": "部分所選請求不在此集合的 Postman 雲端副本中：{names}。請推送本地更改後重試。",
+    "ambiguous_requests": "部分所選請求與同一資料夾中的其他項重名：{names}。請重新命名，使每個請求都能與 Postman 雲端副本中的一個請求對應。",
+    "cloud_copy_unavailable": "無法載入此集合的 Postman 雲端副本。請檢查網路連線以及你是否有權訪問該集合，然後重試。",
+    "local_files_unreadable": "無法從本地檔案讀取此集合。請檢查其檔案是否有效後重試。",
+    "engine_unsupported": "你的帳戶暫不支援在應用中從本地檔案執行集合。請使用受支援的 Postman CLI 版本執行本地效能測試。",
+    "feature_disabled": "你的帳戶暫不支援對本地集合進行效能測試。",
+    "incompatible_collection": "此集合不支援效能測試，請使用集合執行器。"
+  },
+  "local_run": {
+    "badge": "本地執行",
+    "badge_tooltip": "執行結束後結果將儲存在此裝置上，不會同步到 Postman 雲端。",
+    "unavailable_title": "本地結果不可用",
+    "unavailable_description": "本次執行未儲存在此裝置上，或其本地結果已被刪除。",
+    "close_tab": "關閉標籤頁",
+    "save_error": "無法將效能測試結果儲存到此裝置。"
+  },
+  "local_history": {
+    "heading": "本地效能執行",
+    "empty": "暫無本地效能執行。",
+    "load_error": "無法載入本地效能執行。",
+    "reload": "重新載入",
+    "delete_selected": "刪除所選執行",
+    "run": "執行",
+    "started_at": "開始時間",
+    "status": "狀態",
+    "finished": "已完成",
+    "stopped": "已停止",
+    "error": "錯誤",
+    "total_requests": "總請求數",
+    "response_time": "平均回應時間（ms）",
+    "error_rate": "錯誤率（%）",
+    "delete_title": "刪除本地效能執行？",
+    "delete_error": "無法刪除所選效能執行，請重試。"
+  },
+  "history": {
+    "heading": "此集合的效能測試執行。",
+    "branch_heading": "此集合在 <branch><icon/>{branch}</branch> 分支下的效能測試執行。",
+    "empty_title": "此集合暫無效能執行",
+    "empty_description": "從本地機器模擬真實流量，觀察 API 的效能表現。",
+    "run_test": "執行效能測試",
+    "error_title": "無法載入效能測試執行",
+    "error_description": "請嘗試重新載入頁面或稍後再來檢視。",
+    "reload": "重新載入",
+    "columns_label": "列",
+    "in_progress": "進行中",
+    "not_configured": "本次執行未配置通過/失敗條件",
+    "not_applicable": "不適用",
+    "columns": {
+      "name": "執行",
+      "status": "狀態",
+      "started_at": "開始時間",
+      "result": "結果",
+      "virtual_users": "虛擬使用者",
+      "duration": "持續時間",
+      "total_requests": "總請求數",
+      "requests_per_second": "平均請求數/秒",
+      "response_time": "平均回應時間",
+      "error_rate": "錯誤率 %",
+      "cores": "CPU 核心數",
+      "memory": "記憶體"
+    }
+  }
+}

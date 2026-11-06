@@ -1,0 +1,77 @@
+{
+  "modal_title": "使用“{name}”",
+  "workspace_label": "工作區",
+  "confirm_button": "使用集合",
+  "missing_workspace_tooltip": "未選擇工作區",
+  "trigger": {
+    "label": "使用",
+    "tooltip": "使用此集合",
+    "offline_tooltip": "您需要聯網才能使用此集合"
+  },
+  "onboarding": {
+    "title": "Fork 現已併入 Use",
+    "description": "可以把集合作為依賴來使用，也可以將其 Fork 到你的工作區中。"
+  },
+  "count": {
+    "tooltip": "{count, plural, =1 {# 次使用} other {# 次使用}}",
+    "offline_tooltip": "需要聯網才能檢視使用情況",
+    "dependency_heading": "作為依賴使用",
+    "fork_heading": "作為 Fork 使用（{count}）",
+    "show_more": "顯示更多",
+    "empty": "暫無 Fork 或依賴",
+    "error": "無法載入使用情況",
+    "dependency_error": "無法載入依賴",
+    "fork_error": "無法載入 Fork",
+    "retry": "重試"
+  },
+  "use_as": {
+    "label": "使用方式",
+    "fork": {
+      "title": "復刻",
+      "description": "在此集合的副本上進行操作。"
+    },
+    "resource": {
+      "title": "依賴項",
+      "description": "在本地檔案系統中使用此集合。"
+    },
+    "flow": {
+      "title": "流程",
+      "description": "基於此集合中的請求構建流程。"
+    }
+  },
+  "fork": {
+    "local_mode_disabled": "本地模式下無法使用 Fork。",
+    "no_permission_disabled": "您沒有權限 Fork 此集合。",
+    "label_field": "Fork 標籤",
+    "default_label": "復刻",
+    "default_label_with_name": "{name} 的 Fork",
+    "auto_pull_label": "自動從源集合拉取變更",
+    "watch_source_label": "關注源集合",
+    "watch_info": "在源集合發生更改時收到通知。",
+    "watch_forked_label": "關注派生的集合",
+    "watch_forked_info": "派生的集合發生變化時接收通知。",
+    "error_title": "無法使用該集合",
+    "error_message": "Fork 該集合時出錯，請重試。"
+  },
+  "resource": {
+    "not_git_connected": "工作區未連線 Git。",
+    "connect_git_button": "連線 Git",
+    "same_workspace_disabled": "此集合已存在於該工作區中。",
+    "desktop_only": "Dependency 僅在 Postman 桌面應用中可用",
+    "toast": {
+      "success_title": "集合已新增",
+      "success_message": "“{name}” 已作為 Dependency 新增。",
+      "error_title": "無法新增集合",
+      "error_message": "新增該集合時出錯，請重試。"
+    }
+  },
+  "flow": {
+    "name_field": "流程名稱",
+    "default_name": "來自“{name}” 集合的流程",
+    "active_workspace_note": "流程將建立在目前活動的工作區中。",
+    "local_mode_disabled": "本地模式下無法使用流程。",
+    "no_permission_disabled": "您沒有權限在此工作區中建立流程。",
+    "error_title": "無法建立流程",
+    "error_message": "基於此集合建立流程時出錯，請重試。"
+  }
+}

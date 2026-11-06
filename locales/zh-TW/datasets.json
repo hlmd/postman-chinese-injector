@@ -1,0 +1,743 @@
+{
+  "variable_suggestions": {
+    "dataset_subtitle": "資料集",
+    "source_subtitle": "隸屬於 {datasetName} 的資料來源",
+    "view_subtitle": "隸屬於 {datasetName} 的檢視",
+    "loading": "正在載入資料集…",
+    "view_dataset": "檢視資料集"
+  },
+  "entity_type_icon": {
+    "label": "資料集"
+  },
+  "sidebar_row_actions": {
+    "add_view": "新增檢視",
+    "more_actions": "檢視更多操作"
+  },
+  "source_type_tooltip": {
+    "file": "從你的計算機上傳 CSV、JSON 或 Excel 檔案，或複用已儲存到此工作區的檔案。",
+    "local": "使用你計算機上的檔案。檔案保留在本機，並在本地進行查詢。",
+    "cloud": "使用儲存到此工作區的檔案。",
+    "remote": "從公開 URL 獲取資料檔案。",
+    "mysql": "連線 MySQL 資料庫，並將某張表作為此資料集的一部分進行查詢。",
+    "postgres": "連線 PostgreSQL 資料庫，並將某張表作為此資料集的一部分進行查詢。",
+    "sqlserver": "連線 SQL Server 資料庫，並將某張表作為此資料集的一部分進行查詢。",
+    "jdbc": "通過 JDBC 驅動連線資料庫，並將其作為此資料集的一部分進行查詢。"
+  },
+  "upgrade_modal": {
+    "heading": "升級以使用資料集",
+    "description": "資料集讓你可以在 Postman 中儲存、連線和複用結構化資料，從檔案到即時資料庫皆可。升級套餐即可開始使用。"
+  },
+  "source_type": {
+    "local": "本地檔案",
+    "remote": "從遠端URL下載",
+    "mysql": "MySQL",
+    "postgres": "PostgreSQL",
+    "sqlserver": "SQL Server",
+    "jdbc": "JDBC",
+    "cloud": "Postman 雲端儲存"
+  },
+  "source_address_bar": {
+    "placeholder": {
+      "default": "輸入 URL 或連線字串",
+      "local_file": "未選擇檔案",
+      "local_file_path": "本地檔案路徑",
+      "jdbc": "jdbc:vendor://host/database",
+      "remote_url": "https://example.com/data.csv"
+    },
+    "select_source": "選擇來源",
+    "source_type_label": "來源型別",
+    "remote_file": "遠端檔案",
+    "change_source_type": "更改資料來源型別",
+    "segment_placeholder": {
+      "host": "主機",
+      "port": "埠",
+      "database": "資料庫"
+    },
+    "no_databases": "未找到資料庫",
+    "file_dialog": {
+      "data_files": "資料檔案",
+      "all_files": "所有檔案"
+    },
+    "source_kind": {
+      "local": "本地檔案",
+      "remote": "遠端檔案",
+      "mysql": "MySQL",
+      "postgres": "PostgreSQL",
+      "redis": "Redis"
+    }
+  },
+  "cartographer": {
+    "empty_state": {
+      "description": "選擇一個資料源以檢視其結構。"
+    },
+    "loading": {
+      "description": "正在載入 Schema…"
+    },
+    "selection_paused": {
+      "tooltip": "由於目前查詢無法解析，欄位選擇已暫停。請在編輯器中修正查詢後再選擇欄位。"
+    }
+  },
+  "source_pane": {
+    "committed_actions": {
+      "try_again": "再試一次",
+      "remove": "移除",
+      "update": "更新"
+    },
+    "form_actions": {
+      "save": "儲存"
+    },
+    "empty_state": {
+      "title": "配置您的資料來源和檢視",
+      "description": "連線資料庫或新增資料檔案以建立工作資料的檢視。"
+    },
+    "configuration_label": "配置"
+  },
+  "source_config": {
+    "connection_status": {
+      "connected": "已連線",
+      "failed": "連線失敗",
+      "validate_failed": "無法連線到資料庫。請檢查連線資訊後重試。"
+    },
+    "test_connection": "測試連線",
+    "edit": "編輯",
+    "field": {
+      "host": "主機",
+      "port": "埠",
+      "database": "資料庫",
+      "username": "使用者名稱",
+      "password": "密碼",
+      "table": "表（可選）",
+      "table_help": "可選。表名留空即可查詢並使用整個資料庫；如需將某張表的資料與資料集中的其他資料來源組合，請填寫表名。",
+      "schema": "模式"
+    },
+    "validation": {
+      "host_required": "主機不能為空"
+    },
+    "ssh": {
+      "enable": "通過 SSH 隧道連線",
+      "description": "資料庫主機必須能從該 SSH 伺服器訪問。",
+      "host": "SSH 主機",
+      "port": "SSH 埠",
+      "username": "SSH 使用者名稱",
+      "private_key": "SSH 私鑰",
+      "host_key": "SSH 主機金鑰",
+      "skip_host_key_verification": "跳過 SSH 主機金鑰驗證",
+      "validation": {
+        "host_required": "SSH 主機不能為空",
+        "username_required": "SSH 使用者名稱不能為空",
+        "private_key_required": "SSH 私鑰不能為空",
+        "private_key_vault_required": "儲存此資料來源前，請先將 SSH 私鑰儲存到 Vault",
+        "host_key_required": "除非跳過主機金鑰驗證，否則 SSH 主機金鑰不能為空"
+      }
+    },
+    "copy_to_workspace": {
+      "label": "將檔案複製到儲存庫",
+      "description": "將檔案複製到儲存庫中，以便與他人共享時資料集仍可正常使用。對於體積很大的檔案，請停用此選項。"
+    },
+    "location": {
+      "file_label": "檔案",
+      "url_label": "URL",
+      "connection_label": "連線字串",
+      "url_placeholder": "https://example.com/data.csv",
+      "choose_file": "選擇檔案",
+      "change_file": "更改",
+      "remote_file": "遠端檔案"
+    }
+  },
+  "secret_field": {
+    "link_to_vault": "連結到 保險庫 金鑰",
+    "unlink_vault": "取消連結 保險庫 金鑰",
+    "view_in_vault": "在 Vault 中檢視",
+    "new_secret": "新增金鑰",
+    "link_aria_label": "將 {label} 連結到 保險庫 金鑰",
+    "unlink_aria_label": "取消 {label} 與 保險庫 金鑰 的連結",
+    "search_placeholder": "搜尋秘密...",
+    "no_matching": "沒有匹配的秘密",
+    "no_available": "沒有可用的 保險庫 秘密",
+    "choose_file": "選擇檔案",
+    "file_prompt_suffix": "（您也可以在下方貼上{label}）",
+    "selected_file": "已選檔案：",
+    "change_file": "更改",
+    "choose_file_aria_label": "選擇{label}檔案",
+    "change_file_aria_label": "更改已選的{label}檔案",
+    "file_contents": "檔案內容",
+    "not_saved_to_vault": "敏感值，請儲存到 Vault",
+    "save_to_vault": "儲存到 Vault",
+    "secret_name": "金鑰名稱",
+    "secret_name_required": "請輸入金鑰名稱。",
+    "contents_required": "儲存前請輸入金鑰內容。",
+    "local_vault": "本地保險庫",
+    "shared_vault": "共享保險庫",
+    "file_too_large": "請選擇小於 {maxSize} 的檔案。",
+    "file_read_failed": "無法讀取此檔案。",
+    "file_save_failed": "無法將此值儲存到 Vault。",
+    "shared_vault_save_failed": "無法將此值儲存到 Shared Vault。請確認此工作區已啟用 Shared Vault 且你擁有編輯權限，然後重試。你也可以改為儲存到 Local Vault。"
+  },
+  "errors": {
+    "ssh": {
+      "config_invalid": "SSH 隧道配置不完整或無效。請檢查堡壘機主機、埠和使用者名稱。",
+      "private_key_invalid": "SSH 私鑰無效或不受支援。請使用未加密的 OpenSSH 或 PEM 格式私鑰。",
+      "host_key_invalid": "SSH 主機金鑰無效。請使用單個公共主機金鑰，例如 ssh-ed25519 AAAA…",
+      "host_key_mismatch": "SSH 主機金鑰驗證失敗。請確認堡壘機目前的主機金鑰。",
+      "auth_failed": "SSH 伺服器拒絕了憑據。請檢查 SSH 使用者名稱和私鑰。",
+      "unreachable": "無法連線到 SSH 伺服器。請檢查堡壘機主機、埠和網路訪問。",
+      "timeout": "SSH 連線超時。請檢查堡壘機和網路後重試。",
+      "forward_failed": "SSH 伺服器無法訪問資料庫。請檢查從堡壘機看到的資料庫主機和埠。"
+    },
+    "secret_resolution_timeout": "Postman 未能及時訪問此資料來源的 Vault 金鑰。請確認 Vault 已解鎖後重試。",
+    "secret_resolution_failed": "Postman 無法解析此資料來源使用的一個或多個 Vault 金鑰。請解鎖 Vault 並確認關聯的金鑰仍然存在。",
+    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 資料來源僅在雲端工作區中可用。"
+  },
+  "workbench_header": {
+    "button": {
+      "save": "儲存",
+      "add_new_source": "新增新來源"
+    }
+  },
+  "sidebar_empty_state": {
+    "sources_description": "未配置資料來源。",
+    "views_description": "未新增任何檢視。"
+  },
+  "data_source_edit": {
+    "extend_with_ai": "用 AI 擴充功能",
+    "extend_with_ai_tooltip": "生成並追加合成資料行",
+    "extend_with_ai_unavailable": "此資料來源的原始資料為只讀，無法擴充功能",
+    "loading": "正在載入源...",
+    "last_refreshed_label": "上次重新整理",
+    "load_error_heading": "資料來源載入失敗",
+    "tabs": {
+      "data": "資料",
+      "settings": "設定"
+    },
+    "jdbc_preview_unavailable_heading": "無法預覽",
+    "jdbc_preview_unavailable_message": "直接查詢資料庫的資料來源不支援預覽。請建立檢視來對資料庫執行查詢。",
+    "create_view": "建立檢視",
+    "jdbc_settings": {
+      "source_info": "資料來源資訊",
+      "source_type": "資料來源型別",
+      "jdbc_type": "JDBC 型別",
+      "driver_class": "驅動類",
+      "driver_jars": "驅動 JAR",
+      "java_runtime": "Java 執行時",
+      "java_executable": "Java 執行檔",
+      "java_detecting": "檢測中...",
+      "java_unavailable": "未檢測到",
+      "connection": "連線",
+      "url_template": "JDBC URL 模板",
+      "variables": "配置變數",
+      "properties": "連線屬性",
+      "ssh_tunnel": "SSH 隧道",
+      "ssh_host": "SSH 主機",
+      "ssh_port": "SSH 埠",
+      "ssh_username": "SSH 使用者名稱",
+      "ssh_private_key": "SSH 私鑰",
+      "not_configured": "未配置",
+      "local_note": "此 JDBC 型別目前僅在本資料集中可用。已在本機檢測到 Java，其路徑不會儲存到資料集中。"
+    },
+    "refresh": "重新整理",
+    "refreshed_at": "重新整理於 {timestamp}",
+    "row_count": "{count, plural, one {# 行} other {# 行}}",
+    "row_count_capped": "僅顯示前 {count, number} 行",
+    "row_count_of_total": "顯示 {total, number} 行中的 {shown, number} 行",
+    "update": "更新",
+    "update_anyway": "仍然更新",
+    "blank_table_breaks_views": "未指定表時，此資料來源會連線整個資料庫，只能通過原生檢視查詢。{count, plural, one {此檢視讀取了該表，將無法繼續使用} other {這 # 個檢視讀取了該表，將無法繼續使用}}：{views}。",
+    "replace_file": {
+      "replace_anyway": "仍然替換",
+      "columns_removed": "新檔案缺少目前資料中的{count, plural, one {此列} other {這 # 列}}：{columns}。使用{count, plural, one {該列} other {這些列}}的查詢將無法正常工作。",
+      "columns_missing": "新檔案缺少目前資料中的{count, plural, one {此列} other {這 # 列}}：{columns}。",
+      "views_broken": "{count, plural, one {此檢視將無法正常工作} other {這 # 個檢視將無法正常工作}}：{views}。",
+      "views_affected": "{count, plural, one {此檢視讀取該資料來源，可能無法正常工作} other {這 # 個檢視讀取該資料來源，可能無法正常工作}}：{views}。",
+      "views_still_run": "{count, plural, one {# 個引用該資料來源的檢視} other {# 個引用該資料來源的檢視}}可以使用新資料{columnsChanged, select, yes {和新列} other {}}成功執行。",
+      "consumers_may_fail": "請檢查所有使用該資料來源的地方（請求、監控、流程等），列的變化可能導致失敗。",
+      "checking_views": "正在檢查讀取該資料來源的檢視…",
+      "columns_added": "新檔案新增了目前資料中沒有的{count, plural, one {一列} other {# 列}}：{columns}。",
+      "names_and_more": "{names} 等另外 {count} 項",
+      "unsupported_type": "請選擇 CSV 或 JSON 檔案來替換該資料來源的資料。",
+      "source_unavailable": "該資料來源暫時無法替換。請重新載入後重試。",
+      "format_change_unavailable": "該資料來源暫不支援更改檔案型別。請用另一個 {format} 檔案替換。"
+    }
+  },
+  "agent_schema": {
+    "row_count_unknown": "行數未知",
+    "row_count": "{count, plural, one {# 行} other {# 行}}",
+    "columns_from_preview": "列資訊基於五行預覽資料推斷"
+  },
+  "file_preview_modal": {
+    "title": "檔案預覽",
+    "save_error_title": "檔案儲存失敗",
+    "row_count": "{count, plural, one {# 行} other {# 行}}",
+    "cancel": "取消",
+    "save": "儲存",
+    "preview_unavailable": "該檔案型別不支援預覽，但仍可新增為資料來源。",
+    "preview_unavailable_large_file": "超過 {size} 的檔案無法預覽。",
+    "preview_unavailable_large_file_hint": "你仍然可以將其新增為資料來源，所有操作均受支援。",
+    "parse_error": {
+      "csv": "無法按 CSV 解析此檔案。請確認它是有效的 CSV 檔案。",
+      "json": "無法按 JSON 解析此檔案。請確認它是有效的 JSON 記錄陣列。"
+    },
+    "save_to_cloud": {
+      "label": "將檔案儲存到 Postman Cloud Store"
+    },
+    "destination_hint": {
+      "local": "檔案保留在本機。使用 Postman Cloud Store 可跨裝置、跨使用者以及在雲端執行中訪問。",
+      "cloud": "已上傳到 Postman Cloud Store，可跨裝置、跨使用者以及在雲端執行中訪問。"
+    },
+    "unsupported_file_type": "此處不能使用該檔案型別。請選擇以下型別之一的檔案：{formats}。",
+    "source_name": {
+      "label": "資料來源名稱",
+      "empty": "請輸入資料來源名稱。",
+      "invalid": "請使用字母和數字，以單個下劃線分隔，並以字母開頭。",
+      "taken": "此資料集中已有同名的資料來源或檢視，請換一個名稱。",
+      "unreadable": "無法讀取此資料集的檔案，因此無法檢查名稱。請修復該檔案，或保留建議的名稱。"
+    }
+  },
+  "data_view": {
+    "run": "執行",
+    "save": "儲存",
+    "save_options_label": "儲存選項",
+    "reset": "重置",
+    "save_as_new_view": "另存為新檢視",
+    "data_label": "資料",
+    "query_label": "查詢",
+    "jdbc_native_query_badge": "原生查詢",
+    "jdbc_native_query_info_label": "關於原生查詢",
+    "jdbc_native_query_tooltip": "此查詢將原樣傳送到你的資料庫伺服器。請使用資料庫自身的查詢語言（SQL 方言）編寫。自動補全和查詢校驗可能不可用。",
+    "deleted_source": "[已刪除的資料來源]",
+    "empty_table": "執行查詢以檢視資料",
+    "save_output_as_source": "另存為資料來源",
+    "use_view": "使用檢視",
+    "use_view_in_collection_run": "集合執行",
+    "use_view_in_monitor": "監控",
+    "more_header_actions": "更多操作"
+  },
+  "save_view_output_modal": {
+    "title": "將輸出儲存為資料來源",
+    "description": "將此檢視的輸出儲存為新的 Postman 雲端資料來源，以便在雲端執行、監控和其他檢視中複用資料庫資料來源的結果。",
+    "name_label": "資料來源名稱",
+    "name_placeholder": "例如 top_customers_snapshot",
+    "name_invalid": "請使用字母、數字和下劃線，並以字母或下劃線開頭。",
+    "name_taken": "此資料集中已存在同名資料源，請使用其他名稱。",
+    "row_count_hint": "{count, plural, one {將上傳 # 行} other {將上傳 # 行}}",
+    "unsaved_query_hint": "將使用目前顯示的未儲存查詢。",
+    "cancel": "取消",
+    "save": "儲存",
+    "error_title": "輸出儲存失敗",
+    "empty_result": "此檢視未返回任何行，沒有可儲存的內容。",
+    "too_many_rows": "此檢視返回的行數超過單次可儲存的上限（最多 {limit, number} 行）。請縮小查詢範圍後重試。",
+    "too_large": "此檢視的輸出超過單次可儲存的上限 {limit}。請縮小查詢範圍後重試。",
+    "success_toast": "檢視輸出已儲存為新資料來源",
+    "no_dataset_file": "此資料集在磁碟上尚無檔案，因此無法將輸出儲存為資料來源。"
+  },
+  "use_view_in_runner_modal": {
+    "title": "在集合執行中使用",
+    "description": "開啟集合執行器，並將此檢視設為執行的迭代資料。",
+    "view_label": "資料集檢視",
+    "collection_label": "集合",
+    "collection_placeholder": "選擇集合",
+    "no_collections": "此工作區中沒有可執行的集合。",
+    "load_error": "無法載入此工作區中的集合。",
+    "retry": "重試",
+    "open_error": "無法開啟集合執行器，請重試。",
+    "cancel": "取消",
+    "submit": "在執行器中開啟"
+  },
+  "dataset_create": {
+    "new_dataset": "新資料集",
+    "save_view": "儲存檢視"
+  },
+  "dataset_overview": {
+    "name_label": "名稱",
+    "name_placeholder": "資料集名稱",
+    "description_label": "描述",
+    "empty_state_banner": {
+      "title": "什麼是資料集？",
+      "description": "資料集用於組織來自檔案和資料庫的可複用資料，讓你能用 SQL 查詢它，並在集合執行、腳本、模擬伺服器和監控中使用。",
+      "learn_more": "瞭解詳情"
+    },
+    "toasts": {
+      "success_title": "成功",
+      "source_created": "資料來源建立成功",
+      "source_updated": "資料來源更新成功",
+      "source_deleted": "資料來源刪除成功",
+      "view_deleted": "檢視刪除成功"
+    },
+    "load_error": {
+      "title": "無法載入此資料集",
+      "retry": "重試"
+    },
+    "sources": {
+      "title": "資料來源",
+      "subtitle": "此資料集背後的原始資料。",
+      "subtitle_empty_hint": "請在下方選擇資料來源型別，新增第一個資料來源。",
+      "drag_drop_hint": "你也可以將 CSV、JSON 或電子表格檔案拖放到此處新增為資料來源。",
+      "drag_drop_hint_empty": "你也可以將 CSV、JSON 或電子表格檔案拖放到此處。",
+      "add_source": "新增資料來源",
+      "new_jdbc_source": "新增 JDBC 資料來源",
+      "add_another": "新增其他資料來源",
+      "drop_overlay": "拖放檔案以將其新增為資料來源",
+      "unsupported_file": {
+        "title": "不支援的檔案型別",
+        "description": "僅 .csv 和 .json 檔案可新增為資料來源。"
+      },
+      "sample": {
+        "prompt": "剛開始使用？先從範例資料來源試試。",
+        "name": "客戶",
+        "description": "包含聯絡方式、所在地區和帳戶狀態欄位的客戶資料。",
+        "add_error": "無法新增該範例資料來源，請重試。"
+      },
+      "enterprise_upgrade": {
+        "feature": "{sourceLabel}",
+        "heading": "升級到 Enterprise 以連線 {sourceLabel}",
+        "description": "連線 {sourceLabel} 需要 Enterprise 套餐。升級後即可將其新增到資料集，並與其他資料一起用 SQL 查詢。"
+      },
+      "kind": {
+        "ai": "用 AI 新增",
+        "local": "本地檔案",
+        "cloud": "Postman 雲端儲存",
+        "mysql": "MySQL",
+        "postgres": "Postgres",
+        "sqlserver": "SQL Server",
+        "jdbc": "JDBC 資料來源",
+        "remote": "公共 URL"
+      },
+      "add_busy": "另一個資料源仍在新增中，請等待完成後重試。"
+    },
+    "views": {
+      "title": "資料檢視",
+      "subtitle": "對資料來源執行的命名查詢。檢視定義了特定的資料切片。",
+      "create_view": "建立檢視",
+      "create_disabled": "要新增檢視，請先為此資料集新增資料來源"
+    }
+  },
+  "delete_source": {
+    "title": "刪除資料來源",
+    "confirm_prompt": "確定要刪除資料來源 <strong>{name}</strong> 嗎？此操作無法撤銷。",
+    "dependent_views_warning": "任何查詢此資料來源的檢視都將停止工作。",
+    "not_found": "未找到資料來源“{name}”",
+    "cancel": "取消",
+    "delete": "刪除",
+    "deleting": "正在刪除..."
+  },
+  "database_source_modal": {
+    "title": {
+      "mysql": "連線 MySQL",
+      "postgres": "連線 Postgres",
+      "sqlserver": "連線 SQL Server"
+    },
+    "submit": "新增資料來源",
+    "cancel": "取消"
+  },
+  "jdbc_source_modal": {
+    "title": "新增 JDBC 資料來源",
+    "reuse_title": "新增資料來源",
+    "steps": {
+      "driver": "驅動",
+      "url": "連線 URL",
+      "datasource": "資料來源"
+    },
+    "driver_heading": "選擇 JDBC 驅動",
+    "driver_description": "選擇一個 JDBC 驅動 .jar 檔案及其所需的依賴 .jar 檔案。Postman 會讀取其中可用的驅動類並檢查你的 Java 執行時。",
+    "driver_jar": "驅動 JAR",
+    "driver_jar_help": "包含 JDBC 驅動的 .jar 檔案及其所需的配套 .jar 檔案。檔案會按顯示順序載入。",
+    "jar_hint": "從你的計算機中選擇 JDBC 驅動 .jar 檔案",
+    "browse": "瀏覽",
+    "add_jar": "新增 JAR",
+    "change": "更改",
+    "type_name": "型別名稱",
+    "type_name_help": "你想如何稱呼這類資料庫連線？可以取一個便於記憶的名稱。",
+    "type_name_placeholder": "例如 PostgreSQL JDBC",
+    "type_name_required": "請輸入此 JDBC 型別的名稱。",
+    "driver_class": "驅動類",
+    "driver_class_help": ".jar 檔案中真正與資料庫通訊的實現類。有些 .jar 檔案包含多個這樣的類，請選擇合適且受支援的那一個。",
+    "driver_class_placeholder": "選擇或輸入驅動類",
+    "driver_class_not_detected": "未檢測到驅動類。請輸入其完全限定類名以繼續。",
+    "driver_class_required": "請選擇 JDBC 驅動類。",
+    "multiple_classes": "檢測到多個 JDBC 驅動，請選擇要使用的類。",
+    "driver_loading": "正在從 JAR 載入驅動…",
+    "driver_loaded": "驅動已載入，找到 {count} 個相容的驅動類。",
+    "jar_error_title": "無法讀取此 JAR",
+    "jar_error_help": "請選擇 JDBC 驅動 JAR，而不是原始碼包或捆綁包。它必須提供 java.sql.Driver 的實現。",
+    "select_jar_error": "請選擇 JDBC 驅動 JAR 以繼續。",
+    "java_runtime": "Java 執行時",
+    "java_detecting": "正在檢測 Java…",
+    "java_not_detected": "未檢測到相容的 Java 執行時。",
+    "java_missing_title": "未找到相容的 Java 執行時",
+    "java_missing_help": "此驅動需要 Java {version} 或更高版本。請安裝相容的執行時，或為 Postman 指定已有的 JDK 或 JRE。",
+    "java_invalid_title": "配置的 Java 路徑下沒有執行檔",
+    "java_invalid_help": "請選擇 Java {version}+ 的執行檔，或包含 bin/java 的 JDK/JRE 主目錄。",
+    "java_version_incompatible": "目前為 Java {detected}，但所選驅動需要 Java {required} 或更高版本。",
+    "locate_java": "定位 Java",
+    "use_different_runtime": "使用其他執行時",
+    "hide_runtime_override": "隱藏執行時覆蓋設定",
+    "java_path": "Java 執行檔或執行時目錄",
+    "java_path_help": "請選擇 Java 執行檔（…/bin/java）或包含 bin/java 的 JDK/JRE 主目錄。此路徑僅保留在本機，不會儲存到 YAML 中。",
+    "java_verified": "已在本機驗證 {runtime}。",
+    "verify": "驗證",
+    "url_heading": "定義連線 URL",
+    "url_description": "每種資料庫的定址方式都不同：Schema、服務名、實例等。請填寫你的資料庫所使用的 URL 格式。雙大括號中的內容會變成配置資料庫連線時需要填寫的欄位。",
+    "common_patterns": "從常見 URL 模式開始",
+    "url_template": "JDBC URL 模板",
+    "url_required": "請輸入 JDBC URL 模板。",
+    "url_variable_error": "第 {position} 個字元附近的變數未閉合。每個變數都需要成對的雙大括號。",
+    "detected_variables": "接下來需要填寫的配置變數（URL 中使用了 {count} 個）：",
+    "no_variables": "新增用雙大括號包裹的佔位符即可建立資料來源欄位。",
+    "driver_properties": "驅動屬性",
+    "driver_suggestions": "根據 {jar} 給出的建議。輸入雙左大括號可篩選，或選擇某個屬性將其插入。",
+    "template_parse_failed": "無法解析模板",
+    "properties_failed": "Postman 無法從此驅動讀取連線屬性。",
+    "yaml_storage_hint": "JDBC 型別和 URL 模板會儲存在資料集的 YAML 中。Java 執行時路徑僅保留在本機。",
+    "source_name": "資料來源名稱",
+    "source_name_placeholder": "例如 orders_db",
+    "source_name_required": "請輸入資料來源名稱。",
+    "connection_details": "連線",
+    "connection_properties": "連線屬性",
+    "add_from_suggestions": "新增驅動屬性",
+    "no_properties": "未選擇額外的連線屬性。",
+    "remove_property": "移除 {name}",
+    "resolved_url": "解析後的 URL",
+    "secrets_hint": "憑據請使用 Vault 引用。明文值會被寫入資料集的 YAML 中。",
+    "test_connection": "測試連線",
+    "connection_testing": "測試中…",
+    "connection_connected": "已連線",
+    "connection_test_unavailable": "驅動配置有效。此原型中暫不支援完整的 JDBC 連線測試；請新增資料來源並執行原生查詢來驗證連通性。",
+    "connection_test_success": "連線成功。",
+    "connection_test_failed": "使用此配置無法連線。",
+    "setup_failed": "JDBC 設定失敗",
+    "java_missing": "未找到 Java 11 或更高版本。",
+    "no_driver_class": "在所選 JAR 中未找到 JDBC 驅動類。",
+    "back": "上一步",
+    "next": "下一步",
+    "submit": "新增資料來源"
+  },
+  "create_view_modal": {
+    "title": "建立檢視",
+    "name_label": "檢視名稱",
+    "name_placeholder": "例如 active_users",
+    "sources_label": "資料來源",
+    "sources_placeholder": "選擇資料來源",
+    "native_query_label": "要執行的查詢（之後可編輯）",
+    "native_query_info_label": "關於原生查詢執行",
+    "native_query_placeholder": "使用此資料庫自身的 SQL 編寫查詢，例如 SELECT * FROM my_table",
+    "native_query_tooltip": "此查詢將原樣傳送到你的資料庫伺服器。請使用資料庫自身的查詢語言（SQL 方言）編寫。自動補全和查詢校驗可能不可用。",
+    "jdbc_single_source": "直接在資料庫上執行查詢的資料來源只能單獨使用，不能與其他資料來源混用。",
+    "native_only_selected": "{name} 直接在資料庫上執行查詢，因此不能與其他資料來源組合。",
+    "native_only_disabled": "{name} 連線整個資料庫並執行自身的 SQL，因此不能與其他資料來源組合。",
+    "submit": "建立檢視",
+    "cancel": "取消"
+  },
+  "description": {
+    "editor_placeholder": "新增描述..."
+  },
+  "permissions": {
+    "no_create_permission": "你沒有在此工作區中建立資料集的權限。",
+    "no_edit_permission": "你沒有在此工作區中編輯資料集的權限。",
+    "no_delete_permission": "你沒有在此工作區中刪除資料集的權限。",
+    "no_add_source_permission": "你沒有在此資料集中新增資料來源的權限。",
+    "no_delete_source_permission": "你沒有在此資料集中刪除資料來源的權限。",
+    "no_create_view_permission": "你沒有在此資料集中建立檢視的權限。",
+    "no_delete_view_permission": "你沒有在此資料集中刪除檢視的權限。",
+    "no_edit_source_permission": "你沒有在此資料集中編輯資料來源的權限。",
+    "no_edit_view_permission": "你沒有在此資料集中編輯檢視的權限。"
+  },
+  "common": {
+    "cancel": "取消",
+    "retry": "重試",
+    "try_again": "重試",
+    "debug_with_ai": "用 AI 除錯",
+    "breadcrumb": {
+      "dataset_fallback": "資料集",
+      "source_fallback": "來源",
+      "view_fallback": "檢視"
+    }
+  },
+  "agent_unavailable": {
+    "not_installed": {
+      "title": "安裝 Postman Desktop Agent 後才能執行此查詢",
+      "body": "此資料集使用了執行在你本機上的資料來源。請安裝 Postman Desktop Agent，以便從瀏覽器查詢該資料來源。",
+      "cta": "安裝 Postman Desktop Agent"
+    },
+    "wrong_version": {
+      "title": "更新 Postman Desktop Agent",
+      "body": "你安裝的 Postman Desktop Agent 版本過舊。請升級到 {minVersion} 或更高版本，以便從瀏覽器執行此查詢。",
+      "cta": "更新 Postman Desktop Agent"
+    },
+    "not_ready": {
+      "title": "Postman Desktop Agent 正在啟動",
+      "body": "Postman Desktop Agent 仍在初始化，請稍後重試。",
+      "cta": "重試"
+    },
+    "retry_cta": "重試"
+  },
+  "mixed_source": {
+    "title": "此查詢同時混用了雲端和本地資料來源",
+    "body": "同時引用 Postman 託管檔案（{cloudSources}）和本地資料來源（{localSources}）的 SQL 無法在同一個引擎中執行。請拆分查詢，讓每部分只訪問其中一側。"
+  },
+  "request": {
+    "run": "執行",
+    "run_blocked": "執行（已阻止）",
+    "cancel": "取消",
+    "run_hint": {
+      "pick_source": "執行前請在位址列中選擇資料來源。",
+      "mutation_off": "變更模式已關閉。請在 Query 選項卡中啟用後再執行寫入語句。",
+      "read_only_on": "此請求已開啟只讀模式。請在 Settings 選項卡中關閉後再執行寫入語句。",
+      "local_file_workspace": "本地檔案資料來源僅在桌面端的本地工作區中可用。請改用資料庫或遠端檔案資料來源，或切換到本地工作區。"
+    },
+    "choose_file": "選擇檔案",
+    "unsupported_source": "資料守護程序尚不支援該資料來源型別。",
+    "local_file_unavailable_web": "網頁版不支援本地檔案。請開啟 Postman 桌面應用查詢本地檔案，或在此使用遠端檔案或資料庫資料來源。",
+    "schema": {
+      "search_placeholder": "搜尋 Schema",
+      "introspect_error": "無法內省此資料來源。",
+      "retry": "重試",
+      "reload": "重新載入 Schema",
+      "icon_source": "資料來源",
+      "icon_table": "表",
+      "icon_alias": "查詢中使用的表別名",
+      "icon_primary_key": "主鍵",
+      "icon_foreign_key": "外部索引鍵引用"
+    },
+    "result_table": {
+      "search_placeholder": "搜尋表格",
+      "empty": "無結果",
+      "running": "正在執行查詢…",
+      "sort": "排序",
+      "sort_column": "按 {column} 排序",
+      "sort_column_ascending": "按 {column} 排序，目前為升序",
+      "sort_column_descending": "按 {column} 排序，目前為降序",
+      "resize_column": "調整 {column} 列寬。按 Enter 鍵可自適應內容寬度",
+      "detail": {
+        "copy": "複製",
+        "copied": "已複製",
+        "char_count": "{count, plural, one {# 個字元} other {# 個字元}}"
+      }
+    },
+    "tabs": {
+      "query": "查詢",
+      "authorization": "身份驗證",
+      "settings": "設定"
+    },
+    "query_editor": {
+      "beautify": "格式化"
+    },
+    "settings": {
+      "read_only_title": "只讀",
+      "read_only_description": "阻止寫入資料或修改 Schema 的查詢。",
+      "read_only_description_forced_suffix": " 遠端檔案資料來源在傳輸層面即為只讀，此開關已鎖定為開啟。",
+      "read_only_aria": "只讀"
+    },
+    "pending_changes": {
+      "summary": "{count, plural, one {# 行} other {# 行}}已更改，尚未提交。",
+      "revert_hint": "關閉標籤頁、空閒超時或手動點選“回滾”都會撤銷這些更改。",
+      "ddl_warning": "此語句會執行 DDL 操作。在部分資料庫引擎上，DDL 無法回滾。",
+      "roll_back": "回滾",
+      "commit": "提交",
+      "continue": "繼續",
+      "continue_countdown": "繼續（{seconds}）"
+    },
+    "file_changes": {
+      "applied": "更改已應用到記憶體中的副本。",
+      "unchanged_hint": "磁碟上的原始檔案未被修改。",
+      "discard": "放棄",
+      "export": "匯出修改後的表格"
+    },
+    "error_boundary": {
+      "title": "出錯了",
+      "description": "{region} 遇到意外錯誤。你的請求未受影響，請重試。",
+      "region_fallback": "檢視",
+      "try_again": "重試"
+    },
+    "response": {
+      "heading": "回應",
+      "view_tab": "檢視",
+      "empty": "執行查詢以檢視資料",
+      "clear": "清除回應",
+      "nothing_to_clear": "沒有可清除的回應。",
+      "more_actions": "更多結果操作",
+      "row_count": "{count, plural, one {# 行} other {# 行}}",
+      "connection": {
+        "connecting": "正在連線 {kind}…",
+        "failed": "{kind} 連線失敗",
+        "connected": "已連線 {kind}",
+        "connected_version": "已連線 {kind} {version}"
+      },
+      "empty_state": {
+        "redis": "傳送 Redis 命令以檢視回應",
+        "default": "執行查詢以載入檢視"
+      },
+      "error": {
+        "generic": "出錯了。重啟應用可能有幫助。",
+        "unknown": "發生未知錯誤。",
+        "agent_required": {
+          "heading": "需要 Desktop Agent",
+          "hint": "請切換到 Postman Desktop Agent 以執行資料請求。"
+        },
+        "unreachable": {
+          "heading": "無法連線到資料來源",
+          "hint": "請檢查主機和埠，並確認資料庫正在執行且接受連線。"
+        },
+        "timeout": {
+          "heading": "連線超時",
+          "hint": "請檢查主機、埠和網路。VPN 或防火牆可能攔截了此連線。"
+        },
+        "host_unresolved": {
+          "heading": "無法解析主機",
+          "hint": "請仔細檢查主機名是否有拼寫錯誤。"
+        },
+        "auth_failed": {
+          "heading": "身份驗證失敗",
+          "hint": "請檢查 Authorization 選項卡中的使用者名稱和密碼。"
+        },
+        "syntax": {
+          "heading": "查詢存在語法錯誤",
+          "hint": "請檢查高亮的語句，很可能是關鍵字、逗號或引號有誤。"
+        },
+        "not_found": {
+          "heading": "查詢中的某些物件未找到",
+          "hint": "請對照 cartographer 中的 Schema 檢查表名和列名。"
+        },
+        "blocked": {
+          "heading": "此查詢已被阻止",
+          "hint": "此請求已開啟只讀模式。請在 Settings 選項卡中關閉後再執行寫入語句。"
+        },
+        "failed": {
+          "heading": "查詢失敗"
+        }
+      }
+    }
+  },
+  "quick_create": {
+    "title": "從檔案建立資料集",
+    "save_as_title": "另存為資料集",
+    "file_label": "檔案",
+    "drop_or_browse": "拖放 CSV 或 JSON 檔案，或<browse>瀏覽</browse>",
+    "replace_file": "替換檔案",
+    "remove_file": "移除檔案",
+    "unsupported_file": "只能新增 CSV 和 JSON 檔案。",
+    "adds_to": "將該檔案作為資料來源和檢視新增到“{datasetName}”中。",
+    "database_hint": "此處只能新增檔案。如需新增資料庫資料來源，請從側邊欄開啟資料集並在其中新增。",
+    "saving_to_workspace": "正在儲存到此工作區。",
+    "saving_to_repository": "正在儲存到儲存庫資料夾。",
+    "more_options": "更多選項",
+    "dataset_label": "資料集",
+    "new_dataset_target": "新增資料集",
+    "dataset_name_label": "資料集名稱",
+    "creates_dataset": "將建立“{datasetName}”，並以該檔案作為資料來源和檢視。",
+    "source_name": {
+      "label": "資料來源名稱",
+      "empty": "請輸入資料來源名稱。",
+      "invalid": "請使用字母和數字，以單個下劃線分隔，並以字母開頭。",
+      "taken": "此資料集中已有同名的資料來源、檢視或資料檔案，請換一個名稱。",
+      "matches_view": "下方的檢視已使用此名稱。請為資料來源和檢視設定不同的名稱。"
+    },
+    "view_name_label": "檢視名稱",
+    "description_label": "描述",
+    "description_placeholder": "這些資料涵蓋哪些內容以及何時使用",
+    "save": "儲存",
+    "cancel": "取消",
+    "created": "已將“{viewName}”新增到“{datasetName}”",
+    "failed": "資料集建立失敗，請重試。",
+    "file_too_large": "此檔案過大，無法儲存為資料集。請選擇小於 {limitMb} MB 的檔案，或改為將其儲存到工作區。",
+    "no_permission": "您沒有在此工作區中建立資料集的權限，且此處沒有可供新增的資料集。"
+  }
+}

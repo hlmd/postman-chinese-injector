@@ -1,0 +1,171 @@
+{
+  "user_card": {
+    "user_info_actions": {
+      "add_account": "新增帳戶",
+      "view_profile": "檢視資料"
+    }
+  },
+  "team_card": {
+    "create_team": "新增團隊",
+    "individual": "個人",
+    "partner": "合作伙伴",
+    "guest": "訪客"
+  },
+  "context_menu": {
+    "undo": "撤消",
+    "redo": "重做",
+    "cut": "剪下",
+    "copy": "複製",
+    "paste": "貼上",
+    "select_all": "選擇全部",
+    "copy_image": "複製圖片",
+    "save_image_as": "圖片另存為",
+    "inspect_element": "檢查元素",
+    "find_selection": "查詢：{selectedText}",
+    "encode_uri_component": "編碼URI元件",
+    "decode_uri_component": "解碼URI元件",
+    "comment": "評論",
+    "save_to_package_library": "儲存到包庫",
+    "existing_package": "現有包",
+    "new_package": "新包",
+    "set_as_variable": "設定為變數",
+    "postbot_in_context_menu": "使用Postbot",
+    "agent_in_context_menu": "使用代理",
+    "add_to_agent": "詢問人工智慧"
+  },
+  "error": {
+    "tooltips": {
+      "disabled": {
+        "no_permission": "您沒有權限執行此操作。",
+        "no_permissions": "您沒有執行此操作的權限。",
+        "is_offline": "當您重新上線時，您可以執行此操作。",
+        "is_scratchpad": "您需要處於工作區中才能執行此操作。",
+        "is_published_api": "您無法對 API 的已發布版本進行更改。",
+        "signed_out": "您需要登入團隊才能執行此操作。",
+        "get_online_to_perform_action": "上網執行此操作",
+        "need_sign_in": "您需要登入團隊才能執行此操作。",
+        "sharing_unavailable_in_filesystem_mode": "目前在檔案系統模式下不支援共享"
+      }
+    }
+  },
+  "unable_to_perform_action": {
+    "heading": "無法執行操作",
+    "description": "我們正在嘗試與我們的伺服器建立連線。連線後即可執行此操作。"
+  },
+  "required_permissions_error_toast": "您沒有執行此操作所需的權限。",
+  "creation_error": {
+    "retry_button": "立即重試",
+    "title": "出了點問題"
+  },
+  "data_editor": {
+    "header_actions": {
+      "toggle_column_header": "顯示列"
+    }
+  },
+  "variable_tooltip": {
+    "unresolved": {
+      "heading": "未解決的變數",
+      "desc": "<0><0>確保變數在 </0><1><0><0>活動環境中定義並啟用</0></0></1><2>、</2><3><0><0>集合</0></0></3><4> 或</4><5><0><0>全域</0></0></5><6>。</6></0>",
+      "no_active_environment": "<0><0>要在此處使用環境變數，您可以</0><1><0><0>選擇一個環境</0></0></1><2>作為活動環境。</2></0>",
+      "not_extensible_collection": {
+        "button_label": "新增新變數",
+        "tooltip": "在 {wrapSentenceSymbol} 之間新增變數名來執行此操作"
+      }
+    },
+    "resolved": {
+      "meta_item": {
+        "value": "值",
+        "scope": "範圍",
+        "current": "目前",
+        "initial": "初始"
+      },
+      "copy_button_tooltip": {
+        "copied": "複製了！",
+        "copy": "複製"
+      }
+    }
+  },
+  "user_sign_out": {
+    "heading": "退出 Postman",
+    "description": "登出將從本地儲存中刪除同步的歷史記錄、集合和環境。您可以隨時重新登入來再次訪問它們",
+    "confirmation_message": "您確定要退出嗎？",
+    "checking_for_unsaved_changes": "正在檢查未儲存的更改...",
+    "unsaved_changes_warning": "您有未儲存的更改",
+    "steps_to_save_changes": "如果您現在退出，您將丟失未儲存的更改。要儲存更改，請按照下列步驟操作：",
+    "export_data_from_settings_step": "從“設定”>“資料”匯出資料以建立備份",
+    "have_a_working_directory_step": "確保您有有效的網際網路連線",
+    "quit_app_step": "退出應用程式（請務必保持登入狀態）",
+    "reopen_app_step": "再次重新開啟應用程式",
+    "sign_out_without_saving": "退出而不儲存我的更改",
+    "sign_out_error": {
+      "title": "出了點問題",
+      "description": "現在無法退出。稍後再試。"
+    },
+    "actions": {
+      "cancel": "取消",
+      "sign_out_and_remove_local_data": "登出並刪除本地資料",
+      "sign_out": "登出"
+    }
+  },
+  "sidebar": {
+    "collections": {
+      "title": "集合"
+    },
+    "apis": {
+      "title": "API"
+    },
+    "environments": {
+      "title": "環境"
+    },
+    "mock_servers": {
+      "title": "模擬伺服器"
+    },
+    "monitors": {
+      "title": "Monitor"
+    },
+    "flows": {
+      "title": "Flow"
+    },
+    "insights": {
+      "title": "見解"
+    },
+    "history": {
+      "title": "歷史"
+    },
+    "specs": {
+      "title": "規格"
+    },
+    "files": {
+      "title": "檔案"
+    }
+  },
+  "file_upload": {
+    "select_file": "選擇檔案",
+    "select_files": "選擇檔案",
+    "selected_files": "已選擇 {count} 個檔案"
+  },
+  "deep_link": {
+    "redirect_view": {
+      "action": "我們正在桌面應用程式中開啟連結...",
+      "explanation": "時間太長？如果桌面應用程式未自動開啟，請確保該應用程式版本為 v11.40.0 或更高版本。",
+      "open_in_browser": "在瀏覽器中開啟",
+      "always_open_in_browser": "<0>更喜歡在瀏覽器中使用 Postman？ <1><0><0>始終在瀏覽器中開啟</0></0></1></0>",
+      "download_postman_instruction": "或者下載 Postman 應用程式：",
+      "download_button_label": "下載 {platformName}"
+    },
+    "onboarding_modal": {
+      "header": "改為在桌面應用程式中開啟？",
+      "description": "您可以隨時在設定中更改此設定。",
+      "checkbox_label": "始終在桌面應用程式中開啟",
+      "open_button": "在桌面上開啟"
+    },
+    "top_banner": {
+      "title": "在桌面應用程式中開啟這個 工作區 嗎？",
+      "button_text": "在桌面上開啟"
+    }
+  },
+  "http_method_dropdown": {
+    "open_dropdown": "開啟下拉選單",
+    "close_dropdown": "關閉下拉選單"
+  }
+}

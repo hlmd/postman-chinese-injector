@@ -1,0 +1,8 @@
+{
+  "entity_type_icon": {
+    "label": "流程"
+  },
+  "status_indicator": {
+    "deployed": "狀態：已部署"
+  }
+}

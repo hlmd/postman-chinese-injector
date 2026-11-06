@@ -1,0 +1,66 @@
+{
+  "not_found_blank_state": {
+    "title": "404. 頁面未找到",
+    "description": "你訪問的頁面不存在。"
+  },
+  "settings_page": {
+    "heading": "共享 保險庫",
+    "description": "安全地與團隊共享敏感資料。除公開工作區外，Shared Vault 在每個工作區中預設可用。可按工作區單獨覆蓋設定，以貫徹最小權限原則。",
+    "update_error": "無法更新共享 保險庫 設定。請稍後重試。",
+    "toast_enabled": "為您的 團隊 啟用共享 保險庫",
+    "toast_disabled": "已為您的 團隊 關閉共享 保險庫",
+    "button_switch_on": "開啟",
+    "button_switch_off": "關",
+    "global_switch_off_tooltip": "對於某些工作區，移動到共享 保險庫 策略處於活動狀態。請更改策略以關閉共享 保險庫。",
+    "tabs": {
+      "workspaces": "工作區",
+      "integrations": "外部保險庫整合"
+    }
+  },
+  "vault_settings_panel": {
+    "open_settings": "設定",
+    "heading": "Vault 設定",
+    "intro_banner": {
+      "title": "團隊級 Vault 控制",
+      "description": "為團隊配置控制台脫敏。點選“儲存設定”後，請重新整理 Postman 再進行測試。"
+    },
+    "mask_secrets": {
+      "label": "對 Vault 金鑰脫敏",
+      "description": "自動在控制台中對金鑰脫敏，使其無法以明文讀取。建議保持開啟。"
+    },
+    "support_in_scripts": {
+      "label": "允許腳本使用 Vault 金鑰",
+      "description": "允許腳本在請求執行期間訪問 Vault 金鑰。"
+    },
+    "share_across_workspaces": {
+      "label": "在所有工作區間共享金鑰",
+      "description": "讓 Shared Vault 在團隊有權訪問的所有工作區中可用，而不僅限於目前工作區。"
+    },
+    "save": "儲存設定",
+    "cancel": "取消",
+    "save_success": "Vault 設定已儲存",
+    "save_error": "Vault 設定儲存失敗，請重試。",
+    "load_error": "Vault 設定載入失敗。在此問題解決前無法儲存。",
+    "admin_required_error": "只有團隊管理員才能更新 Vault 設定。",
+    "mask_confirm": {
+      "title": "關閉金鑰脫敏？",
+      "description": "關閉此設定後，Vault 金鑰將在控制台中以明文顯示，任何能訪問控制台的團隊成員都可以直接讀取金鑰值。確定要繼續嗎？",
+      "confirm": "確定，關閉脫敏",
+      "cancel": "保持開啟"
+    }
+  },
+  "workspace_selector": {
+    "column_enabled": "共享 保險庫",
+    "bulk_enable": "開啟",
+    "bulk_disable": "關",
+    "toast_update_success": "已成功更新共享 保險庫 設定",
+    "toast_update_error": "無法更新 工作區 設定。請再試一次。",
+    "empty_title": "未找到工作區",
+    "empty_description": "嘗試調整過濾器或搜尋以查詢工作區。",
+    "error_title": "無法載入工作區",
+    "error_description": "我們無法載入您工作區的共享 保險庫 設定。請再試一次。",
+    "error_retry": "重試",
+    "public_workspace_disabled_tooltip": "出於安全原因，公開 工作區不支援共享 保險庫。",
+    "workspace_switch_off_tooltip": "移至共享 保險庫 策略對此 工作區 有效。請更改策略以關閉共享 保險庫。"
+  }
+}

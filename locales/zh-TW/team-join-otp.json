@@ -1,0 +1,31 @@
+{
+  "team_join_otp": {
+    "page": {
+      "setup_loading": "載入中...",
+      "continue_to_postman": "繼續Postman"
+    },
+    "otp": {
+      "heading": "確認您的 請求 加入",
+      "description": "我們向 <bold>{email}</bold> 傳送了程式碼以確認您的 請求",
+      "submit_button": "確認並加入"
+    },
+    "loading": {
+      "heading": "正在加入團隊",
+      "subheading": "請耐心等待，我們會為您進行設定。"
+    },
+    "rfa": {
+      "heading": "您加入此 團隊 的 請求 正在稽核中",
+      "subheading": "一旦 團隊 管理員 回覆，我們將通知您。",
+      "signed_in_message": "您已以 {email} 身份登入。 <switch>切換帳戶</switch>"
+    },
+    "request_access": {
+      "heading": "您無權訪問該資源",
+      "subheading": "請求 樓主分享給大家。",
+      "button": "請求 訪問"
+    },
+    "error": {
+      "heading": "出了點問題",
+      "subheading": "我們現在無法完成您的 請求。請稍後重試。"
+    }
+  }
+}

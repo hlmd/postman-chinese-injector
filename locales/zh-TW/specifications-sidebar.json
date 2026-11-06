@@ -1,0 +1,25 @@
+{
+  "permission_load": {
+    "banner_message": "部分規範的權限無法載入。",
+    "retry_button": "重試"
+  },
+  "entity_type_icon": {
+    "label": "規範"
+  },
+  "version_badge": {
+    "tooltip": "正在檢視版本 {versionLabel}。這是隻讀快照。"
+  },
+  "bulk_delete": {
+    "heading": "刪除 {count, plural, one {# 個規範} other {# 個規範}}",
+    "confirmation_line1": "確定要永久刪除{count, plural, one {這個規範} other {這 # 個規範}}嗎？",
+    "confirmation_line2": "此操作無法撤銷。",
+    "over_limit_title": "一次最多隻能刪除 {max} 個規範",
+    "over_limit_description": "已選擇 {specCount} 個規範。請減少到 {max} 個及以內後重試。",
+    "partial_failure": "已刪除 {totalCount} 個規範中的 {deletedCount} 個，{failedCount} 個刪除失敗。",
+    "error": "無法刪除規範",
+    "cancel": "取消",
+    "confirm": "刪除",
+    "summary_label": "{count, plural, one {# 個規範} other {# 個規範}}",
+    "summary_note": "刪除後無法恢復"
+  }
+}

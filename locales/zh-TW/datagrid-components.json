@@ -1,0 +1,26 @@
+{
+  "bulk_action_bar": {
+    "selected_count": "已選擇 {count} 項",
+    "clear_selection": "清除選擇"
+  },
+  "filter_bar": {
+    "search_placeholder": "搜尋...",
+    "clear_all": "全部清除"
+  },
+  "filters_menu": {
+    "button_label": "篩選",
+    "clear_filters": "清除過濾器"
+  },
+  "view_toggle": {
+    "label": "檢視切換",
+    "grid": "網格檢視",
+    "list": "列表檢視"
+  },
+  "actions_cell": {
+    "more_actions": "更多操作"
+  },
+  "select_cell": {
+    "select_all": "選擇全部",
+    "select_row": "選擇行"
+  }
+}

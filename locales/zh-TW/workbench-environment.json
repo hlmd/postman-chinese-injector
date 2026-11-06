@@ -1,0 +1,104 @@
+{
+  "globals": {
+    "save_globals": "儲存全域變數",
+    "export_globals": "匯出全域變數",
+    "save": "儲存",
+    "export": "匯出"
+  },
+  "new_environment_placeholder": "新增環境",
+  "content_pane": {
+    "header": {
+      "placeholder": "環境名稱",
+      "actions": {
+        "fork": {
+          "disabled_tooltip": "聯網後即可建立復刻或檢視現有復刻。",
+          "label": "建立復刻"
+        },
+        "save": {
+          "save_label": "儲存",
+          "saving_label": "正在儲存…",
+          "tooltip": {
+            "no_changes": "沒有需要儲存的新更改。",
+            "save_environment": "儲存環境"
+          },
+          "toast_error": "儲存環境時出錯。"
+        },
+        "share": {
+          "label": "分享",
+          "tooltip": {
+            "share_environment": "分享環境"
+          }
+        },
+        "set_active": {
+          "disabled_text": "此環境已處於啟用狀態。"
+        },
+        "set_as_active": {
+          "label": "設為活動環境"
+        },
+        "move": {
+          "label": "移動"
+        },
+        "export": {
+          "label": "匯出"
+        },
+        "duplicate": {
+          "label": "複製"
+        },
+        "pull_request": {
+          "label": "建立 Pull Request"
+        },
+        "merge": {
+          "label": "合併更改",
+          "disabled_text": "此環境不是復刻。"
+        },
+        "pull_changes": {
+          "label": "拉取更改",
+          "disabled_text": "沒有可拉取的更改。"
+        },
+        "manage_roles": {
+          "label": "管理角色"
+        },
+        "delete": {
+          "label": "刪除"
+        },
+        "remove_from_workspace": {
+          "disabled_text": "聯網後才能執行此操作。"
+        },
+        "download": {
+          "disabled_text": "登入後才能執行此操作"
+        },
+        "disabled_text": {
+          "get_online": "聯網後才能執行此操作。",
+          "not_a_fork": "此環境不是復刻。"
+        },
+        "toast_error": {
+          "no_permission": "您沒有權限執行此操作"
+        }
+      }
+    },
+    "request_permission_info_bar": {
+      "message": "申請權限以更新這些變數的共享值。您可以編輯本地值。"
+    }
+  },
+  "context_bar": {
+    "title": "環境詳情",
+    "variable_sync_disable_impact_info_bar": {
+      "description": {
+        "all_disabled": "由於團隊管理員已停用變數同步，模擬伺服器、監控和 Newman 將無法使用任何變數的值。",
+        "secret_disabled": "由於團隊管理員已停用私密變數同步，模擬伺服器、監控和 Newman 將無法使用私密變數的值。"
+      }
+    },
+    "system_environment": {
+      "label": "系統環境",
+      "none_option_label": "無系統環境",
+      "link_tooltip": "關聯到系統環境",
+      "change_tooltip": "更改系統環境",
+      "open_tooltip": "開啟系統環境",
+      "permission_denied_tooltip": "只有 API 目錄管理員或工作區管理員才能將環境關聯到系統環境。"
+    }
+  },
+  "tab_conflict_message": {
+    "environment": "自您上次開啟該標籤頁以來，此環境已被修改。",
+    "globals": "自您上次開啟該標籤頁以來，全域變數已被修改。"
+  }
+}

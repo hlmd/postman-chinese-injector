@@ -1,0 +1,55 @@
+{
+  "design_api_spec": {
+    "modal": {
+      "heading": "建立規範",
+      "description": "設計新的 API 規範，或引入已有的規範。",
+      "format": {
+        "heading": "從模板開始",
+        "description": "選擇一種格式，從可編輯的可用檔案開始。",
+        "select_label": "規範格式",
+        "select_placeholder": "選擇選項"
+      },
+      "create_button_label": "建立規範",
+      "close_button_label": "關閉",
+      "creating_status": "正在建立你的規範...",
+      "divider_label": "或",
+      "import": {
+        "heading": "匯入已有規範",
+        "description": "Postman 會識別格式、進行檢查，並在 Spec Hub 中開啟。",
+        "drop_prompt": "拖放檔案",
+        "drop_separator": "或",
+        "choose_file_button_label": "選擇檔案",
+        "checking_status": "正在檢查檔案...",
+        "error": {
+          "folder": "此處無法匯入資料夾。請選擇單個規範檔案。",
+          "multiple_files": "每次只能拖放一個規範檔案。",
+          "unsupported_file": "不支援該檔案，請嘗試其他檔案。"
+        }
+      }
+    },
+    "toast": {
+      "create_error_check_before_retry": "無法建立你的規範。請重新整理頁面，確認是否已建立後再重試。",
+      "open_error": "規範已建立，但無法開啟。請在側邊欄中查詢。"
+    }
+  },
+  "import_modal": {
+    "document_and_share_apis": {
+      "heading": "匯入你想編寫文件的 API",
+      "subtitle": "將其匯入為集合，然後新增文件並與團隊共享。",
+      "placeholder": "貼上 OpenAPI 規範、集合 JSON 或 cURL 命令。也支援 GraphQL 和 AsyncAPI",
+      "git_help": "使用儲存庫中已有的集合和規範。"
+    },
+    "testing_apis": {
+      "heading": "匯入你想測試或除錯的 API",
+      "subtitle": "每個請求匯入後即可傳送，你可以立即開始測試。",
+      "placeholder": "貼上 cURL 命令、集合 JSON 或 OpenAPI 規範。也支援 GraphQL 和 AsyncAPI",
+      "git_help": "使用儲存庫中已有的集合和規範。"
+    },
+    "lead_a_team_that_works_with_apis": {
+      "heading": "匯入你的團隊正在開發的 API",
+      "subtitle": "然後邀請你的團隊。他們將從一個可用的 API 開始，而不是一個空工作區。",
+      "placeholder": "貼上集合 JSON、OpenAPI 規範或 cURL 命令。也支援 GraphQL 和 AsyncAPI",
+      "git_help": "使用團隊已儲存在 Git 中的集合和規範。"
+    }
+  }
+}

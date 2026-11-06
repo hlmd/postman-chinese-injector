@@ -1,0 +1,105 @@
+{
+  "default_test_name": "新增應用測試",
+  "sidebar": {
+    "aria_label": "應用測試",
+    "rename_button": "重新命名",
+    "delete_button": "刪除",
+    "load_error": "無法載入應用測試",
+    "retry_button": "重試",
+    "empty_title": "暫無應用測試",
+    "create_button": "建立",
+    "entity_type_label": "應用測試",
+    "more_actions": "檢視更多操作",
+    "offline_reason": "離線時無法更改應用測試。",
+    "delete_modal": {
+      "heading": "刪除 {name}？",
+      "body": "該測試及其規範將被刪除，執行歷史會保留。",
+      "cancel_button": "取消",
+      "confirm_button": "刪除"
+    }
+  },
+  "workbench": {
+    "save_button": "儲存",
+    "run_button": "執行",
+    "running_button": "執行中…",
+    "run_needs_spec_tooltip": "執行前請先儲存規範",
+    "specs_tab": "規範",
+    "runs_tab": "執行記錄",
+    "settings_tab": "設定",
+    "add_spec_button": "新增規範",
+    "remove_spec_button": "移除規範",
+    "no_specs": "新增一個規範以開始使用。",
+    "runs": {
+      "status_column": "狀態",
+      "started_column": "開始時間",
+      "results_button": "結果",
+      "archive_button": "歸檔",
+      "all_runs_button": "全部執行",
+      "load_error": "無法載入執行記錄。請重試以檢查是否有執行正在進行。"
+    },
+    "results": {
+      "result_column": "結果",
+      "test_column": "測試",
+      "error_column": "錯誤",
+      "passed": "通過",
+      "failed": "失敗",
+      "skipped": "已跳過",
+      "flaky": "不穩定",
+      "no_report": "此次執行沒有可用的報告。",
+      "report_title": "Playwright 測試報告"
+    },
+    "run_state": {
+      "passed": "通過",
+      "failed": "失敗",
+      "errored": "出錯",
+      "aborted": "已中止",
+      "running": "執行中",
+      "starting": "啟動中",
+      "queued": "排隊中",
+      "finished": "已完成"
+    },
+    "load_error": "無法載入此應用測試",
+    "not_found": "此應用測試已不存在。",
+    "editor_load_error": "程式碼編輯器載入失敗。",
+    "conflict": {
+      "message": "在你編輯期間，有人儲存了此測試的更新版本。你可以重新載入以檢視對方的更改（未儲存的編輯將被丟棄），或用你的版本覆蓋。",
+      "reload_button": "重新載入新版本",
+      "overwrite_button": "用我的版本覆蓋"
+    },
+    "source_error": "無法載入此測試的規範。請在編輯前重試，以免覆蓋任何內容。",
+    "retry_button": "重試",
+    "settings": {
+      "description": "此測試每次執行的預設設定，單個規範仍可覆蓋。儲存後生效。",
+      "project_default": "專案預設值",
+      "browser_label": "瀏覽器",
+      "width_label": "視口寬度",
+      "height_label": "視口高度",
+      "retries_label": "重試次數（0 到 3）",
+      "errors": {
+        "required": "請輸入一個值。已儲存的設定可以修改，但不能清空。",
+        "whole_number": "請輸入 0 或正整數。",
+        "positive_number": "請輸入大於 0 的整數。",
+        "too_large": "請輸入不超過 {max} 的值。"
+      }
+    }
+  },
+  "errors": {
+    "editor_access": "你需要此工作區的編輯者權限才能更改應用測試。",
+    "request_failed": "應用測試服務無法完成請求（HTTP {status}），請重試。",
+    "project_too_large": "專案超出了 {limit} 的上限。請移除較大的檔案後重試。",
+    "archive_too_large": "儲存的歸檔檔案過大，無法開啟。",
+    "archive_corrupt": "儲存的歸檔檔案已損壞，無法開啟。",
+    "binary_file": "此檔案不是文字檔案，無法在此編輯該專案：{path}",
+    "linked_file": "此路徑是一個連結，無法在此編輯該專案：{path}",
+    "path_too_long": "檔案路徑過長，無法儲存：{path}",
+    "unsafe_path": "專案中不允許使用此檔案路徑：{path}",
+    "duplicate_path": "有兩個檔案使用了相同的路徑：{path}",
+    "unexpected_response": "應用測試服務返回了意外的回應，請重試。",
+    "download_failed": "下載失敗（HTTP {status}），請重試。",
+    "upload_failed": "上傳失敗（HTTP {status}），請重試。",
+    "save_conflict": "有人儲存了此測試的更新版本。請在儲存前選擇重新載入或覆蓋。",
+    "invalid_settings": "請先修正執行設定再儲存。",
+    "unknown": "出現問題，請重試。"
+  },
+  "create_error": "無法建立應用測試。"
+}

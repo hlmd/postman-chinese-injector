@@ -1,0 +1,374 @@
+{
+  "socket_io": {
+    "user_friendly_language": {
+      "text": "文字",
+      "binary": "二進位",
+      "json": "JSON",
+      "xml": "XML",
+      "html": "HTML",
+      "base64": "Base64",
+      "hex": "十六進位制"
+    },
+    "response": {
+      "websocket_status": {
+        "connected": "已連線",
+        "disconnected": "已斷開連線",
+        "reconnecting": "正在重新連線",
+        "connecting": "正在連線",
+        "disconnecting": "正在斷開連線"
+      },
+      "disabled_tooltip": {
+        "is_offline": "恢復聯網後即可執行此操作。",
+        "no_permission": "您沒有權限執行此操作。"
+      },
+      "notification": {
+        "new_messages": "新訊息",
+        "jump_to_latest": "跳轉到最新"
+      },
+      "empty_state": {
+        "message": "建立連線以傳送和接收訊息。"
+      },
+      "truncated_state": {
+        "title": "回應內容過大，無法顯示",
+        "message": "由於回應內容過大，無法儲存到歷史記錄中。"
+      },
+      "generic_empty_state": {
+        "title": "未找到訊息",
+        "message": "請嘗試使用其他關鍵字或篩選條件重試。"
+      },
+      "filter_placeholder": "搜尋",
+      "search_filter_label": "搜尋",
+      "clear_messages": "清除訊息",
+      "sent_messages": "已傳送訊息",
+      "received_messages": "已接收訊息",
+      "all_messages": "所有訊息",
+      "deselect": "取消選擇",
+      "time_difference": "時間差：{timeDifference}",
+      "hidden_message": {
+        "label": "已隱藏 {index} 條訊息",
+        "restore_button_label": "恢復"
+      },
+      "preview": "預覽",
+      "reload_text": "預覽",
+      "message_preview": {
+        "connected": "已連線到 {url}",
+        "disconnected": "已從 {url} 斷開連線",
+        "reconnecting": "正在重新連線到 {url}",
+        "abort": "連線已中止",
+        "error": "無法連線到 {url}",
+        "no_listener": "新增事件監聽器以接收訊息",
+        "subscribed": "正在監聽",
+        "unsubscribed": "已停止監聽",
+        "empty_text": "（空）",
+        "binary_text": "二進位"
+      },
+      "message_stream_item": {
+        "error": "<Strong>錯誤：</Strong><Span> </Span><BodyMedium>{error}</BodyMedium>",
+        "handshake_details": "握手詳情",
+        "copied_to_clipboard": "已複製到剪貼簿",
+        "message_saved": "訊息已儲存",
+        "can_not_copy_this_message": "無法複製此訊息",
+        "copy_message": "複製{size, plural, =1 {訊息} other {首個參數}}",
+        "save_request": "儲存此請求以執行該操作。",
+        "save_message": "儲存訊息",
+        "remaining_args": "+{remaining_args, plural, =1 {# 個參數} other {# 個參數}}"
+      },
+      "toolbar": {
+        "wrap_line": "自動換行",
+        "beautify": "美化",
+        "show_message": "顯示訊息",
+        "show_hexdump": "顯示十六進位制轉儲",
+        "search": "搜尋"
+      }
+    },
+    "connection_close_codes": {
+      "io_server_disconnect": {
+        "name": "IO 伺服器斷開連線",
+        "description": "伺服器已強制斷開該 socket 連線。"
+      },
+      "io_client_disconnect": {
+        "name": "IO 客戶端斷開連線",
+        "description": "該 socket 已被手動斷開連線。"
+      },
+      "ping_timeout": {
+        "name": "Ping 超時",
+        "description": "伺服器未在 pingTimeout 時間範圍內回應。"
+      },
+      "transport_close": {
+        "name": "傳輸關閉",
+        "description": "連線已關閉。"
+      },
+      "transport_error": {
+        "name": "傳輸錯誤",
+        "description": "連線發生錯誤。"
+      },
+      "unknown": {
+        "name": "錯誤",
+        "description": "由於未知錯誤，連線已關閉：{reason}"
+      }
+    },
+    "settings": {
+      "strict_ssl": {
+        "title": "啟用伺服器證書驗證",
+        "description": "通過安全連線進行連線時驗證伺服器證書。",
+        "summary": "通過安全連線進行連線時驗證伺服器證書。"
+      },
+      "version": {
+        "title": "客戶端版本",
+        "description": "選擇用於連線伺服器的客戶端版本。",
+        "summary": "用於連線伺服器的客戶端版本。"
+      },
+      "path": {
+        "title": "握手路徑",
+        "description": "設定握手請求期間使用的伺服器路徑。",
+        "summary": "握手請求期間使用的伺服器路徑。"
+      },
+      "handshake_timeout": {
+        "title": "握手請求超時時間",
+        "description": "設定握手請求超時前的等待時間（毫秒）。設定為 0 表示永不超時。",
+        "summary": "握手請求超時前的等待時間（毫秒）。"
+      },
+      "retry_count": {
+        "title": "重新連線次數",
+        "description": "連線意外關閉時的最大重新連線次數。",
+        "summary": "連線意外關閉時的最大重新連線次數。"
+      },
+      "retry_delay": {
+        "title": "重新連線間隔",
+        "description": "每次重新連線嘗試之間的間隔時間（毫秒）。",
+        "summary": "每次重新連線嘗試之間的間隔時間（毫秒）。"
+      }
+    },
+    "request": {
+      "message": {
+        "send_tooltip_non_darwin": "Ctrl + Enter",
+        "add_argument": "參數",
+        "beautify_tooltip": "美化",
+        "acknowledge": "確認",
+        "publish_event_placeholder": "事件名稱，預設為“message”",
+        "send": "傳送",
+        "message_placeholder": "編寫訊息",
+        "arg_name": "參數 {index}",
+        "user_friendly_language_name": {
+          "text": "文字",
+          "json": "JSON",
+          "xml": "XML",
+          "html": "HTML",
+          "binary": "二進位",
+          "base64": "Base64",
+          "hexadecimal": "十六進位制"
+        }
+      },
+      "events": {
+        "name": {
+          "label": "事件",
+          "placeholder": "新增事件"
+        },
+        "subscribe_on_connect": {
+          "label": "監聽"
+        },
+        "description": {
+          "label": "描述",
+          "placeholder": "新增描述"
+        }
+      }
+    }
+  },
+  "websocket_config": {
+    "strict_ssl": {
+      "title": "啟用伺服器證書驗證",
+      "description": "通過安全連線進行連線時驗證伺服器證書。",
+      "summary": "通過安全連線進行連線時驗證伺服器證書。"
+    },
+    "handshake_timeout": {
+      "title": "握手請求超時時間",
+      "description": "設定握手請求超時前的等待時間（毫秒）。設定為 0 表示永不超時。",
+      "summary": "握手請求超時前的等待時間（毫秒）。"
+    },
+    "retry_count": {
+      "title": "重新連線次數",
+      "description": "連線意外關閉時的最大重新連線次數。",
+      "summary": "連線意外關閉時的最大重新連線次數。"
+    },
+    "retry_delay": {
+      "title": "重新連線間隔",
+      "description": "每次重新連線嘗試之間的間隔時間（毫秒）。",
+      "summary": "每次重新連線嘗試之間的間隔時間（毫秒）。"
+    },
+    "max_payload": {
+      "title": "最大訊息大小",
+      "description": "允許的最大訊息大小（MB）。設定為 0 表示接收任意大小的訊息。",
+      "summary": "允許的最大訊息大小（MB）。"
+    }
+  },
+  "websocket_message_pane_label": {
+    "not_listening": "未監聽任何事件",
+    "listening": "正在監聽 {count, plural, =0 {# 個事件} other {# 個事件}}",
+    "connection_details": "連線詳情",
+    "connected": "已連線",
+    "protocol": "協議",
+    "extensions": "擴充功能",
+    "idle": "已斷開連線",
+    "connecting": "正在連線",
+    "disconnecting": "正在斷開連線",
+    "reconnecting": "正在重新連線"
+  },
+  "websocket_editor": {
+    "response": "回應",
+    "request": "請求"
+  },
+  "websocket_url_editor": {
+    "enter_url": "輸入 URL",
+    "connect_tooltip": "Enter",
+    "connect": "連線",
+    "disconnect": "斷開連線",
+    "cancel": "取消",
+    "connect_button": {
+      "no_permission": "您沒有權限在此工作區中執行此操作。"
+    }
+  },
+  "websocket_editor_header": {
+    "is_offline": "恢復聯網後即可執行此操作。",
+    "no_permission": "您沒有權限執行此操作。",
+    "no_new_changes": "沒有新的更改需要儲存。",
+    "save_request": "儲存請求",
+    "save_request_to_a_collection": "將請求儲存到集合",
+    "save": "儲存",
+    "save_as": "另存為..",
+    "saving": "正在儲存...",
+    "share_button": {
+      "label": "分享",
+      "tooltips": {
+        "no_edit_permission": "只能分享已儲存到集合中的請求。您需要擁有編輯權限才能儲存請求。",
+        "share_request": "分享請求"
+      }
+    }
+  },
+  "websocket_connection_tabs": {
+    "message": "訊息",
+    "events": "事件",
+    "params": "參數",
+    "headers": "請求頭",
+    "settings": "設定"
+  },
+  "connection_tabs": {
+    "toggle": {
+      "expand": "展開連線配置",
+      "collapse": "收起連線配置"
+    }
+  },
+  "message_language_selector": {
+    "aria_label": "訊息語言選擇器"
+  },
+  "message_pane": {
+    "toggle": {
+      "expand": "展開訊息面板",
+      "collapse": "收起訊息面板"
+    }
+  },
+  "raw_websocket_compose": {
+    "compose_message": "編寫訊息",
+    "beautify": "美化",
+    "send": "傳送",
+    "send_tooltip": "Ctrl + Enter",
+    "user_friendly_language": {
+      "text": "文字",
+      "json": "JSON",
+      "xml": "XML",
+      "html": "HTML",
+      "binary": "二進位",
+      "base64": "Base64",
+      "hex": "十六進位制"
+    }
+  },
+  "disabled_tooltip": {
+    "noPermission": "您沒有權限在此工作區中連線 WebSocket 伺服器。",
+    "notMember": "只有工作區成員才能連線 WebSocket 伺服器。請加入此工作區以完成該操作。",
+    "emptyURL": "URL 不能為空",
+    "nonWsAgent": "請切換到 Postman Desktop Agent 以連線 WebSocket 伺服器。",
+    "agentNotConnected": "請確保 Desktop Agent 已安裝並正在執行。",
+    "oldAgent": "您使用的 Postman Desktop Agent 版本過舊，不支援 {type} WebSocket 請求。請更新 Desktop Agent 後重試。"
+  },
+  "websocket_compose_area": {
+    "editor": "編輯器",
+    "saved_messages": "已儲存的訊息",
+    "add_message": "新增訊息"
+  },
+  "websocket_message_stream": {
+    "new_messages": "新訊息",
+    "jump_to_latest": "跳轉到最新",
+    "establish_connection": "連線以傳送和接收訊息",
+    "too_large_to_display": "回應內容過大，無法顯示",
+    "could_not_save": "由於回應內容過大，無法儲存到歷史記錄中。",
+    "no_msg_found": "未找到訊息",
+    "try_again": "請嘗試使用其他關鍵字或篩選條件重試。"
+  },
+  "websocket_hidden_message_item": {
+    "restore": "恢復",
+    "message_hidden": "已隱藏 {message_hidden} 條訊息"
+  },
+  "websocket_message_stream_area": {
+    "deselect": "取消選擇",
+    "time_difference": "時間差：{time_difference}"
+  },
+  "web_socket_message_stream": {
+    "search": "搜尋",
+    "clear_messages": "清除訊息",
+    "outgoing": "已傳送訊息",
+    "incoming": "已接收訊息",
+    "all_messages": "所有訊息"
+  },
+  "raw_web_socket_message_stream": {
+    "copied_to_clipboard": "已複製到剪貼簿",
+    "message_saved": "訊息已儲存",
+    "handshake_details": "握手詳情",
+    "cant_copy": "無法複製此訊息",
+    "copy_message": "複製訊息",
+    "save_message": "儲存訊息",
+    "disabled_tooltip": "恢復聯網後即可執行此操作。",
+    "disabled_tooltip_no_permission": "您沒有權限執行此操作。",
+    "save_request": "儲存此請求以執行該操作。",
+    "size": "大小：{size}",
+    "time": "時間：{time}",
+    "mime_type": "MIME 型別：{mime_type}"
+  },
+  "web_socket_message_body_viewer": {
+    "show_message": "顯示訊息",
+    "show_hexdump": "顯示十六進位制轉儲",
+    "search": "搜尋",
+    "wrap_line": "自動換行",
+    "beautify": "美化"
+  },
+  "websocket_saved_messages": {
+    "loading_messages": "正在載入訊息",
+    "empty_state": "無法載入您的訊息。",
+    "retry": "重試",
+    "faulty_wire": "似乎出了點小故障，請重試。",
+    "unforeseen_circumstances": "由於意外情況，我們無法載入您的訊息，請稍後重試。",
+    "add_messages": "新增訊息，以便在活動連線中重複使用",
+    "rename": "重新命名",
+    "duplicate": "複製",
+    "delete": "刪除",
+    "message_title": "訊息標題",
+    "tooltip_is_offline": "恢復聯網後即可執行此操作。",
+    "tooltip_no_permission": "您沒有權限執行此操作。"
+  },
+  "websocket_documentation_view": {
+    "title": "文件",
+    "headers": "請求頭",
+    "settings": "設定",
+    "query_params": "查詢參數",
+    "messages": "訊息"
+  },
+  "websocket_request_info": {
+    "title": "詳情",
+    "user_friendly_entity_name": "請求"
+  },
+  "websocket_workbench_view": {
+    "user_friendly_entity_name": "WebSocket 請求",
+    "permission_error_title": "您沒有檢視權限",
+    "permission_error_message": "只有團隊成員才能檢視此工作區歷史記錄中的 WebSocket 請求。",
+    "unsupported_protocol_title": "不支援的 WebSocket 請求型別",
+    "unsupported_protocol_message": "請更新應用以檢視此 WebSocket 請求歷史記錄。"
+  }
+}

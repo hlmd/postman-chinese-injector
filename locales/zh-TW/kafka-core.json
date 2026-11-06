@@ -1,0 +1,271 @@
+{
+  "mode": {
+    "aria_label": "請求模式",
+    "produce": "生產",
+    "consume": "消費"
+  },
+  "mode_switch_modal": {
+    "title": {
+      "produce": "停止傳送並切換模式？",
+      "consume": "停止接收並切換模式？"
+    },
+    "description": {
+      "produce": "切換到「消費」將停止目前傳送，尚未傳送完成的事件將不會發出。",
+      "consume": "切換到「生產」將停止目前資料流，你將不再接收本次執行的事件。"
+    },
+    "cancel": "取消",
+    "confirm": "停止並切換"
+  },
+  "action": {
+    "send": "傳送",
+    "stream": "流式傳輸",
+    "stop": "停止",
+    "test_connection": "測試連線",
+    "disabled_pick_topic": "請先選擇一個主題。",
+    "no_send_permission": "你沒有在此工作區中傳送請求的權限。"
+  },
+  "tabs": {
+    "event": "事件",
+    "topics": "Topic",
+    "authorization": "身份驗證",
+    "scripts": "腳本"
+  },
+  "response_tabs": {
+    "test_results": "測試結果"
+  },
+  "placeholder": {
+    "coming_soon": "即將推出。"
+  },
+  "scripts": {
+    "events": {
+      "before_produce": {
+        "label": "生產前",
+        "description": "“生產前”腳本在事件傳送到 Broker 之前執行。",
+        "placeholder": "// 在此編寫生產前腳本…",
+        "tooltip_text": "在事件傳送到 Broker 之前執行。"
+      },
+      "after_produce": {
+        "label": "生產後",
+        "description": "“生產後”腳本在 Broker 確認已生產的事件後執行。",
+        "placeholder": "// 在此編寫生產後腳本…",
+        "tooltip_text": "在 Broker 確認已生產的事件後執行。"
+      },
+      "before_consume": {
+        "label": "消費前",
+        "description": "“消費前”腳本在訂閱開始流式傳輸之前執行。",
+        "placeholder": "// 在此編寫消費前腳本…",
+        "tooltip_text": "在訂閱開始流式傳輸之前執行。"
+      },
+      "on_message": {
+        "label": "收到訊息時",
+        "description": "“收到訊息時”腳本在流式傳輸期間每收到一條記錄執行一次。",
+        "placeholder": "// 在此編寫逐條訊息腳本…",
+        "tooltip_text": "在流式傳輸期間每收到一條記錄執行一次。"
+      },
+      "after_consume": {
+        "label": "消費後",
+        "description": "“消費後”腳本在流結束後執行。",
+        "placeholder": "// 在此編寫消費後腳本…",
+        "tooltip_text": "在流結束後執行。"
+      }
+    }
+  },
+  "offsets": {
+    "start_from": "起始位置",
+    "earliest": "最早",
+    "latest": "最新",
+    "offset": "偏移量",
+    "timestamp": "時間戳",
+    "offset_placeholder": "輸入 offset",
+    "timestamp_placeholder": "輸入時間戳"
+  },
+  "stop_after": {
+    "label": "停止條件",
+    "max_records": "記錄數",
+    "duration": "持續時間",
+    "idle": "空閒時間",
+    "end_position": "時間戳",
+    "max_records_placeholder": "1000",
+    "duration_placeholder": "輸入持續時間",
+    "idle_placeholder": "輸入空閒時間",
+    "end_position_placeholder": "輸入時間戳",
+    "milliseconds_suffix": "毫秒"
+  },
+  "topics": {
+    "pane": {
+      "topics": "Topic",
+      "configuration": "配置"
+    }
+  },
+  "topics_list": {
+    "add_topic_placeholder": "新增 Topic",
+    "list_all_topics": "列出所有 Topic",
+    "loading": "正在載入 Topic…",
+    "load_error": "無法載入 Topic",
+    "retry": "重試",
+    "duplicate_topic": "已有另一個 Topic 解析為此名稱",
+    "remove_aria_label": "移除 Topic {name}",
+    "filter_placeholder": "篩選 Topic",
+    "filter_aria_label": "篩選 Topic",
+    "no_matches": "沒有匹配“{query}”的 Topic",
+    "empty_title": "暫無 Topic",
+    "empty_description": "列出所有 Topic 以從 Broker 中選擇，或新增一個 Topic 進行流式傳輸",
+    "broker_empty_title": "未找到 Topic",
+    "broker_empty_description": "此 Broker 未報告任何 Topic"
+  },
+  "status": {
+    "idle": "空閒",
+    "connecting": "連線中",
+    "connected": "已連線",
+    "disconnected": "已斷開",
+    "error": "錯誤"
+  },
+  "schema": {
+    "label": "模式",
+    "field_label": "關聯 Schema",
+    "optional": "（可選）",
+    "topic_required": "請先新增 Topic，再為其關聯 Schema",
+    "aria_label": "切換模式顯示",
+    "placeholder": "選擇 Schema",
+    "select_aria_label": "Topic {topic} 的 Schema",
+    "column_tooltip": "根據 Schema 校驗事件負載",
+    "empty": "此工作區中沒有包含 Kafka 伺服器的 AsyncAPI 規範",
+    "load_error": "無法載入規範",
+    "open_specification": "開啟規範",
+    "unresolved": {
+      "topic-empty": "未為此規範選擇 Topic",
+      "topic-absent": "此規範未描述該 Topic",
+      "schema-absent": "規範中沒有該 Topic 的訊息 Schema"
+    },
+    "validation": {
+      "passed": "Schema 校驗通過",
+      "failed": "Schema 校驗失敗",
+      "warned": "負載與 Schema 不一致",
+      "passed_badge": "校驗通過",
+      "failed_badge": "校驗失敗",
+      "warned_badge": "校驗警告",
+      "aria_label": "Schema 校驗：{status}",
+      "skipped": {
+        "no-schema": "此 Topic 未關聯 Schema",
+        "empty-payload": "此事件沒有可校驗的負載",
+        "not-json": "此負載不是 JSON，因此未進行校驗",
+        "schema-invalid": "無法讀取關聯的 Schema",
+        "pending": "尚未校驗"
+      }
+    },
+    "derived_tooltip": "由 {name} 定義。請編輯規範以進行更改。",
+    "derived_aria_label": "{value}。由源規範定義，無法在此編輯。",
+    "create_specification": "新增 AsyncAPI {version} 規範",
+    "creating_specification": "正在建立規範…"
+  },
+  "fields": {
+    "partition_placeholder": "自動"
+  },
+  "connection": {
+    "inline": "內聯",
+    "inherit": "繼承",
+    "settings_aria_label": "連線設定",
+    "brokers": "Bootstrap 伺服器",
+    "brokers_placeholder": "輸入伺服器 URL",
+    "brokers_more": "另外 {count} 個",
+    "tls": "使用 TLS",
+    "inherit_hint": "繼承自上級。"
+  },
+  "event": {
+    "topic": "主題",
+    "topic_placeholder": "新增 Topic",
+    "partition": "分割槽",
+    "key": "鍵",
+    "key_placeholder": "訊息 Key",
+    "key_serde": "Key 序列化方式",
+    "value": "值",
+    "value_too_large": "{size} 超出 {limit} 限制",
+    "value_serde": "Value 序列化方式",
+    "serde": {
+      "text": "字串",
+      "json": "JSON",
+      "base64": "Base64",
+      "hex": "十六進位制"
+    },
+    "headers": "請求頭",
+    "ack": "Ack",
+    "generate": "根據 Schema 生成",
+    "beautify": "美化",
+    "generate_tooltip": "使用根據關聯 Schema 構建的範例替換該值",
+    "generate_denied": {
+      "no_schema": "請為此 Topic 關聯 Schema 以生成範例值",
+      "not_json": "僅 JSON 序列化方式支援生成範例值"
+    },
+    "pane": {
+      "details": "詳情",
+      "value": "值"
+    }
+  },
+  "consume": {
+    "stream": {
+      "field": {
+        "topic": "主題",
+        "partition": "分割槽",
+        "offset": "偏移量",
+        "key": "鍵",
+        "value": "值",
+        "headers": "請求頭"
+      }
+    }
+  },
+  "stream": {
+    "title": "資料流",
+    "empty": "接收或傳送事件",
+    "connecting": "正在連線…",
+    "more_aria_label": "資料流選項",
+    "no_messages": "暫無事件",
+    "error": "接收事件出錯",
+    "new_events": "新事件",
+    "row": {
+      "empty_value": "（空）"
+    },
+    "pane": {
+      "events": "事件",
+      "details": "詳情"
+    },
+    "filter": {
+      "all_topics": "全部 Topic",
+      "clear": "清空訊息"
+    },
+    "inspector": {
+      "preview": "預覽",
+      "language": {
+        "json": "JSON",
+        "text": "文字",
+        "xml": "XML",
+        "base64": "Base64",
+        "hex": "十六進位制"
+      },
+      "tab": {
+        "value": "值",
+        "meta": "後設資料"
+      }
+    }
+  },
+  "produce": {
+    "title": "生產"
+  },
+  "runner": {
+    "empty": {
+      "no_events": "此請求未產生任何流事件。"
+    },
+    "ended_reason": {
+      "unknown": "未知"
+    },
+    "event": {
+      "subscribed": "已訂閱 {topics}",
+      "consume_ended": "流已結束（{reason}）",
+      "error": "流錯誤"
+    }
+  },
+  "topics_to_stream": {
+    "heading": "要流式傳輸的 Topic",
+    "empty": "在左側選擇 Topic 以進行流式傳輸",
+    "unnamed": "未命名 Topic"
+  }
+}

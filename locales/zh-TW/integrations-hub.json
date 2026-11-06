@@ -1,0 +1,518 @@
+{
+  "page": {
+    "title": "Postman 整合與應用市場",
+    "description": "瀏覽並將 Postman 與團隊已在使用的工具（Slack、Jira、GitHub 等）連線，一切盡在同一個整合市場。",
+    "heading": "整合",
+    "subtitle": "發現、安裝和管理整合。"
+  },
+  "listing": {
+    "searchPlaceholder": "搜尋整合",
+    "connectedOnlyLabel": "僅顯示團隊已連線的整合",
+    "connectedEmpty": "您的團隊暫無已連線的整合。",
+    "loading": "正在載入整合…",
+    "empty": "未找到整合",
+    "noResults": "沒有與 \"{query}\" 匹配的整合",
+    "error": "無法載入整合",
+    "error_description": "載入整合時出錯。請重試。",
+    "retry_button_label": "重試"
+  },
+  "card": {
+    "connected": "已連線",
+    "byline": "作者：{author}"
+  },
+  "requestIntegration": {
+    "title": "沒有找到你需要的？",
+    "description": "申請新的整合，由 Postman 團隊進行稽核。",
+    "buttonLabel": "申請整合"
+  },
+  "integratedServices": {
+    "sectionTitle": "API Catalog - 整合服務",
+    "sectionDescription": "將 API 目錄中的整合服務連線到 {gitProvider} 儲存庫。",
+    "connectButton": "連線服務",
+    "connectPermissionTooltip": "只有具備 API Catalog Manager 角色的成員才能訪問服務發現頁面",
+    "columns": {
+      "workspace": "工作區",
+      "repository": "儲存庫"
+    },
+    "emptyState": "未找到整合服務",
+    "errorTitle": "整合服務載入失敗",
+    "errorDescription": "載入整合服務時出錯，請重試。",
+    "errorRetry": "重試"
+  },
+  "details": {
+    "notFoundTitle": "未找到整合",
+    "notFoundBody": "找不到該地址對應的整合。",
+    "tabs": {
+      "overview": "概覽",
+      "connections": "連線"
+    },
+    "backToHub": "返回整合列表",
+    "integrationBy": "由 {author} 提供的整合",
+    "aboutPublisher": "關於發布者",
+    "viewPublisherProfile": "檢視 {author} 的主頁",
+    "mediaPrevious": "上一個媒體",
+    "mediaNext": "下一個媒體",
+    "mediaExpand": "檢視大圖",
+    "mediaClose": "關閉媒體檢視器",
+    "mediaViewerLabel": "媒體檢視器",
+    "mediaCounter": "第 {current} 個，共 {total} 個",
+    "mediaImageAlt": "整合媒體第 {current} 個，共 {total} 個",
+    "connectIntegration": "連線整合",
+    "signInToConnect": "登入後連線"
+  },
+  "viewDocs": "檢視文件",
+  "connectButton": "連線",
+  "postmanUser": "Postman 使用者",
+  "connectionSection": {
+    "connectedBadge": "已連線",
+    "nameSuffix": "{name}（你）",
+    "otherAccounts": "{count, plural, one {+ 另外 # 個} other {+ 另外 # 個}}",
+    "otherTeamUsers_one": "+{count} 位其他團隊成員",
+    "otherTeamUsers_other": "+{count} 位其他團隊成員",
+    "disconnectSuccess": "{appName} 已成功斷開連線。",
+    "disconnectError": "斷開 {appName} 連線失敗，請重試。",
+    "table": {
+      "name": "名稱",
+      "team": "團隊",
+      "connectedBy": "連線者",
+      "email": "信箱",
+      "disconnect": "斷開連線"
+    },
+    "wiz": {
+      "disconnectModal": {
+        "heading": "斷開 Wiz 連線？",
+        "body": "斷開連線將永久刪除團隊已儲存的安全態勢資料及相關發現項，且無法撤銷。重新連線後將重新開始一次安全掃描。",
+        "cancel": "取消",
+        "confirm": "斷開 Wiz 連線"
+      }
+    },
+    "jira": {
+      "title": "建立和檢視 Jira Issue",
+      "description": "從集合、回應或監控建立 Jira Issue 或關聯已有 Issue，無需離開 Postman 即可跟蹤狀態。",
+      "jiraSite": "Jira 站點",
+      "otherSites_one": "+ 其他 {count} 個",
+      "otherSites_other": "+ 其他 {count} 個"
+    },
+    "github_app": {
+      "title": "已連線的 GitHub 帳戶",
+      "description": "Postman 已獲得訪問權限的 GitHub 組織。",
+      "username": "GitHub 使用者名稱",
+      "accounts": "GitHub 組織"
+    },
+    "gitlab_app": {
+      "title": "已連線的 GitLab 帳戶",
+      "description": "已授予 Postman 訪問權限的 GitLab 群組。",
+      "username": "GitLab 使用者名稱",
+      "accounts": "GitLab 群組"
+    },
+    "bitbucket_app": {
+      "title": "已連線的 Bitbucket 帳戶",
+      "description": "已授予 Postman 訪問權限的 Bitbucket 工作區。",
+      "username": "Bitbucket 使用者名稱",
+      "accounts": "Bitbucket 工作區"
+    },
+    "ecosystem": {
+      "connectedBadge": "已連線",
+      "connectButton": "連線專案",
+      "connectNoPermission": "你沒有連線此應用的權限，請聯絡團隊管理員。",
+      "viewDocs": "檢視文件",
+      "neverUsed": "從未使用",
+      "removeSuccess": "已成功從工作區移除。",
+      "removeError": "移除失敗，請重試。",
+      "loadError": "無法載入已連線的工作區。",
+      "reload": "重新載入",
+      "removeModal": {
+        "title": "要從 {workspaceName} 中移除 {appName} 嗎？",
+        "body": "Postman 將停止在此工作區中執行 {appName}。您可以隨時重新連線。",
+        "cancel": "取消",
+        "confirm": "移除"
+      },
+      "disconnectAll": "全部斷開連線",
+      "disconnectAllNoPermission": "你沒有斷開此應用連線的權限，請聯絡團隊管理員。",
+      "disconnectAllSuccess": "{appName} 已從所有工作區斷開連線。",
+      "disconnectAllError": "斷開 {appName} 連線失敗，請重試。",
+      "disconnectAllModal": {
+        "title": "要斷開所有工作區中的 {appName} 連線嗎？",
+        "body": "Postman 將在每個已連線的工作區中停止執行 {appName}。您可以隨時重新連線。",
+        "cancel": "取消",
+        "confirm": "全部斷開連線"
+      },
+      "table": {
+        "workspace": "工作區",
+        "lastUsed": "最近使用",
+        "remove": "從工作區移除",
+        "removeNoPermission": "你沒有從此工作區移除該應用的權限。"
+      }
+    },
+    "gateway": {
+      "connectedBadge": "已連線",
+      "authTitle": "{appName} - ({authLabel})",
+      "tableDescription": "雲聯結器讓團隊可以把 API 引入 API Catalog。API 規範隨後會帶著後設資料（包括關聯的環境和叢集）出現在 API Catalog 中，並自動生成集合，便於在 Postman 中繼續開發 API。",
+      "authLabel": {
+        "accessKey": "Access Key 身份驗證",
+        "assumeRole": "IAM Role 身份驗證"
+      },
+      "connectButton": "連線閘道器",
+      "connectNoPermission": "你沒有連線此閘道器的權限，請聯絡團隊管理員。",
+      "connectPlanRequired": "閘道器連線僅適用於 Postman 企業版套餐。",
+      "viewDocs": "檢視文件",
+      "neverUsed": "從未使用",
+      "removeSuccess": "閘道器連線已成功移除。",
+      "removeError": "移除閘道器連線失敗，請重試。",
+      "removeModal": {
+        "title": "要從 {appName} 中移除 {instanceName} 嗎？",
+        "body": "Postman 將停止從此閘道器實例發現和匯入服務。您可以隨時重新連線。",
+        "cancel": "取消",
+        "confirm": "移除"
+      },
+      "disconnectAll": "全部斷開連線",
+      "disconnectAllNoPermission": "你沒有斷開此閘道器連線的權限，請聯絡團隊管理員。",
+      "disconnectAllSuccess": "{appName} 已從所有閘道器實例斷開連線。",
+      "disconnectAllError": "斷開 {appName} 連線失敗，請重試。",
+      "disconnectAllModal": {
+        "title": "要斷開所有 {appName} 實例嗎？",
+        "body": "Postman 將在每個已連線的 {appName} 實例中停止發現和匯入服務。您可以隨時重新連線。",
+        "cancel": "取消",
+        "confirm": "全部斷開連線"
+      },
+      "table": {
+        "instanceName": "實例名稱",
+        "postmanTeam": "Postman 團隊",
+        "lastUsed": "最近使用",
+        "discoveredServices": "已發現的服務",
+        "remove": "移除連線",
+        "removeNoPermission": "你沒有移除此閘道器連線的權限。"
+      }
+    }
+  },
+  "personalNotifications": {
+    "title": "個人通知",
+    "description": "接收重要事件的個人通知，例如隊友在評論中提到您，或令牌、金鑰被洩露時。",
+    "connectedBadge": "已連線",
+    "connectButton": "連線",
+    "nameSuffix": "{name}（您）",
+    "otherTeamUsers_one": "還有 {count} 位團隊成員",
+    "otherTeamUsers_other": "還有 {count} 位團隊成員",
+    "disconnectSuccess": "個人通知已成功斷開連線。",
+    "disconnectError": "斷開個人通知連線失敗，請重試。",
+    "table": {
+      "name": "姓名",
+      "email": "信箱",
+      "disconnect": "斷開連線"
+    }
+  },
+  "slackChannel": {
+    "privateChannel": "私密頻道",
+    "channelUnavailable": "頻道不可用",
+    "loginForChannelInfo": "登入以檢影片道資訊",
+    "workspaceColumn": "Slack 工作區",
+    "channelColumn": "Slack 頻道"
+  },
+  "ms_teams": {
+    "tenantColumn": "組織",
+    "connectionColumn": "連線資訊",
+    "privateChannel": "私有頻道",
+    "channelUnavailable": "頻道不可用",
+    "chatUnavailable": "聊天不可用",
+    "loginForConnectionInfo": "登入後檢視連線資訊",
+    "sharedChannel": "共享頻道",
+    "archivedTooltip": "此頻道已歸檔",
+    "conversationTypeLabel": "會話型別",
+    "conversationTypeChannel": "頻道",
+    "conversationTypeGroupChat": "群聊",
+    "teamLabel": "團隊",
+    "channelLabel": "頻道",
+    "channelDescription": "必須是標準頻道或共享頻道，不支援私有頻道。",
+    "channelPlaceholder": "輸入以搜尋頻道",
+    "channelLoadError": "頻道載入失敗，請重試。",
+    "teamPlaceholder": "輸入以搜尋團隊",
+    "groupChatLabel": "群聊",
+    "groupChatPlaceholder": "輸入以搜尋群聊",
+    "groupChatLoadError": "群聊載入失敗，請重試。",
+    "signInPrompt": "登入 Microsoft Teams 以選擇團隊和頻道。",
+    "signInButton": "登入 Microsoft Teams",
+    "signingIn": "正在等待 Microsoft Teams 登入…",
+    "signInError": "無法登入 Microsoft Teams。",
+    "signInRetry": "重試"
+  },
+  "workspaceNotifications": {
+    "title": "工作區通知",
+    "description": "當隊友新增或更改請求、集合或環境，或有人發布工作區更新時，隨時接收更新通知。",
+    "addButton": "連線工作區",
+    "emptyState": {
+      "title": "未找到結果",
+      "description": "請嘗試調整篩選條件。"
+    },
+    "deleteError": "無法刪除頻道整合。",
+    "table": {
+      "workspace": "工作區",
+      "createdBy": "建立者",
+      "privateWorkspace": "私有工作區",
+      "privateWorkspaceTooltip": "您不是此工作區的成員"
+    },
+    "filters": {
+      "createdBy": {
+        "placeholder": "按使用者搜尋",
+        "emptyStateMessage": "沒有匹配的團隊成員"
+      },
+      "workspace": {
+        "placeholder": "按工作區搜尋"
+      }
+    },
+    "pagination": {
+      "itemsPerPage": "每頁條數",
+      "range": "第 {start}-{end} 條，共 {total} 條"
+    },
+    "modal": {
+      "createHeading": "連線頻道",
+      "editHeading": "編輯頻道整合",
+      "postmanWorkspaceLabel": "Postman Workspace",
+      "postmanWorkspacePlaceholder": "選擇工作區",
+      "slackWorkspaceLabel": "{appName} 工作區",
+      "slackWorkspacePlaceholder": "選擇工作區",
+      "channelLabel": "{appName} 頻道",
+      "channelPlaceholder": "選擇頻道",
+      "channelConnected": "— 已連線",
+      "channelLoadError": "頻道載入失敗，請重試。",
+      "frequencyLabel": "傳送通知的方式…",
+      "frequencyRealtime": "即時傳送",
+      "frequencyPeriodic": "定期以摘要形式傳送",
+      "frequencyPeriodicBadge": "新",
+      "eventsHeading": "觸發條件…",
+      "eventWorkspaceUpdate": "發布工作區動態",
+      "eventPullRequest": "建立或合併工作區 Pull Request",
+      "eventCreate": "新增請求、集合或環境",
+      "eventDelete": "刪除請求、集合或環境",
+      "eventUpdate": "編輯請求或集合",
+      "digest": {
+        "dayLabel": "星期",
+        "dayPlaceholder": "選擇日期",
+        "timeLabel": "時間",
+        "timezoneLabel": "時區",
+        "timezonePlaceholder": "選擇時區",
+        "everyday": "每天",
+        "weekdays": "工作日",
+        "weekends": "週末"
+      },
+      "connectPrompt": "連線你的 {appName} 帳號以選擇頻道。",
+      "connectButton": "連線 {appName}",
+      "connecting": "連線中…",
+      "connectError": "無法連線到 {appName}，請重試。",
+      "cancel": "取消",
+      "submitCreate": "連線",
+      "submitEdit": "儲存更改",
+      "createSuccess": "頻道連線成功。",
+      "updateSuccess": "頻道連線已更新。",
+      "createError": "頻道整合連線失敗。",
+      "createErrorRetry": "頻道整合連線失敗，請重試。",
+      "updateError": "頻道整合更新失敗。",
+      "updateErrorRetry": "頻道整合更新失敗，請重試。",
+      "errors": {
+        "noPermissionWorkspace": "你沒有權限管理此工作區的頻道整合。",
+        "noPermissionSubscription": "你沒有權限更改此頻道整合。請聯絡工作區管理員進行更改。",
+        "otherTeamOwnsSubscription": "此頻道整合屬於其他團隊，只有該團隊可以更改。",
+        "reauthorizeRequired": "你的 {appName} 連線已過期。請重新連線 {appName} 後重試。",
+        "notFound": "此頻道整合已不存在。請重新整理頁面後重試。",
+        "channelAlreadyConnected": "此頻道已連線到其他整合。",
+        "destinationAlreadyConnected": "此目標已連線。",
+        "workspaceAlreadyConnected": "此工作區已有頻道整合。",
+        "limitReached": "此工作區的頻道整合數量已達上限。",
+        "slackWorkspaceMismatch": "你的團隊已連線到另一個 {appName} 工作區。請先斷開該連線，再連線此工作區。",
+        "workspaceNotEligible": "此類工作區不支援頻道整合。",
+        "workspaceUpdateEventOnly": "在公共工作區中，整合只能向此頻道通知工作區更新。",
+        "destinationTypeImmutable": "此整合的目標型別無法更改。請斷開後重新連線一個新的整合。",
+        "reconnectToChangeWorkspace": "要將此整合移到另一個 {appName} 工作區，請先斷開再重新連線。"
+      }
+    }
+  },
+  "monitorNotifications": {
+    "title": "監控通知",
+    "description": "持續跟蹤您的 API 的健康狀況和效能，並自動將每次監控執行的結果傳送到 {appName} 頻道。",
+    "addButton": "連線監控",
+    "table": {
+      "monitor": "監控"
+    },
+    "pagination": {
+      "itemsPerPage": "每頁條數",
+      "range": "第 {start}-{end} 條，共 {total} 條"
+    },
+    "modal": {
+      "createHeading": "連線頻道",
+      "editHeading": "編輯監控整合",
+      "monitorLabel": "監控",
+      "monitorPlaceholder": "選擇監控",
+      "thisNewMonitor": "新監控",
+      "lockedByMonitorHelper": "由此監控設定",
+      "frequencyLabel": "傳送通知的場景…",
+      "frequencyAllRuns": "每次執行完成時",
+      "frequencyOnlyFailures": "僅失敗時（以及之後首次成功執行時）",
+      "notificationLimitMessage": "連續失敗 <input/> 次後停止通知",
+      "notificationLimitError": "請輸入 1 到 {max} 之間的值",
+      "cancel": "取消",
+      "submitCreate": "連線",
+      "submitEdit": "儲存更改",
+      "recordOnlyHeadingSlack": "新增 Slack 頻道",
+      "recordOnlyHeadingTeams": "新增 Teams 頻道",
+      "recordOnlyEditHeadingSlack": "編輯 Slack 頻道",
+      "recordOnlyEditHeadingTeams": "編輯 Teams 頻道",
+      "recordOnlyCaptionSlack": "建立此監控後將連線 Slack。",
+      "recordOnlyCaptionTeams": "建立此監控後將連線 Teams。",
+      "submitRecordOnly": "新增",
+      "submitRecordOnlyEdit": "儲存",
+      "createSuccess": "監控連線成功。",
+      "updateSuccess": "監控連線已更新。",
+      "createError": "監控整合連線失敗，請重試。",
+      "updateError": "監控整合更新失敗，請重試。"
+    },
+    "setupModal": {
+      "heading": "連線 {appName}",
+      "nameLabel": "整合名稱",
+      "defaultName": "{monitorName} - {appName} 整合",
+      "nameRequired": "請輸入整合名稱",
+      "learnMore": "瞭解更多",
+      "submit": "連線",
+      "createError": "無法連線 {appName}，請重試。",
+      "editHeading": "編輯 {appName} 整合",
+      "saveSubmit": "儲存更改",
+      "savedTitle": "更改已儲存",
+      "savedDescription": "{name} 的整合設定已更新",
+      "updateError": "無法儲存您對 {appName} 的更改，請重試。",
+      "loadError": "無法載入此整合。",
+      "retry": "重試",
+      "triggerNote": {
+        "pagerduty": "僅在監控執行失敗時通知 PagerDuty。",
+        "victorops": "僅在監控執行失敗時通知 Splunk On-Call。",
+        "splunk": "監控執行時，Postman 會將指標資料傳送到 Splunk。",
+        "apm_new_relic": "監控執行時，Postman 會將指標資料傳送到 New Relic。"
+      },
+      "pagerduty": {
+        "keyLabel": "整合金鑰",
+        "keyPlaceholder": "例如 a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+        "keyHelper": "輸入您的 PagerDuty 整合金鑰，或",
+        "keyHelperLink": "新增一個",
+        "keyRequired": "請輸入您的 PagerDuty 整合金鑰"
+      },
+      "splunkOnCall": {
+        "apiKeyLabel": "API 金鑰",
+        "apiKeyPlaceholder": "例如 1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "apiKeyHelper": "輸入您的 Splunk On-Call API 金鑰。",
+        "apiKeyRequired": "請輸入您的 Splunk On-Call API 金鑰",
+        "routingKeyLabel": "路由鍵（可選）",
+        "routingKeyPlaceholder": "例如 api-oncall",
+        "routingKeyHelper": "輸入您的 Splunk On-Call 路由鍵。"
+      },
+      "splunk": {
+        "tokenLabel": "Splunk HEC 令牌",
+        "tokenPlaceholder": "例如 12345678-90ab-cdef-1234-567890abcdef",
+        "tokenHelper": "輸入 Splunk 提供的 HEC 令牌。",
+        "tokenRequired": "請輸入 HEC 令牌",
+        "hostLabel": "Splunk HEC URL",
+        "hostPlaceholder": "例如 https://http-inputs-acme.splunkcloud.com",
+        "hostHelper": "輸入 Splunk HEC URL。",
+        "hostErrors": {
+          "empty": "請輸入 Splunk HEC URL",
+          "insecure": "請使用安全（https）URL",
+          "trailingSlash": "請刪除 URL 末尾的 \"/\""
+        },
+        "portLabel": "Splunk 埠",
+        "portRequired": "請輸入埠"
+      },
+      "datadog": {
+        "regionLabel": "區域",
+        "regionHelper": "用於確定要使用的 Datadog 區域。",
+        "apiKeyLabel": "API 金鑰",
+        "apiKeyPlaceholder": "例如 1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p",
+        "apiKeyHelper": "輸入 Datadog 提供的 API 金鑰，或",
+        "apiKeyHelperLink": "在此生成",
+        "apiKeyRequired": "請輸入您的 Datadog API 金鑰",
+        "sendEvents": "為已完成的執行傳送事件",
+        "sendMetrics": "為每次執行傳送指標",
+        "sendRequired": "請至少選擇一項"
+      },
+      "newRelic": {
+        "apiKeyLabel": "API 金鑰",
+        "apiKeyPlaceholder": "例如 NRAK-A1B2C3D4E5…",
+        "apiKeyHelper": "輸入 New Relic 提供的 API 金鑰，或",
+        "apiKeyHelperLink": "在此生成",
+        "apiKeyRequired": "請輸入您的 New Relic API 金鑰",
+        "regionLabel": "區域",
+        "regionHelper": "用於確定要使用的 New Relic 區域"
+      }
+    }
+  },
+  "delete_modal": {
+    "heading": "刪除整合？",
+    "body": "刪除此整合後，它執行的所有操作將立即停止。確定要繼續嗎？",
+    "confirm": "刪除整合",
+    "confirm_in_progress": "正在刪除…",
+    "cancel": "取消",
+    "success": "整合已成功刪除。",
+    "error": "刪除整合時出錯，請重試。"
+  },
+  "integrationSections": {
+    "actions": {
+      "connect": "新增整合",
+      "runlog_label": "檢視執行日誌",
+      "edit_label": "編輯整合",
+      "delete_label": "刪除整合",
+      "creator_only_edit": "只有該整合的建立者才能編輯此配置。",
+      "creator_only_delete": "僅整合的建立者可以刪除它。"
+    },
+    "columns": {
+      "name": "名稱",
+      "monitor": "監控",
+      "collection": "集合",
+      "entity": "實體",
+      "status": "狀態",
+      "workspace": "工作區",
+      "created_by": "建立者",
+      "last_run": "上次執行"
+    },
+    "status": {
+      "running": "執行中",
+      "success": "成功",
+      "failed": "失敗"
+    },
+    "empty_value": "—",
+    "error": {
+      "title": "無法載入此整合的連線",
+      "description": "資料載入失敗。",
+      "reload": "重新載入"
+    }
+  },
+  "slackWorkspaceSelect": {
+    "addWorkspace": "新增另一個工作區",
+    "connected": "已連線"
+  },
+  "agentTasks": {
+    "title": "Agent 任務",
+    "connectedBadge": "已連線",
+    "otherTeamUsers_one": "+{count} 位其他團隊成員",
+    "otherTeamUsers_other": "+{count} 位其他團隊成員",
+    "table": {
+      "name": "名稱",
+      "email": "信箱",
+      "remove": "移除"
+    },
+    "slack": {
+      "description": "在 {appName} 中提及 @Postman 即可啟動 Agent Mode 任務，並在訊息串中檢視狀態更新。",
+      "accountColumn": "Slack 工作區",
+      "orgTerm": "工作區"
+    },
+    "githubapp": {
+      "description": "授權 {appName} 訪問權限，使 Agent Mode 能夠讀取你的儲存庫、執行測試，並根據在 Slack 中通過 @Postman 給出的指令完成編碼任務。",
+      "accountColumn": "GitHub 帳戶",
+      "orgTerm": "帳戶"
+    },
+    "connectModal": {
+      "heading": "連線 Agent Tasks",
+      "body": "選擇要連線的 {appName} {orgTerm}。",
+      "cancel": "取消",
+      "confirm": "連線",
+      "noAccounts": "尚未連線任何 {appName} {orgTerm}。新增一個即可開始。"
+    },
+    "removeError": "無法為該工作區關閉 Agent Tasks，請重試。",
+    "connectError": "無法連線 {appName}，請重試。",
+    "enableError": "無法開啟 Agent Tasks，請重試。"
+  }
+}

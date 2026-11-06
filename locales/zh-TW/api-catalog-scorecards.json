@@ -1,0 +1,83 @@
+{
+  "delete_scorecard": {
+    "icon_button": {
+      "tooltip": "刪除記分卡",
+      "aria_label": "刪除記分卡",
+      "no_permission_tooltip": "刪除訪問權限需要 API 目錄管理器 角色"
+    },
+    "confirm_modal": {
+      "title": "刪除記分卡",
+      "body": "您確定要刪除此記分卡嗎？此操作無法撤消。",
+      "confirm_button_label": "刪除"
+    },
+    "toast": {
+      "success_message": "記分卡刪除成功。"
+    }
+  },
+  "system_scorecard_redirect": {
+    "tooltip": "按類別和指標檢視詳細的得分明細"
+  },
+  "health_badge": {
+    "label": "健康度 {score}"
+  },
+  "live_preview": {
+    "info_tooltip": "選擇一個服務，檢視權重更改對得分的影響。可選項受第 1 步中設定的標籤、環境和治理組限制。",
+    "applied_filters": {
+      "heading": "目前篩選條件",
+      "tooltip": "這些篩選條件是在之前的步驟中設定的，用於限制可預覽的服務。",
+      "tags_label": "標籤：",
+      "environment_label": "環境：",
+      "governance_group_label": "治理組：",
+      "governance_group_fallback": "所選組",
+      "overflow_count": "另外 {count} 個",
+      "overflow_aria_label": "另外 {count} 個：{values}"
+    },
+    "empty_state": {
+      "no_matching_services": "沒有服務與第 1 步中設定的標籤、環境和治理組匹配。請調整這些篩選條件以預覽得分。",
+      "no_services": "沒有可預覽的服務。",
+      "select_service": "在上方選擇一個服務以預覽得分"
+    },
+    "invalid_inputs": {
+      "label": "{count, plural, one {# 個指標的輸入無效} other {# 個指標的輸入無效}}",
+      "tooltip": "阻止儲存。這些指標的閾值缺失或無效，必須修復後才能儲存。"
+    },
+    "skipped_metrics": {
+      "label": "{count, plural, one {# 個指標沒有資料（計為 0 分）} other {# 個指標沒有資料（計為 0 分）}}",
+      "tooltip": "不阻止儲存。這些指標尚未收集到此服務的資料，計為 0 分。"
+    }
+  },
+  "create_scorecard": {
+    "step_validation": {
+      "no_categories": "請至少新增一個包含至少一個指標的類別以繼續。",
+      "category_without_metrics": "請至少向“{categoryName}”新增一個指標以繼續。"
+    }
+  },
+  "system_scorecard_badge": {
+    "label": "系統",
+    "tooltip": "系統記分卡由 Postman 提供和管理，用於跟蹤我們推薦的服務健康度衡量指標，不可編輯或刪除。"
+  },
+  "scorecard_card": {
+    "pin_button": {
+      "pin_tooltip": "固定到概覽",
+      "unpin_tooltip": "從概覽取消固定",
+      "pin_aria_label": "固定到概覽",
+      "unpin_aria_label": "從概覽取消固定",
+      "no_permission_tooltip": "需要 API 目錄管理員角色才能固定記分卡。"
+    },
+    "edit_button": {
+      "tooltip": "編輯記分卡",
+      "aria_label": "編輯記分卡",
+      "no_permission_tooltip": "編輯權限需要 API 目錄管理員角色"
+    },
+    "stats": {
+      "avg_score_label": "平均得分",
+      "services_label": "服務"
+    },
+    "meta": {
+      "categories_count": "{count, plural, one {# 個類別} other {# 個類別}}",
+      "metrics_count": "{count, plural, one {# 項指標} other {# 項指標}}",
+      "updated_date": "更新於 {date}"
+    },
+    "unknown_name": "未知記分卡"
+  }
+}

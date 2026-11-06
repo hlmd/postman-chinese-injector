@@ -1,0 +1,118 @@
+{
+  "load_error": {
+    "title": "編輯器載入失敗",
+    "message": "我們的 團隊 已收到通知。如果問題仍然存在，請聯絡 <1><0><0>Postman 支援</0></0></1>。"
+  },
+  "editor": {
+    "content_pane": {
+      "header": {
+        "breadcrumb": {
+          "placeholder": "資料夾名稱",
+          "meta_icon": {
+            "lock": {
+              "title": "只讀"
+            }
+          }
+        },
+        "actions": {
+          "run": {
+            "text": "執行",
+            "tooltip": {
+              "primary_message": "資料夾現在無法在公開的工作區中執行 - 儘管我們正在為未來的版本努力解決這個問題！",
+              "secondary_message": "Fork 這個集合到你自己的工作區來執行它。",
+              "primary_action": "建立一個 fork",
+              "readonly_user_message": "您無權執行此操作。"
+            }
+          },
+          "save": {
+            "text": {
+              "save": "儲存",
+              "saving": "儲存..."
+            },
+            "tooltip": {
+              "title": "建立 fork 來儲存更改",
+              "primary_message": "您沒有權限更改此集合。請將該集合 Fork 到您的工作區以儲存更改。",
+              "primary_action": "建立 fork 並儲存",
+              "no_changes": "沒有要儲存的新更改。",
+              "save_folder": "儲存資料夾",
+              "save_folder_git": "將更改儲存到 Postman 和 Github",
+              "readonly_user_message": "您無權執行此操作。"
+            }
+          },
+          "share": {
+            "text": "分享",
+            "tooltip": "分享 資料夾"
+          },
+          "delete": "刪除"
+        }
+      },
+      "permission_infobar": {
+        "folder": "資料夾",
+        "description": "描述",
+        "auth": "身份驗證",
+        "overview": "概述",
+        "tests": "測試",
+        "pre_request": "請求前腳本",
+        "configurations": "設定",
+        "text": "如需更改此資料夾的 {text}，請為其父集合申請額外訪問權限。",
+        "scripts": "腳本"
+      },
+      "tab_list": {
+        "overview": {
+          "label": "概述",
+          "short_label": "概述"
+        },
+        "authorization": {
+          "label": "身份驗證",
+          "short_label": "認證"
+        },
+        "pre_request_script": {
+          "label": "請求前腳本",
+          "short_label": "請求前"
+        },
+        "tests": {
+          "label": "測試"
+        },
+        "settings": {
+          "label": "設定"
+        }
+      },
+      "tabs": {
+        "auth": {
+          "description": "此 授權 方法將用於此 資料夾 中的每個 請求。您可以通過在 請求 中指定一個來覆蓋這一點。"
+        },
+        "scripts": {
+          "label": "腳本",
+          "tooltip-text": {
+            "pre-request": "在傳送每個 請求 之前執行。使用它通過動態配置請求來建立 API 工作流程。",
+            "post-response": "在收到每個 請求 的 回應 後執行。用它來編寫測試。"
+          },
+          "migration-popover-text": "使用 回應 後腳本編寫測試、視覺化 回應 以及執行更多操作。"
+        },
+        "test-tab-deprecation": {
+          "heading": "測試現在是 post-回應 腳本的一部分",
+          "message": "您可以使用腳本來編寫測試、請求前腳本、視覺化回應併為您的 API 工作流程帶來大量自動化。",
+          "button": "開啟 post-回應 腳本"
+        },
+        "pre_req": {
+          "description": "這個 腳本 將在這個 資料夾 中的每個 請求 之前執行。瞭解更多關於<1><0>Postman的執行順序</0></1>。",
+          "placeholder": "使用 JavaScript 動態配置請求。"
+        },
+        "tests": {
+          "description": "這些測試將在此 資料夾 中的每個 請求 之後執行。瞭解更多關於<1><0>Postman的執行順序</0></1>。",
+          "placeholder": "使用 JavaScript 編寫測試、視覺化回應等。"
+        },
+        "settings": {
+          "empty_state": {
+            "title": "資料夾 設定不可用",
+            "message": "Postman 使用瀏覽器的預設設定傳送請求。切換到桌面代理以進一步自訂您的 資料夾。"
+          }
+        }
+      }
+    },
+    "context_bar": {
+      "info_title": "資料夾 詳細資訊"
+    }
+  },
+  "new_folder": "新增資料夾"
+}

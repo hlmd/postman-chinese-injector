@@ -1,0 +1,225 @@
+{
+  "widgets": {
+    "error": {
+      "title": "您的小部件未載入",
+      "description": "看起來好像出了什麼問題。",
+      "help-link": "瞭解更多"
+    }
+  },
+  "agent-mode": {
+    "personalized-title": "{userName}，您今天想如何使用 Postman？",
+    "title": "您今天想如何使用 Postman？",
+    "textarea-placeholder": "告訴我們您想構建什麼...",
+    "submit-button-text": "我們走吧",
+    "submit-button-disabled-tooltip": "您需要擁有工作區的編輯權限才能使用代理。建立工作區或請求編輯權限。",
+    "suggestions-title": "入門建議：",
+    "suggestions-loading-message": "獲取個性化建議..."
+  },
+  "pending-items": {
+    "title": "需要你的關注",
+    "team-join-requests": {
+      "title_singular": "加入團隊的請求待處理",
+      "title_plural": "加入團隊的請求待處理"
+    },
+    "pending-request-for-access": {
+      "title_singular": "待處理的訪問請求",
+      "title_plural": "待處理的訪問請求",
+      "requested-access": "{userName} 請求訪問 {model}",
+      "requested-access-to": "<userLink>{userName}</userLink> 請求訪問 <entityLink>{entityName}</entityLink>。",
+      "requested-access-to_withLabel": "<userLink>{userName}</userLink> 請求訪問 <entityLink>{entityName}</entityLink> {entityLabel}。",
+      "requested-access-partner-to": "<userLink>{userName}</userLink> 請求作為合作伙伴訪問 <entityLink>{entityName}</entityLink>。",
+      "requested-access-partner-to_withLabel": "<userLink>{userName}</userLink> 請求作為合作伙伴訪問 <entityLink>{entityName}</entityLink> {entityLabel}。",
+      "approve-button": "批准",
+      "deny-button": "拒絕",
+      "approve-success": "請求已批准",
+      "deny-success": "請求已拒絕",
+      "approve-error-title": "審批失敗",
+      "approve-error": "批准請求時出錯",
+      "deny-error-title": "拒絕失敗",
+      "deny-error": "拒絕請求時發生錯誤",
+      "already-actioned": "此請求已解決"
+    },
+    "pending-request-for-edit": {
+      "title_singular": "待處理的編輯請求",
+      "title_plural": "待處理的編輯請求",
+      "requested-edit": "{userName} 請求對 {model} 進行編輯訪問",
+      "requested-edit-to": "<userLink>{userName}</userLink> 請求對 <entityLink>{entityName}</entityLink> 進行編輯訪問。",
+      "requested-edit-to_withLabel": "<userLink>{userName}</userLink> 請求對 <entityLink>{entityName}</entityLink> {entityLabel} 進行編輯訪問。",
+      "requested-role-access-to": "<userLink>{userName}</userLink> 請求 {role} 訪問 <entityLink>{entityName}</entityLink>。",
+      "requested-role-access-to_withLabel": "<userLink>{userName}</userLink> 請求 {role} 訪問 <entityLink>{entityName}</entityLink> {entityLabel}。",
+      "approve-button": "批准",
+      "deny-button": "拒絕",
+      "approve-success": "編輯請求已批准",
+      "deny-success": "編輯請求已拒絕",
+      "approve-error-title": "審批失敗",
+      "approve-error": "批准編輯請求時出錯",
+      "deny-error-title": "拒絕失敗",
+      "deny-error": "拒絕編輯請求時發生錯誤",
+      "already-actioned": "此編輯請求已解決",
+      "respond-button": "回覆請求"
+    },
+    "pending-request-for-action": {
+      "title_singular": "待處理的行動請求",
+      "title_plural": "待處理的行動請求",
+      "requested-make-public": "<userLink>{userName}</userLink> 正在請求將 <entityLink>{entityName}</entityLink> 設為公開工作區。",
+      "requested-make-public_withLabel": "<userLink>{userName}</userLink> 正在請求將 <entityLink>{entityName}</entityLink> {entityLabel} 設為公開工作區。",
+      "requested-make-team": "<userLink>{userName}</userLink> 正在請求將 <entityLink>{entityName}</entityLink> 設為團隊工作區。",
+      "requested-make-team_withLabel": "<userLink>{userName}</userLink> 正在請求將 <entityLink>{entityName}</entityLink> {entityLabel} 設為團隊工作區。",
+      "requested-make-partner": "<userLink>{userName}</userLink> 請求將 <entityLink>{entityName}</entityLink> 設為合作伙伴工作區。",
+      "requested-make-partner_withLabel": "<userLink>{userName}</userLink> 請求將 <entityLink>{entityName}</entityLink> {entityLabel} 設為合作伙伴工作區。",
+      "requested-publish-docs": "<userLink>{userName}</userLink> 正在請求發布 <entityLink>{entityName}</entityLink> 的文件。",
+      "requested-publish-docs_withLabel": "<userLink>{userName}</userLink> 正在請求發布 <entityLink>{entityName}</entityLink> {entityLabel} 的文件。",
+      "requested-action-default": "<userLink>{userName}</userLink> 正在請求對 <entityLink>{entityName}</entityLink> 執行操作。",
+      "requested-action-default_withLabel": "<userLink>{userName}</userLink> 正在請求對 <entityLink>{entityName}</entityLink> {entityLabel} 執行操作。",
+      "approve-button": "批准",
+      "deny-button": "拒絕",
+      "approve-success": "操作請求已獲批准",
+      "deny-success": "操作請求被拒絕",
+      "already-actioned": "此操作請求已解決",
+      "respond-button": "回應請求"
+    },
+    "pr-assigned-to-me": {
+      "title_singular": "PR 正在等待您的稽核",
+      "title_plural": "PR 等待您的稽核",
+      "opened-by": "發起人"
+    },
+    "pr-opened-by-me": {
+      "title_singular": "您開設的 PR",
+      "title_plural": "您開啟的 PR"
+    },
+    "loading": "載入中...",
+    "show-more": "顯示更多",
+    "failed-to-load-more-items": "無法載入更多專案。請稍後重試。",
+    "empty": {
+      "title": "全部處理完畢！",
+      "description": "訪問和編輯資源的請求、您提出的 PR 和需要您稽核的 PR，以及需要您注意的其他操作將顯示在此處。"
+    }
+  },
+  "continue-work": {
+    "title": "從上次停下的地方繼續",
+    "recents": {
+      "title": "最近的內容",
+      "loading": "載入中...",
+      "error": {
+        "title": "無法載入最近的專案",
+        "description": "獲取您最近的作品時出錯。",
+        "retry": "重試"
+      },
+      "empty": {
+        "title": "沒有最近的專案",
+        "description": "開始使用集合、請求和工作區，在此處檢視它們。"
+      },
+      "show-more": "顯示更多",
+      "loading-more": "載入更多..."
+    },
+    "favourites": {
+      "title": "收藏夾",
+      "loading": "載入中...",
+      "error": {
+        "title": "無法載入喜愛的專案",
+        "description": "獲取您喜愛的商品時出錯。",
+        "retry": "重試"
+      },
+      "empty": {
+        "title": "沒有最喜歡的物品",
+        "description": "將集合或工作區標記為收藏夾，以便在此處檢視它們。"
+      },
+      "show-more": "顯示更多",
+      "loading-more": "載入更多..."
+    },
+    "external": "外部的"
+  },
+  "announcements": {
+    "edit-announcement": "編輯公告",
+    "create-announcement": "公告",
+    "description": "在主頁上與您的團隊成員分享組織範圍內的警報",
+    "disabled-tooltip": "您沒有權限管理公告。請聯絡您的管理員。",
+    "modal": {
+      "create-title": "建立公告",
+      "edit-title": "編輯公告",
+      "description": "在主頁上與您的團隊成員分享組織範圍內的更新、重大變更、強制遷移或提醒。",
+      "type-label": "型別",
+      "title-label": "標題",
+      "message-label": "資訊",
+      "remove-after-label": "之後刪除",
+      "save-disabled-tooltip": "請填寫所有欄位。",
+      "create-success": "公告建立成功",
+      "update-success": "公告更新成功",
+      "delete-success": "公告刪除成功",
+      "create-error": "建立公告失敗",
+      "update-error": "公告更新失敗",
+      "delete-error": "刪除公告失敗",
+      "preview-title": "公告預覽",
+      "edit-button": "編輯",
+      "delete-button": "刪除",
+      "preview-button": "預覽",
+      "publish-button": "發布",
+      "update-button": "更新",
+      "expiry-options": {
+        "7-days": "7天",
+        "14-days": "14天",
+        "30-days": "30天"
+      },
+      "delete-confirmation": {
+        "title": "刪除公告？",
+        "message": "刪除後，您的隊友將不再看到此公告。"
+      },
+      "type-options": {
+        "informational": "資訊性",
+        "critical": "緊急"
+      },
+      "type-tooltip": {
+        "informational": "宣佈功能發布、培訓機會，並提醒您的隊友最佳 API 實踐。隊友可以立即忽略資訊公告。",
+        "critical": "宣佈重大變更、安全警報和強制遷移。隊友不能在結束日期之前駁回重要公告。"
+      },
+      "preview-topic": "此處為公告標題",
+      "preview-description": "此處會出現公告訊息"
+    },
+    "dismiss-announcement": "駁回公告",
+    "copy-link": "複製連結",
+    "link-copied": "連結已複製",
+    "copy-link-error": "複製連結失敗。請再試一次。",
+    "posted-by": "發布者：{name}",
+    "updated-by": "更新者：{name}",
+    "originally-posted-by": "最初由 {name} 發表",
+    "edited-time-ago": "已編輯{time}",
+    "unable-to-load-error-title": "無法載入公告",
+    "unable-to-load-error-description": "請重新載入頁面再試一次。",
+    "show-more": "顯示更多"
+  },
+  "readme": {
+    "edit-readme": "編輯自述檔案",
+    "create-readme": "自述檔案",
+    "description": "通過註釋、連結和關鍵資源來指導您的 團隊，幫助他們入門",
+    "disabled-tooltip": "您沒有權限管理自述檔案。請聯絡您的管理員。",
+    "modal": {
+      "create-title": "組織自述檔案",
+      "edit-title": "組織自述檔案",
+      "description": "幫助您的隊友以正確的方式開始。新增重要工作區或資源的註釋、連結和指南。本自述檔案出現在每個團隊成員的主頁上。只有組織管理員才能編輯此內容。",
+      "create-success": "自述檔案建立成功",
+      "update-success": "自述檔案更新成功",
+      "delete-success-title": "自述檔案未發布",
+      "delete-success-description": "您可以隨時通過“新增小部件”>“自述檔案”選項重新發布它。",
+      "create-error": "建立自述檔案失敗",
+      "update-error": "更新自述檔案失敗",
+      "delete-error": "刪除自述檔案失敗",
+      "unpublish-button": "取消發布",
+      "cancel-button": "取消",
+      "publish-button": "發布",
+      "update-button": "更新",
+      "unpublish-title": "取消發布自述檔案？",
+      "unpublish-description": "一旦取消發布，您的隊友將無法再看到此自述檔案。您可以隨時通過“新增小部件”>“自述檔案”選項重新發布它。"
+    },
+    "updated-by": "更新者：{name}",
+    "updated-by-you": "由您更新",
+    "unable-to-load-error-title": "無法載入自述檔案",
+    "unable-to-load-error-description": "請重新載入頁面再試一次。",
+    "show-more": "顯示更多 ↓"
+  },
+  "add-widget-button": {
+    "text": "新增小部件",
+    "request-widget": {
+      "title": "請求一個小部件"
+    }
+  }
+}

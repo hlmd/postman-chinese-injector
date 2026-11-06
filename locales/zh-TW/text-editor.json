@@ -1,0 +1,9 @@
+{
+  "text_copied_success": "已複製到剪貼簿",
+  "menu_items": {
+    "pretty": "美化",
+    "raw": "原始"
+  },
+  "item_beta": "測試版",
+  "refresh_visualization_tooltip": "重新整理視覺化"
+}

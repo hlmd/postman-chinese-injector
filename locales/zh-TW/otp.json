@@ -1,0 +1,30 @@
+{
+  "page": {
+    "heading": "驗證您的帳戶",
+    "loading": "正在傳送您的驗證碼...",
+    "register_error": "我們現在無法傳送驗證碼。請再試一次。"
+  },
+  "registration_failure": {
+    "continue_cta": "繼續前往 Postman"
+  },
+  "footer": {
+    "copyright": "©2025 Postman, Inc. 保留所有權利。",
+    "terms": "使用條款",
+    "privacy": "隱私政策"
+  },
+  "form": {
+    "code_label": "驗證碼",
+    "code_placeholder": "123456",
+    "description": "我們已將驗證碼傳送至<bold>{email}</bold>",
+    "submit_button": "驗證帳戶",
+    "resend_prompt": "沒有收到電子郵件？",
+    "resend_button": "重新發送程式碼",
+    "resend_button_with_cooldown": "{seconds} 秒後重新發送程式碼",
+    "resend_limit_reached": "您已達到此驗證請求的重新發送限制。",
+    "restart_button": "傳送新程式碼",
+    "session_expired": "您的驗證 會話 已過期。傳送新程式碼以繼續。",
+    "successful_banner": "成功！",
+    "error_code_length": "驗證碼必須包含六位數字。",
+    "error_generic": "出了點問題。請再試一次。"
+  }
+}

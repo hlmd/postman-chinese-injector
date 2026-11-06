@@ -1,0 +1,151 @@
+{
+  "tab_title": "新增模擬伺服器",
+  "sections": {
+    "source": "來源",
+    "access": "訪問權限",
+    "state": "狀態",
+    "state_info": "使用 <code>pm.state</code> 管理模擬伺服器中的有狀態資料。"
+  },
+  "form": {
+    "heading": "新增模擬伺服器",
+    "name_label": "名稱",
+    "name_default": "新增模擬伺服器",
+    "name_placeholder": "你想模擬的服務或功能",
+    "name_required_tooltip": "為模擬伺服器命名以繼續。",
+    "url_label": "Mock URL",
+    "local_port_label": "埠",
+    "local_url_helper": "",
+    "check_availability_cta": "檢查",
+    "check_port_cta": "檢查",
+    "port_available": "埠可用。",
+    "port_unavailable": "埠已被使用。選擇一個不同的。",
+    "port_check_failed": "無法檢查埠可用性。再試一次。",
+    "slug_unavailable": "slug 已被佔用，請選擇其他的。",
+    "slug_check_failed": "無法檢查 slug 可用性。再試一次。",
+    "submit_cta": "建立模擬伺服器",
+    "cancel_cta": "取消",
+    "create_in_progress": "建立中…",
+    "deploy_heading": "新增模擬伺服器",
+    "deploy_cta": "建立並部署",
+    "deploy_in_progress": "部署中…"
+  },
+  "cloud_config": {
+    "badge": "雲",
+    "summary": "（可選）",
+    "summary_tooltip": "推送到雲端，在 Postman 伺服器上執行您的模擬伺服器。",
+    "collapsed_action": "配置",
+    "description": "推送到雲端，在 Postman 伺服器上執行您的模擬伺服器。",
+    "url_label": "URL",
+    "mock_auth_label": "訪問權限"
+  },
+  "source_selector": {
+    "section_label": "選擇來源",
+    "blank": {
+      "label": "從模板開始"
+    },
+    "spec": {
+      "label": "規範",
+      "helper": "回應根據所選的 API 規範生成。",
+      "picker_placeholder": "選擇一個規範",
+      "picker_empty": "此 工作區 尚無規格。"
+    },
+    "collection": {
+      "label": "集合",
+      "helper": "回應根據集合中儲存的範例生成。",
+      "picker_placeholder": "選擇或建立集合",
+      "picker_empty": "此 工作區 中還沒有收藏。"
+    }
+  },
+  "mock_server_create": {
+    "source_label": "生成來源"
+  },
+  "mock_source_picker": {
+    "tab_all": "全部",
+    "tab_mocks": "Mock",
+    "tab_collections": "Collection",
+    "tab_specs": "Spec",
+    "search_placeholder": "搜尋…",
+    "empty": "這裡還是空的。請建立一個模擬伺服器，或通過集合、規範生成後部署。",
+    "empty_collection": "這裡還是空的。建立一個集合即可開始。",
+    "empty_spec": "這裡還是空的。建立一個規範即可開始。",
+    "empty_mock": "這裡還是空的。建立一個模擬伺服器即可開始。",
+    "empty_short": "這裡還是空的。",
+    "change_source": "更改",
+    "create_collection": "建立集合",
+    "create_spec": "建立規範",
+    "create_mock": "建立模擬伺服器",
+    "empty_import": "匯入"
+  },
+  "sync": {
+    "keep_in_sync_collection_label": "集合變更時自動更新此模擬伺服器",
+    "keep_in_sync_spec_label": "API 規範變更時自動更新此模擬伺服器",
+    "keep_in_sync_collection_label_local": "集合變更時自動更新此模擬伺服器（推送到雲端後生效）",
+    "keep_in_sync_spec_label_local": "API 規範變更時自動更新此模擬伺服器（推送到雲端後生效）",
+    "keep_in_sync_collection_helper": "當 Collection/API 規範發生變化時自動重新生成。",
+    "keep_in_sync_spec_helper": "當 Collection/API 規範發生變化時自動重新生成。",
+    "keep_in_sync_collection_helper_local": "推送到雲端後，當 Collection/API 規範發生變化時自動重新生成。",
+    "keep_in_sync_spec_helper_local": "推送到雲端後，當 Collection/API 規範發生變化時自動重新生成。"
+  },
+  "import_area": {
+    "idle_inline": "拖入集合或規範，或<browse>瀏覽檔案</browse>",
+    "file_replace": "替換",
+    "file_remove": "移除"
+  },
+  "ai_section": {
+    "divider_text": "或",
+    "title": "使用 Postman AI 進行創作",
+    "local": {
+      "card_mock_external": {
+        "title": "模擬伺服器您程式碼庫中的外部 API",
+        "description": "我們將掃描您的儲存庫中的出站呼叫，並建立一個像這些服務一樣回應的本地模擬伺服器。"
+      },
+      "card_mock_own": {
+        "title": "模擬伺服器您自己的 API",
+        "description": "建立您的服務公開的端點的數字孿生。"
+      }
+    },
+    "cloud": {
+      "card_mock_external": {
+        "title": "模擬伺服器我的服務所依賴的外部 API",
+        "description": "描述 API 和 Postman AI 將為您建立模擬伺服器。"
+      },
+      "card_generate_new": {
+        "title": "端到端結帳服務",
+        "description": "使用端點、模式和實際範例資料繪製端到端的全新服務。"
+      }
+    }
+  },
+  "mock_auth": {
+    "public_label": "將此模擬伺服器設為公開",
+    "summary": "預設私有：僅工作區成員或提供有效的 <code>x-api-key</code> 才能呼叫。設為公開後，任何擁有該 URL 的人都可以訪問。"
+  },
+  "deploy_modal": {
+    "title": "部署配置",
+    "push_and_deploy_title": "將模擬伺服器推送到雲端並部署",
+    "redeploy_title": "重新部署模擬伺服器服務",
+    "name_label": "名稱",
+    "name_placeholder": "為部署的模擬伺服器輸入名稱",
+    "url_label": "URL",
+    "public_label": "允許公開訪問",
+    "access_helper": "私有模擬伺服器需要攜帶有效的 <code>x-api-key</code> 請求頭才能訪問。",
+    "sessions_label": "啟用會話",
+    "sessions_helper": "每個呼叫方都會獲得一份獨立的模擬伺服器狀態副本，通過 <code>x-mock-session</code> 請求頭或 <code>pm_mock_session</code> Cookie 進行標識。",
+    "auto_deploy_label": "模擬伺服器變更時自動部署",
+    "auto_deploy_helper": "模擬伺服器發生變更時重新部署模擬伺服器。",
+    "deploy_button": "部署",
+    "redeploy_button": "重新部署",
+    "cancel_button": "取消"
+  },
+  "errors": {
+    "unsupported_input": "無法將此檔案識別為集合或規範。",
+    "unsupported_spec_version": "暫不支援此 API 規範版本。",
+    "name_required": "模擬伺服器名稱為必填項。",
+    "local_port_invalid": "輸入 1 到 65535 之間的埠。",
+    "slug_invalid": "使用小寫字母、數字或連字元。必須以字母或數字開頭。",
+    "source_picker_required_spec": "選擇 OpenAPI 規範或拖放檔案以繼續。",
+    "source_picker_required_collection": "選擇 集合 或拖放檔案以繼續。",
+    "source_picker_required_existing": "請選擇一個程式碼模擬伺服器以繼續。",
+    "cloud_spec_fetch_failed": "無法從此 工作區 載入該規範。稍後再試一次。",
+    "cloud_collection_fetch_failed": "無法從此 工作區 載入 集合。稍後再試一次。"
+  }
+}

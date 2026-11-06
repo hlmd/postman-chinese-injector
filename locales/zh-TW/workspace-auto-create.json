@@ -1,0 +1,19 @@
+{
+  "working": {
+    "resolving": "正在準備…",
+    "creating": "正在建立你的工作區…",
+    "redirecting": "正在開啟你的工作區…",
+    "do_not_close": "只需稍等片刻，請不要關閉此標籤頁。"
+  },
+  "error": {
+    "title": "無法建立工作區",
+    "generic": "出錯了，請重試。",
+    "retry": "重試",
+    "go_to_workspaces": "前往你的工作區"
+  },
+  "signed_out": {
+    "title": "請登入後繼續",
+    "description": "需要先登入 Postman，我們才能為你建立工作區。",
+    "sign_in": "登入"
+  }
+}

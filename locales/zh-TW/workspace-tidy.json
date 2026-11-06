@@ -1,0 +1,94 @@
+{
+  "modal": {
+    "archive": {
+      "title": "歸檔工作區？",
+      "description": "歸檔後將從檢視中移除該工作區並停用其監控，但您可以隨時恢復。",
+      "primary_action_text": "歸檔",
+      "secondary_action_text": "取消",
+      "checkbox_label": "不再顯示此提示"
+    },
+    "bulk_archive": {
+      "title": "歸檔所選工作區？",
+      "description": "歸檔後將從檢視中移除這些工作區並停用其監控，但您可以隨時恢復。",
+      "primary_action_text": "歸檔",
+      "secondary_action_text": "取消",
+      "checkbox_label": "不再顯示此提示"
+    },
+    "bulk_restore": {
+      "title": "恢復所選工作區？",
+      "description": "恢復後這些工作區將重新顯示，監控需手動啟動。",
+      "primary_action_text": "恢復",
+      "secondary_action_text": "取消",
+      "checkbox_label": "不再顯示此提示"
+    },
+    "delete": {
+      "title": "刪除工作區？",
+      "description": "<0>刪除後，</0> <1><0>{workspaceName}</0></1> <2>中的所有內容將被永久刪除。</2>",
+      "confirmation_input_label": "輸入 “Delete” 以確認",
+      "confirmation_key": "delete",
+      "primary_action_text": "刪除工作區",
+      "secondary_action_text": "取消",
+      "checkbox_label": "不再顯示此提示"
+    },
+    "bulk_delete": {
+      "title": "刪除所選工作區？",
+      "description": "所選工作區中的所有內容都將被永久刪除。",
+      "confirmation_input_label": "輸入 “Delete” 以確認",
+      "confirmation_key": "delete",
+      "primary_action_text": "刪除工作區",
+      "secondary_action_text": "取消"
+    }
+  },
+  "table": {
+    "column_headers": {
+      "workspace_name": "名稱",
+      "created_by": "建立者",
+      "type": "型別",
+      "access": "訪問權限",
+      "last_updated": "最後更新時間",
+      "actions": "操作"
+    }
+  },
+  "filters": {
+    "filter_by_visibility_dropdown": {
+      "placeholder": "訪問型別",
+      "label": "按可見性篩選",
+      "options": {
+        "all": {
+          "value": "所有工作區"
+        },
+        "personal": {
+          "value": "個人",
+          "description": "僅建立者",
+          "workspace_type": "內部",
+          "workspace_access": "僅您及受邀人員"
+        },
+        "team": {
+          "value": "團隊",
+          "description_team_user": "{teamName} 團隊中的所有人",
+          "description_non_team_user": "您團隊中的所有人",
+          "workspace_type": "內部",
+          "workspace_access": "您團隊中的所有人"
+        },
+        "private": {
+          "value": "私有",
+          "description": "僅受邀團隊成員",
+          "workspace_type": "內部",
+          "workspace_access": "僅您及受邀人員"
+        },
+        "partner": {
+          "value": "合作伙伴",
+          "description": "僅受邀成員及合作伙伴",
+          "workspace_type": "合作伙伴",
+          "workspace_access": "僅受邀合作伙伴"
+        },
+        "public": {
+          "value": "公開",
+          "description": "網際網路上的任何人",
+          "workspace_type": "公開",
+          "workspace_access": "網際網路上的任何人"
+        }
+      }
+    }
+  }
+}

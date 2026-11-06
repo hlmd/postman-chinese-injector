@@ -1,0 +1,32 @@
+{
+  "modal": {
+    "heading": "分享 {workspaceName}",
+    "description": "在您的網站或文件中嵌入 <1><0>Run in Postman</0></1> 按鈕，方便他人發現並使用您的集合。",
+    "live_version": {
+      "heading": "嵌入即時版本",
+      "tag": "新",
+      "description": "此按鈕允許使用者 Fork 該集合，從而通過拉取和合並更改來保持更新。"
+    },
+    "additional_settings": "其他設定（可選）",
+    "destination_label": "當合作夥伴點選 Run in Postman 時",
+    "destination_info": "選擇合作伙伴開啟 Run in Postman 連結後可訪問的內容。",
+    "add_partner_option": {
+      "label": "將合作伙伴新增到此工作區",
+      "description": "邀請合作伙伴加入 {workspaceName}。"
+    },
+    "create_sandbox_option": {
+      "label": "為每個合作伙伴建立自訂沙盒工作區",
+      "description": "基於此主工作區中的資源，為其配置專屬工作區。"
+    },
+    "generate_embed_code": "生成嵌入程式碼",
+    "embed_code": "嵌入程式碼",
+    "html_friendly": "適用於 HTML",
+    "markdown_friendly": "適用於 Markdown",
+    "html_description": "最適合用於網站，提供更多自訂選項。",
+    "markdown_description": "最適合用於 README 或部落格等 Markdown 文件。",
+    "copy_code": "複製程式碼",
+    "copied": "已複製",
+    "error_title": "無法建立連結",
+    "error_description": "建立 Run in Postman 連結時出錯，請重試。"
+  }
+}

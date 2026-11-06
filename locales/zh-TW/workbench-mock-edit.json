@@ -1,0 +1,36 @@
+{
+  "mock_edit_tab": {
+    "something_went_wrong": "出了點問題",
+    "unexpected_error": "載入模擬伺服器時發生意外錯誤，請重試。",
+    "try_again": "重試",
+    "not_signed_in_error": "您需要一個帳戶才能繼續探索 Postman。",
+    "mock_server": "Mock Server"
+  },
+  "mock_edit_container": {
+    "default_disabled_tooltip_text": "此模擬伺服器沒有新的更改可儲存",
+    "invalid_name_header_delay_text": "請輸入模擬伺服器名稱、有效的固定網路延遲和請求頭鍵，以更新模擬伺服器。",
+    "invalid_name_header_text": "請輸入模擬伺服器名稱和請求頭鍵，以更新模擬伺服器。",
+    "invalid_name_delay_text": "請輸入名稱和有效的固定網路延遲，以更新模擬伺服器。",
+    "invalid_delay_header_text": "請輸入有效的固定網路延遲和請求頭鍵，以更新模擬伺服器。",
+    "invalid_name": "請為此模擬伺服器輸入名稱。",
+    "invalid_delay": "請輸入有效的固定網路延遲。",
+    "invalid_header": "請輸入用於回應匹配的請求頭鍵。",
+    "update_mock_text": "更新模擬伺服器",
+    "cancel": "取消",
+    "changes_saved": "更改已儲存",
+    "update_success_msg": "您已更新 {name} 模擬伺服器。",
+    "unable_to_edit": "無法編輯模擬伺服器"
+  },
+  "mock_edit_form": {
+    "make_payment": "立即付款",
+    "user_billing_action": "由於帳單未支付，您的團隊無法訪問部分 Postman 服務。請支付目前帳單以繼續使用。",
+    "default_action": "由於帳單未支付，您的團隊無法訪問部分 Postman 服務。請聯絡團隊的帳單管理員瞭解更多付款資訊。",
+    "try_again": "重試",
+    "cannot_access_server": "無法訪問 Postman 伺服器",
+    "subtitle": "您的團隊已停用與 Postman 服務的同步。請聯絡支援團隊以恢復使用這些功能。",
+    "internet_error": "請檢查您的網路連線後重試。",
+    "collection_fetch_error": "獲取集合資訊時發生錯誤。",
+    "unexpected_error": "發生意外錯誤，請重試。",
+    "environment_store_error": "獲取工作區環境時發生錯誤"
+  }
+}

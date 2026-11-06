@@ -1,0 +1,21 @@
+{
+  "file_conflicts_detected": "檢測到檔案衝突",
+  "files_exists": "目標 資料夾 中已存在以下檔案：",
+  "what_to_do": "你想做什麼？",
+  "replace": "替換現有檔案",
+  "cancel": "取消",
+  "remove_folder": "您確定要從計算機中永久刪除 {name} 及其所有內容嗎？",
+  "remove_file": "您確定要從計算機中永久刪除 {name} 嗎？",
+  "remove_folder_description": "此 資料夾 將從您的檔案系統中刪除並且無法恢復。",
+  "remove_file_description": "該檔案將從您的檔案系統中刪除並且無法恢復。",
+  "delete": "刪除",
+  "show_file_sizes": "顯示檔案大小",
+  "select_folder": "選擇資料夾",
+  "select_folder_description": "輸入要瀏覽的資料夾路徑：",
+  "enter_folder_path": "輸入資料夾路徑...",
+  "home_directory": "主目錄",
+  "documents": "/文件",
+  "desktop": "/桌面",
+  "moc_or_windows": "/Users (macOS) 或 C:\\ (Windows)",
+  "untitled": "無標題"
+}

@@ -1,0 +1,571 @@
+{
+  "entity_type_icon": {
+    "collection": "集合"
+  },
+  "unknown_item": {
+    "tooltip": "你目前的 Postman 版本不支援此專案型別。請更新應用後檢視。",
+    "modal": {
+      "heading": "不支援的專案型別",
+      "body": "此專案的型別不受目前 Postman 版本支援。請將 Postman 更新到最新版本後檢視。",
+      "body_named": "\"{name}\" 的型別不受目前 Postman 版本支援。請將 Postman 更新到最新版本後檢視。",
+      "dismiss": "知道了"
+    }
+  },
+  "offline_error_state": {
+    "heading": "無法載入資料",
+    "description": "我們正在嘗試與我們的伺服器建立連線。在您連線之前，您的資料可能不是最新的。",
+    "reload": "重新載入"
+  },
+  "error_fetching_data": {
+    "heading": "無法獲取您的資料",
+    "description": "只是一根電線有問題。您的資料已安全同步到 Postman 的伺服器。",
+    "refresh": "重新整理"
+  },
+  "no_collections_present": {
+    "create_collection_for_requests_heading": "為您的請求建立 集合",
+    "default_heading": "您沒有任何 集合",
+    "description": "集合 允許您對相關請求進行分組，並輕鬆地為其中的所有請求設定通用 授權、測試、腳本和變數。",
+    "create_collection": "建立 集合"
+  },
+  "sign_in_to_perform_action": "您需要登入 團隊 才能執行此操作",
+  "meta_icons_info": {
+    "read_only": "只讀"
+  },
+  "dropdown_toggle_button": "下拉切換按鈕",
+  "entity_is_empty": "這個 {entity, select, collection {集合} folder {資料夾} other {}} 是空的。",
+  "add_request_to_start_working": "<0>新增請求</0>開始工作。",
+  "no_results_found": {
+    "heading": "沒有找到“{searchQuery}”的結果",
+    "description": "請使用不同的關鍵字重試，並且不要忘記檢查拼寫錯誤。您可以按名稱、網址和 fork 標籤進行搜尋。"
+  },
+  "could_not_load_requests": "無法載入請求。 <1>再試一次</1>",
+  "sidebar_actions_menu": {
+    "disable_trash_tooltip": {
+      "members_only": "只有該 工作區 的成員才能恢復已刪除的集合",
+      "default": "恢復已刪除的 集合",
+      "offline": "重新上線後即可執行此操作"
+    },
+    "create_collection_tooltip": "建立新的 集合",
+    "disabled_tooltip_no_permission": "您沒有 權限 來執行此操作。",
+    "disabled_git_on_prem_on_web": "請使用 Postman 應用程式更新此 集合",
+    "disabled_git_on_prem_on_web_label_popover": "此 集合 連線到 GitHub 企業儲存庫。要進行更改，請使用 Postman 桌面應用程式。",
+    "disabled_tooltip_is_offline": "您可以在重新上線後執行此操作。",
+    "disabled_tooltip_nothing_to_paste": "沒有可貼上的實體",
+    "open_trash": "開啟垃圾箱",
+    "create_new_button": "建立新按鈕",
+    "blank_collection": "空白 集合",
+    "collection_template": "集合 模板",
+    "ai_generated_collection": "AI 生成 集合",
+    "disabled_tooltip_no_permission_run": "您沒有 權限 來執行此 集合",
+    "disabled_tooltip_no_permission_add": "您沒有 權限 來新增專案",
+    "disabled_tooltip_no_permission_remove": "您沒有 權限 來刪除此 集合"
+  },
+  "live_collection_onboarding": {
+    "connection_success": {
+      "heading": "集合 上線了！",
+      "postman_will_keep_collections_synced": "Postman 將始終保持您的 集合 同步。",
+      "test_it_out": "通過<1><0>傳送請求</0></1>來測試它。"
+    },
+    "strategy_selection": {
+      "unable_to_save_preference": "無法儲存您的偏好。從<1><0>即時設定</0></1>重試。",
+      "heading": "您有一個或多個請求",
+      "description": "選擇如何及時瞭解即將發生的請求",
+      "automatically_update": "自動更新",
+      "review_before_updating": "更新前檢視",
+      "save": "節省"
+    },
+    "onboarding_complete": {
+      "collection_will_update_automatically": "一切就緒！您的 集合 將自動更新。",
+      "notify_on_updates": "一切就緒！當有新的更新可用時，我們會通知您。",
+      "change_later_from_live_settings": "您可以稍後從 <1><0>Live 設定</0></1> 更改此設定。"
+    }
+  },
+  "collection_sidebar_actions": {
+    "open_in_new_tab": {
+      "label": "在新選項卡中開啟"
+    },
+    "copy_link": {
+      "label": "複製連結"
+    },
+    "share": {
+      "label": "分享"
+    },
+    "move": {
+      "label": "移動",
+      "disabled_tooltip": "您沒有 權限 來執行此操作。"
+    },
+    "run_collection": {
+      "label": "執行",
+      "infoTooltip": "在此 集合 中傳送所有請求",
+      "disabled_tooltip": "您沒有 權限 來執行此 集合。"
+    },
+    "generate_tests": {
+      "label": "生成測試"
+    },
+    "edit": {
+      "label": "編輯"
+    },
+    "view_details": {
+      "label": "檢視詳情"
+    },
+    "add_request": {
+      "label": "新增 請求",
+      "tooltip": "新增 請求"
+    },
+    "add_folder": {
+      "label": "新增 資料夾"
+    },
+    "monitor_collection": {
+      "label": "建立監控"
+    },
+    "mock_collection": {
+      "label": "模擬伺服器服務"
+    },
+    "create_a_fork": {
+      "label": "復刻",
+      "disabled_tooltip": "您沒有 權限 來 fork 這個 集合"
+    },
+    "request_a_fork": {
+      "label": "請求 fork"
+    },
+    "create_pull_request": {
+      "label": "建立 拉取請求",
+      "disabled_tooltip": "您沒有 權限 來建立 拉取請求"
+    },
+    "merge_changes": {
+      "label": "合併 更改"
+    },
+    "connect_to_github": {
+      "label": "連線到 GitHub",
+      "infoTooltip": "將此 集合 連線到 GitHub 儲存庫以同步您的更改。"
+    },
+    "pull_changes_git": {
+      "label": "拉取更改"
+    },
+    "push_changes_git": {
+      "label": "推送更改"
+    },
+    "create_pull_request_git": {
+      "label": "建立 拉取請求"
+    },
+    "repository_settings": {
+      "label": "儲存庫設定"
+    },
+    "run_folder": {
+      "label": "執行",
+      "infoTooltip": "在此 資料夾 中傳送所有請求"
+    },
+    "open_in_tab": {
+      "label": "在選項卡中開啟"
+    },
+    "add_example": {
+      "label": "新增範例"
+    },
+    "pull_changes": {
+      "label": "拉動變更",
+      "info_tooltip": "拉取更改以從原始 集合 獲取最新更新。"
+    },
+    "view_changelog": {
+      "label": "檢視更新日誌"
+    },
+    "view_documentation": {
+      "label": "檢視文件"
+    },
+    "rename": {
+      "label": "重新命名"
+    },
+    "duplicate": {
+      "label": "複製",
+      "disabled_tooltip": "您沒有 權限 來執行此操作。"
+    },
+    "export": {
+      "label": "匯出",
+      "disabled_tooltip": "您沒有 權限 來匯出此 集合。",
+      "intent": {
+        "teammates": "與團隊成員共享",
+        "ci": "在 CI/CD 中執行",
+        "git": "儲存到 Git 儲存庫",
+        "other": "其他"
+      }
+    },
+    "manage_roles": {
+      "label": "管理角色"
+    },
+    "copy": {
+      "label": "複製"
+    },
+    "cut": {
+      "label": "切"
+    },
+    "paste": {
+      "label": "貼上"
+    },
+    "delete": {
+      "label": "刪除"
+    },
+    "comment": {
+      "label": "評論"
+    },
+    "more": {
+      "label": "更多",
+      "mock": "建立模擬伺服器",
+      "create_monitor": "建立監控",
+      "generate_tests": "生成測試",
+      "generate_specification": "生成規範",
+      "generate_flows": "建立流程",
+      "connect_repository": "連線儲存庫",
+      "export": "匯出 集合",
+      "generate_sdk": "生成SDK"
+    },
+    "visualize_collection": {
+      "label": "生成流程",
+      "error": "載入流程模組時出錯。"
+    },
+    "generate_specification": {
+      "label": "生成規範"
+    },
+    "turn_on_types": {
+      "label": "開啟型別"
+    },
+    "turn_off_types": {
+      "label": "關閉型別"
+    },
+    "add_to_agent_mode": {
+      "label": "詢問人工智慧"
+    },
+    "apps": {
+      "label": "應用程式"
+    },
+    "run": {
+      "label": "執行"
+    },
+    "ask_ai": {
+      "label": "詢問人工智慧"
+    },
+    "fork": {
+      "label": "復刻"
+    },
+    "use": {
+      "label": "使用 / Fork"
+    },
+    "sort": {
+      "label": "排序",
+      "folders_first_default": "資料夾優先，預設",
+      "folders_first_a_to_z": "資料夾優先，A 到 Z",
+      "footer_text": "這隻會更新您在 側邊欄 中的檢視。"
+    },
+    "bulk_cut": {
+      "label": "切"
+    },
+    "bulk_copy": {
+      "label": "複製"
+    },
+    "bulk_paste": {
+      "label": "貼上"
+    },
+    "bulk_duplicate": {
+      "label": "複製"
+    },
+    "bulk_delete": {
+      "label": "刪除"
+    },
+    "paste_linked_copy": {
+      "label": "貼上連結副本"
+    },
+    "add_to_favorites": {
+      "tooltip": "新增到收藏夾"
+    },
+    "remove_from_favorites": {
+      "tooltip": "從收藏夾中刪除"
+    },
+    "more_actions": {
+      "tooltip": "檢視更多動作"
+    }
+  },
+  "partner_viewer_nudges": {
+    "fork": {
+      "no_team_user_nudge": {
+        "heading": "Fork 到您自己的 團隊",
+        "description": "在付費 Postman 計劃上建立 團隊 以 fork 並建立此 集合 的副本。",
+        "button": "升級您的計劃"
+      },
+      "free_team_user_nudge": {
+        "heading": "Fork 到您自己的 團隊",
+        "description": "將您的 團隊 升級到付費計劃，以 fork 並建立此 集合 的副本",
+        "button": "升級您的計劃"
+      }
+    },
+    "export": {
+      "no_team_user_nudge": {
+        "heading": "您沒有 權限 可以匯出",
+        "description": "在付費 Postman 計劃上建立 團隊 以 fork 並建立此 集合 的副本",
+        "button": "升級您的計劃"
+      },
+      "free_team_user_nudge": {
+        "heading": "您沒有 權限 可以匯出",
+        "description": "將您的 團隊 升級到付費計劃，以 fork 並建立此 集合 的副本",
+        "button": "升級您的計劃"
+      }
+    }
+  },
+  "bulk_delete_confirmation": "您確定要刪除 {typeCountString} 嗎？",
+  "bulk_delete_confirmation_reusable": "您即將刪除 {typeCountString}。如果刪除原始請求，連結請求將不再遵循更新。",
+  "permission_error": "您沒有執行此操作的權限",
+  "collection_is_not_a_fork": "集合 不是 fork。",
+  "this_collection_is_not_a_fork": "這個 集合 不是 fork。",
+  "could_not_perform_action": "無法成功 {action} {entityType}",
+  "bulk_delete_failed": "批次刪除失敗",
+  "move_entity_error": "移動 {name} 時出現問題。",
+  "copied_to_collections_success": "複製到 側邊欄 中的集合。",
+  "copied_to_collections_error": "無法複製到 側邊欄 中的集合。",
+  "link_copied": "連結已複製",
+  "move_folder_to_subfolder_error": "資料夾 無法移動到其自己的子資料夾中",
+  "bulk_duplicate_error": "所選元素無法重複。請再試一次。",
+  "paste_error": "貼上複製的實體時發生錯誤。請再試一次。",
+  "reuse_error": "重用所選實體時發生錯誤。請再試一次。",
+  "bulk_move_entity_error": "移動所選實體時發生錯誤。請再試一次。",
+  "examples_can_be_moved_under_request_error": "範例只能移動到 請求 下。",
+  "could_not_move_items": "無法移動物品",
+  "signed_out_message": "您登入後即可執行此操作。",
+  "no_changes_to_pull": "無需拉取任何更改",
+  "fork_from_latest_api_version": "您只能從 API 的最新 版本 開始 fork。",
+  "pull_changes_offline_toast": {
+    "heading": "您離線",
+    "description": "上線後您就可以提取更改。"
+  },
+  "offline_action_tooltip": "您已離線。請連線到網際網路才能使用此功能。",
+  "more_actions_tooltip": "檢視更多動作",
+  "cannot_move_response_different_protocol": "您無法將 回應 移動到具有不同協議的 請求",
+  "cannot_duplicate_response_different_protocol": "您不能將 回應 複製到具有不同協議的 請求",
+  "move_success": "已成功移動專案",
+  "entity_move_error": "移動所選實體時發生錯誤。請再試一次。",
+  "invalid_move_operation": "涉及無效的移動操作",
+  "invalid_duplicate_operation": "涉及無效的重複操作",
+  "bulk_delete_error": "刪除所選專案時出錯。請再試一次。",
+  "bulk_delete_success": "已成功刪除專案",
+  "common": {
+    "loading": "載入中...",
+    "error": "發生錯誤",
+    "retry": "重試",
+    "clear": "清除"
+  },
+  "empty_state": {
+    "title": "該面板中沒有專案",
+    "no_permission": "您無權在此 工作區 中建立集合。",
+    "create": "建立",
+    "pull_from_cloud": "從 Postman 雲中拉取",
+    "ask_ai": "要求 AI 從原生代碼庫建立",
+    "collection_empty": "集合 為空",
+    "folder_empty": "資料夾 為空",
+    "collection_empty_description": "新增 請求 或 資料夾 來構建您的 API 工作流程。",
+    "folder_empty_description": "新增 請求、資料夾，或將專案拖動到此處以將它們組合在一起。",
+    "collection_view_only_description": "集合為空。",
+    "folder_view_only_description": "資料夾為空。"
+  },
+  "sort_indicator": {
+    "sorted": "排序：{name}。"
+  },
+  "search": {
+    "loading": "正在搜尋所有集合…"
+  },
+  "children_error": {
+    "message": "無法載入專案。",
+    "retry": "重試"
+  },
+  "toast": {
+    "items_moved": "{count, plural, one {已移動 # 項} other {已移動 # 項}}",
+    "could_not_move_items": "無法移動物品",
+    "sort_blocked": "清除排序後才能移動專案",
+    "items_linked": "{count, plural, one {已連結 # 項} other {已連結 # 項}}",
+    "only_requests_can_be_linked": "只有請求可以被關聯",
+    "only_http_requests_can_be_linked": "只有 HTTP 請求可以被關聯",
+    "item_name_empty": "專案名稱不能為空",
+    "collection_name_empty": "集合名稱不能為空",
+    "folder_name_empty": "資料夾名稱不能為空",
+    "request_name_empty": "請求名稱不能為空",
+    "example_name_empty": "範例名稱不能為空",
+    "collection_duplicated": "集合 重複",
+    "collections_duplicated": "集合 重複",
+    "folder_duplicated": "資料夾 重複",
+    "request_duplicated": "請求 重複",
+    "example_duplicated": "範例重複",
+    "link_copied": "連結已複製到剪貼簿",
+    "could_not_paste_items": "無法貼上專案",
+    "could_not_link_requests": "無法連結請求",
+    "disabled_paste_linked_copy": "僅複製的請求可以貼上為連結副本",
+    "dependency_update_success_title": "依賴項已更新",
+    "dependency_update_success_message": "{name} 現已更新。",
+    "dependency_update_error_title": "無法更新依賴項",
+    "dependency_update_error_message": "{name} 無法更新。檢查 控制台 瞭解詳細資訊。",
+    "dependency_delete_success_title": "依賴項已刪除",
+    "dependency_delete_success_message": "{name} 已從此 工作區 中刪除。",
+    "dependency_delete_error_title": "無法刪除依賴項",
+    "dependency_delete_error_message": "{name} 無法刪除。檢查 控制台 瞭解詳細資訊。"
+  },
+  "request_types": {
+    "http": "HTTP",
+    "graphql": "GraphQL",
+    "ai": "人工智慧",
+    "mcp": "MCP",
+    "grpc": "gRPC",
+    "websocket": "WebSocket",
+    "socketio": "套接字IO",
+    "mqtt": "MQTT",
+    "kafka": "Kafka"
+  },
+  "dependency_actions": {
+    "update": {
+      "label": "更新"
+    },
+    "delete": {
+      "label": "刪除"
+    }
+  },
+  "ec_collection_sidebar_actions": {
+    "add_request": {
+      "label": "新增 請求",
+      "tooltip": "新增 請求"
+    },
+    "add_folder": {
+      "label": "新增 資料夾"
+    },
+    "run": {
+      "label": "執行"
+    },
+    "share": {
+      "label": "分享"
+    },
+    "copy_link": {
+      "label": "複製連結"
+    },
+    "move": {
+      "label": "移動"
+    },
+    "manage_roles": {
+      "label": "管理角色"
+    },
+    "fork": {
+      "label": "建立一個 fork"
+    },
+    "rename": {
+      "label": "重新命名"
+    },
+    "paste": {
+      "label": "貼上"
+    },
+    "duplicate": {
+      "label": "複製"
+    },
+    "sort": {
+      "label": "排序",
+      "footer_text": "這隻會更新您在 側邊欄 中的檢視。"
+    },
+    "delete": {
+      "label": "刪除"
+    },
+    "open_in_new_tab": {
+      "label": "在新瀏覽器選項卡中開啟"
+    },
+    "add_to_favorites": {
+      "tooltip": "新增到收藏夾"
+    },
+    "remove_from_favorites": {
+      "tooltip": "從收藏夾中刪除"
+    },
+    "more_actions": {
+      "tooltip": "檢視更多動作"
+    }
+  },
+  "ec_folder_sidebar_actions": {
+    "add_request": {
+      "label": "新增 請求",
+      "tooltip": "新增 請求"
+    },
+    "add_folder": {
+      "label": "新增 資料夾"
+    },
+    "run": {
+      "label": "執行"
+    },
+    "share": {
+      "label": "分享"
+    },
+    "copy_link": {
+      "label": "複製連結"
+    },
+    "rename": {
+      "label": "重新命名"
+    },
+    "paste": {
+      "label": "貼上"
+    },
+    "duplicate": {
+      "label": "複製"
+    },
+    "sort": {
+      "label": "排序",
+      "footer_text": "這隻會更新您在 側邊欄 中的檢視。"
+    },
+    "delete": {
+      "label": "刪除"
+    },
+    "open_in_new_tab": {
+      "label": "在新瀏覽器選項卡中開啟"
+    },
+    "more_actions": {
+      "tooltip": "檢視更多動作"
+    }
+  },
+  "ec_request_sidebar_actions": {
+    "add_example": {
+      "label": "新增範例"
+    },
+    "share": {
+      "label": "分享"
+    },
+    "copy_link": {
+      "label": "複製連結"
+    },
+    "rename": {
+      "label": "重新命名"
+    },
+    "paste": {
+      "label": "貼上"
+    },
+    "duplicate": {
+      "label": "複製"
+    },
+    "delete": {
+      "label": "刪除"
+    },
+    "open_in_new_tab": {
+      "label": "在新瀏覽器選項卡中開啟"
+    },
+    "more_actions": {
+      "tooltip": "檢視更多動作"
+    }
+  },
+  "ec_example_sidebar_actions": {
+    "share": {
+      "label": "分享"
+    },
+    "copy_link": {
+      "label": "複製連結"
+    },
+    "rename": {
+      "label": "重新命名"
+    },
+    "duplicate": {
+      "label": "複製"
+    },
+    "delete": {
+      "label": "刪除"
+    },
+    "open_in_new_tab": {
+      "label": "在新瀏覽器選項卡中開啟"
+    },
+    "more_actions": {
+      "tooltip": "檢視更多動作"
+    }
+  }
+}

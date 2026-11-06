@@ -1,0 +1,279 @@
+{
+  "entity_type_icon": {
+    "label": "Webhook"
+  },
+  "webhook_workbench": {
+    "loading": "正在載入 Webhook...",
+    "header": {
+      "title": "Webhook",
+      "rename_input_label": "Webhook 名稱",
+      "rename_button_label": "重新命名 Webhook",
+      "invoke_url_input_label": "Webhook 呼叫 URL",
+      "share_button": "分享",
+      "copy_share_link": "複製分享連結",
+      "copied_share_link": "已複製分享連結",
+      "copy_webhook_url": "Webhook URL",
+      "copy_invoke_link": "複製呼叫連結",
+      "copied_invoke_link": "已複製呼叫連結",
+      "copy_error_toast": "無法複製 webhook 連結",
+      "copy_invoke_url_success_toast": "連結已複製",
+      "start_button": "開始",
+      "pause_button": "暫停",
+      "save_button": "儲存",
+      "saving_button": "正在儲存..."
+    },
+    "empty_state": {
+      "title": "尚未收到任何請求",
+      "description": "將請求傳送到下面的端點。一旦收到，它就會出現在這裡。",
+      "events_title": "沒有收到任何事件",
+      "events_description": "此 webhook URL 收到的事件將顯示在此處。",
+      "configure_routing": "配置 Webhook",
+      "receive_sample_event": "接收模擬事件",
+      "receive_sample_event_success_toast": "模擬事件已傳送",
+      "receive_sample_event_error_toast": "無法傳送模擬事件",
+      "select_request_title": "選擇要檢查的請求",
+      "endpoint_label": "監聽端點",
+      "copy_url": "複製URL",
+      "copied": "已複製",
+      "copy_error_toast": "無法複製端點 URL",
+      "illustration_aria_label": "Webhook 事件預覽",
+      "forwarding_section_title": "使用 CLI 轉發"
+    },
+    "tabs": {
+      "events": "事件",
+      "routing": "路由",
+      "scripts": "腳本",
+      "settings": "設定"
+    },
+    "scripts": {
+      "events": {
+        "before_request": "事件觸發時",
+        "after_response": "回應返回後"
+      },
+      "descriptions": {
+        "before_request": "“On event”腳本使用 JavaScript 編寫，在收到 Webhook 事件時執行。",
+        "after_response": "“回應返回後”腳本使用 JavaScript 編寫，在收到靜態回應或轉發回應之後執行。"
+      },
+      "placeholders": {
+        "before_request": "用 JavaScript 為收到的事件編寫測試。",
+        "after_response": "用 JavaScript 為靜態回應或轉發回應編寫測試。"
+      },
+      "tooltips": {
+        "before_request": "此腳本會針對收到的每個事件執行。",
+        "after_response": "此腳本會針對靜態或轉發的回應執行。"
+      },
+      "saving": "正在儲存…",
+      "unsaved": "有未儲存的更改",
+      "load_error": {
+        "title": "無法載入腳本",
+        "description": "載入 Webhook 腳本時出錯。"
+      }
+    },
+    "cli_commands": {
+      "title": "使用 Postman CLI 將事件轉發到本地伺服器",
+      "alternate_title": "使用 CLI 轉發",
+      "copy": "複製",
+      "copied": "已複製"
+    },
+    "requests_sidebar": {
+      "summary": "顯示 {shown}（共 {total}）",
+      "new_requests": "新請求",
+      "loading_more": "正在載入請求...",
+      "all_event_types": "所有事件型別",
+      "clear_all_events": "全部刪除",
+      "empty_event": "（空的）",
+      "delete_all_confirmation": {
+        "title": "刪除所有請求？",
+        "description": "你確定嗎？這無法撤消。",
+        "cancel": "取消",
+        "delete": "全部刪除"
+      }
+    },
+    "load_error": {
+      "title": "無法載入 Webhook",
+      "description": "載入此 Webhook 時出現問題。",
+      "retry": "重試"
+    },
+    "settings": {
+      "title": "Webhook 設定",
+      "description": "此 Webhook 的設定即將推出。",
+      "environment": {
+        "heading": "關聯環境",
+        "description": "Webhook 使用雲端環境。請將要用於此 Webhook 的環境推送到雲端。",
+        "selector_label": "關聯環境",
+        "confirmation": {
+          "title": "更改環境？",
+          "description": "如果現有的 Webhook 身份驗證或 回應 行為依賴於 環境 變數，這可能會導致其停止工作。",
+          "cancel": "取消",
+          "confirm": "確認"
+        }
+      },
+      "endpoint_auth": {
+        "heading": "端點身份驗證",
+        "description": "要求傳入的請求包含匹配的憑據才會被接受。變數建議使用關聯雲端環境的共享值，包括該環境為目前活動環境時。",
+        "type_label": "身份驗證型別",
+        "header_key_label": "標頭鍵",
+        "header_key_placeholder": "Authorization",
+        "api_key_label": "API 金鑰",
+        "username_label": "使用者名稱",
+        "password_label": "密碼",
+        "load_error_message": "端點 身份驗證設定不可用。",
+        "load_error_disabled_tooltip": "無法編輯 端點 身份驗證設定，因為它們載入失敗。"
+      }
+    },
+    "routing_settings": {
+      "add_response_target": "新增路由規則",
+      "delete_response_target": "刪除",
+      "enabled": "啟用",
+      "disabled": "已停用",
+      "not_available": "不適用",
+      "event_endpoint_label": "收到的事件",
+      "response_target_label": "回應 目標",
+      "save_success_toast": "已儲存路由規則",
+      "tunnel_forwarding_failure_toast": "無法建立本地轉發。如果另一個 Postman 應用程式或 CLI 實例開啟，它可能已經在處理轉發。",
+      "web_tunnel_forwarding_failure_toast": "此 Webhook 已啟用本地轉發，但僅在桌面應用程式上受支援",
+      "empty_state": {
+        "title": "沒有配置路由規則。",
+        "description": "新增路由規則即可開始。"
+      },
+      "forward": {
+        "title": "向前",
+        "description": "將事件轉發到本地主機或 公開 URL。",
+        "endpoint_label": "轉發端點",
+        "endpoint_placeholder": "https://example.com/webhook",
+        "forward_locally_label": "本地轉發"
+      },
+      "respond": {
+        "title": "回應",
+        "description": "針對此 Webhook 上收到的事件傳送 回應。",
+        "status_code_label": "狀態碼",
+        "status_code_placeholder": "200",
+        "headers_label": "請求頭",
+        "no_headers": "沒有配置標頭。",
+        "body_label": "請求體"
+      },
+      "create": {
+        "title": "建立路由規則",
+        "description": "配置此 Webhook 如何回應路徑上收到的請求。",
+        "type_label": "型別",
+        "method_label": "方法",
+        "path_label": "路徑",
+        "path_placeholder": "/incoming",
+        "create_button": "建立路由規則"
+      },
+      "validation": {
+        "mutation_in_progress": "路由規則更新已在進行中。",
+        "no_changes": "沒有要儲存的規則更改。",
+        "duplicate_rule": "此方法和路徑的路由規則已存在。",
+        "forward_url_required": "輸入轉發 URL 以建立路由規則。",
+        "forward_url_required_short": "需要轉發 URL。",
+        "unsupported_forwarding_path": "尚不支援路徑參數和萬用字元。支援即將到來。",
+        "self_forwarding_endpoint": "Webhook 公開 端點 URL 不能用作轉發目標。",
+        "local_forward_endpoint_on_web": "Web 上不支援本地轉發。使用桌面應用程式、Postman CLI 或 公開 端點。",
+        "invalid_status_code": "輸入 100 到 599 之間的狀態程式碼。",
+        "invalid_status_code_short": "狀態程式碼必須介於 100 和 599 之間。",
+        "static_body_too_long": "回應 正文不能超過 {maxLength} 個字元。",
+        "static_header_too_long": "標頭鍵/值不能超過 {maxLength} 個字元。",
+        "header_key_required": "設定標頭值時需要標頭鍵。"
+      }
+    },
+    "workbench": {
+      "title": "Webhook 儀表板",
+      "description": "請求歷史記錄可用於此 Webhook。"
+    },
+    "sidebar": {
+      "delete_confirmation": {
+        "title": "刪除{webhookName}？",
+        "description": "您確定要刪除此 Webhook 嗎？這無法撤消。",
+        "cancel": "取消",
+        "delete": "刪除",
+        "deleting": "正在刪除..."
+      },
+      "status_indicator": {
+        "active_label": "狀態：啟用",
+        "inactive_label": "狀態：停用"
+      }
+    },
+    "request_inspector": {
+      "title": "請求檢查器",
+      "description": "Webhook {listenerId} 的詳細請求檢查將在下一次迭代中新增。",
+      "loading_title": "正在載入請求",
+      "loading_description": "這應該只需要一點時間",
+      "load_error_title": "無法載入請求詳細資訊",
+      "load_error_description": "過一段時間再試一次",
+      "unavailable_title": "請求詳細資訊不可用",
+      "unavailable_description": "再次選擇請求以載入其詳細資訊。",
+      "removed_request_title": "請求未找到",
+      "removed_request_description": "此請求可能已被自動刪除。",
+      "copy_path_aria_label": "複製請求 URL",
+      "copy_path_success_toast": "請求 URL 已複製",
+      "replay_button": "重播",
+      "replaying_button": "正在重播...",
+      "open_as_http_request_button": "作為 HTTP 請求開啟",
+      "save_request_button": "儲存請求",
+      "save_request_button_tooltip": "將請求儲存到集合",
+      "collapse_inspector_button": "摺疊檢查器",
+      "collapse_request_panel_button": "摺疊請求",
+      "expand_request_panel_button": "展開請求",
+      "collapse_response_panel_button": "摺疊回應",
+      "expand_response_panel_button": "展開回應",
+      "response_sent_back": "回應",
+      "waiting_title": "等待",
+      "waiting_description": "一旦可用，回應將出現在此處。",
+      "body_type": "請求體型別：{bodyType}",
+      "collapsed_labels": {
+        "timeline": "時間軸",
+        "events": "事件",
+        "response": "回應"
+      },
+      "no_request_body_title": "無請求體",
+      "no_request_body_description": "此請求不包含請求體。",
+      "no_response_body_title": "無回應或回應過大",
+      "no_response_body_description": "此回應不包含回應體，或回應體過大。",
+      "no_headers_title": "無標頭",
+      "no_headers_description": "沒有捕獲任何標頭。",
+      "logs": {
+        "empty_title": "暫無日誌",
+        "empty_description": "Webhook 腳本的控制台日誌將顯示在這裡。",
+        "load_error_title": "無法載入日誌",
+        "load_error_description": "載入腳本日誌時出錯。",
+        "new_logs": "新日誌",
+        "text_language": "文字"
+      },
+      "test_results": {
+        "empty_title": "編寫測試實現自動化除錯",
+        "empty_description": "使用腳本編寫斷言，驗證 Webhook 請求是否按預期處理。",
+        "load_error_title": "無法載入測試結果",
+        "load_error_description": "載入腳本測試結果時出錯。",
+        "script_error_title": "腳本執行失敗",
+        "script_error_description": "無法評估 {scriptLabel} 腳本。",
+        "script_error_description_fallback": "無法評估該腳本。",
+        "passed": "通過",
+        "failed": "失敗",
+        "skipped": "跳過"
+      },
+      "tabs": {
+        "body": "請求體",
+        "headers": "請求頭",
+        "test_results": "測試結果",
+        "logs": "日誌"
+      }
+    },
+    "not_found": {
+      "title": "未找到 Webhook",
+      "description": "此 Webhook 不可用或可能已被刪除。",
+      "go_to_workspace": "轉到 工作區 概述",
+      "go_to_workspaces": "檢視所有工作區"
+    },
+    "permissions": {
+      "pause_disabled_tooltip": "您沒有權限來暫停此 Webhook。",
+      "start_disabled_tooltip": "您沒有權限來啟動此 Webhook。",
+      "rename_disabled_tooltip": "您沒有權限來重新命名此 Webhook。",
+      "edit_routing_disabled_tooltip": "您沒有權限來編輯路由設定。",
+      "edit_settings_disabled_tooltip": "您沒有權限來編輯 Webhook 設定。",
+      "receive_sample_event_disabled_tooltip": "您沒有權限來發送範例事件。",
+      "replay_disabled_tooltip": "您沒有權限來重播請求。",
+      "clear_events_disabled_tooltip": "您沒有權限來刪除事件。"
+    }
+  }
+}

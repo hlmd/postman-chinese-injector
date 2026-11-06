@@ -1,0 +1,26 @@
+{
+  "entity_type_icon": {
+    "label": "Mock Server"
+  },
+  "dependency_actions": {
+    "update": {
+      "label": "更新"
+    },
+    "delete": {
+      "label": "刪除"
+    }
+  },
+  "status_indicator": {
+    "running": "狀態：執行中",
+    "idle": "狀態：空閒"
+  },
+  "code_mock": {
+    "running_status": "狀態：執行中"
+  },
+  "simulation_context_menu": {
+    "open": "開啟",
+    "copy_link": "複製連結",
+    "redeploy": "重新部署",
+    "delete": "刪除"
+  }
+}

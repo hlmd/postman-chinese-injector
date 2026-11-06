@@ -1,0 +1,184 @@
+{
+  "not_found_blank_state": {
+    "title": "404，頁面未找到",
+    "description": "您要查詢的頁面不可用。"
+  },
+  "heading": "執行器",
+  "add_cluster_button": "新增執行器",
+  "retry_button": "重試",
+  "description": "執行器在您的網路內執行監控，以便您可以測試私有或受防火牆限制的 API。",
+  "learn_more": "瞭解更多",
+  "give_feedback": "提供意見回饋",
+  "search_placeholder": "按執行器名稱過濾",
+  "invalid_page": "無效頁面。私有 API 執行器功能未啟用。",
+  "upgrade_to_enterprise": {
+    "title": "升級您的計劃以管理執行器",
+    "description": "<Para>執行器設定適用於我們<Strong>企業</Strong>計劃中的團隊。聯絡銷售人員升級到企業計劃。瞭解更多關於<Link><LinkText>執行器</LinkText></Link>的資訊</Para>",
+    "primary_button": "聯絡銷售人員",
+    "upgrade_button": "升級計劃",
+    "feature_name": "私有 API 執行器",
+    "modal_heading": "升級到企業計劃以訪問私有 API 的執行器"
+  },
+  "enterprise_access": {
+    "title": "為您的團隊啟用執行器設定",
+    "description": "<Para>執行器設定適用於我們<Strong>企業</Strong>計劃的團隊。請聯絡 Postman 支援人員以獲取對團隊的訪問權限。瞭解更多關於<Link><LinkText>執行器</LinkText></Link>的資訊</Para>",
+    "primary_button": "聯絡支援人員"
+  },
+  "filter": {
+    "all": "全部",
+    "active": "活躍",
+    "inactive": "不活躍",
+    "created_by_placeholder": "建立者：全部"
+  },
+  "table": {
+    "cluster_name": "執行器名稱",
+    "status": "狀態",
+    "cluster_id": "執行器 ID",
+    "allWorkspaces": "所有工作區",
+    "noWorkspace": "沒有工作區",
+    "unavailableWorkspace": "不可用",
+    "unavailableWorkspaceTooltip": "該工作區可能是私有或已被刪除。您無權訪問其詳細資訊。",
+    "created_by": "建立者：",
+    "created_on": "建立於",
+    "modified_on": "修改於"
+  },
+  "dropdown": {
+    "rotate_key": "輪換金鑰",
+    "install": "安裝",
+    "edit": "編輯",
+    "delete": "刪除"
+  },
+  "empty_state": {
+    "message": "您還沒有任何執行器。",
+    "suggestion": "首先建立您的第一個執行器。",
+    "filtered_message": "沒有執行器符合您的篩選條件",
+    "filtered_suggestion": "嘗試調整您的搜尋或過濾條件以檢視更多結果。"
+  },
+  "refresh_key": {
+    "success": {
+      "title": "執行器金鑰重新整理成功",
+      "description": "執行器金鑰已成功重新整理。"
+    },
+    "error": {
+      "title": "重新整理金鑰失敗",
+      "default_description": "重新整理金鑰時發生錯誤。"
+    }
+  },
+  "fetch_clusters": {
+    "error": {
+      "title": "無法獲取執行器",
+      "default_description": "獲取執行器時發生錯誤。"
+    }
+  },
+  "common": {
+    "cancel": "取消",
+    "done": "完成",
+    "next": "下一個",
+    "save": "儲存"
+  },
+  "delete_cluster": {
+    "modal": {
+      "heading": "永久刪除執行器？",
+      "confirmation": "<text>您確定要刪除執行器<bold>\"{clusterName}\"</bold>嗎？</text>",
+      "warning": "刪除此執行器將停止使用它的所有監控。",
+      "cancel_button": "取消",
+      "delete_button": "刪除"
+    },
+    "success": {
+      "title": "執行器刪除成功",
+      "description": "執行器\"{clusterName}\"已被刪除。"
+    },
+    "error": {
+      "title": "刪除執行器失敗",
+      "default_description": "刪除執行器時出錯。",
+      "default_message": "刪除執行器失敗"
+    }
+  },
+  "add_cluster": {
+    "modal": {
+      "add_title": "新增執行器",
+      "created_title": "執行器已建立",
+      "install_title": "安裝執行器",
+      "update_title": "已更新執行器金鑰",
+      "next_button": "下一步：安裝執行器 →",
+      "edit_title": "編輯執行器"
+    },
+    "form": {
+      "name_label": "姓名",
+      "name_placeholder": "輸入執行器名稱",
+      "name_helper_text": "例如，內部 API 執行器 Beta 1",
+      "description_label": "描述",
+      "description_placeholder": "例如，為 beta API 執行監控執行",
+      "custom_runner_created_by": "由您的團隊建立"
+    },
+    "button": {
+      "generate": "生成金鑰",
+      "add": "新增"
+    },
+    "validation": {
+      "name_required": "執行器名稱為必填項"
+    },
+    "success": {
+      "title": "執行器建立成功",
+      "description": "新的執行器已建立。請複製 API 金鑰。"
+    },
+    "update": {
+      "success": {
+        "title": "執行器更新成功",
+        "description": "執行器已成功更新"
+      },
+      "error": {
+        "title": "無法更新執行器",
+        "description": "更新執行器時發生錯誤。"
+      }
+    },
+    "error": {
+      "title": "建立執行器失敗",
+      "default_description": "建立執行器時發生錯誤。",
+      "default_message": "建立執行器失敗"
+    },
+    "copy": {
+      "success": {
+        "title": "已複製到剪貼簿",
+        "description": "API 鍵已複製到剪貼簿"
+      }
+    }
+  },
+  "runner": {
+    "runner_info_text": "您可以選擇所需區域中的 Postman 執行器，或選擇您自己網路內的執行器來執行監控。",
+    "runner_setup_help": "要設定新的執行器，請聯絡您的團隊管理員。",
+    "auto_select": "自動選擇",
+    "manually_select": "手動選擇",
+    "add_runner": "新增執行器",
+    "setup": {
+      "reset_key": "重置執行器金鑰",
+      "reset_key_tooltip": "重置執行器金鑰將使目前執行器金鑰失效並生成新的金鑰。您可能需要重新配置已安裝的執行器。",
+      "copy": {
+        "runner_id": "複製執行器 ID",
+        "runner_key": "複製執行器金鑰",
+        "cli_command": "複製到剪貼簿"
+      },
+      "steps": {
+        "title": "請按照以下步驟安裝您的執行器",
+        "install_cli": {
+          "title": "1. 安裝 Postman CLI"
+        },
+        "setup": {
+          "title": "2. 在終端中執行此命令",
+          "security_warning_with_key": "安全地複製並存儲此金鑰，因為關閉此視窗後將無法訪問它。如果需要，可以稍後重置金鑰。",
+          "security_warning_without_key": "丟了鑰匙？您可以重置它，但這將停用任何現有的跑步者，直到使用新金鑰更新它們為止。"
+        }
+      }
+    },
+    "tooltip": {
+      "create_runner": "新增一個執行器來配置和監控您的 API"
+    }
+  },
+  "refresh_text": "重新整理",
+  "runners_fetch_error": "無法獲取執行器。請檢查您的網路連線。如果問題仍然存在，請聯絡 Postman 支援。",
+  "runners_fetch_error_title": "無法獲取執行器。",
+  "runner_details": {
+    "back_link_label": "所有執行器",
+    "breadcrumb_aria_label": "執行器詳細資訊麵包屑"
+  }
+}

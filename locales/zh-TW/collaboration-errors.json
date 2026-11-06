@@ -1,0 +1,134 @@
+{
+  "approved_access_request": {
+    "title": "請求 已確認",
+    "message": "看起來有人已經批准了這個 請求。"
+  },
+  "rejected_access_request": {
+    "title": "請求 已確認",
+    "message": "看起來有人已經拒絕了這個請求。"
+  },
+  "expired_access_request": {
+    "title": "請求 已過期",
+    "message": "訪問請求將在 30 天后過期。您仍然可以通過與他們共享元素來授予訪問權限。"
+  },
+  "model_does_not_exist": {
+    "title": "無法回覆 請求",
+    "message": "由於元素已被刪除，因此 請求 無法完成。"
+  },
+  "model_not_found_in_workspace": {
+    "title": "無法傳送 請求",
+    "message": "由於元素已被刪除或移動，因此 請求 無法完成。"
+  },
+  "partner_editor_slots_full": {
+    "title": "無法批准 請求",
+    "message": "沒有可用的付費插槽。我們已通知 合作伙伴 經理新增更多插槽。"
+  },
+  "creator_not_part_of_team": {
+    "title": "找不到請求者",
+    "message": "他們可能已離開您的 團隊 或刪除了他們的 Postman 帳戶。"
+  },
+  "approver_not_part_of_team": {
+    "title": "無法批准 請求",
+    "message": "哎呀！您似乎無法批准此 請求。"
+  },
+  "invalid_approver_for_request": {
+    "title": "無法批准 請求",
+    "message": "哎呀！您似乎無法批准此 請求。"
+  },
+  "not_part_of_any_team": {
+    "title": "無法批准 請求",
+    "message": "哎呀！您似乎無法批准此 請求。"
+  },
+  "team_member_slots_full": {
+    "title": "無法批准 請求",
+    "message": "",
+    "create": {
+      "title": "請求傳送失敗",
+      "message": "沒有可用的成員席位。請讓團隊管理員增加席位後重試。"
+    }
+  },
+  "update_roles_permission_denied": {
+    "title": "您需要訪問權限",
+    "message": "您需要成為 編輯者 才能管理此元素上的角色。"
+  },
+  "auto_approval_disabled": {
+    "title": "您沒有 權限 來批准",
+    "message": "請聯絡 團隊 管理員 將此 訪客 轉換為開發人員。"
+  },
+  "failed_access_request": {
+    "title": "請求 失敗",
+    "message": "您嘗試批准的 請求 已失敗。"
+  },
+  "user_already_has_requested_role": {
+    "title": "您已經擁有此訪問權限",
+    "message": "如果您想要不同級別的訪問權限，請建立一個新的 請求",
+    "approve": {
+      "title": "請求 已滿足",
+      "message": "該使用者已經擁有請求的 角色。"
+    }
+  },
+  "user_already_has_access": {
+    "title": "您已經有訪問權限",
+    "message": "您已經有權訪問此資源。",
+    "approve": {
+      "title": "請求 已履行",
+      "message": "該使用者已經有權訪問該資源。"
+    }
+  },
+  "instance_not_found_error": {
+    "title": "無法建立 請求",
+    "message": "由於實體已被刪除，因此無法完成此 請求。"
+  },
+  "user_already_invited_as_team_member": {
+    "title": "無法批准 請求",
+    "message": "該使用者已被邀請作為 團隊 成員。刪除 團隊 成員 邀請 並重試。"
+  },
+  "user_already_part_of_team": {
+    "title": "無法批准 請求",
+    "message": "您不能將此使用者 邀請 作為合作伙伴，因為他們已經是您 團隊 的一部分。"
+  },
+  "user_already_invited_as_partner": {
+    "title": "無法批准 請求",
+    "message": "該使用者已被邀請成為合作伙伴。刪除夥伴 邀請 並重試。"
+  },
+  "user_already_partner": {
+    "title": "無法批准 請求",
+    "message": "您不能將此使用者 邀請 作為 團隊 成員，因為他們已經是合作伙伴。"
+  },
+  "improper_email_ids": {
+    "title": "無法批准 請求",
+    "message": "傳送邀請時提供的電子郵件 ID 不正確。"
+  },
+  "max_pending_invites_exceeded": {
+    "title": "無法批准 請求",
+    "message": "您的待處理邀請不能超過 100 個"
+  },
+  "default_approve": {
+    "title": "無法批准 請求",
+    "message": "只是一根電線有問題。請再試一次。"
+  },
+  "default_deny": {
+    "title": "無法拒絕請求",
+    "message": "只是一根電線有問題。請再試一次。"
+  },
+  "default_create": {
+    "title": "無法建立 請求",
+    "message": "出了點問題"
+  },
+  "default_revoke": {
+    "title": "移除訪問權限失敗",
+    "message": "只是一點小故障，請重試。"
+  },
+  "invalidated_request": {
+    "title": "無法回覆 請求",
+    "message": "此 請求 不再有效。"
+  },
+  "request_already_exists": {
+    "title": "請求 已經存在",
+    "message": "您已經提交了此 請求。"
+  },
+  "unprocessable_entity": {
+    "title": "無法傳送 請求",
+    "message": "不屬於 團隊 的使用者無法 請求 訪問"
+  }
+}

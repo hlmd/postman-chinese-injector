@@ -1,0 +1,69 @@
+{
+  "composer": {
+    "model_picker_aria_label": "模型：{model}",
+    "model_picker_heading": "選擇模型",
+    "model_select_label": "模型",
+    "other_models_button_label": "其他模型，{count, plural, one {# 個可用} other {# 個可用}}",
+    "other_models_count": "{count, plural, one {# 個模型} other {# 個模型}}",
+    "other_models_label": "其他模型",
+    "placeholder": "輸入提示詞",
+    "send_button_label": "傳送訊息",
+    "stop_button_label": "停止生成"
+  },
+  "conversation": {
+    "assistant_label": "助手",
+    "authentication_error_message": "提供方拒絕了此 API Key。請檢查金鑰後重試。",
+    "authentication_failed_message": "身份驗證失敗。請檢查您的憑據後重試。",
+    "cors_error_message": "提供方或組織不允許來自此瀏覽器的請求。",
+    "duplicate_tool_name_error_message": "所選工具的名稱必須唯一。請重新命名或取消選擇重複的工具後重試。",
+    "error_message": "無法生成回應。",
+    "messages_label": "對話訊息",
+    "postman_consent_error_message": "Postman AI 訪問不可用。請新增您自己的 API 金鑰，或等待訪問恢復。",
+    "provider_tool_configuration_details_message": "提供方拒絕了一個或多個所選工具：{details}",
+    "retry_button_label": "重試",
+    "thinking_status": "思考中…",
+    "tool_completed_status": "已完成",
+    "tool_failed_result": "工具呼叫失敗。",
+    "tool_failed_status": "失敗",
+    "tool_input_label": "輸入",
+    "tool_input_pending": "等待輸入…",
+    "tool_limit_error_message": "提供方拒絕了所選工具的數量。請取消選擇部分工具後重試。",
+    "tool_result_label": "結果",
+    "tool_result_pending": "等待結果…",
+    "tool_running_status": "執行中…",
+    "tool_value_unavailable": "此值無法顯示。",
+    "user_label": "你"
+  },
+  "credentials": {
+    "access_unavailable_notice": "Postman AI 暫時無法訪問。請使用你自己的 API 金鑰繼續。",
+    "api_key_label": "API Key",
+    "api_key_placeholder": "輸入 API Key",
+    "api_key_required_notice": "新增 API 金鑰以傳送訊息。",
+    "checking_access_status": "正在檢查 Postman AI 訪問權限…",
+    "checking_status": "正在檢查…",
+    "clear_button_label": "清除金鑰",
+    "consent_required_notice": "Postman AI 需要你的同意。請使用你自己的 API 金鑰繼續。",
+    "key_added_status": "已新增金鑰",
+    "postman_included_notice": "已包含在你的 Postman 套餐中，無需 API 金鑰。",
+    "postman_unavailable_status": "不可用",
+    "provider_label": "提供方",
+    "session_notice": "你的 API Key 僅儲存在本次瀏覽器會話的記憶體中，並直接傳送給提供方。",
+    "your_providers_group_label": "你的提供商"
+  },
+  "header": {
+    "clear_chat_button_label": "清空對話",
+    "conversation_tab": "對話",
+    "system_prompt_tab": "系統提示詞",
+    "title": "試驗場"
+  },
+  "suggestions": {
+    "chain_tools": "串聯兩個工具",
+    "error": "觸發一個錯誤",
+    "optional_parameter": "測試可選參數",
+    "test_all_tools": "測試全部工具"
+  },
+  "system_prompt": {
+    "default_value": "你是一名樂於助人的助手。請給出簡潔、準確的回答，並清晰說明工具的使用過程。",
+    "label": "給助手的指令"
+  }
+}

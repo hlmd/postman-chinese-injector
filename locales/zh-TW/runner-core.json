@@ -1,0 +1,219 @@
+{
+  "cli_installer": {
+    "heading": "安裝 Postman CLI",
+    "unix_description_start": "使用下面的命令",
+    "unix_description_link": "安裝 Postman CLI",
+    "unix_description_end": "在 macOS、Linux (x64) 或適用於 Linux 的 Windows 子系統 (WSL) 上",
+    "copy_tooltip": "複製到剪貼簿",
+    "install_in_terminal": "在終端中安裝",
+    "unexpected_command_tooltip": "無法識別此安裝命令。請複製後自行檢查並手動執行。",
+    "installation_guide_link": "安裝指南",
+    "learn_how_to": "瞭解如何",
+    "install_postman_cli_on_windows": "在 Windows 上安裝 Postman CLI"
+  },
+  "performance_test_form": {
+    "run_choice": {
+      "in_app_web_warning": "僅在 Postman 桌面端可用。"
+    }
+  },
+  "data_file_upgrade": {
+    "heading": "升級以使用資料檔案",
+    "description": "資料檔案可讓您使用測試資料驅動監控執行以及功能性和效能集合執行。升級您的計劃以開始使用。"
+  },
+  "test_data_upgrade": {
+    "heading": "升級以使用資料集和資料檔案",
+    "description": "資料集和資料檔案可以為你的集合執行提供測試資料，二者均需付費套餐。升級套餐即可開始使用。"
+  },
+  "errors": {
+    "forbidden": {
+      "start": {
+        "title": "由於安全策略而拒絕訪問",
+        "description": "在恢復訪問之前，您無法執行此集合。請聯絡您的團隊管理員尋求幫助。"
+      },
+      "save": {
+        "title": "由於安全策略而拒絕訪問",
+        "description": "在恢復訪問之前，您的集合執行無法同步到雲端。請聯絡您的團隊管理員尋求幫助。"
+      }
+    },
+    "cloud_performance_run": {
+      "ambiguous_submit": {
+        "title": "雲端測試狀態未確認",
+        "description": "無法確認你的雲端測試是否已啟動。請先檢視執行歷史，再決定是否重試。"
+      },
+      "navigation_failed": {
+        "title": "雲端測試已啟動",
+        "description": "你的雲端測試已啟動，但無法開啟。你可以在執行歷史中開啟它。"
+      }
+    }
+  },
+  "run_completion": {
+    "titles": {
+      "success": "集合執行成功",
+      "with_issues": "集合執行時遇到問題",
+      "did_not_finish": "集合執行未完成"
+    },
+    "subtitles": {
+      "stopped_at": "停在 {percentage}%",
+      "stopped_after_error": "在 {percentage}% 遇到意外錯誤",
+      "completed_with_errors": "{count, plural, =0 {執行完成，但存在錯誤} one {執行完成，有 {count, number} 個錯誤} other {執行完成，有 {count, number} 個錯誤}}"
+    },
+    "untitled_collection": "無標題集合",
+    "chips": {
+      "tests_failed": "{total, plural, one {{total, number} 個測試中有 {failed, number} 個失敗} other {{total, number} 個測試中有 {failed, number} 個失敗}}",
+      "errors": "{count, plural, one {{count, number} 個錯誤} other {{count, number} 個錯誤}}"
+    }
+  },
+  "data_file": {
+    "toasts": {
+      "saved_to_workspace": "資料檔案已儲存到工作區",
+      "save_to_workspace_failed": "資料檔案儲存到工作區失敗，請重試。",
+      "storage_limit_reached": "你的工作區儲存空間已達上限。",
+      "content_read_failed": "無法識別檔案內容，請重新選擇檔案上傳",
+      "settings_saved": "資料檔案設定已儲存",
+      "settings_save_failed": "設定儲存失敗，請重試。",
+      "dataset_created": "資料集已建立",
+      "dataset_create_failed": "資料集建立失敗，請重試。"
+    },
+    "dataset_no_create_permission": "你沒有在此工作區中建立資料集的權限。",
+    "dataset_upgrade_required": "升級套餐即可將資料檔案儲存為資料集。",
+    "dataset_upgrade_aria_label": "儲存為資料集。升級套餐即可將資料檔案儲存為資料集。",
+    "dataset_file_too_large": "此檔案過大，無法儲存為資料集。請選擇小於 {limitMb} MB 的檔案，或改為儲存到工作區。",
+    "query_label": "查詢",
+    "saved_file_hint": "將此檔案儲存為資料集，即可使用 SQL 篩選、排序和清理行。",
+    "local_file_hint": "此檔案僅儲存在你的計算機上。將其儲存為資料集，即可隨處複用，並使用 SQL 篩選、排序和清理行。",
+    "save_as_dataset": "儲存為資料集",
+    "reading_datafile": "正在讀取資料檔案",
+    "no_views_cta": "暫無檢視。<cta>建立一個</cta>"
+  },
+  "data_view": {
+    "run_query": "執行查詢",
+    "save": "儲存",
+    "save_as_new_view": "另存為新檢視",
+    "reset": "重置",
+    "no_edit_view_permission": "你沒有編輯此資料集檢視的權限。"
+  },
+  "iteration_strategy": {
+    "iterations_label": "迭代次數",
+    "iterations_tooltip": "本次執行中迴圈執行該集合的次數。",
+    "iterations_aria": "迭代次數",
+    "label": "迭代策略",
+    "tooltip": "當檢視中的資料行用完後，多餘的迭代如何取資料。",
+    "round_robin": "迴圈取值",
+    "round_robin_description": "執行指定次數的迭代。資料行用完後，剩餘迭代從第一行重新開始。",
+    "repeat_last": "重複最後一行",
+    "repeat_last_description": "執行指定次數的迭代。資料行用完後，剩餘迭代繼續使用最後一行。",
+    "stop_at_end": "用完即停",
+    "stop_at_end_description": "執行指定次數的迭代。資料行用完後即停止執行。",
+    "datafile_fewer": "{rows, plural, one {# 行資料} other {# 行資料}}中只有前 {count} 行會被執行。",
+    "datafile_equal": "{rows, plural, one {# 行資料} other {# 行資料}}各執行一次。",
+    "datafile_more": "{rows, plural, one {# 行資料} other {# 行資料}}各執行一次，之後剩餘的 {extra, plural, one {# 次迭代} other {# 次迭代}}將重複使用最後一行。"
+  },
+  "run_type": {
+    "functional_description": "驗證請求正確性和測試結果",
+    "performance_description": "測量回應時間和負載表現"
+  },
+  "results_header": {
+    "run_actions": "執行操作",
+    "view_more_actions": "檢視更多操作",
+    "schedule": "計劃任務",
+    "postman_cli": "Postman CLI",
+    "configure_ci_cd": "配置 CI/CD",
+    "new_run": "新增執行",
+    "run_again": "再次執行",
+    "rerun": "重新執行",
+    "preparing_run": "正在準備執行",
+    "debug_with_ai": "用 AI 除錯",
+    "analyze_with_ai": "用 AI 分析",
+    "ci_cd_callout": {
+      "heading": "每次推送時執行",
+      "content": "生成 CI/CD 配置，在流水線中執行此集合，及時發現破壞性的 API 變更。",
+      "configure_button": "配置 CI/CD"
+    }
+  },
+  "results_request_list_item": {
+    "no_tests_found": "未找到測試",
+    "request_could_not_be_sent": "請求無法傳送"
+  },
+  "mock_bindings": {
+    "title": "分配模擬伺服器",
+    "title_info": "此集合中的以下變數和主機 URL 可以被模擬伺服器",
+    "urls_column": "URL",
+    "mock_column": "模擬",
+    "scenario_column": "場景",
+    "empty_heading": "未分配模擬伺服器",
+    "empty_description": "將此集合中的 URL 指向模擬伺服器，即可在執行期間攔截其請求。",
+    "add_url": "新增 URL",
+    "url_placeholder": "輸入 URL",
+    "url_aria_label": "要模擬的 URL",
+    "url_invalid_warning": "這不是有效的 URL。",
+    "remove_url_aria_label": "移除 URL",
+    "mock_aria_label": "模擬",
+    "select_mock_placeholder": "選擇模擬伺服器",
+    "mocks_group": "Mock",
+    "mock_servers_group": "Mock Server",
+    "create_with_ai": "使用 AI 建立",
+    "create_new_mock": "新增模擬伺服器",
+    "scenario_aria_label": "場景",
+    "select_scenario_placeholder": "選擇場景",
+    "scenarios_loading": "載入中...",
+    "use_mock_aria_label": "在本次執行中使用此模擬伺服器",
+    "mock_enabled_tooltip": "模擬伺服器已啟用 — 請求由模擬伺服器回應",
+    "mock_disabled_tooltip": "模擬伺服器已停用 — 請求將直接傳送到真實主機"
+  },
+  "empty_state": {
+    "functional": {
+      "heading": "執行集合以驗證你的請求",
+      "description": "將集合拖到此處，或從下方開始。",
+      "new_collection_name": "功能測試集合",
+      "empty_collection": {
+        "heading": "此集合中沒有請求",
+        "description": "向其中新增請求，或讓 AI 為你構建。"
+      },
+      "empty_folder": {
+        "heading": "此資料夾中沒有請求",
+        "description": "向其中新增請求，或讓 AI 為你構建。"
+      }
+    },
+    "performance": {
+      "heading": "使用集合設定效能測試",
+      "description": "將集合拖到此處，或從下方開始。",
+      "new_collection_name": "效能測試集合",
+      "empty_collection": {
+        "heading": "此集合中沒有請求",
+        "description": "新增要施加負載的請求，或讓 AI 為你構建。"
+      },
+      "empty_folder": {
+        "heading": "此資料夾中沒有請求",
+        "description": "新增要施加負載的請求，或讓 AI 為你構建。"
+      },
+      "sample_collection_name": "效能測試範例"
+    },
+    "sample_collection_name": "Postman Echo 範例",
+    "learn_more": "瞭解更多",
+    "ask_ai": "詢問 AI",
+    "create_collection": "新增集合",
+    "add_requests": "新增請求",
+    "import": "匯入",
+    "import_requests": "匯入請求",
+    "try_sample": "試用範例集合",
+    "open_request": "開啟請求",
+    "errors": {
+      "create_collection": "無法建立集合，請稍後重試。",
+      "add_request": "無法新增請求，請稍後重試。",
+      "import_requests": "無法匯入請求，請稍後重試。",
+      "sample_collection": "無法建立範例集合，請稍後重試。"
+    },
+    "request_added": {
+      "title": "請求已新增到 {collectionName}",
+      "go_back": "返回",
+      "functional": {
+        "description": "請先更新並儲存請求，再執行集合。",
+        "run": "執行集合"
+      },
+      "performance": {
+        "description": "請先更新並儲存請求，再執行效能測試。",
+        "run": "執行效能測試"
+      }
+    }
+  }
+}

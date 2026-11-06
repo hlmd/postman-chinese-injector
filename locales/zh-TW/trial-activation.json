@@ -1,0 +1,27 @@
+{
+  "heading": "恭喜！您的 {tier, select, solo {Solo} team {Team} business {Enterprise} enterprise {Enterprise} other {新}} 試用現已啟用。",
+  "close_button_label": "關閉",
+  "invite": {
+    "prompt": "邀請您的隊友加入。您新增的每位成員都將解鎖共享工作區、即時協作和角色功能。",
+    "field_label": "隊友信箱",
+    "add_another_placeholder": "新增其他隊友",
+    "send_cta": "{count, plural, =0 {傳送邀請} one {傳送 # 個邀請} other {傳送 # 個邀請}}",
+    "sent_success": "{count, plural, one {已向 {email} 傳送邀請。} other {已向 # 位隊友傳送邀請。}}",
+    "send_failed": "傳送失敗。請檢查網路連線後重試。",
+    "git_suggestions": {
+      "title": "推薦邀請",
+      "description": "邀請您 Git 儲存庫中的協作者。",
+      "description_top": "邀請您 Git 儲存庫中的主要協作者。",
+      "add_all": "{count, plural, other {全部新增（#）}}",
+      "all_added": "已全部新增",
+      "show_more": "{count, plural, other {再顯示 # 個}}",
+      "add": "將 {name} 新增到邀請",
+      "sent": "已邀請 {name}"
+    }
+  },
+  "import": {
+    "unsent_guard": "{count, plural, one {您有 # 個未傳送的邀請。} other {您有 # 個未傳送的邀請。}}",
+    "unsent_guard_send": "傳送邀請",
+    "unsent_guard_continue": "不傳送並繼續"
+  }
+}

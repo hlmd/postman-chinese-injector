@@ -1,0 +1,121 @@
+{
+  "header": {
+    "text": "包庫",
+    "button": {
+      "new_package": "新增包",
+      "learn_more": "瞭解有關包的更多資訊。"
+    },
+    "icon": {
+      "team": "所有 團隊 成員都可以訪問庫中的包。"
+    }
+  },
+  "content": {
+    "package_item": {
+      "new_package": "新增包"
+    },
+    "package_content": {
+      "button": {
+        "save": "儲存",
+        "delete": "刪除",
+        "cancel": "取消",
+        "create": "建立"
+      },
+      "add_desciption_prompt": "單擊此處新增描述"
+    },
+    "usage_view": {
+      "error_state": {
+        "title": "無法載入包使用詳細資訊",
+        "description": "嘗試重新整理頁面或稍後再回來檢視。"
+      },
+      "view_access": {
+        "title": "您需要一個不同的 角色",
+        "description": "您需要 管理員 角色 來檢視包的使用情況。請聯絡您的 團隊 管理員以更改您的 角色 或切換到其他帳戶。"
+      },
+      "title": "包",
+      "description": "包是用於儲存公共腳本以供重用的容器。此檢視監視在 團隊 中建立的包。"
+    },
+    "usage_view_table": {
+      "input_search": {
+        "placeholder_text": "搜尋包"
+      },
+      "single_select_users": {
+        "placeholder_text": "上傳者：",
+        "empty_state_message": "目前沒有使用者新增包。"
+      },
+      "column_headers": {
+        "package": "包",
+        "created_by": "建立者：",
+        "created_on": "建立於",
+        "last_used": "上次使用"
+      },
+      "button": {
+        "delete": "刪除",
+        "deleting": "正在刪除"
+      }
+    },
+    "usage_view_empty_state": {
+      "title": "還沒有包",
+      "description": "您可以在此處檢視所有包及其上次檢索（如果有）。"
+    }
+  },
+  "constants": {
+    "learn_more": "瞭解更多",
+    "breadcrumb_names": {
+      "resource_usage": "資源使用情況",
+      "packages": "包"
+    }
+  },
+  "form": {
+    "search_package": {
+      "placeholder_text": "查詢包..."
+    },
+    "create_package": {
+      "input": {
+        "name": {
+          "placeholder_text": "包名",
+          "note": "包建立後名稱無法更改"
+        },
+        "description": {
+          "placeholder_text": "新增摘要"
+        }
+      }
+    }
+  },
+  "modal": {
+    "package_select": {
+      "header_text": "將 腳本 新增到現有包中",
+      "button": {
+        "select": "選擇",
+        "cancel": "取消"
+      }
+    },
+    "new_unsaved_package": {
+      "header_text": "丟棄這個包嗎？",
+      "content_text": "您正在建立一個包。如果繼續，您的進度將會丟失。",
+      "button": {
+        "discard": "放棄並繼續",
+        "back_to_package": "返回包"
+      }
+    },
+    "unsaved_package": {
+      "header_text": "儲存對“{packageName}”的更改嗎？",
+      "content_text": "目前包“{packageName}”中有一些未儲存的更改，如果繼續，這些更改將會丟失。儲存這些更改以避免丟失您的工作。",
+      "button": {
+        "save": "儲存更改",
+        "discard": "放棄更改",
+        "cancel": "取消"
+      }
+    },
+    "delete_confirmation_modal": {
+      "header_text": "刪除“{packageName}”？",
+      "content_text": {
+        "confirmation_prompt": "您確定要永久刪除此包嗎？",
+        "type_to_confirm_prompt": "要確認，請在下面輸入“{packageName}”。"
+      },
+      "button": {
+        "delete": "刪除包",
+        "cancel": "取消"
+      }
+    }
+  }
+}

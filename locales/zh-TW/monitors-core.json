@@ -1,0 +1,926 @@
+{
+  "context_bar_list": {
+    "label": "Monitor",
+    "new_button": "新增"
+  },
+  "entity_type_icon": {
+    "label": "監控"
+  },
+  "status": {
+    "healthy": "正常",
+    "unhealthy": "異常",
+    "paused": "已暫停",
+    "unknown": "未知",
+    "accessible_name": "狀態：{status}"
+  },
+  "share": {
+    "tooltip": "分享監控",
+    "popover": {
+      "private": {
+        "heading": "與團隊分享",
+        "content": "此監控位於您的個人工作區中。",
+        "content2": "除非您邀請他們，否則沒有人可以訪問此內容。",
+        "button": "邀請人員"
+      },
+      "shared": {
+        "private_team_content": "只有工作區成員可以訪問此連結。",
+        "team_content": "只有團隊成員可以訪問此連結。",
+        "heading": "分享連結",
+        "button": {
+          "copy": "複製連結",
+          "invite": "邀請人員"
+        }
+      },
+      "partner": {
+        "heading": "分享連結",
+        "content": "只有有權訪問此工作區的人才能訪問此連結。",
+        "button": {
+          "copy": "複製連結",
+          "invite": "邀請人員"
+        }
+      }
+    },
+    "error": {
+      "toast": "現在無法邀請，請稍後再試？"
+    }
+  },
+  "header": {
+    "run_button": "執行",
+    "refresh": "重新整理",
+    "runs": "執行",
+    "menu_label": {
+      "pausing": "暫停中",
+      "pause": "暫停",
+      "resuming": "恢復中",
+      "resume": "恢復",
+      "edit": "編輯",
+      "delete": "刪除"
+    },
+    "view_more_actions": "檢視更多操作"
+  },
+  "constants": {
+    "tooltip_text": {
+      "is_online": "重新載入活動日誌",
+      "is_offline": "重新上線後即可執行此操作",
+      "request_access": "請求訪問權限"
+    },
+    "offline_text": {
+      "text": "當您處於離線狀態時無法載入資料。",
+      "sub_text": "在您重新上線之前，您的資料可能不是最新的。",
+      "menu_msg": "當您處於離線狀態時無法執行停用的操作"
+    },
+    "permission_text": {
+      "default_disabled_msg": "您沒有權限執行已停用的操作",
+      "console_disabled_msg": "您沒有權限檢視此資訊。",
+      "activity_info_msg": "該使用者的個人資料為私密。",
+      "request_access_msg": "要執行此操作，請申請此監控的額外訪問權限。",
+      "collection_moved_msg": "無法執行已停用的操作，因為關聯的集合已移動到其他工作區",
+      "publish_editor_required_msg": "您需要編輯者訪問權限才能發布或取消發布監控報告",
+      "publish_restricted_workspace_msg": "您無法從此工作區發布監控報告。要發布，請在內部團隊工作區中建立監控。",
+      "unpublish_requires_manage_publish": "只有團隊管理員可以取消發布此報告。"
+    },
+    "forbidden_error": {
+      "encryption_failed": {
+        "title": "由於安全策略而拒絕訪問",
+        "body": "在恢復訪問之前，您將無法執行監控。請聯絡您的團隊管理員尋求幫助。"
+      },
+      "decryption_failed": {
+        "title": "由於安全策略而拒絕訪問",
+        "body": "在恢復訪問之前，您將無法訪問監控詳細資訊。請聯絡您的團隊管理員尋求幫助。"
+      }
+    },
+    "user_visible_action": {
+      "update": "編輯了此監控",
+      "update_roles": "已編輯此監控上的角色",
+      "pause": "暫停了此監控",
+      "resume": "恢復了此監控",
+      "delete": "刪除了此監控",
+      "create": "建立了此監控"
+    },
+    "user_visible_system_action": {
+      "create_team_change": "建立替換監控（團隊成員資格發生變化）",
+      "create": "監控已建立",
+      "delete_team_change": "監控已刪除（團隊成員資格發生變化）",
+      "delete": "監控已刪除",
+      "pause_inactivity": "監控已暫停（使用者不活動）",
+      "pause_unhealthy": "監控已暫停（頻繁執行失敗）",
+      "pause_collection_environment_deleted": "監控已暫停（集合或環境已取消共享或刪除）",
+      "pause_collection_moved": "監控已暫停（關聯的集合已從工作區中移除）",
+      "pause_environment_moved": "監控已暫停（關聯的環境已從工作區中移除）",
+      "pause_no_workspace": "監控已暫停（不存在於任何工作區中）",
+      "pause_support": "監控已由 Postman 支援代表暫停",
+      "pause": "監控已暫停",
+      "resume_system_action": "監控已作為系統操作的一部分恢復。",
+      "resume": "監控已恢復",
+      "update": "監控已編輯"
+    },
+    "user_visible_state_sentence": {
+      "waiting": "準備執行。",
+      "starting": "準備執行。",
+      "running": "執行正在進行中。這可能需要幾分鐘。",
+      "refresh": "請重新整理檢視最新結果。",
+      "finishing": "執行正在進行中。這可能需要幾分鐘。",
+      "finished_failure": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 執行完成 - 檢查失敗的測試。",
+      "finished_error": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 執行失敗。",
+      "finished_abort": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 執行超時。",
+      "finished_abort_invalid_resource": "關聯的集合或環境不可訪問或已被刪除。",
+      "finished_abort_deleted_collection": "關聯的集合已被刪除。",
+      "finished_abort_deleted_environment": "關聯的環境已被刪除。",
+      "finished_success": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 執行完成。",
+      "retrying": "重試執行。這可能需要幾分鐘。",
+      "discontinued_error": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 執行失敗，正在重試。",
+      "discontinued_failure": "檢測到失敗的測試。重試。",
+      "discontinued_abort": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 執行超時，正在重試。"
+    },
+    "loading_state": {
+      "generic": "（載入中...）"
+    },
+    "activity_logs": {
+      "you": "你"
+    },
+    "activity_logs_list_end": "結束！您已檢視此監控的所有活動。",
+    "activity_logs_search_placeholder": "搜尋使用者",
+    "activity_logs_no_users": "沒有找到使用者",
+    "activity_logs_load_more": "載入更多",
+    "monitor_details": {
+      "id_label": "ID",
+      "copy_id_tooltip": "複製監控 ID",
+      "copied_tooltip": "已複製",
+      "creator_label": "建立者：",
+      "created_at_label": "建立於",
+      "collection_label": "集合",
+      "environment_label": "環境",
+      "no_collection": "沒有集合"
+    },
+    "activity_logs_empty_state": {
+      "text": "看起來這個監控沒有任何活動",
+      "sub_text": "活動源可讓您隨時瞭解此監控的相關動態",
+      "with_filters_text": "未發現任何活動",
+      "with_filters_sub_text": "調整您的過濾器並重試。"
+    },
+    "user_profile": {
+      "private_user": "該使用者的個人資料為私密。",
+      "error": "目前無法載入使用者詳細資訊",
+      "you": "你",
+      "user": "使用者"
+    },
+    "activity_logs_filter": "過濾活動日誌",
+    "monitor_graph": {
+      "init": "單擊上圖中的某個執行可檢視其詳細資訊"
+    },
+    "monitor_action": {
+      "no_run": "此監控尚未執行過",
+      "deleted": "監控已刪除。",
+      "create": "建立監控",
+      "show_less": "顯示較少"
+    },
+    "monitor_runs": {
+      "run_placeholder": "當它出現時，結果將出現在此處。您可以等待它按照計劃執行，也可以手動觸發執行。",
+      "will_run": "此監控將按其常規計劃執行。",
+      "will_not_run": "此監控將不再按計劃執行。",
+      "run_button": "執行"
+    },
+    "monitor_test_results": {
+      "no_tests": "沒有找到測試",
+      "no_pass_run": "此次執行中沒有任何測試通過。 <1>將測試</1>新增到您的請求中，並在請求失敗時<3>除錯它們</3>。",
+      "no_failure_ack": "太棒了！此次執行中沒有測試失敗。 <1>將測試</1>新增到您的請求中（如果尚未新增）。",
+      "no_skipped_ack": "本次執行中沒有跳過任何測試。 <1>將測試</1>新增到您的請求中（如果尚未新增）。",
+      "no_skipped": "沒有跳過任何測試",
+      "no_pass": "沒有通過測試",
+      "no_fail": "沒有測試失敗：D",
+      "no_errors": "沒有錯誤",
+      "no_test_runs": "本次執行沒有測試",
+      "check_console": "選擇集合 > 三點圖示（…）> 新增請求，即可新增請求。",
+      "no_results": "在關聯的集合中找不到請求",
+      "abort": "本次執行已中止",
+      "all_tests": "全部",
+      "passed_tests": "通過",
+      "failed_tests": "失敗",
+      "skipped_tests": "跳過",
+      "request_errors": "錯誤"
+    },
+    "empty_collection": {
+      "no_requests_title": "沒有可執行的請求",
+      "no_requests_description": "<0>{collectionName}</0> 中沒有可供監控執行的請求。請至少新增一個請求以檢視結果。",
+      "add_request": "新增請求",
+      "import_request": "匯入請求",
+      "updated_title": "集合已更新",
+      "updated_description": "<0>{collectionName}</0> 已更新。執行監控以檢視其結果。",
+      "run_now": "立即執行",
+      "import_failed": "無法開啟匯入對話方塊。請檢查網路連線後重試。",
+      "request_added_title": "請求已新增到 {collectionName}",
+      "request_added_description": "請先更新並儲存該請求，再嘗試執行監控。",
+      "run_monitor": "執行監控",
+      "go_back": "返回"
+    },
+    "job_information": {
+      "runner": "執行器",
+      "region": "地區",
+      "test_results": "測試結果",
+      "console_log": "控制台日誌",
+      "job_summary_error_in_run": "由於錯誤而無法執行",
+      "job_summary_across_regions": "<0>{failedTests}</0><1> {failedTests, plural, one {個測試失敗} other {個測試失敗}}，</1><2>{errors}</2><3> {errors, plural, one {個錯誤} other {個錯誤}}，跨 {regionCount, plural, one {# 個地區} other {# 個地區}}，共 </3><4>{requestCount}</4><5> {requestCount, plural, one {個請求} other {個請求}}</5>",
+      "job_summary_across_runners": "<0>{failedTests}</0><1> {failedTests, plural, one {個測試失敗} other {個測試失敗}}，</1><2>{errors}</2><3> {errors, plural, one {個錯誤} other {個錯誤}}，跨 {regionCount, plural, one {# 個執行器} other {# 個執行器}}，共 </3><4>{requestCount}</4><5> {requestCount, plural, one {個請求} other {個請求}}</5>",
+      "job_summary": "<0>{failedTests}</0><1> {failedTests, plural, one {個測試失敗} other {個測試失敗}}，</1><2>{errors}</2><3> {errors, plural, one {個錯誤} other {個錯誤}}，共 </3><4>{requestCount}</4><5> {requestCount, plural, one {個請求} other {個請求}}</5>",
+      "line_number": "行號",
+      "time_stamp": "時間戳",
+      "console_output": "控制台輸出",
+      "file_helper_text": "使用 <1> {name} </1> 中的資料執行",
+      "live_progress_chip": {
+        "preparing": "準備中",
+        "running": "執行中",
+        "retrying": "重試中",
+        "completed": "已完成",
+        "failed": "失敗",
+        "aborted": "已中止"
+      },
+      "live_progress_requests_executed": "{count, plural, one {個請求已執行} other {個請求已執行}}",
+      "live_progress_preparing_subtext": {
+        "waiting": "等待開始。",
+        "starting": "正在獲取你的集合。"
+      },
+      "live_progress_running_subtext": "正在執行請求。",
+      "live_progress_checking_status": "正在檢查執行狀態。"
+    },
+    "performance_graph": {
+      "failed_percent": "失敗百分比：<1>{failedPercent}%</1>",
+      "response_time": "回應時間：<1>{latency} 秒</1>",
+      "response_time_invalid": "回應時間：<1>--</1>",
+      "previous_run": "轉到上一次執行",
+      "next_run": "轉到下一次執行",
+      "job_history": "{name} 的執行歷史",
+      "run_summary": "執行摘要",
+      "individual_requests": "單個請求",
+      "view": "檢視：",
+      "filter_by": "過濾依據：",
+      "clear_filters": "清除過濾器",
+      "clear_filters_description": "清除篩選條件以檢視監控執行情況",
+      "all_requests": "請求",
+      "all_regions": "地區",
+      "all_runners": "執行器"
+    },
+    "monitor_action_error": {
+      "create": "無法建立監控",
+      "load": "無法載入監控",
+      "fetch": "無法獲取監控",
+      "update": "無法更新監控",
+      "creation_error": "建立監控時出錯",
+      "pipeline_error": "建立監控的管道中出現錯誤",
+      "ceiling_error": "已達到監控建立上限。",
+      "check_internet": "請檢查您的網際網路連線，然後重試。",
+      "something_went_wrong": "建立此監控時出現問題，您可以稍後再試。",
+      "unsupported_collection_for_runner": "此集合使用了多種協議。請將自託管執行器升級到 1.47.0 或更高版本，或改用 Postman 雲端區域執行此監控。",
+      "load_retry": "無法載入監控，請稍後重試。",
+      "invalid_aggregate": "監控效能檢視中的聚合函式無效",
+      "request_aggregate": "getChartData：請求聚合值無效。",
+      "activity_load_failure": "無法載入活動源",
+      "retry": "請稍後重試"
+    },
+    "try_again": "再試一次",
+    "filters": {
+      "no_results": "更改您的過濾器並重試。"
+    },
+    "empty_state": {
+      "create_error": "無法建立監控",
+      "edit_error": "無法編輯監控",
+      "no_environment": "沒有監控使用此環境",
+      "no_collection": "尚未為此集合建立任何監控",
+      "no_results": "沒有找到結果",
+      "no_monitors_setup": "您尚未設定任何監控",
+      "monitor_collection_run": "監控允許您定期執行集合，以檢查其效能和回應。",
+      "no_run_results": "還沒有結果",
+      "no_tests_run": "沒有執行測試",
+      "deleted_items_in_selection": "在自訂執行順序中發現已刪除的請求或資料夾，導致在執行任何請求之前出現錯誤。",
+      "selection_has_deleted_items_cta": "檢視執行順序",
+      "beyond_retention_period": {
+        "title": "本次執行沒有可用的日誌",
+        "description": "這是一個較舊的執行。測試結果和執行日誌不可用。您可以聯絡 <1><0><0>Postman Support</0></0></1> 來獲取此資訊。"
+      }
+    },
+    "create_new": "建立新監控",
+    "schedule_selector": {
+      "at": "在"
+    },
+    "loading_error": {
+      "collections_and_environments": "獲取集合和環境時發生錯誤"
+    },
+    "sign_in_message": {
+      "title": "建立一個帳戶",
+      "sub_title": "您需要一個帳戶才能繼續探索 Postman。",
+      "default": "您需要登入團隊才能執行此操作",
+      "generic": "您需要一個帳戶才能繼續探索 Postman。"
+    },
+    "version_tags_error": {
+      "error": "獲取標籤時發生錯誤"
+    },
+    "plan_fetch_error": {
+      "error": "獲取使用者計劃時發生錯誤"
+    },
+    "region_fetch_error": {
+      "error": "獲取區域時發生錯誤"
+    },
+    "collection_fetch_error": {
+      "error": "獲取集合時發生錯誤"
+    },
+    "integrations_create_failed": "監控已建立，但部分整合未能連線。請在編輯表單中重新新增。",
+    "monitor_action_success": {
+      "create": "監控已建立",
+      "updated": "監控已更新",
+      "resumed": "監控已恢復",
+      "paused": "監控已暫停"
+    },
+    "email_validation_error": {
+      "invalid": "電子郵件地址無效",
+      "duplicate": "該電子郵件已存在"
+    },
+    "no_environment": "沒有環境",
+    "uptime_app_message": "正常執行時間監控目前僅在 Postman Web 應用程式上可用。",
+    "uptime_documentation": "瞭解有關正常執行時間監控的更多資訊",
+    "uptime_browser_transition": "開啟 Web App",
+    "feedback_type": {
+      "feature_missing": "缺少一個關鍵功能",
+      "not_expected": "監控功能不是我所期望的",
+      "poor_experience": "使用監控時的體驗不佳或過於複雜",
+      "just_exploring": "我只是在探索",
+      "something_else": "其他原因"
+    }
+  },
+  "body": {
+    "show_more": "顯示另外 {monitorLength} 項"
+  },
+  "form": {
+    "header": "建立監控",
+    "default_monitor_name": "新增監控",
+    "what_to_monitor": "監控什麼？",
+    "what_to_monitor_info": "選擇包含要監控請求的集合。API 規範或匯入會先生成一個集合。",
+    "what_to_monitor_info_local_mode": "選擇包含要監控的請求的集合。監控在 Postman 雲端執行，因此儲存監控時，本地集合會被推送到您的雲端工作區。",
+    "how_to_run_monitor": "如何執行監控？",
+    "runner_section": "執行器",
+    "runner_section_info": "此監控的執行位置。可使用 Postman 雲端區域，或使用私有執行器訪問你網路內部的 API。",
+    "notifications_section": "通知",
+    "notifications_summary": "執行失敗或出錯時通知 {recipients}",
+    "notification_recipients_collapsed_hint": "新增執行失敗和出錯時的郵件接收人",
+    "schedule_tab": "按計劃執行",
+    "cli_tab": "通過 Postman CLI",
+    "name": "監控名稱",
+    "collection": "集合",
+    "no_collections_or_specs": "沒有可用的集合或 API 規範",
+    "collection_select": "選擇集合",
+    "collection_or_spec_select": "選擇集合或 API 規範",
+    "collection_select_local_mode": "選擇集合",
+    "no_collections_local_mode": "沒有可用的集合",
+    "open_collection_in_new_tab": "在新標籤頁中開啟集合",
+    "open_spec_in_new_tab": "在新標籤頁中開啟 API 規範",
+    "source_filter_all": "全部",
+    "source_filter_collections": "Collection",
+    "source_filter_specs": "API 規範",
+    "no_collections": "沒有可用的集合",
+    "no_specs": "沒有可用的 API 規範",
+    "create_collection": "新增集合",
+    "create_collection_no_permission": "你沒有在此工作區中建立集合的權限",
+    "create_collection_disabled_local_mode": "此團隊在本地模式下無法從監控建立集合。請切換到雲端模式以新增集合。",
+    "import_collection": "匯入集合",
+    "import_collection_no_permission": "你沒有在此工作區中匯入集合的權限",
+    "import_collection_disabled_local_mode": "此團隊在本地模式下無法從監控匯入集合。請切換到雲端模式以匯入新集合。",
+    "import_collection_in_progress": "集合正在匯入中",
+    "spec_collection_generating": "正在根據 {specName} 生成集合",
+    "spec_collection_unsupported": "無法根據此規範生成集合",
+    "spec_collection_no_permission": "你沒有根據此規範生成集合的權限",
+    "spec_collection_failed": "無法根據該規範生成集合",
+    "collection_monitor_select": "請選擇要監控的集合。",
+    "multi_protocol_beta_banner": {
+      "beta_badge": "Beta",
+      "description": "<0></0> 對包含 <1>GraphQL</1> 和 <2>gRPC</2> 請求的集合的支援目前處於 Beta 階段。"
+    },
+    "collection_version_tag": "集合標籤",
+    "version_tag_select": "為此監控選擇一個集合標籤。",
+    "version_tag_current_version": "為此監控選擇一個集合標籤。如果該集合未連結到 API，則只能基於目前標籤建立監控。",
+    "environment": "環境",
+    "environment_info_local_mode": "選擇監控要使用的環境。儲存監控時，本地環境會被推送到您的雲端工作區。",
+    "create_environment": "新增環境",
+    "create_environment_no_permission": "你沒有在此工作區中建立環境的權限",
+    "environment_clear": "清除",
+    "push_to_cloud": {
+      "dataset_copy_info": "此檢視資料的副本將上傳到 Postman 雲端",
+      "pushed_creating_monitor": "資源已推送到雲端，正在建立監控。",
+      "pushed_saving_monitor": "資源已推送到雲端，正在儲存監控。",
+      "lint_fix_nudge": {
+        "title": "修復 {name} 中的 lint 錯誤",
+        "description": "儲存更改，然後返回監控並重新推送。",
+        "go_back": "返回"
+      },
+      "type_collection": "集合",
+      "type_environment": "環境",
+      "type_dataset": "資料集",
+      "error": {
+        "generic": "無法推送到雲端，監控未儲存。請重試。",
+        "with_reason": "無法推送到雲端，監控未儲存：{reason}",
+        "entity_failed": "無法將{type}推送到雲端，監控未儲存：{reason}",
+        "unsupported_format": "此資料集包含無法推送到雲端的檔案格式。請將其另存為 CSV、JSON 或電子表格後重試。",
+        "upload_failed": "無法將資料集的檔案上傳到雲端，監控未儲存。請重試。",
+        "lint_blocked": "您的工作區配置存在錯誤。請在 Issues 面板中修復後，再次儲存監控。"
+      }
+    },
+    "no_environment": "無",
+    "learn_more": "瞭解更多",
+    "environment_placeholder": "此環境中的變數值將用於您的所有監控呼叫。",
+    "run": "執行",
+    "regions": "地區",
+    "runners": "執行器",
+    "runners_auto_select": "自動選擇",
+    "runners_auto_select_info": "Postman 會為你選擇一個雲端區域。",
+    "runners_select_placeholder": "選擇執行器",
+    "runners_section_cloud": "雲",
+    "runners_section_private": "私有",
+    "runners_empty": "沒有可用的執行器",
+    "run_monitor": "執行方法",
+    "run_monitor_info": "選擇如何觸發此監控：可選擇自動定期執行的計劃，或用於按需執行的 Postman CLI。",
+    "monitor_run_info": "<0>建立監控後，您也可以點選“執行”按鈕來觸發一次執行。檢視您的</0><1><0>使用限制</0></1>",
+    "frequent_runs_info": "頻繁執行可以讓您更好地瞭解效能，但也會花費更多的監控呼叫，這可能受到您的 Postman 帳戶的限制",
+    "region_auto_select": "自動選擇區域",
+    "region_manual_select": "手動選擇區域",
+    "allow_list_ip": "如果選擇，請確保此 IP 地址已新增到白名單中。所有來自該區域的監控呼叫都將來自該地址。",
+    "upgrade_static_ip": "升級您的計劃以選擇具有靜態 IP 的區域。",
+    "region_select": "您可以選擇一個或多個區域來監控您的請求。",
+    "execution_source_select": "您可以選擇一個或多個部署環境來監控您的請求。",
+    "upgrade": "您使用的是免費計劃。升級為手動選擇特定監控區域。",
+    "upgrade_generic": "您使用的是免費計劃。升級您的計劃以使用此功能。",
+    "region_selection_feature": "監控區域選擇",
+    "minute_frequency_feature": "監控分鐘級頻率",
+    "upgrade_cta": "升級",
+    "runners_upgrade_heading": "升級到 Solo 套餐以使用進階執行器選項",
+    "minute_frequency_upgrade_heading": "升級到 Solo 套餐以使用監控的進階頻率選項",
+    "runners_upgrade_overlay": "升級後可選擇區域或私有執行器，以訪問你網路內部的 API",
+    "publish_report_feature": "監控發布報告",
+    "email": "接收有關執行失敗和錯誤的電子郵件通知",
+    "email_add": "新增另一個收件人電子郵件",
+    "notification": "您最多可以新增 5 個通知收件人",
+    "notification_recipients_placeholder": "選擇團隊成員或輸入信箱地址",
+    "notification_recipients_empty": "未找到接收人",
+    "notification_recipients_limit": "最多隻能選擇 5 位接收人",
+    "notification_recipients_current_user_suffix": "（你）",
+    "notification_limit_error": "請輸入 1 到 {limit} 之間的值",
+    "send_updates_to": "傳送更新至",
+    "send_updates_jira": "Jira Cloud",
+    "disconnect_setup_integration": "您即將刪除此監控與 {integrationName} 的連線。確定嗎？",
+    "send_updates_offline": "您目前處於離線狀態。請連線網際網路以新增整合。",
+    "send_updates_group": {
+      "communication_channels": "溝通渠道",
+      "incident_management": "事件管理",
+      "issue_tracking": "問題跟蹤",
+      "observability": "可觀測性"
+    },
+    "send_updates_when": {
+      "every_run_or_failures": "每次執行時或僅在失敗時",
+      "every_failure": "每次執行失敗時",
+      "metrics_every_run": "附帶每次執行的指標",
+      "events_and_metrics_every_run": "附帶每次執行的事件和指標",
+      "run_failure": "在執行失敗時"
+    },
+    "notification_limit": "<0>連續</0><1><0></0></1><2>次失敗後停止通知</2>",
+    "retry": "<0>重試</0><1></1><2>{attempts, plural, one {次} other {次}}</2>",
+    "retry_fail": "如果執行失敗重試",
+    "retry_usage_note": "（重試會消耗額外的監控呼叫次數。）",
+    "retry_monitor_run": "僅當上次執行成功時，才會重試失敗的監控執行。",
+    "run_now": "立即執行",
+    "run_now_info_create": "（建立時立即觸發一次執行，不受計劃限制）",
+    "run_now_info_update": "（更新時立即觸發一次執行，不受計劃限制）",
+    "value_greater_zero": "請輸入大於0的值",
+    "request_timeout_value_range": {
+      "free": "請輸入 1 毫秒到 600000 毫秒之間的值",
+      "paid": "請輸入 1 毫秒到 900000 毫秒之間的值"
+    },
+    "request_delay_value_range": {
+      "free": "請輸入 1 毫秒到 600000 毫秒之間的值",
+      "paid": "請輸入 1 毫秒到 900000 毫秒之間的值"
+    },
+    "request_timeout_info": {
+      "free": "監控執行不能超過 10 分鐘，即 600000 毫秒。",
+      "paid": "監控執行不能超過 15 分鐘，即 900000 毫秒。"
+    },
+    "set_req_timeout": "設定請求超時",
+    "set_delay": "在請求之前設定延遲",
+    "redirects": "遵循重定向",
+    "ssl_validation": "啟用 SSL 驗證",
+    "no_results": "沒有找到結果",
+    "request_timeout": "請求超時值應大於 0 毫秒。",
+    "request_delay": "請求延遲值應大於 0 毫秒。",
+    "edit_monitor": "編輯監控",
+    "editing_badge": "編輯中",
+    "no_empty_name": "請輸入監控名稱",
+    "select_version_tag": "為此集合選擇一個標籤",
+    "at_this_time": "此時",
+    "labels": {
+      "button": {
+        "create": "建立監控",
+        "edit": "更新監控",
+        "cancel": "取消"
+      }
+    },
+    "warnings": {
+      "no_environment_found": "此工作區中沒有環境。",
+      "environment_list_load_error": "環境載入失敗，請重試。"
+    },
+    "data_file": {
+      "select_label": "資料檔案",
+      "helper_text": "僅接受 JSON 和 CSV 檔案。最大 1 MB。",
+      "info_text": "資料檔案可用於測試 API 行為的多種變化。",
+      "action_label": "選擇檔案",
+      "update_label": "更新檔案",
+      "incorrect_size": "檔案大小不能超過 1 MB",
+      "incorrect_format": "檔案格式無效。僅接受 JSON 和 CSV 檔案。",
+      "preview_error_title": "無法預覽",
+      "preview_error_detail": "無法讀取此檔案的內容。",
+      "parse_error": "此檔案讀取失敗，請確認是有效的 CSV 或 JSON 檔案。",
+      "save_as_dataset": "另存為資料集",
+      "save_as_dataset_hint": "將此檔案儲存為資料集，即可用 SQL 篩選、排序和清洗資料行。",
+      "save_as_dataset_success": "資料集已建立",
+      "save_as_dataset_error": "資料集建立失敗",
+      "save_as_dataset_no_permission": "你沒有在此工作區中建立資料集的權限。",
+      "save_as_dataset_upgrade_required": "升級您的套餐，即可將資料檔案儲存為資料集。",
+      "save_as_dataset_upgrade_aria_label": "另存為資料集。升級您的套餐，即可將資料檔案儲存為資料集。"
+    },
+    "dataset_compat": {
+      "mixed_sources": "此<view>檢視</view>同時使用了本地和 Postman 雲端資料來源。請選擇僅使用一種資料來源的檢視。",
+      "partial": "此 <view>檢視</view> 使用了與監控不相容的 <sources>本地資料來源</sources>。請將其上傳到 Postman Cloud，或改用可訪問這些資料來源的私有執行器執行此監控。",
+      "unsupported_format": "此<view>檢視</view>的資料集包含<sources>某種格式的檔案</sources>，無法為監控推送到雲端。請將其另存為 CSV、JSON 或電子表格，或選擇其他資料集。",
+      "private_runner_only": "此<view>檢視</view>使用了 <sources>JDBC 資料來源</sources>，只有私有執行器才能執行——Postman 雲端監控無法載入 JDBC 驅動。請在私有執行器上執行此監控，或清除此選擇。",
+      "confirm": "上傳到 Postman Cloud",
+      "clear": "清除",
+      "converting": "上傳中…",
+      "convert_success": "資料來源已上傳到 Postman Cloud。",
+      "convert_error": "資料來源上傳失敗，請重試。",
+      "incompatible": "此 <view>檢視</view> 使用了 <sources>資料庫資料來源</sources>。只有該資料庫可通過公網訪問時，監控才能使用它們。"
+    },
+    "scroll_to_bottom": "滾動到底部",
+    "settings": "設定",
+    "iteration_data": {
+      "label": "迭代資料",
+      "add_file_upgrade_required": "升級您的套餐即可建立資料集。",
+      "info": "使用來自檔案或資料庫的資料。監控會對每一行執行一次迭代。",
+      "search_placeholder": "搜尋",
+      "none_placeholder": "無",
+      "selected_view_fallback": "已選檢視",
+      "clear": "清除",
+      "upload_datafile": "上傳資料檔案...",
+      "accepted_formats": "CSV、JSON",
+      "selected_pill": "已選資料檔案",
+      "add_file": "新增檔案",
+      "new_dataset_no_permission": "你沒有在此工作區中建立資料集的權限。",
+      "no_datasets": "此工作區中還沒有資料集。",
+      "no_views": "還沒有檢視。",
+      "create_view": "新增一個",
+      "open_in_tab": "在新標籤頁中開啟",
+      "dataset_create_failed": "資料集建立失敗，請重試。",
+      "strategy_label": "迭代策略",
+      "strategy_tooltip": "集合執行多少次，以及檢視的資料行用盡後，剩餘迭代如何取數。",
+      "run_label": "執行",
+      "iterations_suffix": "次迭代",
+      "iterations_disabled_tooltip": "使用預設策略時，迭代次數始終與檢視的行數一致。如需修改，請選擇其他策略。",
+      "repetition_run_all": "預設",
+      "repetition_round_robin": "迴圈取數",
+      "repetition_repeat_last": "重複最後一行",
+      "repetition_stop_at_end": "取完即停",
+      "repetition_run_all_desc": "檢視中每一行各執行一次迭代。",
+      "repetition_round_robin_desc": "執行指定次數的迭代。資料行用盡後，從第一行開始迴圈，直到完成剩餘迭代。",
+      "repetition_repeat_last_desc": "執行指定次數的迭代。資料行用盡後，剩餘迭代繼續使用最後一行。",
+      "repetition_stop_at_end_desc": "執行指定次數的迭代。資料行用盡後即停止執行。",
+      "upgrade": {
+        "heading": "升級後即可使用資料集和資料檔案",
+        "description": "資料集和資料檔案可以為監控提供測試資料，兩者均為付費方案功能。升級方案即可開始使用。"
+      }
+    },
+    "preview_panel": {
+      "tabs": {
+        "collection_preview": "執行順序",
+        "iteration_data": "資料"
+      },
+      "use_latest_collection": "使用最新的集合",
+      "use_latest_collection_info": "集合的更改將在下次執行時自動生效。",
+      "collection_preview_error": "無法載入此集合的結構。",
+      "request_added_toast": {
+        "description": "請先更新並儲存請求，再嘗試執行監控。",
+        "run": "執行監控",
+        "go_back": "返回"
+      }
+    },
+    "collection_deleted": "所選集合已不存在，請選擇其他集合。",
+    "request_selection": {
+      "fixed_list_note": "此監控僅按指定順序執行所選請求。之後新增到集合中的請求不會執行，除非在此處手動新增。對現有請求的編輯仍會生效。",
+      "undo": "撤銷",
+      "dismiss": "關閉",
+      "empty": "請至少選擇一個請求供監控執行。",
+      "items_missing": "部分所選請求已不在集合中。請檢查執行順序後重新儲存。",
+      "invalid": "無法儲存執行順序。請重置後重試。"
+    },
+    "warning_message": {
+      "unuploaded_files": "{files, plural, one {此集合中有 # 個請求缺少關聯檔案} other {此集合中有 # 個請求缺少關聯檔案}}"
+    },
+    "file_uplaod_status": {
+      "single_request": "請求缺少檔案",
+      "single_request_info": "此請求使用了本地檔案，請上傳以避免監控執行期間發生錯誤。",
+      "multiple_requests": "缺少檔案的請求",
+      "multiple_requests_info": "這些請求使用了本地檔案，請上傳以避免監控執行期間發生錯誤。"
+    }
+  },
+  "delete_confirmation": {
+    "monitor": "刪除監控",
+    "schedule": "刪除日程",
+    "deleting_button": "正在刪除",
+    "delete_button": "刪除",
+    "feedback_options_label": "幫助我們瞭解如何改進監控功能"
+  },
+  "tab_loading_error": {
+    "title": "找不到 {entityType, select, monitor {Monitor} other {{entityType}}}",
+    "body": "它可能已被移動或刪除。",
+    "uptime_unavailable_title": "正常執行時間監控已不再可用",
+    "uptime_unavailable_body": "此監控型別已停用，請改用常規監控。"
+  },
+  "status_tooltip": {
+    "health": "此 {entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 是 <3>{status, select, paused {已暫停} healthy {健康} unhealthy {不健康} other {{status}}}</3>。",
+    "up_down": "服務是 <1>{status, select, up {up} down {down} other {{status}}}</1>。",
+    "unknown": "服務狀態為 <1>{status, select, unknown {unknown} other {{status}}}</1>。"
+  },
+  "actions": {
+    "open_in_new_tab": "在新選項卡中開啟",
+    "pause": "暫停",
+    "resume": "恢復",
+    "rename": "重新命名",
+    "edit": "編輯",
+    "review": "檢視",
+    "manage_roles": "管理角色",
+    "request_access": "請求訪問權限",
+    "add_to_jira": "新增到 Jira Cloud",
+    "integration_toast_success": "成功",
+    "integration_connected": "整合已連線",
+    "connected_integrations_jira_issues": "{count, plural, one {# 個 Jira 問題} other {# 個 Jira 問題}}",
+    "connected_integrations_title": "已連線的整合",
+    "publish_monitor_report": "發布",
+    "monitor_report": "監控報告",
+    "published": "已發布",
+    "published_monitor": "已發布的監控",
+    "published_monitor_pending_tooltip": "已發布 — 變更請求正在稽核中",
+    "copy_link": "複製連結",
+    "unpublish": "取消發布",
+    "unpublish_success": "監控報告已取消發布",
+    "unpublish_error": "無法取消發布監控報告",
+    "pending_approval": "發布待批准",
+    "withdraw_request": "撤回請求",
+    "update_request": "更新請求",
+    "review_request": "稽核請求",
+    "approve": "批准",
+    "deny": "拒絕",
+    "edit_request": "編輯請求",
+    "request_submitted": "請求已提交",
+    "request_submitted_description": "團隊管理員將審查該請求。",
+    "request_withdrawn": "發布請求已撤回",
+    "request_updated": "請求已更新",
+    "request_updated_description": "團隊管理員將稽核更新後的請求。",
+    "request_approved": "發布請求已批准",
+    "request_denied": "發布請求已被拒絕",
+    "delete": "刪除",
+    "view_only_access": "您只有檢視權限"
+  },
+  "publish_modal": {
+    "title": "發布監控報告",
+    "description": "此報告顯示監控執行狀態、請求詳細資訊和回應時間趨勢，將作為公開頁面共享。",
+    "report_name_label": "報告名稱",
+    "report_name_helper": "顯示在報告頂部、瀏覽器選項卡和共享連結中。",
+    "report_name_placeholder": "例如訂單 API 健康報告",
+    "description_label": "描述",
+    "description_helper": "新增簡短摘要以在共享連結和預覽中提供上下文。",
+    "description_placeholder": "例如生產端點的每日 監控 結果",
+    "show_requests_label": "顯示請求端點",
+    "show_requests_helper": "在公開報告中包含請求 URL。",
+    "cancel": "取消",
+    "publish": "發布",
+    "publishing": "發布中...",
+    "success_title": "您的報告已上線！",
+    "success_description": "擁有連結的人可以檢視執行狀態、請求詳細資訊和回應時間趨勢。",
+    "copy_link": "複製連結",
+    "view_report": "檢視報告",
+    "link_copied": "連結已複製到剪貼簿",
+    "publish_success": "監控報告發布成功",
+    "publish_error": "未能發布監控報告",
+    "request_update_title": "請求更新已發布的報告",
+    "edit_title": "編輯已發布的報告",
+    "publish_updates": "發布更新",
+    "updating": "更新中...",
+    "update_success": "已發布的報告更新成功",
+    "last_published": "最後發布：",
+    "governance_note": "注意：您的團隊需要管理員批准才能發布監控報告。",
+    "approval_message_label": "批准留言",
+    "approval_message_placeholder": "解釋為什麼應該發布這份報告。",
+    "request_to_publish": "請求發布",
+    "requesting": "請求中...",
+    "request_sent_title": "請求已傳送以供批准",
+    "request_sent_description": "團隊管理員將審查您的請求，報告發布後您將收到通知。",
+    "got_it": "知道了",
+    "review_title": "稽核發布請求",
+    "pending_title": "發布請求稽核中",
+    "deny_reason_label": "拒絕原因",
+    "deny_reason_placeholder": "提供拒絕此請求的理由。",
+    "approving": "正在批准...",
+    "denying": "拒絕中...",
+    "withdrawing": "撤回...",
+    "requested_by": "請求人",
+    "request_note_label": "請求人備註",
+    "duplicate_publish_request_title": "發布請求已在稽核中",
+    "duplicate_publish_request_description": "請在提交新請求之前更新或撤回現有請求。"
+  },
+  "time_type": {
+    "minute_timer": {
+      "label": "分鐘定時器",
+      "every_1_min": "每1分鐘一次",
+      "every_5_mins": "每5分鐘一次",
+      "every_10_mins": "每10分鐘一次",
+      "every_15_mins": "每15分鐘一次",
+      "every_20_mins": "每20分鐘一次",
+      "every_30_mins": "每30分鐘一次"
+    },
+    "hour_timer": {
+      "label": "小時定時器",
+      "every_hr": "每小時",
+      "every_2_hrs": "每2小時一次",
+      "every_3_hrs": "每3小時一次",
+      "every_4_hrs": "每4小時一次",
+      "every_6_hrs": "每6小時一次",
+      "every_12_hrs": "每12小時一次"
+    },
+    "week_timer": {
+      "label": "周計時器",
+      "every_day": "每天",
+      "every_weekday": "每個工作日（週一至週五）",
+      "every_monday": "每個星期一",
+      "every_tuesday": "每週二",
+      "every_wednesday": "每週三",
+      "every_thursday": "每週四",
+      "every_friday": "每週五",
+      "every_saturday": "每週六",
+      "every_sunday": "每個星期日"
+    },
+    "month_timer": {
+      "label": "月定時器",
+      "short_month_warning_29": "2 月，該活動將於 28 日（閏年為 29 日）執行。",
+      "short_month_warning_30": "2 月，該活動將於 28 日（閏年為 29 日）執行。",
+      "short_month_warning_31": "在少於 31 天的月份中，它將在該月的最後一天執行。",
+      "every_1st": "每1日",
+      "every_2nd": "每2日",
+      "every_3rd": "每3日",
+      "every_4th": "每4日",
+      "every_5th": "每5日",
+      "every_6th": "每6日",
+      "every_7th": "每7日",
+      "every_8th": "每8日",
+      "every_9th": "每9日",
+      "every_10th": "每10日",
+      "every_11th": "每11日",
+      "every_12th": "每12日",
+      "every_13th": "每13日",
+      "every_14th": "每14日",
+      "every_15th": "每15日",
+      "every_16th": "每16日",
+      "every_17th": "每17日",
+      "every_18th": "每18日",
+      "every_19th": "每19日",
+      "every_20th": "每20日",
+      "every_21st": "每21日",
+      "every_22nd": "每22日",
+      "every_23rd": "每23日",
+      "every_24th": "每24日",
+      "every_25th": "每25日",
+      "every_26th": "每26日",
+      "every_27th": "每27日",
+      "every_28th": "每28日",
+      "every_29th": "每29日",
+      "every_30th": "每30日",
+      "every_31st": "每31日"
+    },
+    "time_list": {
+      "12am": "凌晨 12:00",
+      "1am": "凌晨 1:00",
+      "2am": "凌晨 2:00",
+      "3am": "凌晨 3:00",
+      "4am": "凌晨 4:00",
+      "5am": "上午 5:00",
+      "6am": "上午 6:00",
+      "7am": "上午 7:00",
+      "8am": "上午 8:00",
+      "9am": "上午 9:00",
+      "10am": "上午 10:00",
+      "11am": "上午 11:00",
+      "12pm": "中午 12:00",
+      "1pm": "下午 1:00",
+      "2pm": "下午 2:00",
+      "3pm": "下午 3:00",
+      "4pm": "下午 4:00",
+      "5pm": "下午 5:00",
+      "6pm": "下午 6:00",
+      "7pm": "晚上 7:00",
+      "8pm": "晚上 8:00",
+      "9pm": "晚上 9:00",
+      "10pm": "晚上 10:00",
+      "11pm": "晚上 11:00"
+    }
+  },
+  "uptime-monitor": {
+    "banner": {
+      "text": "瞭解您的服務何時中斷",
+      "sub_text": "監控跨區域 URL 的正常執行時間，並設定及時警報，無需建立集合。",
+      "badge_text": "測試版",
+      "button_text": "建立正常執行時間監控",
+      "link_text": "瞭解有關正常執行時間監控的更多資訊"
+    }
+  },
+  "collapsible_state_line": {
+    "hide": "隱藏執行日誌",
+    "show": "顯示執行日誌"
+  },
+  "job_filter": {
+    "monitor": {
+      "trigger": {
+        "name": "型別",
+        "values": {
+          "api": "手動",
+          "schedule": "預定執行",
+          "webhook": "Webhook",
+          "postman-cli": "Postman CLI"
+        }
+      },
+      "result": {
+        "name": "結果",
+        "values": {
+          "success": "成功",
+          "failure": "失敗",
+          "error": "錯誤",
+          "abort": "中止"
+        }
+      }
+    },
+    "scheduled_collection": {
+      "trigger": {
+        "name": "型別",
+        "values": {
+          "api": "手動",
+          "schedule": "預定執行"
+        }
+      },
+      "result": {
+        "name": "結果",
+        "values": {
+          "success": "成功",
+          "failure": "失敗",
+          "error": "錯誤",
+          "abort": "中止"
+        }
+      }
+    },
+    "all": "全部"
+  },
+  "run_results": {
+    "no_response": "無回應",
+    "iteration": "迭代 {iteration}",
+    "no_tests_in_iteration": "第 {start}{length, plural, one {} other { 至 {end}}} 次迭代中沒有 {filterText} 測試",
+    "streaming_assertions_coming_soon": {
+      "badge": "斷言即將推出",
+      "tooltip": "該協議的斷言支援即將推出",
+      "banner": "該協議尚不支援斷言——支援即將推出。"
+    },
+    "request_details_error": {
+      "title": "無法渲染此請求",
+      "message": "請求詳細資訊窗格無法呈現該行，請嘗試選擇另一行，或單擊 X 關閉。",
+      "dismiss": "關閉"
+    }
+  },
+  "context_bar": {
+    "activity": {
+      "title": "活動提要"
+    },
+    "info": {
+      "title": "監控詳細資訊"
+    }
+  },
+  "cli": {
+    "run_in_ci_cd": "在 CI/CD 中執行",
+    "install": "安裝 Postman CLI",
+    "copy": {
+      "tooltip": "複製 CLI 命令"
+    },
+    "toast": {
+      "copied": {
+        "title": "已複製到剪貼簿",
+        "command": "CLI 命令複製成功"
+      }
+    },
+    "note": {
+      "creation": "建立監控後將生成監控 ID"
+    },
+    "trigger_monitor_run_using_cli": "使用 Postman CLI 觸發監控執行",
+    "run_using_cli": "使用 Postman CLI 執行",
+    "run_monitor_using_cli": "使用 Postman CLI 觸發監控執行",
+    "install_postman_cli_step_1": "1. 安裝 Postman CLI",
+    "trigger_monitor_run_step_2": "2. 觸發監控執行",
+    "automate_using_cli": "使用 Postman CLI 自動執行。",
+    "command_instruction": "在終端中複製並執行此命令"
+  }
+}

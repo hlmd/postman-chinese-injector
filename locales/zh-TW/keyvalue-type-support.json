@@ -1,0 +1,55 @@
+{
+  "type_popover": {
+    "learn_more": "瞭解更多",
+    "share_feedback": "分享意見回饋"
+  },
+  "base_form": {
+    "select_type": "選擇型別",
+    "required": "必需的",
+    "deprecated": "已棄用"
+  },
+  "string_form": {
+    "format": "格式",
+    "format_placeholder": "選擇",
+    "pattern": "圖案",
+    "pattern_placeholder": "[a-zA-Z0-9._%+-]",
+    "pattern_info": "設定格式後無法使用",
+    "min_length": "最小長度",
+    "min_length_placeholder": "<=x",
+    "max_length": "最大長度",
+    "max_length_placeholder": ">=x",
+    "min_length_error": "最小長度必須大於 0",
+    "max_length_error": "最大長度必須大於 0",
+    "min_max_length_error": "最小長度必須小於最大長度"
+  },
+  "number_form": {
+    "min_value": "最小值",
+    "min_value_placeholder": "<=x",
+    "max_value": "最大值",
+    "max_value_placeholder": ">=x",
+    "min_max_value_error": "最小值必須小於最大值"
+  },
+  "integer_form": {
+    "min_value": "最小值",
+    "min_value_placeholder": "<=x",
+    "max_value": "最大值",
+    "max_value_placeholder": ">=x",
+    "min_max_value_error": "最小值必須小於最大值"
+  },
+  "json_base_form": {
+    "required": "必需的",
+    "deprecated": "已棄用",
+    "default_value": "預設值",
+    "select": "選擇"
+  },
+  "default_value_field": {
+    "label": "預設值",
+    "placeholder": "預設"
+  },
+  "enum_values_field": {
+    "label": "可能的列舉值",
+    "placeholder": "進入",
+    "helper_text": "貼上多個，以逗號分隔",
+    "duplicate_error": "該值已經存在"
+  }
+}

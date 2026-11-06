@@ -1,0 +1,30 @@
+{
+  "template_actions": {
+    "all": "所有模板",
+    "search": "搜尋",
+    "recommended": "受到推崇的"
+  },
+  "suggest_templates_button": "建議模板",
+  "view_all_templates": "檢視全部",
+  "search_results_heading": "{filter} 的 {results, plural, =1 {# 個結果} other {# 個結果}}",
+  "suggestion_modal": {
+    "heading": "您想看什麼模板？",
+    "text": "您的輸入將幫助我們為您建立更相關的模板。",
+    "placeholder": "例如負載測試和問題跟蹤 API",
+    "validation_message": "您已超出字元數限制。嘗試刪除一些文字。",
+    "back_button": "後退",
+    "submit_button": "提交",
+    "toast": {
+      "success": {
+        "desc": "感謝您的建議。"
+      },
+      "rate_limited": {
+        "title": "我們喜歡你的熱情，但是……",
+        "desc": "我們仍在處理您之前的建議。您可以在幾分鐘後重試。"
+      },
+      "error": {
+        "desc": "出了點問題。請稍後重試。"
+      }
+    }
+  }
+}

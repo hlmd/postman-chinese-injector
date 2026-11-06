@@ -1,0 +1,45 @@
+{
+  "heading": "匯入您的工作內容",
+  "description": "將集合、cURL 命令和規範匯入此工作區。",
+  "field_label": "貼上集合、cURL、規範或連結",
+  "select_file": "選擇檔案",
+  "all_ways": "或<cta>檢視所有匯入方式</cta>",
+  "enter_hint": "按 Enter 匯入。",
+  "checking": "正在檢查連結…",
+  "importing": "正在匯入…",
+  "importing_in_background": "仍在匯入，完成後將顯示在側邊欄中。",
+  "offline": "您已離線，請重新連線後再匯入。",
+  "imported": "已匯入<name>{name}</name>",
+  "imported_requests": "已匯入<name>{name}</name> · {count, plural, one {# 個請求} other {# 個請求}}",
+  "imported_more": "已匯入<name>{name}</name>及其他 {count, plural, one {# 項} other {# 項}}",
+  "imported_partial": "已匯入 {imported}/{total} 項，{failed} 項失敗。",
+  "request_opened": "已在新標籤頁中開啟請求",
+  "detected": {
+    "folder": "資料夾",
+    "endpoints": "<name>{name}</name> · {count, plural, one {# 個端點} other {# 個端點}}",
+    "files": "<name>{name}</name> · {count, plural, one {# 個檔案} other {# 個檔案}}",
+    "import": "匯入"
+  },
+  "broken": {
+    "paste": "這看起來是{format, select, collection {Postman 集合} openapi {OpenAPI 規範} other {Swagger 規範}}，但{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 錯誤。",
+    "file": "此{format, select, collection {檔案} other {規範}}{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 錯誤，因此未匯入。",
+    "link": "連結的檔案看起來是{format, select, collection {Postman 集合} openapi {OpenAPI 規範} other {Swagger 規範}}，但{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 錯誤。",
+    "paste_ends_early": "這看起來是{format, select, collection {Postman 集合} openapi {OpenAPI 規範} other {Swagger 規範}}，但文字提前結束了。請貼上完整內容，或直接拖入檔案。",
+    "file_ends_early": "此檔案{line, select, none {} other {在第 {line} 行}}提前結束，部分內容缺失。{format, select, collection {請從 Postman 重新匯出並拖到此處。} other {請修復檔案後重新拖到此處。}}",
+    "link_ends_early": "連結的檔案{line, select, none {} other {在第 {line} 行}}提前結束，部分內容缺失。"
+  },
+  "not_importable": {
+    "json": "此 JSON 不是集合、規範或環境，沒有可匯入的內容。",
+    "invalid_spec": "這看起來是{format, select, swagger {Swagger} other {OpenAPI}} 規範，但 Postman 無法匯入。",
+    "web_page": "這是一個網頁，而不是規範或集合。請改為貼上規範或 cURL。",
+    "file": "Postman 無法匯入 .{extension} 檔案。請匯入集合、規範或 cURL。",
+    "short": "暫無可匯入的內容。請貼上集合、規範、cURL 或連結。",
+    "text": "這不是集合、規範或 cURL，沒有可匯入的內容。"
+  },
+  "agent_fix": {
+    "button": "使用 Agent Mode 修復並匯入"
+  },
+  "failed_named": "無法匯入 {name}，請重試。",
+  "failed": "匯入失敗，請重試。",
+  "link_failed": "無法獲取該連結。請檢查 URL，或下載檔案後再選擇。"
+}

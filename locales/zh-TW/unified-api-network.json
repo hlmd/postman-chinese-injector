@@ -1,0 +1,463 @@
+{
+  "governance": {
+    "title": "治理",
+    "subtitle": "檢視並撤銷已授予成員的名稱空間 API 訪問權限。",
+    "no_namespaces": "你還沒有管理任何名稱空間。成為管理員後，訪問授權將顯示在這裡。",
+    "error": "無法載入訪問授權，請重試。",
+    "empty": "暫無生效的訪問授權。已批准的訪問申請將顯示在這裡。",
+    "no_results": "沒有匹配的授權。",
+    "search_placeholder": "搜尋訪問授權",
+    "endpoint_unknown": "未知端點",
+    "filter": {
+      "method": "方法"
+    },
+    "table": {
+      "user": "成員",
+      "endpoint": "端點",
+      "namespace": "名稱空間",
+      "granted": "授予時間",
+      "actions": "操作"
+    },
+    "revoke": {
+      "action": "撤銷",
+      "heading": "撤銷訪問權限",
+      "confirm": "撤銷訪問權限",
+      "cancel": "取消",
+      "body": "此操作將撤銷 {member} 對 {namespace} 中 {endpoint} 的訪問權限。權限將立即移除，但最近幾分鐘內簽發的 Passport 會話可能會持續生效直至過期。"
+    },
+    "toast": {
+      "revoked": "訪問權限已撤銷。",
+      "error": "無法撤銷訪問權限，請重試。"
+    }
+  },
+  "sidebar": {
+    "heading": "Passport 訪問",
+    "go_home_aria_label": "前往首頁"
+  },
+  "breadcrumb": {
+    "aria_label": "麵包屑",
+    "api_network": "Passport 訪問"
+  },
+  "modal": {
+    "close_aria_label": "關閉彈窗"
+  },
+  "error_boundary": {
+    "title": "出錯了",
+    "description": "無法載入此頁面，請重試。"
+  },
+  "error_state": {
+    "title": "無法載入 Passport Access",
+    "description": "載入 Passport Access 時出錯，請重試。",
+    "reload": "重新載入"
+  },
+  "add_workspaces": {
+    "trigger": "新增 API",
+    "title": "向 {namespaceName} 新增 API",
+    "subtitle": "搜尋並新增你希望在此名稱空間中提供的 API。API 通過工作區共享，因此你需要選擇一個工作區。",
+    "search_placeholder": "搜尋工作區...",
+    "show_accessible_only": "僅顯示我可新增的工作區",
+    "empty_state": "未找到工作區",
+    "empty_state_no_query": "搜尋並新增您的工作區",
+    "table": {
+      "name": "工作區",
+      "team": "團隊",
+      "tags": "標籤",
+      "dash": "—",
+      "no_edit_access": "新增此工作區需要編輯者權限"
+    },
+    "review": {
+      "title_add": "稽核並新增工作區",
+      "title_request": "確認並申請 API",
+      "subtitle_add": "這些工作區將被新增到該名稱空間。",
+      "subtitle_request": "將新增這些工作區所共享的 API。你的申請將提交審批。",
+      "comment_label": "備註",
+      "comment_placeholder": "為名稱空間管理員新增備註"
+    },
+    "actions": {
+      "review": "稽核",
+      "cancel": "取消",
+      "back": "返回",
+      "add": "新增工作區",
+      "request": "請求新增",
+      "remove": "移除 {workspaceName}"
+    },
+    "toast": {
+      "added": "已將 {count} 個工作區新增到該名稱空間",
+      "requested": "已傳送新增 {count} 個工作區的請求",
+      "error": "出現錯誤，請重試。"
+    }
+  },
+  "approval_requests": {
+    "approve_modal": {
+      "title": "批准 API 並對映 Vault 引用",
+      "no_secrets": "沒有需要對映的金鑰，這些 API 未使用任何金鑰。"
+    },
+    "toast": {
+      "approved": "請求已批准。",
+      "denied": "請求已拒絕。",
+      "error": "出錯了，請重試。"
+    },
+    "filter": {
+      "aria_label": "按稽核範圍篩選申請",
+      "for_your_review": "待我稽核",
+      "your_requests": "我的申請"
+    },
+    "empty": {
+      "title": "暫無申請",
+      "for_your_review": "你所管理名稱空間的申請將顯示在這裡。",
+      "your_requests": "你提交的申請將顯示在這裡。",
+      "error_title": "無法載入申請",
+      "error_description": "出錯了，請重試。",
+      "refresh": "重新整理"
+    }
+  },
+  "workspace_overview": {
+    "collections": "集合",
+    "environments": "環境",
+    "specs": "規範",
+    "flows": "流程",
+    "sdks": "SDK",
+    "item_count": "{count} 個專案",
+    "updated": "更新於 {time}",
+    "show_all": "顯示全部 {count} 個",
+    "empty_state": "此工作區尚無集合、環境、規範、流程或 SDK。",
+    "contributors": "貢獻者",
+    "copy_link": "複製連結",
+    "copied": "已複製",
+    "open_workspace": "使用",
+    "request_credentials": "請求憑據",
+    "options": "{workspaceName} 的更多操作"
+  },
+  "workspace_list_item": {
+    "by_prefix": "由 ",
+    "collections_count": "{count} 個集合",
+    "updated": "更新於 {time}"
+  },
+  "add_to_namespace_modal": {
+    "heading": "將工作區新增到名稱空間",
+    "loading": "正在載入名稱空間...",
+    "load_error": "現在無法載入名稱空間。",
+    "empty": "沒有可用的名稱空間。",
+    "select_placeholder": "搜尋並選擇名稱空間",
+    "reason_label": "原因",
+    "reason_placeholder": "為此請求新增原因",
+    "reason_count": "{current}/{max}",
+    "cancel": "取消",
+    "add": "新增"
+  },
+  "access_requests": {
+    "breadcrumb": {
+      "api_network": "Passport 訪問",
+      "access_management": "訪問管理",
+      "requests": "請求"
+    },
+    "page_title": "請求",
+    "empty_state": "沒有訪問請求。",
+    "table": {
+      "header": {
+        "name": "姓名",
+        "workspace": "工作區",
+        "date": "日期",
+        "reason": "原因",
+        "status": "狀態",
+        "actions": "操作"
+      }
+    },
+    "status": {
+      "pending": "待處理",
+      "accepted": "已接受",
+      "declined": "已拒絕",
+      "expired": "已過期"
+    },
+    "actions": {
+      "accept": "接受",
+      "deny": "拒絕",
+      "review": "稽核"
+    },
+    "request_button": {
+      "idle": "請求",
+      "pending": "請求中"
+    },
+    "modal": {
+      "title": "請求 訪問",
+      "close_aria_label": "關閉模式",
+      "reason_label": "原因",
+      "reason_placeholder": "為什麼需要訪問權限？",
+      "send": "傳送 請求",
+      "sending": "正在傳送...",
+      "toast": {
+        "success_title": "請求 已傳送",
+        "success_body": "您用於訪問 {workspaceName} 的 請求 已傳送。",
+        "error_body": "訪問 請求 時出錯。"
+      }
+    }
+  },
+  "workspace_card": {
+    "actions": {
+      "access_requested": "請求訪問",
+      "access_requested_workspace": "請求訪問 {workspaceName}",
+      "request_access": "請求 訪問",
+      "request_access_workspace": "請求 訪問 {workspaceName}",
+      "options": "{workspaceName} 的選項",
+      "remove": "從名稱空間中移除",
+      "view": "開啟",
+      "view_workspace": "開啟{workspaceName}"
+    },
+    "no_description": "沒有可用的描述。",
+    "publisher_verified": "已驗證發布者",
+    "restricted_access": "訪問受限",
+    "workspace_type": {
+      "private": "私有工作區",
+      "public": "公共工作區"
+    }
+  },
+  "workspace_card_v2": {
+    "team_label": "團隊",
+    "last_activity_label": "最近活動",
+    "contributors_label": "貢獻者",
+    "collections_label": "集合",
+    "watchers_label": "關注者",
+    "use": "使用",
+    "request_credentials": "請求憑據",
+    "load_more": "顯示更多工作區",
+    "by_team": "由 {team}",
+    "collections_count": "{count, plural, one {# 個集合} other {# 個集合}}",
+    "last_updated_tooltip": "最後更新於 {timestamp}",
+    "open_overview_aria": "開啟 {name} 的概覽"
+  },
+  "remove_workspace": {
+    "title": "移除工作區",
+    "heading": "將工作區從名稱空間中移除？",
+    "body": "移除後，你的團隊將無法在 {namespaceName} 名稱空間中發現 {workspaceName}。該工作區不會從你的帳號中刪除。",
+    "cancel": "取消",
+    "confirm": "移除",
+    "removing": "正在移除…",
+    "toast": {
+      "success_title": "工作區已移除",
+      "success_body": "{workspaceName} 已從 {namespaceName} 中移除。",
+      "error_body": "從名稱空間中移除工作區時出錯。"
+    }
+  },
+  "delete_namespace": {
+    "title": "刪除名稱空間",
+    "heading": "刪除名稱空間？",
+    "body": "刪除後，{namespaceName} 及其中的所有內容將被永久移除。此操作無法撤銷。",
+    "cancel": "取消",
+    "confirm": "刪除",
+    "deleting": "正在刪除…",
+    "toast": {
+      "success_title": "名稱空間已刪除",
+      "success_body": "{namespaceName} 已被刪除。",
+      "error_body": "刪除名稱空間時出錯。"
+    }
+  },
+  "namespaces": {
+    "breadcrumb": {
+      "access_management": "訪問管理",
+      "namespaces": "名稱空間"
+    },
+    "page_title": "名稱空間",
+    "create_button": "建立名稱空間",
+    "empty_state": "未找到名稱空間。",
+    "card": {
+      "workspace_count_one": "{count} 個工作區",
+      "workspace_count_other": "{count} 個工作區",
+      "created": "建立於 {date}",
+      "by_user": "由 {user}",
+      "no_description": "無描述",
+      "access_level": {
+        "open": "團隊",
+        "access_by_request": "通過 請求 訪問",
+        "invite_only": "僅限邀請"
+      },
+      "empty_workspaces": "沒有工作區",
+      "view_workspace": "檢視{workspaceName}",
+      "actions": {
+        "options": "{namespaceName} 的選項",
+        "delete": "刪除名稱空間"
+      },
+      "members_popover": {
+        "trigger_label": "檢視 {namespaceName} 成員",
+        "title_one": "{count} 位成員",
+        "title_other": "{count} 成員",
+        "overflow_one": "{count} 更多 成員",
+        "overflow_other": "{count} 更多成員",
+        "managers_section": "管理員",
+        "members_section": "成員"
+      }
+    },
+    "members": {
+      "manage": "管理成員"
+    }
+  },
+  "namespace_tabs": {
+    "overview": "概覽",
+    "vault_references": "保險庫引用"
+  },
+  "add_workspace": {
+    "cta": "新增 API"
+  },
+  "namespace_detail": {
+    "empty_state": {
+      "title": "此名稱空間中還沒有 API",
+      "description": "名稱空間是一份已批准的 API 清單，通過工作區共享。成員可以申請憑據來使用它們，管理員負責審批、限定範圍和撤銷訪問權限。",
+      "cta": "新增 API",
+      "show_me_how": "檢視操作方法"
+    },
+    "help_modal": {
+      "title": "向此名稱空間新增 API",
+      "description": "新增你希望在此名稱空間中提供的 API。經管理員批准後，成員即可申請憑據來使用它們。",
+      "steps_title": "如何新增 API",
+      "step_1": "選擇 <strong>新增 API</strong>。",
+      "step_2": "搜尋並選擇你希望提供的 <strong>API</strong>。<muted>API 通過工作區共享，因此你需要新增一個工作區。</muted>",
+      "step_3": "填寫備註並<strong>傳送申請</strong>給名稱空間管理員。",
+      "step_4": "管理員<strong>批准</strong>申請，並將這些 API 使用的每個<strong>金鑰</strong>（其環境中的密碼、Token）關聯到一個 <strong>Vault 引用</strong>（指向真實金鑰的指標）。",
+      "step_5": "這些 API 會顯示在此處，成員即可<strong>申請憑據</strong>來使用它們。"
+    }
+  },
+  "vault_references": {
+    "add_cta": "新增保險庫引用",
+    "empty_state": {
+      "title": "還沒有 Vault 引用",
+      "description": "Vault 引用讓你無需在 Postman 中儲存金鑰，即可使用來自 Vault（HashiCorp、AWS Secrets Manager 等）的金鑰。金鑰值始終保留在 Vault 中，執行時才會解析。"
+    },
+    "error_state": {
+      "title": "無法載入保險庫引用",
+      "retry": "重試"
+    },
+    "create_modal": {
+      "title": "建立 Vault 引用",
+      "provider_label": "提供商",
+      "provider_placeholder": "選擇提供商",
+      "name_label": "名稱",
+      "name_placeholder": "例如 Stripe API key",
+      "path_label": "路徑",
+      "path_placeholder": "例如 secret/data/payments/stripe",
+      "create": "建立"
+    },
+    "toast": {
+      "create_error": "無法建立保險庫引用，請重試。"
+    }
+  },
+  "home": {
+    "title": "Passport 訪問",
+    "subtitle": "瀏覽並使用組織中各名稱空間和工作區裡公開的內容。需要呼叫即時 API 時可請求憑據。",
+    "all_namespaces": "所有名稱空間",
+    "show_all": "顯示所有名稱空間",
+    "list": {
+      "managed_by": "管理者",
+      "workspace_count_one": "{count} 個工作區",
+      "workspace_count_other": "{count} 個工作區",
+      "updated": "更新於 {time}",
+      "view_namespace": "檢視 {namespaceName}"
+    },
+    "view_switcher": {
+      "list_label": "列表檢視",
+      "card_label": "卡片檢視"
+    }
+  },
+  "pagination": {
+    "loading": "載入中...",
+    "no_items_found": "未找到名稱空間",
+    "items_per_page": "每頁專案數",
+    "range_of_total": "{start}-{end}，共 {total}"
+  },
+  "new_namespace": {
+    "breadcrumb": {
+      "new_namespace": "新名稱空間"
+    },
+    "page_title": "新名稱空間",
+    "header": {
+      "title": "建立新名稱空間",
+      "subtitle": "名稱空間是您的工作區和集合的頂層容器。"
+    },
+    "emoji_picker": {
+      "aria_label": "為此名稱空間選擇一個表情符號"
+    },
+    "form": {
+      "title_label": "標題",
+      "name_label": "名稱",
+      "name_placeholder": "例如 Acme Platform",
+      "summary_label": "摘要",
+      "summary_helper": "簡要描述此名稱空間的用途。",
+      "summary_placeholder": "此名稱空間中包含哪些內容？",
+      "validation": {
+        "no_valid_characters": "標題必須至少包含一個字母或數字。",
+        "duplicate": "具有此名稱的名稱空間已存在。"
+      }
+    },
+    "workspaces": {
+      "heading": "工作區",
+      "helper": "將現有工作區新增到此名稱空間，或移除不再歸屬的工作區。",
+      "search_placeholder": "搜尋要新增的工作區...",
+      "empty_state": "未找到工作區"
+    },
+    "people": {
+      "heading": "人員與訪問權限",
+      "search_placeholder": "搜尋使用者和群組...",
+      "empty_state": "未找到使用者或群組",
+      "type": {
+        "user_group": "群組",
+        "squad": "小隊"
+      },
+      "member_count": "{count} 名成員"
+    },
+    "managers": {
+      "heading": "名稱空間管理員",
+      "helper": "管理員可以編輯名稱空間、管理工作區並批准訪問請求。"
+    },
+    "members": {
+      "heading": "名稱空間成員",
+      "helper": "成員可以檢視工作區並請求訪問特定資源。"
+    },
+    "preapproved": {
+      "heading": "預先批准的訪問權限（使用者 / 群組）",
+      "helper": "這些使用者和群組將自動獲得訪問權限，無需請求。"
+    },
+    "actions": {
+      "create": "建立名稱空間",
+      "cancel": "取消"
+    },
+    "toast": {
+      "success_title": "名稱空間已建立",
+      "success_body": "{name} 已建立。",
+      "error_body": "建立名稱空間時出錯。"
+    },
+    "request_to_create": {
+      "header": {
+        "title": "請求建立名稱空間"
+      },
+      "actions": {
+        "request_to_create": "請求建立"
+      },
+      "reason": {
+        "label": "請求原因",
+        "placeholder": "為什麼需要新的名稱空間？",
+        "helper": "描述您需要新名稱空間的原因（最多 500 個字元）。"
+      },
+      "toast": {
+        "success_title": "請求已提交",
+        "success_body": "您建立 {name} 的請求已提交。",
+        "error_body": "提交請求時出錯。"
+      }
+    },
+    "access": {
+      "heading": "誰可以訪問這個名稱空間？",
+      "helper": "選擇組織中的使用者如何訪問其中的名稱空間和工作區。此後無法更改。",
+      "options": {
+        "open": {
+          "title": "我的組織中的任何人",
+          "description": "您組織中的任何 成員 將能夠看到此名稱空間及其內容"
+        },
+        "request": {
+          "title": "通過 請求 訪問",
+          "description": "您組織中的使用者將看到名稱空間名稱，但需要傳送 請求 才能訪問其內容"
+        },
+        "invite_only": {
+          "title": "僅限邀請",
+          "description": "您組織中的使用者將看不到此名稱空間。名稱空間管理器可以通過 邀請 提供訪問權限"
+        }
+      }
+    }
+  }
+}

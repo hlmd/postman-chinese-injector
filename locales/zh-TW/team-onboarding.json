@@ -1,0 +1,104 @@
+{
+  "team_profile": {
+    "title": "設定您的團隊",
+    "subtitle": "命名您的團隊並選擇 URL。",
+    "url_title": "URL",
+    "url_subtitle": "您將使用此 URL 來訪問 Postman。",
+    "image_modal_title": "上傳團隊徽標",
+    "image_modal_body": "上傳自訂徽標，讓您的團隊有賓至如歸的感覺。最大大小：2 MB",
+    "name": "團隊名稱",
+    "change_logo": "更改標誌",
+    "invalid_domain_modal": {
+      "heading": "您沒有有效的工作域",
+      "description": "我們無法為 gmail.com 等域啟用此設定。請將您的電子郵件 ID 更改為有效的工作域，然後重試。",
+      "got_it_button": "知道了"
+    },
+    "email_verification_modal": {
+      "toast": {
+        "message": "請檢查您的收件箱。",
+        "title": "我們已傳送驗證電子郵件"
+      },
+      "title": "驗證您的帳戶",
+      "description": "要啟用團隊發現，請驗證您的帳戶並重試。",
+      "cancel_button": "取消",
+      "send_verification_email_button": "傳送驗證郵件"
+    }
+  },
+  "error": {
+    "type": "網路通話失敗",
+    "move_collection": {
+      "title": "出了點問題",
+      "description": "嘗試移動您的收藏集時發生錯誤"
+    },
+    "team_discovery": {
+      "title": "請提供團隊詳細資訊"
+    },
+    "send_verification_email": {
+      "message": "傳送驗證電子郵件時發生錯誤。一段時間後重試。",
+      "title": "出了點問題"
+    },
+    "team_profile_update_error": {
+      "title": "出了點問題",
+      "description": "更新您的團隊個人資料時出錯"
+    },
+    "file_read_error": "我們讀不懂。請上傳影像檔案，例如 jpg 或 png。",
+    "image_size_error": "圖片太大。請使用 2 MB 以下的影像。",
+    "image_uploading_error": "上傳您的圖片時出現問題。請再試一次。"
+  },
+  "workspace": {
+    "name": "{workspaceName} 工作區",
+    "team_discovery": {
+      "message_enabled": "您為團隊啟用了團隊發現",
+      "message_disabled": "您為團隊停用了團隊發現",
+      "title_on": "團隊 發現已開啟",
+      "title_off": "團隊 發現已關閉",
+      "title": "團隊 發現",
+      "title_UO_140": "允許 {domain} 使用者發現此團隊",
+      "description": "團隊發現可讓組織中的人員看到您的團隊並申請加入。",
+      "description_UO_140": "他們可以請求加入這個團隊。",
+      "turn_on": "開啟團隊發現",
+      "turn_on_label": "開",
+      "turn_off_label": "關",
+      "error_title": "應用團隊發現設定時出現問題",
+      "continue": "繼續",
+      "save_UO_140": "儲存",
+      "save_subtitle_UO_140": "您可以稍後在團隊設定中更改詳細資訊。",
+      "invite_members": {
+        "generate_invite_link_error": "我們無法生成連結。請再試一次。",
+        "invite_error": "其中一封或多封電子郵件看起來不正確。仔細檢查格式。",
+        "plan_alert_message": "升級到進階計劃並享受無限的協作。",
+        "copy_invite_button": "複製連結",
+        "maybe_later_button": "也許稍後",
+        "continue_button": "繼續",
+        "subtitle": "邀請人們與您合作，充分利用 Postman。",
+        "title": "邀請他人加入您的團隊",
+        "via_email": "通過電子郵件",
+        "share_link_text": "或者，分享 邀請 連結",
+        "generate_link": "生成連結",
+        "copied_text": "已複製",
+        "enter_email_address": "輸入電子郵件地址",
+        "failed_to_generate_link": "無法生成 邀請 連結。請再試一次。"
+      },
+      "share_link_with_your_colleagues": "獲取可與同事分享的連結以加入團隊"
+    },
+    "collection": {
+      "title": "{items, plural, one {集合} other {集合}}",
+      "moved": {
+        "description": "您的集合稍後會被移動。"
+      },
+      "successfully_moved": {
+        "description": "{collections} {text} {verb} 成功移動到此工作區。"
+      },
+      "verb": "{items, plural, one {已} other {已}}"
+    }
+  },
+  "input": {
+    "drag_and_drop": "拖放影像",
+    "select_a_file": "選擇一個檔案"
+  },
+  "image_upload_modal": {
+    "upload_button": "上傳",
+    "back_button": "後退",
+    "cancel_button": "取消"
+  }
+}

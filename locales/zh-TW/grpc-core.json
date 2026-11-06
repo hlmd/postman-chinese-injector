@@ -1,0 +1,620 @@
+{
+  "divider_or_text": "或者",
+  "invoke_button": {
+    "tooltip": "Ctrl + Enter",
+    "text": "呼叫"
+  },
+  "compose_tab": {
+    "placeholder": "撰寫訊息",
+    "footer": {
+      "beautify": "美化",
+      "example_message": {
+        "text": "使用範例訊息",
+        "tooltip": "選擇生成範例訊息的方法"
+      },
+      "end_streaming": "結束流式傳輸",
+      "send_button": {
+        "tooltip": "呼叫傳送訊息的方法",
+        "text": "傳送"
+      }
+    }
+  },
+  "error_details": {
+    "title": "錯誤詳情"
+  },
+  "example_message_button": {
+    "text": "使用範例訊息",
+    "examples_popover": {
+      "error": {
+        "text": "無法從範例載入訊息。",
+        "button": "再試一次"
+      },
+      "empty": {
+        "text": "<0>建立一個範例</0> <1>以使用其訊息。</1>",
+        "tooltip": "您沒有 權限 來執行此操作"
+      },
+      "search_bar": {
+        "placeholder": "在範例中搜索訊息"
+      },
+      "no_examples": {
+        "text_1": "沒有找到訊息。",
+        "text_2": "範例中未新增訊息。"
+      }
+    }
+  },
+  "grpc_editor": {
+    "tabs": {
+      "message": "資訊",
+      "authorization": "身份驗證",
+      "metadata": "後設資料",
+      "service_definition": "服務定義",
+      "scripts": "腳本",
+      "settings": "設定",
+      "heading": "請求"
+    },
+    "file_drop_overlay": {
+      "text": "將檔案拖放到此處以將其用作服務定義"
+    },
+    "events": {
+      "sent_request": "請求 已傳送",
+      "received_response": "回應已收到",
+      "unrecognised_status_code": "無法識別的狀態程式碼",
+      "response_pruned": "回應 未儲存。"
+    }
+  },
+  "url_input": {
+    "placeholder": "輸入URL",
+    "invalid_url": {
+      "tooltip": "URL 不能為空",
+      "heading": "無效 URL",
+      "subtitle": "{resolvedInvalidURL} 不是有效的 URL。確保您使用的是正確的。"
+    }
+  },
+  "refresh_button": {
+    "tooltip": "重新整理"
+  },
+  "key_value_table": {
+    "default_empty_message": "這裡沒有資料",
+    "key": "鍵",
+    "value": "值"
+  },
+  "unary_results": {
+    "response_pane_tab": {
+      "truncated_response": {
+        "title": "回應 尺寸太大，無法顯示",
+        "message": "我們無法將 回應 儲存在歷史記錄中，因為它太大了。再次呼叫 請求 以獲取 回應。"
+      }
+    },
+    "heading": "回應",
+    "running_scripts": "執行腳本",
+    "save_as_example": "儲存回應",
+    "tabs": {
+      "trailers": {
+        "label": "尾部後設資料",
+        "empty_message": "沒有可顯示的尾部後設資料"
+      },
+      "metadata": {
+        "label": "後設資料",
+        "empty_message": "沒有可顯示的後設資料"
+      },
+      "test_results": "測試結果"
+    }
+  },
+  "response_loader": {
+    "invoking": "呼叫方法..."
+  },
+  "method_item": {
+    "icon_titles": {
+      "bidirectional_streaming": "雙向流式傳輸",
+      "client_streaming": "客戶端流式傳輸",
+      "server_streaming": "伺服器流式傳輸",
+      "unary": "一元"
+    }
+  },
+  "location_editor": {
+    "tls_indicator": {
+      "heading": {
+        "secure": "停用 TLS",
+        "insecure": "啟用 TLS"
+      },
+      "heading_explicit_set_via_url": {
+        "secure": "TLS 已啟用",
+        "insecure": "TLS 已停用"
+      },
+      "subtitle_explicit_set_via_url": {
+        "secure": "在 URL 中使用 https://。",
+        "insecure": "在 URL 中使用 http://。"
+      },
+      "subtitle_1": {
+        "secure": "目前使用安全連線。",
+        "insecure": "目前使用不安全的連線"
+      },
+      "subtitle_2": {
+        "secure": "停用 TLS 以通過不安全的連線呼叫該方法。",
+        "insecure": "啟用 TLS 以通過安全連線呼叫該方法。"
+      },
+      "button": "配置其他 CA 和客戶端證書"
+    },
+    "tls_toggle": {
+      "switch_to_secure": "切換到安全連線",
+      "switch_to_insecure": "切換到不安全連線"
+    }
+  },
+  "cancel_button": "取消",
+  "try_again_button": "再試一次",
+  "mock_suggestion": {
+    "mocks_error_cta": {
+      "unsupported_api": "<0>選擇一個 Protobuf API</0> <1> 以使用其模擬伺服器服務 URL</1>",
+      "unsupported_spec": "<0>選擇 Protobuf 規格 </0> <1> 以使用其模擬伺服器服務 URL</1>",
+      "api_with_no_release": "<0>發布Protobuf API</0> <1>以使用其模擬伺服器 URL</1>",
+      "unsupported_api_version": "<0>切換到 API 的已發布 版本</0> <1> 以使用其模擬伺服器服務 URL</1>"
+    },
+    "mock_url_error": "<0>載入模擬伺服器 URL 失敗。</0> <1>重試</1>",
+    "mock_button": "使用模擬伺服器 URL",
+    "mock_button_with_api": "將模擬伺服器服務 URL 用於 <1>{apiName}</1>",
+    "mock_button_with_spec": "將模擬伺服器服務 URL 用於 <1>{specName}</1>"
+  },
+  "errors": {
+    "unable_to_invoke": "無法呼叫 gRPC",
+    "send_msg_failure": "傳送訊息失敗",
+    "multiple_files_import": {
+      "title": "無法一次匯入多個檔案",
+      "description": "不支援一次匯入多個 .proto 檔案。對於與“import”指令連結的檔案，僅匯入根檔案。"
+    },
+    "invalid_file_type": {
+      "title": "檔案型別無效",
+      "description": "僅支援 .proto 檔案。請使用 .proto 檔案重試。"
+    },
+    "no_permission": "您沒有 權限 來執行此操作",
+    "could_not_invoke_method": "無法呼叫方法"
+  },
+  "status_code": {
+    "label": "狀態碼",
+    "label_with_colon": "狀態碼："
+  },
+  "results": {
+    "save_example": {
+      "tooltip": "首先將此 請求 儲存到 集合"
+    },
+    "empty": {
+      "message": "呼叫一個方法來獲取 回應"
+    },
+    "streaming_results": {
+      "badge": {
+        "streaming": "流式傳輸"
+      },
+      "response": {
+        "messages": "訊息",
+        "responses": "回應"
+      }
+    },
+    "inspector": {
+      "no_metadata_received": "未收到後設資料。",
+      "no_trailers_received": "未收到尾部後設資料。",
+      "no_metadata_sent": "沒有傳送後設資料。",
+      "received": "已收到"
+    }
+  },
+  "settings": {
+    "strict_ssl": {
+      "title": "啟用伺服器證書驗證",
+      "description": "通過安全連線呼叫方法時驗證伺服器證書。"
+    },
+    "server_name_override": {
+      "title": "覆蓋伺服器名稱以進行證書驗證",
+      "description": "配置用於驗證伺服器證書中的公用名的值。"
+    },
+    "include_default_fields": {
+      "title": "在 回應 中包含具有預設值的欄位",
+      "description": "檢視具有預設值的 回應 欄位。關閉此選項將從 回應 中忽略此類欄位。"
+    },
+    "max_response_msg_size": {
+      "title": "最大 回應 訊息大小",
+      "description": "允許的最大訊息大小（以 MB 為單位）。要接收任意大小的訊息，請設定為 0。"
+    },
+    "connectionTimeout": {
+      "title": "連線 超時",
+      "description": "配置呼叫和接收 回應 的截止時間（以毫秒為單位）。要無限期地保持連線開啟，請設定為 0。"
+    }
+  },
+  "example_documentation": {
+    "error": {
+      "text": "無法從範例載入文件。",
+      "button_text": "再試一次"
+    },
+    "empty": "<0>新增範例</0> <1>來說明請求如何工作。</1>",
+    "examples": {
+      "empty": {
+        "text": "這個例子是空的。"
+      },
+      "empty_request": "空請求",
+      "empty_response": "空回應"
+    },
+    "edit_example": "編輯範例"
+  },
+  "header_tooltips": {
+    "seed": "在 請求 後設資料中使用此鍵值對來接收相同的模擬回應。"
+  },
+  "agent_error_banner": {
+    "desktop_agent_not_connected": "<0>切換到Postman桌面代理</0>載入方法。",
+    "desktop_agent_not_ready": "確保 <2>桌面代理</2> 已安裝並正在執行。",
+    "unknown_error": "發生未知錯誤"
+  },
+  "timeline": {
+    "cleared_events": {
+      "message": "{count, plural, one {# 條訊息} other {# 條訊息}} 已隱藏",
+      "button": "恢復"
+    },
+    "toolbar": {
+      "type_filter_options": {
+        "sent_messages": "已傳送訊息",
+        "received_messages": "收到的訊息",
+        "all_messages": "所有訊息"
+      },
+      "add_message": "新增訊息",
+      "sent_message": "已傳送訊息",
+      "received_message": "已收到訊息",
+      "message_stream": "訊息流",
+      "search": {
+        "placeholder": "搜尋"
+      },
+      "clear_messages": "明確的資訊"
+    },
+    "notification": {
+      "new_messages": "新訊息"
+    },
+    "rich_inspector": {
+      "wrap_lines": "換行線",
+      "beautify": "美化",
+      "generate_example_msg": "生成範例訊息",
+      "show_message": "顯示訊息",
+      "show_hexdump": "顯示十六進位制轉儲",
+      "search": "搜尋"
+    },
+    "editable_event": {
+      "incoming_tooltip": "將訊息型別切換為已傳送",
+      "outgoing_tooltip": "將訊息型別切換為已接收"
+    },
+    "event": {
+      "copy_message": "複製訊息",
+      "copied": "已複製到剪貼簿"
+    },
+    "editable_timeline": {
+      "empty_state": {
+        "title": "建立訊息流",
+        "description": "使用訊息定義客戶端-伺服器通訊。",
+        "primary_action": "生成範例流"
+      },
+      "connected": "已連線",
+      "disconnected": "已斷開連線"
+    }
+  },
+  "method_combobox": {
+    "footer": {
+      "fetching": {
+        "text": "載入伺服器反射。"
+      },
+      "loading": "載入中",
+      "reflection": "伺服器反射。",
+      "cache": "使用快取",
+      "dropdown": {
+        "placeholder": "選擇方法",
+        "empty": "沒有找到方法"
+      },
+      "button": "更改服務定義",
+      "using": "使用"
+    },
+    "method_option": {
+      "error_tooltip": "無法從服務定義載入此方法。"
+    }
+  },
+  "error_banner": {
+    "reflection_error": {
+      "title": "無法載入伺服器反射。",
+      "description": "發生未知錯誤",
+      "button": "再試一次"
+    },
+    "view_details": "檢視錯誤詳細資訊",
+    "details": "細節：",
+    "api_deprecated": {
+      "message": "服務定義正在使用不再受支援的 API Builder 物件。將 API 物件遷移到 Spec Hub 以繼續使用它。",
+      "migrate_action": "遷移到規格中心"
+    },
+    "api_error": {
+      "not_found": "所選的 API 不再存在於 Postman 中。使用不同的方式來載入服務和方法。",
+      "release_not_found": "所選的 API 版本 不再存在於 Postman 中。",
+      "unresolved_import": {
+        "primary_action": "再試一次",
+        "message": "某些匯入指令無法解決。"
+      },
+      "internal_error": {
+        "message": "出了點問題。可能是我們這邊的電線有問題。",
+        "primary_action": "再試一次"
+      },
+      "access_not_found": "您無權訪問 API。",
+      "fetch_failed_link": {
+        "message": "無法載入連結的 API。",
+        "primary_action": "再試一次"
+      },
+      "access_denied_link": "您無權訪問連結的 API。",
+      "invalid_schema_link": "該連結沒有 Protobuf API。",
+      "default": {
+        "edit_api": "編輯API",
+        "message": "所選的 Protobuf API 可能存在一些問題。",
+        "syntax_error_unknown": "未知 API 中存在語法錯誤。修改 Protobuf API 或選擇不同的。",
+        "syntax_error": "{apiName} 中存在語法錯誤。修改 Protobuf API 或選擇不同的。"
+      }
+    },
+    "file_error": {
+      "file_not_found": {
+        "message": "找不到 .proto 檔案。從檔案系統中選擇它以在 請求 中使用。",
+        "primary_action": "選擇.proto檔案"
+      },
+      "file_not_found_in_dir": "<0>找不到 .proto 檔案。它可能是從另一個檔案系統上傳的。如果是這種情況，請確保您已將檔案新增到 Postman 工作目錄中。</0> <1><0>如何使用工作目錄？</0></1>",
+      "unresolved_import": {
+        "message": "我們找不到 .proto 檔案匯入的一些檔案。使用以下選項指定那些未解析檔案的匯入路徑。",
+        "primary_action": "新增匯入路徑"
+      },
+      "syntax_error": ".proto 檔案中存在語法錯誤。修改檔案或選擇其他檔案。",
+      "default": {
+        "message": "所選的 .proto 檔案可能存在一些問題。"
+      }
+    },
+    "specification_error": {
+      "not_found": "Postman 中不再存在所選規範。使用不同的方式來載入服務和方法。",
+      "unresolved_import": {
+        "primary_action": "再試一次",
+        "message": "某些匯入指令無法解析。"
+      },
+      "internal_error": {
+        "message": "出了點問題。可能是我們這邊的電線有問題。",
+        "primary_action": "再試一次"
+      },
+      "access_not_found": "您無權訪問該規範。",
+      "default": {
+        "edit_specification": "編輯規格",
+        "message": "所選的 Protobuf 規範可能存在一些問題。",
+        "syntax_error_unknown": "未知規範中的語法錯誤。修改 Protobuf 規格或選擇不同的規格。",
+        "syntax_error": "{specificationName} 中存在語法錯誤。修改 Protobuf 規範或選擇不同的規範。"
+      }
+    }
+  },
+  "cache_message_banner": {
+    "method_not_exist": "服務定義中不存在所選方法。"
+  },
+  "api_dropdown": {
+    "error": "無法載入 API。",
+    "no_protobuf_schema": "未找到 Protobuf 模式",
+    "no_schema_in_dir": "在此 工作區 中找不到 Protobuf 模式",
+    "create_new": "建立一個新的 API：",
+    "new_api_name": "輸入名稱以建立新的 API"
+  },
+  "custom_dropdown": {
+    "placeholder": "選擇選項",
+    "empty": "沒有找到選項",
+    "footer_label": "輸入名稱以建立新的 {label}",
+    "footer_new": "建立一個新的 {label}: <1>{searchTerm}</1>",
+    "failed": {
+      "button_text": "重試",
+      "text": "無法載入選項。"
+    }
+  },
+  "remove": "消除",
+  "proto_api_selector": {
+    "placeholder": "選擇 Protobuf 架構或貼上指向該架構的連結",
+    "error": "無法建立 API。"
+  },
+  "loading": "載入中",
+  "proto_api_selected": {
+    "current_definition": "目前的定義",
+    "buttons": {
+      "use_different_schema": "使用不同的架構",
+      "import": "匯入 .proto 檔案"
+    },
+    "access_restricted": "（訪問受限）",
+    "version_selector": {
+      "placeholder": "選擇 版本",
+      "active_branch": "活躍branch",
+      "custom_option": {
+        "tooltip": "目前定義包含對 API 所做的所有尚未發布的更改。"
+      }
+    }
+  },
+  "proto_file": {
+    "errors": {
+      "api_not_created": "建立 API 時出現問題。",
+      "schema_not_updated": "更新 API 時出現問題。"
+    },
+    "file_selected": {
+      "heading": {
+        "loading": "正在載入{filename}",
+        "using": "使用 {filename}"
+      },
+      "buttons": {
+        "import_as_api": "匯入為 API",
+        "use_different_schema": "使用不同的架構",
+        "import_proto_file": "匯入 .proto 檔案"
+      },
+      "working_dir_banner": "<0>通過將此檔案移動到您的工作目錄來與其他人協作。</0> <2><0>如何使用工作目錄？</0></2>"
+    },
+    "select_file": {
+      "error": {
+        "title": "無法匯入 .proto 檔案",
+        "subtitle": "匯入 Protobuf 定義時出錯。"
+      },
+      "title": "匯入 .proto 檔案",
+      "subtitle": {
+        "desktop": "從本地系統中拖放或選擇 .proto 檔案。您還可以從託管它的 URL 載入它。",
+        "web": "從本地系統匯入 .proto 檔案或從託管它的 URL 載入它。"
+      },
+      "choose_file": "選擇一個檔案",
+      "protobuf_url": {
+        "placeholder": "輸入 URL",
+        "label": "Protobuf URL",
+        "error": "無效 URL"
+      },
+      "import_paths": {
+        "heading": "匯入路徑",
+        "subtext": "指定匯入路徑以在解析“匯入”指令時查詢 .proto 檔案。",
+        "unresolved_import": {
+          "title": "未解決的“匯入”指令"
+        },
+        "add": "新增匯入路徑"
+      }
+    },
+    "input": {
+      "disabled_tooltip": "載入 Protobuf 檔案需要 桌面代理"
+    }
+  },
+  "import_api": {
+    "heading": "匯入為 API",
+    "sub_text": "將 <1>{filename}</1> 匯入為 API 以在 Postman 中重用和管理它。",
+    "api_dropdown": {
+      "disabled_tooltip": "無法匯入到連結的 Git API",
+      "placeholder": "選擇 API"
+    },
+    "use_without_import": "無需匯入即可使用"
+  },
+  "proto_selector": {
+    "proto_base": {
+      "import_button": "匯入.proto檔案",
+      "title": "您的本地系統中有 .proto 檔案或託管在 URL 上嗎？"
+    },
+    "schema_label": {
+      "api_version_text": "繼續使用 <1></1>",
+      "api": "繼續使用API",
+      "reflection": "繼續使用伺服器反射",
+      "file": "繼續使用 <1></1>"
+    },
+    "keep_using": "繼續使用{name}",
+    "go_back": "返回"
+  },
+  "proto_reflection": {
+    "server_reflection": {
+      "loading_reflection": "載入伺服器反射。",
+      "using_reflection": "使用伺服器反射。",
+      "use_server_reflection": {
+        "text": "使用伺服器反射",
+        "tooltip": "輸入 server URL 以使用伺服器反射載入方法。"
+      }
+    }
+  },
+  "next_button": "下一個",
+  "schema_options": {
+    "this_workspace": "這個工作區"
+  },
+  "proto_combobox": {
+    "input_placeholder": {
+      "is_open": "搜尋 Protobuf 架構或貼上指向該架構的連結",
+      "not_open": "選擇方法"
+    },
+    "heading": "使用 Protobuf 模式載入服務和方法。",
+    "toggle": {
+      "expand": "展開原型方法選擇器",
+      "collapse": "摺疊原型方法選擇器"
+    }
+  },
+  "snippets": {
+    "response": {
+      "test_status_code": "測試狀態碼為0",
+      "response_time": "測試回應時間低於200ms",
+      "specific_metadata": "測試特定後設資料是否存在",
+      "response_trailers": "測試特定預告片是否存在",
+      "response_message_exists": "測試訊息存在",
+      "response_message_partial": "存在具有特定屬性的測試訊息",
+      "property_exists": "測試所有訊息是否存在屬性",
+      "msg_against_schema": "針對 JSON 模式測試訊息"
+    },
+    "message": {
+      "message_content": "測試訊息等於確切內容",
+      "message_partial": "測試訊息具有特定屬性",
+      "msg_schema": "針對 JSON 模式測試訊息"
+    }
+  },
+  "scripts": {
+    "before_invoke": {
+      "label": "呼叫前",
+      "description": "“呼叫之前”腳本是用 JavaScript 編寫的，並在呼叫方法之前執行。",
+      "tooltip_text": "在傳送每個 gRPC 請求 之前執行。一般用於動態配置請求。"
+    },
+    "on_message": {
+      "label": "訊息時",
+      "description": "“訊息時”腳本是用 JavaScript 編寫的，並在每次收到訊息時執行。",
+      "tooltip_text": "在 gRPC 回應 流中的每條訊息之後執行。一般用於編寫測試。"
+    },
+    "after_response": {
+      "label": "回應 之後",
+      "description": "“回應之後”腳本是用 JavaScript 編寫的，並在從伺服器接收到回應並終止與伺服器的連線後執行。",
+      "tooltip_text": "在每個 gRPC 回應 之後執行。一般用於編寫測試。"
+    },
+    "learn_more": "瞭解更多",
+    "error": {
+      "title": "無法評估 {scriptLabel} 腳本",
+      "helper_text": {
+        "inline": {
+          "base": "無法評估 腳本。",
+          "script_label_func": "無法評估 <1><0>{scriptLabel} 腳本</0></1>。",
+          "script_label": "無法評估 {scriptLabel} 腳本。"
+        },
+        "other": {
+          "base": "執行 腳本 時出錯。",
+          "script_label_func": "執行 <1><0>{scriptLabel} 腳本</0></1> 時出錯。",
+          "script_label": "執行 {scriptLabel} 腳本 時出錯。"
+        },
+        "docs_link": "確保 腳本 根據 <1><0>Postman JavaScript 參考對 {itemLabel}</0></1> 有效。"
+      }
+    }
+  },
+  "proto_menu": {
+    "view_more_schema": "檢視更多模式",
+    "no_protobuf_schema": "沒有可用的 Protobuf 模式。",
+    "import_file": {
+      "subtitle": {
+        "desktop": "從本地系統拖放或選擇 .proto 檔案。",
+        "web": "從本地系統中選擇一個 .proto 檔案。"
+      }
+    },
+    "load_methods": "使用伺服器反射載入方法。",
+    "enter_server_url": "輸入 server URL 以使用伺服器反射載入方法。"
+  },
+  "unknown_file": "未知檔案",
+  "documentation": {
+    "title": "文件",
+    "required": "必需的",
+    "repeated": "重複的",
+    "table": {
+      "columns": {
+        "key": "鍵",
+        "value": "值",
+        "values": "值",
+        "field": "欄位",
+        "type": "型別",
+        "description": "描述"
+      },
+      "empty": {
+        "title": "沒有定義欄位",
+        "description": "服務定義中尚未定義此訊息型別的欄位。"
+      }
+    },
+    "errors": {
+      "save_desc_err": "儲存 請求 描述時出現問題。"
+    }
+  },
+  "generate_collection": {
+    "button_text": "生成集合"
+  },
+  "tabbed_pane": {
+    "toggle": {
+      "expand": "展開部分",
+      "collapse": "摺疊部分"
+    }
+  },
+  "context_bar": {
+    "code_snippet_exports": {
+      "title": "程式碼片段",
+      "tooltip": "程式碼",
+      "snippet_block_title": "gRPCurl",
+      "your_message_title": "資訊"
+    }
+  }
+}

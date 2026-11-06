@@ -1,0 +1,272 @@
+{
+  "file": {
+    "heading": "拖放到任意位置即可匯入",
+    "select_from": "或者選擇 <1></1><2>檔案</2> 或 <4></4><5>資料夾</5>"
+  },
+  "github": {
+    "organization_label": "組織",
+    "repository_label": "儲存庫",
+    "branch_label": "分支",
+    "repository_placeholder": "搜尋儲存庫",
+    "branch_placeholder": "搜尋分支",
+    "unable_to_load_organization": "無法載入組織",
+    "unable_to_load_repository": "無法載入儲存庫",
+    "unable_to_load_branch": "無法載入分支列表",
+    "tooltip_repository": "請選擇一個組織",
+    "tooltip_branch": "請選擇一個儲存庫",
+    "warning_message": "找不到任何要匯入的檔案。仔細檢查您的儲存庫和分支。"
+  },
+  "githubapp": {
+    "organization_label": "組織",
+    "repository_label": "儲存庫",
+    "branch_label": "分支",
+    "repository_placeholder": "搜尋儲存庫",
+    "branch_placeholder": "搜尋分支",
+    "unable_to_load_organization": "無法載入組織",
+    "unable_to_load_repository": "無法載入儲存庫",
+    "unable_to_load_branch": "無法載入分支列表",
+    "tooltip_repository": "請選擇一個組織",
+    "tooltip_branch": "請選擇一個儲存庫",
+    "warning_message": "找不到任何要匯入的檔案。仔細檢查您的儲存庫和分支。"
+  },
+  "bitbucket": {
+    "workspace_label": "工作區",
+    "repository_label": "儲存庫",
+    "branch_label": "分支",
+    "repository_placeholder": "搜尋儲存庫",
+    "branch_placeholder": "搜尋分支",
+    "unable_to_load_workspace": "無法載入工作區",
+    "unable_to_load_repository": "無法載入儲存庫",
+    "unable_to_load_branch": "無法載入分支列表",
+    "tooltip_repository": "請選擇工作區",
+    "tooltip_branch": "請選擇一個儲存庫",
+    "warning_message": "找不到任何要匯入的檔案。仔細檢查您的儲存庫和分支。"
+  },
+  "gitlab": {
+    "group_label": "團體",
+    "project_label": "專案",
+    "branch_label": "分支",
+    "project_placeholder": "搜尋專案",
+    "branch_placeholder": "搜尋分支",
+    "unable_to_load_group": "無法載入組。",
+    "unable_to_load_project": "無法載入專案",
+    "unable_to_load_branch": "無法載入分支",
+    "tooltip_project": "請選擇一個組",
+    "tooltip_branch": "請選擇一個儲存庫",
+    "tooltip_branch_load_error": "無法載入分支列表",
+    "warning_message": "找不到任何要匯入的檔案。仔細檢查您的儲存庫和分支。"
+  },
+  "azure": {
+    "organization_label": "組織",
+    "repository_label": "儲存庫",
+    "branch_label": "分支",
+    "repository_placeholder": "搜尋儲存庫",
+    "branch_placeholder": "搜尋分支",
+    "unable_to_load_organization": "無法載入組織",
+    "unable_to_load_repository": "無法載入儲存庫",
+    "unable_to_load_branch": "無法載入分支列表",
+    "tooltip_repository": "請選擇一個組織",
+    "tooltip_branch": "請選擇一個儲存庫"
+  },
+  "new_relic": {
+    "step_header": {
+      "credentials_label": "證書",
+      "service_selection_label": "服務選擇"
+    },
+    "api_key_input": {
+      "heading": "輸入您的 New Relic API 金鑰",
+      "text": "API 金鑰",
+      "info_text": "請輸入您的 New Relic API 金鑰",
+      "placeholder": "正在獲取上次使用的金鑰...",
+      "invalid_error_message": "輸入的 API 金鑰無效",
+      "button_label": "下一個"
+    },
+    "service_selection": {
+      "heading": "選擇要作為集合匯入的服務或應用程式",
+      "invalid_error_message": "輸入的 API 金鑰無效",
+      "fetching_service_error_message": "獲取服務時遇到錯誤",
+      "import_button_label": "匯入",
+      "back_button_label": "後退"
+    },
+    "generate_collection": {
+      "toast_error_title": "無法生成集合"
+    }
+  },
+  "generate_collection_options": {
+    "import_settings": {
+      "show": "顯示匯入設定",
+      "hide": "隱藏匯入設定"
+    },
+    "import_options_content": {
+      "files": "從 {formatName} 檔案生成的集合的設定",
+      "data": "從資料生成的集合的設定"
+    }
+  },
+  "api_repo_integration": {
+    "connecting_to_service": {
+      "heading": "正在連線到 {service}...",
+      "text": "這可能需要長達 60 秒的時間。",
+      "button_label": "取消"
+    },
+    "input_dropdown_placeholder": "鍵入要過濾的內容",
+    "search_no_result_found": "沒有找到結果。檢查您的拼寫或嘗試不同的搜尋詞。",
+    "reauth_menu": {
+      "want_to_connect": "想要連線到不同的 {entity}？",
+      "reauth_with_service": "使用 {service} 重新驗證",
+      "manage_accounts": "管理 <1>設定</1> 中的所有已連線帳戶。"
+    }
+  },
+  "container": {
+    "text_area_placeholder": "貼上 cURL 命令、OpenAPI 規範或集合 JSON。也支援 GraphQL 和 AsyncAPI",
+    "view_import_settings": "檢視匯入設定",
+    "import_button_label": "匯入",
+    "import_button_tooltip": "選擇要匯入的檔案",
+    "migrate_button_label": "開始遷移",
+    "migrate_button_tooltip": {
+      "no_files": "選擇檔案以開始遷移。",
+      "invalid_files": "所選檔案不是有效的 {sourceName} 檔案。使用有效檔案重試。"
+    },
+    "back_button_label": "後退",
+    "continue_button_label": "繼續",
+    "cancel_button_label": "取消",
+    "continue_background_button_label": "在後臺繼續",
+    "cancel_import_button_label": "取消匯入",
+    "heading": {
+      "import_settings": "匯入設定",
+      "import_from": "從 {service} 匯入",
+      "import_from_newrelic": "從 New Relic 匯入",
+      "import_in_progress": "匯入正在進行中",
+      "importing": "匯入中...",
+      "choose_how_to_import": "選擇如何匯入您的 API",
+      "choose_how_to_import_specification": "選擇如何匯入您的規格",
+      "repository_label": "儲存庫",
+      "multi_file_import_one_definition": "從列表中匯入一個定義",
+      "multi_file_import_elements": "匯入元素 ({element_num})",
+      "upload_files_to_postman": "遷移到 Postman"
+    },
+    "curl_panel": {
+      "format_badge": "cURL",
+      "request_title": "{method} {path}",
+      "request_count": "{count, plural, one {# 個請求} other {# 個請求}}",
+      "collection_name_label": "集合名稱",
+      "collection_select_hint": "輸入以查詢集合或新增集合",
+      "collection_select_placeholder": "選擇或新增集合",
+      "collection_name": "{apiName} API",
+      "default_collection_name": "新集合",
+      "will_create_heading": "匯入為",
+      "will_create": "{count, plural, one {包含 # 個請求的 Postman 集合} other {包含 # 個請求的 Postman 集合}}",
+      "base_url_environment": "包含 {variable} 變數的環境",
+      "will_add_heading": "匯入到",
+      "will_add": "{count, plural, one {# 個請求新增到 {collectionName}} other {# 個請求新增到 {collectionName}}}",
+      "more_hint": "貼上更多 cURL 命令以新增請求",
+      "activity_request_count": "{count, plural, one {# 個請求} other {# 個請求}}",
+      "clear_button_label": "清除",
+      "import_button_label": "匯入",
+      "add_failed_toast": "{count, plural, one {無法將請求新增到 {collectionName}，請重試。} other {無法將請求新增到 {collectionName}，請重試。}}",
+      "partially_added_toast": "已將 {addedCount}/{totalCount} 個請求新增到 {collectionName}，其餘請求新增失敗。",
+      "partially_added_cancelled_toast": "已將 {addedCount}/{totalCount} 個請求新增到 {collectionName}。",
+      "create_failed_toast": "無法建立 {collectionName}，請重試。",
+      "environment_failed_toast": "無法建立 {collectionName} 環境，因此請求將保留完整 URL。"
+    },
+    "more_import_options": {
+      "label": "其他來源",
+      "grouped_option": {
+        "code_repositories": "程式碼儲存庫",
+        "api_gateways": "API 閘道器",
+        "apms": "APM"
+      }
+    },
+    "migrate_to_postman_options": {
+      "label": "遷移到 Postman",
+      "header": "從",
+      "grouped_option": {
+        "soapui": "SoapUI",
+        "other": "其他"
+      }
+    },
+    "shortcut_text": "<0>{shortcutKey}</0> 匯入",
+    "helper_link_text": "瞭解有關<1>匯入資料</1>的更多資訊",
+    "migrate_to_postman_helper_link_text_learn": "瞭解",
+    "migrate_to_postman_helper_link_text_migrating": "將資料遷移到 Postman",
+    "migrate_to_postman_helper_link_text_from": "瞭解有關將資料遷移到 Postman 的更多資訊",
+    "loading_screen": {
+      "single_file_message": "我們正在讀取 1 個檔案...",
+      "multiple_file_message": "我們正在讀取 {inputFiles} 檔案...",
+      "raw_message": "正在處理...",
+      "description": {
+        "reading_files": "我們目前正在閱讀這些檔案。",
+        "close_modal": "您可以關閉此模式並返回其他任務。"
+      }
+    },
+    "handle_processed_files": {
+      "raw": {
+        "validation_error": "格式錯誤，請輸入正確的格式匯入"
+      },
+      "other": {
+        "error_title": "格式不正確",
+        "error_desc": "我們不識別/支援這種格式。",
+        "learn_more_text": "瞭解我們支援的格式。"
+      }
+    },
+    "generate_collection_option": {
+      "collection_name": "{format} 集合",
+      "only_collection": {
+        "label": "Postman 集合"
+      },
+      "collection_with_api": {
+        "label_with_format": "{format} 與 Postman 集合",
+        "label": "API 與 Postman 集合",
+        "helper_text": "使用定義檔案以及專屬的集合"
+      },
+      "specification": {
+        "label_with_format": "{format} 規格",
+        "label_with_format_and_collection": "{format} 規範，帶有 Postman 集合",
+        "label": "API 規格",
+        "helper_text": "使用規範檔案"
+      }
+    }
+  },
+  "file_container": {
+    "search_placeholder": "搜尋檔案",
+    "header_name": "姓名",
+    "header_import_as": "匯入為",
+    "header_import_as_tooltip": "預設情況下為 API 匯入建立集合。您可以通過選擇定義檔案來匯入它。",
+    "file_count": "{count, plural, one {# 個檔案} other {# 個檔案}}",
+    "format": {
+      "api": "API",
+      "specification": "規格",
+      "collection": "集合",
+      "collection_run": "集合執行",
+      "data_dump": "資料轉儲",
+      "environment": "環境",
+      "globals": "全域變數",
+      "request": "請求",
+      "with_api": ",API",
+      "with_specification": "，規格"
+    },
+    "type_separator": ",",
+    "type_separator_final": "和",
+    "import_api_label": "匯入 {types} 檔案",
+    "api_builder_banner": {
+      "team": "您的團隊最多可以在目前計劃中建立 {limit, plural, one {# 個 API} other {# 個 API}}。根據使用情況，將匯入前 {apiNumber, plural, one {已選的 API} other {# 個已選的 API}}。瞭解有關我們的<6>計劃</6>的更多資訊",
+      "individual": "您可以在目前計劃上最多建立 {limit, plural, one {# 個 API} other {# 個 API}}。根據使用情況，將匯入前 {apiNumber, plural, one {已選的 API} other {# 個已選的 API}}。瞭解有關我們的<6>計劃</6>的更多資訊"
+    }
+  },
+  "base": {
+    "gateway_controller_title": "從 {serviceName} 匯入 API{sourceType}",
+    "import_button_label": "匯入",
+    "cancel_button_label": "取消"
+  },
+  "migrate_to_postman": {
+    "upload_from_default_dir": "從預設目錄檢測並匯入資料",
+    "upload_from_default_dir_info": "即將推出",
+    "upload_from_default_dir_info_success": "這將選擇 {sourceName} 在您的計算機上儲存其資料的預設目錄。",
+    "upload_from_default_dir_info_fail": "我們無法在您的計算機上找到 {sourceName} 的預設目錄。",
+    "upload_data": "選擇要遷移的資料",
+    "upload_from_default_dir_disabled": "此選項僅適用於桌面應用程式。",
+    "upload_from_default_dir_disabled_soapui": "此選項不適用於 SoapUI 客戶端",
+    "upload_from_default_dir_files_found": "檔案發現於：",
+    "upload_from_default_dir_files_not_found": "預設目錄中未找到資料",
+    "upload_from_chosen_data": "選擇 <1></1><2>files</2> 或 <4></4><5>資料夾</5>"
+  }
+}

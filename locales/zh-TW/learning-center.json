@@ -1,0 +1,10 @@
+{
+  "header": {
+    "heading": "快速幫助",
+    "open_lc_tooltip": "在學習中心中開啟"
+  },
+  "error_state": {
+    "heading": "無法載入資訊",
+    "description": "<Text>我們在訪問學習中心內容時遇到問題。請幾分鐘後重試或直接通過<Link>我們的網站訪問。</Link></Text>"
+  }
+}

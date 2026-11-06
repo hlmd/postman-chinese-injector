@@ -1,0 +1,138 @@
+{
+  "breadcrumb": {
+    "service_discovery": "服務發現",
+    "connectors": "聯結器"
+  },
+  "page": {
+    "description": "只需連線一次帳戶，即可持續發現服務"
+  },
+  "actions": {
+    "add_manage_sources_button": "新增和管理來源",
+    "connect_account_button": "連線帳戶",
+    "discover_services_button": "發現服務",
+    "disconnect_account_button": "斷開帳戶連線",
+    "disconnect_account_unavailable_tooltip": "此帳戶沒有帳戶 ID，因此無法斷開連線",
+    "retry_button": "重試"
+  },
+  "toasts": {
+    "disconnect_success_title": "帳戶已斷開連線",
+    "disconnect_error_title": "無法斷開帳戶連線",
+    "disconnect_error_description": "請重試。"
+  },
+  "disconnect_modal": {
+    "title": "斷開 {providerName} 帳戶的連線？",
+    "description": "Postman 將停止從此已連線的 {providerName} 帳戶發現和匯入服務。您可以隨時重新連線。",
+    "cancel_button": "取消"
+  },
+  "table": {
+    "account_header": "帳戶",
+    "authentication_header": "身份驗證",
+    "discovered_services_header": "已發現的服務",
+    "last_used_header": "上次使用",
+    "last_used_empty": "-",
+    "expired_badge": "已過期",
+    "account_number_header": "帳號"
+  },
+  "filters": {
+    "account_placeholder": "帳戶",
+    "account_aria_label": "按帳戶篩選",
+    "all_accounts": "所有帳戶"
+  },
+  "summary": "{accountCount, plural, one {# 個帳戶} other {# 個帳戶}} · {serviceCount, plural, one {# 個已發現的服務} other {# 個已發現的服務}}",
+  "errors": {
+    "load_accounts_title": "無法載入帳戶",
+    "load_accounts_description": "獲取已連線帳戶時出現問題，請重試。",
+    "no_connection_description": "此聯結器暫無可用連線。"
+  },
+  "empty_state": {
+    "title": "未連線 {connectorName} 帳戶",
+    "description": "連線 {connectorName} 帳戶，開始在整個基礎設施中發現服務。"
+  },
+  "ibm_auth": {
+    "host_label": "平臺 API 主機（可選）",
+    "host_description": "從 API Manager 中 credentials.json 的 toolkit 部分複製主機地址。留空則使用預設的美國東部主機。"
+  },
+  "multi_account": {
+    "accounts_heading": "帳戶",
+    "select_all_button": "全選",
+    "deselect_all_button": "取消全選",
+    "selection_count": "{selected, plural, one {已選擇 # 個，共 {total} 個} other {已選擇 # 個，共 {total} 個}}",
+    "accounts_empty": "此連線沒有可用的帳戶。",
+    "accounts_load_error": "無法載入此連線的帳戶。",
+    "select_account_for_regions": "選擇一個帳戶以檢視可用地區。",
+    "select_account_for_services": "選擇一個帳戶以檢視可用服務。",
+    "select_account_for_options": "選擇一個帳戶以檢視可用選項。",
+    "regions_load_error": "無法載入地區，請重試。",
+    "services_load_error": "無法載入服務，請重試。",
+    "scopes_load_error": "無法載入發現範圍，請重試。",
+    "continue_tooltip_account_region_service": "請至少選擇一個帳戶、地區和服務以繼續",
+    "continue_tooltip_account_service": "請至少選擇一個帳戶和一個服務以繼續",
+    "continue_tooltip_account_scope": "請至少選擇一個帳戶，並在每個範圍中至少選擇一個選項以繼續",
+    "aws": {
+      "step_2_title": "帳戶、地區和服務",
+      "step_2_subtitle": "掃描內容"
+    },
+    "azure": {
+      "step_2_title": "帳戶和服務",
+      "step_2_subtitle": "掃描內容"
+    },
+    "gcp": {
+      "step_2_title": "帳戶和服務",
+      "step_2_subtitle": "掃描內容"
+    },
+    "ibm": {
+      "step_2_title": "帳戶和發現範圍",
+      "step_2_subtitle": "選擇資源"
+    }
+  },
+  "providers": {
+    "aws": {
+      "page_title": "已連線的 AWS 帳戶",
+      "breadcrumb_label": "AWS"
+    },
+    "gcp": {
+      "page_title": "已連線的 Google Cloud 帳戶",
+      "breadcrumb_label": "Google Cloud"
+    },
+    "azure": {
+      "page_title": "已連線的 Azure 帳戶",
+      "breadcrumb_label": "Azure"
+    },
+    "ibm": {
+      "page_title": "已連線的 IBM API Connect 帳戶",
+      "breadcrumb_label": "IBM API Connect"
+    },
+    "github": {
+      "page_title": "已連線的 GitHub 帳戶",
+      "breadcrumb_label": "GitHub"
+    },
+    "gitlab": {
+      "page_title": "已連線的 GitLab 帳戶",
+      "breadcrumb_label": "GitLab"
+    },
+    "bitbucket": {
+      "page_title": "已連線的 Bitbucket 帳戶",
+      "breadcrumb_label": "Bitbucket"
+    },
+    "insights": {
+      "page_title": "已連線的 Postman Insights 帳戶",
+      "breadcrumb_label": "Postman Insights"
+    },
+    "cluster-watcher": {
+      "page_title": "已連線的 Cluster Watcher 帳戶",
+      "breadcrumb_label": "Cluster Watcher"
+    },
+    "workspace": {
+      "page_title": "已連線的 Postman 工作區帳戶",
+      "breadcrumb_label": "Postman 工作區"
+    },
+    "public-api": {
+      "page_title": "已連線的公共 API 帳戶",
+      "breadcrumb_label": "公共 API"
+    },
+    "api-gateway": {
+      "page_title": "已連線的 API 閘道器帳戶",
+      "breadcrumb_label": "API 閘道器"
+    }
+  }
+}

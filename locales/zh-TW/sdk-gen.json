@@ -1,0 +1,25 @@
+{
+  "entity_type_icon": {
+    "label": "SDK"
+  },
+  "row": {
+    "context_menu_trigger": {
+      "tooltip": "檢視更多動作"
+    }
+  },
+  "context_menu": {
+    "open_sdk_panel": {
+      "label": "開啟SDK面板"
+    },
+    "regenerate_sdks": {
+      "label": "重新生成 SDK"
+    },
+    "delete_sdks": {
+      "label": "刪除 SDK"
+    }
+  },
+  "delete": {
+    "success": "已刪除“{entityName}”的 SDK。",
+    "error": "刪除SDK失敗。請再試一次。"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "go_back": "返回",
+  "heading": "非活動工作區",
+  "description": "收拾好了嗎？歸檔 6 個月以上未使用的工作空間。隨時恢復。",
+  "filters": {
+    "search_workspaces_placeholder": "搜尋工作區...",
+    "filter_by_visibility_dropdown": {
+      "placeholder": "訪問型別",
+      "label": "按可見性過濾",
+      "options": {
+        "all": {
+          "value": "所有工作區"
+        },
+        "personal": {
+          "value": "個人",
+          "description": "只有建立者",
+          "workspace_type": "內部",
+          "workspace_access": "只有你和被邀請的人"
+        },
+        "team": {
+          "value": "團隊",
+          "description_team_user": "{teamName} 團隊 中的每個人",
+          "description_non_team_user": "來自 團隊 的每個人",
+          "workspace_type": "內部",
+          "workspace_access": "您 團隊 中的每個人"
+        },
+        "private": {
+          "value": "私有",
+          "description": "僅受邀 團隊 成員",
+          "workspace_type": "內部",
+          "workspace_access": "只有你和被邀請的人"
+        },
+        "partner": {
+          "value": "合作伙伴",
+          "description": "僅受邀會員及合作伙伴",
+          "workspace_type": "合作伙伴",
+          "workspace_access": "僅限受邀合作伙伴"
+        },
+        "public": {
+          "value": "公開",
+          "description": "網際網路上的任何人",
+          "workspace_type": "公開",
+          "workspace_access": "網際網路上的任何人"
+        }
+      }
+    }
+  },
+  "archive_all_workspaces_button_text": "全部歸檔",
+  "table": {
+    "column_headers": {
+      "workspace_name": "名稱",
+      "created_by": "建立者",
+      "type": "型別",
+      "access": "使用權",
+      "last_activity": "上次活動",
+      "actions": "操作"
+    },
+    "bulk_selection": {
+      "text": "已選擇 {count} 工作區",
+      "primary_button_text": "刪除",
+      "primary_button_tooltip": "刪除工作區",
+      "secondary_button_text": "歸檔",
+      "secondary_button_tooltip": "歸檔工作區"
+    },
+    "actions_column": {
+      "primary_button_text": "歸檔",
+      "primary_button_tooltip": "歸檔工作區",
+      "primary_button_aria_label": "歸檔 {workspaceName}",
+      "secondary_button_tooltip": "刪除工作區",
+      "secondary_button_aria_label": "刪除 {workspaceName}"
+    }
+  },
+  "blank_state": {
+    "heading": "未找到非活動工作區",
+    "description": "歸檔不活動的工作空間以減少混亂。隨時恢復它們。"
+  },
+  "toasts": {
+    "bulk_archive": {
+      "failure_description": "只是一根電線有問題。請再試一次。",
+      "failure_title": "無法歸檔 {count} 工作區",
+      "success_description": "{count} 工作區已歸檔"
+    },
+    "bulk_delete": {
+      "failure_description": "只是一根電線有問題。請再試一次。",
+      "failure_title": "無法刪除 {count} 工作區",
+      "success_description": "{count} 工作區已刪除"
+    },
+    "archive": {
+      "failure_description": "只是一根電線有問題。請再試一次。",
+      "failure_title": "無法歸檔 工作區",
+      "success_description": "工作區 已歸檔"
+    },
+    "delete": {
+      "failure_description": "只是一根電線有問題。請再試一次。",
+      "failure_title": "無法刪除 工作區",
+      "success_description": "工作區 已刪除"
+    }
+  }
+}

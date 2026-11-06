@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "title": "回收站"
+  },
+  "header": {
+    "heading": "回收站",
+    "back_to_workspace": "返回",
+    "description": "您有權限訪問的工作區中已刪除的{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}將顯示在此處。如果您擁有編輯權限，可以恢復或永久刪除這些專案。"
+  },
+  "table": {
+    "header": {
+      "name": "名稱",
+      "deleted": "已刪除",
+      "workspace": "工作區",
+      "deleted_by": "刪除者",
+      "deleted_on": "刪除時間",
+      "removal": "刪除日期"
+    },
+    "body": {
+      "tooltips": {
+        "is_offline": "恢復網路連線後即可執行此操作",
+        "is_online_restore": "恢復",
+        "is_online_delete": "永久刪除"
+      }
+    },
+    "empty": {
+      "heading": "回收站是空的",
+      "description": "您刪除的集合將顯示在此處。"
+    },
+    "blankState": {
+      "title": "未找到{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}",
+      "description": "請嘗試其他搜尋詞、調整篩選條件或檢查拼寫錯誤。"
+    }
+  },
+  "actions": {
+    "delete": {
+      "toasts": {
+        "success_body": "Collection {name} 已成功刪除。",
+        "success_title": "集合已永久刪除",
+        "error_body": "無法刪除集合。",
+        "permission_error": "您沒有權限刪除此{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}"
+      }
+    },
+    "restore": {
+      "toasts": {
+        "error_body": "網路似乎出現了問題，請重試。",
+        "error_title": "無法恢復集合",
+        "success_body": "{collection} 現已在 {workspace} 中。",
+        "success_title": "集合恢復成功",
+        "success_link": "檢視集合",
+        "permission_error": "您沒有權限恢復此{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}"
+      }
+    },
+    "commons": {
+      "is_offline_body": "恢復網路連線後即可管理回收站。",
+      "is_offline_title": "您已離線"
+    }
+  },
+  "offline": {
+    "title": "您已離線",
+    "body": "無法連線到伺服器，請檢查您的網路設定。",
+    "action": "重試",
+    "offline_banner_text": "您似乎已離線。恢復網路連線後才能執行操作。"
+  },
+  "error": {
+    "title_primary": "無法載入回收站",
+    "title_secondary": "返回工作區",
+    "message": "網路似乎出現了問題，請重新整理或稍後重試。",
+    "action": "重新整理"
+  },
+  "delete_permanent": {
+    "title": "永久刪除集合",
+    "action": "刪除",
+    "message": "此操作無法撤銷。"
+  },
+  "collection_recovery_modal": {
+    "title": "無法在此處恢復",
+    "already_exists": {
+      "description": "{entityTypeText} 已存在於此工作區中。"
+    },
+    "permission": {
+      "description": "您沒有權限將 {entityTypeText} 移動到此工作區。"
+    },
+    "workspace_error": {
+      "title": "無法載入更多工作區",
+      "sub_title": "網路似乎出現了問題，請重新載入。",
+      "action": "重新載入"
+    },
+    "header": {
+      "title": "恢復 {collectionName}"
+    },
+    "body": {
+      "info_text": "為該集合選擇一個工作區",
+      "initial_error": {
+        "title": "無法載入工作區",
+        "description": "網路似乎出現了問題，請重新載入。",
+        "action": "重新載入"
+      },
+      "workspace_list": {
+        "error_title": "無法載入工作區",
+        "error_subtitle": "網路似乎出現了問題，請重新載入。",
+        "action": "重新載入",
+        "search_placeholder": "搜尋工作區",
+        "no_workspace_title": "未找到工作區",
+        "no_workspace_description": "請檢查拼寫或嘗試其他搜尋詞。"
+      }
+    },
+    "footer": {
+      "cancel_action": "取消",
+      "restore_action": "恢復集合",
+      "restore_action_tooltip": "恢復網路連線後即可執行此操作"
+    }
+  },
+  "banner": {
+    "auto_removal": "系統將自動從回收站中刪除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}。",
+    "auto_removal_fix_days": "系統將根據您的套餐，在固定天數後自動從回收站中刪除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}。",
+    "auto_removal_retention_days": "系統將在 {count, plural, one {# 天} other {# 天}}後自動從回收站中刪除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}。"
+  },
+  "filters": {
+    "search": {
+      "clear_button_tooltip": "清除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}名稱",
+      "placeholder": "搜尋{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {環境} environment {環境} Flow {流程} flow {流程} other {{model}}}"
+    },
+    "workspaces": {
+      "placeholder": "Workspace",
+      "empty_state_message": "未找到工作區"
+    },
+    "deleted_by": {
+      "empty_state_message": "未找到使用者",
+      "placeholder": "刪除者"
+    }
+  },
+  "detailed_view": {
+    "label": {
+      "created_by": "建立者",
+      "created_on": "建立時間",
+      "workspace": "工作區",
+      "forks": "復刻",
+      "monitors": "Monitor",
+      "mocks": "Mock",
+      "watchers": "關注者",
+      "forklabel": "復刻標籤"
+    },
+    "button": {
+      "delete": "刪除",
+      "cancel": "取消",
+      "restore": "恢復"
+    }
+  }
+}

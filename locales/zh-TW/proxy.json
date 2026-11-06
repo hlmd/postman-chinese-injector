@@ -1,0 +1,394 @@
+{
+  "landing_tab": {
+    "heading": "新增代理會話",
+    "body": {
+      "heading": "捕獲 HTTPS 流量",
+      "description": "使用 Postman 的代理檢查來自 Android、iOS、Linux、macOS 和 Windows 裝置的 HTTPS 通訊，並更快地構建客戶端應用程式！",
+      "system_traffic": {
+        "heading": "系統流量",
+        "description": "捕獲並檢查裝置上的應用程式流量。",
+        "info": "當您第一次啟動代理會話時，我們將請求安裝證書。",
+        "proxy_button": "啟動代理會話",
+        "proxy_button_tooltip": "會話已處於活動狀態。請關閉活動的會話以啟動新的會話。"
+      },
+      "browser_traffic": {
+        "heading": "瀏覽器流量",
+        "description": "要捕獲和檢查瀏覽器上的流量，請下載 Postman 的攔截器擴充功能。",
+        "extensions": {
+          "chrome": {
+            "alt": "下載適用於 Google Chrome 的 Postman 攔截器",
+            "label": "Chrome 商店"
+          },
+          "safari": {
+            "alt": "下載適用於 Safari 的 Postman 攔截器",
+            "label": "應用商店"
+          },
+          "mozilla": {
+            "alt": "下載 Mozilla Firefox 的 Postman 攔截器",
+            "label": "Mozilla 附加元件"
+          },
+          "edge": {
+            "alt": "下載 Microsoft Edge 的 Postman 攔截器",
+            "label": "Edge 附加元件"
+          }
+        }
+      }
+    }
+  },
+  "new_session_tab": {
+    "name": "Postman 除錯會話",
+    "no_cookies_captures": "尚未捕獲 Cookie。",
+    "start_time": "會話開始時間：",
+    "session_size": "會話大小：",
+    "view_past_sessions": "檢視過去的會話",
+    "save_requests": "儲存請求",
+    "duration": "持續時間：",
+    "source": "來源：",
+    "configuration": "配置",
+    "tabs": {
+      "overview": {
+        "label": "概述",
+        "classify_by": "對請求進行分類",
+        "empty_state": "沒有可用於此會話的分析資料",
+        "search_placeholder": "搜尋捕獲的請求",
+        "table": {
+          "methods": "方法",
+          "no_of_requests": "請求數量",
+          "global_filter_placeholder": "搜尋捕獲的請求",
+          "pre_selection": {
+            "initial": "該頁面上的所有請求均被選中。",
+            "all_selected_session": "此會話中的所有 {totalRequestsCount} 個請求均已選中。",
+            "all_selected_page": "此會話中的所有 {changeInSize} 個請求均已選中。"
+          },
+          "post_selection": {
+            "initial": "選擇會話中的所有 {totalRequestsCount} 個請求",
+            "clear": "清除選擇",
+            "select_all": "選擇會話中的所有 {totalRequestsCount} 個請求"
+          },
+          "columns": {
+            "methods": "方法",
+            "url": "URL",
+            "domain": "域名",
+            "type": "型別",
+            "status": "狀態",
+            "responseSize": "回應大小",
+            "responseTime": "回應時間"
+          }
+        },
+        "actions": {
+          "add_collection": "新增到集合",
+          "add_collection_tooltip": "沒有選擇新增請求。",
+          "delete": "刪除",
+          "delete_tooltip": "沒有選擇要刪除的請求。"
+        },
+        "chart": {
+          "methods": "方法",
+          "no_of_requests": "請求數量"
+        },
+        "dropdown_options": {
+          "method": "方法",
+          "domain": "域名",
+          "content_type": "內容型別",
+          "status_code": "狀態碼"
+        }
+      },
+      "requests": {
+        "label": "請求",
+        "empty_state": "會話中未捕獲任何請求",
+        "no_request_captured": "尚未捕獲任何請求。",
+        "tabs": {
+          "requests": "請求",
+          "cookies": "Cookie"
+        },
+        "body": {
+          "search_placeholder": "搜尋捕獲的請求",
+          "delete": "刪除",
+          "delete_tooltip": "沒有選擇要刪除的請求。",
+          "columns": {
+            "methods": "方法",
+            "url": "URL",
+            "domain": "域名",
+            "type": "型別",
+            "status": "狀態",
+            "response_size": "回應大小",
+            "response_time": "回應時間",
+            "time_stamp": "時間戳"
+          }
+        }
+      },
+      "cookies": {
+        "label": "Cookie",
+        "empty_state": "會話中沒有捕獲 Cookie",
+        "view_cookies_for_captured_requests": "檢視捕獲的請求的 Cookie",
+        "view_cookies_for_captured_requests_description": "啟用捕獲 Cookie 以檢視捕獲的請求的 Cookie。捕獲後，您可以通過將 Cookie 新增到 Postman Cookie Jar 來在 Postman 工作流程中使用 Cookie。",
+        "capture_success": "將為所有新捕獲的請求儲存 Cookie。",
+        "secondary_action": "瞭解更多",
+        "body": {
+          "search_placeholder": "搜尋捕獲的 Cookie",
+          "add": "新增到 Cookie Jar",
+          "delete": "刪除",
+          "empty_state": "未找到結果",
+          "columns": {
+            "name": "名稱",
+            "value": "值",
+            "path": "路徑",
+            "expires": "過期",
+            "http_only": "僅 HTTP",
+            "secure": "安全",
+            "timestamp": "時間戳"
+          },
+          "page_items_label": "每頁專案數",
+          "request": "請求： <1>{requestMethod}</1> <2><0>{url}</0></2>",
+          "delete_modal": {
+            "heading": "刪除 Cookie？",
+            "content": "這將從會話中刪除 Cookie。一旦刪除，您將無法再將它們新增到 Cookie jar 中。",
+            "delete_button": "刪除 Cookie",
+            "cancel_button": "取消"
+          },
+          "toasters": {
+            "add_title": "Cookie 新增到 Cookie jar",
+            "add_title_plural": "Cookie 新增到 Cookie jar 中",
+            "add_description": "{count, plural, one {# 個 Cookie 已} other {# 個 Cookie 已}}新增到 Postman Cookie Jar 中。",
+            "remove_description": "{count, plural, one {# 個 Cookie} other {# 個 Cookie}}已從會話中刪除。"
+          },
+          "view_more": "檢視更多",
+          "no_of_cookies": "{count, plural, one {# 個 Cookie} other {# 個 Cookie}}"
+        }
+      }
+    }
+  },
+  "capture_proxy_response_settings": {
+    "label": "儲存請求的回應",
+    "tooltip": "Postman 中遵循的標準化回應大小目前限制為 5MB。目前不支援儲存媒體型別回應。"
+  },
+  "capture_cookies": "捕獲 Cookie",
+  "session_name_editor": {
+    "rename_success": "會話 重新命名成功",
+    "title": "代理會話"
+  },
+  "footer": {
+    "options": {
+      "api_key": "API 金鑰",
+      "access_token": "訪問令牌",
+      "webhook_url": "Webhook URL",
+      "toasters": {
+        "title": "會話已暫停",
+        "is_interceptor_session": "已通過攔截器攔截的請求將繼續顯示在會話中。",
+        "is_not_interceptor_session": "已通過代理隧道傳輸的請求將繼續顯示在會話中。"
+      },
+      "actions": {
+        "resume": "恢復",
+        "resume_tooltip": "恢復會話",
+        "pause": "暫停",
+        "pause_tooltip": "暫停會話",
+        "stop": "停止",
+        "stop_tooltip": "停止捕捉"
+      }
+    }
+  },
+  "table": {
+    "columns": {
+      "status": "狀態",
+      "methods": "方法",
+      "url": "URL",
+      "domain": "域名",
+      "type": "型別",
+      "response_size": "回應大小",
+      "response_time": "回應時間",
+      "timestamp": "時間戳"
+    }
+  },
+  "session_table": {
+    "search_placeholder": "搜尋捕獲的請求",
+    "delete": "刪除",
+    "delete_tooltip": "沒有選擇要刪除的請求。",
+    "global_filter_placeholder": "搜尋捕獲的請求",
+    "toaster": "無法刪除 {count, plural, one {# 個請求} other {# 個請求}}"
+  },
+  "add_session_request_to_table": {
+    "create_row_placeholder": "命名您的 集合",
+    "no_of_requests": "{count, plural, one {# 個請求} other {# 個請求}}",
+    "modal": {
+      "header": "儲存 {count, plural, one {# 個請求} other {# 個請求}}",
+      "body": {
+        "title": "選擇要儲存到的 集合",
+        "search_placeholder": "搜尋 集合",
+        "save_text": "將 {count, plural, one {# 個請求} other {# 個請求}} 儲存到 {targetName}",
+        "organize_text": "按以下方式組織請求",
+        "domainName": "域名",
+        "endPoints": "端點"
+      },
+      "footer": {
+        "new_collection": "新增集合",
+        "cancel": "取消",
+        "back": "後退",
+        "save": "儲存"
+      }
+    },
+    "toasters": {
+      "error_title": "錯誤",
+      "error_description": "無法將請求新增到 集合。請再試一次。",
+      "view_now": "立即檢視",
+      "success_title": "{count, plural, one {# 個請求} other {# 個請求}}已新增到集合",
+      "success_description": "{noOfRequests} {count, plural, one {# 個請求} other {# 個請求}} 已新增到 {collectionName} 集合",
+      "info_description": "{noOfRequests} {count, plural, one {# 個請求} other {# 個請求}} 正在新增到集合 {collectionName} 中。新增所有請求後，您將收到通知"
+    }
+  },
+  "table_row_expanded": {
+    "heading": "請求頭",
+    "request_body": "請求體",
+    "response_headers": "回應頭",
+    "response_body": "回應體",
+    "url": "URL：{url}",
+    "method": "方法：{method}",
+    "status_code": "狀態程式碼：{statusCode}",
+    "tabs": {
+      "response": {
+        "label": "回應",
+        "no_body": "此回應沒有回應體。",
+        "heading": "回應頭",
+        "not_available": "回應頭不可用",
+        "size": "{size} B"
+      },
+      "body": "請求體",
+      "headers": {
+        "label": "請求頭",
+        "heading": "常規",
+        "view": {
+          "url": "URL",
+          "method": "方法",
+          "status": "狀態",
+          "request_headers_size": "請求頭大小",
+          "request_body_size": "請求體大小",
+          "response_headers_size": "回應頭大小",
+          "response_body_size": "回應體大小",
+          "timestamp": "時間戳"
+        }
+      },
+      "request": {
+        "label": "請求",
+        "heading": "請求參數",
+        "not_available": "請求頭不可用",
+        "no_body": "此請求沒有請求體。"
+      }
+    }
+  },
+  "history": {
+    "delete_tooltip": "刪除歷史記錄",
+    "rename_session": "重新命名會話",
+    "delete_session": "刪除會話",
+    "delete_session_disabled": "會話正在進行中",
+    "success_toaster": "會話重新命名成功"
+  },
+  "domain_endpoint_settings": {
+    "heading": "按以下方式組織請求",
+    "domain": "域名",
+    "endpoint": "端點"
+  },
+  "memory_units": {
+    "bytes": "{size} B",
+    "kilobytes": "{size} KB",
+    "megabytes": "{size} MB",
+    "gigabytes": "{size} GB"
+  },
+  "filters": {
+    "url": {
+      "include_label": "URL 必須包含",
+      "exclude_label": "網址不能包含",
+      "label_info": "支援正規表示式",
+      "valid_regex": "請輸入有效的正規表示式。",
+      "placeholder": "按“Enter”鍵應用過濾器"
+    },
+    "status_codes": {
+      "100": "100",
+      "101": "101",
+      "102": "102",
+      "103": "103",
+      "200": "200",
+      "201": "201",
+      "202": "202",
+      "203": "203",
+      "204": "204",
+      "205": "205",
+      "206": "206",
+      "208": "208",
+      "226": "226",
+      "300": "300",
+      "301": "301",
+      "302": "302",
+      "303": "303",
+      "304": "304",
+      "305": "305",
+      "306": "306",
+      "307": "307",
+      "308": "308",
+      "400": "400",
+      "401": "401",
+      "402": "402",
+      "403": "403",
+      "404": "404",
+      "405": "405",
+      "406": "406",
+      "407": "407",
+      "408": "408",
+      "409": "409",
+      "410": "410",
+      "411": "411",
+      "412": "412",
+      "413": "413",
+      "414": "414",
+      "415": "415",
+      "416": "416",
+      "417": "417",
+      "418": "418",
+      "421": "421",
+      "422": "422",
+      "423": "423",
+      "424": "424",
+      "425": "425",
+      "426": "426",
+      "428": "428",
+      "429": "429",
+      "431": "431",
+      "451": "451",
+      "500": "500",
+      "501": "501",
+      "502": "502",
+      "503": "503",
+      "504": "504",
+      "505": "505",
+      "506": "506",
+      "507": "507",
+      "508": "508",
+      "510": "510",
+      "511": "511"
+    },
+    "methods": {
+      "get": "GET",
+      "post": "POST",
+      "put": "PUT",
+      "patch": "PATCH",
+      "delete": "DELETE",
+      "copy": "COPY",
+      "head": "HEAD",
+      "options": "OPTIONS",
+      "link": "LINK",
+      "unlink": "UNLINK",
+      "purge": "PURGE",
+      "lock": "LOCK",
+      "unlock": "UNLOCK",
+      "propfind": "PROPFIND",
+      "view": "VIEW"
+    },
+    "resource_types": {
+      "script": "JS",
+      "stylesheet": "CSS",
+      "image": "影像",
+      "html": "HTML",
+      "json": "JSON",
+      "xml": "XML",
+      "text": "文字",
+      "other": "其他"
+    }
+  }
+}

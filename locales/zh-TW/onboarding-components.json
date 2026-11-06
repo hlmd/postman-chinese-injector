@@ -1,0 +1,29 @@
+{
+  "copy_link": {
+    "copy_invite_text": "複製 邀請 連結",
+    "copied_text": "已複製",
+    "unable_to_generate_text": "生成連結時出現問題。",
+    "no_permission_to_copy_text": "您沒有 管理員 權限 來執行此操作"
+  },
+  "curl_import_modal": {
+    "heading": "將 cURL 匯入到 集合 中",
+    "request_input": {
+      "placeholder": "例如獲取所有使用者",
+      "label_text": "請求名稱"
+    },
+    "collection_input": {
+      "list_placeholder": "選擇或建立一個新的 集合",
+      "text_input_placeholder": "新增集合",
+      "label_text": "集合名稱",
+      "label_info_text": "集合可讓您對相關請求進行分組，從而更輕鬆地訪問和執行它們。"
+    },
+    "secondary_button_text": "匯入而不儲存",
+    "primary_button_text": "匯入到 集合"
+  },
+  "leave_onboarding_confirm_modal": {
+    "heading": "要離開新手引導設定嗎？",
+    "body_text": "離開此頁面將丟失整合設定中的進度。確定要繼續嗎？",
+    "cancel_button_text": "留在此頁面",
+    "confirm_button_text": "離開頁面"
+  }
+}

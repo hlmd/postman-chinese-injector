@@ -1,0 +1,18 @@
+{
+  "workbench_tab": {
+    "title": "更改"
+  },
+  "error": "無法載入此項的更改。",
+  "retry": "重試",
+  "unsupported": "無法在此顯示此項的更改。",
+  "in_sync": "本地副本與雲端副本一致。",
+  "order_only": "僅專案順序發生了更改。",
+  "revert_order": "還原順序",
+  "revert_order_failed": "無法恢復雲端的順序",
+  "save_failed": "無法儲存您的更改",
+  "will_delete": "此檔案將被刪除。",
+  "will_restore": "此檔案將從雲端恢復。",
+  "breadcrumb_label": "已更改的實體",
+  "file_not_shown_binary": "此檔案是二進位檔案，無法顯示。",
+  "file_not_shown_too_large": "此檔案過大，無法顯示。"
+}

@@ -1,0 +1,38 @@
+{
+  "creating_request_heading": "請求 訪問此合作伙伴工作區",
+  "team_select": {
+    "label": "選擇 團隊",
+    "placeholder": "選擇 團隊 來訪問此工作區",
+    "members_count": "{count, plural, one {# 位成員} other {# 位成員}}"
+  },
+  "options": {
+    "partner": {
+      "title": "作為合作伙伴加入",
+      "text": "我是與該組織合作的外部合作伙伴。"
+    },
+    "team_mate": {
+      "title": "作為隊友加入",
+      "text": "我是擁有此工作區的組織的成員"
+    }
+  },
+  "partnership_not_allowed": {
+    "banner_title": "不允許 合作伙伴 訪問",
+    "banner_description": "您的 團隊 管理員 已阻止您的 團隊 的合作伙伴關係。"
+  },
+  "add_note_text": "新增備註",
+  "text_area_info_text": "添加註釋到工作區管理員",
+  "approved_partner_heading": "快到了！",
+  "approved_partner_subheading_1": "您的 請求 已獲得批准。要獲得訪問權限，請接受傳送到您的電子郵件的合作關係 邀請。",
+  "approved_partner_subheading_2": "如果找不到 邀請，您可以提交新的訪問權限 請求。",
+  "approved_partner_raise_new_request_cta": "請求 再次訪問",
+  "toast_content": {
+    "switch_account_error": {
+      "title": "請求 已傳送",
+      "description": "從帳戶選單切換團隊以繼續。"
+    },
+    "switching_account": {
+      "title": "請求 已傳送",
+      "description": "切換到您選擇的 團隊..."
+    }
+  }
+}

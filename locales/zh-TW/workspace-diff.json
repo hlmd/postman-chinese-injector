@@ -1,0 +1,46 @@
+{
+  "workbench_tab": {
+    "title": "合併工作區"
+  },
+  "sidebar": {
+    "changes_section_label": "更改",
+    "no_entity_changes": "未檢測到實體更改。",
+    "status_added": "已新增",
+    "status_deleted": "已刪除",
+    "status_modified": "已修改",
+    "status_unreadable": "無法讀取",
+    "empty_title": "沒有需要檢視的更改",
+    "empty_description": "從雲端開啟草稿工作區，即可在此檢視其更改。",
+    "loading_description": "正在載入更改",
+    "error_title": "更改載入失敗"
+  },
+  "diff_body": {
+    "header_title": "合併更改",
+    "empty_title": "沒有可合併的更改",
+    "empty_description": "草稿與父工作區已同步。",
+    "group_heading_collections": "集合",
+    "group_heading_environments": "環境",
+    "group_heading_specs": "規範"
+  },
+  "file_diff": {
+    "status_added": "已新增",
+    "status_modified": "已修改",
+    "status_deleted": "已刪除",
+    "status_unchanged": "未更改",
+    "status_unreadable": "無法讀取",
+    "no_changes": "無更改",
+    "unreadable_message": "此檔案無法讀取，因此無法顯示其更改。",
+    "lazy_load_hint": "檔案滾動到可見區域時將載入差異。"
+  },
+  "line_diff": {
+    "compute_error_title": "計算差異時出錯",
+    "no_changes": "無更改"
+  },
+  "display": {
+    "materialize_error_title": "草稿工作區載入失敗",
+    "materialize_error_title_with_id": "草稿 Workspace {workspaceId} 載入失敗",
+    "unavailable_title": "工作區合併不可用",
+    "unavailable_load_description": "我們無法載入此草稿工作區的更改，請重新開啟草稿工作區後重試。",
+    "diff_error_title": "合併差異計算失敗"
+  }
+}

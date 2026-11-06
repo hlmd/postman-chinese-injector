@@ -1,0 +1,88 @@
+{
+  "export": {
+    "heading": "匯出集合",
+    "button": {
+      "export": "匯出集合",
+      "fix": "移至 Vault",
+      "export_disabled_tooltip": "正在準備匯出集合",
+      "export_anyway": "仍然匯出"
+    },
+    "heading_named": "匯出“{name}”"
+  },
+  "promo": {
+    "teammates": {
+      "heading": "直接共享，無需傳送檔案",
+      "benefit_1": "通過邀請或連結安全共享，無需傳遞檔案",
+      "benefit_2": "使用者始終看到最新版本",
+      "benefit_3": "可在集合上評論和 @提及",
+      "button": {
+        "share": "共享集合"
+      }
+    },
+    "git": {
+      "heading": "無需每次更改都重新匯出",
+      "description": "使用 Native Git，集合直接存放在你的儲存庫中：",
+      "benefit_1": "在本地儲存庫的功能分支上處理集合",
+      "benefit_2": "集合的更改與其測試的程式碼在同一個 PR 中發布",
+      "benefit_3": "在 Postman 中檢視流水線執行結果",
+      "button": {
+        "connect": "試用 Native Git"
+      }
+    },
+    "other": {
+      "heading": "無論在哪裡使用，都讓此集合保持最新",
+      "benefit_1": "所有人自動基於最新版本工作",
+      "benefit_2": "每項更改都可追溯到人",
+      "benefit_3": "通過角色和權限控制訪問",
+      "button": {
+        "share": "共享集合",
+        "connect": "試用 Native Git"
+      }
+    }
+  },
+  "progress": {
+    "aria_label": "正在準備你的集合",
+    "steps": {
+      "permissions": {
+        "active": "正在檢查匯出權限",
+        "done": "已檢查匯出權限"
+      },
+      "fetch": {
+        "active": "正在從工作區獲取最新版本",
+        "done": "已從工作區獲取最新版本"
+      },
+      "format": {
+        "active": "正在格式化為集合格式 v2.1",
+        "done": "已格式化為集合格式 v2.1"
+      },
+      "scan": {
+        "active": "正在掃描憑據",
+        "done": "已掃描憑據"
+      }
+    },
+    "contents": "{requests, plural, one {# 個請求} other {# 個請求}} · {variables, plural, one {# 個變數} other {# 個變數}} · {folders, plural, one {# 個資料夾} other {# 個資料夾}}",
+    "clean": "未發現已知格式的金鑰",
+    "detected": "{count, plural, one {在集合中檢測到 # 個金鑰} other {在集合中檢測到 # 個金鑰}}",
+    "detected_description": "不修復直接匯出會使其以明文形式保留在 JSON 中。",
+    "secured_local": "金鑰已安全存入本地 Vault",
+    "secured_shared": "金鑰已安全存入共享 Vault",
+    "secured_description": "我們已將其替換為變數，確保檔案中不含敏感資訊。",
+    "patterns_note": "我們會檢查常見提供商的令牌。",
+    "learn_more": "瞭解更多",
+    "ready": "集合已準備好匯出"
+  },
+  "toast": {
+    "export_success": "集合匯出成功。",
+    "export_failed": "無法匯出此集合，請檢查 DevTools。",
+    "secure_failed": "無法保護檢測到的金鑰。"
+  },
+  "survey": {
+    "heading": "告訴我們此次匯出的用途",
+    "subheading": "這有助於我們為您打造更好的工具。",
+    "placeholder": "告訴我們您的使用場景",
+    "chips_aria_label": "建議的原因",
+    "error": "請新增原因後繼續",
+    "submit": "開始匯出",
+    "cancel": "取消"
+  }
+}

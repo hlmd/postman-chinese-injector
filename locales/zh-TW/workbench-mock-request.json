@@ -1,0 +1,99 @@
+{
+  "header_tabs": {
+    "completed_steps": {
+      "select_collection": "<0></0> <1> 選擇要模擬的集合</1>",
+      "set_mock_server": "<0></0> <1> 設定模擬伺服器</1>",
+      "next_steps": "<0></0> <1> 後續步驟</1>"
+    },
+    "active_steps": {
+      "select_collection": "1. <0>選擇要模擬的集合</0>",
+      "set_mock_server": "2. <0>設定模擬伺服器</0>",
+      "next_steps": "3. <0>後續步驟</0>"
+    }
+  },
+  "de_config": {
+    "columns": {
+      "method": "方法",
+      "request_path": "請求路徑",
+      "path": "路徑",
+      "request_body": "請求體",
+      "description": "描述",
+      "response_code": "回應程式碼",
+      "value": "值",
+      "response_body": "回應體"
+    },
+    "delete_row_tooltip": "刪除該行"
+  },
+  "create_new_mock_modal": {
+    "step_1": {
+      "collection_empty_message": "此工作區中沒有任何集合。",
+      "tabs": {
+        "create_new_collection": "建立新集合",
+        "select_existing_collection": "選擇現有集合"
+      },
+      "mock_modal": {
+        "header": "模擬伺服器可讓您無需搭建後端即可模擬 API 端點。",
+        "no_collection_found": "未找到集合",
+        "try_viewing_other_collection": "請嘗試檢視此工作區中的其他集合。",
+        "caption": "<0>輸入 API 端點的請求路徑，然後輸入預期的回應程式碼和回應體以建立</0> <1><0>範例</0></1><2>。若要為請求新增請求體或描述，請點選（•••）圖示。</2>",
+        "footer": "<0>瞭解模擬伺服器和範例如何 </0> <1><0>加速您的 API 開發</0></1> <2>。</2>"
+      }
+    }
+  },
+  "setup_mock_server": {
+    "heading": "為模擬伺服器命名",
+    "empty_server_error": "請輸入模擬伺服器名稱。",
+    "tag": "標籤",
+    "environment_label": "選擇環境（可選）",
+    "help_content": "為此模擬伺服器選擇一個集合標籤。如果該集合未關聯 API，則模擬伺服器只能在目前標籤上建立。",
+    "no_environment_placeholder": "無環境",
+    "no_environment_found": "未找到環境",
+    "environment_info": "環境是變數的集合。模擬伺服器將在請求和回應中使用所選環境中的變數值。",
+    "make_private": "將此模擬伺服器設為私有",
+    "note": "注意：要呼叫私有模擬伺服器，您需要在請求中新增 <0>x-api-key</0> 請求頭。檢視如何生成 <1><0>Postman API key</0></1>",
+    "save_url_as_environment": "將模擬伺服器 URL 儲存為環境變數",
+    "environment_note": "注意：這將建立一個包含該 URL 的新環境。",
+    "toast_success_msg": "已複製模擬伺服器 URL",
+    "environment_dropdown_options": {
+      "no_environment": "無環境",
+      "default_label": "Postman API"
+    }
+  },
+  "next_actions": {
+    "create_environment_heading": "已建立模擬伺服器、集合和環境",
+    "create_environment_sub_heading": "為方便管理，它們均命名為 <0>{selectedOptionsName}</0>。",
+    "default_heading": "已建立模擬伺服器和集合",
+    "default_sub_heading": "為方便管理，它們均命名為 <0>{selectedOptionsName}</0>。",
+    "mock_server_created_heading": "已建立模擬伺服器",
+    "try_it_out": "Try it out:",
+    "call_mock_server": "要呼叫該模擬伺服器：",
+    "learn_about_examples": "<0><0>為模擬伺服器將返回的每個請求新增範例回應。</0><1><0>瞭解什麼是範例以及如何使用它們</0></1></0>",
+    "private_option_content": "<0>在請求中新增 <1>x-api-key</1> 請求頭。<3><0>生成 Postman API key</0></3></0>",
+    "send_request_to_mock_url": "<0>然後向以下 URL 傳送請求，並在其後加上請求路徑：</0> <1>{mockUrl}</1>",
+    "select_request_path": "<0>或者選擇 <1>{selectedOptionsName}</1> 環境，並輸入 <3>{urlPlaceholderWithBrackets}</3>，後面加上請求路徑。</0>",
+    "copy_mock_url": "複製模擬伺服器 URL",
+    "usage_limit_note": "<0>注意：呼叫模擬伺服器將計入您套餐的每月呼叫限額。請務必檢視您的 </0> <1><0>用量限制</0></1> <2>。</2>"
+  },
+  "footer_actions": {
+    "next_btn": "下一步",
+    "back_btn": "上一步",
+    "close_btn": "關閉",
+    "create_mock_server": "建立模擬伺服器"
+  },
+  "errors": {
+    "is_user_delinquent": {
+      "action": "去支付",
+      "message": "無法訪問 Postman 伺服器"
+    },
+    "subtitle": {
+      "billing_subtitle": "由於帳單未付款，您的團隊無法訪問部分 Postman 服務。請支付目前帳單以繼續使用。",
+      "default_subtitle": "由於帳單未付款，您的團隊無法訪問部分 Postman 服務。請聯絡您團隊的帳單管理員以瞭解付款詳情。",
+      "is_sync_disabled_subtitle": "您的團隊已停用與 Postman 服務的同步。請聯絡支援團隊以恢復使用這些功能。",
+      "collection_status_subtitle": "建立此模擬伺服器時出錯，請稍後重試。",
+      "is_offline_subtitle": "請檢查您的網路連線，然後重試。",
+      "error_fetching_error": "獲取集合資訊時出錯。",
+      "config_status_error": "發生意外錯誤，請重試。"
+    },
+    "try_again": "重試"
+  }
+}

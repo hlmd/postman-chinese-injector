@@ -1,0 +1,90 @@
+{
+  "token_manager": {
+    "loading_state": "正在載入連線的帳戶...",
+    "error_state": {
+      "title": "出了點問題",
+      "desc": "無法獲取已連線的帳戶，請稍後重試。"
+    },
+    "empty_state": {
+      "title": "尚未連線帳戶",
+      "desc": "將您的帳戶連線到 API 後，它們將顯示在此處。"
+    },
+    "settings_modal": {
+      "page_heading": "關聯帳戶",
+      "third_party_accounts_heading": "管理第三方帳戶"
+    },
+    "default_error": "出了點問題。請再試一次。",
+    "delete_auth_instance_error": "無法刪除帳戶，請重試。",
+    "auth_instance_not_valid_error": "沒有連線帳戶支援您正在尋找的服務。"
+  },
+  "token_table": {
+    "service": {
+      "github": "GitHub",
+      "githubapp": "Postman GitHub 應用程式",
+      "bitbucket": "Bitbucket",
+      "gitlab": "GitLab",
+      "azure": "Azure",
+      "apm_new_relic": {
+        "label": "New Relic",
+        "error_msg": "請提供有效的 API 金鑰。"
+      }
+    },
+    "table_header": {
+      "service": "服務",
+      "authorized_as": "授權為"
+    },
+    "row_actions": {
+      "disabled_action_tooltip": "只有 團隊 管理員 可以執行此操作",
+      "delete_authentication_tooltip": "刪除認證",
+      "edit_authentication_tooltip": "編輯身份驗證"
+    },
+    "error_message": {
+      "invalid_token": "請提供有效的 令牌。",
+      "server_unreachable": "我們無法訪問您的伺服器來驗證 令牌。",
+      "updating_auth": "更新身份驗證時出現問題。"
+    },
+    "edit_mode": {
+      "save_button_label": "節省",
+      "cancel_button_label": "取消"
+    },
+    "delete_confirmation": {
+      "heading": "刪除認證？",
+      "desc": "使用此帳戶的所有 API 都需要重新進行身份驗證才能繼續貢獻。",
+      "delete_button_label": "刪除認證",
+      "cancel_button_label": "取消"
+    }
+  },
+  "monitor_handoff": {
+    "locked_helper": "由此監控設定",
+    "nickname": "{monitorName} 告警",
+    "nickname_fallback": "監控告警",
+    "back_to_monitor": "返回監控",
+    "browse_all": "返回瀏覽所有可用整合"
+  },
+  "context_bar": {
+    "integration_context_bar_list": {
+      "title": "整合",
+      "offline_state": "您似乎已離線",
+      "error_state": "無法獲取整合",
+      "content": {
+        "browse_integrations": "瀏覽整合"
+      }
+    },
+    "view_config": {
+      "collection_backup": {
+        "header": "備份您的集合",
+        "footer": "檢視所有選項"
+      }
+    }
+  },
+  "service_details": {
+    "install_github_app_helper_text": "如果未看到您的組織，您可能需要在個人帳戶或組織中<Link><Text>安裝 Postman 應用</Text></Link>。"
+  },
+  "wiz_disconnect_modal": {
+    "heading": "斷開 Wiz 連線？",
+    "body_primary": "斷開連線將永久刪除團隊已儲存的安全態勢資料及相關檢測結果。",
+    "body_secondary": "此操作無法撤銷。重新連線後將重新開始一次安全掃描。",
+    "cancel": "取消",
+    "confirm": "斷開 Wiz 連線"
+  }
+}

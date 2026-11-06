@@ -1,0 +1,183 @@
+{
+  "side_navigation_bar": {
+    "heading": "介紹",
+    "title": "跳轉至"
+  },
+  "config_bar": {
+    "view_collection": "檢視集合",
+    "language_settings": "語言設定",
+    "fork_no_permission_tooltip": "您無權執行此操作。",
+    "publish_documentation_status": {
+      "retract_text": "撤回請求",
+      "drop_down_items": {
+        "copy_publish_link": "複製已發布的連結",
+        "respond_to_publish_request": "回覆發布 請求",
+        "edit_requested_publish_settings": "編輯請求的發布設定",
+        "edit_published_documentation": "編輯已發布的文件",
+        "approve_deny_publish_request": "批准/拒絕發布 請求"
+      },
+      "documentation_config_bar": {
+        "pending_publish": "待發布",
+        "published": "已發布文件",
+        "publish": "發布文件"
+      },
+      "published_url_label": "此 集合 發布於：",
+      "publish_limit_reached_tooltip": "您已達到發布文件的限制。您可以取消發布 團隊 中的現有文件或聯絡支援人員以增加限制。",
+      "publish_feature_disabled_tooltip": "此功能目前在您所在的地區不可用。",
+      "spam_tooltip": "由於您的內容不符合我們的社群標準，我們已暫時阻止您發布文件。請稍後重試或聯絡支援人員。",
+      "withdraw_publish_confirmation": {
+        "heading": "撤回請求？",
+        "description": "您確定要撤回 請求 來發布此 集合 的文件嗎？",
+        "confirm_button_text": "確認",
+        "cancel_button_text": "取消"
+      }
+    }
+  },
+  "run_time_entity": {
+    "request_info": {
+      "headers": "請求頭",
+      "query_params": "查詢參數",
+      "path_variables": "路徑變數",
+      "request_body": {
+        "body_label": "請求體",
+        "query_label": "查詢",
+        "graphql_variables_label": "GraphQL 變數",
+        "error_view": {
+          "title": "無法載入 請求 主體",
+          "message": "只是一根電線有問題。嘗試重新載入。"
+        },
+        "documentation_body_types": {
+          "raw": "原始",
+          "graphql_label": "GraphQL",
+          "graphql_query": "查詢",
+          "graphql_variables": "變數",
+          "url_encoded": "urlencoded",
+          "form_data_label": "表單資料",
+          "binary_body_label": "檔案"
+        }
+      },
+      "examples": {
+        "error": {
+          "title": "無法載入範例",
+          "message": "只是一根電線有問題。嘗試重新載入。"
+        },
+        "title": "範例",
+        "request_label": "請求",
+        "response_label": "回應",
+        "tab_labels": {
+          "body": "請求體",
+          "header": "請求頭 ({length})"
+        },
+        "open_example_button": {
+          "try_example_label": "嘗試範例"
+        },
+        "response_body": {
+          "no_response_body": "無 回應 主體",
+          "request_does_not_return_response_body": "此 請求 不返回任何 回應 主體。"
+        },
+        "response_header": {
+          "no_response_header": "沒有 回應 標頭",
+          "request_does_not_return_response_header": "此 請求 不返回任何 回應 標頭。"
+        }
+      }
+    },
+    "next_entities": {
+      "next_entity_title": "接下來是這個 {type}"
+    },
+    "update_api_error_message": "無法更新說明。請再試一次。",
+    "unsaved_changes": "未儲存的更改",
+    "copy_link_button": {
+      "link_copied": "連結已複製",
+      "copy_link_message": "複製連結到此 {entityName}"
+    },
+    "description_editor": {
+      "description_preview": {
+        "edit_description_tooltip": "編輯描述",
+        "no_description_label": "這個 {entityType} 沒有描述。"
+      },
+      "editor_switch_warning_modal": {
+        "heading": "切換到新的 Postman 編輯器？",
+        "content": "新的 Postman 編輯器 可能尚不支援您描述中的某些 HTML 元素。",
+        "checkbox_label": "不再顯示此警告",
+        "action_buttons": {
+          "cancel": "取消",
+          "switch_to_postman_editor": "切換到 Postman 編輯者"
+        }
+      },
+      "mode": {
+        "edit": "編輯",
+        "preview": "預覽"
+      },
+      "popover": {
+        "about_editor": "關於經典 Markdown 編輯器",
+        "description": "這是經典的 Markdown 編輯器，支援 Git 風格的 Markdown 格式。",
+        "suggest_improvement_label": "提出改進建議"
+      },
+      "editor_menu_option": {
+        "markdown": "Markdown 編輯器",
+        "postman": "Postman 編輯器"
+      },
+      "action_buttons": {
+        "save": "儲存",
+        "cancel": "取消"
+      }
+    },
+    "editor_options": {
+      "postman_editor": "Postman 編輯器",
+      "markdown_editor": "Markdown 編輯器"
+    },
+    "entity_auth": {
+      "error": {
+        "title": "無法載入 授權",
+        "message": "只是一根電線有問題。嘗試重新載入。"
+      },
+      "authorization_label": "身份驗證",
+      "content": "這個 {entityType} 使用 {authEntityType} <5>{authEntityName}</5> 的 授權 助手"
+    }
+  },
+  "network_error": {
+    "update_version_message": "更新 版本 時出現問題"
+  },
+  "retract_request": {
+    "success": {
+      "toast": {
+        "title": "請求 發布撤回成功。",
+        "description": "此 請求 已從社群管理員佇列中刪除。"
+      }
+    },
+    "failure": {
+      "toast": {
+        "description": "撤回發布 請求 失敗。請再試一次。"
+      }
+    }
+  },
+  "document_error": {
+    "is_git_linked_mode": {
+      "title": "集合 未找到",
+      "message": "我們找不到您要找的 集合"
+    },
+    "invalid_version": {
+      "title": "無法載入",
+      "message": "提供的 版本 無效"
+    }
+  },
+  "documentation_workbench_title": "文件",
+  "request_overview": {
+    "documentation_title": "文件",
+    "view_collection_documentation": "檢視完整文件",
+    "request_snippet": "程式碼片段"
+  },
+  "version_dropdown_label": "版本",
+  "language_dropdown": {
+    "label": "語言",
+    "search_placeholder_label": "按語言名稱搜尋",
+    "no_search_result_placeholder_text": "沒有匹配的語言"
+  },
+  "no_matching_languages": "沒有匹配的語言。",
+  "language_selection_dropdown": "語言選擇下拉選單",
+  "new_workspace": "新工作區（待修改）",
+  "open_request_button": {
+    "try_request_button_label": "嘗試請求",
+    "open_request_button_label": "開啟請求"
+  }
+}

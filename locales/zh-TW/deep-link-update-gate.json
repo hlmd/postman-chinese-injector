@@ -1,0 +1,40 @@
+{
+  "downloading": {
+    "heading": "需要更新",
+    "description": "此連結要開啟的內容在你目前的 Postman 版本中尚不支援。",
+    "progress": "正在下載最新版本…",
+    "checking": "正在檢查更新…"
+  },
+  "ready": {
+    "heading": "更新已就緒",
+    "description": "重啟 Postman 以完成更新。更新後會回到此連結原本要開啟的位置。",
+    "reload_description": "重新載入 Postman 以完成更新。更新後會回到此連結原本要開啟的位置。"
+  },
+  "applying": {
+    "heading": "正在更新 Postman",
+    "description": "正在完成更新…"
+  },
+  "failed": {
+    "heading": "更新下載失敗",
+    "description": "更新過程中出錯。你可以重試，或直接用目前版本開啟，但部分功能可能無法正常使用。",
+    "description_blocked": "更新過程中出錯。請重試，或等 Postman 更新完成後再開啟此連結。"
+  },
+  "unavailable": {
+    "heading": "暫無可用更新",
+    "description": "此連結需要比目前可用版本更新的 Postman。你可以現在開啟，但部分功能可能無法正常使用。",
+    "description_blocked": "此連結需要比目前可用版本更新的 Postman。請在有新版本發布後再開啟。"
+  },
+  "managed": {
+    "heading": "需要更新",
+    "description": "此連結需要更新版本的 Postman，而本機的更新由管理員統一管理。請聯絡管理員升級 Postman 後再開啟。",
+    "description_with_version": "此連結需要 Postman {minCompatVersion} 或更高版本，而本機的更新由管理員統一管理。請聯絡管理員升級 Postman 後再開啟。"
+  },
+  "actions": {
+    "restart": "重啟應用",
+    "reload": "重新載入應用",
+    "later": "稍後",
+    "try_again": "重試",
+    "open_anyway": "仍然開啟",
+    "dismiss": "關閉"
+  }
+}

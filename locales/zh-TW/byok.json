@@ -1,0 +1,37 @@
+{
+  "overview": {
+    "heading": "BYOK 加密",
+    "description": "管理組織的 環境 和全域變數以及 請求 歷史記錄的加密。",
+    "cta": "聯絡 Postman 支援",
+    "last_updated": "最後更新"
+  },
+  "status": {
+    "heading": "加密狀態",
+    "completed": "已加密",
+    "progress": "正在加密...",
+    "failed": "失敗",
+    "pending": "待處理"
+  },
+  "key": {
+    "heading": "金鑰",
+    "arn": "金鑰已配置",
+    "status": "狀態",
+    "active": "活躍",
+    "inactive": "不活躍"
+  },
+  "elements": {
+    "environments": "環境",
+    "globals": "全域變數",
+    "history": "歷史記錄",
+    "collectionRuns": "集合 執行",
+    "monitorRuns": "監控 執行"
+  },
+  "disabled": {
+    "heading": "使用 BYOK 加密保護您的資料",
+    "description": "使用您自己的金鑰 (BYOK) 來保護您組織的全域變數、環境和 請求 歷史記錄。"
+  },
+  "error": {
+    "heading": "出了點問題",
+    "description": "我們無法載入您的 BYOK 設定。請稍後重試。"
+  }
+}

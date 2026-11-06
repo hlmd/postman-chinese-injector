@@ -1,0 +1,43 @@
+{
+  "steps": {
+    "intro": {
+      "header": "歡迎！讓我們開始吧🚀",
+      "description": "新來的？沒問題！我們精心製作了一份快速的分步指南，幫助您瞭解基礎知識。",
+      "minimized_content": "從這裡開始🚀",
+      "time_estimate": "3 個步驟 · 3-5 分鐘",
+      "cta_text": "開始使用"
+    },
+    "send_request": {
+      "header": "首先發送 請求",
+      "description": "通過建立併發送請求來測試 API 的行為。",
+      "minimized_content": "從這裡開始🚀"
+    },
+    "save_collection": {
+      "header": "儲存您的請求以便再次輕鬆訪問它",
+      "description": "將您的請求儲存到集合，讓您的請求井井有條並觸手可及。\n\n提示：使用 ⌘S 可以快速儲存。",
+      "minimized_content": "你做得很好💪"
+    },
+    "use_postbot": {
+      "header": "使用 Postbot 增強您的請求",
+      "description": "讓 Postbot 驗證您的回應、除錯問題、新增文件等。",
+      "minimized_content": "快完成了🙌"
+    },
+    "finished": {
+      "header": "太棒了🎉",
+      "description": "建立您的第一個集合，幹得好！現在探索更多方法來改進您的 API 工作流程。",
+      "minimized_content": "✅ 接下來是什麼？",
+      "add_variables": "新增變數",
+      "document": "記錄您的 API",
+      "automate": "自動化 API 測試",
+      "templates": "探索模板"
+    },
+    "dont_show_button_text": "不再顯示",
+    "skip_button_text": "跳過步驟",
+    "show_button_text": "告訴我怎麼做"
+  },
+  "guide_title": "您的入門指南",
+  "save_popover": {
+    "description": "從此處儲存請求或使用鍵盤上的 {shortcut}。",
+    "cta_text": "知道了"
+  }
+}

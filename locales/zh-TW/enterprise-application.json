@@ -1,0 +1,27 @@
+{
+  "ppc": {
+    "app_section": {
+      "title": "Postman 企業版應用",
+      "description": "在您的組織中下載並分發 Postman 企業版應用。"
+    },
+    "agent_section": {
+      "title": "Postman 桌面代理",
+      "description": "在您的組織中下載並分發 Postman Desktop Agent。"
+    },
+    "manifest_section": {
+      "title": "Postman 企業版應用清單",
+      "description": "下載 Postman 應用的清單"
+    },
+    "version_latest": "{version}（最新）",
+    "platform_labels": {
+      "windows_64": "Windows",
+      "osx_64": "Mac Intel 晶片",
+      "osx_arm64": "Mac Apple 晶片",
+      "linux_64": "Linux (x64)"
+    },
+    "manifest_os_labels": {
+      "windows": "Windows",
+      "osx": "macOS"
+    }
+  }
+}

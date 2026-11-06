@@ -1,0 +1,41 @@
+{
+  "error_state": {
+    "panel_load_error_message": "此板塊載入失敗。"
+  },
+  "load_error_resource_label": "此板塊",
+  "load_error_failure_with_status": "獲取此板塊內容時出錯（HTTP {statusCode}）。",
+  "load_error_failure_offline": "獲取此板塊內容時出錯。你似乎處於離線狀態。",
+  "load_error_failure_generic": "獲取此板塊內容時出錯。",
+  "load_error_retry_failure_with_status": "第 {count} 次重試：獲取此板塊內容時出錯（HTTP {statusCode}）。",
+  "load_error_retry_failure_offline": "第 {count} 次重試：獲取此板塊內容時出錯。你似乎處於離線狀態。",
+  "load_error_retry_failure_generic": "第 {count} 次重試：獲取此板塊內容時出錯。",
+  "panel_empty_state": {
+    "title": "此部分為空",
+    "create_button": "新增"
+  },
+  "search": {
+    "loading": "正在搜尋全部專案…",
+    "no_results_in_section": "此部分未找到相關專案"
+  },
+  "bulk_delete": {
+    "heading": "要刪除這些元素嗎？",
+    "confirmation": "確定要刪除 {count, plural, one {# 個專案} other {# 個專案}}嗎？",
+    "confirmation_prompt": "請在下方輸入框中輸入“{confirmationWord}”以確認",
+    "input_placeholder": "輸入 {confirmationWord}",
+    "cancel": "取消",
+    "delete": "刪除",
+    "success": "{count, plural, one {已刪除 # 個專案} other {已刪除 # 個專案}}",
+    "partial_failure": "已刪除 {totalCount} 個專案中的 {deletedCount} 個，{failedCount} 個刪除失敗。",
+    "error": "無法刪除所選專案"
+  },
+  "status_bar_context_menu": {
+    "multi_entity_sidebar_label": "多實體側邊欄"
+  },
+  "unresolved_entity": {
+    "popover_title": "更新您的應用程式以檢視此內容",
+    "popover_description": "此 {entityType} 需要 Postman 的較新 版本。",
+    "popover_update_button": "更新應用程式",
+    "popover_title_web": "無法顯示此內容",
+    "popover_description_web": "我們正在努力新增對此 {entityType} 的支援。請儘快回來檢視。"
+  }
+}

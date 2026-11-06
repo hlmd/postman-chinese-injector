@@ -1,0 +1,12 @@
+{
+  "approval": {
+    "send_request_message": "允許 Agent 傳送此請求？",
+    "send_named_request_message": "允許 Agent 傳送 <0><0>{requestName}</0></0>？",
+    "request_name_fallback": "請求",
+    "allowlist_menu_aria_label": "批准並始終允許選項",
+    "allowlist_option_tooltip": "在此對話中跳過匹配請求的審批"
+  },
+  "rules": {
+    "always_allow_domain": "始終允許 {value}"
+  }
+}

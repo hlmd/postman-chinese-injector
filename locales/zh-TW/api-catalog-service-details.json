@@ -1,0 +1,45 @@
+{
+  "overview_tab": {
+    "pillar_status_card": {
+      "development": {
+        "title": "開發",
+        "aria_label": "開啟開發標籤頁",
+        "no_spec_subtitle": "未關聯規範",
+        "no_spec_value": "不適用",
+        "no_spec_badge": "無規範"
+      },
+      "test": {
+        "title": "測試",
+        "aria_label": "開啟測試標籤頁",
+        "assertions": "{passed} / {total, plural, one {# 個斷言} other {# 個斷言}}",
+        "ci_passing": "CI 通過",
+        "ci_failing": "CI 失敗",
+        "ci_passing_with_assertions": "CI 通過 · {passed} / {total, plural, one {# 個斷言} other {# 個斷言}}",
+        "ci_failing_with_assertions": "CI 失敗 · {passed} / {total, plural, one {# 個斷言} other {# 個斷言}}",
+        "coverage_label": "覆蓋率"
+      },
+      "production": {
+        "title": "生產",
+        "aria_label": "開啟生產標籤頁",
+        "error_rate_label": "錯誤率"
+      }
+    }
+  },
+  "production_tab": {
+    "system_health": {
+      "no_data_tooltip": "過去 7 天無資料",
+      "metrics": {
+        "total_requests": "請求總數",
+        "p95_latency": "p95 延遲",
+        "error_rate": "錯誤率",
+        "errors_count": "錯誤數"
+      },
+      "percent_change": {
+        "tooltip": "與前 7 天相比的變化百分比",
+        "no_previous_week_data_tooltip": "上一週無資料",
+        "zero_previous_week_value_tooltip": "上一週的值為 0，無法計算變化百分比",
+        "unavailable_tooltip": "無法計算變化百分比"
+      }
+    }
+  }
+}

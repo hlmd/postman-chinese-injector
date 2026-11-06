@@ -1,0 +1,902 @@
+{
+  "no_new_changes_to_save": "沒有要儲存的新更改。",
+  "sign_in_to_take_action": "登入以執行此操作",
+  "close_tab_aria_label": "關閉選項卡",
+  "context_menu": {
+    "new_request": "新增請求",
+    "duplicate_tab": "複製選項卡",
+    "split_tab": "向右拆分",
+    "split_tab_left": "向左拆分",
+    "close_tab": "關閉選項卡",
+    "force_close_current": "強制關閉選項卡",
+    "close_others": "關閉其他選項卡",
+    "close_all": "關閉所有選項卡",
+    "force_close_all": "強制關閉所有選項卡",
+    "close_all_in_group": "關閉分組中的所有標籤頁",
+    "force_close_all_in_group": "強制關閉分組中的所有標籤頁",
+    "close_all_groups": "關閉所有分組中的所有標籤頁",
+    "recently_closed": "最近關閉的選項卡",
+    "recently_closed_none": "無",
+    "duplicate_selected": "複製選定的選項卡",
+    "close_selected": "關閉選定的選項卡",
+    "force_close_selected": "強制關閉選定的選項卡",
+    "close_all_except_selected": "關閉除選定選項卡之外的所有選項卡",
+    "reveal_in_sidebar": "在 側邊欄 中顯示"
+  },
+  "delete_confirm": {
+    "force_close": "強制關閉"
+  },
+  "empty_shell": {
+    "ask_ai": "詢問 AI",
+    "open_overview": "開啟 工作區 概述",
+    "create_new": "新增",
+    "import": "匯入",
+    "find_in_workspace": "在 工作區 中查詢",
+    "create_request": "建立一個新的 請求：",
+    "http_request": "HTTP 請求"
+  },
+  "loading_shell": {
+    "loading": "載入中..."
+  },
+  "tooltip": {
+    "disabled_actions": "開啟一個新選項卡來執行此操作",
+    "create_new_request": "建立新的 請求",
+    "expand": "展開",
+    "collapse": "摺疊"
+  },
+  "environment_quick_look": {
+    "button_tooltip": "環境 快速瀏覽",
+    "environment": "環境",
+    "edit": "編輯",
+    "variable": "變數",
+    "initial_value": "初始值",
+    "current_value": "目前值",
+    "no_active_environment": "無活動 環境",
+    "globals": "全域變數",
+    "no_globals_available": "沒有可用的全域變數",
+    "no_environment_variables": {
+      "heading": "沒有 環境 變數",
+      "description": "環境 是一組變數，允許您切換請求的上下文。"
+    },
+    "no_global_variables": {
+      "heading": "沒有全域變數",
+      "description": "全域變數是一組始終在 工作區 中可用的變數。"
+    },
+    "variables_use_banner": {
+      "heading": "使用變數重用值並保護敏感資料",
+      "learn_about_variable_type": "將敏感資料儲存在變數型別 金鑰 中，以使其值在螢幕上隱藏。瞭解有關<1><0>變數型別</0></1>的更多資訊",
+      "learn_about_variable_type_lc": "將敏感資料儲存在變數型別 金鑰 中，以使其值在螢幕上隱藏。瞭解有關<1>變數型別</1>的更多資訊。",
+      "learn_about_variable_values": "使用變數的目前值以防止與您的 團隊 共享敏感值。瞭解有關 <1><0>變數值</0></1> 的更多資訊",
+      "learn_about_variable_values_lc": "使用變數的目前值以防止與您的 團隊 共享敏感值。瞭解有關<1>變數值</1>的更多資訊。"
+    },
+    "add": "新增",
+    "read_only": "只讀",
+    "something_went_wrong": "出了點問題。請檢查開發工具。",
+    "variable_not_present_in_active_session": "該變數在活動 會話 中不存在。但是，它在 環境 中的存在不會受到影響。",
+    "deleted": "[已刪除]"
+  },
+  "entity_tab_loading_error": {
+    "offline": {
+      "title": "離線時無法載入資料",
+      "body": "在您重新上線之前，您的資料可能不是最新的。"
+    },
+    "error": {
+      "title": "{entityName} 未找到",
+      "body": "我們找不到您要找的 {entityName}。"
+    },
+    "deleted": {
+      "title": "找不到{entityName}",
+      "body": "它可能已被移動或刪除。"
+    },
+    "forbidden": {
+      "title": "對 {entityName} 的訪問被 管理員 撤銷",
+      "body": "對 {entityName} 的訪問權限已被您的 管理員 撤銷，可能是由於安全策略的原因。請聯絡您的 管理員 以獲取更多詳細資訊或幫助。"
+    },
+    "retry_button": "重試"
+  },
+  "auto_save_conflict_banner": {
+    "button": "解決衝突...",
+    "text": "此請求已在別處被修改，存在衝突。解決衝突以恢復自動儲存。"
+  },
+  "environment_selector": {
+    "type_to_filter": "鍵入要過濾的內容",
+    "no_environment": "無環境",
+    "select_environment": "選擇環境",
+    "others": "其他的",
+    "no_permission_error": "您沒有 權限 來執行此操作。",
+    "read_only": "只讀",
+    "group_label": {
+      "pinned": "固定到此 集合",
+      "other": "其他環境"
+    },
+    "menu_options": {
+      "set_as_default": "設定為預設值",
+      "unpin": "取消固定"
+    },
+    "pin_icon_tooltip": {
+      "unpin": "從 集合 取消固定",
+      "pin": "固定到 集合"
+    },
+    "empty_state": {
+      "no_pins": "固定 環境 以在使用此 集合 時自動切換到它",
+      "no_environments": "未找到環境",
+      "no_environments_can_create": "未找到環境。<0>建立一個</0>。",
+      "no_environments_in_workspace_header": "無環境",
+      "no_environments_in_workspace_body": "使用環境可輕鬆切換變數值，並在不同配置下測試您的 API。詳細瞭解 <0>環境</0>。",
+      "create_environment": "建立環境",
+      "forbidden_environments_title": "對環境的訪問被 管理員 撤銷",
+      "forbidden_environments_message": "這可能是由於安全策略所致。請聯絡您的 管理員 以獲取更多詳細資訊或幫助。"
+    },
+    "footer": {
+      "create_environment": "新增環境",
+      "create_environment_no_permission": "您沒有在此工作區中建立環境的權限",
+      "create_environment_offline": "您必須線上才能建立環境"
+    },
+    "default_environment_tooltip": "使用 集合 時會自動選擇預設 環境。",
+    "dropdown": {
+      "search_placeholder": "搜尋",
+      "add_button_tooltip": "建立環境",
+      "aria_label": "環境 選擇器。按 Enter 或 Space 開啟下拉選單。"
+    },
+    "error_state": {
+      "message": "無法載入固定環境",
+      "try_again": "再試一次"
+    },
+    "loading_state": {
+      "message": "載入固定環境"
+    },
+    "onboarding": {
+      "viewer": {
+        "header": "已為此 集合 固定合適的環境",
+        "body": "最適合 集合 的環境被固定並保留在列表頂部。選擇固定的 環境 並重試。",
+        "button": {
+          "primary": "切換環境",
+          "secondary": "關閉"
+        }
+      },
+      "editor": {
+        "header": "📌 將此 環境 固定到 集合",
+        "body": "通過固定來建議與 集合 一起使用的環境。環境可以固定到多個 集合。",
+        "button": {
+          "primary": "讓我試試",
+          "secondary": "也許稍後"
+        }
+      }
+    }
+  },
+  "network_trouble": {
+    "title": "無法載入資料",
+    "description": "我們正在嘗試與我們的伺服器建立連線。在您連線之前，您的資料可能不是最新的。",
+    "reload": "重新載入"
+  },
+  "lazy_editor": {
+    "chunk_load_error": {
+      "message": "無法載入此編輯器。",
+      "reload": "重新載入"
+    }
+  },
+  "offline_constants": {
+    "title": "無法載入此選項卡",
+    "description": "您需要線上才能訪問此 工作區 中的所有資源。",
+    "banner_text": "當您離線時，某些環境不可用。"
+  },
+  "variables_empty": {
+    "base_text": {
+      "globals": "沒有新增全域變數",
+      "other_entity": "此 {userFriendlyEntityName} 中沒有變數"
+    },
+    "request_access_text": "Request額外訪問這個{userFriendlyEntityName}來新增變數"
+  },
+  "secret_resolution": {
+    "error": {
+      "disabled": "共享 保險庫 目前已停用。請聯絡您的 團隊 管理員以獲取 請求 訪問權限。",
+      "not_found": "未找到 金鑰 參考",
+      "vault_inaccessible": "保險庫 無法訪問",
+      "vault_inaccessible_hint": "請解鎖 Vault 以檢視和使用此金鑰。",
+      "signin_required": "登入後才能解析此金鑰",
+      "desktop_only": "此金鑰僅在 Postman 桌面端可解析"
+    },
+    "action": {
+      "sign_in_on_device": "在此裝置上登入",
+      "open_shared_vault": "開啟 Shared Vault",
+      "unlock_vault": "解鎖 Vault"
+    },
+    "warning": {
+      "domain_mismatch": "域不匹配",
+      "disabled": "金鑰 已停用",
+      "limit_reached": "金鑰 達到限制"
+    },
+    "mutation": {
+      "not_supported": "不支援操作",
+      "not_found": "金鑰 未找到",
+      "failed": "操作失敗"
+    }
+  },
+  "overview": {
+    "title": "概述"
+  },
+  "globals": {
+    "title": "全域變數"
+  },
+  "monitor": {
+    "title": "監控"
+  },
+  "import": {
+    "title": "從 {serviceName} 匯入 API",
+    "title_with_definition": "從 {serviceName} 匯入 API 定義"
+  },
+  "context_bar": {
+    "aria_label": "上下文欄",
+    "navigation_aria_label": "上下文欄導航",
+    "close": "關閉上下文欄",
+    "documentation": {
+      "title": "文件"
+    },
+    "comments": {
+      "title": "評論"
+    },
+    "vault": {
+      "title": "Postman 保險庫"
+    },
+    "passport_secrets": {
+      "title": "Passport 金鑰"
+    },
+    "code": {
+      "title": "程式碼"
+    },
+    "source_control": {
+      "title": "原始碼控制"
+    },
+    "activity_feed": {
+      "title": "活動提要"
+    },
+    "live_collection": {
+      "title": "即時集合"
+    },
+    "code_generation": {
+      "title": "程式碼生成"
+    },
+    "jira_issues": {
+      "title": "吉拉問題"
+    },
+    "info": {
+      "title": "資訊"
+    },
+    "network": {
+      "title": "網路",
+      "failed": "失敗的",
+      "column": {
+        "method": "方法",
+        "name": "名稱",
+        "status": "狀態",
+        "time": "時間"
+      },
+      "search_placeholder": "按 URL 或方法過濾",
+      "clear": "清除",
+      "clear_tooltip": "清除網路日誌",
+      "create_collection": "建立集合",
+      "create_collection_count": "建立 集合 ({count})",
+      "create_collection_tooltip": "從選定的請求建立一個新的 集合",
+      "default_collection_name": "{host} 請求",
+      "default_collection_name_fallback": "捕獲的請求",
+      "collection_created": "已建立集合“{name}”",
+      "collection_failed": "無法建立 集合。請再試一次。",
+      "no_matches": "沒有請求符合您的過濾器。",
+      "row_tooltip": "在 Postman 中開啟",
+      "truncated": "顯示第一個 {count} 請求。重新載入頁面以重新開始。",
+      "empty_state": {
+        "title": "尚未捕獲任何請求",
+        "description": "此頁面發出的 XHR 和獲取請求顯示在此處。與頁面互動或重新載入以捕獲流量。"
+      }
+    },
+    "interactions": {
+      "title": "互動記錄",
+      "badge": {
+        "user": "使用者",
+        "current_user": "{name}（你）",
+        "agent": "Agent"
+      },
+      "search_placeholder": "按操作、定位器或來源篩選",
+      "clear": "清空",
+      "clear_tooltip": "清空互動日誌",
+      "no_matches": "沒有符合篩選條件的互動記錄。",
+      "dropped": "僅顯示最近 {count} 條互動記錄，更早的記錄已丟棄。",
+      "detail": {
+        "tool": "{tool} · {ms}毫秒"
+      },
+      "timestamp_tooltip": "{absoluteTime}",
+      "timestamp_step": "距上一步 {stepDelta}",
+      "timestamp_since_start": "距開始 {offset}",
+      "empty_state": {
+        "title": "尚未記錄任何互動",
+        "description": "你或 Agent 的點選、輸入和導航操作將以可回放的步驟顯示在這裡。"
+      }
+    },
+    "details": {
+      "title": "細節"
+    },
+    "example_details": {
+      "title": "範例詳細資訊"
+    },
+    "request_details": {
+      "title": "請求 詳細資訊"
+    },
+    "file_info": {
+      "title": "檔案資訊"
+    },
+    "mock_server_details": {
+      "title": "模擬伺服器詳細資訊"
+    },
+    "mock_details": {
+      "title": "模擬伺服器詳情"
+    },
+    "simulation_details": {
+      "title": "模擬詳情"
+    },
+    "monitor_details": {
+      "title": "監控 詳細資訊"
+    },
+    "merge_conditions": {
+      "title": "合併 條件"
+    },
+    "devtool": {
+      "title": "開發工具"
+    },
+    "configuration": {
+      "title": "配置"
+    },
+    "fork": {
+      "title": "分叉",
+      "offline_state": {
+        "title": "檢查您的連線",
+        "message": "上網檢視您的分叉列表。",
+        "retry": "重試"
+      },
+      "error_state": {
+        "forbidden": {
+          "title": "無法檢視分叉",
+          "message": "您沒有 權限 來檢視此 {modelName} 的分叉"
+        },
+        "server_error": {
+          "title": "無法載入分叉列表",
+          "description": "嘗試重新獲取分叉"
+        }
+      },
+      "empty_state": {
+        "no_fork": {
+          "title": "沒有分叉",
+          "description": "從該 {modelName} 建立的所有分叉都將出現在此處。瞭解有關 <1><0><0>forks</0></0></1> 的更多資訊"
+        },
+        "hidden_fork": {
+          "title": "{name} 的 {count, plural, =1 {# 個分叉} other {# 個分叉}}。",
+          "description": "它們不可見，因為它們位於您無權訪問的工作區中。瞭解有關 <1><0><0>forks</0></0></1> 的更多資訊"
+        }
+      },
+      "ready_state": {
+        "description": {
+          "total_forks": "{name} 的 {count, plural, =1 {# 個分叉} other {# 個分叉}}。",
+          "hidden_forks": "其中 {count} 不在此列表中，因為它們位於您無權訪問的工作區中。"
+        },
+        "body": {
+          "helper_text": "最近建立：",
+          "created_on": "建立於：{dateObj, date, medium}"
+        },
+        "footer": {
+          "view_all": "檢視所有分叉",
+          "view_details": "檢視詳情"
+        }
+      }
+    },
+    "offline_context_bar_view": {
+      "heading": "無法載入",
+      "description": "您需要線上才能訪問此 工作區 中的所有功能。"
+    },
+    "pull_request": {
+      "title": "拉取請求",
+      "header": {
+        "title": "拉取請求",
+        "view_merge_settings": "檢視 合併 條件",
+        "no_view_permissions_merge_settings": "您沒有 權限 來檢視 合併 條件",
+        "filter_button": {
+          "tooltip": "過濾拉取請求",
+          "tooltip_body": "展示"
+        },
+        "filters": {
+          "open_requests": "開放請求",
+          "approved_requests": "已批准的請求",
+          "merged_requests": "合併請求",
+          "declined_requests": "拒絕請求"
+        }
+      },
+      "description": "跟蹤此 {modelDisplayName} 的所有拉取請求。",
+      "error_state": {
+        "title": "無法載入拉取請求",
+        "message": "請嘗試重新獲取拉取請求。"
+      },
+      "empty_state": {
+        "title": "目前沒有拉取請求",
+        "message": "檢視並跟蹤此 {modelDisplayName} 上的所有拉取請求。",
+        "title_v2": "沒有拉取請求",
+        "message_v2": "一旦為此 {forkStatus} {entityName} 建立了 拉取請求，您就可以從這裡對其進行管理。瞭解有關 <6><0><0>pull requests</0></0></6> 的更多資訊",
+        "button": "建立拉取請求",
+        "button_disabled_tooltip": "您沒有 權限 來建立 拉取請求"
+      },
+      "filtered_empty_state": {
+        "title": "未找到拉取請求",
+        "message": "更改過濾器並重試。"
+      },
+      "pr_list": {
+        "last_updated": "最後更新："
+      },
+      "offline_state": {
+        "title": "檢查您的連線",
+        "message": "線上檢視您的 拉取請求 列表"
+      },
+      "description_v2": "管理與此 {forkStatus} {modelDisplayName} 相關的所有拉取請求。",
+      "out_going_pr": {
+        "heading": "已傳送以供稽核",
+        "empty_state": {
+          "message": "目前，沒有從這個分叉的 {modelDisplayName} 建立開放的 拉取請求。",
+          "view_closed_pr": "檢視已關閉的拉取請求"
+        }
+      },
+      "incoming_pr": {
+        "heading": "已收到稽核",
+        "empty_state": {
+          "title": {
+            "filtered": "這些過濾器沒有結果",
+            "unfiltered": "沒有需要審查的拉取請求"
+          },
+          "message": {
+            "filtered": "對於所選過濾器，沒有可顯示的拉取請求。調整或重置您的過濾器設定。",
+            "reset_filters": "重置過濾器",
+            "unfiltered": "如果請求 拉取請求 對此 {forkStatus} {modelDisplayName} 進行稽核，您將能夠從此處進行管理。"
+          }
+        }
+      },
+      "pr_list_v2": {
+        "parent_entity_info": {
+          "destination": "目的地："
+        },
+        "pr_list_item": {
+          "reviewer": {
+            "no_reviewer": {
+              "tooltip": "尚未為該 拉取請求 分配審閱者。",
+              "label": "沒有審稿人"
+            },
+            "label": "{count, plural, =1 {# 位審閱者} other {# 位審閱者}}",
+            "anonymous": {
+              "tooltip": "帳戶設定為 私有 的審閱者保持匿名。",
+              "label": "{count, plural, =1 {# 位匿名審閱者} other {# 位匿名審閱者}}"
+            },
+            "you": "你"
+          },
+          "group_reviewer": {
+            "no_reviewer": {
+              "tooltip": "尚未為該 拉取請求 分配任何小組審閱者。",
+              "label": "沒有小組審稿人"
+            },
+            "label": "{count, plural, =1 {# 個小組審閱者} other {# 個小組審閱者}}"
+          },
+          "last_updated": "最後更新"
+        }
+      }
+    },
+    "empty_state": {
+      "retry_button": "重試"
+    },
+    "code_snippet": {
+      "title": "程式碼片段",
+      "copy_failed_toast": "複製到剪貼簿失敗",
+      "code_block": {
+        "header": {
+          "options": {
+            "wrap_button": {
+              "tooltip": "換行程式碼"
+            },
+            "tooltip": "選項",
+            "copy": {
+              "tooltip": {
+                "copied": "已複製",
+                "copy": "複製片段"
+              }
+            },
+            "delete": {
+              "tooltip": "刪除"
+            },
+            "settings": {
+              "tooltip": "程式碼設定"
+            }
+          }
+        }
+      }
+    },
+    "changelog": {
+      "title": "變更日誌",
+      "close": "關閉更新日誌",
+      "blank_state": {
+        "title": "無法載入 更新日誌",
+        "description": "無法找到 集合。",
+        "try_again": "再試一次"
+      },
+      "error_state": {
+        "title": "無法載入 {modelName} 更新日誌",
+        "description": "載入 更新日誌 時出現問題。",
+        "try_again": "再試一次"
+      },
+      "offline_state": {
+        "title": "檢查您的連線",
+        "description": "上網檢視更新日誌"
+      },
+      "empty_state": {
+        "title": "沒有找到日誌",
+        "description": "對 {modelName} 進行一些更改以檢視更改日誌"
+      },
+      "reload_changes": "重新載入 更新日誌",
+      "load_more": "載入更多",
+      "user_info_button": "檢視使用者資訊（{userCount, number} {userCount, plural, one {使用者} other {使用者}}）",
+      "date_group": {
+        "expand_aria_label": "展開 更新日誌 為 {dateObj, date, long}",
+        "collapse_aria_label": "摺疊 更新日誌 為 {dateObj, date, long}",
+        "group_children": {
+          "tooltip": {
+            "offline": "需要聯網才能載入更多變更",
+            "load_more": "載入更多變更"
+          }
+        },
+        "entry": {
+          "header": {
+            "time": "{dateObj, time, short}",
+            "tooltip": {
+              "auto_update": "由即時集合自動更新",
+              "reviewed_update": "使用者已稽核的即時集合更新"
+            },
+            "menu_list": {
+              "restore": "恢復到此變更",
+              "edit_tag": "編輯標籤",
+              "delete_tag": "刪除標籤",
+              "add_tag": "新增標籤",
+              "edit_note": "編輯備註",
+              "delete_note": "刪除備註",
+              "add_note": "新增備註",
+              "hide_diff": "隱藏此變更的差異",
+              "show_diff": "向所有使用者顯示差異"
+            }
+          },
+          "tag": {
+            "placeholder": "新增標籤",
+            "label": "標籤",
+            "helper_text": "標籤會為此變更建立一個命名引用"
+          },
+          "note": {
+            "placeholder": "新增備註以說明此變更",
+            "label": "備註"
+          },
+          "diff": {
+            "close_diff": "關閉差異",
+            "view_diff": "檢視差異",
+            "info_tooltip": "只有此 {model} 的編輯者才能檢視差異，其他使用者不可見。",
+            "no_permission": {
+              "diff_hidden": "差異已隱藏",
+              "tooltip": "只有擁有編輯權限的使用者才能檢視此差異"
+            },
+            "view_more": "檢視更多",
+            "offline_tooltip": "需要聯網才能檢視詳細差異"
+          },
+          "model": {
+            "button": {
+              "cancel": "取消",
+              "submit": "提交"
+            },
+            "offline_tooltip": "需要聯網才能執行此操作",
+            "delete_tag": {
+              "content": "這將永久刪除新增到該變更的標籤",
+              "header": "刪除標籤？",
+              "confirm_button": "刪除",
+              "confirm_button_loading": "正在刪除…"
+            },
+            "delete_note": {
+              "content": "這將永久刪除新增到該變更的備註",
+              "header": "刪除備註？",
+              "confirm_button": "刪除",
+              "confirm_button_loading": "正在刪除…"
+            },
+            "restore_changes": {
+              "header": "恢復變更",
+              "confirm_button": "恢復",
+              "confirm_button_loading": "正在恢復…",
+              "content": "此 {model} 將恢復到 {dateTime} 的變更。確定要恢復嗎？"
+            },
+            "hide_diff": {
+              "header": "隱藏此變更的差異？",
+              "content": "所有可訪問此工作區的使用者都能看到該變更，但差異將被隱藏。只有此 {model} 的編輯者才能檢視差異。",
+              "confirm_button": "隱藏差異",
+              "confirm_button_loading": "正在隱藏…"
+            },
+            "show_diff": {
+              "header": "向所有使用者顯示差異？",
+              "content": "所有可訪問此工作區的使用者都將能夠檢視此變更的差異。",
+              "confirm_button": "顯示差異",
+              "confirm_button_loading": "正在取消隱藏…"
+            }
+          },
+          "toast": {
+            "restore_success": {
+              "title": "已成功恢復 {model}",
+              "description": "您的 {model} 已成功恢復到 {dateTime} 的變更。"
+            },
+            "restore_failed": {
+              "title": "恢復 {model} 失敗",
+              "description": "出了點問題，請稍後重試。"
+            },
+            "hide_diff_success": {
+              "title": "此變更的差異已對檢視者隱藏"
+            },
+            "hide_diff_failed": {
+              "title": "隱藏變更日誌差異失敗",
+              "description": "出了點問題，請稍後重試。"
+            },
+            "unhide_diff_success": {
+              "title": "所有可訪問此工作區的使用者現在都能檢視此差異"
+            },
+            "unhide_diff_failed": {
+              "title": "取消隱藏變更日誌差異失敗",
+              "description": "出了點問題，請稍後重試。"
+            }
+          }
+        }
+      },
+      "nested_entries_label": "巢狀的變更日誌條目",
+      "load_more_region_label": "載入更多變更日誌條目"
+    }
+  },
+  "snippets": {
+    "category": {
+      "variables": "變數",
+      "workflows": "工作流",
+      "tests": "測試"
+    },
+    "get_env_var": {
+      "name": "獲取環境變數",
+      "description": "獲取一個環境變數"
+    },
+    "get_global_var": {
+      "name": "獲取全域變數",
+      "description": "獲取一個全域變數"
+    },
+    "get_var": {
+      "name": "獲取變數",
+      "description": "獲取一個變數（環境或全域）"
+    },
+    "get_collection_var": {
+      "name": "獲取集合變數",
+      "description": "獲取一個集合變數"
+    },
+    "set_env_var": {
+      "name": "設定環境變數",
+      "description": "設定一個環境變數"
+    },
+    "set_global_var": {
+      "name": "設定全域變數",
+      "description": "設定一個全域變數"
+    },
+    "set_collection_var": {
+      "name": "設定集合變數",
+      "description": "設定一個集合變數"
+    },
+    "clear_env_var": {
+      "name": "清除環境變數",
+      "description": "如果已設定，則清除該環境變數"
+    },
+    "clear_global_var": {
+      "name": "清除全域變數",
+      "description": "如果已設定，則清除該全域變數"
+    },
+    "clear_collection_var": {
+      "name": "清除集合變數",
+      "description": "如果已設定，則清除該集合變數"
+    },
+    "send_request": {
+      "name": "傳送 HTTP 請求",
+      "description": "傳送一個請求"
+    },
+    "run_collection_request": {
+      "name": "從集合傳送 HTTP 請求",
+      "description": "傳送請求並執行其請求前腳本和回應後腳本"
+    },
+    "test_response_status_code": {
+      "name": "狀態碼：狀態碼為 200",
+      "description": "編寫一個基本的狀態碼檢查"
+    },
+    "test_response_body_sub_string": {
+      "name": "回應體：包含字串",
+      "description": "在回應體中編寫一個基本的字串檢查"
+    },
+    "test_response_body_json": {
+      "name": "回應體：JSON 值檢查",
+      "description": "編寫一個基本的 JSON 值檢查"
+    },
+    "test_response_body_string": {
+      "name": "回應體：等於指定字串",
+      "description": "編寫一個回應體字串檢查"
+    },
+    "test_response_headers": {
+      "name": "回應頭：Content-Type 請求頭檢查",
+      "description": "編寫一個基本的回應頭檢查"
+    },
+    "test_response_time": {
+      "name": "回應時間小於 200ms",
+      "description": "編寫一個基本的回應時間檢查"
+    },
+    "test_response_status_code_post": {
+      "name": "狀態碼：POST 請求成功",
+      "description": "檢查 POST 請求是否成功"
+    },
+    "test_response_status_name": {
+      "name": "狀態碼：狀態碼名稱包含字串",
+      "description": "編寫一個基本的回應狀態碼字串檢查"
+    },
+    "convert_response_xml_json": {
+      "name": "回應體：將 XML 回應體轉換為 JSON 物件",
+      "description": "將回應體從 JSON 轉換為 XML"
+    },
+    "tv4_validate_json": {
+      "name": "使用 Tiny Validator 校驗 JSON 資料",
+      "description": "使用 Tiny Validator 根據 Schema 校驗回應"
+    },
+    "send_http_request": {
+      "name": "傳送 HTTP 請求"
+    },
+    "run_multi_protocol_collection_request": {
+      "name": "從集合傳送請求"
+    },
+    "set_var": {
+      "name": "設定變數"
+    },
+    "clear_local_var": {
+      "name": "清除本地變數"
+    },
+    "test_query_success": {
+      "name": "測試查詢是否成功"
+    },
+    "test_response_time_below_limit": {
+      "name": "測試回應時間是否低於 200ms"
+    },
+    "test_specific_response_headers": {
+      "name": "測試特定請求頭是否存在"
+    },
+    "test_response_data": {
+      "name": "測試回應是否包含特定屬性"
+    },
+    "test_response_data_against_schema": {
+      "name": "根據 JSON Schema 測試回應"
+    }
+  },
+  "action_menu": {
+    "button_label": "設為變數",
+    "overridden_label": "已被覆蓋",
+    "variable_menu": {
+      "input_placeholder": "查詢變數",
+      "button_label": "設為新變數",
+      "overridden_info": {
+        "text_label": "該變數存在一個或多個重複項，將其覆蓋。",
+        "text_link": "瞭解有關作用域層級的更多資訊"
+      },
+      "policy_secured_info": {
+        "description_local": "管理員 策略已在您本地的 保險庫 中確保此值。",
+        "description_shared": "管理員 策略已在您的共享 保險庫 中確保此值的安全。",
+        "request_exception_button": "請求 異常",
+        "description_local_self": "此金鑰已儲存在你的本地保管庫中。",
+        "description_shared_self": "此金鑰已儲存在你的共享保管庫中。",
+        "store_in_plain_text_button": "以明文儲存",
+        "store_in_plain_text_error": "無法恢復該值。請檢查保管庫是否已解鎖，然後重試。",
+        "store_in_plain_text_failed": "無法以明文儲存該值。請重試。",
+        "reason_prompt": "為什麼這個值需要保持明文？",
+        "reason_visibility": "您的管理員可以看到此申請及其原因。",
+        "cancel_button": "取消",
+        "close_button": "關閉",
+        "reasons": {
+          "false_positive": "誤報",
+          "test_data": "測試資料",
+          "public_information": "公開資訊",
+          "internal_use_only": "僅限內部使用",
+          "temporary_use_only": "僅臨時使用"
+        }
+      },
+      "info_row": {
+        "initial": "初始值",
+        "current": "目前值",
+        "value": "值",
+        "scope": "作用域"
+      }
+    },
+    "new_variable": {
+      "title": "設為新變數",
+      "row": {
+        "name": "名稱",
+        "value": "值",
+        "scope": "作用域",
+        "button": {
+          "default": "設定變數",
+          "saving": "正在設定變數",
+          "dismiss": "不用了"
+        }
+      },
+      "scope_dropdown": {
+        "button_label": "選擇作用域",
+        "menu_item": {
+          "global": "全域",
+          "vault": "保險庫",
+          "environment": "環境",
+          "collection": "集合"
+        }
+      },
+      "var_name_error_tooltip": "變數名稱已被使用"
+    },
+    "comment": {
+      "button_label": "評論",
+      "unsaved_changes_tooltip": "儲存此請求後才能新增評論。",
+      "discard_changes_tooltip": "您有未儲存的 {entityType} 更改。放棄這些更改後即可新增評論。",
+      "comment_disabled_tooltip": "您需要具有編輯者權限才能儲存並評論此請求。"
+    },
+    "error_toast": "出了點問題，請檢視 DevTools。"
+  },
+  "agent": {
+    "browser": "瀏覽器代理",
+    "desktop": "桌面代理",
+    "cloud": "雲代理",
+    "interceptor": "Interceptor 代理",
+    "updating": "正在更新 Agent"
+  },
+  "unsaved-changes-modal": {
+    "details": {
+      "modal_header": "儲存更改？",
+      "do_not_close": "不要關閉",
+      "fork_collection": "Fork 集合以儲存更改",
+      "fork_collection_content": "此請求有未儲存的更改，關閉該標籤頁將丟失這些更改。將其 Fork 到您的工作區以儲存更改。",
+      "close_discard": "關閉並放棄更改",
+      "close_tab": "關閉含有未儲存更改的標籤頁？",
+      "auto_save_error": "由於無法連線到伺服器，{name} 標籤頁中的更改尚未儲存。",
+      "default_error": "{name} 中的更改尚未儲存，將在您重新聯網後自動儲存。",
+      "always_discard": "關閉標籤頁時始終放棄未儲存的更改",
+      "confirmation_help_text": "關閉標籤頁時將不再提示您儲存更改。您可以隨時在設定中更改此選項。",
+      "offline_tooltip": "重新聯網後即可執行此操作。",
+      "no_permission_tooltip": "您沒有執行此操作的權限。",
+      "something_went_wrong": "儲存偏好設定時出了點問題",
+      "modal_content_for_close": "<0>{collectionName}</0> 有未儲存的更改。{subText}",
+      "conflict_message": "此 {modelType} 已在另一個標籤頁中被修改。儲存將覆蓋那些更改。",
+      "save_changes": "儲存這些更改以避免丟失您的工作內容。",
+      "modal_content_for_save": "<0>{collectionName}</0> {subText}",
+      "modified_from_another_tab": "已在另一個標籤頁中被修改。儲存將覆蓋該 {modelType}。"
+    },
+    "footer": {
+      "cancel": "取消",
+      "do_not_save": "不儲存",
+      "save_changes": "儲存更改",
+      "save": "儲存",
+      "discard_changes": "放棄更改",
+      "overwrite": "儲存並覆蓋",
+      "saves_as_new": "另存為新 {modelType}",
+      "fork_collection": "Fork Collection"
+    }
+  },
+  "tab_title_status": {
+    "conflict": "衝突",
+    "deleted": "已刪除"
+  },
+  "tab_search": {
+    "recently_closed": "最近關閉",
+    "fallback_label": "未命名",
+    "placeholder_text": "搜尋標籤頁",
+    "empty_state_text": "沒有可顯示的標籤頁",
+    "empty_state_no_open_tabs": "沒有開啟的標籤頁",
+    "tooltip": "搜尋標籤頁"
+  },
+  "collection_explorer": {
+    "create_row": {
+      "create": "建立",
+      "cancel": "取消"
+    },
+    "entity_is_empty": "此{entity, select, collection {Collection} folder {資料夾} api {API} other {}}為空"
+  }
+}

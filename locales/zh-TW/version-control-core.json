@@ -1,0 +1,106 @@
+{
+  "fork_container": {
+    "button_disabled_tool_tip": "線上建立 fork 或檢視現有分叉。",
+    "fork_button": {
+      "fork_count_api_error_message": "出了點問題。",
+      "fork_button_tooltip": "復刻",
+      "counter_button_default_label": "復刻",
+      "fork_count_button_offline_tooltip": "上網檢視現有的分叉。"
+    },
+    "fork_creation_modal": {
+      "heading": "復刻 {modelDisplayName}",
+      "error": {
+        "title": "無法獲取源 {modelDisplayName}",
+        "description": "我們無法獲取有關源 {modelDisplayName} 的資訊。請再試一次。"
+      },
+      "is_offline": {
+        "title": "您離線",
+        "description": "無法連線到伺服器。請檢查您的網路設定。"
+      },
+      "source_module_label": "原始{modelDisplayName}",
+      "fork_creation_form": {
+        "fork_label_with_username": "{userName} 的 fork",
+        "fork_label_without_username": "我的 Fork",
+        "update_user_profile_modal": {
+          "description": "要在公開工作區中從 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 建立 fork，您必須將個人資料設為公開。您的個人資料將進行以下更改。",
+          "error_toast_message": "要從公開工作區 fork 一個 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}}，您需要先設定公開個人資料。"
+        },
+        "description": "Fork 會建立 {modelType, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 的副本，讓您可以在不影響原始檔案的情況下進行更改。瞭解有關 <3>forks</3> 的更多資訊。",
+        "helper_text": "指定一個標籤，以區分此 fork 與原始 {modelType, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}}。",
+        "fork_label": "Fork 標籤",
+        "workspace_label": "工作區",
+        "team_label": "團隊",
+        "team_helper_text": "fork 將在所選團隊的工作區中建立。",
+        "workspace_helper_text": "fork 將在選定的工作區中建立。",
+        "workspace_selector_restrict_fork_message": "這裡不能 fork",
+        "auto_sync_changes_label": "自動拉取更改",
+        "auto_sync_changes_checkbox_label": "自動從源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 拉取更改",
+        "notifications_label": "通知",
+        "notifications_checkbox_label": "關注源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 以獲取更新通知",
+        "notifications_checkbox_label_forked": "關注已 fork 的 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 以獲取更新通知",
+        "notifications_checkbox_info_text": "您將會收到有關原始 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 所做更改的通知。",
+        "fork_confirm_button_label": "Fork {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}}",
+        "fork_confirm_button_disabled_tooltip": "重新上線後即可執行此操作",
+        "fork_cancel_button_label": "取消",
+        "fork_environments_text": "要 fork 的環境",
+        "fork_environments_helper_text": "選定的環境將為此集合分叉並固定。",
+        "fork_environments_input_placeholder_text": "選擇環境",
+        "continue_button_label": "繼續"
+      }
+    }
+  },
+  "workspace_selector": {
+    "error": {
+      "title": "無法載入更多工作區",
+      "subtitle": "只是一根電線有問題。嘗試重新載入。",
+      "reload_button_label": "重新載入"
+    },
+    "workspace_list_container": {
+      "not_git_connected": "未連線 Git",
+      "get_workspace_list_error": {
+        "title": "無法載入工作區",
+        "subtitle": "只是一根電線有問題。嘗試重新載入。",
+        "reload_button_label": "重新載入"
+      },
+      "no_workspaces_found": {
+        "title": "未找到工作區",
+        "description": "檢查拼寫，嘗試不同的搜尋詞。"
+      },
+      "workspace_list_action_label": "分叉",
+      "search_workspace_input_placeholder": "搜尋工作區",
+      "public_workspace_forking": "分叉到這個公開工作區將使您的 {model} 公開。",
+      "reusable_reference_warning": "分叉到此工作區會停止後續更新的連結請求。"
+    }
+  },
+  "fork_recommendation": {
+    "export_modal": {
+      "snippet": "需要複製此 {model} 嗎？不如直接將此 {model} fork 到您的工作區。",
+      "fork_cta": "建立一個 Fork",
+      "learn_more": "瞭解更多"
+    },
+    "popover": {
+      "fork_cta": "復刻 {model}",
+      "cancel": "取消",
+      "no_permission": "您沒有 權限 要匯出",
+      "no_permission_partner_description": "檢視者角色的合作伙伴無法匯出集合。您可以改為 fork 此集合。"
+    },
+    "view_plans": {
+      "title": "Fork 到您自己的 團隊",
+      "description": "將此團隊升級為付費 Postman 計劃，以便 fork 並建立此集合的副本。",
+      "cta": "檢視計劃",
+      "add_paid_team": "在付費 Postman 計劃上建立團隊，以 fork 並建立此集合的副本。"
+    }
+  },
+  "session_info": {
+    "not_signed_in": {
+      "description": "登入團隊，即可 fork 並建立此集合的副本。",
+      "title": "登入 fork",
+      "cta": "登入"
+    },
+    "signed_out": "已退出",
+    "free_team": "免費",
+    "no_teams": "沒有其他團隊",
+    "current_team": "目前團隊",
+    "other_teams": "你的其他團隊"
+  }
+}

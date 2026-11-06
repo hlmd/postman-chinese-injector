@@ -1,0 +1,165 @@
+{
+  "find": {
+    "title": "尋找",
+    "input": {
+      "regex": {
+        "value": "正規表示式"
+      },
+      "ignore_case": {
+        "value": "忽略大小寫"
+      },
+      "find": {
+        "value": "尋找",
+        "placeholder": "輸入文字查詢..."
+      }
+    }
+  },
+  "where": {
+    "title": "在哪裡",
+    "everything_radio": "一切",
+    "entities_to_find_radio": "選擇要查詢的實體",
+    "collections": {
+      "title": "集合",
+      "count": "集合（{items, plural, one {#} other {#}}）"
+    },
+    "environments": {
+      "title": "環境",
+      "count": "環境（{items, plural, one {#} other {#}}）"
+    },
+    "globals": {
+      "title": "全域變數"
+    },
+    "open_tabs": {
+      "title": "開啟選項卡"
+    }
+  },
+  "replace_with": {
+    "title": "替換為",
+    "placeholder": "輸入要替換的文字...",
+    "input": {
+      "select_all": {
+        "value": "選擇全部"
+      },
+      "replace_selected": "替換所選的 {items, plural, one {#} other {#}}"
+    }
+  },
+  "result": {
+    "not_found": {
+      "description": "嘗試其他搜尋，或修改要查詢的實體。",
+      "title": "沒有找到“{item}”"
+    },
+    "pre_result_message": "在左側輸入搜尋查詢以跨集合、環境和全域進行搜尋。當您找到某些內容時，您會在此處看到搜尋結果。",
+    "disabled_message": "查詢和替換在本地模式下不可用。切換到雲模式即可使用此功能。",
+    "tabs": {
+      "open_tabs": {
+        "title": "開啟選項卡 ({items})"
+      },
+      "collections_tab": {
+        "title": "集合（{items}）",
+        "content": {
+          "open_in_builder": "在構建器中開啟"
+        },
+        "result_count": "({items, plural, one {# 個結果} other {# 個結果}})"
+      },
+      "environments_tab": {
+        "title": "環境（{items}）",
+        "content": {
+          "open": "開啟"
+        }
+      },
+      "globals_tab": {
+        "title": "全域變數 ({items})",
+        "content": {
+          "open": "開啟"
+        }
+      }
+    }
+  },
+  "replace": {
+    "replace_content_save_changes_collection": "替換集合中的內容將儲存該集合中所有未儲存的更改。",
+    "replace_content_save_changes_environment": "替換環境中的內容將儲存該環境中所有未儲存的更改。",
+    "replace_content_save_changes_globals": "替換全域中的內容將儲存該全域中任何未儲存的更改。"
+  },
+  "find_and_replace_target": {
+    "search": {
+      "placeholder": "搜尋 {item}"
+    },
+    "all_items": "所有 {item}（{count, plural, one {#} other {#}}）",
+    "selected_items": "已選擇 {items , plural, one {#} other {#}}",
+    "select_all": "選擇全部",
+    "unselect_all": "取消選擇全部",
+    "filters": {
+      "include": "包含欄位",
+      "selector_value_all": "過濾器（所有欄位）",
+      "selector_value_count": "過濾器（{count} {count, plural, one {FIELD} other {FIELDS}}）",
+      "collections": {
+        "value": "集合",
+        "fields": {
+          "name": "姓名",
+          "description": "描述",
+          "events_prerequest": "請求前腳本",
+          "events_test": "測試",
+          "auth": "身份驗證",
+          "variables": "變數"
+        }
+      },
+      "folders": {
+        "value": "資料夾",
+        "fields": {
+          "name": "姓名",
+          "description": "描述",
+          "events_prerequest": "請求前腳本",
+          "events_test": "測試",
+          "auth": "身份驗證"
+        }
+      },
+      "requests": {
+        "value": "請求",
+        "fields": {
+          "name": "姓名",
+          "description": "描述",
+          "url": "URL",
+          "queryParams": "查詢參數",
+          "pathVariableData": "路徑變數",
+          "headerData": "請求頭",
+          "events_prerequest": "請求前腳本",
+          "events_test": "測試",
+          "auth": "身份驗證",
+          "data": "請求體"
+        }
+      },
+      "responses": {
+        "value": "範例",
+        "fields": {
+          "name": "姓名",
+          "requestObject_url": "URL",
+          "requestObject_queryParams": "查詢參數",
+          "requestObject_pathVariableData": "路徑變數",
+          "requestObject_headerData": "請求頭",
+          "requestObject_data": "請求體",
+          "text": "回應體",
+          "headers": "回應頭"
+        }
+      },
+      "environments": {
+        "value": "環境",
+        "fields": {
+          "name": "姓名",
+          "values": "變數"
+        }
+      },
+      "globals": {
+        "value": "全域變數",
+        "fields": {
+          "values": "變數"
+        }
+      },
+      "tab_requests": {
+        "value": "請求"
+      },
+      "tab_examples": {
+        "value": "範例"
+      }
+    }
+  }
+}

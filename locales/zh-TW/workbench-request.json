@@ -1,0 +1,481 @@
+{
+  "request_type_footer": "輸入新的方法",
+  "use_label": "<0>使用''</0><1>{customMethodName}</1><0>''</0>",
+  "invalid_characters_message": "請求方法包含無效字元",
+  "no_name_request": "未命名請求",
+  "new_request": "新增請求",
+  "unsaved_changes": "未儲存的更改",
+  "save_button": {
+    "label": "儲存",
+    "saving": "正在儲存…",
+    "save_as": {
+      "label": "另存為"
+    },
+    "save_as_duplicate": {
+      "label": "另存為副本"
+    },
+    "save_overrides": {
+      "label": "僅儲存覆蓋項"
+    },
+    "tooltips": {
+      "no_unsaved_changes": "沒有需要儲存的新更改。",
+      "save_to_collection": "將請求儲存到集合",
+      "save_request": "儲存請求",
+      "save_request_git": "將更改儲存到 Postman 和 Github",
+      "no_edit_perimission": "您沒有權限在此工作區中儲存更改。",
+      "upgrade_enterprise_for_overrides": "升級到 Enterprise 版才能儲存關聯請求的覆蓋項。"
+    },
+    "footer": {
+      "label": "關聯請求僅支援覆蓋請求名稱、參數、腳本和請求體。"
+    }
+  },
+  "share_button": {
+    "label": "分享",
+    "tooltips": {
+      "unsaved_request": "您需要先儲存請求才能分享",
+      "no_edit_permission": "只有儲存在集合中的請求才能分享。您需要編輯權限才能儲存請求。",
+      "share_request": "分享請求"
+    }
+  },
+  "meta": {
+    "tooltips": {
+      "comment_mode": {
+        "label": "切換到評論模式",
+        "disabled": "您需要聯網才能檢視評論。",
+        "unsaved_request": "未儲存的請求不支援評論模式。"
+      },
+      "edit_mode": "切換到構建模式"
+    },
+    "header_placeholder": "請求名稱"
+  },
+  "send_button": {
+    "label": "傳送",
+    "is_sending": "取消",
+    "is_sses_stream": "關閉",
+    "send_and_download": "傳送並下載",
+    "send_and_download_response": "下載回應",
+    "options_label": "傳送選項",
+    "ai_actions": {
+      "get_successful_response": "獲取成功的回應",
+      "visualize_response": "視覺化回應",
+      "write_tests": "編寫測試",
+      "debug_request": "除錯請求",
+      "explore_api": "探索 API 功能"
+    },
+    "tooltips": {
+      "no_send_permission": "您沒有權限在此工作區中傳送請求。",
+      "lna_permission_unavailable": {
+        "title": "無法訪問本地網路",
+        "body": "Postman 需要在瀏覽器中啟用本地網路訪問權限才能連線 Desktop Agent。",
+        "instructions": {
+          "1": "開啟網站的權限設定。",
+          "2": "找到<1>本地網路訪問</1>並啟用它。",
+          "3": "重新載入此頁面。"
+        }
+      },
+      "agent_unavailable": {
+        "desktop": {
+          "title": "Desktop Agent 不可用",
+          "body": "請確保已安裝 Desktop Agent，並檢查工具欄確認其正在執行。"
+        },
+        "cloud": {
+          "title": "Cloud Agent 不可用",
+          "body": "無法連線到 Cloud Agent。請稍後重試或選擇其他 Agent。"
+        },
+        "interceptor": {
+          "title": "Interceptor Agent 不可用",
+          "body": "請確保已安裝並啟用 Postman Interceptor 擴充功能程式。"
+        },
+        "unsupported": {
+          "message": "<button>切換到 Desktop 或 Cloud Agent</button> 以傳送請求。"
+        },
+        "version_not_supported": {
+          "title": "Desktop Agent 版本不受支援",
+          "body": "你使用的 Postman Desktop Agent 版本較舊，不支援此請求。請更新 Desktop Agent 後重試。"
+        },
+        "change_agent": "更換 Agent",
+        "agent_name": {
+          "desktop": "桌面代理",
+          "cloud": "雲代理"
+        }
+      },
+      "fork_recommendation": {
+        "primary_msg": "目前無法在公開工作區中傳送請求，我們正在為未來版本開發此功能！",
+        "secondary_msg": "將此集合復刻到您自己的工作區即可傳送請求。",
+        "primary_action": "建立復刻"
+      },
+      "live_session": {
+        "host_tab_closed": "無法傳送請求，因為主機標籤頁已關閉。請讓會話主持人重新開啟請求標籤頁"
+      }
+    }
+  },
+  "url_editor": {
+    "placeholder": {
+      "import_from_curl": "輸入 URL 或貼上文字",
+      "default": "輸入 URL"
+    },
+    "validation": {
+      "empty": "URL 不能為空"
+    }
+  },
+  "editor_tab": {
+    "tabs": {
+      "docs": "文件",
+      "params": {
+        "label": "參數"
+      },
+      "auth": {
+        "label": "身份驗證",
+        "short_label": "驗證"
+      },
+      "overview": "概覽",
+      "headers": "請求頭",
+      "body": {
+        "label": "請求體",
+        "editor": {
+          "none_placeholder": "此請求沒有請求體",
+          "beautify_code": "美化",
+          "type_selector": {
+            "none": "none",
+            "form_data": "form-data",
+            "url_encoded": "x-www-form-urlencoded",
+            "raw": "raw",
+            "binary": "binary",
+            "graphql": "GraphQL"
+          },
+          "empty_state": {
+            "title": "Can not send request body",
+            "message": "Can not send body with {requestMethod} request while using the browser agent. Switch to the desktop agent to customize your requests further."
+          },
+          "language_selector_warning_tooltip": "所選語言與根據 Content-Type 請求頭推斷出的語言不同。",
+          "form_data": {
+            "temp_param_message": "此臨時請求體參數由 Postman 生成，不會隨請求一起儲存。",
+            "kveditor": {
+              "key_placeholder": "鍵",
+              "value_placeholder": "值",
+              "content_type_placeholder": "自動"
+            }
+          },
+          "url_encoded": {
+            "duplicate_param_warning": "這是一個重複的請求體參數，將被 Postman 生成的 {bodyParamKey} 覆蓋。",
+            "kveditor": {
+              "key_placeholder": "鍵",
+              "value_placeholder": "值"
+            }
+          },
+          "file_not_in_directory_warning": "此檔案不在您的工作目錄中。與您共享此請求的團隊成員將無法使用該檔案。為了便於協作，您可以在設定中配置工作目錄。",
+          "graphql": {
+            "method_change_toast": {
+              "title": "請求方法已更改",
+              "message": "由於所選請求體型別為 GraphQL，請求方法已更改為 POST"
+            },
+            "variables": {
+              "header": "GRAPHQL 變數",
+              "tooltip": "以 JSON 格式定義要在查詢中使用的變數"
+            },
+            "query_editor_heading": "查詢",
+            "schema_selector": {
+              "auto_fetch": "自動獲取",
+              "no_schema": "無 Schema",
+              "signed_out_dropdown": {
+                "button_label": "自動獲取",
+                "menu": {
+                  "title": "登入以使用 Spec Hub Schema",
+                  "sub_title": "您的 GraphQL 請求可以使用 Spec Hub Schema 提供自動補全建議。",
+                  "button_label": "登入以使用 Schema"
+                }
+              },
+              "no_socket_connection_alert": "您需要聯網才能使用 Spec Hub Schema 提供自動補全建議。",
+              "introspection_warning": {
+                "fetch_failure": "自動獲取失敗。請確保身份驗證、URL 和所選環境有效。檢視控制台瞭解詳情。",
+                "incorrect_schema": "Schema 不正確。與該 Schema 相關的自動補全選項將無法使用。"
+              },
+              "tag_name": {
+                "refreshing": "正在獲取…",
+                "fetched": "Schema 已獲取"
+              },
+              "refresh_tooltip": "重新整理",
+              "api_schema_warning": "服務定義正在使用已不再支援的 API Builder 物件。請將該 API 物件遷移到 Spec Hub 以繼續使用。"
+            }
+          }
+        }
+      },
+      "scripts": {
+        "label": "腳本",
+        "tooltip-text": {
+          "pre-request": "在請求傳送前執行。可用於動態配置請求，從而建立 API 工作流。",
+          "post-response": "在收到回應後執行。可用於編寫測試並設定回應視覺化工具。"
+        },
+        "migration-popover": {
+          "title": "在此處編寫和檢視測試",
+          "body": "使用回應後腳本編寫測試、視覺化回應，以及執行更多操作。",
+          "button": "知道了"
+        }
+      },
+      "test-tab-deprecation": {
+        "heading": "測試現已成為回應後腳本的一部分",
+        "message": "您可以使用腳本編寫測試、請求前腳本、視覺化回應，為 API 工作流帶來大量自動化操作。",
+        "button": "開啟回應後腳本"
+      },
+      "prscript": {
+        "label": "請求前腳本",
+        "short_label": "請求前",
+        "editor": {
+          "snippets_text": "<0>請求前腳本使用 JavaScript 編寫，會在請求傳送前執行。瞭解更多關於</0><1>請求前腳本</1>"
+        },
+        "placeholder": "使用 JavaScript 動態配置此請求。",
+        "tooltip_text": "在每個 HTTP 請求傳送前執行。通常用於動態配置請求。"
+      },
+      "tests": {
+        "label": "測試",
+        "editor": {
+          "snippets_text": "<0>測試腳本是用 JavaScript 編寫的，並在收到回應後執行。瞭解有關</0> <1>測試腳本</1>的更多資訊"
+        },
+        "placeholder": "使用 JavaScript 編寫測試、視覺化回應等。",
+        "tooltip_text": "在每個 HTTP 回應之後執行。通常用於編寫測試和視覺化回應。"
+      },
+      "configurations": {
+        "label": "設定",
+        "default_inherited_parent": "設定",
+        "list": {
+          "empty_state": {
+            "title": "請求設定不可用",
+            "message": "Postman 使用瀏覽器的預設設定傳送請求。切換到桌面代理以進一步定製您的請求。"
+          },
+          "protocolVersion": {
+            "title": "HTTP 版本",
+            "desc": "選擇用於傳送請求的 HTTP 版本。"
+          },
+          "strictSSL": {
+            "title": "啟用 SSL 證書驗證",
+            "desc": "傳送請求時驗證 SSL 證書。驗證失敗將導致請求中止。"
+          },
+          "followRedirects": {
+            "title": "自動遵循重定向",
+            "desc": "按照 HTTP 3xx 回應作為重定向。"
+          },
+          "followOriginalHttpMethod": {
+            "title": "遵循原始 HTTP 方法",
+            "desc": "使用原始 HTTP 方法重定向，而非預設使用 GET 方法重定向的行為。"
+          },
+          "followAuthorizationHeader": {
+            "title": "遵循授權標頭",
+            "desc": "當不同主機名發生重定向時，保留授權標頭。"
+          },
+          "removeRefererHeaderOnRedirect": {
+            "title": "重定向時刪除引用標頭",
+            "desc": "當重定向發生時刪除引用標頭。"
+          },
+          "insecureHTTPParser": {
+            "title": "啟用嚴格的 HTTP 解析器",
+            "desc": "限制具有無效 HTTP 標頭的回應。"
+          },
+          "disableUrlEncoding": {
+            "title": "自動編碼 URL",
+            "desc": "對 URL 的路徑、查詢參數和身份驗證欄位進行編碼。"
+          },
+          "disableCookies": {
+            "title": "停用 Cookie jar",
+            "desc": "防止此請求中使用的 Cookie 儲存在 Cookie jar 中。Cookie jar 中的現有 Cookie 將不會新增為該請求的標頭。"
+          },
+          "tlsPreferServerCiphers": {
+            "title": "握手期間使用伺服器密碼套件",
+            "desc": "在握手期間使用伺服器的密碼套件順序而不是客戶端的密碼套件順序。"
+          },
+          "maxRedirects": {
+            "title": "最大重定向次數",
+            "desc": "設定要遵循的最大重定向數的上限。"
+          },
+          "tlsDisabledProtocols": {
+            "title": "握手期間停用 TLS/SSL 協議",
+            "desc": "指定握手期間要停用的 SSL 和 TLS 協議版本。所有其他協議都將啟用。",
+            "tls_menu_label": {
+              "v1": "TLS v1",
+              "v1_1": "TLS v1.1",
+              "v1_2": "TLS v1.2",
+              "v1_3": "TLS v1.3"
+            }
+          },
+          "tlsCipherSelection": {
+            "title": "密碼套件選擇",
+            "desc": "SSL 伺服器配置檔案用於建立安全連線的密碼套件的順序。"
+          },
+          "action": {
+            "default": {
+              "label": "預設：",
+              "tooltip": "此設定使用全域設定中設定的值。更改此設定將覆蓋此請求的設定。"
+            },
+            "restore_default": {
+              "button_label": "恢復預設值",
+              "tooltip": "將此設定恢復為全域設定中使用的預設值。"
+            },
+            "toggle_switch": {
+              "active_label": "開",
+              "inactive_label": "關"
+            }
+          },
+          "interceptorDisableTooltip": "某些設定不適用於攔截器代理。切換到桌面代理以進一步定製您的請求。",
+          "cloudAgentDisableTooltip": "使用 Postman 桌面代理通過 HTTP/2 傳送請求。",
+          "multiple_input_placeholder": "輸入密碼套件"
+        }
+      }
+    },
+    "actions": {
+      "cookies": "Cookie"
+    },
+    "comment_badge_tooltip": "{count, plural, =1 {條評論} other {條評論}}"
+  },
+  "script_ai": {
+    "global_postbot_button": "使用 Postbot 編寫腳本",
+    "heading": "使用 Postbot 編寫腳本",
+    "badge": "測試版",
+    "desc": "使用 AI 輕鬆編寫腳本",
+    "opt_in_modal": {
+      "terms": "使用此功能，即表示您同意在 Postman 中使用 AI 的 <1><0>條款</0></1>",
+      "primary_action": "繼續",
+      "desc": "<0>Postbot 是您處理所有 API 相關事務的 AI 助手，可以幫助您為 API 編寫測試，甚至構建流程。只需檢視</0> <1><0> </0> <1></1> <2>圖示。</2></1>",
+      "tooltip_close": "關閉"
+    },
+    "split_loading_message": "正在努力...",
+    "split_loading_message_timeout": "再等幾秒鐘，我就完成了......",
+    "input_text_content": "向此請求新增測試",
+    "share_feedback_button": "分享意見回饋",
+    "script_generation_error": "生成測試時出現問題。",
+    "script_generation_error_not_send": "無法傳送請求。",
+    "textarea_placeholder": "提示 Postbot 編寫腳本",
+    "invalid_response_type_warning": "Postbot 目前只能生成 JSON 和 XML 回應的腳本。我們正在努力擴充功能其功能..",
+    "missing_response_warning": "測試生成需要來自伺服器的回應。傳送請求以獲取回應並重試。",
+    "bad_response_warning": "這是一個糟糕的回應！無論如何都要為此請求編寫測試嗎？",
+    "bad_response_button": "繼續編寫測試",
+    "generation_warning_missing_response": "<0> <1></1> <2>測試生成需要回應才能使用。</2></0> <1><0>點選</0> <1></1> <2>傳送請求並生成測試。</2></1>"
+  },
+  "info_context_bar": {
+    "title": "請求詳細資訊"
+  },
+  "example": {
+    "details": {
+      "title": "範例詳細資訊"
+    }
+  },
+  "onboarding_popover": {
+    "request_switching": {
+      "header": "切換請求型別",
+      "text": "使用 Postman 的 API 客戶端跨多種 API 技術工作。"
+    },
+    "last_creation": {
+      "header": "繼續使用上次建立的請求型別",
+      "text": "建立新選項卡會自動選擇最後建立的請求型別，以便您更輕鬆地使用多種 API 技術。"
+    }
+  },
+  "version_control": {
+    "fork_recommendation_popup": {
+      "title": "建立 fork 來儲存更改",
+      "message": "您沒有權限更改此集合。請將該集合 Fork 到您的工作區以儲存更改。",
+      "button_label": "建立 Fork 並儲存"
+    }
+  },
+  "related_histories": {
+    "response_pane_title": "歷史",
+    "error_meta": {
+      "title": "管理員撤銷了對歷史記錄的訪問",
+      "message": "這可能是由於安全策略所致。請聯絡您的管理員以獲取更多詳細資訊或幫助。"
+    },
+    "empty_state": {
+      "title": "無請求歷史記錄",
+      "message": "傳送請求並瀏覽其歷史記錄。"
+    }
+  },
+  "proactive_suggestions": {
+    "automation_testing": {
+      "add_tests_headline": "還在手動檢查此回應？",
+      "add_tests_description": "新增測試，在每次傳送時自動驗證回應。",
+      "add_tests_cta": "新增測試"
+    },
+    "aria_label": "主動請求建議",
+    "default_lint_fix_headline": "我找到了這些 lint 問題的修復方法。",
+    "scanning_label": "掃描中",
+    "diagnosing_label": "診斷中",
+    "apply_fix_error_title": "無法應用此修復",
+    "thinking_label": "思考中",
+    "applying_label": "正在應用…",
+    "next_steps": "下一步？",
+    "caught_up": "已全部處理完畢",
+    "lint_clean_headline": "所有 Lint 問題均已解決",
+    "next_steps_description": "需要幫助規劃下一步嗎？",
+    "view_next_steps": "檢視下一步",
+    "send_request": "傳送",
+    "ready_to_send_headline": "傳送請求",
+    "ready_to_send_description": "傳送此請求後，Postman AI 可以幫助您獲取推薦的後續步驟",
+    "trigger_label": "主動建議",
+    "settings_label": "建議設定",
+    "error_diagnosis_settings_tooltip": "配置錯誤診斷",
+    "dismiss_label": "忽略此建議",
+    "cancel_cta": "取消",
+    "think_harder": "深入思考",
+    "accept_cta": "接受",
+    "apply_fix_cta": "應用修復",
+    "apply_fix_short_cta": "修復",
+    "decline_cta": "拒絕",
+    "more_actions_label": "更多操作",
+    "open_conversation_cta": "開啟會話",
+    "open_conversation_short_cta": "開啟",
+    "open_source_code_cta": "開啟原始碼",
+    "describe_alternative": "描述其他方案",
+    "describe_placeholder": "描述你的需求。",
+    "describe_alternative_submit": "在 Agent 模式中開始",
+    "debug_with_ai_cta": "用 AI 除錯",
+    "proposed_fix_label": "建議的修復方案",
+    "show_less_diff": "收起",
+    "previous_suggestion_label": "上一條建議",
+    "next_suggestion_label": "下一條建議",
+    "pager_label": "建議導航，第 {current} 條 / 共 {total} 條",
+    "apply_cta": "應用",
+    "continue_cta": "繼續",
+    "run_cta": "執行",
+    "looking_for_suggestion": "正在查詢建議…",
+    "default_fix_headline": "我找到了此請求的修復方案。",
+    "default_handoff_headline": "這需要在 Agent Mode 中進一步排查。",
+    "actions": {
+      "try_with_agent_mode": "使用 Agent Mode 試試"
+    },
+    "settings": {
+      "heading": "建議",
+      "description": "控制 Agent Mode 在哪些位置展示情境化建議。",
+      "request_tab_toggle_label": "顯示 AI 建議",
+      "request_tab_toggle_description": "在狀態列中顯示修復和最佳化建議。",
+      "error_screen_toggle_label": "顯示錯誤診斷",
+      "error_screen_toggle_description": "在錯誤資訊旁一併檢視錯誤原因和修復建議。"
+    }
+  },
+  "save_popover": {
+    "title": "儲存您的請求以避免丟失工作",
+    "subtitle": "通過將請求儲存到集合來輕鬆訪問和重用請求。提示：使用 ⌘S 可以快速儲存。",
+    "short_subtitle": "提示：使用 ⌘S 可以快速儲存。",
+    "button_primary": "儲存請求",
+    "button_secondary": "我稍後再做"
+  },
+  "schema_editor": {
+    "error_boundary": {
+      "title": "架構編輯器載入失敗",
+      "description": "載入架構編輯器時發生意外錯誤。"
+    }
+  },
+  "linked_request": {
+    "linked_to": "已關聯到：",
+    "overrides_tag": "覆蓋項（{count}）",
+    "overrides_heading": "覆蓋項（{count}）",
+    "no_overrides": "無覆蓋項",
+    "reset": "重置",
+    "reset_tooltip": "重置全部覆蓋項",
+    "reset_success": "覆蓋項已重置",
+    "reset_error": "無法重置覆蓋項，請重試。",
+    "fields": {
+      "name": "請求名稱",
+      "queryParams": "參數",
+      "scripts": "腳本",
+      "body": "請求體"
+    },
+    "linked_tag": "已關聯（{count}）",
+    "linked_requests_heading": "{count, plural, one {此請求有 <0># 個關聯請求：</0>} other {此請求有 <0># 個關聯請求：</0>}}"
+  }
+}

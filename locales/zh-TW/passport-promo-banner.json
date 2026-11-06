@@ -1,0 +1,12 @@
+{
+  "shared_access_banner": {
+    "heading": "無需交出金鑰即可授予 API 訪問權限",
+    "body": "<0>Passport by Postman</0> 可讓您向任何開發者或 AI 智慧體授予細粒度、有時限的 API 訪問權限。金鑰始終不會離開您的雲環境，每次呼叫都會被審計，且可一鍵撤銷訪問權限。"
+  },
+  "local_reference_banner": {
+    "heading": "安全呼叫 API，無需儲存金鑰",
+    "body": "<0>Passport by Postman</0> 可讓您改用引用來呼叫 API，真實值永遠不會儲存在本機上。"
+  },
+  "try_passport_button_label": "試用 Passport",
+  "contact_sales_button_label": "聯絡銷售"
+}

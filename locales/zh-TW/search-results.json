@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "title": "搜尋"
+  },
+  "title": "搜尋結果",
+  "sidebar_sections": {
+    "tags": {
+      "title": "標籤"
+    },
+    "title": "過濾依據",
+    "workspace_type": {
+      "title": "可見性"
+    },
+    "private_network": {
+      "title": "僅限私有 API 網路",
+      "label": "私有 API 網路"
+    },
+    "type": {
+      "title": "型別",
+      "all": "全部"
+    }
+  },
+  "error_sections": {
+    "no_results": {
+      "title": "沒有找到結果",
+      "text": "嘗試檢查拼寫、調整過濾器或嘗試不同的搜尋詞。",
+      "sub_text": "注意：如果您要在架構檔案中查詢匹配項，請切換到<1><0>在 API 中搜索</0></1>"
+    },
+    "server_error": {
+      "heading": "無法搜尋",
+      "text": "我們現在搜尋時遇到困難。"
+    },
+    "user_offline": {
+      "heading": "由於您處於離線狀態，無法搜尋",
+      "text": "您需要線上才能進行搜尋"
+    },
+    "query_too_long": {
+      "heading": "搜尋查詢太長",
+      "text": "嘗試使用較短的查詢進行搜尋"
+    },
+    "empty_state": {
+      "heading": "發現元素",
+      "text": "新增搜尋查詢或按標籤過濾以檢視結果。"
+    }
+  },
+  "scope": {
+    "default_title": "個人 空間",
+    "team_title": "{teamName} 團隊"
+  },
+  "sort_label": "排序方式",
+  "spell_corrections": {
+    "no_results_text": "沒有找到“{query}”的結果",
+    "sub_texts": {
+      "did_you_mean": "您是要搜尋 <1><0>{suggestion}</0></1> 嗎？",
+      "base_subtext": "顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 結果",
+      "subtext_with_type": "顯示 {count, select, lessThanTen {< 10} other {{count}}} {type} 代替“{correctedQueryText}”",
+      "subtext_for_team_scope": "在您的 {teamName} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 結果",
+      "subtext_for_public_scope": "在 {scope} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 結果",
+      "subtext_for_team_scope_with_type": "在您的 {teamName} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} {type}",
+      "subtext_for_public_scope_with_type": "在 {scope} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} {type}"
+    }
+  },
+  "sort_options": {
+    "relevance": "最相關的",
+    "views": "觀看次數最多",
+    "updated_at": "最近的"
+  },
+  "sub_text": {
+    "results_found": "{result}：共找到 {count, select, lessThanTen {< 10} other {{count}}} 條結果",
+    "results_found_with_type": "{result}：{count, select, lessThanTen {< 10} other {{count}}} {type}",
+    "results_found_with_tag": "{result}：{count, select, lessThanTen {< 10} other {{count}}} 找到“{tag}”的結果",
+    "results_found_with_tag_and_type": "{result}：{count, select, lessThanTen {< 10} other {{count}}} 找到“{tag}”的 {type}"
+  },
+  "filter_button_text": "篩選",
+  "sidebar": {
+    "need_help": {
+      "title": "需要有關產品功能的幫助嗎？",
+      "subtitle": "在Postman學習中心搜尋"
+    }
+  },
+  "tag_sub_heading": {
+    "clear_all_button": "全部清除"
+  },
+  "results": {
+    "item": {
+      "entity_type": {
+        "folder": "資料夾",
+        "api": "API",
+        "workspace": "工作區",
+        "team": "團隊",
+        "flow": "流程",
+        "collection": "集合",
+        "request": "請求",
+        "environment": "環境",
+        "document": "文件",
+        "mock": "程式碼模擬伺服器"
+      },
+      "featured_label": "精選",
+      "trending_label": "流行趨勢",
+      "showcased_in_label": "展示於：",
+      "meta_info": {
+        "last_updated": "最後更新：",
+        "collections": "收藏：",
+        "apis": "API：",
+        "views": "瀏覽次數：",
+        "workspaces": "工作空間：",
+        "forks": "復刻：",
+        "watchers": "關注者：",
+        "grpc_request": "gRPC 請求",
+        "graphql_request": "GraphQL 請求",
+        "mqtt_request": "MQTT 請求",
+        "llm_request": "AI 請求",
+        "ws_raw_request": "WebSocket 請求",
+        "ws_socket_io_request": "Socket.IO 請求",
+        "mcp_request": "MCP 請求",
+        "http_request": "HTTP 請求",
+        "publisher_name": "作者：<1><0>{publisherName}</0></1>",
+        "verified_tooltip": "已驗證",
+        "workspace_name": "在 <1><0><0>{workspaceName}</0></0></1> 中"
+      },
+      "visibility_icon_tooltip": {
+        "public": "公開 {content}",
+        "private": "私有 {content}",
+        "team": "團隊 {content}",
+        "personal": "個人 {content}",
+        "partner": "合作伙伴 {content}",
+        "entity_type": {
+          "folder": "資料夾",
+          "api": "API",
+          "workspace": "Workspace",
+          "team": "團隊",
+          "flow": "Flow",
+          "collection": "Collection",
+          "request": "請求",
+          "environment": "Environment",
+          "document": "文件",
+          "mock": "Code Mock"
+        }
+      }
+    }
+  }
+}

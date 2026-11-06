@@ -1,0 +1,30 @@
+{
+  "modal": {
+    "title": "匯入",
+    "paste_label": "貼上集合、API 規範、cURL 命令或 URL",
+    "hint_intro": "支援以下格式：",
+    "hint_collection": "Postman 集合 JSON 或 API 規範：貼上原始內容或拖放檔案。",
+    "hint_curl": "cURL 命令：在此貼上單條 cURL 命令。",
+    "hint_urls": "URL：填寫一個或多個 URL，以英文逗號分隔。每個 URL 都會匯入為一個 GET 請求。"
+  },
+  "actions": {
+    "cancel": "取消",
+    "import": "確認",
+    "upload": "上傳 Postman 集合或 API 規範"
+  },
+  "shortcuts": {
+    "commit": "<0>Shift + Enter</0><1> 匯入</1>",
+    "escape": "<0>Esc</0><1> 關閉</1>"
+  },
+  "progress": {
+    "checking_title": "正在檢查貼上的內容…",
+    "checking_file_title": "正在檢查 {fileName}…",
+    "checking_stage": "正在識別格式"
+  },
+  "errors": {
+    "unrecognised": "格式無效。請貼上集合、API 規範、cURL 命令或 URL。",
+    "unsupported_grpcurl": "暫不支援在此匯入 gRPC 請求。請先在側邊欄建立集合，再在上方選擇它。",
+    "unsupported_file": "所選檔案型別無法匯入。支援的型別：{extensions}。",
+    "unreadable_file": "無法讀取所選檔案。請嘗試直接貼上其內容。"
+  }
+}

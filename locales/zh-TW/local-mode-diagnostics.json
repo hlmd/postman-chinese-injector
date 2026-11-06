@@ -1,0 +1,68 @@
+{
+  "workspace_config": {
+    "missing_dir": "缺少 .postman 目錄。",
+    "missing_file": ".postman 目錄中缺少 resources.yaml 檔案。",
+    "invalid_structure": "resources.yaml 無效：檔案必須包含 YAML 物件。",
+    "missing_workspace_id": "resources.yaml 無效：工作區.id 欄位缺失或無效。",
+    "empty_workspace_id": "無效的 resources.yaml：工作區.id 不能為空。",
+    "invalid_yaml_format": "resources.yaml 中的 YAML 格式無效：{errorMessage}",
+    "read_error": "無法讀取 resources.yaml：{errorMessage}",
+    "invalid_local_resources": "resources.yaml 無效：localResources 必須是將實體型別對映到路徑陣列的物件。",
+    "invalid_cloud_resources": "resources.yaml 無效：cloudResources 必須是將實體型別對映到路徑 ID 對映的物件。",
+    "unknown_entity_type_local": "resources.yaml 無效：localResources.{key} 不是可識別的實體型別。",
+    "invalid_local_value": "resources.yaml 無效：localResources.{key} 必須是字串陣列。",
+    "unknown_entity_type_cloud": "resources.yaml 無效：cloudResources.{key} 不是可識別的實體型別。",
+    "invalid_cloud_value": "resources.yaml 無效：cloudResources.{key} 必須是將路徑對映到雲 ID 的物件。"
+  },
+  "workflows_config": {
+    "read_error": "無法讀取 workflows.yaml：{errorMessage}",
+    "invalid_yaml_format": "workflows.yaml 中的 YAML 格式無效：{errorMessage}",
+    "invalid_structure": "workflows.yaml 無效：檔案必須包含 YAML 物件。",
+    "unknown_workflow_key": "workflows.yaml 無效：“{key}”不是可識別的工作流程。",
+    "invalid_workflow_array": "workflows.yaml 無效：“{workflow}”必須是關係條目陣列。",
+    "syntax_error_not_object": "workflows.yaml 無效：{workflow}[{index}] 處的條目不是物件。",
+    "syntax_error_missing_spec": "workflows.yaml 無效：{workflow}[{index}] 處的條目缺少非空“spec”欄位。",
+    "syntax_error_missing_collection": "workflows.yaml 無效：{workflow}[{index}] 處的條目缺少非空“collection”欄位。",
+    "syntax_error_invalid_options": "workflows.yaml 無效：{workflow}[{index}] 處的條目具有無效的“options”（必須是字串/布林值的對映）。",
+    "duplicate_entry": "“{workflow}”中存在重複條目：規範“{spec}”和集合“{collection}”出現多次。",
+    "missing_spec_path": "“{workflow}”引用的規範檔案不存在：{path}",
+    "missing_collection_path": "“{workflow}”引用的集合檔案不存在：{path}",
+    "missing_counterpart": "規範“{spec}”和集合“{collection}”存在於“{fromWorkflow}”中，但在“{toWorkflow}”中缺失。",
+    "options_mismatch": "兩個工作流程之間規範“{spec}”和集合“{collection}”的選項有所不同。"
+  },
+  "header_actions": {
+    "fix_issues_button": "修復問題",
+    "fix_all_no_issues_tooltip": "沒有問題",
+    "fix_issues_disabled_tooltip": "沒有可修復的問題"
+  },
+  "fix_toasts": {
+    "workspace_config_success": "更新了 resources.yaml 中的工作區 ID",
+    "workspace_config_error": "無法更新 resources.yaml 中的工作區 ID",
+    "workflows_config_success": "已清理 workflows.yaml",
+    "workflows_config_error": "無法清理 workflows.yaml",
+    "skipped_one_path": "無法更新路徑：{reason}",
+    "skipped_many": "{count, plural, one {# 個問題無法修復。} other {# 個問題無法修復。}}詳情請檢視診斷面板。"
+  },
+  "unrepaired": {
+    "with_reason": "無法更新路徑：{reason}",
+    "without_reason": "此問題無法修復。",
+    "reasons": {
+      "not-in-diff": "在 git 歷史中未找到重新命名記錄。",
+      "deleted": "在 git 歷史中未找到重新命名記錄，可能已被刪除。",
+      "ambiguous": "其檔案被移動到了多個位置。",
+      "interchangeable": "另一個條目的內容與其完全相同，無法確定移動的是哪一個。",
+      "destination-declared": "其新位置已列在 resources.yaml 中。",
+      "destination-unreadable": "無法讀取其新位置。",
+      "outside-workspace": "它被移到了工作區之外。",
+      "hop-limit": "重新命名次數過多，無法追蹤。",
+      "cycle": "其重新命名鏈指回了之前的名稱。",
+      "search-timed-out": "搜尋 git 歷史耗時過長。",
+      "history-too-large": "git 歷史過大，無法搜尋。",
+      "git-failed": "無法讀取 git 歷史。",
+      "uncommitted-changes-unread": "無法讀取未提交的更改。",
+      "never-committed": "此路徑尚未提交。請先提交，然後重新執行修復。",
+      "not-a-git-repo": "工作區不在 git 儲存庫中，沒有可搜尋的歷史。",
+      "unknown": "無法從 git 歷史中確定它的去向。"
+    }
+  }
+}

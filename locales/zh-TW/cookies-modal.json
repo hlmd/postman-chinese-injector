@@ -1,0 +1,98 @@
+{
+  "browser_empty_state": {
+    "title": "沒有可用的 Cookie",
+    "message": "Postman 通過瀏覽器傳送請求時無法訪問cookie。要捕獲和管理 Cookie，請嘗試 Postman 桌面代理。"
+  },
+  "generic_empty_state": {
+    "message": "您使用的是較舊版本的 Postman 桌面代理，它不能用於新增或編輯 Cookie。 \n\n單擊工具欄中的 Postman 代理圖示更新 桌面代理，或切換到使用 Postman 雲代理。",
+    "secondary_action": "切換到 雲代理"
+  },
+  "heading": {
+    "browser": "管理 Cookie",
+    "generic": "Cookie"
+  },
+  "tabs": {
+    "manage": {
+      "label": "管理 Cookie",
+      "domain_del_success_toast": "所有 Cookie 均已成功清除。",
+      "domain_del_error_toast": "無法刪除域 {deletedDomain} 的 Cookie。",
+      "cookie_domain_mismatch_toast": "此處不支援更改 Cookie 的域名，編輯已丟棄。",
+      "cookie_save_error_toast": "Cookie 更改儲存失敗。",
+      "cookie_name_missing_toast": "Cookie 必須有名稱，編輯已丟棄。",
+      "domain_allowlist_button": "域名白名單",
+      "domain_clear_all_button": "清除所有 Cookie"
+    },
+    "sync": {
+      "label": "同步 Cookie",
+      "capture_section": {
+        "help_text_with_proxy": "瞭解有關 <1><0>cookies</0></1> 以及如何使用 <3><0>Interceptor 和 Proxy.</0></3> 捕獲它們的更多資訊。",
+        "help_text_only_interceptor": "瞭解有關 <1><0>cookies</0></1> 以及如何使用 <3><0>Interceptor.</0></3> 捕獲它們的更多資訊。",
+        "tabs": {
+          "intercepter": {
+            "label": "攔截器",
+            "input": {
+              "label": "域名",
+              "info_text": "新增域名也會自動同步其子域的 Cookie",
+              "placeholder": "輸入域名 (domain.com) 或 (sub.domain.com)"
+            },
+            "add_button": "新增域名",
+            "connection_status": {
+              "connected": "已連線",
+              "disconnected": "已斷開連線"
+            },
+            "capture_button": {
+              "intercepter_active": "停止同步",
+              "intercepter_inactive": "開始同步",
+              "disabled_tooltip": "連線攔截器以開始同步 Cookie。"
+            },
+            "missing_interceptor": {
+              "header": "沒有連線到攔截器",
+              "body": "確保您的瀏覽器已開啟並且您已安裝 <1><0>Interceptor 擴充功能.</0></1>",
+              "body_web": "確保您已安裝 <1><0>Interceptor 擴充功能.</0></1>"
+            }
+          },
+          "proxy": {
+            "label": "代理",
+            "toggle_label": "啟用 Postman 作為代理",
+            "desc": "使用 Postman 的內建代理從任何裝置或瀏覽器同步 Cookie。",
+            "startup_banner": {
+              "title": "通過代理捕獲 HTTPS 請求",
+              "cert_install": "<0>只需安裝證書即可開始通過 Postman 的代理伺服器路由 HTTPS 請求。</0> <1><0>瞭解如何安裝證書</0></1>"
+            },
+            "port_input": {
+              "label": "埠",
+              "placeholder": "埠"
+            },
+            "domain_input": {
+              "label": "域名",
+              "info_text": "新增域名也會自動同步其子域的 Cookie",
+              "placeholder": "輸入域名 (domain.com) 或 (sub.domain.com)"
+            },
+            "add_button": "新增域名",
+            "capture_button": {
+              "stop_auto_sync": "停止同步",
+              "start_auto_sync": "開始同步",
+              "disabled_tooltip": "啟用代理以開始同步 Cookie。"
+            },
+            "domain_sync_error_message": "需要新增域才能開始同步 Cookie。"
+          }
+        }
+      }
+    }
+  },
+  "domain_allowlist": {
+    "back_button": "回到 Cookie",
+    "whitelist_container": {
+      "heading": "域名白名單",
+      "desc": "新增域以允許在腳本中訪問該域的 Cookie。瞭解有關<1><0>在腳本中訪問 c​​ookie</0></1> 的更多資訊",
+      "input_placeholder": "將域新增到白名單",
+      "add_button": "新增"
+    }
+  },
+  "add_domain_placeholder": "輸入域名",
+  "add_domain_button": "新增域名",
+  "domains_list": {
+    "empty": "沒有可用的 Cookie",
+    "add_cookie_button": "新增 Cookie"
+  }
+}

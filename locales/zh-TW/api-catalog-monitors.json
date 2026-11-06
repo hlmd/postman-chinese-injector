@@ -1,0 +1,19 @@
+{
+  "blank_state": {
+    "heading": "最近 {days, plural, one {# 天} other {# 天}}內沒有監控執行記錄",
+    "description": "此檢視展示最近 {days, plural, one {# 天} other {# 天}}內的監控執行記錄，無論它們是由 Postman 計劃任務、CI 還是手動觸發的。執行頻率低於該週期的監控在此時間視窗內可能沒有任何執行記錄。",
+    "value_prop": "監控可幫助你持續跟蹤 API 的健康狀況、效能和可靠性。",
+    "setup_cta": "設定監控"
+  },
+  "headings": {
+    "run_history": "執行歷史（最近 {days, plural, one {# 天} other {# 天}}）",
+    "monitors": "監控 · 最近 {days, plural, one {# 天} other {# 天}}"
+  },
+  "executor_type": {
+    "schedule_runner": "計劃執行",
+    "api_runner": "手動",
+    "postman_cli_runner": "Postman CLI 監控執行",
+    "cli": "Postman CLI",
+    "other": "其他"
+  }
+}

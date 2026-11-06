@@ -1,0 +1,17 @@
+{
+  "invite_user": {
+    "default_title": "姓名、電子郵件或群組名稱",
+    "select_file_to_add_people": "選擇 TXT 或 CSV 檔案來新增人員",
+    "add_from_file": "從檔案新增",
+    "invite_status": {
+      "pending": "邀請 待定",
+      "approval_pending": "待批准"
+    },
+    "error_messages": {
+      "already_a_team_member": "{email} 已經是你的 團隊 成員",
+      "wrong_file_type": "只能上傳CSV和TXT檔案",
+      "file_too_large": "檔案大小大於 {max_file_size}MB，僅支援小於 {max_file_size}MB 的檔案。",
+      "file_read_error": "上傳您的檔案時出錯。請重試"
+    }
+  }
+}

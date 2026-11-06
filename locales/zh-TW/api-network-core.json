@@ -1,0 +1,195 @@
+{
+  "private_network": {
+    "add_to_network_cta": {
+      "requesterPossessive": {
+        "your": "您的",
+        "other": "{name} 的"
+      },
+      "unpublished_state": {
+        "api_overview_accordion": {
+          "helperText": {
+            "publisher": "讓您的 團隊 成員輕鬆發現和使用 API 的正確 版本。",
+            "requester": "讓您的 團隊 成員輕鬆發現和使用 API 的正確 版本。"
+          },
+          "publishButton": {
+            "addText": "新增到 API 網路",
+            "requestText": "請求 新增"
+          }
+        },
+        "collection_overview": {
+          "heading": {
+            "text": "發布到 API 網路"
+          },
+          "helperText": {
+            "publisher": "通過將集合發布到您的 團隊 的內部 API 網路，使其可被發現。",
+            "requester": "通過將集合發布到您的 團隊 的內部 API 網路，使其可被發現。"
+          },
+          "publishButton": {
+            "addText": "發布集合",
+            "requestText": "請求 發布"
+          }
+        },
+        "workspace_settings": {
+          "label": {
+            "text": "新增到 私有 API 網路"
+          },
+          "helperText": {
+            "publisher": "讓組織內的消費者更容易發現此工作區",
+            "requester": "讓組織內的消費者更容易發現此工作區"
+          },
+          "publishButton": {
+            "text": "新增到網路",
+            "addText": "新增到網路",
+            "requestText": "請求 新增"
+          }
+        },
+        "api_overview": {
+          "helperText": {
+            "publisher": "將您的 {entityType} 新增到您的 API 網路，使您的 {entityType} 易於被發現。",
+            "requester": "通過請求將您的 {entityType} 新增到您的 API 網路，使您的 {entityType} 可被發現。"
+          },
+          "publishButton": {
+            "addText": "新增到 API 網路",
+            "requestText": "請求 新增"
+          }
+        }
+      },
+      "published_state": {
+        "api_overview_accordion": {
+          "text": "在網路上檢視",
+          "helperText": "添加了此 API 的所有已發布版本"
+        },
+        "collection_overview": {
+          "heading": {
+            "text": "發布到 API 網路"
+          },
+          "helperText": "該集合可在內部 API 網路上使用。",
+          "linkToNetwork": {
+            "text": "在網路上檢視"
+          }
+        },
+        "workspace_settings": {
+          "label": {
+            "text": "新增到 私有 API 網路"
+          },
+          "text": "在網路上檢視"
+        },
+        "api_overview": {
+          "text": "私有 API 網路"
+        },
+        "remove_button": "移除"
+      },
+      "parent_published_state": {
+        "text": "該 {entityType} 作為工作區的一部分新增"
+      },
+      "pending_state": {
+        "api_overview_accordion": {
+          "text": "新增到 私有 API 網路 請求 待處理"
+        },
+        "collection_overview": {
+          "heading": {
+            "text": "新增到 私有 API 網路"
+          },
+          "label": {
+            "text": "請求 正在稽核中"
+          }
+        },
+        "workspace_settings": {
+          "label": {
+            "text": "新增到 私有 API 網路"
+          },
+          "text": "新增到網路 請求 待定"
+        },
+        "api_overview": {
+          "text": "私有 API 網路"
+        },
+        "body": {
+          "text": "{requesterName} 請求 已將其新增到網路以供稽核 {requestedAt}。",
+          "button": "取消請求",
+          "requestedAtAbsolute": "於 {date}"
+        }
+      },
+      "rejected_state": {
+        "collection_overview": {
+          "heading": {
+            "text": "新增到 私有 API 網路"
+          }
+        },
+        "workspace_settings": {
+          "label": {
+            "text": "新增到 私有 API 網路"
+          }
+        },
+        "api_overview": {
+          "text": "私有 API 網路"
+        },
+        "body": {
+          "text_with_response": "{responderName} 拒絕了 請求 將這個 {entityType} 新增到 私有 API 網路。這是他們的註釋：",
+          "text_without_response": "{responderName} 拒絕了 請求 將這個 {entityType} 新增到 私有 API 網路。"
+        },
+        "footer": {
+          "button": "重新提交 請求",
+          "text": "要將您的 API 重新提交到 私有 API 網路，您首先需要發布您的 API。"
+        }
+      },
+      "disabled_state": {
+        "collection_overview": {
+          "heading": {
+            "text": "新增到 私有 API 網路"
+          },
+          "helperText": "通過將集合發布到您的 團隊 的內部 API 網路，使其可被發現。"
+        },
+        "workspace_settings": {
+          "label": {
+            "text": "新增到 私有 API 網路"
+          }
+        },
+        "body": {
+          "text": "將您的 {entityType} 新增到 私有 API 網路，以便您的 團隊 成員可以發現它。",
+          "button": {
+            "text": "新增到 API 網路",
+            "tooltip": "只有該 {entityType} 的編輯者才能將其新增到 私有 API 網路。",
+            "write_disabled_tooltip": "團隊 管理員 可以將您新增到 API 構建器外掛中，以在 私有 API 網路中執行操作。",
+            "org_visibility_tooltip": "工作區應可供整個組織訪問，以新增到 私有 API 網路。"
+          }
+        }
+      },
+      "remove_modal": {
+        "heading": "從網路中刪除 {entityType}？",
+        "content": "您的消費者將無法再在 私有 API 網路上發現此 {entityType}。您確定要這樣做嗎？",
+        "footer": {
+          "cancel": "取消",
+          "remove": "移除"
+        }
+      },
+      "remove_workspace_modal": {
+        "heading": "從網路中刪除工作區？",
+        "content_before": "一旦刪除，您的 團隊 將無法再發現",
+        "content_after": "工作區在 私有 API 網路上。該工作區不會從您的帳戶中刪除。",
+        "footer": {
+          "cancel": "取消",
+          "remove": "移除"
+        }
+      },
+      "parent_requested_state": {
+        "body": {
+          "text": "自 {requestedAt} 起，將工作區新增到網路的 {requesterName} 請求 正在等待稽核。"
+        }
+      },
+      "error": {
+        "toast": {
+          "cancelled_request": "取消 請求 新增到網路。",
+          "cancel_failed": "取消 請求 時出現問題。再試一次。",
+          "entity_removed": "從網路中刪除了 {entityType}",
+          "entity_remove_failed": "刪除 {entityType} 時出現問題。再試一次。"
+        }
+      }
+    },
+    "requests": {
+      "no_permission": {
+        "title": "無權限",
+        "description": "您沒有權限檢視待處理的請求。"
+      }
+    }
+  }
+}
