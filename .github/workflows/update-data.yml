@@ -29,6 +29,15 @@ jobs:
         with:
           node-version: 22
 
+      # 繁體译文由简体生成并提交进仓库；忘了重新生成时这里补生成（只告警，不阻断简体热更新）
+      - name: Sync zh-TW from zh-CN
+        run: |
+          npm ci --no-audit --no-fund
+          if ! node scripts/build-zh-tw.js --check; then
+            echo "::warning::locales 里的繁體译文与简体不同步，已在 CI 中重新生成；请本地运行 node scripts/build-zh-tw.js 并提交"
+            node scripts/build-zh-tw.js
+          fi
+
       - name: Build update bundle
         run: node scripts/build-update.js
 
@@ -38,7 +47,7 @@ jobs:
           set -e
           git init -q
           git checkout -q --orphan update-data
-          git add pm-update.json.gz
+          git add pm-update.json.gz pm-update.zh-TW.json.gz
           git -c user.name='github-actions[bot]' \
               -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
               commit -qm "data: ${GITHUB_SHA}"
@@ -47,4 +56,6 @@ jobs:
       # jsDelivr 对分支文件缓存最长 12h，主动刷新一下（失败无妨，客户端会同时比对 GitHub raw）
       - name: Purge jsDelivr cache
         continue-on-error: true
-        run: curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@update-data/pm-update.json.gz"
+        run: |
+          curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@update-data/pm-update.json.gz"
+          curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@update-data/pm-update.zh-TW.json.gz"

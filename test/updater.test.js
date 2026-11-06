@@ -76,3 +76,23 @@ test('parseSums / cmpVer', () => {
   assert.strictEqual(u.cmpVer('v1.6.1', '1.6.1'), 0);
   assert.ok(u.cmpVer('1.6.1', 'v1.7.0') < 0);
 });
+
+test('managedBy：识别 Scoop / Homebrew 安装与环境变量开关', () => {
+  assert.strictEqual(u.managedBy(String.raw`C:\Users\a\scoop\apps\postman-chinese-injector\1.8.5\postman-chinese-injector.exe`, {}), 'scoop');
+  assert.strictEqual(u.managedBy(String.raw`D:\Scoop\apps\postman-chinese-injector\current\x.exe`, {}), 'scoop');
+  assert.strictEqual(u.managedBy('/opt/homebrew/Cellar/postman-chinese-injector/1.8.5/bin/postman-chinese-injector', {}), 'homebrew');
+  assert.strictEqual(u.managedBy('/usr/local/Cellar/postman-chinese-injector/1.8.5/bin/postman-chinese-injector', {}), 'homebrew');
+  assert.strictEqual(u.managedBy('/home/linuxbrew/.linuxbrew/bin/postman-chinese-injector', {}), 'homebrew');
+  assert.strictEqual(u.managedBy(String.raw`C:\Tools\postman-chinese-injector-win-x64.exe`, {}), null);
+  assert.strictEqual(u.managedBy('/usr/local/bin/postman-chinese-injector', {}), null);
+  assert.strictEqual(u.managedBy('/usr/local/bin/x', { PMCI_NO_SELF_UPDATE: '1' }), 'env');
+});
+
+test('dataFileFor / parseDataBundle：按语言区分数据包', () => {
+  assert.strictEqual(u.dataFileFor('zh-CN'), u.DATA_FILE);
+  assert.strictEqual(u.dataFileFor('zh-TW'), 'pm-update.zh-TW.json.gz');
+  const tw = Buffer.from(JSON.stringify({ ...good, lang: 'zh-TW' }));
+  assert.strictEqual(u.parseDataBundle(tw, 'zh-TW').lang, 'zh-TW');
+  assert.throws(() => u.parseDataBundle(tw), /语言/);                       // 简体程序拿到繁體包
+  assert.throws(() => u.parseDataBundle(Buffer.from(JSON.stringify(good)), 'zh-TW'), /语言/); // 无 lang 视为简体
+});

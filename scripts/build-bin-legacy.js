@@ -71,6 +71,7 @@ function main() {
       // 二进制缺内嵌快照，运行时报「缺少 Scratch Pad 钩子源码 pm-scratchpad-cn.js（且无内嵌快照）」。
       'generated/pm-scratchpad-data.json', 'generated/pm-scratchpad-src.json',
       'generated/pm-main-data.json', 'generated/pm-main-src.json',
+      'generated/pm-zh-TW-data.json',
     ]) {
       fs.mkdirSync(path.dirname(path.join(stage, f)), { recursive: true });
       fs.copyFileSync(path.join(ROOT, f), path.join(stage, f));
@@ -86,6 +87,7 @@ function main() {
         'generated/pm-chinese-data.json', 'generated/pm-chinese-src.json',
         'generated/pm-scratchpad-data.json', 'generated/pm-scratchpad-src.json',
         'generated/pm-main-data.json', 'generated/pm-main-src.json', 'generated/pm-build-meta.json',
+        'generated/pm-zh-TW-data.json',
       ] },
     }, null, 2));
 

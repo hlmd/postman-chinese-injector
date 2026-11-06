@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postman 中文注入</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --line: #d0d7de;
+    --accent: #ff6c37; --accent-soft: #fff1eb; --ok: #1a7f37;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1f2125; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --accent: #ff7f50; --accent-soft: #3a2a23; --ok: #3fb950; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 14px/1.5 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", "Microsoft JhengHei", sans-serif;
+  }
+  main { width: 320px; padding: 16px; }
+  body.page main { width: auto; max-width: 420px; padding: 8px 0; }
+  h1 { font-size: 15px; margin: 0 0 12px; }
+  fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 6px; }
+  legend { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  label {
+    display: flex; align-items: center; gap: 10px; padding: 8px 10px;
+    border: 1px solid var(--line); border-radius: 8px; cursor: pointer;
+  }
+  label:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+  input[type=radio] { accent-color: var(--accent); margin: 0; }
+  .hint { color: var(--muted); font-size: 12px; margin-left: auto; }
+  .status { margin: 12px 0 0; font-size: 12px; color: var(--muted); min-height: 18px; }
+  .status.ok { color: var(--ok); }
+  button {
+    margin-top: 10px; width: 100%; padding: 8px; border-radius: 8px; cursor: pointer;
+    border: 1px solid var(--accent); background: var(--accent); color: #fff; font: inherit;
+  }
+  button[hidden] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">Postman 中文注入</h1>
+  <fieldset>
+    <legend id="legend">界面语言</legend>
+    <label><input type="radio" name="lang" value="auto"><span id="opt-auto">自动</span><span class="hint" id="auto-hint"></span></label>
+    <label><input type="radio" name="lang" value="zh-CN"><span>简体中文</span></label>
+    <label><input type="radio" name="lang" value="zh-TW"><span>繁體中文</span></label>
+  </fieldset>
+  <p class="status" id="status"></p>
+  <button id="reload" type="button" hidden>刷新 Postman 页面</button>
+</main>
+<script src="options.js"></script>
+</body>
+</html>

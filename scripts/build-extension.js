@@ -9,9 +9,12 @@
  * build-extension.js —— 把汉化打包成 Chrome / Edge (MV3) 浏览器扩展，给 Postman 网页版用
  *
  * 产物（dist/extension/，可直接「加载已解压的扩展程序」）：
- *   ├── manifest.json      # MV3；内容脚本 world:MAIN + run_at:document_start
- *   ├── pm-i18n-data.js    # window.__PM_I18N__ = { <module>: {...中文...} }（由 locales/ 合并）
- *   └── pm-chinese.js      # 与桌面端共用的同一份运行时钩子（唯一真源）
+ *   ├── manifest.json                 # MV3；后台 + 选项页 + 工具栏弹出面板
+ *   ├── background.js                 # 按语言设置注册内容脚本（world:MAIN + document_start）
+ *   ├── options.html / popup.html / options.js   # 选择「自动 / 简体中文 / 繁體中文」
+ *   ├── pm-i18n-data.<lang>.js        # window.__PM_I18N__ = { <module>: {...} }（zh-CN / zh-TW 各一份）
+ *   ├── pm-scratchpad-data.<lang>.js  # window.__PM_SCRATCHPAD__ = { 英文: 中文 }
+ *   └── pm-chinese.js / pm-scratchpad-cn.js       # 与桌面端共用的运行时钩子（唯一真源）
  * 并额外打一个 dist/postman-chinese-injector-extension.zip 方便分发 / 上传商店。
  *
  * 原理与桌面端一致：内容脚本在页面脚本之前（document_start）于 MAIN world 包装 window.fetch /
@@ -19,7 +22,7 @@
  * 因为同一段钩子既能从全局 __PM_I18N__ 取数据（浏览器），也能从 fs 读 pm-chinese-data.json（桌面），
  * 所以两端复用 pm-chinese.js，无重复逻辑。
  *
- * 用法: node scripts/build-extension.js [lang]   （默认 zh-CN）
+ * 用法: node scripts/build-extension.js   （一个扩展同时包含简体与繁體）
  */
 'use strict';
 
@@ -28,104 +31,95 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const lang = process.argv[2] || 'zh-CN';
-const localesDir = path.join(ROOT, 'locales', lang);
-const hookSrc = path.join(ROOT, 'src', 'hooks', 'pm-chinese.js');
+const LANGS = ['zh-CN', 'zh-TW'];
+const HOOKS = path.join(ROOT, 'src', 'hooks');
+const EXT_SRC = path.join(ROOT, 'src', 'extension');
 const outDir = path.join(ROOT, 'dist', 'extension');
 const zipPath = path.join(ROOT, 'dist', 'postman-chinese-injector-extension.zip');
 
-if (!fs.existsSync(localesDir) || !fs.statSync(localesDir).isDirectory()) {
-  console.error(`[错误] 找不到语言目录: ${localesDir}`);
-  process.exit(1);
-}
-if (!fs.existsSync(hookSrc)) {
-  console.error(`[错误] 找不到钩子文件: ${hookSrc}`);
+function fail(msg) {
+  console.error(`[错误] ${msg}`);
   process.exit(1);
 }
 
-// 1) 合并 locales/<lang>/*.json -> 扁平 bundle（与 build-data.js 同构）
-const bundle = {};
-let count = 0;
-for (const name of fs.readdirSync(localesDir).sort()) {
-  if (!name.endsWith('.json')) continue;
-  const mod = name.slice(0, -'.json'.length);
-  let data;
-  try {
-    data = JSON.parse(fs.readFileSync(path.join(localesDir, name), 'utf8'));
-  } catch (e) {
-    console.error(`[跳过] ${name} 解析失败: ${e.message}`);
-    continue;
+// 合并 locales/<lang>/*.json -> 扁平 bundle（与 build-data.js 同构）
+function loadBundle(lang) {
+  const dir = path.join(ROOT, 'locales', lang);
+  if (!fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) fail(`找不到语言目录: ${dir}（繁體请先运行 node scripts/build-zh-tw.js）`);
+  const bundle = {};
+  for (const name of fs.readdirSync(dir).sort()) {
+    if (!name.endsWith('.json')) continue;
+    let data;
+    try {
+      data = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
+    } catch (e) {
+      console.error(`[跳过] ${lang}/${name} 解析失败: ${e.message}`);
+      continue;
+    }
+    if (data && typeof data === 'object' && Object.keys(data).length) bundle[name.slice(0, -'.json'.length)] = data;
   }
-  if (data && typeof data === 'object' && Object.keys(data).length) {
-    bundle[mod] = data;
-    count++;
-  }
-}
-if (!count) {
-  console.error(`[错误] ${localesDir} 下没有可用的翻译文件`);
-  process.exit(1);
+  if (!Object.keys(bundle).length) fail(`${dir} 下没有可用的翻译文件`);
+  return bundle;
 }
 
-// 2) 准备干净的输出目录
+function loadScratchpad(lang) {
+  const p = path.join(ROOT, 'locales', 'scratchpad', `${lang}.json`);
+  if (!fs.existsSync(p)) fail(`找不到 Scratch Pad 词典: ${path.relative(ROOT, p)}`);
+  return JSON.parse(fs.readFileSync(p, 'utf8'));
+}
+
+// 1) 准备干净的输出目录
 fs.rmSync(outDir, { recursive: true, force: true });
 fs.mkdirSync(outDir, { recursive: true });
 
-// 3) 写入数据脚本（先于钩子执行，预置全局）
-const dataJs = 'window.__PM_I18N__ = ' + JSON.stringify(bundle) + ';\n';
-fs.writeFileSync(path.join(outDir, 'pm-i18n-data.js'), dataJs, 'utf8');
-
-// 4) 复制共用钩子
-fs.copyFileSync(hookSrc, path.join(outDir, 'pm-chinese.js'));
-
-// 4b) Scratch Pad DOM 词典 + 钩子（补语言包未覆盖的 UI 文案，让网页版也走整串 DOM 翻译）。
-//     浏览器无 fs，故把词典预置成全局 window.__PM_SCRATCHPAD__（先于钩子执行）。词典缺失则告警跳过。
-let scratchJs = [];
-const spDictPath = path.join(ROOT, 'locales', 'scratchpad', lang + '.json');
-const spHookPath = path.join(ROOT, 'src', 'hooks', 'pm-scratchpad-cn.js');
-if (fs.existsSync(spDictPath) && fs.existsSync(spHookPath)) {
-  let spDict = null;
-  try {
-    spDict = JSON.parse(fs.readFileSync(spDictPath, 'utf8'));
-  } catch (e) {
-    console.warn(`[跳过] Scratch Pad 词典解析失败: ${e.message}`);
-  }
-  if (spDict && typeof spDict === 'object' && Object.keys(spDict).length) {
-    fs.writeFileSync(
-      path.join(outDir, 'pm-scratchpad-data.js'),
-      'window.__PM_SCRATCHPAD__ = ' + JSON.stringify(spDict) + ';\n',
-      'utf8'
-    );
-    fs.copyFileSync(spHookPath, path.join(outDir, 'pm-scratchpad-cn.js'));
-    scratchJs = ['pm-scratchpad-data.js', 'pm-scratchpad-cn.js'];
-    console.log(`[完成] 已附带 Scratch Pad DOM 词典（${Object.keys(spDict).length} 条）`);
-  }
-} else {
-  console.warn('[提示] 未找到 Scratch Pad 词典/钩子，扩展将不含 DOM 翻译（可先跑 build-scratchpad-dict.js）');
+// 2) 每种语言一份数据脚本（先于钩子执行，预置全局）；后台按设置只注册其中一种
+let totalKB = 0;
+for (const lang of LANGS) {
+  const bundle = loadBundle(lang);
+  const dataJs = 'window.__PM_I18N__ = ' + JSON.stringify(bundle) + ';\n';
+  fs.writeFileSync(path.join(outDir, `pm-i18n-data.${lang}.js`), dataJs, 'utf8');
+  const sp = loadScratchpad(lang);
+  const spJs = 'window.__PM_SCRATCHPAD__ = ' + JSON.stringify(sp) + ';\n';
+  fs.writeFileSync(path.join(outDir, `pm-scratchpad-data.${lang}.js`), spJs, 'utf8');
+  const kb = (Buffer.byteLength(dataJs) + Buffer.byteLength(spJs)) / 1024;
+  totalKB += kb;
+  console.log(`[完成] ${lang}: ${Object.keys(bundle).length} 模块 + Scratch Pad ${Object.keys(sp).length} 条（${kb.toFixed(0)} KB）`);
 }
 
-// 5) 生成 manifest.json（版本号取自 package.json）
+// 3) 共用钩子（与桌面端同一份）+ 扩展自身的后台、选项页 / 弹出面板
+for (const f of ['pm-chinese.js', 'pm-scratchpad-cn.js']) {
+  const src = path.join(HOOKS, f);
+  if (!fs.existsSync(src)) fail(`找不到钩子文件: ${src}`);
+  fs.copyFileSync(src, path.join(outDir, f));
+}
+for (const f of ['background.js', 'options.html', 'options.js']) {
+  fs.copyFileSync(path.join(EXT_SRC, f), path.join(outDir, f));
+}
+// 弹出面板与选项页同一份页面，body 带 class="popup" 用窄版式
+const optionsHtml = fs.readFileSync(path.join(EXT_SRC, 'options.html'), 'utf8');
+if (!optionsHtml.includes('<body>')) fail('options.html 缺少 <body> 标签');
+fs.writeFileSync(path.join(outDir, 'popup.html'), optionsHtml.replace('<body>', '<body class="popup">'), 'utf8');
+
+// 4) 生成 manifest.json（版本号取自 package.json）。内容脚本不写在 manifest 里，
+//    由 background.js 按语言设置动态注册（chrome.scripting.registerContentScripts，world: MAIN）。
 const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
 const manifest = {
   manifest_version: 3,
   name: 'Postman 中文注入',
   version: pkg.version || '1.0.0',
-  description: '把中文翻译注入 Postman 网页版（go.postman.co 等），界面变中文。',
-  content_scripts: [
-    {
-      matches: ['https://*.postman.co/*', 'https://*.getpostman.com/*', 'https://*.postman.com/*'],
-      js: ['pm-i18n-data.js', 'pm-chinese.js'].concat(scratchJs),
-      run_at: 'document_start',
-      world: 'MAIN',
-      all_frames: true
-    }
-  ]
+  description: '把简体 / 繁體中文注入 Postman 网页版（go.postman.co 等），可自动跟随浏览器语言或手动指定。',
+  minimum_chrome_version: '111',
+  permissions: ['scripting', 'storage'],
+  host_permissions: ['https://*.postman.co/*', 'https://*.getpostman.com/*', 'https://*.postman.com/*'],
+  background: { service_worker: 'background.js' },
+  action: { default_title: 'Postman 中文注入：切换简体 / 繁體', default_popup: 'popup.html' },
+  options_ui: { page: 'options.html', open_in_tab: false },
 };
 fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8');
 
-const dataKB = (Buffer.byteLength(dataJs) / 1024).toFixed(0);
-console.log(`[完成] 扩展已生成: ${path.relative(ROOT, outDir)}（${count} 模块, 数据 ${dataKB} KB）`);
+console.log(`[完成] 扩展已生成: ${path.relative(ROOT, outDir)}（简体 + 繁體，数据共 ${totalKB.toFixed(0)} KB）`);
 
-// 6) 打 zip（平台自适应，失败仅告警，不影响未打包目录）
+// 5) 打 zip（平台自适应，失败仅告警，不影响未打包目录）
 try {
   let r;
   if (process.platform === 'win32') {

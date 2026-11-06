@@ -31,13 +31,14 @@
  * 共享 main world 且先于页面脚本执行，故钩子能直接改 window.fetch 拦截语言包响应。
  *
  * 用法:
- *     node postman-chinese-injector.js                       # 注入简体中文（自动探测 Postman）
- *     node postman-chinese-injector.js --restore             # 还原
+ *     node postman-chinese-injector.js                       # 注入中文（按系统语言选简体 / 繁體，自动探测 Postman）
+ *     node postman-chinese-injector.js --lang zh-TW          # 指定注入繁體中文
+ *     node postman-chinese-injector.js restore               # 还原
  *     node postman-chinese-injector.js --resources <dir>     # 直接指定含 app.asar 或 app/ 的目录
  *     node postman-chinese-injector.js --postman-dir <dir>   # 指定 Postman 安装根目录
  *     node postman-chinese-injector.js --app-version 12.16.1 # Windows 多版本时指定 app-<version>
  *
- * 装为全局命令后亦可：postman-chinese-injector [--restore ...]
+ * 装为全局命令后亦可：postman-chinese-injector [命令] [选项]（-h 查看全部）
  * 注入/还原前请先完全退出 Postman。macOS / Linux 的系统级安装可能需要 sudo。
  */
 'use strict';
@@ -53,6 +54,48 @@ const HOOKS_DIR = path.join(BASE_DIR, 'src', 'hooks');
 const HOOK_SRC = path.join(HOOKS_DIR, 'pm-chinese.js');
 const LOCALES_DIR = path.join(BASE_DIR, 'locales');
 const DEFAULT_LANG = 'zh-CN';
+// 支持的界面语言。zh-TW 由 scripts/build-zh-tw.js 从简体译文生成（OpenCC 简→繁 + 修正表）
+const LANGUAGES = {
+  'zh-CN': { name: '简体中文' },
+  'zh-TW': { name: '繁體中文' },
+};
+
+// 把 BCP 47 / POSIX 语言标签归一成支持的语言；认不出返回 null。
+//   zh / zh-CN / zh-SG / zh-Hans(-*) / zh_CN.UTF-8 → zh-CN
+//   zh-TW / zh-HK / zh-MO / zh-Hant(-*)            → zh-TW
+function normalizeLang(tag) {
+  if (!tag) return null;
+  const parts = String(tag).split(/[.@]/)[0].toLowerCase().split(/[-_]/).filter(Boolean);
+  if (parts[0] === 'zh') {
+    const rest = parts.slice(1);
+    if (rest.includes('hant') || rest.some((r) => r === 'tw' || r === 'hk' || r === 'mo')) return 'zh-TW';
+    return 'zh-CN';
+  }
+  // 也接受 cn / tw / hans / hant 这类简写
+  if (['cn', 'hans', 'sc', 'chs'].includes(parts[0])) return 'zh-CN';
+  if (['tw', 'hk', 'hant', 'tc', 'cht'].includes(parts[0])) return 'zh-TW';
+  return null;
+}
+
+// 选语言：--lang > PMCI_LANG > LC_ALL / LC_MESSAGES / LANG > 系统区域设置 > 默认简体
+function resolveLang(arg, env = process.env, sysLocale) {
+  if (arg) {
+    const lang = normalizeLang(arg);
+    if (!lang) throw new Error(`不支持的语言: ${arg}（目前支持 ${Object.keys(LANGUAGES).join(' / ')}）`);
+    return { lang, from: '--lang' };
+  }
+  for (const k of ['PMCI_LANG', 'LC_ALL', 'LC_MESSAGES', 'LANG']) {
+    const lang = normalizeLang(env[k]);
+    if (lang) return { lang, from: `${k}=${env[k]}` };
+  }
+  let sys = sysLocale;
+  if (sys === undefined) {
+    try { sys = Intl.DateTimeFormat().resolvedOptions().locale; } catch (e) { sys = null; }
+  }
+  const lang = normalizeLang(sys);
+  if (lang) return { lang, from: `系统区域 ${sys}` };
+  return { lang: DEFAULT_LANG, from: '默认' };
+}
 const DATA_NAME = 'pm-chinese-data.json'; // 注入时在 asar 内生成的 bundle 文件名
 const SCRATCH_HOOK_NAME = 'pm-scratchpad-cn.js';
 const SCRATCH_HOOK_SRC = path.join(HOOKS_DIR, SCRATCH_HOOK_NAME);
@@ -193,7 +236,7 @@ function hasLocalLocales(lang) {
 async function prepareRemoteData(opts, lang) {
   if (hasLocalLocales(lang)) return;
   const meta = loadEmbeddedMeta();
-  remoteData = await updater.resolveDataBundle({ embeddedAt: meta && meta.committedAt, offline: opts.offline });
+  remoteData = await updater.resolveDataBundle({ lang, embeddedAt: meta && meta.committedAt, offline: opts.offline });
   if (remoteData) console.log(`[更新] 使用在线译文（来源 ${remoteData.from}，提交于 ${remoteData.committedAt}）`);
 }
 
@@ -201,8 +244,18 @@ const REMOTE_FROM = () => `在线数据包（${remoteData.from}）`;
 
 // ---------- 从 locales/<lang>/*.json 构建注入用的扁平 bundle ----------
 // 编译成单文件二进制时身边没有 locales/，改用编译期嵌入的 pm-chinese-data.json。
-function loadEmbedded() {
+function loadEmbedded(lang = DEFAULT_LANG) {
+  if (lang !== DEFAULT_LANG) return (loadEmbeddedAlt(lang) || {}).data || null;
   try { return require('./generated/pm-chinese-data.json'); } catch (e) { return null; }
+}
+
+// 非默认语言的内嵌快照：{ data, scratchpadDict, mainDict }（由 scripts/build-data.js 生成）。
+// bun --compile 只打包字面量路径的 require，所以每种语言单独写一行。
+function loadEmbeddedAlt(lang) {
+  try {
+    if (lang === 'zh-TW') return require('./generated/pm-zh-TW-data.json');
+  } catch (e) { /* 未生成 */ }
+  return null;
 }
 
 // 注入用的钩子源码：编译成单文件二进制时 __dirname 指向编译机路径（如 /home/runner/...），
@@ -244,20 +297,21 @@ function scratchpadHookSource() {
 }
 
 // Scratch Pad 词典：① locales/scratchpad/zh-CN.json（exe 旁或源码旁）；② 内嵌快照
-function loadEmbeddedScratchpadDict() {
+function loadEmbeddedScratchpadDict(lang = DEFAULT_LANG) {
+  if (lang !== DEFAULT_LANG) return (loadEmbeddedAlt(lang) || {}).scratchpadDict || null;
   try { return require('./generated/pm-scratchpad-data.json'); } catch (e) { return null; }
 }
-function loadScratchpadDict() {
+function loadScratchpadDict(lang = DEFAULT_LANG) {
   for (const root of localeRoots()) {
-    const p = path.join(root, 'scratchpad', 'zh-CN.json');
+    const p = path.join(root, 'scratchpad', `${lang}.json`);
     if (isFile(p)) {
       try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
     }
   }
   if (remoteData && remoteData.scratchpadDict) return { dict: remoteData.scratchpadDict, from: REMOTE_FROM() };
-  const emb = loadEmbeddedScratchpadDict();
+  const emb = loadEmbeddedScratchpadDict(lang);
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
-  throw new Error('缺少 Scratch Pad 词典（locales/scratchpad/zh-CN.json 或内嵌快照）');
+  throw new Error(`缺少 Scratch Pad 词典（locales/scratchpad/${lang}.json 或内嵌快照）`);
 }
 
 // 主进程钩子源码 / 词典（逻辑同 Scratch Pad）
@@ -276,20 +330,21 @@ function mainHookSource() {
   if (emb) return { src: emb, from: '内嵌快照' };
   throw new Error(`缺少主进程钩子源码 ${MAIN_HOOK_NAME}（且无内嵌快照）`);
 }
-function loadEmbeddedMainDict() {
+function loadEmbeddedMainDict(lang = DEFAULT_LANG) {
+  if (lang !== DEFAULT_LANG) return (loadEmbeddedAlt(lang) || {}).mainDict || null;
   try { return require('./generated/pm-main-data.json'); } catch (e) { return null; }
 }
-function loadMainDict() {
+function loadMainDict(lang = DEFAULT_LANG) {
   for (const root of localeRoots()) {
-    const p = path.join(root, 'main', 'zh-CN.json');
+    const p = path.join(root, 'main', `${lang}.json`);
     if (isFile(p)) {
       try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
     }
   }
   if (remoteData) return { dict: remoteData.mainDict, from: REMOTE_FROM() };
-  const emb = loadEmbeddedMainDict();
+  const emb = loadEmbeddedMainDict(lang);
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
-  throw new Error('缺少主进程词典（locales/main/zh-CN.json 或内嵌快照）');
+  throw new Error(`缺少主进程词典（locales/main/${lang}.json 或内嵌快照）`);
 }
 
 // 把注入块插到 main.js 最前面（若有 'use strict' 指令则插在其后，免得破坏严格模式）
@@ -324,7 +379,7 @@ function buildBundle(lang) {
   }
   if (!dir) {
     if (remoteData) return { bundle: remoteData.data, count: Object.keys(remoteData.data).length, source: REMOTE_FROM() };
-    const emb = loadEmbedded();
+    const emb = loadEmbedded(lang);
     if (emb && typeof emb === 'object' && Object.keys(emb).length) {
       return { bundle: emb, count: Object.keys(emb).length, source: '内嵌数据' };
     }
@@ -455,9 +510,9 @@ async function patchAsar(target, lang) {
   // 提前解析钩子源码（二进制内嵌 / 源码同目录），缺失则在改动任何文件前就失败
   const hook = hookSource();
   const spHook = scratchpadHookSource();
-  const spDict = loadScratchpadDict();
+  const spDict = loadScratchpadDict(lang);
   const mainHook = mainHookSource();
-  const mainDict = loadMainDict();
+  const mainDict = loadMainDict(lang);
 
   // 0) 从 locales/<lang>/ 构建注入数据（二进制无 locales 时用内嵌数据）
   const { bundle, count, source } = buildBundle(lang);
@@ -522,9 +577,9 @@ async function patchDir(target, lang) {
   // 提前解析钩子源码，缺失则在改动任何文件前就失败
   const hook = hookSource();
   const spHook = scratchpadHookSource();
-  const spDict = loadScratchpadDict();
+  const spDict = loadScratchpadDict(lang);
   const mainHook = mainHookSource();
-  const mainDict = loadMainDict();
+  const mainDict = loadMainDict(lang);
 
   // 0) 构建注入数据
   const { bundle, count, source } = buildBundle(lang);
@@ -719,74 +774,156 @@ function statusAsar(target) {
 }
 
 // ---------- CLI ----------
-function printHelp() {
-  console.log(`postman-chinese-injector —— 把中文注入 Postman 桌面端（跨平台）
+const BIN = 'postman-chinese-injector';
+
+function languageList(indent = '  ') {
+  return Object.entries(LANGUAGES).map(([code, info]) => `${indent}${code.padEnd(6)} ${info.name}`).join('\n');
+}
+
+const help = () => `${BIN} —— 给 Postman 桌面端注入中文界面（简体中文 / 繁體中文）
 
 用法:
-  postman-chinese-injector [选项]   # 或 node postman-chinese-injector.js [选项]
+  ${BIN} [命令] [选项]
+
+命令:
+  apply      注入翻译（默认，不写命令时就是它）；注入前请完全退出 Postman
+  restore    从备份还原英文原版（用备份覆盖回 app.asar / preload）
+  status     只读检查目标是否已注入，打印结论（同 verify）
+  langs      列出支持的语言、覆盖率，以及本机会自动选中哪种
+  version    显示版本（同 -v、--version）
+  help       显示本帮助（同 -h、--help）
 
 选项:
-  --status                  检查目标是否已注入（只读，不改动），打印结论
-  --restore                 还原注入（用备份覆盖回 app.asar / preload）
-  --resources <dir>         直接指定含 app.asar 或未打包 app/ 的目录（跳过自动探测）
-  --postman-dir <dir>       指定 Postman 安装根目录
-  --app-version <v>         Windows 多版本共存时指定 app-<version>（默认最新）
-  --offline                 不联网：不检查程序新版本、不拉取在线译文（有本机缓存则用缓存）
-  --no-self-update          只拉取最新译文，不自动更新程序本身
-  -v, --version             显示本工具版本
-  -h, --help                显示帮助
+  --lang <代码>         指定语言（只写 --lang 不带代码就列出支持的语言）；
+                        不指定时按 PMCI_LANG、LC_ALL / LANG、系统语言自动选择，认不出用简体中文
+  --resources <目录>    直接指定含 app.asar 或未打包 app/ 的目录（跳过自动探测）
+  --postman-dir <目录>  指定 Postman 安装根目录
+  --app-version <版本>  Windows 多版本共存时指定 app-<版本>（默认最新）
+  --offline             不联网：不自更新、不拉取在线译文（有本机缓存则用缓存）
+  --no-self-update      只拉取在线译文，不更新程序本身
+
+支持的语言:
+${languageList()}
 
 平台默认探测位置:
   Windows  %LOCALAPPDATA%\\Postman\\app-<version>\\resources
   macOS    /Applications/Postman.app/Contents/Resources（及 ~/Applications）
   Linux    /opt/Postman/app/resources 等常见位置
 
-注入/还原前请先完全退出 Postman。macOS / Linux 的系统级安装可能需要 sudo。`);
-}
+示例:
+  ${BIN}                        按系统语言注入
+  ${BIN} --lang zh-TW           注入繁體中文
+  ${BIN} status                 检查是否已注入
+  ${BIN} restore                还原英文
+
+注入 / 还原前请先完全退出 Postman。macOS / Linux 的系统级安装可能需要 sudo。
+说明与问题反馈：https://github.com/hlmd/postman-chinese-injector
+`;
+
+const COMMANDS = ['apply', 'restore', 'status', 'verify', 'langs', 'version', 'help'];
+// 旧版的开关写法仍然有效：--restore / --status 等同于对应命令
+const LEGACY_CMD_FLAGS = { '--restore': 'restore', '--status': 'status' };
 
 function parseArgs(argv) {
-  const opts = { postmanDir: null, resources: null, appVersion: null, restore: false, status: false, offline: false, selfUpdate: true };
-  for (let i = 0; i < argv.length; i++) {
+  const opts = { postmanDir: null, resources: null, appVersion: null, lang: null, offline: false, selfUpdate: true };
+  // 第一个参数不以 - 开头就是命令；直接以开关开头（如双击后只带 --offline）时视为 apply
+  let cmd = argv[0] && !argv[0].startsWith('-') ? argv[0] : null;
+  const takeValue = (i, name) => {
+    const v = argv[i + 1];
+    if (v === undefined || v.startsWith('-')) throw new UsageError(`${name} 需要一个值（用 -h 查看用法）`);
+    return v;
+  };
+  for (let i = cmd ? 1 : 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === '--restore') opts.restore = true;
-    else if (a === '--status') opts.status = true;
-    else if (a === '--resources') opts.resources = argv[++i];
-    else if (a === '--postman-dir') opts.postmanDir = argv[++i];
-    else if (a === '--app-version') opts.appVersion = argv[++i];
+    if (LEGACY_CMD_FLAGS[a]) cmd = cmd || LEGACY_CMD_FLAGS[a];
+    else if (a === '--lang') {
+      // 只写 --lang 不带代码：列出支持的语言
+      if (argv[i + 1] === undefined || argv[i + 1].startsWith('-')) opts.lang = '';
+      else opts.lang = argv[++i];
+    }
+    else if (a.startsWith('--lang=')) opts.lang = a.slice('--lang='.length);
+    else if (a === '--resources') opts.resources = takeValue(i++, a);
+    else if (a === '--postman-dir') opts.postmanDir = takeValue(i++, a);
+    else if (a === '--app-version') opts.appVersion = takeValue(i++, a);
     else if (a === '--offline') opts.offline = true;
     else if (a === '--no-self-update') opts.selfUpdate = false;
-    else if (a === '-v' || a === '--version') { console.log(toolVersion()); process.exit(0); }
-    else if (a === '-h' || a === '--help') { printHelp(); process.exit(0); }
-    else { console.error(`[错误] 未知参数: ${a}（用 --help 查看用法）`); process.exit(2); }
+    else throw new UsageError(`未知参数: ${a}。运行 ${BIN} -h 查看用法`);
   }
-  return opts;
+  if (cmd && !COMMANDS.includes(cmd)) throw new UsageError(`未知命令: ${cmd}。运行 ${BIN} -h 查看用法`);
+  return { cmd: cmd === 'verify' ? 'status' : (cmd || 'apply'), opts };
 }
 
-async function main() {
-  const argv = process.argv.slice(2);
-  const opts = parseArgs(argv);
-  const patching = !opts.status && !opts.restore;
+class UsageError extends Error {}
+
+// langs：各语言相对简体的覆盖率（语言包词条 / Scratch Pad 词典 / 原生菜单词典），只读本地或内嵌数据
+function cmdLangs(opts) {
+  const leaves = (o) => (typeof o === 'string' ? 1 : o && typeof o === 'object' ? Object.values(o).reduce((n, v) => n + leaves(v), 0) : 0);
+  const stat = (lang) => {
+    const safe = (fn) => { try { return fn(); } catch (e) { return 0; } };
+    return {
+      ui: safe(() => leaves(buildBundle(lang).bundle)),
+      sp: safe(() => Object.keys(loadScratchpadDict(lang).dict).length),
+      menu: safe(() => Object.keys(loadMainDict(lang).dict).length),
+    };
+  };
+  const base = stat(DEFAULT_LANG);
+  const pct = (a, b) => (b ? `${Math.min(100, Math.round((a / b) * 100))}%` : '-');
+  const { lang: cur, from } = resolveLang(opts.lang);
+  console.log(`当前将使用：${LANGUAGES[cur].name}（${cur}），来自 ${from}\n`);
+  // 按终端显示宽度补空格（中日韩字符占两格）
+  const width = (t) => [...t].reduce((w, ch) => w + (/[ᄀ-ᅟ⺀-꓏가-힣豈-﫿＀-｠]/.test(ch) ? 2 : 1), 0);
+  const padW = (t, n) => t + ' '.repeat(Math.max(0, n - width(t)));
+  console.log(` ${padW('代码', 7)}  ${padW('语言', 12)} ${padW('', 1)}界面  Scratch Pad  菜单`);
+  for (const [code, info] of Object.entries(LANGUAGES)) {
+    const s = stat(code);
+    const mark = code === cur ? '*' : ' ';
+    console.log(`${mark}${code.padEnd(7)}  ${padW(info.name, 12)} ${pct(s.ui, base.ui).padStart(5)}  ${pct(s.sp, base.sp).padStart(11)}  ${pct(s.menu, base.menu).padStart(4)}`);
+  }
+  console.log(`\n用 --lang <代码> 指定语言，如：${BIN} --lang zh-TW`);
+}
+
+async function run(argv) {
+  // 帮助 / 版本：出现在任何位置都直接响应，不联网、不注入
+  if (argv.some((a) => ['-h', '--help', '/?'].includes(a)) || argv[0] === 'help') {
+    console.log(help());
+    return 0;
+  }
+  if (argv.some((a) => ['-v', '-V', '--version'].includes(a)) || argv[0] === 'version') {
+    console.log(`${BIN} v${toolVersion()}`);
+    return 0;
+  }
+  const { cmd, opts } = parseArgs(argv);
+  if (opts.lang === '') {
+    console.log(`目前支持的语言（用 --lang <代码> 指定）：\n${languageList()}`);
+    return 0;
+  }
+  const { lang, from: langFrom } = resolveLang(opts.lang);
+  if (cmd === 'langs') { cmdLangs(opts); return 0; }
+
   updater.cleanupOldBinary();
   // 先自更新：新版本可能带来新的探测 / 注入逻辑，更新成功则直接交给新版本跑完并退出
-  if (patching && !opts.offline && opts.selfUpdate) {
+  if (cmd === 'apply' && !opts.offline && opts.selfUpdate) {
     const code = await updater.selfUpdate({ currentVersion: toolVersion(), argv });
-    if (code !== null) process.exit(code);
+    if (code !== null) return code;
   }
   const target = resolveTarget(opts);
   console.log(`[目标] ${target.resourcesDir}（${target.kind === 'asar' ? 'app.asar' : '未打包 app/ 目录'}）`);
-  if (opts.status) status(target);
-  else if (opts.restore) restore(target);
+  if (cmd === 'status') status(target);
+  else if (cmd === 'restore') restore(target);
   else {
-    await prepareRemoteData(opts, DEFAULT_LANG);
-    await patch(target, DEFAULT_LANG);
+    console.log(`[语言] ${LANGUAGES[lang].name}（${lang}），来自 ${langFrom}${opts.lang ? '' : '，可用 --lang 指定'}`);
+    await prepareRemoteData(opts, lang);
+    await patch(target, lang);
   }
+  return 0;
 }
 
 // 导出供测试用（作为 CLI 运行时不受影响）
-module.exports = { findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict, mainHookSource, loadMainDict, injectMainEntry, stripBlock };
+module.exports = { run, parseArgs, normalizeLang, resolveLang, LANGUAGES, findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict, mainHookSource, loadMainDict, injectMainEntry, stripBlock };
 
 if (require.main === module) {
-  main().catch((e) => {
+  run(process.argv.slice(2)).then((code) => process.exit(code), (e) => {
+    if (e instanceof UsageError) { console.error(`[错误] ${e.message}`); process.exit(2); }
     console.error(`[错误] ${e.message}`);
     if (e && e.code === 'EACCES' && process.platform !== 'win32') {
       console.error('       权限不足——该目录（如 /opt/Postman）通常属 root，需要写权限。');

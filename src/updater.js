@@ -30,11 +30,17 @@ const DATA_BRANCH = 'update-data';
 const DATA_FILE = 'pm-update.json.gz';
 // 数据包格式版本：钩子文件组成 / 数据结构变了就 +1，老程序会忽略新格式的数据包（转而靠自更新）
 const DATA_SCHEMA = 1;
-const DATA_URLS = [
-  `https://raw.githubusercontent.com/${REPO}/${DATA_BRANCH}/${DATA_FILE}`,
-  `https://cdn.jsdelivr.net/gh/${REPO}@${DATA_BRANCH}/${DATA_FILE}`,
-  `https://fastly.jsdelivr.net/gh/${REPO}@${DATA_BRANCH}/${DATA_FILE}`,
-];
+// 每种语言一个数据包：简体沿用 pm-update.json.gz（老版本程序只认它），其余为 pm-update.<lang>.json.gz
+const DEFAULT_LANG = 'zh-CN';
+const dataFileFor = (lang = DEFAULT_LANG) => (lang === DEFAULT_LANG ? DATA_FILE : `pm-update.${lang}.json.gz`);
+const dataUrlsFor = (lang) => {
+  const f = dataFileFor(lang);
+  return [
+    `https://raw.githubusercontent.com/${REPO}/${DATA_BRANCH}/${f}`,
+    `https://cdn.jsdelivr.net/gh/${REPO}@${DATA_BRANCH}/${f}`,
+    `https://fastly.jsdelivr.net/gh/${REPO}@${DATA_BRANCH}/${f}`,
+  ];
+};
 const RELEASE_LATEST = `https://github.com/${REPO}/releases/latest`;
 const releaseAsset = (tag, name) => `https://github.com/${REPO}/releases/download/${tag}/${name}`;
 // 大文件直连 GitHub 常被截断，失败后走加速镜像；下载内容一律按 GitHub 上的 SHA256SUMS 校验
@@ -145,11 +151,12 @@ function cacheDir() {
 
 // ---------- ① 译文数据包 ----------
 // 解析并校验数据包；gzip 或纯 JSON 都认（镜像可能透明解压）。不合格抛异常。
-function parseDataBundle(buf) {
+function parseDataBundle(buf, lang = DEFAULT_LANG) {
   const raw = buf[0] === 0x1f && buf[1] === 0x8b ? zlib.gunzipSync(buf) : buf;
   const b = JSON.parse(raw.toString('utf8'));
   if (!b || typeof b !== 'object') throw new Error('数据包不是对象');
   if (b.schema !== DATA_SCHEMA) throw new Error(`数据包格式 ${b.schema} 与本程序（${DATA_SCHEMA}）不兼容`);
+  if ((b.lang || DEFAULT_LANG) !== lang) throw new Error(`数据包语言 ${b.lang || DEFAULT_LANG} 与所需 ${lang} 不符`);
   const isObj = (o) => o && typeof o === 'object' && Object.keys(o).length > 0;
   if (!isObj(b.data) || !isObj(b.mainDict) || typeof b.hook !== 'string' || typeof b.mainHook !== 'string') {
     throw new Error('数据包缺少必需字段');
@@ -161,31 +168,32 @@ function parseDataBundle(buf) {
 const newer = (a, b) => Date.parse(a.committedAt) > Date.parse(b.committedAt);
 
 // 并行拉取所有数据源，取 committedAt 最新的一份（jsDelivr 对分支有最长 12h 缓存，raw 通常最新）
-async function fetchLatestData(log) {
-  const results = await Promise.allSettled(DATA_URLS.map(async (u) => {
+async function fetchLatestData(log, lang) {
+  const urls = dataUrlsFor(lang);
+  const results = await Promise.allSettled(urls.map(async (u) => {
     const { body } = await getOk(u, { timeout: 12000 });
-    return { buf: body, bundle: parseDataBundle(body), url: u };
+    return { buf: body, bundle: parseDataBundle(body, lang), url: u };
   }));
   let best = null;
   results.forEach((r, i) => {
     if (r.status === 'fulfilled') {
       if (!best || newer(r.value.bundle, best.bundle)) best = r.value;
     } else {
-      log(`[更新] ${new URL(DATA_URLS[i]).host} 拉取失败: ${r.reason && r.reason.message}`);
+      log(`[更新] ${new URL(urls[i]).host} 拉取失败: ${r.reason && r.reason.message}`);
     }
   });
   return best;
 }
 
-function readCachedData() {
-  const p = path.join(cacheDir(), DATA_FILE);
-  try { return parseDataBundle(fs.readFileSync(p)); } catch (e) { return null; }
+function readCachedData(lang) {
+  const p = path.join(cacheDir(), dataFileFor(lang));
+  try { return parseDataBundle(fs.readFileSync(p), lang); } catch (e) { return null; }
 }
 
-function writeCachedData(buf) {
+function writeCachedData(buf, lang) {
   try {
     fs.mkdirSync(cacheDir(), { recursive: true });
-    fs.writeFileSync(path.join(cacheDir(), DATA_FILE), buf);
+    fs.writeFileSync(path.join(cacheDir(), dataFileFor(lang)), buf);
   } catch (e) { /* 缓存写不进去不影响本次注入 */ }
 }
 
@@ -193,18 +201,18 @@ function writeCachedData(buf) {
  * 取可用的最新译文数据包。embeddedAt 为二进制内嵌快照的提交时间（ISO，未知可为 null）。
  * 返回比内嵌更新的数据包（含 from 字段说明来源），否则 null（调用方回退内嵌快照）。
  */
-async function resolveDataBundle({ embeddedAt, offline, log = console.log } = {}) {
+async function resolveDataBundle({ lang = DEFAULT_LANG, embeddedAt, offline, log = console.log } = {}) {
   let cand = null;
   if (!offline) {
     log('[更新] 正在检查最新译文…');
-    const got = await fetchLatestData(log);
+    const got = await fetchLatestData(log, lang);
     if (got) {
-      writeCachedData(got.buf);
+      writeCachedData(got.buf, lang);
       cand = Object.assign(got.bundle, { from: new URL(got.url).host });
     }
   }
   if (!cand) {
-    const cached = readCachedData();
+    const cached = readCachedData(lang);
     if (cached) cand = Object.assign(cached, { from: '本机缓存' });
   }
   if (!cand) return null;
@@ -222,6 +230,24 @@ function isStandaloneBinary() {
   if (!process.versions.bun) return false;
   return !/^(bun|node)(\.exe)?$/i.test(path.basename(process.execPath));
 }
+
+// 由包管理器安装（Scoop / Homebrew）时二进制归包管理器所有，自更新会让其记录的版本与实际不符，
+// 应改由 `scoop update` / `brew upgrade` 升级；也可设环境变量 PMCI_NO_SELF_UPDATE=1 手动关闭。
+function managedBy(execPath = process.execPath, env = process.env) {
+  if (env.PMCI_NO_SELF_UPDATE) return 'env';
+  let real = String(execPath);
+  // Intel Mac 上 brew 只在 /usr/local/bin 放符号链接，解析到 Cellar 下的真实路径再判断
+  try { real = fs.realpathSync(real); } catch (e) { /* 路径不存在（测试）时按原样判断 */ }
+  const p = real.replace(/\\/g, '/');
+  if (/\/scoop\/(apps|shims)\//i.test(p)) return 'scoop';
+  if (/\/(Cellar|homebrew|linuxbrew)\//.test(p)) return 'homebrew';
+  return null;
+}
+
+const UPGRADE_HINT = {
+  scoop: 'scoop update postman-chinese-injector',
+  homebrew: 'brew upgrade postman-chinese-injector',
+};
 
 // 当前平台对应的 Release 压缩包名（与 scripts/compress-dist.js 的产物一致）
 function assetNameFor(platform = process.platform, arch = process.arch, legacy = !!process.pkg) {
@@ -367,6 +393,11 @@ function cleanupOldBinary() {
  */
 async function selfUpdate({ currentVersion, argv, log = console.log } = {}) {
   if (!isStandaloneBinary() || process.env[SELF_UPDATED_ENV]) return null;
+  const manager = managedBy();
+  if (manager) {
+    if (UPGRADE_HINT[manager]) log(`[自更新] 由 ${manager} 安装，跳过自更新；升级程序请用：${UPGRADE_HINT[manager]}`);
+    return null;
+  }
   const name = assetNameFor();
   if (!name) return null;
 
@@ -424,7 +455,7 @@ async function selfUpdate({ currentVersion, argv, log = console.log } = {}) {
 }
 
 module.exports = {
-  resolveDataBundle, selfUpdate, cleanupOldBinary,
+  resolveDataBundle, selfUpdate, cleanupOldBinary, managedBy,
   // 以下导出供测试 / 构建脚本用
-  DATA_SCHEMA, DATA_FILE, parseDataBundle, assetNameFor, parseSums, extractSingleFromZip, cmpVer,
+  DATA_SCHEMA, DATA_FILE, dataFileFor, parseDataBundle, assetNameFor, parseSums, extractSingleFromZip, cmpVer,
 };

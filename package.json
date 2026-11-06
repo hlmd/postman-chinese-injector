@@ -2,6 +2,25 @@
   "name": "postman-chinese-injector",
   "version": "1.8.5",
   "description": "把中文翻译注入 Postman 桌面端 / 网页版的非官方第三方汉化工具（跨平台 CLI + 浏览器扩展）。与 Postman, Inc. 无关。",
+  "keywords": [
+    "postman",
+    "chinese",
+    "zh-CN",
+    "i18n",
+    "localization",
+    "汉化",
+    "中文",
+    "cli"
+  ],
+  "homepage": "https://github.com/hlmd/postman-chinese-injector#readme",
+  "bugs": {
+    "url": "https://github.com/hlmd/postman-chinese-injector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlmd/postman-chinese-injector.git"
+  },
+  "author": "hlmd",
   "bin": {
     "postman-chinese-injector": "postman-chinese-injector.js"
   },
@@ -35,5 +54,11 @@
     "src/",
     "locales/"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "opencc-js": "^1.4.2"
+  }
 }

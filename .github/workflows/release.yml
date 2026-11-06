@@ -67,7 +67,9 @@ jobs:
           ls -la dist
 
       - name: Build browser extension (zip)
-        run: node scripts/build-extension.js
+        run: |
+          set -e
+          node scripts/build-extension.js          # 简繁合一，扩展内切换
 
       # 供用户核对下载到的文件与 CI 产物一致（缓解杀软误报时的信任问题，见 README「杀毒软件报毒」）
       - name: Generate SHA256SUMS.txt
@@ -114,12 +116,13 @@ jobs:
           把中文翻译注入 Postman 的非官方第三方工具。
 
           - **桌面端**：下载对应平台的压缩包（Windows 为 `.zip`，Linux/macOS 为 `.tar.xz`），
-            解压得到单文件后，完全退出 Postman 再运行即可注入；`--restore` 还原。
+            解压得到单文件后，完全退出 Postman 再运行即可注入；`restore` 命令还原，`-h` 看全部命令。
+            按系统语言自动选简体 / 繁體，也可用 `--lang zh-CN` / `--lang zh-TW` 指定。
             （macOS/Linux 解压后如丢失执行权限：`chmod +x <文件名>`）
           - **老 Windows**（Win8.1 / Server 2012 R2+，默认版报 `ClosePseudoConsole` 错时）：
             下载 `postman-chinese-injector-win-x64-legacy.zip`（Node 运行时打包）。
           - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
-            「加载已解压的扩展程序」加载。
+            「加载已解压的扩展程序」加载；默认跟随浏览器语言，点扩展图标可指定简体 / 繁體。
 
           详见 README。交流反馈 QQ 群：494969115。
 
@@ -150,3 +153,93 @@ jobs:
             dist/postman-chinese-injector-*
             dist/SHA256SUMS.txt
           body_path: release-notes.md
+
+  # 发版后同步到包管理器：npm、Scoop bucket（hlmd/scoop-bucket）、Homebrew tap（hlmd/homebrew-tap）。
+  # 各步骤相互独立、缺少对应密钥时自动跳过，不影响 Release 本身。
+  #   NPM_TOKEN         npm 自动化令牌（已在 npmjs.com 配置 Trusted Publishing 时可不设）
+  #   PACKAGING_TOKEN  对 hlmd/scoop-bucket 与 hlmd/homebrew-tap 有 Contents 写权限的 PAT
+  publish-packages:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write          # npm provenance / Trusted Publishing 需要 OIDC
+    env:
+      HAS_PACKAGING_TOKEN: ${{ secrets.PACKAGING_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24     # 自带 npm 11，支持 Trusted Publishing
+          registry-url: https://registry.npmjs.org
+
+      - name: Resolve version
+        id: ver
+        run: |
+          set -e
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(node -p 'require("./package.json").version')"
+          echo "version=$tag" >> "$GITHUB_OUTPUT"
+          if [ "$tag" != "$pkg" ]; then
+            echo "::warning::tag v$tag 与 package.json 版本 $pkg 不一致，跳过 npm 发布"
+            echo "npm=false" >> "$GITHUB_OUTPUT"
+          elif npm view "postman-chinese-injector@$tag" version >/dev/null 2>&1; then
+            echo "npm 上已存在 $tag，跳过 npm 发布"
+            echo "npm=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "npm=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to npm
+        if: steps.ver.outputs.npm == 'true'
+        continue-on-error: true
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --provenance --access public
+
+      - name: Download SHA256SUMS.txt
+        if: env.HAS_PACKAGING_TOKEN == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: postman-chinese-injector-binaries
+          path: dist
+
+      - name: Checkout Scoop bucket
+        if: env.HAS_PACKAGING_TOKEN == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: hlmd/scoop-bucket
+          token: ${{ secrets.PACKAGING_TOKEN }}
+          path: scoop-bucket
+
+      - name: Checkout Homebrew tap
+        if: env.HAS_PACKAGING_TOKEN == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: hlmd/homebrew-tap
+          token: ${{ secrets.PACKAGING_TOKEN }}
+          path: homebrew-tap
+
+      - name: Update Scoop / Homebrew manifests
+        if: env.HAS_PACKAGING_TOKEN == 'true'
+        run: |
+          set -e
+          v="${{ steps.ver.outputs.version }}"
+          node scripts/update-pkg-manifests.js --version "$v" --sums dist/SHA256SUMS.txt \
+            --scoop scoop-bucket --brew homebrew-tap
+          for repo in scoop-bucket homebrew-tap; do
+            (
+              cd "$repo"
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git add -A
+              if git diff --cached --quiet; then
+                echo "$repo 无变化"
+              else
+                git commit -m "postman-chinese-injector: 更新到 v$v"
+                git push
+              fi
+            )
+          done

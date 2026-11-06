@@ -1,11 +1,14 @@
 # Postman 中文注入 · Postman Chinese Injector
 
+**简体中文** · [繁體中文](README.zh-TW.md)
+
 [![Release](https://img.shields.io/github/v/release/hlmd/postman-chinese-injector?sort=semver)](../../releases)
+[![npm](https://img.shields.io/npm/v/postman-chinese-injector)](https://www.npmjs.com/package/postman-chinese-injector)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
 [![Postman](https://img.shields.io/badge/Postman-10.x%20~%2012.x-orange)](#支持的-postman-版本)
 
-把简体中文界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置、开箱即用。
+把**简体中文 / 繁體中文**界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置、开箱即用。
 
 - **桌面端** — Windows / macOS / Linux 的**单文件可执行程序**（目标机无需装 Node），也可用 Node 源码运行。
 - **网页版** — Chrome / Edge 的 **Manifest V3 浏览器扩展**（`go.postman.co` 等）。
@@ -32,7 +35,35 @@
 3. 运行可执行文件（自动探测安装位置）；
 4. 重启 Postman，界面变中文。
 
-> 卸载汉化：运行时加 `--restore`。
+> 卸载汉化：运行 `restore` 命令（如 `postman-chinese-injector restore`）。
+>
+> **繁體中文**：按系统语言自动选择简体 / 繁體；想手动指定就加 `--lang zh-TW`（简体为 `--lang zh-CN`）。
+
+**也可以用包管理器安装**（装好后命令都是 `postman-chinese-injector`）
+
+Scoop（Windows）：
+
+```powershell
+scoop bucket add hlmd https://github.com/hlmd/scoop-bucket
+scoop install hlmd/postman-chinese-injector
+scoop update postman-chinese-injector          # 升级
+```
+
+Homebrew（macOS / Linux）：
+
+```bash
+brew install hlmd/tap/postman-chinese-injector
+brew upgrade postman-chinese-injector          # 升级
+```
+
+npm（需 Node ≥ 22.12）：
+
+```bash
+npm i -g postman-chinese-injector              # 安装 / 升级
+npx postman-chinese-injector                   # 或免安装直接运行
+```
+
+> 经 Scoop / Homebrew 安装时程序不会自更新（由包管理器负责升级）；npm 版使用随包附带的译文，升级包即获得新译文。
 
 **网页版**
 
@@ -40,6 +71,8 @@
 2. Chrome / Edge 打开 `chrome://extensions` → 开启「开发者模式」；
 3. 点「加载已解压的扩展程序」→ 选该目录；
 4. 刷新 Postman 网页版，界面变中文。
+
+> 简体 / 繁體默认跟随浏览器语言；想手动指定，点工具栏上的扩展图标选「自动 / 简体中文 / 繁體中文」，再刷新 Postman 页面。
 
 下面是完整说明。
 
@@ -52,12 +85,10 @@
 - 主窗口 preload 脚本可注入 —— 新版为根目录 `preload_desktop.js`，老版（10.24）为 `preload/desktop/index.js`，7.x 为各页面用 `<script>` 加载的 `js/preload.js`，脚本自动判别；
 - 界面语言包走 `.../_ar-assets/locales/<lang>/<module>-<hash>.json` 远程加载 —— 运行时钩子拦截这些响应做替换。
 
-| 项 | 说明 |
-|------|------|
-| **已适配范围** | Postman 桌面端 **10.x ～ 12.x**（当前最新），以最新正式版为主要测试目标 |
-| **网页版** | `go.postman.co` 等，随官方界面滚动更新，无版本号约束 |
-| **覆盖度** | 译文键值对齐「当前 Postman 界面文案」，越接近最新版覆盖越全；过旧版本界面文案不同，可能出现部分未翻译 |
-| **不支持** | 更早、不走 `_ar-assets` 语言包机制的老架构 |
+- **已适配范围**：Postman 桌面端 **10.x ～ 12.x**（当前最新），以最新正式版为主要测试目标。
+- **网页版**：`go.postman.co` 等，随官方界面滚动更新，无版本号约束。
+- **覆盖度**：译文键值对齐「当前 Postman 界面文案」，越接近最新版覆盖越全；过旧版本界面文案不同，可能出现部分未翻译。
+- **不支持**：更早、不走 `_ar-assets` 语言包机制的老架构。
 
 > Postman 会**自动更新**，更新后生成新的版本目录（不含补丁）→ 界面变回英文，重新跑一次注入即可。想固定版本，见下方[关闭自动更新](#关闭自动更新保持汉化不被冲掉)。
 
@@ -124,7 +155,7 @@ Postman 主窗口 `webPreferences` 为 `contextIsolation=false` + `nodeIntegrati
   - **`app.asar` 型** — 备份原始 asar、从备份打补丁、再打包回去；
   - **未打包 `app/` 型**（没有 `app.asar`，只有 `resources/app/`）— 直接备份并改 `app/preload_desktop.js`，把钩子与数据写到同目录，无需解包 / 打包。
 
-  两种形态都幂等、可 `--restore` 还原。
+  两种形态都幂等、可用 `restore` 命令还原。
 - **网页版** — 浏览器扩展以 `world:MAIN` + `run_at:document_start` 注入同一段钩子，在页面脚本之前生效。
 
 钩子 `pm-chinese.js` 是**唯一真源**，两端共用：网页版从全局 `window.__PM_I18N__` 取数据，桌面端从 asar 内同目录的 `pm-chinese-data.json` 用 `fs` 读。
@@ -153,9 +184,10 @@ Postman **登入态**主界面是远程网页，走上面的语言包拦截即�
 
 ```
 postman-chinese-injector/
-├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 --restore
+├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 restore / status / langs 命令
 ├── src/
 │   ├── updater.js                # 在线更新：程序自更新（GitHub Release）+ 译文热更新（update-data 分支）
+│   ├── extension/                # 浏览器扩展的后台、选项页 / 弹出面板（语言切换）
 │   └── hooks/
 │       ├── pm-chinese.js         # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
 │       ├── pm-scratchpad-cn.js   # 第二个钩子：登出态 Scratch Pad 的 DOM 词典替换（仅桌面端）
@@ -165,15 +197,20 @@ postman-chinese-injector/
 │   ├── zh-CN/                    # 语言包翻译源：每个模块一个 json，可单独编辑
 │   │   ├── api-client-core.json
 │   │   └── ...
+│   ├── zh-TW/                    # 繁體译文（由 build-zh-tw.js 从 zh-CN 生成，勿手改）
 │   ├── scratchpad/
-│   │   └── zh-CN.json            # Scratch Pad DOM 词典（英文整串 → 中文）
+│   │   ├── zh-CN.json            # Scratch Pad DOM 词典（英文整串 → 中文）
+│   │   └── zh-TW.json            # 同上，繁體（生成）
 │   └── main/
-│       └── zh-CN.json            # 主进程原生菜单 / 对话框词典（英文整串 → 中文）
+│       ├── zh-CN.json            # 主进程原生菜单 / 对话框词典（英文整串 → 中文）
+│       └── zh-TW.json            # 同上，繁體（生成）
 ├── scripts/
 │   ├── build-data.js             # 合并 locales/ 并生成可嵌入二进制的快照（见下）
-│   ├── build-update.js           # 生成在线热更新数据包 dist/update/pm-update.json.gz（CI 推到 update-data 分支）
+│   ├── build-update.js           # 生成在线热更新数据包 dist/update/pm-update(.zh-TW).json.gz（CI 推到 update-data 分支）
+│   ├── build-zh-tw.js            # 由简体译文生成繁體译文（OpenCC s2twp + zh-tw-glossary.json 修正表）
+│   ├── update-pkg-manifests.js   # 发版时生成 Scoop 清单 / Homebrew Formula
 │   ├── build-scratchpad-dict.js  # 构建 / 维护 Scratch Pad 词典 locales/scratchpad/zh-CN.json
-│   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 浏览器扩展，给 Postman 网页版用
+│   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 浏览器扩展（简繁合一，源码在 src/extension/）
 │   ├── build-bin.js              # 用 bun --compile 编译单文件二进制（复用本地缓存的运行时）
 │   ├── build-bin-legacy.js       # 用 pkg（Node 运行时）打老系统版 Windows 二进制
 │   ├── fetch-runtimes.js         # 预拉取各平台 bun 运行时到本地缓存，规避交叉编译时的在线下载
@@ -182,7 +219,7 @@ postman-chinese-injector/
 └── package.json                  # bin 命令 postman-chinese-injector、构建脚本、依赖 @electron/asar
 ```
 
-> `build-data.js` 在 `generated/` 下生成 6 份供 `bun --compile` 静态内嵌的快照：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）、`pm-main-data.json`（主进程菜单词典）、`pm-main-src.json`（`pm-main-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
+> `build-data.js` 在 `generated/` 下生成供 `bun --compile` 静态内嵌的快照（繁體译文与两本词典合在 `pm-zh-TW-data.json` 一份里，钩子源码各语言共用），简体共 6 份：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）、`pm-main-data.json`（主进程菜单词典）、`pm-main-src.json`（`pm-main-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
 
 ---
 
@@ -190,14 +227,18 @@ postman-chinese-injector/
 
 ### 方式一：下载二进制（推荐，目标机无需 Node）
 
-从 Release 下载对应平台的压缩包，解压得到单文件（重命名随意）：
+从 Release 下载对应平台的压缩包，解压得到同名单文件（Windows 为 `.exe`，重命名随意）：
 
-| 平台 | 下载文件 | 解压后 |
-|------|----------|--------|
-| Windows x64 | `postman-chinese-injector-win-x64.zip` | `postman-chinese-injector-win-x64.exe` |
-| Windows x64（老系统） | `postman-chinese-injector-win-x64-legacy.zip` | `postman-chinese-injector-win-x64-legacy.exe` |
-| Linux x64 / arm64 | `postman-chinese-injector-linux-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-linux-x64` / `-arm64` |
-| macOS x64 / arm64（Apple Silicon） | `postman-chinese-injector-macos-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-macos-x64` / `-arm64` |
+| 平台 | 下载文件 |
+|------|----------|
+| Windows x64 | `…-win-x64.zip` |
+| Windows（老系统） | `…-win-x64-legacy.zip` |
+| Linux x64 | `…-linux-x64.tar.xz` |
+| Linux arm64 | `…-linux-arm64.tar.xz` |
+| macOS Intel | `…-macos-x64.tar.xz` |
+| macOS Apple Silicon | `…-macos-arm64.tar.xz` |
+
+> 文件名都以 `postman-chinese-injector` 开头（上表以 `…` 省略），如 `postman-chinese-injector-win-x64.zip` 解压得到 `postman-chinese-injector-win-x64.exe`。
 
 > 压缩仅为减小下载体积（约为原来的 1/4），解压后仍按原大小运行。
 > Windows 双击 `.zip` 即可解压；Linux / macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
@@ -229,7 +270,7 @@ postman-chinese-injector/
 Postman 更新频繁，二进制每次运行注入前会自动联网检查两件事，任何一步失败都只提示、不影响注入：
 
 1. **程序自更新** —— 对比 GitHub 最新 Release，有新版则下载本平台压缩包（GitHub 直连与 `ghfast.top` 镜像**同时下载**，谁先完成用谁），按 Release 附带的 `SHA256SUMS.txt` 校验后替换自身，再以相同参数运行新版本。
-2. **译文热更新** —— main 分支每次改动译文，CI 就把最新译文 + 钩子打成 `pm-update.json.gz` 推到 [`update-data`](../../tree/update-data) 分支；程序同时从 GitHub raw 与 jsDelivr 镜像拉取、取最新一份，缓存到本机（Windows `%LOCALAPPDATA%\postman-chinese-injector`、macOS `~/Library/Caches/…`、Linux `~/.cache/…`），离线时用缓存。**不用等发版，译文修好就能拿到。**
+2. **译文热更新** —— main 分支每次改动译文，CI 就把最新译文 + 钩子打成 `pm-update.json.gz`（繁體为 `pm-update.zh-TW.json.gz`）推到 [`update-data`](../../tree/update-data) 分支；程序同时从 GitHub raw 与 jsDelivr 镜像拉取、取最新一份，缓存到本机（Windows `%LOCALAPPDATA%\postman-chinese-injector`、macOS `~/Library/Caches/…`、Linux `~/.cache/…`），离线时用缓存。**不用等发版，译文修好就能拿到。**
 
 | 想要 | 加参数 |
 |------|--------|
@@ -252,39 +293,57 @@ npm install                       # 安装 @electron/asar（未装则自动回�
 node postman-chinese-injector.js  # 注入；或 npm install -g . 后用 postman-chinese-injector
 ```
 
-### CLI 选项
+### 命令与选项
 
-下面用 `node postman-chinese-injector.js` 举例；二进制把它换成可执行文件名即可（如 `./postman-chinese-injector-win-x64.exe`）。
+用法：`postman-chinese-injector [命令] [选项]`。下面以装好的命令名举例；源码运行换成 `node postman-chinese-injector.js`，
+二进制换成可执行文件名（如 `./postman-chinese-injector-win-x64.exe`）。
+
+| 命令 | 作用 |
+|------|------|
+| `apply` | 注入翻译（**默认**，可省略） |
+| `restore` | 从备份还原英文原版 |
+| `status` | 只读检查是否已注入（同 `verify`） |
+| `langs` | 列出语言、覆盖率及自动选中哪种 |
+| `version` | 显示版本（同 `-v`） |
+| `help` | 显示帮助（同 `-h`） |
 
 | 选项 | 作用 |
 |------|------|
-| `--status` | 只读检查是否已注入，打印结论（不改动） |
-| `--restore` | 还原（用备份覆盖回 `app.asar` / preload） |
-| `--resources <dir>` | 直接指定含 `app.asar` 或未打包 `app/` 的目录（跳过自动探测） |
-| `--postman-dir <dir>` | 指定 Postman 安装根目录 |
-| `--app-version 12.16.1` | Windows 多版本共存时指定 `app-<version>`（默认最新） |
-| `--offline` | 不联网：不自更新、不拉取在线译文（有本机缓存则用缓存） |
-| `--no-self-update` | 只拉取最新译文，不自动更新程序本身 |
-| `-v`, `--version` | 显示本工具版本 |
-| `-h`, `--help` | 帮助 |
+| `--lang <代码>` | 界面语言：`zh-CN` / `zh-TW` |
+| `--resources <目录>` | 指定含 `app.asar` 或 `app/` 的目录 |
+| `--postman-dir <目录>` | 指定 Postman 安装根目录 |
+| `--app-version <版本>` | Windows 多版本时指定 `app-<版本>` |
+| `--offline` | 不联网（有本机缓存则用缓存） |
+| `--no-self-update` | 只拉取在线译文，不更新程序本身 |
+
+- 注入、还原前都请**完全退出 Postman**；`restore` 用备份覆盖回 `app.asar` / preload。
+- `--lang` 不指定时依次看 `PMCI_LANG`、`LC_ALL` / `LANG`、系统语言（`zh-TW` / `zh-HK` / `zh-Hant` 等归为繁體），都认不出用简体；只写 `--lang` 不带代码会列出支持的语言。
+- `--resources` / `--postman-dir` / `--app-version` 都是自动探测失败时才需要。
+
+```bash
+postman-chinese-injector                  # 按系统语言注入
+postman-chinese-injector --lang zh-TW     # 注入繁體中文
+postman-chinese-injector status           # 检查是否已注入
+postman-chinese-injector restore          # 还原英文
+```
+
+> 旧写法 `--restore`、`--status` 仍然可用，分别等同于 `restore`、`status` 命令。
 
 #### 平台默认探测位置
 
-| 平台 | 位置 |
-|------|------|
-| Windows | `%LOCALAPPDATA%\Postman\app-<version>\resources`（自动取最新版本） |
-| macOS | `/Applications/Postman.app/Contents/Resources`（含 `~/Applications`） |
-| Linux | `/opt/Postman/app/resources`、`/usr/share/postman/resources`、`~/.local/share/Postman/app/resources` 等常见位置 |
+- **Windows**：`%LOCALAPPDATA%\Postman\app-<version>\resources`（自动取最新版本）
+- **macOS**：`/Applications/Postman.app/Contents/Resources`（含 `~/Applications`）
+- **Linux**：`/opt/Postman/app/resources`、`/usr/share/postman/resources`、`~/.local/share/Postman/app/resources` 等常见位置
 
 > 探测不到时用 `--resources <含 app.asar 或 app/ 的目录>` 或 `--postman-dir <安装根目录>` 指定。
 > macOS / Linux 的系统级安装目录可能需要 `sudo` 才能写入。
 
 #### 验证注入是否成功
 
-**① 静态检查（不用启动 Postman）** —— `--status` 只读检查目标 asar 并打印结论：
+**① 静态检查（不用启动 Postman）** —— `status` 命令只读检查目标 asar 并打印结论：
 
 ```bash
-node postman-chinese-injector.js --status      # 或 ./postman-chinese-injector-win-x64.exe --status
+node postman-chinese-injector.js status        # 或 ./postman-chinese-injector-win-x64.exe status
 ```
 
 ```
@@ -396,14 +455,23 @@ node postman-chinese-injector.js
 npm run build:ext      # 或 node scripts/build-extension.js
 ```
 
-产物在 `dist/extension/`（同时打一个 `dist/postman-chinese-injector-extension.zip`）：
+产物在 `dist/extension/`（同时打一个 `dist/postman-chinese-injector-extension.zip`），一个扩展同时包含简体与繁體：
 
 ```
 dist/extension/
-├── manifest.json      # MV3，内容脚本 world:MAIN + run_at:document_start
-├── pm-i18n-data.js    # window.__PM_I18N__ = { <模块>: {…中文…} }（由 locales/ 合并）
-└── pm-chinese.js      # 与桌面端共用的同一份运行时钩子
+├── manifest.json                  # MV3：后台 + 选项页 + 工具栏弹出面板
+├── background.js                  # 按语言设置注册内容脚本（world:MAIN + document_start）
+├── popup.html / options.html      # 选择「自动 / 简体中文 / 繁體中文」
+├── pm-i18n-data.zh-CN.js          # window.__PM_I18N__ = { <模块>: {…} }（zh-TW 另一份）
+├── pm-scratchpad-data.zh-CN.js    # Scratch Pad 词典（zh-TW 另一份）
+└── pm-chinese.js                  # 与桌面端共用的同一份运行时钩子
 ```
+
+**切换简体 / 繁體**
+
+- **默认「自动」**：按浏览器的首选语言判断，`zh-TW` / `zh-HK` / `zh-Hant` 用繁體，其它用简体。
+- **手动指定**：点工具栏上的扩展图标，或在 `chrome://extensions` →「详细信息」→「扩展程序选项」里选择。
+- 选择后点面板里的「刷新已打开的 Postman 页面」（或自己刷新）即生效；页面只会加载选中的那一种语言。
 
 **安装**
 
@@ -433,8 +501,14 @@ locales/zh-CN/
 
 **改某个模块的译文** = 直接编辑对应 json，重跑注入（桌面端）或 `npm run build:ext`（网页版）即可。
 
-- 拦截的源语言固定为 `en-US` / `ja`、展示语言 `zh-CN`，写死在 `pm-chinese.js` 里。
-- 目前只注入简体中文（`locales/zh-CN/`）。
+- 拦截的源语言固定为 `en-US` / `ja`，写死在 `pm-chinese.js` 里。
+- 支持简体中文（`locales/zh-CN/`）与繁體中文（`locales/zh-TW/`）。
+
+**繁體中文怎么来的**：`locales/zh-TW/`、`locales/scratchpad/zh-TW.json`、`locales/main/zh-TW.json` 都由
+`scripts/build-zh-tw.js` 从对应简体文件生成——先用 [OpenCC](https://github.com/BYVoid/OpenCC) 的 `s2twp`（简→繁 + 惯用词转换）转换，
+再按 `scripts/zh-tw-glossary.json` 修正（如 `指令碼→腳本`、`引數→參數`、`自定義→自訂`）。只转换译文值，键名、占位符、英文原样保留。
+**请只改简体译文**（README 也一样：`README.zh-TW.md` 由 `README.md` 生成），改完运行 `node scripts/build-zh-tw.js` 重新生成繁體（需先 `npm install` 装开发依赖 `opencc-js`）；
+繁體用词不满意就往修正表里加规则。CI 发布在线译文前会检查并在需要时补生成。
 - 登出态 Scratch Pad 的 DOM 词典单独放在 `locales/scratchpad/zh-CN.json`（英文整串 → 中文），由 `scripts/build-scratchpad-dict.js` 维护。
 - 主进程原生菜单 / 对话框词典放在 `locales/main/zh-CN.json`（英文整串 → 中文），手工维护。
 
@@ -458,7 +532,7 @@ locales/zh-CN/
 更新会生成新的版本目录（不含补丁），重新跑一次注入程序即可——它会先自动把自己和译文更新到最新再注入。
 
 **想卸载汉化**
-桌面端 `node postman-chinese-injector.js --restore`；网页版在 `chrome://extensions` 移除扩展。
+桌面端 `postman-chinese-injector restore`（源码运行为 `node postman-chinese-injector.js restore`）；网页版在 `chrome://extensions` 移除扩展。
 
 ---
 
@@ -471,16 +545,14 @@ locales/zh-CN/
 
 点 **New issue** 会有现成模板（Bug / 漏译误译 / 功能建议）引导你填写；下面是报 Bug 时建议提供的资料（越全越快）：
 
-| 信息 | 怎么拿 |
-|------|--------|
-| **操作系统与版本** | Windows 10/11（含内部版本号）、macOS 版本 + 芯片（Intel / Apple Silicon）、Linux 发行版 |
-| **Postman 版本** | Postman 内 `Settings → About`，或 Windows 的 `app-<version>` 目录名 |
-| **使用方式** | 桌面端二进制 / Node 源码运行 / 网页版浏览器扩展（三选一） |
-| **本工具版本** | 运行 `... --version`，或所下载 Release 的版本号 |
-| **`--status` 输出** | 桌面端跑 `... --status`，把整段结论贴上 |
-| **Console 日志** | Postman `View → Developer → Show DevTools`（或扩展页 F12）→ Console，贴出含 `[pm-chinese]` / `[pm-scratchpad]` 的行 |
-| **完整报错** | 终端的完整错误文本（含 `EPERM` / `ClosePseudoConsole` 等关键字），别只截一半 |
-| **复现步骤与现象** | 做了什么、期望什么、实际什么；界面未翻译的可附**截图**并标出位置 |
+1. **操作系统与版本**：Windows 10/11（含内部版本号）、macOS 版本 + 芯片（Intel / Apple Silicon）、Linux 发行版。
+2. **Postman 版本**：Postman 内 `Settings → About`，或 Windows 的 `app-<version>` 目录名。
+3. **使用方式**：桌面端二进制 / 包管理器 / Node 源码运行 / 网页版浏览器扩展。
+4. **本工具版本与语言**：运行 `... -v`；用的是简体还是繁體。
+5. **`status` 输出**：桌面端跑 `... status`，把整段结论贴上。
+6. **Console 日志**：Postman `View → Developer → Show DevTools`（或扩展页 F12）→ Console，贴出含 `[pm-chinese]` / `[pm-scratchpad]` 的行。
+7. **完整报错**：终端的完整错误文本（含 `EPERM` / `ClosePseudoConsole` 等关键字），别只截一半。
+8. **复现步骤与现象**：做了什么、期望什么、实际什么；界面未翻译的可附**截图**并标出位置。
 
 > 报「某处没翻译 / 翻译不当」时，附上**截图**并说明所在界面（如登入态主界面 / 登出态 Scratch Pad / 网页版），能帮我们快速定位是哪个模块的词条。
 

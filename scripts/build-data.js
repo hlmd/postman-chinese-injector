@@ -97,6 +97,18 @@ function buildData(lang = 'zh-CN') {
   fs.writeFileSync(mHookOut, JSON.stringify({ src: fs.readFileSync(mHookSrc, 'utf8') }), 'utf8');
   console.log(`[完成] 主进程钩子源码 -> ${path.relative(ROOT, mHookOut)} (${(fs.statSync(mHookOut).size / 1024).toFixed(0)} KB)`);
 
+  // 其它语言（繁體）的内嵌快照：译文 + 两本词典合成一个文件（钩子源码各语言共用）
+  for (const alt of ['zh-TW']) {
+    const pack = buildLangPack(alt);
+    if (!pack) {
+      console.warn(`[警告] 未找到 locales/${alt}/，跳过 ${alt} 快照（请先跑 build-zh-tw.js）`);
+      continue;
+    }
+    const altOut = path.join(GEN, `pm-${alt}-data.json`);
+    fs.writeFileSync(altOut, JSON.stringify(pack), 'utf8');
+    console.log(`[完成] ${alt} 快照 -> ${path.relative(ROOT, altOut)} (${(fs.statSync(altOut).size / 1024).toFixed(0)} KB)`);
+  }
+
   // 构建元信息：译文对应的提交时间，供程序判断在线数据包 / 本机缓存是否比内嵌快照新
   const meta = { commit: gitOut(['rev-parse', 'HEAD']), committedAt: gitOut(['log', '-1', '--format=%cI']) || new Date().toISOString() };
   fs.writeFileSync(path.join(GEN, 'pm-build-meta.json'), JSON.stringify(meta), 'utf8');
@@ -105,12 +117,30 @@ function buildData(lang = 'zh-CN') {
   return { lang, count, meta };
 }
 
+// 读取某语言的全部译文：{ data, scratchpadDict, mainDict }；语言目录不存在返回 null
+function buildLangPack(lang) {
+  const dir = path.join(ROOT, 'locales', lang);
+  if (!fs.existsSync(dir)) return null;
+  const data = {};
+  for (const name of fs.readdirSync(dir).sort()) {
+    if (!name.endsWith('.json')) continue;
+    const obj = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
+    if (obj && typeof obj === 'object' && Object.keys(obj).length) data[name.slice(0, -'.json'.length)] = obj;
+  }
+  const readDict = (sub) => {
+    const p = path.join(ROOT, 'locales', sub, `${lang}.json`);
+    if (!fs.existsSync(p)) throw new Error(`找不到 ${path.relative(ROOT, p)}`);
+    return JSON.parse(fs.readFileSync(p, 'utf8'));
+  };
+  return { data, scratchpadDict: readDict('scratchpad'), mainDict: readDict('main') };
+}
+
 function gitOut(args) {
   const r = spawnSync('git', args, { cwd: ROOT, encoding: 'utf8' });
   return r.status === 0 ? r.stdout.trim() : null;
 }
 
-module.exports = { buildData };
+module.exports = { buildData, buildLangPack };
 
 if (require.main === module) {
   try {
