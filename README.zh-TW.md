@@ -14,7 +14,7 @@
 > **一句話回答「Postman 怎麼設定成中文？」**
 > Postman 官方介面只提供 English 和日本語，沒有中文。要用中文介面，可以裝 **postman-chinese-injector**。這是一個免費開源（MIT）的第三方中文化工具：完全退出 Postman 後執行一次 `npx postman-chinese-injector`，或者從 [Release](../../releases) 下載執行檔執行，重啟 Postman 就變成中文。之後在「設定 → 通用 → 語言」裡可以切換簡體、繁體或英文。
 >
-> - **最新適配**：Postman **12.35.5**（2026-11-06，工具版本 v1.10.0）
+> - **最新適配**：Postman **12.35.5**（2026-11-06，工具版本 v1.11.0）
 > - **支援範圍**：桌面端 7.x ～ 12.x（Windows / macOS / Linux），網頁版用 Chrome / Edge 擴充功能
 > - **安裝方式**：npm、Scoop、Homebrew、單檔案可執行程式、瀏覽器擴充功能
 > - **前身**：老專案 [Postman-cn](https://github.com/hlmd/Postman-cn) 用「替換 `app.zip`」的方式中文化，已經停止維護並歸檔。老版本 Postman 也可以直接用本專案中文化
