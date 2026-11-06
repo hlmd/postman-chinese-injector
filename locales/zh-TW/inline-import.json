@@ -26,7 +26,11 @@
     "link": "連結的檔案看起來是{format, select, collection {Postman 集合} openapi {OpenAPI 規範} other {Swagger 規範}}，但{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 錯誤。",
     "paste_ends_early": "這看起來是{format, select, collection {Postman 集合} openapi {OpenAPI 規範} other {Swagger 規範}}，但文字提前結束了。請貼上完整內容，或直接拖入檔案。",
     "file_ends_early": "此檔案{line, select, none {} other {在第 {line} 行}}提前結束，部分內容缺失。{format, select, collection {請從 Postman 重新匯出並拖到此處。} other {請修復檔案後重新拖到此處。}}",
-    "link_ends_early": "連結的檔案{line, select, none {} other {在第 {line} 行}}提前結束，部分內容缺失。"
+    "link_ends_early": "連結的檔案{line, select, none {} other {在第 {line} 行}}提前結束，部分內容缺失。",
+    "paste_unknown": "此 {syntax, select, yaml {YAML} other {JSON}} 有錯誤{line, select, none {} other {（第 {line} 行）}}。",
+    "file_unknown": "此檔案存在 {syntax, select, yaml {YAML} other {JSON}} 錯誤{line, select, none {} other {（第 {line} 行）}}，因此未能匯入。",
+    "link_unknown": "連結的檔案存在 {syntax, select, yaml {YAML} other {JSON}} 錯誤{line, select, none {} other {（第 {line} 行）}}。",
+    "paste_ends_early_unknown": "此 {syntax, select, yaml {YAML} other {JSON}} 不完整。請貼上全部內容，或直接拖入檔案。"
   },
   "not_importable": {
     "json": "此 JSON 不是集合、規範或環境，沒有可匯入的內容。",
@@ -34,10 +38,12 @@
     "web_page": "這是一個網頁，而不是規範或集合。請改為貼上規範或 cURL。",
     "file": "Postman 無法匯入 .{extension} 檔案。請匯入集合、規範或 cURL。",
     "short": "暫無可匯入的內容。請貼上集合、規範、cURL 或連結。",
-    "text": "這不是集合、規範或 cURL，沒有可匯入的內容。"
+    "text": "這不是集合、規範或 cURL，沒有可匯入的內容。",
+    "curl": "這看起來是一條 cURL 命令，但 Postman 無法讀取。"
   },
   "agent_fix": {
-    "button": "使用 Agent Mode 修復並匯入"
+    "button": "使用 Agent Mode 修復並匯入",
+    "scope": "{format, select, collection {僅調整格式，請求保持不變} other {路徑和架構保持不變。}}"
   },
   "failed_named": "無法匯入 {name}，請重試。",
   "failed": "匯入失敗，請重試。",

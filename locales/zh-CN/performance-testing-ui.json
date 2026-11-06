@@ -600,16 +600,11 @@
     }
   },
   "local_mode": {
-    "recorded_notice": "云端运行器使用已推送的集合，并将结果记录到 Postman 云端。开始云端运行前，请先推送本地更改。",
     "resolving": "正在检查此集合能否运行性能测试…",
     "lookup_failed": "在本地工作区中找不到此集合。请切换到其他标签页再切回，或重新打开运行器后重试。",
-    "cloud_requires_push": "在 Postman 云端运行需要集合位于 Postman 云端。请先推送此集合，或在应用中运行。",
-    "cloud_requires_sign_in": "在 Postman 云端运行需要先登录。请登录，或在应用中运行测试。",
-    "cloud_requires_supported_link": "此集合的 Postman 云端链接不支持在 Postman 云端运行。请在应用中运行测试。",
-    "cloud_requires_pushed_environment": "在 Postman 云端运行需要当前环境位于 Postman 云端。请先推送该环境，或在应用中运行测试。",
+    "cloud_mode_required": "切换到云端模式才能在云端开始运行",
     "unmatched_requests": "部分所选请求不在此集合的 Postman 云端副本中：{names}。请推送本地更改后重试。",
     "ambiguous_requests": "部分所选请求与同一文件夹中的其他项重名：{names}。请重命名，使每个请求都能与 Postman 云端副本中的一个请求对应。",
-    "cloud_copy_unavailable": "无法加载此集合的 Postman 云端副本。请检查网络连接以及你是否有权访问该集合，然后重试。",
     "local_files_unreadable": "无法从本地文件读取此集合。请检查其文件是否有效后重试。",
     "engine_unsupported": "你的账户暂不支持在应用中从本地文件运行集合。请使用受支持的 Postman CLI 版本运行本地性能测试。",
     "feature_disabled": "你的账户暂不支持对本地集合进行性能测试。",

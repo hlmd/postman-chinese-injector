@@ -186,6 +186,8 @@
     },
     "shortcut_text": "<0>{shortcutKey}</0> 导入",
     "helper_link_text": "了解有关<1>导入数据</1>的更多信息",
+    "error_learn_more_link": "了解更多",
+    "error_learn_more_link_label": "了解更多关于导入数据的信息",
     "migrate_to_postman_helper_link_text_learn": "了解",
     "migrate_to_postman_helper_link_text_migrating": "将数据迁移到 Postman",
     "migrate_to_postman_helper_link_text_from": "了解有关将数据迁移到 Postman 的更多信息",
@@ -203,9 +205,7 @@
         "validation_error": "格式错误，请输入正确的格式导入"
       },
       "other": {
-        "error_title": "格式不正确",
-        "error_desc": "我们不识别/支持这种格式。",
-        "learn_more_text": "了解我们支持的格式。"
+        "error_desc": "我们不识别/支持这种格式。"
       }
     },
     "generate_collection_option": {

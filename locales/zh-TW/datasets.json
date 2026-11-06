@@ -186,7 +186,8 @@
     },
     "secret_resolution_timeout": "Postman 未能及時訪問此資料來源的 Vault 金鑰。請確認 Vault 已解鎖後重試。",
     "secret_resolution_failed": "Postman 無法解析此資料來源使用的一個或多個 Vault 金鑰。請解鎖 Vault 並確認關聯的金鑰仍然存在。",
-    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 資料來源僅在雲端工作區中可用。"
+    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 資料來源僅在雲端工作區中可用。",
+    "sync_local_load_failed": "已儲存到雲端，但本地引擎無法載入：{reason}"
   },
   "workbench_header": {
     "button": {

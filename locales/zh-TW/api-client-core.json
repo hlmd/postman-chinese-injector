@@ -1175,7 +1175,23 @@
   "ec_collection_run": {
     "tooltip": {
       "no_permission": "您沒有權限執行此集合。",
-      "is_offline": "當您重新上線後，即可執行此集合。"
+      "is_offline": "當您重新上線後，即可執行此集合。",
+      "enabled": "執行集合"
+    },
+    "button_text": "執行",
+    "error": {
+      "open_runner": "無法開啟集合執行器。"
+    }
+  },
+  "ec_folder_run": {
+    "tooltip": {
+      "no_permission": "你沒有執行此資料夾的權限。",
+      "is_offline": "恢復聯網後即可執行此資料夾。",
+      "enabled": "執行資料夾"
+    },
+    "button_text": "執行",
+    "error": {
+      "open_runner": "無法開啟資料夾執行器。"
     }
   },
   "rfa_guest_button": {

@@ -160,6 +160,11 @@
           "client_id_metadata_document_message": "使用配置的客户端 ID 元数据文档 URL。",
           "pre_registered_message": "使用配置的预注册客户端 ID。"
         },
+        "request_client_metadata_document": {
+          "title": "获取客户端 ID 元数据文档",
+          "message": "正在获取 Postman 的客户端 ID 元数据文档。授权服务器会获取此 URL 来验证客户端。",
+          "response_title": "客户端 ID 元数据文档"
+        },
         "request_client_registration": {
           "title": "请求 客户注册",
           "message": "注册动态 OAuth 客户端。",
@@ -210,6 +215,10 @@
         "dynamic_client_registration_http_failed": "动态客户端注册失败，出现 HTTP {status}",
         "dynamic_client_registration_not_json": "动态客户端注册 响应 不是 JSON 对象",
         "dynamic_client_registration_unsupported": "授权服务器不支持动态注册；请手动配置客户端 ID",
+        "client_metadata_document_http_failed": "客户端 ID 元数据文档请求失败，HTTP {status}",
+        "client_metadata_document_not_json": "客户端 ID 元数据文档不是 JSON 对象",
+        "client_metadata_document_client_id_mismatch": "客户端 ID 元数据文档的 client_id 必须与其 URL 完全一致：{url}",
+        "client_metadata_document_redirect_uri_missing": "客户端 ID 元数据文档的 redirect_uris 中不包含 {redirectUri}",
         "client_id_missing": "OAuth 客户端凭据缺少 client_id",
         "pkce_metadata_required": "PKCE 验证之前需要 授权 服务器元数据",
         "pkce_s256_required": "授权 服务器元数据必须通告 S256 PKCE 支持",
@@ -218,6 +227,19 @@
         "authorization_required": "在获取访问令牌之前完成授权",
         "oauth_token_required": "连接 MCP 服务器之前保存 OAuth 令牌",
         "step_cancelled": "认证 测试步骤已取消"
+      },
+      "registration_method": {
+        "label": "注册方式",
+        "client_id_metadata_document": {
+          "label": "客户端 ID 元数据文档（CIMD）",
+          "description": "使用 Postman 的元数据文档 URL 作为客户端 ID。",
+          "unavailable": "此授权服务器未声明支持 CIMD。"
+        },
+        "dynamic_client_registration": {
+          "label": "动态客户端注册（DCR）",
+          "description": "向授权服务器注册一个新的客户端。",
+          "unavailable": "此授权服务器没有注册端点。"
+        }
       },
       "registration_form": {
         "title": "客户端注册请求",
@@ -259,7 +281,7 @@
         },
         "request_client_registration": {
           "label": "请求 客户注册",
-          "description": "解析配置的凭据或 请求 动态客户端注册。"
+          "description": "解析已配置的凭据、客户端 ID 元数据文档或动态客户端注册。"
         },
         "generate_pkce_parameters": {
           "label": "生成 PKCE 参数",

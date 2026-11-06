@@ -484,6 +484,11 @@
     "addWorkspace": "新增另一個工作區",
     "connected": "已連線"
   },
+  "msTeamsTenantSelect": {
+    "label": "{appName} 租戶",
+    "addTenant": "新增租戶",
+    "connected": "已連線"
+  },
   "agentTasks": {
     "title": "Agent 任務",
     "connectedBadge": "已連線",
@@ -499,6 +504,11 @@
       "accountColumn": "Slack 工作區",
       "orgTerm": "工作區"
     },
+    "microsoft_teams": {
+      "description": "在 {appName} 中提及 @Postman 即可發起 Agent Mode 任務，並在會話串中檢視狀態更新。",
+      "accountColumn": "Microsoft 租戶",
+      "orgTerm": "租戶"
+    },
     "githubapp": {
       "description": "授權 {appName} 訪問權限，使 Agent Mode 能夠讀取你的儲存庫、執行測試，並根據在 Slack 中通過 @Postman 給出的指令完成編碼任務。",
       "accountColumn": "GitHub 帳戶",
@@ -511,7 +521,7 @@
       "confirm": "連線",
       "noAccounts": "尚未連線任何 {appName} {orgTerm}。新增一個即可開始。"
     },
-    "removeError": "無法為該工作區關閉 Agent Tasks，請重試。",
+    "removeError": "無法關閉 Agent Tasks，請重試。",
     "connectError": "無法連線 {appName}，請重試。",
     "enableError": "無法開啟 Agent Tasks，請重試。"
   }

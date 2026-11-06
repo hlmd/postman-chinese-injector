@@ -4,5 +4,10 @@
     "body": "您已為此整合建立了“{workspaceName}”。確定要再建立一個工作區嗎？",
     "cancel_button_label": "取消",
     "confirm_button_label": "仍然建立"
+  },
+  "oauth_connect_error": {
+    "popup_blocked_banner_text": "彈出視窗被攔截。請允許此網站彈出視窗後重試。",
+    "timed_out_banner_text": "授權超時，請重試。",
+    "failed_banner_text": "授權失敗，請重試。"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "tag_list": {
+    "overflow_button": {
+      "label": "+{count} 個",
+      "aria_label": "{count, plural, one {顯示全部 # 個標籤} other {顯示全部 # 個標籤}}"
+    }
+  },
+  "status_editor": {
+    "status_group": "狀態",
+    "tags_group": "標籤",
+    "create_status": "建立狀態 <0>“{name}”</0>",
+    "create_tag": "建立 <0>\"{name}\"</0>",
+    "status_updated": "狀態標籤已更新為“{name}”。"
+  }
+}

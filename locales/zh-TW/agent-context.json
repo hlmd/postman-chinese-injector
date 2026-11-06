@@ -205,8 +205,10 @@
         "stable": "穩定"
       }
     },
+    "monitor_label": "監控",
     "tooltip_details": {
       "health": "健康狀況",
+      "monitor_id": "監控 ID",
       "region": "區域",
       "schedule": "計劃",
       "status": "狀態",

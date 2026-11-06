@@ -186,7 +186,8 @@
     },
     "secret_resolution_timeout": "Postman 未能及时访问此数据源的 Vault 密钥。请确认 Vault 已解锁后重试。",
     "secret_resolution_failed": "Postman 无法解析此数据源使用的一个或多个 Vault 密钥。请解锁 Vault 并确认关联的密钥仍然存在。",
-    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 数据源仅在云端工作区中可用。"
+    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 数据源仅在云端工作区中可用。",
+    "sync_local_load_failed": "已保存到云端，但本地引擎无法加载：{reason}"
   },
   "workbench_header": {
     "button": {

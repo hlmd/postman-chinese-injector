@@ -205,8 +205,10 @@
         "stable": "稳定"
       }
     },
+    "monitor_label": "监控",
     "tooltip_details": {
       "health": "健康状况",
+      "monitor_id": "监控 ID",
       "region": "区域",
       "schedule": "计划",
       "status": "状态",

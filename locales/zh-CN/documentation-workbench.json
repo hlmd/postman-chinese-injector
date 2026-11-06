@@ -30,6 +30,23 @@
         "description": "您确定要撤回 请求 来发布此 集合 的文档吗？",
         "confirm_button_text": "确认",
         "cancel_button_text": "取消"
+      },
+      "fern_docs": {
+        "trigger_button": {
+          "view": "查看 Fern 文档",
+          "offline_tooltip": "你当前处于离线状态"
+        },
+        "team_docs": {
+          "button": {
+            "claim": "认领文档",
+            "view_docs": "查看文档"
+          },
+          "claim_error": {
+            "not_admin": "只有团队管理员可以认领这些文档。",
+            "already_claimed": "这些文档已被认领。",
+            "generic": "无法发起认领，请重试。"
+          }
+        }
       }
     }
   },

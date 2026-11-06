@@ -4,5 +4,10 @@
     "body": "您已为此集成创建了“{workspaceName}”。确定要再创建一个工作区吗？",
     "cancel_button_label": "取消",
     "confirm_button_label": "仍然创建"
+  },
+  "oauth_connect_error": {
+    "popup_blocked_banner_text": "弹出窗口被拦截。请允许此网站弹出窗口后重试。",
+    "timed_out_banner_text": "授权超时，请重试。",
+    "failed_banner_text": "授权失败，请重试。"
   }
 }

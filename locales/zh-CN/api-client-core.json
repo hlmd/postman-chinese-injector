@@ -1175,7 +1175,23 @@
   "ec_collection_run": {
     "tooltip": {
       "no_permission": "您没有权限运行此集合。",
-      "is_offline": "当您重新上线后，即可运行此集合。"
+      "is_offline": "当您重新上线后，即可运行此集合。",
+      "enabled": "运行集合"
+    },
+    "button_text": "运行",
+    "error": {
+      "open_runner": "无法打开集合运行器。"
+    }
+  },
+  "ec_folder_run": {
+    "tooltip": {
+      "no_permission": "你没有运行此文件夹的权限。",
+      "is_offline": "恢复联网后即可运行此文件夹。",
+      "enabled": "运行文件夹"
+    },
+    "button_text": "运行",
+    "error": {
+      "open_runner": "无法打开文件夹运行器。"
     }
   },
   "rfa_guest_button": {

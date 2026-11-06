@@ -160,6 +160,11 @@
           "client_id_metadata_document_message": "使用配置的客戶端 ID 後設資料文件 URL。",
           "pre_registered_message": "使用配置的預註冊客戶端 ID。"
         },
+        "request_client_metadata_document": {
+          "title": "獲取客戶端 ID 後設資料文件",
+          "message": "正在獲取 Postman 的客戶端 ID 後設資料文件。授權伺服器會獲取此 URL 來驗證客戶端。",
+          "response_title": "客戶端 ID 後設資料文件"
+        },
         "request_client_registration": {
           "title": "請求 客戶註冊",
           "message": "註冊動態 OAuth 客戶端。",
@@ -210,6 +215,10 @@
         "dynamic_client_registration_http_failed": "動態客戶端註冊失敗，出現 HTTP {status}",
         "dynamic_client_registration_not_json": "動態客戶端註冊 回應 不是 JSON 物件",
         "dynamic_client_registration_unsupported": "授權伺服器不支援動態註冊；請手動配置客戶端 ID",
+        "client_metadata_document_http_failed": "客戶端 ID 後設資料文件請求失敗，HTTP {status}",
+        "client_metadata_document_not_json": "客戶端 ID 後設資料文件不是 JSON 物件",
+        "client_metadata_document_client_id_mismatch": "客戶端 ID 後設資料文件的 client_id 必須與其 URL 完全一致：{url}",
+        "client_metadata_document_redirect_uri_missing": "客戶端 ID 後設資料文件的 redirect_uris 中不包含 {redirectUri}",
         "client_id_missing": "OAuth 客戶端憑據缺少 client_id",
         "pkce_metadata_required": "PKCE 驗證之前需要 授權 伺服器後設資料",
         "pkce_s256_required": "授權 伺服器後設資料必須通告 S256 PKCE 支援",
@@ -218,6 +227,19 @@
         "authorization_required": "在獲取訪問令牌之前完成授權",
         "oauth_token_required": "連線 MCP 伺服器之前儲存 OAuth 令牌",
         "step_cancelled": "認證 測試步驟已取消"
+      },
+      "registration_method": {
+        "label": "註冊方式",
+        "client_id_metadata_document": {
+          "label": "客戶端 ID 後設資料文件（CIMD）",
+          "description": "使用 Postman 的後設資料文件 URL 作為客戶端 ID。",
+          "unavailable": "此授權伺服器未宣告支援 CIMD。"
+        },
+        "dynamic_client_registration": {
+          "label": "動態客戶端註冊（DCR）",
+          "description": "向授權伺服器註冊一個新的客戶端。",
+          "unavailable": "此授權伺服器沒有註冊端點。"
+        }
       },
       "registration_form": {
         "title": "客戶端註冊請求",
@@ -259,7 +281,7 @@
         },
         "request_client_registration": {
           "label": "請求 客戶註冊",
-          "description": "解析配置的憑據或 請求 動態客戶端註冊。"
+          "description": "解析已配置的憑據、客戶端 ID 後設資料文件或動態客戶端註冊。"
         },
         "generate_pkce_parameters": {
           "label": "生成 PKCE 參數",

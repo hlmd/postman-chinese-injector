@@ -600,16 +600,11 @@
     }
   },
   "local_mode": {
-    "recorded_notice": "雲端執行器使用已推送的集合，並將結果記錄到 Postman 雲端。開始雲端執行前，請先推送本地更改。",
     "resolving": "正在檢查此集合能否執行效能測試…",
     "lookup_failed": "在本地工作區中找不到此集合。請切換到其他標籤頁再切回，或重新開啟執行器後重試。",
-    "cloud_requires_push": "在 Postman 雲端執行需要集合位於 Postman 雲端。請先推送此集合，或在應用中執行。",
-    "cloud_requires_sign_in": "在 Postman 雲端執行需要先登入。請登入，或在應用中執行測試。",
-    "cloud_requires_supported_link": "此集合的 Postman 雲端連結不支援在 Postman 雲端執行。請在應用中執行測試。",
-    "cloud_requires_pushed_environment": "在 Postman 雲端執行需要目前環境位於 Postman 雲端。請先推送該環境，或在應用中執行測試。",
+    "cloud_mode_required": "切換到雲端模式才能在雲端開始執行",
     "unmatched_requests": "部分所選請求不在此集合的 Postman 雲端副本中：{names}。請推送本地更改後重試。",
     "ambiguous_requests": "部分所選請求與同一資料夾中的其他項重名：{names}。請重新命名，使每個請求都能與 Postman 雲端副本中的一個請求對應。",
-    "cloud_copy_unavailable": "無法載入此集合的 Postman 雲端副本。請檢查網路連線以及你是否有權訪問該集合，然後重試。",
     "local_files_unreadable": "無法從本地檔案讀取此集合。請檢查其檔案是否有效後重試。",
     "engine_unsupported": "你的帳戶暫不支援在應用中從本地檔案執行集合。請使用受支援的 Postman CLI 版本執行本地效能測試。",
     "feature_disabled": "你的帳戶暫不支援對本地集合進行效能測試。",

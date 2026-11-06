@@ -15,7 +15,8 @@
     "idle": "狀態：空閒"
   },
   "code_mock": {
-    "running_status": "狀態：執行中"
+    "running_status": "狀態：執行中",
+    "delete_disabled_while_running": "停止模擬伺服器後才能刪除"
   },
   "simulation_context_menu": {
     "open": "開啟",

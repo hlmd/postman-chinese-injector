@@ -186,6 +186,8 @@
     },
     "shortcut_text": "<0>{shortcutKey}</0> 匯入",
     "helper_link_text": "瞭解有關<1>匯入資料</1>的更多資訊",
+    "error_learn_more_link": "瞭解更多",
+    "error_learn_more_link_label": "瞭解更多關於匯入資料的資訊",
     "migrate_to_postman_helper_link_text_learn": "瞭解",
     "migrate_to_postman_helper_link_text_migrating": "將資料遷移到 Postman",
     "migrate_to_postman_helper_link_text_from": "瞭解有關將資料遷移到 Postman 的更多資訊",
@@ -203,9 +205,7 @@
         "validation_error": "格式錯誤，請輸入正確的格式匯入"
       },
       "other": {
-        "error_title": "格式不正確",
-        "error_desc": "我們不識別/支援這種格式。",
-        "learn_more_text": "瞭解我們支援的格式。"
+        "error_desc": "我們不識別/支援這種格式。"
       }
     },
     "generate_collection_option": {
