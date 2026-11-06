@@ -210,15 +210,127 @@ function runNpxAsar(...args) {
     throw new Error(`@electron/asar ${args[0]} 失败（exit ${res.status}）。请确认已安装 Node.js + npx，或先 npm install`);
   }
 }
-function asarExtract(archive, dest) {
-  const asar = loadAsar();
-  if (asar) return asar.extractAll(archive, dest);
-  return runNpxAsar('extract', archive, dest);
+// 遍历 asar 头，回调 (relPosixPath, node)；node 为目录（有 files）/ 链接（有 link）/ 文件
+function walkAsarHeader(header, fn, prefix = '') {
+  for (const name of Object.keys(header.files || {})) {
+    const node = header.files[name];
+    const rel = prefix + name;
+    fn(rel, node);
+    if (node.files) walkAsarHeader(node, fn, rel + '/');
+  }
 }
-async function asarPack(src, dest) {
+
+// 解包。Postman 12.35.5 起部分原生文件不打进 asar，放在旁边的 app.asar.unpacked/；而我们从
+//   app.asar.bak 解包，@electron/asar 的 extractAll 会去找不存在的 app.asar.bak.unpacked，
+//   且头里还登记了安装包根本没带的文件（如 arm64 的 winpty.dll），任一缺失就整体报错。
+//   所以有 unpacked 条目时自己按头解：unpacked 文件从 unpackedDir 复制，缺的跳过。
+//   返回 { unpacked: Set<相对路径> }，打包时据此保持原样的 unpacked 标记。
+function asarExtract(archive, dest, unpackedDir) {
   const asar = loadAsar();
-  if (asar) return asar.createPackage(src, dest);
-  return runNpxAsar('pack', src, dest);
+  if (!asar) { runNpxAsar('extract', archive, dest); return { unpacked: new Set() }; }
+  const { header, headerSize } = asar.getRawHeader(archive);
+  const unpacked = new Set();
+  walkAsarHeader(header, (rel, node) => { if (node.unpacked) unpacked.add(rel); });
+  if (!unpacked.size) { asar.extractAll(archive, dest); return { unpacked }; }
+
+  const srcUnpacked = unpackedDir || `${archive}.unpacked`;
+  const dataStart = 8 + headerSize;
+  const fd = fs.openSync(archive, 'r');
+  const missing = [];
+  try {
+    fs.mkdirSync(dest, { recursive: true });
+    walkAsarHeader(header, (rel, node) => {
+      const out = path.join(dest, ...rel.split('/'));
+      if (path.relative(dest, out).startsWith('..')) throw new Error(`asar 条目越界：${rel}`);
+      if (node.files) { fs.mkdirSync(out, { recursive: true }); return; }
+      if (node.link) {
+        // 与 extractAll 在 Windows 上一致：链接按普通文件解出（取链接目标的内容）
+        const target = asar.statFile(archive, rel, true);
+        if (target && !target.files && !target.link) {
+          fs.writeFileSync(out, target.unpacked ? fs.readFileSync(path.join(srcUnpacked, ...node.link.split('/'))) : asar.extractFile(archive, rel, true));
+        }
+        return;
+      }
+      if (node.unpacked) {
+        const from = path.join(srcUnpacked, ...rel.split('/'));
+        if (isFile(from)) fs.copyFileSync(from, out);
+        else { missing.push(rel); unpacked.delete(rel); }
+        return;
+      }
+      const size = node.size || 0;
+      const buf = Buffer.alloc(size);
+      if (size > 0) fs.readSync(fd, buf, 0, size, dataStart + parseInt(node.offset, 10));
+      fs.writeFileSync(out, buf);
+      if (node.executable) { try { fs.chmodSync(out, 0o755); } catch (e) { /* Windows 忽略 */ } }
+    });
+  } finally {
+    fs.closeSync(fd);
+  }
+  if (missing.length) console.log(`[解包] 跳过 ${missing.length} 个安装包里本就没有的 unpacked 文件（如 ${missing[0]}）`);
+  return { unpacked };
+}
+
+// 把 from 目录里与 to 目录不同（或 to 里没有）的文件复制过去；内容相同的不碰——
+//   app.asar.unpacked 里的原生模块（keytar.node 等）可能正被运行中的进程占用，没变就不该重写。
+function syncChangedFiles(from, to) {
+  let copied = 0;
+  (function walk(rel) {
+    const dir = path.join(from, rel);
+    for (const name of fs.readdirSync(dir)) {
+      const r = path.join(rel, name);
+      const a = path.join(from, r);
+      const st = fs.lstatSync(a);
+      if (st.isDirectory()) { walk(r); continue; }
+      if (!st.isFile()) continue;
+      const b = path.join(to, r);
+      if (isFile(b) && fs.statSync(b).size === st.size && fs.readFileSync(a).equals(fs.readFileSync(b))) continue;
+      fs.mkdirSync(path.dirname(b), { recursive: true });
+      fs.copyFileSync(a, b);
+      copied++;
+    }
+  })('');
+  return copied;
+}
+
+// 打包。unpacked 为空走 createPackage（老版本 Postman 的原有路径）；否则逐个文件喂给
+//   createPackageFromStreams，原样保留每个文件的 unpacked 标记。为避免重写被占用的原生模块，
+//   先打到临时目录，再只把内容有变化的 unpacked 文件同步过去，最后替换 app.asar 本身。
+async function asarPack(src, dest, unpacked) {
+  const asar = loadAsar();
+  if (!asar) return runNpxAsar('pack', src, dest);
+  if (!unpacked || !unpacked.size) return asar.createPackage(src, dest);
+  const unpackedDirs = new Set();
+  for (const rel of unpacked) {
+    const parts = rel.split('/');
+    for (let i = 1; i < parts.length; i++) unpackedDirs.add(parts.slice(0, i).join('/'));
+  }
+  const streams = [];
+  (function walk(dir, prefix) {
+    const names = fs.readdirSync(dir).sort();
+    for (const name of names) {
+      const abs = path.join(dir, name);
+      const rel = prefix + name;
+      const st = fs.lstatSync(abs);
+      if (st.isDirectory()) {
+        streams.push({ type: 'directory', path: rel, unpacked: unpackedDirs.has(rel) });
+        walk(abs, rel + '/');
+      } else if (st.isFile()) {
+        streams.push({ type: 'file', path: rel, unpacked: unpacked.has(rel), stat: st, streamGenerator: () => fs.createReadStream(abs) });
+      }
+    }
+  })(src, '');
+  const tmpDir = fs.mkdtempSync(path.join(path.dirname(dest), 'app_pm_chinese_pack-'));
+  try {
+    const tmpAsar = path.join(tmpDir, path.basename(dest));
+    await asar.createPackageFromStreams(tmpAsar, streams);
+    if (isDir(`${tmpAsar}.unpacked`)) {
+      const n = syncChangedFiles(`${tmpAsar}.unpacked`, `${dest}.unpacked`);
+      if (n) console.log(`[打包] 更新了 ${n} 个 unpacked 文件`);
+    }
+    fs.copyFileSync(tmpAsar, dest);
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
 }
 // 只读检查用：列文件 / 读单文件（只走程序化 API；二进制内已内置）
 function asarList(archive) {
@@ -559,6 +671,69 @@ function resolveTarget(opts) {
   );
 }
 
+// ---------- 注入前检查：目标 Postman 是否仍在运行 ----------
+// Windows 上运行中的 Postman 会占用 app.asar 与 app.asar.unpacked 里的原生模块（如 keytar.node），
+// 覆盖时报 EBUSY / EPERM。只比对「目标安装目录下的 Postman.exe」，不影响用 --resources 指向别处的情况。
+// 查询失败（无 PowerShell 等）时返回空数组，不阻断注入。
+function runningPostmanIn(appDir) {
+  if (process.platform !== 'win32' || !appDir) return [];
+  try {
+    const res = spawnSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command',
+      "Get-Process -Name Postman -ErrorAction SilentlyContinue | ForEach-Object { $_.Path }"],
+    { encoding: 'utf8', windowsHide: true, timeout: 15000 });
+    if (res.status !== 0 || !res.stdout) return [];
+    const base = path.resolve(appDir).toLowerCase() + path.sep;
+    return res.stdout.split(/\r?\n/).map((s) => s.trim()).filter(Boolean)
+      .filter((p) => path.resolve(p).toLowerCase().startsWith(base));
+  } catch (e) {
+    return [];
+  }
+}
+
+function postmanCloseSteps() {
+  if (process.platform === 'win32') {
+    return [
+      '1. 完全退出 Postman：关闭所有窗口，并在任务栏右下角托盘图标上右键 → 退出（Quit）；',
+      '2. 仍不行就打开任务管理器，结束所有 Postman.exe 进程；',
+      '3. 重新运行本命令。若仍提示被占用，可能是杀毒软件正在扫描该文件，稍等片刻再试。'
+    ];
+  }
+  if (process.platform === 'darwin') {
+    return ['1. 按 ⌘Q 完全退出 Postman（仅关闭窗口不够）；', '2. 重新运行本命令。'];
+  }
+  return ['1. 完全退出 Postman（含后台进程，可用 pkill -f Postman）；', '2. 重新运行本命令。'];
+}
+
+function assertPostmanClosed(target) {
+  const appDir = target && target.resourcesDir ? path.dirname(target.resourcesDir) : null;
+  const running = runningPostmanIn(appDir);
+  if (!running.length) return;
+  const err = new Error(`Postman 仍在运行（${running[0]}），无法覆盖其文件。`);
+  err.code = 'PM_RUNNING';
+  throw err;
+}
+
+// 错误的补充说明（可能原因 + 解决办法）；无合适说明时返回空数组
+function errorHints(e) {
+  const code = e && e.code;
+  if (code === 'PM_RUNNING' || code === 'EBUSY' || (process.platform === 'win32' && (code === 'EPERM' || code === 'EACCES'))) {
+    const lines = ['可能原因：Postman 仍在运行（包括托盘里的后台进程），文件被它占用。', '解决办法：'];
+    lines.push(...postmanCloseSteps());
+    if (code === 'EPERM' || code === 'EACCES') {
+      lines.push('4. 若 Postman 确已退出仍报错，可能是没有写入权限：右键终端 → 以管理员身份运行后重试。');
+    }
+    return lines;
+  }
+  if (code === 'EACCES' && process.platform !== 'win32') {
+    return [
+      '可能原因：权限不足——该目录（如 /opt/Postman）通常属 root，需要写权限。',
+      '解决办法：在同一条命令前加 sudo 重试，并确保已完全退出 Postman。'
+    ];
+  }
+  if (code === 'ENOSPC') return ['可能原因：磁盘空间不足（重打包需要约 2～3 倍 app.asar 大小的临时空间）。', '解决办法：清理磁盘后重试。'];
+  return [];
+}
+
 // ---------- 注入 / 还原 ----------
 function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 function stripBlock(text) {
@@ -567,6 +742,7 @@ function stripBlock(text) {
 }
 
 async function patch(target, lang) {
+  assertPostmanClosed(target);
   return target.kind === 'asar' ? patchAsar(target, lang) : patchDir(target, lang);
 }
 
@@ -594,7 +770,18 @@ async function patchAsar(target, lang) {
   const staging = path.join(resourcesDir, 'app_pm_chinese_build');
   if (isDir(staging)) fs.rmSync(staging, { recursive: true, force: true });
   console.log(`[解包] ${path.basename(bak)} -> 临时目录`);
-  asarExtract(bak, staging);
+  try {
+    await buildAndPack();
+  } finally {
+    // 失败时也清理临时目录，免得残留几百 MB
+    if (isDir(staging)) fs.rmSync(staging, { recursive: true, force: true });
+  }
+  console.log('\n[成功] 已重打包 app.asar。完全退出并重启 Postman；');
+  console.log('       界面出现中文即生效。');
+  return;
+
+  async function buildAndPack() {
+  const layout = asarExtract(bak, staging, `${asar}.unpacked`);
 
   // 3) 注入 preload + 放入钩子与数据（钩子/数据须与 preload 同目录，
   //    因为注入行 require('./pm-chinese.js') 与钩子内 __dirname 都相对 preload 所在目录解析）
@@ -617,10 +804,8 @@ async function patchAsar(target, lang) {
 
   // 4) 打包回 app.asar
   console.log('[打包] 临时目录 -> app.asar');
-  await asarPack(staging, asar);
-  fs.rmSync(staging, { recursive: true, force: true });
-  console.log('\n[成功] 已重打包 app.asar。完全退出并重启 Postman；');
-  console.log('       界面出现中文即生效。');
+  await asarPack(staging, asar, layout.unpacked);
+  }
 }
 
 // 未打包（resources/app/）型：没有 asar 可解包/打包，直接改目录里的文件。
@@ -675,6 +860,7 @@ async function patchDir(target, lang) {
 }
 
 function restore(target) {
+  assertPostmanClosed(target);
   return target.kind === 'asar' ? restoreAsar(target) : restoreDir(target);
 }
 
@@ -971,16 +1157,13 @@ async function run(argv) {
 }
 
 // 导出供测试用（作为 CLI 运行时不受影响）
-module.exports = { run, parseArgs, normalizeLang, resolveLang, LANGUAGES, findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict, mainHookSource, loadMainDict, injectMainEntry, stripBlock };
+module.exports = { run, parseArgs, normalizeLang, resolveLang, LANGUAGES, findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict, mainHookSource, loadMainDict, injectMainEntry, stripBlock, errorHints, runningPostmanIn, syncChangedFiles };
 
 if (require.main === module) {
   run(process.argv.slice(2)).then((code) => process.exit(code), (e) => {
     if (e instanceof UsageError) { console.error(`[错误] ${e.message}`); process.exit(2); }
     console.error(`[错误] ${e.message}`);
-    if (e && e.code === 'EACCES' && process.platform !== 'win32') {
-      console.error('       权限不足——该目录（如 /opt/Postman）通常属 root，需要写权限。');
-      console.error('       请在同一条命令前加 sudo 重试，并确保已完全退出 Postman。');
-    }
+    for (const line of errorHints(e)) console.error(`       ${line}`);
     process.exit(1);
   });
 }
