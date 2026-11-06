@@ -215,7 +215,12 @@
   // 双源取词典，顺序对齐 pm-chinese.js：
   //   ① 浏览器扩展在 MAIN world 预置的全局 window.__PM_SCRATCHPAD__（浏览器无 fs）；
   //   ② 桌面端：与本文件同目录的 pm-scratchpad-data.json（fs 读）。
+  //   当前语言由先加载的 pm-chinese.js 写在 __PM_CHINESE_LANG__：'off' 时不翻译；
+  //   非默认语言读 pm-scratchpad-data.<lang>.json（缺失则退回默认语言的词典）。
   function loadDict() {
+    var st = null;
+    try { st = typeof globalThis !== 'undefined' ? globalThis.__PM_CHINESE_LANG__ : null; } catch (e) { /* ignore */ }
+    if (st && st.lang === 'off') return null;
     try {
       if (typeof globalThis !== 'undefined' && globalThis.__PM_SCRATCHPAD__) {
         return globalThis.__PM_SCRATCHPAD__;
@@ -225,6 +230,11 @@
       if (typeof require === 'function') {
         var fs = require('fs');
         var path = require('path');
+        if (st && st.lang && !st.isDefault) {
+          try {
+            return JSON.parse(fs.readFileSync(path.join(__dirname, 'pm-scratchpad-data.' + st.lang + '.json'), 'utf8'));
+          } catch (e) { /* 退回默认 */ }
+        }
         return JSON.parse(fs.readFileSync(path.join(__dirname, 'pm-scratchpad-data.json'), 'utf8'));
       }
     } catch (e) {

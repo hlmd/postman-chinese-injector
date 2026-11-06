@@ -104,6 +104,18 @@ const MAIN_HOOK_NAME = 'pm-main-cn.js';
 const MAIN_HOOK_SRC = path.join(HOOKS_DIR, MAIN_HOOK_NAME);
 const MAIN_DATA_NAME = 'pm-main-data.json';
 const MAIN_ENTRY = 'main.js'; // 主进程入口（package.json 的 main）
+// 界面内切换语言用：记录默认语言与可选语言，写在 preload 目录与 main.js 同目录
+const META_NAME = 'pm-chinese-langs.json';
+// 默认语言的数据文件不带后缀，其它语言带 .<lang>（与 pm-chinese.js 的 dataFileFor 一致）
+function langFile(name, lang, def) {
+  return lang === def ? name : name.replace(/\.json$/, `.${lang}.json`);
+}
+// 注入目录里可能存在的全部数据文件名（还原 / 重新注入时清理用）
+function allDataFiles(names) {
+  const out = [];
+  for (const n of names) for (const l of Object.keys(LANGUAGES)) out.push(n, n.replace(/\.json$/, `.${l}.json`));
+  return [...new Set(out)];
+}
 
 const BAK_SUFFIX = '.bak';
 const MARK_START = '// === PM-I18N START ===';
@@ -222,7 +234,9 @@ function asarReadFile(archive, name) {
 
 // ---------- 在线译文数据包（见 updater.js）----------
 // 注入前由 prepareRemoteData() 填充；各取数函数的优先级：exe 旁 / 源码旁的本地文件 > 在线数据包 > 内嵌快照。
-let remoteData = null;
+let remoteData = null;          // 默认语言的在线数据包（钩子源码取自这里）
+const remoteByLang = {};        // 各语言的在线数据包
+function remoteFor(lang) { return remoteByLang[lang] || null; }
 
 function loadEmbeddedMeta() {
   try { return require('./generated/pm-build-meta.json'); } catch (e) { return null; }
@@ -234,13 +248,26 @@ function hasLocalLocales(lang) {
 }
 
 async function prepareRemoteData(opts, lang) {
-  if (hasLocalLocales(lang)) return;
   const meta = loadEmbeddedMeta();
-  remoteData = await updater.resolveDataBundle({ lang, embeddedAt: meta && meta.committedAt, offline: opts.offline });
-  if (remoteData) console.log(`[更新] 使用在线译文（来源 ${remoteData.from}，提交于 ${remoteData.committedAt}）`);
+  // 默认语言先取；其它语言一并取（界面内可切换），其它语言失败不影响注入
+  for (const l of [lang, ...Object.keys(LANGUAGES).filter((x) => x !== lang)]) {
+    if (hasLocalLocales(l)) continue;
+    let r = null;
+    try {
+      r = await updater.resolveDataBundle({ lang: l, embeddedAt: meta && meta.committedAt, offline: opts.offline });
+    } catch (e) {
+      if (l === lang) throw e;
+      console.log(`[更新] ${l} 在线译文获取失败，使用内嵌数据: ${e.message}`);
+    }
+    if (r) {
+      remoteByLang[l] = r;
+      console.log(`[更新] ${l} 使用在线译文（来源 ${r.from}，提交于 ${r.committedAt}）`);
+    }
+  }
+  remoteData = remoteFor(lang);
 }
 
-const REMOTE_FROM = () => `在线数据包（${remoteData.from}）`;
+const REMOTE_FROM = (r = remoteData) => `在线数据包（${r.from}）`;
 
 // ---------- 从 locales/<lang>/*.json 构建注入用的扁平 bundle ----------
 // 编译成单文件二进制时身边没有 locales/，改用编译期嵌入的 pm-chinese-data.json。
@@ -308,7 +335,8 @@ function loadScratchpadDict(lang = DEFAULT_LANG) {
       try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
     }
   }
-  if (remoteData && remoteData.scratchpadDict) return { dict: remoteData.scratchpadDict, from: REMOTE_FROM() };
+  const r = remoteFor(lang);
+  if (r && r.scratchpadDict) return { dict: r.scratchpadDict, from: REMOTE_FROM(r) };
   const emb = loadEmbeddedScratchpadDict(lang);
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
   throw new Error(`缺少 Scratch Pad 词典（locales/scratchpad/${lang}.json 或内嵌快照）`);
@@ -341,7 +369,8 @@ function loadMainDict(lang = DEFAULT_LANG) {
       try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
     }
   }
-  if (remoteData) return { dict: remoteData.mainDict, from: REMOTE_FROM() };
+  const r = remoteFor(lang);
+  if (r && r.mainDict) return { dict: r.mainDict, from: REMOTE_FROM(r) };
   const emb = loadEmbeddedMainDict(lang);
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
   throw new Error(`缺少主进程词典（locales/main/${lang}.json 或内嵌快照）`);
@@ -355,11 +384,48 @@ function injectMainEntry(text) {
 }
 
 // 在 appRoot 写入注入后的 main.js + 主进程钩子与词典；entrySrc 为干净的 main.js 原文
-function writeMainHook(appRoot, mainHook, mainDict, entrySrc) {
+function writeMainHook(appRoot, mainHook, pack, entrySrc) {
   fs.writeFileSync(path.join(appRoot, MAIN_ENTRY), injectMainEntry(entrySrc), 'utf8');
   fs.writeFileSync(path.join(appRoot, MAIN_HOOK_NAME), mainHook.src, 'utf8');
-  fs.writeFileSync(path.join(appRoot, MAIN_DATA_NAME), JSON.stringify(mainDict.dict), 'utf8');
-  console.log(`[注入] ${MAIN_ENTRY} <- require('./${MAIN_HOOK_NAME}')（原生菜单，${Object.keys(mainDict.dict).length} 条）`);
+  for (const l of pack.langs) {
+    fs.writeFileSync(path.join(appRoot, langFile(MAIN_DATA_NAME, l, pack.def)), JSON.stringify(pack.data[l].mainDict.dict), 'utf8');
+  }
+  fs.writeFileSync(path.join(appRoot, META_NAME), JSON.stringify(pack.meta), 'utf8');
+  const n = Object.keys(pack.data[pack.def].mainDict.dict).length;
+  console.log(`[注入] ${MAIN_ENTRY} <- require('./${MAIN_HOOK_NAME}')（原生菜单，${n} 条）`);
+}
+
+// 准备全部语言的数据：默认语言必须成功；其它语言失败只告警并跳过（界面里就不出现该选项）
+function buildLangPack(def) {
+  const data = {};
+  for (const l of [def, ...Object.keys(LANGUAGES).filter((x) => x !== def)]) {
+    try {
+      const b = buildBundle(l);
+      data[l] = { ...b, spDict: loadScratchpadDict(l), mainDict: loadMainDict(l) };
+    } catch (e) {
+      if (l === def) throw e;
+      console.log(`[跳过] ${LANGUAGES[l].name}（${l}）数据不可用，界面里不提供该选项: ${e.message}`);
+    }
+  }
+  const langs = Object.keys(LANGUAGES).filter((l) => data[l]);
+  return { def, langs, data, meta: { default: def, langs } };
+}
+
+// 往 preload 目录写钩子与全部语言的数据（先清掉上次注入可能留下、这次不再有的语言文件）
+function writePreloadFiles(preloadDir, hook, spHook, pack) {
+  for (const f of allDataFiles([DATA_NAME, SCRATCH_DATA_NAME])) fs.rmSync(path.join(preloadDir, f), { force: true });
+  fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
+  fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
+  for (const l of pack.langs) {
+    const d = pack.data[l];
+    fs.writeFileSync(path.join(preloadDir, langFile(DATA_NAME, l, pack.def)), JSON.stringify(d.bundle), 'utf8');
+    fs.writeFileSync(path.join(preloadDir, langFile(SCRATCH_DATA_NAME, l, pack.def)), JSON.stringify(d.spDict.dict), 'utf8');
+  }
+  fs.writeFileSync(path.join(preloadDir, META_NAME), JSON.stringify(pack.meta), 'utf8');
+  const d = pack.data[pack.def];
+  console.log(`[写入] pm-chinese.js + ${DATA_NAME}（${d.count} 模块，来自 ${d.source}）`);
+  console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(d.spDict.dict).length} 条）`);
+  console.log(`[写入] 可在 Postman「设置 → 通用 → 语言」里切换：${pack.langs.map((l) => LANGUAGES[l].name).join(' / ')}`);
 }
 
 // 候选 locales 根目录（按优先级）：① 紧挨真正的可执行文件（允许在 exe 旁放 locales/ 覆盖
@@ -378,7 +444,8 @@ function buildBundle(lang) {
     if (isDir(d)) { dir = d; break; }
   }
   if (!dir) {
-    if (remoteData) return { bundle: remoteData.data, count: Object.keys(remoteData.data).length, source: REMOTE_FROM() };
+    const r = remoteFor(lang);
+    if (r && r.data) return { bundle: r.data, count: Object.keys(r.data).length, source: REMOTE_FROM(r) };
     const emb = loadEmbedded(lang);
     if (emb && typeof emb === 'object' && Object.keys(emb).length) {
       return { bundle: emb, count: Object.keys(emb).length, source: '内嵌数据' };
@@ -510,13 +577,10 @@ async function patchAsar(target, lang) {
   // 提前解析钩子源码（二进制内嵌 / 源码同目录），缺失则在改动任何文件前就失败
   const hook = hookSource();
   const spHook = scratchpadHookSource();
-  const spDict = loadScratchpadDict(lang);
   const mainHook = mainHookSource();
-  const mainDict = loadMainDict(lang);
 
-  // 0) 从 locales/<lang>/ 构建注入数据（二进制无 locales 时用内嵌数据）
-  const { bundle, count, source } = buildBundle(lang);
-  console.log(`[构建] ${source} -> ${DATA_NAME}（${count} 模块）`);
+  // 0) 从 locales/<lang>/ 构建全部语言的注入数据（二进制无 locales 时用内嵌数据）
+  const pack = buildLangPack(lang);
 
   // 1) 确保有 pristine 备份，且始终从备份打补丁
   if (!isFile(bak)) {
@@ -544,17 +608,12 @@ async function patchAsar(target, lang) {
   content = content.replace(/\n+$/, '') + '\n' + INJECT_BLOCK;
   fs.writeFileSync(preload, content, 'utf8');
   console.log(`[注入] ${preloadRel} <- require('./pm-chinese.js')`);
-  fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
-  fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
-  console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
-  fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
-  fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
-  console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
+  writePreloadFiles(preloadDir, hook, spHook, pack);
 
   // 3.5) 主进程入口注入原生菜单钩子（钩子/词典与 main.js 同目录）
   const stagedEntry = path.join(staging, MAIN_ENTRY);
   if (!isFile(stagedEntry)) throw new Error(`解包后找不到主进程入口 ${MAIN_ENTRY}`);
-  writeMainHook(staging, mainHook, mainDict, fs.readFileSync(stagedEntry, 'utf8'));
+  writeMainHook(staging, mainHook, pack, fs.readFileSync(stagedEntry, 'utf8'));
 
   // 4) 打包回 app.asar
   console.log('[打包] 临时目录 -> app.asar');
@@ -577,13 +636,10 @@ async function patchDir(target, lang) {
   // 提前解析钩子源码，缺失则在改动任何文件前就失败
   const hook = hookSource();
   const spHook = scratchpadHookSource();
-  const spDict = loadScratchpadDict(lang);
   const mainHook = mainHookSource();
-  const mainDict = loadMainDict(lang);
 
-  // 0) 构建注入数据
-  const { bundle, count, source } = buildBundle(lang);
-  console.log(`[构建] ${source} -> ${DATA_NAME}（${count} 模块）`);
+  // 0) 构建全部语言的注入数据
+  const pack = buildLangPack(lang);
 
   // 1) 确保有 pristine 备份（剥掉可能已存在的注入块，保证备份干净），且始终从备份打补丁
   if (!isFile(bak)) {
@@ -601,12 +657,7 @@ async function patchDir(target, lang) {
   console.log(`[注入] ${preloadRel} <- require('./pm-chinese.js')`);
 
   // 3) 放入钩子与数据（与 preload 同目录，因 require('./pm-chinese.js') 与 __dirname 都相对 preload 解析）
-  fs.writeFileSync(path.join(preloadDir, 'pm-chinese.js'), hook.src, 'utf8');
-  fs.writeFileSync(path.join(preloadDir, DATA_NAME), JSON.stringify(bundle), 'utf8');
-  console.log(`[写入] pm-chinese.js + ${DATA_NAME}`);
-  fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
-  fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
-  console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
+  writePreloadFiles(preloadDir, hook, spHook, pack);
 
   // 4) 主进程入口：同样备份为 main.js.bak 并始终从备份注入
   const entry = path.join(appDir, MAIN_ENTRY);
@@ -616,7 +667,8 @@ async function patchDir(target, lang) {
     fs.writeFileSync(entryBak, stripBlock(fs.readFileSync(entry, 'utf8')), 'utf8');
     console.log(`[备份] ${MAIN_ENTRY} -> ${path.basename(entryBak)}`);
   }
-  writeMainHook(appDir, mainHook, mainDict, fs.readFileSync(entryBak, 'utf8'));
+  for (const f of allDataFiles([MAIN_DATA_NAME])) fs.rmSync(path.join(appDir, f), { force: true });
+  writeMainHook(appDir, mainHook, pack, fs.readFileSync(entryBak, 'utf8'));
 
   console.log('\n[成功] 已注入未打包的 app/ 目录。完全退出并重启 Postman；');
   console.log('       界面出现中文即生效。');
@@ -658,7 +710,7 @@ function restoreDir(target) {
     }
   }
   // 删除注入的钩子与数据文件（与 preload 同目录）
-  for (const f of ['pm-chinese.js', DATA_NAME, SCRATCH_HOOK_NAME, SCRATCH_DATA_NAME]) {
+  for (const f of ['pm-chinese.js', SCRATCH_HOOK_NAME, META_NAME, ...allDataFiles([DATA_NAME, SCRATCH_DATA_NAME])]) {
     const p = path.join(preloadDir, f);
     if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
   }
@@ -673,7 +725,7 @@ function restoreDir(target) {
     const cleaned = stripBlock(raw);
     if (cleaned !== raw) { fs.writeFileSync(entry, cleaned, 'utf8'); console.log(`[还原] 已移除 ${MAIN_ENTRY} 中的注入块`); did = true; }
   }
-  for (const f of [MAIN_HOOK_NAME, MAIN_DATA_NAME]) {
+  for (const f of [MAIN_HOOK_NAME, META_NAME, ...allDataFiles([MAIN_DATA_NAME])]) {
     const p = path.join(appDir, f);
     if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
   }
@@ -706,7 +758,7 @@ function statusDir(target) {
     try { count = Object.keys(JSON.parse(fs.readFileSync(dataPath, 'utf8'))).length; } catch (e) { /* ignore */ }
   }
   try {
-    injected = /require\((['"])\.\/pm-chinese\.js\1\)/.test(fs.readFileSync(preload, 'utf8'));
+    injected = /(?:pmR|r)equire\((['"])(?:\.\/)?pm-chinese\.js\1\)/.test(fs.readFileSync(preload, 'utf8'));
   } catch (e) { /* preload 缺失则视为未注入 */ }
 
   console.log(`  pm-chinese.js 在 app/ 内: ${hasHook ? '是' : '否'}`);
@@ -748,7 +800,7 @@ function statusAsar(target) {
   }
   try {
     if (preloadRel) {
-      injected = /require\((['"])\.\/pm-chinese\.js\1\)/.test(asarReadFile(asar, preloadRel));
+      injected = /(?:pmR|r)equire\((['"])(?:\.\/)?pm-chinese\.js\1\)/.test(asarReadFile(asar, preloadRel));
     }
   } catch (e) { /* preload 缺失则视为未注入 */ }
   if (hasData) {

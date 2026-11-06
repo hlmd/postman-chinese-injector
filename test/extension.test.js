@@ -12,7 +12,7 @@ function load({ languages = ['en-US'], uiLang = 'en-US', stored = {} } = {}) {
   const listeners = {};
   const on = (name) => ({ addListener: (fn) => { listeners[name] = fn; } });
   const store = { ...stored };
-  let registered = null;
+  let registered = {}; // id -> script
   const chrome = {
     runtime: { onInstalled: on('installed'), onStartup: on('startup'), onMessage: on('message') },
     storage: {
@@ -27,9 +27,11 @@ function load({ languages = ['en-US'], uiLang = 'en-US', stored = {} } = {}) {
     },
     i18n: { getUILanguage: () => uiLang },
     scripting: {
-      getRegisteredContentScripts: async () => (registered ? [registered] : []),
-      registerContentScripts: async ([s]) => { assert.strictEqual(registered, null, '重复 register'); registered = s; },
-      updateContentScripts: async ([s]) => { assert.ok(registered, '未注册就 update'); registered = s; },
+      getRegisteredContentScripts: async ({ ids }) => ids.filter((id) => registered[id]).map((id) => registered[id]),
+      registerContentScripts: async (list) => {
+        for (const s of list) { assert.ok(!registered[s.id], '重复 register ' + s.id); registered[s.id] = s; }
+      },
+      unregisterContentScripts: async ({ ids }) => { for (const id of ids) delete registered[id]; },
     },
   };
   const ctx = { chrome, self: { navigator: { languages } }, navigator: { languages }, module: { exports: {} }, console };
@@ -38,7 +40,8 @@ function load({ languages = ['en-US'], uiLang = 'en-US', stored = {} } = {}) {
   return {
     api: ctx.module.exports,
     listeners, store, chrome, tick,
-    script: () => registered,
+    script: () => registered['pm-chinese'],
+    bridge: () => registered['pm-chinese-bridge'],
     message: (msg) => new Promise((resolve) => listeners.message(msg, {}, resolve)),
   };
 }
@@ -87,5 +90,30 @@ test('扩展页面引用的文件都存在', () => {
   const html = fs.readFileSync(path.join(dir, 'options.html'), 'utf8');
   assert.ok(html.includes('<body>'), 'options.html 需要裸 <body> 标签（构建 popup.html 时替换）');
   assert.ok(html.includes('src="options.js"'));
-  for (const id of ['legend', 'opt-auto', 'auto-hint', 'status', 'reload']) assert.ok(html.includes(`id="${id}"`), id);
+  for (const id of ['legend', 'opt-auto', 'opt-off', 'auto-hint', 'status', 'reload']) assert.ok(html.includes(`id="${id}"`), id);
+});
+
+test('同时注册 ISOLATED world 的桥接脚本', async () => {
+  const h = load({ languages: ['zh-CN'] });
+  h.listeners.installed();
+  await h.tick();
+  assert.deepStrictEqual(JSON.parse(JSON.stringify(h.bridge().js)), ['pm-bridge.js']);
+  assert.strictEqual(h.bridge().world, 'ISOLATED');
+});
+
+test('页面里切换语言：写设置、重新注册后回复；off 只注册钩子不带译文', async () => {
+  const h = load({ languages: ['zh-CN'] });
+  h.listeners.installed();
+  await h.tick();
+  const r = await h.message({ type: 'pm-set-lang', lang: 'zh-TW' });
+  assert.strictEqual(r.lang, 'zh-TW');
+  assert.strictEqual(h.store.lang, 'zh-TW');
+  assert.strictEqual(h.script().js[0], 'pm-i18n-data.zh-TW.js');
+  const off = await h.message({ type: 'pm-set-lang', lang: 'off' });
+  assert.strictEqual(off.lang, 'off');
+  await h.tick();
+  assert.deepStrictEqual(JSON.parse(JSON.stringify(h.script().js)), ['pm-i18n-off.js', 'pm-chinese.js']);
+  const bad = await h.message({ type: 'pm-set-lang', lang: 'fr' });
+  assert.ok(bad.error);
+  assert.strictEqual(h.store.lang, 'off');
 });

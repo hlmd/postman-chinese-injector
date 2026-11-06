@@ -1,5 +1,6 @@
 /*
- * options.js —— 选项页与工具栏弹出面板共用：选择「自动 / 简体中文 / 繁體中文」。
+ * options.js —— 选项页与工具栏弹出面板共用：选择「自动 / 简体中文 / 繁體中文 / 关闭」。
+ * 也可在 Postman「设置 → 通用 → 语言」里直接切换（经 pm-bridge.js 写入同一设置）。
  * 设置写入 chrome.storage.sync.lang，后台（background.js）据此重新注册内容脚本，
  * 已打开的 Postman 页面刷新后生效。面板文字跟随当前实际使用的语言。
  */
@@ -9,28 +10,29 @@ const MATCHES = ['https://*.postman.co/*', 'https://*.getpostman.com/*', 'https:
 
 const TEXT = {
   'zh-CN': {
-    legend: '界面语言', auto: '自动', autoHint: (l) => `跟随浏览器：${NAME[l]}`,
+    legend: '界面语言', auto: '自动', off: '关闭（显示原文）', autoHint: (l) => `跟随浏览器：${NAME[l]}`,
     saved: '已保存，刷新 Postman 页面后生效。', reload: '刷新已打开的 Postman 页面',
     reloaded: (n) => (n ? `已刷新 ${n} 个 Postman 页面。` : '没有打开的 Postman 页面。'),
     current: (l) => `当前使用：${NAME[l]}`,
   },
   'zh-TW': {
-    legend: '介面語言', auto: '自動', autoHint: (l) => `跟隨瀏覽器：${NAME[l]}`,
+    legend: '介面語言', auto: '自動', off: '關閉（顯示原文）', autoHint: (l) => `跟隨瀏覽器：${NAME[l]}`,
     saved: '已儲存，重新整理 Postman 頁面後生效。', reload: '重新整理已開啟的 Postman 頁面',
     reloaded: (n) => (n ? `已重新整理 ${n} 個 Postman 頁面。` : '沒有開啟的 Postman 頁面。'),
     current: (l) => `目前使用：${NAME[l]}`,
   },
 };
-const NAME = { 'zh-CN': '简体中文', 'zh-TW': '繁體中文' };
+const NAME = { 'zh-CN': '简体中文', 'zh-TW': '繁體中文', off: '关闭（原文）' };
 
 const $ = (id) => document.getElementById(id);
 const state = () => chrome.runtime.sendMessage({ type: 'pm-state' });
 
 function render(s) {
   const t = TEXT[s.lang] || TEXT['zh-CN'];
-  document.documentElement.lang = s.lang;
+  document.documentElement.lang = s.lang === 'off' ? 'zh-CN' : s.lang;
   $('legend').textContent = t.legend;
   $('opt-auto').textContent = t.auto;
+  $('opt-off').textContent = t.off;
   $('auto-hint').textContent = t.autoHint(s.detected);
   $('reload').textContent = t.reload;
   for (const r of document.querySelectorAll('input[name=lang]')) r.checked = r.value === s.setting;

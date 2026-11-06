@@ -11,8 +11,10 @@
  * 产物（dist/extension/，可直接「加载已解压的扩展程序」）：
  *   ├── manifest.json                 # MV3；后台 + 选项页 + 工具栏弹出面板
  *   ├── background.js                 # 按语言设置注册内容脚本（world:MAIN + document_start）
- *   ├── options.html / popup.html / options.js   # 选择「自动 / 简体中文 / 繁體中文」
+ *   ├── options.html / popup.html / options.js   # 选择「自动 / 简体中文 / 繁體中文 / 关闭」
  *   ├── pm-i18n-data.<lang>.js        # window.__PM_I18N__ = { <module>: {...} }（zh-CN / zh-TW 各一份）
+ *   ├── pm-i18n-off.js                # 「关闭」时代替数据脚本：只标记 __PM_I18N_LANG__ = 'off'
+ *   ├── pm-bridge.js                  # ISOLATED world 桥接：页面「设置 → 语言」里切换 -> 写扩展设置
  *   ├── pm-scratchpad-data.<lang>.js  # window.__PM_SCRATCHPAD__ = { 英文: 中文 }
  *   └── pm-chinese.js / pm-scratchpad-cn.js       # 与桌面端共用的运行时钩子（唯一真源）
  * 并额外打一个 dist/postman-chinese-injector-extension.zip 方便分发 / 上传商店。
@@ -76,7 +78,7 @@ fs.mkdirSync(outDir, { recursive: true });
 let totalKB = 0;
 for (const lang of LANGS) {
   const bundle = loadBundle(lang);
-  const dataJs = 'window.__PM_I18N__ = ' + JSON.stringify(bundle) + ';\n';
+  const dataJs = 'window.__PM_I18N_LANG__ = ' + JSON.stringify(lang) + ';\nwindow.__PM_I18N__ = ' + JSON.stringify(bundle) + ';\n';
   fs.writeFileSync(path.join(outDir, `pm-i18n-data.${lang}.js`), dataJs, 'utf8');
   const sp = loadScratchpad(lang);
   const spJs = 'window.__PM_SCRATCHPAD__ = ' + JSON.stringify(sp) + ';\n';
@@ -86,13 +88,15 @@ for (const lang of LANGS) {
   console.log(`[完成] ${lang}: ${Object.keys(bundle).length} 模块 + Scratch Pad ${Object.keys(sp).length} 条（${kb.toFixed(0)} KB）`);
 }
 
+fs.writeFileSync(path.join(outDir, 'pm-i18n-off.js'), "window.__PM_I18N_LANG__ = 'off';\n", 'utf8');
+
 // 3) 共用钩子（与桌面端同一份）+ 扩展自身的后台、选项页 / 弹出面板
 for (const f of ['pm-chinese.js', 'pm-scratchpad-cn.js']) {
   const src = path.join(HOOKS, f);
   if (!fs.existsSync(src)) fail(`找不到钩子文件: ${src}`);
   fs.copyFileSync(src, path.join(outDir, f));
 }
-for (const f of ['background.js', 'options.html', 'options.js']) {
+for (const f of ['background.js', 'options.html', 'options.js', 'pm-bridge.js']) {
   fs.copyFileSync(path.join(EXT_SRC, f), path.join(outDir, f));
 }
 // 弹出面板与选项页同一份页面，body 带 class="popup" 用窄版式

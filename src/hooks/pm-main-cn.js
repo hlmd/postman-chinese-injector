@@ -14,7 +14,7 @@
  *     Postman 自己按 id / accelerator 更新菜单的逻辑不受影响）；
  *   - dialog.showMessageBox / showMessageBoxSync：翻译 title / message / detail / buttons / checkboxLabel。
  *
- * 词典为扁平 {英文: 中文}，从同目录的 pm-main-data.json 读；整串精确匹配（保留前后空白）。
+ * 词典为扁平 {英文: 中文}，从同目录的 pm-main-data(.<lang>).json 读（界面里切换语言后随之切换）；整串精确匹配（保留前后空白）。
  * 键里可含 {{name}} 占位（如 "About {{appName}}"），匹配时占位视作任意文本并代入译文。
  */
 'use strict';
@@ -117,12 +117,18 @@ function wrapBox(c, fn) {
   };
 }
 
+// dict 可以是词典对象，也可以是返回「已编译词典或 null（不翻译）」的函数（运行中可切换语言）
 function install(electron, dict) {
-  var c = compile(dict);
+  var getC;
+  if (typeof dict === 'function') getC = dict;
+  else { var fixed = compile(dict); getC = function () { return fixed; }; }
   var Menu = electron.Menu;
   if (Menu && typeof Menu.buildFromTemplate === 'function' && !Menu.buildFromTemplate.__pmCn) {
     var orig = Menu.buildFromTemplate;
-    var wrapped = function (template) { return orig.call(this, translateTemplate(c, template)); };
+    var wrapped = function (template) {
+      var c = getC();
+      return orig.call(this, c ? translateTemplate(c, template) : template);
+    };
     wrapped.__pmCn = true;
     Menu.buildFromTemplate = wrapped;
   }
@@ -130,7 +136,11 @@ function install(electron, dict) {
   if (dialog) {
     ['showMessageBox', 'showMessageBoxSync'].forEach(function (name) {
       if (typeof dialog[name] === 'function' && !dialog[name].__pmCn) {
-        var w = wrapBox(c, dialog[name]);
+        var fn = dialog[name];
+        var w = function () {
+          var c = getC();
+          return c ? wrapBox(c, fn).apply(this, arguments) : fn.apply(this, arguments);
+        };
         w.__pmCn = true;
         dialog[name] = w;
       }
@@ -138,16 +148,60 @@ function install(electron, dict) {
   }
 }
 
-module.exports = { compile: compile, translateString: translateString, translateTemplate: translateTemplate, translateBoxOptions: translateBoxOptions, install: install };
+// 主进程里的语言选择：界面里切换语言时渲染进程经 IPC 发来 { lang, base }，存到 userData 下的
+// pm-chinese-lang.json；base（做选择时注入的默认语言）与当前注入的默认语言不同则作废。
+// 返回 getter：'off' → null；其它语言读 pm-main-data.<lang>.json，缺失退回默认 pm-main-data.json。
+function createDictSource(opts) {
+  var fs = opts.fs, path = opts.path, dir = opts.dir;
+  var cache = Object.create(null);
+  var pref; // undefined = 尚未读取
+  var def = 'zh-CN';
+  try { def = JSON.parse(fs.readFileSync(path.join(dir, 'pm-chinese-langs.json'), 'utf8'))['default'] || def; } catch (e) { /* 老注入无 meta */ }
+  function prefFile() { return opts.prefPath(); }
+  function readPref() {
+    if (pref !== undefined) return pref;
+    pref = null;
+    try {
+      var p = JSON.parse(fs.readFileSync(prefFile(), 'utf8'));
+      if (p && p.base === def && typeof p.lang === 'string') pref = p.lang;
+    } catch (e) { /* 没有选择过 */ }
+    return pref;
+  }
+  function load(file) {
+    if (!(file in cache)) {
+      try { cache[file] = compile(JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'))); } catch (e) { cache[file] = null; }
+    }
+    return cache[file];
+  }
+  function get() {
+    var lang = readPref();
+    if (lang === 'off') return null;
+    var c = lang && lang !== def ? load('pm-main-data.' + lang + '.json') : null;
+    return c || load('pm-main-data.json');
+  }
+  function set(v) {
+    if (!v || typeof v.lang !== 'string') return;
+    pref = v.base === def ? v.lang : null;
+    try { fs.writeFileSync(prefFile(), JSON.stringify({ lang: v.lang, base: v.base })); } catch (e) { /* ignore */ }
+  }
+  return { get: get, set: set };
+}
+
+module.exports = { createDictSource: createDictSource, compile: compile, translateString: translateString, translateTemplate: translateTemplate, translateBoxOptions: translateBoxOptions, install: install };
 
 // 作为注入钩子加载时（主进程、同目录有 pm-main-data.json）自动安装
 if (process.type === 'browser') {
   try {
     var fs = require('fs');
     var path = require('path');
-    var dict = JSON.parse(fs.readFileSync(path.join(__dirname, 'pm-main-data.json'), 'utf8'));
-    install(require('electron'), dict);
-    console.log('[pm-main] 已启用原生菜单汉化，词条:', Object.keys(dict).length);
+    var electron = require('electron');
+    var source = createDictSource({
+      fs: fs, path: path, dir: __dirname,
+      prefPath: function () { return path.join(electron.app.getPath('userData'), 'pm-chinese-lang.json'); }
+    });
+    install(electron, source.get);
+    if (electron.ipcMain) electron.ipcMain.on('pm-chinese:set-lang', function (e, v) { source.set(v); });
+    console.log('[pm-main] 已启用原生菜单汉化');
   } catch (e) {
     console.error('[pm-main] 初始化失败:', e && e.message);
   }
