@@ -138,7 +138,7 @@
       "import_in_progress": "导入正在进行中",
       "importing": "导入中...",
       "choose_how_to_import": "选择如何导入您的 API",
-      "choose_how_to_import_specification": "选择如何导入您的规格",
+      "choose_how_to_import_specification": "选择如何导入您的规范",
       "repository_label": "存储库",
       "multi_file_import_one_definition": "从列表中导入一个定义",
       "multi_file_import_elements": "导入元素 ({element_num})",
@@ -219,9 +219,9 @@
         "helper_text": "使用定义文件以及专属的集合"
       },
       "specification": {
-        "label_with_format": "{format} 规格",
+        "label_with_format": "{format} 规范",
         "label_with_format_and_collection": "{format} 规范，带有 Postman 集合",
-        "label": "API 规格",
+        "label": "API 规范",
         "helper_text": "使用规范文件"
       }
     }
@@ -234,7 +234,7 @@
     "file_count": "{count, plural, one {# 个文件} other {# 个文件}}",
     "format": {
       "api": "API",
-      "specification": "规格",
+      "specification": "规范",
       "collection": "集合",
       "collection_run": "集合运行",
       "data_dump": "数据转储",
@@ -242,7 +242,7 @@
       "globals": "全局变量",
       "request": "请求",
       "with_api": ",API",
-      "with_specification": "，规格"
+      "with_specification": "，规范"
     },
     "type_separator": ",",
     "type_separator_final": "和",

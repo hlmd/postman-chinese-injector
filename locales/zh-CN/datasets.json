@@ -126,7 +126,7 @@
         "host_required": "SSH 主机不能为空",
         "username_required": "SSH 用户名不能为空",
         "private_key_required": "SSH 私钥不能为空",
-        "private_key_vault_required": "保存此数据源前，请先将 SSH 私钥保存到 Vault",
+        "private_key_vault_required": "保存此数据源前，请先将 SSH 私钥保存到保险库",
         "host_key_required": "除非跳过主机密钥验证，否则 SSH 主机密钥不能为空"
       }
     },
@@ -145,15 +145,15 @@
     }
   },
   "secret_field": {
-    "link_to_vault": "链接到 保险库 密钥",
-    "unlink_vault": "取消链接 保险库 密钥",
-    "view_in_vault": "在 Vault 中查看",
+    "link_to_vault": "链接到保险库密钥",
+    "unlink_vault": "取消链接保险库密钥",
+    "view_in_vault": "在保险库中查看",
     "new_secret": "新建密钥",
-    "link_aria_label": "将 {label} 链接到 保险库 密钥",
-    "unlink_aria_label": "取消 {label} 与 保险库 密钥 的链接",
+    "link_aria_label": "将 {label} 链接到保险库密钥",
+    "unlink_aria_label": "取消 {label} 与保险库密钥的链接",
     "search_placeholder": "搜索秘密...",
     "no_matching": "没有匹配的秘密",
-    "no_available": "没有可用的 保险库 秘密",
+    "no_available": "没有可用的保险库秘密",
     "choose_file": "选择文件",
     "file_prompt_suffix": "（您也可以在下方粘贴{label}）",
     "selected_file": "已选文件：",
@@ -161,8 +161,8 @@
     "choose_file_aria_label": "选择{label}文件",
     "change_file_aria_label": "更改已选的{label}文件",
     "file_contents": "文件内容",
-    "not_saved_to_vault": "敏感值，请保存到 Vault",
-    "save_to_vault": "保存到 Vault",
+    "not_saved_to_vault": "敏感值，请保存到保险库",
+    "save_to_vault": "保存到保险库",
     "secret_name": "密钥名称",
     "secret_name_required": "请输入密钥名称。",
     "contents_required": "保存前请输入密钥内容。",
@@ -170,8 +170,8 @@
     "shared_vault": "共享保险库",
     "file_too_large": "请选择小于 {maxSize} 的文件。",
     "file_read_failed": "无法读取此文件。",
-    "file_save_failed": "无法将此值保存到 Vault。",
-    "shared_vault_save_failed": "无法将此值保存到 Shared Vault。请确认此工作区已启用 Shared Vault 且你拥有编辑权限，然后重试。你也可以改为保存到 Local Vault。"
+    "file_save_failed": "无法将此值保存到保险库。",
+    "shared_vault_save_failed": "无法将此值保存到共享保险库。请确认此工作区已启用共享保险库且你拥有编辑权限，然后重试。你也可以改为保存到本地保险库。"
   },
   "errors": {
     "ssh": {
@@ -184,8 +184,8 @@
       "timeout": "SSH 连接超时。请检查堡垒机和网络后重试。",
       "forward_failed": "SSH 服务器无法访问数据库。请检查从堡垒机看到的数据库主机和端口。"
     },
-    "secret_resolution_timeout": "Postman 未能及时访问此数据源的 Vault 密钥。请确认 Vault 已解锁后重试。",
-    "secret_resolution_failed": "Postman 无法解析此数据源使用的一个或多个 Vault 密钥。请解锁 Vault 并确认关联的密钥仍然存在。",
+    "secret_resolution_timeout": "Postman 未能及时访问此数据源的保险库密钥。请确认保险库已解锁后重试。",
+    "secret_resolution_failed": "Postman 无法解析此数据源使用的一个或多个保险库密钥。请解锁保险库并确认关联的密钥仍然存在。",
     "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 数据源仅在云端工作区中可用。",
     "sync_local_load_failed": "已保存到云端，但本地引擎无法加载：{reason}"
   },
@@ -497,7 +497,7 @@
     "no_properties": "未选择额外的连接属性。",
     "remove_property": "移除 {name}",
     "resolved_url": "解析后的 URL",
-    "secrets_hint": "凭据请使用 Vault 引用。明文值会被写入数据集的 YAML 中。",
+    "secrets_hint": "凭据请使用保险库引用。明文值会被写入数据集的 YAML 中。",
     "test_connection": "测试连接",
     "connection_testing": "测试中…",
     "connection_connected": "已连接",

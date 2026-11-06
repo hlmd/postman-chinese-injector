@@ -157,8 +157,8 @@
     "select_scenario_placeholder": "選擇場景",
     "scenarios_loading": "載入中...",
     "use_mock_aria_label": "在本次執行中使用此模擬伺服器",
-    "mock_enabled_tooltip": "模擬伺服器已啟用 — 請求由模擬伺服器回應",
-    "mock_disabled_tooltip": "模擬伺服器已停用 — 請求將直接傳送到真實主機"
+    "mock_enabled_tooltip": "模擬伺服器已啟用—請求由模擬伺服器回應",
+    "mock_disabled_tooltip": "模擬伺服器已停用—請求將直接傳送到真實主機"
   },
   "empty_state": {
     "functional": {

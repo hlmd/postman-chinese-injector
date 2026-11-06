@@ -1,7 +1,7 @@
 {
   "cta": {
     "upgrade": "升級",
-    "start_trial": "開始 {plan} 試用",
+    "start_trial": "開始{plan, select, Enterprise {企業版} Team {團隊版} Basic {基礎版} Professional {專業版} Solo {個人版} other { {plan} }}試用",
     "purchase_add_on": "購買附加元件",
     "contact_sales": "聯絡銷售",
     "learn_more": "瞭解更多"
@@ -63,11 +63,11 @@
     "description_item_integrate_with_siem": "將 Postman 的審計日誌與 SIEM 工具整合"
   },
   "user_groups": {
-    "title": "使用者組",
+    "title": "群組",
     "description_intro": "將成員分組管理，以規模化管理角色和訪問權限。",
     "description_lead": "您將解鎖：",
     "description_item_organize_users_into_groups": "將使用者分組，以規模化管理訪問權限",
-    "description_item_assign_roles_to_groups": "為整個使用者組分配權限，而非逐個使用者設定",
+    "description_item_assign_roles_to_groups": "為整個群組分配權限，而非逐個使用者設定",
     "description_item_manage_groups": "簡化入職、離職及日常管理流程"
   },
   "team_resources": {
@@ -76,7 +76,7 @@
     "description_lead": "您將解鎖：",
     "description_item_workspace_creation": "配置團隊範圍的規則以控制工作區建立",
     "description_item_collection_sharing": "管理集合和模擬伺服器等資源的共享方式",
-    "description_item_external_packages": "管控外部包的使用和 Vault 資料匯出"
+    "description_item_external_packages": "管控外部包的使用和保險庫資料匯出"
   },
   "organization_resources": {
     "title": "組織資源",
@@ -84,7 +84,7 @@
     "description_lead": "您將解鎖：",
     "description_item_workspace_creation": "配置組織範圍的規則以控制工作區建立",
     "description_item_collection_sharing": "管理集合和模擬伺服器等資源的共享方式",
-    "description_item_external_packages": "管控外部包的使用和 Vault 資料匯出"
+    "description_item_external_packages": "管控外部包的使用和保險庫資料匯出"
   },
   "sso_authentication_method": {
     "title": "身份驗證方式",
@@ -123,7 +123,7 @@
     "description_intro": "管理您團隊使用 Postman AI 功能的方式。",
     "description_lead": "您將解鎖：",
     "description_item_control_postman_ai_usage": "控制您團隊中 Postman AI 的使用",
-    "description_item_configure_access_per_user_or_group": "按使用者或使用者組配置訪問權限",
+    "description_item_configure_access_per_user_or_group": "按使用者或群組配置訪問權限",
     "description_item_set_safer_ai_guardrails": "設定防護措施，確保 AI 使用更加安全"
   },
   "postman_ai_guardrails": {
@@ -134,7 +134,7 @@
     "description_item_control_external_mcp_server_access": "控制 Postman AI 可以訪問哪些外部 MCP 伺服器"
   },
   "runners": {
-    "title": "Runner",
+    "title": "執行器",
     "upgrade_modal_heading": "升級到 Enterprise 套餐即可使用私有 API 的執行器",
     "description_intro": "大規模執行集合，併為您的團隊管理執行器基礎設施。",
     "description_lead": "您將解鎖：",
@@ -163,7 +163,7 @@
     "description_intro": "掃描已洩露的金鑰，自動修復洩露並跟蹤處理進度。",
     "description_lead": "您將解鎖：",
     "description_item_detect_api_keys": "即時檢測洩露的 API 金鑰、令牌和憑據",
-    "description_item_move_secrets": "通過本地保護自動將金鑰移至 Postman Vault",
+    "description_item_move_secrets": "通過本地保護自動將金鑰移至 Postman 保險庫",
     "description_item_monitor_exposure": "監控您組織中金鑰洩露趨勢和處理情況"
   },
   "secret_scanner_cloud_detection": {
@@ -178,9 +178,9 @@
     "title": "Secret Scanner 報告",
     "description_intro": "監控金鑰檢測趨勢和修復指標。",
     "description_lead": "您將解鎖：",
-    "description_item_track_detected": "隨時間跟蹤檢測到、已處理和已存入 Vault 的金鑰",
+    "description_item_track_detected": "隨時間跟蹤檢測到、已處理和已存入保險庫的金鑰",
     "description_item_view_unresolved_secrets": "按工作區可見性和型別檢視未處理的金鑰",
-    "description_item_monitor_local": "監控本地保護的 Vault 轉移和覆蓋操作"
+    "description_item_monitor_local": "監控本地保護的保險庫轉移和覆蓋操作"
   },
   "secret_scanner_patterns": {
     "title": "Secret Scanner 模式",

@@ -1,7 +1,7 @@
 {
   "overview": {
     "heading": "BYOK 加密",
-    "description": "管理组织的 环境 和全局变量以及 请求 历史记录的加密。",
+    "description": "管理组织的环境和全局变量以及请求历史记录的加密。",
     "cta": "联系 Postman 支持",
     "last_updated": "最后更新"
   },
@@ -23,12 +23,12 @@
     "environments": "环境",
     "globals": "全局变量",
     "history": "历史记录",
-    "collectionRuns": "集合 运行",
-    "monitorRuns": "监控 运行"
+    "collectionRuns": "集合运行",
+    "monitorRuns": "监控运行"
   },
   "disabled": {
     "heading": "使用 BYOK 加密保护您的数据",
-    "description": "使用您自己的密钥 (BYOK) 来保护您组织的全局变量、环境和 请求 历史记录。"
+    "description": "使用您自己的密钥 (BYOK) 来保护您组织的全局变量、环境和请求历史记录。"
   },
   "error": {
     "heading": "出了点问题",

@@ -1,40 +1,40 @@
 {
   "create_team_error": {
-    "message": "我們建立您的 團隊 時出錯",
+    "message": "我們建立您的團隊時出錯",
     "title": "出了點問題"
   },
-  "form_heading": "在我們為您建立 團隊 之前",
-  "heading": "您想將工作空間移至 團隊 嗎？",
+  "form_heading": "在我們為您建立團隊之前",
+  "heading": "您想將工作空間移至團隊嗎？",
   "radio_buttons": {
-    "no_label": "不，請將我的工作區與 團隊 分開",
-    "yes_label": "是的，將我的工作區移動到 團隊",
+    "no_label": "不，請將我的工作區與團隊分開",
+    "yes_label": "是的，將我的工作區移動到團隊",
     "no_helper_text": "您將擁有工作空間的完全所有權和訪問權限。",
-    "yes_helper_text": "您可以在這些工作區中與您的隊友協作。移動後，團隊 將擁有所有權，管理員將能夠管理工作區。"
+    "yes_helper_text": "您可以在這些工作區中與您的隊友協作。移動後，團隊將擁有所有權，管理員將能夠管理工作區。"
   },
   "create_team_button": "建立團隊",
   "cancel_button": "取消",
   "create_team_modal": {
     "heading": {
-      "creating": "嗚呼！您的 團隊 正在建立...",
-      "created": "太棒了！您已經建立了一個 團隊"
+      "creating": "嗚呼！您的團隊正在建立...",
+      "created": "太棒了！您已經建立了一個團隊"
     },
     "creating_message": "請不要關閉或重新整理此選項卡。",
-    "keep_data_separate_message": "您現有的 個人 工作區將與此 團隊 分開。您仍然可以以個人身份處理它們。",
+    "keep_data_separate_message": "您現有的個人工作區將與此團隊分開。您仍然可以以個人身份處理它們。",
     "merge_data_message": "您現有的個人工作區將被移動到此團隊。一旦您準備好協作，就可以邀請團隊成員。",
     "set_up_team_button": "設定團隊"
   },
   "create_team_onboarding_modal": {
-    "heading": "嗚呼！您的 團隊 正在建立...",
+    "heading": "嗚呼！您的團隊正在建立...",
     "creating_message": "請不要關閉或重新整理此選項卡。"
   },
   "quick_create_team_modal": {
-    "heading": "設定您的 團隊",
-    "name_input_field_label": "您的 團隊 叫什麼名字？",
+    "heading": "設定您的團隊",
+    "name_input_field_label": "您的團隊叫什麼名字？",
     "workspace_name": "{teamName} 工作區",
     "edit_team_name_button": "編輯",
     "domain_input_field_label": "團隊 URL",
     "what_will_your_team_work_on": {
-      "label": "你的 團隊 會做什麼？",
+      "label": "你的團隊會做什麼？",
       "placeholder": "選擇一個選項來幫助我們定製您的體驗",
       "options": {
         "testing_existing_api": "一起共享和測試現有 API",
@@ -44,7 +44,7 @@
         "other": "其他"
       }
     },
-    "upload_team_logo_modal_title": "上傳 團隊 徽標",
+    "upload_team_logo_modal_title": "上傳團隊徽標",
     "upload_team_logo_modal": {
       "upload_button": "上傳",
       "back_button": "後退",
@@ -58,26 +58,26 @@
         "file_read_error": "我們讀不懂。請上傳影像檔案，例如 jpg 或 png。"
       }
     },
-    "upload_team_logo_modal_body": "上傳自訂徽標，讓您的 團隊 有賓至如歸的感覺。最大大小：2 MB",
-    "other_goal_placeholder": "輸入您的 團隊 目標",
+    "upload_team_logo_modal_body": "上傳自訂徽標，讓您的團隊有賓至如歸的感覺。最大大小：2 MB",
+    "other_goal_placeholder": "輸入您的團隊目標",
     "validate_user_choice_error": "您必須選擇一個選項。",
-    "provide_team_detail_error": "請提供 團隊 詳細資訊",
+    "provide_team_detail_error": "請提供團隊詳細資訊",
     "update_team_error": {
-      "enabled_message": "您為 團隊 啟用了 團隊 發現",
-      "disabled_message": "您為 團隊 停用了 團隊 發現",
-      "on_message": "團隊 發現已開啟",
-      "off_message": "團隊 發現已關閉",
-      "message": "您 {enableStatus} 團隊 為您的 團隊 發現",
+      "enabled_message": "您為團隊啟用了團隊發現",
+      "disabled_message": "您為團隊停用了團隊發現",
+      "on_message": "團隊發現已開啟",
+      "off_message": "團隊發現已關閉",
+      "message": "您 {enableStatus} 團隊為您的團隊發現",
       "enabled": "已啟用",
       "disabled": "已停用",
       "on": "開啟",
       "off": "關閉",
-      "title": "團隊 發現是 {enableStatus}"
+      "title": "團隊發現是 {enableStatus}"
     },
     "team_discovery": {
-      "title": "團隊 發現",
-      "description": "允許您組織中的人員看到您的 團隊 和 請求 才能加入。",
-      "turn_on_team_discovery": "開啟 團隊 發現",
+      "title": "團隊發現",
+      "description": "允許您組織中的人員看到您的團隊和請求才能加入。",
+      "turn_on_team_discovery": "開啟團隊發現",
       "turn_on_label": "開啟",
       "turn_off_label": "關閉"
     },
@@ -98,7 +98,7 @@
       "title": "出了點問題"
     },
     "heading": "驗證您的帳戶",
-    "body": "要啟用 團隊 發現，請驗證您的帳戶並重試。",
+    "body": "要啟用團隊發現，請驗證您的帳戶並重試。",
     "cancel_button": "取消",
     "send_verification_button": "傳送驗證郵件"
   }

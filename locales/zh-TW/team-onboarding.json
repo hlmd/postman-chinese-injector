@@ -50,9 +50,9 @@
     "team_discovery": {
       "message_enabled": "您為團隊啟用了團隊發現",
       "message_disabled": "您為團隊停用了團隊發現",
-      "title_on": "團隊 發現已開啟",
-      "title_off": "團隊 發現已關閉",
-      "title": "團隊 發現",
+      "title_on": "團隊發現已開啟",
+      "title_off": "團隊發現已關閉",
+      "title": "團隊發現",
       "title_UO_140": "允許 {domain} 使用者發現此團隊",
       "description": "團隊發現可讓組織中的人員看到您的團隊並申請加入。",
       "description_UO_140": "他們可以請求加入這個團隊。",
@@ -73,11 +73,11 @@
         "subtitle": "邀請人們與您合作，充分利用 Postman。",
         "title": "邀請他人加入您的團隊",
         "via_email": "通過電子郵件",
-        "share_link_text": "或者，分享 邀請 連結",
+        "share_link_text": "或者，分享邀請連結",
         "generate_link": "生成連結",
         "copied_text": "已複製",
         "enter_email_address": "輸入電子郵件地址",
-        "failed_to_generate_link": "無法生成 邀請 連結。請再試一次。"
+        "failed_to_generate_link": "無法生成邀請連結。請再試一次。"
       },
       "share_link_with_your_colleagues": "獲取可與同事分享的連結以加入團隊"
     },

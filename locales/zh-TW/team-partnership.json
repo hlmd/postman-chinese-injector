@@ -4,10 +4,10 @@
   "create_partner_workspace_banner": {
     "title": "擴大您的合作伙伴關係？",
     "description": "將外部合作伙伴聚集在共享工作區中，共同協作 API 專案。之後可以隨時回到此處管理所有合作伙伴關係。",
-    "button": "建立 合作伙伴 工作區"
+    "button": "建立合作伙伴工作區"
   },
   "cta": {
-    "create_partner_workspace": "建立 合作伙伴 工作區"
+    "create_partner_workspace": "建立合作伙伴工作區"
   },
   "tabs": {
     "external_partners": {
@@ -15,9 +15,9 @@
       "description": "管理誰可以訪問您已發布的合作伙伴工作區。訪問<Link><Text>邀請和請求</Text></Link>檢視待處理的合作伙伴邀請。",
       "remove_partner": {
         "header": "刪除 {userName} 作為合作伙伴？",
-        "description": "刪除合作伙伴後，他們將無法訪問您的 團隊 的合作伙伴工作區。",
+        "description": "刪除合作伙伴後，他們將無法訪問您的團隊的合作伙伴工作區。",
         "cancel": "取消",
-        "remove_partner": "刪除 合作伙伴",
+        "remove_partner": "刪除合作伙伴",
         "tooltip": "刪除夥伴",
         "toasts": {
           "success": "該合作伙伴已被刪除，並且不再有權訪問合作伙伴工作區。",
@@ -28,18 +28,18 @@
         "by_email_or_name": "按姓名或電子郵件搜尋"
       },
       "individual_partners_tag": "個人合夥人",
-      "editor_role_description": "具有 編輯者 訪問權限的合作伙伴將在下一個計費週期內付費。",
+      "editor_role_description": "具有編輯者訪問權限的合作伙伴將在下一個計費週期內付費。",
       "sso_description": "該組織要求使用者通過 SSO 登入。",
       "blank_state": {
         "partner_workspace_feature_disabled": {
           "title": "沒有外部合作伙伴？沒問題！",
-          "description": "將您的外部合作伙伴聚集在共享的 工作區 中，在 API 專案上進行協作。升級您的計劃以建立您的第一個 合作伙伴 工作區。",
+          "description": "將您的外部合作伙伴聚集在共享的工作區中，在 API 專案上進行協作。升級您的計劃以建立您的第一個合作伙伴工作區。",
           "button_description": "升級計劃"
         },
         "partner_workspace_feature_enabled": {
           "title": "沒有外部合作伙伴？沒問題！",
-          "description": "將您的外部合作伙伴聚集在共享的 工作區 中，在 API 專案上進行協作。返回此處管理您所有的合作伙伴關係。",
-          "button_description": "建立一個 合作伙伴 工作區"
+          "description": "將您的外部合作伙伴聚集在共享的工作區中，在 API 專案上進行協作。返回此處管理您所有的合作伙伴關係。",
+          "button_description": "建立一個合作伙伴工作區"
         }
       },
       "no_search_result": {
@@ -48,31 +48,31 @@
       }
     },
     "team_members": {
-      "title": "作為 合作伙伴",
+      "title": "作為合作伙伴",
       "permission_settings": {
-        "title": "權限 設定",
-        "description": "允許 團隊 成員接受合作伙伴邀請並與其他組織合作。",
+        "title": "權限設定",
+        "description": "允許團隊成員接受合作伙伴邀請並與其他組織合作。",
         "dropdown_options": {
           "always_allow_label": "始終允許",
           "dont_allow_label": "不允許"
         },
         "toasts": {
-          "success": "成功！您的 權限 已更新。",
+          "success": "成功！您的權限已更新。",
           "error": "哎呀！更新您的權限時出錯。請再試一次。"
         },
         "info_for_partnership_disabled_team": "升級您的計劃以更新這些設定"
       },
-      "partnership_table_title": "邀請您的 團隊 成員成為合作伙伴的組織",
-      "partnership_table_description": "檢視哪些 團隊 成員已被其他組織邀請為合作伙伴。",
+      "partnership_table_title": "邀請您的團隊成員成為合作伙伴的組織",
+      "partnership_table_description": "檢視哪些團隊成員已被其他組織邀請為合作伙伴。",
       "by_organization_header": "組織",
-      "team_members_header": "團隊 成員",
+      "team_members_header": "團隊成員",
       "modal": {
-        "header": "團隊 成員與 {teamName} 合作",
-        "description": "合作伙伴 自 {partnershipDate} 起"
+        "header": "團隊成員與 {teamName} 合作",
+        "description": "合作伙伴自 {partnershipDate} 起"
       },
       "blank_state": {
         "title": "這裡還沒有什麼可看的",
-        "description": "當您的 團隊 成員被其他組織邀請作為合作伙伴時，您會在這裡看到他們！"
+        "description": "當您的團隊成員被其他組織邀請作為合作伙伴時，您會在這裡看到他們！"
       },
       "people_tag": "人們",
       "person_tag": "人"
@@ -86,7 +86,7 @@
   },
   "no_view_permission_page": {
     "title": "您無權訪問",
-    "description": "只有 團隊 管理員和開發人員可以檢視合作伙伴關係。"
+    "description": "只有團隊管理員和開發人員可以檢視合作伙伴關係。"
   },
   "partner_count_tooltip_text": "所有合作伙伴均顯示在合作伙伴頁面上。",
   "role_filter_description": "合作伙伴關係"

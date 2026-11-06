@@ -7,15 +7,15 @@
   "slack": {
     "disabled_tooltip": "只能添加此应用程序的一个实例。",
     "slack_label": "Slack",
-    "description": "实时更新 Slack 上 Postman 团队 中发生的情况。"
+    "description": "实时更新 Slack 上 Postman 团队中发生的情况。"
   },
   "git_app": {
-    "disabled_tooltip": "只有 团队 管理员可以添加应用程序。",
+    "disabled_tooltip": "只有团队管理员可以添加应用程序。",
     "description": "在 Postman 和 {userFriendlyServiceName} 之间同步 API。"
   },
   "blank_slate": {
-    "add_more_apps": "为您的 团队 添加更多应用程序",
-    "description": "使用第三方应用程序配置 Postman 中的 团队。 Postman 团队 成员可以使用配置的应用程序来设置集成。了解有关<CustomLink><Text>已安装的应用</Text></CustomLink>的更多信息"
+    "add_more_apps": "为您的团队添加更多应用程序",
+    "description": "使用第三方应用程序配置 Postman 中的团队。 Postman 团队成员可以使用配置的应用程序来设置集成。了解有关<CustomLink><Text>已安装的应用</Text></CustomLink>的更多信息"
   },
   "installed_app_list": {
     "headers": {

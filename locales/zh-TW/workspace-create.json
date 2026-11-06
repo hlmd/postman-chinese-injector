@@ -1,7 +1,7 @@
 {
   "select_template_step": {
-    "title": "建立您的 工作區",
-    "subheading": "使用模板充分利用您的 工作區。",
+    "title": "建立您的工作區",
+    "subheading": "使用模板充分利用您的工作區。",
     "step_info_text": "第 1 步（共 2 步）",
     "template_info_text": "探索我們的模板",
     "templates_load_error": {
@@ -17,52 +17,52 @@
     },
     "name": "名稱",
     "name_label": "工作區名稱",
-    "name_placeholder": "團隊 名稱、專案或服務...",
+    "name_placeholder": "團隊名稱、專案或服務...",
     "summary": "概括",
     "validation_message": "摘要不能超過 140 個字元。",
     "step_info_text": "第 2 步（共 2 步）",
     "disabled_info_text": {
       "private_workspace": "升級到 {teamPlanName} 或 {enterprisePlanName} 以與成員私下協作。",
       "public_workspace": "此選專案前在您所在的地區不可用。",
-      "public_workspace_no_team_profile": "此 工作區 無法設為 公開，因為您的 團隊 沒有 公開 個人資料，請聯絡您的 團隊 管理員 或社群經理尋求幫助。",
-      "public_workspace_no_permission": "您沒有 權限 來建立 公開 工作區。",
+      "public_workspace_no_team_profile": "此工作區無法設為公開，因為您的團隊沒有公開個人資料，請聯絡您的團隊管理員或社群經理尋求幫助。",
+      "public_workspace_no_permission": "您沒有權限來建立公開工作區。",
       "partner_workspace": {
         "upgrade_plan": "升級您的計劃以建立合作伙伴工作區。",
-        "no_permission_text": "您沒有 權限 來執行此操作",
+        "no_permission_text": "您沒有權限來執行此操作",
         "not_available": "此選專案前在您所在的地區不可用。",
         "upgrade_plan_updated": "升級您的計劃以與外部合作伙伴合作。"
       },
       "team_workspace": {
-        "no_permission_text": "您沒有 權限 來建立 團隊 工作區。"
+        "no_permission_text": "您沒有權限來建立團隊工作區。"
       },
       "git_repository_restriction": "{workspaceType} 工作區不支援連結 Git 儲存庫。"
     },
     "organizations": {
       "disabled_info_text": {
-        "team_workspaces_organization_level": "您需要加入一個 團隊 來建立這種型別的 工作區。"
+        "team_workspaces_organization_level": "您需要加入一個團隊來建立這種型別的工作區。"
       },
-      "personal_workspace_outside_any_squad_text": "在團隊之外建立 工作區",
-      "personal_workspace_outside_any_squad_tooltip": "建立一個不屬於任何 團隊 的 工作區。您可以將其用於自己的工作，但需要將其移動到 團隊 才能共享或協作。",
+      "personal_workspace_outside_any_squad_text": "在團隊之外建立工作區",
+      "personal_workspace_outside_any_squad_tooltip": "建立一個不屬於任何團隊的工作區。您可以將其用於自己的工作，但需要將其移動到團隊才能共享或協作。",
       "squad_dropdown_label": "團隊",
-      "squad_select_label": "為此 團隊 建立 工作區",
-      "squad_dropdown_placeholder": "選擇 團隊",
-      "squad_dropdown_info_text": "選擇要在其中建立 工作區 的 團隊"
+      "squad_select_label": "為此團隊建立工作區",
+      "squad_dropdown_placeholder": "選擇團隊",
+      "squad_dropdown_info_text": "選擇要在其中建立工作區的團隊"
     },
-    "visibility_radio_title": "誰可以訪問您的 工作區？",
+    "visibility_radio_title": "誰可以訪問您的工作區？",
     "create_workspace_type_title": "選擇工作區型別",
-    "update_workspace_type_title": "工作區 型別",
+    "update_workspace_type_title": "工作區型別",
     "workspace_access_title": "管理訪問權限",
     "info_banner": {
-      "new_team_info_text": "由於您沒有 團隊，我們將為您建立一個 工作區。",
-      "public_workspace_info_text": "該 工作區 中的所有資料都將變為 公開。",
-      "partner_workspace_info_text": "建立 工作區 後，您將成為 <1><0> 合作伙伴經理</0></1>。",
-      "team_profile_public_text": "此 工作區 和您的 <1> 團隊的個人資料 </1> 中的所有資料都將成為 公開。",
-      "user_profile_public_text": "此 工作區 和您的 <1> 使用者個人資料 </1> 中的所有資料都將變為 公開。",
-      "join_squad_info_text": "只有您可以訪問此 工作區。 <1><0>加入團隊</0></1>開始與隊友合作。",
-      "personal_workspace_outside_any_squad_info_text": "在您將 工作區 移至 團隊 之前，該 工作區 無法與任何人共享。"
+      "new_team_info_text": "由於您沒有團隊，我們將為您建立一個工作區。",
+      "public_workspace_info_text": "該工作區中的所有資料都將變為公開。",
+      "partner_workspace_info_text": "建立工作區後，您將成為 <1><0> 合作伙伴經理</0></1>。",
+      "team_profile_public_text": "此工作區和您的 <1> 團隊的個人資料 </1> 中的所有資料都將成為公開。",
+      "user_profile_public_text": "此工作區和您的 <1> 使用者個人資料 </1> 中的所有資料都將變為公開。",
+      "join_squad_info_text": "只有您可以訪問此工作區。 <1><0>加入團隊</0></1>開始與隊友合作。",
+      "personal_workspace_outside_any_squad_info_text": "在您將工作區移至團隊之前，該工作區無法與任何人共享。"
     },
     "public_workspace_popover_content": {
-      "text": "所有使用 Postman 的開發人員都可以訪問 公開 API。",
+      "text": "所有使用 Postman 的開發人員都可以訪問公開 API。",
       "link_label": "瞭解有關發布到 Postman 的更多資訊。",
       "heading": "在 Postman 上公開此 API"
     },
@@ -71,14 +71,14 @@
       "activate_trial": "免費試用",
       "unlocked": "解鎖"
     },
-    "partner_forbidden_text": "作為合作伙伴，您沒有 權限 來檢視此頁面。",
-    "forbidden_page_text": "您沒有 權限 來檢視此頁面。",
-    "workspace_creation_disabled": "您沒有 權限 來建立工作區",
-    "workspace_creation_restricted_title": "工作區 建立受到限制。",
+    "partner_forbidden_text": "作為合作伙伴，您沒有權限來檢視此頁面。",
+    "forbidden_page_text": "您沒有權限來檢視此頁面。",
+    "workspace_creation_disabled": "您沒有權限來建立工作區",
+    "workspace_creation_restricted_title": "工作區建立受到限制。",
     "workspace_creation_restricted_subtitle": "以下是您的管理員的註釋：",
     "go_back_cta": "返回",
-    "git_folder_required_tooltip": "選擇包含您的 Git 儲存庫的 資料夾 以繼續。",
-    "workspace_name_required_tooltip": "輸入 工作區 名稱以繼續。",
+    "git_folder_required_tooltip": "選擇包含您的 Git 儲存庫的資料夾以繼續。",
+    "workspace_name_required_tooltip": "輸入工作區名稱以繼續。",
     "view_partner_workspaces_text": "檢視合作伙伴工作區",
     "view_workspaces": "檢視工作區",
     "go_to_home_cta": "轉到主頁",
@@ -88,7 +88,7 @@
     "text_area_info_text": "添加註釋（可選）",
     "switch_workspace_cta": "切換工作區",
     "confirm_cta": "確認",
-    "make_team_public_description": "在將您的 團隊 的個人資料設為 公開 之前，請更新您的 團隊 域並確保其符合 公開 可見性。您的 團隊 域名有助於識別您在 Postman 上的 團隊。",
+    "make_team_public_description": "在將您的團隊的個人資料設為公開之前，請更新您的團隊域並確保其符合公開可見性。您的團隊域名有助於識別您在 Postman 上的團隊。",
     "learn_why_text": "瞭解原因",
     "toasts": {
       "trial_error": {
@@ -97,15 +97,15 @@
       },
       "creation_failed": {
         "title": "建立失敗",
-        "description": "請在建立 工作區 之前選擇一個模板。"
+        "description": "請在建立工作區之前選擇一個模板。"
       },
       "project_already_connected": {
         "title": "專案已連線",
-        "description": "一個專案已連線到此 工作區。每個 工作區 只能連線一個專案。"
+        "description": "一個專案已連線到此工作區。每個工作區只能連線一個專案。"
       },
       "connection_failed": {
         "title": "連線失敗",
-        "description": "無法將 工作區 連線到目錄。您可以稍後手動連線。"
+        "description": "無法將工作區連線到目錄。您可以稍後手動連線。"
       },
       "not_git_repository": {
         "title": "不是 Git 儲存庫",
@@ -117,11 +117,11 @@
       },
       "directory_already_linked": {
         "title": "目錄已連結",
-        "description": "該目錄已連結到不同的 工作區。"
+        "description": "該目錄已連結到不同的工作區。"
       },
       "workspace_switch_failed": {
-        "title": "工作區 切換失敗",
-        "description": "無法切換到 工作區。請手動嘗試。"
+        "title": "工作區切換失敗",
+        "description": "無法切換到工作區。請手動嘗試。"
       },
       "folder_release_failed": {
         "title": "無法斷開資料夾連線",
@@ -129,11 +129,11 @@
       },
       "status_error": {
         "status": "錯誤",
-        "description": "建立 工作區 時出現問題"
+        "description": "建立工作區時出現問題"
       },
       "action_request_error": {
-        "title": "無法傳送 請求",
-        "description": "嘗試從設定中更改 工作區 型別"
+        "title": "無法傳送請求",
+        "description": "嘗試從設定中更改工作區型別"
       },
       "upgrade_partner_manager_error": {
         "status": "錯誤",
@@ -143,21 +143,21 @@
       "create_workspace_orgs_visibility_error": {
         "status": "錯誤",
         "title": "無法授予對您組織的訪問權限",
-        "description": "您可以從 工作區 設定頁面手動更改訪問權限。"
+        "description": "您可以從工作區設定頁面手動更改訪問權限。"
       },
       "request_sent": {
-        "title": "請求 已傳送"
+        "title": "請求已傳送"
       },
       "remote_origin_required": {
         "title": "需要遠端來源",
-        "description": "此 Git 儲存庫沒有配置遠端源 URL。請在連線到 工作區 之前新增遠端源。"
+        "description": "此 Git 儲存庫沒有配置遠端源 URL。請在連線到工作區之前新增遠端源。"
       },
       "git_not_installed": {
         "title": "未安裝 Git",
         "description": "您的系統上未安裝 Git。請安裝 Git 才能使用此功能。"
       },
       "git_permission_error": {
-        "title": "Git 權限 錯誤",
+        "title": "Git 權限錯誤",
         "description": "無法訪問 Git。請檢查您的權限。"
       },
       "remote_origin_check_failed": {
@@ -168,8 +168,8 @@
     "create_public_workspace_request": {
       "notes_validation_message": "備註最多隻能包含 500 個字元。",
       "notes_placeholder_text": "添加註釋...",
-      "request_created_toast": "您將收到有關社群經理的 回應 的通知。",
-      "notes_label": "請求 批准",
+      "request_created_toast": "您將收到有關社群經理的回應的通知。",
+      "notes_label": "請求批准",
       "notes_helper_text": "社群管理員將稽核您的請求。",
       "notes_footer_text": "同時，系統將建立一個 {interim_workspace_type} 工作區。"
     },
@@ -324,7 +324,7 @@
       "start_trial": "免費試用 Partner 工作區",
       "remind_later_cta": "稍後提醒我",
       "footer_first_part": "無需信用卡",
-      "footer_second_part": "。30 天后，您將恢復到目前套餐。"
+      "footer_second_part": "。30 天後，您將恢復到目前套餐。"
     },
     "loading_page": {
       "title": "正在設定您的試用……",

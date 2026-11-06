@@ -190,7 +190,7 @@
   "readme": {
     "edit-readme": "编辑自述文件",
     "create-readme": "自述文件",
-    "description": "通过注释、链接和关键资源来指导您的 团队，帮助他们入门",
+    "description": "通过注释、链接和关键资源来指导您的团队，帮助他们入门",
     "disabled-tooltip": "您没有权限管理自述文件。请联系您的管理员。",
     "modal": {
       "create-title": "组织自述文件",

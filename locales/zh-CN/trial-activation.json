@@ -1,5 +1,5 @@
 {
-  "heading": "恭喜！您的 {tier, select, solo {Solo} team {Team} business {Enterprise} enterprise {Enterprise} other {新}} 试用现已激活。",
+  "heading": "恭喜！您的 {tier, select, solo {个人版} team {团队版} business {企业版} enterprise {企业版} other {新}}试用现已激活。",
   "close_button_label": "关闭",
   "invite": {
     "prompt": "邀请您的队友加入。您添加的每位成员都将解锁共享工作区、实时协作和角色功能。",

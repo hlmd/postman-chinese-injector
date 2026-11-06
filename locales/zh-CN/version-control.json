@@ -1,5 +1,5 @@
 {
-  "collection_fork_label": "<0>这个 集合 是从 </0><1>{baseCollectionName}</1> 分叉出来的",
+  "collection_fork_label": "<0>这个集合是从 </0><1>{baseCollectionName}</1> 分叉出来的",
   "fork": {
     "workbench": {
       "sign_in_modal": {
@@ -21,9 +21,9 @@
         "description": "我们无法获取有关源 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} other {}} 的信息。请再试一次。"
       },
       "no_permission_state": {
-        "description": "您没有 权限 到 fork 进入此 团队 的工作区。",
-        "no_workspaces_description": "您没有任何可以 fork 进入的工作空间。创建一个 工作区 来开始。",
-        "no_workspaces_no_permission_description": "您没有任何可以 fork 进入的工作空间。请联系您的 团队 管理员 以获取 工作区 访问权限。",
+        "description": "您没有权限到 fork 进入此团队的工作区。",
+        "no_workspaces_description": "您没有任何可以 fork 进入的工作空间。创建一个工作区来开始。",
+        "no_workspaces_no_permission_description": "您没有任何可以 fork 进入的工作空间。请联系您的团队管理员以获取工作区访问权限。",
         "create_workspace_button": "创建工作区",
         "close_button": "关闭"
       },
@@ -45,7 +45,7 @@
       },
       "forbidden_title": "禁止访问",
       "error_title": "错误",
-      "forbidden_message": "您没有 权限 来查看此内容。",
+      "forbidden_message": "您没有权限来查看此内容。",
       "error_message": "发生错误。请稍后重试。",
       "total_forks_title": "{modelName} 的 {totalForks} {forkText}",
       "no_forks_title": "没有分叉",
@@ -81,7 +81,7 @@
   },
   "fork_recommendation_popup": {
     "title": "创建 fork 来保存更改",
-    "message": "您没有 权限 来更改此 集合。 Fork 的 集合 到 工作区 以保存更改。",
+    "message": "您没有权限来更改此集合。 Fork 的集合到工作区以保存更改。",
     "button_label": "创建 Fork 并保存",
     "error_message": "您没有执行此操作所需的权限。",
     "upgrade_partner_error_message": "您没有执行此操作的权限。请升级到Editor 角色。",
@@ -89,24 +89,24 @@
     "sign_in_subtitle": "您需要登录才能 fork 集合。继续创建一个帐户。它是免费的！"
   },
   "navigate": {
-    "creating_fork_message": "将 集合 分叉到 {teamName} 团队",
-    "switch_teams_message": "将你传送到 团队 {teamName}",
+    "creating_fork_message": "将集合分叉到 {teamName} 团队",
+    "switch_teams_message": "将你传送到团队 {teamName}",
     "do_not_close_tab_message": "坚持几秒钟。请不要关闭或刷新此选项卡。"
   },
   "public_collection_fork_banner": {
-    "description": "要对此 集合 进行更改，请将 fork 更改为您的 工作区。",
+    "description": "要对此集合进行更改，请将 fork 更改为您的工作区。",
     "button_label": "复刻集合"
   },
   "fork_label": {
     "fork_info": {
       "last_updated": "最后更新：{relativeTime}",
-      "source_collection_error": "您无权访问源 集合 或它已被删除。",
-      "copy_collection_id_tooltip": "复制 {entityType, select, collection {集合} specification {规格} environment {环境} flow {流程} other {实体}} ID",
-      "copy_collection_url_tooltip": "复制 {entityType, select, collection {集合} specification {规格} environment {环境} flow {流程} other {实体}} URL",
+      "source_collection_error": "您无权访问源集合或它已被删除。",
+      "copy_collection_id_tooltip": "复制 {entityType, select, collection {集合} specification {规范} environment {环境} flow {流程} other {实体}} ID",
+      "copy_collection_url_tooltip": "复制 {entityType, select, collection {集合} specification {规范} environment {环境} flow {流程} other {实体}} URL",
       "pulling_changes_message": "在后台拉动更改...",
       "changes_available_message": "有变化需要拉动。",
       "pull_changes_link": "拉动变更",
-      "merge_conflicts_message": "发现 合并 冲突。解决它们以拉取更改。",
+      "merge_conflicts_message": "发现合并冲突。解决它们以拉取更改。",
       "view_diff_link": "查看差异",
       "auto_sync_config": {
         "auto_sync_changes_label": "自动拉取更改：",

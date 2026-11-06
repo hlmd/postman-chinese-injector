@@ -1,11 +1,11 @@
 {
   "mock_create_container": {
     "columns": {
-      "request_method": "请求 方法",
+      "request_method": "请求方法",
       "request_url": "请求 URL",
       "request_body": "请求体",
       "description": "描述",
-      "response_code": "响应 代码",
+      "response_code": "响应代码",
       "response_body": "响应体",
       "path": "路径",
       "value": "值"
@@ -26,8 +26,8 @@
   },
   "mock_form_error_states": {
     "make_payment": "付款",
-    "user_billing_action": "由于未支付发票，您的 团队 无法使用某些 Postman 服务。支付当前发票以继续。",
-    "default_action": "由于未支付发票，您的 团队 无法使用某些 Postman 服务。请联系您的 团队 的账单经理，了解有关 团队 付款的更多信息。",
+    "user_billing_action": "由于未支付发票，您的团队无法使用某些 Postman 服务。支付当前发票以继续。",
+    "default_action": "由于未支付发票，您的团队无法使用某些 Postman 服务。请联系您的团队的账单经理，了解有关团队付款的更多信息。",
     "try_again": "再试一次",
     "mock_creation_try_again": "创建此模拟服务器时出现问题。请再试一次。",
     "internet_error": "请检查您的互联网连接，然后重试。",
@@ -37,7 +37,7 @@
     "collection_store_error": "获取工作区集合时出错",
     "unexpected_error": "出现意外错误。请再试一次。",
     "cannot_access_server": "无法访问 Postman 服务器",
-    "contact_support": "您的 团队 已禁用与 Postman 服务同步。请联系支持人员以恢复使用这些功能。"
+    "contact_support": "您的团队已禁用与 Postman 服务同步。请联系支持人员以恢复使用这些功能。"
   },
   "custom_mock_error": {
     "something_went_wrong": "出了点问题",
@@ -62,17 +62,17 @@
     "make_mock_server_private_link_text": "Postman API 键",
     "headers": "请求头",
     "headers_count": "请求头 ({noOfHeaders})",
-    "response_matching_heading": "响应 匹配",
-    "response_matching_helper_text": "选择模拟服务器为 响应 提供的服务。",
-    "request_body": "请求 身体",
-    "request_body_info_text": "在返回 响应 之前将 请求 主体与示例 请求 主体进行匹配。",
+    "response_matching_heading": "响应匹配",
+    "response_matching_helper_text": "选择模拟服务器为响应提供的服务。",
+    "request_body": "请求身体",
+    "request_body_info_text": "在返回响应之前将请求主体与示例请求主体进行匹配。",
     "headers_info_text": "在此定义模拟服务器应使用的标头键来将请求与示例进行匹配。",
     "headers_helper_text": "您可以输入多个标题键。",
     "headers_validation_message": "输入标头键以启用标头匹配。",
     "headers_input_placeholder": "例如：x-api-key、内容类型",
-    "private_checkbox_info": "要调用 私有模拟服务器，您需要在请求中添加 <1>x-api-key</1> 标头。查看如何生成",
+    "private_checkbox_info": "要调用私有模拟服务器，您需要在请求中添加 <1>x-api-key</1> 标头。查看如何生成",
     "add_requests": "添加请求",
-    "add_requests_info": "输入您想要模拟的请求。或者，通过单击 (...) 图标添加 请求 主体。",
+    "add_requests_info": "输入您想要模拟的请求。或者，通过单击 (...) 图标添加请求主体。",
     "collection_placeholder": "选择或创建集合",
     "collection_empty_state_message": "没有找到集合",
     "create_collection": "创建集合",
@@ -123,7 +123,7 @@
     "select_collection": "已有集合",
     "select_collection_info_text": "选择您想要模拟的集合。",
     "select_collection_empty_state_message": "没有找到集合",
-    "mock_info_text": "输入您想要模拟的请求。或者，通过单击 (...) 图标添加 请求 主体。",
+    "mock_info_text": "输入您想要模拟的请求。或者，通过单击 (...) 图标添加请求主体。",
     "try_using_different_keyword": "请使用不同的关键字重试，并且不要忘记检查拼写错误。",
     "view_other_workspace": "请尝试查看此工作区中的其他集合。",
     "no_result_found": "没有找到“{searchQuery}”的结果",

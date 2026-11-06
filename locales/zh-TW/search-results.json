@@ -44,7 +44,7 @@
     }
   },
   "scope": {
-    "default_title": "個人 空間",
+    "default_title": "個人空間",
     "team_title": "{teamName} 團隊"
   },
   "sort_label": "排序方式",

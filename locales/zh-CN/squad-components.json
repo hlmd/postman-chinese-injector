@@ -15,7 +15,7 @@
     },
     "aria": {
       "restricted_access": "访问受限",
-      "restricted_access_tooltip": "加入或与此 团队 合作需要 团队 经理批准",
+      "restricted_access_tooltip": "加入或与此团队合作需要团队经理批准",
       "restricted_role": "您只能访问您受邀访问的特定资源。",
       "select_all": "选择全部",
       "select_row": "选择行"
@@ -28,31 +28,31 @@
     },
     "tooltip": {
       "member_details": "用户 ({userCount}) 和组 ({groupCount})",
-      "members_error": "无法加载 成员 详细信息",
-      "no_view_permission": "您没有 权限 查看该 团队 的详细信息"
+      "members_error": "无法加载成员详细信息",
+      "no_view_permission": "您没有权限查看该团队的详细信息"
     }
   },
   "actions": {
     "cancel": "取消",
     "join": "加入",
-    "join_as_member": "作为 团队 成员 加入",
-    "request_to_join": "请求 加入",
-    "request_to_join_team": "请求 加入 团队",
+    "join_as_member": "作为团队成员加入",
+    "request_to_join": "请求加入",
+    "request_to_join_team": "请求加入团队",
     "leave": {
       "label": "离开",
-      "disabled_tooltip": "您不能离开此 团队，因为您是通过群组添加的。",
-      "success": "离开 团队",
-      "error": "未能离开 团队。请再试一次。",
+      "disabled_tooltip": "您不能离开此团队，因为您是通过群组添加的。",
+      "success": "离开团队",
+      "error": "未能离开团队。请再试一次。",
       "confirm": {
         "title": "离开团队",
-        "description": "您确定要离开这个 团队 吗？"
+        "description": "您确定要离开这个团队吗？"
       }
     },
     "delete": "删除",
     "manage": "管理",
     "manage_team": "管理团队",
     "add_members": "添加成员",
-    "invite_members": "邀请 队友",
+    "invite_members": "邀请队友",
     "rename": "重命名",
     "create_workspace": "创建工作区",
     "remove": {
@@ -61,16 +61,16 @@
       "error": "删除失败。请再试一次。",
       "partial": "{succeeded} 已删除，{failed} 失败",
       "confirm": {
-        "title": "删除 成员",
-        "description": "从此 团队 中删除 {name} 吗？"
+        "title": "删除成员",
+        "description": "从此团队中删除 {name} 吗？"
       },
       "confirm_bulk": {
         "title": "删除成员",
-        "description": "从这个 团队 中删除 {count, plural, one {1 名成员} other {{count} 名成员}}？"
+        "description": "从这个团队中删除 {count, plural, one {1 名成员} other {{count} 名成员}}？"
       }
     },
     "convert": {
-      "label": "转换为 成员"
+      "label": "转换为成员"
     }
   },
   "filters": {
@@ -118,7 +118,7 @@
     "empty": {
       "no_members": {
         "title": "没有会员",
-        "description": "此 团队 中还没有成员。"
+        "description": "此团队中还没有成员。"
       },
       "no_results": {
         "title": "没有找到会员",
@@ -139,9 +139,9 @@
     "organization_members_count": "组织（{count, plural, one {1 名成员} other {{count} 名成员}}）",
     "inline": {
       "role": {
-        "success": "角色 已更新",
-        "request_sent": "请求 已发送以供批准",
-        "error": "无法更新 角色。请再试一次。"
+        "success": "角色已更新",
+        "request_sent": "请求已发送以供批准",
+        "error": "无法更新角色。请再试一次。"
       }
     }
   },
@@ -150,7 +150,7 @@
     "delete_result_error": "已删除 {deleted} 个团队，未能删除 {failed} 个",
     "join_one_success": "成功加入团队",
     "join_one_requested": "已发送加入申请",
-    "join_one_already_requested": "您已有一个待处理的加入此 团队 的申请",
+    "join_one_already_requested": "您已有一个待处理的加入此团队的申请",
     "join_one_error": "加入团队失败"
   },
   "errors": {

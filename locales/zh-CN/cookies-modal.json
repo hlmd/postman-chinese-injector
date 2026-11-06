@@ -4,8 +4,8 @@
     "message": "Postman 通过浏览器发送请求时无法访问cookie。要捕获和管理 Cookie，请尝试 Postman 桌面代理。"
   },
   "generic_empty_state": {
-    "message": "您使用的是较旧版本的 Postman 桌面代理，它不能用于添加或编辑 Cookie。 \n\n单击工具栏中的 Postman 代理图标更新 桌面代理，或切换到使用 Postman 云代理。",
-    "secondary_action": "切换到 云代理"
+    "message": "您使用的是较旧版本的 Postman 桌面代理，它不能用于添加或编辑 Cookie。 \n\n单击工具栏中的 Postman 代理图标更新桌面代理，或切换到使用 Postman 云代理。",
+    "secondary_action": "切换到云代理"
   },
   "heading": {
     "browser": "管理 Cookie",

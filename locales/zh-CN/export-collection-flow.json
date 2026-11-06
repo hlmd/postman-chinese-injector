@@ -3,7 +3,7 @@
     "heading": "导出集合",
     "button": {
       "export": "导出集合",
-      "fix": "移至 Vault",
+      "fix": "移至保险库",
       "export_disabled_tooltip": "正在准备导出集合",
       "export_anyway": "仍然导出"
     },
@@ -64,8 +64,8 @@
     "clean": "未发现已知格式的密钥",
     "detected": "{count, plural, one {在集合中检测到 # 个密钥} other {在集合中检测到 # 个密钥}}",
     "detected_description": "不修复直接导出会使其以明文形式保留在 JSON 中。",
-    "secured_local": "密钥已安全存入本地 Vault",
-    "secured_shared": "密钥已安全存入共享 Vault",
+    "secured_local": "密钥已安全存入本地保险库",
+    "secured_shared": "密钥已安全存入共享保险库",
     "secured_description": "我们已将其替换为变量，确保文件中不含敏感信息。",
     "patterns_note": "我们会检查常见提供商的令牌。",
     "learn_more": "了解更多",

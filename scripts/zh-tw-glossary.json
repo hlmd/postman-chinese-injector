@@ -2,6 +2,7 @@
   "_说明": "OpenCC s2twp 转换后的修正表：按顺序做正则替换（只作用于译文值，不动键名）。pattern 为 JS 正则源码。",
   "rules": [
     { "pattern": "例項", "replace": "實例" },
+    { "pattern": "(\\d|\\}\\}|\\}|[一二三兩幾數])(\\s*)天后", "replace": "$1$2天後" },
     { "pattern": "全域性", "replace": "全域" },
     { "pattern": "二進位制", "replace": "二進位" },
     { "pattern": "擴充套件", "replace": "擴充功能" },

@@ -22,12 +22,12 @@
     "refresh": "刷新"
   },
   "no_collections_present": {
-    "create_collection_for_requests_heading": "为您的请求创建 集合",
-    "default_heading": "您没有任何 集合",
-    "description": "集合 允许您对相关请求进行分组，并轻松地为其中的所有请求设置通用 授权、测试、脚本和变量。",
-    "create_collection": "创建 集合"
+    "create_collection_for_requests_heading": "为您的请求创建集合",
+    "default_heading": "您没有任何集合",
+    "description": "集合允许您对相关请求进行分组，并轻松地为其中的所有请求设置通用授权、测试、脚本和变量。",
+    "create_collection": "创建集合"
   },
-  "sign_in_to_perform_action": "您需要登录 团队 才能执行此操作",
+  "sign_in_to_perform_action": "您需要登录团队才能执行此操作",
   "meta_icons_info": {
     "read_only": "只读"
   },
@@ -41,29 +41,29 @@
   "could_not_load_requests": "无法加载请求。 <1>再试一次</1>",
   "sidebar_actions_menu": {
     "disable_trash_tooltip": {
-      "members_only": "只有该 工作区 的成员才能恢复已删除的集合",
-      "default": "恢复已删除的 集合",
+      "members_only": "只有该工作区的成员才能恢复已删除的集合",
+      "default": "恢复已删除的集合",
       "offline": "重新上线后即可执行此操作"
     },
-    "create_collection_tooltip": "创建新的 集合",
-    "disabled_tooltip_no_permission": "您没有 权限 来执行此操作。",
-    "disabled_git_on_prem_on_web": "请使用 Postman 应用程序更新此 集合",
-    "disabled_git_on_prem_on_web_label_popover": "此 集合 连接到 GitHub 企业存储库。要进行更改，请使用 Postman 桌面应用程序。",
+    "create_collection_tooltip": "创建新的集合",
+    "disabled_tooltip_no_permission": "您没有权限来执行此操作。",
+    "disabled_git_on_prem_on_web": "请使用 Postman 应用程序更新此集合",
+    "disabled_git_on_prem_on_web_label_popover": "此集合连接到 GitHub 企业存储库。要进行更改，请使用 Postman 桌面应用程序。",
     "disabled_tooltip_is_offline": "您可以在重新上线后执行此操作。",
     "disabled_tooltip_nothing_to_paste": "没有可粘贴的实体",
     "open_trash": "打开垃圾箱",
     "create_new_button": "创建新按钮",
-    "blank_collection": "空白 集合",
-    "collection_template": "集合 模板",
-    "ai_generated_collection": "AI 生成 集合",
-    "disabled_tooltip_no_permission_run": "您没有 权限 来运行此 集合",
-    "disabled_tooltip_no_permission_add": "您没有 权限 来添加项目",
-    "disabled_tooltip_no_permission_remove": "您没有 权限 来删除此 集合"
+    "blank_collection": "空白集合",
+    "collection_template": "集合模板",
+    "ai_generated_collection": "AI 生成集合",
+    "disabled_tooltip_no_permission_run": "您没有权限来运行此集合",
+    "disabled_tooltip_no_permission_add": "您没有权限来添加项目",
+    "disabled_tooltip_no_permission_remove": "您没有权限来删除此集合"
   },
   "live_collection_onboarding": {
     "connection_success": {
-      "heading": "集合 上线了！",
-      "postman_will_keep_collections_synced": "Postman 将始终保持您的 集合 同步。",
+      "heading": "集合上线了！",
+      "postman_will_keep_collections_synced": "Postman 将始终保持您的集合同步。",
       "test_it_out": "通过<1><0>发送请求</0></1>来测试它。"
     },
     "strategy_selection": {
@@ -75,7 +75,7 @@
       "save": "节省"
     },
     "onboarding_complete": {
-      "collection_will_update_automatically": "一切就绪！您的 集合 将自动更新。",
+      "collection_will_update_automatically": "一切就绪！您的集合将自动更新。",
       "notify_on_updates": "一切就绪！当有新的更新可用时，我们会通知您。",
       "change_later_from_live_settings": "您可以稍后从 <1><0>Live 设置</0></1> 更改此设置。"
     }
@@ -92,12 +92,12 @@
     },
     "move": {
       "label": "移动",
-      "disabled_tooltip": "您没有 权限 来执行此操作。"
+      "disabled_tooltip": "您没有权限来执行此操作。"
     },
     "run_collection": {
       "label": "运行",
-      "infoTooltip": "在此 集合 中发送所有请求",
-      "disabled_tooltip": "您没有 权限 来运行此 集合。"
+      "infoTooltip": "在此集合中发送所有请求",
+      "disabled_tooltip": "您没有权限来运行此集合。"
     },
     "generate_tests": {
       "label": "生成测试"
@@ -109,11 +109,11 @@
       "label": "查看详情"
     },
     "add_request": {
-      "label": "添加 请求",
-      "tooltip": "添加 请求"
+      "label": "添加请求",
+      "tooltip": "添加请求"
     },
     "add_folder": {
-      "label": "添加 文件夹"
+      "label": "添加文件夹"
     },
     "monitor_collection": {
       "label": "创建监控"
@@ -123,21 +123,21 @@
     },
     "create_a_fork": {
       "label": "复刻",
-      "disabled_tooltip": "您没有 权限 来 fork 这个 集合"
+      "disabled_tooltip": "您没有权限来 fork 这个集合"
     },
     "request_a_fork": {
       "label": "请求 fork"
     },
     "create_pull_request": {
-      "label": "创建 拉取请求",
-      "disabled_tooltip": "您没有 权限 来创建 拉取请求"
+      "label": "创建拉取请求",
+      "disabled_tooltip": "您没有权限来创建拉取请求"
     },
     "merge_changes": {
-      "label": "合并 更改"
+      "label": "合并更改"
     },
     "connect_to_github": {
       "label": "连接到 GitHub",
-      "infoTooltip": "将此 集合 连接到 GitHub 存储库以同步您的更改。"
+      "infoTooltip": "将此集合连接到 GitHub 存储库以同步您的更改。"
     },
     "pull_changes_git": {
       "label": "拉取更改"
@@ -146,14 +146,14 @@
       "label": "推送更改"
     },
     "create_pull_request_git": {
-      "label": "创建 拉取请求"
+      "label": "创建拉取请求"
     },
     "repository_settings": {
       "label": "存储库设置"
     },
     "run_folder": {
       "label": "运行",
-      "infoTooltip": "在此 文件夹 中发送所有请求"
+      "infoTooltip": "在此文件夹中发送所有请求"
     },
     "open_in_tab": {
       "label": "在选项卡中打开"
@@ -163,7 +163,7 @@
     },
     "pull_changes": {
       "label": "拉动变更",
-      "info_tooltip": "拉取更改以从原始 集合 获取最新更新。"
+      "info_tooltip": "拉取更改以从原始集合获取最新更新。"
     },
     "view_changelog": {
       "label": "查看更新日志"
@@ -176,11 +176,11 @@
     },
     "duplicate": {
       "label": "复制",
-      "disabled_tooltip": "您没有 权限 来执行此操作。"
+      "disabled_tooltip": "您没有权限来执行此操作。"
     },
     "export": {
       "label": "导出",
-      "disabled_tooltip": "您没有 权限 来导出此 集合。",
+      "disabled_tooltip": "您没有权限来导出此集合。",
       "intent": {
         "teammates": "与团队成员共享",
         "ci": "在 CI/CD 中运行",
@@ -214,7 +214,7 @@
       "generate_specification": "生成规范",
       "generate_flows": "创建流程",
       "connect_repository": "连接存储库",
-      "export": "导出 集合",
+      "export": "导出集合",
       "generate_sdk": "生成SDK"
     },
     "visualize_collection": {
@@ -252,7 +252,7 @@
       "label": "排序",
       "folders_first_default": "文件夹优先，默认",
       "folders_first_a_to_z": "文件夹优先，A 到 Z",
-      "footer_text": "这只会更新您在 侧边栏 中的视图。"
+      "footer_text": "这只会更新您在侧边栏中的视图。"
     },
     "bulk_cut": {
       "label": "切"
@@ -285,25 +285,25 @@
   "partner_viewer_nudges": {
     "fork": {
       "no_team_user_nudge": {
-        "heading": "Fork 到您自己的 团队",
-        "description": "在付费 Postman 计划上创建 团队 以 fork 并创建此 集合 的副本。",
+        "heading": "Fork 到您自己的团队",
+        "description": "在付费 Postman 计划上创建团队以 fork 并创建此集合的副本。",
         "button": "升级您的计划"
       },
       "free_team_user_nudge": {
-        "heading": "Fork 到您自己的 团队",
-        "description": "将您的 团队 升级到付费计划，以 fork 并创建此 集合 的副本",
+        "heading": "Fork 到您自己的团队",
+        "description": "将您的团队升级到付费计划，以 fork 并创建此集合的副本",
         "button": "升级您的计划"
       }
     },
     "export": {
       "no_team_user_nudge": {
-        "heading": "您没有 权限 可以导出",
-        "description": "在付费 Postman 计划上创建 团队 以 fork 并创建此 集合 的副本",
+        "heading": "您没有权限可以导出",
+        "description": "在付费 Postman 计划上创建团队以 fork 并创建此集合的副本",
         "button": "升级您的计划"
       },
       "free_team_user_nudge": {
-        "heading": "您没有 权限 可以导出",
-        "description": "将您的 团队 升级到付费计划，以 fork 并创建此 集合 的副本",
+        "heading": "您没有权限可以导出",
+        "description": "将您的团队升级到付费计划，以 fork 并创建此集合的副本",
         "button": "升级您的计划"
       }
     }
@@ -311,32 +311,32 @@
   "bulk_delete_confirmation": "您确定要删除 {typeCountString} 吗？",
   "bulk_delete_confirmation_reusable": "您即将删除 {typeCountString}。如果删除原始请求，链接请求将不再遵循更新。",
   "permission_error": "您没有执行此操作的权限",
-  "collection_is_not_a_fork": "集合 不是 fork。",
-  "this_collection_is_not_a_fork": "这个 集合 不是 fork。",
+  "collection_is_not_a_fork": "集合不是 fork。",
+  "this_collection_is_not_a_fork": "这个集合不是 fork。",
   "could_not_perform_action": "无法成功 {action} {entityType}",
   "bulk_delete_failed": "批量删除失败",
   "move_entity_error": "移动 {name} 时出现问题。",
-  "copied_to_collections_success": "复制到 侧边栏 中的集合。",
-  "copied_to_collections_error": "无法复制到 侧边栏 中的集合。",
+  "copied_to_collections_success": "复制到侧边栏中的集合。",
+  "copied_to_collections_error": "无法复制到侧边栏中的集合。",
   "link_copied": "链接已复制",
-  "move_folder_to_subfolder_error": "文件夹 无法移动到其自己的子文件夹中",
+  "move_folder_to_subfolder_error": "文件夹无法移动到其自己的子文件夹中",
   "bulk_duplicate_error": "所选元素无法重复。请再试一次。",
   "paste_error": "粘贴复制的实体时发生错误。请再试一次。",
   "reuse_error": "重用所选实体时发生错误。请再试一次。",
   "bulk_move_entity_error": "移动所选实体时发生错误。请再试一次。",
-  "examples_can_be_moved_under_request_error": "示例只能移动到 请求 下。",
+  "examples_can_be_moved_under_request_error": "示例只能移动到请求下。",
   "could_not_move_items": "无法移动物品",
   "signed_out_message": "您登录后即可执行此操作。",
   "no_changes_to_pull": "无需拉取任何更改",
-  "fork_from_latest_api_version": "您只能从 API 的最新 版本 开始 fork。",
+  "fork_from_latest_api_version": "您只能从 API 的最新版本开始 fork。",
   "pull_changes_offline_toast": {
     "heading": "您离线",
     "description": "上线后您就可以提取更改。"
   },
   "offline_action_tooltip": "您已离线。请连接到互联网才能使用此功能。",
   "more_actions_tooltip": "查看更多动作",
-  "cannot_move_response_different_protocol": "您无法将 响应 移动到具有不同协议的 请求",
-  "cannot_duplicate_response_different_protocol": "您不能将 响应 复制到具有不同协议的 请求",
+  "cannot_move_response_different_protocol": "您无法将响应移动到具有不同协议的请求",
+  "cannot_duplicate_response_different_protocol": "您不能将响应复制到具有不同协议的请求",
   "move_success": "已成功移动项目",
   "entity_move_error": "移动所选实体时发生错误。请再试一次。",
   "invalid_move_operation": "涉及无效的移动操作",
@@ -351,14 +351,14 @@
   },
   "empty_state": {
     "title": "该面板中没有项目",
-    "no_permission": "您无权在此 工作区 中创建集合。",
+    "no_permission": "您无权在此工作区中创建集合。",
     "create": "创建",
     "pull_from_cloud": "从 Postman 云中拉取",
     "ask_ai": "要求 AI 从本地代码库创建",
-    "collection_empty": "集合 为空",
-    "folder_empty": "文件夹 为空",
-    "collection_empty_description": "添加 请求 或 文件夹 来构建您的 API 工作流程。",
-    "folder_empty_description": "添加 请求、文件夹，或将项目拖动到此处以将它们组合在一起。",
+    "collection_empty": "集合为空",
+    "folder_empty": "文件夹为空",
+    "collection_empty_description": "添加请求或文件夹来构建您的 API 工作流程。",
+    "folder_empty_description": "添加请求、文件夹，或将项目拖动到此处以将它们组合在一起。",
     "collection_view_only_description": "集合为空。",
     "folder_view_only_description": "文件夹为空。"
   },
@@ -384,10 +384,10 @@
     "folder_name_empty": "文件夹名称不能为空",
     "request_name_empty": "请求名称不能为空",
     "example_name_empty": "示例名称不能为空",
-    "collection_duplicated": "集合 重复",
-    "collections_duplicated": "集合 重复",
-    "folder_duplicated": "文件夹 重复",
-    "request_duplicated": "请求 重复",
+    "collection_duplicated": "集合重复",
+    "collections_duplicated": "集合重复",
+    "folder_duplicated": "文件夹重复",
+    "request_duplicated": "请求重复",
     "example_duplicated": "示例重复",
     "link_copied": "链接已复制到剪贴板",
     "could_not_paste_items": "无法粘贴项目",
@@ -396,11 +396,11 @@
     "dependency_update_success_title": "依赖项已更新",
     "dependency_update_success_message": "{name} 现已更新。",
     "dependency_update_error_title": "无法更新依赖项",
-    "dependency_update_error_message": "{name} 无法更新。检查 控制台 了解详细信息。",
+    "dependency_update_error_message": "{name} 无法更新。检查控制台了解详细信息。",
     "dependency_delete_success_title": "依赖项已删除",
-    "dependency_delete_success_message": "{name} 已从此 工作区 中删除。",
+    "dependency_delete_success_message": "{name} 已从此工作区中删除。",
     "dependency_delete_error_title": "无法删除依赖项",
-    "dependency_delete_error_message": "{name} 无法删除。检查 控制台 了解详细信息。"
+    "dependency_delete_error_message": "{name} 无法删除。检查控制台了解详细信息。"
   },
   "request_types": {
     "http": "HTTP",
@@ -423,11 +423,11 @@
   },
   "ec_collection_sidebar_actions": {
     "add_request": {
-      "label": "添加 请求",
-      "tooltip": "添加 请求"
+      "label": "添加请求",
+      "tooltip": "添加请求"
     },
     "add_folder": {
-      "label": "添加 文件夹"
+      "label": "添加文件夹"
     },
     "run": {
       "label": "运行"
@@ -458,7 +458,7 @@
     },
     "sort": {
       "label": "排序",
-      "footer_text": "这只会更新您在 侧边栏 中的视图。"
+      "footer_text": "这只会更新您在侧边栏中的视图。"
     },
     "delete": {
       "label": "删除"
@@ -478,11 +478,11 @@
   },
   "ec_folder_sidebar_actions": {
     "add_request": {
-      "label": "添加 请求",
-      "tooltip": "添加 请求"
+      "label": "添加请求",
+      "tooltip": "添加请求"
     },
     "add_folder": {
-      "label": "添加 文件夹"
+      "label": "添加文件夹"
     },
     "run": {
       "label": "运行"
@@ -504,7 +504,7 @@
     },
     "sort": {
       "label": "排序",
-      "footer_text": "这只会更新您在 侧边栏 中的视图。"
+      "footer_text": "这只会更新您在侧边栏中的视图。"
     },
     "delete": {
       "label": "删除"

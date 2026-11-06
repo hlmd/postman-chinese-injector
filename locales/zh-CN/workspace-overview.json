@@ -351,7 +351,7 @@
         "description": "了解如何设置监控，以便在出现错误时收到通知。"
       },
       "collection_runner": {
-        "title": "Collection Runner",
+        "title": "集合运行器",
         "description": "了解如何创建并自动执行测试序列。"
       }
     }
@@ -1098,7 +1098,7 @@
   },
   "workspace_tools": {
     "invite_to_workspace": {
-      "invite_prompt_with_name": "您即将邀请用户加入工作区 “{workspaceName}”。",
+      "invite_prompt_with_name": "您即将邀请用户加入工作区“{workspaceName}”。",
       "invite_prompt_without_name": "您即将邀请用户加入当前活动的工作区。",
       "email_label": "电子邮件：",
       "role_label": "角色：",

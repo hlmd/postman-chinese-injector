@@ -126,7 +126,7 @@
         "host_required": "SSH 主機不能為空",
         "username_required": "SSH 使用者名稱不能為空",
         "private_key_required": "SSH 私鑰不能為空",
-        "private_key_vault_required": "儲存此資料來源前，請先將 SSH 私鑰儲存到 Vault",
+        "private_key_vault_required": "儲存此資料來源前，請先將 SSH 私鑰儲存到保險庫",
         "host_key_required": "除非跳過主機金鑰驗證，否則 SSH 主機金鑰不能為空"
       }
     },
@@ -145,15 +145,15 @@
     }
   },
   "secret_field": {
-    "link_to_vault": "連結到 保險庫 金鑰",
-    "unlink_vault": "取消連結 保險庫 金鑰",
-    "view_in_vault": "在 Vault 中檢視",
+    "link_to_vault": "連結到保險庫金鑰",
+    "unlink_vault": "取消連結保險庫金鑰",
+    "view_in_vault": "在保險庫中檢視",
     "new_secret": "新增金鑰",
-    "link_aria_label": "將 {label} 連結到 保險庫 金鑰",
-    "unlink_aria_label": "取消 {label} 與 保險庫 金鑰 的連結",
+    "link_aria_label": "將 {label} 連結到保險庫金鑰",
+    "unlink_aria_label": "取消 {label} 與保險庫金鑰的連結",
     "search_placeholder": "搜尋秘密...",
     "no_matching": "沒有匹配的秘密",
-    "no_available": "沒有可用的 保險庫 秘密",
+    "no_available": "沒有可用的保險庫秘密",
     "choose_file": "選擇檔案",
     "file_prompt_suffix": "（您也可以在下方貼上{label}）",
     "selected_file": "已選檔案：",
@@ -161,8 +161,8 @@
     "choose_file_aria_label": "選擇{label}檔案",
     "change_file_aria_label": "更改已選的{label}檔案",
     "file_contents": "檔案內容",
-    "not_saved_to_vault": "敏感值，請儲存到 Vault",
-    "save_to_vault": "儲存到 Vault",
+    "not_saved_to_vault": "敏感值，請儲存到保險庫",
+    "save_to_vault": "儲存到保險庫",
     "secret_name": "金鑰名稱",
     "secret_name_required": "請輸入金鑰名稱。",
     "contents_required": "儲存前請輸入金鑰內容。",
@@ -170,8 +170,8 @@
     "shared_vault": "共享保險庫",
     "file_too_large": "請選擇小於 {maxSize} 的檔案。",
     "file_read_failed": "無法讀取此檔案。",
-    "file_save_failed": "無法將此值儲存到 Vault。",
-    "shared_vault_save_failed": "無法將此值儲存到 Shared Vault。請確認此工作區已啟用 Shared Vault 且你擁有編輯權限，然後重試。你也可以改為儲存到 Local Vault。"
+    "file_save_failed": "無法將此值儲存到保險庫。",
+    "shared_vault_save_failed": "無法將此值儲存到共享保險庫。請確認此工作區已啟用共享保險庫且你擁有編輯權限，然後重試。你也可以改為儲存到本地保險庫。"
   },
   "errors": {
     "ssh": {
@@ -184,8 +184,8 @@
       "timeout": "SSH 連線超時。請檢查堡壘機和網路後重試。",
       "forward_failed": "SSH 伺服器無法訪問資料庫。請檢查從堡壘機看到的資料庫主機和埠。"
     },
-    "secret_resolution_timeout": "Postman 未能及時訪問此資料來源的 Vault 金鑰。請確認 Vault 已解鎖後重試。",
-    "secret_resolution_failed": "Postman 無法解析此資料來源使用的一個或多個 Vault 金鑰。請解鎖 Vault 並確認關聯的金鑰仍然存在。",
+    "secret_resolution_timeout": "Postman 未能及時訪問此資料來源的保險庫金鑰。請確認保險庫已解鎖後重試。",
+    "secret_resolution_failed": "Postman 無法解析此資料來源使用的一個或多個保險庫金鑰。請解鎖保險庫並確認關聯的金鑰仍然存在。",
     "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 資料來源僅在雲端工作區中可用。",
     "sync_local_load_failed": "已儲存到雲端，但本地引擎無法載入：{reason}"
   },
@@ -497,7 +497,7 @@
     "no_properties": "未選擇額外的連線屬性。",
     "remove_property": "移除 {name}",
     "resolved_url": "解析後的 URL",
-    "secrets_hint": "憑據請使用 Vault 引用。明文值會被寫入資料集的 YAML 中。",
+    "secrets_hint": "憑據請使用保險庫引用。明文值會被寫入資料集的 YAML 中。",
     "test_connection": "測試連線",
     "connection_testing": "測試中…",
     "connection_connected": "已連線",

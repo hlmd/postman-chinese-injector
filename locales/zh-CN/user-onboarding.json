@@ -240,7 +240,7 @@
     "success": {
       "send_invites": {
         "title": "已发送邀请",
-        "description": "新成员接受您的 邀请 后就会加入。"
+        "description": "新成员接受您的邀请后就会加入。"
       },
       "save_profile": {
         "title": "个人资料已保存",
@@ -248,7 +248,7 @@
       },
       "create_team": {
         "title": "团队创建成功",
-        "description": "当您的 请求 获得批准时，我们会通知您。"
+        "description": "当您的请求获得批准时，我们会通知您。"
       },
       "verified_team_full": {
         "title": "您加入团队的请求正在审核中",

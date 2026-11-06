@@ -60,14 +60,14 @@
     "desktop_only": "Dependency 僅在 Postman 桌面應用中可用",
     "toast": {
       "success_title": "集合已新增",
-      "success_message": "“{name}” 已作為 Dependency 新增。",
+      "success_message": "“{name}”已作為 Dependency 新增。",
       "error_title": "無法新增集合",
       "error_message": "新增該集合時出錯，請重試。"
     }
   },
   "flow": {
     "name_field": "流程名稱",
-    "default_name": "來自“{name}” 集合的流程",
+    "default_name": "來自“{name}”集合的流程",
     "active_workspace_note": "流程將建立在目前活動的工作區中。",
     "local_mode_disabled": "本地模式下無法使用流程。",
     "no_permission_disabled": "您沒有權限在此工作區中建立流程。",

@@ -3,7 +3,7 @@
     "icon_button": {
       "tooltip": "刪除記分卡",
       "aria_label": "刪除記分卡",
-      "no_permission_tooltip": "刪除訪問權限需要 API 目錄管理器 角色"
+      "no_permission_tooltip": "刪除訪問權限需要 API 目錄管理器角色"
     },
     "confirm_modal": {
       "title": "刪除記分卡",

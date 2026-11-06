@@ -24,7 +24,7 @@
     "delete": {
       "title": "刪除工作區？",
       "description": "<0>刪除後，</0> <1><0>{workspaceName}</0></1> <2>中的所有內容將被永久刪除。</2>",
-      "confirmation_input_label": "輸入 “Delete” 以確認",
+      "confirmation_input_label": "輸入“Delete”以確認",
       "confirmation_key": "delete",
       "primary_action_text": "刪除工作區",
       "secondary_action_text": "取消",
@@ -33,7 +33,7 @@
     "bulk_delete": {
       "title": "刪除所選工作區？",
       "description": "所選工作區中的所有內容都將被永久刪除。",
-      "confirmation_input_label": "輸入 “Delete” 以確認",
+      "confirmation_input_label": "輸入“Delete”以確認",
       "confirmation_key": "delete",
       "primary_action_text": "刪除工作區",
       "secondary_action_text": "取消"

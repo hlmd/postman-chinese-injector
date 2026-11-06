@@ -40,7 +40,7 @@
     "type_partner": "合作伙伴",
     "access": "使用权",
     "access_invited": "只有你和被邀请的人",
-    "access_team": "您 团队 中的每个人",
+    "access_team": "您团队中的每个人",
     "access_partner": "仅限受邀合作伙伴",
     "access_public": "互联网上的任何人"
   },
@@ -49,7 +49,7 @@
     "view_profile_aria_label": "查看 {teamName} 个人资料"
   },
   "external_user_cell": {
-    "private_user_label": "私有 用户",
+    "private_user_label": "私有用户",
     "view_profile_aria_label": "查看 {name} 个人资料"
   },
   "identity_cell": {
@@ -81,17 +81,17 @@
     "copy_link": "复制链接"
   },
   "permissions": {
-    "no_permission": "您没有 权限 来执行此操作"
+    "no_permission": "您没有权限来执行此操作"
   },
   "bulk_disabled": {
-    "archive": "所有选定的工作区均已存档，或者您没有 权限 来存档它们",
-    "restore": "所选工作区均未存档，或者您没有 权限 来恢复它们",
-    "delete": "您没有 权限 来删除任何选定的工作区",
-    "move": "您没有 权限 来移动任何选定的工作区"
+    "archive": "所有选定的工作区均已存档，或者您没有权限来存档它们",
+    "restore": "所选工作区均未存档，或者您没有权限来恢复它们",
+    "delete": "您没有权限来删除任何选定的工作区",
+    "move": "您没有权限来移动任何选定的工作区"
   },
   "empty_state": {
     "title": "没有工作空间",
-    "description": "此 团队 中还没有工作区。"
+    "description": "此团队中还没有工作区。"
   },
   "filtered_empty_state": {
     "title": "未找到工作区",
@@ -104,7 +104,7 @@
   "tab_empty_state": {
     "all": {
       "title": "没有工作空间",
-      "description": "工作区 可让您组织 API 并进行协作。",
+      "description": "工作区可让您组织 API 并进行协作。",
       "action": "了解更多"
     },
     "external": {
@@ -122,7 +122,7 @@
     "cancel": "取消",
     "archive": {
       "title": "存档工作区",
-      "description": "存档会从视图中删除 工作区 并关闭监视器，但您可以随时恢复它。",
+      "description": "存档会从视图中删除工作区并关闭监视器，但您可以随时恢复它。",
       "confirm": "存档"
     },
     "archive_bulk": {
@@ -139,7 +139,7 @@
   "delete_modal": {
     "title_single": "删除工作区",
     "title_plural": "删除工作区",
-    "description_single": "此 工作区 将被永久删除。此操作无法撤消。",
+    "description_single": "此工作区将被永久删除。此操作无法撤消。",
     "description_plural": "{count, plural, one {永久删除 # 个工作区？此操作无法撤消。} other {永久删除 # 个工作区？此操作无法撤消。}}",
     "input_label": "删除",
     "input_prompt": "输入“{value}”确认",
@@ -148,18 +148,18 @@
   "move_modal": {
     "title_single": "移动“{name}”工作区",
     "title_plural": "移动 {count} 工作区",
-    "description_single": "一旦 工作区 被移动，原始 团队 的成员将失去访问权限。",
+    "description_single": "一旦工作区被移动，原始团队的成员将失去访问权限。",
     "description_plural": "一旦移动，原团队的成员将失去访问权限。",
-    "select_placeholder": "选择 团队",
+    "select_placeholder": "选择团队",
     "confirm": "移动工作区",
     "confirm_plural": "移动工作空间"
   },
   "toasts": {
-    "archive_success": "工作区 已存档",
-    "archive_error": "无法存档 工作区",
-    "restore_success": "工作区 已恢复",
-    "restore_error": "无法恢复 工作区",
-    "delete_success": "工作区 已删除",
+    "archive_success": "工作区已存档",
+    "archive_error": "无法存档工作区",
+    "restore_success": "工作区已恢复",
+    "restore_error": "无法恢复工作区",
+    "delete_success": "工作区已删除",
     "delete_error": "删除工作区失败",
     "archive_bulk_success": "{count, plural, one {已存档 # 个工作区} other {已存档 # 个工作区}}",
     "archive_bulk_error": "无法归档某些工作区",
@@ -169,13 +169,13 @@
     "restore_bulk_error": "无法恢复某些工作区",
     "copy_link_success": "链接已复制到剪贴板",
     "copy_link_error": "复制链接失败",
-    "star_success": "工作区 已加星标",
-    "star_error": "未能为 工作区 加注星标",
-    "unstar_success": "工作区 未加星标",
-    "unstar_error": "无法取消 工作区 星标",
-    "move_success": "工作区 已移动",
+    "star_success": "工作区已加星标",
+    "star_error": "未能为工作区加注星标",
+    "unstar_success": "工作区未加星标",
+    "unstar_error": "无法取消工作区星标",
+    "move_success": "工作区已移动",
     "move_success_plural": "{count, plural, one {已移动 # 个工作区} other {已移动 # 个工作区}}",
-    "move_error": "移动 工作区 失败",
+    "move_error": "移动工作区失败",
     "move_error_plural": "无法移动工作区",
     "move_partial_error": "已移动 {succeeded} 个工作区（共 {count} 个）。其余的移动失败。",
     "delete_partial_error": "已删除 {succeeded} 个工作区（共 {count} 个）。其余的删除失败。"

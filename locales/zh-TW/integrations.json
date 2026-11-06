@@ -34,13 +34,13 @@
       "authorized_as": "授權為"
     },
     "row_actions": {
-      "disabled_action_tooltip": "只有 團隊 管理員 可以執行此操作",
+      "disabled_action_tooltip": "只有團隊管理員可以執行此操作",
       "delete_authentication_tooltip": "刪除認證",
       "edit_authentication_tooltip": "編輯身份驗證"
     },
     "error_message": {
-      "invalid_token": "請提供有效的 令牌。",
-      "server_unreachable": "我們無法訪問您的伺服器來驗證 令牌。",
+      "invalid_token": "請提供有效的令牌。",
+      "server_unreachable": "我們無法訪問您的伺服器來驗證令牌。",
       "updating_auth": "更新身份驗證時出現問題。"
     },
     "edit_mode": {

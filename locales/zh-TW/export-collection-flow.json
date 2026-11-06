@@ -3,7 +3,7 @@
     "heading": "匯出集合",
     "button": {
       "export": "匯出集合",
-      "fix": "移至 Vault",
+      "fix": "移至保險庫",
       "export_disabled_tooltip": "正在準備匯出集合",
       "export_anyway": "仍然匯出"
     },
@@ -64,8 +64,8 @@
     "clean": "未發現已知格式的金鑰",
     "detected": "{count, plural, one {在集合中檢測到 # 個金鑰} other {在集合中檢測到 # 個金鑰}}",
     "detected_description": "不修復直接匯出會使其以明文形式保留在 JSON 中。",
-    "secured_local": "金鑰已安全存入本地 Vault",
-    "secured_shared": "金鑰已安全存入共享 Vault",
+    "secured_local": "金鑰已安全存入本地保險庫",
+    "secured_shared": "金鑰已安全存入共享保險庫",
     "secured_description": "我們已將其替換為變數，確保檔案中不含敏感資訊。",
     "patterns_note": "我們會檢查常見提供商的令牌。",
     "learn_more": "瞭解更多",

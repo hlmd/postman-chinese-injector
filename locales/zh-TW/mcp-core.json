@@ -5,7 +5,7 @@
     "desktop_agent_not_ready": "桌面代理尚未準備好",
     "desktop_agent_not_supported": "不支援桌面代理",
     "desktop_agent_not_connected": "桌面代理未連線",
-    "connection_failed": "無法執行 請求：",
+    "connection_failed": "無法執行請求：",
     "unable_to_connect": "無法連線",
     "stateless_protocol_not_supported": {
       "switch_to_compatible_version": "此伺服器不支援 MCP 2026-07-28。請將協議版本重置為自動或固定為 Legacy，然後重新連線。"
@@ -121,12 +121,12 @@
     },
     "test": {
       "empty_state": "單擊“繼續”一次執行一個步驟",
-      "step_list_aria_label": "認證 測試步驟",
+      "step_list_aria_label": "認證測試步驟",
       "actions": {
         "reset": "重置",
         "cancel": "取消",
         "continue": "繼續",
-        "flow_complete": "流程 完成"
+        "flow_complete": "流程完成"
       },
       "exchange": {
         "request": "請求：",
@@ -135,12 +135,12 @@
       "logs": {
         "get_url": "GET {url}",
         "request_without_token": {
-          "title": "傳送 請求 而不傳送 令牌",
-          "message": "POST 初始化，無需 OAuth 訪問 令牌。",
+          "title": "傳送請求而不傳送令牌",
+          "message": "POST 初始化，無需 OAuth 訪問令牌。",
           "response_title": "收到回應"
         },
         "request_resource_metadata": {
-          "title": "請求 資源後設資料",
+          "title": "請求資源後設資料",
           "response_title": "收到資源後設資料"
         },
         "parsed_resource_metadata": {
@@ -148,12 +148,12 @@
           "message": "解析的受保護資源後設資料。"
         },
         "request_authorization_server_metadata": {
-          "title": "請求 授權 伺服器後設資料",
+          "title": "請求授權伺服器後設資料",
           "response_title": "收到伺服器後設資料"
         },
         "parsed_authorization_server_metadata": {
           "title": "解析的伺服器後設資料",
-          "message": "解析的 授權 伺服器後設資料。"
+          "message": "解析的授權伺服器後設資料。"
         },
         "client_registration_resolved": {
           "title": "客戶註冊已解決",
@@ -166,32 +166,32 @@
           "response_title": "客戶端 ID 後設資料文件"
         },
         "request_client_registration": {
-          "title": "請求 客戶註冊",
+          "title": "請求客戶註冊",
           "message": "註冊動態 OAuth 客戶端。",
           "success_message": "註冊了動態 OAuth 客戶端。"
         },
         "generate_pkce_parameters": {
           "title": "生成 PKCE 參數",
-          "message": "支援 PKCE S256。 授權 請求 將包含 code_verifier 和 code_challenge 參數。"
+          "message": "支援 PKCE S256。授權請求將包含 code_verifier 和 code_challenge 參數。"
         },
         "authorize_request": {
           "title": "授權請求",
           "message": "正在開啟授權 URL 並等待回呼。",
-          "success_message": "授權 回呼完成。"
+          "success_message": "授權回呼完成。"
         },
         "get_access_token": {
           "title": "獲取訪問令牌",
-          "message": "授權 程式碼在 令牌 端點 處交換。 OAuth 管理器不會公開原始 令牌 交換標頭，因此會彙總敏感欄位。"
+          "message": "授權程式碼在令牌端點處交換。 OAuth 管理器不會公開原始令牌交換標頭，因此會彙總敏感欄位。"
         },
         "persist_access_token": {
-          "title": "保留訪問 令牌",
-          "message": "將返回的 令牌 保留到此 MCP 請求 auth 會話。",
-          "success_message": "MCP 請求 auth 會話 現在引用 OAuth 令牌。"
+          "title": "保留訪問令牌",
+          "message": "將返回的令牌保留到此 MCP 請求 auth 會話。",
+          "success_message": "MCP 請求 auth 會話現在引用 OAuth 令牌。"
         },
         "authenticated_request": {
-          "title": "已驗證 請求",
-          "message": "使用 OAuth 重新連線 MCP 伺服器，從此 流程 訪問 令牌。",
-          "success_message": "伺服器與 OAuth 令牌 連線成功。"
+          "title": "已驗證請求",
+          "message": "使用 OAuth 重新連線 MCP 伺服器，從此流程訪問令牌。",
+          "success_message": "伺服器與 OAuth 令牌連線成功。"
         },
         "step_failed": {
           "title": "步驟失敗"
@@ -202,31 +202,31 @@
         }
       },
       "errors": {
-        "expected_401": "預計未經身份驗證的 MCP 請求 返回 401，收到 {status}",
-        "resource_metadata_http_failed": "受保護的資源後設資料 請求 失敗，並出現 HTTP {status}",
+        "expected_401": "預計未經身份驗證的 MCP 請求返回 401，收到 {status}",
+        "resource_metadata_http_failed": "受保護的資源後設資料請求失敗，並出現 HTTP {status}",
         "resource_metadata_unavailable": "無法獲取受保護的資源後設資料",
-        "resource_metadata_not_json": "受保護的資源後設資料 回應 不是 JSON 物件",
-        "authorization_server_missing": "受保護的資源後設資料未通告 授權 伺服器",
-        "authorization_server_metadata_http_failed": "授權 伺服器後設資料 請求 失敗，並出現 HTTP {status}",
-        "authorization_server_metadata_unavailable": "無法獲取 授權 伺服器後設資料",
-        "authorization_server_metadata_not_json": "授權 伺服器後設資料 回應 不是 JSON 物件",
+        "resource_metadata_not_json": "受保護的資源後設資料回應不是 JSON 物件",
+        "authorization_server_missing": "受保護的資源後設資料未通告授權伺服器",
+        "authorization_server_metadata_http_failed": "授權伺服器後設資料請求失敗，並出現 HTTP {status}",
+        "authorization_server_metadata_unavailable": "無法獲取授權伺服器後設資料",
+        "authorization_server_metadata_not_json": "授權伺服器後設資料回應不是 JSON 物件",
         "metadata_required": "在解析客戶端憑據之前完成 OAuth 後設資料發現",
         "dynamic_client_registration_invalid": "請先填寫動態客戶端登入檔單，然後再註冊客戶端",
         "dynamic_client_registration_http_failed": "動態客戶端註冊失敗，出現 HTTP {status}",
-        "dynamic_client_registration_not_json": "動態客戶端註冊 回應 不是 JSON 物件",
+        "dynamic_client_registration_not_json": "動態客戶端註冊回應不是 JSON 物件",
         "dynamic_client_registration_unsupported": "授權伺服器不支援動態註冊；請手動配置客戶端 ID",
         "client_metadata_document_http_failed": "客戶端 ID 後設資料文件請求失敗，HTTP {status}",
         "client_metadata_document_not_json": "客戶端 ID 後設資料文件不是 JSON 物件",
         "client_metadata_document_client_id_mismatch": "客戶端 ID 後設資料文件的 client_id 必須與其 URL 完全一致：{url}",
         "client_metadata_document_redirect_uri_missing": "客戶端 ID 後設資料文件的 redirect_uris 中不包含 {redirectUri}",
         "client_id_missing": "OAuth 客戶端憑據缺少 client_id",
-        "pkce_metadata_required": "PKCE 驗證之前需要 授權 伺服器後設資料",
-        "pkce_s256_required": "授權 伺服器後設資料必須通告 S256 PKCE 支援",
-        "client_credentials_required": "在 授權 之前解析 OAuth 客戶端憑據",
-        "authorization_token_missing": "OAuth 授權 未返回 令牌",
+        "pkce_metadata_required": "PKCE 驗證之前需要授權伺服器後設資料",
+        "pkce_s256_required": "授權伺服器後設資料必須通告 S256 PKCE 支援",
+        "client_credentials_required": "在授權之前解析 OAuth 客戶端憑據",
+        "authorization_token_missing": "OAuth 授權未返回令牌",
         "authorization_required": "在獲取訪問令牌之前完成授權",
         "oauth_token_required": "連線 MCP 伺服器之前儲存 OAuth 令牌",
-        "step_cancelled": "認證 測試步驟已取消"
+        "step_cancelled": "認證測試步驟已取消"
       },
       "registration_method": {
         "label": "註冊方式",
@@ -268,24 +268,24 @@
       },
       "steps": {
         "request_without_token": {
-          "label": "傳送 請求 而不傳送 令牌",
-          "description": "傳送未經身份驗證的 MCP 初始化 請求 以觀察 OAuth 質詢。"
+          "label": "傳送請求而不傳送令牌",
+          "description": "傳送未經身份驗證的 MCP 初始化請求以觀察 OAuth 質詢。"
         },
         "request_resource_metadata": {
-          "label": "請求 資源後設資料",
+          "label": "請求資源後設資料",
           "description": "請求 RFC 9728 OAuth 受保護的資源後設資料。"
         },
         "request_authorization_server_metadata": {
-          "label": "請求 授權 伺服器後設資料",
-          "description": "請求 OAuth 授權 伺服器後設資料。"
+          "label": "請求授權伺服器後設資料",
+          "description": "請求 OAuth 授權伺服器後設資料。"
         },
         "request_client_registration": {
-          "label": "請求 客戶註冊",
+          "label": "請求客戶註冊",
           "description": "解析已配置的憑據、客戶端 ID 後設資料文件或動態客戶端註冊。"
         },
         "generate_pkce_parameters": {
           "label": "生成 PKCE 參數",
-          "description": "在開啟 授權 請求 之前確認 PKCE S256 支援。"
+          "description": "在開啟授權請求之前確認 PKCE S256 支援。"
         },
         "authorize_request": {
           "label": "授權請求",
@@ -293,10 +293,10 @@
         },
         "get_access_token": {
           "label": "獲取訪問令牌",
-          "description": "交換 授權 程式碼並保留 令牌。"
+          "description": "交換授權程式碼並保留令牌。"
         },
         "authenticated_request": {
-          "label": "已驗證 請求",
+          "label": "已驗證請求",
           "description": "使用 OAuth 訪問令牌重新連線 MCP 請求。"
         }
       }
@@ -325,7 +325,7 @@
         "grant_types_supported": "支援的授權型別",
         "response_types_supported": "支援的回應型別",
         "code_challenge_methods": "程式碼挑戰方法",
-        "token_endpoint_auth_methods": "令牌 端點 認證 方法"
+        "token_endpoint_auth_methods": "令牌端點認證方法"
       },
       "status": {
         "supported": "支援",

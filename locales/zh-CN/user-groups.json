@@ -1,7 +1,7 @@
 {
   "error": {
     "title": "请刷新",
-    "description": "无法获取所有用户组的数据。"
+    "description": "无法获取所有群组的数据。"
   },
   "user_group_dynamic_content": {
     "user_group_not_allowed": {
@@ -12,7 +12,7 @@
     },
     "heading": "群组",
     "create_group_button": "创建群组",
-    "no_group_creation_permission": "您没有 权限 来创建组。"
+    "no_group_creation_permission": "您没有权限来创建组。"
   },
   "manage_groups": {
     "no_group": {
@@ -25,11 +25,11 @@
   },
   "edit_user_group": {
     "back_link_label": "群组",
-    "breadcrumb_aria_label": "编辑用户组面包屑导航"
+    "breadcrumb_aria_label": "编辑群组面包屑导航"
   },
   "desktop_view_group_actions": {
     "tooltip": {
-      "can_not_update_user_group": "您没有 权限 来将成员添加到组中",
+      "can_not_update_user_group": "您没有权限来将成员添加到组中",
       "default": "添加群组成员"
     },
     "view_group_details": "查看群组详情"
@@ -38,7 +38,7 @@
     "member_text": "{count, plural, =0 {没有成员} =1 {# 个成员} other {# 个成员}}",
     "no_summary": "没有添加描述",
     "remaining_part": "{count, plural, =1 {另外 # 人} other {另外 # 人}}",
-    "no_role_assigned": "未分配 角色",
+    "no_role_assigned": "未分配角色",
     "single_role": "{role} 角色",
     "multiple_roles": "{roles} 角色"
   },
@@ -75,8 +75,8 @@
     "helper_text": "选择要分配给该组成员的角色。",
     "tool_tips": {
       "non_admin": "只有管理员和超级管理员可以编辑组中的角色。",
-      "manager": "具有经理的组只能分配开发人员 角色。",
-      "non_super_admin": "您无权分配此用户 角色。"
+      "manager": "具有经理的组只能分配开发人员角色。",
+      "non_super_admin": "您无权分配此用户角色。"
     }
   }
 }

@@ -10,17 +10,17 @@
     "create_classic_mock_server": "經典模擬伺服器",
     "create_code_mock": "模擬",
     "offline_error": "您重新上線後即可執行此操作。",
-    "permission_error": "您沒有 權限 來執行此操作。",
+    "permission_error": "您沒有權限來執行此操作。",
     "not_signed_error": "您需要一個帳戶才能繼續探索 Postman。",
-    "no_team_error": "您需要登入 團隊 才能執行此操作",
+    "no_team_error": "您需要登入團隊才能執行此操作",
     "no_mock_server": "您還沒有任何模擬伺服器。",
     "inactive_mock": "無法對已停用的模擬伺服器執行此操作。",
     "offline": "您離線了",
-    "request_access": "請求 訪問"
+    "request_access": "請求訪問"
   },
   "filesystem": {
     "no_mocks": "在儲存庫中找不到模擬",
-    "no_mocks_message": "將模擬伺服器清單檔案新增到連線的儲存庫中的 postman/mocks 資料夾 中，以便在此處檢視它們。",
+    "no_mocks_message": "將模擬伺服器清單檔案新增到連線的儲存庫中的 postman/mocks 資料夾中，以便在此處檢視它們。",
     "search_placeholder": "搜尋模擬",
     "empty_state": {
       "title": "建立您的第一個模擬伺服器",

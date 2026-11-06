@@ -8,7 +8,7 @@
       "cta_text": "開始使用"
     },
     "send_request": {
-      "header": "首先發送 請求",
+      "header": "首先發送請求",
       "description": "通過建立併發送請求來測試 API 的行為。",
       "minimized_content": "從這裡開始🚀"
     },

@@ -1,7 +1,7 @@
 {
   "error": {
     "title": "出了点问题",
-    "description": "我们无法加载 团队 配置文件。请再试一次。",
+    "description": "我们无法加载团队配置文件。请再试一次。",
     "retry": "再试一次"
   },
   "breadcrumbs": {
@@ -11,7 +11,7 @@
   "no_access": {
     "title": "您无权访问",
     "description": "只有团队成员可以查看此页面。",
-    "request_raised": "您已请求加入此 团队。一旦获得批准，您将自动加入。"
+    "request_raised": "您已请求加入此团队。一旦获得批准，您将自动加入。"
   },
   "avatar_stack": {
     "more": "+{count} 更多"
@@ -21,7 +21,7 @@
     "title_one": "{count} 位成员",
     "title_other": "{count} 成员",
     "trigger_label": "显示成员",
-    "private_user": "私有 用户"
+    "private_user": "私有用户"
   },
   "tabs": {
     "workspaces": {
@@ -30,7 +30,7 @@
       "search_limit": "显示前 500 个结果。优化您的搜索以找到更多信息。",
       "empty_state": {
         "text": "还没有工作区",
-        "subtext": "创建或移动现有工作区到此 团队 即可开始。"
+        "subtext": "创建或移动现有工作区到此团队即可开始。"
       }
     },
     "members": {
@@ -38,7 +38,7 @@
       "add_button": "添加成员",
       "empty_state": {
         "text": "还没有会员",
-        "subtext": "加入或 邀请 队友加入此 团队 即可开始。"
+        "subtext": "加入或邀请队友加入此团队即可开始。"
       }
     }
   }

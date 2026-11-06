@@ -3,7 +3,7 @@
   "domain_management_heading": "域名管理",
   "domains": {
     "heading": "使用您的域管理帐户",
-    "subheading": "域有助于确定哪些帐户可以是您的 团队 的成员并由您的管理员管理。验证后，您可以为 团队 <Strong>{teamName}</Strong> 启用帐户管理。了解有关<Link><Text>无人认领帐户管理</Text></Link>的更多信息。",
+    "subheading": "域有助于确定哪些帐户可以是您的团队的成员并由您的管理员管理。验证后，您可以为团队 <Strong>{teamName}</Strong> 启用帐户管理。了解有关<Link><Text>无人认领帐户管理</Text></Link>的更多信息。",
     "titles": {
       "upgrade": "升级以使用域捕获",
       "access_denied": "您无权访问",
@@ -13,7 +13,7 @@
     "descriptions": {
       "upgrade": "只有拥有<Strong>企业计划</Strong>的团队才能在一个团队中添加和管理使用其组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
       "access_denied": "只有团队管理员可以管理域账户。",
-      "manage_accounts": "您需要配置一种单点登录 (SSO) 身份验证方法，以添加和管理在一个 团队 中使用组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
+      "manage_accounts": "您需要配置一种单点登录 (SSO) 身份验证方法，以添加和管理在一个团队中使用组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
       "manage_accounts_verified_domain": "验证您的域，以在一个团队中添加和管理使用您组织的域创建的 Postman 帐户。<Link><Text>了解更多</Text></Link>有关添加域的好处。"
     },
     "cta_buttons": {
@@ -36,7 +36,7 @@
       },
       "feature_not_available": {
         "title": "您的 Postman 计划不提供域验证和捕获",
-        "description": "您需要升级才能添加和管理在一个 团队 中使用其组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
+        "description": "您需要升级才能添加和管理在一个团队中使用其组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
         "upgrade_button": "升级"
       }
     },
@@ -47,7 +47,7 @@
   },
   "auth_methods": {
     "heading": "为您的团队设置身份验证方法",
-    "description_sso": "在不同的单点登录身份验证提供商之间进行选择，为您的 团队 设置自定义身份验证方法。",
+    "description_sso": "在不同的单点登录身份验证提供商之间进行选择，为您的团队设置自定义身份验证方法。",
     "add_auth_button": "添加认证方式",
     "custom_auth_limit_reached": "您已设置允许的自定义身份验证方法的最大数量。",
     "description_scim": "使用您的身份提供商轻松加入和管理 Postman 团队成员。",

@@ -5,7 +5,7 @@
     "desktop_agent_not_ready": "桌面代理尚未准备好",
     "desktop_agent_not_supported": "不支持桌面代理",
     "desktop_agent_not_connected": "桌面代理未连接",
-    "connection_failed": "无法运行 请求：",
+    "connection_failed": "无法运行请求：",
     "unable_to_connect": "无法连接",
     "stateless_protocol_not_supported": {
       "switch_to_compatible_version": "此服务器不支持 MCP 2026-07-28。请将协议版本重置为自动或固定为 Legacy，然后重新连接。"
@@ -121,12 +121,12 @@
     },
     "test": {
       "empty_state": "单击“继续”一次执行一个步骤",
-      "step_list_aria_label": "认证 测试步骤",
+      "step_list_aria_label": "认证测试步骤",
       "actions": {
         "reset": "重置",
         "cancel": "取消",
         "continue": "继续",
-        "flow_complete": "流程 完成"
+        "flow_complete": "流程完成"
       },
       "exchange": {
         "request": "请求：",
@@ -135,12 +135,12 @@
       "logs": {
         "get_url": "GET {url}",
         "request_without_token": {
-          "title": "发送 请求 而不发送 令牌",
-          "message": "POST 初始化，无需 OAuth 访问 令牌。",
+          "title": "发送请求而不发送令牌",
+          "message": "POST 初始化，无需 OAuth 访问令牌。",
           "response_title": "收到响应"
         },
         "request_resource_metadata": {
-          "title": "请求 资源元数据",
+          "title": "请求资源元数据",
           "response_title": "收到资源元数据"
         },
         "parsed_resource_metadata": {
@@ -148,12 +148,12 @@
           "message": "解析的受保护资源元数据。"
         },
         "request_authorization_server_metadata": {
-          "title": "请求 授权 服务器元数据",
+          "title": "请求授权服务器元数据",
           "response_title": "收到服务器元数据"
         },
         "parsed_authorization_server_metadata": {
           "title": "解析的服务器元数据",
-          "message": "解析的 授权 服务器元数据。"
+          "message": "解析的授权服务器元数据。"
         },
         "client_registration_resolved": {
           "title": "客户注册已解决",
@@ -166,32 +166,32 @@
           "response_title": "客户端 ID 元数据文档"
         },
         "request_client_registration": {
-          "title": "请求 客户注册",
+          "title": "请求客户注册",
           "message": "注册动态 OAuth 客户端。",
           "success_message": "注册了动态 OAuth 客户端。"
         },
         "generate_pkce_parameters": {
           "title": "生成 PKCE 参数",
-          "message": "支持 PKCE S256。 授权 请求 将包含 code_verifier 和 code_challenge 参数。"
+          "message": "支持 PKCE S256。授权请求将包含 code_verifier 和 code_challenge 参数。"
         },
         "authorize_request": {
           "title": "授权请求",
           "message": "正在打开授权 URL 并等待回调。",
-          "success_message": "授权 回调完成。"
+          "success_message": "授权回调完成。"
         },
         "get_access_token": {
           "title": "获取访问令牌",
-          "message": "授权 代码在 令牌 端点 处交换。 OAuth 管理器不会公开原始 令牌 交换标头，因此会汇总敏感字段。"
+          "message": "授权代码在令牌端点处交换。 OAuth 管理器不会公开原始令牌交换标头，因此会汇总敏感字段。"
         },
         "persist_access_token": {
-          "title": "保留访问 令牌",
-          "message": "将返回的 令牌 保留到此 MCP 请求 auth 会话。",
-          "success_message": "MCP 请求 auth 会话 现在引用 OAuth 令牌。"
+          "title": "保留访问令牌",
+          "message": "将返回的令牌保留到此 MCP 请求 auth 会话。",
+          "success_message": "MCP 请求 auth 会话现在引用 OAuth 令牌。"
         },
         "authenticated_request": {
-          "title": "已验证 请求",
-          "message": "使用 OAuth 重新连接 MCP 服务器，从此 流程 访问 令牌。",
-          "success_message": "服务器与 OAuth 令牌 连接成功。"
+          "title": "已验证请求",
+          "message": "使用 OAuth 重新连接 MCP 服务器，从此流程访问令牌。",
+          "success_message": "服务器与 OAuth 令牌连接成功。"
         },
         "step_failed": {
           "title": "步骤失败"
@@ -202,31 +202,31 @@
         }
       },
       "errors": {
-        "expected_401": "预计未经身份验证的 MCP 请求 返回 401，收到 {status}",
-        "resource_metadata_http_failed": "受保护的资源元数据 请求 失败，并出现 HTTP {status}",
+        "expected_401": "预计未经身份验证的 MCP 请求返回 401，收到 {status}",
+        "resource_metadata_http_failed": "受保护的资源元数据请求失败，并出现 HTTP {status}",
         "resource_metadata_unavailable": "无法获取受保护的资源元数据",
-        "resource_metadata_not_json": "受保护的资源元数据 响应 不是 JSON 对象",
-        "authorization_server_missing": "受保护的资源元数据未通告 授权 服务器",
-        "authorization_server_metadata_http_failed": "授权 服务器元数据 请求 失败，并出现 HTTP {status}",
-        "authorization_server_metadata_unavailable": "无法获取 授权 服务器元数据",
-        "authorization_server_metadata_not_json": "授权 服务器元数据 响应 不是 JSON 对象",
+        "resource_metadata_not_json": "受保护的资源元数据响应不是 JSON 对象",
+        "authorization_server_missing": "受保护的资源元数据未通告授权服务器",
+        "authorization_server_metadata_http_failed": "授权服务器元数据请求失败，并出现 HTTP {status}",
+        "authorization_server_metadata_unavailable": "无法获取授权服务器元数据",
+        "authorization_server_metadata_not_json": "授权服务器元数据响应不是 JSON 对象",
         "metadata_required": "在解析客户端凭据之前完成 OAuth 元数据发现",
         "dynamic_client_registration_invalid": "请先填写动态客户端注册表单，然后再注册客户端",
         "dynamic_client_registration_http_failed": "动态客户端注册失败，出现 HTTP {status}",
-        "dynamic_client_registration_not_json": "动态客户端注册 响应 不是 JSON 对象",
+        "dynamic_client_registration_not_json": "动态客户端注册响应不是 JSON 对象",
         "dynamic_client_registration_unsupported": "授权服务器不支持动态注册；请手动配置客户端 ID",
         "client_metadata_document_http_failed": "客户端 ID 元数据文档请求失败，HTTP {status}",
         "client_metadata_document_not_json": "客户端 ID 元数据文档不是 JSON 对象",
         "client_metadata_document_client_id_mismatch": "客户端 ID 元数据文档的 client_id 必须与其 URL 完全一致：{url}",
         "client_metadata_document_redirect_uri_missing": "客户端 ID 元数据文档的 redirect_uris 中不包含 {redirectUri}",
         "client_id_missing": "OAuth 客户端凭据缺少 client_id",
-        "pkce_metadata_required": "PKCE 验证之前需要 授权 服务器元数据",
-        "pkce_s256_required": "授权 服务器元数据必须通告 S256 PKCE 支持",
-        "client_credentials_required": "在 授权 之前解析 OAuth 客户端凭据",
-        "authorization_token_missing": "OAuth 授权 未返回 令牌",
+        "pkce_metadata_required": "PKCE 验证之前需要授权服务器元数据",
+        "pkce_s256_required": "授权服务器元数据必须通告 S256 PKCE 支持",
+        "client_credentials_required": "在授权之前解析 OAuth 客户端凭据",
+        "authorization_token_missing": "OAuth 授权未返回令牌",
         "authorization_required": "在获取访问令牌之前完成授权",
         "oauth_token_required": "连接 MCP 服务器之前保存 OAuth 令牌",
-        "step_cancelled": "认证 测试步骤已取消"
+        "step_cancelled": "认证测试步骤已取消"
       },
       "registration_method": {
         "label": "注册方式",
@@ -268,24 +268,24 @@
       },
       "steps": {
         "request_without_token": {
-          "label": "发送 请求 而不发送 令牌",
-          "description": "发送未经身份验证的 MCP 初始化 请求 以观察 OAuth 质询。"
+          "label": "发送请求而不发送令牌",
+          "description": "发送未经身份验证的 MCP 初始化请求以观察 OAuth 质询。"
         },
         "request_resource_metadata": {
-          "label": "请求 资源元数据",
+          "label": "请求资源元数据",
           "description": "请求 RFC 9728 OAuth 受保护的资源元数据。"
         },
         "request_authorization_server_metadata": {
-          "label": "请求 授权 服务器元数据",
-          "description": "请求 OAuth 授权 服务器元数据。"
+          "label": "请求授权服务器元数据",
+          "description": "请求 OAuth 授权服务器元数据。"
         },
         "request_client_registration": {
-          "label": "请求 客户注册",
+          "label": "请求客户注册",
           "description": "解析已配置的凭据、客户端 ID 元数据文档或动态客户端注册。"
         },
         "generate_pkce_parameters": {
           "label": "生成 PKCE 参数",
-          "description": "在打开 授权 请求 之前确认 PKCE S256 支持。"
+          "description": "在打开授权请求之前确认 PKCE S256 支持。"
         },
         "authorize_request": {
           "label": "授权请求",
@@ -293,10 +293,10 @@
         },
         "get_access_token": {
           "label": "获取访问令牌",
-          "description": "交换 授权 代码并保留 令牌。"
+          "description": "交换授权代码并保留令牌。"
         },
         "authenticated_request": {
-          "label": "已验证 请求",
+          "label": "已验证请求",
           "description": "使用 OAuth 访问令牌重新连接 MCP 请求。"
         }
       }
@@ -325,7 +325,7 @@
         "grant_types_supported": "支持的授权类型",
         "response_types_supported": "支持的响应类型",
         "code_challenge_methods": "代码挑战方法",
-        "token_endpoint_auth_methods": "令牌 端点 认证 方法"
+        "token_endpoint_auth_methods": "令牌端点认证方法"
       },
       "status": {
         "supported": "支持",

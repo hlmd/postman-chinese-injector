@@ -77,7 +77,7 @@
       "init_error": "無法初始化儲存庫：{error}"
     },
     "permission_error": {
-      "heading": "權限 被拒絕",
+      "heading": "權限被拒絕",
       "content": "<0>執行 git 命令的權限被拒絕。</0><1>請檢查您的 shell 訪問權限並確保您擁有在終端中執行 git 命令所需的權限。</1>",
       "confirm_button_text": "好的"
     },
@@ -144,7 +144,7 @@
     "learn_more": "瞭解更多",
     "status_new_tooltip": "該實體存在於本地，但尚未存在於雲端工作區中",
     "status_update_tooltip": "該實體的本地更改可能與雲端版本不同",
-    "unsafe_name_tooltip": "資料夾 名稱包含不支援的字元。修復它以推送到雲端。",
+    "unsafe_name_tooltip": "資料夾名稱包含不支援的字元。修復它以推送到雲端。",
     "lint_blocked_entity_tooltip": "推送前請先修復校驗錯誤。點選可檢視問題詳情。",
     "open_entity_diff": "檢視 {name} 中的更改",
     "revert_entity": "還原 {name}",
@@ -394,7 +394,7 @@
     "simulation_push_modal_description": "將此模擬推送到即時 URL，以便 API 消費者可以訪問其中的任何模擬伺服器。",
     "simulation_push_modal_slug_aria_label": "模擬 slug",
     "simulation_push_modal_routing_label": "路由方式",
-    "simulation_push_modal_routing_description": "使用模擬伺服器的 slug 來路由你的 請求",
+    "simulation_push_modal_routing_description": "使用模擬伺服器的 slug 來路由你的請求",
     "simulation_push_modal_routing_select_aria_label": "模擬伺服器路由模式",
     "simulation_push_modal_routing_header_option": "標頭",
     "simulation_push_modal_routing_path_option": "URL 路徑",
@@ -499,7 +499,7 @@
     "cloud_save_in_progress_toast": "請稍候，我們正在儲存您的更改",
     "cloud_save_no_changes_toast": "沒有要儲存的更改",
     "cloud_save_failed_toast": "無法更新模擬伺服器",
-    "invalid_syntax_save_blocked_toast": "無法儲存：修復模擬伺服器腳本 中的語法錯誤。 {error}",
+    "invalid_syntax_save_blocked_toast": "無法儲存：修復模擬伺服器腳本中的語法錯誤。 {error}",
     "preview_url_unavailable_toast": "預覽 URL 不可用",
     "cloud_only_tooltip": "在本地工作區模式下開啟此模擬伺服器以推送",
     "publish_in_progress_tooltip": "將模擬伺服器推送到雲端",
@@ -540,9 +540,9 @@
       "copy_url_aria_label": "複製模擬伺服器 URL",
       "copied_tooltip": "已複製",
       "copy_failed_toast": "複製 URL 失敗",
-      "open_in_request_tooltip": "在新的 請求 中開啟",
-      "open_in_request_aria_label": "在新的 請求 選項卡中開啟模擬伺服器 URL",
-      "open_request_failed_toast": "無法開啟 請求 選項卡"
+      "open_in_request_tooltip": "在新的請求中開啟",
+      "open_in_request_aria_label": "在新的請求選項卡中開啟模擬伺服器 URL",
+      "open_request_failed_toast": "無法開啟請求選項卡"
     },
     "cloud_mock_info_header": {
       "url_label": "即時模擬伺服器 URL",
@@ -550,7 +550,7 @@
       "copy_url_aria_label": "複製模擬伺服器 URL",
       "copied_tooltip": "已複製",
       "copy_failed_toast": "複製 URL 失敗",
-      "open_request_failed_toast": "無法開啟 請求 選項卡",
+      "open_request_failed_toast": "無法開啟請求選項卡",
       "created_by": "建立者：",
       "created": "已建立",
       "updated": "已更新",
@@ -558,7 +558,7 @@
     },
     "cloud_only_mode": {
       "load_failed_toast": "無法載入雲模擬伺服器",
-      "load_script_failed_toast": "無法載入雲模擬伺服器腳本 源",
+      "load_script_failed_toast": "無法載入雲模擬伺服器腳本源",
       "edit_disabled_toast": "如果沒有本地工作區則無法編輯雲模擬"
     },
     "source_update": {
@@ -579,11 +579,11 @@
     "auto_gen": {
       "edit_banner_body": "儲存更改將關閉此模擬伺服器的自動生成。",
       "edit_banner_dismiss": "關閉",
-      "read_only_save_blocked_toast": "您沒有 權限 來編輯此自動生成的模擬伺服器。"
+      "read_only_save_blocked_toast": "您沒有權限來編輯此自動生成的模擬伺服器。"
     },
     "source_link": {
-      "picker_placeholder": "選擇集合或 API 規格",
-      "picker_empty": "未找到集合或 API 規格",
+      "picker_placeholder": "選擇集合或 API 規範",
+      "picker_empty": "未找到集合或 API 規範",
       "no_source_hint": "連結集合或 API 規範以自動生成此模擬伺服器。",
       "auto_gen_label": "保持這個模擬伺服器從原始碼自動生成",
       "auto_gen_helper": "來源發生變化時自動重新生成。"
@@ -593,7 +593,7 @@
     "title": "升級檔案",
     "description": "Postman 不再支援本地模式下集合和環境的 JSON。將這些檔案升級到 v3 YAML 格式以繼續使用它們。",
     "upgrade_button": "升級到 v3",
-    "upgrade_failed_toast": "升級無法完成。請重試。如果這種情況持續存在，請檢查 控制台 瞭解詳細資訊。",
+    "upgrade_failed_toast": "升級無法完成。請重試。如果這種情況持續存在，請檢查控制台瞭解詳細資訊。",
     "upgrade_failed_conversion_toast": "{count} 個檔案無法升級。確保它是有效的 Postman JSON 匯出，然後重試。",
     "upgrade_failed_conversion_toast_plural": "{count} 個檔案無法升級。確保它們是有效的 Postman JSON 匯出，然後重試。",
     "upgrade_failed_deletion_toast": "升級後無法刪除 {count} 個源 JSON 檔案。您可以手動將其刪除。",
@@ -606,11 +606,11 @@
       "update_success_title": "依賴項已更新",
       "update_success_message": "{name} 現已更新。",
       "update_error_title": "無法更新依賴項",
-      "update_error_message": "{name} 無法更新。檢查 控制台 瞭解詳細資訊。",
+      "update_error_message": "{name} 無法更新。檢查控制台瞭解詳細資訊。",
       "delete_success_title": "依賴項已刪除",
       "delete_success_message": "{name} 已從此工作區中刪除。",
       "delete_error_title": "無法刪除依賴項",
-      "delete_error_message": "{name} 無法刪除。檢查 控制台 瞭解詳細資訊。"
+      "delete_error_message": "{name} 無法刪除。檢查控制台瞭解詳細資訊。"
     }
   },
   "setup_guide": {
@@ -659,7 +659,7 @@
         "button": "執行"
       },
       "ask_ai": {
-        "text": "要求 AI 基於此專案中的 API 端點建立 集合",
+        "text": "要求 AI 基於此專案中的 API 端點建立集合",
         "button": "詢問 AI"
       },
       "pull_from_cloud": {
@@ -674,7 +674,7 @@
       }
     },
     "agent_mode_errors": {
-      "no_folder_title": "未選擇 資料夾",
+      "no_folder_title": "未選擇資料夾",
       "no_folder_description": "使用代理模式前請先選擇資料夾",
       "open_failed_title": "代理模式開啟失敗",
       "generic_error_description": "發生意外錯誤"
@@ -708,9 +708,9 @@
     "button_label": "複製連結",
     "button_label_copied": "已複製",
     "tooltip_ready": "通過連結分享您的本地更改",
-    "tooltip_no_directory": "開啟 資料夾 來共享本地更改",
-    "tooltip_no_git": "在此 資料夾 中初始化 git 以共享本地更改",
-    "tooltip_no_branch": "分支 資訊不可用",
+    "tooltip_no_directory": "開啟資料夾來共享本地更改",
+    "tooltip_no_git": "在此資料夾中初始化 git 以共享本地更改",
+    "tooltip_no_branch": "分支資訊不可用",
     "tooltip_no_origin": "配置 git 遠端（源）以共享本地更改",
     "tooltip_push_in_flight": "推送正在進行中",
     "toast_success_title": "連結已複製到剪貼簿",
@@ -718,26 +718,26 @@
     "toast_error_generic_title": "無法共享本地更改",
     "toast_error_generic_description": "出了點問題。請再試一次。",
     "toast_error_create_failed_title": "無法分享您的更改",
-    "toast_error_create_failed_description": "我們無法分享您對此 分支 的本地更改。檢查您的連線並重試。",
+    "toast_error_create_failed_description": "我們無法分享您對此分支的本地更改。檢查您的連線並重試。",
     "toast_error_push_failed_title": "無法上傳您的更改",
     "toast_error_push_failed_description": "推送您的更改時出錯。稍後再試一次。",
     "toast_error_preview_title": "無法檢查現有共享",
     "toast_error_preview_description": "檢查您的連線並重試。",
     "toast_error_clipboard_title": "無法將連結複製到剪貼簿",
     "toast_error_clipboard_description": "從共享對話方塊中手動複製連結。",
-    "toast_conflict_title": "已為此 分支 共享本地更改",
-    "toast_conflict_description_with_creator": "由 {creator} 共享。每個 分支 只允許一份。",
-    "toast_conflict_description_unknown": "每個 分支 只允許一份。",
+    "toast_conflict_title": "已為此分支共享本地更改",
+    "toast_conflict_description_with_creator": "由 {creator} 共享。每個分支只允許一份。",
+    "toast_conflict_description_unknown": "每個分支只允許一份。",
     "button_copy_link": "複製",
     "tooltip_copy_link": "將分享連結複製到剪貼簿",
     "create_title": "共享本地更改",
-    "create_description": "通過連結分享您對此 分支 的本地更改。知道連結的任何人都可以在 Postman 中檢視它們 - 無需儲存庫訪問權限。",
+    "create_description": "通過連結分享您對此分支的本地更改。知道連結的任何人都可以在 Postman 中檢視它們 - 無需儲存庫訪問權限。",
     "sync_title": "同步“{branch}”的更改",
-    "sync_description": "您已經共享了對此 分支 的更改。單擊同步以推送最新的本地更改 - 下面的共享連結保持不變。",
+    "sync_description": "您已經共享了對此分支的更改。單擊同步以推送最新的本地更改 - 下面的共享連結保持不變。",
     "sync_tooltip": "使用最新更改更新共享連結",
-    "conflict_title": "已為此 分支 共享本地更改",
-    "conflict_description_with_creator": "{creator} 已經共享了對此 分支 的更改。每個 分支 只允許一份。",
-    "conflict_description_unknown": "已為此 分支 共享本地更改。每個 分支 只允許一份。",
+    "conflict_title": "已為此分支共享本地更改",
+    "conflict_description_with_creator": "{creator} 已經共享了對此分支的更改。每個分支只允許一份。",
+    "conflict_description_unknown": "已為此分支共享本地更改。每個分支只允許一份。",
     "dont_show_again": "不要再顯示這個",
     "cancel_cta": "取消",
     "share_cta": "分享並複製連結",
@@ -752,14 +752,14 @@
     "toast_synced_description": "將此連結分享給團隊成員，以檢視你的最新本地更改。",
     "toast_open_draft_failed_title": "無法開啟共享更改",
     "toast_open_draft_failed_description": "嘗試從工作區列表中開啟它。",
-    "toast_branch_shifted_title": "分支 更改為“{branch}”",
-    "toast_branch_shifted_description": "重新開啟復制連結以共享新 分支 的更改。",
+    "toast_branch_shifted_title": "分支更改為“{branch}”",
+    "toast_branch_shifted_description": "重新開啟復制連結以共享新分支的更改。",
     "unshare_confirm_title": "取消共享“{branch}”的更改？",
-    "unshare_confirm_message": "這將停止共享您對此 分支 的本地更改。知道該連結的任何人都將失去訪問權限。",
+    "unshare_confirm_message": "這將停止共享您對此分支的本地更改。知道該連結的任何人都將失去訪問權限。",
     "unshare_confirm_cancel": "取消",
     "unshare_confirm_confirm": "取消分享",
     "toast_unshare_success_title": "更改已取消共享",
-    "toast_unshare_success_description": "您對此 分支 的本地更改不再共享。",
+    "toast_unshare_success_description": "您對此分支的本地更改不再共享。",
     "toast_unshare_error_title": "無法取消共享更改",
     "toast_unshare_error_description": "出了點問題。請再試一次。"
   },

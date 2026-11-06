@@ -15,7 +15,7 @@
     },
     "aria": {
       "restricted_access": "訪問受限",
-      "restricted_access_tooltip": "加入或與此 團隊 合作需要 團隊 經理批准",
+      "restricted_access_tooltip": "加入或與此團隊合作需要團隊經理批准",
       "restricted_role": "您只能訪問您受邀訪問的特定資源。",
       "select_all": "選擇全部",
       "select_row": "選擇行"
@@ -28,31 +28,31 @@
     },
     "tooltip": {
       "member_details": "使用者 ({userCount}) 和組 ({groupCount})",
-      "members_error": "無法載入 成員 詳細資訊",
-      "no_view_permission": "您沒有 權限 檢視該 團隊 的詳細資訊"
+      "members_error": "無法載入成員詳細資訊",
+      "no_view_permission": "您沒有權限檢視該團隊的詳細資訊"
     }
   },
   "actions": {
     "cancel": "取消",
     "join": "加入",
-    "join_as_member": "作為 團隊 成員 加入",
-    "request_to_join": "請求 加入",
-    "request_to_join_team": "請求 加入 團隊",
+    "join_as_member": "作為團隊成員加入",
+    "request_to_join": "請求加入",
+    "request_to_join_team": "請求加入團隊",
     "leave": {
       "label": "離開",
-      "disabled_tooltip": "您不能離開此 團隊，因為您是通過群組新增的。",
-      "success": "離開 團隊",
-      "error": "未能離開 團隊。請再試一次。",
+      "disabled_tooltip": "您不能離開此團隊，因為您是通過群組新增的。",
+      "success": "離開團隊",
+      "error": "未能離開團隊。請再試一次。",
       "confirm": {
         "title": "離開團隊",
-        "description": "您確定要離開這個 團隊 嗎？"
+        "description": "您確定要離開這個團隊嗎？"
       }
     },
     "delete": "刪除",
     "manage": "管理",
     "manage_team": "管理團隊",
     "add_members": "新增成員",
-    "invite_members": "邀請 隊友",
+    "invite_members": "邀請隊友",
     "rename": "重新命名",
     "create_workspace": "建立工作區",
     "remove": {
@@ -61,16 +61,16 @@
       "error": "刪除失敗。請再試一次。",
       "partial": "{succeeded} 已刪除，{failed} 失敗",
       "confirm": {
-        "title": "刪除 成員",
-        "description": "從此 團隊 中刪除 {name} 嗎？"
+        "title": "刪除成員",
+        "description": "從此團隊中刪除 {name} 嗎？"
       },
       "confirm_bulk": {
         "title": "刪除成員",
-        "description": "從這個 團隊 中刪除 {count, plural, one {1 名成員} other {{count} 名成員}}？"
+        "description": "從這個團隊中刪除 {count, plural, one {1 名成員} other {{count} 名成員}}？"
       }
     },
     "convert": {
-      "label": "轉換為 成員"
+      "label": "轉換為成員"
     }
   },
   "filters": {
@@ -118,7 +118,7 @@
     "empty": {
       "no_members": {
         "title": "沒有會員",
-        "description": "此 團隊 中還沒有成員。"
+        "description": "此團隊中還沒有成員。"
       },
       "no_results": {
         "title": "沒有找到會員",
@@ -139,9 +139,9 @@
     "organization_members_count": "組織（{count, plural, one {1 名成員} other {{count} 名成員}}）",
     "inline": {
       "role": {
-        "success": "角色 已更新",
-        "request_sent": "請求 已傳送以供批准",
-        "error": "無法更新 角色。請再試一次。"
+        "success": "角色已更新",
+        "request_sent": "請求已傳送以供批准",
+        "error": "無法更新角色。請再試一次。"
       }
     }
   },
@@ -150,7 +150,7 @@
     "delete_result_error": "已刪除 {deleted} 個團隊，未能刪除 {failed} 個",
     "join_one_success": "成功加入團隊",
     "join_one_requested": "已傳送加入申請",
-    "join_one_already_requested": "您已有一個待處理的加入此 團隊 的申請",
+    "join_one_already_requested": "您已有一個待處理的加入此團隊的申請",
     "join_one_error": "加入團隊失敗"
   },
   "errors": {

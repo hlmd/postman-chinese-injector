@@ -44,7 +44,7 @@
     }
   },
   "scope": {
-    "default_title": "个人 空间",
+    "default_title": "个人空间",
     "team_title": "{teamName} 团队"
   },
   "sort_label": "排序方式",

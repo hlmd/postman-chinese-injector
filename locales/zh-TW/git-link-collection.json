@@ -5,17 +5,17 @@
       "no_write_permission": "您沒有權限儲存對此 Git 儲存庫中已連線分支的更改。\n請 Fork 此集合以進行更改。",
       "hash_mismatch": "連線的儲存庫包含需要在更新集合之前拉取的更改。",
       "update_in_app": "使用 Postman 應用程式更新此集合。",
-      "git_repo_secrets_restriction_error": "發現 Git 儲存庫規則違規。內容中檢測到 金鑰",
+      "git_repo_secrets_restriction_error": "發現 Git 儲存庫規則違規。內容中檢測到金鑰",
       "generic_connection_error_for_entity": "將集合連線到儲存庫時出現問題。請再試一次。",
-      "branch_not_found": "在 git 儲存庫上找不到 分支",
+      "branch_not_found": "在 git 儲存庫上找不到分支",
       "repository_disconnected": "儲存庫已斷開連線。",
       "conflict": "Postman 上的集合與 GitHub 的最新更改之間存在衝突。請解決衝突後繼續編輯集合。",
-      "invalid_token": "您的訪問權限 令牌 無效。重新驗證以恢復同步。",
+      "invalid_token": "您的訪問權限令牌無效。重新驗證以恢復同步。",
       "missing_token": "此 {entity} 連結到 Git 儲存庫。使用您的 Git 帳戶進行身份驗證，然後重試。",
       "generic_error": "將更改儲存到 Git 儲存庫時出現問題。稍後再試。",
       "generic_error_for_entity": "將更改儲存到 {entityName} 的 Git 儲存庫時出現問題。稍後再試。",
       "conflict_popover_message": "Postman 上的集合與遠端的最新更改之間存在衝突。解決它們以繼續編輯。",
-      "conflict_popover_message_v2": "發現 合併 衝突。解決它們以同步更改。",
+      "conflict_popover_message_v2": "發現合併衝突。解決它們以同步更改。",
       "choose_version": "選擇",
       "pull_failed": "無法從 Git 儲存庫中提取更改。請再試一次。"
     },
@@ -40,7 +40,7 @@
       "connected_to_repository": "連線到儲存庫",
       "wait_screen": "正在連線到 {gitServiceName}...",
       "successful_auth": "認證成功",
-      "failed_auth": "{gitServiceName} 授權 失敗"
+      "failed_auth": "{gitServiceName} 授權失敗"
     },
     "description": {
       "connect_git_enterprise": "使用儲存庫的授權 {gitServiceName} 域進行身份驗證。",
@@ -54,7 +54,7 @@
       "button": {
         "authenticate": "認證",
         "close": "關閉",
-        "enter_token": "輸入 授權 令牌"
+        "enter_token": "輸入授權令牌"
       },
       "select": {
         "git_domain": "{gitServiceName} 域"
@@ -65,7 +65,7 @@
     },
     "placeholders": {
       "select": "選擇",
-      "paste_token": "將 令牌 貼上到此處..."
+      "paste_token": "將令牌貼上到此處..."
     }
   },
   "connect_form": {
@@ -73,22 +73,22 @@
       "repo_not_found": "在組織中找不到儲存庫。",
       "branch_not_found": "在儲存庫中找不到分支。",
       "repo_required": "需要一個儲存庫。",
-      "branch_required": "需要 分支。",
+      "branch_required": "需要分支。",
       "org_required": "需要一個組織。",
       "owner_required": "需要一個所有者。",
       "path_invalid": "集合路徑無效。",
       "failed_to_load": "無法載入 {entity}。",
       "branch_permission": {
         "title": "無法連線儲存庫",
-        "description": "您的 {gitServiceName} 帳戶無權連線到此儲存庫或 分支。",
-        "banner": "您無權編輯此 分支"
+        "description": "您的 {gitServiceName} 帳戶無權連線到此儲存庫或分支。",
+        "banner": "您無權編輯此分支"
       },
       "failed_connection": {
         "title": "連線 {entityType} 時出錯",
         "description": "將 {entityType} 連線到儲存庫時出現問題。請再試一次。"
       },
-      "no_permission_to_push": "您沒有 權限 來推送到此 分支。",
-      "error_creating_branch": "建立 分支 時出錯。請再試一次。"
+      "no_permission_to_push": "您沒有權限來推送到此分支。",
+      "error_creating_branch": "建立分支時出錯。請再試一次。"
     },
     "labels": {
       "select": {
@@ -98,8 +98,8 @@
         "branch": "分支",
         "collection_directory": "集合目錄"
       },
-      "creating_branch": "建立 分支",
-      "create_branch_from": "建立 分支 \"{branchName}\" 從"
+      "creating_branch": "建立分支",
+      "create_branch_from": "建立分支 \"{branchName}\" 從"
     },
     "placeholders": {
       "select": {
@@ -113,7 +113,7 @@
     "collection_directory_helper_text": "如果留空，將建立一個<Badge />目錄。",
     "success_connection": "已成功連線到 {gitServiceName} 儲存庫。",
     "install_github-app_helper_text": "如果您沒有看到您的組織，則可能需要<Link><Text>首先將 GitHub 應用程式安裝到您的組織。</Text></Link>",
-    "install_github-app_helper_text_new": "如果您沒有看到列出的任何 Github 所有者，請嘗試在您的 個人 帳戶或組織上<Link><Text>安裝 Postman 應用</Text></Link>。",
+    "install_github-app_helper_text_new": "如果您沒有看到列出的任何 Github 所有者，請嘗試在您的個人帳戶或組織上<Link><Text>安裝 Postman 應用</Text></Link>。",
     "learn_more": "要了解更多資訊，請參閱<Link><Text>Github文件</Text></Link>",
     "learn_more_new": "<Link><Text>瞭解更多。</Text></Link>"
   },
@@ -137,8 +137,8 @@
   "auth_popover": {
     "authentication_message": "此 {entityType} 連結到 Git 儲存庫。使用您的 {gitServiceName} 帳戶進行身份驗證以進行更改。",
     "re-authentication_message": {
-      "default": "您的 {gitServiceName} 訪問 令牌 無效。重新驗證以恢復同步。",
-      "on_save": "您的 {gitServiceName} 訪問 令牌 無效。重新驗證以儲存更改並恢復同步。"
+      "default": "您的 {gitServiceName} 訪問令牌無效。重新驗證以恢復同步。",
+      "on_save": "您的 {gitServiceName} 訪問令牌無效。重新驗證以儲存更改並恢復同步。"
     },
     "authentication_message_v2": "進行更改需要身份驗證",
     "re-authentication_message_v2": "進行更改需要重新驗證",
@@ -153,7 +153,7 @@
     }
   },
   "on_boarding_banner": {
-    "title": "繼承 Git 稽核和 合併 工作流程",
+    "title": "繼承 Git 稽核和合並工作流程",
     "description": "將此集合連線到您的 Git 儲存庫，然後 fork 並連結到分支，以保持集合和程式碼審查同步。",
     "v2_message": "Fork + Git = 更好的工作流程。",
     "variants": {
@@ -162,7 +162,7 @@
         "description": "使用 Git 自動同步集合——無需匯出。"
       },
       "second": {
-        "title": "團隊 友好的工作流程",
+        "title": "團隊友好的工作流程",
         "description": "將集合連結到分支並使用具有視覺差異的 PR。"
       },
       "third": {
@@ -210,9 +210,9 @@
         "loading_directories": "正在載入目錄.."
       },
       "validation": {
-        "empty_folder_not_allowed": "不允許建立空 資料夾。",
+        "empty_folder_not_allowed": "不允許建立空資料夾。",
         "dot_and_dotdot_not_allowed": "資料夾名稱中不允許使用 '.' 和 '..'。",
-        "dot_not_allowed": "不允許在 資料夾 名稱中使用“{char}”。"
+        "dot_not_allowed": "不允許在資料夾名稱中使用“{char}”。"
       }
     }
   },
@@ -289,7 +289,7 @@
       "error_message": "目前無法獲取更改。",
       "push_error": "將更改推送到 Git 時出錯。請再試一次。",
       "push_success": "所有更改均已成功推送到 Git。",
-      "push_changes_tooltip": "將更改推送到連線的 分支",
+      "push_changes_tooltip": "將更改推送到連線的分支",
       "push_blocked_tooltip": "有更改需要拉取"
     },
     "commits": {

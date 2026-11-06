@@ -1,19 +1,19 @@
 {
   "purchase_plan_empty_state": {
     "enterprise": {
-      "title": "升級以開始使用 私有 API 網路",
-      "description": "通過 私有 API 網路，團隊始終可以訪問可用元素，將它們組織到資料夾中，並使它們易於發現和使用。",
+      "title": "升級以開始使用私有 API 網路",
+      "description": "通過私有 API 網路，團隊始終可以訪問可用元素，將它們組織到資料夾中，並使它們易於發現和使用。",
       "primary_button": "升級至企業",
       "secondary_button": "瞭解更多"
     },
     "solution": {
-      "title": "嘿，這是什麼？這是 私有 API 網路！",
-      "description": "通過 私有 API 網路，團隊始終可以訪問可用元素，將它們組織到資料夾中，並使它們易於發現和使用。購買Postman的內部API管理解決方案後，即可訪問Private網路。",
+      "title": "嘿，這是什麼？這是私有 API 網路！",
+      "description": "通過私有 API 網路，團隊始終可以訪問可用元素，將它們組織到資料夾中，並使它們易於發現和使用。購買Postman的內部API管理解決方案後，即可訪問Private網路。",
       "primary_button": "購買解決方案",
       "secondary_button": "瞭解更多"
     },
     "ask_admin": {
-      "title": "嘿，這是什麼？這是 私有 API 網路！",
+      "title": "嘿，這是什麼？這是私有 API 網路！",
       "description": "藉助私有 API 網路，團隊可以訪問元素並將其組織到資料夾中，輕鬆發現它們。請管理員購買 Postman 的內部 API 管理解決方案，以訪問私有 API 網路。"
     }
   },
@@ -47,7 +47,7 @@
   "approval_process_warning_modal": {
     "heading": "啟用審批流程？",
     "para1": "一旦啟用，就無法更改。",
-    "para2": "作為一項品質衡量標準，現在建議使用 私有 API 網路的團隊採用審批流程。",
+    "para2": "作為一項品質衡量標準，現在建議使用私有 API 網路的團隊採用審批流程。",
     "para3": "審批流程確保只有特定團隊成員才能批准或向您的私有 API 網路新增元素。",
     "primary_button": "啟用批准",
     "secondary_button": "取消",

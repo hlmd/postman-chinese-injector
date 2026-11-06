@@ -43,19 +43,19 @@
   },
   "external_tag": "外部",
   "restricted_action": {
-    "tooltip_with_create": "將這些更改合併到 工作區，或建立一個新的 工作區 來執行此操作。",
-    "tooltip_visibility": "將這些更改合併到 工作區，或建立新的 工作區 來更改可見性。",
-    "tooltip_comment_creator": "將這些更改合併到 工作區，或建立一個新的 工作區 來發表評論。"
+    "tooltip_with_create": "將這些更改合併到工作區，或建立一個新的工作區來執行此操作。",
+    "tooltip_visibility": "將這些更改合併到工作區，或建立新的工作區來更改可見性。",
+    "tooltip_comment_creator": "將這些更改合併到工作區，或建立一個新的工作區來發表評論。"
   },
   "pending_changes_banner": {
     "source_prefix": "更改來自",
-    "source_icon_tooltip_cloud": "雲代理 任務",
+    "source_icon_tooltip_cloud": "雲代理任務",
     "source_icon_tooltip_git": "git 分支",
     "fallback_source_name": "無題",
     "actions": {
       "merge": "合併",
-      "merge_dropdown_label": "更多 合併 選項",
-      "make_new_workspace": "新增 工作區",
+      "merge_dropdown_label": "更多合併選項",
+      "make_new_workspace": "新增工作區",
       "discard": "丟棄",
       "exit": "退出",
       "copy_link": "複製連結",
@@ -69,10 +69,10 @@
     },
     "toast": {
       "merge_success": "更改合併",
-      "merge_error_title": "無法 合併 更改",
+      "merge_error_title": "無法合併更改",
       "merge_error_description": "出了點問題。請再試一次。",
-      "publish_success": "建立新的 工作區",
-      "publish_error_title": "無法建立 工作區",
+      "publish_success": "建立新的工作區",
+      "publish_error_title": "無法建立工作區",
       "publish_error_description": "出了點問題。請再試一次。",
       "discard_success": "更改已放棄",
       "discard_error_title": "無法放棄更改",

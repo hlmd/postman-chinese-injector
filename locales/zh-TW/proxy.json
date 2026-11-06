@@ -163,7 +163,7 @@
   },
   "capture_cookies": "捕獲 Cookie",
   "session_name_editor": {
-    "rename_success": "會話 重新命名成功",
+    "rename_success": "會話重新命名成功",
     "title": "代理會話"
   },
   "footer": {
@@ -206,13 +206,13 @@
     "toaster": "無法刪除 {count, plural, one {# 個請求} other {# 個請求}}"
   },
   "add_session_request_to_table": {
-    "create_row_placeholder": "命名您的 集合",
+    "create_row_placeholder": "命名您的集合",
     "no_of_requests": "{count, plural, one {# 個請求} other {# 個請求}}",
     "modal": {
       "header": "儲存 {count, plural, one {# 個請求} other {# 個請求}}",
       "body": {
-        "title": "選擇要儲存到的 集合",
-        "search_placeholder": "搜尋 集合",
+        "title": "選擇要儲存到的集合",
+        "search_placeholder": "搜尋集合",
         "save_text": "將 {count, plural, one {# 個請求} other {# 個請求}} 儲存到 {targetName}",
         "organize_text": "按以下方式組織請求",
         "domainName": "域名",
@@ -227,7 +227,7 @@
     },
     "toasters": {
       "error_title": "錯誤",
-      "error_description": "無法將請求新增到 集合。請再試一次。",
+      "error_description": "無法將請求新增到集合。請再試一次。",
       "view_now": "立即檢視",
       "success_title": "{count, plural, one {# 個請求} other {# 個請求}}已新增到集合",
       "success_description": "{noOfRequests} {count, plural, one {# 個請求} other {# 個請求}} 已新增到 {collectionName} 集合",

@@ -1,5 +1,5 @@
 {
-  "title": "Postman Vault",
+  "title": "Postman 保险库",
   "passport_secrets": {
     "title": "Passport 密钥",
     "description": "您在网络中被授予访问权限的 API 凭据。每一项都是<0>密钥引用</0>——一个在运行时通过 Passport 代理解析的指针，因此真实值永远不会被存储或显示。您可以在请求、环境中使用它，或将其复制到 Postman 之外使用。",
@@ -35,51 +35,51 @@
     }
   },
   "personal_vault": {
-    "breadcrumb_root": "个人 Vault",
+    "breadcrumb_root": "个人保险库",
     "save_button": "保存",
     "save_button_saving": "保存中"
   },
   "shared_vault": {
-    "breadcrumb_root": "共享 保险库",
+    "breadcrumb_root": "共享保险库",
     "workbench": {
-      "description": "在您的 工作区 中存储和共享机密。共享 保险库 中的机密特定于 工作区，工作区 成员可以访问，并可跨设备使用。",
+      "description": "在您的工作区中存储和共享机密。共享保险库中的机密特定于工作区，工作区成员可以访问，并可跨设备使用。",
       "team_description": "在团队中存储和共享密钥。每个密钥的访问权限由其作用域控制。",
       "learn_more": "了解更多",
       "save": {
         "button": "保存",
         "button_saving": "保存中",
-        "error": "无法保存共享 保险库",
-        "tooltip_unsaved": "将更改保存到共享 保险库",
+        "error": "无法保存共享保险库",
+        "tooltip_unsaved": "将更改保存到共享保险库",
         "tooltip_saved": "没有未保存的更改"
       },
       "load_error": {
-        "title": "无法加载共享 保险库",
+        "title": "无法加载共享保险库",
         "message": "不是你，是我们。我们遇到了障碍。请再试一次。"
       },
       "disabled_by_admin": {
-        "title": "共享 保险库 当前已禁用",
-        "description": "共享 保险库 已被 团队 管理员禁用。<br/>在启用它之前，您将无法访问其内容。",
+        "title": "共享保险库当前已禁用",
+        "description": "共享保险库已被团队管理员禁用。<br/>在启用它之前，您将无法访问其内容。",
         "learn_more": "了解更多"
       },
       "forbidden": {
         "title": "拒绝访问",
-        "description": "您没有查看此共享 保险库 所需的权限。<br/>如果您认为这是一个错误，请联系您的 工作区 所有者以请求访问权限。"
+        "description": "您没有查看此共享保险库所需的权限。<br/>如果您认为这是一个错误，请联系您的工作区所有者以请求访问权限。"
       }
     },
     "sidebar": {
-      "tab_label": "共享 保险库",
-      "search_placeholder": "搜索共享 保险库",
+      "tab_label": "共享保险库",
+      "search_placeholder": "搜索共享保险库",
       "create": {
-        "option_label": "共享 保险库",
-        "heading": "创建共享 保险库",
-        "tooltip": "创建共享 保险库"
+        "option_label": "共享保险库",
+        "heading": "创建共享保险库",
+        "tooltip": "创建共享保险库"
       },
       "empty_state": {
         "title": "这里有点安静...",
-        "description": "与您的 团队 安全地共享秘密"
+        "description": "与您的团队安全地共享秘密"
       },
       "error_state": {
-        "heading": "无法加载共享 保险库",
+        "heading": "无法加载共享保险库",
         "description": "不是你，是我们。我们遇到了困难",
         "retry": "再试一次"
       }
@@ -260,29 +260,29 @@
     "hashicorp": "HashiCorp Vault"
   },
   "consent_modal": {
-    "title": "是否为此次执行授予 保险库 访问权限？",
-    "description": "此 请求 中的脚本可以直接访问 保险库 机密，也可以通过运行来自 工作区 的其他请求来访问 保险库 机密。仅当您信任此 请求 的来源及其触发的任何请求时才继续。",
-    "trust_level": "授予 保险库 访问权限：",
+    "title": "是否为此次执行授予保险库访问权限？",
+    "description": "此请求中的脚本可以直接访问保险库机密，也可以通过运行来自工作区的其他请求来访问保险库机密。仅当您信任此请求的来源及其触发的任何请求时才继续。",
+    "trust_level": "授予保险库访问权限：",
     "trust_collection": "仅此集合",
-    "trust_workspace": "整个 工作区",
+    "trust_workspace": "整个工作区",
     "deny_cta": "拒绝访问",
     "allow_cta": "授予访问权限"
   },
   "learn_more": "了解更多",
   "kv_container": {
-    "help_text": "将您的敏感数据存储在本地。本地 保险库 机密跨工作区工作，仅供您使用，保留在本地，并且不同步。<4></4>",
+    "help_text": "将您的敏感数据存储在本地。本地保险库机密跨工作区工作，仅供您使用，保留在本地，并且不同步。<4></4>",
     "learn_more": "了解更多"
   },
   "kv_container_cloud": {
-    "help_text": "使用端到端加密将您的敏感数据安全地同步到云上的 个人 保险库，并可跨设备和工作区访问。",
+    "help_text": "使用端到端加密将您的敏感数据安全地同步到云上的个人保险库，并可跨设备和工作区访问。",
     "learn_more": "了解更多"
   },
   "kv_editor": {
     "guided_auth_heading": "使用引导式身份验证创建",
-    "add_new_secret": "添加新的 密钥",
+    "add_new_secret": "添加新的密钥",
     "session_secrets": {
-      "heading": "会话 变量",
-      "help_text": "来自环境、集合或全局变量的非共享 密钥 变量存储在本地 保险库 中并在此处显示。",
+      "heading": "会话变量",
+      "help_text": "来自环境、集合或全局变量的非共享密钥变量存储在本地保险库中并在此处显示。",
       "open_environment": "打开环境",
       "open_collection": "打开集合",
       "open_globals": "打开全局变量",
@@ -295,19 +295,19 @@
   },
   "azure": {
     "label": {
-      "text": "密钥 标识符",
-      "info": "显示在 Vault 的密钥详情页面中"
+      "text": "密钥标识符",
+      "info": "显示在保险库的密钥详情页面中"
     },
-    "invalid_identifier": "密钥 标识符无效",
-    "note": "注意：如果不包含 版本 ID，则在解析此 密钥 时将获取最新 版本。{0}",
+    "invalid_identifier": "密钥标识符无效",
+    "note": "注意：如果不包含版本 ID，则在解析此密钥时将获取最新版本。{0}",
     "use_button": "使用"
   },
   "hashicorp": {
     "secret": {
-      "engine": "密钥 引擎",
-      "path": "密钥 路径",
-      "key": "密钥 键",
-      "engine_version": "密钥 引擎 版本",
+      "engine": "密钥引擎",
+      "path": "密钥路径",
+      "key": "密钥键",
+      "engine_version": "密钥引擎版本",
       "radio_button": {
         "engine_version": {
           "version1": "版本 1",
@@ -326,30 +326,30 @@
       },
       "heading": "验证 {provider_name}",
       "service_token": {
-        "title": "无效的服务帐户 令牌",
+        "title": "无效的服务帐户令牌",
         "invalid_error": "请输入有效的服务帐户令牌",
-        "ops_start": "服务帐户 令牌 应以 ops_ 开头",
-        "invalid_response": "尝试验证 令牌 时收到无效 响应"
+        "ops_start": "服务帐户令牌应以 ops_ 开头",
+        "invalid_response": "尝试验证令牌时收到无效响应"
       },
       "auth_failed": "认证失败",
       "auth_retry": "请检查您的凭据并重试。",
       "text_input": {
         "label": "服务帐户令牌",
-        "helper_text": "此 令牌 允许服务帐户使用 1Password CLI 进行身份验证。"
+        "helper_text": "此令牌允许服务帐户使用 1Password CLI 进行身份验证。"
       },
       "button": {
-        "text": "创建服务帐户 令牌",
+        "text": "创建服务帐户令牌",
         "cancel": "取消",
         "authenticate": "认证"
       }
     },
     "secret_editor": {
       "label": {
-        "text": "密钥 引用 URI",
-        "info_text": "密钥 引用 URI 格式为：{op_format}",
-        "helper_text": "这是 保险库 名称、项目、部分和字段的组合，其中 密钥 存储在您的 1Password 帐户中。"
+        "text": "密钥引用 URI",
+        "info_text": "密钥引用 URI 格式为：{op_format}",
+        "helper_text": "这是保险库名称、项目、部分和字段的组合，其中密钥存储在您的 1Password 帐户中。"
       },
-      "validation_message": "密钥 引用 URI 无效",
+      "validation_message": "密钥引用 URI 无效",
       "button": {
         "use": "使用"
       }
@@ -358,13 +358,13 @@
   "onboarding": {
     "unlock_vault": {
       "open_vault_button": "打开保险库",
-      "heading": "输入您的 保险库 密钥",
-      "seconday_text": "通过输入该设备的 保险库 密钥来解锁 保险库 并访问其秘密。",
+      "heading": "输入您的保险库密钥",
+      "seconday_text": "通过输入该设备的保险库密钥来解锁保险库并访问其秘密。",
       "banner": {
-        "text": "切换到 桌面代理，我们每次都会自动从您的本机密码管理器获取 保险库 密钥。"
+        "text": "切换到桌面代理，我们每次都会自动从您的本机密码管理器获取保险库密钥。"
       },
       "text_input": {
-        "placeholder": "输入 保险库 键"
+        "placeholder": "输入保险库键"
       },
       "get_help": {
         "support": {
@@ -374,7 +374,7 @@
           "title": "查看文档"
         }
       },
-      "vault_link_external_text": "已经在使用 密钥 管理器？使用 Postman 进行设置：",
+      "vault_link_external_text": "已经在使用密钥管理器？使用 Postman 进行设置：",
       "primary_button": {
         "text": "打开保险库"
       },
@@ -382,18 +382,18 @@
         "button": {
           "text": "使用系统密码管理器解锁"
         },
-        "absent": "系统密码管理器中未保存 Vault 密钥。请手动输入密钥以解锁 Vault。",
-        "error": "无法从系统密码管理器获取 Vault 密钥。请重试，或手动输入密钥。"
+        "absent": "系统密码管理器中未保存保险库密钥。请手动输入密钥以解锁保险库。",
+        "error": "无法从系统密码管理器获取保险库密钥。请重试，或手动输入密钥。"
       },
       "error": {
-        "invalid_key": "该 Vault 密钥无效。请检查密钥后重试。",
-        "keychain_key_invalid": "系统密码管理器中保存的 Vault 密钥无效。请手动输入密钥以解锁 Vault。",
-        "unknown": "无法解锁 Vault，请重试。"
+        "invalid_key": "该保险库密钥无效。请检查密钥后重试。",
+        "keychain_key_invalid": "系统密码管理器中保存的保险库密钥无效。请手动输入密钥以解锁保险库。",
+        "unknown": "无法解锁保险库，请重试。"
       },
       "reset_vault": {
         "help_text": "找不到钥匙？",
         "text": "重置保险库",
-        "warning_text": "这将从您的所有设备中永久删除所有现有的保管库机密。将使用新的 保险库 密钥创建一个全新的 保险库。",
+        "warning_text": "这将从您的所有设备中永久删除所有现有的保管库机密。将使用新的保险库密钥创建一个全新的保险库。",
         "button": {
           "cancel": "取消"
         }
@@ -401,36 +401,36 @@
     },
     "encryption_details": {
       "ftux_flow": {
-        "heading": "将机密本地存储在 保险库 中",
-        "description": "在请求、测试脚本、授权、环境等中跨工作区使用 保险库 机密，使用"
+        "heading": "将机密本地存储在保险库中",
+        "description": "在请求、测试脚本、授权、环境等中跨工作区使用保险库机密，使用"
       },
       "cta_text": "打开保险库",
-      "heading": "保存您的 保险库 密钥",
-      "text": "当您注销和登录时，您的帐户将需要这个唯一的密钥。丢失密钥将导致您丢失所有机密。注销后无法访问 保险库 机密。",
+      "heading": "保存您的保险库密钥",
+      "text": "当您注销和登录时，您的帐户将需要这个唯一的密钥。丢失密钥将导致您丢失所有机密。注销后无法访问保险库机密。",
       "checkbox": {
         "label": "将此密钥保存到本机密码管理器",
-        "helperText": "这将使您每次登录时都能无缝访问 保险库。"
+        "helperText": "这将使您每次登录时都能无缝访问保险库。"
       },
-      "agent_not_ready": "确保桌面代理正在运行以保存您的 保险库 密钥。",
-      "unsupported_agent": "切换到 桌面代理 以保存您的 保险库 密钥。"
+      "agent_not_ready": "确保桌面代理正在运行以保存您的保险库密钥。",
+      "unsupported_agent": "切换到桌面代理以保存您的保险库密钥。"
     },
     "onboarding": {
-      "text": "通过使用 <1></1><2>{secretLabel}</2> 调用它们，在请求、授权、环境等中使用这些 保险库 机密。 保险库 机密跨工作区工作，保留在本地且不同步。",
+      "text": "通过使用 <1></1><2>{secretLabel}</2> 调用它们，在请求、授权、环境等中使用这些保险库机密。保险库机密跨工作区工作，保留在本地且不同步。",
       "title": {
-        "created": "保险库 创建",
-        "reset": "保险库 重置",
-        "encrypted": "保险库 加密"
+        "created": "保险库创建",
+        "reset": "保险库重置",
+        "encrypted": "保险库加密"
       },
       "error": {
         "message": "出了点问题。请再试一次。"
       },
       "loader": {
-        "text": "正在分配 Vault 密钥并创建本地加密 Vault…"
+        "text": "正在分配保险库密钥并创建本地加密保险库…"
       },
       "details": {
-        "title": "保险库 已创建，并保存了您的第一个 密钥"
+        "title": "保险库已创建，并保存了您的第一个密钥"
       },
-      "heading": "将敏感数据本地存储在 保险库 中作为机密",
+      "heading": "将敏感数据本地存储在保险库中作为机密",
       "setup": {
         "button": "设置保险库"
       }
@@ -445,10 +445,10 @@
     }
   },
   "migration": {
-    "heading": "新的 保险库 改进：加密你的秘密",
+    "heading": "新的保险库改进：加密你的秘密",
     "text": "通过对本地存储上的机密进行加密来添加额外的安全层。放心，您的机密会很安全。",
     "button": {
-      "text": "加密 保险库"
+      "text": "加密保险库"
     }
   },
   "reusable": {
@@ -456,24 +456,24 @@
       "text": "链接保险库"
     },
     "loader": {
-      "text": "快到了！我们正在加载您的 保险库。"
+      "text": "快到了！我们正在加载您的保险库。"
     },
     "user_key_container": {
       "tooltip": {
         "copied": "已复制",
-        "copy_key": "复制 保险库 键",
-        "show_key": "显示 保险库 键",
-        "hide_key": "隐藏 保险库 键"
+        "copy_key": "复制保险库键",
+        "show_key": "显示保险库键",
+        "hide_key": "隐藏保险库键"
       },
       "button": {
-        "tooltip": "下载 保险库 密钥"
+        "tooltip": "下载保险库密钥"
       }
     },
     "vault_integration_title_button": {
       "text": "设置外部保险库"
     },
     "vault_integration_use_existing_vault": {
-      "text": "从现有的 保险库 使用"
+      "text": "从现有的保险库使用"
     },
     "auth_modal": {
       "get_help": {
@@ -494,7 +494,7 @@
       },
       "error": {
         "title": "认证失败",
-        "text": "保险库 不支持",
+        "text": "保险库不支持",
         "unexpected_error": "尝试进行身份验证时出现问题。请重试，或者如果问题仍然存在，请联系支持人员。"
       },
       "blocked": {
@@ -503,40 +503,40 @@
       }
     },
     "desktop_agent_banner": {
-      "text": "此请求正在使用存储于 Vault 中的密钥。若要使用 Vault 密钥，您需要切换至 Postman Desktop Agent。",
+      "text": "此请求正在使用存储于保险库中的密钥。若要使用保险库密钥，您需要切换至 Postman Desktop Agent。",
       "link": "使用 Postman 桌面代理",
       "provider_not_resolved": "必须连接 {provider} 才能解析链接的机密。",
       "reauthenticate": "重新验证",
-      "generic_provider_label": "已关联的 Vault"
+      "generic_provider_label": "已关联的保险库"
     },
     "integration_editor": {
-      "heading": "链接 密钥",
+      "heading": "链接密钥",
       "disconnect": {
         "tooltip": "断开保险库"
       },
       "already_added_secret": {
-        "tooltip": "该密钥已从外部 Vault 关联"
+        "tooltip": "该密钥已从外部保险库关联"
       },
       "add_new": {
-        "tooltip": "添加新的 保险库"
+        "tooltip": "添加新的保险库"
       }
     },
     "integration_viewer": {
-      "heading": "Vault 密钥",
+      "heading": "保险库密钥",
       "banner": {
-        "text": "您的 <1>{provider}</1> 不再连接。重新验证以解决此 密钥。"
+        "text": "您的 <1>{provider}</1> 不再连接。重新验证以解决此密钥。"
       },
       "reauthenticate": "重新进行身份验证"
     },
     "limit_reached_banner": {
       "contact_support": "联系支持人员",
       "limit_exceeded": {
-        "without_link": "您已达到计划允许的 保险库 秘密的最大数量。联系支持人员以获得进一步的帮助。",
-        "with_link": "您已达到计划允许的 保险库 秘密的最大数量。<1> </1><2>联系支持</2>以获取进一步帮助。"
+        "without_link": "您已达到计划允许的保险库秘密的最大数量。联系支持人员以获得进一步的帮助。",
+        "with_link": "您已达到计划允许的保险库秘密的最大数量。<1> </1><2>联系支持</2>以获取进一步帮助。"
       }
     },
     "unsupported_agent_banner": {
-      "text": "切换到 桌面代理 或桌面应用程序以访问您的 保险库 秘密。",
+      "text": "切换到桌面代理或桌面应用程序以访问您的保险库秘密。",
       "learn_more": "了解更多"
     },
     "provider_icon": {
@@ -547,30 +547,30 @@
     },
     "provider_menu": {
       "not_admin": {
-        "tooltip": "您的团队管理员尚未授权任何 Vault。"
+        "tooltip": "您的团队管理员尚未授权任何保险库。"
       },
       "is_admin": {
-        "tooltip": "从 保险库 设置授权您的 保险库"
+        "tooltip": "从保险库设置授权您的保险库"
       },
-      "text": "链接 密钥 以从现有 保险库 获取值"
+      "text": "链接密钥以从现有保险库获取值"
     }
   },
   "settings": {
-    "title": "保险库 设置",
+    "title": "保险库设置",
     "tabs": {
       "settings": "设置",
       "manageAccess": "管理访问权限"
     },
     "manageAccess": {
       "scripts_enabled": {
-        "heading": "开始在脚本中使用 保险库 秘密",
-        "text": "运行一个 请求，它使用 脚本 和您的 保险库 秘密。 请求 会提示您允许访问。<br/>您允许后，您可以在此处管理 保险库 权限。"
+        "heading": "开始在脚本中使用保险库秘密",
+        "text": "运行一个请求，它使用脚本和您的保险库秘密。请求会提示您允许访问。<br/>您允许后，您可以在此处管理保险库权限。"
       },
       "scripts_disabled": {
-        "heading": "首先配置您的 保险库",
-        "text": "首先在“设置”中配置您的 保险库 以允许脚本访问您的机密。"
+        "heading": "首先配置您的保险库",
+        "text": "首先在“设置”中配置您的保险库以允许脚本访问您的机密。"
       },
-      "helperText": "管理哪些工作区和集合可以在脚本中使用您的 保险库 机密。重置访问权限以撤销它以供将来运行。",
+      "helperText": "管理哪些工作区和集合可以在脚本中使用您的保险库机密。重置访问权限以撤销它以供将来运行。",
       "reset_access": "重置访问权限",
       "grant_access": "授予访问权限",
       "no_preferences": "没有可用的偏好数据。"
@@ -586,11 +586,11 @@
       },
       "form": {
         "heading": "设置 HashiCorp 集成",
-        "text": "设置 HashiCorp 保险库 将允许所有 团队 成员进行身份验证并将机密链接到其 Postman 保险库。",
+        "text": "设置 HashiCorp 保险库将允许所有团队成员进行身份验证并将机密链接到其 Postman 保险库。",
         "learn_more": "了解更多",
         "oidc_label": "OIDC 提供商 URL",
         "validation_message": "需要一个有效的 URL",
-        "jwt_auth_label": "JWT 认证 路径",
+        "jwt_auth_label": "JWT 认证路径",
         "client_id_label": "客户端 ID",
         "role_label": "角色",
         "scopes_label": "范围",
@@ -622,42 +622,42 @@
         "open_settings": "打开设置"
       },
       "tooltip": {
-        "not_authorised": "您的 团队 管理员 尚未授权 保险库。"
+        "not_authorised": "您的团队管理员尚未授权保险库。"
       },
       "container": {
-        "title": "Postman Vault"
+        "title": "Postman 保险库"
       },
       "key": {
-        "heading": "保险库 键",
+        "heading": "保险库键",
         "text": "当您注销并登录时，将需要您帐户的唯一密钥。"
       },
       "encryption": {
         "heading": "加密"
       },
       "mask_secrets": {
-        "heading": "掩码 保险库 秘密",
-        "text": "默认情况下自动屏蔽 控制台 中的秘密。"
+        "heading": "掩码保险库秘密",
+        "text": "默认情况下自动屏蔽控制台中的秘密。"
       },
       "support_in_scripts": {
-        "heading": "允许脚本中存在 保险库 秘密",
-        "text": "允许脚本在 请求 执行期间安全地访问 保险库 机密。",
+        "heading": "允许脚本中存在保险库秘密",
+        "text": "允许脚本在请求执行期间安全地访问保险库机密。",
         "modal": {
-          "title": "允许 保险库 密钥 访问脚本",
-          "content": "允许此操作将使脚本能够访问您的 保险库 机密，以便它们可以运行需要它们的请求。<br/>查看任何第三方脚本以确认它们可以安全使用。"
+          "title": "允许保险库密钥访问脚本",
+          "content": "允许此操作将使脚本能够访问您的保险库机密，以便它们可以运行需要它们的请求。<br/>查看任何第三方脚本以确认它们可以安全使用。"
         }
       },
       "integrations": {
         "heading": "集成",
-        "text": "已为所有 团队 成员配置此 保险库 集成"
+        "text": "已为所有团队成员配置此保险库集成"
       },
       "secret_expiration": {
-        "heading": "密钥 过期时间",
+        "heading": "密钥过期时间",
         "text": "设置来自已集成应用的缓存密钥的有效期。超过该时长后，我们将自动重新获取密钥数据。"
       },
       "cache_validation_message": "应在 5-60 分钟之间",
       "no_user_key": {
-        "heading": "首先配置您的 保险库",
-        "text": "首先配置您的 保险库 以安全地存储您的敏感数据。配置完成后，您可以在此处管理 保险库 设置。"
+        "heading": "首先配置您的保险库",
+        "text": "首先配置您的保险库以安全地存储您的敏感数据。配置完成后，您可以在此处管理保险库设置。"
       },
       "desktop_agent_required": {
         "heading": "需要 Postman 桌面代理",
@@ -679,25 +679,25 @@
   "container_main": {
     "error": {
       "message": "出了点问题。",
-      "key_mismatch": "此设备上存储的密钥是用另一个 Vault 密钥加密的，Postman 无法打开。数据并未被删除。可刷新后重试，或清空后用当前密钥重新开始。"
+      "key_mismatch": "此设备上存储的密钥是用另一个保险库密钥加密的，Postman 无法打开。数据并未被删除。可刷新后重试，或清空后用当前密钥重新开始。"
     },
     "button": {
       "refresh": "刷新",
-      "clear_vault": "清空 Vault",
+      "clear_vault": "清空保险库",
       "settings": "设置",
       "set_up_hashicorp": "设置 HashiCorp 集成"
     },
     "empty_vault": {
       "heading": "嘘…这本应该是个秘密…",
-      "text": "我们正在开发一项名为 保险库 的新功能，该功能很快将使您能够在本地安全地存储和管理您的敏感信息。"
+      "text": "我们正在开发一项名为保险库的新功能，该功能很快将使您能够在本地安全地存储和管理您的敏感信息。"
     },
     "settings_tab": {
-      "title": "保险库 设置"
+      "title": "保险库设置"
     },
-    "hashicorp_help_message": "想要为您的 团队 配置 HashiCorp 保险库 吗？",
+    "hashicorp_help_message": "想要为您的团队配置 HashiCorp 保险库吗？",
     "share_feedback": {
       "text": "分享反馈",
-      "tooltip": "分享您对新 保险库 体验的反馈，帮助我们做得更好。"
+      "tooltip": "分享您对新保险库体验的反馈，帮助我们做得更好。"
     }
   },
   "aws": {
@@ -712,7 +712,7 @@
       },
       "auth_fail": {
         "title": "认证失败",
-        "invalid_response": "尝试获取 令牌 时收到无效 响应",
+        "invalid_response": "尝试获取令牌时收到无效响应",
         "invalid_creds": "请检查您的凭据并重试。",
         "invalid_mfa_data": "MFA 数据无效",
         "failed_fetch_mfa": "无法获取 MFA 数据"
@@ -725,7 +725,7 @@
           "long_lived": "长期有效",
           "temporary": "临时",
           "access_key": "访问密钥",
-          "secret_key": "密钥 键",
+          "secret_key": "密钥键",
           "region": "地区",
           "serial_no": "序列号",
           "mfa_token": "MFA 令牌",
@@ -741,16 +741,16 @@
     "secret_editor": {
       "labels": {
         "secret_arn": "密钥 ARN",
-        "secret_arn_info": "出现在 保险库 的 密钥 详细信息页面上",
+        "secret_arn_info": "出现在保险库的密钥详细信息页面上",
         "role_arn": "角色 ARN （可选）",
-        "role_arn_info": "获取此 密钥 时要代入的 角色 的 ARN",
+        "role_arn_info": "获取此密钥时要代入的角色的 ARN",
         "version": "版本（可选）",
         "version_info": "密钥版本",
-        "secret_key": "密钥 键"
+        "secret_key": "密钥键"
       },
       "validation_message": {
         "invalid_arn": "无效 ARN",
-        "invalid_role": "无效 角色",
+        "invalid_role": "无效角色",
         "key_empty": "键不能为空"
       },
       "advanced_settings": {
@@ -758,7 +758,7 @@
         "show": "显示高级设置"
       },
       "radio_button": {
-        "label": "密钥 类型",
+        "label": "密钥类型",
         "plaintext": "明文",
         "key_value": "键/值"
       },
@@ -772,43 +772,43 @@
   },
   "hover_tooltip": {
     "secret_disabled": {
-      "message": "此 保险库 密钥 已禁用。使其能够访问其价值。",
-      "button": "启用 密钥"
+      "message": "此保险库密钥已禁用。使其能够访问其价值。",
+      "button": "启用密钥"
     },
     "secret_not_resolved": {
-      "message": "使用桌面应用程序或桌面代理来解决此 密钥。",
+      "message": "使用桌面应用程序或桌面代理来解决此密钥。",
       "button": "使用桌面代理"
     },
     "invalid_domain": {
-      "heading": "此 请求 的域不支持此 密钥",
-      "message": "此 保险库 密钥 已被锁定到特定域。您可以从 保险库 检查和编辑这些内容。",
+      "heading": "此请求的域不支持此密钥",
+      "message": "此保险库密钥已被锁定到特定域。您可以从保险库检查和编辑这些内容。",
       "button": "更新域"
     },
-    "placeholder": "输入 密钥 值",
+    "placeholder": "输入密钥值",
     "vault_disconnected": {
-      "heading": "无法解析链接的 密钥",
-      "message": "链接的 {providerName} 已断开。重新验证或确保连接的帐户有权访问此 密钥。",
+      "heading": "无法解析链接的密钥",
+      "message": "链接的 {providerName} 已断开。重新验证或确保连接的帐户有权访问此密钥。",
       "button": "重新验证"
     },
     "missing_value": {
-      "heading": "保险库 密钥 缺失值",
-      "message": "输入 密钥 的值，我们将在您的 保险库 中更新它。",
+      "heading": "保险库密钥缺失值",
+      "message": "输入密钥的值，我们将在您的保险库中更新它。",
       "button": "更新密钥"
     },
     "user_key_missing": {
-      "heading": "输入 保险库 键即可访问此 密钥",
-      "message": "出于安全原因，您需要在注销并再次登录后输入 保险库 密钥。",
+      "heading": "输入保险库键即可访问此密钥",
+      "message": "出于安全原因，您需要在注销并再次登录后输入保险库密钥。",
       "button": "访问保险库",
-      "placeholder": "输入 保险库 键"
+      "placeholder": "输入保险库键"
     },
     "secret_missing": {
-      "heading": "添加 保险库 密钥",
-      "message": "看来这个 保险库 密钥 丢失了。不用担心，只需输入其值，我们会将其添加到您的 保险库 中。",
+      "heading": "添加保险库密钥",
+      "message": "看来这个保险库密钥丢失了。不用担心，只需输入其值，我们会将其添加到您的保险库中。",
       "button": "添加密钥"
     },
     "vault_not_present": {
-      "heading": "开始使用 保险库 在本地系统上安全地保存机密",
-      "message": "只需添加一个值即可。我们将创建您的本地加密 保险库 并在其中添加此 密钥。",
+      "heading": "开始使用保险库在本地系统上安全地保存机密",
+      "message": "只需添加一个值即可。我们将创建您的本地加密保险库并在其中添加此密钥。",
       "button": "添加密钥"
     },
     "password": {
@@ -818,9 +818,9 @@
       "cancel": "取消"
     },
     "error_message": {
-      "empty_secret_value": "输入 密钥 的值。",
-      "empty_vault_key": "输入 保险库 键。",
-      "invalid_vault_key": "保险库 键无效。再试一次。"
+      "empty_secret_value": "输入密钥的值。",
+      "empty_vault_key": "输入保险库键。",
+      "invalid_vault_key": "保险库键无效。再试一次。"
     }
   },
   "variable_kv_pairs": {
@@ -840,57 +840,57 @@
       "arn": "ARN",
       "role": "角色",
       "version": "版本",
-      "secret_type": "密钥 类型",
-      "secret_key": "密钥 键",
+      "secret_type": "密钥类型",
+      "secret_key": "密钥键",
       "key_value": "键/值",
       "plaintext": "明文"
     },
     "onePassword": {
-      "secret_reference": "密钥 引用"
+      "secret_reference": "密钥引用"
     }
   },
   "sidebar": {
-    "title": "Postman Vault",
+    "title": "Postman 保险库",
     "nav_label": "保险库",
-    "cloud_vault_title": "个人 保险库",
+    "cloud_vault_title": "个人保险库",
     "vault_actions": {
       "rename": "重命名",
       "delete": "删除"
     },
     "local_vault_actions": {
-      "move_to_cloud": "复制到 个人 保险库",
+      "move_to_cloud": "复制到个人保险库",
       "export": "出口"
     },
-    "move_to_cloud": "移至 个人 保险库",
+    "move_to_cloud": "移至个人保险库",
     "create_vault": {
-      "heading": "创建 个人 保险库",
-      "tooltip": "创建新的 个人 保险库",
-      "tooltip_limit_reached": "您已用尽计划中允许的 个人 保险库的最大数量。",
-      "personal": "个人 Vault",
+      "heading": "创建个人保险库",
+      "tooltip": "创建新的个人保险库",
+      "tooltip_limit_reached": "您已用尽计划中允许的个人保险库的最大数量。",
+      "personal": "个人保险库",
       "tooltip_creating": "创造...",
       "tooltip_dropdown": "创建保险库",
       "aria_label": "创建保险库"
     },
     "create_personal_vault": {
-      "tooltip": "创建 个人 保险库"
+      "tooltip": "创建个人保险库"
     },
     "locked_state": {
-      "title": "保险库 已锁定",
-      "description": "解锁您的 保险库 以访问您的 个人 秘密",
+      "title": "保险库已锁定",
+      "description": "解锁您的保险库以访问您的个人秘密",
       "unlock_button": "解锁保险库"
     },
-    "search_placeholder": "搜索 保险库",
-    "search_placeholder_personal": "搜索 个人 保险库",
+    "search_placeholder": "搜索保险库",
+    "search_placeholder_personal": "搜索个人保险库",
     "tabs": {
-      "personal": "个人 保险库"
+      "personal": "个人保险库"
     },
     "loading": "加载中...",
     "disabled": {
-      "title": "保险库 不可用",
-      "description": "目前，该 工作区 的 保险库 功能已禁用。请联系您的 工作区 管理员以获取更多信息。"
+      "title": "保险库不可用",
+      "description": "目前，该工作区的保险库功能已禁用。请联系您的工作区管理员以获取更多信息。"
     },
     "error": {
-      "heading": "无法加载 保险库",
+      "heading": "无法加载保险库",
       "description": "请重试",
       "refresh": "重试"
     },
@@ -899,7 +899,7 @@
       "personal_description": "将敏感数据安全地存储在云中。"
     },
     "search_empty_state": {
-      "title": "保险库 未找到",
+      "title": "保险库未找到",
       "description": "请使用不同的关键字重试"
     }
   },
@@ -907,7 +907,7 @@
     "clear": "清除",
     "export": "出口",
     "import": "进口",
-    "export_footer": "请联系您的 团队 管理员 为您的 团队 启用 保险库 导出。"
+    "export_footer": "请联系您的团队管理员为您的团队启用保险库导出。"
   },
   "clear_vault_confirmation_modal": {
     "heading": "清除保险库？",
@@ -915,7 +915,7 @@
   },
   "export_modal": {
     "heading": "导出保险库",
-    "description": "将 保险库 下载为 JSON 文件",
+    "description": "将保险库下载为 JSON 文件",
     "export_type": {
       "encrypted": "加密（推荐）",
       "encrypted_description": "该文件将使用密码加密。您需要此密码才能将其导入回 Postman。",
@@ -935,16 +935,16 @@
       "title": "秘密将以纯文本形式可见"
     },
     "success": {
-      "title": "保险库 导出成功",
-      "description": "您的 保险库 已下载到您的计算机上。"
+      "title": "保险库导出成功",
+      "description": "您的保险库已下载到您的计算机上。"
     },
     "error": {
       "title": "导出失败",
-      "description": "导出 保险库 时出现问题。请再试一次。"
+      "description": "导出保险库时出现问题。请再试一次。"
     },
     "not_allowed": {
-      "title": "保险库 导出已禁用",
-      "description": "您的 团队 禁用了 保险库 导出。请联系您的 团队 管理员。"
+      "title": "保险库导出已禁用",
+      "description": "您的团队禁用了保险库导出。请联系您的团队管理员。"
     },
     "cancel": "取消",
     "export": "出口",
@@ -952,20 +952,20 @@
     "export_link_content": "导出保险库"
   },
   "move_to_cloud_modal": {
-    "title": "将本地 保险库 机密移至 个人 保险库",
-    "description": "通过端到端加密跨设备安全地同步您的 保险库 机密。使用 保险库 密钥从任何 会话 访问您的同步机密。",
-    "choose_vault_placeholder": "选择 个人 保险库",
-    "choose_vault_empty_state_message": "未找到 个人 保险库。提供 保险库 名称以创建新的 个人 保险库。例如“备份”",
+    "title": "将本地保险库机密移至个人保险库",
+    "description": "通过端到端加密跨设备安全地同步您的保险库机密。使用保险库密钥从任何会话访问您的同步机密。",
+    "choose_vault_placeholder": "选择个人保险库",
+    "choose_vault_empty_state_message": "未找到个人保险库。提供保险库名称以创建新的个人保险库。例如“备份”",
     "move_confirm_cta": "移动秘密",
     "cancel_cta": "保守秘密",
     "user_signout": {
-      "message": "{count, plural, =1 {您有 {count} 个不会被保留的 保险库 变量。} other {您有 {count} 个不会被保留的 保险库 变量。}}",
-      "link_content": "复制到 个人 保险库"
+      "message": "{count, plural, =1 {您有 {count} 个不会被保留的保险库变量。} other {您有 {count} 个不会被保留的保险库变量。}}",
+      "link_content": "复制到个人保险库"
     }
   },
   "password_import_modal": {
     "heading": "输入密码",
-    "description": "此 保险库 文件“{vaultName}”受密码保护。请输入密码进行导入。",
+    "description": "此保险库文件“{vaultName}”受密码保护。请输入密码进行导入。",
     "password": {
       "label": "密码",
       "required": "需要密码",
@@ -976,8 +976,8 @@
     "decrypting": "正在解密..."
   },
   "conflict_modal": {
-    "heading": "密钥 已经存在",
-    "description": "带有键“{variableName}”的 保险库 密钥 已存在。",
+    "heading": "密钥已经存在",
+    "description": "带有键“{variableName}”的保险库密钥已存在。",
     "choose_action": "你想做什么？",
     "replace": "代替",
     "keep": "保持",
@@ -985,45 +985,45 @@
   },
   "toast": {
     "feature_not_available": "{feature} 不可用",
-    "no_active_workspace": "无法创建 保险库：无活动 工作区",
+    "no_active_workspace": "无法创建保险库：无活动工作区",
     "personal": {
       "create_vault": {
-        "success": "个人 Vault 创建成功",
-        "error": "创建 保险库 时出现问题。请再试一次。"
+        "success": "个人保险库创建成功",
+        "error": "创建保险库时出现问题。请再试一次。"
       },
       "delete_vault": {
-        "success": "个人 保险库 删除成功",
-        "error": "删除 保险库 时出现问题。请再试一次。"
+        "success": "个人保险库删除成功",
+        "error": "删除保险库时出现问题。请再试一次。"
       },
       "rename_vault": {
-        "success": "个人 保险库 重命名成功",
-        "error": "重命名 保险库 时出现问题。请再试一次。"
+        "success": "个人保险库重命名成功",
+        "error": "重命名保险库时出现问题。请再试一次。"
       },
       "save_vault": {
-        "success": "个人 Vault 保存成功",
-        "error": "保存 保险库 时出现问题。请再试一次。"
+        "success": "个人保险库保存成功",
+        "error": "保存保险库时出现问题。请再试一次。"
       }
     },
     "shared": {
       "create_vault": {
-        "success": "共享 保险库 创建成功",
-        "error": "创建 保险库 时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享 保险库 执行此操作。"
+        "success": "共享保险库创建成功",
+        "error": "创建保险库时出现问题。请再试一次。",
+        "forbidden": "您无权对此共享保险库执行此操作。"
       },
       "delete_vault": {
         "success": "共享保险库删除成功",
-        "error": "删除 保险库 时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享 保险库 执行此操作。"
+        "error": "删除保险库时出现问题。请再试一次。",
+        "forbidden": "您无权对此共享保险库执行此操作。"
       },
       "rename_vault": {
         "success": "共享保险库重命名成功",
-        "error": "重命名 保险库 时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享 保险库 执行此操作。"
+        "error": "重命名保险库时出现问题。请再试一次。",
+        "forbidden": "您无权对此共享保险库执行此操作。"
       },
       "save_vault": {
-        "success": "共享 保险库 保存成功",
-        "error": "保存 保险库 时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享 保险库 执行此操作。"
+        "success": "共享保险库保存成功",
+        "error": "保存保险库时出现问题。请再试一次。",
+        "forbidden": "您无权对此共享保险库执行此操作。"
       }
     },
     "local": {
@@ -1032,14 +1032,14 @@
         "error": "导出机密时出现问题。请再试一次。"
       },
       "clear_vault": {
-        "success": "保险库 清除成功",
-        "error": "清除 保险库 时出现问题。请再试一次。"
+        "success": "保险库清除成功",
+        "error": "清除保险库时出现问题。请再试一次。"
       }
     }
   },
   "workspace_visibility": {
     "clear_shared_vault_secrets": {
-      "description": "如果此 工作区 被设为公开，共享 保险库 中存储的所有机密将被自动清除，以防止公开泄露。"
+      "description": "如果此工作区被设为公开，共享保险库中存储的所有机密将被自动清除，以防止公开泄露。"
     }
   },
   "team_shared_vault": {
@@ -1075,7 +1075,7 @@
       "delete": "删除",
       "edit_link": "编辑外部密钥关联",
       "edit_secret": "编辑密钥",
-      "empty": "暂无共享 Vault 密钥。",
+      "empty": "暂无共享保险库密钥。",
       "empty_filtered": "没有符合筛选条件的密钥。",
       "header_allowed_domains": "允许的域名",
       "header_created": "创建时间",
@@ -1184,8 +1184,8 @@
       "workspace_only": "仅限工作区"
     },
     "tabs": {
-      "external": "外部 Vault",
-      "managed": "Postman Vault"
+      "external": "外部保险库",
+      "managed": "Postman 保险库"
     },
     "user_picker": {
       "label": "团队成员",

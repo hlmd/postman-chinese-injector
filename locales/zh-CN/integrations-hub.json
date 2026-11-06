@@ -272,7 +272,7 @@
       "slackWorkspacePlaceholder": "选择工作区",
       "channelLabel": "{appName} 频道",
       "channelPlaceholder": "选择频道",
-      "channelConnected": "— 已连接",
+      "channelConnected": "—已连接",
       "channelLoadError": "频道加载失败，请重试。",
       "frequencyLabel": "发送通知的方式…",
       "frequencyRealtime": "实时发送",
@@ -319,7 +319,7 @@
         "limitReached": "此工作区的频道集成数量已达上限。",
         "slackWorkspaceMismatch": "你的团队已连接到另一个 {appName} 工作区。请先断开该连接，再连接此工作区。",
         "workspaceNotEligible": "此类工作区不支持频道集成。",
-        "workspaceUpdateEventOnly": "在公共工作区中，集成只能向此频道通知工作区更新。",
+        "workspaceUpdateEventOnly": "在公开工作区中，集成只能向此频道通知工作区更新。",
         "destinationTypeImmutable": "此集成的目标类型无法更改。请断开后重新连接一个新的集成。",
         "reconnectToChangeWorkspace": "要将此集成移到另一个 {appName} 工作区，请先断开再重新连接。"
       }

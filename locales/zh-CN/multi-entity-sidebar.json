@@ -33,7 +33,7 @@
   },
   "unresolved_entity": {
     "popover_title": "更新您的应用程序以查看此内容",
-    "popover_description": "此 {entityType} 需要 Postman 的较新 版本。",
+    "popover_description": "此 {entityType} 需要 Postman 的较新版本。",
     "popover_update_button": "更新应用程序",
     "popover_title_web": "无法显示此内容",
     "popover_description_web": "我们正在努力添加对此 {entityType} 的支持。请尽快回来查看。"

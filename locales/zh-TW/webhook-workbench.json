@@ -103,7 +103,7 @@
         "selector_label": "關聯環境",
         "confirmation": {
           "title": "更改環境？",
-          "description": "如果現有的 Webhook 身份驗證或 回應 行為依賴於 環境 變數，這可能會導致其停止工作。",
+          "description": "如果現有的 Webhook 身份驗證或回應行為依賴於環境變數，這可能會導致其停止工作。",
           "cancel": "取消",
           "confirm": "確認"
         }
@@ -117,8 +117,8 @@
         "api_key_label": "API 金鑰",
         "username_label": "使用者名稱",
         "password_label": "密碼",
-        "load_error_message": "端點 身份驗證設定不可用。",
-        "load_error_disabled_tooltip": "無法編輯 端點 身份驗證設定，因為它們載入失敗。"
+        "load_error_message": "端點身份驗證設定不可用。",
+        "load_error_disabled_tooltip": "無法編輯端點身份驗證設定，因為它們載入失敗。"
       }
     },
     "routing_settings": {
@@ -128,7 +128,7 @@
       "disabled": "已停用",
       "not_available": "不適用",
       "event_endpoint_label": "收到的事件",
-      "response_target_label": "回應 目標",
+      "response_target_label": "回應目標",
       "save_success_toast": "已儲存路由規則",
       "tunnel_forwarding_failure_toast": "無法建立本地轉發。如果另一個 Postman 應用程式或 CLI 實例開啟，它可能已經在處理轉發。",
       "web_tunnel_forwarding_failure_toast": "此 Webhook 已啟用本地轉發，但僅在桌面應用程式上受支援",
@@ -138,14 +138,14 @@
       },
       "forward": {
         "title": "向前",
-        "description": "將事件轉發到本地主機或 公開 URL。",
+        "description": "將事件轉發到本地主機或公開 URL。",
         "endpoint_label": "轉發端點",
         "endpoint_placeholder": "https://example.com/webhook",
         "forward_locally_label": "本地轉發"
       },
       "respond": {
         "title": "回應",
-        "description": "針對此 Webhook 上收到的事件傳送 回應。",
+        "description": "針對此 Webhook 上收到的事件傳送回應。",
         "status_code_label": "狀態碼",
         "status_code_placeholder": "200",
         "headers_label": "請求頭",
@@ -168,11 +168,11 @@
         "forward_url_required": "輸入轉發 URL 以建立路由規則。",
         "forward_url_required_short": "需要轉發 URL。",
         "unsupported_forwarding_path": "尚不支援路徑參數和萬用字元。支援即將到來。",
-        "self_forwarding_endpoint": "Webhook 公開 端點 URL 不能用作轉發目標。",
-        "local_forward_endpoint_on_web": "Web 上不支援本地轉發。使用桌面應用程式、Postman CLI 或 公開 端點。",
+        "self_forwarding_endpoint": "Webhook 公開端點 URL 不能用作轉發目標。",
+        "local_forward_endpoint_on_web": "Web 上不支援本地轉發。使用桌面應用程式、Postman CLI 或公開端點。",
         "invalid_status_code": "輸入 100 到 599 之間的狀態程式碼。",
         "invalid_status_code_short": "狀態程式碼必須介於 100 和 599 之間。",
-        "static_body_too_long": "回應 正文不能超過 {maxLength} 個字元。",
+        "static_body_too_long": "回應正文不能超過 {maxLength} 個字元。",
         "static_header_too_long": "標頭鍵/值不能超過 {maxLength} 個字元。",
         "header_key_required": "設定標頭值時需要標頭鍵。"
       }
@@ -262,7 +262,7 @@
     "not_found": {
       "title": "未找到 Webhook",
       "description": "此 Webhook 不可用或可能已被刪除。",
-      "go_to_workspace": "轉到 工作區 概述",
+      "go_to_workspace": "轉到工作區概述",
       "go_to_workspaces": "檢視所有工作區"
     },
     "permissions": {

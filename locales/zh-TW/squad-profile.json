@@ -1,7 +1,7 @@
 {
   "error": {
     "title": "出了點問題",
-    "description": "我們無法載入 團隊 配置檔案。請再試一次。",
+    "description": "我們無法載入團隊配置檔案。請再試一次。",
     "retry": "再試一次"
   },
   "breadcrumbs": {
@@ -11,7 +11,7 @@
   "no_access": {
     "title": "您無權訪問",
     "description": "只有團隊成員可以檢視此頁面。",
-    "request_raised": "您已請求加入此 團隊。一旦獲得批准，您將自動加入。"
+    "request_raised": "您已請求加入此團隊。一旦獲得批准，您將自動加入。"
   },
   "avatar_stack": {
     "more": "+{count} 更多"
@@ -21,7 +21,7 @@
     "title_one": "{count} 位成員",
     "title_other": "{count} 成員",
     "trigger_label": "顯示成員",
-    "private_user": "私有 使用者"
+    "private_user": "私有使用者"
   },
   "tabs": {
     "workspaces": {
@@ -30,7 +30,7 @@
       "search_limit": "顯示前 500 個結果。最佳化您的搜尋以找到更多資訊。",
       "empty_state": {
         "text": "還沒有工作區",
-        "subtext": "建立或移動現有工作區到此 團隊 即可開始。"
+        "subtext": "建立或移動現有工作區到此團隊即可開始。"
       }
     },
     "members": {
@@ -38,7 +38,7 @@
       "add_button": "新增成員",
       "empty_state": {
         "text": "還沒有會員",
-        "subtext": "加入或 邀請 隊友加入此 團隊 即可開始。"
+        "subtext": "加入或邀請隊友加入此團隊即可開始。"
       }
     }
   }

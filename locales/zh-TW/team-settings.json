@@ -1,7 +1,7 @@
 {
   "sandbox_terms_modal": {
-    "heading": "啟用沙盒 環境",
-    "intro": "啟用即表示您承認並同意以下使用要求適用於您的組織對沙盒 環境 的使用，作為您與 Postman 的協議中引用的文件的一部分：",
+    "heading": "啟用沙盒環境",
+    "intro": "啟用即表示您承認並同意以下使用要求適用於您的組織對沙盒環境的使用，作為您與 Postman 的協議中引用的文件的一部分：",
     "bullet_1": "提供沙箱僅用於測試和評估目的",
     "bullet_2": "客戶只能在沙盒中使用測試資料或虛擬資料；不得提交生產資料和個人資料",
     "bullet_3": "Postman 可以隨時刪除沙盒資料",
@@ -9,13 +9,13 @@
     "bullet_5": "使用和功能限制可能適用",
     "accept_button": "接受並啟用",
     "decline_button": "取消",
-    "accept_error": "無法啟用沙盒 環境。請再試一次。"
+    "accept_error": "無法啟用沙盒環境。請再試一次。"
   },
   "common": {
-    "readonly_tooltip_message": "此設定由您的組織管理，無法為您的 團隊 進行更改。",
+    "readonly_tooltip_message": "此設定由您的組織管理，無法為您的團隊進行更改。",
     "no_permission_tooltip": "您沒有權限執行此操作。",
-    "upgrade_to_invite_people": "升級以邀請人員加入 團隊",
-    "upgrade_to_add_people": "升級以將人員新增到 團隊"
+    "upgrade_to_invite_people": "升級以邀請人員加入團隊",
+    "upgrade_to_add_people": "升級以將人員新增到團隊"
   },
   "request_to_join_approval": {
     "completed_message": "此申請已處理。",
@@ -45,13 +45,13 @@
   },
   "team_resources": {
     "blank_state": {
-      "title": "需要對 團隊 資源進行更多控制？",
+      "title": "需要對團隊資源進行更多控制？",
       "description": "使用 Postman <1>Enterprise</1> 計劃解鎖工作區、集合等的進階設定。",
       "upgrade_to_enterprise": "升級到企業版",
       "learn_more": "瞭解更多"
     },
     "blank_state_with_external_package": {
-      "title": "需要對 團隊 資源進行更多控制？",
+      "title": "需要對團隊資源進行更多控制？",
       "description": "使用 Postman <1>Enterprise</1> 計劃解鎖工作區、集合等的進階設定。"
     },
     "workspace_management": {
@@ -67,29 +67,29 @@
       },
       "changes_saved": "更改已儲存",
       "breadcrumbs": {
-        "team_resources": "團隊 資源",
+        "team_resources": "團隊資源",
         "workspaces": "工作區"
       },
-      "title": "工作區 管理",
-      "description": "為 團隊 成員提供精細控制，使其更容易",
+      "title": "工作區管理",
+      "description": "為團隊成員提供精細控制，使其更容易",
       "learn_more": {
         "prefix": "管理工作區",
         "link": "瞭解更多"
       },
       "description_suffix": "",
       "people_can_create_workspace": {
-        "label": "誰可以建立 {lower} 範圍的內部工作區？",
+        "label": "誰可以建立團隊範圍的內部工作區？",
         "options": {
           "all_members": {
-            "label": "所有 {lower} 成員",
+            "label": "所有團隊成員",
             "helper_text": "合作伙伴和嘉賓除外。"
           },
           "specifics": {
             "label": "特定的人或群體",
-            "helper_text": "其他 {lower} 成員需要獲得他們的批准。"
+            "helper_text": "其他團隊成員需要獲得他們的批准。"
           },
           "company_systems": {
-            "label": "公司系統處理 工作區 建立",
+            "label": "公司系統處理工作區建立",
             "helper_text": "只有選定的人員和組可以直接在 Postman 中建立工作區。"
           }
         }
@@ -106,16 +106,16 @@
       },
       "custom_message": {
         "label": "自訂訊息",
-        "helper_text": "當組織成員嘗試在 Postman 中建立 工作區 時向其顯示。",
-        "placeholder": "解釋為何禁止建立 工作區，以及使用者可以在哪裡請求建立 工作區..."
+        "helper_text": "當組織成員嘗試在 Postman 中建立工作區時向其顯示。",
+        "placeholder": "解釋為何禁止建立工作區，以及使用者可以在哪裡請求建立工作區..."
       },
       "save": "儲存更改",
       "cancel": "取消",
-      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+      "forbidden_message": "只有團隊管理員可以管理團隊中的資源。"
     },
     "tag_management": {
       "who_can_manage": {
-        "label": "誰可以在你的{lower}中建立、編輯或刪除標籤？",
+        "label": "誰可以在你的團隊中建立、編輯或刪除標籤？",
         "options": {
           "standard": {
             "label": "所有成員可建立，任何人不可編輯或刪除",
@@ -127,7 +127,7 @@
           },
           "fully_restricted": {
             "label": "指定人員或群組",
-            "helper_text": "僅所選人員或群組可建立、編輯或刪除標籤。其他{lower}成員仍可使用標籤。"
+            "helper_text": "僅所選人員或群組可建立、編輯或刪除標籤。其他團隊成員仍可使用標籤。"
           }
         }
       },
@@ -149,20 +149,20 @@
       "title": "集合",
       "description": "管理組織內集合的共享。",
       "breadcrumbs": {
-        "team_resources": "團隊 資源",
+        "team_resources": "團隊資源",
         "collections": "集合"
       },
       "allow_editors": "允許編輯者與訪客分享集合",
       "editors_can_share": "編輯者可以與訪客分享集合",
-      "enable_share_collection": "啟用後，編輯者可以與 {lower} 之外的人員共享集合。",
+      "enable_share_collection": "啟用後，編輯者可以與團隊之外的人員共享集合。",
       "sharing_with_guests": {
         "enabled": {
           "title": "啟用與訪客共享",
-          "description": "團隊 成員可以與 團隊 以外的人共享集合。"
+          "description": "團隊成員可以與團隊以外的人共享集合。"
         },
         "disabled": {
           "title": "停用與訪客共享",
-          "description": "團隊 成員無法與 團隊 以外的人共享集合。"
+          "description": "團隊成員無法與團隊以外的人共享集合。"
         }
       },
       "error": {
@@ -175,15 +175,15 @@
           "description": "獲取設定時發生錯誤"
         },
         "permission_denied": {
-          "title": "權限 被拒絕",
-          "description": "只有 團隊 管理員可以修改匯出設定"
+          "title": "權限被拒絕",
+          "description": "只有團隊管理員可以修改匯出設定"
         },
         "update_export_settings": {
           "title": "無法更新匯出設定",
           "description": "更新匯出設定時出錯。請再試一次。"
         }
       },
-      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。",
+      "forbidden_message": "只有團隊管理員可以管理團隊中的資源。",
       "block_exports": "阻止集合匯出",
       "block_exports_description": "啟用後，編輯者和檢視者將無法匯出集合。",
       "exports_blocked": {
@@ -197,14 +197,14 @@
     },
     "external_package_management": {
       "title": "外部包",
-      "description": "允許 團隊 成員在其腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
+      "description": "允許團隊成員在其腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
       "read_only_description": "在腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
       "breadcrumbs": {
-        "team_resources": "團隊 資源",
+        "team_resources": "團隊資源",
         "collections": "外部包"
       },
-      "allow_packages": "{upper} 成員可以使用外部包",
-      "allow_packages_description": "選擇 {lower} 成員是否可以不使用、全部或選定的外部包。",
+      "allow_packages": "團隊成員可以使用外部包",
+      "allow_packages_description": "選擇團隊成員是否可以不使用、全部或選定的外部包。",
       "read_only_package_description": "可以在腳本中使用的包。",
       "package_options": {
         "allow_all": "允許所有包",
@@ -213,7 +213,7 @@
       },
       "add_packages": {
         "title": "允許的包",
-        "description": "新增您的 {lower} 可以使用的軟體包列表。",
+        "description": "新增您的團隊可以使用的軟體包列表。",
         "learn_more": {
           "prefix": "學習",
           "link": "如何允許外部包"
@@ -224,17 +224,17 @@
           "empty": "輸入包名",
           "too_long": "封裝模式不得超過 {maxLength} 個字元",
           "invalid_registry": "包名稱必須以登入檔開頭（例如 npm: 或 jsr:）",
-          "invalid_format": "輸入有效的包名稱和 版本（例如 npm:lodash@1.1.0 或 npm:lodash@*）"
+          "invalid_format": "輸入有效的包名稱和版本（例如 npm:lodash@1.1.0 或 npm:lodash@*）"
         }
       },
       "banner": {
         "scope_restricted": {
           "title": "使用更多包",
-          "description": "請聯絡您的 管理員 以將更多軟體包新增到此列表中。"
+          "description": "請聯絡您的管理員以將更多軟體包新增到此列表中。"
         },
         "scope_none": {
           "title": "不允許使用外部包",
-          "description": "請聯絡您的 管理員 為您的 團隊 啟用外部包。"
+          "description": "請聯絡您的管理員為您的團隊啟用外部包。"
         },
         "upgrade_enterprise": {
           "title": "升級以管理允許的包",
@@ -251,18 +251,18 @@
       },
       "feature_not_available": {
         "title": "功能不可用",
-        "description": "外部包設定不適用於您的 團隊。"
+        "description": "外部包設定不適用於您的團隊。"
       },
       "private_packages": {
         "title": "私有 npm 包",
-        "description": "配置對 私有 npm 包的訪問。",
+        "description": "配置對私有 npm 包的訪問。",
         "learn_more": {
           "prefix": "學習",
-          "link": "如何新增 私有 包"
+          "link": "如何新增私有包"
         },
         "token_input": {
           "label": "令牌",
-          "placeholder": "輸入您的 令牌",
+          "placeholder": "輸入您的令牌",
           "delete_button_tooltip": "刪除令牌"
         },
         "scope_input": {
@@ -271,33 +271,33 @@
           "validation": {
             "empty": "範圍不能為空"
           },
-          "read_only_label": "私有 包範圍"
+          "read_only_label": "私有包範圍"
         },
         "save": "儲存"
       }
     },
     "vault_management": {
       "title": "保險庫",
-      "description": "管理 團隊 的 保險庫 設定、控制訪問並確保工作區中敏感資訊的安全。",
+      "description": "管理團隊的保險庫設定、控制訪問並確保工作區中敏感資訊的安全。",
       "breadcrumbs": {
-        "team_resources": "團隊 資源",
+        "team_resources": "團隊資源",
         "vault": "保險庫"
       },
-      "allow_export": "{upper} 成員可以匯出其 Vault 資料",
-      "allow_export_description": "啟用後，{lower} 成員可以從 保險庫 匯出其資料。",
+      "allow_export": "團隊成員可以匯出其保險庫資料",
+      "allow_export_description": "啟用後，團隊成員可以從保險庫匯出其資料。",
       "allow_encrypted_export": "允許加密匯出",
-      "allow_encrypted_export_description": "{upper} 成員可以加密匯出其 保險庫 資料。",
+      "allow_encrypted_export_description": "團隊成員可以加密匯出其保險庫資料。",
       "allow_unencrypted_export": "允許未加密匯出",
-      "allow_unencrypted_export_description": "{upper} 成員可以以明文形式匯出其 保險庫 資料。",
+      "allow_unencrypted_export_description": "團隊成員可以以明文形式匯出其保險庫資料。",
       "save": "儲存",
       "vault_export": {
         "enabled": {
-          "title": "保險庫 匯出已開啟",
-          "description": "您的 團隊 可以匯出其 保險庫 資料。"
+          "title": "保險庫匯出已開啟",
+          "description": "您的團隊可以匯出其保險庫資料。"
         },
         "disabled": {
-          "title": "保險庫 匯出已關閉",
-          "description": "您的 團隊 無法匯出其 保險庫 資料。"
+          "title": "保險庫匯出已關閉",
+          "description": "您的團隊無法匯出其保險庫資料。"
         }
       },
       "error": {
@@ -310,23 +310,23 @@
           "description": "獲取設定時發生錯誤"
         }
       },
-      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+      "forbidden_message": "只有團隊管理員可以管理團隊中的資源。"
     },
     "mock_management": {
       "title": "模擬伺服器",
       "description": "管理組織內的模擬伺服器",
       "breadcrumbs": {
-        "team_resources": "團隊 資源",
+        "team_resources": "團隊資源",
         "mock_servers": "模擬伺服器"
       },
-      "disable_public_mock": "{upper} 成員可以建立 公開模擬伺服器",
-      "disable_public_mock_description": "啟用後，{lower} 成員可以建立 公開 和 私有模擬伺服器。",
+      "disable_public_mock": "團隊成員可以建立公開模擬伺服器",
+      "disable_public_mock_description": "啟用後，團隊成員可以建立公開和私有模擬伺服器。",
       "public_mock_creation": {
         "enabled": {
-          "title": "啟用建立 公開模擬伺服器"
+          "title": "啟用建立公開模擬伺服器"
         },
         "disabled": {
-          "title": "停用建立 公開模擬伺服器"
+          "title": "停用建立公開模擬伺服器"
         }
       },
       "error": {
@@ -339,16 +339,16 @@
           "description": "獲取設定時發生錯誤"
         }
       },
-      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+      "forbidden_message": "只有團隊管理員可以管理團隊中的資源。"
     },
     "code_mock_management": {
       "title": "模擬伺服器服務",
       "description": "管理組織內的模擬伺服器",
       "require_approval": "發布公開模擬伺服器需要審批",
-      "require_approval_description": "啟用後，{lower} 成員建立的公開模擬伺服器必須經管理員稽核批准後才能發布。",
+      "require_approval_description": "啟用後，團隊成員建立的公開模擬伺服器必須經管理員稽核批准後才能發布。",
       "require_approval_disabled_tooltip": "啟用公開模擬伺服器服務以要求發布模擬伺服器時需審批。",
       "create_public_code_mocks": "建立公開模擬伺服器",
-      "create_public_code_mocks_description": "啟用後，{lower} 成員可建立可公開訪問的模擬伺服器。停用後，只能建立私有模擬伺服器。",
+      "create_public_code_mocks_description": "啟用後，團隊成員可建立可公開訪問的模擬伺服器。停用後，只能建立私有模擬伺服器。",
       "error": {
         "update_settings": {
           "title": "無法更新設定",
@@ -364,46 +364,46 @@
       "title": "現場會議",
       "description": "管理組織內的即時會話。",
       "breadcrumbs": {
-        "team_resources": "團隊 資源",
+        "team_resources": "團隊資源",
         "collections": "現場會議"
       },
       "allow_users": "允許使用者啟動即時會話",
-      "start_live_sessions": "{upper} 會員可以開始直播會議",
-      "enable_live_session": "這將使 {lower} 中的使用者能夠啟動即時會話。",
-      "when_enabled": "啟用後，{lower} 成員可以使用即時會話進行即時協作。",
+      "start_live_sessions": "團隊會員可以開始直播會議",
+      "enable_live_session": "這將使團隊中的使用者能夠啟動即時會話。",
+      "when_enabled": "啟用後，團隊成員可以使用即時會話進行即時協作。",
       "error": {
         "update_settings": {
           "title": "無法更新設定",
           "description": "只是一根電線有問題。請再試一次。"
         }
       },
-      "forbidden_message": "只有 團隊 管理員可以管理 團隊 中的資源。"
+      "forbidden_message": "只有團隊管理員可以管理團隊中的資源。"
     },
     "sandbox_team_management": {
-      "heading": "沙箱 團隊 成員",
-      "description": "將 團隊 中的成員新增到沙箱 團隊 中。",
-      "search_placeholder": "搜尋 團隊 成員以新增...",
-      "search_empty": "未找到 團隊 成員",
+      "heading": "沙箱團隊成員",
+      "description": "將團隊中的成員新增到沙箱團隊中。",
+      "search_placeholder": "搜尋團隊成員以新增...",
+      "search_empty": "未找到團隊成員",
       "add_button": "新增",
       "members_count": "{count, plural, one {# 名成員} other {# 名成員}}",
-      "empty_state": "沙箱 團隊 中還沒有成員。從上面的 團隊 新增成員。",
+      "empty_state": "沙箱團隊中還沒有成員。從上面的團隊新增成員。",
       "toast": {
-        "add_success": "已將 {count, plural, one {# 名成員} other {# 名成員}} 新增到沙箱 團隊。",
+        "add_success": "已將 {count, plural, one {# 名成員} other {# 名成員}} 新增到沙箱團隊。",
         "add_error": "無法新增 {count, plural, one {# 名成員} other {# 名成員}}。",
-        "no_slots": "沙箱 團隊 中沒有可用插槽。請在新增新成員之前釋放一個空位。"
+        "no_slots": "沙箱團隊中沒有可用插槽。請在新增新成員之前釋放一個空位。"
       }
     },
     "wrapper": {
-      "title": "{upper} 資源",
-      "description": "讓您更輕鬆地管理 {lower} 中的資源。",
+      "title": "團隊資源",
+      "description": "讓您更輕鬆地管理團隊中的資源。",
       "management_options": {
         "workspace": {
-          "title": "建立 {lower} 範圍的工作區",
-          "description": "定義是否可以在未經批准的情況下建立 {lower} 範圍的工作區。"
+          "title": "建立團隊範圍的工作區",
+          "description": "定義是否可以在未經批准的情況下建立團隊範圍的工作區。"
         },
         "collection": {
           "title": "與訪客分享",
-          "description": "定義是否可以與 {lower} 之外的人員共享集合。"
+          "description": "定義是否可以與團隊之外的人員共享集合。"
         },
         "mock": {
           "title": "管理模擬伺服器",
@@ -422,12 +422,12 @@
           "description": "定義是否可以匯出保險庫資料。"
         },
         "sandbox_team": {
-          "title": "管理沙箱 團隊",
-          "description": "將成員新增到沙箱 團隊。"
+          "title": "管理沙箱團隊",
+          "description": "將成員新增到沙箱團隊。"
         },
         "tags": {
           "title": "管理標籤",
-          "description": "設定誰可以在你的{lower}中建立、編輯或刪除標籤。"
+          "description": "設定誰可以在你的團隊中建立、編輯或刪除標籤。"
         },
         "organizations": {
           "title": "Organization",
@@ -510,11 +510,11 @@
     }
   },
   "team_access": {
-    "title": "團隊 訪問",
-    "description": "管理您組織中的人員如何加入此 團隊。",
-    "description_with_domain": "管理來自 @{domain} 的人員如何加入此 團隊。",
+    "title": "團隊訪問",
+    "description": "管理您組織中的人員如何加入此團隊。",
+    "description_with_domain": "管理來自 @{domain} 的人員如何加入此團隊。",
     "verify_email_banner": {
-      "title": "驗證您的電子郵件地址以管理 團隊 訪問設定",
+      "title": "驗證您的電子郵件地址以管理團隊訪問設定",
       "description": "我們向 {userEmail} 傳送了一封驗證電子郵件。",
       "resend_cta": "重新發送驗證郵件",
       "verified_cta": "我已驗證我的電子郵件"
@@ -522,14 +522,14 @@
     "join_via_link": {
       "settings": "資源連結設定",
       "title": "允許人們從資源連結自動加入",
-      "description": "來自 @{domain} 的人在訪問共享資源的連結時可以自動加入此 團隊。"
+      "description": "來自 @{domain} 的人在訪問共享資源的連結時可以自動加入此團隊。"
     },
     "team_discovery": {
-      "title": "使這個 團隊 可以被發現",
-      "description": "@{domain} 的人可以看到這個 團隊 和 請求 來加入。",
+      "title": "使這個團隊可以被發現",
+      "description": "@{domain} 的人可以看到這個團隊和請求來加入。",
       "auto_join": {
-        "title": "允許人們自動加入此 團隊",
-        "description": "來自 @{domain} 的人可以通過團隊發現自動加入這個 團隊。",
+        "title": "允許人們自動加入此團隊",
+        "description": "來自 @{domain} 的人可以通過團隊發現自動加入這個團隊。",
         "settings": "團隊加入設定",
         "domain_toggle_aria_label": "@{domain} 的自動加入",
         "all_domains": {
@@ -577,35 +577,35 @@
       "join_guidelines": {
         "title": "提出篩選問題",
         "label": "篩選問題",
-        "placeholder": "例如你為什麼想加入這個 團隊？",
+        "placeholder": "例如你為什麼想加入這個團隊？",
         "validation_message": "請將您的問題限制在 500 個字元以內",
         "save_cta": "儲存問題",
         "cancel_cta": "取消",
         "success_toast": {
           "title": "更改已儲存",
-          "description": "待定 團隊 會員在請求加入您的 團隊 時必須回答此問題。"
+          "description": "待定團隊會員在請求加入您的團隊時必須回答此問題。"
         },
         "error_toast": {
           "title": "無法儲存問題",
           "description": "儲存您的問題時出現問題。請再試一次。"
         }
       },
-      "settings": "團隊 發現設定"
+      "settings": "團隊發現設定"
     },
     "nudge": {
       "initial_toast": {
         "title": "邀請已傳送。讓@{domain} 的其他同事自動加入",
-        "description": "這樣您的同事就可以發現並自動加入您的 團隊。",
+        "description": "這樣您的同事就可以發現並自動加入您的團隊。",
         "enable_auto_join": "啟用自動加入",
         "view_settings": "檢視設定"
       },
       "enable_success_toast": {
-        "title": "您的 團隊 訪問設定已更新",
-        "description": "您的 團隊 會員現在將擁有更順暢的入職體驗",
+        "title": "您的團隊訪問設定已更新",
+        "description": "您的團隊會員現在將擁有更順暢的入職體驗",
         "view_settings": "檢視設定"
       },
       "enable_error_toast": {
-        "title": "無法更新 團隊 訪問設定",
+        "title": "無法更新團隊訪問設定",
         "description": "請重試或聯絡支援人員。"
       }
     }
@@ -613,8 +613,8 @@
   "readonly_members": {
     "editor_tag": "管理員",
     "readonly_tag": "只讀",
-    "editor_tooltip": "可以編輯所有共享工作區並管理成員、角色、計費和 團隊 設定。",
-    "readonly_tooltip": "可以檢視共享工作區，但無法進行更改或管理 團隊 設定。 個人 工作區不受影響。"
+    "editor_tooltip": "可以編輯所有共享工作區並管理成員、角色、計費和團隊設定。",
+    "readonly_tooltip": "可以檢視共享工作區，但無法進行更改或管理團隊設定。個人工作區不受影響。"
   },
   "orgs_access": {
     "title": "組織訪問",

@@ -8,12 +8,12 @@
       "unpublished_state": {
         "api_overview_accordion": {
           "helperText": {
-            "publisher": "让您的 团队 成员轻松发现和使用 API 的正确 版本。",
-            "requester": "让您的 团队 成员轻松发现和使用 API 的正确 版本。"
+            "publisher": "让您的团队成员轻松发现和使用 API 的正确版本。",
+            "requester": "让您的团队成员轻松发现和使用 API 的正确版本。"
           },
           "publishButton": {
             "addText": "添加到 API 网络",
-            "requestText": "请求 添加"
+            "requestText": "请求添加"
           }
         },
         "collection_overview": {
@@ -21,17 +21,17 @@
             "text": "发布到 API 网络"
           },
           "helperText": {
-            "publisher": "通过将集合发布到您的 团队 的内部 API 网络，使其可被发现。",
-            "requester": "通过将集合发布到您的 团队 的内部 API 网络，使其可被发现。"
+            "publisher": "通过将集合发布到您的团队的内部 API 网络，使其可被发现。",
+            "requester": "通过将集合发布到您的团队的内部 API 网络，使其可被发现。"
           },
           "publishButton": {
             "addText": "发布集合",
-            "requestText": "请求 发布"
+            "requestText": "请求发布"
           }
         },
         "workspace_settings": {
           "label": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           },
           "helperText": {
             "publisher": "让组织内的消费者更容易发现此工作区",
@@ -40,7 +40,7 @@
           "publishButton": {
             "text": "添加到网络",
             "addText": "添加到网络",
-            "requestText": "请求 添加"
+            "requestText": "请求添加"
           }
         },
         "api_overview": {
@@ -50,7 +50,7 @@
           },
           "publishButton": {
             "addText": "添加到 API 网络",
-            "requestText": "请求 添加"
+            "requestText": "请求添加"
           }
         }
       },
@@ -70,7 +70,7 @@
         },
         "workspace_settings": {
           "label": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           },
           "text": "在网络上查看"
         },
@@ -84,27 +84,27 @@
       },
       "pending_state": {
         "api_overview_accordion": {
-          "text": "添加到 私有 API 网络 请求 待处理"
+          "text": "添加到私有 API 网络请求待处理"
         },
         "collection_overview": {
           "heading": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           },
           "label": {
-            "text": "请求 正在审核中"
+            "text": "请求正在审核中"
           }
         },
         "workspace_settings": {
           "label": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           },
-          "text": "添加到网络 请求 待定"
+          "text": "添加到网络请求待定"
         },
         "api_overview": {
           "text": "私有 API 网络"
         },
         "body": {
-          "text": "{requesterName} 请求 已将其添加到网络以供审核 {requestedAt}。",
+          "text": "{requesterName} 请求已将其添加到网络以供审核 {requestedAt}。",
           "button": "取消请求",
           "requestedAtAbsolute": "于 {date}"
         }
@@ -112,51 +112,51 @@
       "rejected_state": {
         "collection_overview": {
           "heading": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           }
         },
         "workspace_settings": {
           "label": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           }
         },
         "api_overview": {
           "text": "私有 API 网络"
         },
         "body": {
-          "text_with_response": "{responderName} 拒绝了 请求 将这个 {entityType} 添加到 私有 API 网络。这是他们的注释：",
-          "text_without_response": "{responderName} 拒绝了 请求 将这个 {entityType} 添加到 私有 API 网络。"
+          "text_with_response": "{responderName} 拒绝了请求将这个 {entityType} 添加到私有 API 网络。这是他们的注释：",
+          "text_without_response": "{responderName} 拒绝了请求将这个 {entityType} 添加到私有 API 网络。"
         },
         "footer": {
-          "button": "重新提交 请求",
-          "text": "要将您的 API 重新提交到 私有 API 网络，您首先需要发布您的 API。"
+          "button": "重新提交请求",
+          "text": "要将您的 API 重新提交到私有 API 网络，您首先需要发布您的 API。"
         }
       },
       "disabled_state": {
         "collection_overview": {
           "heading": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           },
-          "helperText": "通过将集合发布到您的 团队 的内部 API 网络，使其可被发现。"
+          "helperText": "通过将集合发布到您的团队的内部 API 网络，使其可被发现。"
         },
         "workspace_settings": {
           "label": {
-            "text": "添加到 私有 API 网络"
+            "text": "添加到私有 API 网络"
           }
         },
         "body": {
-          "text": "将您的 {entityType} 添加到 私有 API 网络，以便您的 团队 成员可以发现它。",
+          "text": "将您的 {entityType} 添加到私有 API 网络，以便您的团队成员可以发现它。",
           "button": {
             "text": "添加到 API 网络",
-            "tooltip": "只有该 {entityType} 的编辑者才能将其添加到 私有 API 网络。",
-            "write_disabled_tooltip": "团队 管理员 可以将您添加到 API 构建器插件中，以在 私有 API 网络中执行操作。",
-            "org_visibility_tooltip": "工作区应可供整个组织访问，以添加到 私有 API 网络。"
+            "tooltip": "只有该 {entityType} 的编辑者才能将其添加到私有 API 网络。",
+            "write_disabled_tooltip": "团队管理员可以将您添加到 API 构建器插件中，以在私有 API 网络中执行操作。",
+            "org_visibility_tooltip": "工作区应可供整个组织访问，以添加到私有 API 网络。"
           }
         }
       },
       "remove_modal": {
         "heading": "从网络中删除 {entityType}？",
-        "content": "您的消费者将无法再在 私有 API 网络上发现此 {entityType}。您确定要这样做吗？",
+        "content": "您的消费者将无法再在私有 API 网络上发现此 {entityType}。您确定要这样做吗？",
         "footer": {
           "cancel": "取消",
           "remove": "移除"
@@ -164,8 +164,8 @@
       },
       "remove_workspace_modal": {
         "heading": "从网络中删除工作区？",
-        "content_before": "一旦删除，您的 团队 将无法再发现",
-        "content_after": "工作区在 私有 API 网络上。该工作区不会从您的帐户中删除。",
+        "content_before": "一旦删除，您的团队将无法再发现",
+        "content_after": "工作区在私有 API 网络上。该工作区不会从您的帐户中删除。",
         "footer": {
           "cancel": "取消",
           "remove": "移除"
@@ -173,13 +173,13 @@
       },
       "parent_requested_state": {
         "body": {
-          "text": "自 {requestedAt} 起，将工作区添加到网络的 {requesterName} 请求 正在等待审核。"
+          "text": "自 {requestedAt} 起，将工作区添加到网络的 {requesterName} 请求正在等待审核。"
         }
       },
       "error": {
         "toast": {
-          "cancelled_request": "取消 请求 添加到网络。",
-          "cancel_failed": "取消 请求 时出现问题。再试一次。",
+          "cancelled_request": "取消请求添加到网络。",
+          "cancel_failed": "取消请求时出现问题。再试一次。",
           "entity_removed": "从网络中删除了 {entityType}",
           "entity_remove_failed": "删除 {entityType} 时出现问题。再试一次。"
         }

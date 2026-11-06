@@ -1,6 +1,6 @@
 {
   "growth": {
-    "title": "設定您的 團隊",
+    "title": "設定您的團隊",
     "url_subtitle": "您將使用此 URL 來訪問 Postman",
     "files_selected": "已選擇 {numFiles} 檔案",
     "collections_selected": "已選擇 {count} 個集合",
@@ -14,8 +14,8 @@
       "text": "匯入 JSON 檔案"
     },
     "upload_team_image_modal": {
-      "title": "上傳 團隊 徽標",
-      "body": "上傳自訂徽標，讓您的 團隊 有賓至如歸的感覺。最大大小：2 MB"
+      "title": "上傳團隊徽標",
+      "body": "上傳自訂徽標，讓您的團隊有賓至如歸的感覺。最大大小：2 MB"
     },
     "tooltip_text": "選擇要匯入或移動的專案，然後才能繼續。您也可以選擇“還沒有”。",
     "error": {
@@ -23,11 +23,11 @@
         "title": "無法讀取檔案"
       },
       "update_team_discovery": {
-        "title": "請提供 團隊 詳細資訊"
+        "title": "請提供團隊詳細資訊"
       },
       "move_collection": {
         "title": "出了點問題",
-        "description": "嘗試移動您的 集合 時發生錯誤"
+        "description": "嘗試移動您的集合時發生錯誤"
       }
     },
     "workspace": {
@@ -36,25 +36,25 @@
         "text": "{collection, plural, one {集合} other {集合}}"
       },
       "team_discovery": {
-        "message": "您為您的 團隊 {domain} 團隊發現功能。",
-        "title": "團隊 發現是 {domain}",
-        "profile_title": "團隊 發現",
-        "description": "團隊 發現可讓組織中的人員看到您的 團隊 和 請求 並加入。",
-        "turn_on": "開啟 團隊 發現"
+        "message": "您為您的團隊 {domain} 團隊發現功能。",
+        "title": "團隊發現是 {domain}",
+        "profile_title": "團隊發現",
+        "description": "團隊發現可讓組織中的人員看到您的團隊和請求並加入。",
+        "turn_on": "開啟團隊發現"
       },
       "import_collections": {
-        "description": "已成功將 {count, plural, one {# 個集合} other {# 個集合}} 匯入到此 工作區。"
+        "description": "已成功將 {count, plural, one {# 個集合} other {# 個集合}} 匯入到此工作區。"
       },
       "move_collections": {
-        "description": "您的 集合 將很快被移動。",
-        "message": "已成功將 {count, plural, one {# 個集合} other {# 個集合}} 移動到此 工作區。"
+        "description": "您的集合將很快被移動。",
+        "message": "已成功將 {count, plural, one {# 個集合} other {# 個集合}} 移動到此工作區。"
       },
       "continue": "繼續"
     },
     "input": {
-      "name": "團隊 名稱",
+      "name": "團隊名稱",
       "url": "團隊 URL",
-      "workspace_name": "新 團隊 工作區 名稱",
+      "workspace_name": "新團隊工作區名稱",
       "add_existing_api": {
         "label": "您想新增現有的 API 專案嗎？",
         "options": {
@@ -66,13 +66,13 @@
         "label": "您想如何新增您的專案？",
         "options": {
           "import_from_local": "從本地匯入",
-          "move_from_workspace": "從 工作區 移動"
+          "move_from_workspace": "從工作區移動"
         }
       }
     },
     "select_collections": {
       "get_started": "開始使用現有集合",
-      "description": "幫助您的 團隊 通過將 API 專案移動或匯入到新的 團隊 工作區<br />來快速上手。"
+      "description": "幫助您的團隊通過將 API 專案移動或匯入到新的團隊工作區<br />來快速上手。"
     }
   }
 }

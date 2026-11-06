@@ -47,13 +47,13 @@
       "label": "規範",
       "helper": "回應根據所選的 API 規範生成。",
       "picker_placeholder": "選擇一個規範",
-      "picker_empty": "此 工作區 尚無規格。"
+      "picker_empty": "此工作區尚無規範。"
     },
     "collection": {
       "label": "集合",
       "helper": "回應根據集合中儲存的範例生成。",
       "picker_placeholder": "選擇或建立集合",
-      "picker_empty": "此 工作區 中還沒有收藏。"
+      "picker_empty": "此工作區中還沒有收藏。"
     }
   },
   "mock_server_create": {
@@ -143,9 +143,9 @@
     "local_port_invalid": "輸入 1 到 65535 之間的埠。",
     "slug_invalid": "使用小寫字母、數字或連字元。必須以字母或數字開頭。",
     "source_picker_required_spec": "選擇 OpenAPI 規範或拖放檔案以繼續。",
-    "source_picker_required_collection": "選擇 集合 或拖放檔案以繼續。",
+    "source_picker_required_collection": "選擇集合或拖放檔案以繼續。",
     "source_picker_required_existing": "請選擇一個程式碼模擬伺服器以繼續。",
-    "cloud_spec_fetch_failed": "無法從此 工作區 載入該規範。稍後再試一次。",
-    "cloud_collection_fetch_failed": "無法從此 工作區 載入 集合。稍後再試一次。"
+    "cloud_spec_fetch_failed": "無法從此工作區載入該規範。稍後再試一次。",
+    "cloud_collection_fetch_failed": "無法從此工作區載入集合。稍後再試一次。"
   }
 }

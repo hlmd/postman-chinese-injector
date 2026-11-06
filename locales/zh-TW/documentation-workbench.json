@@ -11,23 +11,23 @@
       "retract_text": "撤回請求",
       "drop_down_items": {
         "copy_publish_link": "複製已發布的連結",
-        "respond_to_publish_request": "回覆發布 請求",
+        "respond_to_publish_request": "回覆發布請求",
         "edit_requested_publish_settings": "編輯請求的發布設定",
         "edit_published_documentation": "編輯已發布的文件",
-        "approve_deny_publish_request": "批准/拒絕發布 請求"
+        "approve_deny_publish_request": "批准/拒絕發布請求"
       },
       "documentation_config_bar": {
         "pending_publish": "待發布",
         "published": "已發布文件",
         "publish": "發布文件"
       },
-      "published_url_label": "此 集合 發布於：",
-      "publish_limit_reached_tooltip": "您已達到發布文件的限制。您可以取消發布 團隊 中的現有文件或聯絡支援人員以增加限制。",
+      "published_url_label": "此集合發布於：",
+      "publish_limit_reached_tooltip": "您已達到發布文件的限制。您可以取消發布團隊中的現有文件或聯絡支援人員以增加限制。",
       "publish_feature_disabled_tooltip": "此功能目前在您所在的地區不可用。",
       "spam_tooltip": "由於您的內容不符合我們的社群標準，我們已暫時阻止您發布文件。請稍後重試或聯絡支援人員。",
       "withdraw_publish_confirmation": {
         "heading": "撤回請求？",
-        "description": "您確定要撤回 請求 來發布此 集合 的文件嗎？",
+        "description": "您確定要撤回請求來發布此集合的文件嗎？",
         "confirm_button_text": "確認",
         "cancel_button_text": "取消"
       },
@@ -60,7 +60,7 @@
         "query_label": "查詢",
         "graphql_variables_label": "GraphQL 變數",
         "error_view": {
-          "title": "無法載入 請求 主體",
+          "title": "無法載入請求主體",
           "message": "只是一根電線有問題。嘗試重新載入。"
         },
         "documentation_body_types": {
@@ -89,12 +89,12 @@
           "try_example_label": "嘗試範例"
         },
         "response_body": {
-          "no_response_body": "無 回應 主體",
-          "request_does_not_return_response_body": "此 請求 不返回任何 回應 主體。"
+          "no_response_body": "無回應主體",
+          "request_does_not_return_response_body": "此請求不返回任何回應主體。"
         },
         "response_header": {
-          "no_response_header": "沒有 回應 標頭",
-          "request_does_not_return_response_header": "此 請求 不返回任何 回應 標頭。"
+          "no_response_header": "沒有回應標頭",
+          "request_does_not_return_response_header": "此請求不返回任何回應標頭。"
         }
       }
     },
@@ -114,7 +114,7 @@
       },
       "editor_switch_warning_modal": {
         "heading": "切換到新的 Postman 編輯器？",
-        "content": "新的 Postman 編輯器 可能尚不支援您描述中的某些 HTML 元素。",
+        "content": "新的 Postman 編輯器可能尚不支援您描述中的某些 HTML 元素。",
         "checkbox_label": "不再顯示此警告",
         "action_buttons": {
           "cancel": "取消",
@@ -145,37 +145,37 @@
     },
     "entity_auth": {
       "error": {
-        "title": "無法載入 授權",
+        "title": "無法載入授權",
         "message": "只是一根電線有問題。嘗試重新載入。"
       },
       "authorization_label": "身份驗證",
-      "content": "這個 {entityType} 使用 {authEntityType} <5>{authEntityName}</5> 的 授權 助手"
+      "content": "這個 {entityType} 使用 {authEntityType} <5>{authEntityName}</5> 的授權助手"
     }
   },
   "network_error": {
-    "update_version_message": "更新 版本 時出現問題"
+    "update_version_message": "更新版本時出現問題"
   },
   "retract_request": {
     "success": {
       "toast": {
-        "title": "請求 發布撤回成功。",
-        "description": "此 請求 已從社群管理員佇列中刪除。"
+        "title": "請求發布撤回成功。",
+        "description": "此請求已從社群管理員佇列中刪除。"
       }
     },
     "failure": {
       "toast": {
-        "description": "撤回發布 請求 失敗。請再試一次。"
+        "description": "撤回發布請求失敗。請再試一次。"
       }
     }
   },
   "document_error": {
     "is_git_linked_mode": {
-      "title": "集合 未找到",
-      "message": "我們找不到您要找的 集合"
+      "title": "集合未找到",
+      "message": "我們找不到您要找的集合"
     },
     "invalid_version": {
       "title": "無法載入",
-      "message": "提供的 版本 無效"
+      "message": "提供的版本無效"
     }
   },
   "documentation_workbench_title": "文件",

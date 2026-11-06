@@ -1,5 +1,5 @@
 {
-  "collection_fork_label": "<0>這個 集合 是從 </0><1>{baseCollectionName}</1> 分叉出來的",
+  "collection_fork_label": "<0>這個集合是從 </0><1>{baseCollectionName}</1> 分叉出來的",
   "fork": {
     "workbench": {
       "sign_in_modal": {
@@ -21,9 +21,9 @@
         "description": "我們無法獲取有關源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} other {}} 的資訊。請再試一次。"
       },
       "no_permission_state": {
-        "description": "您沒有 權限 到 fork 進入此 團隊 的工作區。",
-        "no_workspaces_description": "您沒有任何可以 fork 進入的工作空間。建立一個 工作區 來開始。",
-        "no_workspaces_no_permission_description": "您沒有任何可以 fork 進入的工作空間。請聯絡您的 團隊 管理員 以獲取 工作區 訪問權限。",
+        "description": "您沒有權限到 fork 進入此團隊的工作區。",
+        "no_workspaces_description": "您沒有任何可以 fork 進入的工作空間。建立一個工作區來開始。",
+        "no_workspaces_no_permission_description": "您沒有任何可以 fork 進入的工作空間。請聯絡您的團隊管理員以獲取工作區訪問權限。",
         "create_workspace_button": "建立工作區",
         "close_button": "關閉"
       },
@@ -45,7 +45,7 @@
       },
       "forbidden_title": "禁止訪問",
       "error_title": "錯誤",
-      "forbidden_message": "您沒有 權限 來檢視此內容。",
+      "forbidden_message": "您沒有權限來檢視此內容。",
       "error_message": "發生錯誤。請稍後重試。",
       "total_forks_title": "{modelName} 的 {totalForks} {forkText}",
       "no_forks_title": "沒有分叉",
@@ -81,7 +81,7 @@
   },
   "fork_recommendation_popup": {
     "title": "建立 fork 來儲存更改",
-    "message": "您沒有 權限 來更改此 集合。 Fork 的 集合 到 工作區 以儲存更改。",
+    "message": "您沒有權限來更改此集合。 Fork 的集合到工作區以儲存更改。",
     "button_label": "建立 Fork 並儲存",
     "error_message": "您沒有執行此操作所需的權限。",
     "upgrade_partner_error_message": "您沒有執行此操作的權限。請升級到Editor 角色。",
@@ -89,24 +89,24 @@
     "sign_in_subtitle": "您需要登入才能 fork 集合。繼續建立一個帳戶。它是免費的！"
   },
   "navigate": {
-    "creating_fork_message": "將 集合 分叉到 {teamName} 團隊",
-    "switch_teams_message": "將你傳送到 團隊 {teamName}",
+    "creating_fork_message": "將集合分叉到 {teamName} 團隊",
+    "switch_teams_message": "將你傳送到團隊 {teamName}",
     "do_not_close_tab_message": "堅持幾秒鐘。請不要關閉或重新整理此選項卡。"
   },
   "public_collection_fork_banner": {
-    "description": "要對此 集合 進行更改，請將 fork 更改為您的 工作區。",
+    "description": "要對此集合進行更改，請將 fork 更改為您的工作區。",
     "button_label": "復刻集合"
   },
   "fork_label": {
     "fork_info": {
       "last_updated": "最後更新：{relativeTime}",
-      "source_collection_error": "您無權訪問源 集合 或它已被刪除。",
-      "copy_collection_id_tooltip": "複製 {entityType, select, collection {集合} specification {規格} environment {環境} flow {流程} other {實體}} ID",
-      "copy_collection_url_tooltip": "複製 {entityType, select, collection {集合} specification {規格} environment {環境} flow {流程} other {實體}} URL",
+      "source_collection_error": "您無權訪問源集合或它已被刪除。",
+      "copy_collection_id_tooltip": "複製 {entityType, select, collection {集合} specification {規範} environment {環境} flow {流程} other {實體}} ID",
+      "copy_collection_url_tooltip": "複製 {entityType, select, collection {集合} specification {規範} environment {環境} flow {流程} other {實體}} URL",
       "pulling_changes_message": "在後臺拉動更改...",
       "changes_available_message": "有變化需要拉動。",
       "pull_changes_link": "拉動變更",
-      "merge_conflicts_message": "發現 合併 衝突。解決它們以拉取更改。",
+      "merge_conflicts_message": "發現合併衝突。解決它們以拉取更改。",
       "view_diff_link": "檢視差異",
       "auto_sync_config": {
         "auto_sync_changes_label": "自動拉取更改：",

@@ -19,14 +19,14 @@
         },
         "team": {
           "value": "團隊",
-          "description_team_user": "{teamName} 團隊 中的每個人",
-          "description_non_team_user": "來自 團隊 的每個人",
+          "description_team_user": "{teamName} 團隊中的每個人",
+          "description_non_team_user": "來自團隊的每個人",
           "workspace_type": "內部",
-          "workspace_access": "您 團隊 中的每個人"
+          "workspace_access": "您團隊中的每個人"
         },
         "private": {
           "value": "私有",
-          "description": "僅受邀 團隊 成員",
+          "description": "僅受邀團隊成員",
           "workspace_type": "內部",
           "workspace_access": "只有你和被邀請的人"
         },
@@ -87,13 +87,13 @@
     },
     "archive": {
       "failure_description": "只是一根電線有問題。請再試一次。",
-      "failure_title": "無法歸檔 工作區",
-      "success_description": "工作區 已歸檔"
+      "failure_title": "無法歸檔工作區",
+      "success_description": "工作區已歸檔"
     },
     "delete": {
       "failure_description": "只是一根電線有問題。請再試一次。",
-      "failure_title": "無法刪除 工作區",
-      "success_description": "工作區 已刪除"
+      "failure_title": "無法刪除工作區",
+      "success_description": "工作區已刪除"
     }
   }
 }

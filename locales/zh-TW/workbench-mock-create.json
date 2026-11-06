@@ -1,11 +1,11 @@
 {
   "mock_create_container": {
     "columns": {
-      "request_method": "請求 方法",
+      "request_method": "請求方法",
       "request_url": "請求 URL",
       "request_body": "請求體",
       "description": "描述",
-      "response_code": "回應 程式碼",
+      "response_code": "回應程式碼",
       "response_body": "回應體",
       "path": "路徑",
       "value": "值"
@@ -26,8 +26,8 @@
   },
   "mock_form_error_states": {
     "make_payment": "付款",
-    "user_billing_action": "由於未支付發票，您的 團隊 無法使用某些 Postman 服務。支付目前發票以繼續。",
-    "default_action": "由於未支付發票，您的 團隊 無法使用某些 Postman 服務。請聯絡您的 團隊 的帳單經理，瞭解有關 團隊 付款的更多資訊。",
+    "user_billing_action": "由於未支付發票，您的團隊無法使用某些 Postman 服務。支付目前發票以繼續。",
+    "default_action": "由於未支付發票，您的團隊無法使用某些 Postman 服務。請聯絡您的團隊的帳單經理，瞭解有關團隊付款的更多資訊。",
     "try_again": "再試一次",
     "mock_creation_try_again": "建立此模擬伺服器時出現問題。請再試一次。",
     "internet_error": "請檢查您的網際網路連線，然後重試。",
@@ -37,7 +37,7 @@
     "collection_store_error": "獲取工作區集合時出錯",
     "unexpected_error": "出現意外錯誤。請再試一次。",
     "cannot_access_server": "無法訪問 Postman 伺服器",
-    "contact_support": "您的 團隊 已停用與 Postman 服務同步。請聯絡支援人員以恢復使用這些功能。"
+    "contact_support": "您的團隊已停用與 Postman 服務同步。請聯絡支援人員以恢復使用這些功能。"
   },
   "custom_mock_error": {
     "something_went_wrong": "出了點問題",
@@ -62,17 +62,17 @@
     "make_mock_server_private_link_text": "Postman API 鍵",
     "headers": "請求頭",
     "headers_count": "請求頭 ({noOfHeaders})",
-    "response_matching_heading": "回應 匹配",
-    "response_matching_helper_text": "選擇模擬伺服器為 回應 提供的服務。",
-    "request_body": "請求 身體",
-    "request_body_info_text": "在返回 回應 之前將 請求 主體與範例 請求 主體進行匹配。",
+    "response_matching_heading": "回應匹配",
+    "response_matching_helper_text": "選擇模擬伺服器為回應提供的服務。",
+    "request_body": "請求身體",
+    "request_body_info_text": "在返回回應之前將請求主體與範例請求主體進行匹配。",
     "headers_info_text": "在此定義模擬伺服器應使用的標頭鍵來將請求與範例進行匹配。",
     "headers_helper_text": "您可以輸入多個標題鍵。",
     "headers_validation_message": "輸入標頭鍵以啟用標頭匹配。",
     "headers_input_placeholder": "例如：x-api-key、內容型別",
-    "private_checkbox_info": "要呼叫 私有模擬伺服器，您需要在請求中新增 <1>x-api-key</1> 標頭。檢視如何生成",
+    "private_checkbox_info": "要呼叫私有模擬伺服器，您需要在請求中新增 <1>x-api-key</1> 標頭。檢視如何生成",
     "add_requests": "新增請求",
-    "add_requests_info": "輸入您想要模擬的請求。或者，通過單擊 (...) 圖示新增 請求 主體。",
+    "add_requests_info": "輸入您想要模擬的請求。或者，通過單擊 (...) 圖示新增請求主體。",
     "collection_placeholder": "選擇或建立集合",
     "collection_empty_state_message": "沒有找到集合",
     "create_collection": "建立集合",
@@ -123,7 +123,7 @@
     "select_collection": "已有集合",
     "select_collection_info_text": "選擇您想要模擬的集合。",
     "select_collection_empty_state_message": "沒有找到集合",
-    "mock_info_text": "輸入您想要模擬的請求。或者，通過單擊 (...) 圖示新增 請求 主體。",
+    "mock_info_text": "輸入您想要模擬的請求。或者，通過單擊 (...) 圖示新增請求主體。",
     "try_using_different_keyword": "請使用不同的關鍵字重試，並且不要忘記檢查拼寫錯誤。",
     "view_other_workspace": "請嘗試檢視此工作區中的其他集合。",
     "no_result_found": "沒有找到“{searchQuery}”的結果",

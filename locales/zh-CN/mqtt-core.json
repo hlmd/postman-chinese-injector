@@ -12,19 +12,19 @@
       "id": "ID："
     },
     "version_switcher": {
-      "tooltip": "连接时无法更改 版本"
+      "tooltip": "连接时无法更改版本"
     },
     "connect_button": {
       "tooltip": {
-        "no_permission": "您没有 权限 在此 工作区 中执行此操作。"
+        "no_permission": "您没有权限在此工作区中执行此操作。"
       }
     }
   },
   "agent": {
     "errors": {
       "agent_not_connected": "切换到 Postman 桌面代理以与 MQTT 代理服务器连接。",
-      "agent_not_supported": "您正在使用旧版 版本 的 Postman 桌面代理 ，它不支持 MQTT 请求。更新 桌面代理 并重试。",
-      "agent_not_ready": "确保 桌面代理 已安装并正在运行。"
+      "agent_not_supported": "您正在使用旧版版本的 Postman 桌面代理，它不支持 MQTT 请求。更新桌面代理并重试。",
+      "agent_not_ready": "确保桌面代理已安装并正在运行。"
     }
   },
   "compose_area": {
@@ -46,7 +46,7 @@
       "messages": {
         "settings": {
           "response_topic": {
-            "label": "响应 主题",
+            "label": "响应主题",
             "placeholder": "添加主题"
           },
           "correlation_data": {
@@ -206,20 +206,20 @@
     "verify_server_certificate_summary": "通过安全连接连接到 Broker 时验证服务器证书。",
     "clean_session": "清除会话",
     "clean_start": "干净的开始",
-    "clean_session_description": "配置代理服务器是否应以新连接启动而不保留任何以前的 会话 数据。",
-    "clean_session_summary": "代理服务器从新连接开始，不保留任何以前的 会话 数据。",
-    "session_expiry_interval": "会话 到期间隔",
-    "session_expiry_interval_description": "配置 会话 到期间隔（以秒为单位）。这会影响代理服务器为您的客户端存储 会话 数据的时间。如果启用干净启动，则忽略该值。",
-    "session_expiry_interval_summary": "会话 到期间隔（以秒为单位）。这会影响代理服务器为您的客户端存储 会话 数据的时间。如果启用干净启动，则忽略该值。",
+    "clean_session_description": "配置代理服务器是否应以新连接启动而不保留任何以前的会话数据。",
+    "clean_session_summary": "代理服务器从新连接开始，不保留任何以前的会话数据。",
+    "session_expiry_interval": "会话到期间隔",
+    "session_expiry_interval_description": "配置会话到期间隔（以秒为单位）。这会影响代理服务器为您的客户端存储会话数据的时间。如果启用干净启动，则忽略该值。",
+    "session_expiry_interval_summary": "会话到期间隔（以秒为单位）。这会影响代理服务器为您的客户端存储会话数据的时间。如果启用干净启动，则忽略该值。",
     "keep_alive": "保持活动",
     "keep_alive_description": "配置保持活动间隔（以秒为单位）。",
     "keep_alive_summary": "保持活动间隔（以秒为单位）。",
     "auto_reconnect": "自动重新连接",
     "auto_reconnect_description": "配置客户端是否应在突然断开连接时自动重新连接。",
     "auto_reconnect_summary": "客户端在突然断开连接时自动重新连接。",
-    "connection_timeout": "连接 超时",
-    "connection_timeout_description": "配置连接 超时（以秒为单位）。",
-    "connection_timeout_summary": "连接 超时（以秒为单位）。",
+    "connection_timeout": "连接超时",
+    "connection_timeout_description": "配置连接超时（以秒为单位）。",
+    "connection_timeout_summary": "连接超时（以秒为单位）。",
     "receive_maximum": "接收最大值",
     "receive_maximum_description": "配置可同时处理的QoS 1和2消息的最大数量。",
     "receive_maximum_summary": "可以同时处理的 QoS 1 和 2 消息的最大数量。",
@@ -271,7 +271,7 @@
       "subscribed_to": "已订阅",
       "unsubscribed_from": "取消订阅",
       "connection_aborted": "连接中止",
-      "response_pruned": "响应 未存储。",
+      "response_pruned": "响应未存储。",
       "empty_payload": "（空的）"
     },
     "packet_information": "数据包信息",

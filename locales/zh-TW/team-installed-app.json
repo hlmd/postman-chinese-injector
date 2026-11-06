@@ -7,15 +7,15 @@
   "slack": {
     "disabled_tooltip": "只能新增此應用程式的一個實例。",
     "slack_label": "Slack",
-    "description": "即時更新 Slack 上 Postman 團隊 中發生的情況。"
+    "description": "即時更新 Slack 上 Postman 團隊中發生的情況。"
   },
   "git_app": {
-    "disabled_tooltip": "只有 團隊 管理員可以新增應用程式。",
+    "disabled_tooltip": "只有團隊管理員可以新增應用程式。",
     "description": "在 Postman 和 {userFriendlyServiceName} 之間同步 API。"
   },
   "blank_slate": {
-    "add_more_apps": "為您的 團隊 新增更多應用程式",
-    "description": "使用第三方應用程式配置 Postman 中的 團隊。 Postman 團隊 成員可以使用配置的應用程式來設定整合。瞭解有關<CustomLink><Text>已安裝的應用</Text></CustomLink>的更多資訊"
+    "add_more_apps": "為您的團隊新增更多應用程式",
+    "description": "使用第三方應用程式配置 Postman 中的團隊。 Postman 團隊成員可以使用配置的應用程式來設定整合。瞭解有關<CustomLink><Text>已安裝的應用</Text></CustomLink>的更多資訊"
   },
   "installed_app_list": {
     "headers": {

@@ -43,19 +43,19 @@
   },
   "external_tag": "外部",
   "restricted_action": {
-    "tooltip_with_create": "将这些更改合并到 工作区，或创建一个新的 工作区 来执行此操作。",
-    "tooltip_visibility": "将这些更改合并到 工作区，或创建新的 工作区 来更改可见性。",
-    "tooltip_comment_creator": "将这些更改合并到 工作区，或创建一个新的 工作区 来发表评论。"
+    "tooltip_with_create": "将这些更改合并到工作区，或创建一个新的工作区来执行此操作。",
+    "tooltip_visibility": "将这些更改合并到工作区，或创建新的工作区来更改可见性。",
+    "tooltip_comment_creator": "将这些更改合并到工作区，或创建一个新的工作区来发表评论。"
   },
   "pending_changes_banner": {
     "source_prefix": "更改来自",
-    "source_icon_tooltip_cloud": "云代理 任务",
+    "source_icon_tooltip_cloud": "云代理任务",
     "source_icon_tooltip_git": "git 分支",
     "fallback_source_name": "无题",
     "actions": {
       "merge": "合并",
-      "merge_dropdown_label": "更多 合并 选项",
-      "make_new_workspace": "新建 工作区",
+      "merge_dropdown_label": "更多合并选项",
+      "make_new_workspace": "新建工作区",
       "discard": "丢弃",
       "exit": "退出",
       "copy_link": "复制链接",
@@ -69,10 +69,10 @@
     },
     "toast": {
       "merge_success": "更改合并",
-      "merge_error_title": "无法 合并 更改",
+      "merge_error_title": "无法合并更改",
       "merge_error_description": "出了点问题。请再试一次。",
-      "publish_success": "创建新的 工作区",
-      "publish_error_title": "无法创建 工作区",
+      "publish_success": "创建新的工作区",
+      "publish_error_title": "无法创建工作区",
       "publish_error_description": "出了点问题。请再试一次。",
       "discard_success": "更改已放弃",
       "discard_error_title": "无法放弃更改",

@@ -4,12 +4,12 @@
     "no_matching_requests": "未找到匹配的请求。"
   },
   "collection_tree": {
-    "no_requests": "此 集合 没有请求。",
+    "no_requests": "此集合没有请求。",
     "no_matching_requests": "未找到匹配的请求。"
   },
   "errors": {
-    "spec_syntax": "所选规范存在语法错误。请修复规范 编辑者 中的错误，然后重试。",
+    "spec_syntax": "所选规范存在语法错误。请修复规范编辑者中的错误，然后重试。",
     "spec_load_failed": "无法加载操作。请再试一次。",
-    "collection_load_failed": "无法加载 集合。请再试一次。"
+    "collection_load_failed": "无法加载集合。请再试一次。"
   }
 }

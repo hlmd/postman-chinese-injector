@@ -240,7 +240,7 @@
     "success": {
       "send_invites": {
         "title": "已傳送邀請",
-        "description": "新成員接受您的 邀請 後就會加入。"
+        "description": "新成員接受您的邀請後就會加入。"
       },
       "save_profile": {
         "title": "個人資料已儲存",
@@ -248,7 +248,7 @@
       },
       "create_team": {
         "title": "團隊建立成功",
-        "description": "當您的 請求 獲得批准時，我們會通知您。"
+        "description": "當您的請求獲得批准時，我們會通知您。"
       },
       "verified_team_full": {
         "title": "您加入團隊的請求正在稽核中",

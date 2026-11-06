@@ -15,7 +15,7 @@
     "request_access": {
       "sent_to_team_admin": "您的加入请求已发送到团队管理员。",
       "sent_to_workspace_admin": "您的访问权限请求已发送至工作区管理员。",
-      "access_not_enabled": "请求 未启用对此资源的访问。",
+      "access_not_enabled": "请求未启用对此资源的访问。",
       "failed_to_send": "发送请求失败。"
     },
     "error_state": {
@@ -31,7 +31,7 @@
         "title": "您无权访问",
         "description": "请求访问权限，或切换到有权限的帐户。您以 {email} 身份登录",
         "primary_actions": {
-          "request_access": "请求 访问",
+          "request_access": "请求访问",
           "requested": "已请求"
         },
         "secondary_actions": {

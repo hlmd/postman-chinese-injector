@@ -15,7 +15,7 @@
     "request_access": {
       "sent_to_team_admin": "您的加入請求已傳送到團隊管理員。",
       "sent_to_workspace_admin": "您的訪問權限請求已傳送至工作區管理員。",
-      "access_not_enabled": "請求 未啟用對此資源的訪問。",
+      "access_not_enabled": "請求未啟用對此資源的訪問。",
       "failed_to_send": "傳送請求失敗。"
     },
     "error_state": {
@@ -31,7 +31,7 @@
         "title": "您無權訪問",
         "description": "請求訪問權限，或切換到有權限的帳戶。您以 {email} 身份登入",
         "primary_actions": {
-          "request_access": "請求 訪問",
+          "request_access": "請求訪問",
           "requested": "已請求"
         },
         "secondary_actions": {

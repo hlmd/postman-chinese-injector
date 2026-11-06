@@ -89,7 +89,7 @@
   },
   "approval_requests": {
     "approve_modal": {
-      "title": "批准 API 並對映 Vault 引用",
+      "title": "批准 API 並對映保險庫引用",
       "no_secrets": "沒有需要對映的金鑰，這些 API 未使用任何金鑰。"
     },
     "toast": {
@@ -179,16 +179,16 @@
       "pending": "請求中"
     },
     "modal": {
-      "title": "請求 訪問",
+      "title": "請求訪問",
       "close_aria_label": "關閉模式",
       "reason_label": "原因",
       "reason_placeholder": "為什麼需要訪問權限？",
-      "send": "傳送 請求",
+      "send": "傳送請求",
       "sending": "正在傳送...",
       "toast": {
-        "success_title": "請求 已傳送",
-        "success_body": "您用於訪問 {workspaceName} 的 請求 已傳送。",
-        "error_body": "訪問 請求 時出錯。"
+        "success_title": "請求已傳送",
+        "success_body": "您用於訪問 {workspaceName} 的請求已傳送。",
+        "error_body": "訪問請求時出錯。"
       }
     }
   },
@@ -196,8 +196,8 @@
     "actions": {
       "access_requested": "請求訪問",
       "access_requested_workspace": "請求訪問 {workspaceName}",
-      "request_access": "請求 訪問",
-      "request_access_workspace": "請求 訪問 {workspaceName}",
+      "request_access": "請求訪問",
+      "request_access_workspace": "請求訪問 {workspaceName}",
       "options": "{workspaceName} 的選項",
       "remove": "從名稱空間中移除",
       "view": "開啟",
@@ -208,7 +208,7 @@
     "restricted_access": "訪問受限",
     "workspace_type": {
       "private": "私有工作區",
-      "public": "公共工作區"
+      "public": "公開工作區"
     }
   },
   "workspace_card_v2": {
@@ -267,7 +267,7 @@
       "no_description": "無描述",
       "access_level": {
         "open": "團隊",
-        "access_by_request": "通過 請求 訪問",
+        "access_by_request": "通過請求訪問",
         "invite_only": "僅限邀請"
       },
       "empty_workspaces": "沒有工作區",
@@ -280,7 +280,7 @@
         "trigger_label": "檢視 {namespaceName} 成員",
         "title_one": "{count} 位成員",
         "title_other": "{count} 成員",
-        "overflow_one": "{count} 更多 成員",
+        "overflow_one": "{count} 更多成員",
         "overflow_other": "{count} 更多成員",
         "managers_section": "管理員",
         "members_section": "成員"
@@ -311,22 +311,22 @@
       "step_1": "選擇 <strong>新增 API</strong>。",
       "step_2": "搜尋並選擇你希望提供的 <strong>API</strong>。<muted>API 通過工作區共享，因此你需要新增一個工作區。</muted>",
       "step_3": "填寫備註並<strong>傳送申請</strong>給名稱空間管理員。",
-      "step_4": "管理員<strong>批准</strong>申請，並將這些 API 使用的每個<strong>金鑰</strong>（其環境中的密碼、Token）關聯到一個 <strong>Vault 引用</strong>（指向真實金鑰的指標）。",
+      "step_4": "管理員<strong>批准</strong>申請，並將這些 API 使用的每個<strong>金鑰</strong>（其環境中的密碼、Token）關聯到一個 <strong>保險庫引用</strong>（指向真實金鑰的指標）。",
       "step_5": "這些 API 會顯示在此處，成員即可<strong>申請憑據</strong>來使用它們。"
     }
   },
   "vault_references": {
     "add_cta": "新增保險庫引用",
     "empty_state": {
-      "title": "還沒有 Vault 引用",
-      "description": "Vault 引用讓你無需在 Postman 中儲存金鑰，即可使用來自 Vault（HashiCorp、AWS Secrets Manager 等）的金鑰。金鑰值始終保留在 Vault 中，執行時才會解析。"
+      "title": "還沒有保險庫引用",
+      "description": "保險庫引用讓你無需在 Postman 中儲存金鑰，即可使用來自保險庫（HashiCorp、AWS Secrets Manager 等）的金鑰。金鑰值始終保留在保險庫中，執行時才會解析。"
     },
     "error_state": {
       "title": "無法載入保險庫引用",
       "retry": "重試"
     },
     "create_modal": {
-      "title": "建立 Vault 引用",
+      "title": "建立保險庫引用",
       "provider_label": "提供商",
       "provider_placeholder": "選擇提供商",
       "name_label": "名稱",
@@ -447,15 +447,15 @@
       "options": {
         "open": {
           "title": "我的組織中的任何人",
-          "description": "您組織中的任何 成員 將能夠看到此名稱空間及其內容"
+          "description": "您組織中的任何成員將能夠看到此名稱空間及其內容"
         },
         "request": {
-          "title": "通過 請求 訪問",
-          "description": "您組織中的使用者將看到名稱空間名稱，但需要傳送 請求 才能訪問其內容"
+          "title": "通過請求訪問",
+          "description": "您組織中的使用者將看到名稱空間名稱，但需要傳送請求才能訪問其內容"
         },
         "invite_only": {
           "title": "僅限邀請",
-          "description": "您組織中的使用者將看不到此名稱空間。名稱空間管理器可以通過 邀請 提供訪問權限"
+          "description": "您組織中的使用者將看不到此名稱空間。名稱空間管理器可以通過邀請提供訪問權限"
         }
       }
     }

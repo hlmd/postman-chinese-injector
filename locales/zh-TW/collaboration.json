@@ -2,12 +2,12 @@
   "comments": {
     "blank_state": {
       "title": "您沒有評論權限",
-      "description": "您對此 工作區 僅有 檢視者 權限。"
+      "description": "您對此工作區僅有檢視者權限。"
     },
     "comment_notification_recipient": {
       "summary_one": "{name} 將收到通知。",
       "summary_other": "檢視將收到通知的所有人員，包括 {names} 和 {lastName}。",
-      "private_user": "私有 使用者",
+      "private_user": "私有使用者",
       "recipients_list": {
         "title": "我們將通知："
       }
@@ -40,7 +40,7 @@
         "loading_label": "正在載入過濾器..."
       },
       "commit_and_push_changes_banner": {
-        "text": "提交併推送此 分支 中的更改以新增新評論"
+        "text": "提交併推送此分支中的更改以新增新評論"
       },
       "empty_state": {
         "heading": {
@@ -88,7 +88,7 @@
         },
         "comment": {
           "heading": {
-            "private_user": "私有 使用者",
+            "private_user": "私有使用者",
             "actions": {
               "view_actions": {
                 "tooltip": "檢視操作"
@@ -96,19 +96,19 @@
               "copy_link": "複製連結",
               "copy_link_copied": "複製了！",
               "edit": "編輯",
-              "edit_no_permission": "您沒有 權限 來編輯此評論",
+              "edit_no_permission": "您沒有權限來編輯此評論",
               "delete": "刪除",
-              "delete_no_permission": "您沒有 權限 來刪除此評論",
+              "delete_no_permission": "您沒有權限來刪除此評論",
               "resolve": {
                 "tooltip": {
-                  "no_permission": "您沒有 權限 來解決此評論",
+                  "no_permission": "您沒有權限來解決此評論",
                   "resolve": "解決評論"
                 }
               },
               "unresolve": {
                 "tooltip": {
                   "unresolve": "重新開放",
-                  "no_permission": "您沒有 權限 來重新開啟此評論"
+                  "no_permission": "您沒有權限來重新開啟此評論"
                 }
               }
             }
@@ -173,30 +173,30 @@
       "label": "邀請",
       "group_members_count_one": "1 成員",
       "group_members_count_other": "{count} 成員",
-      "invite_collaborator_warning": "您的 團隊 之外的人將被邀請作為合作者。",
-      "dropdown_info": "該 角色 將設定在 集合 上。",
+      "invite_collaborator_warning": "您的團隊之外的人將被邀請作為合作者。",
+      "dropdown_info": "該角色將設定在集合上。",
       "placeholder": "輸入姓名、群組名稱或電子郵件..."
     },
     "invite_partner_banner": {
-      "title": "邀請合作伙伴加入您的 團隊",
-      "description": "您正在邀請另一家公司的人員。使用 <1><0>合作伙伴 工作區 </0></1> 和 邀請 作為合作伙伴來共享集合。"
+      "title": "邀請合作伙伴加入您的團隊",
+      "description": "您正在邀請另一家公司的人員。使用 <1><0>合作伙伴工作區 </0></1> 和邀請作為合作伙伴來共享集合。"
     },
     "invite_partner_to_new_workspace_modal": {
-      "title": "設定 合作伙伴 工作區 並邀請合作伙伴共享 集合。",
-      "partner_workspace_name_info_text": "工作區 姓名",
+      "title": "設定合作伙伴工作區並邀請合作伙伴共享集合。",
+      "partner_workspace_name_info_text": "工作區姓名",
       "partner_email_info_text": "電子郵件",
-      "fork_info_text": "將在此 合作伙伴 工作區 中建立 <1>{name}</1> 集合 的分叉。"
+      "fork_info_text": "將在此合作伙伴工作區中建立 <1>{name}</1> 集合的分叉。"
     },
     "org_personal_ws": {
       "join_team": {
-        "title": "加入 {orgName} 中的 團隊 進行協作",
-        "description": "您只能 邀請 並與團隊中的人員協作",
+        "title": "加入 {orgName} 中的團隊進行協作",
+        "description": "您只能邀請並與團隊中的人員協作",
         "primary_action": "檢視團隊",
         "secondary_action": "取消"
       },
       "confirm_move_entity": {
-        "title": "將 {entityType} 移動到 團隊 進行協作",
-        "description": "您只能 邀請 並與團隊中的人員協作",
+        "title": "將 {entityType} 移動到團隊進行協作",
+        "description": "您只能邀請並與團隊中的人員協作",
         "primary_action": "移動",
         "secondary_action": "取消"
       },
@@ -208,12 +208,12 @@
   "workspace_updates": {
     "create_update_modal": {
       "heading": "發布更新",
-      "description": "您即將在 工作區 上發布新的更新。這將通過電子郵件和應用內通知收件人。",
+      "description": "您即將在工作區上發布新的更新。這將通過電子郵件和應用內通知收件人。",
       "recipients_heading": "收件人",
-      "workspace_watchers_label": "工作區 觀察者：",
+      "workspace_watchers_label": "工作區觀察者：",
       "slack_channels_label": "Slack 頻道：",
       "reach_more_heading": "注意！吸引更多收件人",
-      "linked_resources_tip": "如果您的更新是關於特定 集合 的，請新增連結資源以通知更多觀看者。",
+      "linked_resources_tip": "如果您的更新是關於特定集合的，請新增連結資源以通知更多觀看者。",
       "slack_tip": "連線 Slack，當您在 Postman 上發布更新時提醒您的社群/團隊。",
       "continue_editing": "繼續編輯",
       "post_update": "發布更新"
@@ -223,21 +223,21 @@
         "unpin_title": "無法取消固定更新",
         "pin_title": "無法固定更新",
         "default_description": "請再試一次。",
-        "max_pinned_description": "此 工作區 已達到固定更新的最大數量"
+        "max_pinned_description": "此工作區已達到固定更新的最大數量"
       }
     },
     "permissions": {
-      "no_permission_to_pin": "您沒有 權限 來固定此更新。",
-      "no_permission_to_edit": "您沒有 權限 來編輯此更新。",
-      "no_permission_to_delete": "您沒有 權限 來刪除此更新。",
-      "no_permission_to_comment": "您沒有 權限 來新增評論。",
-      "no_permission_to_react": "您沒有 權限 來新增反應。",
-      "no_permission_to_unreact": "您沒有 權限 來移除此反應。"
+      "no_permission_to_pin": "您沒有權限來固定此更新。",
+      "no_permission_to_edit": "您沒有權限來編輯此更新。",
+      "no_permission_to_delete": "您沒有權限來刪除此更新。",
+      "no_permission_to_comment": "您沒有權限來新增評論。",
+      "no_permission_to_react": "您沒有權限來新增反應。",
+      "no_permission_to_unreact": "您沒有權限來移除此反應。"
     }
   },
   "reactions": {
     "add_reaction": "新增反應",
-    "no_permission": "您沒有 權限 來新增反應。",
+    "no_permission": "您沒有權限來新增反應。",
     "users_list": {
       "you": "你",
       "others": "和其他人",
@@ -251,9 +251,9 @@
     "default_collection_name": "集合",
     "header": {
       "title_with_name": "請求 {collectionName} 的分叉副本",
-      "title_generic": "請求 這個 集合 的分叉副本"
+      "title_generic": "請求這個集合的分叉副本"
     },
-    "permission_text": "您需要 <1>編輯者</1> 權限才能分叉該 集合。",
+    "permission_text": "您需要 <1>編輯者</1> 權限才能分叉該集合。",
     "collection_stats": {},
     "note_section": {
       "placeholder": "關於您為何想要訪問的簡短說明"
@@ -262,18 +262,18 @@
       "workspace_admin_role": "工作區管理員",
       "no_admins_found": "沒有找到管理員"
     },
-    "approval_text": "一旦獲得批准，集合 將被分叉，您將獲得編輯權限。",
+    "approval_text": "一旦獲得批准，集合將被分叉，您將獲得編輯權限。",
     "buttons": {
       "cancel": "取消",
-      "request_access": "請求 訪問"
+      "request_access": "請求訪問"
     },
     "toast_messages": {
       "success": {
         "title": "已傳送分叉請求",
-        "description": "一旦您的 請求 獲得 工作區 管理員 批准，您就會收到通知。"
+        "description": "一旦您的請求獲得工作區管理員批准，您就會收到通知。"
       },
       "error": {
-        "default_title": "無法建立 請求",
+        "default_title": "無法建立請求",
         "default_description": "出了點問題"
       }
     }

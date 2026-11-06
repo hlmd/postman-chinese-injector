@@ -163,7 +163,7 @@
   },
   "capture_cookies": "捕获 Cookie",
   "session_name_editor": {
-    "rename_success": "会话 重命名成功",
+    "rename_success": "会话重命名成功",
     "title": "代理会话"
   },
   "footer": {
@@ -206,13 +206,13 @@
     "toaster": "无法删除 {count, plural, one {# 个请求} other {# 个请求}}"
   },
   "add_session_request_to_table": {
-    "create_row_placeholder": "命名您的 集合",
+    "create_row_placeholder": "命名您的集合",
     "no_of_requests": "{count, plural, one {# 个请求} other {# 个请求}}",
     "modal": {
       "header": "保存 {count, plural, one {# 个请求} other {# 个请求}}",
       "body": {
-        "title": "选择要保存到的 集合",
-        "search_placeholder": "搜索 集合",
+        "title": "选择要保存到的集合",
+        "search_placeholder": "搜索集合",
         "save_text": "将 {count, plural, one {# 个请求} other {# 个请求}} 保存到 {targetName}",
         "organize_text": "按以下方式组织请求",
         "domainName": "域名",
@@ -227,7 +227,7 @@
     },
     "toasters": {
       "error_title": "错误",
-      "error_description": "无法将请求添加到 集合。请再试一次。",
+      "error_description": "无法将请求添加到集合。请再试一次。",
       "view_now": "立即查看",
       "success_title": "{count, plural, one {# 个请求} other {# 个请求}}已添加到集合",
       "success_description": "{noOfRequests} {count, plural, one {# 个请求} other {# 个请求}} 已添加到 {collectionName} 集合",

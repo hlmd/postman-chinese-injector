@@ -138,7 +138,7 @@
       "import_in_progress": "匯入正在進行中",
       "importing": "匯入中...",
       "choose_how_to_import": "選擇如何匯入您的 API",
-      "choose_how_to_import_specification": "選擇如何匯入您的規格",
+      "choose_how_to_import_specification": "選擇如何匯入您的規範",
       "repository_label": "儲存庫",
       "multi_file_import_one_definition": "從列表中匯入一個定義",
       "multi_file_import_elements": "匯入元素 ({element_num})",
@@ -219,9 +219,9 @@
         "helper_text": "使用定義檔案以及專屬的集合"
       },
       "specification": {
-        "label_with_format": "{format} 規格",
+        "label_with_format": "{format} 規範",
         "label_with_format_and_collection": "{format} 規範，帶有 Postman 集合",
-        "label": "API 規格",
+        "label": "API 規範",
         "helper_text": "使用規範檔案"
       }
     }
@@ -234,7 +234,7 @@
     "file_count": "{count, plural, one {# 個檔案} other {# 個檔案}}",
     "format": {
       "api": "API",
-      "specification": "規格",
+      "specification": "規範",
       "collection": "集合",
       "collection_run": "集合執行",
       "data_dump": "資料轉儲",
@@ -242,7 +242,7 @@
       "globals": "全域變數",
       "request": "請求",
       "with_api": ",API",
-      "with_specification": "，規格"
+      "with_specification": "，規範"
     },
     "type_separator": ",",
     "type_separator_final": "和",

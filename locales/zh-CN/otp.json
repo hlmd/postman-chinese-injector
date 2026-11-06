@@ -22,7 +22,7 @@
     "resend_button_with_cooldown": "{seconds} 秒后重新发送代码",
     "resend_limit_reached": "您已达到此验证请求的重新发送限制。",
     "restart_button": "发送新代码",
-    "session_expired": "您的验证 会话 已过期。发送新代码以继续。",
+    "session_expired": "您的验证会话已过期。发送新代码以继续。",
     "successful_banner": "成功！",
     "error_code_length": "验证码必须包含六位数字。",
     "error_generic": "出了点问题。请再试一次。"

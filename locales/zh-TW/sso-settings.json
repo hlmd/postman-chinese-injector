@@ -62,7 +62,7 @@
     "download_metadata_file": "下載後設資料檔案",
     "regenerate_cert_button": "生成新的加密和簽名證書",
     "regenerate_cert_button_tooltip": "生成新的 SAML 簽名和加密證書",
-    "regenerate_cert_expiry": "正在使用的證書將在 {days} 天后過期。需要續訂。",
+    "regenerate_cert_expiry": "正在使用的證書將在 {days} 天後過期。需要續訂。",
     "regenerate_cert_expiry_tomorrow": "正在使用的證書將於明天到期。需要續訂。",
     "regenerate_cert_expiry_unknown": "正在使用的證書需要更新。",
     "regenerate_cert_heading": "重新生成證書？",

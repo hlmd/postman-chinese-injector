@@ -1,23 +1,23 @@
 {
   "copy_link_button_popover": {
-    "heading": "邀请 人在分享此链接之前",
+    "heading": "邀请人在分享此链接之前",
     "dismiss_button_text": "关闭"
   },
   "update_user_profile_modal": {
-    "description_text": "您需要 公开 配置文件才能在 公开 工作区中执行操作。在让所有人都能看到您的个人资料之前，请更新并查看以下详细信息。",
-    "confirm_cta_text": "将个人资料设为 公开",
+    "description_text": "您需要公开配置文件才能在公开工作区中执行操作。在让所有人都能看到您的个人资料之前，请更新并查看以下详细信息。",
+    "confirm_cta_text": "将个人资料设为公开",
     "name_error_message": "请填写此字段。",
-    "update_user_profile_api_error_message": "由于某些错误，无法启用 公开 配置文件。",
+    "update_user_profile_api_error_message": "由于某些错误，无法启用公开配置文件。",
     "update_user_success": {
-      "message": "您现在可以在 公开 工作区中执行操作。",
-      "title": "公开 配置文件已启用"
+      "message": "您现在可以在公开工作区中执行操作。",
+      "title": "公开配置文件已启用"
     },
-    "heading": "让您的个人资料 公开",
+    "heading": "让您的个人资料公开",
     "name_label": "姓名",
     "username_label": "用户名",
     "username_helper_text": "您的用户名可用于登录并帮助识别您的身份。",
     "cancel_button_text": "取消",
-    "public_url_description": "您的 公开 URL 将是： <1> {url}</1>"
+    "public_url_description": "您的公开 URL 将是： <1> {url}</1>"
   },
   "language_setting_modal": {
     "heading": "{modalHeading} 的设置"
@@ -45,7 +45,7 @@
   "documentation_entity_title": "文档",
   "unsaved_changes_modal": {
     "title": "未保存的更改",
-    "description": "在打开评论模式之前保存 请求 以避免丢失您的工作。",
+    "description": "在打开评论模式之前保存请求以避免丢失您的工作。",
     "cancel_button": "取消",
     "save_button": "保存"
   }

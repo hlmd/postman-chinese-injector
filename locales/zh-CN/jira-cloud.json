@@ -36,7 +36,7 @@
         },
         "summary": {
           "label": "摘要",
-          "placeholder": "响应 返回 404"
+          "placeholder": "响应返回 404"
         },
         "description": {
           "label": "描述",
@@ -58,7 +58,7 @@
         },
         "response": {
           "label": "在问题中包含响应",
-          "info_text": "将当前 响应 数据和元添加到问题描述中"
+          "info_text": "将当前响应数据和元添加到问题描述中"
         }
       },
       "errors": {
@@ -94,14 +94,14 @@
           "description": "连接 Jira 时出现问题。请再试一次。"
         },
         "required_fields": {
-          "title": "填写 Jira 中的必填字段。添加 请求 链接到问题以在 Postman 中查看。"
+          "title": "填写 Jira 中的必填字段。添加请求链接到问题以在 Postman 中查看。"
         },
         "permission_denied": {
           "create": {
-            "title": "您需要 权限 才能在此 Jira 项目中创建问题。选择另一个项目。"
+            "title": "您需要权限才能在此 Jira 项目中创建问题。选择另一个项目。"
           },
           "connect": {
-            "title": "您需要 权限 来编辑此 Jira 项目中的问题。选择另一个项目。"
+            "title": "您需要权限来编辑此 Jira 项目中的问题。选择另一个项目。"
           }
         },
         "not_allowed_value_fields": {
@@ -120,7 +120,7 @@
         "sign_in_button": "登录"
       },
       "expired_token": {
-        "title": "请重新登录。您的 令牌 已过期。",
+        "title": "请重新登录。您的令牌已过期。",
         "sign_in_button": "登录"
       }
     }
@@ -145,8 +145,8 @@
     },
     "collection": {
       "heading": {
-        "singular": "{ count } 问题在此 集合 中",
-        "plural": "{ count } 问题在此 集合 中"
+        "singular": "{ count } 问题在此集合中",
+        "plural": "{ count } 问题在此集合中"
       }
     }
   },
@@ -158,19 +158,19 @@
         "dismiss": "忽略"
       },
       "collection_run": {
-        "description": "创建 Jira 问题以与您的 团队 共享运行结果、分配任务并更快地解决故障。"
+        "description": "创建 Jira 问题以与您的团队共享运行结果、分配任务并更快地解决故障。"
       },
       "monitor": {
-        "description": "创建 Jira 问题以与您的 团队 共享 监控 结果、分配任务并更快地解决故障。"
+        "description": "创建 Jira 问题以与您的团队共享监控结果、分配任务并更快地解决故障。"
       }
     },
     "meta_actions": {
       "heading": "遇到意外错误？",
-      "description": "通过将此 请求 和 响应 附加到 Jira Cloud 上的新问题，帮助团队快速重现问题。"
+      "description": "通过将此请求和响应附加到 Jira Cloud 上的新问题，帮助团队快速重现问题。"
     },
     "context_bar": {
       "heading": "这可能是一个已知问题",
-      "description": "您的 团队 已将一个或多个 Jira 问题与此 请求 相关联。查看当前问题以获取可能的解决方法，或者在遇到不同情况时报告新问题。"
+      "description": "您的团队已将一个或多个 Jira 问题与此请求相关联。查看当前问题以获取可能的解决方法，或者在遇到不同情况时报告新问题。"
     },
     "cta_button": "知道了"
   }

@@ -272,7 +272,7 @@
       "slackWorkspacePlaceholder": "選擇工作區",
       "channelLabel": "{appName} 頻道",
       "channelPlaceholder": "選擇頻道",
-      "channelConnected": "— 已連線",
+      "channelConnected": "—已連線",
       "channelLoadError": "頻道載入失敗，請重試。",
       "frequencyLabel": "傳送通知的方式…",
       "frequencyRealtime": "即時傳送",
@@ -319,7 +319,7 @@
         "limitReached": "此工作區的頻道整合數量已達上限。",
         "slackWorkspaceMismatch": "你的團隊已連線到另一個 {appName} 工作區。請先斷開該連線，再連線此工作區。",
         "workspaceNotEligible": "此類工作區不支援頻道整合。",
-        "workspaceUpdateEventOnly": "在公共工作區中，整合只能向此頻道通知工作區更新。",
+        "workspaceUpdateEventOnly": "在公開工作區中，整合只能向此頻道通知工作區更新。",
         "destinationTypeImmutable": "此整合的目標型別無法更改。請斷開後重新連線一個新的整合。",
         "reconnectToChangeWorkspace": "要將此整合移到另一個 {appName} 工作區，請先斷開再重新連線。"
       }

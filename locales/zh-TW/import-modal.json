@@ -10,7 +10,7 @@
     "entity_labels": {
       "collections": "Collection",
       "environments": "Environment",
-      "specs": "規格",
+      "specs": "規範",
       "sdks": "SDK",
       "flows": "流程",
       "mocks": "Mock"

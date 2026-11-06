@@ -127,13 +127,13 @@
       "title": "Flow"
     },
     "insights": {
-      "title": "见解"
+      "title": "洞察"
     },
     "history": {
       "title": "历史"
     },
     "specs": {
-      "title": "规格"
+      "title": "规范"
     },
     "files": {
       "title": "文件"
@@ -160,7 +160,7 @@
       "open_button": "在桌面上打开"
     },
     "top_banner": {
-      "title": "在桌面应用程序中打开这个 工作区 吗？",
+      "title": "在桌面应用程序中打开这个工作区吗？",
       "button_text": "在桌面上打开"
     }
   },

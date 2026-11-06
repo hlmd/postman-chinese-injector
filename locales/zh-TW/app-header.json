@@ -19,7 +19,7 @@
     "agents_beta_label": "測試版",
     "agent_automations": "代理自動化",
     "api_catalog_disabled_tooltip": "API 目錄適用於企業計劃的使用者。",
-    "application_inventory_disabled_tooltip": "應用庫存可供 Solo 計劃及以上計劃的使用者使用。"
+    "application_inventory_disabled_tooltip": "應用庫存可供 個人版及以上套餐的使用者使用。"
   },
   "notifications": {
     "icon_tooltip": "新通知",
@@ -39,8 +39,8 @@
     "category_icon_placeholder": "類別圖示",
     "get_notified": "於 {platform} 收到通知",
     "authorizing": "授權...",
-    "initial_authorization_error": "啟動 授權 流程 時出現問題",
-    "could_not_authorize_error": "執行 授權 時出現問題",
+    "initial_authorization_error": "啟動授權流程時出現問題",
+    "could_not_authorize_error": "執行授權時出現問題",
     "integration_added_success": "添加了新的整合",
     "integration_added_error": "新增新整合時出現問題"
   },
@@ -57,7 +57,7 @@
     },
     "sign_in_modal": {
       "heading": "加入 Postman 探索工作空間",
-      "description": "工作區 可讓您組織 API 並進行協作。"
+      "description": "工作區可讓您組織 API 並進行協作。"
     },
     "could_not_load_workspaces": {
       "heading": "無法載入工作區",
@@ -67,7 +67,7 @@
     },
     "all_workspaces_empty_state": {
       "heading": "沒有工作空間",
-      "description": "工作區 可讓您在 API 上進行組織和協作。瞭解有關 <2><0>工作區</0></2> 的更多資訊",
+      "description": "工作區可讓您在 API 上進行組織和協作。瞭解有關 <2><0>工作區</0></2> 的更多資訊",
       "create_workspace_button": "建立工作區"
     },
     "no_results_found": {
@@ -84,7 +84,7 @@
   "workspace_switcher_new": {
     "all_workspaces_empty_state": {
       "heading": "還沒有工作區",
-      "description": "查詢現有的 工作區，或建立一個與您的 團隊 協作。",
+      "description": "查詢現有的工作區，或建立一個與您的團隊協作。",
       "create_workspace_button": "建立工作區",
       "browse_workspaces": "瀏覽工作區"
     },
@@ -99,13 +99,13 @@
   },
   "favorite_workspace_toggle": {
     "toast_content": {
-      "title": "無法加註星標 工作區",
+      "title": "無法加註星標工作區",
       "description": "您已達到可以加註星標的工作區的最大數量。"
     },
     "tooltip": {
       "loading": "載入中...",
-      "unstar_workspace": "取消星標 工作區",
-      "star_workspace": "加註星標 工作區"
+      "unstar_workspace": "取消星標工作區",
+      "star_workspace": "加註星標工作區"
     },
     "button_text": {
       "unstar": "取消星標",
@@ -114,37 +114,37 @@
   },
   "workspace_preview_popover": {
     "partner_workspace_banner": {
-      "default": "合作伙伴可以訪問此 工作區",
+      "default": "合作伙伴可以訪問此工作區",
       "multi_partner_workspace": "與多個組織的合作伙伴共享"
     },
     "archived_workspace_banner": {
-      "text": "此 工作區 已存檔"
+      "text": "此工作區已存檔"
     },
     "multi_partner_mode_label": "多夥伴模式：",
     "multi_partner_mode_on": "開啟",
     "multi_partner_mode_off": "關閉",
-    "multi_partner_mode_tooltip_on": "合作伙伴無法看到其他合作伙伴或對此 工作區 進行更改",
-    "multi_partner_mode_tooltip_off": "合作伙伴可以在此 工作區 檢視其他合作伙伴"
+    "multi_partner_mode_tooltip_on": "合作伙伴無法看到其他合作伙伴或對此工作區進行更改",
+    "multi_partner_mode_tooltip_off": "合作伙伴可以在此工作區檢視其他合作伙伴"
   },
   "more_options": "更多的",
   "api_network_dropdown": {
     "label": "API 網路",
-    "disabled_tooltip": "您沒有 權限 來檢視此內容。",
+    "disabled_tooltip": "您沒有權限來檢視此內容。",
     "private_api_network": "私有 API 網路",
     "public_api_network": "公開 API 網路",
     "partner_api_network": "合作伙伴 API 網路",
     "public_api_network_dropdown": {
       "card_title": "Postman API 網路",
-      "card_subtitle": "探索 Postman 上的 公開 API",
-      "public_card_heading": "探索並與 公開 API 整合",
+      "card_subtitle": "探索 Postman 上的公開 API",
+      "public_card_heading": "探索並與公開 API 整合",
       "spotlight_tab": "API 聚光燈",
       "trending_tab": "熱門 API",
-      "public_cta": "檢視所有 公開 API →"
+      "public_cta": "檢視所有公開 API →"
     },
     "private_api_network_dropdown": {
       "card_title": "私有 API 網路",
       "card_subtitle": "整個組織中可重用的 API",
-      "private_card_heading": "使用內部 團隊 API 來簡化開發",
+      "private_card_heading": "使用內部團隊 API 來簡化開發",
       "private_card_text": "內部 API 的中心樞紐，可簡化您的開發。",
       "private_cta": "檢視內部 API →"
     }
@@ -183,27 +183,27 @@
     "reached_monthly_threshold_warning": "您已達到計劃的每月使用限額。",
     "about_to_reach_monthly_threshold_warning": "您即將達到計劃的每月使用限額。",
     "create_free_team": "建立免費團隊",
-    "create_team_account": "建立 團隊 帳戶",
+    "create_team_account": "建立團隊帳戶",
     "view_team": "檢視團隊",
     "view_org": "檢視組織",
     "free_user_header_menu": {
       "heading": "Postman 最適合團隊合作",
-      "description": "通過建立 團隊 進行即時協作併為您的 API 工作流程建立單一事實來源。"
+      "description": "通過建立團隊進行即時協作併為您的 API 工作流程建立單一事實來源。"
     },
     "team_usage": {
       "resource_limit_error": {
         "heading": "出了問題！",
-        "description": "獲取 團隊 的使用資料時出現問題。",
+        "description": "獲取團隊的使用資料時出現問題。",
         "retry_action": "重試"
       },
       "menu_options": {
         "billing": "計費",
         "resource_usage": "資源使用情況",
         "billing_and_resource_usage": "計費和資源使用",
-        "manage_public_elements": "公開 元素",
+        "manage_public_elements": "公開元素",
         "manage_postman_keys": "Postman 金鑰",
         "audit_logs": "稽核日誌",
-        "team_settings": "團隊 設定",
+        "team_settings": "團隊設定",
         "org_settings": "組織設定"
       }
     },
@@ -218,9 +218,9 @@
     "options": {
       "settings": "設定",
       "app_settings": "應用程式設定",
-      "workspace_settings": "工作區 設定",
+      "workspace_settings": "工作區設定",
       "organization_settings": "組織設定",
-      "team_settings": "團隊 設定",
+      "team_settings": "團隊設定",
       "account_settings": "帳戶設定",
       "update_available_view": "可用更新，檢視更改",
       "update_available_restart": "重啟即可更新",
@@ -242,70 +242,70 @@
     "close_modal": "關閉對話方塊",
     "heading": {
       "google_directory": "從您的 Google 目錄中新增人員",
-      "invite_partners": "邀請 合作伙伴",
-      "invite_people": "邀請加入 工作區",
-      "invite_people_workspace": "邀請他人加入此 工作區",
-      "invite_team_members": "邀請 團隊 成員"
+      "invite_partners": "邀請合作伙伴",
+      "invite_people": "邀請加入工作區",
+      "invite_people_workspace": "邀請他人加入此工作區",
+      "invite_team_members": "邀請團隊成員"
     },
     "learn_more": "瞭解更多",
     "invite_button": {
       "label": "邀請",
-      "disabled_tooltip": "您沒有 權限 來執行此操作。",
+      "disabled_tooltip": "您沒有權限來執行此操作。",
       "default_tooltip": "邀請"
     },
     "copy_partner_link": "複製合作伙伴連結",
-    "copy_team_member_link": "複製 團隊 連結",
+    "copy_team_member_link": "複製團隊連結",
     "partner_slot_full_modal": {
-      "heading": "合作伙伴 邀請已傳送",
-      "description": "所有受邀合作伙伴都不能成為編輯，因為您的 團隊 沒有足夠的付費位置。在新增更多插槽之前，他們可以作為檢視者訪問此 工作區。",
-      "partner_managers_notified": "我們已通知 合作伙伴 經理新增更多空位。",
+      "heading": "合作伙伴邀請已傳送",
+      "description": "所有受邀合作伙伴都不能成為編輯，因為您的團隊沒有足夠的付費位置。在新增更多插槽之前，他們可以作為檢視者訪問此工作區。",
+      "partner_managers_notified": "我們已通知合作伙伴經理新增更多空位。",
       "done": "完畢"
     },
     "multi_partner_workspace_configuration_nudge": {
       "heading": "邀請多個組織的合作伙伴？",
       "description": "啟用多夥伴模式以防止夥伴看到彼此。",
-      "action_text": "轉到 工作區 設定",
+      "action_text": "轉到工作區設定",
       "learn_more": "瞭解更多"
     },
     "email_input": {
       "placeholder": "輸入姓名、群組名稱或電子郵件..."
     },
-    "could_not_find_workspace": "找不到這個 工作區。",
-    "share_workspace_error": "分享此 工作區 時出了點問題",
+    "could_not_find_workspace": "找不到這個工作區。",
+    "share_workspace_error": "分享此工作區時出了點問題",
     "pending_invites": {
       "resend_success": "邀請已重新發送",
       "resend_error": "重新發送邀請時出錯",
       "revoke_success": "邀請已撤銷",
       "revoke_error": "撤銷邀請時出錯"
     },
-    "failed_to_assign_editor_role": "無法將 流程 編輯者 角色 分配給某些使用者。",
-    "invited_to_workspace": "已受邀加入 工作區",
-    "invited_to_workspace_for_non_team_users": "邀請 請求 已傳送",
+    "failed_to_assign_editor_role": "無法將流程編輯者角色分配給某些使用者。",
+    "invited_to_workspace": "已受邀加入工作區",
+    "invited_to_workspace_for_non_team_users": "邀請請求已傳送",
     "error_inviting_to_workspace_toast": {
       "heading": "無法邀請",
       "description": "只是一根電線有問題。再試一次。",
       "partial_description": "已傳送 {sentCount}/{totalCount} 個邀請，其餘邀請傳送失敗。"
     },
-    "cant_invite_external_users_error": "您不能 邀請 不屬於您的 團隊 的人。",
+    "cant_invite_external_users_error": "您不能邀請不屬於您的團隊的人。",
     "inviting_will_change_to_visibility": "邀請人們會將其更改為 {toVisibility} 工作區。",
     "email_invalid_message": "{noOfEmails, plural, one {# 個電子郵件無效，請輸入有效的電子郵件以傳送邀請。} other {# 個電子郵件無效，請輸入有效的電子郵件以傳送邀請。}}",
-    "permission_denied_message": "您沒有 權限 來執行此操作。",
-    "invite_disabled_message": "請輸入姓名或電子郵件以傳送 邀請。",
-    "copy_invite_link_personal_workspace": "邀請他人可以向 團隊 中的每個人開啟 工作區。",
-    "new_members_will_join_team_info_text": "新成員接受您的 邀請 後將加入您的 團隊。",
-    "non_team_new_members_will_join_team_info_text": "一旦稽核者批准您的 請求，我們就會通知您。",
-    "suggestion_will_be_sent_to_team_admin_info_text": "您的建議將傳送至 團隊 管理員 進行批准。",
-    "team_setup_info_for_non_team_user": "邀請後，我們將幫助您設定 團隊。",
-    "cant_invite_partners_users_error": "該合作伙伴仍然是您的 團隊 的一部分。<1><0>移除他們</0></1>以重新邀請。",
-    "personal_ws_to_team_ws_info": "邀請他人可以向 團隊 中的每個人開啟 工作區。 <1><0>升級</0></1>與選定的隊友一起工作。",
-    "cant_invite_team_member_as_partner": "您不能 邀請 團隊 成員 作為此 工作區 的合作伙伴。",
-    "new_partners_can_access_workspace_info_text": "新合作伙伴接受您的 邀請 後將能夠訪問 工作區。",
-    "common_domain_partner_invite_error": "您只能從您自己的域中 邀請 合作伙伴。",
+    "permission_denied_message": "您沒有權限來執行此操作。",
+    "invite_disabled_message": "請輸入姓名或電子郵件以傳送邀請。",
+    "copy_invite_link_personal_workspace": "邀請他人可以向團隊中的每個人開啟工作區。",
+    "new_members_will_join_team_info_text": "新成員接受您的邀請後將加入您的團隊。",
+    "non_team_new_members_will_join_team_info_text": "一旦稽核者批准您的請求，我們就會通知您。",
+    "suggestion_will_be_sent_to_team_admin_info_text": "您的建議將傳送至團隊管理員進行批准。",
+    "team_setup_info_for_non_team_user": "邀請後，我們將幫助您設定團隊。",
+    "cant_invite_partners_users_error": "該合作伙伴仍然是您的團隊的一部分。<1><0>移除他們</0></1>以重新邀請。",
+    "personal_ws_to_team_ws_info": "邀請他人可以向團隊中的每個人開啟工作區。 <1><0>升級</0></1>與選定的隊友一起工作。",
+    "cant_invite_team_member_as_partner": "您不能邀請團隊成員作為此工作區的合作伙伴。",
+    "new_partners_can_access_workspace_info_text": "新合作伙伴接受您的邀請後將能夠訪問工作區。",
+    "common_domain_partner_invite_error": "您只能從您自己的域中邀請合作伙伴。",
     "team_size": "團隊規模",
     "manage_team": "管理團隊",
     "manage_org": "管理",
     "selected": "已選擇",
-    "external_team_banner": "該 工作區 歸 <1><0>{teamName}</0></1> 所有。",
+    "external_team_banner": "該工作區歸 <1><0>{teamName}</0></1> 所有。",
     "invite_users_radio_group": {
       "label": "您想邀請誰？",
       "options": {
@@ -314,8 +314,8 @@
           "helpertext": "<Link>合作伙伴</Link>是組織之外的外部人員。"
         },
         "team_members": {
-          "label": "團隊 成員",
-          "helpertext": "團隊 成員是來自您組織的人員。"
+          "label": "團隊成員",
+          "helpertext": "團隊成員是來自您組織的人員。"
         }
       },
       "actions": {
@@ -373,27 +373,27 @@
       "could_not_find_anyone": "糟糕，我們在您的組織內找不到任何人。",
       "could_not_find_person": "糟糕，我們在您的組織中找不到此人。",
       "add_new_users_via_email": "您仍然可以通過電子郵件邀請新使用者來新增新使用者。",
-      "try_a_different_spelling_to_invite": "嘗試不同的拼寫或通過電子郵件 邀請 它們。"
+      "try_a_different_spelling_to_invite": "嘗試不同的拼寫或通過電子郵件邀請它們。"
     },
     "workspace_role_selection": {
       "error_uploading_file": "上傳檔案時出錯，請重試。",
       "only_csv_and_txt_files_can_be_uploaded_error": "只能上傳 CSV 和 TXT 檔案",
       "max_file_size_exceeded_error": "檔案大小大於 {maxFileSize}MB，僅支援小於 {maxFileSize}MB 的檔案。",
       "name_or_email": "姓名或電子郵件",
-      "invite_by_email": "邀請 通過電子郵件",
+      "invite_by_email": "邀請通過電子郵件",
       "name_email_or_group_name": "姓名、電子郵件或群組名稱",
       "select_file_to_add_people": "選擇 TXT 或 CSV 檔案來新增人員",
       "add_from_file": "從檔案新增"
     },
     "role": "角色",
     "assign_flow_editor_role": {
-      "label": "賦值 流程 編輯者 角色",
-      "helpertext": "這將允許受邀人員編輯此 團隊 中的所有流程。"
+      "label": "賦值流程編輯者角色",
+      "helpertext": "這將允許受邀人員編輯此團隊中的所有流程。"
     },
     "new_tag_label": "新的",
     "assign_partner_lead_role": {
       "label": "讓他們成為 {role}",
-      "description": "這使他們能夠 邀請 並管理此 工作區 中的其他合作伙伴。"
+      "description": "這使他們能夠邀請並管理此工作區中的其他合作伙伴。"
     },
     "invalid_emails_error_message": "確保您輸入的電子郵件有效。",
     "blank_state": {
@@ -404,24 +404,24 @@
       }
     },
     "copy_link_for_workspace": {
-      "copy_invite_link": "複製 邀請 連結",
+      "copy_invite_link": "複製邀請連結",
       "copied": "已複製",
       "get_invite_link_error_message": "生成連結時出現問題。",
-      "cannot_send_invites_permission_message": "您沒有 管理員 權限 來執行此操作"
+      "cannot_send_invites_permission_message": "您沒有管理員權限來執行此操作"
     },
     "learn_about_partners": "瞭解<1><0>合作伙伴</0></1>",
     "back": "後退",
-    "invite_partners": "邀請 合作伙伴",
-    "send_invite": "傳送 邀請",
+    "invite_partners": "邀請合作伙伴",
+    "send_invite": "傳送邀請",
     "toast_content": {
       "default_error": {
-        "description": "目前無法回覆 請求。請再試一次。"
+        "description": "目前無法回覆請求。請再試一次。"
       },
       "request_responded": {
-        "description": "您已回覆 請求。"
+        "description": "您已回覆請求。"
       },
       "request_not_found": {
-        "description": "請求 未找到。"
+        "description": "請求未找到。"
       }
     },
     "git_collaborators": {
@@ -430,8 +430,8 @@
       "retry": "重試",
       "empty_collaborators": "在最近的 Git 歷史記錄中找不到合作者。",
       "suggested_header": "建議邀請",
-      "suggested_description": "來自 Git 儲存庫的 邀請 協作者。",
-      "invite_all": "邀請 全部 ({count})",
+      "suggested_description": "來自 Git 儲存庫的邀請協作者。",
+      "invite_all": "邀請全部 ({count})",
       "dismiss": "忽略",
       "all_invited": "所有 Git 合作者都已被邀請！",
       "people_with_access": "有訪問權限的人",
@@ -440,40 +440,40 @@
   },
   "move_to_invite": {
     "squad_member": {
-      "heading": "將 工作區 移動到 團隊 進行協作",
-      "description": "您只能 邀請 並與團隊中的人員協作。"
+      "heading": "將工作區移動到團隊進行協作",
+      "description": "您只能邀請並與團隊中的人員協作。"
     },
     "non_squad_member": {
-      "heading": "加入 {teamName} 中的 團隊 進行協作",
-      "description": "您只能 邀請 並與團隊中的人員協作。"
+      "heading": "加入 {teamName} 中的團隊進行協作",
+      "description": "您只能邀請並與團隊中的人員協作。"
     }
   },
   "deny_share_request": {
     "heading": "拒絕請求？",
-    "description": "請求 訪問此 {model} 將被拒絕。",
+    "description": "請求訪問此 {model} 將被拒絕。",
     "deny_cta": "拒絕",
     "cancel_cta": "取消",
     "toast_content": {
       "default_error": {
-        "description": "目前無法回覆 請求。請再試一次。"
+        "description": "目前無法回覆請求。請再試一次。"
       },
       "request_denied": {
-        "description": "請求 被拒絕"
+        "description": "請求被拒絕"
       },
       "request_responded": {
-        "description": "您已回覆 請求。"
+        "description": "您已回覆請求。"
       },
       "request_not_found": {
-        "description": "請求 未找到。"
+        "description": "請求未找到。"
       }
     }
   },
   "workspace_presence": {
     "active_now": "現在活躍",
     "active": "活躍",
-    "no_active_team_members": "目前沒有活躍的 團隊 成員。",
+    "no_active_team_members": "目前沒有活躍的團隊成員。",
     "inactive": "不活躍",
-    "no_inactive_team_members": "目前沒有不活躍的 團隊 成員。",
+    "no_inactive_team_members": "目前沒有不活躍的團隊成員。",
     "name_with_you_label": "{name}（你）",
     "visited": "訪問過 {visitedRelativeString}"
   },
@@ -497,25 +497,25 @@
         "search_for_teams": "在 Postman 上搜索團隊",
         "search_for_flows": "尋找令人興奮的新流程",
         "search_for_apis_explore": "搜尋您想要探索的 API",
-        "search_for_team_apis_to_explore": "搜尋您想要探索的 團隊 API",
-        "search_for_apis_private_network": "在您的 私有 API 網路中搜索 API",
-        "search_for_team_apis_to_explore_like": "搜尋您想要探索的 團隊 API，例如 {team1} 和 {team2}",
+        "search_for_team_apis_to_explore": "搜尋您想要探索的團隊 API",
+        "search_for_apis_private_network": "在您的私有 API 網路中搜索 API",
+        "search_for_team_apis_to_explore_like": "搜尋您想要探索的團隊 API，例如 {team1} 和 {team2}",
         "search_for_apis_by_popular_teams": "搜尋 {team1} 和 {team2} 等熱門團隊的 API",
-        "search_for_team_workspaces_to_explore_like": "搜尋您想要探索的 團隊 工作區，例如 {team1} 和 {team2}",
+        "search_for_team_workspaces_to_explore_like": "搜尋您想要探索的團隊工作區，例如 {team1} 和 {team2}",
         "search_for_workspaces_by_popular_teams": "搜尋 {team1} 和 {team2} 等熱門團隊的工作空間",
-        "search_for_team_collections_to_explore_like": "搜尋您想要探索的 團隊 集合，例如 {team1} 和 {team2}",
+        "search_for_team_collections_to_explore_like": "搜尋您想要探索的團隊集合，例如 {team1} 和 {team2}",
         "search_for_collections_by_popular_teams": "搜尋 {team1} 和 {team2} 等熱門團隊的收藏",
-        "search_for_team_requests_to_explore_like": "搜尋您想要探索的 團隊 請求，例如 {team1} 和 {team2}",
+        "search_for_team_requests_to_explore_like": "搜尋您想要探索的團隊請求，例如 {team1} 和 {team2}",
         "search_for_requests_by_popular_teams": "搜尋 {team1} 和 {team2} 等熱門團隊的請求",
-        "search_for_team_flows_to_explore_like": "搜尋您想要探索的 團隊 流，例如 {team1} 和 {team2}",
+        "search_for_team_flows_to_explore_like": "搜尋您想要探索的團隊流，例如 {team1} 和 {team2}",
         "search_for_flows_by_popular_teams": "搜尋 {team1} 和 {team2} 等熱門團隊的流",
         "search_for_teams_to_explore_like": "搜尋您想要探索的團隊，例如 {team1} 和 {team2}",
         "search_for_popular_teams": "搜尋 {team1} 和 {team2} 等熱門團隊",
         "search_example_brevo": "例如，在 {team} 中新增 webhook 的過程是怎樣的",
-        "search_example_google_maps": "例如，找到 端點 以在 {team} 上顯示影片",
+        "search_example_google_maps": "例如，找到端點以在 {team} 上顯示影片",
         "search_example_kroger": "例如，從 {team} 檢索使用者配置檔案資料",
         "search": "搜尋",
-        "search_in_current_workspace": "在此 工作區 中搜索元素"
+        "search_in_current_workspace": "在此工作區中搜索元素"
       },
       "clear_label": "清除",
       "see_all_results": "檢視“{searchQuery}”的所有結果",
@@ -539,7 +539,7 @@
       "all_postman": "全部 Postman",
       "private_api_network": "私有 API 網路",
       "public_api_network": "公開 API 網路",
-      "personal_space": "個人 空間",
+      "personal_space": "個人空間",
       "team": "團隊 {teamName}",
       "current_workspace": "工作區 {activeWorkspaceName}"
     },
@@ -558,11 +558,11 @@
     "recent_searches": "最近搜尋過",
     "popular_entities": "風靡網路",
     "mobile_search_view": {
-      "search_instructions": "搜尋所有工作區、集合、規格、團隊和使用者"
+      "search_instructions": "搜尋所有工作區、集合、規範、團隊和使用者"
     },
     "empty_states": {
       "type_query_to_search": {
-        "title": "開始鍵入以在此 工作區 或 集合 中搜索"
+        "title": "開始鍵入以在此工作區或集合中搜索"
       },
       "no_results": {
         "title": "沒有找到結果",
@@ -614,7 +614,7 @@
         "flow": "流程",
         "team": "發布者",
         "folder": "資料夾",
-        "spec": "規格",
+        "spec": "規範",
         "all": "全部",
         "workspace_plural": "工作空間",
         "collection_plural": "收藏品",
@@ -626,7 +626,7 @@
         "flow_plural": "流量",
         "team_plural": "團隊",
         "folder_plural": "資料夾",
-        "spec_plural": "規格"
+        "spec_plural": "規範"
       },
       "by_filter": {
         "name": "作者",
@@ -657,8 +657,8 @@
         "group_selected": "已選擇",
         "group_current": "目前的",
         "group_suggestions": "建議",
-        "group_collections_current_workspace": "目前 工作區 中的集合",
-        "group_workspaces_current_team": "目前 團隊 中的工作空間",
+        "group_collections_current_workspace": "目前工作區中的集合",
+        "group_workspaces_current_team": "目前團隊中的工作空間",
         "group_collections_other_workspaces": "其他工作區中的集合",
         "group_workspaces_other_teams": "其他團隊的工作空間",
         "no_results": "找不到工作區或集合",
@@ -674,7 +674,7 @@
         "label_multiple_value": "{count} 標籤",
         "search_placeholder": "搜尋標籤",
         "group_selected": "已選擇",
-        "group_tags_current_workspace": "目前 工作區 中的標籤",
+        "group_tags_current_workspace": "目前工作區中的標籤",
         "group_suggestions": "建議",
         "group_tags_other_workspaces": "其他工作區中的標籤",
         "no_results": "沒有找到標籤",

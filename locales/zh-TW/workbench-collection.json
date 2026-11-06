@@ -372,7 +372,7 @@
           "run": {
             "text": "執行",
             "tooltip": {
-              "primary_message": "目前無法在公共工作區中執行集合，不過我們正在為未來版本開發此功能！",
+              "primary_message": "目前無法在公開工作區中執行集合，不過我們正在為未來版本開發此功能！",
               "secondary_message": "將此集合 Fork 到您自己的工作區中即可執行。",
               "primary_action": "建立 Fork",
               "run_collection": "執行集合"

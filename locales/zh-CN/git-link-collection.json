@@ -5,17 +5,17 @@
       "no_write_permission": "您没有权限保存对此 Git 存储库中已连接分支的更改。\n请 Fork 此集合以进行更改。",
       "hash_mismatch": "连接的存储库包含需要在更新集合之前拉取的更改。",
       "update_in_app": "使用 Postman 应用程序更新此集合。",
-      "git_repo_secrets_restriction_error": "发现 Git 存储库规则违规。内容中检测到 密钥",
+      "git_repo_secrets_restriction_error": "发现 Git 存储库规则违规。内容中检测到密钥",
       "generic_connection_error_for_entity": "将集合连接到存储库时出现问题。请再试一次。",
-      "branch_not_found": "在 git 存储库上找不到 分支",
+      "branch_not_found": "在 git 存储库上找不到分支",
       "repository_disconnected": "存储库已断开连接。",
       "conflict": "Postman 上的集合与 GitHub 的最新更改之间存在冲突。请解决冲突后继续编辑集合。",
-      "invalid_token": "您的访问权限 令牌 无效。重新验证以恢复同步。",
+      "invalid_token": "您的访问权限令牌无效。重新验证以恢复同步。",
       "missing_token": "此 {entity} 链接到 Git 存储库。使用您的 Git 帐户进行身份验证，然后重试。",
       "generic_error": "将更改保存到 Git 存储库时出现问题。稍后再试。",
       "generic_error_for_entity": "将更改保存到 {entityName} 的 Git 存储库时出现问题。稍后再试。",
       "conflict_popover_message": "Postman 上的集合与远程的最新更改之间存在冲突。解决它们以继续编辑。",
-      "conflict_popover_message_v2": "发现 合并 冲突。解决它们以同步更改。",
+      "conflict_popover_message_v2": "发现合并冲突。解决它们以同步更改。",
       "choose_version": "选择",
       "pull_failed": "无法从 Git 存储库中提取更改。请再试一次。"
     },
@@ -40,7 +40,7 @@
       "connected_to_repository": "连接到存储库",
       "wait_screen": "正在连接到 {gitServiceName}...",
       "successful_auth": "认证成功",
-      "failed_auth": "{gitServiceName} 授权 失败"
+      "failed_auth": "{gitServiceName} 授权失败"
     },
     "description": {
       "connect_git_enterprise": "使用存储库的授权 {gitServiceName} 域进行身份验证。",
@@ -54,7 +54,7 @@
       "button": {
         "authenticate": "认证",
         "close": "关闭",
-        "enter_token": "输入 授权 令牌"
+        "enter_token": "输入授权令牌"
       },
       "select": {
         "git_domain": "{gitServiceName} 域"
@@ -65,7 +65,7 @@
     },
     "placeholders": {
       "select": "选择",
-      "paste_token": "将 令牌 粘贴到此处..."
+      "paste_token": "将令牌粘贴到此处..."
     }
   },
   "connect_form": {
@@ -73,22 +73,22 @@
       "repo_not_found": "在组织中找不到存储库。",
       "branch_not_found": "在存储库中找不到分支。",
       "repo_required": "需要一个存储库。",
-      "branch_required": "需要 分支。",
+      "branch_required": "需要分支。",
       "org_required": "需要一个组织。",
       "owner_required": "需要一个所有者。",
       "path_invalid": "集合路径无效。",
       "failed_to_load": "无法加载 {entity}。",
       "branch_permission": {
         "title": "无法连接存储库",
-        "description": "您的 {gitServiceName} 帐户无权连接到此存储库或 分支。",
-        "banner": "您无权编辑此 分支"
+        "description": "您的 {gitServiceName} 帐户无权连接到此存储库或分支。",
+        "banner": "您无权编辑此分支"
       },
       "failed_connection": {
         "title": "连接 {entityType} 时出错",
         "description": "将 {entityType} 连接到存储库时出现问题。请再试一次。"
       },
-      "no_permission_to_push": "您没有 权限 来推送到此 分支。",
-      "error_creating_branch": "创建 分支 时出错。请再试一次。"
+      "no_permission_to_push": "您没有权限来推送到此分支。",
+      "error_creating_branch": "创建分支时出错。请再试一次。"
     },
     "labels": {
       "select": {
@@ -98,8 +98,8 @@
         "branch": "分支",
         "collection_directory": "集合目录"
       },
-      "creating_branch": "创建 分支",
-      "create_branch_from": "创建 分支 \"{branchName}\" 从"
+      "creating_branch": "创建分支",
+      "create_branch_from": "创建分支 \"{branchName}\" 从"
     },
     "placeholders": {
       "select": {
@@ -113,7 +113,7 @@
     "collection_directory_helper_text": "如果留空，将创建一个<Badge />目录。",
     "success_connection": "已成功连接到 {gitServiceName} 存储库。",
     "install_github-app_helper_text": "如果您没有看到您的组织，则可能需要<Link><Text>首先将 GitHub 应用程序安装到您的组织。</Text></Link>",
-    "install_github-app_helper_text_new": "如果您没有看到列出的任何 Github 所有者，请尝试在您的 个人 帐户或组织上<Link><Text>安装 Postman 应用</Text></Link>。",
+    "install_github-app_helper_text_new": "如果您没有看到列出的任何 Github 所有者，请尝试在您的个人帐户或组织上<Link><Text>安装 Postman 应用</Text></Link>。",
     "learn_more": "要了解更多信息，请参阅<Link><Text>Github文档</Text></Link>",
     "learn_more_new": "<Link><Text>了解更多。</Text></Link>"
   },
@@ -137,8 +137,8 @@
   "auth_popover": {
     "authentication_message": "此 {entityType} 链接到 Git 存储库。使用您的 {gitServiceName} 帐户进行身份验证以进行更改。",
     "re-authentication_message": {
-      "default": "您的 {gitServiceName} 访问 令牌 无效。重新验证以恢复同步。",
-      "on_save": "您的 {gitServiceName} 访问 令牌 无效。重新验证以保存更改并恢复同步。"
+      "default": "您的 {gitServiceName} 访问令牌无效。重新验证以恢复同步。",
+      "on_save": "您的 {gitServiceName} 访问令牌无效。重新验证以保存更改并恢复同步。"
     },
     "authentication_message_v2": "进行更改需要身份验证",
     "re-authentication_message_v2": "进行更改需要重新验证",
@@ -153,7 +153,7 @@
     }
   },
   "on_boarding_banner": {
-    "title": "继承 Git 审核和 合并 工作流程",
+    "title": "继承 Git 审核和合并工作流程",
     "description": "将此集合连接到您的 Git 仓库，然后 fork 并链接到分支，以保持集合和代码审查同步。",
     "v2_message": "Fork + Git = 更好的工作流程。",
     "variants": {
@@ -162,7 +162,7 @@
         "description": "使用 Git 自动同步集合——无需导出。"
       },
       "second": {
-        "title": "团队 友好的工作流程",
+        "title": "团队友好的工作流程",
         "description": "将集合链接到分支并使用具有视觉差异的 PR。"
       },
       "third": {
@@ -210,9 +210,9 @@
         "loading_directories": "正在加载目录.."
       },
       "validation": {
-        "empty_folder_not_allowed": "不允许创建空 文件夹。",
+        "empty_folder_not_allowed": "不允许创建空文件夹。",
         "dot_and_dotdot_not_allowed": "文件夹名称中不允许使用 '.' 和 '..'。",
-        "dot_not_allowed": "不允许在 文件夹 名称中使用“{char}”。"
+        "dot_not_allowed": "不允许在文件夹名称中使用“{char}”。"
       }
     }
   },
@@ -289,7 +289,7 @@
       "error_message": "目前无法获取更改。",
       "push_error": "将更改推送到 Git 时出错。请再试一次。",
       "push_success": "所有更改均已成功推送到 Git。",
-      "push_changes_tooltip": "将更改推送到连接的 分支",
+      "push_changes_tooltip": "将更改推送到连接的分支",
       "push_blocked_tooltip": "有更改需要拉取"
     },
     "commits": {

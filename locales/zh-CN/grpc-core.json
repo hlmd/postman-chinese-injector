@@ -31,7 +31,7 @@
       },
       "empty": {
         "text": "<0>创建一个示例</0> <1>以使用其消息。</1>",
-        "tooltip": "您没有 权限 来执行此操作"
+        "tooltip": "您没有权限来执行此操作"
       },
       "search_bar": {
         "placeholder": "在示例中搜索消息"
@@ -56,10 +56,10 @@
       "text": "将文件拖放到此处以将其用作服务定义"
     },
     "events": {
-      "sent_request": "请求 已发送",
+      "sent_request": "请求已发送",
       "received_response": "响应已收到",
       "unrecognised_status_code": "无法识别的状态代码",
-      "response_pruned": "响应 未存储。"
+      "response_pruned": "响应未存储。"
     }
   },
   "url_input": {
@@ -81,8 +81,8 @@
   "unary_results": {
     "response_pane_tab": {
       "truncated_response": {
-        "title": "响应 尺寸太大，无法显示",
-        "message": "我们无法将 响应 保存在历史记录中，因为它太大了。再次调用 请求 以获取 响应。"
+        "title": "响应尺寸太大，无法显示",
+        "message": "我们无法将响应保存在历史记录中，因为它太大了。再次调用请求以获取响应。"
       }
     },
     "heading": "响应",
@@ -145,9 +145,9 @@
   "mock_suggestion": {
     "mocks_error_cta": {
       "unsupported_api": "<0>选择一个 Protobuf API</0> <1> 以使用其模拟服务器服务 URL</1>",
-      "unsupported_spec": "<0>选择 Protobuf 规格 </0> <1> 以使用其模拟服务器服务 URL</1>",
+      "unsupported_spec": "<0>选择 Protobuf 规范 </0> <1> 以使用其模拟服务器服务 URL</1>",
       "api_with_no_release": "<0>发布Protobuf API</0> <1>以使用其模拟服务器 URL</1>",
-      "unsupported_api_version": "<0>切换到 API 的已发布 版本</0> <1> 以使用其模拟服务器服务 URL</1>"
+      "unsupported_api_version": "<0>切换到 API 的已发布版本</0> <1> 以使用其模拟服务器服务 URL</1>"
     },
     "mock_url_error": "<0>加载模拟服务器 URL 失败。</0> <1>重试</1>",
     "mock_button": "使用模拟服务器 URL",
@@ -165,7 +165,7 @@
       "title": "文件类型无效",
       "description": "仅支持 .proto 文件。请使用 .proto 文件重试。"
     },
-    "no_permission": "您没有 权限 来执行此操作",
+    "no_permission": "您没有权限来执行此操作",
     "could_not_invoke_method": "无法调用方法"
   },
   "status_code": {
@@ -174,10 +174,10 @@
   },
   "results": {
     "save_example": {
-      "tooltip": "首先将此 请求 保存到 集合"
+      "tooltip": "首先将此请求保存到集合"
     },
     "empty": {
-      "message": "调用一个方法来获取 响应"
+      "message": "调用一个方法来获取响应"
     },
     "streaming_results": {
       "badge": {
@@ -205,16 +205,16 @@
       "description": "配置用于验证服务器证书中的公用名的值。"
     },
     "include_default_fields": {
-      "title": "在 响应 中包含具有默认值的字段",
-      "description": "查看具有默认值的 响应 字段。关闭此选项将从 响应 中忽略此类字段。"
+      "title": "在响应中包含具有默认值的字段",
+      "description": "查看具有默认值的响应字段。关闭此选项将从响应中忽略此类字段。"
     },
     "max_response_msg_size": {
-      "title": "最大 响应 消息大小",
+      "title": "最大响应消息大小",
       "description": "允许的最大消息大小（以 MB 为单位）。要接收任意大小的消息，请设置为 0。"
     },
     "connectionTimeout": {
-      "title": "连接 超时",
-      "description": "配置调用和接收 响应 的截止时间（以毫秒为单位）。要无限期地保持连接打开，请设置为 0。"
+      "title": "连接超时",
+      "description": "配置调用和接收响应的截止时间（以毫秒为单位）。要无限期地保持连接打开，请设置为 0。"
     }
   },
   "example_documentation": {
@@ -233,7 +233,7 @@
     "edit_example": "编辑示例"
   },
   "header_tooltips": {
-    "seed": "在 请求 元数据中使用此键值对来接收相同的模拟响应。"
+    "seed": "在请求元数据中使用此键值对来接收相同的模拟响应。"
   },
   "agent_error_banner": {
     "desktop_agent_not_connected": "<0>切换到Postman桌面代理</0>加载方法。",
@@ -318,11 +318,11 @@
     "details": "细节：",
     "api_deprecated": {
       "message": "服务定义正在使用不再受支持的 API Builder 对象。将 API 对象迁移到 Spec Hub 以继续使用它。",
-      "migrate_action": "迁移到规格中心"
+      "migrate_action": "迁移到规范中心"
     },
     "api_error": {
       "not_found": "所选的 API 不再存在于 Postman 中。使用不同的方式来加载服务和方法。",
-      "release_not_found": "所选的 API 版本 不再存在于 Postman 中。",
+      "release_not_found": "所选的 API 版本不再存在于 Postman 中。",
       "unresolved_import": {
         "primary_action": "再试一次",
         "message": "某些导入指令无法解决。"
@@ -347,7 +347,7 @@
     },
     "file_error": {
       "file_not_found": {
-        "message": "找不到 .proto 文件。从文件系统中选择它以在 请求 中使用。",
+        "message": "找不到 .proto 文件。从文件系统中选择它以在请求中使用。",
         "primary_action": "选择.proto文件"
       },
       "file_not_found_in_dir": "<0>找不到 .proto 文件。它可能是从另一个文件系统上传的。如果是这种情况，请确保您已将文件添加到 Postman 工作目录中。</0> <1><0>如何使用工作目录？</0></1>",
@@ -372,9 +372,9 @@
       },
       "access_not_found": "您无权访问该规范。",
       "default": {
-        "edit_specification": "编辑规格",
+        "edit_specification": "编辑规范",
         "message": "所选的 Protobuf 规范可能存在一些问题。",
-        "syntax_error_unknown": "未知规范中的语法错误。修改 Protobuf 规格或选择不同的规格。",
+        "syntax_error_unknown": "未知规范中的语法错误。修改 Protobuf 规范或选择不同的规范。",
         "syntax_error": "{specificationName} 中存在语法错误。修改 Protobuf 规范或选择不同的规范。"
       }
     }
@@ -385,7 +385,7 @@
   "api_dropdown": {
     "error": "无法加载 API。",
     "no_protobuf_schema": "未找到 Protobuf 模式",
-    "no_schema_in_dir": "在此 工作区 中找不到 Protobuf 模式",
+    "no_schema_in_dir": "在此工作区中找不到 Protobuf 模式",
     "create_new": "创建一个新的 API：",
     "new_api_name": "输入名称以创建新的 API"
   },
@@ -413,7 +413,7 @@
     },
     "access_restricted": "（访问受限）",
     "version_selector": {
-      "placeholder": "选择 版本",
+      "placeholder": "选择版本",
       "active_branch": "活跃branch",
       "custom_option": {
         "tooltip": "当前定义包含对 API 所做的所有尚未发布的更改。"
@@ -463,7 +463,7 @@
       }
     },
     "input": {
-      "disabled_tooltip": "加载 Protobuf 文件需要 桌面代理"
+      "disabled_tooltip": "加载 Protobuf 文件需要桌面代理"
     }
   },
   "import_api": {
@@ -535,33 +535,33 @@
     "before_invoke": {
       "label": "调用前",
       "description": "“调用之前”脚本是用 JavaScript 编写的，并在调用方法之前运行。",
-      "tooltip_text": "在发送每个 gRPC 请求 之前运行。一般用于动态配置请求。"
+      "tooltip_text": "在发送每个 gRPC 请求之前运行。一般用于动态配置请求。"
     },
     "on_message": {
       "label": "消息时",
       "description": "“消息时”脚本是用 JavaScript 编写的，并在每次收到消息时运行。",
-      "tooltip_text": "在 gRPC 响应 流中的每条消息之后运行。一般用于编写测试。"
+      "tooltip_text": "在 gRPC 响应流中的每条消息之后运行。一般用于编写测试。"
     },
     "after_response": {
-      "label": "响应 之后",
+      "label": "响应之后",
       "description": "“响应之后”脚本是用 JavaScript 编写的，并在从服务器接收到响应并终止与服务器的连接后运行。",
-      "tooltip_text": "在每个 gRPC 响应 之后运行。一般用于编写测试。"
+      "tooltip_text": "在每个 gRPC 响应之后运行。一般用于编写测试。"
     },
     "learn_more": "了解更多",
     "error": {
       "title": "无法评估 {scriptLabel} 脚本",
       "helper_text": {
         "inline": {
-          "base": "无法评估 脚本。",
+          "base": "无法评估脚本。",
           "script_label_func": "无法评估 <1><0>{scriptLabel} 脚本</0></1>。",
           "script_label": "无法评估 {scriptLabel} 脚本。"
         },
         "other": {
-          "base": "运行 脚本 时出错。",
+          "base": "运行脚本时出错。",
           "script_label_func": "运行 <1><0>{scriptLabel} 脚本</0></1> 时出错。",
-          "script_label": "运行 {scriptLabel} 脚本 时出错。"
+          "script_label": "运行 {scriptLabel} 脚本时出错。"
         },
-        "docs_link": "确保 脚本 根据 <1><0>Postman JavaScript 参考对 {itemLabel}</0></1> 有效。"
+        "docs_link": "确保脚本根据 <1><0>Postman JavaScript 参考对 {itemLabel}</0></1> 有效。"
       }
     }
   },
@@ -597,7 +597,7 @@
       }
     },
     "errors": {
-      "save_desc_err": "保存 请求 描述时出现问题。"
+      "save_desc_err": "保存请求描述时出现问题。"
     }
   },
   "generate_collection": {

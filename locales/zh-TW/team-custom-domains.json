@@ -5,7 +5,7 @@
   "subheading": "將你現有和新增的 API 文件託管到自訂域名上。{isPaidOrTrial, select, true {{isUnlimited, select, true {你的團隊可新增不限數量的自訂域名。} other {你的團隊最多可新增 {customDomainsLimit} 個自訂域名。}}} other {}} <CustomLink><Text>瞭解更多</Text></CustomLink>",
   "insufficient_permissions": {
     "message": "權限不足",
-    "description": "只有 團隊 管理員可以新增自訂域"
+    "description": "只有團隊管理員可以新增自訂域"
   },
   "limit_reached": {
     "message": "達到限制",
@@ -17,11 +17,11 @@
     "description": "您目前使用的是免費計劃。切換到付費計劃以在自訂域上託管您的文件。 <CustomLink><br></br><Text>檢視計劃</Text></CustomLink>"
   },
   "add_your_team_first_domain": {
-    "title": "新增您的 團隊 的第一個域"
+    "title": "新增您的團隊的第一個域"
   },
   "you_don_t_have_access": {
     "title": "您無權訪問",
-    "description": "只有 團隊 管理員可以新增自訂域。"
+    "description": "只有團隊管理員可以新增自訂域。"
   },
   "wrapper": {
     "unable_to_load_custom_domain": {
@@ -72,7 +72,7 @@
     "verification_records_heading": "驗證記錄",
     "text_record": {
       "label": "TXT 記錄在 {domain} 上",
-      "helper_text": "新增以下 令牌 作為與 {domain} 關聯的 TXT 記錄"
+      "helper_text": "新增以下令牌作為與 {domain} 關聯的 TXT 記錄"
     },
     "copy_to_clipboard": "複製到剪貼簿",
     "copied_to_clipboard": "已複製到剪貼簿",

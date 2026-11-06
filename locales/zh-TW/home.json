@@ -4,7 +4,7 @@
     "description": "Postman 使 API 開發變得容易。我們的平臺提供的工具可簡化 API 構建過程的每個步驟並簡化協作，以便您可以更快地建立更好的 API。"
   },
   "sidebar": {
-    "heading": "團隊 成員",
+    "heading": "團隊成員",
     "invite_button_label": "邀請",
     "view_all_members": "檢視 {count, plural, =1 {# 位成員} other {全部 # 位成員}}",
     "members_count_button": "{count, number} {count, plural, one {成員} other {成員}}",
@@ -20,10 +20,10 @@
       "join_teams": "加入您組織中的團隊",
       "best_with_teams": "Postman 最適合團隊合作",
       "toast": {
-        "request_sent": "請求 加入已提交",
+        "request_sent": "請求加入已提交",
         "something_went_wrong": "出了點問題",
-        "success_desc": "當您的 請求 獲得批准時，我們會通知您。",
-        "failure_desc": "傳送您的 請求 時出現意外錯誤。請再試一次。"
+        "success_desc": "當您的請求獲得批准時，我們會通知您。",
+        "failure_desc": "傳送您的請求時出現意外錯誤。請再試一次。"
       }
     },
     "tabs": {
@@ -38,11 +38,11 @@
       "reports": "報告",
       "api_catalog": "API 目錄",
       "api_catalog_disabled_tooltip": "API 目錄適用於企業計劃的使用者。",
-      "team_workspaces_nav_disabled_tooltip": "您沒有 權限 來訪問 團隊 工作區。",
+      "team_workspaces_nav_disabled_tooltip": "您沒有權限來訪問團隊工作區。",
       "application_inventory": "應用庫存",
-      "application_inventory_disabled_tooltip": "應用程式清單可供 Solo 計劃及以上計劃的使用者使用。",
+      "application_inventory_disabled_tooltip": "應用程式清單可供 個人版及以上套餐的使用者使用。",
       "agents": "代理任務",
-      "agents_beta_label": "貝塔",
+      "agents_beta_label": "測試版",
       "agent_automations": "Agent 自動化",
       "agent_context": "Agent 上下文"
     },
@@ -77,11 +77,11 @@
       "blank_state_title": "無法載入工作區",
       "blank_state_description": "只是一根電線有問題。嘗試重新載入。",
       "more_contributors": "檢視 {contributorsCount, plural, =1 {另外 # 位貢獻者} other {另外 # 位貢獻者}}",
-      "default_contributor_name": "私有 使用者"
+      "default_contributor_name": "私有使用者"
     },
     "free_plan_banner": {
-      "heading": "與您的 團隊 無限協作",
-      "description": "您現在可以與您的 團隊 共享無限請求。將所有已存檔的收藏恢復到您的 工作區。",
+      "heading": "與您的團隊無限協作",
+      "description": "您現在可以與您的團隊共享無限請求。將所有已存檔的收藏恢復到您的工作區。",
       "link_text": "瞭解有關恢復存檔集合的更多資訊",
       "button_text": "恢復存檔的收藏"
     },
@@ -93,12 +93,12 @@
     },
     "tidy_workspace_nudge": "<0>整理？</0> <1><0>開始歸檔</0></1> <2>非活動工作區。</2>",
     "request_widget_modal": {
-      "heading": "請求 小部件",
+      "heading": "請求小部件",
       "description": "我們正在構建更加個性化的主頁體驗，您的意見很重要。告訴我們您希望在主頁上顯示什麼小部件，為什麼？",
       "checkbox_label": "我願意接受簡短的後續電話以分享更多詳細資訊",
       "cancel_button": "取消",
       "submit_button": "提交",
-      "success_description": "謝謝！您的小部件 請求 已提交。",
+      "success_description": "謝謝！您的小部件請求已提交。",
       "feedback_required": "請輸入您的留言",
       "feedback_placeholder": "輸入您的留言..."
     }
@@ -122,8 +122,8 @@
       "fork": {
         "tooltip": "{count, plural, =1 {# 次復刻} other {# 次復刻}}",
         "string_count_tooltip": "{count} 次復刻",
-        "no_workspace_error": "未找到 工作區",
-        "default_error": "分叉此 集合 時出現問題，請重試",
+        "no_workspace_error": "未找到工作區",
+        "default_error": "分叉此集合時出現問題，請重試",
         "default_toast_desc": "由於某些錯誤，無法復刻該集合。"
       },
       "watch": {
@@ -138,7 +138,7 @@
   "run_in_postman": {
     "heading": {
       "label": "在 Postman 按鈕中建立執行",
-      "description": "在您的網站或社交渠道中新增“在 Postman 中執行”按鈕可以讓使用者更輕鬆地加入您的 API。首先選擇您希望按鈕指向的 集合 和 環境。"
+      "description": "在您的網站或社交渠道中新增“在 Postman 中執行”按鈕可以讓使用者更輕鬆地加入您的 API。首先選擇您希望按鈕指向的集合和環境。"
     },
     "card": {
       "remove": "移除",
@@ -149,7 +149,7 @@
       "user": "使用者"
     },
     "select_dropdown": {
-      "label": "選擇 集合",
+      "label": "選擇集合",
       "placeholder": "搜尋收藏"
     }
   }

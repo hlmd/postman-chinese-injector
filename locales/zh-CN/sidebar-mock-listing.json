@@ -10,17 +10,17 @@
     "create_classic_mock_server": "经典模拟服务器",
     "create_code_mock": "模拟",
     "offline_error": "您重新上线后即可执行此操作。",
-    "permission_error": "您没有 权限 来执行此操作。",
+    "permission_error": "您没有权限来执行此操作。",
     "not_signed_error": "您需要一个帐户才能继续探索 Postman。",
-    "no_team_error": "您需要登录 团队 才能执行此操作",
+    "no_team_error": "您需要登录团队才能执行此操作",
     "no_mock_server": "您还没有任何模拟服务器。",
     "inactive_mock": "无法对已停用的模拟服务器执行此操作。",
     "offline": "您离线了",
-    "request_access": "请求 访问"
+    "request_access": "请求访问"
   },
   "filesystem": {
     "no_mocks": "在存储库中找不到模拟",
-    "no_mocks_message": "将模拟服务器清单文件添加到连接的存储库中的 postman/mocks 文件夹 中，以便在此处查看它们。",
+    "no_mocks_message": "将模拟服务器清单文件添加到连接的存储库中的 postman/mocks 文件夹中，以便在此处查看它们。",
     "search_placeholder": "搜索模拟",
     "empty_state": {
       "title": "创建您的第一个模拟服务器",

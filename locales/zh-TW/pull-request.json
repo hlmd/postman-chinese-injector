@@ -1,11 +1,11 @@
 {
   "title": "建立拉取請求",
   "update_pull_request_error": {
-    "description": "上線後，您就可以編輯 拉取請求。",
+    "description": "上線後，您就可以編輯拉取請求。",
     "title": "您離線"
   },
   "unable_to_save_changes": "無法儲存更改",
-  "unable_to_create_pull_request": "無法建立 拉取請求",
+  "unable_to_create_pull_request": "無法建立拉取請求",
   "overview": "概述",
   "changes": "更改",
   "offline_error": {
@@ -16,7 +16,7 @@
   "loading_error": {
     "access_error": "您無權執行此操作",
     "internal_error": "出了點問題",
-    "connection_error": "獲取建立 拉取請求 所需的資訊時出錯"
+    "connection_error": "獲取建立拉取請求所需的資訊時出錯"
   },
   "is_destination_git_link": "無法為屬於 Git 關聯 API 的集合建立拉取請求。",
   "existing_pull_request": {
@@ -28,8 +28,8 @@
   "edit_pull_request": "編輯拉取請求",
   "source_destination": {
     "tooltip": {
-      "source_deleted_from_workspace": "源 {modelDisplayName} 已從其所屬的 工作區 中刪除或移除。",
-      "destination_deleted_from_workspace": "目標 {modelDisplayName} 已從其所屬的 工作區 中刪除或移除。",
+      "source_deleted_from_workspace": "源 {modelDisplayName} 已從其所屬的工作區中刪除或移除。",
+      "destination_deleted_from_workspace": "目標 {modelDisplayName} 已從其所屬的工作區中刪除或移除。",
       "unavailable": "該 {modelDisplayName} 不可用。"
     },
     "source_label": "來源：",
@@ -41,15 +41,15 @@
     "no_conflict_message": "目的地最近已更新。我們建議拉取這些更改。",
     "resolve_conflict_button": "解決衝突",
     "pull_changes_button": "拉取更改",
-    "no_pull_permission_tooltip": "您沒有 權限 來提取更改。"
+    "no_pull_permission_tooltip": "您沒有權限來提取更改。"
   },
   "pull_request_form": {
     "can_not_merge_tooltip": "要合併您的請求，該使用者必須為目標 {entityName} 申請編輯者訪問權限。",
-    "group_can_not_merge_tooltip": "為了 合併 您的 請求，該組需要對目的地 {entityName} 具有 編輯者 訪問權限。",
+    "group_can_not_merge_tooltip": "為了合併您的請求，該組需要對目的地 {entityName} 具有編輯者訪問權限。",
     "can_not_merge": "無法合併",
     "reviewer_can_not_access_source": "審閱者無法訪問來源 {entityType}",
-    "source_not_in_public_workspace": "源 {entityType} 不在 公開 工作區 中。將其移至 公開 工作區，以便審閱者可以訪問它來審閱您的 拉取請求。",
-    "source_not_in_team_workspace": "源 {entityType} 不在 團隊 工作區 中。將其移至 團隊 工作區，以便審閱者可以訪問它來審閱您的 拉取請求。",
+    "source_not_in_public_workspace": "源 {entityType} 不在公開工作區中。將其移至公開工作區，以便審閱者可以訪問它來審閱您的拉取請求。",
+    "source_not_in_team_workspace": "源 {entityType} 不在團隊工作區中。將其移至團隊工作區，以便審閱者可以訪問它來審閱您的拉取請求。",
     "title": "標題",
     "title_placeholder": "請輸入標題",
     "title_error": "錯誤",
@@ -81,7 +81,7 @@
       "title": "無法顯示更改"
     },
     "empty_state": {
-      "body": "您對原始碼所做的更改將顯示在此處。之後您可以 合併 它們。",
+      "body": "您對原始碼所做的更改將顯示在此處。之後您可以合併它們。",
       "title": "沒有可顯示的更改"
     }
   },
@@ -98,7 +98,7 @@
     "conflict_resolved_text": "衝突解決了。"
   },
   "panel_content": {
-    "content_label": "{entityType} 合併 內容",
+    "content_label": "{entityType} 合併內容",
     "conflict_resolved_text": "衝突解決了。",
     "reset": "重置",
     "reset_resolution": "重置衝突解決方案",
@@ -188,7 +188,7 @@
     "toggle_tree": "切換摘要樹"
   },
   "pull_request_header": {
-    "source_info_unavailable_tooltip": "在 拉取請求 被拒絕之前，源 {entityType} 已被刪除或從 工作區 中刪除"
+    "source_info_unavailable_tooltip": "在拉取請求被拒絕之前，源 {entityType} 已被刪除或從工作區中刪除"
   },
   "merge_button": {
     "text": "合併"
@@ -200,11 +200,11 @@
     "sign_in_required_to_manage_message": "請登入以管理拉取請求。",
     "more_pull_request_actions": {
       "edit_option_disabled": {
-        "is_merging_message": "我們目前正在合併 拉取請求。",
+        "is_merging_message": "我們目前正在合併拉取請求。",
         "sign_in_required_message": "登入以編輯拉取請求。"
       },
       "decline_option_disabled": {
-        "is_merging_message": "我們目前正在合併 拉取請求。",
+        "is_merging_message": "我們目前正在合併拉取請求。",
         "sign_in_required_message": "登入以拒絕拉取請求。"
       },
       "dropdown_options": {
@@ -214,51 +214,51 @@
       }
     },
     "offline_tooltip_text": "重新上線後即可執行此操作",
-    "view_merge_conditions": "檢視 合併 條件",
-    "approve_button_disabled_message": "我們目前正在合併這個 拉取請求。",
+    "view_merge_conditions": "檢視合併條件",
+    "approve_button_disabled_message": "我們目前正在合併這個拉取請求。",
     "merge_tooltip_messages": {
-      "merge_in_progress": "我們目前正在合併這個 拉取請求。",
-      "collection_all_condition_not_satisfied": "在嘗試 合併 之前，請確保此 拉取請求 滿足所有 合併 條件。",
-      "no_changes_made": "沒有做任何改變。沒什麼可 合併 的。",
-      "collection_merge_condition_not_met_title": "合併 條件不滿足"
+      "merge_in_progress": "我們目前正在合併這個拉取請求。",
+      "collection_all_condition_not_satisfied": "在嘗試合併之前，請確保此拉取請求滿足所有合併條件。",
+      "no_changes_made": "沒有做任何改變。沒什麼可合併的。",
+      "collection_merge_condition_not_met_title": "合併條件不滿足"
     },
     "decline_pull_request": {
       "success": {
-        "title": "拉取請求 拒絕",
+        "title": "拉取請求拒絕",
         "description": "拒絕的拉取請求無法重新開啟"
       },
       "error": {
-        "title": "無法拒絕 拉取請求"
+        "title": "無法拒絕拉取請求"
       }
     },
     "approve_pull_request": {
       "success": {
         "title": "成功！",
-        "description": "您批准了此 拉取請求"
+        "description": "您批准了此拉取請求"
       },
       "error": {
-        "title": "無法批准 拉取請求"
+        "title": "無法批准拉取請求"
       }
     },
     "unapprove_pull_request": {
       "success": {
         "title": "未批准",
-        "description": "您未批准此 拉取請求"
+        "description": "您未批准此拉取請求"
       },
       "error": {
-        "title": "無法取消批准 拉取請求"
+        "title": "無法取消批准拉取請求"
       }
     },
     "decline_confirmation_modal": {
       "title": "拒絕拉取請求？",
-      "primary_action": "拒絕 拉取請求",
+      "primary_action": "拒絕拉取請求",
       "cancel_button": "取消",
       "add_a_note_label": "添加註釋",
-      "message": "此操作無法撤消。要 請求 編輯或留下意見回饋，請新增評論。",
-      "modal_text": "幫助其他人瞭解 拉取請求 被拒絕的原因"
+      "message": "此操作無法撤消。要請求編輯或留下意見回饋，請新增評論。",
+      "modal_text": "幫助其他人瞭解拉取請求被拒絕的原因"
     },
     "approval_toggle": {
-      "menu_content_message": "批准此 拉取請求 的人將出現在此處。",
+      "menu_content_message": "批准此拉取請求的人將出現在此處。",
       "approve_button": "批准",
       "unapprove_button": "取消批准",
       "approvers_count": "{ count, plural, one{# 位批准者} other{# 位批准者} }"
@@ -274,22 +274,22 @@
     "retry_button": "重試"
   },
   "error_state": {
-    "title": "無法獲取 拉取請求"
+    "title": "無法獲取拉取請求"
   },
   "merge_status_banner": {
     "success": {
-      "pull_request": "拉取請求 已被合併。",
+      "pull_request": "拉取請求已被合併。",
       "pull_changes": "更改已拉取。",
       "other": "更改已合併。"
     },
     "in_progress": {
-      "pull_request": "我們正在合併 拉取請求，這可能需要一分鐘時間。完成後我們會通知您。",
+      "pull_request": "我們正在合併拉取請求，這可能需要一分鐘時間。完成後我們會通知您。",
       "pull_changes": "正在拉取更改，可能需要一分鐘。完成後我們會通知你。",
       "other": "我們正在合併更改，這可能需要一分鐘時間。完成後我們會通知您。"
     },
     "failed": {
-      "pull_request_with_refresh_tab": "合併 拉取請求 時發生意外錯誤。請重新整理選項卡並重試。",
-      "pull_request_without_refresh_tab": "合併 拉取請求 時發生意外錯誤。請再試一次。",
+      "pull_request_with_refresh_tab": "合併拉取請求時發生意外錯誤。請重新整理選項卡並重試。",
+      "pull_request_without_refresh_tab": "合併拉取請求時發生意外錯誤。請再試一次。",
       "pull_changes_with_refresh_tab": "拉取更改時發生意外錯誤。請重新整理標籤頁後重試。",
       "pull_changes_without_refresh_tab": "拉取更改時發生意外錯誤，請重試。",
       "other_with_refresh_tab": "合併更改時發生意外錯誤。請重新整理選項卡並重試。",
@@ -306,7 +306,7 @@
     }
   },
   "pull_request_end_state_banner": {
-    "declined": "<0> </0> 在 {updatedAt, date, long} 上拒絕了此 拉取請求，並附有以下說明：",
+    "declined": "<0> </0> 在 {updatedAt, date, long} 上拒絕了此拉取請求，並附有以下說明：",
     "merged": "<0> </0> 於 {updatedAt, date, long} 合併了此拉取請求"
   },
   "merge_collection_modal": {
@@ -317,28 +317,28 @@
     "merge_button": "合併",
     "merge_strategies": {
       "merge_changes": {
-        "display_name": "合併 變化",
+        "display_name": "合併變化",
         "description": "目的地將隨著更改而更新"
       },
       "merge_changes_and_update_source": {
-        "display_name": "合併 更改並更新源",
+        "display_name": "合併更改並更新源",
         "description": "源和目的地都將更新"
       },
       "merge_changes_and_delete_source": {
-        "display_name": "合併 更改並刪除源",
+        "display_name": "合併更改並刪除源",
         "description": "目標將被更新，源將被刪除"
       }
     },
     "tooltip_text": {
       "collection": {
         "default": "無法合併更改。",
-        "update_source_with_destination": "您需要源 集合 上的 編輯者 角色。",
-        "delete_source": "您需要源 集合 上的 編輯者 角色。"
+        "update_source_with_destination": "您需要源集合上的編輯者角色。",
+        "delete_source": "您需要源集合上的編輯者角色。"
       },
       "environment": {
         "default": "無法合併更改。",
-        "update_source_with_destination": "您需要源 環境 上的 編輯者 角色。",
-        "delete_source": "您需要源 環境 上的 編輯者 角色。"
+        "update_source_with_destination": "您需要源環境上的編輯者角色。",
+        "delete_source": "您需要源環境上的編輯者角色。"
       }
     }
   }

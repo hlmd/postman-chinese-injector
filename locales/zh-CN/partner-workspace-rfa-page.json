@@ -1,8 +1,8 @@
 {
-  "creating_request_heading": "请求 访问此合作伙伴工作区",
+  "creating_request_heading": "请求访问此合作伙伴工作区",
   "team_select": {
-    "label": "选择 团队",
-    "placeholder": "选择 团队 来访问此工作区",
+    "label": "选择团队",
+    "placeholder": "选择团队来访问此工作区",
     "members_count": "{count, plural, one {# 位成员} other {# 位成员}}"
   },
   "options": {
@@ -16,23 +16,23 @@
     }
   },
   "partnership_not_allowed": {
-    "banner_title": "不允许 合作伙伴 访问",
-    "banner_description": "您的 团队 管理员 已阻止您的 团队 的合作伙伴关系。"
+    "banner_title": "不允许合作伙伴访问",
+    "banner_description": "您的团队管理员已阻止您的团队的合作伙伴关系。"
   },
   "add_note_text": "添加备注",
   "text_area_info_text": "添加注释到工作区管理员",
   "approved_partner_heading": "快到了！",
-  "approved_partner_subheading_1": "您的 请求 已获得批准。要获得访问权限，请接受发送到您的电子邮件的合作关系 邀请。",
-  "approved_partner_subheading_2": "如果找不到 邀请，您可以提交新的访问权限 请求。",
-  "approved_partner_raise_new_request_cta": "请求 再次访问",
+  "approved_partner_subheading_1": "您的请求已获得批准。要获得访问权限，请接受发送到您的电子邮件的合作关系邀请。",
+  "approved_partner_subheading_2": "如果找不到邀请，您可以提交新的访问权限请求。",
+  "approved_partner_raise_new_request_cta": "请求再次访问",
   "toast_content": {
     "switch_account_error": {
-      "title": "请求 已发送",
+      "title": "请求已发送",
       "description": "从帐户菜单切换团队以继续。"
     },
     "switching_account": {
-      "title": "请求 已发送",
-      "description": "切换到您选择的 团队..."
+      "title": "请求已发送",
+      "description": "切换到您选择的团队..."
     }
   }
 }

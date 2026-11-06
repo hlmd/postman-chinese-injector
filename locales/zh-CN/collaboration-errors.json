@@ -1,46 +1,46 @@
 {
   "approved_access_request": {
-    "title": "请求 已确认",
-    "message": "看起来有人已经批准了这个 请求。"
+    "title": "请求已确认",
+    "message": "看起来有人已经批准了这个请求。"
   },
   "rejected_access_request": {
-    "title": "请求 已确认",
+    "title": "请求已确认",
     "message": "看起来有人已经拒绝了这个请求。"
   },
   "expired_access_request": {
-    "title": "请求 已过期",
+    "title": "请求已过期",
     "message": "访问请求将在 30 天后过期。您仍然可以通过与他们共享元素来授予访问权限。"
   },
   "model_does_not_exist": {
-    "title": "无法回复 请求",
-    "message": "由于元素已被删除，因此 请求 无法完成。"
+    "title": "无法回复请求",
+    "message": "由于元素已被删除，因此请求无法完成。"
   },
   "model_not_found_in_workspace": {
-    "title": "无法发送 请求",
-    "message": "由于元素已被删除或移动，因此 请求 无法完成。"
+    "title": "无法发送请求",
+    "message": "由于元素已被删除或移动，因此请求无法完成。"
   },
   "partner_editor_slots_full": {
-    "title": "无法批准 请求",
-    "message": "没有可用的付费插槽。我们已通知 合作伙伴 经理添加更多插槽。"
+    "title": "无法批准请求",
+    "message": "没有可用的付费插槽。我们已通知合作伙伴经理添加更多插槽。"
   },
   "creator_not_part_of_team": {
     "title": "找不到请求者",
-    "message": "他们可能已离开您的 团队 或删除了他们的 Postman 帐户。"
+    "message": "他们可能已离开您的团队或删除了他们的 Postman 帐户。"
   },
   "approver_not_part_of_team": {
-    "title": "无法批准 请求",
-    "message": "哎呀！您似乎无法批准此 请求。"
+    "title": "无法批准请求",
+    "message": "哎呀！您似乎无法批准此请求。"
   },
   "invalid_approver_for_request": {
-    "title": "无法批准 请求",
-    "message": "哎呀！您似乎无法批准此 请求。"
+    "title": "无法批准请求",
+    "message": "哎呀！您似乎无法批准此请求。"
   },
   "not_part_of_any_team": {
-    "title": "无法批准 请求",
-    "message": "哎呀！您似乎无法批准此 请求。"
+    "title": "无法批准请求",
+    "message": "哎呀！您似乎无法批准此请求。"
   },
   "team_member_slots_full": {
-    "title": "无法批准 请求",
+    "title": "无法批准请求",
     "message": "",
     "create": {
       "title": "请求发送失败",
@@ -49,62 +49,62 @@
   },
   "update_roles_permission_denied": {
     "title": "您需要访问权限",
-    "message": "您需要成为 编辑者 才能管理此元素上的角色。"
+    "message": "您需要成为编辑者才能管理此元素上的角色。"
   },
   "auto_approval_disabled": {
-    "title": "您没有 权限 来批准",
-    "message": "请联系 团队 管理员 将此 访客 转换为开发人员。"
+    "title": "您没有权限来批准",
+    "message": "请联系团队管理员将此访客转换为开发人员。"
   },
   "failed_access_request": {
-    "title": "请求 失败",
-    "message": "您尝试批准的 请求 已失败。"
+    "title": "请求失败",
+    "message": "您尝试批准的请求已失败。"
   },
   "user_already_has_requested_role": {
     "title": "您已经拥有此访问权限",
-    "message": "如果您想要不同级别的访问权限，请创建一个新的 请求",
+    "message": "如果您想要不同级别的访问权限，请创建一个新的请求",
     "approve": {
-      "title": "请求 已满足",
-      "message": "该用户已经拥有请求的 角色。"
+      "title": "请求已满足",
+      "message": "该用户已经拥有请求的角色。"
     }
   },
   "user_already_has_access": {
     "title": "您已经有访问权限",
     "message": "您已经有权访问此资源。",
     "approve": {
-      "title": "请求 已履行",
+      "title": "请求已履行",
       "message": "该用户已经有权访问该资源。"
     }
   },
   "instance_not_found_error": {
-    "title": "无法创建 请求",
-    "message": "由于实体已被删除，因此无法完成此 请求。"
+    "title": "无法创建请求",
+    "message": "由于实体已被删除，因此无法完成此请求。"
   },
   "user_already_invited_as_team_member": {
-    "title": "无法批准 请求",
-    "message": "该用户已被邀请作为 团队 成员。删除 团队 成员 邀请 并重试。"
+    "title": "无法批准请求",
+    "message": "该用户已被邀请作为团队成员。删除团队成员邀请并重试。"
   },
   "user_already_part_of_team": {
-    "title": "无法批准 请求",
-    "message": "您不能将此用户 邀请 作为合作伙伴，因为他们已经是您 团队 的一部分。"
+    "title": "无法批准请求",
+    "message": "您不能将此用户邀请作为合作伙伴，因为他们已经是您团队的一部分。"
   },
   "user_already_invited_as_partner": {
-    "title": "无法批准 请求",
-    "message": "该用户已被邀请成为合作伙伴。删除伙伴 邀请 并重试。"
+    "title": "无法批准请求",
+    "message": "该用户已被邀请成为合作伙伴。删除伙伴邀请并重试。"
   },
   "user_already_partner": {
-    "title": "无法批准 请求",
-    "message": "您不能将此用户 邀请 作为 团队 成员，因为他们已经是合作伙伴。"
+    "title": "无法批准请求",
+    "message": "您不能将此用户邀请作为团队成员，因为他们已经是合作伙伴。"
   },
   "improper_email_ids": {
-    "title": "无法批准 请求",
+    "title": "无法批准请求",
     "message": "发送邀请时提供的电子邮件 ID 不正确。"
   },
   "max_pending_invites_exceeded": {
-    "title": "无法批准 请求",
+    "title": "无法批准请求",
     "message": "您的待处理邀请不能超过 100 个"
   },
   "default_approve": {
-    "title": "无法批准 请求",
+    "title": "无法批准请求",
     "message": "只是一根电线有问题。请再试一次。"
   },
   "default_deny": {
@@ -112,7 +112,7 @@
     "message": "只是一根电线有问题。请再试一次。"
   },
   "default_create": {
-    "title": "无法创建 请求",
+    "title": "无法创建请求",
     "message": "出了点问题"
   },
   "default_revoke": {
@@ -120,15 +120,15 @@
     "message": "只是一点小故障，请重试。"
   },
   "invalidated_request": {
-    "title": "无法回复 请求",
-    "message": "此 请求 不再有效。"
+    "title": "无法回复请求",
+    "message": "此请求不再有效。"
   },
   "request_already_exists": {
-    "title": "请求 已经存在",
-    "message": "您已经提交了此 请求。"
+    "title": "请求已经存在",
+    "message": "您已经提交了此请求。"
   },
   "unprocessable_entity": {
-    "title": "无法发送 请求",
-    "message": "不属于 团队 的用户无法 请求 访问"
+    "title": "无法发送请求",
+    "message": "不属于团队的用户无法请求访问"
   }
 }

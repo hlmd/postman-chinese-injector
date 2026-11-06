@@ -1,7 +1,7 @@
 {
   "error": {
     "title": "請重新整理",
-    "description": "無法獲取所有使用者組的資料。"
+    "description": "無法獲取所有群組的資料。"
   },
   "user_group_dynamic_content": {
     "user_group_not_allowed": {
@@ -12,7 +12,7 @@
     },
     "heading": "群組",
     "create_group_button": "建立群組",
-    "no_group_creation_permission": "您沒有 權限 來建立組。"
+    "no_group_creation_permission": "您沒有權限來建立組。"
   },
   "manage_groups": {
     "no_group": {
@@ -25,11 +25,11 @@
   },
   "edit_user_group": {
     "back_link_label": "群組",
-    "breadcrumb_aria_label": "編輯使用者組麵包屑導航"
+    "breadcrumb_aria_label": "編輯群組麵包屑導航"
   },
   "desktop_view_group_actions": {
     "tooltip": {
-      "can_not_update_user_group": "您沒有 權限 來將成員新增到組中",
+      "can_not_update_user_group": "您沒有權限來將成員新增到組中",
       "default": "新增群組成員"
     },
     "view_group_details": "檢視群組詳情"
@@ -38,7 +38,7 @@
     "member_text": "{count, plural, =0 {沒有成員} =1 {# 個成員} other {# 個成員}}",
     "no_summary": "沒有新增描述",
     "remaining_part": "{count, plural, =1 {另外 # 人} other {另外 # 人}}",
-    "no_role_assigned": "未分配 角色",
+    "no_role_assigned": "未分配角色",
     "single_role": "{role} 角色",
     "multiple_roles": "{roles} 角色"
   },
@@ -75,8 +75,8 @@
     "helper_text": "選擇要分配給該組成員的角色。",
     "tool_tips": {
       "non_admin": "只有管理員和超級管理員可以編輯組中的角色。",
-      "manager": "具有經理的組只能分配開發人員 角色。",
-      "non_super_admin": "您無權分配此使用者 角色。"
+      "manager": "具有經理的組只能分配開發人員角色。",
+      "non_super_admin": "您無權分配此使用者角色。"
     }
   }
 }

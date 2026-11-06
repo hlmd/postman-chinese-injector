@@ -1,12 +1,12 @@
 {
   "team_meta": {
-    "heading": "建立新的 團隊",
+    "heading": "建立新的團隊",
     "subheading": "您將使 API 協作變得更加容易！ 🎉",
-    "team_name": "您的 團隊 叫什麼名字？",
+    "team_name": "您的團隊叫什麼名字？",
     "team_name_placeholder": "例如平臺 API 團隊",
     "questions": {
       "team_goal": {
-        "label": "您的 團隊 主要從事什麼工作？",
+        "label": "您的團隊主要從事什麼工作？",
         "options": {
           "existing": "一起共享和測試現有 API",
           "design": "一起設計和構建新的 API",
@@ -17,11 +17,11 @@
     }
   },
   "invite_users": {
-    "heading": "邀請 人加入您的 團隊",
+    "heading": "邀請人加入您的團隊",
     "add_email_heading": "新增電子郵件地址",
-    "add_email_subheading": "一旦您建立 團隊，我們就會發送邀請。",
+    "add_email_subheading": "一旦您建立團隊，我們就會發送邀請。",
     "title": "新增電子郵件地址",
-    "subtitle": "一旦您建立 團隊，我們就會發送邀請。"
+    "subtitle": "一旦您建立團隊，我們就會發送邀請。"
   },
   "step_1": "第 1 步（共 2 步）",
   "step_2": "第 2 步（共 2 步）",

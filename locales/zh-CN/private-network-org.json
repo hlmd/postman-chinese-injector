@@ -3,33 +3,33 @@
     "previousResponse": "上一个响应：",
     "messageLabel": "信息",
     "messagePlaceholder": "添加消息（可选）",
-    "messageRequiredError": "请为您的 请求 提供消息。",
+    "messageRequiredError": "请为您的请求提供消息。",
     "messageLengthError": "消息必须少于 {maxLength} 个字符。",
-    "requesterInfoBanner": "您的 请求 将发送给网络管理员和 团队 经理进行批准。",
+    "requesterInfoBanner": "您的请求将发送给网络管理员和团队经理进行批准。",
     "cancel": "取消",
     "fallbackEntityName": "工作区",
     "successAddToast": "已成功将 {entityName} 添加到网络。",
-    "successRequestToast": "添加 {entityName} 的 请求 已发送以供审核。",
+    "successRequestToast": "添加 {entityName} 的请求已发送以供审核。",
     "errorAddToast": "添加到网络失败。请再试一次。",
-    "errorRequestToast": "无法 请求 添加到网络。请再试一次。",
+    "errorRequestToast": "无法请求添加到网络。请再试一次。",
     "charactersCount": "{current}/{max} 字符"
   },
   "requests": {
     "approveModal": {
-      "header": "批准 请求 将 工作区 添加到 私有 API 网络",
+      "header": "批准请求将工作区添加到私有 API 网络",
       "footer": "批准请求",
-      "infoMessage": "此 工作区 将添加到您的 私有 API 网络，并且您的 团队 成员可以看到。"
+      "infoMessage": "此工作区将添加到您的私有 API 网络，并且您的团队成员可以看到。"
     },
     "denyModal": {
-      "header": "拒绝 请求 添加 工作区",
+      "header": "拒绝请求添加工作区",
       "footer": "拒绝请求",
       "reasonLabel": "拒绝理由",
       "reasonOptional": "（可选）",
-      "reasonPlaceholder": "添加拒绝此 请求 的理由"
+      "reasonPlaceholder": "添加拒绝此请求的理由"
     },
     "cancelModal": {
-      "header": "取消 请求 以添加 工作区",
-      "confirmation": "您确定要取消此 请求 吗？此操作无法撤消。",
+      "header": "取消请求以添加工作区",
+      "confirmation": "您确定要取消此请求吗？此操作无法撤消。",
       "footer": "取消请求"
     },
     "common": {
@@ -63,17 +63,17 @@
       "pendingRequests": "待处理的请求"
     },
     "toasts": {
-      "approveSuccessTitle": "请求 已批准",
-      "approveSuccessDesc": "{requesterName} 将收到 工作区 已添加到网络的通知",
-      "denySuccessTitle": "请求 被拒绝",
-      "denySuccessDesc": "{requesterName} 将收到有关您的 响应 的通知",
-      "cancelSuccessTitle": "请求 已取消",
-      "cancelSuccessDesc": "您的 请求 已成功取消",
+      "approveSuccessTitle": "请求已批准",
+      "approveSuccessDesc": "{requesterName} 将收到工作区已添加到网络的通知",
+      "denySuccessTitle": "请求被拒绝",
+      "denySuccessDesc": "{requesterName} 将收到有关您的响应的通知",
+      "cancelSuccessTitle": "请求已取消",
+      "cancelSuccessDesc": "您的请求已成功取消",
       "errorTitle": "未能 {action} 请求"
     }
   },
   "sidebar": {
-    "searchPlaceholder": "搜索 私有 API 网络",
+    "searchPlaceholder": "搜索私有 API 网络",
     "heading": "私有 API 网络",
     "tooltipAdd": "添加到网络",
     "tooltipRequests": "待处理的请求"
@@ -91,9 +91,9 @@
     "pathLabel": "路径："
   },
   "fork": {
-    "needWorkspaceTitle": "您至少需要一个 工作区 才能 fork",
+    "needWorkspaceTitle": "您至少需要一个工作区才能 fork",
     "failedTitle": "未能 fork",
-    "createWorkspaceFirst": "首先创建一个 工作区",
+    "createWorkspaceFirst": "首先创建一个工作区",
     "tryAgain": "请重试"
   },
   "migrationTable": {
@@ -110,21 +110,21 @@
     },
     "changeTypeLabel": {
       "PUBLISH_WORKSPACE_AND_UPDATE_TAGS": "工作区添加和标签添加",
-      "PUBLISH_WORKSPACE": "工作区 加法",
+      "PUBLISH_WORKSPACE": "工作区加法",
       "UPDATE_TAGS": "标签添加",
       "UNAFFECTED": "不受影响"
     }
   },
   "misc": {
-    "workspaceRemoved": "1 工作区 已删除",
-    "workspaceRemoveError": "删除 工作区 时出现问题",
+    "workspaceRemoved": "1 工作区已删除",
+    "workspaceRemoveError": "删除工作区时出现问题",
     "idCopied": "ID已复制到剪贴板",
     "copyId": "复制 ID",
-    "removeWorkspace": "从网络中删除 工作区"
+    "removeWorkspace": "从网络中删除工作区"
   },
   "bulkAdd": {
-    "header": "将工作区添加到 私有 API 网络",
-    "description": "通过将工作区添加到网络，使您的 团队 可以轻松发现工作区。",
+    "header": "将工作区添加到私有 API 网络",
+    "description": "通过将工作区添加到网络，使您的团队可以轻松发现工作区。",
     "addStage": {
       "workspaces": "工作空间",
       "show": "展示：",
@@ -141,9 +141,9 @@
       "addedTitle": "将添加的工作区",
       "addedDescription": "以下所有工作空间都将添加到网络中。",
       "requestedTitle": "将要求添加的工作区",
-      "requestedDescription": "将发送 请求 以将以下工作空间添加到网络。",
+      "requestedDescription": "将发送请求以将以下工作空间添加到网络。",
       "add": "添加",
-      "requestToAdd": "请求 添加",
+      "requestToAdd": "请求添加",
       "back": "后退",
       "remove": "消除"
     },
@@ -169,9 +169,9 @@
     }
   },
   "removeWorkspaceModal": {
-    "heading": "从网络中删除 工作区？",
-    "content_before": "一旦删除，您的 团队 将无法再发现",
-    "content_after": "工作区 在 私有 API 网络上。 工作区 不会从您的帐户中删除。",
+    "heading": "从网络中删除工作区？",
+    "content_before": "一旦删除，您的团队将无法再发现",
+    "content_after": "工作区在私有 API 网络上。工作区不会从您的帐户中删除。",
     "footer": {
       "cancel": "取消",
       "remove": "消除"
@@ -180,9 +180,9 @@
   "workspaces": {
     "addedTo": "添加到",
     "privateApiNetwork": "私有 API 网络",
-    "noEntitiesFound": "在此 工作区 中找不到实体",
+    "noEntitiesFound": "在此工作区中找不到实体",
     "collections": "收藏",
-    "specs": "规格",
+    "specs": "规范",
     "flows": "Flow",
     "sdks": "软件开发工具包",
     "environments": "环境",
@@ -208,14 +208,14 @@
     "contributors": "贡献者",
     "workspacesInTeam": "{teamName} 中的工作区",
     "noWorkspacesFound": "未找到工作区",
-    "workspacesWillAppear": "发布到此 团队 的工作空间将出现在此处",
-    "workspacesWillAppearInNetwork": "发布到您的 私有 API 网络的工作空间将显示在此处",
+    "workspacesWillAppear": "发布到此团队的工作空间将出现在此处",
+    "workspacesWillAppearInNetwork": "发布到您的私有 API 网络的工作空间将显示在此处",
     "byCreator": "通过 {name}",
     "byPrefix": "通过",
     "collectionsCount": "{count} 集合"
   },
   "teamOverview": {
-    "title": "{teamName} 的 私有 API 网络",
+    "title": "{teamName} 的私有 API 网络",
     "description": "发现整个组织中可重用的 API。",
     "workspacesTitle": "私有 API 网络中的工作区"
   },
@@ -235,15 +235,15 @@
   "errors": {
     "loadFailedTitle": "无法加载数据",
     "loadFailedDescription": "只是一根电线有问题。尝试重新加载。",
-    "workspaceUpdatesLoadFailed": "无法加载 工作区 更新。尝试重新加载。",
+    "workspaceUpdatesLoadFailed": "无法加载工作区更新。尝试重新加载。",
     "reload": "重新加载"
   },
   "workspaceUpdates": {
-    "title": "最新 工作区 更新",
+    "title": "最新工作区更新",
     "description": "查看您在组织中关注的工作区的最新更新",
-    "teamTitle": "最新 工作区 更新",
-    "teamDescription": "查看您从 团队 {teamName} 关注的工作区的最新更新",
-    "empty": "尚无 工作区 更新",
+    "teamTitle": "最新工作区更新",
+    "teamDescription": "查看您从团队 {teamName} 关注的工作区的最新更新",
+    "empty": "尚无工作区更新",
     "endOfList": "您已经全部看完了！",
     "readMore": "阅读更多",
     "showLess": "显示较少",
@@ -255,7 +255,7 @@
       "view_count": "{count, plural, =0 {暂无浏览量} =1 {{formattedCount} 次浏览} other {{formattedCount} 次浏览}}"
     },
     "reactions": {
-      "profilePublicRequired": "请将您的个人资料设为 公开 以添加反应。",
+      "profilePublicRequired": "请将您的个人资料设为公开以添加反应。",
       "signInHeading": "登录以添加反应",
       "genericError": "出了点问题。请再试一次。",
       "addReactionAria": "添加反应"
@@ -269,63 +269,63 @@
   "statusBar": {
     "leftSidebar": "左Sidebar",
     "rightSidebar": "右Sidebar",
-    "hideLeftSidebar": "隐藏左侧 侧边栏",
-    "showLeftSidebar": "显示左侧 侧边栏",
-    "hideRightSidebar": "隐藏右侧 侧边栏",
-    "showRightSidebar": "显示右侧 侧边栏",
+    "hideLeftSidebar": "隐藏左侧侧边栏",
+    "showLeftSidebar": "显示左侧侧边栏",
+    "hideRightSidebar": "隐藏右侧侧边栏",
+    "showRightSidebar": "显示右侧侧边栏",
     "entityCountOrgs": "{squadCount, plural, one {# 个团队} other {# 个团队}}、{workspaceCount, plural, one {# 个工作区} other {# 个工作区}}",
     "entityCountNonOrgs": "{workspaceCount, plural, one {# 个工作区} other {# 个工作区}}"
   },
   "sidebar_nav": {
-    "team_logo_home_aria": "转到主页 — {title}",
-    "search_placeholder": "搜索 私有 API 网络"
+    "team_logo_home_aria": "转到主页— {title}",
+    "search_placeholder": "搜索私有 API 网络"
   },
   "emptyNetworkHome": {
-    "welcomeTitle": "欢迎来到 私有 API 网络",
+    "welcomeTitle": "欢迎来到私有 API 网络",
     "description": "这是您组织中所有工作区的中央目录。您的团队可以发现可用的工作区并使用标签轻松组织和查找它们。",
     "addWorkspaces": "添加工作空间",
-    "requestToAddWorkspaces": "请求 添加工作区",
-    "actionsDisabledTooltip": "团队 管理员 可以将您添加到内部 API 管理解决方案中，以在 私有 API 网络中添加元素。",
-    "contributeTitle": "为 私有 API 网络做出贡献",
+    "requestToAddWorkspaces": "请求添加工作区",
+    "actionsDisabledTooltip": "团队管理员可以将您添加到内部 API 管理解决方案中，以在私有 API 网络中添加元素。",
+    "contributeTitle": "为私有 API 网络做出贡献",
     "requestWorkspacesCard": {
-      "title": "您构建的 请求 工作区",
+      "title": "您构建的请求工作区",
       "description": "直接从您创建和管理工作区的位置添加工作区。"
     },
     "approvalsCard": {
       "title": "获得指定经理的快速批准",
-      "description": "添加评论并让 团队 经理和网络经理帮助有目的地审查和策划工作空间。"
+      "description": "添加评论并让团队经理和网络经理帮助有目的地审查和策划工作空间。"
     }
   },
   "migrationUpgrade": {
     "heading": "私有 API 网络",
     "subheading": "让组织中的每个人都能轻松发现您的 API、集合和工作区。",
-    "title": "升级以访问 私有 API 网络",
+    "title": "升级以访问私有 API 网络",
     "description": "私有 API 网络可用于企业计划。升级您的计划，为您的组织解锁集中式 API 发现。",
     "primaryButton": "升级到企业版",
     "secondaryButton": "了解更多",
     "backToHome": "主页"
   },
   "migrationInfo": {
-    "title": "迁移到新的 私有 API 网络",
-    "description": "随着组织规模的扩大，新的 私有 API 网络可以更轻松地分发和发现内部 API。",
+    "title": "迁移到新的私有 API 网络",
+    "description": "随着组织规模的扩大，新的私有 API 网络可以更轻松地分发和发现内部 API。",
     "feature1Title": "发布工作区，而不是单个元素",
-    "feature1Description": "添加 工作区 后，它的所有集合、规格和流程都将变得可发现。",
+    "feature1Description": "添加工作区后，它的所有集合、规范和流程都将变得可发现。",
     "feature2Title": "与您的组织一起扩展的组织",
     "feature2Description": "团队定义所有权。标签取代文件夹以实现灵活的过滤和发现。",
     "migrationTitle": "迁移过程中会发生什么",
     "migrationItem1Prefix": "现有文件夹和子文件夹将转换为",
     "migrationItem2Prefix": "以前发布的元素被映射回它们的",
-    "migrationItem3": "您将检查并确认将添加到新 私有 API 网络的工作区。",
-    "migrationNote": "您可以在多个会话中完成迁移。您的 工作区 内容不会更改。",
+    "migrationItem3": "您将检查并确认将添加到新私有 API 网络的工作区。",
+    "migrationNote": "您可以在多个会话中完成迁移。您的工作区内容不会更改。",
     "migrationSkipNote": "如果您跳过迁移，则只有之前添加到网络的工作区才可用。",
-    "workspaceTags": "工作区 标签",
+    "workspaceTags": "工作区标签",
     "workspaces": "工作空间",
     "migrateButton": "迁移",
     "skipMigrationButton": "跳过",
     "learnMoreButton": "了解更多",
     "bannerAlt": "迁移图",
-    "waitingForNetworkManager": "要求您的网络经理迁移到新的 私有 网络体验",
-    "inProgressBannerTitle": "私有 网络迁移正在进行中",
+    "waitingForNetworkManager": "要求您的网络经理迁移到新的私有网络体验",
+    "inProgressBannerTitle": "私有网络迁移正在进行中",
     "inProgressBannerBody": "迁移已由 <0>{ownerName}</0> 启动。请等待它完成或联系更新。"
   },
   "migrationPage": {
@@ -346,10 +346,10 @@
     "closeButton": "退出并稍后恢复",
     "nextButton": "下一个",
     "step2Heading": "完成迁移",
-    "step2Description": "完成对新 私有 API 网络的升级。完成后，您的组织将使用基于 工作区 的新模型。",
+    "step2Description": "完成对新私有 API 网络的升级。完成后，您的组织将使用基于工作区的新模型。",
     "step2ReadyText": "您已准备好完成迁移。",
     "step2AfterFinishing": "完成后：",
-    "step2Item1": "新的 私有 API 网络开始活跃",
+    "step2Item1": "新的私有 API 网络开始活跃",
     "step2Item2Prefix": "迁移",
     "step2Item2Bold": "无法重新启动",
     "step2ExitNote": "您可以在完成此步骤之前退出并稍后返回。",
@@ -364,9 +364,9 @@
     "skipModalCancelButton": "取消",
     "skipModalConfirmButton": "跳过",
     "backButton": "后退",
-    "nextButtonDisabledTooltip": "对至少一个 工作区 应用更改才能继续。",
-    "checkboxTooltipUnaffected": "此 工作区 不受迁移影响",
-    "checkboxTooltipCompleted": "此 工作区 的迁移已完成",
+    "nextButtonDisabledTooltip": "对至少一个工作区应用更改才能继续。",
+    "checkboxTooltipUnaffected": "此工作区不受迁移影响",
+    "checkboxTooltipCompleted": "此工作区的迁移已完成",
     "checkboxTooltipInProgress": "迁移正在进行中"
   }
 }

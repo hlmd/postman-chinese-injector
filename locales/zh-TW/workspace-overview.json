@@ -351,7 +351,7 @@
         "description": "瞭解如何設定監控，以便在出現錯誤時收到通知。"
       },
       "collection_runner": {
-        "title": "Collection Runner",
+        "title": "集合執行器",
         "description": "瞭解如何建立並自動執行測試序列。"
       }
     }
@@ -976,7 +976,7 @@
       },
       "expired_access_request": {
         "title": "請求已過期",
-        "message": "訪問請求會在 30 天后過期。您仍可以通過與對方共享該元素來授予訪問權限。"
+        "message": "訪問請求會在 30 天後過期。您仍可以通過與對方共享該元素來授予訪問權限。"
       },
       "model_does_not_exist": {
         "title": "無法傳送請求",
@@ -1098,7 +1098,7 @@
   },
   "workspace_tools": {
     "invite_to_workspace": {
-      "invite_prompt_with_name": "您即將邀請使用者加入工作區 “{workspaceName}”。",
+      "invite_prompt_with_name": "您即將邀請使用者加入工作區“{workspaceName}”。",
       "invite_prompt_without_name": "您即將邀請使用者加入目前活動的工作區。",
       "email_label": "電子郵件：",
       "role_label": "角色：",

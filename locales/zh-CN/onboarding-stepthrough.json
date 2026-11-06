@@ -8,7 +8,7 @@
       "cta_text": "开始使用"
     },
     "send_request": {
-      "header": "首先发送 请求",
+      "header": "首先发送请求",
       "description": "通过创建并发送请求来测试 API 的行为。",
       "minimized_content": "从这里开始🚀"
     },

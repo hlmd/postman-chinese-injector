@@ -81,11 +81,11 @@
     "popover": {
       "fork_cta": "復刻 {model}",
       "cancel": "取消",
-      "no_permission": "您沒有 權限 要匯出",
+      "no_permission": "您沒有權限要匯出",
       "no_permission_partner_description": "檢視者角色的合作伙伴無法匯出集合。您可以改為 fork 此集合。"
     },
     "view_plans": {
-      "title": "Fork 到您自己的 團隊",
+      "title": "Fork 到您自己的團隊",
       "description": "將此團隊升級為付費 Postman 計劃，以便 fork 並建立此集合的副本。",
       "cta": "檢視計劃",
       "add_paid_team": "在付費 Postman 計劃上建立團隊，以 fork 並建立此集合的副本。"

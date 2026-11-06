@@ -1,7 +1,7 @@
 {
   "load_error": {
     "title": "编辑器加载失败",
-    "message": "我们的 团队 已收到通知。如果问题仍然存在，请联系 <1><0><0>Postman 支持</0></0></1>。"
+    "message": "我们的团队已收到通知。如果问题仍然存在，请联系 <1><0><0>Postman 支持</0></0></1>。"
   },
   "editor": {
     "content_pane": {
@@ -41,7 +41,7 @@
           },
           "share": {
             "text": "分享",
-            "tooltip": "分享 文件夹"
+            "tooltip": "分享文件夹"
           },
           "delete": "删除"
         }
@@ -79,39 +79,39 @@
       },
       "tabs": {
         "auth": {
-          "description": "此 授权 方法将用于此 文件夹 中的每个 请求。您可以通过在 请求 中指定一个来覆盖这一点。"
+          "description": "此授权方法将用于此文件夹中的每个请求。您可以通过在请求中指定一个来覆盖这一点。"
         },
         "scripts": {
           "label": "脚本",
           "tooltip-text": {
-            "pre-request": "在发送每个 请求 之前运行。使用它通过动态配置请求来创建 API 工作流程。",
-            "post-response": "在收到每个 请求 的 响应 后运行。用它来编写测试。"
+            "pre-request": "在发送每个请求之前运行。使用它通过动态配置请求来创建 API 工作流程。",
+            "post-response": "在收到每个请求的响应后运行。用它来编写测试。"
           },
-          "migration-popover-text": "使用 响应 后脚本编写测试、可视化 响应 以及执行更多操作。"
+          "migration-popover-text": "使用响应后脚本编写测试、可视化响应以及执行更多操作。"
         },
         "test-tab-deprecation": {
-          "heading": "测试现在是 post-响应 脚本的一部分",
+          "heading": "测试现在是 post-响应脚本的一部分",
           "message": "您可以使用脚本来编写测试、请求前脚本、可视化响应并为您的 API 工作流程带来大量自动化。",
-          "button": "打开 post-响应 脚本"
+          "button": "打开 post-响应脚本"
         },
         "pre_req": {
-          "description": "这个 脚本 将在这个 文件夹 中的每个 请求 之前执行。了解更多关于<1><0>Postman的执行顺序</0></1>。",
+          "description": "这个脚本将在这个文件夹中的每个请求之前执行。了解更多关于<1><0>Postman的执行顺序</0></1>。",
           "placeholder": "使用 JavaScript 动态配置请求。"
         },
         "tests": {
-          "description": "这些测试将在此 文件夹 中的每个 请求 之后执行。了解更多关于<1><0>Postman的执行顺序</0></1>。",
+          "description": "这些测试将在此文件夹中的每个请求之后执行。了解更多关于<1><0>Postman的执行顺序</0></1>。",
           "placeholder": "使用 JavaScript 编写测试、可视化响应等。"
         },
         "settings": {
           "empty_state": {
-            "title": "文件夹 设置不可用",
-            "message": "Postman 使用浏览器的默认设置发送请求。切换到桌面代理以进一步自定义您的 文件夹。"
+            "title": "文件夹设置不可用",
+            "message": "Postman 使用浏览器的默认设置发送请求。切换到桌面代理以进一步自定义您的文件夹。"
           }
         }
       }
     },
     "context_bar": {
-      "info_title": "文件夹 详细信息"
+      "info_title": "文件夹详细信息"
     }
   },
   "new_folder": "新建文件夹"

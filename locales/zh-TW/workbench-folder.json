@@ -1,7 +1,7 @@
 {
   "load_error": {
     "title": "編輯器載入失敗",
-    "message": "我們的 團隊 已收到通知。如果問題仍然存在，請聯絡 <1><0><0>Postman 支援</0></0></1>。"
+    "message": "我們的團隊已收到通知。如果問題仍然存在，請聯絡 <1><0><0>Postman 支援</0></0></1>。"
   },
   "editor": {
     "content_pane": {
@@ -41,7 +41,7 @@
           },
           "share": {
             "text": "分享",
-            "tooltip": "分享 資料夾"
+            "tooltip": "分享資料夾"
           },
           "delete": "刪除"
         }
@@ -79,39 +79,39 @@
       },
       "tabs": {
         "auth": {
-          "description": "此 授權 方法將用於此 資料夾 中的每個 請求。您可以通過在 請求 中指定一個來覆蓋這一點。"
+          "description": "此授權方法將用於此資料夾中的每個請求。您可以通過在請求中指定一個來覆蓋這一點。"
         },
         "scripts": {
           "label": "腳本",
           "tooltip-text": {
-            "pre-request": "在傳送每個 請求 之前執行。使用它通過動態配置請求來建立 API 工作流程。",
-            "post-response": "在收到每個 請求 的 回應 後執行。用它來編寫測試。"
+            "pre-request": "在傳送每個請求之前執行。使用它通過動態配置請求來建立 API 工作流程。",
+            "post-response": "在收到每個請求的回應後執行。用它來編寫測試。"
           },
-          "migration-popover-text": "使用 回應 後腳本編寫測試、視覺化 回應 以及執行更多操作。"
+          "migration-popover-text": "使用回應後腳本編寫測試、視覺化回應以及執行更多操作。"
         },
         "test-tab-deprecation": {
-          "heading": "測試現在是 post-回應 腳本的一部分",
+          "heading": "測試現在是 post-回應腳本的一部分",
           "message": "您可以使用腳本來編寫測試、請求前腳本、視覺化回應併為您的 API 工作流程帶來大量自動化。",
-          "button": "開啟 post-回應 腳本"
+          "button": "開啟 post-回應腳本"
         },
         "pre_req": {
-          "description": "這個 腳本 將在這個 資料夾 中的每個 請求 之前執行。瞭解更多關於<1><0>Postman的執行順序</0></1>。",
+          "description": "這個腳本將在這個資料夾中的每個請求之前執行。瞭解更多關於<1><0>Postman的執行順序</0></1>。",
           "placeholder": "使用 JavaScript 動態配置請求。"
         },
         "tests": {
-          "description": "這些測試將在此 資料夾 中的每個 請求 之後執行。瞭解更多關於<1><0>Postman的執行順序</0></1>。",
+          "description": "這些測試將在此資料夾中的每個請求之後執行。瞭解更多關於<1><0>Postman的執行順序</0></1>。",
           "placeholder": "使用 JavaScript 編寫測試、視覺化回應等。"
         },
         "settings": {
           "empty_state": {
-            "title": "資料夾 設定不可用",
-            "message": "Postman 使用瀏覽器的預設設定傳送請求。切換到桌面代理以進一步自訂您的 資料夾。"
+            "title": "資料夾設定不可用",
+            "message": "Postman 使用瀏覽器的預設設定傳送請求。切換到桌面代理以進一步自訂您的資料夾。"
           }
         }
       }
     },
     "context_bar": {
-      "info_title": "資料夾 詳細資訊"
+      "info_title": "資料夾詳細資訊"
     }
   },
   "new_folder": "新增資料夾"

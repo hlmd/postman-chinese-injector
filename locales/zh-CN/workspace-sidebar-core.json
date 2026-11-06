@@ -119,25 +119,25 @@
     "elements": {
       "http": {
         "card_label": "HTTP",
-        "info_text": "超文本传输​​协议 (HTTP) 是一种应用层协议，通常用于构建 REST API。使用 HTTP 请求 测试您的 HTTP API。",
+        "info_text": "超文本传输​​协议 (HTTP) 是一种应用层协议，通常用于构建 REST API。使用 HTTP 请求测试您的 HTTP API。",
         "no_permission_text": "您没有权限在这个工作区中创建 HTTP 请求。",
         "offline_text": "您需要在线才能创建 HTTP 请求。"
       },
       "graphql": {
         "card_label": "GraphQL",
-        "info_text": "GraphQL 是一种 API 查询语言，旨在为客户端提供其所需的准确信息。使用 GraphQL 请求 测试您的 GraphQL API。",
+        "info_text": "GraphQL 是一种 API 查询语言，旨在为客户端提供其所需的准确信息。使用 GraphQL 请求测试您的 GraphQL API。",
         "no_permission_text": "您没有权限在这个工作区中创建 GraphQL 请求。",
         "offline_text": "您需要在线才能创建 GraphQL 请求。"
       },
       "grpc": {
         "card_label": "gRPC",
-        "info_text": "gRPC 是一个高性能的 RPC 框架，常用于构建微服务。使用 gRPC 请求 测试您的 gRPC API。",
+        "info_text": "gRPC 是一个高性能的 RPC 框架，常用于构建微服务。使用 gRPC 请求测试您的 gRPC API。",
         "no_permission_text": "您没有权限在这个工作区中创建 gRPC 请求。",
         "offline_text": "您需要在线才能创建 gRPC 请求。"
       },
       "websocket": {
         "card_label": "WebSocket",
-        "info_text": "WebSocket 使用持久通信通道实现客户端和服务器之间的实时通信。使用 WebSocket 请求 测试基于 WebSocket 的 API。",
+        "info_text": "WebSocket 使用持久通信通道实现客户端和服务器之间的实时通信。使用 WebSocket 请求测试基于 WebSocket 的 API。",
         "no_permission_text": "您没有权限在这个工作区中创建 WebSocket 请求。",
         "offline_text": "您需要在线才能创建 WebSocket 请求。"
       },
@@ -162,13 +162,13 @@
       },
       "socketio": {
         "card_label": "Socket.IO",
-        "info_text": "Socket.IO 是一个构建在 WebSocket 之上的框架，用于启用事件驱动的客户端-服务器通信。使用 Socket.IO 请求 测试基于 Socket.IO 的 API。",
+        "info_text": "Socket.IO 是一个构建在 WebSocket 之上的框架，用于启用事件驱动的客户端-服务器通信。使用 Socket.IO 请求测试基于 Socket.IO 的 API。",
         "no_permission_text": "您没有权限在这个工作区中创建 Socket.IO 请求。",
         "offline_text": "您需要在线才能创建 Socket.IO 请求。"
       },
       "mqtt": {
         "card_label": "MQTT",
-        "info_text": "MQTT 是一种广泛用于物联网 (IoT) 的轻量级消息传递协议。使用 MQTT 请求 测试基于 MQTT 的 API。",
+        "info_text": "MQTT 是一种广泛用于物联网 (IoT) 的轻量级消息传递协议。使用 MQTT 请求测试基于 MQTT 的 API。",
         "no_permission_text": "您没有权限在这个工作区中创建 MQTT 请求。",
         "offline_text": "您需要在线才能创建 MQTT 请求。"
       },
@@ -217,10 +217,10 @@
         "no_permission_text": "您没有权限创建工作区。"
       },
       "insights": {
-        "card_label": "见解",
+        "card_label": "洞察",
         "info_text": "近乎实时地了解您的 API 性能。",
-        "offline_text": "离线时无法创建见解项目。",
-        "no_permission_text": "您没有权限创建见解项目。"
+        "offline_text": "离线时无法创建洞察项目。",
+        "no_permission_text": "您没有权限创建洞察项目。"
       },
       "ask_ai": {
         "card_label": "询问人工智能"
@@ -276,7 +276,7 @@
         "card_label": "SDK",
         "offline_text": "离线时无法生成 SDK。",
         "no_permission_text": "您没有权限在此工作区中生成 SDK。",
-        "no_edit_permission_collection": "您需要对此 集合 的编辑权限才能生成 SDK。",
+        "no_edit_permission_collection": "您需要对此集合的编辑权限才能生成 SDK。",
         "no_edit_permission_spec": "您需要对此 API 定义的编辑权限才能生成 SDK。"
       },
       "webhook": {
@@ -543,8 +543,8 @@
         "plural": "集合运行"
       },
       "performance_test": {
-        "singular": "性能 测试",
-        "plural": "性能 测试"
+        "singular": "性能测试",
+        "plural": "性能测试"
       },
       "monitor": {
         "singular": "Monitor",
@@ -652,7 +652,7 @@
     "run_in_postman": {
       "default_label": "了解更多。",
       "public_workspace_label": "在 Postman 中运行",
-      "embed_learn_more_button": "在您的网站或文档中嵌入 <1><0>{buttonText}</0></1> 按钮，以便人们更轻松地发现您的 集合 并与之互动。",
+      "embed_learn_more_button": "在您的网站或文档中嵌入 <1><0>{buttonText}</0></1> 按钮，以便人们更轻松地发现您的集合并与之互动。",
       "everyone_can_view_and_fork_public_collection": "Postman 上的每个人都可以查看并 fork 这个公开集合。",
       "generating_code_snippet": "正在生成代码片段...",
       "render_static_button_message": "该按钮将指向集合的静态快照。它不会随着集合的更改而更新。",
@@ -714,7 +714,7 @@
       },
       "anyone_can_share_and_fork_collection": "任何拥有此链接的人都可以查看并复刻您的集合。",
       "copy_link": "复制链接",
-      "make_collection_available_in_public_workspace": "将您的集合发布到公共工作区，以便所有人查看，并通过复刻参与贡献。",
+      "make_collection_available_in_public_workspace": "将您的集合发布到公开工作区，以便所有人查看，并通过复刻参与贡献。",
       "move_collection": "移动集合",
       "who_can_view_this_collection": {
         "label": "谁可以查看此集合？",
@@ -730,8 +730,8 @@
         }
       },
       "move_to_public_workspace": {
-        "description": "要让所有人都能查看此集合，您需要将其移动到公共工作区。",
-        "move_button": "移动到公共工作区"
+        "description": "要让所有人都能查看此集合，您需要将其移动到公开工作区。",
+        "move_button": "移动到公开工作区"
       },
       "cancel": "取消",
       "next": "下一步",

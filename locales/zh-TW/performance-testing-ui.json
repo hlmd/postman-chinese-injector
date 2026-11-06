@@ -218,12 +218,12 @@
       "duck_db_initialization_error": "無法初始化效能測試系統。請再試一次。",
       "duckdb_init_toast": {
         "title": "初始化錯誤",
-        "timeout": "效能執行程式擴充功能下載超時。檢查您的網路連線和防火牆設定。",
-        "certificate": "證書問題阻止了效能執行程式擴充功能下載。如果您的組織使用代理，請將其證書新增到系統的受信任根證書中。",
-        "network": "網路問題阻止了效能執行程式擴充功能下載。您的 IT 團隊可能需要將 performance-test-artifacts.getpostman.com 域列入白名單。",
-        "policy": "應用程式控制策略阻止了效能執行程式。您的 IT 團隊可能需要允許執行應用程式目錄中的 Postman 檔案。[檢視可能的解決方案](https://learning.postman.com/v11/docs/collections/performance-testing/troubleshoot-performance-tests#possible-solutions)。",
-        "http": "效能執行程式擴充功能下載被阻止或拒絕。代理、防火牆可能正在攔截請求。",
-        "unknown": "效能執行程式擴充功能安裝失敗。檢查 Postman 日誌（搜尋 PerformanceTestV2）以識別並解決問題，或與 Postman 支援人員共享日誌以獲取幫助。"
+        "timeout": "效能執行器擴充功能下載超時。檢查您的網路連線和防火牆設定。",
+        "certificate": "證書問題阻止了效能執行器擴充功能下載。如果您的組織使用代理，請將其證書新增到系統的受信任根證書中。",
+        "network": "網路問題阻止了效能執行器擴充功能下載。您的 IT 團隊可能需要將 performance-test-artifacts.getpostman.com 域列入白名單。",
+        "policy": "應用程式控制策略阻止了效能執行器。您的 IT 團隊可能需要允許執行應用程式目錄中的 Postman 檔案。[檢視可能的解決方案](https://learning.postman.com/v11/docs/collections/performance-testing/troubleshoot-performance-tests#possible-solutions)。",
+        "http": "效能執行器擴充功能下載被阻止或拒絕。代理、防火牆可能正在攔截請求。",
+        "unknown": "效能執行器擴充功能安裝失敗。檢查 Postman 日誌（搜尋 PerformanceTestV2）以識別並解決問題，或與 Postman 支援人員共享日誌以獲取幫助。"
       }
     },
     "warnings": {
@@ -296,8 +296,8 @@
     "rejections": {
       "vuh_blocked": "請讓管理員在帳單資源用量中為效能測試啟用按量付費。",
       "vuh_blocked_linked": "請讓管理員在<Link><Text>帳單資源用量</Text></Link>中為效能測試啟用按量付費。",
-      "internal_pool_forbidden": "您的團隊無權在此工作區中使用 Internal Staging Runners。請選擇其他出口選項。",
-      "internal_pool_unavailable": "Internal Staging Runners 暫時不可用。請稍後重試，或選擇其他出口選項。",
+      "internal_pool_forbidden": "您的團隊無權在此工作區中使用內部預發布執行器。請選擇其他出口選項。",
+      "internal_pool_unavailable": "內部預發布執行器暫時不可用。請稍後重試，或選擇其他出口選項。",
       "local_values_policy_prohibited": "您的團隊或工作區策略禁止傳送一個或多個裝置值。請檢查變數設定後再重新開始執行。",
       "local_values_disabled": "你的團隊未開啟從此裝置傳送值的功能。請重新開始執行以僅使用共享值。"
     },
@@ -446,7 +446,7 @@
       "option_shared": "動態 IP",
       "option_static": "靜態 IP",
       "option_internal_stage": "內部預發布執行器",
-      "internal_stage_description": "請求來自 Postman 的 Internal Staging Runners。僅限 Postman 員工使用。",
+      "internal_stage_description": "請求來自 Postman 的內部預發布執行器。僅限 Postman 員工使用。",
       "upgrade_heading": "升級後可使用靜態 IP 在雲端執行效能測試",
       "upgrade_description": "將雲端效能測試的流量通過可加入白名單的靜態 IP 轉發，即可訪問防火牆後的 API。升級套餐即可開始使用。"
     },
@@ -472,7 +472,7 @@
         "teardown_collection_empty": "等待 Teardown 集合執行完成。",
         "finishing": "總結",
         "finishing_empty": "結束執行並提供結果。",
-        "finishing_failed": "無法彙總所有實例的結果。 “摘要”選項卡中可能提供部分結果。",
+        "finishing_failed": "無法彙總所有實例的結果。“摘要”選項卡中可能提供部分結果。",
         "status": {
           "pending": "待處理",
           "active": "進行中",
@@ -490,7 +490,7 @@
       },
       "banners": {
         "pre_instrumentation": "此執行早於執行跟蹤，因此詳細的活動不可用。",
-        "incomplete": "部分活動日誌 — 您的結果不受影響。",
+        "incomplete": "部分活動日誌—您的結果不受影響。",
         "user_aborted_untraced": "此執行已手動停止。未記錄停止訊號後的活動。"
       },
       "stage_strip": {

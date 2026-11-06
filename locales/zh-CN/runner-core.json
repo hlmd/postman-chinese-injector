@@ -157,8 +157,8 @@
     "select_scenario_placeholder": "选择场景",
     "scenarios_loading": "加载中...",
     "use_mock_aria_label": "在本次运行中使用此模拟服务器",
-    "mock_enabled_tooltip": "模拟服务器已启用 — 请求由模拟服务器响应",
-    "mock_disabled_tooltip": "模拟服务器已禁用 — 请求将直接发送到真实主机"
+    "mock_enabled_tooltip": "模拟服务器已启用—请求由模拟服务器响应",
+    "mock_disabled_tooltip": "模拟服务器已禁用—请求将直接发送到真实主机"
   },
   "empty_state": {
     "functional": {

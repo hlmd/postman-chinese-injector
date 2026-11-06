@@ -12,19 +12,19 @@
       "id": "ID："
     },
     "version_switcher": {
-      "tooltip": "連線時無法更改 版本"
+      "tooltip": "連線時無法更改版本"
     },
     "connect_button": {
       "tooltip": {
-        "no_permission": "您沒有 權限 在此 工作區 中執行此操作。"
+        "no_permission": "您沒有權限在此工作區中執行此操作。"
       }
     }
   },
   "agent": {
     "errors": {
       "agent_not_connected": "切換到 Postman 桌面代理以與 MQTT 代理伺服器連線。",
-      "agent_not_supported": "您正在使用舊版 版本 的 Postman 桌面代理 ，它不支援 MQTT 請求。更新 桌面代理 並重試。",
-      "agent_not_ready": "確保 桌面代理 已安裝並正在執行。"
+      "agent_not_supported": "您正在使用舊版版本的 Postman 桌面代理，它不支援 MQTT 請求。更新桌面代理並重試。",
+      "agent_not_ready": "確保桌面代理已安裝並正在執行。"
     }
   },
   "compose_area": {
@@ -46,7 +46,7 @@
       "messages": {
         "settings": {
           "response_topic": {
-            "label": "回應 主題",
+            "label": "回應主題",
             "placeholder": "新增主題"
           },
           "correlation_data": {
@@ -206,20 +206,20 @@
     "verify_server_certificate_summary": "通過安全連線連線到 Broker 時驗證伺服器證書。",
     "clean_session": "清除會話",
     "clean_start": "乾淨的開始",
-    "clean_session_description": "配置代理伺服器是否應以新連線啟動而不保留任何以前的 會話 資料。",
-    "clean_session_summary": "代理伺服器從新連線開始，不保留任何以前的 會話 資料。",
-    "session_expiry_interval": "會話 到期間隔",
-    "session_expiry_interval_description": "配置 會話 到期間隔（以秒為單位）。這會影響代理伺服器為您的客戶端儲存 會話 資料的時間。如果啟用乾淨啟動，則忽略該值。",
-    "session_expiry_interval_summary": "會話 到期間隔（以秒為單位）。這會影響代理伺服器為您的客戶端儲存 會話 資料的時間。如果啟用乾淨啟動，則忽略該值。",
+    "clean_session_description": "配置代理伺服器是否應以新連線啟動而不保留任何以前的會話資料。",
+    "clean_session_summary": "代理伺服器從新連線開始，不保留任何以前的會話資料。",
+    "session_expiry_interval": "會話到期間隔",
+    "session_expiry_interval_description": "配置會話到期間隔（以秒為單位）。這會影響代理伺服器為您的客戶端儲存會話資料的時間。如果啟用乾淨啟動，則忽略該值。",
+    "session_expiry_interval_summary": "會話到期間隔（以秒為單位）。這會影響代理伺服器為您的客戶端儲存會話資料的時間。如果啟用乾淨啟動，則忽略該值。",
     "keep_alive": "保持活動",
     "keep_alive_description": "配置保持活動間隔（以秒為單位）。",
     "keep_alive_summary": "保持活動間隔（以秒為單位）。",
     "auto_reconnect": "自動重新連線",
     "auto_reconnect_description": "配置客戶端是否應在突然斷開連線時自動重新連線。",
     "auto_reconnect_summary": "客戶端在突然斷開連線時自動重新連線。",
-    "connection_timeout": "連線 超時",
-    "connection_timeout_description": "配置連線 超時（以秒為單位）。",
-    "connection_timeout_summary": "連線 超時（以秒為單位）。",
+    "connection_timeout": "連線超時",
+    "connection_timeout_description": "配置連線超時（以秒為單位）。",
+    "connection_timeout_summary": "連線超時（以秒為單位）。",
     "receive_maximum": "接收最大值",
     "receive_maximum_description": "配置可同時處理的QoS 1和2訊息的最大數量。",
     "receive_maximum_summary": "可以同時處理的 QoS 1 和 2 訊息的最大數量。",
@@ -271,7 +271,7 @@
       "subscribed_to": "已訂閱",
       "unsubscribed_from": "取消訂閱",
       "connection_aborted": "連線中止",
-      "response_pruned": "回應 未儲存。",
+      "response_pruned": "回應未儲存。",
       "empty_payload": "（空的）"
     },
     "packet_information": "資料包資訊",

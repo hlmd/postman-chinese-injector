@@ -19,7 +19,7 @@
     "agents_beta_label": "测试版",
     "agent_automations": "代理自动化",
     "api_catalog_disabled_tooltip": "API 目录适用于企业计划的用户。",
-    "application_inventory_disabled_tooltip": "应用库存可供 Solo 计划及以上计划的用户使用。"
+    "application_inventory_disabled_tooltip": "应用库存可供 个人版及以上套餐的用户使用。"
   },
   "notifications": {
     "icon_tooltip": "新通知",
@@ -39,8 +39,8 @@
     "category_icon_placeholder": "类别图标",
     "get_notified": "于 {platform} 收到通知",
     "authorizing": "授权...",
-    "initial_authorization_error": "启动 授权 流程 时出现问题",
-    "could_not_authorize_error": "执行 授权 时出现问题",
+    "initial_authorization_error": "启动授权流程时出现问题",
+    "could_not_authorize_error": "执行授权时出现问题",
     "integration_added_success": "添加了新的集成",
     "integration_added_error": "添加新集成时出现问题"
   },
@@ -57,7 +57,7 @@
     },
     "sign_in_modal": {
       "heading": "加入 Postman 探索工作空间",
-      "description": "工作区 可让您组织 API 并进行协作。"
+      "description": "工作区可让您组织 API 并进行协作。"
     },
     "could_not_load_workspaces": {
       "heading": "无法加载工作区",
@@ -67,7 +67,7 @@
     },
     "all_workspaces_empty_state": {
       "heading": "没有工作空间",
-      "description": "工作区 可让您在 API 上进行组织和协作。了解有关 <2><0>工作区</0></2> 的更多信息",
+      "description": "工作区可让您在 API 上进行组织和协作。了解有关 <2><0>工作区</0></2> 的更多信息",
       "create_workspace_button": "创建工作区"
     },
     "no_results_found": {
@@ -84,7 +84,7 @@
   "workspace_switcher_new": {
     "all_workspaces_empty_state": {
       "heading": "还没有工作区",
-      "description": "查找现有的 工作区，或创建一个与您的 团队 协作。",
+      "description": "查找现有的工作区，或创建一个与您的团队协作。",
       "create_workspace_button": "创建工作区",
       "browse_workspaces": "浏览工作区"
     },
@@ -99,13 +99,13 @@
   },
   "favorite_workspace_toggle": {
     "toast_content": {
-      "title": "无法加注星标 工作区",
+      "title": "无法加注星标工作区",
       "description": "您已达到可以加注星标的工作区的最大数量。"
     },
     "tooltip": {
       "loading": "加载中...",
-      "unstar_workspace": "取消星标 工作区",
-      "star_workspace": "加注星标 工作区"
+      "unstar_workspace": "取消星标工作区",
+      "star_workspace": "加注星标工作区"
     },
     "button_text": {
       "unstar": "取消星标",
@@ -114,37 +114,37 @@
   },
   "workspace_preview_popover": {
     "partner_workspace_banner": {
-      "default": "合作伙伴可以访问此 工作区",
+      "default": "合作伙伴可以访问此工作区",
       "multi_partner_workspace": "与多个组织的合作伙伴共享"
     },
     "archived_workspace_banner": {
-      "text": "此 工作区 已存档"
+      "text": "此工作区已存档"
     },
     "multi_partner_mode_label": "多伙伴模式：",
     "multi_partner_mode_on": "开启",
     "multi_partner_mode_off": "关闭",
-    "multi_partner_mode_tooltip_on": "合作伙伴无法看到其他合作伙伴或对此 工作区 进行更改",
-    "multi_partner_mode_tooltip_off": "合作伙伴可以在此 工作区 查看其他合作伙伴"
+    "multi_partner_mode_tooltip_on": "合作伙伴无法看到其他合作伙伴或对此工作区进行更改",
+    "multi_partner_mode_tooltip_off": "合作伙伴可以在此工作区查看其他合作伙伴"
   },
   "more_options": "更多的",
   "api_network_dropdown": {
     "label": "API 网络",
-    "disabled_tooltip": "您没有 权限 来查看此内容。",
+    "disabled_tooltip": "您没有权限来查看此内容。",
     "private_api_network": "私有 API 网络",
     "public_api_network": "公开 API 网络",
     "partner_api_network": "合作伙伴 API 网络",
     "public_api_network_dropdown": {
       "card_title": "Postman API 网络",
-      "card_subtitle": "探索 Postman 上的 公开 API",
-      "public_card_heading": "探索并与 公开 API 集成",
+      "card_subtitle": "探索 Postman 上的公开 API",
+      "public_card_heading": "探索并与公开 API 集成",
       "spotlight_tab": "API 聚光灯",
       "trending_tab": "热门 API",
-      "public_cta": "查看所有 公开 API →"
+      "public_cta": "查看所有公开 API →"
     },
     "private_api_network_dropdown": {
       "card_title": "私有 API 网络",
       "card_subtitle": "整个组织中可重用的 API",
-      "private_card_heading": "使用内部 团队 API 来简化开发",
+      "private_card_heading": "使用内部团队 API 来简化开发",
       "private_card_text": "内部 API 的中心枢纽，可简化您的开发。",
       "private_cta": "查看内部 API →"
     }
@@ -183,27 +183,27 @@
     "reached_monthly_threshold_warning": "您已达到计划的每月使用限额。",
     "about_to_reach_monthly_threshold_warning": "您即将达到计划的每月使用限额。",
     "create_free_team": "创建免费团队",
-    "create_team_account": "创建 团队 帐户",
+    "create_team_account": "创建团队帐户",
     "view_team": "查看团队",
     "view_org": "查看组织",
     "free_user_header_menu": {
       "heading": "Postman 最适合团队合作",
-      "description": "通过创建 团队 进行实时协作并为您的 API 工作流程建立单一事实来源。"
+      "description": "通过创建团队进行实时协作并为您的 API 工作流程建立单一事实来源。"
     },
     "team_usage": {
       "resource_limit_error": {
         "heading": "出了问题！",
-        "description": "获取 团队 的使用数据时出现问题。",
+        "description": "获取团队的使用数据时出现问题。",
         "retry_action": "重试"
       },
       "menu_options": {
         "billing": "计费",
         "resource_usage": "资源使用情况",
         "billing_and_resource_usage": "计费和资源使用",
-        "manage_public_elements": "公开 元素",
+        "manage_public_elements": "公开元素",
         "manage_postman_keys": "Postman 密钥",
         "audit_logs": "审核日志",
-        "team_settings": "团队 设置",
+        "team_settings": "团队设置",
         "org_settings": "组织设置"
       }
     },
@@ -218,9 +218,9 @@
     "options": {
       "settings": "设置",
       "app_settings": "应用程序设置",
-      "workspace_settings": "工作区 设置",
+      "workspace_settings": "工作区设置",
       "organization_settings": "组织设置",
-      "team_settings": "团队 设置",
+      "team_settings": "团队设置",
       "account_settings": "账户设置",
       "update_available_view": "可用更新，查看更改",
       "update_available_restart": "重启即可更新",
@@ -242,70 +242,70 @@
     "close_modal": "关闭对话框",
     "heading": {
       "google_directory": "从您的 Google 目录中添加人员",
-      "invite_partners": "邀请 合作伙伴",
-      "invite_people": "邀请加入 工作区",
-      "invite_people_workspace": "邀请他人加入此 工作区",
-      "invite_team_members": "邀请 团队 成员"
+      "invite_partners": "邀请合作伙伴",
+      "invite_people": "邀请加入工作区",
+      "invite_people_workspace": "邀请他人加入此工作区",
+      "invite_team_members": "邀请团队成员"
     },
     "learn_more": "了解更多",
     "invite_button": {
       "label": "邀请",
-      "disabled_tooltip": "您没有 权限 来执行此操作。",
+      "disabled_tooltip": "您没有权限来执行此操作。",
       "default_tooltip": "邀请"
     },
     "copy_partner_link": "复制合作伙伴链接",
-    "copy_team_member_link": "复制 团队 链接",
+    "copy_team_member_link": "复制团队链接",
     "partner_slot_full_modal": {
-      "heading": "合作伙伴 邀请已发送",
-      "description": "所有受邀合作伙伴都不能成为编辑，因为您的 团队 没有足够的付费位置。在添加更多插槽之前，他们可以作为查看者访问此 工作区。",
-      "partner_managers_notified": "我们已通知 合作伙伴 经理添加更多空位。",
+      "heading": "合作伙伴邀请已发送",
+      "description": "所有受邀合作伙伴都不能成为编辑，因为您的团队没有足够的付费位置。在添加更多插槽之前，他们可以作为查看者访问此工作区。",
+      "partner_managers_notified": "我们已通知合作伙伴经理添加更多空位。",
       "done": "完毕"
     },
     "multi_partner_workspace_configuration_nudge": {
       "heading": "邀请多个组织的合作伙伴？",
       "description": "启用多伙伴模式以防止伙伴看到彼此。",
-      "action_text": "转到 工作区 设置",
+      "action_text": "转到工作区设置",
       "learn_more": "了解更多"
     },
     "email_input": {
       "placeholder": "输入姓名、群组名称或电子邮件..."
     },
-    "could_not_find_workspace": "找不到这个 工作区。",
-    "share_workspace_error": "分享此 工作区 时出了点问题",
+    "could_not_find_workspace": "找不到这个工作区。",
+    "share_workspace_error": "分享此工作区时出了点问题",
     "pending_invites": {
       "resend_success": "邀请已重新发送",
       "resend_error": "重新发送邀请时出错",
       "revoke_success": "邀请已撤销",
       "revoke_error": "撤销邀请时出错"
     },
-    "failed_to_assign_editor_role": "无法将 流程 编辑者 角色 分配给某些用户。",
-    "invited_to_workspace": "已受邀加入 工作区",
-    "invited_to_workspace_for_non_team_users": "邀请 请求 已发送",
+    "failed_to_assign_editor_role": "无法将流程编辑者角色分配给某些用户。",
+    "invited_to_workspace": "已受邀加入工作区",
+    "invited_to_workspace_for_non_team_users": "邀请请求已发送",
     "error_inviting_to_workspace_toast": {
       "heading": "无法邀请",
       "description": "只是一根电线有问题。再试一次。",
       "partial_description": "已发送 {sentCount}/{totalCount} 个邀请，其余邀请发送失败。"
     },
-    "cant_invite_external_users_error": "您不能 邀请 不属于您的 团队 的人。",
+    "cant_invite_external_users_error": "您不能邀请不属于您的团队的人。",
     "inviting_will_change_to_visibility": "邀请人们会将其更改为 {toVisibility} 工作区。",
     "email_invalid_message": "{noOfEmails, plural, one {# 个电子邮件无效，请输入有效的电子邮件以发送邀请。} other {# 个电子邮件无效，请输入有效的电子邮件以发送邀请。}}",
-    "permission_denied_message": "您没有 权限 来执行此操作。",
-    "invite_disabled_message": "请输入姓名或电子邮件以发送 邀请。",
-    "copy_invite_link_personal_workspace": "邀请他人可以向 团队 中的每个人打开 工作区。",
-    "new_members_will_join_team_info_text": "新成员接受您的 邀请 后将加入您的 团队。",
-    "non_team_new_members_will_join_team_info_text": "一旦审核者批准您的 请求，我们就会通知您。",
-    "suggestion_will_be_sent_to_team_admin_info_text": "您的建议将发送至 团队 管理员 进行批准。",
-    "team_setup_info_for_non_team_user": "邀请后，我们将帮助您设置 团队。",
-    "cant_invite_partners_users_error": "该合作伙伴仍然是您的 团队 的一部分。<1><0>移除他们</0></1>以重新邀请。",
-    "personal_ws_to_team_ws_info": "邀请他人可以向 团队 中的每个人打开 工作区。 <1><0>升级</0></1>与选定的队友一起工作。",
-    "cant_invite_team_member_as_partner": "您不能 邀请 团队 成员 作为此 工作区 的合作伙伴。",
-    "new_partners_can_access_workspace_info_text": "新合作伙伴接受您的 邀请 后将能够访问 工作区。",
-    "common_domain_partner_invite_error": "您只能从您自己的域中 邀请 合作伙伴。",
+    "permission_denied_message": "您没有权限来执行此操作。",
+    "invite_disabled_message": "请输入姓名或电子邮件以发送邀请。",
+    "copy_invite_link_personal_workspace": "邀请他人可以向团队中的每个人打开工作区。",
+    "new_members_will_join_team_info_text": "新成员接受您的邀请后将加入您的团队。",
+    "non_team_new_members_will_join_team_info_text": "一旦审核者批准您的请求，我们就会通知您。",
+    "suggestion_will_be_sent_to_team_admin_info_text": "您的建议将发送至团队管理员进行批准。",
+    "team_setup_info_for_non_team_user": "邀请后，我们将帮助您设置团队。",
+    "cant_invite_partners_users_error": "该合作伙伴仍然是您的团队的一部分。<1><0>移除他们</0></1>以重新邀请。",
+    "personal_ws_to_team_ws_info": "邀请他人可以向团队中的每个人打开工作区。 <1><0>升级</0></1>与选定的队友一起工作。",
+    "cant_invite_team_member_as_partner": "您不能邀请团队成员作为此工作区的合作伙伴。",
+    "new_partners_can_access_workspace_info_text": "新合作伙伴接受您的邀请后将能够访问工作区。",
+    "common_domain_partner_invite_error": "您只能从您自己的域中邀请合作伙伴。",
     "team_size": "团队规模",
     "manage_team": "管理团队",
     "manage_org": "管理",
     "selected": "已选择",
-    "external_team_banner": "该 工作区 归 <1><0>{teamName}</0></1> 所有。",
+    "external_team_banner": "该工作区归 <1><0>{teamName}</0></1> 所有。",
     "invite_users_radio_group": {
       "label": "您想邀请谁？",
       "options": {
@@ -314,8 +314,8 @@
           "helpertext": "<Link>合作伙伴</Link>是组织之外的外部人员。"
         },
         "team_members": {
-          "label": "团队 成员",
-          "helpertext": "团队 成员是来自您组织的人员。"
+          "label": "团队成员",
+          "helpertext": "团队成员是来自您组织的人员。"
         }
       },
       "actions": {
@@ -373,27 +373,27 @@
       "could_not_find_anyone": "糟糕，我们在您的组织内找不到任何人。",
       "could_not_find_person": "糟糕，我们在您的组织中找不到此人。",
       "add_new_users_via_email": "您仍然可以通过电子邮件邀请新用户来添加新用户。",
-      "try_a_different_spelling_to_invite": "尝试不同的拼写或通过电子邮件 邀请 它们。"
+      "try_a_different_spelling_to_invite": "尝试不同的拼写或通过电子邮件邀请它们。"
     },
     "workspace_role_selection": {
       "error_uploading_file": "上传文件时出错，请重试。",
       "only_csv_and_txt_files_can_be_uploaded_error": "只能上传 CSV 和 TXT 文件",
       "max_file_size_exceeded_error": "文件大小大于 {maxFileSize}MB，仅支持小于 {maxFileSize}MB 的文件。",
       "name_or_email": "姓名或电子邮件",
-      "invite_by_email": "邀请 通过电子邮件",
+      "invite_by_email": "邀请通过电子邮件",
       "name_email_or_group_name": "姓名、电子邮件或群组名称",
       "select_file_to_add_people": "选择 TXT 或 CSV 文件来添加人员",
       "add_from_file": "从文件添加"
     },
     "role": "角色",
     "assign_flow_editor_role": {
-      "label": "赋值 流程 编辑者 角色",
-      "helpertext": "这将允许受邀人员编辑此 团队 中的所有流程。"
+      "label": "赋值流程编辑者角色",
+      "helpertext": "这将允许受邀人员编辑此团队中的所有流程。"
     },
     "new_tag_label": "新的",
     "assign_partner_lead_role": {
       "label": "让他们成为 {role}",
-      "description": "这使他们能够 邀请 并管理此 工作区 中的其他合作伙伴。"
+      "description": "这使他们能够邀请并管理此工作区中的其他合作伙伴。"
     },
     "invalid_emails_error_message": "确保您输入的电子邮件有效。",
     "blank_state": {
@@ -404,24 +404,24 @@
       }
     },
     "copy_link_for_workspace": {
-      "copy_invite_link": "复制 邀请 链接",
+      "copy_invite_link": "复制邀请链接",
       "copied": "已复制",
       "get_invite_link_error_message": "生成链接时出现问题。",
-      "cannot_send_invites_permission_message": "您没有 管理员 权限 来执行此操作"
+      "cannot_send_invites_permission_message": "您没有管理员权限来执行此操作"
     },
     "learn_about_partners": "了解<1><0>合作伙伴</0></1>",
     "back": "后退",
-    "invite_partners": "邀请 合作伙伴",
-    "send_invite": "发送 邀请",
+    "invite_partners": "邀请合作伙伴",
+    "send_invite": "发送邀请",
     "toast_content": {
       "default_error": {
-        "description": "目前无法回复 请求。请再试一次。"
+        "description": "目前无法回复请求。请再试一次。"
       },
       "request_responded": {
-        "description": "您已回复 请求。"
+        "description": "您已回复请求。"
       },
       "request_not_found": {
-        "description": "请求 未找到。"
+        "description": "请求未找到。"
       }
     },
     "git_collaborators": {
@@ -430,8 +430,8 @@
       "retry": "重试",
       "empty_collaborators": "在最近的 Git 历史记录中找不到合作者。",
       "suggested_header": "建议邀请",
-      "suggested_description": "来自 Git 存储库的 邀请 协作者。",
-      "invite_all": "邀请 全部 ({count})",
+      "suggested_description": "来自 Git 存储库的邀请协作者。",
+      "invite_all": "邀请全部 ({count})",
       "dismiss": "忽略",
       "all_invited": "所有 Git 合作者都已被邀请！",
       "people_with_access": "有访问权限的人",
@@ -440,40 +440,40 @@
   },
   "move_to_invite": {
     "squad_member": {
-      "heading": "将 工作区 移动到 团队 进行协作",
-      "description": "您只能 邀请 并与团队中的人员协作。"
+      "heading": "将工作区移动到团队进行协作",
+      "description": "您只能邀请并与团队中的人员协作。"
     },
     "non_squad_member": {
-      "heading": "加入 {teamName} 中的 团队 进行协作",
-      "description": "您只能 邀请 并与团队中的人员协作。"
+      "heading": "加入 {teamName} 中的团队进行协作",
+      "description": "您只能邀请并与团队中的人员协作。"
     }
   },
   "deny_share_request": {
     "heading": "拒绝请求？",
-    "description": "请求 访问此 {model} 将被拒绝。",
+    "description": "请求访问此 {model} 将被拒绝。",
     "deny_cta": "拒绝",
     "cancel_cta": "取消",
     "toast_content": {
       "default_error": {
-        "description": "目前无法回复 请求。请再试一次。"
+        "description": "目前无法回复请求。请再试一次。"
       },
       "request_denied": {
-        "description": "请求 被拒绝"
+        "description": "请求被拒绝"
       },
       "request_responded": {
-        "description": "您已回复 请求。"
+        "description": "您已回复请求。"
       },
       "request_not_found": {
-        "description": "请求 未找到。"
+        "description": "请求未找到。"
       }
     }
   },
   "workspace_presence": {
     "active_now": "现在活跃",
     "active": "活跃",
-    "no_active_team_members": "目前没有活跃的 团队 成员。",
+    "no_active_team_members": "目前没有活跃的团队成员。",
     "inactive": "不活跃",
-    "no_inactive_team_members": "目前没有不活跃的 团队 成员。",
+    "no_inactive_team_members": "目前没有不活跃的团队成员。",
     "name_with_you_label": "{name}（你）",
     "visited": "访问过 {visitedRelativeString}"
   },
@@ -497,25 +497,25 @@
         "search_for_teams": "在 Postman 上搜索团队",
         "search_for_flows": "寻找令人兴奋的新流程",
         "search_for_apis_explore": "搜索您想要探索的 API",
-        "search_for_team_apis_to_explore": "搜索您想要探索的 团队 API",
-        "search_for_apis_private_network": "在您的 私有 API 网络中搜索 API",
-        "search_for_team_apis_to_explore_like": "搜索您想要探索的 团队 API，例如 {team1} 和 {team2}",
+        "search_for_team_apis_to_explore": "搜索您想要探索的团队 API",
+        "search_for_apis_private_network": "在您的私有 API 网络中搜索 API",
+        "search_for_team_apis_to_explore_like": "搜索您想要探索的团队 API，例如 {team1} 和 {team2}",
         "search_for_apis_by_popular_teams": "搜索 {team1} 和 {team2} 等热门团队的 API",
-        "search_for_team_workspaces_to_explore_like": "搜索您想要探索的 团队 工作区，例如 {team1} 和 {team2}",
+        "search_for_team_workspaces_to_explore_like": "搜索您想要探索的团队工作区，例如 {team1} 和 {team2}",
         "search_for_workspaces_by_popular_teams": "搜索 {team1} 和 {team2} 等热门团队的工作空间",
-        "search_for_team_collections_to_explore_like": "搜索您想要探索的 团队 集合，例如 {team1} 和 {team2}",
+        "search_for_team_collections_to_explore_like": "搜索您想要探索的团队集合，例如 {team1} 和 {team2}",
         "search_for_collections_by_popular_teams": "搜索 {team1} 和 {team2} 等热门团队的收藏",
-        "search_for_team_requests_to_explore_like": "搜索您想要探索的 团队 请求，例如 {team1} 和 {team2}",
+        "search_for_team_requests_to_explore_like": "搜索您想要探索的团队请求，例如 {team1} 和 {team2}",
         "search_for_requests_by_popular_teams": "搜索 {team1} 和 {team2} 等热门团队的请求",
-        "search_for_team_flows_to_explore_like": "搜索您想要探索的 团队 流，例如 {team1} 和 {team2}",
+        "search_for_team_flows_to_explore_like": "搜索您想要探索的团队流，例如 {team1} 和 {team2}",
         "search_for_flows_by_popular_teams": "搜索 {team1} 和 {team2} 等热门团队的流",
         "search_for_teams_to_explore_like": "搜索您想要探索的团队，例如 {team1} 和 {team2}",
         "search_for_popular_teams": "搜索 {team1} 和 {team2} 等热门团队",
         "search_example_brevo": "例如，在 {team} 中添加 webhook 的过程是怎样的",
-        "search_example_google_maps": "例如，找到 端点 以在 {team} 上显示视频",
+        "search_example_google_maps": "例如，找到端点以在 {team} 上显示视频",
         "search_example_kroger": "例如，从 {team} 检索用户配置文件数据",
         "search": "搜索",
-        "search_in_current_workspace": "在此 工作区 中搜索元素"
+        "search_in_current_workspace": "在此工作区中搜索元素"
       },
       "clear_label": "清除",
       "see_all_results": "查看“{searchQuery}”的所有结果",
@@ -539,7 +539,7 @@
       "all_postman": "全部 Postman",
       "private_api_network": "私有 API 网络",
       "public_api_network": "公开 API 网络",
-      "personal_space": "个人 空间",
+      "personal_space": "个人空间",
       "team": "团队 {teamName}",
       "current_workspace": "工作区 {activeWorkspaceName}"
     },
@@ -558,11 +558,11 @@
     "recent_searches": "最近搜索过",
     "popular_entities": "风靡网络",
     "mobile_search_view": {
-      "search_instructions": "搜索所有工作区、集合、规格、团队和用户"
+      "search_instructions": "搜索所有工作区、集合、规范、团队和用户"
     },
     "empty_states": {
       "type_query_to_search": {
-        "title": "开始键入以在此 工作区 或 集合 中搜索"
+        "title": "开始键入以在此工作区或集合中搜索"
       },
       "no_results": {
         "title": "没有找到结果",
@@ -614,7 +614,7 @@
         "flow": "流程",
         "team": "发布者",
         "folder": "文件夹",
-        "spec": "规格",
+        "spec": "规范",
         "all": "全部",
         "workspace_plural": "工作空间",
         "collection_plural": "收藏品",
@@ -626,7 +626,7 @@
         "flow_plural": "流量",
         "team_plural": "团队",
         "folder_plural": "文件夹",
-        "spec_plural": "规格"
+        "spec_plural": "规范"
       },
       "by_filter": {
         "name": "作者",
@@ -657,8 +657,8 @@
         "group_selected": "已选择",
         "group_current": "当前的",
         "group_suggestions": "建议",
-        "group_collections_current_workspace": "当前 工作区 中的集合",
-        "group_workspaces_current_team": "当前 团队 中的工作空间",
+        "group_collections_current_workspace": "当前工作区中的集合",
+        "group_workspaces_current_team": "当前团队中的工作空间",
         "group_collections_other_workspaces": "其他工作区中的集合",
         "group_workspaces_other_teams": "其他团队的工作空间",
         "no_results": "找不到工作区或集合",
@@ -674,7 +674,7 @@
         "label_multiple_value": "{count} 标签",
         "search_placeholder": "搜索标签",
         "group_selected": "已选择",
-        "group_tags_current_workspace": "当前 工作区 中的标签",
+        "group_tags_current_workspace": "当前工作区中的标签",
         "group_suggestions": "建议",
         "group_tags_other_workspaces": "其他工作区中的标签",
         "no_results": "没有找到标签",

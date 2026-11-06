@@ -57,7 +57,7 @@
     "headers": {
       "label": "请求头",
       "send_no-cache_header": "发送无缓存标头",
-      "send_postman_header": "发送 Postman 令牌 标头",
+      "send_postman_header": "发送 Postman 令牌标头",
       "retain_headers": "单击链接时保留标题",
       "auto_follow_redirects": "自动遵循重定向"
     },
@@ -133,7 +133,7 @@
   "themes": {
     "label": "主题",
     "original_description": "使用适合您心情和风格的颜色来个性化您的体验。",
-    "description": "使用符合您风格的主题来个性化您的体验。手动选择 主题 或与系统设置同步，让机器设置您的白天和夜间主题。",
+    "description": "使用符合您风格的主题来个性化您的体验。手动选择主题或与系统设置同步，让机器设置您的白天和夜间主题。",
     "banners": {
       "workspace_theme_applied_note": "此工作区有其自己的主题，因此您无法在此处应用或预览所选主题。不用担心，您的偏好将被保存。<1><0>了解更多</0></1>"
     },
@@ -145,14 +145,14 @@
       "monokai": "Monokai",
       "ayu_light": "Ayu 浅色",
       "ayu_dark": "Ayu 深色",
-      "high_contrast_light": "高对比度 浅色",
-      "high_contrast_dark": "高对比度 深色",
+      "high_contrast_light": "高对比度浅色",
+      "high_contrast_dark": "高对比度深色",
       "night_owl_light": "夜猫子浅色",
       "night_owl_dark": "夜猫子深色",
       "solarized_light": "Solarized 浅色",
       "solarized_dark": "Solarized 深色"
     },
-    "reload_banner_text": "我们在应用 主题 时遇到错误。重新加载页面以重试。 <1>重新加载</1>",
+    "reload_banner_text": "我们在应用主题时遇到错误。重新加载页面以重试。 <1>重新加载</1>",
     "banner_text": "我们在加载主题时遇到问题。 <1>再试一次</1>",
     "mode": "主题选择",
     "mode_options": {
@@ -245,10 +245,10 @@
     "universal_search_in_current_workspace": "在当前工作区中搜索",
     "environment_selector_focus": "环境选择器",
     "clear_console": "清除控制台",
-    "show_hide_console": "显示/隐藏 控制台",
+    "show_hide_console": "显示/隐藏控制台",
     "trigger_postbot": "打开 Postbot",
     "open_agent_mode": "开启代理模式",
-    "open_vault": "打开 Vault",
+    "open_vault": "打开保险库",
     "open_browser_tab": "打开浏览器标签页",
     "cancel_conversation": "取消对话",
     "accept_all_tool_call": "全部接受",
@@ -279,7 +279,7 @@
       "label": "导出集合和环境",
       "description": "将所有集合和环境导出到单个转储文件。",
       "exporting_label": "正在导出",
-      "request_data_export_label": "请求 数据导出",
+      "request_data_export_label": "请求数据导出",
       "export_data_success_message": "您的数据已成功导出。",
       "export_data_error_message": "无法导出数据。请检查开发工具。"
     },
@@ -593,7 +593,7 @@
       "provider_column": "提供商",
       "key_column": "密钥",
       "description": "凭据安全地存储在云端，并进行静态加密。保存后绝不会再返回给客户端。AI 功能的使用费用将由所连接的提供商直接计费。",
-      "upgrade_description": "此功能仅适用于 Solo 和 Team 套餐。升级你的账户即可为 OpenAI 和 Anthropic 设置 BYOK 密钥。",
+      "upgrade_description": "此功能仅适用于 个人版和团队版套餐。升级你的账户即可为 OpenAI 和 Anthropic 设置 BYOK 密钥。",
       "upgrade": "升级",
       "key_placeholder": "输入 API 密钥",
       "replace_key_placeholder": "替换 API 密钥",

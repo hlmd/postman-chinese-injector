@@ -57,7 +57,7 @@
     "headers": {
       "label": "請求頭",
       "send_no-cache_header": "傳送無快取標頭",
-      "send_postman_header": "傳送 Postman 令牌 標頭",
+      "send_postman_header": "傳送 Postman 令牌標頭",
       "retain_headers": "單擊連結時保留標題",
       "auto_follow_redirects": "自動遵循重定向"
     },
@@ -133,7 +133,7 @@
   "themes": {
     "label": "主題",
     "original_description": "使用適合您心情和風格的顏色來個性化您的體驗。",
-    "description": "使用符合您風格的主題來個性化您的體驗。手動選擇 主題 或與系統設定同步，讓機器設定您的白天和夜間主題。",
+    "description": "使用符合您風格的主題來個性化您的體驗。手動選擇主題或與系統設定同步，讓機器設定您的白天和夜間主題。",
     "banners": {
       "workspace_theme_applied_note": "此工作區有其自己的主題，因此您無法在此處應用或預覽所選主題。不用擔心，您的偏好將被儲存。<1><0>瞭解更多</0></1>"
     },
@@ -145,14 +145,14 @@
       "monokai": "Monokai",
       "ayu_light": "Ayu 淺色",
       "ayu_dark": "Ayu 深色",
-      "high_contrast_light": "高對比度 淺色",
-      "high_contrast_dark": "高對比度 深色",
+      "high_contrast_light": "高對比度淺色",
+      "high_contrast_dark": "高對比度深色",
       "night_owl_light": "夜貓子淺色",
       "night_owl_dark": "夜貓子深色",
       "solarized_light": "Solarized 淺色",
       "solarized_dark": "Solarized 深色"
     },
-    "reload_banner_text": "我們在應用 主題 時遇到錯誤。重新載入頁面以重試。 <1>重新載入</1>",
+    "reload_banner_text": "我們在應用主題時遇到錯誤。重新載入頁面以重試。 <1>重新載入</1>",
     "banner_text": "我們在載入主題時遇到問題。 <1>再試一次</1>",
     "mode": "主題選擇",
     "mode_options": {
@@ -245,10 +245,10 @@
     "universal_search_in_current_workspace": "在目前工作區中搜索",
     "environment_selector_focus": "環境選擇器",
     "clear_console": "清除控制台",
-    "show_hide_console": "顯示/隱藏 控制台",
+    "show_hide_console": "顯示/隱藏控制台",
     "trigger_postbot": "開啟 Postbot",
     "open_agent_mode": "開啟代理模式",
-    "open_vault": "開啟 Vault",
+    "open_vault": "開啟保險庫",
     "open_browser_tab": "開啟瀏覽器標籤頁",
     "cancel_conversation": "取消對話",
     "accept_all_tool_call": "全部接受",
@@ -279,7 +279,7 @@
       "label": "匯出集合和環境",
       "description": "將所有集合和環境匯出到單個轉儲檔案。",
       "exporting_label": "正在匯出",
-      "request_data_export_label": "請求 資料匯出",
+      "request_data_export_label": "請求資料匯出",
       "export_data_success_message": "您的資料已成功匯出。",
       "export_data_error_message": "無法匯出資料。請檢查開發工具。"
     },
@@ -593,7 +593,7 @@
       "provider_column": "提供商",
       "key_column": "金鑰",
       "description": "憑據安全地儲存在雲端，並進行靜態加密。儲存後絕不會再返回給客戶端。AI 功能的使用費用將由所連線的提供商直接計費。",
-      "upgrade_description": "此功能僅適用於 Solo 和 Team 套餐。升級你的帳戶即可為 OpenAI 和 Anthropic 設定 BYOK 金鑰。",
+      "upgrade_description": "此功能僅適用於 個人版和團隊版套餐。升級你的帳戶即可為 OpenAI 和 Anthropic 設定 BYOK 金鑰。",
       "upgrade": "升級",
       "key_placeholder": "輸入 API 金鑰",
       "replace_key_placeholder": "替換 API 金鑰",

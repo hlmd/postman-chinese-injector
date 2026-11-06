@@ -22,7 +22,7 @@
     "resend_button_with_cooldown": "{seconds} 秒後重新發送程式碼",
     "resend_limit_reached": "您已達到此驗證請求的重新發送限制。",
     "restart_button": "傳送新程式碼",
-    "session_expired": "您的驗證 會話 已過期。傳送新程式碼以繼續。",
+    "session_expired": "您的驗證會話已過期。傳送新程式碼以繼續。",
     "successful_banner": "成功！",
     "error_code_length": "驗證碼必須包含六位數字。",
     "error_generic": "出了點問題。請再試一次。"
