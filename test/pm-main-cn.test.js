@@ -74,3 +74,53 @@ test('translateTemplate：Windows 上 role quit 补成「Exit」的译文', { sk
   const cc = hook.compile({ Exit: '退出' });
   assert.strictEqual(hook.translateTemplate(cc, [{ role: 'quit' }])[0].label, '退出');
 });
+
+test('词典含 Postman 主进程自带的日文菜单文案（Postman 语言为日本語时菜单也能汉化）', () => {
+  const m = require('../src/hooks/pm-main-cn.js');
+  const c = m.compile(require('../locales/main/zh-CN.json'));
+  assert.equal(m.translateString(c, 'ファイル'), '文件');
+  assert.equal(m.translateString(c, 'ヘルプ'), '帮助');
+  assert.equal(m.translateString(c, 'Postmanについて'), '关于 Postman');
+});
+
+test('isPostmanUrl：只认 Postman 域名', () => {
+  const { isPostmanUrl } = require('../src/hooks/pm-main-cn.js');
+  assert.equal(isPostmanUrl('https://identity.getpostman.com/login'), true);
+  assert.equal(isPostmanUrl('https://go.postman.co/x'), true);
+  assert.equal(isPostmanUrl('https://evil-postman.com/'), false);
+  assert.equal(isPostmanUrl('not a url'), false);
+});
+
+test('installWebviewHook：只向 Postman 域名的 webview 注入带词典的 DOM 翻译脚本，off 时不注入', async () => {
+  const fs = require('fs');
+  const path = require('path');
+  const { installWebviewHook } = require('../src/hooks/pm-main-cn.js');
+  const files = {
+    'pm-scratchpad-cn.js': '/*hook*/',
+    'pm-scratchpad-data.json': '{"Sign in":"登录"}',
+    'pm-scratchpad-data.zh-TW.json': '{"Sign in":"登入"}'
+  };
+  const fakeFs = { readFileSync: (p) => { const k = path.basename(p); if (k in files) return files[k]; throw new Error('ENOENT'); } };
+  let created;
+  const app = { on: (ev, fn) => { if (ev === 'web-contents-created') created = fn; } };
+  let lang = 'zh-CN';
+  installWebviewHook({ app }, { fs: fakeFs, path, dir: '/x', def: 'zh-CN', lang: () => lang });
+  function fire(type, url) {
+    const out = [];
+    let ready;
+    created({}, { getType: () => type, getURL: () => url, on: (ev, fn) => { if (ev === 'dom-ready') ready = fn; }, executeJavaScript: (js) => { out.push(js); return Promise.resolve(); } });
+    if (ready) ready();
+    return out;
+  }
+  assert.equal(fire('window', 'https://identity.getpostman.com/').length, 0);
+  assert.equal(fire('webview', 'https://example.com/').length, 0);
+  const js = fire('webview', 'https://identity.getpostman.com/login');
+  assert.equal(js.length, 1);
+  assert.match(js[0], /__PM_SCRATCHPAD__=\{"Sign in":"登录"\}/);
+  assert.match(js[0], /\/\*hook\*\//);
+  lang = 'zh-TW';
+  assert.match(fire('webview', 'https://identity.getpostman.com/login')[0], /登入/);
+  lang = 'off';
+  assert.equal(fire('webview', 'https://identity.getpostman.com/login').length, 0);
+  void fs;
+});

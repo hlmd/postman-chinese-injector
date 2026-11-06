@@ -182,3 +182,31 @@ test('translateString 翻译活动流的日期与时间', () => {
   assert.strictEqual(translateString(DICT, '11:05 AM'), '上午 11:05');
   assert.strictEqual(translateString(DICT, 'Septembre 29, 2026'), null);
 });
+
+test('translateString：词典 {{占位}} 模板键，占位值是词条时一并翻译', () => {
+  const h = require('../src/hooks/pm-scratchpad-cn.js');
+  const d = { 'Admin': '管理员', 'Name ({{count}})': '名称 ({{count}})', '{{role}} +{{count}} more': '{{role}} 等 {{count}} 项', 'Team settings': '团队设置', '{{team}} settings': '{{team}} 设置' };
+  assert.equal(h.translateString(d, 'Name (3)'), '名称 (3)');
+  assert.equal(h.translateString(d, ' Admin +2 more '), ' 管理员 等 2 项 ');
+  assert.equal(h.translateString(d, 'Team settings'), '团队设置'); // 精确词条优先于模板
+  assert.equal(h.translateString(d, 'Acme settings'), 'Acme 设置');
+  assert.equal(h.translateString(d, 'Name'), null);
+});
+
+test('translateString：数字占位只匹配数字，不被日期里的逗号截断', () => {
+  const h = require('../src/hooks/pm-scratchpad-cn.js');
+  const d = { '{{start}} - {{end}}, {{count}} files': '{{start}} - {{end}}，共 {{count}} 个文件', '{{used}} / {{limit}} calls': '{{used}} / {{limit}} 次调用' };
+  assert.equal(h.translateString(d, 'Oct 08, 2026 - Nov 08, 2026, 2 files'), 'Oct 08, 2026 - Nov 08, 2026，共 2 个文件');
+  assert.equal(h.translateString(d, '0 / 10,000 calls'), '0 / 10,000 次调用');
+  assert.equal(h.translateString(d, 'a / b calls'), null);
+});
+
+test('isActive / 扩展注册 / webview：学习中心 learning.postman.com 不汉化', () => {
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'learning.postman.com' }), false);
+  assert.strictEqual(isActive({ protocol: 'https:', hostname: 'www.postman.com' }), true);
+  const { scriptsFor } = require('../src/extension/background.js');
+  for (const s of scriptsFor('zh-CN')) assert.deepStrictEqual(s.excludeMatches, ['https://learning.postman.com/*']);
+  const { isPostmanUrl } = require('../src/hooks/pm-main-cn.js');
+  assert.strictEqual(isPostmanUrl('https://learning.postman.com/docs/'), false);
+  assert.strictEqual(isPostmanUrl('https://identity.getpostman.com/login'), true);
+});

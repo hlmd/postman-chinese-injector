@@ -20,6 +20,8 @@
 const SCRIPT_ID = 'pm-chinese';
 const BRIDGE_ID = 'pm-chinese-bridge';
 const MATCHES = ['https://*.postman.co/*', 'https://*.getpostman.com/*', 'https://*.postman.com/*'];
+// 不汉化的 Postman 站点：学习中心（文档站，保持英文原文）
+const EXCLUDE_MATCHES = ['https://learning.postman.com/*'];
 const LANGS = ['zh-CN', 'zh-TW'];
 const SETTINGS = ['auto', 'off', ...LANGS];
 
@@ -62,8 +64,8 @@ function scriptsFor(lang) {
     ? ['pm-i18n-off.js', 'pm-chinese.js']
     : [`pm-i18n-data.${lang}.js`, 'pm-chinese.js', `pm-scratchpad-data.${lang}.js`, 'pm-scratchpad-cn.js'];
   return [
-    { id: SCRIPT_ID, matches: MATCHES, js, runAt: 'document_start', world: 'MAIN', allFrames: true, persistAcrossSessions: true },
-    { id: BRIDGE_ID, matches: MATCHES, js: ['pm-bridge.js'], runAt: 'document_start', world: 'ISOLATED', allFrames: true, persistAcrossSessions: true },
+    { id: SCRIPT_ID, matches: MATCHES, excludeMatches: EXCLUDE_MATCHES, js, runAt: 'document_start', world: 'MAIN', allFrames: true, persistAcrossSessions: true },
+    { id: BRIDGE_ID, matches: MATCHES, excludeMatches: EXCLUDE_MATCHES, js: ['pm-bridge.js'], runAt: 'document_start', world: 'ISOLATED', allFrames: true, persistAcrossSessions: true },
   ];
 }
 

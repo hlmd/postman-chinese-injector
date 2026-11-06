@@ -184,10 +184,57 @@ function createDictSource(opts) {
     pref = v.base === def ? v.lang : null;
     try { fs.writeFileSync(prefFile(), JSON.stringify({ lang: v.lang, base: v.base })); } catch (e) { /* ignore */ }
   }
-  return { get: get, set: set };
+  // 当前生效语言：'off' / 默认语言 / 用户选的语言
+  function lang() { return readPref() || def; }
+  return { get: get, set: set, lang: lang, def: def };
 }
 
-module.exports = { createDictSource: createDictSource, compile: compile, translateString: translateString, translateTemplate: translateTemplate, translateBoxOptions: translateBoxOptions, install: install };
+// 纯函数：webview 里的页面是否该翻译（只认 Postman 自家域名，如登录窗口里的 identity.getpostman.com）
+var WEBVIEW_HOST_RE = /(^|\.)(postman\.co|postman\.com|getpostman\.com)$/i;
+function isPostmanUrl(u) {
+  try {
+    var h = new URL(u).hostname;
+    return WEBVIEW_HOST_RE.test(h) && !/^learning\.postman\.com$/i.test(h); // 学习中心保持英文
+  } catch (e) { return false; }
+}
+
+// 登录窗口（html/auth/auth.html）用 <webview> 加载远程登录页，其 preload 不是 preload_desktop.js，
+//   渲染进程钩子够不着。这里在主进程监听 webview 的 dom-ready，把 Scratch Pad 的 DOM 翻译钩子
+//   连同当前语言的词典（预置到 __PM_SCRATCHPAD__）用 executeJavaScript 注进去。
+function installWebviewHook(electron, opts) {
+  var app = electron.app;
+  if (!app || typeof app.on !== 'function') return;
+  var fs = opts.fs, path = opts.path, dir = opts.dir;
+  var cache = Object.create(null);
+  function scriptFor(lang) {
+    if (lang === 'off') return null;
+    if (!(lang in cache)) {
+      cache[lang] = null;
+      try {
+        var hook = fs.readFileSync(path.join(dir, 'pm-scratchpad-cn.js'), 'utf8');
+        var dictText;
+        try { dictText = lang !== opts.def ? fs.readFileSync(path.join(dir, 'pm-scratchpad-data.' + lang + '.json'), 'utf8') : null; } catch (e) { dictText = null; }
+        if (!dictText) dictText = fs.readFileSync(path.join(dir, 'pm-scratchpad-data.json'), 'utf8');
+        JSON.parse(dictText); // 坏数据不注入
+        cache[lang] = '(function(){if(window.__PM_WEBVIEW_CN__)return;window.__PM_WEBVIEW_CN__=1;' +
+          'window.__PM_SCRATCHPAD__=' + dictText + ';\n' + hook + '\n})();';
+      } catch (e) { console.error('[pm-main] webview 汉化脚本读取失败:', e && e.message); }
+    }
+    return cache[lang];
+  }
+  app.on('web-contents-created', function (ev, contents) {
+    try { if (contents.getType() !== 'webview') return; } catch (e) { return; }
+    contents.on('dom-ready', function () {
+      var url = '';
+      try { url = contents.getURL(); } catch (e) { return; }
+      if (!isPostmanUrl(url)) return;
+      var js = scriptFor(opts.lang());
+      if (js) contents.executeJavaScript(js).catch(function (e) { console.error('[pm-main] webview 注入失败:', e && e.message); });
+    });
+  });
+}
+
+module.exports = { createDictSource: createDictSource, isPostmanUrl: isPostmanUrl, installWebviewHook: installWebviewHook, compile: compile, translateString: translateString, translateTemplate: translateTemplate, translateBoxOptions: translateBoxOptions, install: install };
 
 // 作为注入钩子加载时（主进程、同目录有 pm-main-data.json）自动安装
 if (process.type === 'browser') {
@@ -201,6 +248,7 @@ if (process.type === 'browser') {
     });
     install(electron, source.get);
     if (electron.ipcMain) electron.ipcMain.on('pm-chinese:set-lang', function (e, v) { source.set(v); });
+    installWebviewHook(electron, { fs: fs, path: path, dir: __dirname, lang: source.lang, def: source.def });
     console.log('[pm-main] 已启用原生菜单汉化');
   } catch (e) {
     console.error('[pm-main] 初始化失败:', e && e.message);

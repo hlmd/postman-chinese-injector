@@ -26,6 +26,8 @@
   var PLACEHOLDER_CLASS_RE = /(^|\s)monaco-placeholder(\s|$)/;
   // 完整版 Postman 网页版域名（锚定 (^|\.) 防止 evil-postman.com 误命中）
   var HOST_RE = /(^|\.)(postman\.co|postman\.com|getpostman\.com)$/i;
+  // 不汉化的 Postman 站点：学习中心（文档站，保持英文原文；与扩展的 excludeMatches 一致）
+  var EXCLUDE_HOST_RE = /^learning\.postman\.com$/i;
 
   // 「标签 + 动态值」整行文本（设置 → 关于页的版本信息），如 "Version 10.12.11"、"OS Platform win32 10.0.26300"。
   //   值须由版本号式 token 组成且含数字，避免把普通英文句子当成「标签 + 值」误译。
@@ -93,6 +95,46 @@
     return dict[v];
   }
 
+  // 词典里含 {{占位}} 的键（如 "Name ({{count}})"、"{{role}} +{{n}} more"）编译成正则，按词典对象缓存。
+  //   占位匹配任意非空文本；代入译文时若该值本身是词典词条（如 "Admin"），也换成译文。
+  var PH_RE = /\{\{\s*(\w+)\s*\}\}/g;
+  // 这些名字的占位只匹配数字（如 1,000），免得懒惰匹配被日期里的逗号截断
+  //   （"Oct 08, 2026 - Nov 08, 2026, 2 files" 里的 {{count}} 必须是 2，而不是 "2026, 2"）
+  var NUM_PH = { count: 1, n: 1, used: 1, limit: 1, num: 1 };
+  var tplCache = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  function templatesOf(dict) {
+    var hit = tplCache && tplCache.get(dict);
+    if (hit) return hit;
+    var list = [];
+    Object.keys(dict).forEach(function (en) {
+      if (en.indexOf('{{') < 0 || typeof dict[en] !== 'string') return;
+      var names = [];
+      var src = '^' + en.split(PH_RE).map(function (part, i) {
+        if (i % 2) { names.push(part); return NUM_PH[part] ? '(\\d[\\d.,]*)' : '([\\s\\S]+?)'; }
+        return escapeRe(part);
+      }).join('') + '$';
+      if (names.length) list.push({ re: new RegExp(src), names: names, zh: dict[en] });
+    });
+    if (tplCache) tplCache.set(dict, list);
+    return list;
+  }
+  function applyTemplates(dict, core) {
+    var list = templatesOf(dict);
+    for (var i = 0; i < list.length; i++) {
+      var t = list[i];
+      var m = t.re.exec(core);
+      if (!m) continue;
+      var vals = {};
+      t.names.forEach(function (n, j) {
+        var v = m[j + 1];
+        vals[n] = Object.prototype.hasOwnProperty.call(dict, v) && v.indexOf('{{') < 0 ? dict[v] : v;
+      });
+      return t.zh.replace(PH_RE, function (all, n) { return n in vals ? vals[n] : all; });
+    }
+    return null;
+  }
+
   // 纯函数：整串精确翻译，保留前后空白；无匹配返回 null
   function translateString(dict, value) {
     if (typeof value !== 'string' || !value) return null;
@@ -120,6 +162,8 @@
     if (sc && Object.prototype.hasOwnProperty.call(dict, sc[1])) {
       return m[1] + dict[sc[1]] + ' (' + sc[2] + ')' + m[3];
     }
+    var tpl = applyTemplates(dict, core.replace(/\s+/g, ' '));
+    if (tpl != null) return m[1] + tpl + m[3];
     return null;
   }
 
@@ -161,6 +205,7 @@
   //   ③ 扩展上下文兜底：全局词典已注入。
   function isActive(loc) {
     if (!loc) return false;
+    if (EXCLUDE_HOST_RE.test(loc.hostname || '')) return false;
     if (HOST_RE.test(loc.hostname || '')) return true;
     if (loc.protocol === 'file:') return true;
     try {
@@ -169,9 +214,14 @@
     return false;
   }
 
+  // 用量项之间的分隔点（<span class="dot-separator">.</span>）不是句号，别被词典的 "." → "。" 换掉
+  var SEPARATOR_CLASS_RE = /(^|\s)dot-separator(\s|$)/;
+
   function translateTextNode(dict, node) {
     if (!node || node.nodeType !== 3) return;
     if (inSkippableSubtree(node)) return;
+    var pe = node.parentNode;
+    if (pe && pe.getAttribute && SEPARATOR_CLASS_RE.test(pe.getAttribute('class') || '')) return;
     var out = translateString(dict, node.nodeValue);
     if (out != null && out !== node.nodeValue) node.nodeValue = out;
   }
