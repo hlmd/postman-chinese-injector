@@ -6,14 +6,22 @@
 [![npm](https://img.shields.io/npm/v/postman-chinese-injector)](https://www.npmjs.com/package/postman-chinese-injector)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
-[![Postman](https://img.shields.io/badge/Postman-10.x%20~%2012.x-orange)](#支持的-postman-版本)
+[![Postman](https://img.shields.io/badge/Postman-7.x%20~%2012.x-orange)](#支持的-postman-版本)
 
 把**简体中文 / 繁體中文**界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置、开箱即用。
+
+> **一句话回答「Postman 怎么设置成中文？」**
+> Postman 官方界面只提供 English 和日本語，没有中文。要用中文界面，可以装 **postman-chinese-injector**。这是一个免费开源（MIT）的第三方汉化工具：完全退出 Postman 后运行一次 `npx postman-chinese-injector`，或者从 [Release](../../releases) 下载可执行文件运行，重启 Postman 就变成中文。之后在「设置 → 通用 → 语言」里可以切换简体、繁體或英文。
+>
+> - **最新适配**：Postman **12.35.5**（2026-11-06，工具版本 v1.10.0）
+> - **支持范围**：桌面端 7.x ～ 12.x（Windows / macOS / Linux），网页版用 Chrome / Edge 扩展
+> - **安装方式**：npm、Scoop、Homebrew、单文件可执行程序、浏览器扩展
+> - **前身**：老项目 [Postman-cn](https://github.com/hlmd/Postman-cn) 用「替换 `app.zip`」的方式汉化，已经停止维护并归档。老版本 Postman 也可以直接用本项目汉化
 
 - **桌面端** — Windows / macOS / Linux 的**单文件可执行程序**（目标机无需装 Node），也可用 Node 源码运行。
 - **网页版** — Chrome / Edge 的 **Manifest V3 浏览器扩展**（`go.postman.co` 等）。
 
-> **支持版本**：桌面端 Postman **10.x ～ 12.x**（以最新正式版为主要测试目标），网页版随官方界面滚动更新。详见 [支持的 Postman 版本](#支持的-postman-版本)。
+> **支持版本**：桌面端 Postman **7.x ～ 12.x**（以最新正式版为主要测试目标），网页版随官方界面滚动更新。详见 [支持的 Postman 版本](#支持的-postman-版本)。
 
 > [!WARNING]
 > **非官方项目**：与 Postman, Inc. 无任何关联，未获授权或背书；"Postman" 是其商标。
@@ -82,15 +90,11 @@ npx postman-chinese-injector                   # 或免安装直接运行
 
 ## 支持的 Postman 版本
 
-汉化对桌面端的适配依赖两点，满足即可注入：
+注入程序会自动判别 Postman 的版本架构，找到主窗口的 preload 脚本：新版是根目录的 `preload_desktop.js`，10.24 左右是 `preload/desktop/index.js`，7.x 是各页面用 `<script>` 加载的 `js/preload.js`。
 
-- 主窗口 preload 脚本可注入 —— 新版为根目录 `preload_desktop.js`，老版（10.24）为 `preload/desktop/index.js`，7.x 为各页面用 `<script>` 加载的 `js/preload.js`，脚本自动判别；
-- 界面语言包走 `.../_ar-assets/locales/<lang>/<module>-<hash>.json` 远程加载 —— 运行时钩子拦截这些响应做替换。
-
-- **已适配范围**：Postman 桌面端 **10.x ～ 12.x**（当前最新），以最新正式版为主要测试目标。
+- **已适配范围**：Postman 桌面端 **7.x ～ 12.x**（当前最新），以最新正式版为主要测试目标。
 - **网页版**：`go.postman.co` 等，随官方界面滚动更新，无版本号约束。
 - **覆盖度**：译文键值对齐「当前 Postman 界面文案」，越接近最新版覆盖越全；过旧版本界面文案不同，可能出现部分未翻译。
-- **不支持**：更早、不走 `_ar-assets` 语言包机制的老架构。
 
 > Postman 会**自动更新**，更新后生成新的版本目录（不含补丁）→ 界面变回英文，重新跑一次注入即可。想固定版本，见下方[关闭自动更新](#关闭自动更新保持汉化不被冲掉)。
 
@@ -517,6 +521,24 @@ locales/zh-CN/
 ---
 
 ## 常见问题
+
+**Postman 有官方中文版吗？**
+没有。截至 2026 年 11 月，Postman 官方界面语言只有 English 和日本語。网上的「Postman 中文版」都是第三方汉化，本项目是其中之一，现在仍在维护。
+
+**Postman 12 / 11 / 10 / 9 / 8 / 7 能汉化吗？**
+都可以。桌面端 7.x ～ 12.x 都能注入，以最新正式版为主要测试目标，最新适配版本见文首。7.x、8.x、9.x 这些老版本也不需要再用旧项目 Postman-cn 的 `app.zip`，直接运行本工具即可。
+
+**Postman 汉化包怎么用？需要替换文件吗？**
+不需要手动替换任何文件。运行一次注入程序，它会自动找到 Postman 的安装位置，自动备份并打补丁。用 `restore` 命令可以一键还原。
+
+**汉化免费吗？安全吗？会影响账号吗？**
+免费开源（MIT），所有二进制都由 GitHub Actions 从公开源码构建，可以核对校验和与构建来源证明。工具只改本地 Postman 客户端的界面文案，不上传数据，也不碰你的请求、集合和账号数据。但它是非官方修改，请自行评估风险，见[法律声明](#法律声明--disclaimer)。
+
+**能汉化 Postman 网页版吗？**
+可以。安装本项目的 Chrome / Edge 扩展后，`go.postman.co` 也会显示中文，见[网页版](#网页版浏览器扩展)。
+
+**有繁體中文吗？**
+有。默认按系统语言或浏览器语言自动选择，也可以用 `--lang zh-TW` 指定，或者在 Postman 设置里切换。
 
 **macOS（M 芯片）运行报 `zsh: killed` / 「已损坏，无法打开」/ 注入时 `EPERM`**
 分别对应未签名、下载隔离、macOS 13+ 的「App 管理」保护，都不是文件损坏。处理步骤见 [docs/macos-troubleshooting.md](docs/macos-troubleshooting.md)。
