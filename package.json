@@ -1,6 +1,6 @@
 {
   "name": "postman-chinese-injector",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "Postman 汉化 / 中文版：把简体中文、繁體中文注入 Postman 桌面端（7.x～12.x）与网页版的开源工具（CLI + 浏览器扩展）。非官方，与 Postman, Inc. 无关。",
   "keywords": [
     "postman",
