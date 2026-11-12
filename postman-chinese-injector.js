@@ -537,7 +537,7 @@ function writePreloadFiles(preloadDir, hook, spHook, pack) {
   const d = pack.data[pack.def];
   console.log(`[写入] pm-chinese.js + ${DATA_NAME}（${d.count} 模块，来自 ${d.source}）`);
   console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(d.spDict.dict).length} 条）`);
-  console.log(`[写入] 可在 Postman「设置 → 通用 → 语言」里切换：${pack.langs.map((l) => LANGUAGES[l].name).join(' / ')}`);
+  console.log(`[写入] 可在 Postman「设置 → 常规 → 语言」里切换：${pack.langs.map((l) => LANGUAGES[l].name).join(' / ')}`);
 }
 
 // 候选 locales 根目录（按优先级）：① 紧挨真正的可执行文件（允许在 exe 旁放 locales/ 覆盖
