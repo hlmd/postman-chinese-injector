@@ -326,6 +326,7 @@
     "export_button": "出口",
     "cancel_button": "取消",
     "error_loading": "加载错误",
+    "server_error": "由于服务器错误，Postman 无法导出此集合。请稍后重试。",
     "learn_more_about_collection_formats": "<0>{name}</0> 将导出为 JSON 文件。了解有关<2><0>集合格式</0></2>的更多信息",
     "export_as": {
       "label": "导出为：",

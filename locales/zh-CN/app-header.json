@@ -346,7 +346,8 @@
       "partner_lead_assignment": "只有工作区管理员才能指定或移除合作伙伴负责人。",
       "partner_lead_multi_partner_removal": "只有工作区管理员才能从多合作伙伴工作区中移除合作伙伴。",
       "editor_limit": "您无法在此工作区中将合作伙伴设为编辑者。",
-      "role_menu_aria_label": "更改 {name} 的角色"
+      "role_menu_aria_label": "更改 {name} 的角色",
+      "profile_link_aria_label": "打开 {name} 的个人资料"
     },
     "copy_invite_link_menu": {
       "partner_link": "复制合作伙伴邀请链接",

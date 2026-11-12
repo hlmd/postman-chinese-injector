@@ -1,4 +1,8 @@
 {
+  "auto_start_trial": {
+    "past_trial_ineligible": "您已試用過。請升級方案以使用全部功能。",
+    "starting": "正在開始試用…"
+  },
   "name_errors": {
     "empty": "請告訴我們您的名字",
     "max_length": "名稱必須少於 38 個字元"

@@ -1,15 +1,172 @@
 {
-  "spec_list": {
-    "no_operations": "本规范中未找到任何操作。",
-    "no_matching_requests": "未找到匹配的请求。"
+  "disabled_view": {
+    "title": "MCP 服务器不可用",
+    "description": "此团队未启用 MCP 服务器。"
   },
-  "collection_tree": {
-    "no_requests": "此集合没有请求。",
-    "no_matching_requests": "未找到匹配的请求。"
+  "source_panel": {
+    "heading": "API 定义",
+    "description": "选择用于定义此服务器所公开工具的集合或规范。",
+    "source_label": "选择集合或规范",
+    "source_helper": "从 HTTP/OAS 中选择",
+    "source_placeholder": "选择选项",
+    "environment_label": "环境",
+    "environment_helper": "选择要与此来源一起使用的环境。",
+    "environment_placeholder": "未选择环境",
+    "collection": "集合",
+    "specification": "API 规范"
   },
-  "errors": {
-    "spec_syntax": "所选规范存在语法错误。请修复规范编辑者中的错误，然后重试。",
-    "spec_load_failed": "无法加载操作。请再试一次。",
-    "collection_load_failed": "无法加载集合。请再试一次。"
+  "local_deploy": {
+    "starting": "正在启动...",
+    "stopping": "正在停止...",
+    "status_running": "正在本地运行",
+    "failed_title": "服务器无法在本地启动",
+    "crashed_title": "本地服务器已停止工作",
+    "errors": {
+      "unsupported_source": "只有集合和规范可以在本地运行，单个请求不行。",
+      "unsupported_spec": "只有 OpenAPI 3 规范可以在本地运行。此规范为 {type}。",
+      "missing_endpoint": "该来源没有服务器 URL。请在「配置」中输入 API 服务端点。",
+      "missing_endpoint_variables": "无法解析 {variables}。请选择定义了这些变量的环境，或在「配置」中输入 API 服务端点。",
+      "unresolved_variables": "无法解析 {variables}。请选择定义了这些变量的环境、解锁 Postman 保险库，或检查这些密钥是否允许用于此 API 的域。",
+      "source_read_failed": "无法读取集合或规范：{message}",
+      "port_in_use": "端口 {port} 已被占用。请在「配置」中选择其他端口，或留空以使用任意空闲端口。",
+      "server_limit": "最多可同时在本地运行 4 个服务器。请先停止一个，再启动此服务器。",
+      "invalid_config": "无法使用该来源或设置：{message}",
+      "unavailable": "服务器需在 Postman 桌面应用中本地运行。",
+      "unknown": "出现问题：{message}",
+      "invalid_port": "请在「配置」中输入 1024 到 65535 之间的端口，或留空。"
+    }
+  },
+  "backend_panel": {
+    "heading": "API 服务连接",
+    "description": "配置 MCP 服务器访问您的 API 时使用的端点和凭据。",
+    "endpoint_label": "API 服务端点",
+    "endpoint_placeholder": "例如 {example}",
+    "auth_type_label": "身份验证类型",
+    "auth_type_helper": "MCP 服务器将通过此方式向 API 服务后端进行身份验证。",
+    "endpoint_helper_default": "为 API 服务端点输入完整的 Postman 变量引用。",
+    "endpoint_helper_multiple_hosts": "这些请求使用了 {count} 个主机。留空则每个请求发送到各自的主机，或输入一个 URL 供所有请求使用。",
+    "endpoint_helper_unresolved": "无法解析 {variables}。请选择定义了这些变量的环境，或输入 URL。",
+    "auth_unresolved": "集合的身份验证使用了 {variables}，但无法解析。请解锁 Postman 保险库、检查这些密钥是否允许用于此 API 的域，或在下方选择一种身份验证类型。",
+    "auth_variables_hint": "这些字段可以使用 Postman 变量（例如 {example}），每次调用工具时都会解析。",
+    "auth_reference_invalid": "请使用完整的 Postman 变量引用（例如 {basic} 或 {vault}），长度为 5 到 256 个字符。",
+    "endpoint_invalid": "请输入完整的 Postman 变量引用。"
+  },
+  "connect_panel": {
+    "heading": "连接 MCP 客户端",
+    "description": "使用这些连接信息将此服务器添加到兼容 MCP 的客户端。",
+    "desktop_only_empty_state": "在 Postman 桌面应用中启动此服务器以获取其本地连接信息。",
+    "agent_heading": "Postman Agent",
+    "agent_description": "一键将此服务器连接到 Postman Agent。",
+    "agent_connect_button": "连接到 Postman Agent",
+    "agent_connect_disabled_tooltip": "请先在 Postman 桌面应用中启动此服务器。",
+    "manual_setup_heading": "手动设置",
+    "manual_setup_description": "将此配置复制到任何支持服务器 URL 的 MCP 客户端中。",
+    "endpoint_label": "本地 MCP 端点",
+    "endpoint_helper": "服务器运行期间可从本机访问。",
+    "copy_endpoint": "复制端点 URL",
+    "open_as_mcp_request": "作为 MCP 请求打开",
+    "agent_added": "已将 {name} 添加到 Postman Agent。",
+    "agent_add_failed": "无法将服务器添加到 Postman Agent。请重试。"
+  },
+  "sidebar": {
+    "status_running": "状态：运行中",
+    "more_actions": "更多操作",
+    "empty_state_title": "此面板中没有项目",
+    "create_action": "创建",
+    "delete_action": "删除",
+    "delete_failed": "MCP 服务器删除失败。",
+    "delete_confirmation": {
+      "heading": "删除 MCP 服务器",
+      "description": "确定要删除 {serverName} 吗？",
+      "cancel": "取消",
+      "confirm": "删除"
+    }
+  },
+  "tools_panel": {
+    "heading": "工具",
+    "heading_count": "{count, plural, one {# 个工具} other {# 个工具}}",
+    "description": "根据所选集合或规范生成的工具。选择此服务器向 MCP 客户端公开的工具，并编辑其名称、描述和参数。",
+    "no_source": "选择集合或规范以查看其生成的工具。",
+    "no_tools": "该集合或规范中没有可生成工具的操作。",
+    "desktop_only": "工具需在运行服务器的 Postman 桌面应用中查看和编辑。",
+    "name_label": "名称",
+    "name_invalid": "请使用 1 到 64 个字母、数字、下划线或连字符。",
+    "name_taken": "已有其他工具使用此名称。",
+    "save": "保存",
+    "cancel": "取消",
+    "expose_all": "公开所有工具",
+    "exposed_count": "已公开 {exposed}/{total}",
+    "none_exposed": "未公开任何工具。至少公开一个工具才能启动服务器。",
+    "unapplied_title": "重启以应用工具更改",
+    "unapplied_description": "正在运行的服务器仍按启动时的状态公开工具。",
+    "collection_changed_title": "重启以应用集合更改",
+    "collection_changed_description": "服务器启动后，集合或其变量发生了更改。请重启服务器，以按当前内容提供其请求。",
+    "spec_changed_title": "重启以应用规范更改",
+    "spec_changed_description": "服务器启动后，规范发生了更改。请重启服务器，以按当前内容提供其操作。",
+    "restart": "重启服务器",
+    "description_label": "描述",
+    "description_empty": "请输入描述。",
+    "description_too_long": "描述过长，请控制在 8 KB 以内。",
+    "edit_tool": "编辑工具",
+    "edit_tool_label": "编辑 {name}",
+    "arguments_label": "参数",
+    "arguments_helper": "MCP 客户端每次调用时发送的内容。可将参数设为必填或可选、省略 API 会忽略的参数，并添加请求中缺少的参数。路径参数始终为必填。",
+    "spec_arguments_note": "此工具的参数来自规范。如需更改，请编辑规范。",
+    "location_path": "路径",
+    "location_query": "查询参数",
+    "location_header": "请求头",
+    "location_body": "请求体字段",
+    "location_form": "表单字段",
+    "any_type": "任意",
+    "argument_required": "必填",
+    "argument_removed": "已省略",
+    "argument_remove": "移除参数",
+    "argument_remove_named": "移除 {name}",
+    "argument_restore": "恢复参数",
+    "argument_restore_named": "恢复 {name}",
+    "argument_description_placeholder": "描述",
+    "argument_description_label": "{name} 的描述",
+    "argument_name_placeholder": "名称",
+    "argument_name_label": "参数名称",
+    "argument_location_label": "参数位置",
+    "argument_type_label": "参数类型",
+    "new_argument": "新参数",
+    "add_argument": "添加参数",
+    "argument_name_invalid": "请使用 1 到 64 个字母、数字、下划线、点或连字符。",
+    "argument_name_taken": "已有其他参数使用此名称。",
+    "argument_description_too_long": "描述请控制在 2,048 个字符以内。"
+  },
+  "local_server_panel": {
+    "heading": "MCP 服务器",
+    "description": "MCP 客户端在本机上访问此服务器的位置。此设置仅保存在本机。",
+    "port_label": "端口",
+    "port_helper_preferred": "留空则使用 {port}，若该端口被占用则使用任意空闲端口。更改将在下次启动服务器时生效。",
+    "port_helper": "留空则使用任意空闲端口。更改将在下次启动服务器时生效。",
+    "port_invalid": "请输入 1024 到 65535 之间的整数。"
+  },
+  "tool_list": {
+    "tool_arguments": "{count, plural, =0 {无参数} one {# 个参数} other {# 个参数}}"
+  },
+  "recent_calls": {
+    "heading": "最近调用",
+    "empty": "暂无调用。来自 MCP 客户端的调用将显示在此处。",
+    "status_running": "运行中",
+    "status_success": "成功",
+    "status_error": "失败",
+    "duration": "{duration} 毫秒",
+    "arguments": "参数",
+    "result": "结果"
+  },
+  "web_start": {
+    "button": "启动服务器",
+    "title": "在 Postman 桌面应用中启动",
+    "description": "在本地启动 MCP 服务器需要 Postman 桌面应用。",
+    "open_in_desktop": "在桌面应用中打开",
+    "or": "或",
+    "download_desktop": "下载 Postman 应用"
+  },
+  "create_page": {
+    "title": "创建 MCP 服务器配置",
+    "name_label": "名称"
   }
 }

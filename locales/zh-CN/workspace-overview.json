@@ -767,6 +767,17 @@
         "description": "只是网络故障，请重试。"
       }
     },
+    "partner_agent_mode": {
+      "heading": "合作伙伴的 Agent Mode",
+      "description": "允许合作伙伴在此工作区中使用 Agent Mode。团队成员不受影响。",
+      "toggle_label": "允许合作伙伴使用 Agent Mode",
+      "load_error": "无法加载此设置。",
+      "retry_button": "重试",
+      "error_toast": {
+        "title": "无法更新合作伙伴的 Agent Mode",
+        "description": "您的更改未保存。请重试。"
+      }
+    },
     "partner_listing": {
       "heading": "合作伙伴",
       "info": "只有您的团队成员可以看到此内容",

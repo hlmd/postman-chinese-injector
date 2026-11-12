@@ -101,15 +101,21 @@
     },
     "gitlab_app": {
       "title": "已連線的 GitLab 帳戶",
-      "description": "已授予 Postman 訪問權限的 GitLab 群組。",
+      "description": "可通過此連線訪問的 GitLab 群組。",
       "username": "GitLab 使用者名稱",
       "accounts": "GitLab 群組"
     },
     "bitbucket_app": {
       "title": "已連線的 Bitbucket 帳戶",
-      "description": "已授予 Postman 訪問權限的 Bitbucket 工作區。",
+      "description": "可通過此連線訪問的 Bitbucket 工作區。",
       "username": "Bitbucket 使用者名稱",
       "accounts": "Bitbucket 工作區"
+    },
+    "azure_devops_app": {
+      "title": "已連線的 Azure DevOps 帳戶",
+      "description": "可通過此連線訪問的 Azure DevOps 組織。",
+      "username": "Azure DevOps 使用者",
+      "accounts": "Azure DevOps 組織"
     },
     "ecosystem": {
       "connectedBadge": "已連線",
@@ -225,10 +231,14 @@
     "channelDescription": "必須是標準頻道或共享頻道，不支援私有頻道。",
     "channelPlaceholder": "輸入以搜尋頻道",
     "channelLoadError": "頻道載入失敗，請重試。",
+    "channelLoadAuthError": "頻道載入失敗。請<signIn>登入</signIn>。",
     "teamPlaceholder": "輸入以搜尋團隊",
+    "teamLoadError": "團隊載入失敗，請重試。",
+    "teamLoadAuthError": "團隊載入失敗。請<signIn>登入</signIn>。",
     "groupChatLabel": "群聊",
     "groupChatPlaceholder": "輸入以搜尋群聊",
     "groupChatLoadError": "群聊載入失敗，請重試。",
+    "groupChatLoadAuthError": "群聊載入失敗。請<signIn>登入</signIn>。",
     "signInPrompt": "登入 Microsoft Teams 以選擇團隊和頻道。",
     "signInButton": "登入 Microsoft Teams",
     "signingIn": "正在等待 Microsoft Teams 登入…",
@@ -329,8 +339,19 @@
     "title": "監控通知",
     "description": "持續跟蹤您的 API 的健康狀況和效能，並自動將每次監控執行的結果傳送到 {appName} 頻道。",
     "addButton": "連線監控",
+    "emptyState": {
+      "title": "未找到結果",
+      "description": "請嘗試調整篩選條件。"
+    },
     "table": {
-      "monitor": "監控"
+      "monitor": "監控",
+      "createdBy": "建立者"
+    },
+    "filters": {
+      "createdBy": {
+        "placeholder": "按使用者搜尋",
+        "emptyStateMessage": "沒有匹配的團隊成員"
+      }
     },
     "pagination": {
       "itemsPerPage": "每頁條數",
@@ -524,5 +545,23 @@
     "removeError": "無法關閉 Agent Tasks，請重試。",
     "connectError": "無法連線 {appName}，請重試。",
     "enableError": "無法開啟 Agent Tasks，請重試。"
+  },
+  "oauth_landing_page": {
+    "status": {
+      "connecting": "正在連線到 {appName}...",
+      "continue_prompt": "點選下方按鈕，繼續連線到 {appName}。"
+    },
+    "button": {
+      "connect": "連線到 {appName}"
+    },
+    "success": {
+      "heading": "一切就緒！",
+      "body": "已連線到 {appName}。"
+    },
+    "toast": {
+      "popup_blocked": "請允許此網站的彈出視窗，以便連線到 {appName}",
+      "timed_out": "執行授權時服務超時",
+      "request_failed": "發起授權時出錯"
+    }
   }
 }

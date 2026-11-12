@@ -9,7 +9,8 @@
     "unable_to_connect": "無法連線",
     "stateless_protocol_not_supported": {
       "switch_to_compatible_version": "此伺服器不支援 MCP 2026-07-28。請將協議版本重置為自動或固定為 Legacy，然後重新連線。"
-    }
+    },
+    "runner_stdio_consent_required": "{count, plural, one {此集合中有 # 個 STDIO 伺服器需要授權同意。請從其請求連線到該伺服器，然後重新執行。} other {此集合中有 # 個 STDIO 伺服器需要授權同意。請分別從各自的請求連線到這些伺服器，然後重新執行。}}"
   },
   "address_bar": {
     "url_input": {
@@ -332,6 +333,64 @@
         "not_supported": "不支援",
         "unavailable": "不可用"
       }
+    }
+  },
+  "scripts": {
+    "tab_label": "腳本",
+    "test_results_tab_label": "測試結果",
+    "hooks": {
+      "before_connect": {
+        "label": "連線前",
+        "description": "“連線前”腳本在客戶端連線到伺服器之前執行。可用於設定連線的 URL、請求頭、身份驗證或命令。",
+        "tooltip": "在每次連線前執行一次。一般用於動態配置連線。",
+        "collection_description": "在每個 MCP 請求連線前執行",
+        "collection_placeholder": "編寫在每個 MCP 請求連線前執行的腳本"
+      },
+      "after_connect": {
+        "label": "連線後",
+        "description": "“連線後”腳本在伺服器就緒後執行：即完成初始化並首次列出其工具、提示和資源之後。可用於檢查伺服器的身份、能力及其公開的內容。",
+        "tooltip": "在每次連線後、伺服器就緒時執行一次。一般用於測試伺服器及其工具定義。",
+        "collection_description": "在每個 MCP 伺服器就緒後執行",
+        "collection_placeholder": "編寫在每個 MCP 伺服器就緒後執行的腳本"
+      },
+      "after_response": {
+        "label": "回應之後",
+        "description": "“回應之後”腳本在工具呼叫、提示或資源讀取返回結果或錯誤時執行。可用於測試回應，並儲存值供後續呼叫使用。",
+        "tooltip": "在每次呼叫返回後執行。一般用於編寫測試。",
+        "collection_description": "在呼叫返回時執行",
+        "collection_placeholder": "編寫在每次 MCP 呼叫返回時執行的腳本"
+      },
+      "after_disconnect": {
+        "label": "斷開連線後",
+        "description": "“斷開連線後”腳本在客戶端與伺服器斷開連線後執行。可用於清除會話設定的值，例如令牌或 ID。",
+        "tooltip": "在每次斷開連線後執行一次。一般用於清理變數。",
+        "collection_description": "在每個 MCP 請求斷開連線後執行",
+        "collection_placeholder": "編寫在每個 MCP 請求斷開連線後執行的腳本"
+      }
+    },
+    "results": {
+      "item_label": "MCP",
+      "connection": "連線",
+      "disconnection": "斷開連線",
+      "call": "呼叫"
+    },
+    "snippets": {
+      "set_auth_header": "設定 Authorization 請求頭",
+      "test_server_name": "伺服器名稱正確",
+      "test_protocol_version": "協議版本正確",
+      "test_tools_exposed": "伺服器公開了所需的工具",
+      "test_tool_input_schema": "工具輸入 schema 要求提供參數",
+      "test_discovery_complete": "已列出所有能力",
+      "test_one_tool": "僅測試一個工具的回應",
+      "test_call_succeeded": "呼叫成功",
+      "test_call_reports_error": "呼叫對無效輸入報告錯誤",
+      "test_structured_content": "結果包含某個屬性",
+      "test_response_time": "回應時間低於 1000ms"
+    }
+  },
+  "runner": {
+    "empty": {
+      "no_events": "此請求未產生任何 MCP 事件。"
     }
   }
 }

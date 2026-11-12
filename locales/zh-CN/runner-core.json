@@ -134,6 +134,19 @@
     "no_tests_found": "未找到测试",
     "request_could_not_be_sent": "请求无法发送"
   },
+  "results_request_details": {
+    "copy_full_body": "复制完整正文",
+    "copied_full_body": "已复制完整正文（{total, number} 个字符）。",
+    "copy_full_body_failed": "无法将完整正文复制到剪贴板。",
+    "body_notes": {
+      "render_truncated": "显示 {total, number} 个字符中的前 {shown, number} 个。",
+      "long_line": "已关闭换行和格式化：此正文为一个超长的单行。",
+      "upload_dropped": "由于本次运行超出了负载预算，此正文未上传。",
+      "upload_dropped_with_size": "由于本次运行超出了负载预算，此正文未上传。原始正文大小为 {bytes, number} 字节。",
+      "upload_truncated": "此正文在上传前已被截断，并非完整正文。",
+      "upload_truncated_with_size": "此正文在上传前已被截断，并非完整正文。原始正文大小为 {bytes, number} 字节。"
+    }
+  },
   "mock_bindings": {
     "title": "分配模拟服务器",
     "title_info": "此集合中的以下变量和主机 URL 可以被模拟服务器",

@@ -387,8 +387,8 @@
   },
   "proactive_suggestions": {
     "automation_testing": {
-      "add_tests_headline": "還在手動檢查此回應？",
-      "add_tests_description": "新增測試，在每次傳送時自動驗證回應。",
+      "add_tests_headline": "為此 {status} 回應新增測試",
+      "add_tests_description": "每次傳送時都可靠地檢查狀態、欄位和延遲。",
       "add_tests_cta": "新增測試"
     },
     "aria_label": "主動請求建議",

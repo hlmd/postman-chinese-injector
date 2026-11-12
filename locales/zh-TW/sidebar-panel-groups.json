@@ -29,6 +29,7 @@
   "Flows": "流程",
   "Specifications": "規範",
   "Mocks": "模擬伺服器",
+  "MCPServers": "MCP 伺服器",
   "CodeMocks": "模擬伺服器服務",
   "AppTests": "應用測試",
   "Simulations": "模擬",

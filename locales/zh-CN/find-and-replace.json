@@ -50,6 +50,14 @@
     },
     "pre_result_message": "在左侧输入搜索查询以跨集合、环境和全局进行搜索。当您找到某些内容时，您会在此处看到搜索结果。",
     "disabled_message": "查找和替换在本地模式下不可用。切换到云模式即可使用此功能。",
+    "searching": "正在搜索…",
+    "replacing": "正在替换…",
+    "load_failed_collection_list": "无法加载您的集合，因此未搜索任何集合。",
+    "load_failed": "部分集合无法加载，搜索结果可能不完整。",
+    "load_outdated": "部分集合无法刷新，搜索结果可能不是最新的。",
+    "load_failed_local": "部分环境、全局变量或打开的选项卡无法搜索，搜索结果可能不完整。",
+    "retry": "重试",
+    "linked_request_locked": "此请求为关联请求，该部分由其源请求管理，因此无法在此替换。",
     "tabs": {
       "open_tabs": {
         "title": "打开选项卡 ({items})"

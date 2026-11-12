@@ -71,24 +71,34 @@
     "coming_soon": "即將推出",
     "items": {
       "github_pr": {
-        "trigger_label": "GitHub Pull Request",
+        "trigger_label": "PR 已建立",
         "title": "PR 上的 API 設計審查",
         "description": "在每個 PR 中審查 API/schema 變更，並將結果作為評論發布。"
+      },
+      "breaking_change_detection": {
+        "trigger_label": "PR 已建立",
+        "title": "破壞性變更檢測",
+        "description": "在每個 PR 中檢測破壞性 API 變更，在其影響生產環境之前標記風險。"
       },
       "weekly_schedule": {
         "trigger_label": "每週計劃",
         "title": "已棄用 API 審計",
         "description": "每週掃描已棄用的 API，並將結果報告發布到 Slack。"
       },
-      "breaking_change_detection": {
-        "trigger_label": "GitHub Pull Request",
-        "title": "破壞性變更檢測",
-        "description": "在每個 PR 中檢測破壞性 API 變更，在其影響生產環境之前標記風險。"
+      "monitor_failure_triage": {
+        "trigger_label": "監控執行失敗",
+        "title": "監控失敗分診",
+        "description": "找出監控執行失敗的原因，區分不穩定的請求與真正的迴歸問題，併發布摘要。"
       },
-      "event_driven_automation": {
-        "trigger_label": "Postman 事件",
-        "title": "事件驅動的自動化",
-        "description": "回應 Postman Events（如集合更新），並自動將分析結果傳送給團隊。"
+      "release_notes_on_merge": {
+        "trigger_label": "PR 已合併",
+        "title": "合併時生成發布說明",
+        "description": "將已合併的 API 變更整理為變更日誌條目，並列出受影響的端點。"
+      },
+      "api_change_digest": {
+        "trigger_label": "集合已更新 + PR 已合併",
+        "title": "API 變更摘要",
+        "description": "根據程式碼合併和集合更新，用一份摘要向團隊說明 API 的變更內容。"
       }
     }
   },

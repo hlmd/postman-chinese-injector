@@ -71,24 +71,34 @@
     "coming_soon": "即将推出",
     "items": {
       "github_pr": {
-        "trigger_label": "GitHub Pull Request",
+        "trigger_label": "PR 已创建",
         "title": "PR 上的 API 设计审查",
         "description": "在每个 PR 中审查 API/schema 变更，并将结果作为评论发布。"
+      },
+      "breaking_change_detection": {
+        "trigger_label": "PR 已创建",
+        "title": "破坏性变更检测",
+        "description": "在每个 PR 中检测破坏性 API 变更，在其影响生产环境之前标记风险。"
       },
       "weekly_schedule": {
         "trigger_label": "每周计划",
         "title": "已弃用 API 审计",
         "description": "每周扫描已弃用的 API，并将结果报告发布到 Slack。"
       },
-      "breaking_change_detection": {
-        "trigger_label": "GitHub Pull Request",
-        "title": "破坏性变更检测",
-        "description": "在每个 PR 中检测破坏性 API 变更，在其影响生产环境之前标记风险。"
+      "monitor_failure_triage": {
+        "trigger_label": "监控运行失败",
+        "title": "监控失败分诊",
+        "description": "找出监控运行失败的原因，区分不稳定的请求与真正的回归问题，并发布摘要。"
       },
-      "event_driven_automation": {
-        "trigger_label": "Postman 事件",
-        "title": "事件驱动的自动化",
-        "description": "响应 Postman Events（如集合更新），并自动将分析结果发送给团队。"
+      "release_notes_on_merge": {
+        "trigger_label": "PR 已合并",
+        "title": "合并时生成发布说明",
+        "description": "将已合并的 API 变更整理为变更日志条目，并列出受影响的端点。"
+      },
+      "api_change_digest": {
+        "trigger_label": "集合已更新 + PR 已合并",
+        "title": "API 变更摘要",
+        "description": "根据代码合并和集合更新，用一份摘要向团队说明 API 的变更内容。"
       }
     }
   },

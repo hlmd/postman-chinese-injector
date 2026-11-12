@@ -29,6 +29,7 @@
   "Flows": "流程",
   "Specifications": "规范",
   "Mocks": "模拟服务器",
+  "MCPServers": "MCP 服务器",
   "CodeMocks": "模拟服务器服务",
   "AppTests": "应用测试",
   "Simulations": "模拟",

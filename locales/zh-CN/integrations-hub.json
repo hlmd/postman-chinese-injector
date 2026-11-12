@@ -101,15 +101,21 @@
     },
     "gitlab_app": {
       "title": "已连接的 GitLab 账户",
-      "description": "已授予 Postman 访问权限的 GitLab 群组。",
+      "description": "可通过此连接访问的 GitLab 群组。",
       "username": "GitLab 用户名",
       "accounts": "GitLab 群组"
     },
     "bitbucket_app": {
       "title": "已连接的 Bitbucket 账户",
-      "description": "已授予 Postman 访问权限的 Bitbucket 工作区。",
+      "description": "可通过此连接访问的 Bitbucket 工作区。",
       "username": "Bitbucket 用户名",
       "accounts": "Bitbucket 工作区"
+    },
+    "azure_devops_app": {
+      "title": "已连接的 Azure DevOps 账户",
+      "description": "可通过此连接访问的 Azure DevOps 组织。",
+      "username": "Azure DevOps 用户",
+      "accounts": "Azure DevOps 组织"
     },
     "ecosystem": {
       "connectedBadge": "已连接",
@@ -225,10 +231,14 @@
     "channelDescription": "必须是标准频道或共享频道，不支持私有频道。",
     "channelPlaceholder": "输入以搜索频道",
     "channelLoadError": "频道加载失败，请重试。",
+    "channelLoadAuthError": "频道加载失败。请<signIn>登录</signIn>。",
     "teamPlaceholder": "输入以搜索团队",
+    "teamLoadError": "团队加载失败，请重试。",
+    "teamLoadAuthError": "团队加载失败。请<signIn>登录</signIn>。",
     "groupChatLabel": "群聊",
     "groupChatPlaceholder": "输入以搜索群聊",
     "groupChatLoadError": "群聊加载失败，请重试。",
+    "groupChatLoadAuthError": "群聊加载失败。请<signIn>登录</signIn>。",
     "signInPrompt": "登录 Microsoft Teams 以选择团队和频道。",
     "signInButton": "登录 Microsoft Teams",
     "signingIn": "正在等待 Microsoft Teams 登录…",
@@ -329,8 +339,19 @@
     "title": "监控通知",
     "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次监控运行的结果发送到 {appName} 频道。",
     "addButton": "连接监控",
+    "emptyState": {
+      "title": "未找到结果",
+      "description": "请尝试调整筛选条件。"
+    },
     "table": {
-      "monitor": "监控"
+      "monitor": "监控",
+      "createdBy": "创建者"
+    },
+    "filters": {
+      "createdBy": {
+        "placeholder": "按用户搜索",
+        "emptyStateMessage": "没有匹配的团队成员"
+      }
     },
     "pagination": {
       "itemsPerPage": "每页条数",
@@ -524,5 +545,23 @@
     "removeError": "无法关闭 Agent Tasks，请重试。",
     "connectError": "无法连接 {appName}，请重试。",
     "enableError": "无法开启 Agent Tasks，请重试。"
+  },
+  "oauth_landing_page": {
+    "status": {
+      "connecting": "正在连接到 {appName}...",
+      "continue_prompt": "点击下方按钮，继续连接到 {appName}。"
+    },
+    "button": {
+      "connect": "连接到 {appName}"
+    },
+    "success": {
+      "heading": "一切就绪！",
+      "body": "已连接到 {appName}。"
+    },
+    "toast": {
+      "popup_blocked": "请允许此网站的弹出窗口，以便连接到 {appName}",
+      "timed_out": "执行授权时服务超时",
+      "request_failed": "发起授权时出错"
+    }
   }
 }

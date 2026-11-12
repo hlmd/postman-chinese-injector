@@ -563,6 +563,9 @@
         },
         "docs_link": "确保脚本根据 <1><0>Postman JavaScript 参考对 {itemLabel}</0></1> 有效。"
       }
+    },
+    "results": {
+      "group_summary": "{passed, plural, other {# 项通过}}{failed, plural, =0 {} other { · # 项失败}}{skipped, plural, =0 {} other { · # 项跳过}}"
     }
   },
   "proto_menu": {

@@ -74,6 +74,7 @@
   "toast": {
     "export_success": "集合匯出成功。",
     "export_failed": "無法匯出此集合，請檢查 DevTools。",
+    "export_server_error": "由於伺服器錯誤，Postman 無法匯出此集合。請稍後重試。",
     "secure_failed": "無法保護檢測到的金鑰。"
   },
   "survey": {

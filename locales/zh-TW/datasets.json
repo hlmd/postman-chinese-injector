@@ -186,8 +186,12 @@
     },
     "secret_resolution_timeout": "Postman 未能及時訪問此資料來源的保險庫金鑰。請確認保險庫已解鎖後重試。",
     "secret_resolution_failed": "Postman 無法解析此資料來源使用的一個或多個保險庫金鑰。請解鎖保險庫並確認關聯的金鑰仍然存在。",
+    "source_encoding_unsupported": "無法識別此檔案的編碼。請將其另存為 UTF-8 或 UTF-16 後重試。",
+    "request_time_limit": "查詢超出時間限制。請簡化查詢或縮小範圍後重試。",
+    "connection_refused": "無法連線到資料庫主機。請檢查主機和埠，並確認主機可訪問。",
     "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 資料來源僅在雲端工作區中可用。",
-    "sync_local_load_failed": "已儲存到雲端，但本地引擎無法載入：{reason}"
+    "sync_local_load_failed": "已儲存到雲端，但本地引擎無法載入：{reason}",
+    "invalid_dataset_yaml": "此資料集的 YAML 檔案無效（第 {line} 行），Postman 無法對其進行更改。請在 YAML 編輯器中修復該檔案後重試。"
   },
   "workbench_header": {
     "button": {

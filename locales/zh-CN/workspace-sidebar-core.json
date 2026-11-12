@@ -155,6 +155,11 @@
         "no_permission_text": "您没有权限在此工作区中创建 MCP 请求。",
         "offline_text": "您需要在线才能创建 MCP 请求。"
       },
+      "mcp_server": {
+        "info_text": "MCP 服务器可将 AI 工具连接到您的 API。",
+        "no_permission_text": "您没有在此工作区中创建 MCP 服务器的权限。",
+        "offline_text": "您需要联网才能创建 MCP 服务器。"
+      },
       "toolsets": {
         "card_label": "工具集",
         "ai_card_label": "AI 工具集",
@@ -887,6 +892,7 @@
     "resend_cta": "重新发送邀请",
     "remove_cta": "撤销",
     "more_actions_aria": "发送给 {email} 的邀请的更多操作",
+    "revoke_locked_tooltip": "您没有执行此操作的权限。",
     "load_more": "正在加载更多邀请…"
   }
 }

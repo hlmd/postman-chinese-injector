@@ -74,6 +74,7 @@
   "toast": {
     "export_success": "集合导出成功。",
     "export_failed": "无法导出此集合，请检查 DevTools。",
+    "export_server_error": "由于服务器错误，Postman 无法导出此集合。请稍后重试。",
     "secure_failed": "无法保护检测到的密钥。"
   },
   "survey": {

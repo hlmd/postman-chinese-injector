@@ -50,6 +50,14 @@
     },
     "pre_result_message": "在左側輸入搜尋查詢以跨集合、環境和全域進行搜尋。當您找到某些內容時，您會在此處看到搜尋結果。",
     "disabled_message": "查詢和替換在本地模式下不可用。切換到雲模式即可使用此功能。",
+    "searching": "正在搜尋…",
+    "replacing": "正在替換…",
+    "load_failed_collection_list": "無法載入您的集合，因此未搜尋任何集合。",
+    "load_failed": "部分集合無法載入，搜尋結果可能不完整。",
+    "load_outdated": "部分集合無法重新整理，搜尋結果可能不是最新的。",
+    "load_failed_local": "部分環境、全域變數或開啟的選項卡無法搜尋，搜尋結果可能不完整。",
+    "retry": "重試",
+    "linked_request_locked": "此請求為關聯請求，該部分由其源請求管理，因此無法在此替換。",
     "tabs": {
       "open_tabs": {
         "title": "開啟選項卡 ({items})"

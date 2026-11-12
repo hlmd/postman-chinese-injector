@@ -1,4 +1,8 @@
 {
+  "auto_start_trial": {
+    "past_trial_ineligible": "您已试用过。请升级方案以使用全部功能。",
+    "starting": "正在开始试用…"
+  },
   "name_errors": {
     "empty": "请告诉我们您的名字",
     "max_length": "名称必须少于 38 个字符"

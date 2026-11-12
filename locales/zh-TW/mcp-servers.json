@@ -1,15 +1,172 @@
 {
-  "spec_list": {
-    "no_operations": "本規範中未找到任何操作。",
-    "no_matching_requests": "未找到匹配的請求。"
+  "disabled_view": {
+    "title": "MCP 伺服器不可用",
+    "description": "此團隊未啟用 MCP 伺服器。"
   },
-  "collection_tree": {
-    "no_requests": "此集合沒有請求。",
-    "no_matching_requests": "未找到匹配的請求。"
+  "source_panel": {
+    "heading": "API 定義",
+    "description": "選擇用於定義此伺服器所公開工具的集合或規範。",
+    "source_label": "選擇集合或規範",
+    "source_helper": "從 HTTP/OAS 中選擇",
+    "source_placeholder": "選擇選項",
+    "environment_label": "環境",
+    "environment_helper": "選擇要與此來源一起使用的環境。",
+    "environment_placeholder": "未選擇環境",
+    "collection": "集合",
+    "specification": "API 規範"
   },
-  "errors": {
-    "spec_syntax": "所選規範存在語法錯誤。請修復規範編輯者中的錯誤，然後重試。",
-    "spec_load_failed": "無法載入操作。請再試一次。",
-    "collection_load_failed": "無法載入集合。請再試一次。"
+  "local_deploy": {
+    "starting": "正在啟動...",
+    "stopping": "正在停止...",
+    "status_running": "正在本地執行",
+    "failed_title": "伺服器無法在本地啟動",
+    "crashed_title": "本地伺服器已停止工作",
+    "errors": {
+      "unsupported_source": "只有集合和規範可以在本地執行，單個請求不行。",
+      "unsupported_spec": "只有 OpenAPI 3 規範可以在本地執行。此規範為 {type}。",
+      "missing_endpoint": "該來源沒有伺服器 URL。請在「配置」中輸入 API 服務端點。",
+      "missing_endpoint_variables": "無法解析 {variables}。請選擇定義了這些變數的環境，或在「配置」中輸入 API 服務端點。",
+      "unresolved_variables": "無法解析 {variables}。請選擇定義了這些變數的環境、解鎖 Postman 保險庫，或檢查這些金鑰是否允許用於此 API 的域。",
+      "source_read_failed": "無法讀取集合或規範：{message}",
+      "port_in_use": "埠 {port} 已被佔用。請在「配置」中選擇其他埠，或留空以使用任意空閒埠。",
+      "server_limit": "最多可同時在本地執行 4 個伺服器。請先停止一個，再啟動此伺服器。",
+      "invalid_config": "無法使用該來源或設定：{message}",
+      "unavailable": "伺服器需在 Postman 桌面應用中本地執行。",
+      "unknown": "出現問題：{message}",
+      "invalid_port": "請在「配置」中輸入 1024 到 65535 之間的埠，或留空。"
+    }
+  },
+  "backend_panel": {
+    "heading": "API 服務連線",
+    "description": "配置 MCP 伺服器訪問您的 API 時使用的端點和憑據。",
+    "endpoint_label": "API 服務端點",
+    "endpoint_placeholder": "例如 {example}",
+    "auth_type_label": "身份驗證型別",
+    "auth_type_helper": "MCP 伺服器將通過此方式向 API 服務後端進行身份驗證。",
+    "endpoint_helper_default": "為 API 服務端點輸入完整的 Postman 變數引用。",
+    "endpoint_helper_multiple_hosts": "這些請求使用了 {count} 個主機。留空則每個請求傳送到各自的主機，或輸入一個 URL 供所有請求使用。",
+    "endpoint_helper_unresolved": "無法解析 {variables}。請選擇定義了這些變數的環境，或輸入 URL。",
+    "auth_unresolved": "集合的身份驗證使用了 {variables}，但無法解析。請解鎖 Postman 保險庫、檢查這些金鑰是否允許用於此 API 的域，或在下方選擇一種身份驗證型別。",
+    "auth_variables_hint": "這些欄位可以使用 Postman 變數（例如 {example}），每次呼叫工具時都會解析。",
+    "auth_reference_invalid": "請使用完整的 Postman 變數引用（例如 {basic} 或 {vault}），長度為 5 到 256 個字元。",
+    "endpoint_invalid": "請輸入完整的 Postman 變數引用。"
+  },
+  "connect_panel": {
+    "heading": "連線 MCP 客戶端",
+    "description": "使用這些連線資訊將此伺服器新增到相容 MCP 的客戶端。",
+    "desktop_only_empty_state": "在 Postman 桌面應用中啟動此伺服器以獲取其本地連線資訊。",
+    "agent_heading": "Postman Agent",
+    "agent_description": "一鍵將此伺服器連線到 Postman Agent。",
+    "agent_connect_button": "連線到 Postman Agent",
+    "agent_connect_disabled_tooltip": "請先在 Postman 桌面應用中啟動此伺服器。",
+    "manual_setup_heading": "手動設定",
+    "manual_setup_description": "將此配置複製到任何支援伺服器 URL 的 MCP 客戶端中。",
+    "endpoint_label": "本地 MCP 端點",
+    "endpoint_helper": "伺服器執行期間可從本機訪問。",
+    "copy_endpoint": "複製端點 URL",
+    "open_as_mcp_request": "作為 MCP 請求開啟",
+    "agent_added": "已將 {name} 新增到 Postman Agent。",
+    "agent_add_failed": "無法將伺服器新增到 Postman Agent。請重試。"
+  },
+  "sidebar": {
+    "status_running": "狀態：執行中",
+    "more_actions": "更多操作",
+    "empty_state_title": "此面板中沒有專案",
+    "create_action": "建立",
+    "delete_action": "刪除",
+    "delete_failed": "MCP 伺服器刪除失敗。",
+    "delete_confirmation": {
+      "heading": "刪除 MCP 伺服器",
+      "description": "確定要刪除 {serverName} 嗎？",
+      "cancel": "取消",
+      "confirm": "刪除"
+    }
+  },
+  "tools_panel": {
+    "heading": "工具",
+    "heading_count": "{count, plural, one {# 個工具} other {# 個工具}}",
+    "description": "根據所選集合或規範生成的工具。選擇此伺服器向 MCP 客戶端公開的工具，並編輯其名稱、描述和參數。",
+    "no_source": "選擇集合或規範以檢視其生成的工具。",
+    "no_tools": "該集合或規範中沒有可生成工具的操作。",
+    "desktop_only": "工具需在執行伺服器的 Postman 桌面應用中檢視和編輯。",
+    "name_label": "名稱",
+    "name_invalid": "請使用 1 到 64 個字母、數字、下劃線或連字元。",
+    "name_taken": "已有其他工具使用此名稱。",
+    "save": "儲存",
+    "cancel": "取消",
+    "expose_all": "公開所有工具",
+    "exposed_count": "已公開 {exposed}/{total}",
+    "none_exposed": "未公開任何工具。至少公開一個工具才能啟動伺服器。",
+    "unapplied_title": "重啟以應用工具更改",
+    "unapplied_description": "正在執行的伺服器仍按啟動時的狀態公開工具。",
+    "collection_changed_title": "重啟以應用集合更改",
+    "collection_changed_description": "伺服器啟動後，集合或其變數發生了更改。請重啟伺服器，以按目前內容提供其請求。",
+    "spec_changed_title": "重啟以應用規範更改",
+    "spec_changed_description": "伺服器啟動後，規範發生了更改。請重啟伺服器，以按目前內容提供其操作。",
+    "restart": "重啟伺服器",
+    "description_label": "描述",
+    "description_empty": "請輸入描述。",
+    "description_too_long": "描述過長，請控制在 8 KB 以內。",
+    "edit_tool": "編輯工具",
+    "edit_tool_label": "編輯 {name}",
+    "arguments_label": "參數",
+    "arguments_helper": "MCP 客戶端每次呼叫時傳送的內容。可將參數設為必填或可選、省略 API 會忽略的參數，並新增請求中缺少的參數。路徑參數始終為必填。",
+    "spec_arguments_note": "此工具的參數來自規範。如需更改，請編輯規範。",
+    "location_path": "路徑",
+    "location_query": "查詢參數",
+    "location_header": "請求頭",
+    "location_body": "請求體欄位",
+    "location_form": "表單欄位",
+    "any_type": "任意",
+    "argument_required": "必填",
+    "argument_removed": "已省略",
+    "argument_remove": "移除參數",
+    "argument_remove_named": "移除 {name}",
+    "argument_restore": "恢復參數",
+    "argument_restore_named": "恢復 {name}",
+    "argument_description_placeholder": "描述",
+    "argument_description_label": "{name} 的描述",
+    "argument_name_placeholder": "名稱",
+    "argument_name_label": "參數名稱",
+    "argument_location_label": "參數位置",
+    "argument_type_label": "參數型別",
+    "new_argument": "新參數",
+    "add_argument": "新增參數",
+    "argument_name_invalid": "請使用 1 到 64 個字母、數字、下劃線、點或連字元。",
+    "argument_name_taken": "已有其他參數使用此名稱。",
+    "argument_description_too_long": "描述請控制在 2,048 個字元以內。"
+  },
+  "local_server_panel": {
+    "heading": "MCP 伺服器",
+    "description": "MCP 客戶端在本機上訪問此伺服器的位置。此設定僅儲存在本機。",
+    "port_label": "埠",
+    "port_helper_preferred": "留空則使用 {port}，若該埠被佔用則使用任意空閒埠。更改將在下次啟動伺服器時生效。",
+    "port_helper": "留空則使用任意空閒埠。更改將在下次啟動伺服器時生效。",
+    "port_invalid": "請輸入 1024 到 65535 之間的整數。"
+  },
+  "tool_list": {
+    "tool_arguments": "{count, plural, =0 {無參數} one {# 個參數} other {# 個參數}}"
+  },
+  "recent_calls": {
+    "heading": "最近呼叫",
+    "empty": "暫無呼叫。來自 MCP 客戶端的呼叫將顯示在此處。",
+    "status_running": "執行中",
+    "status_success": "成功",
+    "status_error": "失敗",
+    "duration": "{duration} 毫秒",
+    "arguments": "參數",
+    "result": "結果"
+  },
+  "web_start": {
+    "button": "啟動伺服器",
+    "title": "在 Postman 桌面應用中啟動",
+    "description": "在本地啟動 MCP 伺服器需要 Postman 桌面應用。",
+    "open_in_desktop": "在桌面應用中開啟",
+    "or": "或",
+    "download_desktop": "下載 Postman 應用"
+  },
+  "create_page": {
+    "title": "建立 MCP 伺服器配置",
+    "name_label": "名稱"
   }
 }

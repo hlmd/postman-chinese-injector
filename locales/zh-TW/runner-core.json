@@ -134,6 +134,19 @@
     "no_tests_found": "未找到測試",
     "request_could_not_be_sent": "請求無法傳送"
   },
+  "results_request_details": {
+    "copy_full_body": "複製完整正文",
+    "copied_full_body": "已複製完整正文（{total, number} 個字元）。",
+    "copy_full_body_failed": "無法將完整正文複製到剪貼簿。",
+    "body_notes": {
+      "render_truncated": "顯示 {total, number} 個字元中的前 {shown, number} 個。",
+      "long_line": "已關閉換行和格式化：此正文為一個超長的單行。",
+      "upload_dropped": "由於本次執行超出了負載預算，此正文未上傳。",
+      "upload_dropped_with_size": "由於本次執行超出了負載預算，此正文未上傳。原始正文大小為 {bytes, number} 位元組。",
+      "upload_truncated": "此正文在上傳前已被截斷，並非完整正文。",
+      "upload_truncated_with_size": "此正文在上傳前已被截斷，並非完整正文。原始正文大小為 {bytes, number} 位元組。"
+    }
+  },
   "mock_bindings": {
     "title": "分配模擬伺服器",
     "title_info": "此集合中的以下變數和主機 URL 可以被模擬伺服器",

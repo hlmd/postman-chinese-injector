@@ -28,6 +28,7 @@
     "switch_to": "切換到",
     "postman_cloud": "Postman 雲",
     "switch_to_cloud_failed": "切換到雲端檢視失敗",
+    "switch_to_local_failed": "切換到本地檢視失敗",
     "push_to_postman_cloud": "推送到 Postman 雲",
     "pull_from_postman_cloud": "從 Postman 雲中拉取",
     "search_branch": "輸入分支名稱...",
