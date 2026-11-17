@@ -922,5 +922,38 @@
     "trigger_monitor_run_step_2": "2. 觸發監控執行",
     "automate_using_cli": "使用 Postman CLI 自動執行。",
     "command_instruction": "在終端中複製並執行此命令"
+  },
+  "in_app_banner": {
+    "failure": {
+      "single_title": "監控 {name} 狀態異常。",
+      "multiple_title": "此工作區中有 {count} 個監控狀態異常。",
+      "multiple_body": "它們最近一次執行未能成功完成。",
+      "summary_tests": "最近一次執行有 {failedTests, plural, one {# 個測試失敗} other {# 個測試失敗}}。",
+      "summary_errors": "最近一次執行有 {errors, plural, one {# 個錯誤} other {# 個錯誤}}。",
+      "summary_both": "最近一次執行有 {failedTests, plural, one {# 個測試失敗} other {# 個測試失敗}}，以及 {errors, plural, one {# 個錯誤} other {# 個錯誤}}。",
+      "summary_aborted": "最近一次執行在完成前被停止。",
+      "debug_prompt": "幫我除錯並修復監控 {name} 最近一次執行中的錯誤和失敗。",
+      "debug_prompt_multiple": "幫我除錯並修復以下監控最近一次執行中的錯誤和失敗：{names}。"
+    },
+    "usage": {
+      "stopped_title": "你的監控已停止執行！",
+      "free_body": "你本月已達到免費計劃的監控呼叫上限。立即升級即可恢復監控。",
+      "free_member_body": "你本月已達到免費計劃的監控呼叫上限。請聯絡管理員升級計劃以恢復監控。",
+      "paid_body": "你已達到付費計劃的上限，且未開啟按量付費。開啟後即可立即恢復監控。",
+      "paid_member_body": "你已達到付費計劃的上限，且未開啟按量付費。請聯絡管理員開啟以恢復監控。",
+      "plan_limit_body": "你本月已達到目前計劃的監控呼叫上限。立即升級即可恢復監控。",
+      "plan_limit_member_body": "你本月已達到目前計劃的監控呼叫上限。請聯絡管理員升級計劃以恢復監控。",
+      "upgrade_heading": "升級以保持監控執行"
+    },
+    "actions": {
+      "debug_with_ai": "使用 AI 除錯",
+      "view_failed_run": "檢視失敗的執行",
+      "view_monitors": "檢視監控",
+      "upgrade_plan": "升級計劃",
+      "start_trial": "開始試用",
+      "turn_on_pay_as_you_go": "開啟按量付費",
+      "manage_billing": "管理帳單",
+      "contact_admin": "聯絡管理員"
+    }
   }
 }

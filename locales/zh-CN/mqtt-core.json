@@ -12,6 +12,7 @@
       "id": "ID："
     },
     "version_switcher": {
+      "label": "MQTT 版本",
       "tooltip": "连接时无法更改版本"
     },
     "connect_button": {

@@ -383,7 +383,7 @@
       "drop_overlay": "拖放文件以将其添加为数据源",
       "unsupported_file": {
         "title": "不支持的文件类型",
-        "description": "仅 .csv 和 .json 文件可添加为数据源。"
+        "description": "只能添加 .csv、.json、.ndjson 和 .jsonl 文件作为数据源。"
       },
       "sample": {
         "prompt": "刚开始使用？先从示例数据源试试。",
@@ -718,7 +718,7 @@
     "drop_or_browse": "拖放 CSV 或 JSON 文件，或<browse>浏览</browse>",
     "replace_file": "替换文件",
     "remove_file": "移除文件",
-    "unsupported_file": "只能添加 CSV 和 JSON 文件。",
+    "unsupported_file": "只能添加 CSV、JSON 和 NDJSON 文件。",
     "adds_to": "将该文件作为数据源和视图添加到“{datasetName}”中。",
     "database_hint": "此处只能添加文件。如需添加数据库数据源，请从侧边栏打开数据集并在其中添加。",
     "saving_to_workspace": "正在保存到此工作区。",

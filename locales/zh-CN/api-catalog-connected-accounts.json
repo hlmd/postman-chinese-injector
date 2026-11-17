@@ -38,6 +38,27 @@
     "account_aria_label": "按账户筛选",
     "all_accounts": "所有账户"
   },
+  "preview_filters": {
+    "type": "类型",
+    "account": "账号",
+    "type_chip": "类型：{name}",
+    "account_chip": "账号：{name}",
+    "clear_filters": "清除筛选",
+    "remove_chip": "移除筛选条件 {filter}"
+  },
+  "preview_selection": {
+    "selected": "{count, plural, one {已选择 # 个服务} other {已选择 # 个服务}}",
+    "clear": "清除选择"
+  },
+  "preview_search": {
+    "placeholder": "搜索服务",
+    "aria_label": "搜索已发现的服务",
+    "result_count": "{count, plural, =0 {没有匹配的服务} one {# 个服务匹配} other {# 个服务匹配}}",
+    "summary": "{total} 个服务中有 {matched} 个匹配“{term}”",
+    "no_results_title": "没有与“{term}”匹配的服务",
+    "no_results_description": "请尝试其他搜索词，或清除搜索。",
+    "clear_search": "清除搜索"
+  },
   "summary": "{accountCount, plural, one {# 个账户} other {# 个账户}} · {serviceCount, plural, one {# 个已发现的服务} other {# 个已发现的服务}}",
   "errors": {
     "load_accounts_title": "无法加载账户",

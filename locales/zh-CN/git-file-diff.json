@@ -1,0 +1,21 @@
+{
+  "workbench_tab": {
+    "title": "更改"
+  },
+  "error": "无法加载此文件的更改。",
+  "retry": "重试",
+  "no_changes": "此文件没有未提交的更改。",
+  "file_not_shown_binary": "此文件是二进制文件，无法显示。",
+  "file_not_shown_encoding": "此文件不是 UTF-8 文本，无法显示。",
+  "file_not_shown_too_large": "此文件过大，无法显示。",
+  "breadcrumb_label": "已更改的文件",
+  "discard_all": "全部放弃",
+  "discard_all_tooltip": "将此文件恢复到上次提交的版本",
+  "discard_confirm_title": "要放弃对 {name} 的更改吗？",
+  "discard_confirm_body": "文件将恢复到上次提交的版本。此操作无法在 Postman 中撤销。",
+  "discard_confirm_body_new": "此文件尚未被 git 跟踪，因此将被删除。此操作无法在 Postman 中撤销。",
+  "discard_confirm_action": "放弃",
+  "discard_cancel": "取消",
+  "discard_failed": "无法放弃更改",
+  "save_failed": "无法保存你的更改"
+}

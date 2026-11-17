@@ -383,7 +383,7 @@
       "drop_overlay": "拖放檔案以將其新增為資料來源",
       "unsupported_file": {
         "title": "不支援的檔案型別",
-        "description": "僅 .csv 和 .json 檔案可新增為資料來源。"
+        "description": "只能新增 .csv、.json、.ndjson 和 .jsonl 檔案作為資料來源。"
       },
       "sample": {
         "prompt": "剛開始使用？先從範例資料來源試試。",
@@ -718,7 +718,7 @@
     "drop_or_browse": "拖放 CSV 或 JSON 檔案，或<browse>瀏覽</browse>",
     "replace_file": "替換檔案",
     "remove_file": "移除檔案",
-    "unsupported_file": "只能新增 CSV 和 JSON 檔案。",
+    "unsupported_file": "只能新增 CSV、JSON 和 NDJSON 檔案。",
     "adds_to": "將該檔案作為資料來源和檢視新增到“{datasetName}”中。",
     "database_hint": "此處只能新增檔案。如需新增資料庫資料來源，請從側邊欄開啟資料集並在其中新增。",
     "saving_to_workspace": "正在儲存到此工作區。",

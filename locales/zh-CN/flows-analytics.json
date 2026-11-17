@@ -1,0 +1,10 @@
+{
+  "filters": {
+    "status_select": {
+      "aria_label": "按状态筛选"
+    },
+    "trigger_select": {
+      "aria_label": "按触发器筛选"
+    }
+  }
+}

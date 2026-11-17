@@ -166,6 +166,8 @@
     "sign_out": "登出",
     "settings": "設定",
     "switch_account": "切換帳戶",
+    "switch_team": "切換團隊",
+    "switch_org": "切換組織",
     "sign_up_for_free": "免費註冊",
     "manage_accounts_tooltip": "管理帳戶",
     "create_team": {
@@ -174,7 +176,13 @@
       "image_alt_text": "社群圖示。插圖。"
     },
     "teams": "團隊",
-    "switch_to": "切換到",
+    "switch_team_or_account": "切換團隊或帳號",
+    "switch_org_or_account": "切換組織或帳號",
+    "manage_accounts_with_team": "{name} — 管理團隊和帳號",
+    "signed_in_as_in_team": "已以 {name}（{email}）身份登入團隊 {team}。",
+    "signed_in_as_in_org": "已以 {name}（{email}）身份登入組織 {team}。",
+    "signed_in_as": "已以 {name}（{email}）身份登入。",
+    "manage_accounts_with_org": "{name} — 管理組織和帳號",
     "add_account": "新增帳戶",
     "view_account": "檢視帳戶",
     "account_settings": "帳戶設定"

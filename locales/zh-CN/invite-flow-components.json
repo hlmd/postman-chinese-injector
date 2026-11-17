@@ -12,6 +12,9 @@
       "wrong_file_type": "只能上传CSV和TXT文件",
       "file_too_large": "文件大小大于 {max_file_size}MB，仅支持小于 {max_file_size}MB 的文件。",
       "file_read_error": "上传您的文件时出错。请重试"
+    },
+    "domain_suggestions": {
+      "list_label": "你公司的成员"
     }
   }
 }

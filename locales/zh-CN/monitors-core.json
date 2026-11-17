@@ -922,5 +922,38 @@
     "trigger_monitor_run_step_2": "2. 触发监控运行",
     "automate_using_cli": "使用 Postman CLI 自动运行。",
     "command_instruction": "在终端中复制并运行此命令"
+  },
+  "in_app_banner": {
+    "failure": {
+      "single_title": "监控 {name} 状态异常。",
+      "multiple_title": "此工作区中有 {count} 个监控状态异常。",
+      "multiple_body": "它们最近一次运行未能成功完成。",
+      "summary_tests": "最近一次运行有 {failedTests, plural, one {# 个测试失败} other {# 个测试失败}}。",
+      "summary_errors": "最近一次运行有 {errors, plural, one {# 个错误} other {# 个错误}}。",
+      "summary_both": "最近一次运行有 {failedTests, plural, one {# 个测试失败} other {# 个测试失败}}，以及 {errors, plural, one {# 个错误} other {# 个错误}}。",
+      "summary_aborted": "最近一次运行在完成前被停止。",
+      "debug_prompt": "帮我调试并修复监控 {name} 最近一次运行中的错误和失败。",
+      "debug_prompt_multiple": "帮我调试并修复以下监控最近一次运行中的错误和失败：{names}。"
+    },
+    "usage": {
+      "stopped_title": "你的监控已停止运行！",
+      "free_body": "你本月已达到免费计划的监控调用上限。立即升级即可恢复监控。",
+      "free_member_body": "你本月已达到免费计划的监控调用上限。请联系管理员升级计划以恢复监控。",
+      "paid_body": "你已达到付费计划的上限，且未开启按量付费。开启后即可立即恢复监控。",
+      "paid_member_body": "你已达到付费计划的上限，且未开启按量付费。请联系管理员开启以恢复监控。",
+      "plan_limit_body": "你本月已达到当前计划的监控调用上限。立即升级即可恢复监控。",
+      "plan_limit_member_body": "你本月已达到当前计划的监控调用上限。请联系管理员升级计划以恢复监控。",
+      "upgrade_heading": "升级以保持监控运行"
+    },
+    "actions": {
+      "debug_with_ai": "使用 AI 调试",
+      "view_failed_run": "查看失败的运行",
+      "view_monitors": "查看监控",
+      "upgrade_plan": "升级计划",
+      "start_trial": "开始试用",
+      "turn_on_pay_as_you_go": "开启按量付费",
+      "manage_billing": "管理账单",
+      "contact_admin": "联系管理员"
+    }
   }
 }

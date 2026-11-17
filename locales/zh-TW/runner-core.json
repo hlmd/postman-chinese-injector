@@ -140,7 +140,6 @@
     "copy_full_body_failed": "無法將完整正文複製到剪貼簿。",
     "body_notes": {
       "render_truncated": "顯示 {total, number} 個字元中的前 {shown, number} 個。",
-      "long_line": "已關閉換行和格式化：此正文為一個超長的單行。",
       "upload_dropped": "由於本次執行超出了負載預算，此正文未上傳。",
       "upload_dropped_with_size": "由於本次執行超出了負載預算，此正文未上傳。原始正文大小為 {bytes, number} 位元組。",
       "upload_truncated": "此正文在上傳前已被截斷，並非完整正文。",
@@ -228,5 +227,22 @@
         "run": "執行效能測試"
       }
     }
+  },
+  "data_request": {
+    "status": {
+      "read": "{count, plural, one {# 行} other {# 行}}",
+      "write": "影響 {count, plural, one {# 行} other {# 行}}",
+      "write_committed": "影響 {count, plural, one {# 行} other {# 行}}，已提交",
+      "write_rolled_back": "影響 {count, plural, one {# 行} other {# 行}}，已回滾",
+      "ddl": "OK",
+      "failed": "查詢失敗"
+    },
+    "agent": {
+      "not_connected": "請切換到 Postman Desktop Agent 以執行資料請求。",
+      "not_supported": "請更新 Postman Desktop Agent 以執行資料請求。"
+    }
+  },
+  "multi_protocol_upgrade": {
+    "banner": "升級以執行 {protocols} 請求"
   }
 }

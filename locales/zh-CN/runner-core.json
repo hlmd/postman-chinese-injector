@@ -140,7 +140,6 @@
     "copy_full_body_failed": "无法将完整正文复制到剪贴板。",
     "body_notes": {
       "render_truncated": "显示 {total, number} 个字符中的前 {shown, number} 个。",
-      "long_line": "已关闭换行和格式化：此正文为一个超长的单行。",
       "upload_dropped": "由于本次运行超出了负载预算，此正文未上传。",
       "upload_dropped_with_size": "由于本次运行超出了负载预算，此正文未上传。原始正文大小为 {bytes, number} 字节。",
       "upload_truncated": "此正文在上传前已被截断，并非完整正文。",
@@ -228,5 +227,22 @@
         "run": "运行性能测试"
       }
     }
+  },
+  "data_request": {
+    "status": {
+      "read": "{count, plural, one {# 行} other {# 行}}",
+      "write": "影响 {count, plural, one {# 行} other {# 行}}",
+      "write_committed": "影响 {count, plural, one {# 行} other {# 行}}，已提交",
+      "write_rolled_back": "影响 {count, plural, one {# 行} other {# 行}}，已回滚",
+      "ddl": "OK",
+      "failed": "查询失败"
+    },
+    "agent": {
+      "not_connected": "请切换到 Postman Desktop Agent 以运行数据请求。",
+      "not_supported": "请更新 Postman Desktop Agent 以运行数据请求。"
+    }
+  },
+  "multi_protocol_upgrade": {
+    "banner": "升级以运行 {protocols} 请求"
   }
 }

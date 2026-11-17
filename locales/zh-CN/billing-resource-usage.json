@@ -1,3 +1,24 @@
 {
-  "pay_as_you_go_already_on": "按量付费已开启"
+  "pay_as_you_go_already_on": "按量付费已开启",
+  "view_detailed_usage": "查看详细用量",
+  "postman_credit_units": {
+    "total_used": "已用 {usage} / {limit} PCU",
+    "remaining": "剩余 {remaining} PCU",
+    "no_data_title": "暂无数据",
+    "no_data_description": "暂无详细用量报告",
+    "no_access_title": "你没有访问权限",
+    "no_access_description": "你无权查看此页面。",
+    "load_error_title": "无法加载用量",
+    "load_error_description": "出了点问题。",
+    "total_usage": "总用量",
+    "pcus": "{usage} PCU",
+    "of_limit": "/ {limit} PCU",
+    "usage_by_product": "按产品划分的用量",
+    "column_product": "产品",
+    "column_usage": "已用 PCU",
+    "column_share": "用量占比",
+    "share": "{share}%",
+    "show_breakdown": "显示 {product} 明细",
+    "hide_breakdown": "隐藏 {product} 明细"
+  }
 }

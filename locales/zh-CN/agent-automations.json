@@ -63,7 +63,8 @@
     "claimed": "已认领",
     "dispatched": "已分发",
     "completed": "已完成",
-    "failed": "失败"
+    "failed": "失败",
+    "cancelled": "已取消"
   },
   "templates": {
     "section_title": "从模板开始",
@@ -288,10 +289,23 @@
     "empty_search_title": "未找到运行记录",
     "empty_title": "暂无运行记录。",
     "refresh_aria_label": "刷新运行历史记录",
-    "run_now_aria_label": "立即运行自动化"
+    "run_now_aria_label": "立即运行自动化",
+    "action_cancel": "取消运行",
+    "cancel_toast_success": "运行已取消",
+    "cancel_toast_error": "取消运行失败，请重试。",
+    "cancel_all": "停止所有运行",
+    "cancel_all_aria_label": "停止所有运行",
+    "cancel_all_toast_success": "进行中的运行已取消",
+    "cancel_all_toast_error": "取消运行失败，请重试。"
   },
   "run_now": {
     "toast_success": "运行已成功加入队列",
     "toast_error": "触发运行失败，请重试。"
+  },
+  "cancel_runs_modal": {
+    "title": "要停止所有运行吗？",
+    "body": "所有仍在排队或运行中的运行都将被停止。已完成的运行不受影响。",
+    "keep_running": "继续运行",
+    "confirm": "停止运行"
   }
 }

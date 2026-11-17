@@ -175,7 +175,8 @@
       "group_members_count_other": "{count} 成員",
       "invite_collaborator_warning": "您的團隊之外的人將被邀請作為合作者。",
       "dropdown_info": "該角色將設定在集合上。",
-      "placeholder": "輸入姓名、群組名稱或電子郵件..."
+      "placeholder": "輸入姓名、群組名稱或電子郵件...",
+      "not_on_team": "不在你的團隊中"
     },
     "invite_partner_banner": {
       "title": "邀請合作伙伴加入您的團隊",
@@ -206,6 +207,9 @@
     }
   },
   "workspace_updates": {
+    "create_update": {
+      "update_type_aria_label": "動態型別"
+    },
     "create_update_modal": {
       "heading": "發布更新",
       "description": "您即將在工作區上發布新的更新。這將通過電子郵件和應用內通知收件人。",

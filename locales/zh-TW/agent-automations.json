@@ -63,7 +63,8 @@
     "claimed": "已認領",
     "dispatched": "已分發",
     "completed": "已完成",
-    "failed": "失敗"
+    "failed": "失敗",
+    "cancelled": "已取消"
   },
   "templates": {
     "section_title": "從模板開始",
@@ -288,10 +289,23 @@
     "empty_search_title": "未找到執行記錄",
     "empty_title": "暫無執行記錄。",
     "refresh_aria_label": "重新整理執行歷史記錄",
-    "run_now_aria_label": "立即執行自動化"
+    "run_now_aria_label": "立即執行自動化",
+    "action_cancel": "取消執行",
+    "cancel_toast_success": "執行已取消",
+    "cancel_toast_error": "取消執行失敗，請重試。",
+    "cancel_all": "停止所有執行",
+    "cancel_all_aria_label": "停止所有執行",
+    "cancel_all_toast_success": "進行中的執行已取消",
+    "cancel_all_toast_error": "取消執行失敗，請重試。"
   },
   "run_now": {
     "toast_success": "執行已成功加入佇列",
     "toast_error": "觸發執行失敗，請重試。"
+  },
+  "cancel_runs_modal": {
+    "title": "要停止所有執行嗎？",
+    "body": "所有仍在排隊或執行中的執行都將被停止。已完成的執行不受影響。",
+    "keep_running": "繼續執行",
+    "confirm": "停止執行"
   }
 }

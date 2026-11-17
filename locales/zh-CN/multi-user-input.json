@@ -8,6 +8,9 @@
       "key_label": "Tab",
       "button_label": "添加 {email}",
       "screen_reader_hint": "按 Tab 键添加 {email}。"
+    },
+    "suggestions": {
+      "list_label": "匹配的成员"
     }
   },
   "pill": {
