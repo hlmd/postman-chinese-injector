@@ -1,5 +1,8 @@
 {
   "entity_type_icon": {
     "label": "洞察"
+  },
+  "rename": {
+    "error": "無法重新命名 Insights 專案，請重試。"
   }
 }

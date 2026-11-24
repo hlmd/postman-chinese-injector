@@ -1,0 +1,146 @@
+{
+  "view": {
+    "full_view_error": {
+      "title": "无法加载文档",
+      "description": "加载此集合的文档时出错。",
+      "retry": "重试"
+    },
+    "offline_notice": {
+      "title": "你已离线",
+      "description": "此文档无法离线查看，重新联网后会自动加载。",
+      "retry": "重试"
+    },
+    "skeleton_rows": {
+      "label": "正在加载文档"
+    },
+    "config_bar": {
+      "public_title": "{name} 文档",
+      "copy_link": "复制链接"
+    },
+    "side_navigation": {
+      "label": "文档导航",
+      "show": "显示导航",
+      "hide": "隐藏导航",
+      "expand": "展开 {name}",
+      "collapse": "折叠 {name}"
+    }
+  },
+  "entities": {
+    "row": {
+      "loading_collection": "正在加载集合",
+      "loading_folder": "正在加载文件夹",
+      "loading_request": "正在加载请求",
+      "error_collection": "无法加载此集合。",
+      "error_folder": "无法加载此文件夹。",
+      "error_request": "无法加载此请求。",
+      "retry": "重试"
+    },
+    "title": {
+      "public_documentation": "{name} 文档",
+      "update_error_collection": "无法重命名此集合，请重试。",
+      "update_error_folder": "无法重命名此文件夹，请重试。",
+      "update_error_request": "无法重命名此请求，请重试。",
+      "untitled_collection": "未命名集合",
+      "untitled_folder": "未命名文件夹",
+      "untitled_request": "未命名请求"
+    },
+    "description": {
+      "write_with_ai": "使用 AI 撰写",
+      "placeholder_collection": "添加集合描述…",
+      "placeholder_folder": "添加文件夹描述…",
+      "placeholder_request": "添加请求描述…"
+    },
+    "auth": {
+      "loading": "正在加载身份验证",
+      "error": "无法加载继承的身份验证。",
+      "heading_with_type": "<label>身份验证</label> <type>{authType}</type>",
+      "inherited_request_from_folder": "此请求使用了来自文件夹 <authsource>{sourceName}</authsource> 的身份验证助手",
+      "inherited_request_from_collection": "此请求使用了来自集合 <authsource>{sourceName}</authsource> 的身份验证助手",
+      "inherited_folder_from_folder": "此文件夹使用了来自文件夹 <authsource>{sourceName}</authsource> 的身份验证助手",
+      "inherited_folder_from_collection": "此文件夹使用了来自集合 <authsource>{sourceName}</authsource> 的身份验证助手"
+    },
+    "copy_link": {
+      "copy_folder": "复制此文件夹的链接",
+      "copy_request": "复制此请求的链接"
+    }
+  },
+  "http": {
+    "body": {
+      "raw_tab": "raw ({language})",
+      "schema_tab": "Schema",
+      "raw_label": "raw ({language})"
+    }
+  },
+  "examples": {
+    "select_label": "选择示例",
+    "loading": "正在加载示例",
+    "error": "无法加载此示例。",
+    "response_body_loading": "正在格式化响应体",
+    "snippet": {
+      "loading": "正在生成代码片段",
+      "error": "无法为此示例生成代码片段。"
+    }
+  },
+  "protocols": {
+    "variables": "变量",
+    "settings": "设置",
+    "configuration": "配置",
+    "languages": {
+      "graphql": "GraphQL",
+      "json": "JSON"
+    },
+    "content_types": {
+      "text": "Text",
+      "json": "JSON",
+      "xml": "XML",
+      "html": "HTML",
+      "binary_base64": "Binary (Base64)",
+      "binary_hex": "Binary (Hexadecimal)"
+    },
+    "examples": {
+      "messages_sent": "已发送的消息",
+      "messages_published": "已发布的消息"
+    },
+    "grpc": {
+      "metadata": "元数据",
+      "message": "消息",
+      "method_loading": "正在加载方法 Schema",
+      "method_error": "无法加载方法 Schema。"
+    },
+    "socketio": {
+      "events": "事件"
+    },
+    "messages": {
+      "title": "消息",
+      "content": "内容",
+      "event_name": "事件：{eventName}",
+      "acknowledgement": "等待确认",
+      "argument": "参数 {index}",
+      "load_error": "无法加载此消息。",
+      "retry": "重试",
+      "loading": "正在加载消息",
+      "show_all": "显示所有消息（{count}）"
+    },
+    "mqtt": {
+      "user_properties": "用户属性",
+      "topics": "主题",
+      "properties": "属性",
+      "topic_settings": "设置",
+      "last_will": "遗嘱消息",
+      "topic": "主题",
+      "no_topic": "无主题",
+      "qos": "QoS",
+      "payload": "负载",
+      "message_properties": "消息属性"
+    },
+    "llm": {
+      "provider": "提供商",
+      "model": "模型"
+    },
+    "mcp": {
+      "transport": "传输方式",
+      "command": "命令",
+      "environment_variables": "环境变量"
+    }
+  }
+}

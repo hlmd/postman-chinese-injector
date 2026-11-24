@@ -1,0 +1,8 @@
+{
+  "new_conversation_button": {
+    "aria_label": "新對話"
+  },
+  "conversation_history_button": {
+    "aria_label": "對話歷史記錄"
+  }
+}

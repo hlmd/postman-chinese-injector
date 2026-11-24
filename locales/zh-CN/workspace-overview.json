@@ -49,6 +49,11 @@
       "title": "活动"
     }
   },
+  "activity_feed": {
+    "item": {
+      "agent_attribution": "通过 {agentName}"
+    }
+  },
   "contributors": {
     "heading": "贡献者",
     "heading_recent": "近期贡献者",
@@ -411,6 +416,10 @@
     "banner": {
       "description": "协作者角色已被编辑者和查看者角色取代，不能再分配给任何人。了解更多关于新",
       "primary_action_text": "工作区角色"
+    },
+    "access_menu_banner": {
+      "title": "更简单的工作区访问管理方式",
+      "description": "我们合并了工作区类型和访问设置。现在你可以在同一处邀请成员、管理现有成员，并选择谁可以访问你的工作区。"
     },
     "pending_requests": {
       "label": "待处理请求（{count}）"

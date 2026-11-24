@@ -104,7 +104,8 @@
             "count_filters": {
               "last_100": "最近 100 次运行",
               "last_500": "最近 500 次运行",
-              "last_1000": "最近 1000 次运行"
+              "last_1000": "最近 1000 次运行",
+              "aria_label": "运行次数"
             },
             "source_filters": {
               "postman_cli": "Postman CLI",

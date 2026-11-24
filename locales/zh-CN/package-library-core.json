@@ -20,7 +20,8 @@
         "cancel": "取消",
         "create": "创建"
       },
-      "add_desciption_prompt": "单击此处添加描述"
+      "add_desciption_prompt": "单击此处添加描述",
+      "conflict_message": "自你上次打开以来，此包已被修改。"
     },
     "usage_view": {
       "error_state": {

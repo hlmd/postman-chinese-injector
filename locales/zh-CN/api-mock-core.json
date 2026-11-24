@@ -143,7 +143,9 @@
     "session_disabled_value": "默认会话",
     "session_disabled_hint": "此模拟服务器已关闭会话，因此所有流量共用同一份状态。在模拟服务器设置中启用会话，即可按调用方隔离日志和状态。",
     "local_server_live": "本地服务器运行中",
-    "session_delete": "删除会话"
+    "session_delete": "删除会话",
+    "type_filter_label": "类型",
+    "time_filter_label": "时间"
   },
   "caller_identity": {
     "title_private": "私密模拟服务器",
@@ -212,5 +214,8 @@
       "delete_session_body_prefix": "此操作将永久删除 ",
       "delete_session_body_suffix": "，包括其全部日志和数据，且无法撤销。"
     }
+  },
+  "scenario_settings": {
+    "status_code_select_aria_label": "状态码"
   }
 }

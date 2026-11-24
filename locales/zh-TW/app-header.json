@@ -621,6 +621,7 @@
         "document": "文件",
         "code_mock": "程式碼模擬伺服器",
         "flow": "流程",
+        "dataset": "資料集",
         "team": "發布者",
         "folder": "資料夾",
         "spec": "規範",
@@ -633,6 +634,7 @@
         "document_plural": "文件",
         "code_mock_plural": "Code Mock",
         "flow_plural": "流量",
+        "dataset_plural": "資料集",
         "team_plural": "團隊",
         "folder_plural": "資料夾",
         "spec_plural": "規範"

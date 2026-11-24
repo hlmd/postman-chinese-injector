@@ -1,0 +1,48 @@
+{
+  "action_link_flow": {
+    "modal_label": "操作链接",
+    "executing": {
+      "description": "加载中…"
+    },
+    "error": {
+      "title": "出错了",
+      "description": "无法完成此操作。",
+      "dismiss": "关闭",
+      "signed_out": "会话已结束。请登录后重新打开该链接。"
+    }
+  },
+  "update_version_modal": {
+    "actions": {
+      "update": "更新并继续",
+      "cancel": "取消",
+      "later": "稍后",
+      "restart": "重启应用",
+      "reload": "重新加载应用",
+      "close": "关闭"
+    },
+    "updating": {
+      "description": "正在更新 Postman…"
+    },
+    "error": {
+      "description": "Postman 无法更新到支持此操作的版本。请稍后重新打开该链接。"
+    },
+    "managed": {
+      "description": "此操作需要更新版本的 Postman。你的团队更新由管理员统一管理，请联系管理员更新 Postman。"
+    },
+    "status": {
+      "updating": "正在更新 Postman…",
+      "ready_to_restart": "更新已下载。重启 Postman 以继续。",
+      "ready_to_reload": "更新已下载。重新加载 Postman 以继续。",
+      "error": "Postman 无法更新到支持此操作的版本。请稍后重新打开该链接。",
+      "managed": "你的团队的 Postman 更新由管理员统一管理。"
+    }
+  },
+  "continue_page": {
+    "working": {
+      "title": "正在为你设置 Postman",
+      "description": "请稍候…"
+    },
+    "signed_out": "请登录 Postman，然后重新打开此链接。",
+    "busy": "另一个操作仍在运行。"
+  }
+}

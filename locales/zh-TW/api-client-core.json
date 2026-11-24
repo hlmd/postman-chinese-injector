@@ -472,6 +472,7 @@
     "auth_recommend_var": "<0>注意！這些參數儲存敏感資料。為了在協作環境中工作時保證這些資料的安全，我們建議使用變數。瞭解有關 </0> <1>variables</1> 的更多資訊。",
     "auth_recommend_var_link_text": "變數",
     "toggle_advanced_fields_aria_label": "切換進階配置",
+    "reset_to_inherited_auth": "重置為繼承的身份驗證",
     "inherited_auth": {
       "inherited_desc": "<0>此 {entityType, select, collection {Collection} folder {資料夾} request {請求} other {}} 正在使用來自 {entity, select, collection {Collection} folder {資料夾} other {}} </0><1><0>{entityName}</0></1><2>中的 {authType}。</2>",
       "inherited_desc_long_entity_name": "<0>此 {entityType, select, collection {Collection} folder {資料夾} request {請求} other {}} 正在使用來自 {entity, select, collection {Collection} folder {資料夾} other {}} </0><1><0>{entityName}</0></1> 中的 {authType}",
@@ -1486,7 +1487,8 @@
     "send_button": {
       "tooltips": {
         "no_send_permission": "您無權執行此操作。"
-      }
+      },
+      "operations_menu_button": "選擇要執行的操作"
     }
   }
 }

@@ -225,7 +225,9 @@
         "card_label": "洞察",
         "info_text": "近乎即時地瞭解您的 API 效能。",
         "offline_text": "離線時無法建立洞察專案。",
-        "no_permission_text": "您沒有權限建立洞察專案。"
+        "no_permission_text": "您沒有權限建立洞察專案。",
+        "pick_tech_stack_text": "請在洞察歡迎頁選擇技術棧以開始使用。",
+        "create_error_text": "無法建立洞察專案，請重試。"
       },
       "ask_ai": {
         "card_label": "詢問人工智慧"

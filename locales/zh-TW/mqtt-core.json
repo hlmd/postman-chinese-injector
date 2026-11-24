@@ -71,7 +71,8 @@
             "label": "主題別名",
             "placeholder": "新增整數值"
           },
-          "heading": "設定"
+          "heading": "設定",
+          "menu_button": "屬性和設定"
         }
       }
     },

@@ -269,6 +269,9 @@
       "ceiling_error": "已达到监控创建上限。",
       "check_internet": "请检查您的互联网连接，然后重试。",
       "something_went_wrong": "创建此监控时出现问题，您可以稍后再试。",
+      "schedule_create_error": "无法创建计划。",
+      "schedule_update_error": "无法更新计划。",
+      "schedule_pause_error": "无法暂停计划。",
       "unsupported_collection_for_runner": "此集合使用了多种协议。请将自托管运行器升级到 1.47.0 或更高版本，或改用 Postman 云端区域运行此监控。",
       "load_retry": "无法加载监控，请稍后重试。",
       "invalid_aggregate": "监控性能视图中的聚合函数无效",
@@ -299,7 +302,10 @@
     },
     "create_new": "创建新监控",
     "schedule_selector": {
-      "at": "在"
+      "at": "在",
+      "timer_type_aria_label": "定时器类型",
+      "interval_aria_label": "频率",
+      "time_aria_label": "时间"
     },
     "loading_error": {
       "collections_and_environments": "获取集合和环境时发生错误"
@@ -565,7 +571,7 @@
       "upload_datafile": "上传数据文件...",
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已选数据文件",
-      "add_file": "添加文件",
+      "upload_dataset": "上传数据集...",
       "new_dataset_no_permission": "你没有在此工作区中创建数据集的权限。",
       "no_datasets": "此工作区中还没有数据集。",
       "no_views": "还没有视图。",
@@ -604,7 +610,7 @@
         "go_back": "返回"
       }
     },
-    "collection_deleted": "所选集合已不存在，请选择其他集合。",
+    "collection_deleted": "无法打开所选集合，请选择其他集合。",
     "request_selection": {
       "fixed_list_note": "此监控仅按指定顺序运行所选请求。之后添加到集合中的请求不会运行，除非在此处手动添加。对现有请求的编辑仍会生效。",
       "undo": "撤销",
@@ -628,6 +634,7 @@
     "schedule": "删除日程",
     "deleting_button": "正在删除",
     "delete_button": "删除",
+    "schedule_delete_error": "无法删除计划。",
     "feedback_options_label": "帮助我们了解如何改进监控功能"
   },
   "tab_loading_error": {
@@ -923,6 +930,75 @@
     "automate_using_cli": "使用 Postman CLI 自动运行。",
     "command_instruction": "在终端中复制并运行此命令"
   },
+  "agent_automation": {
+    "beta_label": "Beta",
+    "menu": {
+      "title": "Agent 自动化",
+      "group_automations": "自动化",
+      "group_invocations": "最近调用",
+      "no_invocations": "暂无调用",
+      "task_creator_only": "只有此自动化的创建者才能打开其任务",
+      "open_list": "打开 Agent 自动化",
+      "set_up_label": "设置 Agent 自动化",
+      "set_up_requires_editor": "你需要编辑者权限才能设置 Agent 自动化",
+      "automation_active_failure": "已启用 · 运行失败时",
+      "automation_active_success": "已启用 · 运行成功时",
+      "automation_active_any": "已启用 · 每次运行时",
+      "automation_inactive_failure": "未启用 · 运行失败时",
+      "automation_inactive_success": "未启用 · 运行成功时",
+      "automation_inactive_any": "未启用 · 每次运行时",
+      "invocation_claimed": "已认领 · {time}",
+      "invocation_dispatched": "已派发 · {time}",
+      "invocation_completed": "已完成 · {time}",
+      "invocation_failed": "失败 · {time}"
+    },
+    "modal": {
+      "heading": "设置 Agent 自动化",
+      "description": "此监控运行结束后，Agent 会进行调查并将结果发送到 Slack。",
+      "loading": "加载中"
+    },
+    "fields": {
+      "name_label": "名称",
+      "name_placeholder": "为此自动化命名",
+      "status_label": "运行结果",
+      "status_failure": "失败",
+      "status_success": "成功"
+    },
+    "defaults": {
+      "name": "{monitorName}：失败的运行",
+      "name_success": "{monitorName}：成功的运行",
+      "instructions": "调查此监控运行失败的原因，并总结可能的根因。",
+      "instructions_success": "总结此次成功的监控运行，并标出任何异常情况。"
+    },
+    "actions": {
+      "create": "创建自动化",
+      "save": "保存",
+      "cancel": "取消"
+    },
+    "toast": {
+      "created": "Agent 自动化已创建",
+      "view_automation": "查看 Agent 自动化",
+      "create_failed_after_monitor": "监控已创建，但 Agent 自动化未能创建。",
+      "retry": "重试",
+      "open_automations": "打开 Agent 自动化"
+    },
+    "errors": {
+      "create_failed": "无法创建自动化，请重试。",
+      "load_failed": "无法加载表单。请关闭此对话框后重试。"
+    },
+    "section": {
+      "title": "Agent 自动化",
+      "description": "让 Agent 调查此监控的运行，并将发现发送到 Slack。",
+      "add_button": "添加自动化",
+      "add_another_button": "再添加一个自动化",
+      "existing_heading": "已为此监控设置",
+      "existing_more": "还有 {count} 个",
+      "edit_label": "编辑 Agent 自动化",
+      "remove_label": "移除 Agent 自动化",
+      "summary_failure": "Agent 将调查失败的运行 · Slack {channel}",
+      "summary_success": "Agent 将调查成功的运行 · Slack {channel}"
+    }
+  },
   "in_app_banner": {
     "failure": {
       "single_title": "监控 {name} 状态异常。",
@@ -955,5 +1031,8 @@
       "manage_billing": "管理账单",
       "contact_admin": "联系管理员"
     }
+  },
+  "monitoring_usage": {
+    "billing_period_select_aria_label": "计费周期"
   }
 }

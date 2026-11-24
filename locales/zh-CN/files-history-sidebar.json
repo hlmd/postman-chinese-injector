@@ -13,6 +13,8 @@
   "commit_failed": "无法提交",
   "busy": "另一个 git 操作正在进行",
   "more_actions": "更多操作",
+  "select_all": "全选",
+  "deselect_all": "取消全选",
   "error_merge_conflicts": "部分文件存在合并冲突。请先解决冲突，然后重试。",
   "error_repo_config": "此仓库的 git 配置会运行 Postman 不支持运行的程序。请在终端中执行此操作。",
   "error_unknown": "Git 未说明原因。请重试，或在终端中运行以查看错误。",

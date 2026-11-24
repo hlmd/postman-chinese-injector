@@ -12,7 +12,7 @@
     "name_default": "新建模拟服务器",
     "name_placeholder": "你想模拟的服务或功能",
     "name_required_tooltip": "为模拟服务器命名以继续。",
-    "url_label": "Mock URL",
+    "url_label": "模拟服务器 URL",
     "local_port_label": "端口",
     "local_url_helper": "",
     "check_availability_cta": "检查",

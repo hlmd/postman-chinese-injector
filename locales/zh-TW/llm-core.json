@@ -100,5 +100,8 @@
       "no_matching_tools": "沒有本地工具與此 MCP 工具名稱匹配。",
       "status_prefix": "正在覆蓋"
     }
+  },
+  "prompts_editor": {
+    "add_prompt_button": "新增提示詞"
   }
 }

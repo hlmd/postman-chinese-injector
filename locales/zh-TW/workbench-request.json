@@ -391,6 +391,11 @@
       "add_tests_description": "每次傳送時都可靠地檢查狀態、欄位和延遲。",
       "add_tests_cta": "新增測試"
     },
+    "follow_up_conversation": {
+      "add_tests_headline": "現在返回 {status}，確保它保持不變",
+      "add_tests_description": "將此修復轉化為測試，在每次傳送時檢查狀態、回應欄位和延遲，防止後續改動在不知不覺中再次破壞它。",
+      "add_tests_cta": "新增測試"
+    },
     "aria_label": "主動請求建議",
     "default_lint_fix_headline": "我找到了這些 lint 問題的修復方法。",
     "scanning_label": "掃描中",

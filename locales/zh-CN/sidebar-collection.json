@@ -310,6 +310,7 @@
   },
   "bulk_delete_confirmation": "您确定要删除 {typeCountString} 吗？",
   "bulk_delete_confirmation_reusable": "您即将删除 {typeCountString}。如果删除原始请求，链接请求将不再遵循更新。",
+  "bulk_delete_linked_warning": "原始请求被删除后，关联的请求将不再同步更新。",
   "permission_error": "您没有执行此操作的权限",
   "collection_is_not_a_fork": "集合不是 fork。",
   "this_collection_is_not_a_fork": "这个集合不是 fork。",
@@ -400,7 +401,8 @@
     "dependency_delete_success_title": "依赖项已删除",
     "dependency_delete_success_message": "{name} 已从此工作区中删除。",
     "dependency_delete_error_title": "无法删除依赖项",
-    "dependency_delete_error_message": "{name} 无法删除。检查控制台了解详细信息。"
+    "dependency_delete_error_message": "{name} 无法删除。检查控制台了解详细信息。",
+    "could_not_open_monitor_creation": "无法打开监控创建页面"
   },
   "request_types": {
     "http": "HTTP",

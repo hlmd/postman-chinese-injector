@@ -681,5 +681,19 @@
       "cores": "CPU 核心數",
       "memory": "記憶體"
     }
+  },
+  "assertion_grid": {
+    "live_placeholder": "執行完成後即可檢視斷言穩定性網格。",
+    "loading": "正在載入斷言資料…",
+    "error_title": "無法載入測試結果",
+    "error_description": "載入此執行的斷言網格時出錯。",
+    "retry": "重試",
+    "no_data_title": "暫無斷言資料",
+    "no_tests_title": "此執行沒有測試結果",
+    "no_tests_description": "執行此執行時，集合中沒有測試斷言。",
+    "unavailable_title": "詳細測試結果已不可用",
+    "unavailable_description": "此執行的逐條斷言結果未被保留，因此無法顯示“測試 vs VU”網格。執行摘要、指標和失敗趨勢仍可檢視。",
+    "cloud_only_title": "此執行不支援“測試 vs VU”網格",
+    "cloud_only_description": "斷言網格資料僅針對在 Postman Cloud 上的執行進行儲存。執行摘要、指標和失敗趨勢仍可檢視。"
   }
 }

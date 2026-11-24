@@ -143,7 +143,9 @@
     "session_disabled_value": "預設會話",
     "session_disabled_hint": "此模擬伺服器已關閉會話，因此所有流量共用同一份狀態。在模擬伺服器設定中啟用會話，即可按呼叫方隔離日誌和狀態。",
     "local_server_live": "本地伺服器執行中",
-    "session_delete": "刪除會話"
+    "session_delete": "刪除會話",
+    "type_filter_label": "型別",
+    "time_filter_label": "時間"
   },
   "caller_identity": {
     "title_private": "私密模擬伺服器",
@@ -212,5 +214,8 @@
       "delete_session_body_prefix": "此操作將永久刪除 ",
       "delete_session_body_suffix": "，包括其全部日誌和資料，且無法撤銷。"
     }
+  },
+  "scenario_settings": {
+    "status_code_select_aria_label": "狀態碼"
   }
 }

@@ -9,6 +9,8 @@
   "more_actions": "更多操作",
   "hide_whitespace": "隱藏空白字元更改",
   "show_whitespace": "顯示空白字元更改",
+  "collapse_all_files": "摺疊所有檔案",
+  "expand_all_files": "展開所有檔案",
   "status_added": "已新增",
   "status_removed": "已移除",
   "fallback_original": "原始",

@@ -472,6 +472,7 @@
     "auth_recommend_var": "<0>注意！这些参数保存敏感数据。为了在协作环境中工作时保证这些数据的安全，我们建议使用变量。了解有关 </0> <1>variables</1> 的更多信息。",
     "auth_recommend_var_link_text": "变量",
     "toggle_advanced_fields_aria_label": "切换高级配置",
+    "reset_to_inherited_auth": "重置为继承的身份验证",
     "inherited_auth": {
       "inherited_desc": "<0>此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {}} 正在使用来自 {entity, select, collection {Collection} folder {文件夹} other {}} </0><1><0>{entityName}</0></1><2>中的 {authType}。</2>",
       "inherited_desc_long_entity_name": "<0>此 {entityType, select, collection {Collection} folder {文件夹} request {请求} other {}} 正在使用来自 {entity, select, collection {Collection} folder {文件夹} other {}} </0><1><0>{entityName}</0></1> 中的 {authType}",
@@ -1486,7 +1487,8 @@
     "send_button": {
       "tooltips": {
         "no_send_permission": "您无权执行此操作。"
-      }
+      },
+      "operations_menu_button": "选择要运行的操作"
     }
   }
 }

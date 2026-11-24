@@ -391,6 +391,11 @@
       "add_tests_description": "每次发送时都可靠地检查状态、字段和延迟。",
       "add_tests_cta": "添加测试"
     },
+    "follow_up_conversation": {
+      "add_tests_headline": "现在返回 {status}，确保它保持不变",
+      "add_tests_description": "将此修复转化为测试，在每次发送时检查状态、响应字段和延迟，防止后续改动在不知不觉中再次破坏它。",
+      "add_tests_cta": "添加测试"
+    },
     "aria_label": "主动请求建议",
     "default_lint_fix_headline": "我找到了这些 lint 问题的修复方法。",
     "scanning_label": "扫描中",

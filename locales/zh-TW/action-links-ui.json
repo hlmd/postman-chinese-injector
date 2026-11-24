@@ -1,0 +1,48 @@
+{
+  "action_link_flow": {
+    "modal_label": "操作連結",
+    "executing": {
+      "description": "載入中…"
+    },
+    "error": {
+      "title": "出錯了",
+      "description": "無法完成此操作。",
+      "dismiss": "關閉",
+      "signed_out": "會話已結束。請登入後重新開啟該連結。"
+    }
+  },
+  "update_version_modal": {
+    "actions": {
+      "update": "更新並繼續",
+      "cancel": "取消",
+      "later": "稍後",
+      "restart": "重啟應用",
+      "reload": "重新載入應用",
+      "close": "關閉"
+    },
+    "updating": {
+      "description": "正在更新 Postman…"
+    },
+    "error": {
+      "description": "Postman 無法更新到支援此操作的版本。請稍後重新開啟該連結。"
+    },
+    "managed": {
+      "description": "此操作需要更新版本的 Postman。你的團隊更新由管理員統一管理，請聯絡管理員更新 Postman。"
+    },
+    "status": {
+      "updating": "正在更新 Postman…",
+      "ready_to_restart": "更新已下載。重啟 Postman 以繼續。",
+      "ready_to_reload": "更新已下載。重新載入 Postman 以繼續。",
+      "error": "Postman 無法更新到支援此操作的版本。請稍後重新開啟該連結。",
+      "managed": "你的團隊的 Postman 更新由管理員統一管理。"
+    }
+  },
+  "continue_page": {
+    "working": {
+      "title": "正在為你設定 Postman",
+      "description": "請稍候…"
+    },
+    "signed_out": "請登入 Postman，然後重新開啟此連結。",
+    "busy": "另一個操作仍在執行。"
+  }
+}

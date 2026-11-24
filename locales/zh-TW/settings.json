@@ -583,6 +583,15 @@
     "react_grab": {
       "heading": "啟用 React Grab",
       "sub_heading": "將滑鼠懸停在任何 UI 元素上，然後按 Cmd+C / Ctrl+C 複製其上下文。當中繼伺服器執行時自動傳送到 Claude Code (npx @react-grab/claude-code@latest)。"
+    },
+    "action_links_debug_overlay": {
+      "heading": "啟用操作連結除錯浮層",
+      "sub_heading": "開啟後將顯示 Postman 操作連結除錯浮層，用於手動測試操作連結流程。需要重新整理或重新啟動應用才能生效。",
+      "button_text": "重新載入",
+      "toasts": {
+        "title": "重新載入應用",
+        "description": "更改顯示/隱藏操作連結除錯浮層的設定後，需要重新整理或重新啟動 Postman 應用。"
+      }
     }
   },
   "ai_settings": {

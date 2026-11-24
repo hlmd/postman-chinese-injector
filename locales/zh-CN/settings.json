@@ -583,6 +583,15 @@
     "react_grab": {
       "heading": "启用 React Grab",
       "sub_heading": "将鼠标悬停在任何 UI 元素上，然后按 Cmd+C / Ctrl+C 复制其上下文。当中继服务器运行时自动发送到 Claude Code (npx @react-grab/claude-code@latest)。"
+    },
+    "action_links_debug_overlay": {
+      "heading": "启用操作链接调试浮层",
+      "sub_heading": "开启后将显示 Postman 操作链接调试浮层，用于手动测试操作链接流程。需要刷新或重新启动应用才能生效。",
+      "button_text": "重新加载",
+      "toasts": {
+        "title": "重新加载应用",
+        "description": "更改显示/隐藏操作链接调试浮层的设置后，需要刷新或重新启动 Postman 应用。"
+      }
     }
   },
   "ai_settings": {

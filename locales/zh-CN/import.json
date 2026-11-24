@@ -226,6 +226,10 @@
         "label_with_format_and_collection": "{format} 规范，带有 Postman 集合",
         "label": "API 规范",
         "helper_text": "使用规范文件"
+      },
+      "agent_setup": {
+        "label": "然后使用 Agent Mode 设置环境、示例、测试和文档",
+        "helper_text": "导入后，Agent Mode 会发送 GET 请求以保存示例，然后添加文档和测试。"
       }
     }
   },

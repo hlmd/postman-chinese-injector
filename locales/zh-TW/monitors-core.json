@@ -269,6 +269,9 @@
       "ceiling_error": "已達到監控建立上限。",
       "check_internet": "請檢查您的網際網路連線，然後重試。",
       "something_went_wrong": "建立此監控時出現問題，您可以稍後再試。",
+      "schedule_create_error": "無法建立計劃。",
+      "schedule_update_error": "無法更新計劃。",
+      "schedule_pause_error": "無法暫停計劃。",
       "unsupported_collection_for_runner": "此集合使用了多種協議。請將自託管執行器升級到 1.47.0 或更高版本，或改用 Postman 雲端區域執行此監控。",
       "load_retry": "無法載入監控，請稍後重試。",
       "invalid_aggregate": "監控效能檢視中的聚合函式無效",
@@ -299,7 +302,10 @@
     },
     "create_new": "建立新監控",
     "schedule_selector": {
-      "at": "在"
+      "at": "在",
+      "timer_type_aria_label": "定時器型別",
+      "interval_aria_label": "頻率",
+      "time_aria_label": "時間"
     },
     "loading_error": {
       "collections_and_environments": "獲取集合和環境時發生錯誤"
@@ -565,7 +571,7 @@
       "upload_datafile": "上傳資料檔案...",
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已選資料檔案",
-      "add_file": "新增檔案",
+      "upload_dataset": "上傳資料集...",
       "new_dataset_no_permission": "你沒有在此工作區中建立資料集的權限。",
       "no_datasets": "此工作區中還沒有資料集。",
       "no_views": "還沒有檢視。",
@@ -604,7 +610,7 @@
         "go_back": "返回"
       }
     },
-    "collection_deleted": "所選集合已不存在，請選擇其他集合。",
+    "collection_deleted": "無法開啟所選集合，請選擇其他集合。",
     "request_selection": {
       "fixed_list_note": "此監控僅按指定順序執行所選請求。之後新增到集合中的請求不會執行，除非在此處手動新增。對現有請求的編輯仍會生效。",
       "undo": "撤銷",
@@ -628,6 +634,7 @@
     "schedule": "刪除日程",
     "deleting_button": "正在刪除",
     "delete_button": "刪除",
+    "schedule_delete_error": "無法刪除計劃。",
     "feedback_options_label": "幫助我們瞭解如何改進監控功能"
   },
   "tab_loading_error": {
@@ -923,6 +930,75 @@
     "automate_using_cli": "使用 Postman CLI 自動執行。",
     "command_instruction": "在終端中複製並執行此命令"
   },
+  "agent_automation": {
+    "beta_label": "Beta",
+    "menu": {
+      "title": "Agent 自動化",
+      "group_automations": "自動化",
+      "group_invocations": "最近呼叫",
+      "no_invocations": "暫無呼叫",
+      "task_creator_only": "只有此自動化的建立者才能開啟其任務",
+      "open_list": "開啟 Agent 自動化",
+      "set_up_label": "設定 Agent 自動化",
+      "set_up_requires_editor": "你需要編輯者權限才能設定 Agent 自動化",
+      "automation_active_failure": "已啟用 · 執行失敗時",
+      "automation_active_success": "已啟用 · 執行成功時",
+      "automation_active_any": "已啟用 · 每次執行時",
+      "automation_inactive_failure": "未啟用 · 執行失敗時",
+      "automation_inactive_success": "未啟用 · 執行成功時",
+      "automation_inactive_any": "未啟用 · 每次執行時",
+      "invocation_claimed": "已認領 · {time}",
+      "invocation_dispatched": "已派發 · {time}",
+      "invocation_completed": "已完成 · {time}",
+      "invocation_failed": "失敗 · {time}"
+    },
+    "modal": {
+      "heading": "設定 Agent 自動化",
+      "description": "此監控執行結束後，Agent 會進行調查並將結果傳送到 Slack。",
+      "loading": "載入中"
+    },
+    "fields": {
+      "name_label": "名稱",
+      "name_placeholder": "為此自動化命名",
+      "status_label": "執行結果",
+      "status_failure": "失敗",
+      "status_success": "成功"
+    },
+    "defaults": {
+      "name": "{monitorName}：失敗的執行",
+      "name_success": "{monitorName}：成功的執行",
+      "instructions": "調查此監控執行失敗的原因，並總結可能的根因。",
+      "instructions_success": "總結此次成功的監控執行，並標出任何異常情況。"
+    },
+    "actions": {
+      "create": "建立自動化",
+      "save": "儲存",
+      "cancel": "取消"
+    },
+    "toast": {
+      "created": "Agent 自動化已建立",
+      "view_automation": "檢視 Agent 自動化",
+      "create_failed_after_monitor": "監控已建立，但 Agent 自動化未能建立。",
+      "retry": "重試",
+      "open_automations": "開啟 Agent 自動化"
+    },
+    "errors": {
+      "create_failed": "無法建立自動化，請重試。",
+      "load_failed": "無法載入表單。請關閉此對話方塊後重試。"
+    },
+    "section": {
+      "title": "Agent 自動化",
+      "description": "讓 Agent 調查此監控的執行，並將發現傳送到 Slack。",
+      "add_button": "新增自動化",
+      "add_another_button": "再新增一個自動化",
+      "existing_heading": "已為此監控設定",
+      "existing_more": "還有 {count} 個",
+      "edit_label": "編輯 Agent 自動化",
+      "remove_label": "移除 Agent 自動化",
+      "summary_failure": "Agent 將調查失敗的執行 · Slack {channel}",
+      "summary_success": "Agent 將調查成功的執行 · Slack {channel}"
+    }
+  },
   "in_app_banner": {
     "failure": {
       "single_title": "監控 {name} 狀態異常。",
@@ -955,5 +1031,8 @@
       "manage_billing": "管理帳單",
       "contact_admin": "聯絡管理員"
     }
+  },
+  "monitoring_usage": {
+    "billing_period_select_aria_label": "計費週期"
   }
 }

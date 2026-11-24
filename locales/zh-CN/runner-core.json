@@ -72,7 +72,8 @@
       "settings_saved": "数据文件设置已保存",
       "settings_save_failed": "设置保存失败，请重试。",
       "dataset_created": "数据集已创建",
-      "dataset_create_failed": "数据集创建失败，请重试。"
+      "dataset_create_failed": "数据集创建失败，请重试。",
+      "dataset_create_failed_reason": "数据集创建失败：{reason}"
     },
     "dataset_no_create_permission": "你没有在此工作区中创建数据集的权限。",
     "dataset_upgrade_required": "升级套餐即可将数据文件保存为数据集。",
@@ -83,7 +84,9 @@
     "local_file_hint": "此文件仅存储在你的计算机上。将其保存为数据集，即可随处复用，并使用 SQL 筛选、排序和清理行。",
     "save_as_dataset": "保存为数据集",
     "reading_datafile": "正在读取数据文件",
-    "no_views_cta": "暂无视图。<cta>创建一个</cta>"
+    "no_views_cta": "暂无视图。<cta>创建一个</cta>",
+    "column_type_select_aria_label": "{columnName} 类型",
+    "file_type_select_aria_label": "文件类型"
   },
   "data_view": {
     "run_query": "运行查询",

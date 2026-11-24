@@ -226,6 +226,10 @@
         "label_with_format_and_collection": "{format} 規範，帶有 Postman 集合",
         "label": "API 規範",
         "helper_text": "使用規範檔案"
+      },
+      "agent_setup": {
+        "label": "然後使用 Agent Mode 設定環境、範例、測試和文件",
+        "helper_text": "匯入後，Agent Mode 會發送 GET 請求以儲存範例，然後新增文件和測試。"
       }
     }
   },

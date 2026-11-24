@@ -10,6 +10,8 @@
     },
     "user_distribution": {
       "title": "使用者分佈隨時間變化",
+      "title_all_organizations": "使用者分佈趨勢（所有組織）",
+      "banner": "組織篩選條件不適用於此圖表，它始終顯示所有組織的資料。",
       "tooltip": {
         "title": "使用者分佈隨時間變化",
         "subtitle": "跟蹤團隊構成和許可證利用率隨時間的變化",

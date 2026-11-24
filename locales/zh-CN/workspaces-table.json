@@ -78,7 +78,8 @@
     "archive": "存档",
     "restore": "恢复",
     "retry": "再试一次",
-    "copy_link": "复制链接"
+    "copy_link": "复制链接",
+    "export": "导出"
   },
   "permissions": {
     "no_permission": "您没有权限来执行此操作"
@@ -87,7 +88,8 @@
     "archive": "所有选定的工作区均已存档，或者您没有权限来存档它们",
     "restore": "所选工作区均未存档，或者您没有权限来恢复它们",
     "delete": "您没有权限来删除任何选定的工作区",
-    "move": "您没有权限来移动任何选定的工作区"
+    "move": "您没有权限来移动任何选定的工作区",
+    "export": "已有导出任务正在进行"
   },
   "empty_state": {
     "title": "没有工作空间",
@@ -167,6 +169,8 @@
     "delete_bulk_error": "无法删除某些工作区",
     "restore_bulk_success": "{count, plural, one {已恢复 # 个工作区} other {已恢复 # 个工作区}}",
     "restore_bulk_error": "无法恢复某些工作区",
+    "export_bulk_success": "{count, plural, one {已导出 # 个工作区} other {已导出 # 个工作区}}",
+    "export_bulk_error": "工作区导出失败",
     "copy_link_success": "链接已复制到剪贴板",
     "copy_link_error": "复制链接失败",
     "star_success": "工作区已加星标",
@@ -179,5 +183,22 @@
     "move_error_plural": "无法移动工作区",
     "move_partial_error": "已移动 {succeeded} 个工作区（共 {count} 个）。其余的移动失败。",
     "delete_partial_error": "已删除 {succeeded} 个工作区（共 {count} 个）。其余的删除失败。"
+  },
+  "export_csv": {
+    "headers": {
+      "name": "名称",
+      "created_by": "创建者",
+      "last_activity": "最近活动",
+      "access": "访问权限",
+      "contributors": "贡献者",
+      "url": "URL"
+    },
+    "access": {
+      "personal": "个人",
+      "private": "私有",
+      "team": "团队",
+      "partner": "合作伙伴",
+      "public": "公开"
+    }
   }
 }

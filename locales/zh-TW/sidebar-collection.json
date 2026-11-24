@@ -310,6 +310,7 @@
   },
   "bulk_delete_confirmation": "您確定要刪除 {typeCountString} 嗎？",
   "bulk_delete_confirmation_reusable": "您即將刪除 {typeCountString}。如果刪除原始請求，連結請求將不再遵循更新。",
+  "bulk_delete_linked_warning": "原始請求被刪除後，關聯的請求將不再同步更新。",
   "permission_error": "您沒有執行此操作的權限",
   "collection_is_not_a_fork": "集合不是 fork。",
   "this_collection_is_not_a_fork": "這個集合不是 fork。",
@@ -400,7 +401,8 @@
     "dependency_delete_success_title": "依賴項已刪除",
     "dependency_delete_success_message": "{name} 已從此工作區中刪除。",
     "dependency_delete_error_title": "無法刪除依賴項",
-    "dependency_delete_error_message": "{name} 無法刪除。檢查控制台瞭解詳細資訊。"
+    "dependency_delete_error_message": "{name} 無法刪除。檢查控制台瞭解詳細資訊。",
+    "could_not_open_monitor_creation": "無法開啟監控建立頁面"
   },
   "request_types": {
     "http": "HTTP",

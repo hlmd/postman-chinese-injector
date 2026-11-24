@@ -508,7 +508,8 @@
   "msTeamsTenantSelect": {
     "label": "{appName} 租戶",
     "addTenant": "新增租戶",
-    "connected": "已連線"
+    "connected": "已連線",
+    "nameUnavailable": "登入以檢視租戶名稱"
   },
   "agentTasks": {
     "title": "Agent 任務",
@@ -558,10 +559,21 @@
       "heading": "一切就緒！",
       "body": "已連線到 {appName}。"
     },
+    "jira": {
+      "success": {
+        "body": "現在你可以通過右上角的省略號選單，從 Postman 的請求、集合執行和集合中<docsLink>直接建立 Jira 問題</docsLink>。",
+        "screenshot_alt": "Postman 中的“新增到 Jira Cloud”選項"
+      }
+    },
     "toast": {
       "popup_blocked": "請允許此網站的彈出視窗，以便連線到 {appName}",
       "timed_out": "執行授權時服務超時",
       "request_failed": "發起授權時出錯"
+    },
+    "not_found": {
+      "title": "404. 頁面未找到",
+      "description": "迷路了？試試用搜索找到你需要的內容，或<homeButton />。",
+      "go_home": "返回首頁"
     }
   }
 }

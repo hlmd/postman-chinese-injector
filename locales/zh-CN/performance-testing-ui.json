@@ -681,5 +681,19 @@
       "cores": "CPU 核心数",
       "memory": "内存"
     }
+  },
+  "assertion_grid": {
+    "live_placeholder": "运行完成后即可查看断言稳定性网格。",
+    "loading": "正在加载断言数据…",
+    "error_title": "无法加载测试结果",
+    "error_description": "加载此运行的断言网格时出错。",
+    "retry": "重试",
+    "no_data_title": "暂无断言数据",
+    "no_tests_title": "此运行没有测试结果",
+    "no_tests_description": "执行此运行时，集合中没有测试断言。",
+    "unavailable_title": "详细测试结果已不可用",
+    "unavailable_description": "此运行的逐条断言结果未被保留，因此无法显示“测试 vs VU”网格。运行摘要、指标和失败趋势仍可查看。",
+    "cloud_only_title": "此运行不支持“测试 vs VU”网格",
+    "cloud_only_description": "断言网格数据仅针对在 Postman Cloud 上的运行进行保存。运行摘要、指标和失败趋势仍可查看。"
   }
 }

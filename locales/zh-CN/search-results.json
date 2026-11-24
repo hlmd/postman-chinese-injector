@@ -93,7 +93,8 @@
         "request": "请求",
         "environment": "环境",
         "document": "文档",
-        "mock": "代码模拟服务器"
+        "mock": "代码模拟服务器",
+        "dataset": "数据集"
       },
       "featured_label": "精选",
       "trending_label": "流行趋势",
@@ -134,7 +135,8 @@
           "request": "请求",
           "environment": "Environment",
           "document": "文档",
-          "mock": "Code Mock"
+          "mock": "Code Mock",
+          "dataset": "数据集"
         }
       }
     }

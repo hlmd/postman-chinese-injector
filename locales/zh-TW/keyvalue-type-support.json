@@ -5,6 +5,7 @@
   },
   "base_form": {
     "select_type": "選擇型別",
+    "type_select_label": "型別",
     "required": "必需的",
     "deprecated": "已棄用"
   },

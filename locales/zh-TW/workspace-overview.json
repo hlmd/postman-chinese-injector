@@ -49,6 +49,11 @@
       "title": "活動"
     }
   },
+  "activity_feed": {
+    "item": {
+      "agent_attribution": "通過 {agentName}"
+    }
+  },
   "contributors": {
     "heading": "貢獻者",
     "heading_recent": "近期貢獻者",
@@ -411,6 +416,10 @@
     "banner": {
       "description": "協作者角色已被編輯者和檢視者角色取代，不能再分配給任何人。瞭解更多關於新",
       "primary_action_text": "工作區角色"
+    },
+    "access_menu_banner": {
+      "title": "更簡單的工作區訪問管理方式",
+      "description": "我們合併了工作區型別和訪問設定。現在你可以在同一處邀請成員、管理現有成員，並選擇誰可以訪問你的工作區。"
     },
     "pending_requests": {
       "label": "待處理請求（{count}）"

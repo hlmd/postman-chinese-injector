@@ -121,7 +121,10 @@
       "relink": "重新關聯外部金鑰",
       "client_sign_in": {
         "continue_button": "繼續登入",
-        "blocked_tooltip": "您的瀏覽器攔截了登入視窗。點選以開啟。"
+        "blocked_tooltip": "您的瀏覽器攔截了登入視窗。點選以開啟。",
+        "desktop_app_only": "僅在桌面應用中可用",
+        "update_desktop_agent": "更新 Desktop Agent 以登入",
+        "use_desktop_agent": "使用 Desktop Agent 登入"
       }
     }
   },
@@ -1104,6 +1107,7 @@
       "title": "刪除金鑰"
     },
     "external": {
+      "agent_update_banner": "請將 Postman Desktop Agent 更新到 {version} 或更高版本，以便在 Postman 網頁版中使用保險庫整合。",
       "link_secret": "關聯外部金鑰"
     },
     "filters": {

@@ -1,0 +1,146 @@
+{
+  "view": {
+    "full_view_error": {
+      "title": "無法載入文件",
+      "description": "載入此集合的文件時出錯。",
+      "retry": "重試"
+    },
+    "offline_notice": {
+      "title": "你已離線",
+      "description": "此文件無法離線檢視，重新聯網後會自動載入。",
+      "retry": "重試"
+    },
+    "skeleton_rows": {
+      "label": "正在載入文件"
+    },
+    "config_bar": {
+      "public_title": "{name} 文件",
+      "copy_link": "複製連結"
+    },
+    "side_navigation": {
+      "label": "文件導航",
+      "show": "顯示導航",
+      "hide": "隱藏導航",
+      "expand": "展開 {name}",
+      "collapse": "摺疊 {name}"
+    }
+  },
+  "entities": {
+    "row": {
+      "loading_collection": "正在載入集合",
+      "loading_folder": "正在載入資料夾",
+      "loading_request": "正在載入請求",
+      "error_collection": "無法載入此集合。",
+      "error_folder": "無法載入此資料夾。",
+      "error_request": "無法載入此請求。",
+      "retry": "重試"
+    },
+    "title": {
+      "public_documentation": "{name} 文件",
+      "update_error_collection": "無法重新命名此集合，請重試。",
+      "update_error_folder": "無法重新命名此資料夾，請重試。",
+      "update_error_request": "無法重新命名此請求，請重試。",
+      "untitled_collection": "未命名集合",
+      "untitled_folder": "未命名資料夾",
+      "untitled_request": "未命名請求"
+    },
+    "description": {
+      "write_with_ai": "使用 AI 撰寫",
+      "placeholder_collection": "新增集合描述…",
+      "placeholder_folder": "新增資料夾描述…",
+      "placeholder_request": "新增請求描述…"
+    },
+    "auth": {
+      "loading": "正在載入身份驗證",
+      "error": "無法載入繼承的身份驗證。",
+      "heading_with_type": "<label>身份驗證</label> <type>{authType}</type>",
+      "inherited_request_from_folder": "此請求使用了來自資料夾 <authsource>{sourceName}</authsource> 的身份驗證助手",
+      "inherited_request_from_collection": "此請求使用了來自集合 <authsource>{sourceName}</authsource> 的身份驗證助手",
+      "inherited_folder_from_folder": "此資料夾使用了來自資料夾 <authsource>{sourceName}</authsource> 的身份驗證助手",
+      "inherited_folder_from_collection": "此資料夾使用了來自集合 <authsource>{sourceName}</authsource> 的身份驗證助手"
+    },
+    "copy_link": {
+      "copy_folder": "複製此資料夾的連結",
+      "copy_request": "複製此請求的連結"
+    }
+  },
+  "http": {
+    "body": {
+      "raw_tab": "raw ({language})",
+      "schema_tab": "Schema",
+      "raw_label": "raw ({language})"
+    }
+  },
+  "examples": {
+    "select_label": "選擇範例",
+    "loading": "正在載入範例",
+    "error": "無法載入此範例。",
+    "response_body_loading": "正在格式化回應體",
+    "snippet": {
+      "loading": "正在生成程式碼片段",
+      "error": "無法為此範例生成程式碼片段。"
+    }
+  },
+  "protocols": {
+    "variables": "變數",
+    "settings": "設定",
+    "configuration": "配置",
+    "languages": {
+      "graphql": "GraphQL",
+      "json": "JSON"
+    },
+    "content_types": {
+      "text": "Text",
+      "json": "JSON",
+      "xml": "XML",
+      "html": "HTML",
+      "binary_base64": "Binary (Base64)",
+      "binary_hex": "Binary (Hexadecimal)"
+    },
+    "examples": {
+      "messages_sent": "已傳送的訊息",
+      "messages_published": "已發布的訊息"
+    },
+    "grpc": {
+      "metadata": "後設資料",
+      "message": "訊息",
+      "method_loading": "正在載入方法 Schema",
+      "method_error": "無法載入方法 Schema。"
+    },
+    "socketio": {
+      "events": "事件"
+    },
+    "messages": {
+      "title": "訊息",
+      "content": "內容",
+      "event_name": "事件：{eventName}",
+      "acknowledgement": "等待確認",
+      "argument": "參數 {index}",
+      "load_error": "無法載入此訊息。",
+      "retry": "重試",
+      "loading": "正在載入訊息",
+      "show_all": "顯示所有訊息（{count}）"
+    },
+    "mqtt": {
+      "user_properties": "使用者屬性",
+      "topics": "主題",
+      "properties": "屬性",
+      "topic_settings": "設定",
+      "last_will": "遺囑訊息",
+      "topic": "主題",
+      "no_topic": "無主題",
+      "qos": "QoS",
+      "payload": "負載",
+      "message_properties": "訊息屬性"
+    },
+    "llm": {
+      "provider": "提供商",
+      "model": "模型"
+    },
+    "mcp": {
+      "transport": "傳輸方式",
+      "command": "命令",
+      "environment_variables": "環境變數"
+    }
+  }
+}

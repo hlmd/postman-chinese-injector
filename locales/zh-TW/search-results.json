@@ -93,7 +93,8 @@
         "request": "請求",
         "environment": "環境",
         "document": "文件",
-        "mock": "程式碼模擬伺服器"
+        "mock": "程式碼模擬伺服器",
+        "dataset": "資料集"
       },
       "featured_label": "精選",
       "trending_label": "流行趨勢",
@@ -134,7 +135,8 @@
           "request": "請求",
           "environment": "Environment",
           "document": "文件",
-          "mock": "Code Mock"
+          "mock": "Code Mock",
+          "dataset": "資料集"
         }
       }
     }

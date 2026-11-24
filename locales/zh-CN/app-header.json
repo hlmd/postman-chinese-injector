@@ -621,6 +621,7 @@
         "document": "文档",
         "code_mock": "代码模拟服务器",
         "flow": "流程",
+        "dataset": "数据集",
         "team": "发布者",
         "folder": "文件夹",
         "spec": "规范",
@@ -633,6 +634,7 @@
         "document_plural": "文档",
         "code_mock_plural": "Code Mock",
         "flow_plural": "流量",
+        "dataset_plural": "数据集",
         "team_plural": "团队",
         "folder_plural": "文件夹",
         "spec_plural": "规范"

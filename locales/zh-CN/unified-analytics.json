@@ -10,6 +10,8 @@
     },
     "user_distribution": {
       "title": "用户分布随时间变化",
+      "title_all_organizations": "用户分布趋势（所有组织）",
+      "banner": "组织筛选条件不适用于此图表，它始终显示所有组织的数据。",
       "tooltip": {
         "title": "用户分布随时间变化",
         "subtitle": "跟踪团队构成和许可证利用率随时间的变化",

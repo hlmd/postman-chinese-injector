@@ -225,7 +225,9 @@
         "card_label": "洞察",
         "info_text": "近乎实时地了解您的 API 性能。",
         "offline_text": "离线时无法创建洞察项目。",
-        "no_permission_text": "您没有权限创建洞察项目。"
+        "no_permission_text": "您没有权限创建洞察项目。",
+        "pick_tech_stack_text": "请在洞察欢迎页选择技术栈以开始使用。",
+        "create_error_text": "无法创建洞察项目，请重试。"
       },
       "ask_ai": {
         "card_label": "询问人工智能"

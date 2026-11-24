@@ -4,7 +4,8 @@
     "send_named_request_message": "允许 Agent 发送 <0><0>{requestName}</0></0>？",
     "request_name_fallback": "请求",
     "allowlist_menu_aria_label": "批准并始终允许选项",
-    "allowlist_option_tooltip": "在此对话中跳过匹配请求的审批"
+    "allowlist_option_tooltip": "在此对话中跳过匹配请求的审批",
+    "show_raw_arguments": "显示原始参数"
   },
   "rules": {
     "always_allow_domain": "始终允许 {value}"

@@ -71,7 +71,8 @@
             "label": "主题别名",
             "placeholder": "添加整数值"
           },
-          "heading": "设置"
+          "heading": "设置",
+          "menu_button": "属性和设置"
         }
       }
     },

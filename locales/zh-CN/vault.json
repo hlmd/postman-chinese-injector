@@ -121,7 +121,10 @@
       "relink": "重新关联外部密钥",
       "client_sign_in": {
         "continue_button": "继续登录",
-        "blocked_tooltip": "您的浏览器拦截了登录窗口。点击以打开。"
+        "blocked_tooltip": "您的浏览器拦截了登录窗口。点击以打开。",
+        "desktop_app_only": "仅在桌面应用中可用",
+        "update_desktop_agent": "更新 Desktop Agent 以登录",
+        "use_desktop_agent": "使用 Desktop Agent 登录"
       }
     }
   },
@@ -1104,6 +1107,7 @@
       "title": "删除密钥"
     },
     "external": {
+      "agent_update_banner": "请将 Postman Desktop Agent 更新到 {version} 或更高版本，以便在 Postman 网页版中使用保险库集成。",
       "link_secret": "关联外部密钥"
     },
     "filters": {

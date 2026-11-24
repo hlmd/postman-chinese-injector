@@ -72,7 +72,8 @@
       "settings_saved": "資料檔案設定已儲存",
       "settings_save_failed": "設定儲存失敗，請重試。",
       "dataset_created": "資料集已建立",
-      "dataset_create_failed": "資料集建立失敗，請重試。"
+      "dataset_create_failed": "資料集建立失敗，請重試。",
+      "dataset_create_failed_reason": "資料集建立失敗：{reason}"
     },
     "dataset_no_create_permission": "你沒有在此工作區中建立資料集的權限。",
     "dataset_upgrade_required": "升級套餐即可將資料檔案儲存為資料集。",
@@ -83,7 +84,9 @@
     "local_file_hint": "此檔案僅儲存在你的計算機上。將其儲存為資料集，即可隨處複用，並使用 SQL 篩選、排序和清理行。",
     "save_as_dataset": "儲存為資料集",
     "reading_datafile": "正在讀取資料檔案",
-    "no_views_cta": "暫無檢視。<cta>建立一個</cta>"
+    "no_views_cta": "暫無檢視。<cta>建立一個</cta>",
+    "column_type_select_aria_label": "{columnName} 型別",
+    "file_type_select_aria_label": "檔案型別"
   },
   "data_view": {
     "run_query": "執行查詢",

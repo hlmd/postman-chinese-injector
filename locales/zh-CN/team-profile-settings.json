@@ -80,9 +80,9 @@
     "delete": "删除"
   },
   "confirm_domain_change_modal": {
-    "heading": "更改团队 URL",
-    "sub_heading": "更改您的团队 URL 将破坏您页面的所有现有链接。您的团队会员将必须再次登录才能使用仪表板。您确定要继续吗？",
+    "heading": "要更改 URL 吗？",
+    "sub_heading": "更改此 URL 将导致现有链接失效，且所有成员都需要重新登录。",
     "cancel": "取消",
-    "submit": "提交"
+    "submit": "更改 URL"
   }
 }

@@ -12,7 +12,7 @@
     "name_default": "新增模擬伺服器",
     "name_placeholder": "你想模擬的服務或功能",
     "name_required_tooltip": "為模擬伺服器命名以繼續。",
-    "url_label": "Mock URL",
+    "url_label": "模擬伺服器 URL",
     "local_port_label": "埠",
     "local_url_helper": "",
     "check_availability_cta": "檢查",

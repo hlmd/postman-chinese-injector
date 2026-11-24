@@ -5,6 +5,7 @@
   },
   "base_form": {
     "select_type": "选择类型",
+    "type_select_label": "类型",
     "required": "必需的",
     "deprecated": "已弃用"
   },
