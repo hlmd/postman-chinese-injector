@@ -2472,5 +2472,10 @@
   "You updated the API key settings": "你已更新 API 密钥设置",
   "Search for your team’s existing tools and add them to your workspace to supercharge your team’s efficiency.": "搜索团队现有的工具并将其添加到工作区，大幅提升团队效率。",
   "Search for your team's existing tools and add them to your workspace to supercharge your team's efficiency.": "搜索团队现有的工具并将其添加到工作区，大幅提升团队效率。",
-  "Always open in browser": "始终在浏览器中打开"
+  "Always open in browser": "始终在浏览器中打开",
+  "Show Schema": "显示架构",
+  "Hide Schema": "隐藏架构",
+  "Generate from Body": "从请求体生成",
+  "Schema generation failed": "架构生成失败",
+  "Make sure request body is valid. Generation for request body with Postman variables is not supported.": "请确保请求体有效。不支持为包含 Postman 变量的请求体生成架构。"
 }
