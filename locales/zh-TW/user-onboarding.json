@@ -64,6 +64,16 @@
       "button": "選擇資料夾"
     }
   },
+  "download_desktop_app": {
+    "title": "完整的 Postman 體驗，包括 Git 同步",
+    "description": "下載桌面應用以連線你的儲存庫，暢享 Postman 的全部功能。",
+    "button": "下載桌面應用",
+    "continue_with_web": "改為繼續使用網頁版",
+    "started": {
+      "title": "在桌面應用中繼續註冊",
+      "description": "你已開始下載 Postman 桌面應用。開啟它即可完成帳戶設定。"
+    }
+  },
   "welcome_intro": {
     "duration": "1分鐘",
     "steps": "{count} 步驟",

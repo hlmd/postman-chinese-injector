@@ -38,6 +38,7 @@
           "delete": "删除",
           "filter": {
             "tooltip": "筛选",
+            "clear": "清除筛选",
             "input": {
               "json_placeholder": "使用 JSONPath 筛选：$.story",
               "xml_placeholder": "使用 XPath 筛选：/story"

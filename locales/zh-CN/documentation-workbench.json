@@ -33,19 +33,57 @@
       },
       "fern_docs": {
         "trigger_button": {
-          "view": "查看 Fern 文档",
-          "offline_tooltip": "你当前处于离线状态"
+          "view": "查看文档站点",
+          "offline_tooltip": "你当前处于离线状态",
+          "claim": "认领文档站点",
+          "live": "文档站点已上线",
+          "publish": "发布文档站点"
         },
         "team_docs": {
           "button": {
-            "claim": "认领文档",
+            "claim": "认领文档站点",
             "view_docs": "查看文档"
           },
           "claim_error": {
             "not_admin": "只有团队管理员可以认领这些文档。",
             "already_claimed": "这些文档已被认领。",
             "generic": "无法发起认领，请重试。"
+          },
+          "live_badge": "已上线",
+          "ready": {
+            "title": "你的文档站点已就绪",
+            "description": "由 Fern 根据你的集合构建。认领后即可自定义、发布并据为己有。"
+          },
+          "links": {
+            "edit_styling": "编辑样式",
+            "view_dashboard": "查看仪表板",
+            "settings": "设置"
+          },
+          "sync": {
+            "syncing": "正在同步…",
+            "last_synced_just_now": "刚刚已同步",
+            "last_synced_minutes": "{count, plural, one {# 分钟前已同步} other {# 分钟前已同步}}",
+            "last_synced_hours": "{count, plural, one {# 小时前已同步} other {# 小时前已同步}}",
+            "last_synced_days": "{count, plural, =1 {昨天已同步} other {# 天前已同步}}",
+            "last_synced_months": "{count, plural, =1 {上个月已同步} other {# 个月前已同步}}",
+            "last_synced_years": "{count, plural, =1 {去年已同步} other {# 年前已同步}}"
           }
+        },
+        "popover": {
+          "postman_company": "Postman 旗下公司"
+        },
+        "features": {
+          "branded": "带品牌、可自定义的开发者文档",
+          "markdown_guides": "用 Markdown 编写指南（文档即代码）",
+          "ai_readable": "可供 AI 工具和智能体读取"
+        },
+        "docs_url": {
+          "copy_link": "复制链接",
+          "link_copied": "链接已复制"
+        },
+        "get_started": {
+          "title": "创建你的文档站点",
+          "description": "由 Fern 根据你的集合构建。只需几步即可设置品牌和页面。"
         }
       }
     }
@@ -196,5 +234,16 @@
   "open_request_button": {
     "try_request_button_label": "尝试请求",
     "open_request_button_label": "打开请求"
+  },
+  "fern_team_docs_notification": {
+    "button": {
+      "claim_docs": "认领你的文档",
+      "view_docs": "查看文档"
+    },
+    "claim_error": {
+      "not_allowed": "只有管理员或团队公共工作区的编辑者才能认领这些文档。",
+      "already_claimed": "这些文档已被认领。",
+      "generic": "无法发起认领，请重试。"
+    }
   }
 }

@@ -41,7 +41,8 @@
     "no_conflict_message": "目的地最近已更新。我们建议拉取这些更改。",
     "resolve_conflict_button": "解决冲突",
     "pull_changes_button": "拉取更改",
-    "no_pull_permission_tooltip": "您没有权限来提取更改。"
+    "no_pull_permission_tooltip": "您没有权限来提取更改。",
+    "dismiss_button": "关闭"
   },
   "pull_request_form": {
     "can_not_merge_tooltip": "要合并您的请求，该用户必须为目标 {entityName} 申请编辑者访问权限。",
@@ -84,6 +85,9 @@
       "body": "您对源代码所做的更改将显示在此处。之后您可以合并它们。",
       "title": "没有可显示的更改"
     }
+  },
+  "inline_comment": {
+    "button_label": "评论"
   },
   "pull_request_diff_header": {
     "heading": "更改",
@@ -199,6 +203,7 @@
   "pull_request_actions": {
     "sign_in_required_to_manage_message": "请登录以管理拉取请求。",
     "more_pull_request_actions": {
+      "button_label": "更多操作",
       "edit_option_disabled": {
         "is_merging_message": "我们目前正在合并拉取请求。",
         "sign_in_required_message": "登录以编辑拉取请求。"

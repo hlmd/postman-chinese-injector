@@ -692,5 +692,10 @@
       "update_error": "标签更新失败，请重试。",
       "delete_error": "标签删除失败，请重试。"
     }
+  },
+  "name_sort": {
+    "sort_by_name": "按名称排序",
+    "sorted_ascending": "名称，按 A 到 Z 排序",
+    "sorted_descending": "名称，按 Z 到 A 排序"
   }
 }

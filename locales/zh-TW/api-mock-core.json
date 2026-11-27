@@ -217,5 +217,30 @@
   },
   "scenario_settings": {
     "status_code_select_aria_label": "狀態碼"
+  },
+  "mock_server_endpoints": {
+    "endpoints_tab": "端點",
+    "endpoints_tab_count": "端點（{count}）",
+    "call_logs_tab": "呼叫日誌",
+    "path_column": "路徑",
+    "calls_column": "呼叫次數",
+    "last_called_column": "最近呼叫",
+    "never_called": "從未",
+    "never_called_hint": "此端點尚未被呼叫。",
+    "open_endpoint_aria_label": "在新請求標籤頁中開啟 {method} {path}",
+    "open_endpoint_tooltip": "在新請求中開啟",
+    "filter_path_placeholder": "篩選路徑",
+    "filter_path_aria_label": "按路徑篩選端點",
+    "method_filter_placeholder": "方法",
+    "method_filter_selected": "方法（{count}）",
+    "scenario_label": "場景",
+    "scenario_aria_label": "所列端點所屬的場景",
+    "refresh_tooltip": "重新整理端點",
+    "load_failed": "端點載入失敗",
+    "retry": "重試",
+    "empty_title": "沒有端點",
+    "empty_description": "在程式碼模擬中添加註釋 \"// @endpoint METHOD /path\"，即可在此列出端點。",
+    "no_match_title": "沒有匹配的端點",
+    "no_match_description": "請嘗試其他方法或路徑。"
   }
 }

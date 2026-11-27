@@ -217,5 +217,30 @@
   },
   "scenario_settings": {
     "status_code_select_aria_label": "状态码"
+  },
+  "mock_server_endpoints": {
+    "endpoints_tab": "端点",
+    "endpoints_tab_count": "端点（{count}）",
+    "call_logs_tab": "调用日志",
+    "path_column": "路径",
+    "calls_column": "调用次数",
+    "last_called_column": "最近调用",
+    "never_called": "从未",
+    "never_called_hint": "此端点尚未被调用。",
+    "open_endpoint_aria_label": "在新请求标签页中打开 {method} {path}",
+    "open_endpoint_tooltip": "在新请求中打开",
+    "filter_path_placeholder": "筛选路径",
+    "filter_path_aria_label": "按路径筛选端点",
+    "method_filter_placeholder": "方法",
+    "method_filter_selected": "方法（{count}）",
+    "scenario_label": "场景",
+    "scenario_aria_label": "所列端点所属的场景",
+    "refresh_tooltip": "刷新端点",
+    "load_failed": "端点加载失败",
+    "retry": "重试",
+    "empty_title": "没有端点",
+    "empty_description": "在代码模拟中添加注释 \"// @endpoint METHOD /path\"，即可在此列出端点。",
+    "no_match_title": "没有匹配的端点",
+    "no_match_description": "请尝试其他方法或路径。"
   }
 }

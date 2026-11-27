@@ -6,5 +6,15 @@
     "trigger_select": {
       "aria_label": "按触发器筛选"
     }
+  },
+  "selected_panel": {
+    "close_button": {
+      "label": "关闭"
+    }
+  },
+  "table": {
+    "copy_button": {
+      "label": "复制"
+    }
   }
 }

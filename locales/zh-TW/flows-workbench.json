@@ -1,0 +1,54 @@
+{
+  "block_header": {
+    "collapse_button": {
+      "collapse_label": "摺疊塊",
+      "expand_label": "展開塊"
+    },
+    "shortcut_button": {
+      "open_flow_label": "開啟流程",
+      "open_settings_label": "在設定中開啟",
+      "view_logs_label": "檢視日誌"
+    }
+  },
+  "block_status_panel": {
+    "pin_button": {
+      "pin_label": "固定",
+      "unpin_label": "取消固定"
+    }
+  },
+  "copy_button": {
+    "label": "複製"
+  },
+  "deployments": {
+    "actions_menu_button": {
+      "label": "部署操作"
+    },
+    "details_toggle_button": {
+      "hide_label": "隱藏部署詳情",
+      "show_label": "顯示部署詳情"
+    },
+    "token": {
+      "regenerate_button": {
+        "label": "重新生成令牌"
+      }
+    }
+  },
+  "slides": {
+    "next_button": {
+      "label": "下一張幻燈片"
+    },
+    "options_button": {
+      "label": "幻燈片選項"
+    },
+    "play_button": {
+      "start_label": "開始演示",
+      "stop_label": "停止演示"
+    },
+    "previous_button": {
+      "label": "上一張幻燈片"
+    },
+    "save_title_button": {
+      "label": "儲存幻燈片標題"
+    }
+  }
+}

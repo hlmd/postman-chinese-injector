@@ -860,7 +860,8 @@
       "cta": "连接",
       "check_failed": "无法检查此文件夹是否已连接到工作区。",
       "retry_cta": "重试",
-      "no_permission_tooltip": "你没有连接到工作区的权限"
+      "no_permission_tooltip": "你没有连接到工作区的权限",
+      "blocked_by_workspace_visibility_tooltip": "公共工作区和合作伙伴工作区无法连接到 Git"
     },
     "generate_errors": {
       "no_folder_title": "未选择文件夹",

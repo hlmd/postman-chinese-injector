@@ -212,14 +212,9 @@
       "create_monitor": "建立監控",
       "generate_tests": "生成測試",
       "generate_specification": "生成規範",
-      "generate_flows": "建立流程",
       "connect_repository": "連線儲存庫",
       "export": "匯出集合",
       "generate_sdk": "生成SDK"
-    },
-    "visualize_collection": {
-      "label": "生成流程",
-      "error": "載入流程模組時出錯。"
     },
     "generate_specification": {
       "label": "生成規範"

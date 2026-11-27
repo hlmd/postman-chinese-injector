@@ -25,6 +25,12 @@
   "email_sent_confirmation": "郵件已傳送至 {currentUserEmail}。",
   "resend_invite_email_cta": "重新發送郵件",
   "resend_invite_confirmation": "郵件已重新發送！",
+  "joined_team_heading": "你已加入 {teamName}",
+  "joined_team_subheading": "切換到 {teamName} 以開啟此資源。",
+  "joined_team_switch_cta": "切換到團隊",
+  "switch_team_for_link_heading": "此連結屬於另一個團隊",
+  "switch_team_for_link_description": "要切換到 {teamName} 並在 Postman 應用中開啟它嗎？",
+  "switch_team_for_link_dismiss": "暫不",
   "toast_content": {
     "email_not_verified": {
       "title": "您的信箱尚未驗證",

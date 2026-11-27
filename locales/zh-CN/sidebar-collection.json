@@ -212,14 +212,9 @@
       "create_monitor": "创建监控",
       "generate_tests": "生成测试",
       "generate_specification": "生成规范",
-      "generate_flows": "创建流程",
       "connect_repository": "连接存储库",
       "export": "导出集合",
       "generate_sdk": "生成SDK"
-    },
-    "visualize_collection": {
-      "label": "生成流程",
-      "error": "加载流程模块时出错。"
     },
     "generate_specification": {
       "label": "生成规范"

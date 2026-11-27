@@ -545,6 +545,22 @@
         "singular": "資訊",
         "plural": "訊息"
       },
+      "llm_request": {
+        "singular": "請求",
+        "plural": "請求"
+      },
+      "mcp_request": {
+        "singular": "請求",
+        "plural": "請求"
+      },
+      "kafka_request": {
+        "singular": "請求",
+        "plural": "請求"
+      },
+      "data_request": {
+        "singular": "請求",
+        "plural": "請求"
+      },
       "run": {
         "singular": "集合執行",
         "plural": "集合執行"

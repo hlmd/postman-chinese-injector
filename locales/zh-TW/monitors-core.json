@@ -599,7 +599,32 @@
     "preview_panel": {
       "tabs": {
         "collection_preview": "執行順序",
+        "environment": "環境",
         "iteration_data": "資料"
+      },
+      "environment_preview": {
+        "save": "儲存",
+        "saving": "正在儲存...",
+        "reload": "重新載入",
+        "save_as_new": "另存為新環境",
+        "save_success": "環境已儲存",
+        "unsaved_changes": "有未儲存的更改",
+        "save_as_new_success": "環境已建立",
+        "save_as_new_error": "無法建立環境，請重試。",
+        "no_edit_permission": "你沒有編輯此環境的權限。",
+        "no_create_permission": "你沒有在此工作區中建立環境的權限。",
+        "load_error": "無法載入此環境。",
+        "unavailable": "此環境在此工作區中不可用。",
+        "vault_value_warning": "監控無法使用本地保險庫中的值，請改為關聯 Shared Vault 金鑰。",
+        "unshared_value_warning": "未共享的值僅對你本地可見。共享此值後監控才能使用它。",
+        "save_confirm_modal": {
+          "title": "確認",
+          "description": "更新此環境也會影響其他使用它的實體和服務。確定要繼續嗎？",
+          "cancel": "取消",
+          "confirm": "確認"
+        },
+        "save_as_new_note": "注意：所有未共享的值（包括敏感值）都將在新環境中共享，此工作區中的其他人將能看到它們。",
+        "cloud_copy_name": "{name} 副本"
       },
       "use_latest_collection": "使用最新的集合",
       "use_latest_collection_info": "集合的更改將在下次執行時自動生效。",

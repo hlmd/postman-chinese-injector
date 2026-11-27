@@ -271,6 +271,7 @@
                   }
                 }
               },
+              "share_button": "分享集合运行",
               "cell": {
                 "no_data": "暂无数据，请联系 help@postman.com"
               }

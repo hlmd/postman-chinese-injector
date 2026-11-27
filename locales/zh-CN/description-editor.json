@@ -11,6 +11,7 @@
     },
     "switch_to_markdown_label": "切换到 Markdown 编辑器",
     "switch_to_postman_label": "切换到 Postman 编辑器",
+    "editor_select_label": "编辑器",
     "editor_options_label": {
       "postman": "Postman 编辑器",
       "markdown": "Markdown 编辑器"
@@ -99,7 +100,8 @@
       "edit_link": "编辑链接",
       "remove_link": "删除链接",
       "copy_link": "复制链接",
-      "delete_link": "删除链接"
+      "delete_link": "删除链接",
+      "close": "关闭"
     },
     "media_popup": {
       "validation_error_message": "请输入有效的 URL",
@@ -109,7 +111,8 @@
       "video_url_placeholder": "视频 URL",
       "edit_button": "保存",
       "embed_button": "嵌入",
-      "unsupported_media_platform": "不受支持的媒体平台。但是，您可以选择<Link><Text>添加 URL 作为链接。</Text></Link>"
+      "unsupported_media_platform": "不受支持的媒体平台。但是，您可以选择<Link><Text>添加 URL 作为链接。</Text></Link>",
+      "delete_button": "删除媒体"
     },
     "table_options": {
       "add_row": "添加行",

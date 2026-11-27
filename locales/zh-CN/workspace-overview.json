@@ -461,10 +461,16 @@
       "only_admin_access": "只有此工作区的管理员才能更改可见性。",
       "only_admin_change_type": "只有工作区管理员才能更改类型。",
       "description": "决定谁可以访问您的工作区。",
-      "git_connected_restriction": "目前仅内部工作区支持 Git 连接。请断开此工作区与 Git 的连接后再更改为公开或合作伙伴工作区。",
       "disconnect_to_change": "断开连接以进行更改",
       "pending_visibility_request_tooltip": "存在待处理的可见性更改请求时，您无法执行此操作。",
       "remove_partners_checkbox_label": "移除所有合作伙伴",
+      "remove_git_connection": {
+        "info_text_with_repo": "此工作区已连接到 Git 仓库 {repoName}。合作伙伴工作区和公共工作区不支持 Git 连接，因此该连接将被移除。",
+        "info_text_without_repo": "此工作区已连接到本地文件夹。合作伙伴工作区和公共工作区不支持文件夹连接，因此该连接将被移除。",
+        "no_permission_text": "此工作区已连接到 Git 或本地文件夹，将其设为合作伙伴或公共工作区会移除该连接。只有能编辑此工作区的人才能进行此更改。",
+        "status_error_text": "无法确认此工作区是否已连接到 Git 或本地文件夹。请在将其设为合作伙伴或公共工作区前重新检查。",
+        "status_retry_button": "重新检查"
+      },
       "select_workspace_access_level_aria_label": "选择工作区访问级别",
       "workspace_access_options_aria_label": "工作区访问选项",
       "back_button_aria_label": "返回",

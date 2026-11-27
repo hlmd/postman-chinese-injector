@@ -898,5 +898,8 @@
       "cancel": "取消"
     },
     "entity_is_empty": "此{entity, select, collection {Collection} folder {資料夾} api {API} other {}}為空"
+  },
+  "document_editor": {
+    "editor_select_label": "編輯器"
   }
 }

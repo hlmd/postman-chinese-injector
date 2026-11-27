@@ -599,7 +599,32 @@
     "preview_panel": {
       "tabs": {
         "collection_preview": "运行顺序",
+        "environment": "环境",
         "iteration_data": "数据"
+      },
+      "environment_preview": {
+        "save": "保存",
+        "saving": "正在保存...",
+        "reload": "重新加载",
+        "save_as_new": "另存为新环境",
+        "save_success": "环境已保存",
+        "unsaved_changes": "有未保存的更改",
+        "save_as_new_success": "环境已创建",
+        "save_as_new_error": "无法创建环境，请重试。",
+        "no_edit_permission": "你没有编辑此环境的权限。",
+        "no_create_permission": "你没有在此工作区中创建环境的权限。",
+        "load_error": "无法加载此环境。",
+        "unavailable": "此环境在此工作区中不可用。",
+        "vault_value_warning": "监控无法使用本地保险库中的值，请改为关联 Shared Vault 密钥。",
+        "unshared_value_warning": "未共享的值仅对你本地可见。共享此值后监控才能使用它。",
+        "save_confirm_modal": {
+          "title": "确认",
+          "description": "更新此环境也会影响其他使用它的实体和服务。确定要继续吗？",
+          "cancel": "取消",
+          "confirm": "确认"
+        },
+        "save_as_new_note": "注意：所有未共享的值（包括敏感值）都将在新环境中共享，此工作区中的其他人将能看到它们。",
+        "cloud_copy_name": "{name} 副本"
       },
       "use_latest_collection": "使用最新的集合",
       "use_latest_collection_info": "集合的更改将在下次运行时自动生效。",

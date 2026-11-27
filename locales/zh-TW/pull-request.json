@@ -41,7 +41,8 @@
     "no_conflict_message": "目的地最近已更新。我們建議拉取這些更改。",
     "resolve_conflict_button": "解決衝突",
     "pull_changes_button": "拉取更改",
-    "no_pull_permission_tooltip": "您沒有權限來提取更改。"
+    "no_pull_permission_tooltip": "您沒有權限來提取更改。",
+    "dismiss_button": "關閉"
   },
   "pull_request_form": {
     "can_not_merge_tooltip": "要合併您的請求，該使用者必須為目標 {entityName} 申請編輯者訪問權限。",
@@ -84,6 +85,9 @@
       "body": "您對原始碼所做的更改將顯示在此處。之後您可以合併它們。",
       "title": "沒有可顯示的更改"
     }
+  },
+  "inline_comment": {
+    "button_label": "評論"
   },
   "pull_request_diff_header": {
     "heading": "更改",
@@ -199,6 +203,7 @@
   "pull_request_actions": {
     "sign_in_required_to_manage_message": "請登入以管理拉取請求。",
     "more_pull_request_actions": {
+      "button_label": "更多操作",
       "edit_option_disabled": {
         "is_merging_message": "我們目前正在合併拉取請求。",
         "sign_in_required_message": "登入以編輯拉取請求。"

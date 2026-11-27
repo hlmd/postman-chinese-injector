@@ -1,0 +1,6 @@
+{
+  "cloud_only_picker_hint": "只能引用已推送到云端且你有权访问的请求。",
+  "cloud_only_empty_description": "推送请求后即可在此引用。",
+  "cloud_reference_tooltip": "运行此请求的云端版本。推送更改后才会生效。",
+  "cloud_reference_error_question": "此请求是否已推送到云端，且你有权访问？"
+}

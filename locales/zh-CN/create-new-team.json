@@ -101,5 +101,11 @@
     "body": "要启用团队发现，请验证您的帐户并重试。",
     "cancel_button": "取消",
     "send_verification_button": "发送验证邮件"
+  },
+  "switch_to_new_team": {
+    "title": "你的新团队已就绪",
+    "description": "要在 Postman 应用中切换到 {teamName} 吗？",
+    "switch_button": "切换到团队",
+    "dismiss_button": "暂不"
   }
 }

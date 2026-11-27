@@ -1,0 +1,6 @@
+{
+  "cloud_only_picker_hint": "只能引用已推送到雲端且你有權訪問的請求。",
+  "cloud_only_empty_description": "推送請求後即可在此引用。",
+  "cloud_reference_tooltip": "執行此請求的雲端版本。推送更改後才會生效。",
+  "cloud_reference_error_question": "此請求是否已推送到雲端，且你有權訪問？"
+}

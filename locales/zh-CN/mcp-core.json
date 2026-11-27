@@ -392,5 +392,10 @@
     "empty": {
       "no_events": "此请求未产生任何 MCP 事件。"
     }
+  },
+  "response_viewer": {
+    "pin_preview": "固定应用，使新事件不会替换它",
+    "return_to_pinned_app": "返回已固定的应用",
+    "unpin_preview": "取消固定应用"
   }
 }

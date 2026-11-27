@@ -11,6 +11,7 @@
     },
     "switch_to_markdown_label": "切換到 Markdown 編輯器",
     "switch_to_postman_label": "切換到 Postman 編輯器",
+    "editor_select_label": "編輯器",
     "editor_options_label": {
       "postman": "Postman 編輯器",
       "markdown": "Markdown 編輯器"
@@ -99,7 +100,8 @@
       "edit_link": "編輯連結",
       "remove_link": "刪除連結",
       "copy_link": "複製連結",
-      "delete_link": "刪除連結"
+      "delete_link": "刪除連結",
+      "close": "關閉"
     },
     "media_popup": {
       "validation_error_message": "請輸入有效的 URL",
@@ -109,7 +111,8 @@
       "video_url_placeholder": "影片 URL",
       "edit_button": "儲存",
       "embed_button": "嵌入",
-      "unsupported_media_platform": "不受支援的媒體平臺。但是，您可以選擇<Link><Text>新增 URL 作為連結。</Text></Link>"
+      "unsupported_media_platform": "不受支援的媒體平臺。但是，您可以選擇<Link><Text>新增 URL 作為連結。</Text></Link>",
+      "delete_button": "刪除媒體"
     },
     "table_options": {
       "add_row": "新增行",

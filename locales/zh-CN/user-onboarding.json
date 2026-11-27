@@ -64,6 +64,16 @@
       "button": "选择文件夹"
     }
   },
+  "download_desktop_app": {
+    "title": "完整的 Postman 体验，包括 Git 同步",
+    "description": "下载桌面应用以连接你的仓库，畅享 Postman 的全部功能。",
+    "button": "下载桌面应用",
+    "continue_with_web": "改为继续使用网页版",
+    "started": {
+      "title": "在桌面应用中继续注册",
+      "description": "你已开始下载 Postman 桌面应用。打开它即可完成账户设置。"
+    }
+  },
   "welcome_intro": {
     "duration": "1分钟",
     "steps": "{count} 步骤",

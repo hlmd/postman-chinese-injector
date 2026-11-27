@@ -1,0 +1,54 @@
+{
+  "block_header": {
+    "collapse_button": {
+      "collapse_label": "折叠块",
+      "expand_label": "展开块"
+    },
+    "shortcut_button": {
+      "open_flow_label": "打开流程",
+      "open_settings_label": "在设置中打开",
+      "view_logs_label": "查看日志"
+    }
+  },
+  "block_status_panel": {
+    "pin_button": {
+      "pin_label": "固定",
+      "unpin_label": "取消固定"
+    }
+  },
+  "copy_button": {
+    "label": "复制"
+  },
+  "deployments": {
+    "actions_menu_button": {
+      "label": "部署操作"
+    },
+    "details_toggle_button": {
+      "hide_label": "隐藏部署详情",
+      "show_label": "显示部署详情"
+    },
+    "token": {
+      "regenerate_button": {
+        "label": "重新生成令牌"
+      }
+    }
+  },
+  "slides": {
+    "next_button": {
+      "label": "下一张幻灯片"
+    },
+    "options_button": {
+      "label": "幻灯片选项"
+    },
+    "play_button": {
+      "start_label": "开始演示",
+      "stop_label": "停止演示"
+    },
+    "previous_button": {
+      "label": "上一张幻灯片"
+    },
+    "save_title_button": {
+      "label": "保存幻灯片标题"
+    }
+  }
+}

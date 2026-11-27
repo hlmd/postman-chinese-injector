@@ -695,5 +695,8 @@
     "unavailable_description": "此运行的逐条断言结果未被保留，因此无法显示“测试 vs VU”网格。运行摘要、指标和失败趋势仍可查看。",
     "cloud_only_title": "此运行不支持“测试 vs VU”网格",
     "cloud_only_description": "断言网格数据仅针对在 Postman Cloud 上的运行进行保存。运行摘要、指标和失败趋势仍可查看。"
+  },
+  "run_report": {
+    "actions_menu_button_label": "查看更多操作"
   }
 }

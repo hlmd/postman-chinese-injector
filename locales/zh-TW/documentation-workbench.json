@@ -33,19 +33,57 @@
       },
       "fern_docs": {
         "trigger_button": {
-          "view": "檢視 Fern 文件",
-          "offline_tooltip": "你目前處於離線狀態"
+          "view": "檢視文件站點",
+          "offline_tooltip": "你目前處於離線狀態",
+          "claim": "認領文件站點",
+          "live": "文件站點已上線",
+          "publish": "發布文件站點"
         },
         "team_docs": {
           "button": {
-            "claim": "認領文件",
+            "claim": "認領文件站點",
             "view_docs": "檢視文件"
           },
           "claim_error": {
             "not_admin": "只有團隊管理員可以認領這些文件。",
             "already_claimed": "這些文件已被認領。",
             "generic": "無法發起認領，請重試。"
+          },
+          "live_badge": "已上線",
+          "ready": {
+            "title": "你的文件站點已就緒",
+            "description": "由 Fern 根據你的集合構建。認領後即可自訂、發布並據為己有。"
+          },
+          "links": {
+            "edit_styling": "編輯樣式",
+            "view_dashboard": "檢視儀表板",
+            "settings": "設定"
+          },
+          "sync": {
+            "syncing": "正在同步…",
+            "last_synced_just_now": "剛剛已同步",
+            "last_synced_minutes": "{count, plural, one {# 分鐘前已同步} other {# 分鐘前已同步}}",
+            "last_synced_hours": "{count, plural, one {# 小時前已同步} other {# 小時前已同步}}",
+            "last_synced_days": "{count, plural, =1 {昨天已同步} other {# 天前已同步}}",
+            "last_synced_months": "{count, plural, =1 {上個月已同步} other {# 個月前已同步}}",
+            "last_synced_years": "{count, plural, =1 {去年已同步} other {# 年前已同步}}"
           }
+        },
+        "popover": {
+          "postman_company": "Postman 旗下公司"
+        },
+        "features": {
+          "branded": "帶品牌、可自訂的開發者文件",
+          "markdown_guides": "用 Markdown 編寫指南（文件即程式碼）",
+          "ai_readable": "可供 AI 工具和智慧體讀取"
+        },
+        "docs_url": {
+          "copy_link": "複製連結",
+          "link_copied": "連結已複製"
+        },
+        "get_started": {
+          "title": "建立你的文件站點",
+          "description": "由 Fern 根據你的集合構建。只需幾步即可設定品牌和頁面。"
         }
       }
     }
@@ -196,5 +234,16 @@
   "open_request_button": {
     "try_request_button_label": "嘗試請求",
     "open_request_button_label": "開啟請求"
+  },
+  "fern_team_docs_notification": {
+    "button": {
+      "claim_docs": "認領你的文件",
+      "view_docs": "檢視文件"
+    },
+    "claim_error": {
+      "not_allowed": "只有管理員或團隊公共工作區的編輯者才能認領這些文件。",
+      "already_claimed": "這些文件已被認領。",
+      "generic": "無法發起認領，請重試。"
+    }
   }
 }

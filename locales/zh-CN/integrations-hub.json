@@ -148,6 +148,9 @@
         "lastUsed": "最近使用",
         "remove": "从工作区移除",
         "removeNoPermission": "你没有从此工作区移除该应用的权限。"
+      },
+      "rowMenu": {
+        "moreActions": "更多操作"
       }
     },
     "gateway": {

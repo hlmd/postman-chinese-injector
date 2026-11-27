@@ -545,6 +545,22 @@
         "singular": "信息",
         "plural": "消息"
       },
+      "llm_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "mcp_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "kafka_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
+      "data_request": {
+        "singular": "请求",
+        "plural": "请求"
+      },
       "run": {
         "singular": "集合运行",
         "plural": "集合运行"

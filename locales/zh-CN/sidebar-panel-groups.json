@@ -12,6 +12,7 @@
   "push_to_postman_cloud": "推送到 Postman 云",
   "workspace_overview": "工作区概述",
   "customize_sidebar": "自定义侧边栏",
+  "sidebar_options": "侧边栏选项",
   "expand_all_panels": "展开所有部分",
   "collapse_all_panels": "折叠所有部分",
   "hydration_error": "无法加载侧边栏部分。",

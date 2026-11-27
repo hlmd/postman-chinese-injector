@@ -692,5 +692,10 @@
       "update_error": "標籤更新失敗，請重試。",
       "delete_error": "標籤刪除失敗，請重試。"
     }
+  },
+  "name_sort": {
+    "sort_by_name": "按名稱排序",
+    "sorted_ascending": "名稱，按 A 到 Z 排序",
+    "sorted_descending": "名稱，按 Z 到 A 排序"
   }
 }

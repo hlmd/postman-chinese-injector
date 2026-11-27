@@ -1,4 +1,10 @@
 {
+  "automate_run": {
+    "api_key_popover": {
+      "close_button": "关闭"
+    },
+    "copy_command_button": "复制到剪贴板"
+  },
   "cli_installer": {
     "heading": "安装 Postman CLI",
     "unix_description_start": "使用下面的命令",

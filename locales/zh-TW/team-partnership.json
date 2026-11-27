@@ -4,7 +4,8 @@
   "create_partner_workspace_banner": {
     "title": "擴大您的合作伙伴關係？",
     "description": "將外部合作伙伴聚集在共享工作區中，共同協作 API 專案。之後可以隨時回到此處管理所有合作伙伴關係。",
-    "button": "建立合作伙伴工作區"
+    "button": "建立合作伙伴工作區",
+    "dismiss_button": "關閉"
   },
   "cta": {
     "create_partner_workspace": "建立合作伙伴工作區"
